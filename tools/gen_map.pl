@@ -78,7 +78,7 @@ sub usage
 	print "to fill the divisions in your map with an image processing program.\n\n";
 
 	print "Example :\n";
-	print "gen_map.pl spain.txt ignored.txt >spain.png\n\n";
+	print "gen_map.pl spain.txt ignored.txt >spain.kgm\n\n";
 	
 	print "Example 1 of division_list.txt :\n";
 	print "#division name;capital\n";
