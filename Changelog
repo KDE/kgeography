@@ -1,5 +1,6 @@
 2004-05-09  Albert Astals Cid  <tsdgeos@terra.es>
 	* In map browsing mode show DivisionName (CapitalDivisionName)
+	* Add France map (by Yann Verley)
 
 2004-05-09  Albert Astals Cid  <tsdgeos@terra.es>
 	* Add Division -> flag asker
