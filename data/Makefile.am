@@ -1,4 +1,4 @@
 SUBDIRS = flags
 
 kgeographydir = $(kde_datadir)/kgeography/
-kgeography_DATA = *.kgm *.png
+kgeography_DATA = $(srcdir)/*.kgm $(srcdir)/*.png
