@@ -64,3 +64,5 @@ void mapChooser::putImage(const QString &mapName)
 	m = p_maps[mapName];
 	p_image -> setPaletteBackgroundPixmap(QImage(m -> getFile()).scale(300, 225));
 }
+
+#include "mapchooser.moc"

@@ -43,3 +43,5 @@ void mapWidget::mousePressEvent(QMouseEvent *e)
 		emit clicked(rgb);
 	}
 }
+
+#include "mapwidget.moc"

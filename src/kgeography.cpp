@@ -112,3 +112,5 @@ void kgeography::nextDivision()
 		KMessageBox::information(this, i18n("You must click on %1").arg(aux));
 	}
 }
+
+#include "kgeography.moc"
