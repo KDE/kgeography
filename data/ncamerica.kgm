@@ -14,9 +14,9 @@
 		<name>Out of Bounds</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>241</red>
-			<green>241</green>
-			<blue>241</blue>
+			<red>192</red>
+			<green>192</green>
+			<blue>192</blue>
 		</color>
 	</division>
 	<division>
