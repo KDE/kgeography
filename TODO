@@ -12,6 +12,7 @@
 
  - Add <localname> tag to the map parser/files so the user can see the local name of a division
 	Example: In Spanish the user will see for Belgium -> Belgica (due to i18n) and Belgique (due to localname)
+ - Add a description saying if divisions are countrys or not as some languages have different words for Capital of a country and for Capital of a region
 
 ***************
 * Map related *
