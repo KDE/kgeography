@@ -11,13 +11,13 @@
 #ifndef MYPOPUP_H
 #define MYPOPUP_H
 
-#include <qhbox.h>
+#include <qframe.h>
 
-class myPopup : public QHBox
+class myPopup : public QFrame
 {
 Q_OBJECT
 	public:
-		myPopup(const QString &text, const QString &mapFile, QWidget *parent);
+		myPopup(const QString &text, const QString &text2, const QString &flagFile, QWidget *parent);
 		myPopup(const QString &text, QWidget *parent);
 	
 	signals:

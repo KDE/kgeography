@@ -104,16 +104,17 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	}
 	else if (!p_asker)
 	{
-		QString mapFile;
+		QString mapFile, both;
 		cap = p_map -> getDivisionCapital(aux);
 		if (!cap.isEmpty())
 		{
 			mapFile = p_map -> getDivisionFlagFile(aux);
-			aux = i18n("%1 (%2)").arg(aux).arg(cap);
+			both = i18n("%1 (%2)").arg(aux).arg(cap);
 		}
+		else both = aux;
 
-		if (!mapFile.isEmpty()) p_popupManager.show(aux, p, mapFile);
-		else p_popupManager.show(aux, p);
+		if (!mapFile.isEmpty()) p_popupManager.show(aux, cap, p, mapFile);
+		else p_popupManager.show(both, p);
 	}
 	else if (!aux.isEmpty())
 	{

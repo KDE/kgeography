@@ -24,12 +24,12 @@ Q_OBJECT
 		popupManager(QWidget *parent);
 
 		// shows text at p and the flag
-		void show(const QString &text, const QPoint &p, const QString &flagFile);
+		void show(const QString &text, const QString &text2, const QPoint &p, const QString &flagFile);
 	
 		// shows text at p
 		void show(const QString &text, const QPoint &p);
 		
-		// shots text centered
+		// shows text centered
 		void show(const QString &text);
 	
 	public slots:

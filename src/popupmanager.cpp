@@ -17,12 +17,12 @@ popupManager::popupManager(QWidget *parent)
 	p_mp = 0;
 }
 
-void popupManager::show(const QString &text, const QPoint &p, const QString &flagFile)
+void popupManager::show(const QString &text, const QString &text2, const QPoint &p, const QString &flagFile)
 {
 	int x, y, maxX, maxY;
 	delete p_mp;
 
-	p_mp = new myPopup(text, flagFile, p_parent);
+	p_mp = new myPopup(text, text2, flagFile, p_parent);
 	maxX = p_parent -> width() - p_mp -> width();
 	maxY = p_parent -> height() - p_mp -> height();
 	if (p.x() < maxX) x = p.x();
