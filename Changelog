@@ -1,4 +1,7 @@
 2004-06-05  Albert Astals Cid  <tsdgeos@terra.es>
+	* Zoom and Move actions should be unchecked and disabled when going to main menu
+	* Don't enable scrolling mode for extreme zooms as it needed too much
+memory 
 	* Add scrolling to zoom mode
 
 2004-05-25  Albert Astals Cid  <tsdgeos@terra.es>

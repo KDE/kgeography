@@ -199,6 +199,9 @@ void kgeography::putMenu()
 	delete p_askWidget;
 	p_askWidget = 0;
 	p_zoom -> setEnabled(false);
+	p_move -> setEnabled(false);
+	p_zoom -> setChecked(false);
+	p_move -> setChecked(false);
 	p_goToMenu -> setEnabled(false);
 }
 

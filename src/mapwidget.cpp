@@ -202,8 +202,13 @@ void mapWidget::mouseReleaseEvent(QMouseEvent *)
 			p_lastFactorX = factorX;
 			p_lastFactorY = factorY;
 			
-			p_zoomedImageBig = p_zoomedImageBig.scale((int)(zW * factorX), (int)(zH * factorY));
-			emit setMoveActionEnabled(true);
+			
+			if (zW * factorX * zH * factorY < 10000000)
+			{
+				p_zoomedImageBig = p_zoomedImageBig.scale((int)(zW * factorX), (int)(zH * factorY));
+				emit setMoveActionEnabled(true);
+			}
+			else emit setMoveActionEnabled(false);
 		}
 	}
 	else if (p_moving)
