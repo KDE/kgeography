@@ -5,9 +5,18 @@
 		<name>Atlantic Ocean</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>65</red>
-			<green>95</green>
-			<blue>173</blue>
+			<red>153</red>
+			<green>255</green>
+			<blue>255</blue>
+		</color>
+	</division>
+	<division>
+		<name>Out of Bounds</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>241</red>
+			<green>241</green>
+			<blue>241</blue>
 		</color>
 	</division>
 	<division>
