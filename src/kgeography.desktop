@@ -1,8 +1,10 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=KGeography
+Name[sv]=Kgeografi
+Name[xx]=xxKGeographyxx
 Exec=kgeography
 Icon=kgeography
 Type=Application
-Terminal=0
-Categories=Qt;KDE;Education
+Terminal=false
+Categories=Qt;KDE;Education;
