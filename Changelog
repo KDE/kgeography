@@ -1,3 +1,6 @@
+2004-18-07  Albert Astals Cid  <tsdgeos@terra.es>
+	* Add scrollbars to the map (if needed)
+
 2004-08-05  Albert Astals Cid  <tsdgeos@terra.es>
 	* Layout change
 	* Unify some of the code in boxasker and mapasker to askwidget

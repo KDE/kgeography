@@ -8,16 +8,17 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include <math.h> // for rint
+
 #include <kapplication.h>
 #include <klocale.h>
-#include <math.h>
 
 #include <qcursor.h>
 #include <qpainter.h>
 
 #include "mapwidget.h"
 
-mapWidget::mapWidget(QWidget *parent, const QString &path) : QWidget(parent)
+mapWidget::mapWidget(QWidget *parent) : QWidget(parent)
 {
 	p_wantZoom = false;
 	p_zooming = false;
@@ -25,9 +26,13 @@ mapWidget::mapWidget(QWidget *parent, const QString &path) : QWidget(parent)
 	p_moving = false;
 	p_zoomW = 0;
 	p_zoomH = 0;
-	
+}
+
+void mapWidget::init(const QString &path)
+{
 	p_originalImage.load(path);
 	setOriginalImage();
+	emit updateMaximumSize(p_originalImage.width(), p_originalImage.height());
 }
 
 void mapWidget::setMapMove(bool b)
@@ -53,6 +58,18 @@ void mapWidget::setMapZoom(bool b)
 QSize mapWidget::sizeHint() const
 {
 	return p_originalImage.size();
+}
+
+void mapWidget::updateHPosition(int value)
+{
+	p_zoomX = value;
+	updateShownImage();
+}
+
+void mapWidget::updateVPosition(int value)
+{
+	p_zoomY = value;
+	updateShownImage();
 }
 
 void mapWidget::mousePressEvent(QMouseEvent *e)
@@ -125,12 +142,10 @@ void mapWidget::mouseMoveEvent(QMouseEvent *e)
 		if (p_zoomY < 0) p_zoomY = 0;
 		if (p_zoomX > oW - width() * p_lastFactorX) p_zoomX = (int)rint(oW - width() * p_lastFactorX);
 		if (p_zoomY > oH - height() * p_lastFactorY) p_zoomY = (int)rint(oH - height() * p_lastFactorY);
+		emit updatePosition(p_zoomX, p_zoomY);
 		
-		p_zoomedImageShown = p_originalImage.copy(p_zoomX, p_zoomY, p_zoomW, p_zoomH);
-		p_zoomedImageShown = p_zoomedImageShown.scale(size());
-		setPaletteBackgroundPixmap(p_zoomedImageShown);
+		updateShownImage();
 		p_initial = e -> pos();
-		kapp -> processEvents();
 	}
 }
 
@@ -172,15 +187,19 @@ void mapWidget::mouseReleaseEvent(QMouseEvent *e)
 		if (p_zoomW > 1 && p_zoomH > 1)
 		{
 			double factorX, factorY;
+			int maxX, maxY;
 			
-			p_zoomedImageShown = p_originalImage.copy(p_zoomX, p_zoomY, p_zoomW, p_zoomH);
-			p_zoomedImageShown = p_zoomedImageShown.scale(size());
-			setPaletteBackgroundPixmap(p_zoomedImageShown);
+			updateShownImage();
 			
 			factorX = (double)p_zoomW / width();
 			factorY = (double)p_zoomH / height();
 			
-			setMaximumSize((int)rint(p_originalImage.width() / factorX), (int)rint(p_originalImage.height() / factorY));
+			maxX = (int)rint(p_originalImage.width() / factorX);
+			maxY = (int)rint(p_originalImage.height() / factorY);
+			setMaximumSize(maxX, maxY);
+			
+			emit updateVisibleSize(p_zoomW, p_zoomH);
+			emit updatePosition(p_zoomX, p_zoomY);
 			
 			p_lastFactorX = factorX;
 			p_lastFactorY = factorY;
@@ -197,13 +216,13 @@ void mapWidget::mouseReleaseEvent(QMouseEvent *e)
 
 void mapWidget::resizeEvent(QResizeEvent *e)
 {
+	int maxX, maxY;
+
 	p_zoomW = (int)rint(e -> size().width() * p_lastFactorX);
 	p_zoomH = (int)rint(e -> size().height() * p_lastFactorY);
+	emit updateVisibleSize(p_zoomW, p_zoomH);
 	
-	p_zoomedImageShown = p_originalImage.copy(p_zoomX, p_zoomY, p_zoomW, p_zoomH);
-	p_zoomedImageShown = p_zoomedImageShown.scale(size());
-	setPaletteBackgroundPixmap(p_zoomedImageShown);
-	kapp -> processEvents();
+	updateShownImage();
 	
 	emitMoveActionEnabled();
 }
@@ -234,6 +253,7 @@ void mapWidget::setOriginalImage()
 	p_lastFactorY = 1;
 	p_zoomX = 0;
 	p_zoomY = 0;
+	emit updatePosition(0, 0);
 	
 	if (p_zoomH != 0 && p_zoomW != 0)
 	{
@@ -242,8 +262,17 @@ void mapWidget::setOriginalImage()
 		p_zoomH = height();
 	}
 	
+	emit updateVisibleSize(p_zoomW, p_zoomH);
 	setMaximumSize(p_originalImage.size());
 	emitMoveActionEnabled();
+}
+
+void mapWidget::updateShownImage()
+{
+	p_zoomedImageShown = p_originalImage.copy(p_zoomX, p_zoomY, p_zoomW, p_zoomH);
+	p_zoomedImageShown = p_zoomedImageShown.scale(size());
+	setPaletteBackgroundPixmap(p_zoomedImageShown);
+	kapp -> processEvents();
 }
 
 #include "mapwidget.moc"

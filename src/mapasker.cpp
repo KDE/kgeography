@@ -13,6 +13,7 @@
 
 #include <qlabel.h>
 #include <qlayout.h>
+#include <qscrollbar.h>
 
 #include "map.h"
 #include "mapasker.h"
@@ -20,10 +21,15 @@
 
 mapAsker::mapAsker(QWidget *parent, map *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_popupManager(this), p_asker(asker)
 {
-	QVBoxLayout *lay = new QVBoxLayout(this);
+	QGridLayout *lay = new QGridLayout(this, 2, 2);
 	
-	p_mapWidget = new mapWidget(this, p_map -> getMapFile());
-	lay -> addWidget(p_mapWidget);
+	p_mapWidget = new mapWidget(this);
+	lay -> addWidget(p_mapWidget, 0, 0);
+	
+	p_hsb = new QScrollBar(Horizontal, this);
+	lay -> addWidget(p_hsb, 1, 0);
+	p_vsb = new QScrollBar(Vertical, this);
+	lay -> addWidget(p_vsb, 0, 1);
 	
 	p_shouldClearPopup = false;
 	
@@ -31,6 +37,15 @@ mapAsker::mapAsker(QWidget *parent, map *m, QWidget *w, bool asker, uint count) 
 	connect(p_mapWidget, SIGNAL(setMoveActionChecked(bool)), this, SIGNAL(setMoveActionChecked(bool)));
 	connect(p_mapWidget, SIGNAL(setZoomActionChecked(bool)), this, SIGNAL(setZoomActionChecked(bool)));
 	connect(p_mapWidget, SIGNAL(setMoveActionEnabled(bool)), this, SIGNAL(setMoveActionEnabled(bool)));
+	connect(p_mapWidget, SIGNAL(setMoveActionEnabled(bool)), this, SLOT(showScrollBars(bool)));
+	connect(p_mapWidget, SIGNAL(updatePosition(int, int)), this, SLOT(setScrollBarsPosition(int, int)));
+	connect(p_mapWidget, SIGNAL(updateVisibleSize(int, int)), this, SLOT(setScrollBarsVisibleSize(int, int)));
+	connect(p_mapWidget, SIGNAL(updateMaximumSize(int, int)), this, SLOT(setScrollBarsMaximumSize(int, int)));
+	
+	connect(p_hsb, SIGNAL(sliderMoved(int)), p_mapWidget, SLOT(updateHPosition(int)));
+	connect(p_vsb, SIGNAL(sliderMoved(int)), p_mapWidget, SLOT(updateVPosition(int)));
+	
+	p_mapWidget -> init(p_map -> getMapFile());
 	 
 	if (asker)
 	{
@@ -86,6 +101,40 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 		questionAnswered(aux == lastDivisionAsked());
 		nextQuestion();
 	}
+}
+
+void mapAsker::showScrollBars(bool b)
+{
+	if (b)
+	{
+		p_hsb -> show();
+		p_vsb -> show();
+	}
+	else
+	{
+		p_hsb -> hide();
+		p_vsb -> hide();
+	}
+}
+
+void mapAsker::setScrollBarsPosition(int x, int y)
+{
+	p_hsb -> setValue(x);
+	p_vsb -> setValue(y);
+}
+
+void mapAsker::setScrollBarsVisibleSize(int w, int h)
+{
+	p_hsb -> setMaxValue(p_hsbms - w);
+	p_hsb -> setPageStep(w);
+	p_vsb -> setMaxValue(p_vsbms - h);
+	p_vsb -> setPageStep(h);
+}
+
+void mapAsker::setScrollBarsMaximumSize(int w, int h)
+{
+	p_hsbms = w;
+	p_vsbms = h;
 }
 
 void mapAsker::nextQuestionHook(QString division)
