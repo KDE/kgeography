@@ -160,7 +160,7 @@ void mapAsker::setScrollBarsMaximumSize(int w, int h)
 
 void mapAsker::nextQuestionHook(const QString &division)
 {
-	p_next -> setText(i18n("You must click on %1").arg(division));
+	p_next -> setText(i18n("Please click on %1").arg(division));
 	p_currentAnswer.setQuestion(division);
 	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
 }
