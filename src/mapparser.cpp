@@ -82,6 +82,7 @@ bool mapParser::startElement(const QString&, const QString &name, const QString&
 		{
 			p_divisionNameSet = false;
 			p_divisionIgnoreSet = false;
+			p_flagFileSet = false;
 			p_division = new division();
 		}
 	}
@@ -93,7 +94,7 @@ bool mapParser::startElement(const QString&, const QString &name, const QString&
 	else if (aux == "division")
 	{
 		b = (name == "name" && !p_divisionNameSet) || (name == "color" && !p_colorSet) ||
-		(name == "ignore" && !p_divisionIgnoreSet) ;
+		(name == "ignore" && !p_divisionIgnoreSet) || (name == "flag" && !p_flagFileSet);
 		p_red = -1;
 		p_green = -1;
 		p_blue = -1;
@@ -120,7 +121,7 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 	}
 	else if (p_previousTags == ":map:mapFile")
 	{
-		p_map -> setMapFile(p_path + p_contents);
+		b = p_map -> setMapFile(p_path + p_contents);
 		p_mapFileSet = true;
 	}
 	else if (aux == "division")
@@ -177,6 +178,12 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 		}
 		else b = false;
 	}
+	else if (aux == "flag")
+	{
+		b = p_division -> setFlagFile(p_path + "flags/" + p_contents);
+		p_flagFileSet = true;
+		if (!b) p_error = i18n("Could not find flag file %1").arg(p_path + "flags/" + p_contents);
+	}
 	else if (aux == "map")
 	{
 	}
@@ -191,7 +198,7 @@ bool mapParser::characters(const QString &ch)
 	QString aux;
 	if (ch.simplifyWhiteSpace().length() == 0) return true;
 	aux = getPreviousTag();
-	if (aux == "mapFile" || aux == "name" || aux == "red" || aux == "green" || aux == "blue" || aux == "ignore")
+	if (aux == "mapFile" || aux == "name" || aux == "red" || aux == "green" || aux == "blue" || aux == "ignore" || aux == "flag")
 	{
 		p_contents += ch;
 		return true;

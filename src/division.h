@@ -22,13 +22,15 @@ class division
 		bool canAsk() const;
 		QString getName() const;
 		QRgb getRGB() const;
+		QString getFlagFile() const;
 		
 		void setIgnore(bool b);
-		void setName(QString name);
+		void setName(const QString &name);
 		void setRGB(int r, int g, int b);
+		bool setFlagFile(const QString &path);
 		
 	private:
-		QString p_name;
+		QString p_name, p_flagFile;
 		QRgb p_color;
 		bool p_canAsk;
 };

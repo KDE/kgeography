@@ -8,11 +8,14 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include <qfile.h>
+
 #include "division.h"
 
 division::division()
 {
 	p_canAsk = true;
+	p_flagFile = QString::null;
 }
 
 bool division::canAsk() const
@@ -30,12 +33,17 @@ QRgb division::getRGB() const
 	return p_color;
 }
 
+QString division::getFlagFile() const
+{
+	return p_flagFile;
+}
+
 void division::setIgnore(bool b)
 {
 	p_canAsk = !b;
 }
 
-void division::setName(QString name)
+void division::setName(const QString &name)
 {
 	p_name = name;
 }
@@ -43,4 +51,10 @@ void division::setName(QString name)
 void division::setRGB(int r, int g, int b)
 {
 	p_color = qRgb(r, g, b);
+}
+
+bool division::setFlagFile(const QString &path)
+{
+	p_flagFile = path;
+	return QFile::exists(path);
 }

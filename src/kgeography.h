@@ -17,6 +17,9 @@
 
 class KToggleAction;
 
+class QVBox;
+
+class flagDivisionAsker;
 class infoWidget;
 class map;
 class mapWidget;
@@ -33,7 +36,8 @@ Q_OBJECT
 		void openMap();
 	
 		void consult();
-		void question();
+		void questionMap();
+		void questionFlagDivision();
 		
 		void handleMapClick(QRgb c, const QPoint &p);
 	
@@ -43,12 +47,17 @@ Q_OBJECT
 	private:
 		void nextDivision();
 		void setMap(map *m);
+		
+		QVBox *p_holder;
 	
 		infoWidget *p_infoWidget;
 		mapWidget *p_mapWidget;
-		KToggleAction *p_consult, *p_question;
+		flagDivisionAsker *p_flagDivisionAsker;
+		KToggleAction *p_consult, *p_questionMap, *p_questionFlagDivision;
 		map *p_map;
 		popupManager p_popupManager;
+		
+		// the list of asked divisions
 		QStringList p_asked;
 		bool p_shouldClearPopup;
 };

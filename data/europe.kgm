@@ -30,6 +30,7 @@
 	</division>
 	<division>
 		<name>Albania</name>
+		<flag>albania.png</flag>
 		<color>
 			<red>221</red>
 			<green>136</green>
@@ -47,6 +48,7 @@
 	</division>
 	<division>
 		<name>Austria</name>
+		<flag>austria.png</flag>
 		<color>
 			<red>136</red>
 			<green>0</green>
@@ -55,6 +57,7 @@
 	</division>
 	<division>
 		<name>Belarus</name>
+		<flag>belarus.png</flag>
 		<color>
 			<red>182</red>
 			<green>206</green>
@@ -63,6 +66,7 @@
 	</division>
 	<division>
 		<name>Belgium</name>
+		<flag>belgium.png</flag>
 		<color>
 			<red>229</red>
 			<green>102</green>
@@ -71,6 +75,7 @@
 	</division>
 	<division>
 		<name>Bosnia and Herzegovina</name>
+		<flag>bosnia_herzegovina.png</flag>
 		<color>
 			<red>106</red>
 			<green>55</green>
@@ -79,6 +84,7 @@
 	</division>
 	<division>
 		<name>Bulgaria</name>
+		<flag>bulgaria.png</flag>
 		<color>
 			<red>0</red>
 			<green>191</green>
@@ -87,6 +93,7 @@
 	</division>
 	<division>
 		<name>Croatia</name>
+		<flag>croatia.png</flag>
 		<color>
 			<red>18</red>
 			<green>52</green>
@@ -95,6 +102,7 @@
 	</division>
 	<division>
 		<name>Czech Republic</name>
+		<flag>czech.png</flag>
 		<color>
 			<red>51</red>
 			<green>136</green>
@@ -103,6 +111,7 @@
 	</division>
 	<division>
 		<name>Denmark</name>
+		<flag>denmark.png</flag>
 		<color>
 			<red>158</red>
 			<green>253</green>
@@ -111,6 +120,7 @@
 	</division>
 	<division>
 		<name>Estonia</name>
+		<flag>estonia.png</flag>
 		<color>
 			<red>120</red>
 			<green>246</green>
@@ -119,6 +129,7 @@
 	</division>
 	<division>
 		<name>Finland</name>
+		<flag>finland.png</flag>
 		<color>
 			<red>74</red>
 			<green>254</green>
@@ -127,6 +138,7 @@
 	</division>
 	<division>
 		<name>F.Y.R. Macedonia</name>
+		<flag>macedonia.png</flag>
 		<color>
 			<red>103</red>
 			<green>109</green>
@@ -135,6 +147,7 @@
 	</division>
 	<division>
 		<name>France</name>
+		<flag>france.png</flag>
 		<color>
 			<red>255</red>
 			<green>255</green>
@@ -143,6 +156,7 @@
 	</division>
 	<division>
 		<name>Germany</name>
+		<flag>germany.png</flag>
 		<color>
 			<red>255</red>
 			<green>0</green>
@@ -151,6 +165,7 @@
 	</division>
 	<division>
 		<name>Greece</name>
+		<flag>greece.png</flag>
 		<color>
 			<red>182</red>
 			<green>154</green>
@@ -159,6 +174,7 @@
 	</division>
 	<division>
 		<name>Hungary</name>
+		<flag>hungary.png</flag>
 		<color>
 			<red>255</red>
 			<green>240</green>
@@ -167,6 +183,7 @@
 	</division>
 	<division>
 		<name>Iceland</name>
+		<flag>iceland.png</flag>
 		<color>
 			<red>255</red>
 			<green>140</green>
@@ -175,6 +192,7 @@
 	</division>
 	<division>
 		<name>Ireland</name>
+		<flag>ireland.png</flag>
 		<color>
 			<red>122</red>
 			<green>254</green>
@@ -183,6 +201,7 @@
 	</division>
 	<division>
 		<name>Italy</name>
+		<flag>italy.png</flag>
 		<color>
 			<red>254</red>
 			<green>254</green>
@@ -191,6 +210,7 @@
 	</division>
 	<division>
 		<name>Latvia</name>
+		<flag>latvia.png</flag>
 		<color>
 			<red>164</red>
 			<green>187</green>
@@ -199,6 +219,7 @@
 	</division>
 	<division>
 		<name>Lithuania</name>
+		<flag>lithuania.png</flag>
 		<color>
 			<red>255</red>
 			<green>105</green>
@@ -207,6 +228,7 @@
 	</division>
 	<division>
 		<name>Luxembourg</name>
+		<flag>luxembourg.png</flag>
 		<color>
 			<red>255</red>
 			<green>170</green>
@@ -215,6 +237,7 @@
 	</division>
 	<division>
 		<name>Moldova</name>
+		<flag>moldova.png</flag>
 		<color>
 			<red>0</red>
 			<green>0</green>
@@ -232,6 +255,7 @@
 	</division>
 	<division>
 		<name>Netherlands</name>
+		<flag>netherlands.png</flag>
 		<color>
 			<red>138</red>
 			<green>43</green>
@@ -240,6 +264,7 @@
 	</division>
 	<division>
 		<name>Norway</name>
+		<flag>norway.png</flag>
 		<color>
 			<red>255</red>
 			<green>0</green>
@@ -248,6 +273,7 @@
 	</division>
 	<division>
 		<name>Poland</name>
+		<flag>poland.png</flag>
 		<color>
 			<red>155</red>
 			<green>142</green>
@@ -256,6 +282,7 @@
 	</division>
 	<division>
 		<name>Portugal</name>
+		<flag>portugal.png</flag>
 		<color>
 			<red>249</red>
 			<green>3</green>
@@ -264,6 +291,7 @@
 	</division>
 	<division>
 		<name>Romania</name>
+		<flag>romania.png</flag>
 		<color>
 			<red>53</red>
 			<green>142</green>
@@ -272,6 +300,7 @@
 	</division>
 	<division>
 		<name>Russia</name>
+		<flag>russia.png</flag>
 		<color>
 			<red>175</red>
 			<green>238</green>
@@ -280,6 +309,7 @@
 	</division>
 	<division>
 		<name>San Marino</name>
+		<flag>san_marino.png</flag>
 		<color>
 			<red>139</red>
 			<green>139</green>
@@ -288,6 +318,7 @@
 	</division>
 	<division>
 		<name>Serbia and Montenegro</name>
+		<flag>serbiamontenegro_3x2.png</flag>
 		<color>
 			<red>120</red>
 			<green>144</green>
@@ -296,6 +327,7 @@
 	</division>
 	<division>
 		<name>Slovakia</name>
+		<flag>slovakia.png</flag>
 		<color>
 			<red>139</red>
 			<green>0</green>
@@ -304,6 +336,7 @@
 	</division>
 	<division>
 		<name>Slovenia</name>
+		<flag>slovenia.png</flag>
 		<color>
 			<red>0</red>
 			<green>255</green>
@@ -312,6 +345,7 @@
 	</division>
 	<division>
 		<name>Spain</name>
+		<flag>spain.png</flag>
 		<color>
 			<red>254</red>
 			<green>218</green>
@@ -320,6 +354,7 @@
 	</division>
 	<division>
 		<name>Sweden</name>
+		<flag>sweden.png</flag>
 		<color>
 			<red>136</red>
 			<green>136</green>
@@ -328,6 +363,7 @@
 	</division>
 	<division>
 		<name>Switzerland</name>
+		<flag>switzerland.png</flag>
 		<color>
 			<red>215</red>
 			<green>3</green>
@@ -354,6 +390,7 @@
 	</division>
 	<division>
 		<name>Turkey</name>
+		<flag>turkey.png</flag>
 		<color>
 			<red>0</red>
 			<green>136</green>
@@ -362,6 +399,7 @@
 	</division>
 	<division>
 		<name>Ukraine</name>
+		<flag>ukraine.png</flag>
 		<color>
 			<red>136</red>
 			<green>5</green>
@@ -370,6 +408,7 @@
 	</division>
 	<division>
 		<name>United Kingdom</name>
+		<flag>uk.png</flag>
 		<color>
 			<red>254</red>
 			<green>206</green>

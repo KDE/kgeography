@@ -50,7 +50,7 @@ class mapParser : public QXmlDefaultHandler
 		int p_red, p_green, p_blue;
 		map *p_map;
 		bool p_allowChars, p_mapNameSet, p_mapFileSet;
-		bool p_divisionNameSet, p_colorSet, p_divisionIgnoreSet;
+		bool p_divisionNameSet, p_colorSet, p_divisionIgnoreSet, p_flagFileSet;
 		QString &p_path, p_error, p_contents, p_previousTags;
 };
 

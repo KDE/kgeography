@@ -9,7 +9,8 @@
 		<Menu name="mode">
 			<text>&amp;Mode</text>
 			<Action name="consult" />
-			<Action name="question" />
+			<Action name="questionMap" />
+			<Action name="questionFlagDivision" />
 		</Menu>
 	</MenuBar>
 </kpartgui>

@@ -25,11 +25,12 @@ class map
 		bool addDivision(division *d);
 		
 		void setFile(const QString &s);
-		void setMapFile(const QString &s);
+		bool setMapFile(const QString &s);
 		void setName(const QString &s);
 		
 		// return the number of askable divisions
 		uint count() const;
+		QString getDivisionFlagFile(const QString &s) const;
 		QString getFile() const;
 		QString getMapFile() const;
 		QString getName() const;
@@ -42,6 +43,7 @@ class map
 		uint p_count;
 		
 		QString p_name, p_file, p_mapFile;
+		bool p_hasAllFlags;
 };
 
 #endif

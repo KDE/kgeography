@@ -13,12 +13,15 @@
 #include <kapp.h>
 #include <klocale.h>
 
+#include <qfile.h>
+
 #include "division.h"
 #include "map.h"
 
 map::map()
 {
 	p_count = 0;
+	p_hasAllFlags = true;
 }
 
 map::~map()
@@ -43,6 +46,7 @@ bool map::addDivision(division *c)
 		p_colorMap.insert(c -> getRGB(), c);
 		p_nameMap.insert(c -> getName(), c);
 		b = true;
+		p_hasAllFlags = p_hasAllFlags && !c -> getFlagFile().isNull();
 	}
 	else b = false;
 	return b;
@@ -53,9 +57,10 @@ void map::setFile(const QString &s)
 	p_file = s;
 }
 
-void map::setMapFile(const QString &s)
+bool map::setMapFile(const QString &s)
 {
 	p_mapFile = s;
+	return QFile::exists(s);
 }
 
 void map::setName(const QString &s)
@@ -66,6 +71,11 @@ void map::setName(const QString &s)
 uint map::count() const
 {
 	return p_count;
+}
+
+QString map::getDivisionFlagFile(const QString &s) const
+{
+	return p_nameMap[s] -> getFlagFile();
 }
 
 QString map::getFile() const
