@@ -55,15 +55,22 @@ mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count
 		p_next = new QLabel(w);
 		p_next -> setAlignment(AlignTop | AlignHCenter);
 		p_next -> show();
-		vbl -> addStretch();
+		p_fill = new QWidget(w);
+		p_fill -> show();
+		vbl -> setStretchFactor(p_fill, 1);
 		nextQuestion();
 	}
-	else p_next = 0;
+	else
+	{
+		p_next = 0;
+		p_fill = 0;
+	}
 }
 
 mapAsker::~mapAsker()
 {
 	delete p_next;
+	delete p_fill;
 }
 
 void mapAsker::mousePressEvent(QMouseEvent*)

@@ -51,6 +51,7 @@ Q_OBJECT
 	
 	private:
 		QLabel *p_next;
+		QWidget *p_fill;
 		QScrollBar *p_hsb, *p_vsb;
 		int p_hsbms, p_vsbms; //H and V maximum size for scrollbars
 		
