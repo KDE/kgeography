@@ -1,3 +1,5 @@
+SUBDIRS = italy
+
 flagsdir = $(kde_datadir)/kgeography/flags
 flags_DATA = albania.png djibouti.png latvia.png saarland.png algeria.png \
              dominicanrepublic.png lebanon.png san_marino.png angola.png \

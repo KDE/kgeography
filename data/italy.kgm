@@ -21,6 +21,7 @@
 	</division>
 	<division>
 		<name>Sicily</name>
+		<flag>italy/it-sic200.png</flag>
 		<capital>Palermo</capital>
 		<color>
 			<red>130</red>
@@ -30,6 +31,7 @@
 	</division>
 	<division>
 		<name>Friuli Venezia Giulia</name>
+		<flag>italy/it-fri200.png</flag>
 		<capital>Trieste</capital>
 		<color>
 			<red>160</red>
@@ -39,6 +41,7 @@
 	</division>
 	<division>
 		<name>Abruzzo</name>
+		<flag>italy/it-abr200.png</flag>
 		<capital>L'Aquila</capital>
 		<color>
 			<red>190</red>
@@ -48,6 +51,7 @@
 	</division>
 	<division>
 		<name>Latium</name>
+		<flag>italy/it-lat200.png</flag>
 		<capital>Rome</capital>
 		<color>
 			<red>190</red>
@@ -57,6 +61,7 @@
 	</division>
 	<division>
 		<name>Calabria</name>
+		<flag>italy/it-cal200.png</flag>
 		<capital>Catanzaro</capital>
 		<color>
 			<red>190</red>
@@ -66,6 +71,7 @@
 	</division>
 	<division>
 		<name>Piedmont</name>
+		<flag>italy/it-pie200.png</flag>
 		<capital>Turin</capital>
 		<color>
 			<red>190</red>
@@ -75,6 +81,7 @@
 	</division>
 	<division>
 		<name>Apulia</name>
+		<flag>italy/it-pug200.png</flag>
 		<capital>Bari</capital>
 		<color>
 			<red>190</red>
@@ -84,6 +91,7 @@
 	</division>
 	<division>
 		<name>Lombardy</name>
+		<flag>italy/it-lom200.png</flag>
 		<capital>Milan</capital>
 		<color>
 			<red>160</red>
@@ -93,6 +101,7 @@
 	</division>
 	<division>
 		<name>Umbria</name>
+		<flag>italy/it-umb200.png</flag>
 		<capital>Perugia</capital>
 		<color>
 			<red>190</red>
@@ -102,6 +111,7 @@
 	</division>
 	<division>
 		<name>Trentino Alto Adige</name>
+		<flag>italy/it-tre200.png</flag>
 		<capital>Trento</capital>
 		<color>
 			<red>160</red>
@@ -111,6 +121,7 @@
 	</division>
 	<division>
 		<name>Molise</name>
+		<flag>italy/it-mol200.png</flag>
 		<capital>Campobasso</capital>
 		<color>
 			<red>190</red>
@@ -120,6 +131,7 @@
 	</division>
 	<division>
 		<name>Tuscany</name>
+		<flag>italy/it-tus200.png</flag>
 		<capital>Florence</capital>
 		<color>
 			<red>190</red>
@@ -129,6 +141,7 @@
 	</division>
 	<division>
 		<name>Emilia Romagna</name>
+		<flag>italy/it-emi200.png</flag>
 		<capital>Bologna</capital>
 		<color>
 			<red>190</red>
@@ -138,6 +151,7 @@
 	</division>
 	<division>
 		<name>Val d'Aosta</name>
+		<flag>italy/it-aos200.png</flag>
 		<capital>Aosta</capital>
 		<color>
 			<red>160</red>
@@ -147,6 +161,7 @@
 	</division>
 	<division>
 		<name>Campania</name>
+		<flag>italy/it-cam200.png</flag>
 		<capital>Naples</capital>
 		<color>
 			<red>220</red>
@@ -156,6 +171,7 @@
 	</division>
 	<division>
 		<name>Basilicata</name>
+		<flag>italy/it-bas200.png</flag>
 		<capital>Potenza</capital>
 		<color>
 			<red>220</red>
@@ -165,6 +181,7 @@
 	</division>
 	<division>
 		<name>Liguria</name>
+		<flag>italy/it-lig200.png</flag>
 		<capital>Genoa</capital>
 		<color>
 			<red>220</red>
@@ -174,6 +191,7 @@
 	</division>
 	<division>
 		<name>Sardinia</name>
+		<flag>italy/it-sar200.png</flag>
 		<capital>Cagliari</capital>
 		<color>
 			<red>220</red>
@@ -183,6 +201,7 @@
 	</division>
 	<division>
 		<name>Marches</name>
+		<flag>italy/it-mar200.png</flag>
 		<capital>Ancona</capital>
 		<color>
 			<red>220</red>
@@ -192,6 +211,7 @@
 	</division>
 	<division>
 		<name>Veneto</name>
+		<flag>italy/it-ven200.png</flag>
 		<capital>Venice</capital>
 		<color>
 			<red>220</red>
