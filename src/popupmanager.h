@@ -8,28 +8,29 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef MAPWIDGET_H
-#define MAPWIDGET_H
+#ifndef POPUPMANAGER_H
+#define POPUPMANAGER_H
 
-#include <qwidget.h>
+#include <qobject.h>
 
-class mapWidget : public QWidget
+class QWidget;
+
+class myPopup;
+
+class popupManager : public QObject
 {
 Q_OBJECT
 	public:
-		mapWidget(QWidget *parent);
-		~mapWidget();
+		popupManager(QWidget *parent);
+		
+		void show(QString text, const QPoint &p);
+	
+	public slots:
+		void clear();
 
-		void setMapImage(const QString &path);
-	
-	signals:
-		void clicked(QRgb, const QPoint&);
-	
-	protected:
-		void mousePressEvent(QMouseEvent *e);
-	
 	private:
-		QImage *p_image;
+		myPopup *p_mp;
+		QWidget *p_parent;
 };
 
 #endif

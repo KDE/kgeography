@@ -13,10 +13,13 @@
 
 #include <kmainwindow.h>
 
+#include "popupmanager.h"
+
 class KToggleAction;
 
 class map;
 class mapWidget;
+class myPopup;
 
 class kgeography : public KMainWindow
 {
@@ -31,7 +34,10 @@ Q_OBJECT
 		void consult();
 		void question();
 		
-		void handleClick(QRgb c);
+		void handleMapClick(QRgb c, const QPoint &p);
+	
+	protected:
+		void mousePressEvent(QMouseEvent *e);
 	
 	private:
 		void nextDivision();
@@ -39,6 +45,7 @@ Q_OBJECT
 		mapWidget *p_mapWidget;
 		KToggleAction *p_consult, *p_question;
 		map *p_map;
+		popupManager p_popupManager;
 		QStringList p_asked;
 };
 

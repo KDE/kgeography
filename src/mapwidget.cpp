@@ -37,11 +37,12 @@ void mapWidget::setMapImage(const QString &path)
 
 void mapWidget::mousePressEvent(QMouseEvent *e)
 {
-	if (p_image)
+	if (p_image && e -> button() == Qt::LeftButton)
 	{
 		QRgb rgb = p_image -> pixel(e -> x(), e -> y());
-		emit clicked(rgb);
+		emit clicked(rgb, e -> pos());
 	}
+	else e -> ignore();
 }
 
 #include "mapwidget.moc"

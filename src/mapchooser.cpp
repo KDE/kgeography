@@ -40,6 +40,7 @@ mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Cho
 	p_image = new QWidget(hb);
 	p_image -> setFixedSize(300, 225);
 	connect(p_listBox, SIGNAL(highlighted(const QString&)), this, SLOT(putImage(const QString&)));
+	connect(p_listBox, SIGNAL(selected(int)), this, SLOT(slotOk()));
 	p_listBox -> setCurrentItem(0);
 	setMainWidget(hb);
 }

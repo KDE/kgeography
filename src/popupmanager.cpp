@@ -8,28 +8,24 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef MAPWIDGET_H
-#define MAPWIDGET_H
+#include "mypopup.h"
+#include "popupmanager.h"
 
-#include <qwidget.h>
-
-class mapWidget : public QWidget
+popupManager::popupManager(QWidget *parent)
 {
-Q_OBJECT
-	public:
-		mapWidget(QWidget *parent);
-		~mapWidget();
+	p_parent = parent;
+	p_mp = 0;
+}
 
-		void setMapImage(const QString &path);
-	
-	signals:
-		void clicked(QRgb, const QPoint&);
-	
-	protected:
-		void mousePressEvent(QMouseEvent *e);
-	
-	private:
-		QImage *p_image;
-};
+void popupManager::show(QString text, const QPoint &p)
+{
+	delete p_mp;
+	p_mp = new myPopup(text, p, p_parent);
+	connect(p_mp, SIGNAL(deleteMe()), this, SLOT(clear()));
+}
 
-#endif
+void popupManager::clear()
+{
+	delete p_mp;
+	p_mp = 0;
+}

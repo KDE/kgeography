@@ -14,10 +14,8 @@ kgeography_LDFLAGS = $(all_libraries) $(KDE_RPATH)
 kgeography_LDADD = -lkdeui
 
 # which sources should be compiled for kgeography
-kgeography_SOURCES = main.cpp mapwidget.cpp division.cpp map.cpp mapparser.cpp kgeography.cpp mapchooser.cpp
-
-# these are the headers for your project
-noinst_HEADERS = mapwidget.h division.h map.h mapparser.h kgeography.h mapchooser.h
+kgeography_SOURCES = main.cpp mapwidget.cpp division.cpp map.cpp mapparser.cpp kgeography.cpp mapchooser.cpp mypopup.cpp \
+		     popupmanager.cpp
 
 # let automoc handle all of the meta source files (moc)
 METASOURCES = AUTO

@@ -19,7 +19,7 @@
 #include "mapwidget.h"
 #include "map.h"
 
-kgeography::kgeography()
+kgeography::kgeography() : KMainWindow(), p_popupManager(this)
 {
 	p_map = 0;
 	p_mapWidget = new mapWidget(this);
@@ -30,7 +30,7 @@ kgeography::kgeography()
 	p_consult = new KToggleAction(i18n("&Consult mode"), 0, this, SLOT(consult()), actionCollection(), "consult");
 	p_question = new KToggleAction(i18n("&Question mode"), 0, this, SLOT(question()), actionCollection(), "question");
 	p_consult -> setChecked(true);
-	connect(p_mapWidget, SIGNAL(clicked(QRgb)), this, SLOT(handleClick(QRgb)));
+	connect(p_mapWidget, SIGNAL(clicked(QRgb, const QPoint&)), this, SLOT(handleMapClick(QRgb, const QPoint&)));
 	createGUI();
 	show();
 }
@@ -46,6 +46,7 @@ void kgeography::openMap()
 	if (mp.exec() == mapChooser::Accepted)
 	{
 		delete p_map;
+		p_popupManager.clear();
 		p_map = mp.getMap();
 		p_mapWidget -> setMapImage(p_map -> getFile());
 		consult();
@@ -68,21 +69,22 @@ void kgeography::question()
 		p_consult -> setChecked(false);
 		if (p_map)
 		{
-			nextDivision();
 			p_asked.clear();
+			p_popupManager.clear();
+			nextDivision();
 		}
 	}
 	else p_question -> setChecked(true);
 }
 
-void kgeography::handleClick(QRgb c)
+void kgeography::handleMapClick(QRgb c, const QPoint &p)
 {
 	QString aux;
 	aux = p_map -> getWhatIs(c, p_consult -> isChecked());
 	if (aux == "nothing") KMessageBox::error(this, i18n("You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.").arg(p_map -> getName()).arg(qRed(c)).arg(qGreen(c)).arg(qBlue(c)));
 	else if (p_consult -> isChecked())
 	{
-		KMessageBox::information(this, i18n("You've clicked on %1").arg(aux));
+		p_popupManager.show(aux, p);
 	}
 	else
 	{
@@ -99,6 +101,11 @@ void kgeography::handleClick(QRgb c)
 			nextDivision();
 		}
 	}
+}
+
+void kgeography::mousePressEvent(QMouseEvent*)
+{
+	p_popupManager.clear();
 }
 
 void kgeography::nextDivision()

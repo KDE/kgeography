@@ -8,28 +8,22 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef MAPWIDGET_H
-#define MAPWIDGET_H
+#include <qlabel.h>
 
-#include <qwidget.h>
-
-class mapWidget : public QWidget
+#include "mypopup.h"
+ 
+myPopup::myPopup(QString text, const QPoint &p, QWidget *parent) : QHBox(parent, 0, WStyle_NoBorder)
 {
-Q_OBJECT
-	public:
-		mapWidget(QWidget *parent);
-		~mapWidget();
+	QLabel *l = new QLabel(text, this);
+	l -> setAlignment(Qt::AlignCenter);
+	move(p);
+	setFrameStyle(QFrame::Box | QFrame::Plain);
+	setLineWidth(2);
+	setFixedSize(l -> sizeHint() + QSize(5, 5));
+	show();
+}
 
-		void setMapImage(const QString &path);
-	
-	signals:
-		void clicked(QRgb, const QPoint&);
-	
-	protected:
-		void mousePressEvent(QMouseEvent *e);
-	
-	private:
-		QImage *p_image;
-};
-
-#endif
+void myPopup::mousePressEvent(QMouseEvent *)
+{
+	emit deleteMe();
+}
