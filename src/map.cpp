@@ -114,8 +114,8 @@ QString map::getWhatIs(QRgb c, bool all) const
 	if (it == p_colorMap.end()) return "nothing";
 	else 
 	{
-		if (all) return i18n(it.data() -> getName());
-		else if (it.data() -> canAsk()) return i18n(it.data() -> getName());
+		if (all) return it.data() -> getName();
+		else if (it.data() -> canAsk()) return it.data() -> getName();
 		else return "";
 	}
 }
