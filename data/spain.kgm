@@ -1,5 +1,5 @@
 <map>
-	<file>spain.png</file>
+	<mapFile>spain.png</mapFile>
 	<name>Spain</name>
 	<division>
 		<name>Not Spain</name>

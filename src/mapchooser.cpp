@@ -33,9 +33,12 @@ mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Cho
 		{
 			KMessageBox::error(this, i18n("Error parsing %1: %2").arg(*it).arg(p_reader.getError()));
 		}
-		m = p_reader.getMap();
-		p_listBox -> insertItem(m -> getName());
-		p_maps.insert(m -> getName(), m);
+		else
+		{
+			m = p_reader.getMap();
+			p_listBox -> insertItem(m -> getName());
+			p_maps.insert(m -> getName(), m);
+		}
 	}
 	p_image = new QWidget(hb);
 	p_image -> setFixedSize(300, 225);
@@ -63,7 +66,7 @@ void mapChooser::putImage(const QString &mapName)
 {
 	map *m;
 	m = p_maps[mapName];
-	p_image -> setPaletteBackgroundPixmap(QImage(m -> getFile()).scale(300, 225));
+	p_image -> setPaletteBackgroundPixmap(QImage(m -> getMapFile()).scale(300, 225));
 }
 
 #include "mapchooser.moc"

@@ -1,5 +1,5 @@
 <map>
-	<file>europe.png</file>
+	<mapFile>europe.png</mapFile>
 	<name>Europe</name>
 	<division>
 		<name>Water</name>

@@ -14,6 +14,7 @@
 #include <kstdaction.h>
 
 #include "kgeography.h"
+#include "settings.h"
 #include "mapchooser.h"
 #include "mapparser.h"
 #include "mapwidget.h"
@@ -21,6 +22,8 @@
 
 kgeography::kgeography() : KMainWindow(), p_popupManager(this)
 {
+	QString file;
+	
 	p_map = 0;
 	p_mapWidget = new mapWidget(this);
 	setCentralWidget(p_mapWidget);
@@ -33,6 +36,22 @@ kgeography::kgeography() : KMainWindow(), p_popupManager(this)
 	connect(p_mapWidget, SIGNAL(clicked(QRgb, const QPoint&)), this, SLOT(handleMapClick(QRgb, const QPoint&)));
 	createGUI();
 	show();
+	
+	file = kgeographySettings::self() -> lastMap();
+	if (QFile::exists(file))
+	{
+		mapReader reader;
+		if (reader.parseMap(file))
+		{
+			setMap(reader.getMap());
+		}
+		else
+		{
+			KMessageBox::error(this, i18n("Could not open last saved map. Error parsing %1: %2").arg(file).arg(reader.getError()));
+			openMap();
+		}
+	}
+	else openMap();
 }
 
 kgeography::~kgeography()
@@ -47,9 +66,7 @@ void kgeography::openMap()
 	{
 		delete p_map;
 		p_popupManager.clear();
-		p_map = mp.getMap();
-		p_mapWidget -> setMapImage(p_map -> getFile());
-		consult();
+		setMap(mp.getMap());
 	}
 }
 
@@ -118,6 +135,16 @@ void kgeography::nextDivision()
 		p_asked << aux;
 		KMessageBox::information(this, i18n("You must click on %1").arg(aux));
 	}
+}
+
+void kgeography::setMap(map *m)
+{
+	kgeographySettings *set = kgeographySettings::self();
+	set -> setLastMap(m -> getFile());
+	set -> writeConfig();
+	p_map = m;
+	p_mapWidget -> setMapImage(p_map -> getMapFile());
+	consult();
 }
 
 #include "kgeography.moc"

@@ -41,6 +41,7 @@ Q_OBJECT
 	
 	private:
 		void nextDivision();
+		void setMap(map *m);
 	
 		mapWidget *p_mapWidget;
 		KToggleAction *p_consult, *p_question;

@@ -25,11 +25,13 @@ class map
 		bool addDivision(division *d);
 		
 		void setFile(const QString &s);
+		void setMapFile(const QString &s);
 		void setName(const QString &s);
 		
 		// return the number of askable divisions
 		uint count() const;
 		QString getFile() const;
+		QString getMapFile() const;
 		QString getName() const;
 		QString getRandomDivision() const;
 		QString getWhatIs(QRgb c, bool all) const;
@@ -39,7 +41,7 @@ class map
 		QMap<QString, division*> p_nameMap;
 		uint p_count;
 		
-		QString p_name, p_file;
+		QString p_name, p_file, p_mapFile;
 };
 
 #endif

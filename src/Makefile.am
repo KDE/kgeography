@@ -15,7 +15,7 @@ kgeography_LDADD = -lkdeui
 
 # which sources should be compiled for kgeography
 kgeography_SOURCES = main.cpp mapwidget.cpp division.cpp map.cpp mapparser.cpp kgeography.cpp mapchooser.cpp mypopup.cpp \
-		     popupmanager.cpp
+		     popupmanager.cpp settings.kcfgc
 
 # let automoc handle all of the meta source files (moc)
 METASOURCES = AUTO
@@ -27,7 +27,7 @@ messages: rc.cpp
 #kdelnkdir   = $(kde_appsdir)/Games
 #kdelnk_DATA = kgeography.desktop
 
-#kde_kcfg_DATA = kgeography.kcfg
+kde_kcfg_DATA = kgeography.kcfg
 
 # this is where the XML-GUI resource file goes
 rcdir = $(kde_datadir)/kgeography

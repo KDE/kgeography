@@ -23,6 +23,7 @@ bool mapReader::parseMap(QString path)
 {
 	QString aux;
 	p_map = new map();
+	p_map -> setFile(path);
 	aux = path.left(path.findRev('/') + 1); // aux = path but without the file name
 	mapParser handler(p_map, aux);
 	QFile xmlFile(path);
@@ -75,7 +76,7 @@ bool mapParser::startElement(const QString&, const QString &name, const QString&
 	}
 	else if (aux == "map")
 	{
-		b = (name == "file" && !p_mapFileSet) || (name == "name" && !p_mapNameSet) || (name == "division");
+		b = (name == "mapFile" && !p_mapFileSet) || (name == "name" && !p_mapNameSet) || (name == "division");
 		p_colorSet = false;
 		if (name == "division")
 		{
@@ -84,7 +85,7 @@ bool mapParser::startElement(const QString&, const QString &name, const QString&
 			p_division = new division();
 		}
 	}
-	else if (aux == "file" || aux == "name" || aux == "red" || aux == "green" || aux == "blue" ||
+	else if (aux == "mapFile" || aux == "name" || aux == "red" || aux == "green" || aux == "blue" ||
 			aux == "ignore")
 	{
 		b = false;
@@ -117,9 +118,9 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 		p_map -> setName(p_contents);
 		p_mapNameSet = true;
 	}
-	else if (p_previousTags == ":map:file")
+	else if (p_previousTags == ":map:mapFile")
 	{
-		p_map -> setFile(p_path + p_contents);
+		p_map -> setMapFile(p_path + p_contents);
 		p_mapFileSet = true;
 	}
 	else if (aux == "division")
@@ -190,7 +191,7 @@ bool mapParser::characters(const QString &ch)
 	QString aux;
 	if (ch.simplifyWhiteSpace().length() == 0) return true;
 	aux = getPreviousTag();
-	if (aux == "file" || aux == "name" || aux == "red" || aux == "green" || aux == "blue" || aux == "ignore")
+	if (aux == "mapFile" || aux == "name" || aux == "red" || aux == "green" || aux == "blue" || aux == "ignore")
 	{
 		p_contents += ch;
 		return true;
@@ -207,7 +208,7 @@ bool mapParser::endDocument()
 		return true;
 	}
 	else if (!p_mapNameSet) aux = "name";
-	else if (!p_mapFileSet) aux = "file";
+	else if (!p_mapFileSet) aux = "mapFile";
 	p_error = i18n("Tag %1 is missing.").arg(aux);
 	return false;
 }

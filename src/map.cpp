@@ -53,6 +53,11 @@ void map::setFile(const QString &s)
 	p_file = s;
 }
 
+void map::setMapFile(const QString &s)
+{
+	p_mapFile = s;
+}
+
 void map::setName(const QString &s)
 {
 	p_name = s;
@@ -66,6 +71,11 @@ uint map::count() const
 QString map::getFile() const
 {
 	return p_file;
+}
+
+QString map::getMapFile() const
+{
+	return p_mapFile;
 }
 
 QString map::getName() const
