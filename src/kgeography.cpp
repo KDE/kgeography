@@ -73,7 +73,12 @@ kgeography::kgeography() : KMainWindow()
 	
 	file = kgeographySettings::self() -> lastMap();
 	
+#if KDE_IS_VERSION(3,2,90)
 	setupGUI(Keys | ToolBar | Save | Create);
+#else
+	createGUI();
+#endif
+	
 	
 	if (QFile::exists(file))
 	{
