@@ -142,10 +142,11 @@ void mapWidget::mouseMoveEvent(QMouseEvent *e)
 		if (p_zoomY < 0) p_zoomY = 0;
 		if (p_zoomX > oW - width() * p_lastFactorX) p_zoomX = (int)rint(oW - width() * p_lastFactorX);
 		if (p_zoomY > oH - height() * p_lastFactorY) p_zoomY = (int)rint(oH - height() * p_lastFactorY);
-		emit updatePosition(p_zoomX, p_zoomY);
+		
+		p_initial = e -> pos();
 		
 		updateShownImage();
-		p_initial = e -> pos();
+		emit updatePosition(p_zoomX, p_zoomY);
 	}
 }
 
@@ -216,14 +217,11 @@ void mapWidget::mouseReleaseEvent(QMouseEvent *e)
 
 void mapWidget::resizeEvent(QResizeEvent *e)
 {
-	int maxX, maxY;
-
 	p_zoomW = (int)rint(e -> size().width() * p_lastFactorX);
 	p_zoomH = (int)rint(e -> size().height() * p_lastFactorY);
+	
 	emit updateVisibleSize(p_zoomW, p_zoomH);
-	
 	updateShownImage();
-	
 	emitMoveActionEnabled();
 }
 
@@ -248,12 +246,12 @@ QImage *mapWidget::getCurrentImage()
 void mapWidget::setOriginalImage()
 {
 	setPaletteBackgroundPixmap(p_originalImage);
+	erase();
 	p_zoomedImageShown = QImage();
 	p_lastFactorX = 1;
 	p_lastFactorY = 1;
 	p_zoomX = 0;
 	p_zoomY = 0;
-	emit updatePosition(0, 0);
 	
 	if (p_zoomH != 0 && p_zoomW != 0)
 	{
@@ -262,6 +260,13 @@ void mapWidget::setOriginalImage()
 		p_zoomH = height();
 	}
 	
+	p_oldZoomX = p_zoomX;
+	p_oldZoomY = p_zoomY;
+	p_oldZoomW = p_zoomW;
+	p_oldZoomH = p_zoomH;
+	p_oldSize = size();
+	
+	emit updatePosition(0, 0);
 	emit updateVisibleSize(p_zoomW, p_zoomH);
 	setMaximumSize(p_originalImage.size());
 	emitMoveActionEnabled();
@@ -269,10 +274,18 @@ void mapWidget::setOriginalImage()
 
 void mapWidget::updateShownImage()
 {
-	p_zoomedImageShown = p_originalImage.copy(p_zoomX, p_zoomY, p_zoomW, p_zoomH);
-	p_zoomedImageShown = p_zoomedImageShown.scale(size());
-	setPaletteBackgroundPixmap(p_zoomedImageShown);
-	kapp -> processEvents();
+	if (p_oldZoomX != p_zoomX || p_oldZoomY != p_zoomY || p_oldZoomW != p_zoomW || p_oldZoomH != p_zoomH || size() != p_oldSize)
+	{
+		p_zoomedImageShown = p_originalImage.copy(p_zoomX, p_zoomY, p_zoomW, p_zoomH);
+		p_zoomedImageShown = p_zoomedImageShown.scale(size());
+		setPaletteBackgroundPixmap(p_zoomedImageShown);
+		erase();
+		p_oldZoomX = p_zoomX;
+		p_oldZoomY = p_zoomY;
+		p_oldZoomW = p_zoomW;
+		p_oldZoomH = p_zoomH;
+		p_oldSize = size();
+	}
 }
 
 #include "mapwidget.moc"

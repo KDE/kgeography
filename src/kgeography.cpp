@@ -10,6 +10,7 @@
 
 #include <kaction.h>
 #include <kdeversion.h>
+#include <kdialog.h>
 #include <klocale.h>
 #include <kinputdialog.h>
 #include <kmessagebox.h>
@@ -40,19 +41,19 @@ kgeography::kgeography() : KMainWindow()
 	
 	p_bigWidget = new QHBox(this);
 	
-	p_rightWidget = new QVBox(p_bigWidget);
-	p_currentMap = new QLabel(p_rightWidget);
+	QVBox *p_leftWidget = new QVBox(p_bigWidget);
+	p_currentMap = new QLabel(p_leftWidget);
 	p_currentMap -> setAlignment(AlignCenter);
-	p_consult = new KPushButton(i18n("&Browse the map"), p_rightWidget);
-	p_askMap = new KPushButton(i18n("&Click division in the map"), p_rightWidget);
-	p_askCapitalDivisions = new KPushButton(i18n("Guess division from its &capital"), p_rightWidget);
-	p_askDivisionCapitals = new KPushButton(i18n("Guess the capital of a &division"), p_rightWidget);
-	p_askFlagDivisions = new KPushButton(i18n("&Guess division from its flag"), p_rightWidget);
-	p_askDivisionFlags = new KPushButton(i18n("G&uess the flag of a division"), p_rightWidget);
-	p_underRightWidget = new QVBox(p_rightWidget);
-	p_underRightWidget -> layout() -> setMargin(10);
-	p_underRightWidget -> layout() -> setSpacing(10);
-	p_rightWidget -> setStretchFactor(p_underRightWidget, 1);
+	p_consult = new KPushButton(i18n("&Browse the map"), p_leftWidget);
+	p_askMap = new KPushButton(i18n("&Click division in the map"), p_leftWidget);
+	p_askCapitalDivisions = new KPushButton(i18n("Guess division from its &capital"), p_leftWidget);
+	p_askDivisionCapitals = new KPushButton(i18n("Guess the capital of a &division"), p_leftWidget);
+	p_askFlagDivisions = new KPushButton(i18n("&Guess division from its flag"), p_leftWidget);
+	p_askDivisionFlags = new KPushButton(i18n("G&uess the flag of a division"), p_leftWidget);
+	p_underLeftWidget = new QVBox(p_leftWidget);
+	p_underLeftWidget -> layout() -> setSpacing(KDialog::spacingHint());
+	p_underLeftWidget -> layout() -> setMargin(KDialog::marginHint());
+	p_leftWidget -> setStretchFactor(p_underLeftWidget, 1);
 	
 	setCentralWidget(p_bigWidget);
 	
@@ -130,7 +131,7 @@ void kgeography::openMap()
 void kgeography::consult()
 {
 	removeOldAskWidget();
-	p_askWidget = new mapAsker(p_bigWidget, p_map, p_underRightWidget, false);
+	p_askWidget = new mapAsker(p_bigWidget, p_map, p_underLeftWidget, false);
 	p_zoom -> setEnabled(true);
 	putAskWidget();
 }
@@ -144,7 +145,7 @@ void kgeography::askCapitalDivisions()
 	if (ok)
 	{
 		removeOldAskWidget();
-		p_askWidget = new capitalDivisionAsker(p_bigWidget, p_map, p_underRightWidget, i);
+		p_askWidget = new capitalDivisionAsker(p_bigWidget, p_map, p_underLeftWidget, i);
 		putAskWidget();
 	}
 	else consult();
@@ -159,7 +160,7 @@ void kgeography::askDivisionCapitals()
 	if (ok)
 	{
 		removeOldAskWidget();
-		p_askWidget = new divisionCapitalAsker(p_bigWidget, p_map, p_underRightWidget, i);
+		p_askWidget = new divisionCapitalAsker(p_bigWidget, p_map, p_underLeftWidget, i);
 		putAskWidget();
 	}
 	else consult();
@@ -174,7 +175,7 @@ void kgeography::askMap()
 	if (ok)
 	{
 		removeOldAskWidget();
-		p_askWidget = new mapAsker(p_bigWidget, p_map, p_underRightWidget, true, i);
+		p_askWidget = new mapAsker(p_bigWidget, p_map, p_underLeftWidget, true, i);
 		p_zoom -> setEnabled(true);
 		putAskWidget();
 	}
@@ -190,7 +191,7 @@ void kgeography::askFlagDivisions()
 	if (ok)
 	{
 		removeOldAskWidget();
-		p_askWidget = new flagDivisionAsker(p_bigWidget, p_map, p_underRightWidget, i);
+		p_askWidget = new flagDivisionAsker(p_bigWidget, p_map, p_underLeftWidget, i);
 		putAskWidget();
 	}
 	else consult();
@@ -205,7 +206,7 @@ void kgeography::askDivisionFlags()
 	if (ok)
 	{
 		removeOldAskWidget();
-		p_askWidget = new divisionFlagAsker(p_bigWidget, p_map, p_underRightWidget, i);
+		p_askWidget = new divisionFlagAsker(p_bigWidget, p_map, p_underLeftWidget, i);
 		putAskWidget();
 	}
 	else consult();

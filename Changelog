@@ -1,71 +1,86 @@
-2004-18-07  Albert Astals Cid  <tsdgeos@terra.es>
+2004-29-07 Albert Astals Cid <tsdgeos@terra.es>
+	* RightWidget is really LeftWidget ¬.¬
+	* There is no need to store p_rightWidget as a class member
+	* Bump version to 0.2.1
+	* Improve layouting of mapasker
+	* Make the scrollbar work also when clicking on the arrows
+(sliderMoved -> valueChanged)
+	* Fix resizing bug in mapWidget that showed a inexistant part of the
+map when making the widget bigger and the toolbars were at their maximum
+	* Remove ugly kapp->processEvents()
+	* Skip scaling and painting of the map when the function that draws the
+map gets called with the same values as it was called the last time
+
+2004-27-07 Albert Astals Cid <tsdgeos@terra.es>
+	* Release version 0.2
+
+2004-18-07 Albert Astals Cid  <tsdgeos@terra.es>
 	* Add scrollbars to the map (if needed)
 
-2004-08-05  Albert Astals Cid  <tsdgeos@terra.es>
+2004-08-05 Albert Astals Cid  <tsdgeos@terra.es>
 	* Layout change
 	* Unify some of the code in boxasker and mapasker to askwidget
 	* Zoom now is much more memory efficient (at cost of cpu efficiency)
 
-2004-06-05  Albert Astals Cid  <tsdgeos@terra.es>
+2004-06-05 Albert Astals Cid  <tsdgeos@terra.es>
 	* Zoom and Move actions should be unchecked and disabled when going to main menu
 	* Don't enable scrolling mode for extreme zooms as it needed too much
 memory 
 	* Add scrolling to zoom mode
 
-2004-05-25  Albert Astals Cid  <tsdgeos@terra.es>
+2004-05-25 Albert Astals Cid  <tsdgeos@terra.es>
 	* Unify Bahamas and The Bahamas -> The Bahamas
 	* Add germany map (by Yann Verley)
 
-2004-05-23  Albert Astals Cid  <tsdgeos@terra.es>
+2004-05-23 Albert Astals Cid  <tsdgeos@terra.es>
 	* Correct North and central America map
 
-2004-05-22  Albert Astals Cid  <tsdgeos@terra.es>
+2004-05-22 Albert Astals Cid  <tsdgeos@terra.es>
 	* Add North and central America map (by Justin Morgan)
 
-2004-05-19  Albert Astals Cid  <tsdgeos@terra.es>
+2004-05-19 Albert Astals Cid  <tsdgeos@terra.es>
 	* Make zoom mode not zoom inexistant map parts when the user places
 the mouse outside the widget when selecting
 
-2004-05-16  Albert Astals Cid  <tsdgeos@terra.es>
+2004-05-16 Albert Astals Cid  <tsdgeos@terra.es>
 	* Add USA states map (by Yann Verley)
 
-2004-05-15  Albert Astals Cid  <tsdgeos@terra.es>
+2004-05-15 Albert Astals Cid  <tsdgeos@terra.es>
 	* Sort map chooser list entries
 	* Mantain aspect ratio of map images in map chooser
 	* Use smoothScale instead of scale in map chooser images
 
-2004-05-14  Albert Astals Cid  <tsdgeos@terra.es>
+2004-05-14 Albert Astals Cid  <tsdgeos@terra.es>
 	* Zoom available in map mode, possibly needs a BIG tooltip on how to
 use.
 
-2004-05-12  Albert Astals Cid  <tsdgeos@terra.es>
+2004-05-12 Albert Astals Cid  <tsdgeos@terra.es>
 	* Add a perl script for helping in the map creation task (by Yann
 Verley)
 
-2004-05-11  Albert Astals Cid  <tsdgeos@terra.es>
+2004-05-11 Albert Astals Cid  <tsdgeos@terra.es>
 	* In map browsing mode show DivisionName (CapitalDivisionName)
 	* Add France map (by Yann Verley)
 
-2004-05-09  Albert Astals Cid  <tsdgeos@terra.es>
+2004-05-09 Albert Astals Cid  <tsdgeos@terra.es>
 	* Add Division -> flag asker
 
-2004-05-08  Albert Astals Cid  <tsdgeos@terra.es>
+2004-05-08 Albert Astals Cid  <tsdgeos@terra.es>
 	* Add Division -> Capital asker
 	* Create boxasker abstract base class that has most of the code that
 previously was repeated at capitaldivisionasker.cpp divisioncapitalasker.cpp
 and flagdivisionasker.cpp
 
-2004-05-08  Albert Astals Cid  <tsdgeos@terra.es>
+2004-05-08 Albert Astals Cid  <tsdgeos@terra.es>
 	* Add Capital -> Division asker
 	* Privatize a method
 
-2004-05-06  Albert Astals Cid  <tsdgeos@terra.es>
+2004-05-06 Albert Astals Cid  <tsdgeos@terra.es>
 	* Fix gcc 3.4 compile error
 	* Add capitals for africa map
 	* Add capitals for spain autonomies map
 
-2004-05-05  Albert Astals Cid  <tsdgeos@terra.es>
-
+2004-05-05 Albert Astals Cid  <tsdgeos@terra.es>
 	* Add KGeography's webpage url to about box
 	* Update TODO file
 	* Increase version number to 0.2

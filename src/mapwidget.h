@@ -55,9 +55,12 @@ Q_OBJECT
 		
 		QImage p_originalImage, p_zoomedImageShown;
 		bool p_zooming, p_wantZoom, p_moving, p_wantMove;
-		QPoint p_initial, p_prev; /* rubberbanding and moving */
+		QPoint p_initial, p_prev; // rubberbanding and moving
 		int p_zoomX, p_zoomY, p_zoomW, p_zoomH;
 		double p_lastFactorX, p_lastFactorY;
+		// useful to not do that many updateShownImage
+		QSize p_oldSize;
+		int p_oldZoomX, p_oldZoomY, p_oldZoomW, p_oldZoomH;
 };
 
 #endif

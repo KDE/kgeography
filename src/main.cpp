@@ -16,7 +16,7 @@
 
 int main(int argc, char *argv[])
 {
-	KAboutData about("kgeography", I18N_NOOP("KGeography"), "0.2", I18N_NOOP("A geography learning program"), KAboutData::License_GPL, 0, 0, "http://kgeography.berlios.de", "tsdgeos@terra.es");
+	KAboutData about("kgeography", I18N_NOOP("KGeography"), "0.2.1", I18N_NOOP("A geography learning program"), KAboutData::License_GPL, 0, 0, "http://kgeography.berlios.de", "tsdgeos@terra.es");
 	about.addAuthor("Albert Astals Cid", I18N_NOOP("Programmer and designer"), "tsdgeos@terra.es");
 	about.addAuthor("Yann Verley", I18N_NOOP("Contributed some maps and map generation tools"), "yann.verley@free.fr");
 	about.addAuthor("Justin Morgan", I18N_NOOP("Contributed North and Central America map"));

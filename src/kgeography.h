@@ -47,8 +47,7 @@ Q_OBJECT
 		void setMap(map *m);
 		
 		QHBox *p_bigWidget;
-		QVBox *p_rightWidget;
-		QWidget *p_underRightWidget;
+		QVBox *p_underLeftWidget;
 		
 		KPushButton *p_consult;
 		KPushButton *p_askCapitalDivisions;

@@ -26,6 +26,7 @@ class mapAsker : public askWidget
 Q_OBJECT
 	public:
 		mapAsker(QWidget *parent, map *m, QWidget *w, bool asker, uint count = 0);
+		~mapAsker();
 	
 	protected:
 		void clean();

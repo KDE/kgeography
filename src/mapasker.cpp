@@ -31,6 +31,9 @@ mapAsker::mapAsker(QWidget *parent, map *m, QWidget *w, bool asker, uint count) 
 	p_vsb = new QScrollBar(Vertical, this);
 	lay -> addWidget(p_vsb, 0, 1);
 	
+	lay -> setRowStretch(2, 1);
+	lay -> setColStretch(2, 1);
+	
 	p_shouldClearPopup = false;
 	
 	connect(p_mapWidget, SIGNAL(clicked(QRgb, const QPoint&)), this, SLOT(handleMapClick(QRgb, const QPoint&)));
@@ -42,18 +45,26 @@ mapAsker::mapAsker(QWidget *parent, map *m, QWidget *w, bool asker, uint count) 
 	connect(p_mapWidget, SIGNAL(updateVisibleSize(int, int)), this, SLOT(setScrollBarsVisibleSize(int, int)));
 	connect(p_mapWidget, SIGNAL(updateMaximumSize(int, int)), this, SLOT(setScrollBarsMaximumSize(int, int)));
 	
-	connect(p_hsb, SIGNAL(sliderMoved(int)), p_mapWidget, SLOT(updateHPosition(int)));
-	connect(p_vsb, SIGNAL(sliderMoved(int)), p_mapWidget, SLOT(updateVPosition(int)));
+	connect(p_hsb, SIGNAL(valueChanged(int)), p_mapWidget, SLOT(updateHPosition(int)));
+	connect(p_vsb, SIGNAL(valueChanged(int)), p_mapWidget, SLOT(updateVPosition(int)));
 	
 	p_mapWidget -> init(p_map -> getMapFile());
 	 
 	if (asker)
 	{
+		QBoxLayout *vbl = dynamic_cast<QBoxLayout*>(w -> layout());
 		p_next = new QLabel(w);
 		p_next -> setAlignment(AlignTop | AlignHCenter);
 		p_next -> show();
+		vbl -> addStretch();
 		nextQuestion();
 	}
+	else p_next = 0;
+}
+
+mapAsker::~mapAsker()
+{
+	delete p_next;
 }
 
 void mapAsker::clean()
