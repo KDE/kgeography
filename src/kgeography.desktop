@@ -2,7 +2,9 @@
 Encoding=UTF-8
 Name=KGeography
 Name[sv]=Kgeografi
+Name[tr]=KCoğrafya
 Name[xx]=xxKGeographyxx
+Comment=A Geography Learning Program
 Exec=kgeography
 Icon=kgeography
 Type=Application
