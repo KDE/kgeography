@@ -13,17 +13,14 @@
 
 #include <kmainwindow.h>
 
-#include "popupmanager.h"
+class KPushButton;
+class KAction;
 
-class KToggleAction;
+class QLabel;
+class QWidgetStack;
 
-class QVBox;
-
-class flagDivisionAsker;
-class infoWidget;
 class map;
-class mapWidget;
-class myPopup;
+class askWidget;
 
 class kgeography : public KMainWindow
 {
@@ -33,33 +30,30 @@ Q_OBJECT
 		~kgeography();
 	
 	private slots:
+		void goToMenu();
+	
 		void openMap();
 	
 		void consult();
-		void questionMap();
-		void questionFlagDivision();
+		void askMap();
+		void askFlags();
 		
-		void handleMapClick(QRgb c, const QPoint &p);
-	
-	protected:
-		void mousePressEvent(QMouseEvent *e);
-	
+		void putMenu();
+		
 	private:
-		void nextDivision();
+		void putAskWidget();
 		void setMap(map *m);
 		
-		QVBox *p_holder;
-	
-		infoWidget *p_infoWidget;
-		mapWidget *p_mapWidget;
-		flagDivisionAsker *p_flagDivisionAsker;
-		KToggleAction *p_consult, *p_questionMap, *p_questionFlagDivision;
-		map *p_map;
-		popupManager p_popupManager;
+		QWidgetStack *p_stack;
 		
-		// the list of asked divisions
-		QStringList p_asked;
-		bool p_shouldClearPopup;
+		KPushButton *p_consult;
+		KPushButton *p_askMap;
+		KPushButton *p_askFlags;
+		KAction *p_goToMenu;
+		QLabel *p_currentMap;
+	
+		map *p_map;
+		askWidget *p_askWidget;
 };
 
 #endif

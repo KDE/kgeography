@@ -14,7 +14,7 @@ kgeography_LDFLAGS = $(all_libraries) $(KDE_RPATH)
 kgeography_LDADD = -lkdeui
 
 # which sources should be compiled for kgeography
-kgeography_SOURCES = main.cpp mapwidget.cpp division.cpp map.cpp mapparser.cpp kgeography.cpp mapchooser.cpp mypopup.cpp 		     popupmanager.cpp settings.kcfgc infowidget.cpp flagdivisionasker.cpp
+kgeography_SOURCES = main.cpp mapwidget.cpp division.cpp map.cpp mapparser.cpp kgeography.cpp mapchooser.cpp mypopup.cpp 		     popupmanager.cpp settings.kcfgc infowidget.cpp flagdivisionasker.cpp askwidget.cpp mapasker.cpp
 
 # let automoc handle all of the meta source files (moc)
 METASOURCES = AUTO
@@ -37,4 +37,4 @@ debug: kgeography
 
 valgrind: kgeography
 	valgrind --tool=memcheck --leak-check=yes ./kgeography
-noinst_HEADERS =  flagdivisionasker.h
+noinst_HEADERS = flagdivisionasker.h askwidget.h mapasker.h

@@ -26,6 +26,7 @@ class infoWidget : public QHBox
 		void setNext(QString text);
 		void addResult(bool correct);
 		int getCorrect() const;
+		int getTotal() const;
 	
 	private:
 		QLabel *p_name, *p_next, *p_guesses;

@@ -3,14 +3,9 @@
 	<MenuBar>
 		<Menu name="file">
 			<Action name="openMap" />
+			<Action name="goToMenu" />
 			<Separator />
 			<Action name="quit" />
-		</Menu>
-		<Menu name="mode">
-			<text>&amp;Mode</text>
-			<Action name="consult" />
-			<Action name="questionMap" />
-			<Action name="questionFlagDivision" />
 		</Menu>
 	</MenuBar>
 </kpartgui>

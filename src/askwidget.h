@@ -8,45 +8,34 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef FLAGDIVISIONASKER_H
-#define FLAGDIVISIONASKER_H
+#ifndef ASKWIDGET_H
+#define ASKWIDGET_H
 
-#include "askwidget.h"
-
-class KPushButton;
-
-class QImage;
-class QRadioButton;
-class QStringList;
+#include <qwidget.h>
 
 class map;
 
-class flagDivisionAsker : public askWidget
+class askWidget : public QWidget
 {
 Q_OBJECT
 	public:
-		flagDivisionAsker(QWidget *parent, map *m, uint count);
-		
-		void nextFlag();
+		askWidget(QWidget *parent, map *m, uint count);
+		virtual ~askWidget();
 	
 	public slots:
-		void goToMenu();
-		
-	private slots:
-		void checkAnswer();
-		void init();
+		virtual void goToMenu() = 0;
 	
-	private:
-		void showAnswersMessageBox();
+	signals:
+		void finished();
 	
-		QWidget *p_flag;
-		QRadioButton **p_rb;
-		KPushButton *p_accept;
+	protected:
+		map *p_map;
 		
-		// the position the correct answer is in
-		int p_position;
+		// the list of asked divisions
+		QStringList p_asked;
 		
-		int p_correctAnswers, p_incorrectAnswers;
+		// the number of questions to do
+		uint p_count;
 };
 
 #endif

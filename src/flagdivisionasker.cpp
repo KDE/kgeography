@@ -25,8 +25,10 @@
 #include "flagdivisionasker.h"
 #include "map.h"
 
-flagDivisionAsker::flagDivisionAsker(QWidget *parent, map *m) : QVBox(parent)
+flagDivisionAsker::flagDivisionAsker(QWidget *parent, map *m, uint count) : askWidget(parent, m, count)
 {
+	QVBoxLayout *lay = new QVBoxLayout(this);
+	
 	p_flag = new QWidget(this);
 	QVButtonGroup *bg = new QVButtonGroup(i18n("That flag belongs to:"), this);
 	p_rb = new (QRadioButton*)[4];
@@ -35,9 +37,10 @@ flagDivisionAsker::flagDivisionAsker(QWidget *parent, map *m) : QVBox(parent)
 	p_rb[2] = new QRadioButton(bg);
 	p_rb[3] = new QRadioButton(bg);
 	p_accept = new KPushButton(this);
-	setStretchFactor(bg, 1);
-
-	p_map = m;
+	
+	lay -> addWidget(p_flag, 0);
+	lay -> addWidget(bg, 1);
+	lay -> addWidget(p_accept, 0);
 	
 	init();
 }
@@ -50,7 +53,7 @@ void flagDivisionAsker::nextFlag()
 	
 	for (i = 0; i < 4; i++) p_rb[i] -> setChecked(false);
 	
-	if (p_asked.count() < p_map -> count())
+	if (p_asked.count() < p_count)
 	{
 		// aux is the division we ask for
 		aux = p_map -> getRandomDivision();
@@ -87,14 +90,21 @@ void flagDivisionAsker::nextFlag()
 		p_accept -> disconnect();
 		connect(p_accept, SIGNAL(clicked()), this, SLOT(init()));
 		
-		KMessageBox::information(this, i18n("You have answered correctly %1 of %2 questions").arg(p_correctAnswers).arg(p_correctAnswers + p_incorrectAnswers));
+		showAnswersMessageBox();
 	}
+}
+
+void flagDivisionAsker::goToMenu()
+{
+	showAnswersMessageBox();
+	emit finished();
 }
 
 void flagDivisionAsker::checkAnswer()
 {
 	bool any, correct;
-	
+
+	correct = false;	
 	any = false;
 	for (int i = 0; i < 4; i++)
 	{
@@ -124,6 +134,11 @@ void flagDivisionAsker::init()
 	
 	p_accept -> disconnect();
 	connect(p_accept, SIGNAL(clicked()), this, SLOT(checkAnswer()));
+}
+
+void flagDivisionAsker::showAnswersMessageBox()
+{
+	KMessageBox::information(this, i18n("You have answered correctly %1 of %2 questions").arg(p_correctAnswers).arg(p_correctAnswers + p_incorrectAnswers));
 }
 
 #include "flagdivisionasker.moc"

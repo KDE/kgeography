@@ -8,45 +8,41 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef FLAGDIVISIONASKER_H
-#define FLAGDIVISIONASKER_H
+#ifndef MAPASKER_H
+#define MAPASKER_H
 
 #include "askwidget.h"
+#include "popupmanager.h"
 
-class KPushButton;
+class flagDivisionAsker;
+class infoWidget;
+class mapWidget;
 
-class QImage;
-class QRadioButton;
-class QStringList;
-
-class map;
-
-class flagDivisionAsker : public askWidget
+class mapAsker : public askWidget
 {
 Q_OBJECT
 	public:
-		flagDivisionAsker(QWidget *parent, map *m, uint count);
-		
-		void nextFlag();
+		mapAsker(QWidget *parent, map *m, bool asker, uint count = 0);
+	
+	protected:
+		void mousePressEvent(QMouseEvent *e);
+
 	
 	public slots:
 		void goToMenu();
-		
+	
 	private slots:
-		void checkAnswer();
-		void init();
+		void handleMapClick(QRgb c, const QPoint &p);
 	
 	private:
-		void showAnswersMessageBox();
+		void nextDivision();	
 	
-		QWidget *p_flag;
-		QRadioButton **p_rb;
-		KPushButton *p_accept;
+		infoWidget *p_infoWidget;
+		mapWidget *p_mapWidget;
 		
-		// the position the correct answer is in
-		int p_position;
-		
-		int p_correctAnswers, p_incorrectAnswers;
+		popupManager p_popupManager;
+		bool p_shouldClearPopup, p_asker;
+
 };
 
 #endif

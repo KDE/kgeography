@@ -10,40 +10,52 @@
 
 #include <kaction.h>
 #include <klocale.h>
+#include <kinputdialog.h>
 #include <kmessagebox.h>
+#include <kpushbutton.h>
 #include <kstdaction.h>
 
+#include <qlabel.h>
 #include <qsizepolicy.h> 
 #include <qvbox.h>
+#include <qwidgetstack.h>
 
 #include "flagdivisionasker.h"
 #include "kgeography.h"
 #include "settings.h"
+#include "mapasker.h"
 #include "mapchooser.h"
-#include "infowidget.h"
 #include "mapparser.h"
-#include "mapwidget.h"
 #include "map.h"
 
-kgeography::kgeography() : KMainWindow(), p_popupManager(this)
+kgeography::kgeography() : KMainWindow()
 {
 	QString file;
 	
 	p_map = 0;
-	p_shouldClearPopup = false;
+	p_askWidget = 0;
 	
-	p_holder = new QVBox(this);
-	p_mapWidget = new mapWidget(p_holder);
-	p_infoWidget = new infoWidget(p_holder);
-	setCentralWidget(p_holder);
+	p_stack = new QWidgetStack(this);
+	QVBox *holder = new QVBox(p_stack);
+	p_stack -> addWidget(holder, 0);
+	p_currentMap = new QLabel(holder);
+	p_currentMap -> setAlignment(AlignCenter);
+	p_consult = new KPushButton(i18n("&Browse the map"), holder);
+	p_askMap = new KPushButton(i18n("&Click division in the map"), holder);
+	p_askFlags = new KPushButton(i18n("&Guess division from its flag"), holder);
+	
+	p_goToMenu = new KAction(i18n("&Go to menu"), 0, this, SLOT(goToMenu()), actionCollection(), "goToMenu");
+	p_goToMenu -> setEnabled(false);
+	
+	connect(p_consult, SIGNAL(clicked()), this, SLOT(consult()));
+	connect(p_askMap, SIGNAL(clicked()), this, SLOT(askMap()));
+	connect(p_askFlags, SIGNAL(clicked()), this, SLOT(askFlags()));
+	
+	setCentralWidget(p_stack);
 	
 	KStdAction::open(this, SLOT(openMap()), actionCollection(), "openMap");
 	KStdAction::quit(this, SLOT(close()), actionCollection(), "quit");
-	p_consult = new KToggleAction(i18n("&Consult mode"), 0, this, SLOT(consult()), actionCollection(), "consult");
-	p_questionMap = new KToggleAction(i18n("&Map question mode"), 0, this, SLOT(questionMap()), actionCollection(), "questionMap");
-	p_questionFlagDivision = new KToggleAction(i18n("&Flag to division question mode"), 0, this, SLOT(questionFlagDivision()), actionCollection(), "questionFlagDivision");
-	p_consult -> setChecked(true);
-	connect(p_mapWidget, SIGNAL(clicked(QRgb, const QPoint&)), this, SLOT(handleMapClick(QRgb, const QPoint&)));
+	
 	createGUI();
 	show();
 	
@@ -70,130 +82,66 @@ kgeography::~kgeography()
 	delete p_map;
 }
 
+void kgeography::goToMenu()
+{
+	p_askWidget -> disconnect();
+	p_askWidget -> goToMenu();
+	putMenu();
+}
+
 void kgeography::openMap()
 {
 	mapChooser mp(this);
 	if (mp.exec() == mapChooser::Accepted)
 	{
 		delete p_map;
-		p_popupManager.clear();
 		setMap(mp.getMap());
 	}
 }
 
 void kgeography::consult()
 {
-	p_consult -> setChecked(true);
-	p_questionMap -> setChecked(false);
-	p_questionFlagDivision -> setChecked(false);
-	
-	if (!p_mapWidget)
-	{
-		delete p_flagDivisionAsker;
-		p_flagDivisionAsker = 0;
-		p_mapWidget = new mapWidget(p_holder);
-		p_infoWidget = new infoWidget(p_holder);
-		p_mapWidget -> show();
-		p_infoWidget -> show();
-	}
-	
-	p_infoWidget -> setQuestionMode(false);
+	p_askWidget = new mapAsker(p_stack, p_map, false);
+	putAskWidget();
 }
 
-void kgeography::questionMap()
+void kgeography::askMap()
 {
-	if (p_map && p_questionMap -> isChecked())
+	int i;
+	bool ok;
+	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
+	if (ok)
 	{
-		// p_questionMap -> isChecked when it was not checked and the user clicks on it
-		// if it was already checked the program reaches here with p_questionMap unchecked
-		
-		if (!p_mapWidget)
-		{
-			delete p_flagDivisionAsker;
-			p_flagDivisionAsker = 0;
-			p_mapWidget = new mapWidget(p_holder);
-			p_infoWidget = new infoWidget(p_holder);
-			p_mapWidget -> show();
-			p_infoWidget -> show();
-		}
-		
-		p_infoWidget -> setQuestionMode(true);
-		p_asked.clear();
-		p_popupManager.clear();
-		nextDivision();
-	}
-	p_consult -> setChecked(false);
-	p_questionMap -> setChecked(true);
-	p_questionFlagDivision -> setChecked(false);
-}
-
-void kgeography::questionFlagDivision()
-{
-	if (p_map && p_questionFlagDivision -> isChecked())
-	{
-		// p_questionMapFlagDivion -> isChecked when it was not checked and the user clicks on it
-		// if it was already checked the program reaches here with p_questionMapFlagDivion unchecked
-		p_asked.clear();
-		p_popupManager.clear();
-		
-		delete p_mapWidget;
-		delete p_infoWidget;
-		p_mapWidget = 0;
-		p_infoWidget = 0;
-		
-		p_flagDivisionAsker = new flagDivisionAsker(p_holder, p_map);
-		p_flagDivisionAsker->show();
-	}
-	p_consult -> setChecked(false);
-	p_questionMap -> setChecked(false);
-	p_questionFlagDivision -> setChecked(true);
-}
-
-void kgeography::handleMapClick(QRgb c, const QPoint &p)
-{
-	QString aux;
-	aux = p_map -> getWhatIs(c, p_consult -> isChecked());
-	if (aux == "nothing") KMessageBox::error(this, i18n("You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.").arg(p_map -> getName()).arg(qRed(c)).arg(qGreen(c)).arg(qBlue(c)));
-	else if (p_shouldClearPopup)
-	{
-		p_popupManager.clear();
-		p_shouldClearPopup = false;
-	}
-	else if (p_consult -> isChecked())
-	{
-		p_popupManager.show(aux, p);
-	}
-	else
-	{
-		if (aux != "")
-		{
-			p_infoWidget -> addResult(aux == p_asked.last());
-			nextDivision();
-		}
+		p_askWidget = new mapAsker(p_stack, p_map, true, i);
+		putAskWidget();
 	}
 }
 
-void kgeography::mousePressEvent(QMouseEvent*)
+void kgeography::askFlags()
 {
-	p_popupManager.clear();
+	int i;
+	bool ok;
+	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
+	if (ok)
+	{
+		p_askWidget = new flagDivisionAsker(p_stack, p_map, i);
+		putAskWidget();
+	}
 }
 
-void kgeography::nextDivision()
+void kgeography::putMenu()
 {
-	QString aux;
-	if (p_asked.count() < p_map -> count())
-	{
-		aux = p_map -> getRandomDivision();
-		while (p_asked.find(aux) != p_asked.end()) aux = p_map -> getRandomDivision();
-		p_asked << aux;
-		p_infoWidget -> setNext(i18n("You must click on %1").arg(aux));
-	}
-	else
-	{
-		p_popupManager.show(i18n("You have answered correctly %1 of the %2 questions about this map").arg(p_infoWidget -> getCorrect()). arg(p_map -> count()));
-		p_shouldClearPopup = true;
-		consult();
-	}
+	p_stack -> raiseWidget(0);
+	p_stack -> removeWidget(p_askWidget);
+	delete p_askWidget;
+	p_goToMenu -> setEnabled(false);
+}
+
+void kgeography::putAskWidget()
+{
+	p_stack -> raiseWidget(p_askWidget);
+	connect(p_askWidget, SIGNAL(finished()), this, SLOT(putMenu()));
+	p_goToMenu -> setEnabled(true);
 }
 
 void kgeography::setMap(map *m)
@@ -202,10 +150,9 @@ void kgeography::setMap(map *m)
 	set -> setLastMap(m -> getFile());
 	set -> writeConfig();
 	p_map = m;
-	p_mapWidget -> setMapImage(p_map -> getMapFile());
-	p_infoWidget -> setName(p_map -> getName());
-	p_questionFlagDivision -> setEnabled(m -> hasAllFlags());
-	consult();
+	p_currentMap -> setText(i18n("Current map is %1").arg(p_map -> getName()));
+	p_askFlags -> setEnabled(m -> hasAllFlags());
+	putMenu();
 }
 
 #include "kgeography.moc"
