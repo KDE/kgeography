@@ -104,10 +104,10 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	else if (!p_asker)
 	{
 		cap = p_map -> getDivisionCapital(aux);
-		if (cap != "") aux = i18n("%1 (%2)").arg(aux).arg(cap);
+		if (!cap.isEmpty()) aux = i18n("%1 (%2)").arg(aux).arg(cap);
 		p_popupManager.show(aux, p);
 	}
-	else if (aux != "")
+	else if (!aux.isEmpty())
 	{
 		p_currentAnswer.setAnswer(QColor(c));
 		questionAnswered(aux == lastDivisionAsked());
