@@ -253,7 +253,7 @@ void kgeography::setMap(map *m)
 
 void kgeography::disclaimer()
 {
-	KMessageBox::information(this, i18n("Maps, flags, translations, etc. are as accurate as their respective authors could achieve, but KGeography should not be taken as a authoritative source."), i18n("Disclaimer"));
+	KMessageBox::information(this, i18n("Maps, flags, translations, etc. are as accurate as their respective authors could achieve, but KGeography should not be taken as an authoritative source."), i18n("Disclaimer"));
 }
 
 #include "kgeography.moc"
