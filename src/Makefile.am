@@ -15,7 +15,7 @@ kgeography_LDADD = -lkdeui
 
 # which sources should be compiled for kgeography
 kgeography_SOURCES = main.cpp mapwidget.cpp division.cpp map.cpp mapparser.cpp kgeography.cpp mapchooser.cpp mypopup.cpp \
-		     popupmanager.cpp settings.kcfgc
+		     popupmanager.cpp settings.kcfgc infowidget.cpp
 
 # let automoc handle all of the meta source files (moc)
 METASOURCES = AUTO

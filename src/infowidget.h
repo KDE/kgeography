@@ -8,22 +8,28 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef MYPOPUP_H
-#define MYPOPUP_H
+#ifndef INFOWIDGET_H
+#define INFOWIDGET_H
 
 #include <qhbox.h>
 
-class myPopup : public QHBox
-{
-Q_OBJECT
-	public:
-		myPopup(QString text, QWidget *parent);
-	
-	signals:
-		void deleteMe();
+class QLabel;
 
-	protected:
-		void mousePressEvent(QMouseEvent *);
+class infoWidget : public QHBox
+{
+	public:
+		infoWidget(QWidget *parent);
+		
+		void setQuestionMode(bool b);
+		
+		void setName(QString text);
+		void setNext(QString text);
+		void addResult(bool correct);
+		int getCorrect() const;
+	
+	private:
+		QLabel *p_name, *p_next, *p_guesses;
+		uint p_correct, p_total;
 };
 
 #endif

@@ -23,7 +23,11 @@ Q_OBJECT
 	public:
 		popupManager(QWidget *parent);
 		
+		// shows text at p
 		void show(QString text, const QPoint &p);
+		
+		// shots text centered
+		void show(QString text);
 	
 	public slots:
 		void clear();

@@ -80,7 +80,7 @@ QString map::getMapFile() const
 
 QString map::getName() const
 {
-	return p_name;
+	return i18n(p_name);
 }
 
 QString map::getRandomDivision() const

@@ -13,9 +13,12 @@
 #include <kmessagebox.h>
 #include <kstdaction.h>
 
+#include <qvbox.h>
+
 #include "kgeography.h"
 #include "settings.h"
 #include "mapchooser.h"
+#include "infowidget.h"
 #include "mapparser.h"
 #include "mapwidget.h"
 #include "map.h"
@@ -23,10 +26,15 @@
 kgeography::kgeography() : KMainWindow(), p_popupManager(this)
 {
 	QString file;
+	QVBox *holder;
 	
 	p_map = 0;
-	p_mapWidget = new mapWidget(this);
-	setCentralWidget(p_mapWidget);
+	p_shouldClearPopup = false;
+	
+	holder = new QVBox(this);
+	p_mapWidget = new mapWidget(holder);
+	p_infoWidget = new infoWidget(holder);
+	setCentralWidget(holder);
 	
 	KStdAction::open(this, SLOT(openMap()), actionCollection(), "openMap");
 	KStdAction::quit(this, SLOT(close()), actionCollection(), "quit");
@@ -73,26 +81,22 @@ void kgeography::openMap()
 
 void kgeography::consult()
 {
-	if (p_consult -> isChecked())
-	{
-		p_question -> setChecked(false);
-	}
-	else p_consult -> setChecked(true);
+	p_question -> setChecked(false);
+	p_consult -> setChecked(true);
+	p_infoWidget -> setQuestionMode(false);
 }
 
 void kgeography::question()
 {
-	if (p_question -> isChecked())
+	if (p_map && p_consult -> isChecked())
 	{
-		p_consult -> setChecked(false);
-		if (p_map)
-		{
-			p_asked.clear();
-			p_popupManager.clear();
-			nextDivision();
-		}
+		p_infoWidget -> setQuestionMode(true);
+		p_asked.clear();
+		p_popupManager.clear();
+		nextDivision();
 	}
-	else p_question -> setChecked(true);
+	p_consult -> setChecked(false);
+	p_question -> setChecked(true);
 }
 
 void kgeography::handleMapClick(QRgb c, const QPoint &p)
@@ -100,6 +104,11 @@ void kgeography::handleMapClick(QRgb c, const QPoint &p)
 	QString aux;
 	aux = p_map -> getWhatIs(c, p_consult -> isChecked());
 	if (aux == "nothing") KMessageBox::error(this, i18n("You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.").arg(p_map -> getName()).arg(qRed(c)).arg(qGreen(c)).arg(qBlue(c)));
+	else if (p_shouldClearPopup)
+	{
+		p_popupManager.clear();
+		p_shouldClearPopup = false;
+	}
 	else if (p_consult -> isChecked())
 	{
 		p_popupManager.show(aux, p);
@@ -108,14 +117,7 @@ void kgeography::handleMapClick(QRgb c, const QPoint &p)
 	{
 		if (aux != "")
 		{
-			if (aux == p_asked.last())
-			{
-				KMessageBox::information(this, i18n("Correct"));
-			}
-			else
-				{
-				KMessageBox::information(this, i18n("You have failed"));
-			}
+			p_infoWidget -> addResult(aux == p_asked.last());
 			nextDivision();
 		}
 	}
@@ -134,7 +136,13 @@ void kgeography::nextDivision()
 		aux = p_map -> getRandomDivision();
 		while (p_asked.find(aux) != p_asked.end()) aux = p_map -> getRandomDivision();
 		p_asked << aux;
-		KMessageBox::information(this, i18n("You must click on %1").arg(aux));
+		p_infoWidget -> setNext(i18n("You must click on %1").arg(aux));
+	}
+	else
+	{
+		p_popupManager.show(i18n("You have answered correctly %1 of the %2 questions about this map").arg(p_infoWidget -> getCorrect()). arg(p_map -> count()));
+		p_shouldClearPopup = true;
+		consult();
 	}
 }
 
@@ -145,6 +153,7 @@ void kgeography::setMap(map *m)
 	set -> writeConfig();
 	p_map = m;
 	p_mapWidget -> setMapImage(p_map -> getMapFile());
+	p_infoWidget -> setName(p_map -> getName());
 	consult();
 }
 

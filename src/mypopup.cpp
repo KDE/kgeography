@@ -12,11 +12,10 @@
 
 #include "mypopup.h"
  
-myPopup::myPopup(QString text, const QPoint &p, QWidget *parent) : QHBox(parent, 0, WStyle_NoBorder)
+myPopup::myPopup(QString text, QWidget *parent) : QHBox(parent, 0, WStyle_NoBorder)
 {
 	QLabel *l = new QLabel(text, this);
 	l -> setAlignment(Qt::AlignCenter);
-	move(p);
 	setFrameStyle(QFrame::Box | QFrame::Plain);
 	setLineWidth(2);
 	setFixedSize(l -> sizeHint() + QSize(5, 5));

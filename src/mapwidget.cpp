@@ -9,7 +9,6 @@
  ***************************************************************************/
 
 #include <klocale.h>
-#include <kmessagebox.h>
 
 #include <qimage.h>
 #include <qpixmap.h>

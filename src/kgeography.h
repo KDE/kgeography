@@ -17,6 +17,7 @@
 
 class KToggleAction;
 
+class infoWidget;
 class map;
 class mapWidget;
 class myPopup;
@@ -43,11 +44,13 @@ Q_OBJECT
 		void nextDivision();
 		void setMap(map *m);
 	
+		infoWidget *p_infoWidget;
 		mapWidget *p_mapWidget;
 		KToggleAction *p_consult, *p_question;
 		map *p_map;
 		popupManager p_popupManager;
 		QStringList p_asked;
+		bool p_shouldClearPopup;
 };
 
 #endif

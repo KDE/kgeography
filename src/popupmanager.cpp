@@ -20,12 +20,24 @@ popupManager::popupManager(QWidget *parent)
 void popupManager::show(QString text, const QPoint &p)
 {
 	delete p_mp;
-	p_mp = new myPopup(text, p, p_parent);
+	p_mp = new myPopup(text,  p_parent);
+	p_mp -> move(p);
+	connect(p_mp, SIGNAL(deleteMe()), this, SLOT(clear()));
+}
+
+void popupManager::show(QString text)
+{
+	delete p_mp;
+	p_mp = new myPopup(text, p_parent);
+	p_mp -> move((p_parent -> width() - p_mp -> width()) / 2, (p_parent -> height() - p_mp -> height()) / 2);
 	connect(p_mp, SIGNAL(deleteMe()), this, SLOT(clear()));
 }
 
 void popupManager::clear()
 {
-	delete p_mp;
-	p_mp = 0;
+	if (p_mp)
+	{
+		p_mp -> deleteLater();
+		p_mp = 0;
+	}
 }

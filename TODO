@@ -23,9 +23,3 @@
  - Have non political maps, support for geographical (rivers, mountains, etc) is almost there if the map is carefully 
    crafted. Example: Have the map all of the same color, then for each river, mountain, etc create a box big enough 
    of the wanted color and then associate the color of the box with the name of the river, etc.
-
-**************
-* UI related *
-**************
-
- - Think of a good way of the question mode for maps, i.e: Next division to click, correct/uncorrect, correct and uncorrect count, etc.
