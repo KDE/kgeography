@@ -30,6 +30,7 @@
 	</division>
 	<division>
 		<name>Algeria</name>
+		<flag>algeria.png</flag>
 		<color>
 			<red>65</red>
 			<green>189</green>
@@ -38,6 +39,7 @@
 	</division>
 	<division>
 		<name>Angola</name>
+		<flag>angola.png</flag>
 		<color>
 			<red>217</red>
 			<green>43</green>
@@ -46,6 +48,7 @@
 	</division>
 	<division>
 		<name>Benin</name>
+		<flag>benin.png</flag>
 		<color>
 			<red>123</red>
 			<green>161</green>
@@ -54,6 +57,7 @@
 	</division>
 	<division>
 		<name>Botswana</name>
+		<flag>botswana.png</flag>
 		<color>
 			<red>73</red>
 			<green>125</green>
@@ -62,6 +66,7 @@
 	</division>
 	<division>
 		<name>Burkina Faso</name>
+		<flag>burkina.png</flag>
 		<color>
 			<red>180</red>
 			<green>178</green>
@@ -70,6 +75,7 @@
 	</division>
 	<division>
 		<name>Burundi</name>
+		<flag>burundi.png</flag>
 		<color>
 			<red>132</red>
 			<green>12</green>
@@ -78,6 +84,7 @@
 	</division>
 	<division>
 		<name>Cameroon</name>
+		<flag>cameroon.png</flag>
 		<color>
 			<red>73</red>
 			<green>125</green>
@@ -86,6 +93,7 @@
 	</division>
 	<division>
 		<name>Central African Republic</name>
+		<flag>central_african_republic.png</flag>
 		<color>
 			<red>28</red>
 			<green>136</green>
@@ -94,6 +102,7 @@
 	</division>
 	<division>
 		<name>Chad</name>
+		<flag>chad.png</flag>
 		<color>
 			<red>165</red>
 			<green>173</green>
@@ -102,6 +111,7 @@
 	</division>
 	<division>
 		<name>Côte d'Ivoire</name>
+		<flag>cote_divoire.png</flag>
 		<color>
 			<red>73</red>
 			<green>189</green>
@@ -119,6 +129,7 @@
 	</division>
 	<division>
 		<name>Democratic Republic Of The Congo</name>
+		<flag>congo_kinshasa.png</flag>
 		<color>
 			<red>75</red>
 			<green>94</green>
@@ -127,6 +138,7 @@
 	</division>
 	<division>
 		<name>Djibouti</name>
+		<flag>djibouti.png</flag>
 		<color>
 			<red>197</red>
 			<green>170</green>
@@ -135,6 +147,7 @@
 	</division>
 	<division>
 		<name>Egypt</name>
+		<flag>egypt.png</flag>
 		<color>
 			<red>176</red>
 			<green>53</green>
@@ -143,6 +156,7 @@
 	</division>
 	<division>
 		<name>Equatorial Guinea</name>
+		<flag>equatorial_guinea.png</flag>
 		<color>
 			<red>222</red>
 			<green>97</green>
@@ -151,6 +165,7 @@
 	</division>
 	<division>
 		<name>Eritrea</name>
+		<flag>eritrea.png</flag>
 		<color>
 			<red>251</red>
 			<green>10</green>
@@ -159,6 +174,7 @@
 	</division>
 	<division>
 		<name>Ethiopia</name>
+		<flag>ethiopia.png</flag>
 		<color>
 			<red>64</red>
 			<green>185</green>
@@ -167,6 +183,7 @@
 	</division>
 	<division>
 		<name>Gabon</name>
+		<flag>gabon.png</flag>
 		<color>
 			<red>0</red>
 			<green>255</green>
@@ -175,6 +192,7 @@
 	</division>
 	<division>
 		<name>Ghana</name>
+		<flag>ghana.png</flag>
 		<color>
 			<red>22</red>
 			<green>219</green>
@@ -192,6 +210,7 @@
 	</division>
 	<division>
 		<name>Guinea</name>
+		<flag>guinea.png</flag>
 		<color>
 			<red>149</red>
 			<green>83</green>
@@ -200,6 +219,7 @@
 	</division>
 	<division>
 		<name>Guinea-Bissau</name>
+		<flag>guineabissau.png</flag>
 		<color>
 			<red>38</red>
 			<green>174</green>
@@ -253,6 +273,7 @@
 	</division>
 	<division>
 		<name>Kenya</name>
+		<flag>kenya.png</flag>
 		<color>
 			<red>65</red>
 			<green>189</green>
@@ -279,6 +300,7 @@
 	</division>
 	<division>
 		<name>Lesotho</name>
+		<flag>lesotho.png</flag>
 		<color>
 			<red>27</red>
 			<green>179</green>
@@ -287,6 +309,7 @@
 	</division>
 	<division>
 		<name>Liberia</name>
+		<flag>liberia.png</flag>
 		<color>
 			<red>174</red>
 			<green>11</green>
@@ -295,6 +318,7 @@
 	</division>
 	<division>
 		<name>Libya</name>
+		<flag>libya.png</flag>
 		<color>
 			<red>192</red>
 			<green>184</green>
@@ -303,6 +327,7 @@
 	</division>
 	<division>
 		<name>Madagascar</name>
+		<flag>madagascar.png</flag>
 		<color>
 			<red>65</red>
 			<green>28</green>
@@ -311,6 +336,7 @@
 	</division>
 	<division>
 		<name>Malawi</name>
+		<flag>malawi.png</flag>
 		<color>
 			<red>27</red>
 			<green>125</green>
@@ -319,6 +345,7 @@
 	</division>
 	<division>
 		<name>Mali</name>
+		<flag>mali.png</flag>
 		<color>
 			<red>192</red>
 			<green>94</green>
@@ -327,6 +354,7 @@
 	</division>
 	<division>
 		<name>Mauritania</name>
+		<flag>mauritania.png</flag>
 		<color>
 			<red>205</red>
 			<green>230</green>
@@ -335,6 +363,7 @@
 	</division>
 	<division>
 		<name>Morocco</name>
+		<flag>morocco.png</flag>
 		<color>
 			<red>201</red>
 			<green>130</green>
@@ -343,6 +372,7 @@
 	</division>
 	<division>
 		<name>Mozambique</name>
+		<flag>mozambique.png</flag>
 		<color>
 			<red>104</red>
 			<green>118</green>
@@ -351,6 +381,7 @@
 	</division>
 	<division>
 		<name>Namibia</name>
+		<flag>namibia.png</flag>
 		<color>
 			<red>75</red>
 			<green>215</green>
@@ -359,6 +390,7 @@
 	</division>
 	<division>
 		<name>Niger</name>
+		<flag>niger.png</flag>
 		<color>
 			<red>105</red>
 			<green>109</green>
@@ -367,6 +399,7 @@
 	</division>
 	<division>
 		<name>Nigeria</name>
+		<flag>nigeria.png</flag>
 		<color>
 			<red>243</red>
 			<green>83</green>
@@ -402,6 +435,7 @@
 	</division>
 	<division>
 		<name>Republic Of The Congo</name>
+		<flag>congo_brazzaville.png</flag>
 		<color>
 			<red>0</red>
 			<green>0</green>
@@ -410,6 +444,7 @@
 	</division>
 	<division>
 		<name>Rwanda</name>
+		<flag>rwanda.png</flag>
 		<color>
 			<red>0</red>
 			<green>255</green>
@@ -426,7 +461,17 @@
 		</color>
 	</division>
 	<division>
+		<name>Senegal</name>
+		<flag>senegal.png</flag>
+		<color>
+			<red>255</red>
+			<green>255</green>
+			<blue>0</blue>
+		</color>
+	</division>
+	<division>
 		<name>Sierra Leone</name>
+		<flag>sierra_leone.png</flag>
 		<color>
 			<red>16</red>
 			<green>168</green>
@@ -435,6 +480,7 @@
 	</division>
 	<division>
 		<name>Somalia</name>
+		<flag>somalia.png</flag>
 		<color>
 			<red>75</red>
 			<green>215</green>
@@ -443,6 +489,7 @@
 	</division>
 	<division>
 		<name>South Africa</name>
+		<flag>southafrica.png</flag>
 		<color>
 			<red>176</red>
 			<green>53</green>
@@ -460,6 +507,7 @@
 	</division>
 	<division>
 		<name>Sudan</name>
+		<flag>sudan.png</flag>
 		<color>
 			<red>181</red>
 			<green>121</green>
@@ -468,6 +516,7 @@
 	</division>
 	<division>
 		<name>Swaziland</name>
+		<flag>swaziland.png</flag>
 		<color>
 			<red>125</red>
 			<green>125</green>
@@ -485,6 +534,7 @@
 	</division>
 	<division>
 		<name>Tanzania</name>
+		<flag>tanzania.png</flag>
 		<color>
 			<red>243</red>
 			<green>53</green>
@@ -493,6 +543,7 @@
 	</division>
 	<division>
 		<name>The Gambia</name>
+		<flag>gambia.png</flag>
 		<color>
 			<red>219</red>
 			<green>175</green>
@@ -501,6 +552,7 @@
 	</division>
 	<division>
 		<name>Togo</name>
+		<flag>togo.png</flag>
 		<color>
 			<red>255</red>
 			<green>0</green>
@@ -509,6 +561,7 @@
 	</division>
 	<division>
 		<name>Tunisia</name>
+		<flag>tunisia.png</flag>
 		<color>
 			<red>243</red>
 			<green>83</green>
@@ -535,6 +588,7 @@
 	</division>
 	<division>
 		<name>Uganda</name>
+		<flag>uganda.png</flag>
 		<color>
 			<red>149</red>
 			<green>188</green>
@@ -561,6 +615,7 @@
 	</division>
 	<division>
 		<name>Western Sahara</name>
+		<flag>western_sahara.png</flag>
 		<color>
 			<red>74</red>
 			<green>178</green>
@@ -578,6 +633,7 @@
 	</division>
 	<division>
 		<name>Zambia</name>
+		<flag>zambia.png</flag>
 		<color>
 			<red>156</red>
 			<green>214</green>
@@ -586,6 +642,7 @@
 	</division>
 	<division>
 		<name>Zimbabwe</name>
+		<flag>zimbabwe.png</flag>
 		<color>
 			<red>241</red>
 			<green>69</green>
