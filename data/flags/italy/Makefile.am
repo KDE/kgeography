@@ -1,5 +1,3 @@
-SUBDIRS = italy
-
 flagsdir = $(kde_datadir)/kgeography/flags
 flags_DATA = it-bas200.png  it-emi200.png  it-lig200.png  it-mol200.png  it-sar200.png  it-tus200.png  \
              it-abr200.png  it-cal200.png  it-fri200.png  it-lom200.png  it-pie200.png  it-sic200.png  it-umb200.png \
