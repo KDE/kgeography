@@ -128,14 +128,27 @@ void mapWidget::mouseMoveEvent(QMouseEvent *e)
 	else if (p_moving)
 	{
 		int oW, oH;
+		int auxX, auxY;
+		bool updatePos = false;
 		
 		// some shortcuts :-D 
 		oW = p_originalImage.width();
 		oH = p_originalImage.height();
 		
-		// where next x and y will be 
-		p_zoomX += (p_initial.x() - e -> pos().x());
-		p_zoomY += (p_initial.y() - e -> pos().y());
+		// where next x and y will be
+		auxX = (int) ((p_initial.x() - e -> pos().x()) * p_lastFactorX);
+		if (abs(auxX) > 0)
+		{
+			p_zoomX += auxX;
+			updatePos = true;
+		}
+		
+		auxY = (int) ((p_initial.y() - e -> pos().y()) * p_lastFactorY);
+		if (abs(auxY) > 0)
+		{
+			p_zoomY += auxY;
+			updatePos = true;
+		}
 		
 		// make sure we don't go out of bounds
 		if (p_zoomX < 0) p_zoomX = 0;
@@ -143,7 +156,7 @@ void mapWidget::mouseMoveEvent(QMouseEvent *e)
 		if (p_zoomX > oW - width() * p_lastFactorX) p_zoomX = (int)rint(oW - width() * p_lastFactorX);
 		if (p_zoomY > oH - height() * p_lastFactorY) p_zoomY = (int)rint(oH - height() * p_lastFactorY);
 		
-		p_initial = e -> pos();
+		if (updatePos) p_initial = e -> pos();
 		
 		updateShownImage();
 		emit updatePosition(p_zoomX, p_zoomY);
