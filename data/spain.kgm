@@ -21,6 +21,7 @@
 	</division>
 	<division>
 		<name>Andalucia</name>
+		<capital>Seville</capital>
 		<color>
 			<red>169</red>
 			<green>155</green>
@@ -29,6 +30,7 @@
 	</division>
 	<division>
 		<name>Aragon</name>
+		<capital>Zaragoza</capital>
 		<color>
 			<red>181</red>
 			<green>0</green>
@@ -37,6 +39,7 @@
 	</division>
 	<division>
 		<name>Asturias</name>
+		<capital>Oviedo</capital>
 		<color>
 			<red>121</red>
 			<green>208</green>
@@ -45,6 +48,7 @@
 	</division>
 	<division>
 		<name>Balearic Islands</name>
+		<capital>Palma de Mallorca</capital>
 		<color>
 			<red>77</red>
 			<green>66</green>
@@ -53,6 +57,7 @@
 	</division>
 	<division>
 		<name>Basque Country</name>
+		<capital>Vitoria</capital>
 		<color>
 			<red>238</red>
 			<green>86</green>
@@ -61,6 +66,7 @@
 	</division>
 	<division>
 		<name>Canary Islands</name>
+		<capital>Las Palmas de Gran Canaria and Santa Cruz de Tenerife</capital>
 		<color>
 			<red>8</red>
 			<green>143</green>
@@ -69,6 +75,7 @@
 	</division>
 	<division>
 		<name>Cantabria</name>
+		<capital>Santander</capital>
 		<color>
 			<red>136</red>
 			<green>5</green>
@@ -77,6 +84,7 @@
 	</division>
 	<division>
 		<name>Castile-La Mancha</name>
+		<capital>Toledo</capital>
 		<color>
 			<red>246</red>
 			<green>106</green>
@@ -85,6 +93,7 @@
 	</division>
 	<division>
 		<name>Castile and Leon</name>
+		<capital>Valladolid</capital>
 		<color>
 			<red>98</red>
 			<green>210</green>
@@ -93,6 +102,7 @@
 	</division>
 	<division>
 		<name>Catalonia</name>
+		<capital>Barcelona</capital>
 		<color>
 			<red>130</red>
 			<green>254</green>
@@ -101,6 +111,7 @@
 	</division>
 	<division>
 		<name>Extremadura</name>
+		<capital>Mérida</capital>
 		<color>
 			<red>206</red>
 			<green>162</green>
@@ -109,6 +120,7 @@
 	</division>
 	<division>
 		<name>Galicia</name>
+		<capital>Santiago de Compostela</capital>
 		<color>
 			<red>94</red>
 			<green>160</green>
@@ -117,6 +129,7 @@
 	</division>
 	<division>
 		<name>La Rioja</name>
+		<capital>Logroño</capital>
 		<color>
 			<red>238</red>
 			<green>230</green>
@@ -125,6 +138,7 @@
 	</division>
 	<division>
 		<name>Madrid</name>
+		<capital>Madrid</capital>
 		<color>
 			<red>141</red>
 			<green>65</green>
@@ -133,6 +147,7 @@
 	</division>
 	<division>
 		<name>Murcia</name>
+		<capital>Murcia</capital>
 		<color>
 			<red>206</red>
 			<green>214</green>
@@ -141,6 +156,7 @@
 	</division>
 	<division>
 		<name>Navarre</name>
+		<capital>Pamplona</capital>
 		<color>
 			<red>255</red>
 			<green>0</green>
@@ -149,6 +165,7 @@
 	</division>
 	<division>
 		<name>Valencian Community</name>
+		<capital>Valencia</capital>
 		<color>
 			<red>222</red>
 			<green>214</green>

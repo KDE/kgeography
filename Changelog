@@ -1,3 +1,8 @@
+2004-05-06  Albert Astals Cid  <tsdgeos@terra.es>
+	* Fix gcc 3.4 compile error
+	* Add capitals for africa map
+	* Add capitals for spain autonomies map
+
 2004-05-05  Albert Astals Cid  <tsdgeos@terra.es>
 
 	* Add KGeography's webpage url to about box

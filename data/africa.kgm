@@ -31,6 +31,7 @@
 	<division>
 		<name>Algeria</name>
 		<flag>algeria.png</flag>
+		<capital>Algiers</capital>
 		<color>
 			<red>65</red>
 			<green>189</green>
@@ -40,6 +41,7 @@
 	<division>
 		<name>Angola</name>
 		<flag>angola.png</flag>
+		<capital>Luanda</capital>
 		<color>
 			<red>217</red>
 			<green>43</green>
@@ -49,6 +51,7 @@
 	<division>
 		<name>Benin</name>
 		<flag>benin.png</flag>
+		<capital>Porto Novo</capital>
 		<color>
 			<red>123</red>
 			<green>161</green>
@@ -58,6 +61,7 @@
 	<division>
 		<name>Botswana</name>
 		<flag>botswana.png</flag>
+		<capital>Gaborone</capital>
 		<color>
 			<red>73</red>
 			<green>125</green>
@@ -67,6 +71,7 @@
 	<division>
 		<name>Burkina Faso</name>
 		<flag>burkina.png</flag>
+		<capital>Ouagadougou</capital>
 		<color>
 			<red>180</red>
 			<green>178</green>
@@ -76,6 +81,7 @@
 	<division>
 		<name>Burundi</name>
 		<flag>burundi.png</flag>
+		<capital>Bujumbura</capital>
 		<color>
 			<red>132</red>
 			<green>12</green>
@@ -85,6 +91,7 @@
 	<division>
 		<name>Cameroon</name>
 		<flag>cameroon.png</flag>
+		<capital>Yaoundé</capital>
 		<color>
 			<red>73</red>
 			<green>125</green>
@@ -94,6 +101,7 @@
 	<division>
 		<name>Central African Republic</name>
 		<flag>central_african_republic.png</flag>
+		<capital>Bangui</capital>
 		<color>
 			<red>28</red>
 			<green>136</green>
@@ -103,6 +111,7 @@
 	<division>
 		<name>Chad</name>
 		<flag>chad.png</flag>
+		<capital>N'Djamena</capital>
 		<color>
 			<red>165</red>
 			<green>173</green>
@@ -112,6 +121,7 @@
 	<division>
 		<name>Côte d'Ivoire</name>
 		<flag>cote_divoire.png</flag>
+		<capital>Yamoussoukro</capital>
 		<color>
 			<red>73</red>
 			<green>189</green>
@@ -130,6 +140,7 @@
 	<division>
 		<name>Democratic Republic Of The Congo</name>
 		<flag>congo_kinshasa.png</flag>
+		<capital>Kinshasa</capital>
 		<color>
 			<red>75</red>
 			<green>94</green>
@@ -139,6 +150,7 @@
 	<division>
 		<name>Djibouti</name>
 		<flag>djibouti.png</flag>
+		<capital>Djibouti</capital>
 		<color>
 			<red>197</red>
 			<green>170</green>
@@ -148,6 +160,7 @@
 	<division>
 		<name>Egypt</name>
 		<flag>egypt.png</flag>
+		<capital>Cairo</capital>
 		<color>
 			<red>176</red>
 			<green>53</green>
@@ -157,6 +170,7 @@
 	<division>
 		<name>Equatorial Guinea</name>
 		<flag>equatorial_guinea.png</flag>
+		<capital>Malabo</capital>
 		<color>
 			<red>222</red>
 			<green>97</green>
@@ -166,6 +180,7 @@
 	<division>
 		<name>Eritrea</name>
 		<flag>eritrea.png</flag>
+		<capital>Asmara</capital>
 		<color>
 			<red>251</red>
 			<green>10</green>
@@ -175,6 +190,7 @@
 	<division>
 		<name>Ethiopia</name>
 		<flag>ethiopia.png</flag>
+		<capital>Addis Ababa</capital>
 		<color>
 			<red>64</red>
 			<green>185</green>
@@ -184,6 +200,7 @@
 	<division>
 		<name>Gabon</name>
 		<flag>gabon.png</flag>
+		<capital>Libreville</capital>
 		<color>
 			<red>0</red>
 			<green>255</green>
@@ -193,6 +210,7 @@
 	<division>
 		<name>Ghana</name>
 		<flag>ghana.png</flag>
+		<capital>Accra</capital>
 		<color>
 			<red>22</red>
 			<green>219</green>
@@ -211,6 +229,7 @@
 	<division>
 		<name>Guinea</name>
 		<flag>guinea.png</flag>
+		<capital>Conakry</capital>
 		<color>
 			<red>149</red>
 			<green>83</green>
@@ -220,6 +239,7 @@
 	<division>
 		<name>Guinea-Bissau</name>
 		<flag>guineabissau.png</flag>
+		<capital>Bissau</capital>
 		<color>
 			<red>38</red>
 			<green>174</green>
@@ -274,6 +294,7 @@
 	<division>
 		<name>Kenya</name>
 		<flag>kenya.png</flag>
+		<capital>Nairobi</capital>
 		<color>
 			<red>65</red>
 			<green>189</green>
@@ -301,6 +322,7 @@
 	<division>
 		<name>Lesotho</name>
 		<flag>lesotho.png</flag>
+		<capital>Maseru</capital>
 		<color>
 			<red>27</red>
 			<green>179</green>
@@ -310,6 +332,7 @@
 	<division>
 		<name>Liberia</name>
 		<flag>liberia.png</flag>
+		<capital>Monrovia</capital>
 		<color>
 			<red>174</red>
 			<green>11</green>
@@ -319,6 +342,7 @@
 	<division>
 		<name>Libya</name>
 		<flag>libya.png</flag>
+		<capital>Tripoli</capital>
 		<color>
 			<red>192</red>
 			<green>184</green>
@@ -328,6 +352,7 @@
 	<division>
 		<name>Madagascar</name>
 		<flag>madagascar.png</flag>
+		<capital>Antananarivo</capital>
 		<color>
 			<red>65</red>
 			<green>28</green>
@@ -337,6 +362,7 @@
 	<division>
 		<name>Malawi</name>
 		<flag>malawi.png</flag>
+		<capital>Lilongwe</capital>
 		<color>
 			<red>27</red>
 			<green>125</green>
@@ -346,6 +372,7 @@
 	<division>
 		<name>Mali</name>
 		<flag>mali.png</flag>
+		<capital>Bamako</capital>
 		<color>
 			<red>192</red>
 			<green>94</green>
@@ -355,6 +382,7 @@
 	<division>
 		<name>Mauritania</name>
 		<flag>mauritania.png</flag>
+		<capital>Nouakchott</capital>
 		<color>
 			<red>205</red>
 			<green>230</green>
@@ -364,6 +392,7 @@
 	<division>
 		<name>Morocco</name>
 		<flag>morocco.png</flag>
+		<capital>Rabat</capital>
 		<color>
 			<red>201</red>
 			<green>130</green>
@@ -373,6 +402,7 @@
 	<division>
 		<name>Mozambique</name>
 		<flag>mozambique.png</flag>
+		<capital>Maputo</capital>
 		<color>
 			<red>104</red>
 			<green>118</green>
@@ -382,6 +412,7 @@
 	<division>
 		<name>Namibia</name>
 		<flag>namibia.png</flag>
+		<capital>Windhoek</capital>
 		<color>
 			<red>75</red>
 			<green>215</green>
@@ -391,6 +422,7 @@
 	<division>
 		<name>Niger</name>
 		<flag>niger.png</flag>
+		<capital>Niamey</capital>
 		<color>
 			<red>105</red>
 			<green>109</green>
@@ -400,6 +432,7 @@
 	<division>
 		<name>Nigeria</name>
 		<flag>nigeria.png</flag>
+		<capital>Abuja</capital>
 		<color>
 			<red>243</red>
 			<green>83</green>
@@ -436,6 +469,7 @@
 	<division>
 		<name>Republic Of The Congo</name>
 		<flag>congo_brazzaville.png</flag>
+		<capital>Brazzaville</capital>
 		<color>
 			<red>0</red>
 			<green>0</green>
@@ -445,6 +479,7 @@
 	<division>
 		<name>Rwanda</name>
 		<flag>rwanda.png</flag>
+		<capital>Kigali</capital>
 		<color>
 			<red>0</red>
 			<green>255</green>
@@ -463,6 +498,7 @@
 	<division>
 		<name>Senegal</name>
 		<flag>senegal.png</flag>
+		<capital>Dakar</capital>
 		<color>
 			<red>255</red>
 			<green>255</green>
@@ -472,6 +508,7 @@
 	<division>
 		<name>Sierra Leone</name>
 		<flag>sierra_leone.png</flag>
+		<capital>Freetown</capital>
 		<color>
 			<red>16</red>
 			<green>168</green>
@@ -481,6 +518,7 @@
 	<division>
 		<name>Somalia</name>
 		<flag>somalia.png</flag>
+		<capital>Mogadishu</capital>
 		<color>
 			<red>75</red>
 			<green>215</green>
@@ -490,6 +528,7 @@
 	<division>
 		<name>South Africa</name>
 		<flag>southafrica.png</flag>
+		<capital>Cape Town</capital>
 		<color>
 			<red>176</red>
 			<green>53</green>
@@ -508,6 +547,7 @@
 	<division>
 		<name>Sudan</name>
 		<flag>sudan.png</flag>
+		<capital>Khartoum</capital>
 		<color>
 			<red>181</red>
 			<green>121</green>
@@ -517,6 +557,7 @@
 	<division>
 		<name>Swaziland</name>
 		<flag>swaziland.png</flag>
+		<capital>Mbabane</capital>
 		<color>
 			<red>125</red>
 			<green>125</green>
@@ -535,6 +576,7 @@
 	<division>
 		<name>Tanzania</name>
 		<flag>tanzania.png</flag>
+		<capital>Dodoma</capital>
 		<color>
 			<red>243</red>
 			<green>53</green>
@@ -544,6 +586,7 @@
 	<division>
 		<name>The Gambia</name>
 		<flag>gambia.png</flag>
+		<capital>Banjul</capital>
 		<color>
 			<red>219</red>
 			<green>175</green>
@@ -553,6 +596,7 @@
 	<division>
 		<name>Togo</name>
 		<flag>togo.png</flag>
+		<capital>Lomé</capital>
 		<color>
 			<red>255</red>
 			<green>0</green>
@@ -562,6 +606,7 @@
 	<division>
 		<name>Tunisia</name>
 		<flag>tunisia.png</flag>
+		<capital>Tunis</capital>
 		<color>
 			<red>243</red>
 			<green>83</green>
@@ -589,6 +634,7 @@
 	<division>
 		<name>Uganda</name>
 		<flag>uganda.png</flag>
+		<capital>Kampala</capital>
 		<color>
 			<red>149</red>
 			<green>188</green>
@@ -616,6 +662,7 @@
 	<division>
 		<name>Western Sahara</name>
 		<flag>western_sahara.png</flag>
+		<capital>Laayoune</capital>
 		<color>
 			<red>74</red>
 			<green>178</green>
@@ -634,6 +681,7 @@
 	<division>
 		<name>Zambia</name>
 		<flag>zambia.png</flag>
+		<capital>Lusaka</capital>
 		<color>
 			<red>156</red>
 			<green>214</green>
@@ -643,6 +691,7 @@
 	<division>
 		<name>Zimbabwe</name>
 		<flag>zimbabwe.png</flag>
+		<capital>Harare</capital>
 		<color>
 			<red>241</red>
 			<green>69</green>
