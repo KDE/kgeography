@@ -10,7 +10,7 @@
 
 #include <stdlib.h> // for RAND_MAX
 
-#include <kapp.h>
+#include <kapplication.h>
 #include <klocale.h>
 
 #include <qfile.h>
