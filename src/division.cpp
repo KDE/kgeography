@@ -41,6 +41,11 @@ QString division::getFlagFile() const
 	return p_flagFile;
 }
 
+void division::setCapital(const QString &name)
+{
+	p_capital = name;
+}
+
 void division::setIgnore(bool b)
 {
 	p_canAsk = !b;

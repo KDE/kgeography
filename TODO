@@ -3,8 +3,10 @@
 **************
 
  - popupManager::show(QString) does not check that the full text can be seen (i.e. x < 0)
-   make it wrap the text when it does happen or completely remote it and use KMessageBox::information
-   for the only case in wich popupManager::show(QString) is used.
+   make it wrap the text when it does happen or completely remove it and use KMessageBox::information
+   for the only case in which popupManager::show(QString) is used.
+
+ - Add the click on map division given its flag
 
 ******************
 * Parser related *
@@ -16,11 +18,6 @@
 	In the map: Point to the division whose capital is X.
 	In a dialog: Which of these divisions has X as capital? (and give n options)
 	In a dialog: Which of these capitals is the capital of division X? (and give n options)
- - Add  <flag> tag that points to a filename of a image containing the flag of the given division, that
-  gives to option of ask the same as above or even combine them (whose of these flags is the division with 
-  capital X, ...). Can obtain flags with free compatible licenses from 
-	- http://www.sodipodi.com/index.php3?section=clipart/flags (Sodipodi flag collection is under Public Domain)
-	- http://www.odci.gov/cia/publications/factbook/docs/flagsoftheworld.html (FactBook is under Public Domain)
 
 ***************
 * Map related *

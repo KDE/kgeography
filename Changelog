@@ -1,0 +1,7 @@
+2004-05-05  Albert Astals Cid  <tsdgeos@terra.es>
+
+	* Add KGeography's webpage url to about box
+	* Update TODO file
+	* Increase version number to 0.2
+	* Make parser give better errors with bad maps
+	* Add capitals for europe map

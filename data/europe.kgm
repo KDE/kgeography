@@ -31,6 +31,7 @@
 	<division>
 		<name>Albania</name>
 		<flag>albania.png</flag>
+		<capital>Tirana</capital>
 		<color>
 			<red>221</red>
 			<green>136</green>
@@ -49,6 +50,7 @@
 	<division>
 		<name>Austria</name>
 		<flag>austria.png</flag>
+		<capital>Vienna</capital>
 		<color>
 			<red>136</red>
 			<green>0</green>
@@ -58,6 +60,7 @@
 	<division>
 		<name>Belarus</name>
 		<flag>belarus.png</flag>
+		<capital>Minsk</capital>
 		<color>
 			<red>182</red>
 			<green>206</green>
@@ -67,6 +70,7 @@
 	<division>
 		<name>Belgium</name>
 		<flag>belgium.png</flag>
+		<capital>Brussels</capital>
 		<color>
 			<red>229</red>
 			<green>102</green>
@@ -76,6 +80,7 @@
 	<division>
 		<name>Bosnia and Herzegovina</name>
 		<flag>bosnia_herzegovina.png</flag>
+		<capital>Sarajevo</capital>
 		<color>
 			<red>106</red>
 			<green>55</green>
@@ -85,6 +90,7 @@
 	<division>
 		<name>Bulgaria</name>
 		<flag>bulgaria.png</flag>
+		<capital>Sofia</capital>
 		<color>
 			<red>0</red>
 			<green>191</green>
@@ -94,6 +100,7 @@
 	<division>
 		<name>Croatia</name>
 		<flag>croatia.png</flag>
+		<capital>Zagreb</capital>
 		<color>
 			<red>18</red>
 			<green>52</green>
@@ -103,6 +110,7 @@
 	<division>
 		<name>Czech Republic</name>
 		<flag>czech.png</flag>
+		<capital>Prague</capital>
 		<color>
 			<red>51</red>
 			<green>136</green>
@@ -112,6 +120,7 @@
 	<division>
 		<name>Denmark</name>
 		<flag>denmark.png</flag>
+		<capital>Copenhagen</capital>
 		<color>
 			<red>158</red>
 			<green>253</green>
@@ -121,6 +130,7 @@
 	<division>
 		<name>Estonia</name>
 		<flag>estonia.png</flag>
+		<capital>Tallinn</capital>
 		<color>
 			<red>120</red>
 			<green>246</green>
@@ -130,6 +140,7 @@
 	<division>
 		<name>Finland</name>
 		<flag>finland.png</flag>
+		<capital>Helsinki</capital>
 		<color>
 			<red>74</red>
 			<green>254</green>
@@ -139,6 +150,7 @@
 	<division>
 		<name>F.Y.R. Macedonia</name>
 		<flag>macedonia.png</flag>
+		<capital>Skopje</capital>
 		<color>
 			<red>103</red>
 			<green>109</green>
@@ -148,6 +160,7 @@
 	<division>
 		<name>France</name>
 		<flag>france.png</flag>
+		<capital>Paris</capital>
 		<color>
 			<red>255</red>
 			<green>255</green>
@@ -157,6 +170,7 @@
 	<division>
 		<name>Germany</name>
 		<flag>germany.png</flag>
+		<capital>Berlin</capital>
 		<color>
 			<red>255</red>
 			<green>0</green>
@@ -166,6 +180,7 @@
 	<division>
 		<name>Greece</name>
 		<flag>greece.png</flag>
+		<capital>Athens</capital>
 		<color>
 			<red>182</red>
 			<green>154</green>
@@ -175,6 +190,7 @@
 	<division>
 		<name>Hungary</name>
 		<flag>hungary.png</flag>
+		<capital>Budapest</capital>
 		<color>
 			<red>255</red>
 			<green>240</green>
@@ -184,6 +200,7 @@
 	<division>
 		<name>Iceland</name>
 		<flag>iceland.png</flag>
+		<capital>Reykjavik</capital>
 		<color>
 			<red>255</red>
 			<green>140</green>
@@ -193,6 +210,7 @@
 	<division>
 		<name>Ireland</name>
 		<flag>ireland.png</flag>
+		<capital>Dublin</capital>
 		<color>
 			<red>122</red>
 			<green>254</green>
@@ -202,6 +220,7 @@
 	<division>
 		<name>Italy</name>
 		<flag>italy.png</flag>
+		<capital>Rome</capital>
 		<color>
 			<red>254</red>
 			<green>254</green>
@@ -211,6 +230,7 @@
 	<division>
 		<name>Latvia</name>
 		<flag>latvia.png</flag>
+		<capital>Riga</capital>
 		<color>
 			<red>164</red>
 			<green>187</green>
@@ -220,6 +240,7 @@
 	<division>
 		<name>Lithuania</name>
 		<flag>lithuania.png</flag>
+		<capital>Vilnius</capital>
 		<color>
 			<red>255</red>
 			<green>105</green>
@@ -229,6 +250,7 @@
 	<division>
 		<name>Luxembourg</name>
 		<flag>luxembourg.png</flag>
+		<capital>Luxembourg</capital>
 		<color>
 			<red>255</red>
 			<green>170</green>
@@ -238,6 +260,7 @@
 	<division>
 		<name>Moldova</name>
 		<flag>moldova.png</flag>
+		<capital>Chisinau</capital>
 		<color>
 			<red>0</red>
 			<green>0</green>
@@ -256,6 +279,7 @@
 	<division>
 		<name>Netherlands</name>
 		<flag>netherlands.png</flag>
+		<capital>Amsterdam</capital>
 		<color>
 			<red>138</red>
 			<green>43</green>
@@ -265,6 +289,7 @@
 	<division>
 		<name>Norway</name>
 		<flag>norway.png</flag>
+		<capital>Oslo</capital>
 		<color>
 			<red>255</red>
 			<green>0</green>
@@ -274,6 +299,7 @@
 	<division>
 		<name>Poland</name>
 		<flag>poland.png</flag>
+		<capital>Warsaw</capital>
 		<color>
 			<red>155</red>
 			<green>142</green>
@@ -283,6 +309,7 @@
 	<division>
 		<name>Portugal</name>
 		<flag>portugal.png</flag>
+		<capital>Lisbon</capital>
 		<color>
 			<red>249</red>
 			<green>3</green>
@@ -292,6 +319,7 @@
 	<division>
 		<name>Romania</name>
 		<flag>romania.png</flag>
+		<capital>Bucharest</capital>
 		<color>
 			<red>53</red>
 			<green>142</green>
@@ -301,6 +329,7 @@
 	<division>
 		<name>Russia</name>
 		<flag>russia.png</flag>
+		<capital>Moscow</capital>
 		<color>
 			<red>175</red>
 			<green>238</green>
@@ -310,6 +339,7 @@
 	<division>
 		<name>San Marino</name>
 		<flag>san_marino.png</flag>
+		<capital>San Marino</capital>
 		<color>
 			<red>139</red>
 			<green>139</green>
@@ -319,6 +349,7 @@
 	<division>
 		<name>Serbia and Montenegro</name>
 		<flag>serbiamontenegro_3x2.png</flag>
+		<capital>Belgrade</capital>
 		<color>
 			<red>120</red>
 			<green>144</green>
@@ -328,6 +359,7 @@
 	<division>
 		<name>Slovakia</name>
 		<flag>slovakia.png</flag>
+		<capital>Bratislava</capital>
 		<color>
 			<red>139</red>
 			<green>0</green>
@@ -337,6 +369,7 @@
 	<division>
 		<name>Slovenia</name>
 		<flag>slovenia.png</flag>
+		<capital>Ljubljana</capital>
 		<color>
 			<red>0</red>
 			<green>255</green>
@@ -346,6 +379,7 @@
 	<division>
 		<name>Spain</name>
 		<flag>spain.png</flag>
+		<capital>Madrid</capital>
 		<color>
 			<red>254</red>
 			<green>218</green>
@@ -355,6 +389,7 @@
 	<division>
 		<name>Sweden</name>
 		<flag>sweden.png</flag>
+		<capital>Stockholm</capital>
 		<color>
 			<red>136</red>
 			<green>136</green>
@@ -364,6 +399,7 @@
 	<division>
 		<name>Switzerland</name>
 		<flag>switzerland.png</flag>
+		<capital>Bern</capital>
 		<color>
 			<red>215</red>
 			<green>3</green>
@@ -391,6 +427,7 @@
 	<division>
 		<name>Turkey</name>
 		<flag>turkey.png</flag>
+		<capital>Ankara</capital>
 		<color>
 			<red>0</red>
 			<green>136</green>
@@ -400,6 +437,7 @@
 	<division>
 		<name>Ukraine</name>
 		<flag>ukraine.png</flag>
+		<capital>Kiev</capital>
 		<color>
 			<red>136</red>
 			<green>5</green>
@@ -409,6 +447,7 @@
 	<division>
 		<name>United Kingdom</name>
 		<flag>uk.png</flag>
+		<capital>London</capital>
 		<color>
 			<red>254</red>
 			<green>206</green>

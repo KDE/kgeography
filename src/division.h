@@ -24,13 +24,14 @@ class division
 		QRgb getRGB() const;
 		QString getFlagFile() const;
 		
+		void setCapital(const QString &name);
 		void setIgnore(bool b);
 		void setName(const QString &name);
 		void setRGB(int r, int g, int b);
 		bool setFlagFile(const QString &path);
 		
 	private:
-		QString p_name, p_flagFile;
+		QString p_name, p_flagFile, p_capital;
 		QRgb p_color;
 		bool p_canAsk;
 };

@@ -66,40 +66,62 @@ bool mapParser::startDocument()
 
 bool mapParser::startElement(const QString&, const QString &name, const QString&, const QXmlAttributes&)
 {
-	QString aux;
+	QString prev;
 	bool b = true;
-	aux = getPreviousTag();
+	prev = getPreviousTag();
 	p_previousTags += ":" + name;
-	if (aux.isEmpty())
+	if (prev.isEmpty())
 	{
 		b = name == "map";
+		if (!b) p_error = i18n("The map description file should begin with the %1 tag").arg("map");
 	}
-	else if (aux == "map")
+	else if (prev == "map")
 	{
-		b = (name == "mapFile" && !p_mapFileSet) || (name == "name" && !p_mapNameSet) || (name == "division");
+		if (name != "mapFile" && name != "name" && name != "division")
+		{
+			b = false;
+			p_error = i18n("%1 is not a valid tag inside tag %2. Valid tags are %3, %4 and %5").arg(name).arg(prev).arg("mapFile").arg("name").arg("division");
+		}
+		else if ((name == "mapFile" && p_mapFileSet) || (name == "name" && p_mapNameSet))
+		{
+			b = false;
+			p_error = i18n("%1 tag has already been set").arg(name);
+		}
 		p_colorSet = false;
 		if (name == "division")
 		{
 			p_divisionNameSet = false;
 			p_divisionIgnoreSet = false;
 			p_flagFileSet = false;
+			p_capitalSet = false;
 			p_division = new division();
 		}
 	}
-	else if (aux == "mapFile" || aux == "name" || aux == "red" || aux == "green" || aux == "blue" ||
-			aux == "ignore")
+	else if (prev == "mapFile" || prev == "name" || prev == "red" || prev == "green" || prev == "blue" ||
+			prev == "ignore")
 	{
 		b = false;
+		p_error = i18n("There can not be a tag inside %1 tag").arg(prev);
 	}
-	else if (aux == "division")
+	else if (prev == "division")
 	{
-		b = (name == "name" && !p_divisionNameSet) || (name == "color" && !p_colorSet) ||
-		(name == "ignore" && !p_divisionIgnoreSet) || (name == "flag" && !p_flagFileSet);
+		if (name != "color" && name != "name" && name != "ignore" && name != "flag" && name != "capital")
+		{
+			b = false;
+			p_error = i18n("%1 is not a valid tag inside tag %2. Valid tags are %3, %4, %5, %6 and %7").arg(name).arg(prev).arg("color").arg("name").arg("ignore").arg("capital").arg("flag");
+		}
+		else if ((name == "name" && p_divisionNameSet) || (name == "color" && p_colorSet) ||
+		(name == "ignore" && p_divisionIgnoreSet) || (name == "flag" && p_flagFileSet) ||
+		(name == "capital" && p_capitalSet))
+		{
+			b = false;
+			p_error = i18n("%1 tag has already been set").arg(name);
+		}
 		p_red = -1;
 		p_green = -1;
 		p_blue = -1;
 	}
-	else if (aux == "color")
+	else if (prev == "color")
 	{
 		b = (name == "red" && p_red == -1) || (name == "green" && p_green == -1) ||
 			(name == "blue" && p_blue == -1);
@@ -137,6 +159,11 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 	{
 		p_divisionNameSet = true;
 		p_division -> setName(p_contents);
+	}
+	else if (p_previousTags == ":map:division:capital")
+	{
+		p_capitalSet = true;
+		p_division -> setCapital(p_contents);
 	}
 	else if (aux == "color")
 	{
@@ -205,7 +232,7 @@ bool mapParser::characters(const QString &ch)
 	QString aux;
 	if (ch.simplifyWhiteSpace().length() == 0) return true;
 	aux = getPreviousTag();
-	if (aux == "mapFile" || aux == "name" || aux == "red" || aux == "green" || aux == "blue" || aux == "ignore" || aux == "flag")
+	if (aux == "mapFile" || aux == "name" || aux == "red" || aux == "green" || aux == "blue" || aux == "ignore" || aux == "flag" || aux == "capital")
 	{
 		p_contents += ch;
 		return true;
