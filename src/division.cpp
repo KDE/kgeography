@@ -8,6 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include <klocale.h>
+
 #include <qfile.h>
 
 #include "division.h"
@@ -25,7 +27,7 @@ bool division::canAsk() const
 
 QString division::getName() const
 {
-	return p_name;
+	return i18n(p_name);
 }
 
 QRgb division::getRGB() const
