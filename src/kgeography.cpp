@@ -134,6 +134,7 @@ void kgeography::putMenu()
 	p_stack -> raiseWidget(0);
 	p_stack -> removeWidget(p_askWidget);
 	delete p_askWidget;
+	p_askWidget = 0;
 	p_goToMenu -> setEnabled(false);
 }
 
