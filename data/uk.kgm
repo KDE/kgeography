@@ -2,12 +2,12 @@
 	<mapFile>uk.png</mapFile>
 	<name>United Kingdom</name>
 	<division>
-		<name>Not the UK</name>
+		<name>Water</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>255</red>
-			<green>255</green>
-			<blue>255</blue>
+			<red>65</red>
+			<green>95</green>
+			<blue>173</blue>
 		</color>
 	</division>
 	<division>

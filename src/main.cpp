@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 	about.addCredit("Melody Fink", I18N_NOOP("Contributed China map"));
 	about.addCredit("Justin Morgan", I18N_NOOP("Contributed North and Central America map"));
 	about.addCredit("Maurizio Paolini", I18N_NOOP("Contributed Italy map"));
+	about.addCredit("Danny Allen", I18N_NOOP("Contributed UK map, small refinements"), "danny@dannyallen.co.uk");
 	about.addCredit(I18N_NOOP("Sodipodi flags collection"), I18N_NOOP("Got some flags from it"), 0, "http://www.sodipodi.com/index.php3?section=clipart/flags");
 	KCmdLineArgs::init(argc, argv, &about);
 	KApplication app;

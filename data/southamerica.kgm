@@ -14,9 +14,9 @@
 		<name>Water</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>50</red>
-			<green>50</green>
-			<blue>255</blue>
+			<red>65</red>
+			<green>95</green>
+			<blue>173</blue>
 		</color>
 	</division>
 	<division>
