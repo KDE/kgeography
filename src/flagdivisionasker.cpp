@@ -8,8 +8,6 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include <stdlib.h> // for RAND_MAX
-
 #include <klocale.h>
 
 #include <qimage.h>

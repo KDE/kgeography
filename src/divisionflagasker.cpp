@@ -8,13 +8,9 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include <stdlib.h> // for RAND_MAX
-
 #include <klocale.h>
 
 #include <qimage.h>
-#include <qlayout.h>
-#include <qpixmap.h>
 #include <qradiobutton.h>
  
 #include "divisionflagasker.h"
