@@ -1,0 +1,15 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="kgeography" version="1">
+	<MenuBar>
+		<Menu name="file">
+			<Action name="openMap" />
+			<Separator />
+			<Action name="quit" />
+		</Menu>
+		<Menu name="mode">
+			<text>&amp;Mode</text>
+			<Action name="consult" />
+			<Action name="question" />
+		</Menu>
+	</MenuBar>
+</kpartgui>
