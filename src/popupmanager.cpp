@@ -21,7 +21,7 @@ void popupManager::show(const QString &text, const QString &text2, const QPoint 
 {
 	delete p_mp;
 
-	p_mp = new myPopup(text, text2, flagFile, p_parent);
+	p_mp = new myPopup(p_parent, text, text2, flagFile);
 	init(p);
 }
 
@@ -29,7 +29,7 @@ void popupManager::show(const QString &text, const QString &text2, const QPoint 
 {
 	delete p_mp;
 	
-	p_mp = new myPopup(text, text2, p_parent);
+	p_mp = new myPopup(p_parent, text, text2);
 	init(p);
 }
 
@@ -37,7 +37,7 @@ void popupManager::show(const QString &text, const QPoint &p)
 {
 	delete p_mp;
 	
-	p_mp = new myPopup(text, p_parent);
+	p_mp = new myPopup(p_parent, text);
 	init(p);
 }
 
