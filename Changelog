@@ -1,4 +1,7 @@
-2004-29-07 Albert Astals Cid <tsdgeos@terra.es>
+2004-08-01 Albert Astals Cid <tsdgeos@terra.es>
+	* F.Y.R. Macedonia -> Macedonia
+
+2004-07-29 Albert Astals Cid <tsdgeos@terra.es>
 	* RightWidget is really LeftWidget ¬.¬
 	* There is no need to store p_rightWidget as a class member
 	* Bump version to 0.2.1
@@ -8,16 +11,16 @@
 	* Fix resizing bug in mapWidget that showed a inexistant part of the
 map when making the widget bigger and the toolbars were at their maximum
 	* Remove ugly kapp->processEvents()
-	* Skip scaling and painting of the map when the function that draws the
-map gets called with the same values as it was called the last time
+	* Skip scaling and painting of the map when the function that draws
+the map gets called with the same values as it was called the last time
 
-2004-27-07 Albert Astals Cid <tsdgeos@terra.es>
+2004-07-27 Albert Astals Cid <tsdgeos@terra.es>
 	* Release version 0.2
 
-2004-18-07 Albert Astals Cid  <tsdgeos@terra.es>
+2004-07-18 Albert Astals Cid  <tsdgeos@terra.es>
 	* Add scrollbars to the map (if needed)
 
-2004-08-05 Albert Astals Cid  <tsdgeos@terra.es>
+2004-06-08 Albert Astals Cid  <tsdgeos@terra.es>
 	* Layout change
 	* Unify some of the code in boxasker and mapasker to askwidget
 	* Zoom now is much more memory efficient (at cost of cpu efficiency)

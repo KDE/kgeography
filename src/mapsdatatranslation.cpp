@@ -138,7 +138,7 @@ i18n("Czech Republic");
 i18n("Denmark");
 i18n("Estonia");
 i18n("Finland");
-i18n("F.Y.R. Macedonia");
+i18n("Macedonia");
 i18n("France");
 i18n("Germany");
 i18n("Greece");
