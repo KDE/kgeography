@@ -154,6 +154,7 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 		if (!p_divisionNameSet) p_error = i18n("There is a division without name");
 		b = b && p_map -> addDivision(p_division);
 		if (p_divisionNameSet) p_error = i18n("There is already either a division called %1 or a division with the same colors as %2").arg(p_division -> getName()).arg(p_division -> getName());
+		if (!p_capitalSet && p_division -> canAsk()) p_error = i18n("Division %1 has no capital").arg(p_division -> getName());
 	}
 	else if (p_previousTags == ":map:division:name")
 	{

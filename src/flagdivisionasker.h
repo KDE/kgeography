@@ -26,9 +26,7 @@ class flagDivisionAsker : public askWidget
 Q_OBJECT
 	public:
 		flagDivisionAsker(QWidget *parent, map *m, uint count);
-		
-		void nextFlag();
-	
+
 	public slots:
 		void goToMenu();
 		
@@ -37,6 +35,7 @@ Q_OBJECT
 		void init();
 	
 	private:
+		void nextFlag();
 		void showAnswersMessageBox();
 	
 		QWidget *p_flag;

@@ -32,6 +32,7 @@ class map
 		uint count() const;
 		bool hasAllFlags() const;
 		QString getDivisionFlagFile(const QString &s) const;
+		QString getDivisionCapital(const QString &s) const;
 		QString getFile() const;
 		QString getMapFile() const;
 		QString getName() const;

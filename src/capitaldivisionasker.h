@@ -8,54 +8,44 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef KGEOGRAPHY_H
-#define KGEOGRAPHY_H
+#ifndef CAPITALDIVISIONASKER_H
+#define CAPITALDIVISIONASKER_H
 
-#include <kmainwindow.h>
+#include "askwidget.h"
 
 class KPushButton;
-class KAction;
 
 class QLabel;
-class QWidgetStack;
+class QRadioButton;
+class QStringList;
 
 class map;
-class askWidget;
 
-class kgeography : public KMainWindow
+class capitalDivisionAsker : public askWidget
 {
 Q_OBJECT
 	public:
-		kgeography();
-		~kgeography();
+		capitalDivisionAsker(QWidget *parent, map *m, uint count);
 	
-	private slots:
+	public slots:
 		void goToMenu();
-	
-		void openMap();
-	
-		void consult();
-		void askCapitals();
-		void askMap();
-		void askFlags();
 		
-		void putMenu();
-		
+	private slots:
+		void checkAnswer();
+		void init();
+	
 	private:
-		void putAskWidget();
-		void setMap(map *m);
-		
-		QWidgetStack *p_stack;
-		
-		KPushButton *p_consult;
-		KPushButton *p_askCapitals;
-		KPushButton *p_askMap;
-		KPushButton *p_askFlags;
-		KAction *p_goToMenu;
-		QLabel *p_currentMap;
+		void nextCapital();
+		void showAnswersMessageBox();
 	
-		map *p_map;
-		askWidget *p_askWidget;
+		QLabel *p_label;
+		QRadioButton **p_rb;
+		KPushButton *p_accept;
+		
+		// the position the correct answer is in
+		int p_position;
+		
+		int p_correctAnswers, p_incorrectAnswers;
 };
 
 #endif

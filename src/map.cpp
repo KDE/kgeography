@@ -83,6 +83,11 @@ QString map::getDivisionFlagFile(const QString &s) const
 	return p_nameMap[s] -> getFlagFile();
 }
 
+QString map::getDivisionCapital(const QString &s) const
+{
+	return p_nameMap[s] -> getCapital();
+}
+
 QString map::getFile() const
 {
 	return p_file;

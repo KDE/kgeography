@@ -23,6 +23,7 @@ class division
 		QString getName() const;
 		QRgb getRGB() const;
 		QString getFlagFile() const;
+		QString getCapital() const;
 		
 		void setCapital(const QString &name);
 		void setIgnore(bool b);

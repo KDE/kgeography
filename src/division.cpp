@@ -41,6 +41,11 @@ QString division::getFlagFile() const
 	return p_flagFile;
 }
 
+QString division::getCapital() const
+{
+	return i18n(p_capital.utf8());
+}
+
 void division::setCapital(const QString &name)
 {
 	p_capital = name;
