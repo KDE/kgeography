@@ -16,7 +16,6 @@
 #include <kstdaction.h>
 
 #include <qlabel.h>
-#include <qsizepolicy.h> 
 #include <qvbox.h>
 #include <qwidgetstack.h>
 
