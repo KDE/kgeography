@@ -23,6 +23,7 @@
 #include <qsize.h>
 #include <qtimer.h>
 
+#include "answersdialog.h"
 #include "capitaldivisionasker.h"
 #include "divisioncapitalasker.h"
 #include "divisionflagasker.h"
@@ -34,7 +35,7 @@
 #include "mapparser.h"
 #include "map.h"
 
-kgeography::kgeography() : KMainWindow(), p_firstShow(true)
+kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDialog(false)
 {
 	p_map = 0;
 	p_askWidget = 0;
@@ -143,6 +144,7 @@ void kgeography::openMap()
 
 void kgeography::consult()
 {
+	showResultsDialog();
 	removeOldAskWidget();
 	p_askWidget = new mapAsker(p_bigWidget, p_map, p_underLeftWidget, false);
 	p_zoom -> setEnabled(true);
@@ -154,13 +156,14 @@ void kgeography::askCapitalDivisions()
 {
 	int i;
 	bool ok;
-	p_askWidget -> showResultsDialog();
+	showResultsDialog();
 	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
 		p_askWidget = new capitalDivisionAsker(p_bigWidget, p_map, p_underLeftWidget, i);
 		putAskWidget();
+		p_mustShowResultsDialog = true;
 	}
 	else consult();
 }
@@ -169,13 +172,14 @@ void kgeography::askDivisionCapitals()
 {
 	int i;
 	bool ok;
-	p_askWidget -> showResultsDialog();
+	showResultsDialog();
 	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
 		p_askWidget = new divisionCapitalAsker(p_bigWidget, p_map, p_underLeftWidget, i);
 		putAskWidget();
+		p_mustShowResultsDialog = true;
 	}
 	else consult();
 }
@@ -184,7 +188,7 @@ void kgeography::askMap()
 {
 	int i;
 	bool ok;
-	p_askWidget -> showResultsDialog();
+	showResultsDialog();
 	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
@@ -193,6 +197,7 @@ void kgeography::askMap()
 		p_zoom -> setEnabled(true);
 		p_zoomOriginal -> setEnabled(true);
 		putAskWidget();
+		p_mustShowResultsDialog = true;
 	}
 	else consult();
 }
@@ -201,13 +206,14 @@ void kgeography::askFlagDivisions()
 {
 	int i;
 	bool ok;
-	p_askWidget -> showResultsDialog();
+	showResultsDialog();
 	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
 		p_askWidget = new flagDivisionAsker(p_bigWidget, p_map, p_underLeftWidget, i);
 		putAskWidget();
+		p_mustShowResultsDialog = true;
 	}
 	else consult();
 }
@@ -216,13 +222,14 @@ void kgeography::askDivisionFlags()
 {
 	int i;
 	bool ok;
-	p_askWidget -> showResultsDialog();
+	showResultsDialog();
 	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
 		p_askWidget = new divisionFlagAsker(p_bigWidget, p_map, p_underLeftWidget, i);
 		putAskWidget();
+		p_mustShowResultsDialog = true;
 	}
 	else consult();
 }
@@ -255,6 +262,7 @@ void kgeography::putAskWidget()
 	connect(p_askWidget, SIGNAL(setMoveActionEnabled(bool)), p_move, SLOT(setEnabled(bool)));
 	connect(p_askWidget, SIGNAL(setMoveActionChecked(bool)), p_move, SLOT(setChecked(bool)));
 	connect(p_move, SIGNAL(toggled(bool)), p_askWidget, SLOT(setMovement(bool)));
+	connect(p_askWidget, SIGNAL(questionsEnded()), this, SLOT(showResultsDialog()));
 }
 
 void kgeography::setMap(KGmap *m)
@@ -281,6 +289,23 @@ void kgeography::disclaimer()
 void kgeography::resizeMainWindow()
 {
 	if (p_askWidget) resize(getPreferredSize());
+}
+
+void kgeography::showResultsDialog()
+{
+	if (p_mustShowResultsDialog)
+	{
+		p_mustShowResultsDialog = false;
+		int ca = p_askWidget -> correctAnswers();
+		QString q = p_askWidget -> getQuestionHook();
+		QValueVector<userAnswer> ua = p_askWidget -> userAnswers();
+		
+		consult();
+	
+		answersDialog *ad = new answersDialog(this, ua, q, ca);
+		ad -> exec();
+		delete ad;
+	}
 }
 
 #include "kgeography.moc"

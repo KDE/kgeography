@@ -27,8 +27,6 @@ Q_OBJECT
 		~boxAsker();
 	
 	protected:
-		void clean();
-		virtual void cleanHook();
 		virtual bool nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer) = 0;
 		void nextQuestionHook(const QString &division);
 		void setQuestion(const QString &q);

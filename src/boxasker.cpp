@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
+ *   Copyright (C) 2004-2005 by Albert Astals Cid                          *
  *   tsdgeos@terra.es                                                      *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -49,22 +49,6 @@ boxAsker::~boxAsker()
 void boxAsker::setQuestion(const QString &q)
 {
 	p_label -> setText(q);
-}
-
-void boxAsker::clean()
-{
-	for (int i = 0; i < 4; i++) p_rb[i] -> setText("");
-	cleanHook();
-		
-	p_accept -> setText("&Restart");
-	p_accept -> disconnect();
-	connect(p_accept, SIGNAL(clicked()), this, SLOT(init()));
-		
-	setQuestion("");
-}
-
-void boxAsker::cleanHook()
-{
 }
 
 void boxAsker::nextQuestionHook(const QString &division)

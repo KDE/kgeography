@@ -15,7 +15,6 @@
 
 #include "askwidget.h"
 #include "map.h"
-#include "answersdialog.h"
 
 askWidget::askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool showLabel) : QWidget(parent), p_map(m), p_count(count)
 {
@@ -32,6 +31,16 @@ askWidget::askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool sho
 askWidget::~askWidget()
 {
 	delete p_answers;
+}
+
+int askWidget::correctAnswers() const
+{
+	return p_correctAnswers;
+}
+
+QValueVector<userAnswer> askWidget::userAnswers() const
+{
+	return p_userAnswers;
 }
 
 void askWidget::setMovement(bool)
@@ -67,11 +76,7 @@ void askWidget::nextQuestion()
 		p_asked << aux;
 		nextQuestionHook(aux);
 	}
-	else
-	{
-		clean();
-		showResultsDialog();
-	}
+	else emit questionsEnded();
 }
 
 void askWidget::questionAnswered(bool wasCorrect)
@@ -85,21 +90,9 @@ void askWidget::questionAnswered(bool wasCorrect)
 
 void askWidget::resetAnswers()
 {
-	p_shouldShowResultsDialog = true;
 	p_correctAnswers = 0;
 	p_incorrectAnswers = 0;
 	updateLabel();
-}
-
-void askWidget::showResultsDialog()
-{
-	if (p_answers && p_shouldShowResultsDialog)
-	{
-		answersDialog *ad = new answersDialog(this, p_userAnswers, getQuestionHook(), p_correctAnswers);
-		ad -> exec();
-		delete ad;
-		p_shouldShowResultsDialog = false;
-	}
 }
 
 void askWidget::updateLabel()

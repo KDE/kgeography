@@ -66,13 +66,6 @@ mapAsker::~mapAsker()
 	delete p_next;
 }
 
-void mapAsker::clean()
-{
-	p_shouldClearPopup = true;
-	p_asker = false;
-	p_next -> setText("");
-}
-
 void mapAsker::mousePressEvent(QMouseEvent*)
 {
 	p_popupManager.clear();

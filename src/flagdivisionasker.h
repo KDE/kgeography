@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
+ *   Copyright (C) 2004-2005 by Albert Astals Cid                          *
  *   tsdgeos@terra.es                                                      *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -19,7 +19,6 @@ class flagDivisionAsker : public boxAsker
 		flagDivisionAsker(QWidget *parent, KGmap *m, QWidget *w, uint count);
 	
 	protected:
-		void cleanHook();
 		bool nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer);
 		void setAnswerHook(int userSays);
 		QString getQuestionHook() const;

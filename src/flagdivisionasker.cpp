@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
+ *   Copyright (C) 2004-2005 by Albert Astals Cid                          *
  *   tsdgeos@terra.es                                                      *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -23,11 +23,6 @@ flagDivisionAsker::flagDivisionAsker(QWidget *parent, KGmap *m, QWidget *w, uint
 	p_lay -> insertWidget(0, p_flag);
 	setQuestion(i18n("This flag belongs to:"));
 	init();
-}
-
-void flagDivisionAsker::cleanHook()
-{
-	p_flag -> unsetPalette();
 }
 
 bool flagDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)

@@ -27,7 +27,9 @@ Q_OBJECT
 		askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool showLabel = true);
 		virtual ~askWidget();
 		
-		void showResultsDialog();
+		virtual QString getQuestionHook() const = 0;
+		int correctAnswers() const;
+		QValueVector<userAnswer> userAnswers() const;
 	
 	public slots:
 		virtual void setMovement(bool b);
@@ -38,16 +40,15 @@ Q_OBJECT
 		void setMoveActionChecked(bool b);
 		void setZoomActionChecked(bool b);
 		void setMoveActionEnabled(bool b);
+		void questionsEnded();
 	
 	protected:
-		virtual void clean() = 0;
 		void clearAsked();
 		QString lastDivisionAsked();
 		void nextQuestion();
 		virtual void nextQuestionHook(const QString &division) = 0;
 		void questionAnswered(bool wasCorrect);
 		void resetAnswers();
-		virtual QString getQuestionHook() const = 0;
 	
 		KGmap *p_map;
 		userAnswer p_currentAnswer;
@@ -65,8 +66,6 @@ Q_OBJECT
 		
 		// the number of questions to do
 		uint p_count;
-		
-		bool p_shouldShowResultsDialog;
 };
 
 #endif

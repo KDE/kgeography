@@ -32,7 +32,6 @@ Q_OBJECT
 		QSize mapSize() const;
 		
 	protected:
-		void clean();
 		void nextQuestionHook(const QString &division);
 		void mousePressEvent(QMouseEvent *e);
 		QString getQuestionHook() const;

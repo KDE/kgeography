@@ -45,6 +45,7 @@ Q_OBJECT
 		void askDivisionFlags();
 		void disclaimer();
 		void resizeMainWindow();
+		void showResultsDialog();
 
 	private:
 		QSize getPreferredSize();
@@ -68,7 +69,7 @@ Q_OBJECT
 
 		KGmap *p_map;
 		askWidget *p_askWidget;
-		bool p_firstShow;
+		bool p_firstShow, p_mustShowResultsDialog;
 };
 
 #endif
