@@ -42,6 +42,11 @@ boxAsker::boxAsker(QWidget *parent, map *m, uint count) : askWidget(parent, m, c
 	p_lay -> addWidget(p_accept);
 }
 
+boxAsker::~boxAsker()
+{
+	delete[] p_rb;
+}
+
 void boxAsker::setQuestion(QString q)
 {
 	p_label -> setText(q);

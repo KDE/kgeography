@@ -24,6 +24,7 @@ class boxAsker : public askWidget
 Q_OBJECT
 	public:
 		boxAsker(QWidget *parent, map *m, uint count);
+		~boxAsker();
 	
 	protected:
 		virtual void nextQuestionHook(QString division, int i, bool isAnswer) = 0;
