@@ -1,7 +1,10 @@
+2004-05-16  Albert Astals Cid  <tsdgeos@terra.es>
+	* Add USA states map (by Yann Verley)
+
 2004-05-15  Albert Astals Cid  <tsdgeos@terra.es>
 	* Sort map chooser list entries
 	* Mantain aspect ratio of map images in map chooser
-	* Use smoothScale instead of scale in map chooser
+	* Use smoothScale instead of scale in map chooser images
 
 2004-05-14  Albert Astals Cid  <tsdgeos@terra.es>
 	* Zoom available in map mode, possibly needs a BIG tooltip on how to
