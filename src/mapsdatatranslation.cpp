@@ -52,6 +52,7 @@ i18n("Qatar");
 i18n("Republic Of The Congo");
 i18n("Rwanda");
 i18n("Saudi Arabia");
+i18n("Senegal");
 i18n("Sierra Leone");
 i18n("Somalia");
 i18n("South Africa");
