@@ -51,7 +51,7 @@ Verley)
 
 2004-05-08  Albert Astals Cid  <tsdgeos@terra.es>
 	* Add Division -> Capital asker
-	* Create boxasker abstactc base class that has most of the code that
+	* Create boxasker abstract base class that has most of the code that
 previously was repeated at capitaldivisionasker.cpp divisioncapitalasker.cpp
 and flagdivisionasker.cpp
 
