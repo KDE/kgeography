@@ -16,11 +16,11 @@
 
 class division;
 
-class map
+class KGmap
 {
 	public:
-		map();
-		~map();
+		KGmap();
+		~KGmap();
 		
 		bool addDivision(division *d);
 		
@@ -38,6 +38,7 @@ class map
 		QString getName() const;
 		QString getRandomDivision() const;
 		QString getWhatIs(QRgb c, bool all) const;
+		QColor getColor(const QString &s) const;
 		
 	private:
 		QMap<QRgb, division*> p_colorMap;

@@ -11,6 +11,7 @@
 #include <klocale.h>
 
 #include "division.h"
+#include "map.h"
 #include "mapparser.h"
 
 /* unitReader */
@@ -19,10 +20,10 @@ mapReader::mapReader() : QXmlSimpleReader()
 {
 }
 
-bool mapReader::parseMap(QString path)
+bool mapReader::parseMap(const QString &path)
 {
 	QString aux;
-	p_map = new map();
+	p_map = new KGmap();
 	p_map -> setFile(path);
 	aux = path.left(path.findRev('/') + 1); // aux = path but without the file name
 	mapParser handler(p_map, aux);
@@ -46,14 +47,14 @@ QString mapReader::getError()
 	return p_error;
 }
 
-map *mapReader::getMap()
+KGmap *mapReader::getMap()
 {
 	return p_map;
 }
 
 /* mapParser */
 
-mapParser::mapParser(map *m, QString &path) : QXmlDefaultHandler(), p_map(m), p_path(path)
+mapParser::mapParser(KGmap *m, const QString &path) : QXmlDefaultHandler(), p_map(m), p_path(path)
 {
 }
 

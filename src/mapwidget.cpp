@@ -57,7 +57,7 @@ void mapWidget::setMapZoom(bool b)
 
 QSize mapWidget::sizeHint() const
 {
-	return p_originalImage.size();
+	return maximumSize();
 }
 
 void mapWidget::updateHPosition(int value)

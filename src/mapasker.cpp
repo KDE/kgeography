@@ -19,7 +19,7 @@
 #include "mapasker.h"
 #include "mapwidget.h"
 
-mapAsker::mapAsker(QWidget *parent, map *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_popupManager(this), p_asker(asker)
+mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_popupManager(this), p_asker(asker)
 {
 	QGridLayout *lay = new QGridLayout(this, 2, 2);
 	
@@ -109,6 +109,7 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	}
 	else if (aux != "")
 	{
+		p_currentAnswer.setAnswer(QColor(c));
 		questionAnswered(aux == lastDivisionAsked());
 		nextQuestion();
 	}
@@ -148,9 +149,16 @@ void mapAsker::setScrollBarsMaximumSize(int w, int h)
 	p_vsbms = h;
 }
 
-void mapAsker::nextQuestionHook(QString division)
+void mapAsker::nextQuestionHook(const QString &division)
 {
 	p_next -> setText(i18n("You must click on %1").arg(division));
+	p_currentAnswer.setQuestion(division);
+	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
+}
+
+QString mapAsker::getQuestionHook() const
+{
+	return i18n("Click on ...");
 }
 
 #include "mapasker.moc"

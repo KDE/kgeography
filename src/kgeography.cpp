@@ -142,7 +142,7 @@ void kgeography::askCapitalDivisions()
 {
 	int i;
 	bool ok;
-	p_askWidget -> showAnswersMessageBox();
+	p_askWidget -> showResultsDialog();
 	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
@@ -157,7 +157,7 @@ void kgeography::askDivisionCapitals()
 {
 	int i;
 	bool ok;
-	p_askWidget -> showAnswersMessageBox();
+	p_askWidget -> showResultsDialog();
 	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
@@ -172,7 +172,7 @@ void kgeography::askMap()
 {
 	int i;
 	bool ok;
-	p_askWidget -> showAnswersMessageBox();
+	p_askWidget -> showResultsDialog();
 	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
@@ -188,7 +188,7 @@ void kgeography::askFlagDivisions()
 {
 	int i;
 	bool ok;
-	p_askWidget -> showAnswersMessageBox();
+	p_askWidget -> showResultsDialog();
 	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
@@ -203,7 +203,7 @@ void kgeography::askDivisionFlags()
 {
 	int i;
 	bool ok;
-	p_askWidget -> showAnswersMessageBox();
+	p_askWidget -> showResultsDialog();
 	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
@@ -235,7 +235,7 @@ void kgeography::putAskWidget()
 	connect(p_move, SIGNAL(toggled(bool)), p_askWidget, SLOT(setMovement(bool)));
 }
 
-void kgeography::setMap(map *m)
+void kgeography::setMap(KGmap *m)
 {
 	kgeographySettings *set = kgeographySettings::self();
 	set -> setLastMap(m -> getFile());

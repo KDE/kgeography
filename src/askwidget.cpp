@@ -15,8 +15,9 @@
 
 #include "askwidget.h"
 #include "map.h"
+#include "answersdialog.h"
 
-askWidget::askWidget(QWidget *parent, map *m, QWidget *w, uint count, bool showLabel) : QWidget(parent), p_map(m), p_count(count)
+askWidget::askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool showLabel) : QWidget(parent), p_map(m), p_count(count)
 {
 	if (showLabel)
 	{
@@ -54,6 +55,7 @@ QString askWidget::lastDivisionAsked()
 void askWidget::nextQuestion()
 {
 	QString aux;
+	
 	if (p_asked.count() < p_count)
 	{
 		aux = p_map -> getRandomDivision();
@@ -64,12 +66,14 @@ void askWidget::nextQuestion()
 	else
 	{
 		clean();
-		showAnswersMessageBox();
+		showResultsDialog();
 	}
 }
 
 void askWidget::questionAnswered(bool wasCorrect)
 {
+	p_userAnswers.append(p_currentAnswer);
+	
 	if (wasCorrect) p_correctAnswers++;
 	else p_incorrectAnswers++;
 	updateLabel();
@@ -77,18 +81,20 @@ void askWidget::questionAnswered(bool wasCorrect)
 
 void askWidget::resetAnswers()
 {
-	p_shouldShowMB = true;
+	p_shouldShowResultsDialog = true;
 	p_correctAnswers = 0;
 	p_incorrectAnswers = 0;
 	updateLabel();
 }
 
-void askWidget::showAnswersMessageBox()
+void askWidget::showResultsDialog()
 {
-	if (p_answers && p_shouldShowMB)
+	if (p_answers && p_shouldShowResultsDialog)
 	{
-		KMessageBox::information(this, i18n("You have answered correctly %1 of %2 questions").arg(p_correctAnswers).arg(p_correctAnswers + p_incorrectAnswers));
-		p_shouldShowMB = false;
+		answersDialog *ad = new answersDialog(this, p_userAnswers, getQuestionHook(), p_correctAnswers);
+		ad -> exec();
+		delete ad;
+		p_shouldShowResultsDialog = false;
 	}
 }
 

@@ -8,33 +8,19 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef POPUPMANAGER_H
-#define POPUPMANAGER_H
+#ifndef RESULTSWIDGET_H
+#define RESULTSWIDGET_H
 
-#include <qobject.h>
+#include <kdialogbase.h>
 
-class QWidget;
+#include <qvaluevector.h>
 
-class myPopup;
+class userAnswer;
 
-class popupManager : public QObject
+class answersDialog : public KDialogBase
 {
-Q_OBJECT
 	public:
-		popupManager(QWidget *parent);
-		
-		// shows text at p
-		void show(const QString &text, const QPoint &p);
-		
-		// shots text centered
-		void show(const QString &text);
-	
-	public slots:
-		void clear();
-
-	private:
-		myPopup *p_mp;
-		QWidget *p_parent;
+		answersDialog(QWidget *parent, const QValueVector<userAnswer> &userAnswers, QString question, int correctAnswers);
 };
 
 #endif

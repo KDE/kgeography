@@ -13,11 +13,11 @@
 #include <qimage.h>
 #include <qlayout.h>
 #include <qradiobutton.h>
- 
+
 #include "flagdivisionasker.h"
 #include "map.h"
 
-flagDivisionAsker::flagDivisionAsker(QWidget *parent, map *m, QWidget *w, uint count) : boxAsker(parent, m, w, count)
+flagDivisionAsker::flagDivisionAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : boxAsker(parent, m, w, count)
 {
 	p_flag = new QWidget(this);
 	p_lay -> insertWidget(0, p_flag);
@@ -30,7 +30,7 @@ void flagDivisionAsker::cleanHook()
 	p_flag -> unsetPalette();
 }
 
-void flagDivisionAsker::nextBoxAskerQuestionHook(QString division, int i, bool isAnswer)
+void flagDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
 {
 	if (isAnswer)
 	{
@@ -38,6 +38,19 @@ void flagDivisionAsker::nextBoxAskerQuestionHook(QString division, int i, bool i
 		QImage image(p_map -> getDivisionFlagFile(division));
 		p_flag -> setPaletteBackgroundPixmap(image);
 		p_flag -> setFixedSize(image.size());
+		
+		p_currentAnswer.setQuestion(image.smoothScale(image.width()/5, image.height()/5));
+		p_currentAnswer.setCorrectAnswer(division);
 	}
 	p_rb[i] -> setText(division);
+}
+
+void flagDivisionAsker::setAnswerHook(int userSays)
+{
+	p_currentAnswer.setAnswer(p_rb[userSays] -> text());
+}
+
+QString flagDivisionAsker::getQuestionHook() const
+{
+	return i18n("... is the flag of ...");
 }

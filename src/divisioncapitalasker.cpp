@@ -15,13 +15,28 @@
 #include "divisioncapitalasker.h"
 #include "map.h"
 
-divisionCapitalAsker::divisionCapitalAsker(QWidget *parent, map *m, QWidget *w, uint count) : boxAsker(parent, m, w, count)
+divisionCapitalAsker::divisionCapitalAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : boxAsker(parent, m, w, count)
 {
 	init();
 }
 
-void divisionCapitalAsker::nextBoxAskerQuestionHook(QString division, int i, bool isAnswer)
+void divisionCapitalAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
 {
 	p_rb[i] -> setText(p_map -> getDivisionCapital(division));
-	if (isAnswer) setQuestion(i18n("The capital of %1 is...").arg(division));
+	if (isAnswer)
+	{
+		setQuestion(i18n("The capital of %1 is...").arg(division));
+		p_currentAnswer.setCorrectAnswer(p_rb[i] -> text());
+		p_currentAnswer.setQuestion(division);
+	}
+}
+
+void divisionCapitalAsker::setAnswerHook(int userSays)
+{
+	p_currentAnswer.setAnswer(p_rb[userSays] -> text());
+}
+
+QString divisionCapitalAsker::getQuestionHook() const
+{
+	return i18n("The capital of ... is ...");
 }

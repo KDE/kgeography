@@ -13,28 +13,27 @@
 
 #include <qxml.h>
 
-#include "map.h"
-
 class division;
+class KGmap;
 
 class mapReader : public QXmlSimpleReader
 {
 	public:
 		mapReader();
 		
-		bool parseMap(QString path);
+		bool parseMap(const QString &path);
 		QString getError();
-		map *getMap();
+		KGmap *getMap();
 	
 	private:
 		QString p_error;
-		map *p_map;
+		KGmap *p_map;
 };
 
 class mapParser : public QXmlDefaultHandler
 {
 	public:
-		mapParser(map *m, QString &path);
+		mapParser(KGmap *m, const QString &path);
 		bool startDocument();
 		bool startElement(const QString&, const QString&, const QString&, const QXmlAttributes&);
 		bool endElement(const QString &, const QString &name, const QString &);
@@ -48,10 +47,11 @@ class mapParser : public QXmlDefaultHandler
 		
 		division *p_division;
 		int p_red, p_green, p_blue;
-		map *p_map;
+		KGmap *p_map;
 		bool p_allowChars, p_mapNameSet, p_mapFileSet;
 		bool p_divisionNameSet, p_colorSet, p_divisionIgnoreSet, p_flagFileSet, p_capitalSet;
-		QString &p_path, p_error, p_contents, p_previousTags;
+		const QString &p_path;
+		QString p_error, p_contents, p_previousTags;
 };
 
 #endif

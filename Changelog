@@ -1,3 +1,19 @@
+2004-12-01 Albert Astals Cid <tsdgeos@terra.es>
+	* Rename map class to KGmap so it does no collide with stl map
+	* Bump to version 0.3
+	* Give feedback after of which were the correct answers when all
+	question have been made
+
+2004-11-16 Albert Astals Cid <tsdgeos@terra.es>
+	* Add Italy map
+
+2004-09-11 Albert Astals Cid <tsdgeos@terra.es>
+	* QString -> const QString &
+	* QString = "" -> QString.isNull
+
+2004-09-11 Albert Astals Cid <tsdgeos@terra.es>
+	* Use all map widget space if available
+
 2004-09-10 Albert Astals Cid <tsdgeos@terra.es>
 	* Put a discalimer
 

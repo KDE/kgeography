@@ -17,7 +17,7 @@ popupManager::popupManager(QWidget *parent)
 	p_mp = 0;
 }
 
-void popupManager::show(QString text, const QPoint &p)
+void popupManager::show(const QString &text, const QPoint &p)
 {
 	int x, y, maxX, maxY;
 	delete p_mp;
@@ -32,7 +32,7 @@ void popupManager::show(QString text, const QPoint &p)
 	connect(p_mp, SIGNAL(deleteMe()), this, SLOT(clear()));
 }
 
-void popupManager::show(QString text)
+void popupManager::show(const QString &text)
 {
 	delete p_mp;
 	p_mp = new myPopup(text, p_parent);

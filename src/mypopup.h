@@ -17,7 +17,7 @@ class myPopup : public QHBox
 {
 Q_OBJECT
 	public:
-		myPopup(QString text, QWidget *parent);
+		myPopup(const QString &text, QWidget *parent);
 	
 	signals:
 		void deleteMe();

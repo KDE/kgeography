@@ -23,15 +23,16 @@ class boxAsker : public askWidget
 {
 Q_OBJECT
 	public:
-		boxAsker(QWidget *parent, map *m, QWidget *w, uint count);
+		boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count);
 		~boxAsker();
 	
 	protected:
 		void clean();
 		virtual void cleanHook();
-		virtual void nextBoxAskerQuestionHook(QString division, int i, bool isAnswer) = 0;
-		void nextQuestionHook(QString division);
-		void setQuestion(QString q);
+		virtual void nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer) = 0;
+		void nextQuestionHook(const QString &division);
+		void setQuestion(const QString &q);
+		virtual void setAnswerHook(int userSays) = 0;
 		
 		QVBoxLayout *p_lay;
 		QRadioButton **p_rb;

@@ -22,7 +22,7 @@
 #include "boxasker.h"
 #include "map.h"
 
-boxAsker::boxAsker(QWidget *parent, map *m, QWidget *w, uint count) : askWidget(parent, m, w, count)
+boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidget(parent, m, w, count)
 {
 	p_lay = new QVBoxLayout(this);
 	
@@ -46,7 +46,7 @@ boxAsker::~boxAsker()
 	delete[] p_rb;
 }
 
-void boxAsker::setQuestion(QString q)
+void boxAsker::setQuestion(const QString &q)
 {
 	p_label -> setText(q);
 }
@@ -67,8 +67,9 @@ void boxAsker::cleanHook()
 {
 }
 
-void boxAsker::nextQuestionHook(QString division)
+void boxAsker::nextQuestionHook(const QString &division)
 {
+	QString otherDivision;
 	QStringList auxList;
 	int i;
 	
@@ -83,11 +84,11 @@ void boxAsker::nextQuestionHook(QString division)
 	// we put other 3 names
 	for (i = 0; i < 4; i++)
 	{
-		division = p_map -> getRandomDivision();
-		while (auxList.find(division) != auxList.end()) division = p_map -> getRandomDivision();
+		otherDivision = p_map -> getRandomDivision();
+		while (auxList.find(otherDivision) != auxList.end()) otherDivision = p_map -> getRandomDivision();
 		if (i == p_position) i++;
-		nextBoxAskerQuestionHook(division, i, false);
-		auxList << division;
+		nextBoxAskerQuestionHook(otherDivision, i, false);
+		auxList << otherDivision;
 		if (p_position == 3 && i == 2) i++;
 	}
 }
@@ -95,20 +96,24 @@ void boxAsker::nextQuestionHook(QString division)
 void boxAsker::checkAnswer()
 {
 	bool any, correct;
+	int i;
 
 	correct = false;	
 	any = false;
-	for (int i = 0; i < 4; i++)
+	i = 0;
+	while(!any && i < 4)
 	{
 		if (p_rb[i] -> isChecked())
 		{
 			any = true;
 			correct = (i == p_position);
 		}
+		else i++;
 	}
 		
 	if (any)
 	{
+		setAnswerHook(i);
 		questionAnswered(correct);
 		nextQuestion();
 	}

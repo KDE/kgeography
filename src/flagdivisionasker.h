@@ -16,11 +16,13 @@
 class flagDivisionAsker : public boxAsker
 {
 	public:
-		flagDivisionAsker(QWidget *parent, map *m, QWidget *w, uint count);
+		flagDivisionAsker(QWidget *parent, KGmap *m, QWidget *w, uint count);
 	
 	protected:
 		void cleanHook();
-		void nextBoxAskerQuestionHook(QString division, int i, bool isAnswer);
+		void nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer);
+		void setAnswerHook(int userSays);
+		QString getQuestionHook() const;
 
 	private:
 		QWidget *p_flag;

@@ -18,13 +18,13 @@
 #include "division.h"
 #include "map.h"
 
-map::map()
+KGmap::KGmap()
 {
 	p_count = 0;
 	p_hasAllFlags = true;
 }
 
-map::~map()
+KGmap::~KGmap()
 {
 	QMap<QRgb, division*>::iterator it;
 	it = p_colorMap.begin();
@@ -36,7 +36,7 @@ map::~map()
 	}
 }
 
-bool map::addDivision(division *c)
+bool KGmap::addDivision(division *c)
 {
 	bool b;
 	if (p_nameMap.find(c -> getName()) == p_nameMap.end() && 
@@ -52,58 +52,58 @@ bool map::addDivision(division *c)
 	return b;
 }
 
-void map::setFile(const QString &s)
+void KGmap::setFile(const QString &s)
 {
 	p_file = s;
 }
 
-bool map::setMapFile(const QString &s)
+bool KGmap::setMapFile(const QString &s)
 {
 	p_mapFile = s;
 	return QFile::exists(s);
 }
 
-void map::setName(const QString &s)
+void KGmap::setName(const QString &s)
 {
 	p_name = s;
 }
 
-uint map::count() const
+uint KGmap::count() const
 {
 	return p_count;
 }
 
-bool map::hasAllFlags() const
+bool KGmap::hasAllFlags() const
 {
 	return p_hasAllFlags;
 }
 
-QString map::getDivisionFlagFile(const QString &s) const
+QString KGmap::getDivisionFlagFile(const QString &s) const
 {
 	return p_nameMap[s] -> getFlagFile();
 }
 
-QString map::getDivisionCapital(const QString &s) const
+QString KGmap::getDivisionCapital(const QString &s) const
 {
 	return p_nameMap[s] -> getCapital();
 }
 
-QString map::getFile() const
+QString KGmap::getFile() const
 {
 	return p_file;
 }
 
-QString map::getMapFile() const
+QString KGmap::getMapFile() const
 {
 	return p_mapFile;
 }
 
-QString map::getName() const
+QString KGmap::getName() const
 {
 	return i18n(p_name);
 }
 
-QString map::getRandomDivision() const
+QString KGmap::getRandomDivision() const
 {
 	QValueList<division*> aux;
 	int i = (int)((float)p_nameMap.size() * kapp -> random() / (RAND_MAX + 1.0));
@@ -112,15 +112,31 @@ QString map::getRandomDivision() const
 	else return aux[i] -> getName();
 }
 
-QString map::getWhatIs(QRgb c, bool all) const
+QString KGmap::getWhatIs(QRgb c, bool all) const
 {
 	QMap<QRgb, division*>::const_iterator it;
 	it = p_colorMap.find(c);
 	if (it == p_colorMap.end()) return "nothing";
-	else 
+	else
 	{
 		if (all) return it.data() -> getName();
 		else if (it.data() -> canAsk()) return it.data() -> getName();
 		else return "";
 	}
+}
+
+QColor KGmap::getColor(const QString &s) const
+{
+	QValueList<division*> divisions;
+	QValueList<QRgb> colors;
+	division *d;
+	int i;
+	
+	d = p_nameMap[s];
+	divisions = p_colorMap.values();
+	colors = p_colorMap.keys();
+	
+	i = 0;
+	while(divisions[i] != d) i++;
+	return QColor(colors[i]);
 }

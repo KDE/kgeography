@@ -12,7 +12,7 @@
 
 #include "mypopup.h"
  
-myPopup::myPopup(QString text, QWidget *parent) : QHBox(parent, 0, WStyle_NoBorder)
+myPopup::myPopup(const QString &text, QWidget *parent) : QHBox(parent, 0, WStyle_NoBorder)
 {
 	QLabel *l = new QLabel(text, this);
 	l -> setAlignment(Qt::AlignCenter);

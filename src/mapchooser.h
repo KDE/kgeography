@@ -15,6 +15,7 @@
 
 #include <qdict.h>
 
+#include "map.h"
 #include "mapparser.h"
 
 class mapChooser : public KDialogBase
@@ -24,7 +25,7 @@ Q_OBJECT
 		mapChooser(QWidget *parent);
 		~mapChooser();
 
-		map *getMap();
+		KGmap *getMap();
 	
 	private slots:
 		void putImage(const QString &mapName);
@@ -33,7 +34,7 @@ Q_OBJECT
 		QListBox *p_listBox;
 		QWidget *p_image;
 		mapReader p_reader;
-		QDict<map> p_maps;
+		QDict<KGmap> p_maps;
 };
 
 #endif

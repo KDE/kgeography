@@ -11,20 +11,23 @@
 #ifndef ASKWIDGET_H
 #define ASKWIDGET_H
 
+#include <qvaluevector.h>
 #include <qwidget.h>
+
+#include "answer.h"
 
 class QLabel;
 
-class map;
+class KGmap;
 
 class askWidget : public QWidget
 {
 Q_OBJECT
 	public:
-		askWidget(QWidget *parent, map *m, QWidget *w, uint count, bool showLabel = true);
+		askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool showLabel = true);
 		virtual ~askWidget();
 		
-		void showAnswersMessageBox();
+		void showResultsDialog();
 	
 	public slots:
 		virtual void setMovement(bool b);
@@ -40,11 +43,13 @@ Q_OBJECT
 		void clearAsked();
 		QString lastDivisionAsked();
 		void nextQuestion();
-		virtual void nextQuestionHook(QString division) = 0;
+		virtual void nextQuestionHook(const QString &division) = 0;
 		void questionAnswered(bool wasCorrect);
 		void resetAnswers();
+		virtual QString getQuestionHook() const = 0;
 	
-		map *p_map;
+		KGmap *p_map;
+		userAnswer p_currentAnswer;
 	
 	private:
 		void updateLabel();
@@ -52,13 +57,15 @@ Q_OBJECT
 		QLabel *p_answers;
 		int p_correctAnswers, p_incorrectAnswers;
 		
+		QValueVector<userAnswer> p_userAnswers;
+		
 		// the list of asked divisions
 		QStringList p_asked;
 		
 		// the number of questions to do
 		uint p_count;
 		
-		bool p_shouldShowMB;
+		bool p_shouldShowResultsDialog;
 };
 
 #endif

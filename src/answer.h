@@ -8,33 +8,33 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef POPUPMANAGER_H
-#define POPUPMANAGER_H
+#ifndef RESULT_H
+#define RESULT_H
 
-#include <qobject.h>
+#include <qvariant.h>
 
-class QWidget;
+class QGridLayout;
 
-class myPopup;
-
-class popupManager : public QObject
+class userAnswer
 {
-Q_OBJECT
 	public:
-		popupManager(QWidget *parent);
+		userAnswer();
+		userAnswer(const userAnswer &qa);
 		
-		// shows text at p
-		void show(const QString &text, const QPoint &p);
+		userAnswer &operator=(const userAnswer &qa);
 		
-		// shots text centered
-		void show(const QString &text);
+		void setQuestion(QVariant question);
+		void setAnswer(QVariant answer);
+		void setCorrectAnswer(QVariant correctAnswer);
+		
+		void putWidgets(QWidget *w, QGridLayout *lay, int row) const;
+		
+/*		QString answer() const;
+		QString correctAnswer() const;
+		QString question() const;*/
 	
-	public slots:
-		void clear();
-
 	private:
-		myPopup *p_mp;
-		QWidget *p_parent;
+		QVariant p_question, p_answer, p_correctAnswer;
 };
 
 #endif

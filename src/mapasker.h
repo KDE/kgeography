@@ -25,13 +25,14 @@ class mapAsker : public askWidget
 {
 Q_OBJECT
 	public:
-		mapAsker(QWidget *parent, map *m, QWidget *w, bool asker, uint count = 0);
+		mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count = 0);
 		~mapAsker();
-	
+		
 	protected:
 		void clean();
-		void nextQuestionHook(QString division);
+		void nextQuestionHook(const QString &division);
 		void mousePressEvent(QMouseEvent *e);
+		QString getQuestionHook() const;
 
 	public slots:
 		void setMovement(bool b);

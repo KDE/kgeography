@@ -21,7 +21,7 @@ class QHBox;
 class QLabel;
 class QVBox;
 
-class map;
+class KGmap;
 class askWidget;
 
 class kgeography : public KMainWindow
@@ -45,7 +45,7 @@ Q_OBJECT
 	private:
 		void putAskWidget();
 		void removeOldAskWidget();
-		void setMap(map *m);
+		void setMap(KGmap *m);
 
 		QHBox *p_bigWidget;
 		QVBox *p_underLeftWidget;
@@ -59,7 +59,7 @@ Q_OBJECT
 		KToggleAction *p_zoom, *p_move;
 		QLabel *p_currentMap;
 
-		map *p_map;
+		KGmap *p_map;
 		askWidget *p_askWidget;
 };
 

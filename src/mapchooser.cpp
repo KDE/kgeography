@@ -23,7 +23,7 @@ mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Cho
 {
 	QHBox *mainHB;
 	QStringList list;
-	map *m;
+	KGmap *m;
 	QWidget *mapArea;
 	QGridLayout *mapLay;
 	
@@ -70,9 +70,9 @@ mapChooser::~mapChooser()
 	p_maps.clear();
 }
 
-map *mapChooser::getMap()
+KGmap *mapChooser::getMap()
 {
-	map *m;
+	KGmap *m;
 	m = p_maps[p_listBox -> currentText()];
 	p_maps.remove(p_listBox -> currentText());
 	return m;
@@ -80,7 +80,7 @@ map *mapChooser::getMap()
 
 void mapChooser::putImage(const QString &mapName)
 {
-	map *m;
+	KGmap *m;
 	m = p_maps[mapName];
 	QImage image(m -> getMapFile());
 	image = image.smoothScale(300, 225, QImage::ScaleMin);

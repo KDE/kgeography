@@ -16,18 +16,30 @@
 #include "divisionflagasker.h"
 #include "map.h"
 
-divisionFlagAsker::divisionFlagAsker(QWidget *parent, map *m, QWidget *w, uint count) : boxAsker(parent, m, w, count)
+divisionFlagAsker::divisionFlagAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : boxAsker(parent, m, w, count)
 {
 	init();
 }
 
-void divisionFlagAsker::nextBoxAskerQuestionHook(QString division, int i, bool isAnswer)
+void divisionFlagAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
 {
-	if (isAnswer)
-	{
-		setQuestion(i18n("The flag of %1 is...").arg(division));
-	}
 	QImage im(p_map -> getDivisionFlagFile(division));
 	im = im.smoothScale(im.width()/5, im.height()/5);
 	p_rb[i] -> setPixmap(im);
+	if (isAnswer)
+	{
+		setQuestion(i18n("The flag of %1 is...").arg(division));
+		p_currentAnswer.setCorrectAnswer(im);
+		p_currentAnswer.setQuestion(division);
+	}
+}
+
+void divisionFlagAsker::setAnswerHook(int userSays)
+{
+	p_currentAnswer.setAnswer(p_rb[userSays] -> pixmap() -> convertToImage());
+}
+
+QString divisionFlagAsker::getQuestionHook() const
+{
+	return i18n("The flag of ... is ...");
 }

@@ -44,7 +44,7 @@ QString division::getFlagFile() const
 QString division::getCapital() const
 {
 	// do not try to translate ""
-	if (p_capital == "") return "";
+	if (p_capital.isEmpty()) return "";
 	return i18n(p_capital.utf8());
 }
 
