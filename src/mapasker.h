@@ -40,10 +40,10 @@ Q_OBJECT
 	public slots:
 		void setMovement(bool b);
 		void setZoom(bool b);
+		void showScrollBars(bool b);
 	
 	private slots:
 		void handleMapClick(QRgb c, const QPoint &p);
-		void showScrollBars(bool b);
 		void setScrollBarsPosition(int x, int y);
 		void setScrollBarsVisibleSize(int w, int h);
 		void setScrollBarsMaximumSize(int w, int h);

@@ -262,14 +262,13 @@ void kgeography::disclaimer()
 
 void kgeography::resizeMainWindow ()
 {
-	int y = 0;
+	int ySize = 0;
 
 	if (p_askWidget)
 	{
-		if (p_underLeftWidget -> size().height() > ((mapAsker*) p_askWidget)->mapSize().height()) y = p_underLeftWidget -> size().height();
-		else y = ((mapAsker*) p_askWidget)->mapSize().height();
-		y += menuBar() -> size().height() + toolBar() -> size().height();
-		resize(p_underLeftWidget -> size().width() + ((mapAsker*) p_askWidget)->mapSize().width(), y);
+		ySize = menuBar() -> size().height() + toolBar() -> size().height() + ((mapAsker*) p_askWidget)->mapSize().height();
+		resize(p_underLeftWidget -> size().width() + ((mapAsker*) p_askWidget)->mapSize().width() + 1, ySize + 1);
+		((mapAsker*) p_askWidget)->showScrollBars(false);
 	}
 }
 
