@@ -63,6 +63,7 @@ Q_OBJECT
 		QSize p_oldSize;
 		int p_oldZoomX, p_oldZoomY, p_oldZoomW, p_oldZoomH;
 		int p_scrollBarWidth, p_scrollBarHeight;
+		bool p_scrollBarsVisible;
 };
 
 #endif

@@ -9,7 +9,6 @@
  ***************************************************************************/
 
 #include <kaction.h>
-#include <kdeversion.h>
 #include <kdialog.h>
 #include <klocale.h>
 #include <kinputdialog.h>
@@ -22,6 +21,7 @@
 #include <qlayout.h>
 #include <qvbox.h>
 #include <qsize.h>
+#include <qtimer.h>
 
 #include "capitaldivisionasker.h"
 #include "divisioncapitalasker.h"
@@ -34,10 +34,8 @@
 #include "mapparser.h"
 #include "map.h"
 
-kgeography::kgeography() : KMainWindow()
+kgeography::kgeography() : KMainWindow(), p_firstShow(true)
 {
-	QString file;
-
 	p_map = 0;
 	p_askWidget = 0;
 
@@ -80,50 +78,56 @@ kgeography::kgeography() : KMainWindow()
 
 	new KAction(i18n("Disclaimer"), 0, this, SLOT(disclaimer()), actionCollection(), "disclaimer");
 
-	file = kgeographySettings::self() -> lastMap();
-
-#if KDE_IS_VERSION(3,2,90)
 	setupGUI(Keys | ToolBar | Save | Create);
-#else
-	createGUI();
-#endif
 
-
-	if (QFile::exists(file))
-	{
-		mapReader reader;
-		if (reader.parseMap(file))
-		{
-			setMap(reader.getMap());
-		}
-		else
-		{
-			KMessageBox::error(this, i18n("Could not open last used map. Error parsing %1: %2").arg(file).arg(reader.getError()));
-			delete reader.getMap();
-			openMap();
-		}
-	}
-	else openMap();
-
-	if (!p_map)
-	{
-		p_currentMap -> setText(i18n("There is no current map"));
-		p_consult -> setEnabled(false);
-		p_askMap -> setEnabled(false);
-		p_askFlagDivisions -> setEnabled(false);
-		p_askDivisionFlags -> setEnabled(false);
-		p_askCapitalDivisions -> setEnabled(false);
-		p_askDivisionCapitals -> setEnabled(false);
-	}
-	
 	show();
-	resizeMainWindow();
 }
 
 kgeography::~kgeography()
 {
 	delete p_askWidget;
 	delete p_map;
+}
+
+void kgeography::showEvent(QShowEvent *)
+{
+	if (p_firstShow)
+	{
+		QString file = kgeographySettings::self() -> lastMap();
+		
+		if (QFile::exists(file))
+		{
+			mapReader reader;
+			if (reader.parseMap(file))
+			{
+				setMap(reader.getMap());
+			}
+			else
+			{
+				KMessageBox::error(this, i18n("Could not open last used map. Error parsing %1: %2").arg(file).arg(reader.getError()));
+				delete reader.getMap();
+				openMap();
+			}
+		}
+		else openMap();
+
+		if (!p_map)
+		{
+			p_currentMap -> setText(i18n("There is no current map"));
+			p_consult -> setEnabled(false);
+			p_askMap -> setEnabled(false);
+			p_askFlagDivisions -> setEnabled(false);
+			p_askDivisionFlags -> setEnabled(false);
+			p_askCapitalDivisions -> setEnabled(false);
+			p_askDivisionCapitals -> setEnabled(false);
+		}
+		// if anyone can explain why with the slot works and now without
+		// i'll be glad to learn
+		QTimer::singleShot(0, this, SLOT(resizeMainWindow()));
+// 		resizeMainWindow();
+		
+		p_firstShow = false;
+	}
 }
 
 void kgeography::openMap()

@@ -28,6 +28,7 @@ mapWidget::mapWidget(QWidget *parent) : QWidget(parent)
 	p_zoomH = 0;
 	p_scrollBarWidth = 0;
 	p_scrollBarHeight = 0;
+	p_scrollBarsVisible = 0;
 }
 
 void mapWidget::init(const QString &path, int scrollBarWidth, int scrollBarHeight)
@@ -222,7 +223,7 @@ void mapWidget::mouseReleaseEvent(QMouseEvent *e)
 			p_lastFactorX = factorX;
 			p_lastFactorY = factorY;
 			
-			emit setMoveActionEnabled(true);
+			emitMoveActionEnabled();
 		}
 	}
 	else if (p_moving)
@@ -234,6 +235,8 @@ void mapWidget::mouseReleaseEvent(QMouseEvent *e)
 
 void mapWidget::resizeEvent(QResizeEvent *e)
 {
+	if (p_originalImage.isNull()) return;
+	
 	p_zoomW = (int)rint(e -> size().width() * p_lastFactorX);
 	p_zoomH = (int)rint(e -> size().height() * p_lastFactorY);
 	
@@ -244,12 +247,24 @@ void mapWidget::resizeEvent(QResizeEvent *e)
 
 void mapWidget::emitMoveActionEnabled()
 {
-	if (p_zoomW + p_scrollBarWidth < maximumWidth() * p_lastFactorX || p_zoomH  + p_scrollBarHeight < maximumHeight() * p_lastFactorY)
+	int w, h;
+	
+	w = p_zoomW;
+	h = p_zoomH;
+	if (p_scrollBarsVisible)
 	{
+		w += p_scrollBarWidth;
+		h += p_scrollBarHeight;
+	}
+	
+	if (w < maximumWidth() * p_lastFactorX || h < maximumHeight() * p_lastFactorY)
+	{
+		p_scrollBarsVisible = true;
 		emit setMoveActionEnabled(true);
 	}
 	else
 	{
+		p_scrollBarsVisible = false;
 		emit setMoveActionChecked(false);
 		emit setMoveActionEnabled(false);
 	}

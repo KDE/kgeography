@@ -30,6 +30,9 @@ Q_OBJECT
 	public:
 		kgeography();
 		~kgeography();
+	
+	protected:
+		void showEvent(QShowEvent *e);
 
 	private slots:
 		void openMap();
@@ -41,6 +44,7 @@ Q_OBJECT
 		void askFlagDivisions();
 		void askDivisionFlags();
 		void disclaimer();
+		void resizeMainWindow();
 
 	private:
 		QSize getPreferredSize();
@@ -48,7 +52,6 @@ Q_OBJECT
 		void putAskWidget();
 		void removeOldAskWidget();
 		void setMap(KGmap *m);
-		void resizeMainWindow();
 
 		QHBox *p_bigWidget;
 		QVBox *p_underLeftWidget;
@@ -65,6 +68,7 @@ Q_OBJECT
 
 		KGmap *p_map;
 		askWidget *p_askWidget;
+		bool p_firstShow;
 };
 
 #endif
