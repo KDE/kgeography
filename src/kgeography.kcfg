@@ -4,7 +4,7 @@
 	<kcfgfile name="kgeographyrc"/>
 	<group name="general">
 		<entry name="lastMap" type="String">
-			<label>The last map opened</label>
+			<label>The last opened map</label>
 		</entry>
 	</group>
 </kcfg>
