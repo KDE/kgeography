@@ -15,17 +15,21 @@
 
 #include <qhbox.h>
 #include <qimage.h>
+#include <qlayout.h>
 
 #include "mapchooser.h"
 
 mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Choose map to use"), KDialogBase::Ok | KDialogBase::Cancel, KDialogBase::Ok, true)
 {
-	QHBox *hb;
+	QHBox *mainHB;
 	QStringList list;
 	map *m;
-	hb = new QHBox(this);
+	QWidget *mapArea;
+	QGridLayout *mapLay;
+	
+	mainHB = new QHBox(this);
 	list = KGlobal::dirs() -> findAllResources("appdata", "*.kgm");
-	p_listBox = new QListBox(hb);
+	p_listBox = new QListBox(mainHB);
 	QStringList::iterator it;
 	for(it = list.begin(); it != list.end(); ++it)
 	{
@@ -41,13 +45,23 @@ mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Cho
 			p_maps.insert(m -> getName(), m);
 		}
 	}
-	p_image = new QWidget(hb);
-	p_image -> setFixedSize(300, 225);
+	
+	mapArea = new QWidget(mainHB);
+	mapArea -> setFixedSize(300, 225);
+	
+	mapLay = new QGridLayout(mapArea, 3, 3);
+	
+	p_image = new QWidget(mapArea);
+	mapLay -> addWidget(p_image, 1, 1);
+	
 	connect(p_listBox, SIGNAL(highlighted(const QString&)), this, SLOT(putImage(const QString&)));
 	connect(p_listBox, SIGNAL(selected(int)), this, SLOT(slotOk()));
+	
+	setMainWidget(mainHB);
+	
+	p_listBox -> sort();
 	if (p_listBox -> count() > 0) p_listBox -> setCurrentItem(0);
 	else enableButtonOK(false);
-	setMainWidget(hb);
 }
 
 mapChooser::~mapChooser()
@@ -68,7 +82,10 @@ void mapChooser::putImage(const QString &mapName)
 {
 	map *m;
 	m = p_maps[mapName];
-	p_image -> setPaletteBackgroundPixmap(QImage(m -> getMapFile()).scale(300, 225));
+	QImage image(m -> getMapFile());
+	image = image.smoothScale(300, 225, QImage::ScaleMin);
+	p_image -> setPaletteBackgroundPixmap(image);
+	p_image -> setFixedSize(image.size());
 }
 
 #include "mapchooser.moc"
