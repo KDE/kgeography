@@ -2,7 +2,7 @@
 	<mapFile>ncamerica.png</mapFile>
 	<name>North and Central America</name>
 	<division>
-		<name>Atlantic Ocean</name>
+		<name>Water</name>
 		<ignore>yes</ignore>
 		<color>
 			<red>65</red>
@@ -11,21 +11,12 @@
 		</color>
 	</division>
 	<division>
-		<name>Out of Bounds</name>
+		<name>Not North and Central America</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>192</red>
-			<green>192</green>
-			<blue>192</blue>
-		</color>
-	</division>
-	<division>
-		<name>Pacific Ocean</name>
-		<ignore>yes</ignore>
-		<color>
-			<red>102</red>
-			<green>255</green>
-			<blue>255</blue>
+			<red>66</red>
+			<green>96</green>
+			<blue>174</blue>
 		</color>
 	</division>
 	<division>
