@@ -73,7 +73,7 @@ kgeography::kgeography() : KMainWindow()
 	
 	file = kgeographySettings::self() -> lastMap();
 	
-	createGUI();
+	setupGUI(Keys | ToolBar | Save | Create);
 	
 	if (QFile::exists(file))
 	{
