@@ -23,8 +23,7 @@ messages: rc.cpp
 	$(XGETTEXT) *.cpp -o $(podir)/kgeography.pot
 
 # this is where the kdelnk file will go
-#kdelnkdir   = $(kde_appsdir)/Games
-#kdelnk_DATA = kgeography.desktop
+xdg_apps_DATA = kgeography.desktop
 
 kde_kcfg_DATA = kgeography.kcfg
 
