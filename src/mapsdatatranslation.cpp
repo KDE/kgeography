@@ -425,7 +425,7 @@ i18n("Thuringia");
 i18n("Stuttgart");
 i18n("Munich");
 i18n("Berlin");
-i18n("Postdam");
+i18n("Potsdam");
 i18n("Bremen");
 i18n("Hamburg");
 i18n("Wiesbaden");
