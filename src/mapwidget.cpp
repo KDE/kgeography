@@ -26,10 +26,14 @@ mapWidget::mapWidget(QWidget *parent) : QWidget(parent)
 	p_moving = false;
 	p_zoomW = 0;
 	p_zoomH = 0;
+	p_scrollBarWidth = 0;
+	p_scrollBarHeight = 0;
 }
 
-void mapWidget::init(const QString &path)
+void mapWidget::init(const QString &path, int scrollBarWidth, int scrollBarHeight)
 {
+	p_scrollBarWidth = scrollBarWidth;
+	p_scrollBarHeight = scrollBarHeight;
 	p_originalImage.load(path);
 	emit updateMaximumSize(p_originalImage.width(), p_originalImage.height());
 	setOriginalImage();
@@ -105,7 +109,7 @@ void mapWidget::mousePressEvent(QMouseEvent *e)
 		{
 			setOriginalImage();
 		}
-		else e -> ignore();
+		else e->ignore(); // that makes the event go to mapasker and clear the popup
 	}
 }
 
@@ -240,12 +244,13 @@ void mapWidget::resizeEvent(QResizeEvent *e)
 
 void mapWidget::emitMoveActionEnabled()
 {
-	if (p_zoomW < maximumWidth() * p_lastFactorX || p_zoomH < maximumHeight() * p_lastFactorY)
+	if (p_zoomW + p_scrollBarWidth < maximumWidth() * p_lastFactorX || p_zoomH  + p_scrollBarHeight < maximumHeight() * p_lastFactorY)
 	{
 		emit setMoveActionEnabled(true);
 	}
 	else
 	{
+		emit setMoveActionChecked(false);
 		emit setMoveActionEnabled(false);
 	}
 }
@@ -287,6 +292,8 @@ void mapWidget::setOriginalImage()
 
 void mapWidget::updateShownImage()
 {
+	if (p_originalImage.isNull()) return;
+
 	if (p_oldZoomX != p_zoomX || p_oldZoomY != p_zoomY || p_oldZoomW != p_zoomW || p_oldZoomH != p_zoomH || size() != p_oldSize)
 	{
 		p_zoomedImageShown = p_originalImage.copy(p_zoomX, p_zoomY, p_zoomW, p_zoomH);

@@ -32,6 +32,7 @@ Q_OBJECT
 	public slots:
 		virtual void setMovement(bool b);
 		virtual void setZoom(bool b);
+		virtual void setOriginalZoom();
 	
 	signals:
 		void setMoveActionChecked(bool b);

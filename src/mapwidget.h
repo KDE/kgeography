@@ -21,7 +21,7 @@ Q_OBJECT
 	public:
 		mapWidget(QWidget *parent);
 		
-		void init(const QString &path);
+		void init(const QString &path, int scrollBarWidth, int scrollBarHeight);
 
 		void setMapMove(bool b);
 		void setMapZoom(bool b);
@@ -32,6 +32,7 @@ Q_OBJECT
 	public slots:
 		void updateHPosition(int value);
 		void updateVPosition(int value);
+		void setOriginalImage();
 	
 	signals:
 		void setMoveActionChecked(bool b);
@@ -51,7 +52,6 @@ Q_OBJECT
 	private:
 		void emitMoveActionEnabled();
 		QImage *getCurrentImage();
-		void setOriginalImage();
 		void updateShownImage();
 		
 		QImage p_originalImage, p_zoomedImageShown;
@@ -62,6 +62,7 @@ Q_OBJECT
 		// useful to not do that many updateShownImage
 		QSize p_oldSize;
 		int p_oldZoomX, p_oldZoomY, p_oldZoomW, p_oldZoomH;
+		int p_scrollBarWidth, p_scrollBarHeight;
 };
 
 #endif

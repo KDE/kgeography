@@ -21,7 +21,7 @@ answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &us
 	QLabel *l1, *l2, *l3;
 	QWidget *container;
 	QFont boldFont, bigFont;
-	int totalAnswers;
+	uint totalAnswers;
 	totalAnswers = userAnswers.count();
 	
 	container = new QWidget(this/*viewport()*/);

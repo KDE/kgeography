@@ -36,17 +36,19 @@ Q_OBJECT
 		void nextQuestionHook(const QString &division);
 		void mousePressEvent(QMouseEvent *e);
 		QString getQuestionHook() const;
+		void showEvent(QShowEvent *e);
 
 	public slots:
 		void setMovement(bool b);
 		void setZoom(bool b);
-		void showScrollBars(bool b);
+		void setOriginalZoom();
 	
 	private slots:
 		void handleMapClick(QRgb c, const QPoint &p);
 		void setScrollBarsPosition(int x, int y);
 		void setScrollBarsVisibleSize(int w, int h);
 		void setScrollBarsMaximumSize(int w, int h);
+		void showScrollBars(bool b);
 	
 	private:
 		QLabel *p_next;
@@ -57,7 +59,7 @@ Q_OBJECT
 		mapWidget *p_mapWidget;
 		
 		popupManager p_popupManager;
-		bool p_shouldClearPopup, p_asker;
+		bool p_shouldClearPopup, p_asker, p_firstShow;
 };
 
 #endif

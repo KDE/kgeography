@@ -1,3 +1,8 @@
+2005-03-02 Albert Astals Cid <tsdgeos@terra.es>
+	* More scrollbars correction
+	* Split Zoom to Zoom and Zoom to original size. Based on a Pino
+	Toscano patch
+
 2005-02-28 Albert Astals Cid <tsdgeos@terra.es>
 	* Don't put the scrollbars on map widget if they are not necesary.
 	Thanks Pino for noticing

@@ -42,6 +42,10 @@ void askWidget::setZoom(bool)
 {
 }
 
+void askWidget::setOriginalZoom()
+{
+}
+
 void askWidget::clearAsked()
 {
 	p_asked.clear();

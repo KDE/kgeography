@@ -69,8 +69,11 @@ kgeography::kgeography() : KMainWindow()
 	KStdAction::open(this, SLOT(openMap()), actionCollection(), "openMap");
 	KStdAction::quit(this, SLOT(close()), actionCollection(), "quit");
 
-	p_zoom = new KToggleAction(i18n("&Zoom"), "viewmag", 0, 0, 0, actionCollection(), "zoom");
+	p_zoom = new KToggleAction(i18n("&Zoom"), "viewmagfit", 0, 0, 0, actionCollection(), "zoom_select");
 	p_zoom -> setEnabled(false);
+	
+	p_zoomOriginal = new KAction(i18n("Z&oom 1:1"), "viewmag1", 0, 0, 0, actionCollection(), "zoom_original");
+	p_zoomOriginal -> setEnabled(false);
 
 	p_move = new KToggleAction(i18n("&Move"), "move", 0, 0, 0, actionCollection(), "move");
 	p_move -> setEnabled(false);
@@ -139,6 +142,7 @@ void kgeography::consult()
 	removeOldAskWidget();
 	p_askWidget = new mapAsker(p_bigWidget, p_map, p_underLeftWidget, false);
 	p_zoom -> setEnabled(true);
+	p_zoomOriginal -> setEnabled(true);
 	putAskWidget();
 }
 
@@ -183,6 +187,7 @@ void kgeography::askMap()
 		removeOldAskWidget();
 		p_askWidget = new mapAsker(p_bigWidget, p_map, p_underLeftWidget, true, i);
 		p_zoom -> setEnabled(true);
+		p_zoomOriginal -> setEnabled(true);
 		putAskWidget();
 	}
 	else consult();
@@ -222,10 +227,10 @@ void kgeography::removeOldAskWidget()
 {
 	delete p_askWidget;
 	p_zoom -> setEnabled(false);
+	p_zoomOriginal -> setEnabled(false);
 	p_move -> setEnabled(false);
 	p_zoom -> setChecked(false);
 	p_move -> setChecked(false);
-
 }
 
 QSize kgeography::getPreferredSize()
@@ -238,16 +243,11 @@ QSize kgeography::getPreferredSize()
 
 void kgeography::putAskWidget()
 {
-	mapAsker *ma = dynamic_cast<mapAsker*>(p_askWidget);
-	if (ma)
-	{
-		if (size() == getPreferredSize()) ma -> showScrollBars(false);
-	}
-	
 	p_bigWidget -> setStretchFactor(p_askWidget, 1);
 	p_askWidget -> show();
 	connect(p_askWidget, SIGNAL(setZoomActionChecked(bool)), p_zoom, SLOT(setChecked(bool)));
 	connect(p_zoom, SIGNAL(toggled(bool)), p_askWidget, SLOT(setZoom(bool)));
+	connect(p_zoomOriginal, SIGNAL(activated()), p_askWidget, SLOT(setOriginalZoom()));
 	connect(p_askWidget, SIGNAL(setMoveActionEnabled(bool)), p_move, SLOT(setEnabled(bool)));
 	connect(p_askWidget, SIGNAL(setMoveActionChecked(bool)), p_move, SLOT(setChecked(bool)));
 	connect(p_move, SIGNAL(toggled(bool)), p_askWidget, SLOT(setMovement(bool)));
@@ -276,11 +276,7 @@ void kgeography::disclaimer()
 
 void kgeography::resizeMainWindow()
 {
-	if (p_askWidget)
-	{
-		resize(getPreferredSize());
-		((mapAsker*) p_askWidget)->showScrollBars(false);
-	}
+	if (p_askWidget) resize(getPreferredSize());
 }
 
 #include "kgeography.moc"

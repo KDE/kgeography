@@ -20,7 +20,7 @@
 #include "mapasker.h"
 #include "mapwidget.h"
 
-mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_popupManager(this), p_asker(asker)
+mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_popupManager(this), p_asker(asker), p_firstShow(true)
 {
 	QGridLayout *lay = new QGridLayout(this, 2, 2);
 	
@@ -49,8 +49,6 @@ mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count
 	connect(p_hsb, SIGNAL(valueChanged(int)), p_mapWidget, SLOT(updateHPosition(int)));
 	connect(p_vsb, SIGNAL(valueChanged(int)), p_mapWidget, SLOT(updateVPosition(int)));
 	
-	p_mapWidget -> init(p_map -> getMapFile());
-	 
 	if (asker)
 	{
 		QBoxLayout *vbl = dynamic_cast<QBoxLayout*>(w -> layout());
@@ -89,6 +87,12 @@ void mapAsker::setMovement(bool b)
 void mapAsker::setZoom(bool b)
 {
 	p_mapWidget -> setMapZoom(b);
+	p_popupManager.clear();
+}
+
+void mapAsker::setOriginalZoom()
+{
+	p_mapWidget -> setOriginalImage();
 	p_popupManager.clear();
 }
 
@@ -168,6 +172,15 @@ void mapAsker::nextQuestionHook(const QString &division)
 QString mapAsker::getQuestionHook() const
 {
 	return i18n("Click on ...");
+}
+
+void mapAsker::showEvent(QShowEvent *)
+{
+	if (p_firstShow)
+	{
+		p_mapWidget -> init(p_map -> getMapFile(), p_vsb->width(), p_hsb->height());
+		p_firstShow = false;
+	}
 }
 
 QSize mapAsker::mapSize() const
