@@ -88,5 +88,4 @@ void mapAsker::nextDivision()
 	}
 }
 
-
 #include "mapasker.moc"

@@ -123,12 +123,15 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 	{
 		b = p_map -> setMapFile(p_path + p_contents);
 		p_mapFileSet = true;
+		if (!b) p_error = i18n("File %1 does not exist").arg(p_path + p_contents);
 	}
 	else if (aux == "division")
 	{
 		p_division -> setRGB(p_red, p_green , p_blue);
-		b = p_colorSet && p_divisionNameSet;
+		b = p_divisionNameSet;
+		if (!p_divisionNameSet) p_error = i18n("There is a division without name");
 		b = b && p_map -> addDivision(p_division);
+		if (p_divisionNameSet) p_error = i18n("There is already either a division called %1 or a division with the same colors as %2").arg(p_division -> getName()).arg(p_division -> getName());
 	}
 	else if (p_previousTags == ":map:division:name")
 	{
@@ -176,7 +179,11 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 		else if (p_contents.lower() == "no")
 		{
 		}
-		else b = false;
+		else
+		{
+			b = false;
+			p_error = i18n("Invalid value in ignore tag");
+		}
 	}
 	else if (aux == "flag")
 	{
