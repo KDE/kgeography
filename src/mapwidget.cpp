@@ -10,6 +10,7 @@
 
 #include <kapplication.h>
 #include <klocale.h>
+#include <math.h>
 
 #include <qcursor.h>
 #include <qpainter.h>
