@@ -46,7 +46,6 @@ i18n("Mozambique");
 i18n("Namibia");
 i18n("Niger");
 i18n("Nigeria");
-i18n("Oman");
 i18n("Portugal");
 i18n("Qatar");
 i18n("Republic Of The Congo");
