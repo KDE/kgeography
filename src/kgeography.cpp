@@ -9,6 +9,7 @@
  ***************************************************************************/
 
 #include <kaction.h>
+#include <kdeversion.h>
 #include <klocale.h>
 #include <kinputdialog.h>
 #include <kmessagebox.h>
