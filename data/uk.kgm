@@ -11,6 +11,15 @@
 		</color>
 	</division>
 	<division>
+		<name>Coast</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>29</red>
+			<green>44</green>
+			<blue>84</blue>
+		</color>
+	</division>
+	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>
 		<color>
@@ -180,6 +189,14 @@
 		</color>
 	</division>
 	<division>
+		<name>South Yorkshire</name>
+		<color>
+			<red>220</red>
+			<green>130</green>
+			<blue>220</blue>
+		</color>
+	</division>
+	<division>
 		<name>Lancashire</name>
 		<color>
 			<red>220</red>
@@ -300,7 +317,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Herefordshire</name>
+		<name>Hertfordshire</name>
 		<color>
 			<red>190</red>
 			<green>130</green>
@@ -323,11 +340,23 @@
 			<blue>190</blue>
 		</color>
 	</division>
-	
-	
-	
-	
-	
+	<division>
+		<name>Buckinghamshire</name>
+		<color>
+			<red>220</red>
+			<green>220</green>
+			<blue>130</blue>
+		</color>
+	</division>
+	<division>
+		<name>Oxfordshire</name>
+		<color>
+			<red>130</red>
+			<green>250</green>
+			<blue>250</blue>
+		</color>
+	</division>
+
 	<division>
 		<name>Powys</name>
 		<color>
@@ -336,8 +365,63 @@
 			<blue>250</blue>
 		</color>
 	</division>
-	
-	
+	<division>
+		<name>Dyfed</name>
+		<color>
+			<red>130</red>
+			<green>160</green>
+			<blue>190</blue>
+		</color>
+	</division>
+	<division>
+		<name>West Glamorgan</name>
+		<color>
+			<red>160</red>
+			<green>250</green>
+			<blue>160</blue>
+		</color>
+	</division>
+	<division>
+		<name>Mid Glamorgan</name>
+		<color>
+			<red>130</red>
+			<green>130</green>
+			<blue>220</blue>
+		</color>
+	</division>
+	<division>
+		<name>South Glamorgan</name>
+		<color>
+			<red>130</red>
+			<green>220</green>
+			<blue>160</blue>
+		</color>
+	</division>
+	<division>
+		<name>Gwent</name>
+		<color>
+			<red>220</red>
+			<green>160</green>
+			<blue>220</blue>
+		</color>
+	</division>
+	<division>
+		<name>Gwynedd</name>
+		<color>
+			<red>190</red>
+			<green>250</green>
+			<blue>130</blue>
+		</color>
+	</division>
+	<division>
+		<name>Clwyd</name>
+		<color>
+			<red>160</red>
+			<green>130</green>
+			<blue>220</blue>
+		</color>
+	</division>
+
 	<division>
 		<name>Isle Of Man</name>
 		<color>
@@ -346,7 +430,7 @@
 			<blue>190</blue>
 		</color>
 	</division>
-	
+
 	<division>
 		<name>Isle Of Anglesey</name>
 		<color>
@@ -355,8 +439,7 @@
 			<blue>250</blue>
 		</color>
 	</division>
-	
-	
+
 	<division>
 		<name>Antrim</name>
 		<color>
@@ -405,16 +488,17 @@
 			<blue>130</blue>
 		</color>
 	</division>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	<division>
+		<name>NOT YET DONE</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>215</red>
+			<green>59</green>
+			<blue>59</blue>
+		</color>
+	</division>
+
 	<division>
 		<name>Scotland</name>
 		<color>
@@ -431,9 +515,7 @@
 			<blue>130</blue>
 		</color>
 	</division>
-	
-	
-	
+
 	<division>
 		<name>Scotland/England Border</name>
 		<ignore>yes</ignore>
@@ -453,12 +535,12 @@
 		</color>
 	</division>
 	<division>
-		<name>Coast</name>
+		<name>Lough Neagh (Water)</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>29</red>
-			<green>44</green>
-			<blue>84</blue>
+			<red>65</red>
+			<green>95</green>
+			<blue>175</blue>
 		</color>
 	</division>
 </map>
