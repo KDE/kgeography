@@ -2,6 +2,9 @@
 	* More scrollbars correction
 	* Split Zoom to Zoom and Zoom to original size. Based on a Pino
 	Toscano patch
+	* Answers dialog now has a ScrollView so it can show the answers when
+	there are many
+	* Once one has ended a set of questions the map is shown
 
 2005-02-28 Albert Astals Cid <tsdgeos@terra.es>
 	* Don't put the scrollbars on map widget if they are not necesary.
