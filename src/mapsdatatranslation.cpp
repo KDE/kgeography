@@ -504,7 +504,7 @@ i18n("Paraguay");
 i18n("Argentina");
 i18n("Uruguay");
 i18n("Bogotá");
-i18n("Cararas");
+i18n("Caracas");
 i18n("Georgetown");
 i18n("Paramaribo");
 i18n("Cayenne");
