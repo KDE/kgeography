@@ -30,6 +30,9 @@ mapAsker::mapAsker(QWidget *parent, map *m, bool asker, uint count) : askWidget(
 	p_shouldClearPopup = false;
 	
 	connect(p_mapWidget, SIGNAL(clicked(QRgb, const QPoint&)), this, SLOT(handleMapClick(QRgb, const QPoint&)));
+	connect(p_mapWidget, SIGNAL(setMoveActionChecked(bool)), this, SIGNAL(setMoveActionChecked(bool)));
+	connect(p_mapWidget, SIGNAL(setZoomActionChecked(bool)), this, SIGNAL(setZoomActionChecked(bool)));
+	connect(p_mapWidget, SIGNAL(setMoveActionEnabled(bool)), this, SIGNAL(setMoveActionEnabled(bool)));
 	 
 	p_infoWidget -> setQuestionMode(asker);
 	p_mapWidget -> setMapImage(p_map -> getMapFile());
@@ -40,6 +43,12 @@ mapAsker::mapAsker(QWidget *parent, map *m, bool asker, uint count) : askWidget(
 
 void mapAsker::mousePressEvent(QMouseEvent*)
 {
+	p_popupManager.clear();
+}
+
+void mapAsker::setMovement(bool b)
+{
+	p_mapWidget -> setMapMove(b);
 	p_popupManager.clear();
 }
 

@@ -22,9 +22,13 @@ Q_OBJECT
 		mapWidget(QWidget *parent);
 
 		void setMapImage(const QString &path);
+		void setMapMove(bool b);
 		void setMapZoom(bool b);
 	
 	signals:
+		void setMoveActionChecked(bool b);
+		void setZoomActionChecked(bool b);
+		void setMoveActionEnabled(bool b);
 		void clicked(QRgb, const QPoint&);
 	
 	protected:
@@ -33,9 +37,14 @@ Q_OBJECT
 		void mouseReleaseEvent(QMouseEvent *e);
 	
 	private:
-		QImage p_originalImage, p_zoomedImage;
-		bool p_zooming, p_wantZoom;
-		QPoint p_initial, p_prev;
+		QImage *getCurrentImage();
+		void setOriginalImage();
+	
+		QImage p_originalImage, p_zoomedImageShown, p_zoomedImageBig;
+		bool p_zooming, p_wantZoom, p_moving, p_wantMove;
+		QPoint p_initial, p_prev; /* rubberbanding and moving */
+		int p_zoomX, p_zoomY;
+		double p_lastFactorX, p_lastFactorY;
 };
 
 #endif

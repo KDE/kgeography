@@ -18,6 +18,10 @@ askWidget::~askWidget()
 {
 }
 
+void askWidget::setMovement(bool)
+{
+}
+
 void askWidget::setZoom(bool)
 {
 }

@@ -9,9 +9,11 @@
 		</Menu>
 		<Menu name="view">
 			<Action name="zoom" />
+			<Action name="move" />
 		</Menu>
 	</MenuBar>
 	<ToolBar name="mainToolBar">
 		<Action name="zoom" />
+		<Action name="move" />
 	</ToolBar>
 </kpartgui>

@@ -23,10 +23,14 @@ Q_OBJECT
 		virtual ~askWidget();
 	
 	public slots:
+		virtual void setMovement(bool b);
 		virtual void setZoom(bool b);
 		virtual void goToMenu() = 0;
 	
 	signals:
+		void setMoveActionChecked(bool b);
+		void setZoomActionChecked(bool b);
+		void setMoveActionEnabled(bool b);
 		void finished();
 	
 	protected:

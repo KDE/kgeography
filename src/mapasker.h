@@ -27,8 +27,8 @@ Q_OBJECT
 	protected:
 		void mousePressEvent(QMouseEvent *e);
 
-	
 	public slots:
+		void setMovement(bool b);
 		void setZoom(bool b);
 		void goToMenu();
 	
