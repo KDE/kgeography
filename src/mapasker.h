@@ -16,6 +16,7 @@
 
 class QLabel;
 class QScrollBar;
+class QSize;
 
 class flagDivisionAsker;
 class infoWidget;
@@ -27,6 +28,8 @@ Q_OBJECT
 	public:
 		mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count = 0);
 		~mapAsker();
+
+		QSize mapSize() const;
 		
 	protected:
 		void clean();

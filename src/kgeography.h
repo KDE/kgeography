@@ -46,6 +46,7 @@ Q_OBJECT
 		void putAskWidget();
 		void removeOldAskWidget();
 		void setMap(KGmap *m);
+		void resizeMainWindow();
 
 		QHBox *p_bigWidget;
 		QVBox *p_underLeftWidget;

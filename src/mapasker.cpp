@@ -14,6 +14,7 @@
 #include <qlabel.h>
 #include <qlayout.h>
 #include <qscrollbar.h>
+#include <qstring.h>
 
 #include "map.h"
 #include "mapasker.h"
@@ -103,9 +104,16 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	}
 	else if (!p_asker)
 	{
+		QString mapFile;
 		cap = p_map -> getDivisionCapital(aux);
-		if (!cap.isEmpty()) aux = i18n("%1 (%2)").arg(aux).arg(cap);
-		p_popupManager.show(aux, p);
+		if (!cap.isEmpty())
+		{
+			mapFile = p_map -> getDivisionFlagFile(aux);
+			aux = i18n("%1 (%2)").arg(aux).arg(cap);
+		}
+
+		if (!mapFile.isEmpty()) p_popupManager.show(aux, p, mapFile);
+		else p_popupManager.show(aux, p);
 	}
 	else if (!aux.isEmpty())
 	{
@@ -159,6 +167,11 @@ void mapAsker::nextQuestionHook(const QString &division)
 QString mapAsker::getQuestionHook() const
 {
 	return i18n("Click on ...");
+}
+
+QSize mapAsker::mapSize() const
+{
+	return p_mapWidget -> mapSize();
 }
 
 #include "mapasker.moc"

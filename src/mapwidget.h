@@ -27,6 +27,7 @@ Q_OBJECT
 		void setMapZoom(bool b);
 		
 		QSize sizeHint() const;
+		QSize mapSize() const;
 	
 	public slots:
 		void updateHPosition(int value);

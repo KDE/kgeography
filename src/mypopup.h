@@ -17,6 +17,7 @@ class myPopup : public QHBox
 {
 Q_OBJECT
 	public:
+		myPopup(const QString &text, const QString &mapFile, QWidget *parent);
 		myPopup(const QString &text, QWidget *parent);
 	
 	signals:

@@ -16,10 +16,12 @@
 #include <kmessagebox.h>
 #include <kpushbutton.h>
 #include <kstdaction.h>
+#include <kmenubar.h>
 
 #include <qlabel.h>
 #include <qlayout.h>
 #include <qvbox.h>
+#include <qsize.h>
 
 #include "capitaldivisionasker.h"
 #include "divisioncapitalasker.h"
@@ -110,8 +112,9 @@ kgeography::kgeography() : KMainWindow()
 		p_askCapitalDivisions -> setEnabled(false);
 		p_askDivisionCapitals -> setEnabled(false);
 	}
-
+	
 	show();
+	resizeMainWindow();
 }
 
 kgeography::~kgeography()
@@ -127,6 +130,7 @@ void kgeography::openMap()
 	{
 		delete p_map;
 		setMap(mp.getMap());
+		resizeMainWindow();
 	}
 }
 
@@ -254,6 +258,19 @@ void kgeography::setMap(KGmap *m)
 void kgeography::disclaimer()
 {
 	KMessageBox::information(this, i18n("Maps, flags, translations, etc. are as accurate as their respective authors could achieve, but KGeography should not be taken as an authoritative source."), i18n("Disclaimer"));
+}
+
+void kgeography::resizeMainWindow ()
+{
+	int y = 0;
+
+	if (p_askWidget)
+	{
+		if (p_underLeftWidget -> size().height() > ((mapAsker*) p_askWidget)->mapSize().height()) y = p_underLeftWidget -> size().height();
+		else y = ((mapAsker*) p_askWidget)->mapSize().height();
+		y += menuBar() -> size().height() + toolBar() -> size().height();
+		resize(p_underLeftWidget -> size().width() + ((mapAsker*) p_askWidget)->mapSize().width(), y);
+	}
 }
 
 #include "kgeography.moc"

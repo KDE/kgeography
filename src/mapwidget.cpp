@@ -301,4 +301,9 @@ void mapWidget::updateShownImage()
 	}
 }
 
+QSize mapWidget::mapSize() const
+{
+	return p_originalImage.size();
+}
+
 #include "mapwidget.moc"
