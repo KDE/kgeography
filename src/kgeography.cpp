@@ -72,7 +72,7 @@ kgeography::kgeography() : KMainWindow()
 	p_zoom = new KToggleAction(i18n("&Zoom"), "viewmagfit", 0, 0, 0, actionCollection(), "zoom_select");
 	p_zoom -> setEnabled(false);
 	
-	p_zoomOriginal = new KAction(i18n("Z&oom 1:1"), "viewmag1", 0, 0, 0, actionCollection(), "zoom_original");
+	p_zoomOriginal = new KAction(i18n("&Original Size"), "viewmag1", 0, 0, 0, actionCollection(), "zoom_original");
 	p_zoomOriginal -> setEnabled(false);
 
 	p_move = new KToggleAction(i18n("&Move"), "move", 0, 0, 0, actionCollection(), "move");
