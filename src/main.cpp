@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	about.addCredit("Yann Verley", I18N_NOOP("Contributed some maps and map generation tools"), "yann.verley@free.fr");
 	about.addCredit("Justin Morgan", I18N_NOOP("Contributed North and Central America map"));
 	about.addCredit("Maurizio Paolini", I18N_NOOP("Contributed Italy map"));
-	about.addCredit("Mikolaj Machowski", I18N_NOOP("Contributed Poland and Austria map"));
+	about.addCredit("Mikolaj Machowski", I18N_NOOP("Contributed Norway, Poland and Austria map"));
 	about.addCredit(I18N_NOOP("Sodipodi flags collection"), I18N_NOOP("Got some flags from it"), 0, "http://www.sodipodi.com/index.php3?section=clipart/flags");
 	KCmdLineArgs::init(argc, argv, &about);
 	KApplication app;
