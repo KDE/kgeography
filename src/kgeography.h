@@ -43,6 +43,8 @@ Q_OBJECT
 		void disclaimer();
 
 	private:
+		QSize getPreferredSize();
+		
 		void putAskWidget();
 		void removeOldAskWidget();
 		void setMap(KGmap *m);

@@ -1,3 +1,7 @@
+2005-02-28 Albert Astals Cid <tsdgeos@terra.es>
+	* Don't put the scrollbars on map widget if they are not necesary.
+	Thanks Pino for noticing
+
 2005-02-18 Albert Astals Cid <tsdgeos@terra.es>
 	* China map by Melody Fink
 

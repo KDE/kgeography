@@ -228,8 +228,22 @@ void kgeography::removeOldAskWidget()
 
 }
 
+QSize kgeography::getPreferredSize()
+{
+	int ySize = 0;
+	
+	ySize = menuBar() -> size().height() + toolBar() -> size().height() + ((mapAsker*) p_askWidget)->mapSize().height();
+	return QSize(p_underLeftWidget -> size().width() + ((mapAsker*) p_askWidget)->mapSize().width() + 1, ySize + 1);
+}
+
 void kgeography::putAskWidget()
 {
+	mapAsker *ma = dynamic_cast<mapAsker*>(p_askWidget);
+	if (ma)
+	{
+		if (size() == getPreferredSize()) ma -> showScrollBars(false);
+	}
+	
 	p_bigWidget -> setStretchFactor(p_askWidget, 1);
 	p_askWidget -> show();
 	connect(p_askWidget, SIGNAL(setZoomActionChecked(bool)), p_zoom, SLOT(setChecked(bool)));
@@ -260,14 +274,11 @@ void kgeography::disclaimer()
 	KMessageBox::information(this, i18n("Maps, flags, translations, etc. are as accurate as their respective authors could achieve, but KGeography should not be taken as an authoritative source."), i18n("Disclaimer"));
 }
 
-void kgeography::resizeMainWindow ()
+void kgeography::resizeMainWindow()
 {
-	int ySize = 0;
-
 	if (p_askWidget)
 	{
-		ySize = menuBar() -> size().height() + toolBar() -> size().height() + ((mapAsker*) p_askWidget)->mapSize().height();
-		resize(p_underLeftWidget -> size().width() + ((mapAsker*) p_askWidget)->mapSize().width() + 1, ySize + 1);
+		resize(getPreferredSize());
 		((mapAsker*) p_askWidget)->showScrollBars(false);
 	}
 }
