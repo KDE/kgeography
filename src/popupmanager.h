@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
+ *   Copyright (C) 2004-2005 by Albert Astals Cid                          *
  *   tsdgeos@terra.es                                                      *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -27,15 +27,17 @@ Q_OBJECT
 		void show(const QString &text, const QString &text2, const QPoint &p, const QString &flagFile);
 	
 		// shows text at p
+		void show(const QString &text, const QString &text2, const QPoint &p);
+		
+		// shows text at p
 		void show(const QString &text, const QPoint &p);
 		
-		// shows text centered
-		void show(const QString &text);
-	
 	public slots:
 		void clear();
 
 	private:
+		void init(const QPoint &p);
+	
 		myPopup *p_mp;
 		QWidget *p_parent;
 };

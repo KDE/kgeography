@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
+ *   Copyright (C) 2004-2005 by Albert Astals Cid                          *
  *   tsdgeos@terra.es                                                      *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -19,41 +19,26 @@ popupManager::popupManager(QWidget *parent)
 
 void popupManager::show(const QString &text, const QString &text2, const QPoint &p, const QString &flagFile)
 {
-	int x, y, maxX, maxY;
 	delete p_mp;
 
 	p_mp = new myPopup(text, text2, flagFile, p_parent);
-	maxX = p_parent -> width() - p_mp -> width();
-	maxY = p_parent -> height() - p_mp -> height();
-	if (p.x() < maxX) x = p.x();
-	else x = maxX;
-	if (p.y() < maxY) y = p.y();
-	else y = maxY;
-	p_mp -> move(x, y);	
-	connect(p_mp, SIGNAL(deleteMe()), this, SLOT(clear()));
+	init(p);
+}
+
+void popupManager::show(const QString &text, const QString &text2, const QPoint &p)
+{
+	delete p_mp;
+	
+	p_mp = new myPopup(text, text2, p_parent);
+	init(p);
 }
 
 void popupManager::show(const QString &text, const QPoint &p)
 {
-	int x, y, maxX, maxY;
 	delete p_mp;
-	p_mp = new myPopup(text,  p_parent);
-	maxX = p_parent -> width() - p_mp -> width();
-	maxY = p_parent -> height() - p_mp -> height();
-	if (p.x() < maxX) x = p.x();
-	else x = maxX;
-	if (p.y() < maxY) y = p.y();
-	else y = maxY;
-	p_mp -> move(x, y);	
-	connect(p_mp, SIGNAL(deleteMe()), this, SLOT(clear()));
-}
-
-void popupManager::show(const QString &text)
-{
-	delete p_mp;
+	
 	p_mp = new myPopup(text, p_parent);
-	p_mp -> move((p_parent -> width() - p_mp -> width()) / 2, (p_parent -> height() - p_mp -> height()) / 2);
-	connect(p_mp, SIGNAL(deleteMe()), this, SLOT(clear()));
+	init(p);
 }
 
 void popupManager::clear()
@@ -63,6 +48,20 @@ void popupManager::clear()
 		p_mp -> deleteLater();
 		p_mp = 0;
 	}
+}
+
+void popupManager::init(const QPoint &p)
+{
+	int x, y, maxX, maxY;
+	
+	maxX = p_parent -> width() - p_mp -> width();
+	maxY = p_parent -> height() - p_mp -> height();
+	if (p.x() < maxX) x = p.x();
+	else x = maxX;
+	if (p.y() < maxY) y = p.y();
+	else y = maxY;
+	p_mp -> move(x, y);
+	connect(p_mp, SIGNAL(deleteMe()), this, SLOT(clear()));
 }
 
 #include "popupmanager.moc"

@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
+ *   Copyright (C) 2004-2005 by Albert Astals Cid                          *
  *   tsdgeos@terra.es                                                      *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -110,15 +110,11 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	{
 		QString mapFile, both;
 		cap = p_map -> getDivisionCapital(aux);
-		if (!cap.isEmpty())
-		{
-			mapFile = p_map -> getDivisionFlagFile(aux);
-			both = i18n("%1 (%2)").arg(aux).arg(cap);
-		}
-		else both = aux;
+		if (!cap.isEmpty()) mapFile = p_map -> getDivisionFlagFile(aux);
 
 		if (!mapFile.isEmpty()) p_popupManager.show(aux, cap, p, mapFile);
-		else p_popupManager.show(both, p);
+		else if (!cap.isEmpty()) p_popupManager.show(aux, cap, p);
+		else p_popupManager.show(aux, p);
 	}
 	else if (!aux.isEmpty())
 	{

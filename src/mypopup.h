@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
+ *   Copyright (C) 2004-2005 by Albert Astals Cid                          *
  *   tsdgeos@terra.es                                                      *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -16,8 +16,11 @@
 class myPopup : public QFrame
 {
 Q_OBJECT
-	public:
+	friend class popupManager;
+	
+	private:
 		myPopup(const QString &text, const QString &text2, const QString &flagFile, QWidget *parent);
+		myPopup(const QString &text1, const QString &text2, QWidget *parent);
 		myPopup(const QString &text, QWidget *parent);
 	
 	signals:

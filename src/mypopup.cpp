@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
+ *   Copyright (C) 2004-2005 by Albert Astals Cid                          *
  *   tsdgeos@terra.es                                                      *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -41,6 +41,25 @@ myPopup::myPopup(const QString &text, const QString &text2, const QString &flagF
 	setFixedSize(sizeHint());
 	show();
 }
+
+myPopup::myPopup(const QString &text1, const QString &text2, QWidget *parent) : QFrame(parent, 0, WStyle_NoBorder)
+{
+	QVBoxLayout *lay = new QVBoxLayout(this, 4, -1);
+	lay -> setAutoAdd(true);
+
+	QLabel *l = new QLabel(text1, this);
+	l -> setAlignment(Qt::AlignCenter);
+	QFont f = l -> font();
+	f.setBold(true);
+	l -> setFont(f);
+	QLabel *l2 = new QLabel(text2, this);
+	l2 -> setAlignment(Qt::AlignCenter);
+	setFrameStyle(QFrame::Box | QFrame::Plain);
+	setLineWidth(2);
+	setFixedSize(sizeHint());
+	show();
+}
+
 myPopup::myPopup(const QString &text, QWidget *parent) : QFrame(parent, 0, WStyle_NoBorder)
 {
 	QHBoxLayout *lay = new QHBoxLayout(this, 4, -1);
