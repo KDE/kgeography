@@ -69,5 +69,5 @@ int infoWidget::getCorrect() const
 
 int infoWidget::getTotal() const
 {
-	return p_correct;
+	return p_total;
 }
