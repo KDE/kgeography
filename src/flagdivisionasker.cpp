@@ -31,11 +31,11 @@ flagDivisionAsker::flagDivisionAsker(QWidget *parent, map *m, uint count) : askW
 	
 	p_flag = new QWidget(this);
 	QVButtonGroup *bg = new QVButtonGroup(i18n("That flag belongs to:"), this);
-	p_rb = new (QRadioButton*)[4];
-	p_rb[0] = new QRadioButton(bg);
-	p_rb[1] = new QRadioButton(bg);
-	p_rb[2] = new QRadioButton(bg);
-	p_rb[3] = new QRadioButton(bg);
+	p_rb = new QRadioButton*[4];
+	for(int i = 0; i < 4; i++)
+	{
+		p_rb[i] = new QRadioButton(bg);
+	}
 	p_accept = new KPushButton(this);
 	
 	lay -> addWidget(p_flag, 0);
