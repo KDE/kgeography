@@ -1,0 +1,31 @@
+******************
+* Parser related *
+******************
+
+ - Add <localname> tag to the map parser/files so the user can see the local name of a division
+	Example: In Spanish the user will see for Belgium -> Belgica (due to i18n) and Belgique (due to localname)
+ - Add <capital> tag to map parser/files so the program can do these questions:
+	In the map: Point to the division whose capital is X.
+	In a dialog: Which of these divisions has X as capital? (and give n options)
+	In a dialog: Which of these capitals is the capital of division X? (and give n options)
+ - Add  <flag> tag that points to a filename of a image containing the flag of the given division, that
+  gives to option of ask the same as above or even combine them (whose of these flags is the division with 
+  capital X, ...). Can obtain flags with free compatible licenses from 
+	- http://www.sodipodi.com/index.php3?section=clipart/flags (Sodipodi flag collection is under Public Domain)
+	- http://www.odci.gov/cia/publications/factbook/docs/flagsoftheworld.html (FactBook is under Public Domain)
+
+***************
+* Map related *
+***************
+
+ - Add more maps ;-)
+
+ - Have non political maps, support for geographical (rivers, mountains, etc) is almost there if the map is carefully 
+   crafted. Example: Have the map all of the same color, then for each river, mountain, etc create a box big enough 
+   of the wanted color and then associate the color of the box with the name of the river, etc.
+
+**************
+* UI related *
+**************
+
+ - Think of a good way of the question mode for maps, i.e: Next division to click, correct/uncorrect, correct and uncorrect count, etc.
