@@ -1,3 +1,6 @@
+2005-01-10 Albert Astals Cid <tsdgeos@terra.es>
+	* Stavenger -> Stavanger
+
 2005-01-04 René Martín Rodríguez <agarfu@gulic.org>
 	* Show flag on map view when clicking on a division that has map 
 	* Initial work on resizing the window to a sane size when loading a

@@ -581,7 +581,7 @@ i18n("Lillehammer");
 i18n("Hamar");
 i18n("Hermansverk");
 i18n("Bergen");
-i18n("Stavenger");
+i18n("Stavanger");
 i18n("Kristiansand");
 i18n("Arendal");
 i18n("Skien");
