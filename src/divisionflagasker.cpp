@@ -14,27 +14,24 @@
 
 #include <qimage.h>
 #include <qlayout.h>
+#include <qpixmap.h>
 #include <qradiobutton.h>
  
-#include "flagdivisionasker.h"
+#include "divisionflagasker.h"
 #include "map.h"
 
-flagDivisionAsker::flagDivisionAsker(QWidget *parent, map *m, uint count) : boxAsker(parent, m, count)
+divisionFlagAsker::divisionFlagAsker(QWidget *parent, map *m, uint count) : boxAsker(parent, m, count)
 {
-	p_flag = new QWidget(this);
-	p_lay -> insertWidget(0, p_flag);
-	setQuestion(i18n("This flag belongs to:"));
 	init();
 }
 
-void flagDivisionAsker::nextQuestionHook(QString division, int i, bool isAnswer)
+void divisionFlagAsker::nextQuestionHook(QString division, int i, bool isAnswer)
 {
 	if (isAnswer)
 	{
-		// we put the flag image
-		QImage image(p_map -> getDivisionFlagFile(division));
-		p_flag -> setPaletteBackgroundPixmap(image);
-		p_flag -> setFixedSize(image.size());
+		setQuestion(i18n("The flag of %1 is...").arg(division));
 	}
-	p_rb[i] -> setText(division);
+	QImage im(p_map -> getDivisionFlagFile(division));
+	im = im.smoothScale(im.width()/5, im.height()/5);
+	p_rb[i] -> setPixmap(im);
 }

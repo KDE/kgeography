@@ -15,6 +15,7 @@
 
 class KPushButton;
 
+class QLabel;
 class QRadioButton;
 class QVBoxLayout;
 
@@ -26,6 +27,7 @@ Q_OBJECT
 	
 	protected:
 		virtual void nextQuestionHook(QString division, int i, bool isAnswer) = 0;
+		void setQuestion(QString q);
 		
 		QVBoxLayout *p_lay;
 		QRadioButton **p_rb;
@@ -51,6 +53,8 @@ Q_OBJECT
 		int p_position;
 		
 		int p_correctAnswers, p_incorrectAnswers;
+		
+		QLabel *p_label;
 };
 
 #endif

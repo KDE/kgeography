@@ -22,9 +22,6 @@ class capitalDivisionAsker : public boxAsker
 
 	protected:
 		void nextQuestionHook(QString division, int i, bool isAnswer);
-	
-	private:
-		QLabel *p_label;
 };
 
 #endif

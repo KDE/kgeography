@@ -13,8 +13,6 @@
 
 #include "boxasker.h"
 
-class QImage;
-
 class flagDivisionAsker : public boxAsker
 {
 	public:

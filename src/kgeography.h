@@ -38,7 +38,8 @@ Q_OBJECT
 		void askCapitalDivisions();
 		void askDivisionCapitals();
 		void askMap();
-		void askFlags();
+		void askFlagDivisions();
+		void askDivisionFlags();
 		
 		void putMenu();
 		
@@ -52,7 +53,8 @@ Q_OBJECT
 		KPushButton *p_askCapitalDivisions;
 		KPushButton *p_askDivisionCapitals;
 		KPushButton *p_askMap;
-		KPushButton *p_askFlags;
+		KPushButton *p_askFlagDivisions;
+		KPushButton *p_askDivisionFlags;
 		KAction *p_goToMenu;
 		QLabel *p_currentMap;
 	

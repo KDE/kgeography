@@ -10,8 +10,6 @@
 
 #include <klocale.h>
 
-#include <qlabel.h>
-#include <qlayout.h>
 #include <qradiobutton.h>
  
 #include "capitaldivisionasker.h"
@@ -19,13 +17,11 @@
 
 capitalDivisionAsker::capitalDivisionAsker(QWidget *parent, map *m, uint count) : boxAsker(parent, m, count)
 {
-	p_label = new QLabel(this);
-	p_lay -> insertWidget(0, p_label);
 	init();
 }
 
 void capitalDivisionAsker::nextQuestionHook(QString division, int i, bool isAnswer)
 {
 	p_rb[i] -> setText(division);
-	if (isAnswer) p_label -> setText(i18n("%1 is the capital of...").arg(p_map -> getDivisionCapital(division)));
+	if (isAnswer) setQuestion(i18n("%1 is the capital of...").arg(p_map -> getDivisionCapital(division)));
 }

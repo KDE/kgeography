@@ -22,6 +22,7 @@
 
 #include "capitaldivisionasker.h"
 #include "divisioncapitalasker.h"
+#include "divisionflagasker.h"
 #include "flagdivisionasker.h"
 #include "kgeography.h"
 #include "settings.h"
@@ -46,7 +47,8 @@ kgeography::kgeography() : KMainWindow()
 	p_askMap = new KPushButton(i18n("&Click division in the map"), holder);
 	p_askCapitalDivisions = new KPushButton(i18n("Guess division from its &capital"), holder);
 	p_askDivisionCapitals = new KPushButton(i18n("Guess the capital of a &division"), holder);
-	p_askFlags = new KPushButton(i18n("&Guess division from its flag"), holder);
+	p_askFlagDivisions = new KPushButton(i18n("&Guess division from its flag"), holder);
+	p_askDivisionFlags = new KPushButton(i18n("G&uess the flag of a division"), holder);
 	
 	p_goToMenu = new KAction(i18n("&Go to menu"), 0, this, SLOT(goToMenu()), actionCollection(), "goToMenu");
 	p_goToMenu -> setEnabled(false);
@@ -55,7 +57,8 @@ kgeography::kgeography() : KMainWindow()
 	connect(p_askMap, SIGNAL(clicked()), this, SLOT(askMap()));
 	connect(p_askCapitalDivisions, SIGNAL(clicked()), this, SLOT(askCapitalDivisions()));
 	connect(p_askDivisionCapitals, SIGNAL(clicked()), this, SLOT(askDivisionCapitals()));
-	connect(p_askFlags, SIGNAL(clicked()), this, SLOT(askFlags()));
+	connect(p_askFlagDivisions, SIGNAL(clicked()), this, SLOT(askFlagDivisions()));
+	connect(p_askDivisionFlags, SIGNAL(clicked()), this, SLOT(askDivisionFlags()));
 	
 	setCentralWidget(p_stack);
 	
@@ -86,7 +89,10 @@ kgeography::kgeography() : KMainWindow()
 		p_currentMap -> setText(i18n("There is no current map"));
 		p_consult -> setEnabled(false);
 		p_askMap -> setEnabled(false);
-		p_askFlags -> setEnabled(false);
+		p_askFlagDivisions -> setEnabled(false);
+		p_askDivisionFlags -> setEnabled(false);
+		p_askCapitalDivisions -> setEnabled(false);
+		p_askDivisionCapitals -> setEnabled(false);
 	}
 }
 
@@ -154,7 +160,7 @@ void kgeography::askMap()
 	}
 }
 
-void kgeography::askFlags()
+void kgeography::askFlagDivisions()
 {
 	int i;
 	bool ok;
@@ -162,6 +168,18 @@ void kgeography::askFlags()
 	if (ok)
 	{
 		p_askWidget = new flagDivisionAsker(p_stack, p_map, i);
+		putAskWidget();
+	}
+}
+
+void kgeography::askDivisionFlags()
+{
+	int i;
+	bool ok;
+	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
+	if (ok)
+	{
+		p_askWidget = new divisionFlagAsker(p_stack, p_map, i);
 		putAskWidget();
 	}
 }
@@ -191,7 +209,10 @@ void kgeography::setMap(map *m)
 	p_currentMap -> setText(i18n("Current map is %1").arg(p_map -> getName()));
 	p_consult -> setEnabled(true);
 	p_askMap -> setEnabled(true);
-	p_askFlags -> setEnabled(m -> hasAllFlags());
+	p_askFlagDivisions -> setEnabled(m -> hasAllFlags());
+	p_askDivisionFlags -> setEnabled(m -> hasAllFlags());
+	p_askCapitalDivisions -> setEnabled(true);
+	p_askDivisionCapitals -> setEnabled(true);
 	putMenu();
 }
 

@@ -15,6 +15,7 @@
 #include <kmessagebox.h>
 #include <kpushbutton.h>
 
+#include <qlabel.h>
 #include <qlayout.h>
 #include <qradiobutton.h>
 #include <qvbuttongroup.h>
@@ -27,15 +28,23 @@ boxAsker::boxAsker(QWidget *parent, map *m, uint count) : askWidget(parent, m, c
 	p_lay = new QVBoxLayout(this);
 	
 	QVButtonGroup *bg = new QVButtonGroup(this);
+	p_label = new QLabel(this);
 	p_rb = new QRadioButton*[4];
 	for(int i = 0; i < 4; i++)
 	{
 		p_rb[i] = new QRadioButton(bg);
 	}
 	p_accept = new KPushButton(this);
+
 	
+	p_lay -> addWidget( p_label);
 	p_lay -> addWidget(bg, 1);
 	p_lay -> addWidget(p_accept);
+}
+
+void boxAsker::setQuestion(QString q)
+{
+	p_label -> setText(q);
 }
 
 void boxAsker::nextQuestion()
@@ -130,6 +139,7 @@ void boxAsker::showAnswersMessageBox()
 	{
 		KMessageBox::information(this, i18n("You have answered correctly %1 of %2 questions").arg(p_correctAnswers).arg(p_correctAnswers + p_incorrectAnswers));
 		p_mustShowCorrectIncorrect = false;
+		setQuestion("");
 	}
 }
 

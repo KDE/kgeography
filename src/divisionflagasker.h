@@ -8,16 +8,16 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef DIVISIONCAPITALASKER_H
-#define DIVISIONCAPITALASKER_H
+#ifndef DIVISIONFLAGASKER_H
+#define DIVISIONFLAGASKER_H
 
 #include "boxasker.h"
 
-class divisionCapitalAsker : public boxAsker
+class divisionFlagAsker : public boxAsker
 {
 	public:
-		divisionCapitalAsker(QWidget *parent, map *m, uint count);
-
+		divisionFlagAsker(QWidget *parent, map *m, uint count);
+	
 	protected:
 		void nextQuestionHook(QString division, int i, bool isAnswer);
 };
