@@ -29,4 +29,7 @@ flags_DATA = albania.png djibouti.png latvia.png saarland.png algeria.png \
              italy.png qatar.png usa.png cuba_3x2.png jamaica.png \
              rhineland_palatinate.png western_sahara.png cyprus_4x3.png \
              jordan.png romania.png yemen.png czech.png kenya.png russia.png \
-             zambia.png denmark.png kuwait.png rwanda.png zimbabwe.png
+             zambia.png denmark.png kuwait.png rwanda.png zimbabwe.png \
+			 colombia.png venezuela.png guyana.png suriname.png ecuador.png \
+			 peru.png brazil.png bolivia.png chile.png paraguay.png \
+			 argentina.png uruguay.png
