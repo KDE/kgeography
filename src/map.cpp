@@ -8,6 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include <stdlib.h> // for RAND_MAX
+
 #include <kapp.h>
 #include <klocale.h>
 
