@@ -21,10 +21,6 @@ mapWidget::mapWidget(QWidget *parent) : QWidget(parent)
 	p_zooming = false;
 }
 
-mapWidget::~mapWidget()
-{
-}
-
 void mapWidget::setMapImage(const QString &path)
 {
 	p_originalImage.load(path);
@@ -77,7 +73,7 @@ void mapWidget::mouseMoveEvent(QMouseEvent *e)
 		QPainter p(this);
 		
 		p.setRasterOp(Qt::XorROP);
-		p.setPen (QPen(Qt::white, 1, Qt::DotLine));
+		p.setPen(QPen(Qt::white, 1, Qt::DotLine));
 
 		// remove previous rectangle
 		p.drawRect(QRect(p_initial, p_prev));
@@ -109,17 +105,29 @@ void mapWidget::mouseReleaseEvent(QMouseEvent *)
 		p_zooming = false;
 		
 		p.setRasterOp(Qt::XorROP);
-		p.setPen (QPen(Qt::white, 1, Qt::DotLine));
+		p.setPen(QPen(Qt::white, 1, Qt::DotLine));
 		// remove previous rectangle
 		p.drawRect(minX, minY, w, h);
+		
+		if (minX + w > width()) w = width() - minX;
+		if (minY + h > height()) h = height() - minY;
+		if (minX < 0)
+		{
+			minX = 0;
+			w = maxX;
+		}
+		if (minY < 0)
+		{
+			minY = 0;
+			h = maxY;
+		}
 		
 		if (p_zoomedImage.isNull()) sourceImage = &p_originalImage;
 		else sourceImage = &p_zoomedImage;
 	
 		if (w > 1 && h > 1)
 		{
-			p_zoomedImage = sourceImage -> copy(minX, minY, w, h
-			);
+			p_zoomedImage = sourceImage -> copy(minX, minY, w, h);
 			p_zoomedImage = p_zoomedImage.scale(p_originalImage.size());
 			setPaletteBackgroundPixmap(p_zoomedImage);
 		}

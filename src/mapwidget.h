@@ -20,7 +20,6 @@ class mapWidget : public QWidget
 Q_OBJECT
 	public:
 		mapWidget(QWidget *parent);
-		~mapWidget();
 
 		void setMapImage(const QString &path);
 		void setMapZoom(bool b);
