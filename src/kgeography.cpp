@@ -48,6 +48,7 @@ kgeography::kgeography() : KMainWindow(), p_popupManager(this)
 		else
 		{
 			KMessageBox::error(this, i18n("Could not open last saved map. Error parsing %1: %2").arg(file).arg(reader.getError()));
+			delete reader.getMap();
 			openMap();
 		}
 	}

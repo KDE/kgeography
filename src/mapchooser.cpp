@@ -32,6 +32,7 @@ mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Cho
 		if (!p_reader.parseMap(*it))
 		{
 			KMessageBox::error(this, i18n("Error parsing %1: %2").arg(*it).arg(p_reader.getError()));
+			delete p_reader.getMap();
 		}
 		else
 		{
@@ -44,7 +45,8 @@ mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Cho
 	p_image -> setFixedSize(300, 225);
 	connect(p_listBox, SIGNAL(highlighted(const QString&)), this, SLOT(putImage(const QString&)));
 	connect(p_listBox, SIGNAL(selected(int)), this, SLOT(slotOk()));
-	p_listBox -> setCurrentItem(0);
+	if (p_listBox -> count() > 0) p_listBox -> setCurrentItem(0);
+	else enableButtonOK(false);
 	setMainWidget(hb);
 }
 
