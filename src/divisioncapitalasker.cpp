@@ -20,15 +20,37 @@ divisionCapitalAsker::divisionCapitalAsker(QWidget *parent, KGmap *m, QWidget *w
 	init();
 }
 
-void divisionCapitalAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
+bool divisionCapitalAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
 {
-	p_rb[i] -> setText(p_map -> getDivisionCapital(division));
+	bool b;
 	if (isAnswer)
 	{
 		setQuestion(i18n("The capital of %1 is...").arg(division));
 		p_currentAnswer.setCorrectAnswer(p_rb[i] -> text());
 		p_currentAnswer.setQuestion(division);
+		p_capital = p_map -> getDivisionCapital(division);
+		p_rb[i] -> setText(p_capital);
+		b = true;
 	}
+	else
+	{
+		QString capital;
+		capital = p_map -> getDivisionCapital(division);
+		// There are crazy countries like Norway where two different divisions
+		// have the same capital, avoid asking
+		// The capital of Akershus is ...
+		// Oslo (true)
+		// Oslo (true)
+		// Lillehammer
+		// Moss
+		if (capital != p_capital)
+		{
+			p_rb[i] -> setText(capital);
+			b = true;
+		}
+		else b = false;
+	}
+	return b;
 }
 
 void divisionCapitalAsker::setAnswerHook(int userSays)

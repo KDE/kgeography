@@ -20,7 +20,7 @@ class flagDivisionAsker : public boxAsker
 	
 	protected:
 		void cleanHook();
-		void nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer);
+		bool nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer);
 		void setAnswerHook(int userSays);
 		QString getQuestionHook() const;
 

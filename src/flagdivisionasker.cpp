@@ -30,7 +30,7 @@ void flagDivisionAsker::cleanHook()
 	p_flag -> unsetPalette();
 }
 
-void flagDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
+bool flagDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
 {
 	if (isAnswer)
 	{
@@ -43,6 +43,7 @@ void flagDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int i,
 		p_currentAnswer.setCorrectAnswer(division);
 	}
 	p_rb[i] -> setText(division);
+	return true;
 }
 
 void flagDivisionAsker::setAnswerHook(int userSays)

@@ -29,7 +29,7 @@ Q_OBJECT
 	protected:
 		void clean();
 		virtual void cleanHook();
-		virtual void nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer) = 0;
+		virtual bool nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer) = 0;
 		void nextQuestionHook(const QString &division);
 		void setQuestion(const QString &q);
 		virtual void setAnswerHook(int userSays) = 0;

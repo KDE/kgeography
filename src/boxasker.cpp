@@ -82,14 +82,14 @@ void boxAsker::nextQuestionHook(const QString &division)
 	nextBoxAskerQuestionHook(division, p_position, true);
 		
 	// we put other 3 names
-	for (i = 0; i < 4; i++)
+	i = 0;
+	while (i < 4)
 	{
 		otherDivision = p_map -> getRandomDivision();
 		while (auxList.find(otherDivision) != auxList.end()) otherDivision = p_map -> getRandomDivision();
 		if (i == p_position) i++;
-		nextBoxAskerQuestionHook(otherDivision, i, false);
+		if (i < 4 && nextBoxAskerQuestionHook(otherDivision, i, false)) i++;
 		auxList << otherDivision;
-		if (p_position == 3 && i == 2) i++;
 	}
 }
 

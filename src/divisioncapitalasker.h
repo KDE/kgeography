@@ -19,9 +19,12 @@ class divisionCapitalAsker : public boxAsker
 		divisionCapitalAsker(QWidget *parent, KGmap *m, QWidget *w, uint count);
 
 	protected:
-		void nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer);
+		bool nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer);
 		void setAnswerHook(int userSays);
 		QString getQuestionHook() const;
+	
+	private:
+		QString p_capital;
 };
 
 #endif

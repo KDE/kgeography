@@ -21,7 +21,7 @@ divisionFlagAsker::divisionFlagAsker(QWidget *parent, KGmap *m, QWidget *w, uint
 	init();
 }
 
-void divisionFlagAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
+bool divisionFlagAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
 {
 	QImage im(p_map -> getDivisionFlagFile(division));
 	im = im.smoothScale(im.width()/5, im.height()/5);
@@ -32,6 +32,7 @@ void divisionFlagAsker::nextBoxAskerQuestionHook(const QString &division, int i,
 		p_currentAnswer.setCorrectAnswer(im);
 		p_currentAnswer.setQuestion(division);
 	}
+	return true;
 }
 
 void divisionFlagAsker::setAnswerHook(int userSays)
