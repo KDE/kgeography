@@ -1,4 +1,8 @@
-2004-05-09  Albert Astals Cid  <tsdgeos@terra.es>
+2004-05-12  Albert Astals Cid  <tsdgeos@terra.es>
+	* Add a perl script for helping in the map creation task (by Yann
+Verley)
+
+2004-05-11  Albert Astals Cid  <tsdgeos@terra.es>
 	* In map browsing mode show DivisionName (CapitalDivisionName)
 	* Add France map (by Yann Verley)
 
