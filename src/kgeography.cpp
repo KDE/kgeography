@@ -136,7 +136,6 @@ void kgeography::openMap()
 	mapChooser mp(this);
 	if (mp.exec() == mapChooser::Accepted)
 	{
-		delete p_map;
 		setMap(mp.getMap());
 		resizeMainWindow();
 	}
@@ -144,6 +143,10 @@ void kgeography::openMap()
 
 void kgeography::consult()
 {
+	// No need to create another map viewer if we are already in it
+	mapAsker *ma = dynamic_cast<mapAsker*>(p_askWidget);
+	if (ma && !ma -> isAsker()) return;
+	
 	showResultsDialog();
 	removeOldAskWidget();
 	p_askWidget = new mapAsker(p_bigWidget, p_map, p_underLeftWidget, false);
@@ -237,6 +240,7 @@ void kgeography::askDivisionFlags()
 void kgeography::removeOldAskWidget()
 {
 	delete p_askWidget;
+	p_askWidget = 0;
 	p_zoom -> setEnabled(false);
 	p_zoomOriginal -> setEnabled(false);
 	p_move -> setEnabled(false);
@@ -267,9 +271,11 @@ void kgeography::putAskWidget()
 
 void kgeography::setMap(KGmap *m)
 {
+	removeOldAskWidget();
 	kgeographySettings *set = kgeographySettings::self();
 	set -> setLastMap(m -> getFile());
 	set -> writeConfig();
+	delete p_map;
 	p_map = m;
 	p_currentMap -> setText(i18n("<qt>Current map:<br><b>%1</b></qt>").arg(p_map -> getName()));
 	p_consult -> setEnabled(true);

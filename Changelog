@@ -1,3 +1,7 @@
+2005-03-04 Albert Astals Cid <tsdgeos@terra.es>
+	* Do not create another mapAsker in consult mode if we are already at
+	it
+
 2005-03-02 Albert Astals Cid <tsdgeos@terra.es>
 	* More scrollbars correction
 	* Split Zoom to Zoom and Zoom to original size. Based on a Pino

@@ -22,8 +22,8 @@ askWidget::askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool sho
 	{
 		p_answers = new QLabel(w);
 		p_answers -> setAlignment(AlignTop | AlignHCenter);
-		p_answers -> show();
 		resetAnswers();
+		p_answers -> show();
 	}
 	else p_answers = 0;
 }

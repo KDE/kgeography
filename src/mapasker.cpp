@@ -54,7 +54,6 @@ mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count
 		QBoxLayout *vbl = dynamic_cast<QBoxLayout*>(w -> layout());
 		p_next = new QLabel(w);
 		p_next -> setAlignment(AlignTop | AlignHCenter);
-		p_next -> show();
 		p_fill = new QWidget(w);
 		p_fill -> show();
 		vbl -> setStretchFactor(p_fill, 1);
@@ -71,6 +70,11 @@ mapAsker::~mapAsker()
 {
 	delete p_next;
 	delete p_fill;
+}
+
+bool mapAsker::isAsker() const
+{
+	return p_answers;
 }
 
 void mapAsker::mousePressEvent(QMouseEvent*)
@@ -161,6 +165,7 @@ void mapAsker::setScrollBarsMaximumSize(int w, int h)
 void mapAsker::nextQuestionHook(const QString &division)
 {
 	p_next -> setText(i18n("Please click on %1").arg(division));
+	p_next -> show();
 	p_currentAnswer.setQuestion(division);
 	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
 }

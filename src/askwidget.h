@@ -52,11 +52,11 @@ Q_OBJECT
 	
 		KGmap *p_map;
 		userAnswer p_currentAnswer;
+		QLabel *p_answers;
 	
 	private:
 		void updateLabel();
 		
-		QLabel *p_answers;
 		int p_correctAnswers, p_incorrectAnswers;
 		
 		QValueVector<userAnswer> p_userAnswers;

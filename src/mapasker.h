@@ -30,6 +30,7 @@ Q_OBJECT
 		~mapAsker();
 
 		QSize mapSize() const;
+		bool isAsker() const;
 		
 	protected:
 		void nextQuestionHook(const QString &division);
