@@ -182,7 +182,7 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 		else
 		{
 			b = false;
-			p_error = i18n("Invalid value in ignore tag");
+			p_error = i18n("Invalid value in tag %1").arg("<ignore>");
 		}
 	}
 	else if (aux == "flag")
