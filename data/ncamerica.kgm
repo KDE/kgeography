@@ -29,15 +29,6 @@
 		</color>
 	</division>
 	<division>
-		<name>Coast</name>
-		<ignore>yes</ignore>
-		<color>
-			<red>2</red>
-			<green>206</green>
-			<blue>206</blue>
-		</color>
-	</division>
-	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>
 		<color>
