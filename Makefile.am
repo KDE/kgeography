@@ -1,4 +1,4 @@
 SUBDIRS = src data 
 
 messages:
-	$(XGETTEXT) src/*.cpp src/*.h -o $(podir)/kttt.pot
+	$(XGETTEXT) src/*.cpp src/*.h -o $(podir)/kgeography.pot
