@@ -13,8 +13,9 @@
 
 #include <kmainwindow.h>
 
-class KPushButton;
 class KAction;
+class KPushButton;
+class KToggleAction;
 
 class QLabel;
 class QWidgetStack;
@@ -56,6 +57,7 @@ Q_OBJECT
 		KPushButton *p_askFlagDivisions;
 		KPushButton *p_askDivisionFlags;
 		KAction *p_goToMenu;
+		KToggleAction *p_zoom;
 		QLabel *p_currentMap;
 	
 		map *p_map;

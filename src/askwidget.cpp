@@ -18,4 +18,8 @@ askWidget::~askWidget()
 {
 }
 
+void askWidget::setZoom(bool)
+{
+}
+
 #include "askwidget.moc"

@@ -29,6 +29,7 @@ Q_OBJECT
 
 	
 	public slots:
+		void setZoom(bool b);
 		void goToMenu();
 	
 	private slots:

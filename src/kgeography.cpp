@@ -65,6 +65,9 @@ kgeography::kgeography() : KMainWindow()
 	KStdAction::open(this, SLOT(openMap()), actionCollection(), "openMap");
 	KStdAction::quit(this, SLOT(close()), actionCollection(), "quit");
 	
+	p_zoom = new KToggleAction(i18n("&Zoom"), "viewmag", 0, 0, 0, actionCollection(), "zoom");
+	p_zoom -> setEnabled(false);
+	
 	createGUI();
 	show();
 	
@@ -121,6 +124,8 @@ void kgeography::openMap()
 void kgeography::consult()
 {
 	p_askWidget = new mapAsker(p_stack, p_map, false);
+	connect(p_zoom, SIGNAL(toggled(bool)), p_askWidget, SLOT(setZoom(bool)));
+	p_zoom -> setEnabled(true);
 	putAskWidget();
 }
 
@@ -156,6 +161,8 @@ void kgeography::askMap()
 	if (ok)
 	{
 		p_askWidget = new mapAsker(p_stack, p_map, true, i);
+		connect(p_zoom, SIGNAL(toggled(bool)), p_askWidget, SLOT(setZoom(bool)));
+		p_zoom -> setEnabled(true);
 		putAskWidget();
 	}
 }
@@ -190,6 +197,7 @@ void kgeography::putMenu()
 	p_stack -> removeWidget(p_askWidget);
 	delete p_askWidget;
 	p_askWidget = 0;
+	p_zoom -> setEnabled(false);
 	p_goToMenu -> setEnabled(false);
 }
 

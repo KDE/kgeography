@@ -23,6 +23,7 @@ Q_OBJECT
 		virtual ~askWidget();
 	
 	public slots:
+		virtual void setZoom(bool b);
 		virtual void goToMenu() = 0;
 	
 	signals:

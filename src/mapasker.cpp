@@ -43,6 +43,11 @@ void mapAsker::mousePressEvent(QMouseEvent*)
 	p_popupManager.clear();
 }
 
+void mapAsker::setZoom(bool b)
+{
+	p_mapWidget -> setMapZoom(b);
+	p_popupManager.clear();
+}
 
 void mapAsker::goToMenu()
 {

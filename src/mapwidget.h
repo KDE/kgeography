@@ -11,6 +11,8 @@
 #ifndef MAPWIDGET_H
 #define MAPWIDGET_H
 
+#include <qimage.h>
+#include <qpoint.h>
 #include <qwidget.h>
 
 class mapWidget : public QWidget
@@ -21,15 +23,20 @@ Q_OBJECT
 		~mapWidget();
 
 		void setMapImage(const QString &path);
+		void setMapZoom(bool b);
 	
 	signals:
 		void clicked(QRgb, const QPoint&);
 	
 	protected:
 		void mousePressEvent(QMouseEvent *e);
+		void mouseMoveEvent(QMouseEvent *e);
+		void mouseReleaseEvent(QMouseEvent *e);
 	
 	private:
-		QImage *p_image;
+		QImage p_originalImage, p_zoomedImage;
+		bool p_zooming, p_wantZoom;
+		QPoint p_initial, p_prev;
 };
 
 #endif
