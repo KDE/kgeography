@@ -27,7 +27,8 @@ bool division::canAsk() const
 
 QString division::getName() const
 {
-	return i18n(p_name);
+	//utf8 is needed to make names like Côte d'Ivoire work
+	return i18n(p_name.utf8());
 }
 
 QRgb division::getRGB() const

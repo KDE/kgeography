@@ -1,3 +1,11 @@
+**************
+* UI related *
+**************
+
+ - popupManager::show(QString) does not check that the full text can be seen (i.e. x < 0)
+   make it wrap the text when it does happen or completely remote it and use KMessageBox::information
+   for the only case in wich popupManager::show(QString) is used.
+
 ******************
 * Parser related *
 ******************

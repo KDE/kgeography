@@ -75,6 +75,13 @@ kgeography::kgeography() : KMainWindow()
 		}
 	}
 	else openMap();
+	if (!p_map)
+	{
+		p_currentMap -> setText(i18n("There is no current map"));
+		p_consult -> setEnabled(false);
+		p_askMap -> setEnabled(false);
+		p_askFlags -> setEnabled(false);
+	}
 }
 
 kgeography::~kgeography()
@@ -152,6 +159,8 @@ void kgeography::setMap(map *m)
 	set -> writeConfig();
 	p_map = m;
 	p_currentMap -> setText(i18n("Current map is %1").arg(p_map -> getName()));
+	p_consult -> setEnabled(true);
+	p_askMap -> setEnabled(true);
 	p_askFlags -> setEnabled(m -> hasAllFlags());
 	putMenu();
 }
