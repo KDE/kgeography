@@ -46,7 +46,7 @@ bool map::addDivision(division *c)
 		p_colorMap.insert(c -> getRGB(), c);
 		p_nameMap.insert(c -> getName(), c);
 		b = true;
-		p_hasAllFlags = p_hasAllFlags && !c -> getFlagFile().isNull();
+		if (c -> canAsk()) p_hasAllFlags = p_hasAllFlags && !c -> getFlagFile().isNull();
 	}
 	else b = false;
 	return b;
@@ -71,6 +71,11 @@ void map::setName(const QString &s)
 uint map::count() const
 {
 	return p_count;
+}
+
+bool map::hasAllFlags() const
+{
+	return p_hasAllFlags;
 }
 
 QString map::getDivisionFlagFile(const QString &s) const

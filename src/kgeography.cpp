@@ -204,6 +204,7 @@ void kgeography::setMap(map *m)
 	p_map = m;
 	p_mapWidget -> setMapImage(p_map -> getMapFile());
 	p_infoWidget -> setName(p_map -> getName());
+	p_questionFlagDivision -> setEnabled(m -> hasAllFlags());
 	consult();
 }
 

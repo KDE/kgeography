@@ -30,6 +30,7 @@ class map
 		
 		// return the number of askable divisions
 		uint count() const;
+		bool hasAllFlags() const;
 		QString getDivisionFlagFile(const QString &s) const;
 		QString getFile() const;
 		QString getMapFile() const;
