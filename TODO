@@ -20,6 +20,8 @@
 
  - Add more maps ;-)
 
+ - The answers dialog of click on map is really bad
+
  - Have non political maps, support for geographical (rivers, mountains, etc) is almost there if the map is carefully 
    crafted. Example: Have the map all of the same color, then for each river, mountain, etc create a box big enough 
    of the wanted color and then associate the color of the box with the name of the river, etc.

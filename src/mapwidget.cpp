@@ -31,8 +31,8 @@ mapWidget::mapWidget(QWidget *parent) : QWidget(parent)
 void mapWidget::init(const QString &path)
 {
 	p_originalImage.load(path);
-	setOriginalImage();
 	emit updateMaximumSize(p_originalImage.width(), p_originalImage.height());
+	setOriginalImage();
 }
 
 void mapWidget::setMapMove(bool b)

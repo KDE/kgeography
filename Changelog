@@ -1,3 +1,7 @@
+2004-12-25 Albert Astals Cid <tsdgeos@terra.es>
+	* Fix QImage::scale: Image is a null image problems
+	* Bump version to 0.3.1
+
 2004-12-01 Albert Astals Cid <tsdgeos@terra.es>
 	* Rename map class to KGmap so it does no collide with stl map
 	* Bump to version 0.3
