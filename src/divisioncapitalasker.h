@@ -16,10 +16,10 @@
 class divisionCapitalAsker : public boxAsker
 {
 	public:
-		divisionCapitalAsker(QWidget *parent, map *m, uint count);
+		divisionCapitalAsker(QWidget *parent, map *m, QWidget *w, uint count);
 
 	protected:
-		void nextQuestionHook(QString division, int i, bool isAnswer);
+		void nextBoxAskerQuestionHook(QString division, int i, bool isAnswer);
 };
 
 #endif

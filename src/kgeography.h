@@ -17,8 +17,9 @@ class KAction;
 class KPushButton;
 class KToggleAction;
 
+class QHBox;
 class QLabel;
-class QWidgetStack;
+class QVBox;
 
 class map;
 class askWidget;
@@ -31,8 +32,6 @@ Q_OBJECT
 		~kgeography();
 	
 	private slots:
-		void goToMenu();
-	
 		void openMap();
 	
 		void consult();
@@ -42,13 +41,14 @@ Q_OBJECT
 		void askFlagDivisions();
 		void askDivisionFlags();
 		
-		void putMenu();
-		
 	private:
 		void putAskWidget();
+		void removeOldAskWidget();
 		void setMap(map *m);
 		
-		QWidgetStack *p_stack;
+		QHBox *p_bigWidget;
+		QVBox *p_rightWidget;
+		QWidget *p_underRightWidget;
 		
 		KPushButton *p_consult;
 		KPushButton *p_askCapitalDivisions;
@@ -56,7 +56,6 @@ Q_OBJECT
 		KPushButton *p_askMap;
 		KPushButton *p_askFlagDivisions;
 		KPushButton *p_askDivisionFlags;
-		KAction *p_goToMenu;
 		KToggleAction *p_zoom, *p_move;
 		QLabel *p_currentMap;
 	

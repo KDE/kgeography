@@ -11,21 +11,19 @@
 #include <klocale.h>
 #include <kmessagebox.h>
 
+#include <qlabel.h>
 #include <qlayout.h>
 
-#include "infowidget.h"
 #include "map.h"
 #include "mapasker.h"
 #include "mapwidget.h"
 
-mapAsker::mapAsker(QWidget *parent, map *m, bool asker, uint count) : askWidget(parent, m, count), p_popupManager(this), p_asker(asker)
+mapAsker::mapAsker(QWidget *parent, map *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_popupManager(this), p_asker(asker)
 {
 	QVBoxLayout *lay = new QVBoxLayout(this);
 	
-	p_mapWidget = new mapWidget(this);
-	p_infoWidget = new infoWidget(this);
+	p_mapWidget = new mapWidget(this, p_map -> getMapFile());
 	lay -> addWidget(p_mapWidget);
-	lay -> addWidget(p_infoWidget);
 	
 	p_shouldClearPopup = false;
 	
@@ -34,11 +32,20 @@ mapAsker::mapAsker(QWidget *parent, map *m, bool asker, uint count) : askWidget(
 	connect(p_mapWidget, SIGNAL(setZoomActionChecked(bool)), this, SIGNAL(setZoomActionChecked(bool)));
 	connect(p_mapWidget, SIGNAL(setMoveActionEnabled(bool)), this, SIGNAL(setMoveActionEnabled(bool)));
 	 
-	p_infoWidget -> setQuestionMode(asker);
-	p_mapWidget -> setMapImage(p_map -> getMapFile());
-	p_infoWidget -> setName(p_map -> getName());
-	
-	if (asker) nextDivision();
+	if (asker)
+	{
+		p_next = new QLabel(w);
+		p_next -> setAlignment(AlignTop | AlignHCenter);
+		p_next -> show();
+		nextQuestion();
+	}
+}
+
+void mapAsker::clean()
+{
+	p_shouldClearPopup = true;
+	p_asker = false;
+	p_next -> setText("");
 }
 
 void mapAsker::mousePressEvent(QMouseEvent*)
@@ -56,11 +63,6 @@ void mapAsker::setZoom(bool b)
 {
 	p_mapWidget -> setMapZoom(b);
 	p_popupManager.clear();
-}
-
-void mapAsker::goToMenu()
-{
-	if (p_asker) KMessageBox::information(this, i18n("You have answered correctly %1 of the %2 questions about this map").arg(p_infoWidget -> getCorrect()). arg(p_infoWidget -> getTotal()));
 }
 
 void mapAsker::handleMapClick(QRgb c, const QPoint &p)
@@ -81,27 +83,14 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	}
 	else if (aux != "")
 	{
-		p_infoWidget -> addResult(aux == p_asked.last());
-		nextDivision();
+		questionAnswered(aux == lastDivisionAsked());
+		nextQuestion();
 	}
 }
 
-void mapAsker::nextDivision()
+void mapAsker::nextQuestionHook(QString division)
 {
-	QString aux;
-	if (p_asked.count() < p_count)
-	{
-		aux = p_map -> getRandomDivision();
-		while (p_asked.find(aux) != p_asked.end()) aux = p_map -> getRandomDivision();
-		p_asked << aux;
-		p_infoWidget -> setNext(i18n("You must click on %1").arg(aux));
-	}
-	else
-	{
-		p_popupManager.show(i18n("You have answered correctly %1 of the %2 questions about this map").arg(p_infoWidget -> getCorrect()). arg(p_infoWidget -> getTotal()));
-		p_shouldClearPopup = true;
-		p_asker = false;
-	}
+	p_next -> setText(i18n("You must click on %1").arg(division));
 }
 
 #include "mapasker.moc"

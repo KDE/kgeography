@@ -13,23 +13,20 @@
 
 #include <qcursor.h>
 #include <qpainter.h>
-#include <qtooltip.h>
 
 #include "mapwidget.h"
 
-mapWidget::mapWidget(QWidget *parent) : QWidget(parent)
+mapWidget::mapWidget(QWidget *parent, const QString &path) : QWidget(parent)
 {
 	p_wantZoom = false;
 	p_zooming = false;
 	p_wantMove = false;
 	p_moving = false;
-}
-
-void mapWidget::setMapImage(const QString &path)
-{
+	p_zoomW = 0;
+	p_zoomH = 0;
+	
 	p_originalImage.load(path);
 	setOriginalImage();
-	setFixedSize(p_originalImage.size());
 }
 
 void mapWidget::setMapMove(bool b)
@@ -50,6 +47,11 @@ void mapWidget::setMapZoom(bool b)
 		emit setMoveActionChecked(false);
 		p_wantMove = false;
 	}
+}
+
+QSize mapWidget::sizeHint() const
+{
+	return p_originalImage.size();
 }
 
 void mapWidget::mousePressEvent(QMouseEvent *e)
@@ -107,114 +109,113 @@ void mapWidget::mouseMoveEvent(QMouseEvent *e)
 	}
 	else if (p_moving)
 	{
-		int nextX, nextY, zW, zH, oW, oH;
+		int oW, oH;
 		
-		/* some shortcuts :-D */
+		// some shortcuts :-D 
 		oW = p_originalImage.width();
 		oH = p_originalImage.height();
-		zW = p_zoomedImageBig.width();
-		zH = p_zoomedImageBig.height();
 		
-		/* where next x and y will be */
-		nextX = p_zoomX + (p_initial.x() - e -> pos().x());
-		nextY = p_zoomY + (p_initial.y() - e -> pos().y());
+		// where next x and y will be 
+		p_zoomX += (p_initial.x() - e -> pos().x());
+		p_zoomY += (p_initial.y() - e -> pos().y());
 		
-		/* make sure we don't go out of bounds */
-		if (nextX < 0) nextX = 0;
-		if (nextY < 0) nextY = 0;
-		if (nextX > zW - oW) nextX = zW - oW;
-		if (nextY > zH - oH) nextY = zH - oH;
+		// make sure we don't go out of bounds
+		if (p_zoomX < 0) p_zoomX = 0;
+		if (p_zoomY < 0) p_zoomY = 0;
+		if (p_zoomX > oW - width() * p_lastFactorX) p_zoomX = (int)rint(oW - width() * p_lastFactorX);
+		if (p_zoomY > oH - height() * p_lastFactorY) p_zoomY = (int)rint(oH - height() * p_lastFactorY);
 		
-		/* if nothing has change there's no need to repaint */
-		if (nextX != p_zoomX || nextY != p_zoomY)
-		{
-			p_zoomedImageShown = p_zoomedImageBig.copy(nextX, nextY, oW, oH);
-			setPaletteBackgroundPixmap(p_zoomedImageShown);
-			p_initial = e -> pos();
-			p_zoomX = nextX;
-			p_zoomY = nextY;
-			kapp -> processEvents();
-		}
+		p_zoomedImageShown = p_originalImage.copy(p_zoomX, p_zoomY, p_zoomW, p_zoomH);
+		p_zoomedImageShown = p_zoomedImageShown.scale(size());
+		setPaletteBackgroundPixmap(p_zoomedImageShown);
+		p_initial = e -> pos();
+		kapp -> processEvents();
 	}
 }
 
-void mapWidget::mouseReleaseEvent(QMouseEvent *)
+void mapWidget::mouseReleaseEvent(QMouseEvent *e)
 {
 	if (p_zooming)
 	{
-		QImage *sourceImage;
 		QPainter p(this);
-		int minX, minY, maxX, maxY, w, h;
-		
-		minX = p_initial.x();
-		maxX = p_prev.x();
-		if (minX > maxX) qSwap(minX, maxX);
-		minY = p_initial.y();
-		maxY = p_prev.y();
-		if (minY > maxY) qSwap(minY, maxY);
-		
-		w = maxX - minX;
-		h = maxY - minY;
-		
-		p_zooming = false;
+		QRect r(p_initial, e -> pos());
 		
 		p.setRasterOp(Qt::XorROP);
 		p.setPen(QPen(Qt::white, 1, Qt::DotLine));
 		// remove previous rectangle
-		p.drawRect(minX, minY, w, h);
+		p.drawRect(r);
 		
-		if (minX + w > width()) w = width() - minX;
-		if (minY + h > height()) h = height() - minY;
-		if (minX < 0)
+		r = r.normalize();
+		
+		p_zoomX += (int)rint(r.left() * p_lastFactorX);
+		p_zoomY += (int)rint(r.top() * p_lastFactorY);
+		
+		p_zoomW = (int)rint(r.width() * p_lastFactorX);
+		p_zoomH = (int)rint(r.height() * p_lastFactorY);
+		
+		if (r.right() > width()) p_zoomW = width() - p_zoomX;
+		if (r.height() > height()) p_zoomH = height() - p_zoomY;
+		if (p_zoomX < 0)
 		{
-			minX = 0;
-			w = maxX;
+			p_zoomX = 0;
+			p_zoomW = (int)rint(r.right() * p_lastFactorX);
 		}
-		if (minY < 0)
+		if (p_zoomY < 0)
 		{
-			minY = 0;
-			h = maxY;
+			p_zoomY = 0;
+			p_zoomH = (int)rint(r.bottom() * p_lastFactorY);
 		}
 		
-		sourceImage = getCurrentImage();
-	
-		if (w > 1 && h > 1)
+		p_zooming = false;
+		
+		if (p_zoomW > 1 && p_zoomH > 1)
 		{
-			int zW, zH;
 			double factorX, factorY;
 			
-			/* set the new image quick */
-			p_zoomedImageShown = sourceImage -> copy(minX, minY, w, h);
-			p_zoomedImageShown = p_zoomedImageShown.scale(p_originalImage.size());
+			p_zoomedImageShown = p_originalImage.copy(p_zoomX, p_zoomY, p_zoomW, p_zoomH);
+			p_zoomedImageShown = p_zoomedImageShown.scale(size());
 			setPaletteBackgroundPixmap(p_zoomedImageShown);
-			kapp -> processEvents(); 
 			
-			/* calculate the zoomed map so we can scroll*/
-			zW = p_zoomedImageBig.width();
-			zH = p_zoomedImageBig.height();
+			factorX = (double)p_zoomW / width();
+			factorY = (double)p_zoomH / height();
 			
-			factorX = (double)zW / w / p_lastFactorX;
-			factorY = (double)zH / h / p_lastFactorY;
-			
-			p_zoomX = (int)((p_zoomX + minX) * factorX);
-			p_zoomY = (int)((p_zoomY + minY) * factorY);
+			setMaximumSize((int)rint(p_originalImage.width() / factorX), (int)rint(p_originalImage.height() / factorY));
 			
 			p_lastFactorX = factorX;
 			p_lastFactorY = factorY;
 			
-			
-			if (zW * factorX * zH * factorY < 10000000)
-			{
-				p_zoomedImageBig = p_zoomedImageBig.scale((int)(zW * factorX), (int)(zH * factorY));
-				emit setMoveActionEnabled(true);
-			}
-			else emit setMoveActionEnabled(false);
+			emit setMoveActionEnabled(true);
 		}
 	}
 	else if (p_moving)
 	{
 		unsetCursor();
 		p_moving = false;
+	}
+}
+
+void mapWidget::resizeEvent(QResizeEvent *e)
+{
+	p_zoomW = (int)rint(e -> size().width() * p_lastFactorX);
+	p_zoomH = (int)rint(e -> size().height() * p_lastFactorY);
+	
+	p_zoomedImageShown = p_originalImage.copy(p_zoomX, p_zoomY, p_zoomW, p_zoomH);
+	p_zoomedImageShown = p_zoomedImageShown.scale(size());
+	setPaletteBackgroundPixmap(p_zoomedImageShown);
+	kapp -> processEvents();
+	
+	emitMoveActionEnabled();
+}
+
+void mapWidget::emitMoveActionEnabled()
+{
+	if (p_zoomW < maximumWidth() * p_lastFactorX || p_zoomH < maximumHeight() * p_lastFactorY)
+	{
+		emit setMoveActionEnabled(true);
+	}
+	else
+	{
+		emit setMoveActionEnabled(false);
 	}
 }
 
@@ -227,13 +228,21 @@ QImage *mapWidget::getCurrentImage()
 void mapWidget::setOriginalImage()
 {
 	setPaletteBackgroundPixmap(p_originalImage);
-	p_zoomedImageBig = p_originalImage;
 	p_zoomedImageShown = QImage();
 	p_lastFactorX = 1;
 	p_lastFactorY = 1;
 	p_zoomX = 0;
 	p_zoomY = 0;
-	emit setMoveActionEnabled(false);
+	
+	if (p_zoomH != 0 && p_zoomW != 0)
+	{
+		/* setting the original image not when opening the app */
+		p_zoomW = width();
+		p_zoomH = height();
+	}
+	
+	setMaximumSize(p_originalImage.size());
+	emitMoveActionEnabled();
 }
 
 #include "mapwidget.moc"

@@ -12,7 +12,6 @@
 
 #include <kapplication.h>
 #include <klocale.h>
-#include <kmessagebox.h>
 #include <kpushbutton.h>
 
 #include <qlabel.h>
@@ -23,7 +22,7 @@
 #include "boxasker.h"
 #include "map.h"
 
-boxAsker::boxAsker(QWidget *parent, map *m, uint count) : askWidget(parent, m, count)
+boxAsker::boxAsker(QWidget *parent, map *m, QWidget *w, uint count) : askWidget(parent, m, w, count)
 {
 	p_lay = new QVBoxLayout(this);
 	
@@ -52,53 +51,45 @@ void boxAsker::setQuestion(QString q)
 	p_label -> setText(q);
 }
 
-void boxAsker::nextQuestion()
+void boxAsker::clean()
+{
+	for (int i = 0; i < 4; i++) p_rb[i] -> setText("");
+	cleanHook();
+		
+	p_accept -> setText("&Restart");
+	p_accept -> disconnect();
+	connect(p_accept, SIGNAL(clicked()), this, SLOT(init()));
+		
+	setQuestion("");
+}
+
+void boxAsker::cleanHook()
+{
+}
+
+void boxAsker::nextQuestionHook(QString division)
 {
 	QStringList auxList;
-	QString aux;
 	int i;
 	
 	for (i = 0; i < 4; i++) p_rb[i] -> setChecked(false);
 	
-	if (p_asked.count() < p_count)
+	auxList << division;
+		
+	// we put the division in a random place
+	p_position = (int)((float)4 * kapp -> random() / (RAND_MAX + 1.0));
+	nextBoxAskerQuestionHook(division, p_position, true);
+		
+	// we put other 3 names
+	for (i = 0; i < 4; i++)
 	{
-		// aux is the division we ask for
-		aux = p_map -> getRandomDivision();
-		while (p_asked.find(aux) != p_asked.end()) aux = p_map -> getRandomDivision();
-		p_asked << aux;
-		auxList << aux;
-		
-		// we put the division in a random place
-		p_position = (int)((float)4 * kapp -> random() / (RAND_MAX + 1.0));
-		nextQuestionHook(aux, p_position, true);
-		
-		// we put other 3 names
-		for (i = 0; i < 4; i++)
-		{
-			aux = p_map -> getRandomDivision();
-			while (auxList.find(aux) != auxList.end()) aux = p_map -> getRandomDivision();
-			if (i == p_position) i++;
-			nextQuestionHook(aux, i, false);
-			auxList << aux;
-			if (p_position ==3 && i == 2) i++;
-		}
+		division = p_map -> getRandomDivision();
+		while (auxList.find(division) != auxList.end()) division = p_map -> getRandomDivision();
+		if (i == p_position) i++;
+		nextBoxAskerQuestionHook(division, i, false);
+		auxList << division;
+		if (p_position == 3 && i == 2) i++;
 	}
-	else
-	{
-		for (i = 0; i < 4; i++) p_rb[i] -> setText("");
-		
-		p_accept -> setText("&Restart");
-		p_accept -> disconnect();
-		connect(p_accept, SIGNAL(clicked()), this, SLOT(init()));
-		
-		showAnswersMessageBox();
-	}
-}
-
-void boxAsker::goToMenu()
-{
-	showAnswersMessageBox();
-	emit finished();
 }
 
 void boxAsker::checkAnswer()
@@ -118,8 +109,7 @@ void boxAsker::checkAnswer()
 		
 	if (any)
 	{
-		if (correct) p_correctAnswers++;
-		else p_incorrectAnswers++;
+		questionAnswered(correct);
 		nextQuestion();
 	}
 }
@@ -128,24 +118,12 @@ void boxAsker::init()
 {
 	p_accept -> setText(i18n("&Accept"));
 
-	p_correctAnswers = 0;
-	p_incorrectAnswers = 0;
-	p_mustShowCorrectIncorrect = true;
-	p_asked.clear();
+	resetAnswers();
+	clearAsked();
 	nextQuestion();
 	
 	p_accept -> disconnect();
 	connect(p_accept, SIGNAL(clicked()), this, SLOT(checkAnswer()));
-}
-
-void boxAsker::showAnswersMessageBox()
-{
-	if (p_mustShowCorrectIncorrect)
-	{
-		KMessageBox::information(this, i18n("You have answered correctly %1 of %2 questions").arg(p_correctAnswers).arg(p_correctAnswers + p_incorrectAnswers));
-		p_mustShowCorrectIncorrect = false;
-		setQuestion("");
-	}
 }
 
 #include "boxasker.moc"

@@ -8,14 +8,29 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include "askwidget.h"
+#include <klocale.h>
+#include <kmessagebox.h>
 
-askWidget::askWidget(QWidget *parent, map *m, uint count) : QWidget(parent), p_map(m), p_count(count)
+#include <qlabel.h>
+
+#include "askwidget.h"
+#include "map.h"
+
+askWidget::askWidget(QWidget *parent, map *m, QWidget *w, uint count, bool showLabel) : QWidget(parent), p_map(m), p_count(count)
 {
+	if (showLabel)
+	{
+		p_answers = new QLabel(w);
+		p_answers -> setAlignment(AlignTop | AlignHCenter);
+		p_answers -> show();
+		resetAnswers();
+	}
+	else p_answers = 0;
 }
 
 askWidget::~askWidget()
 {
+	delete p_answers;
 }
 
 void askWidget::setMovement(bool)
@@ -24,6 +39,62 @@ void askWidget::setMovement(bool)
 
 void askWidget::setZoom(bool)
 {
+}
+
+void askWidget::clearAsked()
+{
+	p_asked.clear();
+}
+
+QString askWidget::lastDivisionAsked()
+{
+	return p_asked.last();
+}
+
+void askWidget::nextQuestion()
+{
+	QString aux;
+	if (p_asked.count() < p_count)
+	{
+		aux = p_map -> getRandomDivision();
+		while (p_asked.find(aux) != p_asked.end()) aux = p_map -> getRandomDivision();
+		p_asked << aux;
+		nextQuestionHook(aux);
+	}
+	else
+	{
+		clean();
+		showAnswersMessageBox();
+	}
+}
+
+void askWidget::questionAnswered(bool wasCorrect)
+{
+	if (wasCorrect) p_correctAnswers++;
+	else p_incorrectAnswers++;
+	updateLabel();
+}
+
+void askWidget::resetAnswers()
+{
+	p_shouldShowMB = true;
+	p_correctAnswers = 0;
+	p_incorrectAnswers = 0;
+	updateLabel();
+}
+
+void askWidget::showAnswersMessageBox()
+{
+	if (p_answers && p_shouldShowMB)
+	{
+		KMessageBox::information(this, i18n("You have answered correctly %1 of %2 questions").arg(p_correctAnswers).arg(p_correctAnswers + p_incorrectAnswers));
+		p_shouldShowMB = false;
+	}
+}
+
+void askWidget::updateLabel()
+{
+	p_answers -> setText(i18n("Correct answers: %1/%2").arg(p_correctAnswers).arg(p_correctAnswers + p_incorrectAnswers));
 }
 
 #include "askwidget.moc"

@@ -3,7 +3,6 @@
 	<MenuBar>
 		<Menu name="file">
 			<Action name="openMap" />
-			<Action name="goToMenu" />
 			<Separator />
 			<Action name="quit" />
 		</Menu>

@@ -16,8 +16,8 @@
 #include <kstdaction.h>
 
 #include <qlabel.h>
+#include <qlayout.h>
 #include <qvbox.h>
-#include <qwidgetstack.h>
 
 #include "capitaldivisionasker.h"
 #include "divisioncapitalasker.h"
@@ -37,20 +37,23 @@ kgeography::kgeography() : KMainWindow()
 	p_map = 0;
 	p_askWidget = 0;
 	
-	p_stack = new QWidgetStack(this);
-	QVBox *holder = new QVBox(p_stack);
-	p_stack -> addWidget(holder, 0);
-	p_currentMap = new QLabel(holder);
-	p_currentMap -> setAlignment(AlignCenter);
-	p_consult = new KPushButton(i18n("&Browse the map"), holder);
-	p_askMap = new KPushButton(i18n("&Click division in the map"), holder);
-	p_askCapitalDivisions = new KPushButton(i18n("Guess division from its &capital"), holder);
-	p_askDivisionCapitals = new KPushButton(i18n("Guess the capital of a &division"), holder);
-	p_askFlagDivisions = new KPushButton(i18n("&Guess division from its flag"), holder);
-	p_askDivisionFlags = new KPushButton(i18n("G&uess the flag of a division"), holder);
+	p_bigWidget = new QHBox(this);
 	
-	p_goToMenu = new KAction(i18n("&Go to menu"), 0, this, SLOT(goToMenu()), actionCollection(), "goToMenu");
-	p_goToMenu -> setEnabled(false);
+	p_rightWidget = new QVBox(p_bigWidget);
+	p_currentMap = new QLabel(p_rightWidget);
+	p_currentMap -> setAlignment(AlignCenter);
+	p_consult = new KPushButton(i18n("&Browse the map"), p_rightWidget);
+	p_askMap = new KPushButton(i18n("&Click division in the map"), p_rightWidget);
+	p_askCapitalDivisions = new KPushButton(i18n("Guess division from its &capital"), p_rightWidget);
+	p_askDivisionCapitals = new KPushButton(i18n("Guess the capital of a &division"), p_rightWidget);
+	p_askFlagDivisions = new KPushButton(i18n("&Guess division from its flag"), p_rightWidget);
+	p_askDivisionFlags = new KPushButton(i18n("G&uess the flag of a division"), p_rightWidget);
+	p_underRightWidget = new QVBox(p_rightWidget);
+	p_underRightWidget -> layout() -> setMargin(10);
+	p_underRightWidget -> layout() -> setSpacing(10);
+	p_rightWidget -> setStretchFactor(p_underRightWidget, 1);
+	
+	setCentralWidget(p_bigWidget);
 	
 	connect(p_consult, SIGNAL(clicked()), this, SLOT(consult()));
 	connect(p_askMap, SIGNAL(clicked()), this, SLOT(askMap()));
@@ -58,8 +61,6 @@ kgeography::kgeography() : KMainWindow()
 	connect(p_askDivisionCapitals, SIGNAL(clicked()), this, SLOT(askDivisionCapitals()));
 	connect(p_askFlagDivisions, SIGNAL(clicked()), this, SLOT(askFlagDivisions()));
 	connect(p_askDivisionFlags, SIGNAL(clicked()), this, SLOT(askDivisionFlags()));
-	
-	setCentralWidget(p_stack);
 	
 	KStdAction::open(this, SLOT(openMap()), actionCollection(), "openMap");
 	KStdAction::quit(this, SLOT(close()), actionCollection(), "quit");
@@ -70,10 +71,10 @@ kgeography::kgeography() : KMainWindow()
 	p_move = new KToggleAction(i18n("&Move"), "move", 0, 0, 0, actionCollection(), "move");
 	p_move -> setEnabled(false);
 	
-	createGUI();
-	show();
-	
 	file = kgeographySettings::self() -> lastMap();
+	
+	createGUI();
+	
 	if (QFile::exists(file))
 	{
 		mapReader reader;
@@ -89,6 +90,7 @@ kgeography::kgeography() : KMainWindow()
 		}
 	}
 	else openMap();
+		
 	if (!p_map)
 	{
 		p_currentMap -> setText(i18n("There is no current map"));
@@ -99,18 +101,14 @@ kgeography::kgeography() : KMainWindow()
 		p_askCapitalDivisions -> setEnabled(false);
 		p_askDivisionCapitals -> setEnabled(false);
 	}
+	
+	show();
 }
 
 kgeography::~kgeography()
 {
+	delete p_askWidget;
 	delete p_map;
-}
-
-void kgeography::goToMenu()
-{
-	p_askWidget -> disconnect();
-	p_askWidget -> goToMenu();
-	putMenu();
 }
 
 void kgeography::openMap()
@@ -125,7 +123,8 @@ void kgeography::openMap()
 
 void kgeography::consult()
 {
-	p_askWidget = new mapAsker(p_stack, p_map, false);
+	removeOldAskWidget();
+	p_askWidget = new mapAsker(p_bigWidget, p_map, p_underRightWidget, false);
 	p_zoom -> setEnabled(true);
 	putAskWidget();
 }
@@ -134,86 +133,97 @@ void kgeography::askCapitalDivisions()
 {
 	int i;
 	bool ok;
+	p_askWidget -> showAnswersMessageBox();
 	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
-		p_askWidget = new capitalDivisionAsker(p_stack, p_map, i);
+		removeOldAskWidget();
+		p_askWidget = new capitalDivisionAsker(p_bigWidget, p_map, p_underRightWidget, i);
 		putAskWidget();
 	}
+	else consult();
 }
 
 void kgeography::askDivisionCapitals()
 {
 	int i;
 	bool ok;
+	p_askWidget -> showAnswersMessageBox();
 	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
-		p_askWidget = new divisionCapitalAsker(p_stack, p_map, i);
+		removeOldAskWidget();
+		p_askWidget = new divisionCapitalAsker(p_bigWidget, p_map, p_underRightWidget, i);
 		putAskWidget();
 	}
+	else consult();
 }
 
 void kgeography::askMap()
 {
 	int i;
 	bool ok;
+	p_askWidget -> showAnswersMessageBox();
 	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
-		p_askWidget = new mapAsker(p_stack, p_map, true, i);
+		removeOldAskWidget();
+		p_askWidget = new mapAsker(p_bigWidget, p_map, p_underRightWidget, true, i);
 		p_zoom -> setEnabled(true);
 		putAskWidget();
 	}
+	else consult();
 }
 
 void kgeography::askFlagDivisions()
 {
 	int i;
 	bool ok;
+	p_askWidget -> showAnswersMessageBox();
 	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
-		p_askWidget = new flagDivisionAsker(p_stack, p_map, i);
+		removeOldAskWidget();
+		p_askWidget = new flagDivisionAsker(p_bigWidget, p_map, p_underRightWidget, i);
 		putAskWidget();
 	}
+	else consult();
 }
 
 void kgeography::askDivisionFlags()
 {
 	int i;
 	bool ok;
+	p_askWidget -> showAnswersMessageBox();
 	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
-		p_askWidget = new divisionFlagAsker(p_stack, p_map, i);
+		removeOldAskWidget();
+		p_askWidget = new divisionFlagAsker(p_bigWidget, p_map, p_underRightWidget, i);
 		putAskWidget();
 	}
+	else consult();
 }
 
-void kgeography::putMenu()
+void kgeography::removeOldAskWidget()
 {
-	p_stack -> raiseWidget(0);
-	p_stack -> removeWidget(p_askWidget);
 	delete p_askWidget;
-	p_askWidget = 0;
 	p_zoom -> setEnabled(false);
 	p_move -> setEnabled(false);
 	p_zoom -> setChecked(false);
 	p_move -> setChecked(false);
-	p_goToMenu -> setEnabled(false);
+	
 }
 
 void kgeography::putAskWidget()
 {
-	p_stack -> raiseWidget(p_askWidget);
-	connect(p_askWidget, SIGNAL(finished()), this, SLOT(putMenu()));
-	connect(p_askWidget, SIGNAL(setMoveActionEnabled(bool)), p_move, SLOT(setEnabled(bool)));
-	connect(p_askWidget, SIGNAL(setMoveActionChecked(bool)), p_move, SLOT(setChecked(bool)));
+	p_bigWidget -> setStretchFactor(p_askWidget, 1);
+	p_askWidget -> show();
 	connect(p_askWidget, SIGNAL(setZoomActionChecked(bool)), p_zoom, SLOT(setChecked(bool)));
 	connect(p_zoom, SIGNAL(toggled(bool)), p_askWidget, SLOT(setZoom(bool)));
+	connect(p_askWidget, SIGNAL(setMoveActionEnabled(bool)), p_move, SLOT(setEnabled(bool)));
+	connect(p_askWidget, SIGNAL(setMoveActionChecked(bool)), p_move, SLOT(setChecked(bool)));
 	connect(p_move, SIGNAL(toggled(bool)), p_askWidget, SLOT(setMovement(bool)));
-	p_goToMenu -> setEnabled(true);
 }
 
 void kgeography::setMap(map *m)
@@ -222,14 +232,14 @@ void kgeography::setMap(map *m)
 	set -> setLastMap(m -> getFile());
 	set -> writeConfig();
 	p_map = m;
-	p_currentMap -> setText(i18n("Current map is %1").arg(p_map -> getName()));
+	p_currentMap -> setText(i18n("Current map:\n%1").arg(p_map -> getName()));
 	p_consult -> setEnabled(true);
 	p_askMap -> setEnabled(true);
 	p_askFlagDivisions -> setEnabled(m -> hasAllFlags());
 	p_askDivisionFlags -> setEnabled(m -> hasAllFlags());
 	p_askCapitalDivisions -> setEnabled(true);
 	p_askDivisionCapitals -> setEnabled(true);
-	putMenu();
+	consult();
 }
 
 #include "kgeography.moc"

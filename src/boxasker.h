@@ -23,19 +23,19 @@ class boxAsker : public askWidget
 {
 Q_OBJECT
 	public:
-		boxAsker(QWidget *parent, map *m, uint count);
+		boxAsker(QWidget *parent, map *m, QWidget *w, uint count);
 		~boxAsker();
 	
 	protected:
-		virtual void nextQuestionHook(QString division, int i, bool isAnswer) = 0;
+		void clean();
+		virtual void cleanHook();
+		virtual void nextBoxAskerQuestionHook(QString division, int i, bool isAnswer) = 0;
+		void nextQuestionHook(QString division);
 		void setQuestion(QString q);
 		
 		QVBoxLayout *p_lay;
 		QRadioButton **p_rb;
 
-	public slots:
-		void goToMenu();
-	
 	protected slots:
 		void init();
 		
@@ -43,17 +43,12 @@ Q_OBJECT
 		void checkAnswer();
 	
 	private:
-		void nextQuestion();
-		void showAnswersMessageBox();
+		/*void nextQuestion();*/
 	
 		KPushButton *p_accept;
 		
-		bool p_mustShowCorrectIncorrect;
-		
 		// the position the correct answer is in
 		int p_position;
-		
-		int p_correctAnswers, p_incorrectAnswers;
 		
 		QLabel *p_label;
 };

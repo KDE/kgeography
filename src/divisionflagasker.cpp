@@ -16,12 +16,12 @@
 #include "divisionflagasker.h"
 #include "map.h"
 
-divisionFlagAsker::divisionFlagAsker(QWidget *parent, map *m, uint count) : boxAsker(parent, m, count)
+divisionFlagAsker::divisionFlagAsker(QWidget *parent, map *m, QWidget *w, uint count) : boxAsker(parent, m, w, count)
 {
 	init();
 }
 
-void divisionFlagAsker::nextQuestionHook(QString division, int i, bool isAnswer)
+void divisionFlagAsker::nextBoxAskerQuestionHook(QString division, int i, bool isAnswer)
 {
 	if (isAnswer)
 	{

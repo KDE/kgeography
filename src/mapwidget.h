@@ -19,11 +19,12 @@ class mapWidget : public QWidget
 {
 Q_OBJECT
 	public:
-		mapWidget(QWidget *parent);
+		mapWidget(QWidget *parent, const QString &path);
 
-		void setMapImage(const QString &path);
 		void setMapMove(bool b);
 		void setMapZoom(bool b);
+		
+		QSize sizeHint() const;
 	
 	signals:
 		void setMoveActionChecked(bool b);
@@ -35,15 +36,17 @@ Q_OBJECT
 		void mousePressEvent(QMouseEvent *e);
 		void mouseMoveEvent(QMouseEvent *e);
 		void mouseReleaseEvent(QMouseEvent *e);
+		void resizeEvent(QResizeEvent *e);
 	
 	private:
+		void emitMoveActionEnabled();
 		QImage *getCurrentImage();
 		void setOriginalImage();
-	
-		QImage p_originalImage, p_zoomedImageShown, p_zoomedImageBig;
+		
+		QImage p_originalImage, p_zoomedImageShown;
 		bool p_zooming, p_wantZoom, p_moving, p_wantMove;
 		QPoint p_initial, p_prev; /* rubberbanding and moving */
-		int p_zoomX, p_zoomY;
+		int p_zoomX, p_zoomY, p_zoomW, p_zoomH;
 		double p_lastFactorX, p_lastFactorY;
 };
 

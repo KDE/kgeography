@@ -14,6 +14,8 @@
 #include "askwidget.h"
 #include "popupmanager.h"
 
+class QLabel;
+
 class flagDivisionAsker;
 class infoWidget;
 class mapWidget;
@@ -22,28 +24,28 @@ class mapAsker : public askWidget
 {
 Q_OBJECT
 	public:
-		mapAsker(QWidget *parent, map *m, bool asker, uint count = 0);
+		mapAsker(QWidget *parent, map *m, QWidget *w, bool asker, uint count = 0);
 	
 	protected:
+		void clean();
+		void nextQuestionHook(QString division);
 		void mousePressEvent(QMouseEvent *e);
 
 	public slots:
 		void setMovement(bool b);
 		void setZoom(bool b);
-		void goToMenu();
 	
 	private slots:
 		void handleMapClick(QRgb c, const QPoint &p);
 	
 	private:
-		void nextDivision();	
-	
+		QLabel *p_next;
+			
 		infoWidget *p_infoWidget;
 		mapWidget *p_mapWidget;
 		
 		popupManager p_popupManager;
 		bool p_shouldClearPopup, p_asker;
-
 };
 
 #endif

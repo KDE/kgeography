@@ -2,11 +2,10 @@
 * UI related *
 **************
 
- - popupManager::show(QString) does not check that the full text can be seen (i.e. x < 0)
-   make it wrap the text when it does happen or completely remove it and use KMessageBox::information
-   for the only case in which popupManager::show(QString) is used.
-
  - Add the click on map division given its flag
+ - Think how to show the flag of a division in the map browsing mode
+ - Add the fit to window option in the map browsing mode
+ - Change the move action by to scrollbars
 
 ******************
 * Parser related *
@@ -14,10 +13,6 @@
 
  - Add <localname> tag to the map parser/files so the user can see the local name of a division
 	Example: In Spanish the user will see for Belgium -> Belgica (due to i18n) and Belgique (due to localname)
- - Add <capital> tag to map parser/files so the program can do these questions:
-	In the map: Point to the division whose capital is X.
-	In a dialog: Which of these divisions has X as capital? (and give n options)
-	In a dialog: Which of these capitals is the capital of division X? (and give n options)
 
 ***************
 * Map related *

@@ -17,7 +17,7 @@
 #include "flagdivisionasker.h"
 #include "map.h"
 
-flagDivisionAsker::flagDivisionAsker(QWidget *parent, map *m, uint count) : boxAsker(parent, m, count)
+flagDivisionAsker::flagDivisionAsker(QWidget *parent, map *m, QWidget *w, uint count) : boxAsker(parent, m, w, count)
 {
 	p_flag = new QWidget(this);
 	p_lay -> insertWidget(0, p_flag);
@@ -25,7 +25,12 @@ flagDivisionAsker::flagDivisionAsker(QWidget *parent, map *m, uint count) : boxA
 	init();
 }
 
-void flagDivisionAsker::nextQuestionHook(QString division, int i, bool isAnswer)
+void flagDivisionAsker::cleanHook()
+{
+	p_flag -> unsetPalette();
+}
+
+void flagDivisionAsker::nextBoxAskerQuestionHook(QString division, int i, bool isAnswer)
 {
 	if (isAnswer)
 	{

@@ -1,3 +1,8 @@
+2004-08-05  Albert Astals Cid  <tsdgeos@terra.es>
+	* Layout change
+	* Unify some of the code in boxasker and mapasker to askwidget
+	* Zoom now is much more memory efficient (at cost of cpu efficiency)
+
 2004-06-05  Albert Astals Cid  <tsdgeos@terra.es>
 	* Zoom and Move actions should be unchecked and disabled when going to main menu
 	* Don't enable scrolling mode for extreme zooms as it needed too much
