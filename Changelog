@@ -1,4 +1,7 @@
 2004-05-09  Albert Astals Cid  <tsdgeos@terra.es>
+	* In map browsing mode show DivisionName (CapitalDivisionName)
+
+2004-05-09  Albert Astals Cid  <tsdgeos@terra.es>
 	* Add Division -> flag asker
 
 2004-05-08  Albert Astals Cid  <tsdgeos@terra.es>

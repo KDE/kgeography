@@ -51,7 +51,7 @@ void mapAsker::goToMenu()
 
 void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 {
-	QString aux;
+	QString aux, cap;
 	aux = p_map -> getWhatIs(c, !p_asker);
 	if (aux == "nothing") KMessageBox::error(this, i18n("You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.").arg(p_map -> getName()).arg(qRed(c)).arg(qGreen(c)).arg(qBlue(c)));
 	else if (p_shouldClearPopup)
@@ -61,6 +61,8 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	}
 	else if (!p_asker)
 	{
+		cap = p_map -> getDivisionCapital(aux);
+		if (cap != "") aux = i18n("%1 (%2)").arg(aux).arg(cap);
 		p_popupManager.show(aux, p);
 	}
 	else if (aux != "")
