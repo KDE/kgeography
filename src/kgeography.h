@@ -30,25 +30,26 @@ Q_OBJECT
 	public:
 		kgeography();
 		~kgeography();
-	
+
 	private slots:
 		void openMap();
-	
+
 		void consult();
 		void askCapitalDivisions();
 		void askDivisionCapitals();
 		void askMap();
 		void askFlagDivisions();
 		void askDivisionFlags();
-		
+		void disclaimer();
+
 	private:
 		void putAskWidget();
 		void removeOldAskWidget();
 		void setMap(map *m);
-		
+
 		QHBox *p_bigWidget;
 		QVBox *p_underLeftWidget;
-		
+
 		KPushButton *p_consult;
 		KPushButton *p_askCapitalDivisions;
 		KPushButton *p_askDivisionCapitals;
@@ -57,7 +58,7 @@ Q_OBJECT
 		KPushButton *p_askDivisionFlags;
 		KToggleAction *p_zoom, *p_move;
 		QLabel *p_currentMap;
-	
+
 		map *p_map;
 		askWidget *p_askWidget;
 };

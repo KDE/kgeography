@@ -10,6 +10,9 @@
 			<Action name="zoom" />
 			<Action name="move" />
 		</Menu>
+		<Menu name="help">
+			<Action name="disclaimer"/>
+		</Menu>
 	</MenuBar>
 	<ToolBar name="mainToolBar">
 		<Action name="zoom" />

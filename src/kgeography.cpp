@@ -35,12 +35,12 @@
 kgeography::kgeography() : KMainWindow()
 {
 	QString file;
-	
+
 	p_map = 0;
 	p_askWidget = 0;
-	
+
 	p_bigWidget = new QHBox(this);
-	
+
 	QVBox *p_leftWidget = new QVBox(p_bigWidget);
 	p_currentMap = new QLabel(p_leftWidget);
 	p_currentMap -> setAlignment(AlignCenter);
@@ -54,34 +54,36 @@ kgeography::kgeography() : KMainWindow()
 	p_underLeftWidget -> layout() -> setSpacing(KDialog::spacingHint());
 	p_underLeftWidget -> layout() -> setMargin(KDialog::marginHint());
 	p_leftWidget -> setStretchFactor(p_underLeftWidget, 1);
-	
+
 	setCentralWidget(p_bigWidget);
-	
+
 	connect(p_consult, SIGNAL(clicked()), this, SLOT(consult()));
 	connect(p_askMap, SIGNAL(clicked()), this, SLOT(askMap()));
 	connect(p_askCapitalDivisions, SIGNAL(clicked()), this, SLOT(askCapitalDivisions()));
 	connect(p_askDivisionCapitals, SIGNAL(clicked()), this, SLOT(askDivisionCapitals()));
 	connect(p_askFlagDivisions, SIGNAL(clicked()), this, SLOT(askFlagDivisions()));
 	connect(p_askDivisionFlags, SIGNAL(clicked()), this, SLOT(askDivisionFlags()));
-	
+
 	KStdAction::open(this, SLOT(openMap()), actionCollection(), "openMap");
 	KStdAction::quit(this, SLOT(close()), actionCollection(), "quit");
-	
+
 	p_zoom = new KToggleAction(i18n("&Zoom"), "viewmag", 0, 0, 0, actionCollection(), "zoom");
 	p_zoom -> setEnabled(false);
-	
+
 	p_move = new KToggleAction(i18n("&Move"), "move", 0, 0, 0, actionCollection(), "move");
 	p_move -> setEnabled(false);
-	
+
+	new KAction(i18n("Disclaimer"), 0, this, SLOT(disclaimer()), actionCollection(), "disclaimer");
+
 	file = kgeographySettings::self() -> lastMap();
-	
+
 #if KDE_IS_VERSION(3,2,90)
 	setupGUI(Keys | ToolBar | Save | Create);
 #else
 	createGUI();
 #endif
-	
-	
+
+
 	if (QFile::exists(file))
 	{
 		mapReader reader;
@@ -97,7 +99,7 @@ kgeography::kgeography() : KMainWindow()
 		}
 	}
 	else openMap();
-		
+
 	if (!p_map)
 	{
 		p_currentMap -> setText(i18n("There is no current map"));
@@ -108,7 +110,7 @@ kgeography::kgeography() : KMainWindow()
 		p_askCapitalDivisions -> setEnabled(false);
 		p_askDivisionCapitals -> setEnabled(false);
 	}
-	
+
 	show();
 }
 
@@ -219,7 +221,7 @@ void kgeography::removeOldAskWidget()
 	p_move -> setEnabled(false);
 	p_zoom -> setChecked(false);
 	p_move -> setChecked(false);
-	
+
 }
 
 void kgeography::putAskWidget()
@@ -247,6 +249,11 @@ void kgeography::setMap(map *m)
 	p_askCapitalDivisions -> setEnabled(true);
 	p_askDivisionCapitals -> setEnabled(true);
 	consult();
+}
+
+void kgeography::disclaimer()
+{
+	KMessageBox::information(this, i18n("Maps, flags, translations, etc. are as accurate as their respective authors could achieve, but KGeography should not be taken as a authoritative source."), i18n("Disclaimer"));
 }
 
 #include "kgeography.moc"
