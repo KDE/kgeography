@@ -1,4 +1,7 @@
 2005-03-04 Albert Astals Cid <tsdgeos@terra.es>
+	* Brazil map by Justin Morgan
+
+2005-03-04 Albert Astals Cid <tsdgeos@terra.es>
 	* Do not create another mapAsker in consult mode if we are already at
 	it
 

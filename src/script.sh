@@ -11,6 +11,7 @@ echo "" >> $file
 
 for x in `find ../data/*.kgm`; do
 	previous="";
+	kgmName=${x:8}
 	
 	for y in `grep "<name>" $x`; do
 		if [ "$previous" ]; then
@@ -27,7 +28,7 @@ for x in `find ../data/*.kgm`; do
 				length=${#part};
 				name=$(($length-7));
 				want=$name;
-				echo -n "i18n(\"" >> $file;
+				echo -n "i18n(\"$kgmName\", \"" >> $file;
 				echo -n ${part:0:want} >> $file;
 				echo "\");" >> $file;
 				previous="";
@@ -53,7 +54,7 @@ for x in `find ../data/*.kgm`; do
 				length=${#part};
 				name=$(($length-10));
 				want=$name;
-				echo -n "i18n(\"" >> $file;
+				echo -n "i18n(\"$kgmName\", \"" >> $file;
 				echo -n ${part:0:want} >> $file;
 				echo "\");" >> $file;
 				previous="";
