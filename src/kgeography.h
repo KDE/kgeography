@@ -35,7 +35,8 @@ Q_OBJECT
 		void openMap();
 	
 		void consult();
-		void askCapitals();
+		void askCapitalDivisions();
+		void askDivisionCapitals();
 		void askMap();
 		void askFlags();
 		
@@ -48,7 +49,8 @@ Q_OBJECT
 		QWidgetStack *p_stack;
 		
 		KPushButton *p_consult;
-		KPushButton *p_askCapitals;
+		KPushButton *p_askCapitalDivisions;
+		KPushButton *p_askDivisionCapitals;
 		KPushButton *p_askMap;
 		KPushButton *p_askFlags;
 		KAction *p_goToMenu;

@@ -8,23 +8,24 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef FLAGDIVISIONASKER_H
-#define FLAGDIVISIONASKER_H
+#include <klocale.h>
 
-#include "boxasker.h"
+#include <qlabel.h>
+#include <qlayout.h>
+#include <qradiobutton.h>
+ 
+#include "divisioncapitalasker.h"
+#include "map.h"
 
-class QImage;
-
-class flagDivisionAsker : public boxAsker
+divisionCapitalAsker::divisionCapitalAsker(QWidget *parent, map *m, uint count) : boxAsker(parent, m, count)
 {
-	public:
-		flagDivisionAsker(QWidget *parent, map *m, uint count);
-	
-	protected:
-		void nextQuestionHook(QString division, int i, bool isAnswer);
+	p_label = new QLabel(this);
+	p_lay -> insertWidget(0, p_label);
+	init();
+}
 
-	private:
-		QWidget *p_flag;
-};
-
-#endif
+void divisionCapitalAsker::nextQuestionHook(QString division, int i, bool isAnswer)
+{
+	p_rb[i] -> setText(p_map -> getDivisionCapital(division));
+	if (isAnswer) p_label -> setText(i18n("The capital of %1 is...").arg(division));
+}

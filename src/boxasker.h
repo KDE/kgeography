@@ -8,23 +8,49 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef FLAGDIVISIONASKER_H
-#define FLAGDIVISIONASKER_H
+#ifndef BOXASKER_H
+#define BOXASKER_H
 
-#include "boxasker.h"
+#include "askwidget.h"
 
-class QImage;
+class KPushButton;
 
-class flagDivisionAsker : public boxAsker
+class QRadioButton;
+class QVBoxLayout;
+
+class boxAsker : public askWidget
 {
+Q_OBJECT
 	public:
-		flagDivisionAsker(QWidget *parent, map *m, uint count);
+		boxAsker(QWidget *parent, map *m, uint count);
 	
 	protected:
-		void nextQuestionHook(QString division, int i, bool isAnswer);
+		virtual void nextQuestionHook(QString division, int i, bool isAnswer) = 0;
+		
+		QVBoxLayout *p_lay;
+		QRadioButton **p_rb;
 
+	public slots:
+		void goToMenu();
+	
+	protected slots:
+		void init();
+		
+	private slots:
+		void checkAnswer();
+	
 	private:
-		QWidget *p_flag;
+		void nextQuestion();
+		void showAnswersMessageBox();
+	
+		KPushButton *p_accept;
+		
+		bool p_mustShowCorrectIncorrect;
+		
+		// the position the correct answer is in
+		int p_position;
+		
+		int p_correctAnswers, p_incorrectAnswers;
 };
 
 #endif

@@ -11,41 +11,20 @@
 #ifndef CAPITALDIVISIONASKER_H
 #define CAPITALDIVISIONASKER_H
 
-#include "askwidget.h"
-
-class KPushButton;
+#include "boxasker.h"
 
 class QLabel;
-class QRadioButton;
-class QStringList;
 
-class map;
-
-class capitalDivisionAsker : public askWidget
+class capitalDivisionAsker : public boxAsker
 {
-Q_OBJECT
 	public:
 		capitalDivisionAsker(QWidget *parent, map *m, uint count);
-	
-	public slots:
-		void goToMenu();
-		
-	private slots:
-		void checkAnswer();
-		void init();
+
+	protected:
+		void nextQuestionHook(QString division, int i, bool isAnswer);
 	
 	private:
-		void nextCapital();
-		void showAnswersMessageBox();
-	
 		QLabel *p_label;
-		QRadioButton **p_rb;
-		KPushButton *p_accept;
-		
-		// the position the correct answer is in
-		int p_position;
-		
-		int p_correctAnswers, p_incorrectAnswers;
 };
 
 #endif

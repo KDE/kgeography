@@ -21,6 +21,7 @@
 #include <qwidgetstack.h>
 
 #include "capitaldivisionasker.h"
+#include "divisioncapitalasker.h"
 #include "flagdivisionasker.h"
 #include "kgeography.h"
 #include "settings.h"
@@ -43,7 +44,8 @@ kgeography::kgeography() : KMainWindow()
 	p_currentMap -> setAlignment(AlignCenter);
 	p_consult = new KPushButton(i18n("&Browse the map"), holder);
 	p_askMap = new KPushButton(i18n("&Click division in the map"), holder);
-	p_askCapitals = new KPushButton(i18n("Guess division from its &capital"), holder);
+	p_askCapitalDivisions = new KPushButton(i18n("Guess division from its &capital"), holder);
+	p_askDivisionCapitals = new KPushButton(i18n("Guess the capital of a &division"), holder);
 	p_askFlags = new KPushButton(i18n("&Guess division from its flag"), holder);
 	
 	p_goToMenu = new KAction(i18n("&Go to menu"), 0, this, SLOT(goToMenu()), actionCollection(), "goToMenu");
@@ -51,7 +53,8 @@ kgeography::kgeography() : KMainWindow()
 	
 	connect(p_consult, SIGNAL(clicked()), this, SLOT(consult()));
 	connect(p_askMap, SIGNAL(clicked()), this, SLOT(askMap()));
-	connect(p_askCapitals, SIGNAL(clicked()), this, SLOT(askCapitals()));
+	connect(p_askCapitalDivisions, SIGNAL(clicked()), this, SLOT(askCapitalDivisions()));
+	connect(p_askDivisionCapitals, SIGNAL(clicked()), this, SLOT(askDivisionCapitals()));
 	connect(p_askFlags, SIGNAL(clicked()), this, SLOT(askFlags()));
 	
 	setCentralWidget(p_stack);
@@ -115,7 +118,7 @@ void kgeography::consult()
 	putAskWidget();
 }
 
-void kgeography::askCapitals()
+void kgeography::askCapitalDivisions()
 {
 	int i;
 	bool ok;
@@ -123,6 +126,18 @@ void kgeography::askCapitals()
 	if (ok)
 	{
 		p_askWidget = new capitalDivisionAsker(p_stack, p_map, i);
+		putAskWidget();
+	}
+}
+
+void kgeography::askDivisionCapitals()
+{
+	int i;
+	bool ok;
+	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
+	if (ok)
+	{
+		p_askWidget = new divisionCapitalAsker(p_stack, p_map, i);
 		putAskWidget();
 	}
 }

@@ -8,23 +8,21 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef FLAGDIVISIONASKER_H
-#define FLAGDIVISIONASKER_H
+#ifndef DIVISIONCAPITALASKER_H
+#define DIVISIONCAPITALASKER_H
 
 #include "boxasker.h"
 
-class QImage;
-
-class flagDivisionAsker : public boxAsker
+class divisionCapitalAsker : public boxAsker
 {
 	public:
-		flagDivisionAsker(QWidget *parent, map *m, uint count);
-	
+		divisionCapitalAsker(QWidget *parent, map *m, uint count);
+
 	protected:
 		void nextQuestionHook(QString division, int i, bool isAnswer);
 
 	private:
-		QWidget *p_flag;
+		QLabel *p_label;
 };
 
 #endif
