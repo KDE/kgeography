@@ -33,10 +33,16 @@ flags_DATA = albania.png djibouti.png latvia.png saarland.png algeria.png \
              jordan.png romania.png yemen.png czech.png kenya.png russia.png \
              zambia.png denmark.png kuwait.png rwanda.png zimbabwe.png \
              colombia.png venezuela.png guyana.png suriname.png ecuador.png \
-	     peru.png brazil.png bolivia.png chile.png paraguay.png \
-	     argentina.png uruguay.png br_AC.png br_AP.png br_DF.png \
-	     br_MA.png br_MT.png br_PI.png br_RJ.png br_RR.png br_SE.png \
-	     br_AL.png br_BA.png br_ES.png br_MG.png br_PA.png br_PN.png \
-	     br_RN.png  br_RS.png  br_SP.png br_AM.png br_CE.png br_GO.png \
-	     br_MS.png br_PE.png br_PR.png  br_RO.png  br_SC.png  br_TO.png
-	     
+             peru.png brazil.png bolivia.png chile.png paraguay.png \
+             argentina.png uruguay.png br_AC.png br_AP.png br_DF.png \
+             br_MA.png br_MT.png br_PI.png br_RJ.png br_RR.png br_SE.png \
+             br_AL.png br_BA.png br_ES.png br_MG.png br_PA.png br_PN.png \
+             br_RN.png  br_RS.png  br_SP.png br_AM.png br_CE.png br_GO.png \
+             br_MS.png br_PE.png br_PR.png  br_RO.png  br_SC.png  br_TO.png \
+             uae.png china.png india.png SriLanka.png mongolia.png kazakhstan.png \
+             japan.png myanmar.png nepal.png bhutan.png indonesia.png malaysia.png \
+             bangladesh.png afghanistan.png azerbaijan.png armenia.png bahrain.png \
+             georgia.png uzbekistan.png kyrgyzstan.png tajikistan.png pakistan.png \
+             laos.png cambodia.png easttimor.png brunei.png philippines.png \
+             thailand.png vietnam.png taiwan.png singapore.png nkorea.png \
+             skorea.png fiji.png tonga.png
