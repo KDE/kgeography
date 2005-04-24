@@ -45,4 +45,6 @@ flags_DATA = albania.png djibouti.png latvia.png saarland.png algeria.png \
              georgia.png uzbekistan.png kyrgyzstan.png tajikistan.png pakistan.png \
              laos.png cambodia.png easttimor.png brunei.png philippines.png \
              thailand.png vietnam.png taiwan.png singapore.png nkorea.png \
-             skorea.png fiji.png tonga.png
+             skorea.png fiji.png tonga.png australia.png NewZealand.png \
+             Vatican.png andorra.png Monaco.png papua_new_guinea.png \
+             greenland.png
