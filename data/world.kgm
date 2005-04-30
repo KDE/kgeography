@@ -1100,6 +1100,36 @@
 		</color>
 	</division>
 	<division>
+		<name>Dominica</name>
+		<capital>Roseau</capital>
+		<flag>dominica.png</flag>
+		<color>
+			<red>153</red>
+			<green>102</green>
+			<blue>0</blue>
+		</color>
+	</division>
+	<division>
+		<name>Barbados</name>
+		<capital>Bridgetown</capital>
+		<flag>barbados.png</flag>
+		<color>
+			<red>0</red>
+			<green>204</green>
+			<blue>255</blue>
+		</color>
+	</division>
+	<division>
+		<name>Antigua and Barbuda</name>
+		<capital>St. John's</capital>
+		<flag>antigua.png</flag>
+		<color>
+			<red>102</red>
+			<green>153</green>
+			<blue>153</blue>
+		</color>
+	</division>
+	<division>
 		<name>Trinidad and Tobago</name>
 		<capital>Port of Spain</capital>
 		<flag>trinidad_tobago.png</flag>
