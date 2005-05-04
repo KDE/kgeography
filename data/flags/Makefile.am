@@ -47,4 +47,7 @@ flags_DATA = albania.png djibouti.png latvia.png saarland.png algeria.png \
              thailand.png vietnam.png taiwan.png singapore.png nkorea.png \
              skorea.png fiji.png tonga.png australia.png NewZealand.png \
              Vatican.png andorra.png Monaco.png papua_new_guinea.png \
-             greenland.png
+             greenland.png pei.png alberta.png bc.png manitoba.png \
+             newbrunswick.png newfoundland.png novascotia.png \
+             nunavut.png nwterritories.png ontario.png \
+             quebec.png saskatchewan.png yukon.png

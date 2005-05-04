@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
 	about.addCredit("Giuseppe Caruso", I18N_NOOP("Italy flags and Italy by provinces map"), "caruso@pietrobo.com");
 	about.addCredit("Melody Fink", I18N_NOOP("Map contributor"));
 	about.addCredit("Mikolaj Machowski", I18N_NOOP("Map contributor"));
+	about.addCredit("Ed Montgomery", I18N_NOOP("Map contributor"));
 	about.addCredit("Justin Morgan", I18N_NOOP("Map contributor"));
 	about.addCredit("Maurizio Paolini", I18N_NOOP("Map contributor"));
 	about.addCredit("Yann Verley", I18N_NOOP("Contributed some maps and map generation tools"), "yann.verley@free.fr");
