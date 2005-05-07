@@ -44,7 +44,7 @@ void myPopup::slotActivated(int)
 
 myPopupItem::myPopupItem(myPopup *parent, const QString &text, const QString &text2, const QString &flagFile) : QFrame(parent, 0, WStyle_NoBorder)
 {
-	QHBoxLayout *lay = new QHBoxLayout(this, 4, -1);
+	QHBoxLayout *lay = new QHBoxLayout(this, 1, 1);
 	lay -> setAutoAdd(true);
 	
 	QVBox *vbox = new QVBox(this);
@@ -68,10 +68,6 @@ myPopupItem::myPopupItem(myPopup *parent, const QString &text, const QString &te
 	QFont f = l -> font();
 	f.setBold(true);
 	l -> setFont(f);
-	
-	
-	setFrameStyle(QFrame::Box | QFrame::Plain);
-	setLineWidth(0);
 	
 	setFixedSize(sizeHint());
 	show();
