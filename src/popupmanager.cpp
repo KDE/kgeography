@@ -52,16 +52,9 @@ void popupManager::clear()
 
 void popupManager::init(const QPoint &p)
 {
-	int x, y, maxX, maxY;
-	
-	maxX = p_parent -> width() - p_mp -> width();
-	maxY = p_parent -> height() - p_mp -> height();
-	if (p.x() < maxX) x = p.x();
-	else x = maxX;
-	if (p.y() < maxY) y = p.y();
-	else y = maxY;
-	p_mp -> move(x, y);
 	connect(p_mp, SIGNAL(deleteMe()), this, SLOT(clear()));
+
+	p_mp->exec(p_parent->mapToGlobal(p));
 }
 
 #include "popupmanager.moc"

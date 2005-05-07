@@ -12,8 +12,9 @@
 #define MYPOPUP_H
 
 #include <qframe.h>
+#include <qpopupmenu.h>
 
-class myPopup : public QFrame
+class myPopup : public QPopupMenu
 {
 Q_OBJECT
 	friend class popupManager;
@@ -21,8 +22,25 @@ Q_OBJECT
 	private:
 		myPopup(QWidget *parent, const QString &text, const QString &text2 = QString::null, const QString &flagFile = QString::null);
 	
+	private slots:
+		void popupClick();
+		void slotActivated(int);
+
 	signals:
 		void deleteMe();
+
+};
+
+class myPopupItem : public QFrame
+{
+Q_OBJECT
+	friend class myPopup;
+	
+	private:
+		myPopupItem(myPopup *parent, const QString &text, const QString &text2 = QString::null, const QString &flagFile = QString::null);
+	
+	signals:
+		void click();
 
 	protected:
 		void mousePressEvent(QMouseEvent *);

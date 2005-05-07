@@ -18,7 +18,31 @@
 
 #include <kdebug.h>
 
-myPopup::myPopup(QWidget *parent, const QString &text, const QString &text2, const QString &flagFile) : QFrame(parent, 0, WStyle_NoBorder)
+myPopup::myPopup(QWidget *parent, const QString &text, const QString &text2, const QString &flagFile) : QPopupMenu(parent)
+{
+	setLineWidth(2);
+	setFrameStyle(QFrame::Box | QFrame::Plain);
+
+	myPopupItem *p = new myPopupItem(this, text, text2, flagFile);
+	insertItem(p, 0);
+
+	connect(p, SIGNAL(click()), this, SLOT(popupClick()));
+	connect(this, SIGNAL(activated(int)), this, SLOT(slotActivated(int)));
+
+}
+
+void myPopup::popupClick()
+{
+	slotActivated(0);
+}
+
+void myPopup::slotActivated(int)
+{
+	emit deleteMe();
+}
+
+
+myPopupItem::myPopupItem(myPopup *parent, const QString &text, const QString &text2, const QString &flagFile) : QFrame(parent, 0, WStyle_NoBorder)
 {
 	QHBoxLayout *lay = new QHBoxLayout(this, 4, -1);
 	lay -> setAutoAdd(true);
@@ -47,15 +71,15 @@ myPopup::myPopup(QWidget *parent, const QString &text, const QString &text2, con
 	
 	
 	setFrameStyle(QFrame::Box | QFrame::Plain);
-	setLineWidth(2);
+	setLineWidth(0);
 	
 	setFixedSize(sizeHint());
 	show();
 }
 
-void myPopup::mousePressEvent(QMouseEvent *)
+void myPopupItem::mousePressEvent(QMouseEvent *)
 {
-	emit deleteMe();
+	emit click();
 }
 
 #include "mypopup.moc"
