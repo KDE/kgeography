@@ -2,6 +2,7 @@
 Encoding=UTF-8
 Name=KGeography
 Comment=A Geography Learning Program
+Comment[da]=Et program til at lære geografi
 Exec=kgeography
 Icon=kgeography
 Type=Application
