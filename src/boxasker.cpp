@@ -10,6 +10,7 @@
 
 #include <stdlib.h> // for RAND_MAX
 
+#include <kaccelmanager.h>
 #include <kapplication.h>
 #include <klocale.h>
 #include <kpushbutton.h>
@@ -39,6 +40,7 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 	p_lay -> addWidget( p_label);
 	p_lay -> addWidget(bg, 1);
 	p_lay -> addWidget(p_accept);
+	KAcceleratorManager::setNoAccel(this);
 }
 
 boxAsker::~boxAsker()
