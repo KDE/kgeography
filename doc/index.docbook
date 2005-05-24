@@ -57,9 +57,7 @@ The game tells you a map division name and you have to guess its flag
 </listitem>
 </itemizedlist>
 </para>
-<para>
-Maps available in current release are: Africa, Asia, Austria, Brazil, Canada, China, Europe, France, Germany, Italy, Italy by provinces, North and Central America, Norway, Poland, South America, Spain, USA and the world.
-</para>
+
 </abstract>
 
 
@@ -74,15 +72,6 @@ Maps available in current release are: Africa, Asia, Austria, Brazil, Canada, Ch
 
 </bookinfo>
 
-<!-- The contents of the documentation begin here.  Label
-each chapter so with the id attribute. This is necessary for two reasons: it
-allows you to easily reference the chapter from other chapters of your
-document, and if there is no ID, the name of the generated HTML files will vary
-from time to time making it hard to manage for maintainers and for the CVS
-system. Any chapter labelled (OPTIONAL) may be left out at the author's
-discretion. Other chapters should not be left out in order to maintain a
-consistent documentation style across all KDE apps. -->
-
 <chapter id="introduction">
 <title>Introduction</title>
 
@@ -92,8 +81,10 @@ problems. Basically a long version of the abstract.  Don't include a
 revision history. (see installation appendix comment) -->
 
 <para>
-&kgeography; is a program that lets you do absolutely nothing. Please report
-any problems or feature requests to the &kde; mailing lists.
+&kgeography; is a geography learning tool for KDE. It allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).
+</para>
+<para>
+Maps available in current release are: Africa, Asia, Austria, Brazil, Canada, China, Europe, France, Germany, Italy, Italy by provinces, North and Central America, Norway, Poland, South America, Spain, USA and the world.
 </para>
 </chapter>
 
@@ -313,11 +304,11 @@ Guess the flag of a division: a province name is given and you must find the cor
 </sect1>
 </chapter>
 
-<chapter id="teachers-parents">
+<!--<chapter id="teachers-parents">
 <title>Teachers/Parents guide to &kgeography; </title>
-<!-- This chapter should emphasize the educational aims of your app and
-guide the parent/teacher on how to help the child using it.-->
-</chapter>
+ This chapter should emphasize the educational aims of your app and
+guide the parent/teacher on how to help the child using it.
+</chapter>-->
 
 <chapter id="how-to-maps">
 <title>How to make maps in order to contribute to KGeography</title>
@@ -458,22 +449,12 @@ or menu bars. -->
 <varlistentry>
 <term><menuchoice>
 <shortcut>
-<keycombo action="simul">&Ctrl;<keycap>N</keycap></keycombo>
+<keycombo action="simul">&Ctrl;<keycap>O</keycap></keycombo>
 </shortcut>
 <guimenu>File</guimenu>
-<guimenuitem>New</guimenuitem>
+<guimenuitem>Open</guimenuitem>
 </menuchoice></term>
-<listitem><para><action>Creates a new document</action></para></listitem>
-</varlistentry>
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo action="simul">&Ctrl;<keycap>S</keycap></keycombo>
-</shortcut>
-<guimenu>File</guimenu>
-<guimenuitem>Save</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Saves the document</action></para></listitem>
+<listitem><para><action>Open the choose map dialog</action></para></listitem>
 </varlistentry>
 <varlistentry>
 <term><menuchoice>
@@ -491,6 +472,69 @@ or menu bars. -->
 </sect2>
 
 <sect2>
+<title>The View Menu</title>
+<para>
+<variablelist>
+<varlistentry>
+<term><menuchoice>
+<guimenu>View</guimenu>
+<guimenuitem>Zoom</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Go in zoom mode</action></para></listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<guimenu>View</guimenu>
+<guimenuitem>Original Size</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Sets</action> the map back to its original size</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<guimenu>View</guimenu>
+<guimenuitem>Move</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Moves</action> the current map</para></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title>The <guimenu>Settings</guimenu> Menu</title>
+<para>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Toolbars</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Show/Hide various Toolbars.</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Configure Shortcuts...</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Configure key shortcuts for &kgeography;.</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Configure Toolbars...</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Configure the &kgeography; toolbar.</action></para></listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+
+</sect2>
+<sect2>
 <title>The <guimenu>Help</guimenu> Menu</title>
 
 <!-- Assuming you have a standard help menu (help, what's this, about -->
@@ -505,18 +549,9 @@ or menu bars. -->
 </sect1>
 </chapter>
 
-<chapter id="faq">
+<!--<chapter id="faq">
 <title>Questions and Answers</title>
 
-<!-- (OPTIONAL but recommended) This chapter should include all of the silly
-(and not-so-silly) newbie questions that fill up your mailbox. This chapter
-should be reserved for BRIEF questions and answers! If one question uses more
-than a page or so then it should probably be part of the
-"Using this Application" chapter instead. You should use links to
-cross-reference questions to the parts of your documentation that answer them.
-This is also a great place to provide pointers to other FAQ's if your users
-must do some complicated configuration on other programs in order for your
-application work. -->
 
 &reporting.bugs;
 &updating.documentation;
@@ -541,7 +576,7 @@ installed.</para>
 </answer>
 </qandaentry>
 </qandaset>
-</chapter>
+</chapter>-->
 
 <chapter id="credits">
 
