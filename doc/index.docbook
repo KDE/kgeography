@@ -41,19 +41,19 @@
 &kgeography; is a geography learning tool for KDE. Right now it has six usage modes: 
 <itemizedlist>
 <listitem>
-Browse the maps clicking in a map division to see it's name
+<para>Browse the maps clicking in a map division to see it's name</para>
 </listitem>
 <listitem>
-The game tells you a map division name and you have to click on it
+<para>The game tells you a map division name and you have to click on it</para>
 </listitem>
 <listitem>
-The game tells you a capital and you have to guess the division it belongs to
+<para>The game tells you a capital and you have to guess the division it belongs to</para>
 </listitem><listitem>
-The game tells you a division and you have to guess its capital
+<para>The game tells you a division and you have to guess its capital</para>
 </listitem><listitem>
-The game shows you a map division flag and you have to guess its name
+<para>The game shows you a map division flag and you have to guess its name</para>
 </listitem><listitem>
-The game tells you a map division name and you have to guess its flag
+<para>The game tells you a map division name and you have to guess its flag</para>
 </listitem>
 </itemizedlist>
 </para>
@@ -266,9 +266,9 @@ Guess the flag of a division: a province name is given and you must find the cor
 <chapter id="using-kapp">
 <title>Using &kgeography;</title>
 
+<para>
 &kgeography; displays informations about some countries and tests you about those informations.
 
-<para>
 
 <screenshot>
 <screeninfo>Here's a screenshot of &kgeography;</screeninfo>
@@ -327,13 +327,13 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
  Inside of that tags there should be:
 <itemizedlist>
 <listitem>
-&lt;mapFile&gt; and &lt;/mapFile&gt;: the name of the file containing the map image &eg; europe.png
+  <para>&lt;mapFile&gt; and &lt;/mapFile&gt;: the name of the file containing the map image &eg; europe.png</para>
 </listitem>
 <listitem>
-&lt;name&gt; and &lt;/name&gt;: the name of map &eg; Europe
+  <para>&lt;name&gt; and &lt;/name&gt;: the name of map &eg; Europe</para>
 </listitem>
 <listitem>
-A &lt;division&gt; and &lt;/division&gt; for each division in the map.
+  <para>A &lt;division&gt; and &lt;/division&gt; for each division in the map.</para>
 </listitem>
 </itemizedlist>
  </para>
@@ -341,38 +341,40 @@ A &lt;division&gt; and &lt;/division&gt; for each division in the map.
  Each division has these tags:
 <itemizedlist>
 <listitem>
-&lt;name&gt; and &lt;/name&gt;>: the name of the division &eg; Albania
+  <para>&lt;name&gt; and &lt;/name&gt;>: the name of the division &eg; Albania</para>
 </listitem>
 <listitem>
-&lt;capital&gt; and &lt;/capital&gt;: the name of the capital of the division &eg;Tirana
+  <para>&lt;capital&gt; and &lt;/capital&gt;: the name of the capital of the division &eg;Tirana</para>
 </listitem>
 <listitem>
-&lt;ignore&gt; and &lt;/ignore&gt;: must be yes if the division should be ignored when asking for divisions in that map. This tag is optional e.g: Algeria has this tag set to yes in Europe map
+  <para>&lt;ignore&gt; and &lt;/ignore&gt;: must be yes if the division should be ignored when asking for divisions in that map. This tag is optional e.g: Algeria has this tag set to yes in Europe map</para>
 </listitem>
 <listitem>
-&lt;flag&gt; and &lt;/flag&gt;: the file containing the flag of the division. This tag is optional. Not needed for the divisions whose ignore tag is set to yes &eg; albania.png
+  <para>&lt;flag&gt; and &lt;/flag&gt;: the file containing the flag of the division. This tag is optional. Not needed for the divisions whose ignore tag is set to yes &eg; albania.png</para>
 </listitem>
 <listitem>
-&lt;color&gt; and &lt;/color&gt;: the color the division has in the map.
+  <para>&lt;color&gt; and &lt;/color&gt;: the color the division has in the map.</para>
 </listitem>
 </itemizedlist>
  </para>
+<para>
  The color is defined using three tags:
 <itemizedlist>
 <listitem>
-&lt;red&gt; and &lt;/red&gt;: red component of the color. Valid values are between 0 and 255.
+  <para>&lt;red&gt; and &lt;/red&gt;: red component of the color. Valid values are between 0 and 255.</para>
 </listitem>
 <listitem>
-&lt;green&gt; and &lt;/green&gt;: green component of the color. Valid values are between 0 and 255.
+  <para>&lt;green&gt; and &lt;/green&gt;: green component of the color. Valid values are between 0 and 255.</para>
 </listitem>
 <listitem>
-&lt;blue&gt; and &lt;/blue&gt;: blue component of the color. Valid values are between 0 and 255.
+  <para>&lt;blue&gt; and &lt;/blue&gt;: blue component of the color. Valid values are between 0 and 255.</para>
 </listitem>
 </itemizedlist>
+</para>
  <para>
  It is convenient to create 2 or 3 false divisions like Water, Frontier and Coast and set them with ignore=yes. 
  <important>
- All names (capital and division) must be in English. 
+   <para> All names (capital and division) must be in English. </para>
 </important>
 </para>
 </sect1>
@@ -396,10 +398,10 @@ A &lt;division&gt; and &lt;/division&gt; for each division in the map.
  Before sending your map to Albert <email>tsdgeos@terra.es</email> you should test it to see it has not errors. To do it you have to do the following:
 <itemizedlist>
 <listitem>
-Put the map description and map image file in <userinput><parameter>$<envar>KDEDIR/share/apps/kgeography/</envar></parameter></userinput>
+  <para>Put the map description and map image file in <userinput><parameter>$<envar>KDEDIR/share/apps/kgeography/</envar></parameter></userinput></para>
 </listitem>
 <listitem>
-Put the flag PNG files (if any) in <userinput><parameter>$<envar>KDEDIR/share/apps/kgeography/flags</envar></parameter></userinput>
+  <para>Put the flag PNG files (if any) in <userinput><parameter>$<envar>KDEDIR/share/apps/kgeography/flags</envar></parameter></userinput></para>
 </listitem>
 </itemizedlist>
  Once that has been done you should be able of opening your map from inside kgeography.
