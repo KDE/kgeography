@@ -156,7 +156,7 @@ You can then choose what type of learning or testing you want to do by looking a
 </screenshot>
 </para>
 <para>
-Browse the map: a left mouse click on an area of the map will display informations about that area:
+Browse the map: a &LMB; click on an area of the map will display informations about that area:
 <screenshot>
 <screeninfo>Browse the map</screeninfo>
 	<mediaobject>
@@ -212,7 +212,7 @@ When you finish all the questions, a result dialog is shown with your correct an
 </screenshot>
 </para>
 <para>
-Guess a division from its capital: you are asked to find the name of a province among a choice of 4 gievn its capital:
+Guess a division from its capital: you are asked to find the name of a province among a choice of 4 given its capital:
 <screenshot>
 <screeninfo>Guess a division from its capital</screeninfo>
 	<mediaobject>
@@ -275,23 +275,15 @@ Guess the flag of a division: a province name is given and you must find the cor
 <chapter id="using-kapp">
 <title>Using &kgeography;</title>
 
-<!-- This chapter should tell the user how to use your app. You should use as
-many sections (Chapter, Sect1, Sect3, etc...) as is necessary to fully document
-your application. -->
+&kgeography; displays informations about some countries and tests you about those informations.
 
 <para>
-
-<!-- Note that all graphics should be in .png format. Use no gifs because of
-patent issues. Screenshots must be in Plastik style and in Plastik color.-->
 
 <screenshot>
 <screeninfo>Here's a screenshot of &kgeography;</screeninfo>
 	<mediaobject>
 	  <imageobject>
-	    <imagedata fileref="screenshot.png" format="PNG"/>
-	  </imageobject>
-	  <imageobject>
-	    <imagedata fileref="screenshot.eps" format="EPS"/>
+	    <imagedata fileref="kgeography.png" format="PNG"/>
 	  </imageobject>
 	  <textobject>
 	    <phrase>Screenshot</phrase>
@@ -300,6 +292,25 @@ patent issues. Screenshots must be in Plastik style and in Plastik color.-->
 </screenshot>
 </para>
 
+
+<sect1 id="kapp-features">
+<title>More &kgeography; features</title>
+
+<para>Another feature of &kgeography; is the possibility of zoom on a map.
+<screenshot>
+<screeninfo>Zoom</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="zoom.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Zoom</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+
+</sect1>
 </chapter>
 
 <chapter id="teachers-parents">
@@ -310,11 +321,122 @@ guide the parent/teacher on how to help the child using it.-->
 
 <chapter id="how-to-maps">
 <title>How to make maps in order to contribute to KGeography</title>
-<!---Here you can explain technical stuff your app deals with. 
-This chaptercan be made an entity if you think other apps will need it too. For example if you deal with prime numbers in your app,
-you can explain here what prime numbers are.-->
+<para>A map in KGeography is formed at least by two files, one is the image of the map and another is the description of it. </para>
+<sect1 id="helper-tool">
+<title>Helper tool</title>
 <para>
+You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a tool made by Yann Verley to help him with the map of France. To see its usage, simply execute it and read the help message, but it basically creates the .kgm from a plain text file and creates a file with the colors it has assigned to each division so you can fill the map according to them. </para>
+</sect1>
+<sect1 id="description-file">
+<title>Description file</title>
+<para>
+ It's file extension is .kgm and it should begin with &lt;map&gt; and end with &lt;/map&gt;.
 </para>
+<para>
+ Inside of that tags there should be:
+<itemizedlist>
+<listitem>
+&lt;mapFile&gt; and &lt;/mapFile&gt;: the name of the file containing the map image &eg; europe.png
+</listitem>
+<listitem>
+&lt;name&gt; and &lt;/name&gt;: the name of map &eg; Europe
+</listitem>
+<listitem>
+A &lt;division&gt; and &lt;/division&gt; for each division in the map.
+</listitem>
+</itemizedlist>
+ </para>
+<para>
+ Each division has these tags:
+<itemizedlist>
+<listitem>
+&lt;name&gt; and &lt;/name&gt;>: the name of the division &eg; Albania
+</listitem>
+<listitem>
+&lt;capital&gt; and &lt;/capital&gt;: the name of the capital of the division &eg;Tirana
+</listitem>
+<listitem>
+&lt;ignore&gt; and &lt;/ignore&gt;: must be yes if the division should be ignored when asking for divisions in that map. This tag is optional e.g: Algeria has this tag set to yes in Europe map
+</listitem>
+<listitem>
+&lt;flag&gt; and &lt;/flag&gt;: the file containing the flag of the division. This tag is optional. Not needed for the divisions whose ignore tag is set to yes &eg; albania.png
+</listitem>
+<listitem>
+&lt;color&gt; and &lt;/color&gt;: the color the division has in the map.
+</listitem>
+</itemizedlist>
+ </para>
+ The color is defined using three tags:
+<itemizedlist>
+<listitem>
+&lt;red&gt; and &lt;/red&gt;: red component of the color. Valid values are between 0 and 255.
+</listitem>
+<listitem>
+&lt;green&gt; and &lt;/green&gt;: green component of the color. Valid values are between 0 and 255.
+</listitem>
+<listitem>
+&lt;blue&gt; and &lt;/blue&gt;: blue component of the color. Valid values are between 0 and 255.
+</listitem>
+</itemizedlist>
+ <para>
+ It is convenient to create 2 or 3 false divisions like Water, Frontier and Coast and set them with ignore=yes. 
+ <important>
+ All names (capital and division) must be in English. 
+</important>
+</para>
+</sect1>
+<sect1 id="map-file">
+<title>Map file</title>
+<para>
+ The map file is quite simple but laborious to create. It has to be in PNG format.
+ You can find some maps to transform at <ulink url="http://www.odci.gov/cia/publications/factbook/docs/refmaps.html">Cia Reference Maps</ulink>. If no map fits your needs you can download the <ulink url="http://www.odci.gov/cia/publications/factbook/reference_maps/pdf/political_world.pdf">world pdf</ulink>, take a screenshot of it and work from it.
+ Each division in the map should have one and only one color. To achieve this you can use image processing programs like The Gimp and Kolourpaint. 
+</para>
+</sect1>
+<sect1 id="flags">
+<title>Flags</title>
+<para>
+ If you have used the flag tag you should provide a flag file. They have to be in PNG format and better if they are 300x200 pixels and you provide a SVG file for it. To obtain SVG flags of almost all countries in the world and some other divisions you can consult <ulink url="http://www.sodipodi.com/index.php3?section=clipart/flags">Sodipodi flags collection</ulink> 
+</para>
+</sect1>
+<sect1 id="how-to-test">
+<title>How to test</title>
+<para>
+ Before sending your map to Albert <email>tsdgeos@terra.es</email> you should test it to see it has not errors. To do it you have to do the following:
+<itemizedlist>
+<listitem>
+Put the map description and map image file in <userinput><parameter>$<envar>KDEDIR/share/apps/kgeography/</envar></parameter></userinput>
+</listitem>
+<listitem>
+Put the flag PNG files (if any) in <userinput><parameter>$<envar>KDEDIR/share/apps/kgeography/flags</envar></parameter></userinput>
+</listitem>
+</itemizedlist>
+ Once that has been done you should be able of opening your map from inside kgeography.
+ </para>
+ <para>
+ If you don't know which is your <userinput><parameter>$<envar>KDEDIR</envar></parameter></userinput> type <userinput><command>kde-config --prefix</command></userinput> in a shell. 
+</para>
+</sect1>
+<sect1 id="non-political-maps">
+<title>Non political maps</title>
+<para> Is it possible to do non-political maps? Yes!
+<screenshot>
+<screeninfo>Example of how to create a non political map</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="river.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Example of how to create a non political map</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+ Of course, the division concept can be extended to a river or a mountain. In the making of the map you should keep in mind that most times the river or mountain will be too small that you should provide an aditional clicling area.
+ In this example the river would have the maroon area and color &lt;20,76,34&gt; as its identifier.
+</para>
+</sect1>
 </chapter>
 
 <chapter id="commands">
