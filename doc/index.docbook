@@ -99,8 +99,177 @@ any problems or feature requests to the &kde; mailing lists.
 
 <chapter id="quick-start">
 <title>Quick Start to &kgeography;</title>
-<!-- This chapter should tell the user how to quickly start using your app.  It should include screenshots 
-with short explanations in a Step 1, Step 2 way maybe.-->
+<para>
+When you run &kgeography; for the first time, it first asks you to choose a map of a country.
+<screenshot>
+<screeninfo>Here's a screenshot of &kgeography; at first start</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start1.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Here's a screenshot of &kgeography; at first start</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+Here we choose Canada
+<screenshot>
+<screeninfo>Canada is choosen</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start2.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Canada is choosen</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+And &kgeography; main window appears with the map of Canada:
+<screenshot>
+<screeninfo>&kgeography; main window</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start3.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>&kgeography; main window</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+You can then choose what type of learning or testing you want to do by looking at the menu on the left:
+<screenshot>
+<screeninfo>&kgeography; menu</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start4.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>&kgeography; menu</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+Browse the map: a left mouse click on an area of the map will display informations about that area:
+<screenshot>
+<screeninfo>Browse the map</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start5.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Browse the map</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+Click division in the map: you are first asked how many questions you want
+<screenshot>
+<screeninfo>How many questions</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start6.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>How many questions</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+Then you are asked to click on a specific province:
+<screenshot>
+<screeninfo>Click on a province</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start7.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Click on a province</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+When you finish all the questions, a result dialog is shown with your correct and uncorrect answers:
+<screenshot>
+<screeninfo>Your results</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start8.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Your results</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+Guess a division from its capital: you are asked to find the name of a province among a choice of 4 gievn its capital:
+<screenshot>
+<screeninfo>Guess a division from its capital</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start9.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Guess a division from its capital</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+And the results are displayed when the test is finished:
+<screenshot>
+<screeninfo>your results</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start10.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Your results</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+Guess the capital from a division: you have a capital and four province names and you must choose the correct one. As before, a result dialog is shown.
+</para>
+<para>
+Guess division from its flag: a flag is shown and you must find the province it belongs to.
+<screenshot>
+<screeninfo>the flag question</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start11.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>the flag question</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+Guess the flag of a division: a province name is given and you must find the correct flag among four.
+<screenshot>
+<screeninfo>match the flag with the province</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start12.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>match the flag with the province</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
 </chapter>
 
 <chapter id="using-kapp">
@@ -131,27 +300,6 @@ patent issues. Screenshots must be in Plastik style and in Plastik color.-->
 </screenshot>
 </para>
 
-
-<sect1 id="kapp-features">
-<title>More &kgeography; features</title>
-
-<para>It slices! It dices! and it comes with a free toaster!</para>
-<para>
-The Squiggle Tool <guiicon><inlinemediaobject>
-	  <imageobject>
-	    <imagedata fileref="squiggle.png" format="PNG"/>
-	  </imageobject>
-	  <imageobject>
-	    <imagedata fileref="squiggle.eps" format="EPS"/>
-	  </imageobject>
-	  <textobject>
-	    <phrase>Squiggle</phrase>
-	  </textobject>
-</inlinemediaobject></guiicon> is used to draw squiggly lines all over
-the &kgeography; main window. It's not a bug, it's a feature!
-</para>
-
-</sect1>
 </chapter>
 
 <chapter id="teachers-parents">
@@ -161,7 +309,7 @@ guide the parent/teacher on how to help the child using it.-->
 </chapter>
 
 <chapter id="how-to-maps">
-<title>How to make maps in order to contributr to KGeography</title>
+<title>How to make maps in order to contribute to KGeography</title>
 <!---Here you can explain technical stuff your app deals with. 
 This chaptercan be made an entity if you think other apps will need it too. For example if you deal with prime numbers in your app,
 you can explain here what prime numbers are.-->
@@ -323,18 +471,6 @@ application -->
 
 </sect1>
 
-<sect1 id="requirements">
-<title>Requirements</title>
-
-
-
-<!-- For a list of updates, you may refer to the application web site
-or the ChangeLog file, or ... -->
-<para>
-You can find a list of changes at <ulink
-url="http://apps.kde.org/kapp">http://apps.kde.org/kapp</ulink>.
-</para>
-</sect1>
 
 <sect1 id="compilation">
 <title>Compilation and Installation</title>
@@ -347,13 +483,6 @@ url="http://apps.kde.org/kapp">http://apps.kde.org/kapp</ulink>.
 
 </sect1>
 
-<sect1 id="configuration">
-<title>Configuration</title>
-
-<para>Don't forget to tell your system to start the <filename>dtd</filename>
-dicer-toaster daemon first, or &kgeography; won't work !</para>
-
-</sect1>
 
 </appendix>
 
