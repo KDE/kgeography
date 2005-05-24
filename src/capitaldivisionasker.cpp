@@ -53,7 +53,7 @@ bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int
 
 void capitalDivisionAsker::setAnswerHook(int userSays)
 {
-	p_currentAnswer.setAnswer(p_rb[userSays] -> text());
+	p_currentAnswer.setAnswer(p_rb[userSays] -> text().replace("&", "", true));
 }
 
 QString capitalDivisionAsker::getQuestionHook() const
