@@ -2,7 +2,7 @@
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
   <!ENTITY kgeography "<application>KGeography</application>">
   <!ENTITY kappname "&kgeography;">
-  <!ENTITY package "kdeedu">
+  <!ENTITY package "playground/edu">
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % English "INCLUDE"> 
 ]>
