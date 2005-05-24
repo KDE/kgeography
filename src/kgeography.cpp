@@ -49,7 +49,6 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	p_consult = new KPushButton(i18n("&Browse the map"), p_leftWidget);
 	QWhatsThis::add(p_consult, i18n( "Left click on any part of the map to learn about the country divisions" ));
 	p_askMap = new KPushButton(i18n("&Click division in the map"), p_leftWidget);
-	QWhatsThis::add(p_askMap, i18n( "You are given a division name on the left under the menu and you must find it on the map and click on it" ));
 	p_askCapitalDivisions = new KPushButton(i18n("Guess division from its &capital"), p_leftWidget);
 	p_askDivisionCapitals = new KPushButton(i18n("Guess the capital of a &division"), p_leftWidget);
 	p_askFlagDivisions = new KPushButton(i18n("&Guess division from its flag"), p_leftWidget);
