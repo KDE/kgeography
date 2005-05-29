@@ -71,17 +71,3 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
 	lay->addWidget(l3, row, 3);
 }
 
-// QString userAnswer::answer() const
-// {
-// 	return p_answer.toString();
-// }
-// 
-// QString userAnswer::correctAnswer() const
-// {
-// 	return p_correctAnswer.toString();
-// }
-// 
-// QString userAnswer::question() const
-// {
-// 	return p_question.toString();
-// }

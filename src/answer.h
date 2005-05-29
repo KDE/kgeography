@@ -29,10 +29,6 @@ class userAnswer
 		
 		void putWidgets(QWidget *w, QGridLayout *lay, int row) const;
 		
-/*		QString answer() const;
-		QString correctAnswer() const;
-		QString question() const;*/
-	
 	private:
 		QVariant p_question, p_answer, p_correctAnswer;
 };
