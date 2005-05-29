@@ -139,6 +139,7 @@ void kgeography::openMap()
 	mapChooser mp(this);
 	if (mp.exec() == mapChooser::Accepted)
 	{
+		showResultsDialog();
 		setMap(mp.getMap());
 		resizeMainWindow();
 	}
