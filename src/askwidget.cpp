@@ -81,6 +81,7 @@ void askWidget::nextQuestion()
 
 void askWidget::questionAnswered(bool wasCorrect)
 {
+	p_currentAnswer.setAnswerCorrect(wasCorrect);
 	p_userAnswers.append(p_currentAnswer);
 	
 	if (wasCorrect) p_correctAnswers++;

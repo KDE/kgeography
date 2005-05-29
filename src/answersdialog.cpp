@@ -31,7 +31,6 @@ answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &us
 	p_sv -> viewport() -> setPaletteBackgroundColor(p_container -> paletteBackgroundColor());
 	
 	QGridLayout *lay = new QGridLayout(p_container, totalAnswers + 4, 3);
-	lay -> setSpacing(KDialog::spacingHint());
 	lay -> setColStretch(0, 1);
 	lay -> setColStretch(4, 1);
 	lay -> setRowStretch(totalAnswers + 4, 1);
@@ -54,6 +53,9 @@ answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &us
 	l2 -> setFont(boldFont);
 	l3 = new QLabel(i18n("Correct answer"), p_container);
 	l3 -> setFont(boldFont);
+	l1 -> setMargin(KDialog::marginHint() / 2);
+	l2 -> setMargin(KDialog::marginHint() / 2);
+	l3 -> setMargin(KDialog::marginHint() / 2);
 	lay->addWidget(l1, 1, 1);
 	lay->addWidget(l2, 1, 2);
 	lay->addWidget(l3, 1, 3);

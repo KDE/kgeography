@@ -8,9 +8,11 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include <qimage.h> 
+#include <qimage.h>
 #include <qlabel.h>
 #include <qlayout.h>
+
+#include <kdialog.h>
 
 #include "answer.h"
 
@@ -23,6 +25,7 @@ userAnswer::userAnswer(const userAnswer &r)
 	p_question = r.p_question;
 	p_answer = r.p_answer;
 	p_correctAnswer = r.p_correctAnswer;
+	p_correct = r.p_correct;
 }
 
 userAnswer &userAnswer::operator=(const userAnswer &r)
@@ -30,6 +33,7 @@ userAnswer &userAnswer::operator=(const userAnswer &r)
 	p_question = r.p_question;
 	p_answer = r.p_answer;
 	p_correctAnswer = r.p_correctAnswer;
+	p_correct = r.p_correct;
 	return *this;
 }
 
@@ -43,6 +47,11 @@ void userAnswer::setAnswer(QVariant answer)
 	p_answer = answer;
 }
 
+void userAnswer::setAnswerCorrect(bool correct)
+{
+	p_correct = correct;
+}
+
 void userAnswer::setCorrectAnswer(QVariant correctAnswer)
 {
 	p_correctAnswer = correctAnswer;
@@ -50,24 +59,58 @@ void userAnswer::setCorrectAnswer(QVariant correctAnswer)
 
 void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
 {
-	QLabel *l1, *l2, *l3;
+	QWidget *widgets[3];
+	const QVariant *v;
 	
-	l1 = new QLabel(w);
-	if (p_question.type() == QVariant::String) l1 -> setText(p_question.toString());
-	else l1 -> setPixmap(p_question.toImage());
+	for (int i = 0; i < 3; i++)
+	{
+		if (i == 0) v = &p_question;
+		else if (i == 1) v = &p_answer;
+		else v = &p_correctAnswer;
 		
-	l2 = new QLabel(w);
-	if (p_answer.type() == QVariant::String) l2 -> setText(p_answer.toString());
-	else if (p_answer.type() == QVariant::Color) l2 -> setBackgroundColor(p_answer.toColor());
-	else l2 -> setPixmap(p_answer.toImage());
+		if (v -> type() == QVariant::String)
+		{
+			QLabel *l;
+			l = new QLabel(w);
+			l -> setText(v -> toString());
+			l -> setMargin(KDialog::marginHint() / 2);
+			widgets[i] = l;
+		}
+		else if (v -> type() == QVariant::Color)
+		{
+			QWidget *aux = new QWidget(w);
+			QHBoxLayout *lay = new QHBoxLayout(aux);
+			
+			QFrame *inner = new QFrame(aux);
+			lay -> addWidget(inner);
+			inner -> setBackgroundColor(v -> toColor());
+			inner -> setLineWidth(1);
+			lay -> setMargin(KDialog::marginHint() / 2);
+			widgets[i] = aux;
+		}
+		else if (v -> type() == QVariant::Image)
+		{
+			QLabel *l;
+			l = new QLabel(w);
+			l -> setPixmap(v -> toImage());
+			l -> setAlignment(Qt::AlignHCenter);
+			l -> setMargin(KDialog::marginHint() / 2);
+			widgets[i] = l;
+		}
+		
+		lay -> addWidget(widgets[i], row, i + 1);
+	}
 	
-	l3 = new QLabel(w);
-	if (p_correctAnswer.type() == QVariant::String) l3 -> setText(p_correctAnswer.toString());
-	else if (p_correctAnswer.type() == QVariant::Color) l3 -> setBackgroundColor(p_correctAnswer.toColor());
-	else l3 -> setPixmap(p_correctAnswer.toImage());
-	
-	lay->addWidget(l1, row, 1);
-	lay->addWidget(l2, row, 2);
-	lay->addWidget(l3, row, 3);
+	if (!p_correct)
+	{
+		QColor back, fore;
+		back = widgets[0] -> colorGroup().highlight();
+		fore = widgets[0] -> colorGroup().highlightedText();
+		for (int i = 0; i < 3; i++)
+		{
+			widgets[i] -> setPaletteBackgroundColor(back);
+			widgets[i] -> setPaletteForegroundColor(fore);
+		}
+	}
 }
 

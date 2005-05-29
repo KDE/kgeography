@@ -25,12 +25,14 @@ class userAnswer
 		
 		void setQuestion(QVariant question);
 		void setAnswer(QVariant answer);
+		void setAnswerCorrect(bool correct);
 		void setCorrectAnswer(QVariant correctAnswer);
 		
 		void putWidgets(QWidget *w, QGridLayout *lay, int row) const;
 		
 	private:
 		QVariant p_question, p_answer, p_correctAnswer;
+		bool p_correct;
 };
 
 #endif
