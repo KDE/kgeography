@@ -30,7 +30,7 @@ answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &us
 	p_container = new QWidget(p_sv -> viewport());
 	p_sv -> viewport() -> setPaletteBackgroundColor(p_container -> paletteBackgroundColor());
 	
-	QGridLayout *lay = new QGridLayout(p_container, totalAnswers + 4, 3);
+	QGridLayout *lay = new QGridLayout(p_container);
 	lay -> setColStretch(0, 1);
 	lay -> setColStretch(4, 1);
 	lay -> setRowStretch(totalAnswers + 4, 1);
@@ -64,10 +64,12 @@ answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &us
 	{
 		userAnswers[i].putWidgets(p_container, lay, i + 2);
 	}
+
+	lay -> addItem(new QSpacerItem(20, 20, QSizePolicy::Fixed, QSizePolicy::Fixed), totalAnswers + 3, 2);
 	
 	l1 = new QLabel(i18n("You answered correctly %1 out of %2 questions").arg(correctAnswers).arg(totalAnswers), p_container);
 	l1 -> setAlignment(Qt::AlignCenter);
-	lay->addMultiCellWidget(l1, totalAnswers + 3, totalAnswers + 3, 0, 4);
+	lay->addMultiCellWidget(l1, totalAnswers + 4, totalAnswers + 4, 0, 4);
 	
 	p_sv -> addChild(p_container);
 	resize(500, 500);
