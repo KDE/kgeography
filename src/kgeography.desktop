@@ -6,6 +6,7 @@ Comment=A Geography Learning Program
 Comment[bg]=Игра за изучаване на география
 Comment[da]=Et program til at lære geografi
 Comment[el]=Μία εφαρμογή εκμάθησης γεωγραφίας
+Comment[it]=Un programma per l'apprendimento della geografia
 Comment[sv]=Ett program för att lära sig geografi
 Exec=kgeography
 Icon=kgeography
