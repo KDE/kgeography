@@ -299,6 +299,7 @@ Guess the flag of a division: a province name is given and you must find the cor
 	  </textobject>
 	</mediaobject>
 </screenshot>
+While in zoom mode, you can press &RMB; to go back to the orginal map size (Original Size action has the same effect), use the scroll bars to move around the zoomed map or use the Move action that will allow you to drag the map using &LMB;. 
 </para>
 
 </sect1>
@@ -311,7 +312,7 @@ guide the parent/teacher on how to help the child using it.
 </chapter>-->
 
 <chapter id="how-to-maps">
-<title>How to make maps in order to contribute to KGeography</title>
+<title>How to make maps</title>
 <para>A map in KGeography is formed at least by two files, one is the image of the map and another is the description of it. </para>
 <sect1 id="helper-tool">
 <title>Helper tool</title>
