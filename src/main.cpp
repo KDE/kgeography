@@ -16,7 +16,7 @@
 
 int main(int argc, char *argv[])
 {
-	KAboutData about("kgeography", I18N_NOOP("KGeography"), "0.3.1", I18N_NOOP("A geography learning program"), KAboutData::License_GPL, 0, 0, "http://kgeography.berlios.de", "tsdgeos@terra.es");
+	KAboutData about("kgeography", I18N_NOOP("KGeography"), "0.3.1", I18N_NOOP("A geography learning program"), KAboutData::License_GPL, "© 2004-2005 Albert Astals Cid", 0, "http://kgeography.berlios.de", "tsdgeos@terra.es");
 	about.addAuthor("Albert Astals Cid", I18N_NOOP("Programmer and designer"), "tsdgeos@terra.es");
 	about.addCredit("Danny Allen", I18N_NOOP("Small refinements"), "danny@dannyallen.co.uk");
 	about.addCredit("Giuseppe Caruso", I18N_NOOP("Italy flags and Italy by provinces map"), "caruso@pietrobo.com");
