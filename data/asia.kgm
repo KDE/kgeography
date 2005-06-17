@@ -530,7 +530,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Republic of China (Taiwan)</name>
+		<name>Taiwan</name>
 		<flag>taiwan.png</flag>
 		<capital>Taipei</capital>
 		<color>
@@ -550,7 +550,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Democratic People's Republic of Korea</name>
+		<name>North Korea</name>
 		<flag>nkorea.png</flag>
 		<capital>Pyeongyang</capital>
 		<color>
@@ -560,7 +560,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Republic of Korea</name>
+		<name>South Korea</name>
 		<flag>skorea.png</flag>
 		<capital>Seoul</capital>
 		<color>
