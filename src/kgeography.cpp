@@ -47,13 +47,17 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	p_currentMap = new QLabel(p_leftWidget);
 	p_currentMap -> setAlignment(AlignCenter);
 	p_consult = new KPushButton(i18n("&Browse the map"), p_leftWidget);
-	QWhatsThis::add(p_consult, i18n( "Left click on any part of the map to learn about the country divisions" ));
+	QWhatsThis::add(p_consult, i18n("In this section left click on any part of the map to learn about the divisions" ));
 	p_askMap = new KPushButton(i18n("&Click division in the map"), p_leftWidget);
-	QWhatsThis::add(p_askMap, i18n( "You are given a division name on the left under the menu and you must find it on the map and click on it" ));
+	QWhatsThis::add(p_askMap, i18n("In this challenge you are given a division name on the left under the menu and you must find it on the map and click on it"));
 	p_askCapitalDivisions = new KPushButton(i18n("Guess division from its &capital"), p_leftWidget);
+	QWhatsThis::add(p_askCapitalDivisions, i18n("In this quiz you have to guess the division name given its capital"));
 	p_askDivisionCapitals = new KPushButton(i18n("Guess the capital of a &division"), p_leftWidget);
+	QWhatsThis::add(p_askDivisionCapitals, i18n("In this quiz you have to guess the capital of a given division name"));
 	p_askFlagDivisions = new KPushButton(i18n("&Guess division from its flag"), p_leftWidget);
+	QWhatsThis::add(p_askFlagDivisions, i18n("In this quiz you have to guess the division name given its flag"));
 	p_askDivisionFlags = new KPushButton(i18n("G&uess the flag of a division"), p_leftWidget);
+	QWhatsThis::add(p_askDivisionFlags, i18n("In this quiz you have to guess the flag of a division given its name"));
 	p_underLeftWidget = new QVBox(p_leftWidget);
 	p_underLeftWidget -> layout() -> setSpacing(KDialog::spacingHint());
 	p_underLeftWidget -> layout() -> setMargin(KDialog::marginHint());
@@ -68,7 +72,8 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	connect(p_askFlagDivisions, SIGNAL(clicked()), this, SLOT(askFlagDivisions()));
 	connect(p_askDivisionFlags, SIGNAL(clicked()), this, SLOT(askDivisionFlags()));
 
-	KStdAction::open(this, SLOT(openMap()), actionCollection(), "openMap");
+	KAction *a = KStdAction::open(this, SLOT(openMap()), actionCollection(), "openMap");
+	a -> setText(i18n("&Open map..."));
 	KStdAction::quit(this, SLOT(close()), actionCollection(), "quit");
 
 	p_zoom = new KToggleAction(i18n("&Zoom"), "viewmagfit", 0, 0, 0, actionCollection(), "zoom_select");
