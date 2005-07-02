@@ -14,6 +14,7 @@
 #include <klocale.h>
 
 #include <qfile.h>
+#include <qfileinfo.h>
 
 #include "division.h"
 #include "map.h"
@@ -100,7 +101,8 @@ QString KGmap::getMapFile() const
 
 QString KGmap::getName() const
 {
-	return i18n(p_name);
+	QFileInfo fi(p_file);
+	return i18n(fi.fileName(), p_name);
 }
 
 QString KGmap::getRandomDivision() const

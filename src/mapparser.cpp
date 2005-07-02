@@ -10,6 +10,8 @@
 
 #include <klocale.h>
 
+#include <qfileinfo.h>
+
 #include "division.h"
 #include "map.h"
 #include "mapparser.h"
@@ -95,7 +97,9 @@ bool mapParser::startElement(const QString&, const QString &name, const QString&
 			p_divisionIgnoreSet = false;
 			p_flagFileSet = false;
 			p_capitalSet = false;
+			QFileInfo fi(p_map -> getFile());
 			p_division = new division();
+			p_division -> setMapFile(fi.fileName());
 		}
 	}
 	else if (prev == "mapFile" || prev == "name" || prev == "red" || prev == "green" || prev == "blue" ||

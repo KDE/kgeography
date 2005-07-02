@@ -30,9 +30,10 @@ class division
 		void setName(const QString &name);
 		void setRGB(int r, int g, int b);
 		bool setFlagFile(const QString &path);
+		void setMapFile(const QString &path);
 		
 	private:
-		QString p_name, p_flagFile, p_capital;
+		QString p_name, p_flagFile, p_capital, p_mapFile;
 		QRgb p_color;
 		bool p_canAsk;
 };
