@@ -94,6 +94,12 @@ QString KGmap::getFile() const
 	return p_file;
 }
 
+QString KGmap::getFileName() const
+{
+	QFileInfo fi(p_file);
+	return fi.fileName();
+}
+
 QString KGmap::getMapFile() const
 {
 	return p_mapFile;
@@ -101,8 +107,7 @@ QString KGmap::getMapFile() const
 
 QString KGmap::getName() const
 {
-	QFileInfo fi(p_file);
-	return i18n(fi.fileName(), p_name);
+	return p_name;
 }
 
 QString KGmap::getRandomDivision() const

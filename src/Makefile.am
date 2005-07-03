@@ -36,3 +36,8 @@ debug: kgeography
 
 valgrind: kgeography
 	valgrind --tool=memcheck --leak-check=yes ./kgeography
+
+noinst_PROGRAMS = script
+script_SOURCES = script.cpp
+script_LDADD = $(LIB_QT)
+script_LDFLAGS = $(all_libraries)

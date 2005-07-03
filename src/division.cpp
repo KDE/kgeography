@@ -28,7 +28,7 @@ bool division::canAsk() const
 QString division::getName() const
 {
 	//utf8 is needed to make names like Côte d'Ivoire work
-	return i18n(p_mapFile, p_name.utf8());
+	return p_name.utf8();
 }
 
 QRgb division::getRGB() const
@@ -43,9 +43,8 @@ QString division::getFlagFile() const
 
 QString division::getCapital() const
 {
-	// do not try to translate ""
 	if (p_capital.isEmpty()) return "";
-	return i18n(p_capital.utf8());
+	return p_capital.utf8();
 }
 
 void division::setCapital(const QString &name)
@@ -73,9 +72,3 @@ bool division::setFlagFile(const QString &path)
 	p_flagFile = path;
 	return QFile::exists(path);
 }
-
-void division::setMapFile(const QString &path)
-{
-	p_mapFile = path;
-}
-

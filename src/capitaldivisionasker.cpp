@@ -28,7 +28,9 @@ bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int
 		p_capital = p_map -> getDivisionCapital(division);
 		p_currentAnswer.setQuestion(p_capital);
 		p_currentAnswer.setCorrectAnswer(division);
-		setQuestion(i18n("%1 is the capital of:").arg(p_capital));
+		QString s("%1 is the capital of...");
+		s.arg(p_capital);
+		setQuestion(i18n(p_map -> getFileName(), s));
 		p_rb[i] -> setText(division);
 		b = true;
 	}

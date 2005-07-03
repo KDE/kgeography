@@ -104,7 +104,7 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 {
 	QString aux, cap;
 	aux = p_map -> getWhatIs(c, !p_asker);
-	if (aux == "nothing") KMessageBox::error(this, i18n("You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.").arg(p_map -> getName()).arg(qRed(c)).arg(qGreen(c)).arg(qBlue(c)));
+	if (aux == "nothing") KMessageBox::error(this, i18n("You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.").arg(p_map -> getFile()).arg(qRed(c)).arg(qGreen(c)).arg(qBlue(c)));
 	else if (p_shouldClearPopup)
 	{
 		p_popupManager.clear();
@@ -164,7 +164,9 @@ void mapAsker::setScrollBarsMaximumSize(int w, int h)
 
 void mapAsker::nextQuestionHook(const QString &division)
 {
-	p_next -> setText(i18n("Please click on:\n%1").arg(division));
+	QString s("Please click on:\n%1");
+	s.arg(division);
+	p_next -> setText(i18n(p_map -> getFile(), s));
 	p_next -> show();
 	p_currentAnswer.setQuestion(division);
 	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));

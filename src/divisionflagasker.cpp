@@ -28,7 +28,9 @@ bool divisionFlagAsker::nextBoxAskerQuestionHook(const QString &division, int i,
 	p_rb[i] -> setPixmap(im);
 	if (isAnswer)
 	{
-		setQuestion(i18n("The flag of %1 is:").arg(division));
+		QString s("The flag of %1 is...");
+		s.arg(division);
+		setQuestion(i18n(p_map -> getFileName(), s));
 		p_currentAnswer.setCorrectAnswer(im);
 		p_currentAnswer.setQuestion(division);
 	}
