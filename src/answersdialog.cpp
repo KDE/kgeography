@@ -17,7 +17,7 @@
 #include "answer.h"
 #include "answersdialog.h"
 
-answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &userAnswers, QString question, int correctAnswers) : KDialogBase(parent, 0, true, i18n("Your answers were"), Ok)
+answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &userAnswers, QString question, int correctAnswers) : KDialogBase(parent, 0, true, i18n("Your Answers Were"), Ok)
 {
 	QLabel *l1, *l2, *l3;
 	QFont boldFont, bigFont;
@@ -49,9 +49,9 @@ answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &us
 	
 	l1 = new QLabel(i18n("Question"), p_container);
 	l1 -> setFont(boldFont);
-	l2 = new QLabel(i18n("Your answer"), p_container);
+	l2 = new QLabel(i18n("Your Answer"), p_container);
 	l2 -> setFont(boldFont);
-	l3 = new QLabel(i18n("Correct answer"), p_container);
+	l3 = new QLabel(i18n("Correct Answer"), p_container);
 	l3 -> setFont(boldFont);
 	l1 -> setMargin(KDialog::marginHint() / 2);
 	l2 -> setMargin(KDialog::marginHint() / 2);
@@ -67,7 +67,7 @@ answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &us
 
 	lay -> addItem(new QSpacerItem(20, 20, QSizePolicy::Fixed, QSizePolicy::Fixed), totalAnswers + 3, 2);
 	
-	l1 = new QLabel(i18n("You answered correctly %1 out of %2 questions").arg(correctAnswers).arg(totalAnswers), p_container);
+	l1 = new QLabel(i18n("You answered correctly %1 out of %2 questions.").arg(correctAnswers).arg(totalAnswers), p_container);
 	l1 -> setAlignment(Qt::AlignCenter);
 	lay->addMultiCellWidget(l1, totalAnswers + 4, totalAnswers + 4, 0, 4);
 	

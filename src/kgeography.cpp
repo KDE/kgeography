@@ -46,17 +46,17 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	QVBox *p_leftWidget = new QVBox(p_bigWidget);
 	p_currentMap = new QLabel(p_leftWidget);
 	p_currentMap -> setAlignment(AlignCenter);
-	p_consult = new KPushButton(i18n("&Browse the map"), p_leftWidget);
+	p_consult = new KPushButton(i18n("&Browse Map"), p_leftWidget);
 	QWhatsThis::add(p_consult, i18n("In this section left click on any part of the map to learn about the divisions" ));
-	p_askMap = new KPushButton(i18n("&Click division in the map"), p_leftWidget);
+	p_askMap = new KPushButton(i18n("&Click Division in Map..."), p_leftWidget);
 	QWhatsThis::add(p_askMap, i18n("In this challenge you are given a division name on the left under the menu and you must find it on the map and click on it"));
-	p_askCapitalDivisions = new KPushButton(i18n("Guess division from its &capital"), p_leftWidget);
+	p_askCapitalDivisions = new KPushButton(i18n("Guess Division From Its &Capital..."), p_leftWidget);
 	QWhatsThis::add(p_askCapitalDivisions, i18n("In this quiz you have to guess the division name given its capital"));
-	p_askDivisionCapitals = new KPushButton(i18n("Guess the capital of a &division"), p_leftWidget);
+	p_askDivisionCapitals = new KPushButton(i18n("Guess Capital of &Division..."), p_leftWidget);
 	QWhatsThis::add(p_askDivisionCapitals, i18n("In this quiz you have to guess the capital of a given division name"));
-	p_askFlagDivisions = new KPushButton(i18n("&Guess division from its flag"), p_leftWidget);
+	p_askFlagDivisions = new KPushButton(i18n("&Guess Division From Its Flag..."), p_leftWidget);
 	QWhatsThis::add(p_askFlagDivisions, i18n("In this quiz you have to guess the division name given its flag"));
-	p_askDivisionFlags = new KPushButton(i18n("G&uess the flag of a division"), p_leftWidget);
+	p_askDivisionFlags = new KPushButton(i18n("G&uess Flag of Division..."), p_leftWidget);
 	QWhatsThis::add(p_askDivisionFlags, i18n("In this quiz you have to guess the flag of a division given its name"));
 	p_underLeftWidget = new QVBox(p_leftWidget);
 	p_underLeftWidget -> layout() -> setSpacing(KDialog::spacingHint());
@@ -73,7 +73,7 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	connect(p_askDivisionFlags, SIGNAL(clicked()), this, SLOT(askDivisionFlags()));
 
 	KAction *a = KStdAction::open(this, SLOT(openMap()), actionCollection(), "openMap");
-	a -> setText(i18n("&Open map..."));
+	a -> setText(i18n("&Open Map..."));
 	KStdAction::quit(this, SLOT(close()), actionCollection(), "quit");
 
 	p_zoom = new KToggleAction(i18n("&Zoom"), "viewmagfit", 0, 0, 0, actionCollection(), "zoom_select");
@@ -169,7 +169,7 @@ void kgeography::askCapitalDivisions()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -185,7 +185,7 @@ void kgeography::askDivisionCapitals()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -201,7 +201,7 @@ void kgeography::askMap()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -219,7 +219,7 @@ void kgeography::askFlagDivisions()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -235,7 +235,7 @@ void kgeography::askDivisionFlags()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();

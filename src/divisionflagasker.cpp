@@ -28,7 +28,7 @@ bool divisionFlagAsker::nextBoxAskerQuestionHook(const QString &division, int i,
 	p_rb[i] -> setPixmap(im);
 	if (isAnswer)
 	{
-		setQuestion(i18n("The flag of %1 is...").arg(division));
+		setQuestion(i18n("The flag of %1 is:").arg(division));
 		p_currentAnswer.setCorrectAnswer(im);
 		p_currentAnswer.setQuestion(division);
 	}
@@ -42,5 +42,5 @@ void divisionFlagAsker::setAnswerHook(int userSays)
 
 QString divisionFlagAsker::getQuestionHook() const
 {
-	return i18n("The flag of ... is ...");
+	return i18n("Flag of Division");
 }

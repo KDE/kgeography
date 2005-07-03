@@ -2,7 +2,7 @@
 	<mapFile>asia.png</mapFile>
 	<name>Asia</name>
 	<division>
-		<name>Not a nation</name>
+		<name>Not a Nation</name>
 		<ignore>yes</ignore>
 		<color>
 			<red>255</red>

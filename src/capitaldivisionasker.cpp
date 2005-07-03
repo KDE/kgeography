@@ -28,7 +28,7 @@ bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int
 		p_capital = p_map -> getDivisionCapital(division);
 		p_currentAnswer.setQuestion(p_capital);
 		p_currentAnswer.setCorrectAnswer(division);
-		setQuestion(i18n("%1 is the capital of...").arg(p_capital));
+		setQuestion(i18n("%1 is the capital of:").arg(p_capital));
 		p_rb[i] -> setText(division);
 		b = true;
 	}
@@ -58,5 +58,5 @@ void capitalDivisionAsker::setAnswerHook(int userSays)
 
 QString capitalDivisionAsker::getQuestionHook() const
 {
-	return i18n("... is the capital of ...");
+	return i18n("Division From Its Capital");
 }

@@ -48,5 +48,5 @@ void flagDivisionAsker::setAnswerHook(int userSays)
 
 QString flagDivisionAsker::getQuestionHook() const
 {
-	return i18n("... is the flag of ...");
+	return i18n("Division From Its Flag");
 }

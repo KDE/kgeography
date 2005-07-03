@@ -19,7 +19,7 @@
 
 #include "mapchooser.h"
 
-mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Choose map to use"), KDialogBase::Ok | KDialogBase::Cancel, KDialogBase::Ok, true)
+mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Choose Map to Use"), KDialogBase::Ok | KDialogBase::Cancel, KDialogBase::Ok, true)
 {
 	QHBox *mainHB;
 	QStringList list;

@@ -172,7 +172,7 @@ void mapAsker::nextQuestionHook(const QString &division)
 
 QString mapAsker::getQuestionHook() const
 {
-	return i18n("Click on ...");
+	return i18n("Division in Map");
 }
 
 void mapAsker::showEvent(QShowEvent *)
