@@ -114,7 +114,13 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	{
 		QString mapFile, both;
 		cap = p_map -> getDivisionCapital(aux);
-		if (!cap.isEmpty()) mapFile = p_map -> getDivisionFlagFile(aux);
+		if (!cap.isEmpty())
+		{
+			mapFile = p_map -> getDivisionFlagFile(aux);
+			cap = i18n(p_map -> getFileName().utf8(), cap.utf8());
+		}
+		
+		aux = i18n(p_map -> getFileName().utf8(), aux.utf8());
 
 		if (!mapFile.isEmpty()) p_popupManager.show(aux, cap, p, mapFile);
 		else if (!cap.isEmpty()) p_popupManager.show(aux, cap, p);
@@ -164,11 +170,10 @@ void mapAsker::setScrollBarsMaximumSize(int w, int h)
 
 void mapAsker::nextQuestionHook(const QString &division)
 {
-	QString s("Please click on:\n%1");
-	s.arg(division);
-	p_next -> setText(i18n(p_map -> getFile(), s));
+	QString s = QString("Please click on:\n%1").arg(division);
+	p_next -> setText(i18n(p_map -> getFile().utf8(), s.utf8()));
 	p_next -> show();
-	p_currentAnswer.setQuestion(division);
+	p_currentAnswer.setQuestion(i18n(p_map -> getFile().utf8(), division.utf8()));
 	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
 }
 

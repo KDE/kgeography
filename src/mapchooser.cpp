@@ -41,7 +41,7 @@ mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Cho
 		else
 		{
 			m = p_reader.getMap();
-			p_listBox -> insertItem(m -> getName());
+			p_listBox -> insertItem(i18n(m -> getFileName().utf8(), m -> getName().utf8()));
 			p_maps.insert(m -> getName(), m);
 		}
 	}

@@ -286,9 +286,8 @@ void kgeography::setMap(KGmap *m)
 	set -> writeConfig();
 	delete p_map;
 	p_map = m;
-	QString s("<qt>Current map:<br><b>%1</b></qt>");
-	s.arg(p_map -> getName());
-	p_currentMap -> setText(i18n(p_map -> getFileName(), s));
+	QString s = QString("<qt>Current map:<br><b>%1</b></qt>").arg(p_map -> getName());
+	p_currentMap -> setText(i18n(p_map -> getFileName().utf8(), s.utf8()));
 	p_consult -> setEnabled(true);
 	p_askMap -> setEnabled(true);
 	p_askFlagDivisions -> setEnabled(m -> hasAllFlags());

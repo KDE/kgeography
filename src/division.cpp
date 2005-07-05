@@ -8,8 +8,6 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include <klocale.h>
-
 #include <qfile.h>
 
 #include "division.h"
@@ -27,8 +25,7 @@ bool division::canAsk() const
 
 QString division::getName() const
 {
-	//utf8 is needed to make names like Côte d'Ivoire work
-	return p_name.utf8();
+	return p_name;
 }
 
 QRgb division::getRGB() const
@@ -44,7 +41,7 @@ QString division::getFlagFile() const
 QString division::getCapital() const
 {
 	if (p_capital.isEmpty()) return "";
-	return p_capital.utf8();
+	return p_capital;
 }
 
 void division::setCapital(const QString &name)

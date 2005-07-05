@@ -26,12 +26,11 @@ bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int
 	if (isAnswer)
 	{
 		p_capital = p_map -> getDivisionCapital(division);
-		p_currentAnswer.setQuestion(p_capital);
-		p_currentAnswer.setCorrectAnswer(division);
-		QString s("%1 is the capital of...");
-		s.arg(p_capital);
-		setQuestion(i18n(p_map -> getFileName(), s));
-		p_rb[i] -> setText(division);
+		p_currentAnswer.setQuestion(i18n(p_map -> getFileName().utf8(), p_capital.utf8()));
+		p_currentAnswer.setCorrectAnswer(i18n(p_map -> getFileName().utf8(), division.utf8()));
+		QString s = QString("%1 is the capital of...").arg(p_capital);
+		setQuestion(i18n(p_map -> getFileName().utf8(), s.utf8()));
+		p_rb[i] -> setText(i18n(p_map -> getFileName().utf8(), division.utf8()));
 		b = true;
 	}
 	else
@@ -45,7 +44,7 @@ bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int
 		// Hedmark
 		if (p_map -> getDivisionCapital(division) != p_capital)
 		{
-			p_rb[i] -> setText(division);
+			p_rb[i] -> setText(i18n(p_map -> getFileName().utf8(), division.utf8()));
 			b = true;
 		}
 		else b = false;

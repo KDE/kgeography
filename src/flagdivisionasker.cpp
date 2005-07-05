@@ -35,9 +35,9 @@ bool flagDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int i,
 		p_flag -> setFixedSize(image.size());
 		
 		p_currentAnswer.setQuestion(image.smoothScale(image.width()/5, image.height()/5));
-		p_currentAnswer.setCorrectAnswer(division);
+		p_currentAnswer.setCorrectAnswer(i18n(p_map -> getFileName().utf8(), division.utf8()));
 	}
-	p_rb[i] -> setText(division);
+	p_rb[i] -> setText(i18n(p_map -> getFileName().utf8(), division.utf8()));
 	return true;
 }
 
