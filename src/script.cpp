@@ -29,6 +29,7 @@ int main(int argc, char *argv[])
 	QFile *output = new QFile(argv[2]);
 	output->open(IO_WriteOnly | IO_Truncate);
 	QTextStream os(output);
+	os.setEncoding(QTextStream::UnicodeUTF8);
 	
 	QStringList files = d.entryList();
 	QStringList::const_iterator it;
@@ -47,29 +48,29 @@ int main(int argc, char *argv[])
 			n = nodes.item(i);
 			if (n.nodeName() == "name")
 			{
-				os << "i18n(\"" << *it << "\", \"" << n.firstChild().nodeValue().utf8() << "\");\n";
-				os << "i18n(\"" << *it << "\", \"<qt>Current map:<br><b>" << n.firstChild().nodeValue().utf8() << "</b></qt>\");\n";
+				os << "i18n(\"" << *it << "\", \"" << n.firstChild().nodeValue() << "\");\n";
+				os << "i18n(\"" << *it << "\", \"<qt>Current map:<br><b>" << n.firstChild().nodeValue() << "</b></qt>\");\n";
 			}
 			else if (n.nodeName() == "division")
 			{
 				n2 = n.namedItem("name");
-				os << "i18n(\"" << *it << "\", \"" << n2.firstChild().nodeValue().utf8() << "\");\n";
+				os << "i18n(\"" << *it << "\", \"" << n2.firstChild().nodeValue() << "\");\n";
 				
 				n3 = n.namedItem("ignore");
 				if (n3.isNull() || n3.firstChild().nodeValue() != "yes")
 				{
-					os << "i18n(\"" << *it << "\", \"The capital of " << n2.firstChild().nodeValue().utf8() << " is...\");\n";
-					os << "i18n(\"" << *it << "\", \"Please click on:\\n" << n2.firstChild().nodeValue().utf8() << "\");\n";
+					os << "i18n(\"" << *it << "\", \"The capital of " << n2.firstChild().nodeValue() << " is...\");\n";
+					os << "i18n(\"" << *it << "\", \"Please click on:\\n" << n2.firstChild().nodeValue() << "\");\n";
 					
 					n4 = n.namedItem("flag");
 					if (!n4.isNull())
 					{
-						os << "i18n(\"" << *it << "\", \"The flag of " << n2.firstChild().nodeValue().utf8() << " is...\");\n";
+						os << "i18n(\"" << *it << "\", \"The flag of " << n2.firstChild().nodeValue() << " is...\");\n";
 					}
 					
 					n5 = n.namedItem("capital");
-					os << "i18n(\"" << *it << "\", \"" << n5.firstChild().nodeValue().utf8() << "\");\n";
-					os << "i18n(\"" << *it << "\", \"" << n5.firstChild().nodeValue().utf8() << " is the capital of...\");\n";
+					os << "i18n(\"" << *it << "\", \"" << n5.firstChild().nodeValue() << "\");\n";
+					os << "i18n(\"" << *it << "\", \"" << n5.firstChild().nodeValue() << " is the capital of...\");\n";
 				}
 			}
 		}
