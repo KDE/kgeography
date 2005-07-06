@@ -59,8 +59,8 @@ myPopupItem::myPopupItem(myPopup *parent, const QString &text, const QString &te
 	if (!flagFile.isNull())
 	{
 		QLabel *flag = new QLabel(this);
-		QImage *flagImg = new QImage(flagFile);
-		flag -> setPixmap(flagImg -> smoothScale(flagImg -> width() / 5, flagImg -> height() / 5));
+		QImage flagImg(flagFile);
+		flag -> setPixmap(flagImg.smoothScale(flagImg.width() / 5, flagImg.height() / 5));
 		flag -> setAlignment(Qt::AlignCenter);
 	}
 	
