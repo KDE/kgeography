@@ -28,6 +28,7 @@ mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Cho
 	QGridLayout *mapLay;
 	
 	mainHB = new QHBox(this);
+	mainHB -> setSpacing(KDialog::spacingHint());
 	list = KGlobal::dirs() -> findAllResources("appdata", "*.kgm");
 	p_listBox = new QListBox(mainHB);
 	QStringList::iterator it;
@@ -41,8 +42,9 @@ mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Cho
 		else
 		{
 			m = p_reader.getMap();
-			p_listBox -> insertItem(i18n(m -> getFileName().utf8(), m -> getName().utf8()));
-			p_maps.insert(m -> getName(), m);
+			QString text = i18n(m -> getFileName().utf8(), m -> getName().utf8());
+			p_listBox -> insertItem(text);
+			p_maps.insert(text, m);
 		}
 	}
 	
