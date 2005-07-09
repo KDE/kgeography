@@ -9,6 +9,7 @@
  ***************************************************************************/
 
 #include <math.h> // for rint
+#include <stdlib.h>
 
 #include <kapplication.h>
 #include <klocale.h>
