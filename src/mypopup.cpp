@@ -12,55 +12,37 @@
 #include <qlayout.h>
 #include <qimage.h>
 #include <qpixmap.h>
-#include <qvbox.h>
 
 #include "mypopup.h"
 
-#include <kdebug.h>
 
-myPopup::myPopup(QWidget *parent, const QString &text, const QString &text2, const QString &flagFile) : QPopupMenu(parent)
+myPopup::myPopup(QWidget *parent, const QString &text, const QString &text2, const QString &flagFile) : QFrame(parent)
 {
-	setLineWidth(2);
-	setFrameStyle(QFrame::Box | QFrame::Plain);
-
-	myPopupItem *p = new myPopupItem(this, text, text2, flagFile);
-	insertItem(p, 0);
-
-	connect(p, SIGNAL(click()), this, SLOT(popupClick()));
-	connect(this, SIGNAL(activated(int)), this, SLOT(slotActivated(int)));
-
-}
-
-void myPopup::popupClick()
-{
-	slotActivated(0);
-}
-
-void myPopup::slotActivated(int)
-{
-	emit deleteMe();
-}
-
-
-myPopupItem::myPopupItem(myPopup *parent, const QString &text, const QString &text2, const QString &flagFile) : QFrame(parent, 0, WStyle_NoBorder)
-{
-	QHBoxLayout *lay = new QHBoxLayout(this, 1, 1);
-	lay -> setAutoAdd(true);
+	QHBoxLayout *lay = new QHBoxLayout(this);
+	lay -> setMargin(4);
+	lay -> setSpacing(4);
 	
-	QVBox *vbox = new QVBox(this);
+	QWidget *vbox = new QWidget(this);
+	lay -> addWidget(vbox);
+	QVBoxLayout *vboxLayout = new QVBoxLayout(vbox);
+	vboxLayout -> setMargin(0);
+	vboxLayout -> setSpacing(0);
 	QLabel *l = new QLabel(text, vbox);
+	vboxLayout -> addWidget(l);
 	
 	if (!text2.isNull())
 	{
 		QLabel *l2 = new QLabel(text2, vbox);
 		l2 -> setAlignment(Qt::AlignCenter);
+		vboxLayout -> addWidget(l2);
 	}
 	
 	if (!flagFile.isNull())
 	{
 		QLabel *flag = new QLabel(this);
+		lay -> addWidget(flag);
 		QImage flagImg(flagFile);
-		flag -> setPixmap(flagImg.smoothScale(flagImg.width() / 5, flagImg.height() / 5));
+		flag -> setPixmap(flagImg.smoothScale(flagImg.width() / 5, flagImg. height() / 5));
 		flag -> setAlignment(Qt::AlignCenter);
 	}
 	
@@ -69,13 +51,16 @@ myPopupItem::myPopupItem(myPopup *parent, const QString &text, const QString &te
 	f.setBold(true);
 	l -> setFont(f);
 	
+	
+	setFrameStyle(QFrame::Box | QFrame::Plain);
+	setLineWidth(2);
+	
 	setFixedSize(sizeHint());
-	show();
 }
 
-void myPopupItem::mousePressEvent(QMouseEvent *)
+void myPopup::mousePressEvent(QMouseEvent *)
 {
-	emit click();
+	emit deleteMe();
 }
 
 #include "mypopup.moc"
