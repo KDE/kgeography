@@ -1,15 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=KGeography
-Name[sv]=Kgeografi
 GenericName=Geography Trainer
-GenericName[et]=Geograafia õpiprogramm
-GenericName[pt]=Exercícios de Geografia
-GenericName[sv]=Geografiövning
 Comment=A Geography Learning Program
-Comment[et]=Geograafia õpiprogramm
-Comment[pt]=Um Programa de Aprendizagem de Geografia
-Comment[sv]=Ett program för att lära sig geografi
 Exec=kgeography
 Icon=kgeography
 Type=Application
