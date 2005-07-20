@@ -2,7 +2,9 @@
 Encoding=UTF-8
 Name=KGeography
 GenericName=Geography Trainer
+GenericName[et]=Geograafia õpiprogramm
 Comment=A Geography Learning Program
+Comment[et]=Geograafia õpiprogramm
 Exec=kgeography
 Icon=kgeography
 Type=Application
