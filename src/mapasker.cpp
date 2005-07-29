@@ -22,7 +22,9 @@
 
 mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_popupManager(this), p_asker(asker), p_firstShow(true)
 {
-	QGridLayout *lay = new QGridLayout(this, 2, 2);
+	QGridLayout *lay = new QGridLayout(this);
+	lay -> setMargin(0);
+	lay -> setSpacing(0);
 	
 	p_mapWidget = new mapWidget(this);
 	lay -> addWidget(p_mapWidget, 0, 0);
@@ -33,7 +35,7 @@ mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count
 	lay -> addWidget(p_vsb, 0, 1);
 	
 	lay -> setRowStretch(2, 1);
-	lay -> setColStretch(2, 1);
+	lay -> setColumnStretch(2, 1);
 	
 	p_shouldClearPopup = false;
 	
@@ -51,12 +53,13 @@ mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count
 	
 	if (asker)
 	{
-		QBoxLayout *vbl = dynamic_cast<QBoxLayout*>(w -> layout());
+		QVBoxLayout *vbl = dynamic_cast<QVBoxLayout*>(w -> layout());
 		p_next = new QLabel(w);
 		p_next -> setAlignment(Qt::AlignTop | Qt::AlignHCenter);
 		p_fill = new QWidget(w);
 		p_fill -> show();
-		vbl -> setStretchFactor(p_fill, 1);
+		vbl -> addWidget(p_next);
+		vbl -> addWidget(p_fill, 1);
 		nextQuestion();
 	}
 	else
