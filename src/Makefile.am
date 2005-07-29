@@ -39,5 +39,5 @@ valgrind: kgeography
 
 noinst_PROGRAMS = script
 script_SOURCES = script.cpp
-script_LDADD = $(LIB_QT)
+script_LDADD = $(LIB_QT) $(LIB_QTXML)
 script_LDFLAGS = $(all_libraries)

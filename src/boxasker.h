@@ -45,6 +45,8 @@ Q_OBJECT
 		/*void nextQuestion();*/
 	
 		KPushButton *p_accept;
+
+		QButtonGroup *p_bg;
 		
 		// the position the correct answer is in
 		int p_position;

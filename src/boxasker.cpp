@@ -15,10 +15,11 @@
 #include <klocale.h>
 #include <kpushbutton.h>
 
+#include <qbuttongroup.h>
+#include <qgroupbox.h>
 #include <qlabel.h>
 #include <qlayout.h>
 #include <qradiobutton.h>
-#include <qvbuttongroup.h>
 
 #include "boxasker.h"
 #include "map.h"
@@ -27,17 +28,21 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 {
 	p_lay = new QVBoxLayout(this);
 	
-	QVButtonGroup *bg = new QVButtonGroup(this);
+	QGroupBox *bg = new QGroupBox(this);
+	QVBoxLayout *gbLayout = new QVBoxLayout(bg);
+	p_bg = new QButtonGroup(this);
 	p_label = new QLabel(this);
 	p_rb = new QRadioButton*[4];
 	for(int i = 0; i < 4; i++)
 	{
 		p_rb[i] = new QRadioButton(bg);
+		p_bg -> addButton(p_rb[i]);
+		gbLayout -> addWidget(p_rb[i]);
 	}
+	gbLayout->addStretch(1);
 	p_accept = new KPushButton(this);
-
 	
-	p_lay -> addWidget( p_label);
+	p_lay -> addWidget(p_label);
 	p_lay -> addWidget(bg, 1);
 	p_lay -> addWidget(p_accept);
 	KAcceleratorManager::setNoAccel(this);
@@ -59,7 +64,10 @@ void boxAsker::nextQuestionHook(const QString &division)
 	QStringList auxList;
 	int i;
 	
-	for (i = 0; i < 4; i++) p_rb[i] -> setChecked(false);
+	p_bg -> setExclusive(false);
+	QAbstractButton *b = p_bg -> checkedButton();
+	if (b) b -> setChecked(false);
+	p_bg -> setExclusive(true);
 	
 	auxList << division;
 		
@@ -72,7 +80,7 @@ void boxAsker::nextQuestionHook(const QString &division)
 	while (i < 4)
 	{
 		otherDivision = p_map -> getRandomDivision();
-		while (auxList.find(otherDivision) != auxList.end()) otherDivision = p_map -> getRandomDivision();
+		while (auxList.indexOf(otherDivision) != -1) otherDivision = p_map -> getRandomDivision();
 		if (i == p_position) i++;
 		if (i < 4 && nextBoxAskerQuestionHook(otherDivision, i, false)) i++;
 		auxList << otherDivision;

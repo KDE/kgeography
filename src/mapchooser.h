@@ -13,10 +13,14 @@
 
 #include <kdialogbase.h>
 
-#include <qdict.h>
+#include <qhash.h>
 
 #include "map.h"
 #include "mapparser.h"
+
+class QListWidget;
+
+class imageWidget;
 
 class mapChooser : public KDialogBase
 {
@@ -31,10 +35,10 @@ Q_OBJECT
 		void putImage(const QString &mapName);
 
 	private:
-		QListBox *p_listBox;
-		QWidget *p_image;
+		QListWidget *p_listBox;
+		imageWidget *p_image;
 		mapReader p_reader;
-		QDict<KGmap> p_maps;
+		QHash<QString, KGmap*> p_maps;
 };
 
 #endif

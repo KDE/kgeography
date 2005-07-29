@@ -14,6 +14,7 @@
 #include <qdom.h>
 #include <qstring.h>
 #include <qstringlist.h>
+#include <qtextstream.h>
 
 int main(int argc, char *argv[])
 {
@@ -43,7 +44,7 @@ int main(int argc, char *argv[])
 		
 		QDomNode n, n2, n3, n4, n5;
 		QDomNodeList nodes = dd.firstChild().childNodes();
-		for (uint i = 0; i < nodes.count(); i++)
+		for (int i = 0; i < nodes.count(); i++)
 		{
 			n = nodes.item(i);
 			if (n.nodeName() == "name")

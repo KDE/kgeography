@@ -16,7 +16,7 @@
 #include "mypopup.h"
 
 
-myPopup::myPopup(QWidget *parent, const QString &text, const QString &text2, const QString &flagFile) : QFrame(parent)
+myPopup::myPopup(QWidget *parent, const QString &text, const QString &text2, const QString &flagFile) : QFrame(parent, Qt::FramelessWindowHint)
 {
 	QHBoxLayout *lay = new QHBoxLayout(this);
 	lay -> setMargin(4);
@@ -42,7 +42,7 @@ myPopup::myPopup(QWidget *parent, const QString &text, const QString &text2, con
 		QLabel *flag = new QLabel(this);
 		lay -> addWidget(flag);
 		QImage flagImg(flagFile);
-		flag -> setPixmap(flagImg.smoothScale(flagImg.width() / 5, flagImg. height() / 5));
+		flag -> setPixmap(QPixmap::fromImage(flagImg.scaled(flagImg.width() / 5, flagImg. height() / 5, Qt::IgnoreAspectRatio, Qt::SmoothTransformation)));
 		flag -> setAlignment(Qt::AlignCenter);
 	}
 	

@@ -13,6 +13,8 @@
 
 #include "boxasker.h"
 
+class flagWidget;
+
 class flagDivisionAsker : public boxAsker
 {
 	public:
@@ -24,7 +26,7 @@ class flagDivisionAsker : public boxAsker
 		QString getQuestionHook() const;
 
 	private:
-		QWidget *p_flag;
+		flagWidget *p_flag;
 };
 
 #endif

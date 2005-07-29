@@ -48,6 +48,7 @@ Q_OBJECT
 		void mouseMoveEvent(QMouseEvent *e);
 		void mouseReleaseEvent(QMouseEvent *e);
 		void resizeEvent(QResizeEvent *e);
+		void paintEvent(QPaintEvent *e);
 	
 	private:
 		void emitMoveActionEnabled();
@@ -56,7 +57,7 @@ Q_OBJECT
 		
 		QImage p_originalImage, p_zoomedImageShown;
 		bool p_zooming, p_wantZoom, p_moving, p_wantMove;
-		QPoint p_initial, p_prev; // rubberbanding and moving
+		QPoint p_initial, p_current; // rubberbanding and moving
 		int p_zoomX, p_zoomY, p_zoomW, p_zoomH;
 		double p_lastFactorX, p_lastFactorY;
 		// useful to not do that many updateShownImage

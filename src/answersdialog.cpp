@@ -12,27 +12,29 @@
 
 #include <qlabel.h>
 #include <qlayout.h>
-#include <qscrollview.h>
+#include <qscrollarea.h>
 
 #include "answer.h"
 #include "answersdialog.h"
 
-answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &userAnswers, QString question, int correctAnswers) : KDialogBase(parent, 0, true, i18n("Your Answers Were"), Ok)
+answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAnswers, QString question, int correctAnswers) : KDialogBase(parent, 0, true, i18n("Your Answers Were"), Ok)
 {
 	QLabel *l1, *l2, *l3;
 	QFont boldFont, bigFont;
 	uint totalAnswers;
 	totalAnswers = userAnswers.count();
 	
-	p_sv = new QScrollView(this);
-	setMainWidget(p_sv);
+	p_sa = new QScrollArea(this);
+	setMainWidget(p_sa);
 	
-	p_container = new QWidget(p_sv -> viewport());
-	p_sv -> viewport() -> setPaletteBackgroundColor(p_container -> paletteBackgroundColor());
+	p_container = new QWidget(this);
+	p_sa -> setWidget(p_container);
+	p_sa -> setWidgetResizable(true);
 	
 	QGridLayout *lay = new QGridLayout(p_container);
-	lay -> setColStretch(0, 1);
-	lay -> setColStretch(4, 1);
+	lay -> setSpacing(KDialog::spacingHint());
+	lay -> setColumnStretch(0, 1);
+	lay -> setColumnStretch(4, 1);
 	lay -> setRowStretch(totalAnswers + 4, 1);
 	
 	// Title
@@ -40,8 +42,7 @@ answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &us
 	bigFont.setPointSize(24);
 	l1 = new QLabel(question, p_container);
 	l1 -> setFont(bigFont);
-	l1 -> setAlignment(Qt::AlignCenter);
-	lay->addMultiCellWidget(l1, 0, 0, 0, 4);
+	lay->addMultiCellWidget(l1, 0, 0, 1, 5, Qt::AlignHCenter);
 	
 	// Headers
 	boldFont = p_container -> font();
@@ -71,25 +72,6 @@ answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &us
 	l1 -> setAlignment(Qt::AlignCenter);
 	lay->addMultiCellWidget(l1, totalAnswers + 4, totalAnswers + 4, 0, 4);
 	
-	p_sv -> addChild(p_container);
 	resize(500, 500);
-}
-
-void answersDialog::showEvent(QShowEvent *)
-{
-	positionContainer();
-}
-
-void answersDialog::resizeEvent(QResizeEvent *)
-{
-	positionContainer();
-}
-
-void answersDialog::positionContainer()
-{
-	int x = p_sv -> viewport() -> width() - p_container -> width();
-	x = x / 2;
-	if (x < 0) x = 0;
-	p_sv -> moveChild(p_container, x, 0);
 }
 

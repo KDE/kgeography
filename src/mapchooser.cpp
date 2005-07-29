@@ -13,24 +13,46 @@
 #include <kmessagebox.h>
 #include <kstandarddirs.h>
 
-#include <qhbox.h>
 #include <qimage.h>
 #include <qlayout.h>
+#include <qlistwidget.h>
+#include <qpainter.h>
 
 #include "mapchooser.h"
 
+
+class imageWidget : public QWidget
+{
+	public:
+		imageWidget(QWidget *parent) : QWidget(parent)
+		{
+		}
+
+		void paintEvent(QPaintEvent *)
+		{
+			QPainter p(this);
+			p.drawPixmap(0, 0, pix);
+		}
+		
+		QPixmap pix;
+};
+
 mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Choose Map to Use"), KDialogBase::Ok | KDialogBase::Cancel, KDialogBase::Ok, true)
 {
-	QHBox *mainHB;
+	QWidget *mainHB;
+	QHBoxLayout *mainHBLayout;
 	QStringList list;
 	KGmap *m;
 	QWidget *mapArea;
 	QGridLayout *mapLay;
 	
-	mainHB = new QHBox(this);
-	mainHB -> setSpacing(KDialog::spacingHint());
+	mainHB = new QWidget(this);
+	mainHBLayout = new QHBoxLayout(mainHB);
+	mainHBLayout -> setMargin(0);
+	mainHBLayout -> setSpacing(KDialog::spacingHint());
 	list = KGlobal::dirs() -> findAllResources("appdata", "*.kgm");
-	p_listBox = new QListBox(mainHB);
+	p_listBox = new QListWidget(mainHB);
+	mainHBLayout -> addWidget(p_listBox);
 	QStringList::iterator it;
 	for(it = list.begin(); it != list.end(); ++it)
 	{
@@ -43,40 +65,42 @@ mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Cho
 		{
 			m = p_reader.getMap();
 			QString text = i18n(m -> getFileName().utf8(), m -> getName().utf8());
-			p_listBox -> insertItem(text);
+			p_listBox -> addItem(text);
 			p_maps.insert(text, m);
 		}
 	}
 	
 	mapArea = new QWidget(mainHB);
 	mapArea -> setFixedSize(300, 225);
+	mainHBLayout -> addWidget(mapArea);
 	
-	mapLay = new QGridLayout(mapArea, 3, 3);
+	mapLay = new QGridLayout(mapArea);
+	mapLay -> setMargin(3);
+	mapLay -> setSpacing(3);
 	
-	p_image = new QWidget(mapArea);
+	p_image = new imageWidget(mapArea);
 	mapLay -> addWidget(p_image, 1, 1);
 	
-	connect(p_listBox, SIGNAL(highlighted(const QString&)), this, SLOT(putImage(const QString&)));
-	connect(p_listBox, SIGNAL(selected(int)), this, SLOT(slotOk()));
+	connect(p_listBox, SIGNAL(currentTextChanged(const QString&)), this, SLOT(putImage(const QString&)));
+	connect(p_listBox, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(slotOk()));
 	
 	setMainWidget(mainHB);
 	
-	p_listBox -> sort();
-	if (p_listBox -> count() > 0) p_listBox -> setCurrentItem(0);
+	p_listBox -> sortItems();
+	if (p_listBox -> count() > 0) p_listBox -> setCurrentRow(0);
 	else enableButtonOK(false);
 }
 
 mapChooser::~mapChooser()
 {
-	p_maps.setAutoDelete(true);
-	p_maps.clear();
+	qDeleteAll(p_maps.values());
 }
 
 KGmap *mapChooser::getMap()
 {
 	KGmap *m;
-	m = p_maps[p_listBox -> currentText()];
-	p_maps.remove(p_listBox -> currentText());
+	m = p_maps[p_listBox -> currentItem() -> text()];
+	p_maps.remove(p_listBox -> currentItem() -> text());
 	return m;
 }
 
@@ -85,8 +109,8 @@ void mapChooser::putImage(const QString &mapName)
 	KGmap *m;
 	m = p_maps[mapName];
 	QImage image(m -> getMapFile());
-	image = image.smoothScale(300, 225, QImage::ScaleMin);
-	p_image -> setPaletteBackgroundPixmap(image);
+	image = image.scaled(300, 225, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+	p_image -> pix = QPixmap::fromImage(image);
 	p_image -> setFixedSize(image.size());
 }
 

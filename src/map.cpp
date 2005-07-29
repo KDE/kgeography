@@ -27,14 +27,7 @@ KGmap::KGmap()
 
 KGmap::~KGmap()
 {
-	QMap<QRgb, division*>::iterator it;
-	it = p_colorMap.begin();
-	while (it != p_colorMap.end())
-	{
-		delete it.data();
-		p_colorMap.remove(it);
-		it = p_colorMap.begin();
-	}
+	qDeleteAll(p_colorMap.values());
 }
 
 bool KGmap::addDivision(division *c)
@@ -112,7 +105,7 @@ QString KGmap::getName() const
 
 QString KGmap::getRandomDivision() const
 {
-	QValueList<division*> aux;
+	QList<division*> aux;
 	int i = (int)((float)p_nameMap.size() * kapp -> random() / (RAND_MAX + 1.0));
 	aux = p_nameMap.values();
 	if (!aux[i] -> canAsk()) return getRandomDivision();
@@ -134,8 +127,8 @@ QString KGmap::getWhatIs(QRgb c, bool all) const
 
 QColor KGmap::getColor(const QString &s) const
 {
-	QValueList<division*> divisions;
-	QValueList<QRgb> colors;
+	QList<division*> divisions;
+	QList<QRgb> colors;
 	division *d;
 	int i;
 	

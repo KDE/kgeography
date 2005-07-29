@@ -19,7 +19,6 @@
 
 #include <qlabel.h>
 #include <qlayout.h>
-#include <qvbox.h>
 #include <qsize.h>
 #include <qtimer.h>
 #include <qwhatsthis.h>
@@ -41,28 +40,44 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	p_map = 0;
 	p_askWidget = 0;
 
-	p_bigWidget = new QHBox(this);
+	p_bigWidget = new QWidget(this);
+	QHBoxLayout *bigWidgetLayout = new QHBoxLayout(p_bigWidget);
+	bigWidgetLayout -> setSpacing(0);
+	bigWidgetLayout -> setMargin(0);
+	
+	QWidget *leftWidget = new QWidget(p_bigWidget);
+	QVBoxLayout *leftWidgetLayout = new QVBoxLayout(leftWidget);
+	leftWidgetLayout -> setSpacing(0);
+	leftWidgetLayout -> setMargin(0);
 
-	QVBox *p_leftWidget = new QVBox(p_bigWidget);
-	p_currentMap = new QLabel(p_leftWidget);
-	p_currentMap -> setAlignment(AlignCenter);
-	p_consult = new KPushButton(i18n("&Browse Map"), p_leftWidget);
+	p_currentMap = new QLabel(leftWidget);
+	p_currentMap -> setAlignment(Qt::AlignCenter);
+	p_consult = new KPushButton(i18n("&Browse Map"), leftWidget);
 	QWhatsThis::add(p_consult, i18n("In this section left click on any part of the map to learn about the divisions" ));
-	p_askMap = new KPushButton(i18n("&Click Division in Map..."), p_leftWidget);
+	p_askMap = new KPushButton(i18n("&Click Division in Map..."), leftWidget);
 	QWhatsThis::add(p_askMap, i18n("In this challenge you are given a division name on the left under the menu and you must find it on the map and click on it"));
-	p_askCapitalDivisions = new KPushButton(i18n("Guess Division From Its &Capital..."), p_leftWidget);
+	p_askCapitalDivisions = new KPushButton(i18n("Guess Division From Its &Capital..."), leftWidget);
 	QWhatsThis::add(p_askCapitalDivisions, i18n("In this quiz you have to guess the division name given its capital"));
-	p_askDivisionCapitals = new KPushButton(i18n("Guess Capital of &Division..."), p_leftWidget);
+	p_askDivisionCapitals = new KPushButton(i18n("Guess Capital of &Division..."), leftWidget);
 	QWhatsThis::add(p_askDivisionCapitals, i18n("In this quiz you have to guess the capital of a given division name"));
-	p_askFlagDivisions = new KPushButton(i18n("&Guess Division From Its Flag..."), p_leftWidget);
+	p_askFlagDivisions = new KPushButton(i18n("&Guess Division From Its Flag..."), leftWidget);
 	QWhatsThis::add(p_askFlagDivisions, i18n("In this quiz you have to guess the division name given its flag"));
-	p_askDivisionFlags = new KPushButton(i18n("G&uess Flag of Division..."), p_leftWidget);
+	p_askDivisionFlags = new KPushButton(i18n("G&uess Flag of Division..."), leftWidget);
 	QWhatsThis::add(p_askDivisionFlags, i18n("In this quiz you have to guess the flag of a division given its name"));
-	p_underLeftWidget = new QVBox(p_leftWidget);
-	p_underLeftWidget -> layout() -> setSpacing(KDialog::spacingHint());
-	p_underLeftWidget -> layout() -> setMargin(KDialog::marginHint());
-	p_leftWidget -> setStretchFactor(p_underLeftWidget, 1);
+	p_underLeftWidget = new QWidget(leftWidget);
+	QVBoxLayout *underLeftWidgetLayout = new QVBoxLayout(p_underLeftWidget);
+	underLeftWidgetLayout -> layout() -> setSpacing(KDialog::spacingHint());
+	underLeftWidgetLayout -> layout() -> setMargin(KDialog::marginHint());
+	leftWidgetLayout -> addWidget(p_currentMap);
+	leftWidgetLayout -> addWidget(p_consult);
+	leftWidgetLayout -> addWidget(p_askMap);
+	leftWidgetLayout -> addWidget(p_askCapitalDivisions);
+	leftWidgetLayout -> addWidget(p_askDivisionCapitals);
+	leftWidgetLayout -> addWidget(p_askFlagDivisions);
+	leftWidgetLayout -> addWidget(p_askDivisionFlags);
+	leftWidgetLayout -> addWidget(p_underLeftWidget, 1);
 
+	bigWidgetLayout -> addWidget(leftWidget);
 	setCentralWidget(p_bigWidget);
 
 	connect(p_consult, SIGNAL(clicked()), this, SLOT(consult()));
@@ -267,7 +282,7 @@ QSize kgeography::getPreferredSize()
 
 void kgeography::putAskWidget()
 {
-	p_bigWidget -> setStretchFactor(p_askWidget, 1);
+	static_cast<QBoxLayout*>(p_bigWidget -> layout()) -> addWidget(p_askWidget, 1);
 	p_askWidget -> show();
 	connect(p_askWidget, SIGNAL(setZoomActionChecked(bool)), p_zoom, SLOT(setChecked(bool)));
 	connect(p_zoom, SIGNAL(toggled(bool)), p_askWidget, SLOT(setZoom(bool)));
@@ -314,7 +329,7 @@ void kgeography::showResultsDialog()
 		p_mustShowResultsDialog = false;
 		int ca = p_askWidget -> correctAnswers();
 		QString q = p_askWidget -> getQuestionHook();
-		QValueVector<userAnswer> ua = p_askWidget -> userAnswers();
+		QVector<userAnswer> ua = p_askWidget -> userAnswers();
 		
 		consult();
 	

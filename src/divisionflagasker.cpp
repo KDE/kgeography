@@ -23,14 +23,15 @@ divisionFlagAsker::divisionFlagAsker(QWidget *parent, KGmap *m, QWidget *w, uint
 
 bool divisionFlagAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
 {
-	QImage im(p_map -> getDivisionFlagFile(division));
-	im = im.smoothScale(im.width()/5, im.height()/5);
-	p_rb[i] -> setPixmap(im);
+	QIcon icon(p_map -> getDivisionFlagFile(division));
+	p_rb[i] -> setIcon(icon);
+	p_rb[i] -> show();
+	p_rb[i] -> setIconSize(QSize(60, 40));
 	if (isAnswer)
 	{
 		QString s = QString("The flag of %1 is...").arg(division);
 		setQuestion(i18n(p_map -> getFileName().utf8(), s.utf8()));
-		p_currentAnswer.setCorrectAnswer(im);
+		p_currentAnswer.setCorrectAnswer(icon.pixmap(QSize(60, 40)));
 		p_currentAnswer.setQuestion(division);
 	}
 	return true;
@@ -38,7 +39,8 @@ bool divisionFlagAsker::nextBoxAskerQuestionHook(const QString &division, int i,
 
 void divisionFlagAsker::setAnswerHook(int userSays)
 {
-	p_currentAnswer.setAnswer(p_rb[userSays] -> pixmap() -> convertToImage());
+	QIcon i = p_rb[userSays] -> icon();
+	p_currentAnswer.setAnswer(i.pixmap(QSize(60, 40)));
 }
 
 QString divisionFlagAsker::getQuestionHook() const

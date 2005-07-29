@@ -27,9 +27,9 @@ mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count
 	p_mapWidget = new mapWidget(this);
 	lay -> addWidget(p_mapWidget, 0, 0);
 	
-	p_hsb = new QScrollBar(Horizontal, this);
+	p_hsb = new QScrollBar(Qt::Horizontal, this);
 	lay -> addWidget(p_hsb, 1, 0);
-	p_vsb = new QScrollBar(Vertical, this);
+	p_vsb = new QScrollBar(Qt::Vertical, this);
 	lay -> addWidget(p_vsb, 0, 1);
 	
 	lay -> setRowStretch(2, 1);
@@ -53,7 +53,7 @@ mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count
 	{
 		QBoxLayout *vbl = dynamic_cast<QBoxLayout*>(w -> layout());
 		p_next = new QLabel(w);
-		p_next -> setAlignment(AlignTop | AlignHCenter);
+		p_next -> setAlignment(Qt::AlignTop | Qt::AlignHCenter);
 		p_fill = new QWidget(w);
 		p_fill -> show();
 		vbl -> setStretchFactor(p_fill, 1);

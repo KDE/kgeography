@@ -11,6 +11,7 @@
 #include <qimage.h>
 #include <qlabel.h>
 #include <qlayout.h>
+#include <qpixmap.h>
 
 #include <kdialog.h>
 
@@ -83,7 +84,7 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
 			
 			QFrame *inner = new QFrame(aux);
 			lay -> addWidget(inner);
-			inner -> setBackgroundColor(v -> toColor());
+			inner -> setBackgroundColor(v -> value<QColor>());
 			inner -> setLineWidth(1);
 			lay -> setMargin(KDialog::marginHint() / 2);
 			widgets[i] = aux;
@@ -92,7 +93,7 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
 		{
 			QLabel *l;
 			l = new QLabel(w);
-			l -> setPixmap(v -> toImage());
+			l -> setPixmap(QPixmap::fromImage(v -> value<QImage>()));
 			l -> setAlignment(Qt::AlignHCenter);
 			l -> setMargin(KDialog::marginHint() / 2);
 			widgets[i] = l;

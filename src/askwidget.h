@@ -11,7 +11,7 @@
 #ifndef ASKWIDGET_H
 #define ASKWIDGET_H
 
-#include <qvaluevector.h>
+#include <qvector.h>
 #include <qwidget.h>
 
 #include "answer.h"
@@ -29,7 +29,7 @@ Q_OBJECT
 		
 		virtual QString getQuestionHook() const = 0;
 		int correctAnswers() const;
-		QValueVector<userAnswer> userAnswers() const;
+		QVector<userAnswer> userAnswers() const;
 	
 	public slots:
 		virtual void setMovement(bool b);
@@ -59,13 +59,13 @@ Q_OBJECT
 		
 		int p_correctAnswers, p_incorrectAnswers;
 		
-		QValueVector<userAnswer> p_userAnswers;
+		QVector<userAnswer> p_userAnswers;
 		
 		// the list of asked divisions
 		QStringList p_asked;
 		
 		// the number of questions to do
-		uint p_count;
+		int p_count;
 };
 
 #endif

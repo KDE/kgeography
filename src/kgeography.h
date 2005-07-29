@@ -17,9 +17,7 @@ class KAction;
 class KPushButton;
 class KToggleAction;
 
-class QHBox;
 class QLabel;
-class QVBox;
 
 class KGmap;
 class askWidget;
@@ -54,8 +52,8 @@ Q_OBJECT
 		void removeOldAskWidget();
 		void setMap(KGmap *m);
 
-		QHBox *p_bigWidget;
-		QVBox *p_underLeftWidget;
+		QWidget *p_bigWidget;
+		QWidget *p_underLeftWidget;
 
 		KPushButton *p_consult;
 		KPushButton *p_askCapitalDivisions;

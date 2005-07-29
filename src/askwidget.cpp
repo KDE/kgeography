@@ -21,7 +21,7 @@ askWidget::askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool sho
 	if (showLabel)
 	{
 		p_answers = new QLabel(w);
-		p_answers -> setAlignment(AlignTop | AlignHCenter);
+		p_answers -> setAlignment(Qt::AlignTop | Qt::AlignHCenter);
 		resetAnswers();
 		p_answers -> show();
 	}
@@ -38,7 +38,7 @@ int askWidget::correctAnswers() const
 	return p_correctAnswers;
 }
 
-QValueVector<userAnswer> askWidget::userAnswers() const
+QVector<userAnswer> askWidget::userAnswers() const
 {
 	return p_userAnswers;
 }

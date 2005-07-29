@@ -13,9 +13,9 @@
 
 #include <kdialogbase.h>
 
-#include <qvaluevector.h>
+#include <qvector.h>
 
-class QScrollView;
+class QScrollArea;
 class QWidget;
 
 class userAnswer;
@@ -23,17 +23,11 @@ class userAnswer;
 class answersDialog : public KDialogBase
 {
 	public:
-		answersDialog(QWidget *parent, const QValueVector<userAnswer> &userAnswers, QString question, int correctAnswers);
-	
-	protected:
-		void showEvent(QShowEvent *e);
-		void resizeEvent(QResizeEvent *e);
+		answersDialog(QWidget *parent, const QVector<userAnswer> &userAnswers, QString question, int correctAnswers);
 	
 	private:
-		void positionContainer();
-		
 		QWidget *p_container;
-		QScrollView *p_sv;
+		QScrollArea *p_sa;
 };
 
 #endif
