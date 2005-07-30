@@ -161,7 +161,10 @@ void kgeography::openMap()
 	{
 		showResultsDialog();
 		setMap(mp.getMap());
-		resizeMainWindow();
+		// if anyone can explain why with the slot works and now without
+		// i'll be glad to learn
+		QTimer::singleShot(0, this, SLOT(resizeMainWindow()));
+// 		resizeMainWindow();
 	}
 }
 
@@ -277,7 +280,7 @@ QSize kgeography::getPreferredSize()
 	int ySize = 0;
 	
 	ySize = menuBar() -> size().height() + toolBar() -> size().height() + ((mapAsker*) p_askWidget)->mapSize().height();
-	return QSize(p_underLeftWidget -> size().width() + ((mapAsker*) p_askWidget)->mapSize().width() + 1, ySize + 1);
+	return QSize(p_underLeftWidget -> size().width() + ((mapAsker*) p_askWidget)->mapSize().width() + 3, ySize + 3);
 }
 
 void kgeography::putAskWidget()
