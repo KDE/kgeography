@@ -20,7 +20,6 @@
 
 #include "mapchooser.h"
 
-
 class imageWidget : public QWidget
 {
 	public:
@@ -77,6 +76,10 @@ mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Cho
 	mapLay = new QGridLayout(mapArea);
 	mapLay -> setMargin(3);
 	mapLay -> setSpacing(3);
+	mapLay -> setColumnStretch(0, 1);
+	mapLay -> setColumnStretch(2, 1);
+	mapLay -> setRowStretch(0, 1);
+	mapLay -> setRowStretch(2, 1);
 	
 	p_image = new imageWidget(mapArea);
 	mapLay -> addWidget(p_image, 1, 1);
