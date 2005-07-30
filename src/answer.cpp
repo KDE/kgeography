@@ -89,11 +89,11 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
 			lay -> setMargin(KDialog::marginHint() / 2);
 			widgets[i] = aux;
 		}
-		else if (v -> type() == QVariant::Image)
+		else if (v -> type() == QVariant::Pixmap)
 		{
 			QLabel *l;
 			l = new QLabel(w);
-			l -> setPixmap(QPixmap::fromImage(v -> value<QImage>()));
+			l -> setPixmap(v -> value<QPixmap>());
 			l -> setAlignment(Qt::AlignHCenter);
 			l -> setMargin(KDialog::marginHint() / 2);
 			widgets[i] = l;
