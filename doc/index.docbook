@@ -31,8 +31,8 @@
 
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2005-05-23</date>
-<releaseinfo>0.3.1</releaseinfo>
+<date>2005-08-02</date>
+<releaseinfo>0.4</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -41,7 +41,7 @@
 &kgeography; is a geography learning tool for KDE. Right now it has six usage modes: 
 <itemizedlist>
 <listitem>
-<para>Browse the maps clicking in a map division to see it's name</para>
+<para>Browse the maps clicking in a map division to see its name</para>
 </listitem>
 <listitem>
 <para>The game tells you a map division name and you have to click on it</para>
@@ -91,7 +91,7 @@ Maps available in current release are: Africa, Asia, Austria, Brazil, Canada, Ch
 <chapter id="quick-start">
 <title>Quick Start to &kgeography;</title>
 <para>
-When you run &kgeography; for the first time, it first asks you to choose a map of a country.
+When you run &kgeography; for the first time, it first asks you to choose a map to start with.
 <screenshot>
 <screeninfo>Here's a screenshot of &kgeography; at first start</screeninfo>
 	<mediaobject>
@@ -219,7 +219,7 @@ Guess a division from its capital: you are asked to find the name of a province 
 <para>
 And the results are displayed when the test is finished:
 <screenshot>
-<screeninfo>your results</screeninfo>
+<screeninfo>Your results</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="first-start10.png" format="PNG"/>
@@ -231,7 +231,7 @@ And the results are displayed when the test is finished:
 </screenshot>
 </para>
 <para>
-Guess the capital from a division: you have a capital and four province names and you must choose the correct one. As before, a result dialog is shown.
+Guess the capital from a division: you have a capital and four province names and you must choose the correct one. As before, at the end a result dialog is shown.
 </para>
 <para>
 Guess division from its flag: a flag is shown and you must find the province it belongs to.
@@ -299,7 +299,7 @@ Guess the flag of a division: a province name is given and you must find the cor
 	  </textobject>
 	</mediaobject>
 </screenshot>
-While in zoom mode, you can press &RMB; to go back to the orginal map size (Original Size action has the same effect), use the scroll bars to move around the zoomed map or use the Move action that will allow you to drag the map using &LMB;. 
+While in zoom mode, you can press &RMB; to go back to the original map size (the <guimenuitem>Original Size</guimenuitem> action has the same effect). Use the scroll bars to move around the zoomed map or use the <guimenuitem>Move</guimenuitem> action that will allow you to drag the map using &LMB;.
 </para>
 
 </sect1>
@@ -313,22 +313,22 @@ guide the parent/teacher on how to help the child using it.
 
 <chapter id="how-to-maps">
 <title>How to make maps</title>
-<para>A map in KGeography is formed at least by two files, one is the image of the map and another is the description of it. </para>
+<para>A map in &kgeography; is made by two files, one is the image of the map and the other one is its description. </para>
 <sect1 id="helper-tool">
 <title>Helper tool</title>
 <para>
-You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a tool made by Yann Verley to help him with the map of France. To see its usage, simply execute it and read the help message, but it basically creates the .kgm from a plain text file and creates a file with the colors it has assigned to each division so you can fill the map according to them. </para>
+You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a tool (made by Yann Verley) which helped him with the map of France. To see its usage, simply execute it and read the help message. It basically creates the <literal role="extension">.kgm</literal> file from a plain text file and creates a file with the colors it has assigned to each division so you can fill the map according to them.</para>
 </sect1>
 <sect1 id="description-file">
 <title>Description file</title>
 <para>
- It's file extension is .kgm and it should begin with &lt;map&gt; and end with &lt;/map&gt;.
+ Its file extension is <literal role="extension">.kgm</literal> and it should begin with &lt;map&gt; and end with &lt;/map&gt;.
 </para>
 <para>
- Inside of that tags there should be:
+ Inside of those tags there should be:
 <itemizedlist>
 <listitem>
-  <para>&lt;mapFile&gt; and &lt;/mapFile&gt;: the name of the file containing the map image &eg; europe.png</para>
+  <para>&lt;mapFile&gt; and &lt;/mapFile&gt;: the name of the file containing the map image, &eg; europe.png</para>
 </listitem>
 <listitem>
   <para>&lt;name&gt; and &lt;/name&gt;: the name of map &eg; Europe</para>
@@ -342,13 +342,13 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
  Each division has these tags:
 <itemizedlist>
 <listitem>
-  <para>&lt;name&gt; and &lt;/name&gt;>: the name of the division &eg; Albania</para>
+  <para>&lt;name&gt; and &lt;/name&gt;: the name of the division &eg; Albania</para>
 </listitem>
 <listitem>
   <para>&lt;capital&gt; and &lt;/capital&gt;: the name of the capital of the division &eg;Tirana</para>
 </listitem>
 <listitem>
-  <para>&lt;ignore&gt; and &lt;/ignore&gt;: must be yes if the division should be ignored when asking for divisions in that map. This tag is optional e.g: Algeria has this tag set to yes in Europe map</para>
+  <para>&lt;ignore&gt; and &lt;/ignore&gt;: must be yes if the division should be ignored when asking for divisions in that map. This tag is optional &eg;: Algeria has this tag set to yes in Europe map.</para>
 </listitem>
 <listitem>
   <para>&lt;flag&gt; and &lt;/flag&gt;: the file containing the flag of the division. This tag is optional. Not needed for the divisions whose ignore tag is set to yes &eg; albania.png</para>
@@ -373,39 +373,39 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
 </itemizedlist>
 </para>
  <para>
- It is convenient to create 2 or 3 false divisions like Water, Frontier and Coast and set them with ignore=yes. 
+ It is convenient to create 2 or 3 false divisions like Water, Frontier and Coast and set them with ignore=yes.
  <important>
-   <para> All names (capital and division) must be in English. </para>
+   <para>All names (capitals and divisions) must be in English.</para>
 </important>
 </para>
 </sect1>
 <sect1 id="map-file">
 <title>Map file</title>
 <para>
- The map file is quite simple but laborious to create. It has to be in PNG format.
+ The map file is quite simple but laborious to create. It has to be in <acronym>PNG</acronym> format.
  You can find some maps to transform at <ulink url="http://www.odci.gov/cia/publications/factbook/docs/refmaps.html">Cia Reference Maps</ulink>. If no map fits your needs you can download the <ulink url="http://www.odci.gov/cia/publications/factbook/reference_maps/pdf/political_world.pdf">world pdf</ulink>, take a screenshot of it and work from it.
- Each division in the map should have one and only one color. To achieve this you can use image processing programs like The Gimp and Kolourpaint. 
+ Each division in the map should have one and only one color. To achieve this you can use image processing programs like <application>The Gimp</application> and <application>Kolourpaint</application>.
 </para>
 </sect1>
 <sect1 id="flags">
 <title>Flags</title>
 <para>
- If you have used the flag tag you should provide a flag file. They have to be in PNG format and better if they are 300x200 pixels and you provide a SVG file for it. To obtain SVG flags of almost all countries in the world and some other divisions you can consult <ulink url="http://www.sodipodi.com/index.php3?section=clipart/flags">Sodipodi flags collection</ulink> 
+ If you have used the flag tag you should provide a flag file. They have to be in <acronym>PNG</acronym> format and better if they are 300x200 pixels and you provide a <acronym>SVG</acronym> file for it. To obtain <acronym>SVG</acronym> flags of almost all countries in the world and some other divisions you can consult <ulink url="http://www.sodipodi.com/index.php3?section=clipart/flags">Sodipodi flags collection</ulink> 
 </para>
 </sect1>
 <sect1 id="how-to-test">
 <title>How to test</title>
 <para>
- Before sending your map to Albert <email>tsdgeos@terra.es</email> you should test it to see it has not errors. To do it you have to do the following:
+ Before sending your map to Albert <email>tsdgeos@terra.es</email> you should test it to see it has no errors. To achieve that, you have to do the following:
 <itemizedlist>
 <listitem>
   <para>Put the map description and map image file in <userinput><parameter>$<envar>KDEDIR/share/apps/kgeography/</envar></parameter></userinput></para>
 </listitem>
 <listitem>
-  <para>Put the flag PNG files (if any) in <userinput><parameter>$<envar>KDEDIR/share/apps/kgeography/flags</envar></parameter></userinput></para>
+  <para>Put the flag <acronym>PNG</acronym> files (if any) in <userinput><parameter>$<envar>KDEDIR/share/apps/kgeography/flags</envar></parameter></userinput></para>
 </listitem>
 </itemizedlist>
- Once that has been done you should be able of opening your map from inside kgeography.
+ Once that has been done you should be able of opening your map from inside &kgeography;.
  </para>
  <para>
  If you don't know which is your <userinput><parameter>$<envar>KDEDIR</envar></parameter></userinput> type <userinput><command>kde-config --prefix</command></userinput> in a shell. 
@@ -413,7 +413,7 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
 </sect1>
 <sect1 id="non-political-maps">
 <title>Non political maps</title>
-<para> Is it possible to do non-political maps? Yes!
+<para> Is it possible to do non-political maps? Yes, it is!
 <screenshot>
 <screeninfo>Example of how to create a non political map</screeninfo>
 	<mediaobject>
@@ -427,7 +427,7 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
 </screenshot>
 </para>
 <para>
- Of course, the division concept can be extended to a river or a mountain. In the making of the map you should keep in mind that most times the river or mountain will be too small that you should provide an aditional clicling area.
+ Of course, the division concept can be extended to a river or a mountain. In the making of the map you should keep in mind that most times the river or mountain will be too small that you should provide an additional clicking area.
  In this example the river would have the maroon area and color &lt;20,76,34&gt; as its identifier.
 </para>
 </sect1>
@@ -446,7 +446,7 @@ or menu bars. -->
 <title>The main &kgeography; window</title>
 
 <sect2>
-<title>The File Menu</title>
+<title>The <guimenu>File</guimenu> Menu</title>
 <para>
 <variablelist>
 <varlistentry>
@@ -475,7 +475,7 @@ or menu bars. -->
 </sect2>
 
 <sect2>
-<title>The View Menu</title>
+<title>The <guimenu>View</guimenu> Menu</title>
 <para>
 <variablelist>
 <varlistentry>
@@ -483,7 +483,7 @@ or menu bars. -->
 <guimenu>View</guimenu>
 <guimenuitem>Zoom</guimenuitem>
 </menuchoice></term>
-<listitem><para><action>Go in zoom mode</action></para></listitem>
+<listitem><para><action>Goes in zoom mode</action></para></listitem>
 </varlistentry>
 <varlistentry>
 <term><menuchoice>
@@ -512,9 +512,9 @@ or menu bars. -->
 <varlistentry>
 <term><menuchoice>
 <guimenu>Settings</guimenu>
-<guimenuitem>Toolbars</guimenuitem>
+<guimenuitem>Show/Hide Toolbar</guimenuitem>
 </menuchoice></term>
-<listitem><para><action>Show/Hide various Toolbars.</action></para></listitem>
+<listitem><para><action>Show/Hide the &kgeography; toolbar.</action></para></listitem>
 </varlistentry>
 
 <varlistentry>
@@ -612,8 +612,8 @@ Documentation Copyright &copy; 2005 Anne-Marie Mahfouf <email>annma@kde.org</ema
 
 <!-- TRANS:CREDIT_FOR_TRANSLATORS -->
 
-&underFDL;      
-&underGPL;        	
+&underFDL;
+&underGPL;
 
 </chapter>
 
