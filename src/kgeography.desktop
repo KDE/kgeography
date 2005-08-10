@@ -2,11 +2,17 @@
 Encoding=UTF-8
 Name=KGeography
 GenericName=Geography Trainer
+GenericName[bg]=Географски тренировки
 GenericName[es]=Geografía
 GenericName[et]=Geograafia õpiprogramm
+GenericName[fr]=Entraînement de géographie
+GenericName[zh_CN]=地理老师
 Comment=A Geography Learning Program
+Comment[bg]=Програма за изучаване на география
 Comment[es]=Un programa para conocer los países y sus capitales
 Comment[et]=Geograafia õpiprogramm
+Comment[fr]=Un programme d'apprentissage de la géographie
+Comment[zh_CN]=地理学习程序
 Exec=kgeography
 Icon=kgeography
 Type=Application
