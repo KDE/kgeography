@@ -317,24 +317,24 @@ guide the parent/teacher on how to help the child using it.
 <sect1 id="helper-tool">
 <title>Helper tool</title>
 <para>
-You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a tool (made by Yann Verley) which helped him with the map of France. To see its usage, simply execute it and read the help message. It basically creates the <literal role="extension">.kgm</literal> file from a plain text file and creates a file with the colors it has assigned to each division so you can fill the map according to them.</para>
+You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a tool (made by Yann Verley) which helped him with the map of France. To find out its usage, simply execute it and read the help message. It basically creates the <literal role="extension">.kgm</literal> file from a plain text file and creates a file with the colors it has assigned to each division, so you can fill the map according to them.</para>
 </sect1>
 <sect1 id="description-file">
 <title>Description file</title>
 <para>
- Its file extension is <literal role="extension">.kgm</literal> and it should begin with &lt;map&gt; and end with &lt;/map&gt;.
+ Its file extension is <literal role="extension">.kgm</literal> and it should begin with <sgmltag class="starttag">map</sgmltag> and end with <sgmltag class="endtag">map</sgmltag>.
 </para>
 <para>
  Inside of those tags there should be:
 <itemizedlist>
 <listitem>
-  <para>&lt;mapFile&gt; and &lt;/mapFile&gt;: the name of the file containing the map image, &eg; europe.png</para>
+  <para><sgmltag class="starttag">mapFile</sgmltag> and <sgmltag class="endtag">mapFile</sgmltag>: the name of the file (without any path) containing the map image, &eg; <quote>europe.png</quote>.</para>
 </listitem>
 <listitem>
-  <para>&lt;name&gt; and &lt;/name&gt;: the name of map &eg; Europe</para>
+  <para><sgmltag class="starttag">name</sgmltag> and <sgmltag class="endtag">name</sgmltag>: the name of map, &eg; <quote>Europe</quote>.</para>
 </listitem>
 <listitem>
-  <para>A &lt;division&gt; and &lt;/division&gt; for each division in the map.</para>
+  <para>A <sgmltag class="starttag">division</sgmltag> and <sgmltag class="endtag">division</sgmltag> for each division in the map.</para>
 </listitem>
 </itemizedlist>
  </para>
@@ -342,19 +342,19 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
  Each division has these tags:
 <itemizedlist>
 <listitem>
-  <para>&lt;name&gt; and &lt;/name&gt;: the name of the division &eg; Albania</para>
+  <para><sgmltag class="starttag">name</sgmltag> and <sgmltag class="endtag">name</sgmltag>: the name of the division, &eg; <quote>Albania</quote>.</para>
 </listitem>
 <listitem>
-  <para>&lt;capital&gt; and &lt;/capital&gt;: the name of the capital of the division &eg;Tirana</para>
+  <para><sgmltag class="starttag">capital</sgmltag> and <sgmltag class="endtag">capital</sgmltag>: the name of the capital of the division, &eg; <quote>Tirana</quote>.</para>
 </listitem>
 <listitem>
-  <para>&lt;ignore&gt; and &lt;/ignore&gt;: must be yes if the division should be ignored when asking for divisions in that map. This tag is optional &eg;: Algeria has this tag set to yes in Europe map.</para>
+  <para><sgmltag class="starttag">ignore</sgmltag> and <sgmltag class="endtag">ignore</sgmltag>: must be <userinput>yes</userinput> if the division should be ignored when asking for divisions in that map. This tag is optional: &eg; <quote>Algeria</quote> has this tag set to <userinput>yes</userinput> in the <quote>Europe</quote> map.</para>
 </listitem>
 <listitem>
-  <para>&lt;flag&gt; and &lt;/flag&gt;: the file containing the flag of the division. This tag is optional. Not needed for the divisions whose ignore tag is set to yes &eg; albania.png</para>
+  <para><sgmltag class="starttag">flag</sgmltag> and <sgmltag class="endtag">flag</sgmltag>: the file (without any path) containing the flag of the division, &eg; <quote>albania.png</quote>. This tag is optional. Not needed for the divisions whose <sgmltag class="starttag">ignore</sgmltag> tag is set to <userinput>yes</userinput>.</para>
 </listitem>
 <listitem>
-  <para>&lt;color&gt; and &lt;/color&gt;: the color the division has in the map.</para>
+  <para><sgmltag class="starttag">color</sgmltag> and <sgmltag class="endtag">color</sgmltag>: the color the division has in the map.</para>
 </listitem>
 </itemizedlist>
  </para>
@@ -362,22 +362,24 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
  The color is defined using three tags:
 <itemizedlist>
 <listitem>
-  <para>&lt;red&gt; and &lt;/red&gt;: red component of the color. Valid values are between 0 and 255.</para>
+  <para><sgmltag class="starttag">red</sgmltag> and <sgmltag class="endtag">red</sgmltag>: red component of the color. Valid values are between 0 and 255.</para>
 </listitem>
 <listitem>
-  <para>&lt;green&gt; and &lt;/green&gt;: green component of the color. Valid values are between 0 and 255.</para>
+  <para><sgmltag class="starttag">green</sgmltag> and <sgmltag class="endtag">green</sgmltag>: green component of the color. Valid values are between 0 and 255.</para>
 </listitem>
 <listitem>
-  <para>&lt;blue&gt; and &lt;/blue&gt;: blue component of the color. Valid values are between 0 and 255.</para>
+  <para><sgmltag class="starttag">blue</sgmltag> and <sgmltag class="endtag">blue</sgmltag>: blue component of the color. Valid values are between 0 and 255.</para>
 </listitem>
 </itemizedlist>
 </para>
+<tip>
  <para>
- It is convenient to create 2 or 3 false divisions like Water, Frontier and Coast and set them with ignore=yes.
+ It is convenient to create 2 or 3 false divisions like <quote>Water</quote>, <quote>Frontier</quote> and <quote>Coast</quote> and set them with the <sgmltag class="starttag">ignore</sgmltag> tag set to <userinput>yes</userinput>.
+ </para>
+</tip>
  <important>
    <para>All names (capitals and divisions) must be in English.</para>
 </important>
-</para>
 </sect1>
 <sect1 id="map-file">
 <title>Map file</title>
@@ -390,25 +392,25 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
 <sect1 id="flags">
 <title>Flags</title>
 <para>
- If you have used the flag tag you should provide a flag file. They have to be in <acronym>PNG</acronym> format and better if they are 300x200 pixels and you provide a <acronym>SVG</acronym> file for it. To obtain <acronym>SVG</acronym> flags of almost all countries in the world and some other divisions you can consult <ulink url="http://www.sodipodi.com/index.php3?section=clipart/flags">Sodipodi flags collection</ulink> 
+ If you have used the <sgmltag class="starttag">flag</sgmltag> tag you should provide the flag files. They have to be in <acronym>PNG</acronym> format and better if they are 300x200 pixels and you provide a <acronym>SVG</acronym> file for it. To obtain <acronym>SVG</acronym> flags of almost all countries in the world and some other divisions, you can consult the <ulink url="http://www.sodipodi.com/index.php3?section=clipart/flags">Sodipodi flags collection</ulink>.
 </para>
 </sect1>
 <sect1 id="how-to-test">
 <title>How to test</title>
 <para>
- Before sending your map to Albert <email>tsdgeos@terra.es</email> you should test it to see it has no errors. To achieve that, you have to do the following:
+ Before sending your map to Albert <email>tsdgeos@terra.es</email>, you should test it to see it has no errors. To achieve that, you have to do the following:
 <itemizedlist>
 <listitem>
-  <para>Put the map description and map image file in <userinput><parameter>$<envar>KDEDIR/share/apps/kgeography/</envar></parameter></userinput></para>
+  <para>Put the map description and map image file in <filename class="directory">$<envar>KDEDIR</envar>/share/apps/kgeography/</filename></para>
 </listitem>
 <listitem>
-  <para>Put the flag <acronym>PNG</acronym> files (if any) in <userinput><parameter>$<envar>KDEDIR/share/apps/kgeography/flags</envar></parameter></userinput></para>
+  <para>Put the flag <acronym>PNG</acronym> files (if any) in <filename class="directory">$<envar>KDEDIR</envar>/share/apps/kgeography/flags/</filename></para>
 </listitem>
 </itemizedlist>
  Once that has been done you should be able of opening your map from inside &kgeography;.
  </para>
  <para>
- If you don't know which is your <userinput><parameter>$<envar>KDEDIR</envar></parameter></userinput> type <userinput><command>kde-config --prefix</command></userinput> in a shell. 
+ If you don't know which is your <filename class="directory">$<envar>KDEDIR</envar></filename>, type <userinput><command>kde-config</command> <option>--prefix</option></userinput> in a shell.
 </para>
 </sect1>
 <sect1 id="non-political-maps">
@@ -427,7 +429,7 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
 </screenshot>
 </para>
 <para>
- Of course, the division concept can be extended to a river or a mountain. In the making of the map you should keep in mind that most times the river or mountain will be too small that you should provide an additional clicking area.
+ Of course, the division concept can be extended to a river or a mountain. During the creation of the map, you should keep in mind that most times the river or mountain will be too small that you should provide an additional clicking area.
  In this example the river would have the maroon area and color &lt;20,76,34&gt; as its identifier.
 </para>
 </sect1>
@@ -455,7 +457,7 @@ or menu bars. -->
 <keycombo action="simul">&Ctrl;<keycap>O</keycap></keycombo>
 </shortcut>
 <guimenu>File</guimenu>
-<guimenuitem>Open</guimenuitem>
+<guimenuitem>Open Map...</guimenuitem>
 </menuchoice></term>
 <listitem><para><action>Open the choose map dialog</action></para></listitem>
 </varlistentry>
