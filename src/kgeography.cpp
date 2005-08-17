@@ -304,8 +304,18 @@ void kgeography::setMap(KGmap *m)
 	set -> writeConfig();
 	delete p_map;
 	p_map = m;
-	QString s = QString("<qt>Current map:<br><b>%1</b></qt>").arg(p_map -> getName());
-	p_currentMap -> setText(i18n(p_map -> getFileName().utf8(), s.utf8()));
+	QString sw = i18n("If your language is able of using a translation of <qt>Current map:<br><b>%1</b></qt> where %1 is the name of the current map, please translate this message to 1, if not translate it to 0. If you translate this message to 0 you will need to translate all the <qt>Current map:<br><b>MapNameHere</b></qt> messages, if you translate this message to 1 this messages will not be used so you can translate them to - if you want, that way statistics will not hurt you", "0");
+	if (sw == "1")
+	{
+		QString mapName = i18n(p_map -> getFileName().utf8(), p_map -> getName().utf8());
+		QString text = i18n("<qt>Current map:<br><b>%1<b></qt>");
+		p_currentMap -> setText(text.arg(mapName));
+	}
+	else
+	{
+		QString s = QString("<qt>Current map:<br><b>%1</b></qt>").arg(p_map -> getName());
+		p_currentMap -> setText(i18n(p_map -> getFileName().utf8(), s.utf8()));
+	}
 	p_consult -> setEnabled(true);
 	p_askMap -> setEnabled(true);
 	p_askFlagDivisions -> setEnabled(m -> hasAllFlags());
