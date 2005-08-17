@@ -170,8 +170,18 @@ void mapAsker::setScrollBarsMaximumSize(int w, int h)
 
 void mapAsker::nextQuestionHook(const QString &division)
 {
-	QString s = QString("Please click on:\n%1").arg(division);
-	p_next -> setText(i18n(p_map -> getFile().utf8(), s.utf8()));
+	QString sw = i18n("If your language is able of using a translation of Please click on:\n%1 where %1 is the name of the current division, please translate this message to 1, if not translate it to 0. If you translate this message to 0 you will need to translate all the Please click on:\nDivisionNameHere messages, if you translate this message to 1 this messages will not be used so you can translate them to - if you want, that way statistics will not hurt you", "0");
+	if (sw == "1")
+	{
+		QString divisionName = i18n(p_map -> getFileName().utf8(), division.utf8());
+		QString text = i18n("Please click on:\n%1");
+		p_next -> setText(text.arg(divisionName));
+	}
+	else
+	{
+		QString s = QString("Please click on:\n%1").arg(division);
+		p_next -> setText(i18n(p_map -> getFile().utf8(), s.utf8()));
+	}
 	p_next -> show();
 	p_currentAnswer.setQuestion(i18n(p_map -> getFile().utf8(), division.utf8()));
 	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
