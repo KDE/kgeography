@@ -28,6 +28,7 @@ Q_OBJECT
 		virtual ~askWidget();
 		
 		virtual QString getQuestionHook() const = 0;
+		virtual bool isClickOnDivision() const { return false; }
 		int correctAnswers() const;
 		QValueVector<userAnswer> userAnswers() const;
 	

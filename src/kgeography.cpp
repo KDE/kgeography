@@ -169,7 +169,7 @@ void kgeography::askCapitalDivisions()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -185,7 +185,7 @@ void kgeography::askDivisionCapitals()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -201,7 +201,7 @@ void kgeography::askMap()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count(true)), 1, 1, p_map -> count(true), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -219,7 +219,7 @@ void kgeography::askFlagDivisions()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -235,7 +235,7 @@ void kgeography::askDivisionFlags()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count()), 1, 1, p_map -> count(), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();

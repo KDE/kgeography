@@ -152,10 +152,11 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 	{
 		p_division -> setRGB(p_red, p_green , p_blue);
 		b = p_divisionNameSet;
-		if (!p_divisionNameSet) p_error = i18n("There is a division without name");
+		if (!b) p_error = i18n("There is a division without name");
 		b = b && p_map -> addDivision(p_division);
-		if (p_divisionNameSet) p_error = i18n("There is already either a division called %1 or a division with the same colors as %2").arg(p_division -> getName()).arg(p_division -> getName());
-		if (!p_capitalSet && p_division -> canAsk()) p_error = i18n("Division %1 has no capital").arg(p_division -> getName());
+		if (!b) p_error = i18n("There is already either a division called %1 or a division with the same colors as %2").arg(p_division -> getName()).arg(p_division -> getName());
+		b = b && (p_capitalSet || !p_division -> canAsk(false));
+		if (!b) p_error = i18n("Division %1 has no capital").arg(p_division -> getName());
 	}
 	else if (p_previousTags == ":map:division:name")
 	{
@@ -203,10 +204,15 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 		p_divisionIgnoreSet = true;
 		if (p_contents.lower() == "yes")
 		{
-			p_division -> setIgnore(true);
+			p_division -> setIgnore(true, false);
 		}
 		else if (p_contents.lower() == "no")
 		{
+			p_division -> setIgnore(false, false);
+		}
+		else if (p_contents.lower() == "allowclickmode")
+		{
+			p_division -> setIgnore(true, true);
 		}
 		else
 		{

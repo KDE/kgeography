@@ -29,7 +29,7 @@ class KGmap
 		void setName(const QString &s);
 		
 		// return the number of askable divisions
-		uint count() const;
+		uint count(bool clickDivisionMode) const;
 		bool hasAllFlags() const;
 		QString getDivisionFlagFile(const QString &s) const;
 		QString getDivisionCapital(const QString &s) const;
@@ -37,14 +37,13 @@ class KGmap
 		QString getFileName() const;
 		QString getMapFile() const;
 		QString getName() const;
-		QString getRandomDivision() const;
+		QString getRandomDivision(bool clickDivisionMode) const;
 		QString getWhatIs(QRgb c, bool all) const;
 		QColor getColor(const QString &s) const;
 		
 	private:
 		QMap<QRgb, division*> p_colorMap;
 		QMap<QString, division*> p_nameMap;
-		uint p_count;
 		
 		QString p_name, p_file, p_mapFile;
 		bool p_hasAllFlags;

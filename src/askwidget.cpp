@@ -71,8 +71,8 @@ void askWidget::nextQuestion()
 	
 	if (p_asked.count() < p_count)
 	{
-		aux = p_map -> getRandomDivision();
-		while (p_asked.find(aux) != p_asked.end()) aux = p_map -> getRandomDivision();
+		aux = p_map -> getRandomDivision(isClickOnDivision());
+		while (p_asked.find(aux) != p_asked.end()) aux = p_map -> getRandomDivision(isClickOnDivision());
 		p_asked << aux;
 		nextQuestionHook(aux);
 	}

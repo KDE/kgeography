@@ -31,6 +31,7 @@ Q_OBJECT
 
 		QSize mapSize() const;
 		bool isAsker() const;
+		virtual bool isClickOnDivision() const { return true; }
 		
 	protected:
 		void nextQuestionHook(const QString &division);
