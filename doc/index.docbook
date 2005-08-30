@@ -348,7 +348,7 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
   <para><sgmltag class="starttag">capital</sgmltag> and <sgmltag class="endtag">capital</sgmltag>: the name of the capital of the division, &eg; <quote>Tirana</quote>.</para>
 </listitem>
 <listitem>
-  <para><sgmltag class="starttag">ignore</sgmltag> and <sgmltag class="endtag">ignore</sgmltag>: must be <userinput>yes</userinput> if the division should be ignored when asking for divisions in that map. This tag is optional: &eg; <quote>Algeria</quote> has this tag set to <userinput>yes</userinput> in the <quote>Europe</quote> map.</para>
+  <para><sgmltag class="starttag">ignore</sgmltag> and <sgmltag class="endtag">ignore</sgmltag>: must be <userinput>yes</userinput> if the division should be ignored when asking for divisions in that map. If it is <userinput>allowClickMode</userinput> &kgeography; will ask the division in the Click on division mode but not in others. This tag is optional: &eg; <quote>Algeria</quote> has this tag set to <userinput>yes</userinput> in the <quote>Europe</quote> map.</para>
 </listitem>
 <listitem>
   <para><sgmltag class="starttag">flag</sgmltag> and <sgmltag class="endtag">flag</sgmltag>: the file (without any path) containing the flag of the division, &eg; <quote>albania.png</quote>. This tag is optional. Not needed for the divisions whose <sgmltag class="starttag">ignore</sgmltag> tag is set to <userinput>yes</userinput>.</para>
