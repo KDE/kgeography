@@ -79,8 +79,9 @@ void boxAsker::nextQuestionHook(const QString &division)
 	i = 0;
 	while (i < 4)
 	{
-		otherDivision = p_map -> getRandomDivision();
-		while (auxList.indexOf(otherDivision) != -1) otherDivision = p_map -> getRandomDivision();
+		// false because boxaskers never are clickOnDivision
+		otherDivision = p_map -> getRandomDivision(false);
+		while (auxList.indexOf(otherDivision) != -1) otherDivision = p_map -> getRandomDivision(false);
 		if (i == p_position) i++;
 		if (i < 4 && nextBoxAskerQuestionHook(otherDivision, i, false)) i++;
 		auxList << otherDivision;

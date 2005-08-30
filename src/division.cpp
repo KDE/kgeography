@@ -14,13 +14,15 @@
 
 division::division()
 {
-	p_canAsk = true;
+	p_canAskAlways = true;
+	p_canAskClickDivision = true;
 	p_flagFile = QString::null;
 }
 
-bool division::canAsk() const
+bool division::canAsk(bool clickDivisionMode) const
 {
-	return p_canAsk;
+	if (clickDivisionMode) return p_canAskClickDivision;
+	else return p_canAskAlways;
 }
 
 QString division::getName() const
@@ -49,9 +51,18 @@ void division::setCapital(const QString &name)
 	p_capital = name;
 }
 
-void division::setIgnore(bool b)
+void division::setIgnore(bool ignore, bool canAskClickDivision)
 {
-	p_canAsk = !b;
+	if (ignore)
+	{
+		p_canAskAlways = false;
+		p_canAskClickDivision = canAskClickDivision;
+	}
+	else
+	{
+		p_canAskAlways = true;
+		p_canAskClickDivision = true;
+	}
 }
 
 void division::setName(const QString &name)

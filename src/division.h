@@ -19,14 +19,14 @@ class division
 	public:
 		division();
 		
-		bool canAsk() const;
+		bool canAsk(bool clickDivisionMode) const;
 		QString getName() const;
 		QRgb getRGB() const;
 		QString getFlagFile() const;
 		QString getCapital() const;
 		
 		void setCapital(const QString &name);
-		void setIgnore(bool b);
+		void setIgnore(bool ignore, bool canAskClickDivision);
 		void setName(const QString &name);
 		void setRGB(int r, int g, int b);
 		bool setFlagFile(const QString &path);
@@ -34,7 +34,7 @@ class division
 	private:
 		QString p_name, p_flagFile, p_capital;
 		QRgb p_color;
-		bool p_canAsk;
+		bool p_canAskAlways, p_canAskClickDivision;
 };
 
 #endif

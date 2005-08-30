@@ -210,7 +210,7 @@
 	</division>
 	<division>
 		<name>Beijing</name>
-		<capital>Beijing</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>35</red>
 			<green>236</green>
@@ -219,7 +219,7 @@
 	</division>
 	<division>
 		<name>Chongqing</name>
-		<capital>Chongqing</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>255</red>
 			<green>161</green>
@@ -408,7 +408,7 @@
 	</division>
 	<division>
 		<name>Shanghai</name>
-		<capital>Shanghai</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>255</red>
 			<green>182</green>
@@ -435,7 +435,7 @@
 	</division>
 	<division>
 		<name>Tianjin</name>
-		<capital>Tianjin</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>217</red>
 			<green>255</green>
@@ -480,7 +480,7 @@
 	</division>
 	<division>
 		<name>Hong Kong</name>
-		<capital>Hong Kong</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>255</red>
 			<green>181</green>
@@ -489,7 +489,7 @@
 	</division>
 	<division>
 		<name>Macao</name>
-		<capital>Macao</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>238</red>
 			<green>255</green>
