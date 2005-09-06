@@ -23,20 +23,20 @@
 mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_popupManager(this), p_asker(asker), p_firstShow(true)
 {
 	QGridLayout *lay = new QGridLayout(this, 2, 2);
-	
+
 	p_mapWidget = new mapWidget(this);
 	lay -> addWidget(p_mapWidget, 0, 0);
-	
+
 	p_hsb = new QScrollBar(Horizontal, this);
 	lay -> addWidget(p_hsb, 1, 0);
 	p_vsb = new QScrollBar(Vertical, this);
 	lay -> addWidget(p_vsb, 0, 1);
-	
+
 	lay -> setRowStretch(2, 1);
 	lay -> setColStretch(2, 1);
-	
+
 	p_shouldClearPopup = false;
-	
+
 	connect(p_mapWidget, SIGNAL(clicked(QRgb, const QPoint&)), this, SLOT(handleMapClick(QRgb, const QPoint&)));
 	connect(p_mapWidget, SIGNAL(setMoveActionChecked(bool)), this, SIGNAL(setMoveActionChecked(bool)));
 	connect(p_mapWidget, SIGNAL(setZoomActionChecked(bool)), this, SIGNAL(setZoomActionChecked(bool)));
@@ -45,10 +45,10 @@ mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count
 	connect(p_mapWidget, SIGNAL(updatePosition(int, int)), this, SLOT(setScrollBarsPosition(int, int)));
 	connect(p_mapWidget, SIGNAL(updateVisibleSize(int, int)), this, SLOT(setScrollBarsVisibleSize(int, int)));
 	connect(p_mapWidget, SIGNAL(updateMaximumSize(int, int)), this, SLOT(setScrollBarsMaximumSize(int, int)));
-	
+
 	connect(p_hsb, SIGNAL(valueChanged(int)), p_mapWidget, SLOT(updateHPosition(int)));
 	connect(p_vsb, SIGNAL(valueChanged(int)), p_mapWidget, SLOT(updateVPosition(int)));
-	
+
 	if (asker)
 	{
 		QBoxLayout *vbl = dynamic_cast<QBoxLayout*>(w -> layout());
@@ -119,7 +119,7 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 			flagFile = p_map -> getDivisionFlagFile(aux);
 			cap = i18n(p_map -> getFileName().utf8(), cap.utf8());
 		}
-		
+
 		aux = i18n(p_map -> getFileName().utf8(), aux.utf8());
 
 		if (!flagFile.isEmpty()) p_popupManager.show(aux, cap, p, flagFile);
@@ -170,7 +170,7 @@ void mapAsker::setScrollBarsMaximumSize(int w, int h)
 
 void mapAsker::nextQuestionHook(const QString &division)
 {
-	QString sw = i18n("If your language is able of using a translation of Please click on:\n%1 where %1 is the name of the current division, please translate this message to 1, if not translate it to 0. If you translate this message to 0 you will need to translate all the Please click on:\nDivisionNameHere messages, if you translate this message to 1 this messages will not be used so you can translate them to - if you want, that way statistics will not hurt you", "0");
+	QString sw = i18n("If your language is able of using a translation of Please click on: %1, where %1 is the name of the current division, please translate this message to 1, if not translate it to 0. If you translate this message to 0 you will need to translate all the Please click on: DivisionNameHere messages, if you translate this message to 1 this messages will not be used so you can translate them to - if you want, that way statistics will not hurt you", "0");
 	if (sw == "1")
 	{
 		QString divisionName = i18n(p_map -> getFileName().utf8(), division.utf8());
