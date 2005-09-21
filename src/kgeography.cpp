@@ -21,7 +21,6 @@
 #include <qlayout.h>
 #include <qsize.h>
 #include <qtimer.h>
-#include <qwhatsthis.h>
 
 #include "answersdialog.h"
 #include "capitaldivisionasker.h"
@@ -53,17 +52,17 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	p_currentMap = new QLabel(leftWidget);
 	p_currentMap -> setAlignment(Qt::AlignCenter);
 	p_consult = new KPushButton(i18n("&Browse Map"), leftWidget);
-	QWhatsThis::add(p_consult, i18n("In this section left click on any part of the map to learn about the divisions" ));
+	p_consult->setWhatsThis(i18n("In this section left click on any part of the map to learn about the divisions" ));
 	p_askMap = new KPushButton(i18n("&Click Division in Map..."), leftWidget);
-	QWhatsThis::add(p_askMap, i18n("In this challenge you are given a division name on the left under the menu and you must find it on the map and click on it"));
+	p_askMap->setWhatsThis(i18n("In this challenge you are given a division name on the left under the menu and you must find it on the map and click on it"));
 	p_askCapitalDivisions = new KPushButton(i18n("Guess Division From Its &Capital..."), leftWidget);
-	QWhatsThis::add(p_askCapitalDivisions, i18n("In this quiz you have to guess the division name given its capital"));
+	p_askCapitalDivisions->setWhatsThis(i18n("In this quiz you have to guess the division name given its capital"));
 	p_askDivisionCapitals = new KPushButton(i18n("Guess Capital of &Division..."), leftWidget);
-	QWhatsThis::add(p_askDivisionCapitals, i18n("In this quiz you have to guess the capital of a given division name"));
+	p_askDivisionCapitals->setWhatsThis(i18n("In this quiz you have to guess the capital of a given division name"));
 	p_askFlagDivisions = new KPushButton(i18n("&Guess Division From Its Flag..."), leftWidget);
-	QWhatsThis::add(p_askFlagDivisions, i18n("In this quiz you have to guess the division name given its flag"));
+	p_askFlagDivisions->setWhatsThis(i18n("In this quiz you have to guess the division name given its flag"));
 	p_askDivisionFlags = new KPushButton(i18n("G&uess Flag of Division..."), leftWidget);
-	QWhatsThis::add(p_askDivisionFlags, i18n("In this quiz you have to guess the flag of a division given its name"));
+	p_askDivisionFlags->setWhatsThis(i18n("In this quiz you have to guess the flag of a division given its name"));
 	p_underLeftWidget = new QWidget(leftWidget);
 	QVBoxLayout *underLeftWidgetLayout = new QVBoxLayout(p_underLeftWidget);
 	underLeftWidgetLayout -> layout() -> setSpacing(KDialog::spacingHint());
