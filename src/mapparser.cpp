@@ -25,7 +25,7 @@ bool mapReader::parseMap(const QString &path)
 	QString aux;
 	p_map = new KGmap();
 	p_map -> setFile(path);
-	aux = path.left(path.findRev('/') + 1); // aux = path but without the file name
+	aux = path.left(path.lastIndexOf('/') + 1); // aux = path but without the file name
 	mapParser handler(p_map, aux);
 	QFile xmlFile(path);
 	if (xmlFile.exists())
@@ -238,7 +238,7 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 bool mapParser::characters(const QString &ch)
 {
 	QString aux;
-	if (ch.simplifyWhiteSpace().length() == 0) return true;
+	if (ch.simplified().length() == 0) return true;
 	aux = getPreviousTag();
 	if (aux == "mapFile" || aux == "name" || aux == "red" || aux == "green" || aux == "blue" || aux == "ignore" || aux == "flag" || aux == "capital")
 	{
@@ -270,10 +270,10 @@ QString mapParser::errorString()
 
 QString mapParser::getPreviousTag() const
 {
-	return p_previousTags.right(p_previousTags.length() - p_previousTags.findRev(':') - 1);
+	return p_previousTags.right(p_previousTags.length() - p_previousTags.lastIndexOf(':') - 1);
 }
 
 void mapParser::removeLastTag()
 {
-	p_previousTags = p_previousTags.left(p_previousTags.findRev(':'));
+	p_previousTags = p_previousTags.left(p_previousTags.lastIndexOf(':'));
 }

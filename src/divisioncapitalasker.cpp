@@ -28,19 +28,19 @@ bool divisionCapitalAsker::nextBoxAskerQuestionHook(const QString &division, int
 		QString sw = i18n("If your language is able of using a translation of The capital of %1 is... where %1 is the name of the current division, please translate this message to 1, if not translate it to 0. If you translate this message to 0 you will need to translate all the The capital of DivisionNameHere is... messages, if you translate this message to 1 this messages will not be used so you can translate them to - if you want, that way statistics will not hurt you", "0");
 		if (sw == "1")
 		{
-			QString divisionName = i18n(p_map -> getFileName().utf8(), division.utf8());
+			QString divisionName = i18n(p_map -> getFileName().toUtf8(), division.toUtf8());
 			QString text = i18n("The capital of %1 is...");
 			setQuestion(text.arg(divisionName));
 		}
 		else
 		{
 			QString s = QString("The capital of %1 is...").arg(division);
-			setQuestion(i18n(p_map -> getFileName().utf8(), s.utf8()));
+			setQuestion(i18n(p_map -> getFileName().toUtf8(), s.toUtf8()));
 		}
-		p_currentAnswer.setQuestion(i18n(p_map -> getFileName().utf8(), division.utf8()));
+		p_currentAnswer.setQuestion(i18n(p_map -> getFileName().toUtf8(), division.toUtf8()));
 		p_capital = p_map -> getDivisionCapital(division);
-		p_currentAnswer.setCorrectAnswer(i18n(p_map -> getFileName().utf8(), p_capital.utf8()));
-		p_rb[i] -> setText(i18n(p_map -> getFileName().utf8(), p_capital.utf8()));
+		p_currentAnswer.setCorrectAnswer(i18n(p_map -> getFileName().toUtf8(), p_capital.toUtf8()));
+		p_rb[i] -> setText(i18n(p_map -> getFileName().toUtf8(), p_capital.toUtf8()));
 		b = true;
 	}
 	else
@@ -56,7 +56,7 @@ bool divisionCapitalAsker::nextBoxAskerQuestionHook(const QString &division, int
 		// Moss
 		if (capital != p_capital)
 		{
-			p_rb[i] -> setText(i18n(p_map -> getFileName().utf8(), capital.utf8()));
+			p_rb[i] -> setText(i18n(p_map -> getFileName().toUtf8(), capital.toUtf8()));
 			b = true;
 		}
 		else b = false;

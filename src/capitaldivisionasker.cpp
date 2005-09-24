@@ -26,22 +26,22 @@ bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int
 	if (isAnswer)
 	{
 		p_capital = p_map -> getDivisionCapital(division);
-		p_currentAnswer.setQuestion(i18n(p_map -> getFileName().utf8(), p_capital.utf8()));
-		p_currentAnswer.setCorrectAnswer(i18n(p_map -> getFileName().utf8(), division.utf8()));
+		p_currentAnswer.setQuestion(i18n(p_map -> getFileName().toUtf8(), p_capital.toUtf8()));
+		p_currentAnswer.setCorrectAnswer(i18n(p_map -> getFileName().toUtf8(), division.toUtf8()));
 
 		QString sw = i18n("If your language is able of using a translation of %1 is the capital of... where %1 is the name of the capital of the current division, please translate this message to 1, if not translate it to 0. If you translate this message to 0 you will need to translate all the CapitalNameHere is the capital of... messages, if you translate this message to 1 this messages will not be used so you can translate them to - if you want, that way statistics will not hurt you", "0");
 		if (sw == "1")
 		{
-			QString capitalName = i18n(p_map -> getFileName().utf8(), p_capital.utf8());
+			QString capitalName = i18n(p_map -> getFileName().toUtf8(), p_capital.toUtf8());
 			QString text = i18n("%1 is the capital of...");
 			setQuestion(text.arg(capitalName));
 		}
 		else
 		{
 			QString s = QString("%1 is the capital of...").arg(p_capital);
-			setQuestion(i18n(p_map -> getFileName().utf8(), s.utf8()));
+			setQuestion(i18n(p_map -> getFileName().toUtf8(), s.toUtf8()));
 		}
-		p_rb[i] -> setText(i18n(p_map -> getFileName().utf8(), division.utf8()));
+		p_rb[i] -> setText(i18n(p_map -> getFileName().toUtf8(), division.toUtf8()));
 		b = true;
 	}
 	else
@@ -55,7 +55,7 @@ bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int
 		// Hedmark
 		if (p_map -> getDivisionCapital(division) != p_capital)
 		{
-			p_rb[i] -> setText(i18n(p_map -> getFileName().utf8(), division.utf8()));
+			p_rb[i] -> setText(i18n(p_map -> getFileName().toUtf8(), division.toUtf8()));
 			b = true;
 		}
 		else b = false;
