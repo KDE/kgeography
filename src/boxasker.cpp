@@ -10,10 +10,10 @@
 
 #include <stdlib.h> // for RAND_MAX
 
-#include <kaccelmanager.h>
-#include <kapplication.h>
+#include <kacceleratormanager.h>
 #include <klocale.h>
 #include <kpushbutton.h>
+#include <krandom.h>
 
 #include <qbuttongroup.h>
 #include <qgroupbox.h>
@@ -72,7 +72,7 @@ void boxAsker::nextQuestionHook(const QString &division)
 	auxList << division;
 		
 	// we put the division in a random place
-	p_position = (int)((float)4 * kapp -> random() / (RAND_MAX + 1.0));
+	p_position = (int)((float)4 * KRandom::random() / (RAND_MAX + 1.0));
 	nextBoxAskerQuestionHook(division, p_position, true);
 		
 	// we put other 3 names

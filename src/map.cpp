@@ -10,8 +10,8 @@
 
 #include <stdlib.h> // for RAND_MAX
 
-#include <kapplication.h>
 #include <klocale.h>
+#include <krandom.h>
 
 #include <qfile.h>
 #include <qfileinfo.h>
@@ -112,7 +112,7 @@ QString KGmap::getName() const
 QString KGmap::getRandomDivision(bool clickDivisionMode) const
 {
 	QList<division*> aux;
-	int i = (int)((float)p_nameMap.size() * kapp -> random() / (RAND_MAX + 1.0));
+	int i = (int)((float)p_nameMap.size() * KRandom::random() / (RAND_MAX + 1.0));
 	aux = p_nameMap.values();
 	if (!aux[i] -> canAsk(clickDivisionMode)) return getRandomDivision(clickDivisionMode);
 	else return aux[i] -> getName();
