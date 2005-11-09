@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	if (!d.exists()) return 2;
 	
 	QFile *output = new QFile(argv[2]);
-	output->open(IO_WriteOnly | IO_Truncate);
+	output->open(QIODevice::WriteOnly | QIODevice::Truncate);
 	QTextStream os(output);
 	os.setEncoding(QTextStream::UnicodeUTF8);
 	
@@ -38,8 +38,8 @@ int main(int argc, char *argv[])
 
 	for (it = files.begin(); it != files.end(); ++it)
 	{
-		QFile *f = new QFile(d.absPath() + "/" + *it);
-		f -> open(IO_ReadOnly);
+		QFile *f = new QFile(d.absolutePath() + "/" + *it);
+		f -> open(QIODevice::ReadOnly);
 		dd.setContent(f);
 		
 		QDomNode n, n2, n3, n4, n5;

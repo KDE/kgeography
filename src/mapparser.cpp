@@ -202,15 +202,15 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 	else if (aux == "ignore")
 	{
 		p_divisionIgnoreSet = true;
-		if (p_contents.lower() == "yes")
+		if (p_contents.toLower() == "yes")
 		{
 			p_division -> setIgnore(true, false);
 		}
-		else if (p_contents.lower() == "no")
+		else if (p_contents.toLower() == "no")
 		{
 			p_division -> setIgnore(false, false);
 		}
-		else if (p_contents.lower() == "allowclickmode")
+		else if (p_contents.toLower() == "allowclickmode")
 		{
 			p_division -> setIgnore(true, true);
 		}
