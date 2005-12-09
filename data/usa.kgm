@@ -130,6 +130,7 @@
 	<division>
 		<name>Alabama</name>
 		<capital>Montgomery</capital>
+		<flag>usa_alabama.png</flag>
 		<color>
 			<red>130</red>
 			<green>130</green>
@@ -139,6 +140,7 @@
 	<division>
 		<name>Alaska</name>
 		<capital>Juneau</capital>
+		<flag>usa_alaska.png</flag>
 		<color>
 			<red>130</red>
 			<green>130</green>
@@ -148,6 +150,7 @@
 	<division>
 		<name>Arizona</name>
 		<capital>Phoenix</capital>
+                <flag>usa_arizona.png</flag>
 		<color>
 			<red>130</red>
 			<green>130</green>
@@ -157,6 +160,7 @@
 	<division>
 		<name>Arkansas</name>
 		<capital>Little Rock</capital>
+                <flag>usa_arkansas.png</flag>
 		<color>
 			<red>130</red>
 			<green>130</green>
@@ -166,6 +170,7 @@
 	<division>
 		<name>California</name>
 		<capital>Sacramento</capital>
+                <flag>usa_california.png</flag>
 		<color>
 			<red>130</red>
 			<green>170</green>
@@ -175,6 +180,7 @@
 	<division>
 		<name>Colorado</name>
 		<capital>Denver</capital>
+                <flag>usa_colorado.png</flag>
 		<color>
 			<red>130</red>
 			<green>170</green>
@@ -184,6 +190,7 @@
 	<division>
 		<name>Connecticut</name>
 		<capital>Hartford</capital>
+                <flag>usa_connecticut.png</flag>
 		<color>
 			<red>130</red>
 			<green>170</green>
@@ -193,6 +200,7 @@
 	<division>
 		<name>Delaware</name>
 		<capital>Dover</capital>
+                <flag>usa_delaware.png</flag>
 		<color>
 			<red>130</red>
 			<green>170</green>
@@ -202,6 +210,7 @@
 	<division>
 		<name>Florida</name>
 		<capital>Tallahassee</capital>
+                <flag>usa_florida.png</flag>
 		<color>
 			<red>130</red>
 			<green>210</green>
@@ -211,6 +220,7 @@
 	<division>
 		<name>Georgia</name>
 		<capital>Atlanta</capital>
+                <flag>usa_georgia.png</flag>
 		<color>
 			<red>130</red>
 			<green>210</green>
@@ -220,6 +230,7 @@
 	<division>
 		<name>Hawaii</name>
 		<capital>Honolulu</capital>
+                <flag>usa_hawaii.png</flag>
 		<color>
 			<red>130</red>
 			<green>210</green>
@@ -229,6 +240,7 @@
 	<division>
 		<name>Idaho</name>
 		<capital>Boise</capital>
+                <flag>usa_idaho.png</flag>
 		<color>
 			<red>130</red>
 			<green>210</green>
@@ -238,6 +250,7 @@
 	<division>
 		<name>Illinois</name>
 		<capital>Springfield</capital>
+                <flag>usa_illinois.png</flag>
 		<color>
 			<red>130</red>
 			<green>250</green>
@@ -247,6 +260,7 @@
 	<division>
 		<name>Indiana</name>
 		<capital>Indianapolis</capital>
+                <flag>usa_indiana.png</flag>
 		<color>
 			<red>130</red>
 			<green>250</green>
@@ -256,6 +270,7 @@
 	<division>
 		<name>Iowa</name>
 		<capital>Des Moines</capital>
+                <flag>usa_iowa.png</flag>
 		<color>
 			<red>130</red>
 			<green>250</green>
@@ -265,6 +280,7 @@
 	<division>
 		<name>Kansas</name>
 		<capital>Topeka</capital>
+                <flag>usa_kansas.png</flag>
 		<color>
 			<red>130</red>
 			<green>250</green>
@@ -274,6 +290,7 @@
 	<division>
 		<name>Kentucky</name>
 		<capital>Frankfort</capital>
+                <flag>usa_kentucky.png</flag>
 		<color>
 			<red>170</red>
 			<green>130</green>
@@ -283,6 +300,7 @@
 	<division>
 		<name>Louisiana</name>
 		<capital>Baton Rouge</capital>
+                <flag>usa_louisiana.png</flag>
 		<color>
 			<red>170</red>
 			<green>130</green>
@@ -292,6 +310,7 @@
 	<division>
 		<name>Maine</name>
 		<capital>Augusta</capital>
+                <flag>usa_maine.png</flag>
 		<color>
 			<red>170</red>
 			<green>130</green>
@@ -301,6 +320,7 @@
 	<division>
 		<name>Maryland</name>
 		<capital>Annapolis</capital>
+                <flag>usa_maryland.png</flag>
 		<color>
 			<red>170</red>
 			<green>130</green>
@@ -310,6 +330,7 @@
 	<division>
 		<name>Massachusetts</name>
 		<capital>Boston</capital>
+                <flag>usa_massachusetts.png</flag>
 		<color>
 			<red>170</red>
 			<green>170</green>
@@ -319,6 +340,7 @@
 	<division>
 		<name>Michigan</name>
 		<capital>Lansing</capital>
+                <flag>usa_michigan.png</flag>
 		<color>
 			<red>170</red>
 			<green>170</green>
@@ -328,6 +350,7 @@
 	<division>
 		<name>Minnesota</name>
 		<capital>Saint Paul</capital>
+                <flag>usa_minnesota.png</flag>
 		<color>
 			<red>170</red>
 			<green>170</green>
@@ -337,6 +360,7 @@
 	<division>
 		<name>Mississippi</name>
 		<capital>Jackson</capital>
+                <flag>usa_mississippi.png</flag>
 		<color>
 			<red>170</red>
 			<green>170</green>
@@ -346,6 +370,7 @@
 	<division>
 		<name>Missouri</name>
 		<capital>Jefferson City</capital>
+                <flag>usa_missouri.png</flag>
 		<color>
 			<red>170</red>
 			<green>210</green>
@@ -355,6 +380,7 @@
 	<division>
 		<name>Montana</name>
 		<capital>Helena</capital>
+                <flag>usa_montana.png</flag>
 		<color>
 			<red>170</red>
 			<green>210</green>
@@ -364,6 +390,7 @@
 	<division>
 		<name>Nebraska</name>
 		<capital>Lincoln</capital>
+                <flag>usa_nebraska.png</flag>
 		<color>
 			<red>170</red>
 			<green>210</green>
@@ -373,6 +400,7 @@
 	<division>
 		<name>Nevada</name>
 		<capital>Carson City</capital>
+                <flag>usa_nevada.png</flag>
 		<color>
 			<red>170</red>
 			<green>210</green>
@@ -382,6 +410,7 @@
 	<division>
 		<name>New Hampshire</name>
 		<capital>Concord</capital>
+                <flag>usa_new_hampshire.png</flag>
 		<color>
 			<red>170</red>
 			<green>250</green>
@@ -391,6 +420,7 @@
 	<division>
 		<name>New Jersey</name>
 		<capital>Trenton</capital>
+                <flag>usa_new_jersey.png</flag>
 		<color>
 			<red>170</red>
 			<green>250</green>
@@ -400,6 +430,7 @@
 	<division>
 		<name>New Mexico</name>
 		<capital>Santa Fe</capital>
+                <flag>usa_new_mexico.png</flag>
 		<color>
 			<red>170</red>
 			<green>250</green>
@@ -409,6 +440,7 @@
 	<division>
 		<name>New York</name>
 		<capital>Albany</capital>
+                <flag>usa_new_york.png</flag>
 		<color>
 			<red>170</red>
 			<green>250</green>
@@ -418,6 +450,7 @@
 	<division>
 		<name>North Carolina</name>
 		<capital>Raleigh</capital>
+                <flag>usa_north_carolina.png</flag>
 		<color>
 			<red>210</red>
 			<green>130</green>
@@ -427,6 +460,7 @@
 	<division>
 		<name>North Dakota</name>
 		<capital>Bismarck</capital>
+                <flag>usa_north_dakota.png</flag>
 		<color>
 			<red>210</red>
 			<green>130</green>
@@ -436,6 +470,7 @@
 	<division>
 		<name>Ohio</name>
 		<capital>Columbus</capital>
+                <flag>usa_ohio.png</flag>
 		<color>
 			<red>210</red>
 			<green>130</green>
@@ -445,6 +480,7 @@
 	<division>
 		<name>Oklahoma</name>
 		<capital>Oklahoma City</capital>
+                <flag>usa_oklahoma.png</flag>
 		<color>
 			<red>210</red>
 			<green>130</green>
@@ -454,6 +490,7 @@
 	<division>
 		<name>Oregon</name>
 		<capital>Salem</capital>
+                <flag>usa_oregon.png</flag>
 		<color>
 			<red>210</red>
 			<green>170</green>
@@ -463,6 +500,7 @@
 	<division>
 		<name>Pennsylvania</name>
 		<capital>Harrisburg</capital>
+                <flag>usa_pennsylvania.png</flag>
 		<color>
 			<red>210</red>
 			<green>170</green>
@@ -472,6 +510,7 @@
 	<division>
 		<name>Rhode Island</name>
 		<capital>Providence</capital>
+                <flag>usa_rhode_island.png</flag>
 		<color>
 			<red>210</red>
 			<green>170</green>
@@ -481,6 +520,7 @@
 	<division>
 		<name>South Carolina</name>
 		<capital>Columbia</capital>
+                <flag>usa_south_carolina.png</flag>
 		<color>
 			<red>210</red>
 			<green>170</green>
@@ -490,6 +530,7 @@
 	<division>
 		<name>South Dakota</name>
 		<capital>Pierre</capital>
+                <flag>usa_south_dakota.png</flag>
 		<color>
 			<red>210</red>
 			<green>210</green>
@@ -499,6 +540,7 @@
 	<division>
 		<name>Tennessee</name>
 		<capital>Nashville</capital>
+                <flag>usa_tennessee.png</flag>
 		<color>
 			<red>210</red>
 			<green>210</green>
@@ -508,6 +550,7 @@
 	<division>
 		<name>Texas</name>
 		<capital>Austin</capital>
+                <flag>usa_texas.png</flag>
 		<color>
 			<red>210</red>
 			<green>210</green>
@@ -517,6 +560,7 @@
 	<division>
 		<name>Utah</name>
 		<capital>Salt Lake City</capital>
+                <flag>usa_utah.png</flag>
 		<color>
 			<red>210</red>
 			<green>210</green>
@@ -526,6 +570,7 @@
 	<division>
 		<name>Vermont</name>
 		<capital>Montpelier</capital>
+                <flag>usa_vermont.png</flag>
 		<color>
 			<red>210</red>
 			<green>250</green>
@@ -535,6 +580,7 @@
 	<division>
 		<name>Virginia</name>
 		<capital>Richmond</capital>
+                <flag>usa_virginia.png</flag>
 		<color>
 			<red>210</red>
 			<green>250</green>
@@ -544,6 +590,7 @@
 	<division>
 		<name>Washington</name>
 		<capital>Olympia</capital>
+                <flag>usa_washington.png</flag>
 		<color>
 			<red>210</red>
 			<green>250</green>
@@ -553,6 +600,7 @@
 	<division>
 		<name>West Virginia</name>
 		<capital>Charleston</capital>
+                <flag>usa_west_virginia.png</flag>
 		<color>
 			<red>210</red>
 			<green>250</green>
@@ -562,6 +610,7 @@
 	<division>
 		<name>Wisconsin</name>
 		<capital>Madison</capital>
+                <flag>usa_wisconsin.png</flag>
 		<color>
 			<red>250</red>
 			<green>130</green>
@@ -571,6 +620,7 @@
 	<division>
 		<name>Wyoming</name>
 		<capital>Cheyenne</capital>
+                <flag>usa_wyoming.png</flag>
 		<color>
 			<red>250</red>
 			<green>130</green>
