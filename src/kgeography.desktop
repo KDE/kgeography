@@ -61,5 +61,6 @@ Comment[zh_CN]=地理学习程序
 Exec=kgeography
 Icon=kgeography
 Type=Application
+DocPath=kgeography/index.html
 Terminal=false
 Categories=Qt;KDE;Education;
