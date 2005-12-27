@@ -10,5 +10,6 @@ Comment[et]=Geograafia õpiprogramm
 Exec=kgeography
 Icon=kgeography
 Type=Application
+DocPath=kgeography/index.html
 Terminal=false
 Categories=Qt;KDE;Education;
