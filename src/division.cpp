@@ -16,7 +16,7 @@ division::division()
 {
 	p_canAskAlways = true;
 	p_canAskClickDivision = true;
-	p_flagFile = QString::null;
+	p_flagFile = QString();
 }
 
 bool division::canAsk(bool clickDivisionMode) const

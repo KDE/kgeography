@@ -19,7 +19,7 @@ Q_OBJECT
 	friend class popupManager;
 	
 	private:
-		myPopup(QWidget *parent, const QString &text, const QString &text2 = QString::null, const QString &flagFile = QString::null);
+		myPopup(QWidget *parent, const QString &text, const QString &text2 = QString(), const QString &flagFile = QString());
 	
 	signals:
 		void deleteMe();
