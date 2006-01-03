@@ -231,7 +231,7 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 	}
 	else b = false;
 	removeLastTag();
-	p_contents = QString();
+	p_contents.clear();
 	return b;
 }
 
