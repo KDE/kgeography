@@ -15,6 +15,7 @@
 #include <kmessagebox.h>
 #include <kpushbutton.h>
 #include <kstdaction.h>
+#include <ktoolbar.h>
 #include <kmenubar.h>
 
 #include <qlabel.h>
