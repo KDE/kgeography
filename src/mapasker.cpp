@@ -159,9 +159,9 @@ void mapAsker::setScrollBarsPosition(int x, int y)
 
 void mapAsker::setScrollBarsVisibleSize(int w, int h)
 {
-	p_hsb -> setMaxValue(p_hsbms - w);
+	p_hsb -> setMaximum(p_hsbms - w);
 	p_hsb -> setPageStep(w);
-	p_vsb -> setMaxValue(p_vsbms - h);
+	p_vsb -> setMaximum(p_vsbms - h);
 	p_vsb -> setPageStep(h);
 }
 
