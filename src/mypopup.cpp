@@ -63,4 +63,4 @@ void myPopup::mousePressEvent(QMouseEvent *)
 	emit deleteMe();
 }
 
-			  //#include "mypopup.moc"
+#include "mypopup.moc"
