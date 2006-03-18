@@ -1,0 +1,220 @@
+<map>
+	<mapFile>sweden.png</mapFile>
+	<name>Sweden by Counties</name>
+	<division>
+		<name>County Border</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</color>
+	</division>
+	<division>
+		<name>CoastLine</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>149</red>
+			<green>165</green>
+			<blue>167</blue>
+		</color>
+	</division>
+	<division>
+		<name>Not a Nation</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>255</red>
+			<green>255</green>
+			<blue>255</blue>
+		</color>
+	</division>
+	<division>
+		<name>Stockholm County</name>
+		<capital>Stockholm</capital>
+		<color>
+			<red>191</red>
+			<green>28</green>
+			<blue>28</blue>
+		</color>
+	</division>
+	<division>
+		<name>Västerbotten County</name>
+		<capital>Umeå</capital>
+		<color>
+			<red>191</red>
+			<green>183</green>
+			<blue>28</blue>
+		</color>
+	</division>
+	<division>
+		<name>Norrbotten County</name>
+		<capital>Luleå</capital>
+		<color>
+			<red>43</red>
+			<green>191</green>
+			<blue>28</blue>
+		</color>
+	</division>
+	<division>
+		<name>Uppsala County</name>
+		<capital>Uppsala</capital>
+		<color>
+			<red>28</red>
+			<green>191</green>
+			<blue>169</blue>
+		</color>
+	</division>
+	<division>
+		<name>Södermanland County</name>
+		<capital>Nyköping</capital>
+		<color>
+			<red>28</red>
+			<green>58</green>
+			<blue>191</blue>
+		</color>
+	</division>
+	<division>
+		<name>Östergötland County</name>
+		<capital>Linköping</capital>
+		<color>
+			<red>154</red>
+			<green>28</green>
+			<blue>191</blue>
+		</color>
+	</division>
+	<division>
+		<name>Jönköping County</name>
+		<capital>Jönköping</capital>
+		<color>
+			<red>191</red>
+			<green>28</green>
+			<blue>73</blue>
+		</color>
+	</division>
+	<division>
+		<name>Kronoberg County</name>
+		<capital>Växjö</capital>
+		<color>
+			<red>191</red>
+			<green>139</green>
+			<blue>28</blue>
+		</color>
+	</division>
+	<division>
+		<name>Kalmar County</name>
+		<capital>Kalmar</capital>
+		<color>
+			<red>87</red>
+			<green>191</green>
+			<blue>28</blue>
+		</color>
+	</division>
+	<division>
+		<name>Gotland County</name>
+		<capital>Visby</capital>
+		<color>
+			<red>28</red>
+			<green>191</green>
+			<blue>124</blue>
+		</color>
+	</division>
+	<division>
+		<name>Blekinge County</name>
+		<capital>Blekinge</capital>
+		<color>
+			<red>28</red>
+			<green>102</green>
+			<blue>191</blue>
+		</color>
+	</division>
+	<division>
+		<name>Skåne County</name>
+		<capital>Malmö</capital>
+		<color>
+			<red>109</red>
+			<green>28</green>
+			<blue>191</blue>
+		</color>
+	</division>
+	<division>
+		<name>Halland County</name>
+		<capital>Halmstad</capital>
+		<color>
+			<red>191</red>
+			<green>28</green>
+			<blue>117</blue>
+		</color>
+	</division>
+	<division>
+		<name>Västra Götaland County</name>
+		<capital>Göteborg</capital>
+		<color>
+			<red>191</red>
+			<green>95</green>
+			<blue>28</blue>
+		</color>
+	</division>
+	<division>
+		<name>Värmland County</name>
+		<capital>Karlstad</capital>
+		<color>
+			<red>132</red>
+			<green>191</green>
+			<blue>28</blue>
+		</color>
+	</division>
+	<division>
+		<name>Örebro County</name>
+		<capital>Örebro</capital>
+		<color>
+			<red>28</red>
+			<green>191</green>
+			<blue>80</blue>
+		</color>
+	</division>
+	<division>
+		<name>Västmanland County</name>
+		<capital>Västerås</capital>
+		<color>
+			<red>28</red>
+			<green>146</green>
+			<blue>191</blue>
+		</color>
+	</division>
+	<division>
+		<name>Dalarna County</name>
+		<capital>Falun</capital>
+		<color>
+			<red>65</red>
+			<green>28</green>
+			<blue>191</blue>
+		</color>
+	</division>
+	<division>
+		<name>Gävleborg County</name>
+		<capital>Gävle</capital>
+		<color>
+			<red>191</red>
+			<green>28</green>
+			<blue>161</blue>
+		</color>
+	</division>
+	<division>
+		<name>Västernorrland County</name>
+		<capital>Härnösand</capital>
+		<color>
+			<red>191</red>
+			<green>50</green>
+			<blue>28</blue>
+		</color>
+	</division>
+	<division>
+		<name>Jämtland County</name>
+		<capital>Östersund</capital>
+		<color>
+			<red>50</red>
+			<green>191</green>
+			<blue>28</blue>
+		</color>
+	</division>
+</map>
