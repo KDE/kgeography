@@ -8,4 +8,4 @@ kgeography_DATA = africa.png europe.png france.png germany.png ncamerica.png \
                   norway.kgm norway.png china.png china.kgm brazil.png brazil.kgm \
                   italyprovince.kgm italyprovince.png asia.png asia.kgm \
                   world.png world.kgm canada.png canada.kgm netherlands.png netherlands.kgm \
-                  hungary.kgm hungary.png sweden.kgm sweden.png
+                  hungary.kgm hungary.png sweden.kgm sweden.png japan.png japan.kgm
