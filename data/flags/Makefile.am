@@ -64,5 +64,6 @@ flags_DATA = albania.png djibouti.png latvia.png saarland.png algeria.png \
              usa_pennsylvania.png usa_rhode_island.png usa_south_carolina.png \
              usa_south_dakota.png usa_tennessee.png usa_texas.png usa_utah.png \
              usa_vermont.png usa_virginia.png usa_washington.png \
-             usa_west_virginia.png usa_wisconsin.png usa_wyoming.png
+             usa_west_virginia.png usa_wisconsin.png usa_wyoming.png \
+             liechtenstein.png monaco.png
 
