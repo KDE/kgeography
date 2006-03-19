@@ -11,7 +11,7 @@
 #ifndef RESULTSWIDGET_H
 #define RESULTSWIDGET_H
 
-#include <kdialogbase.h>
+#include <kdialog.h>
 
 #include <qvector.h>
 
@@ -20,7 +20,7 @@ class QWidget;
 
 class userAnswer;
 
-class answersDialog : public KDialogBase
+class answersDialog : public KDialog
 {
 	public:
 		answersDialog(QWidget *parent, const QVector<userAnswer> &userAnswers, QString question, int correctAnswers);

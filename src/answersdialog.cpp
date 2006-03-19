@@ -17,7 +17,7 @@
 #include "answer.h"
 #include "answersdialog.h"
 
-answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAnswers, QString question, int correctAnswers) : KDialogBase(parent, 0, true, i18n("Your Answers Were"), Ok)
+answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAnswers, QString question, int correctAnswers) : KDialog(parent, i18n("Your Answers Were"), KDialog::Ok)
 {
 	QLabel *l1, *l2, *l3;
 	QFont boldFont, bigFont;

@@ -104,13 +104,10 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
 	
 	if (!p_correct)
 	{
-		QColor back, fore;
-		back = widgets[0] -> colorGroup().highlight();
-		fore = widgets[0] -> colorGroup().highlightedText();
 		for (int i = 0; i < 3; i++)
 		{
-			widgets[i] -> setPaletteBackgroundColor(back);
-			widgets[i] -> setPaletteForegroundColor(fore);
+			widgets[i] -> setBackgroundRole(QPalette::Highlight);
+			widgets[i] -> setForegroundRole(QPalette::HighlightedText);
 		}
 	}
 }

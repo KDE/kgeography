@@ -11,7 +11,7 @@
 #ifndef MAPCHOOSER_H
 #define MAPCHOOSER_H
 
-#include <kdialogbase.h>
+#include <kdialog.h>
 
 #include <qhash.h>
 
