@@ -108,6 +108,7 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
 		{
 			widgets[i] -> setBackgroundRole(QPalette::Highlight);
 			widgets[i] -> setForegroundRole(QPalette::HighlightedText);
+			widgets[i] -> setAutoFillBackground(true);
 		}
 	}
 }
