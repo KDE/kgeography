@@ -56,6 +56,7 @@ myPopup::myPopup(QWidget *parent, const QString &text, const QString &text2, con
 	setLineWidth(2);
 	
 	setFixedSize(sizeHint());
+	setAutoFillBackground(true);
 }
 
 void myPopup::mousePressEvent(QMouseEvent *)
