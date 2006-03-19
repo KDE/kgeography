@@ -36,7 +36,7 @@ class imageWidget : public QWidget
 		QPixmap pix;
 };
 
-mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Choose Map to Use"), KDialogBase::Ok | KDialogBase::Cancel, KDialogBase::Ok, true)
+mapChooser::mapChooser(QWidget *parent) : KDialog(parent, i18n("Choose Map to Use"), KDialog::Ok | KDialog::Cancel)
 {
 	QWidget *mainHB;
 	QHBoxLayout *mainHBLayout;
@@ -85,13 +85,14 @@ mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Cho
 	mapLay -> addWidget(p_image, 1, 1);
 	
 	connect(p_listBox, SIGNAL(currentTextChanged(const QString&)), this, SLOT(putImage(const QString&)));
-	connect(p_listBox, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(slotOk()));
+	connect(p_listBox, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(accept()));
 	
 	setMainWidget(mainHB);
 	
 	p_listBox -> sortItems();
 	if (p_listBox -> count() > 0) p_listBox -> setCurrentRow(0);
 	else enableButtonOK(false);
+	p_listBox -> setFocus();
 }
 
 mapChooser::~mapChooser()

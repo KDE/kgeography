@@ -22,7 +22,7 @@ class QListWidget;
 
 class imageWidget;
 
-class mapChooser : public KDialogBase
+class mapChooser : public KDialog
 {
 Q_OBJECT
 	public:
