@@ -31,7 +31,7 @@ kde4_add_kcfg_files(kgeography_SRCS settings.kcfgc )
 
 kde4_add_executable(kgeography ${kgeography_SRCS})
 
-target_link_libraries(kgeography  ${QT_AND_KDECORE_LIBS} kdeui )
+target_link_libraries(kgeography  ${KDE4_KDECORE_LIBS} kdeui )
 
 install_targets(/bin kgeography )
 
@@ -44,7 +44,7 @@ kde4_automoc(${script_SRCS})
 
 kde4_add_executable(script ${script_SRCS})
 
-target_link_libraries(script  ${QT_AND_KDECORE_LIBS} )
+target_link_libraries(script  ${KDE4_KDECORE_LIBS} )
 
 
 ########### install files ###############
