@@ -37,7 +37,7 @@ bool mapReader::parseMap(const QString &path)
 	}
 	else
 	{
-		p_error = i18n("%1 does not exist.").arg(path);
+		p_error = i18n("%1 does not exist.", path);
 	}
 	return false;
 }
@@ -74,19 +74,19 @@ bool mapParser::startElement(const QString&, const QString &name, const QString&
 	if (prev.isEmpty())
 	{
 		b = name == "map";
-		if (!b) p_error = i18n("The map description file should begin with the %1 tag").arg("map");
+		if (!b) p_error = i18n("The map description file should begin with the %1 tag", QString("map"));
 	}
 	else if (prev == "map")
 	{
 		if (name != "mapFile" && name != "name" && name != "division")
 		{
 			b = false;
-			p_error = i18n("%1 is not a valid tag inside tag %2. Valid tags are %3, %4 and %5").arg(name).arg(prev).arg("mapFile").arg("name").arg("division");
+			p_error = i18n("%1 is not a valid tag inside tag %2. Valid tags are %3, %4 and %5", name, prev, "mapFile", "name", "division");
 		}
 		else if ((name == "mapFile" && p_mapFileSet) || (name == "name" && p_mapNameSet))
 		{
 			b = false;
-			p_error = i18n("%1 tag has already been set").arg(name);
+			p_error = i18n("%1 tag has already been set", name);
 		}
 		p_colorSet = false;
 		if (name == "division")
@@ -102,21 +102,21 @@ bool mapParser::startElement(const QString&, const QString &name, const QString&
 			prev == "ignore")
 	{
 		b = false;
-		p_error = i18n("There can not be a tag inside %1 tag").arg(prev);
+		p_error = i18n("There can not be a tag inside %1 tag", prev);
 	}
 	else if (prev == "division")
 	{
 		if (name != "color" && name != "name" && name != "ignore" && name != "flag" && name != "capital")
 		{
 			b = false;
-			p_error = i18n("%1 is not a valid tag inside tag %2. Valid tags are %3, %4, %5, %6 and %7").arg(name).arg(prev).arg("color").arg("name").arg("ignore").arg("capital").arg("flag");
+			p_error = ki18n("%1 is not a valid tag inside tag %2. Valid tags are %3, %4, %5, %6 and %7").subs(name).subs(prev).subs("color").subs("name").subs("ignore").subs("capital").subs("flag").toString();
 		}
 		else if ((name == "name" && p_divisionNameSet) || (name == "color" && p_colorSet) ||
 		(name == "ignore" && p_divisionIgnoreSet) || (name == "flag" && p_flagFileSet) ||
 		(name == "capital" && p_capitalSet))
 		{
 			b = false;
-			p_error = i18n("%1 tag has already been set").arg(name);
+			p_error = i18n("%1 tag has already been set", name);
 		}
 		p_red = -1;
 		p_green = -1;
@@ -146,7 +146,7 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 	{
 		b = p_map -> setMapFile(p_path + p_contents);
 		p_mapFileSet = true;
-		if (!b) p_error = i18n("File %1 does not exist").arg(p_path + p_contents);
+		if (!b) p_error = i18n("File %1 does not exist", p_path + p_contents);
 	}
 	else if (aux == "division")
 	{
@@ -154,9 +154,9 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 		b = p_divisionNameSet;
 		if (!b) p_error = i18n("There is a division without name");
 		b = b && p_map -> addDivision(p_division);
-		if (!b) p_error = i18n("There is already either a division called %1 or a division with the same colors as %2").arg(p_division -> getName()).arg(p_division -> getName());
+		if (!b) p_error = i18n("There is already either a division called %1 or a division with the same colors as %2", p_division -> getName(), p_division -> getName());
 		b = b && (p_capitalSet || !p_division -> canAsk(false));
-		if (!b) p_error = i18n("Division %1 has no capital").arg(p_division -> getName());
+		if (!b) p_error = i18n("Division %1 has no capital", p_division -> getName());
 	}
 	else if (p_previousTags == ":map:division:name")
 	{
@@ -173,17 +173,17 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 		if (p_red == -1)
 		{
 			b = false;
-			p_error = i18n("Tag %1 has not the %2 tag.").arg("<color>").arg("<red>");
+			p_error = i18n("Tag %1 has not the %2 tag.", QString("<color>"), QString("<red>"));
 		}
 		else if (p_green == -1)
 		{
 			b = false;
-			p_error = i18n("Tag %1 has not the %2 tag.").arg("<color>").arg("<green>");
+			p_error = i18n("Tag %1 has not the %2 tag.", QString("<color>"), QString("<green>"));
 		}
 		else if (p_blue == -1)
 		{
 			b = false;
-			p_error = i18n("Tag %1 has not the %2 tag.").arg("<color>").arg("<blue>");
+			p_error = i18n("Tag %1 has not the %2 tag.", QString("<color>"), QString("<blue>"));
 		}
 		else p_colorSet = true;
 	}
@@ -217,14 +217,14 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 		else
 		{
 			b = false;
-			p_error = i18n("Invalid value in tag %1").arg("<ignore>");
+			p_error = i18n("Invalid value in tag %1", QString("<ignore>"));
 		}
 	}
 	else if (aux == "flag")
 	{
 		b = p_division -> setFlagFile(p_path + "flags/" + p_contents);
 		p_flagFileSet = true;
-		if (!b) p_error = i18n("Could not find flag file %1").arg(p_path + "flags/" + p_contents);
+		if (!b) p_error = i18n("Could not find flag file %1", p_path + "flags/" + p_contents);
 	}
 	else if (aux == "map")
 	{
@@ -258,7 +258,7 @@ bool mapParser::endDocument()
 	}
 	else if (!p_mapNameSet) aux = "name";
 	else if (!p_mapFileSet) aux = "mapFile";
-	p_error = i18n("Tag %1 is missing.").arg(aux);
+	p_error = i18n("Tag %1 is missing.", aux);
 	return false;
 }
 

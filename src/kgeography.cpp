@@ -128,7 +128,7 @@ void kgeography::showEvent(QShowEvent *)
 			}
 			else
 			{
-				KMessageBox::error(this, i18n("Could not open last used map. Error parsing %1: %2").arg(file).arg(reader.getError()));
+				KMessageBox::error(this, i18n("Could not open last used map. Error parsing %1: %2", file, reader.getError()));
 				delete reader.getMap();
 				openMap();
 			}
@@ -187,7 +187,7 @@ void kgeography::askCapitalDivisions()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -203,7 +203,7 @@ void kgeography::askDivisionCapitals()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -219,7 +219,7 @@ void kgeography::askMap()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count(true)), 1, 1, p_map -> count(true), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(true)), 1, 1, p_map -> count(true), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -237,7 +237,7 @@ void kgeography::askFlagDivisions()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -253,7 +253,7 @@ void kgeography::askDivisionFlags()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)").arg(p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -305,17 +305,16 @@ void kgeography::setMap(KGmap *m)
 	delete p_map;
 	p_map = m;
 	
-	QString sw = i18n("There are two ways of dealing with the translation of \"Current map: %1\". The first option simply replaces %1 with the translated name of the relevant region. If the grammar of your language allows this, choose this option by setting the translation of this message to 1, and leave untranslated the translations of \"Current map: %1\" that have the placename embedded (or translate them as - if you wish to show the file as fully translated. The second option is to translate all messages in full - this is likely to be required in the case of highly-inflected languages like Russian. To choose this option, set the translation of this message to 0, and translate all the messages.", "0");
+	QString sw = i18nc("There are two ways of dealing with the translation of \"Current map: %1\". The first option simply replaces %1 with the translated name of the relevant region. If the grammar of your language allows this, choose this option by setting the translation of this message to 1, and leave untranslated the translations of \"Current map: %1\" that have the placename embedded (or translate them as - if you wish to show the file as fully translated. The second option is to translate all messages in full - this is likely to be required in the case of highly-inflected languages like Russian. To choose this option, set the translation of this message to 0, and translate all the messages.", "0");
 	if (sw == "1")
 	{
-		QString mapName = i18n(p_map -> getFileName().toUtf8(), p_map -> getName().toUtf8());
-		QString text = i18n("<qt>Current map:<br><b>%1<b></qt>");
-		p_currentMap -> setText(text.arg(mapName));
+		QString mapName = i18nc(p_map -> getFileName().toUtf8(), p_map -> getName().toUtf8());
+		p_currentMap -> setText(i18n("<qt>Current map:<br><b>%1<b></qt>", mapName));
 	}
 	else
 	{
 		QString s = QString("<qt>Current map:<br><b>%1</b></qt>").arg(p_map -> getName());
-		p_currentMap -> setText(i18n(p_map -> getFileName().toUtf8(), s.toUtf8()));
+		p_currentMap -> setText(i18nc(p_map -> getFileName().toUtf8(), s.toUtf8()));
 	}
 	p_consult -> setEnabled(true);
 	p_askMap -> setEnabled(true);

@@ -67,7 +67,7 @@ answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAns
 
 	lay -> addItem(new QSpacerItem(20, 20, QSizePolicy::Fixed, QSizePolicy::Fixed), totalAnswers + 3, 2);
 	
-	l1 = new QLabel(i18n("You answered correctly %1 out of %2 questions.").arg(correctAnswers).arg(totalAnswers), p_container);
+	l1 = new QLabel(i18n("You answered correctly %1 out of %2 questions.", correctAnswers, totalAnswers), p_container);
 	l1 -> setAlignment(Qt::AlignCenter);
 	lay->addMultiCellWidget(l1, totalAnswers + 4, totalAnswers + 4, 0, 4);
 	

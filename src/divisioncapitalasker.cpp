@@ -25,22 +25,21 @@ bool divisionCapitalAsker::nextBoxAskerQuestionHook(const QString &division, int
 	bool b;
 	if (isAnswer)
 	{
-		QString sw = i18n("There are two ways of dealing with the translation of \"The capital of %1 is...\". The first option simply replaces %1 with the translated name of the relevant region. If the grammar of your language allows this, choose this option by setting the translation of this message to 1, and leave untranslated the translations of \"The capital of %1 is...\" that have the placename embedded (or translate them as - if you wish to show the file as fully translated. The second option is to translate all messages in full - this is likely to be required in the case of highly-inflected languages like Russian. To choose this option, set the translation of this message to 0, and translate all the messages.", "0");
+		QString sw = i18nc("There are two ways of dealing with the translation of \"The capital of %1 is...\". The first option simply replaces %1 with the translated name of the relevant region. If the grammar of your language allows this, choose this option by setting the translation of this message to 1, and leave untranslated the translations of \"The capital of %1 is...\" that have the placename embedded (or translate them as - if you wish to show the file as fully translated. The second option is to translate all messages in full - this is likely to be required in the case of highly-inflected languages like Russian. To choose this option, set the translation of this message to 0, and translate all the messages.", "0");
 		if (sw == "1")
 		{
-			QString divisionName = i18n(p_map -> getFileName().toUtf8(), division.toUtf8());
-			QString text = i18n("The capital of %1 is...");
-			setQuestion(text.arg(divisionName));
+			QString divisionName = i18nc(p_map -> getFileName().toUtf8(), division.toUtf8());
+			setQuestion(i18n("The capital of %1 is...", divisionName));
 		}
 		else
 		{
 			QString s = QString("The capital of %1 is...").arg(division);
-			setQuestion(i18n(p_map -> getFileName().toUtf8(), s.toUtf8()));
+			setQuestion(i18nc(p_map -> getFileName().toUtf8(), s.toUtf8()));
 		}
-		p_currentAnswer.setQuestion(i18n(p_map -> getFileName().toUtf8(), division.toUtf8()));
+		p_currentAnswer.setQuestion(i18nc(p_map -> getFileName().toUtf8(), division.toUtf8()));
 		p_capital = p_map -> getDivisionCapital(division);
-		p_currentAnswer.setCorrectAnswer(i18n(p_map -> getFileName().toUtf8(), p_capital.toUtf8()));
-		p_rb[i] -> setText(i18n(p_map -> getFileName().toUtf8(), p_capital.toUtf8()));
+		p_currentAnswer.setCorrectAnswer(i18nc(p_map -> getFileName().toUtf8(), p_capital.toUtf8()));
+		p_rb[i] -> setText(i18nc(p_map -> getFileName().toUtf8(), p_capital.toUtf8()));
 		b = true;
 	}
 	else
@@ -56,7 +55,7 @@ bool divisionCapitalAsker::nextBoxAskerQuestionHook(const QString &division, int
 		// Moss
 		if (capital != p_capital)
 		{
-			p_rb[i] -> setText(i18n(p_map -> getFileName().toUtf8(), capital.toUtf8()));
+			p_rb[i] -> setText(i18nc(p_map -> getFileName().toUtf8(), capital.toUtf8()));
 			b = true;
 		}
 		else b = false;

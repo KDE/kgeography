@@ -57,13 +57,13 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent, i18n("Choose Map to Us
 	{
 		if (!p_reader.parseMap(*it))
 		{
-			KMessageBox::error(this, i18n("Error parsing %1: %2").arg(*it).arg(p_reader.getError()));
+			KMessageBox::error(this, i18n("Error parsing %1: %2", *it, p_reader.getError()));
 			delete p_reader.getMap();
 		}
 		else
 		{
 			m = p_reader.getMap();
-			QString text = i18n(m -> getFileName().toUtf8(), m -> getName().toUtf8());
+			QString text = i18nc(m -> getFileName().toUtf8(), m -> getName().toUtf8());
 			p_listBox -> addItem(text);
 			p_maps.insert(text, m);
 		}

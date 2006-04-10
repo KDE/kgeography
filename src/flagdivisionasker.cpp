@@ -54,9 +54,9 @@ bool flagDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int i,
 		p_flag -> update();
 		
 		p_currentAnswer.setQuestion(QPixmap::fromImage(image.scaled(image.width()/5, image.height()/5, Qt::IgnoreAspectRatio, Qt::SmoothTransformation)));
-		p_currentAnswer.setCorrectAnswer(i18n(p_map -> getFileName().toUtf8(), division.toUtf8()));
+		p_currentAnswer.setCorrectAnswer(i18nc(p_map -> getFileName().toUtf8(), division.toUtf8()));
 	}
-	p_rb[i] -> setText(i18n(p_map -> getFileName().toUtf8(), division.toUtf8()));
+	p_rb[i] -> setText(i18nc(p_map -> getFileName().toUtf8(), division.toUtf8()));
 	return true;
 }
 

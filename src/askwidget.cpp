@@ -101,7 +101,7 @@ void askWidget::resetAnswers()
 
 void askWidget::updateLabel()
 {
-	p_answers -> setText(i18n("Correct answers: %1/%2").arg(p_correctAnswers).arg(p_correctAnswers + p_incorrectAnswers));
+	p_answers -> setText(i18n("Correct answers: %1/%2", p_correctAnswers, p_correctAnswers + p_incorrectAnswers));
 }
 
 #include "askwidget.moc"
