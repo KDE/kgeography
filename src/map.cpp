@@ -126,8 +126,8 @@ QString KGmap::getWhatIs(QRgb c, bool all) const
 	if (it == p_colorMap.end()) return "nothing";
 	else
 	{
-		if (all) return it.data() -> getName();
-		else if (it.data() -> canAsk(true)) return it.data() -> getName();
+		if (all) return it.value() -> getName();
+		else if (it.value() -> canAsk(true)) return it.value() -> getName();
 		else return "";
 	}
 }

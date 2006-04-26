@@ -84,7 +84,9 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
 			
 			QFrame *inner = new QFrame(aux);
 			lay -> addWidget(inner);
-			inner -> setBackgroundColor(v -> value<QColor>());
+			QPalette palette = inner -> palette();
+			palette.setColor( inner -> backgroundRole(), v -> value<QColor>());
+			inner -> setPalette(palette);
 			inner -> setLineWidth(1);
 			lay -> setMargin(KDialog::marginHint() / 2);
 			widgets[i] = aux;

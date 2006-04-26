@@ -41,7 +41,7 @@ answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAns
 	bigFont.setPointSize(24);
 	l1 = new QLabel(question, p_container);
 	l1 -> setFont(bigFont);
-	lay->addMultiCellWidget(l1, 0, 0, 1, 5, Qt::AlignHCenter);
+	lay -> addWidget(l1, 0, 0, 1, 5, Qt::AlignHCenter);
 	
 	// Headers
 	boldFont = p_container -> font();
@@ -69,7 +69,7 @@ answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAns
 	
 	l1 = new QLabel(i18n("You answered correctly %1 out of %2 questions.", correctAnswers, totalAnswers), p_container);
 	l1 -> setAlignment(Qt::AlignCenter);
-	lay->addMultiCellWidget(l1, totalAnswers + 4, totalAnswers + 4, 0, 4);
+	lay -> addWidget(l1, totalAnswers + 4, 0, 1, 5);
 	
 	resize(500, 500);
 }
