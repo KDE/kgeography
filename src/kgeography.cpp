@@ -91,16 +91,17 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	a -> setText(i18n("&Open Map..."));
 	KStdAction::quit(this, SLOT(close()), actionCollection(), "quit");
 
-	p_zoom = new KToggleAction(i18n("&Zoom"), "viewmagfit", 0, 0, 0, actionCollection(), "zoom_select");
+	p_zoom = new KToggleAction(KIcon("viewmagfit"), i18n("&Zoom"), actionCollection(), "zoom_select");
 	p_zoom -> setEnabled(false);
 	
-	p_zoomOriginal = new KAction(i18n("&Original Size"), "viewmag1", 0, 0, 0, actionCollection(), "zoom_original");
+	p_zoomOriginal = new KAction(KIcon("viewmag1"), i18n("&Original Size"), actionCollection(), "zoom_original");
 	p_zoomOriginal -> setEnabled(false);
 
-	p_move = new KToggleAction(i18n("&Move"), "move", 0, 0, 0, actionCollection(), "move");
+	p_move = new KToggleAction(KIcon("move"), i18n("&Move"), actionCollection(), "move");
 	p_move -> setEnabled(false);
 
-	new KAction(i18n("Disclaimer"), 0, this, SLOT(disclaimer()), actionCollection(), "disclaimer");
+	a = new KAction(i18n("Disclaimer"), actionCollection(), "disclaimer");
+	connect(a, SIGNAL(triggered()), this, SLOT(disclaimer()));
 
 	setupGUI(Keys | ToolBar | Save | Create);
 
@@ -289,7 +290,7 @@ void kgeography::putAskWidget()
 	p_askWidget -> show();
 	connect(p_askWidget, SIGNAL(setZoomActionChecked(bool)), p_zoom, SLOT(setChecked(bool)));
 	connect(p_zoom, SIGNAL(toggled(bool)), p_askWidget, SLOT(setZoom(bool)));
-	connect(p_zoomOriginal, SIGNAL(activated()), p_askWidget, SLOT(setOriginalZoom()));
+	connect(p_zoomOriginal, SIGNAL(triggered()), p_askWidget, SLOT(setOriginalZoom()));
 	connect(p_askWidget, SIGNAL(setMoveActionEnabled(bool)), p_move, SLOT(setEnabled(bool)));
 	connect(p_askWidget, SIGNAL(setMoveActionChecked(bool)), p_move, SLOT(setChecked(bool)));
 	connect(p_move, SIGNAL(toggled(bool)), p_askWidget, SLOT(setMovement(bool)));
