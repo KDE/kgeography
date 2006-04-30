@@ -47,6 +47,7 @@ install_files(${DATA_INSTALL_DIR}/kgeography/flags FILES
    slovakia.png
    belgium.png
    france.png
+   liechtenstein.png
    malawi.png
    slovenia.png
    belize.png
