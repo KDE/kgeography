@@ -19,8 +19,6 @@ kgeography_SOURCES = main.cpp mapwidget.cpp division.cpp map.cpp mapparser.cpp k
 # let automoc handle all of the meta source files (moc)
 METASOURCES = AUTO
 
-messages: rc.cpp
-	$(XGETTEXT) *.cpp -o $(podir)/kgeography.pot
 
 # this is where the kdelnk file will go
 xdg_apps_DATA = kgeography.desktop
