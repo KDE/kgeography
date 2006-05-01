@@ -262,7 +262,7 @@ bool mapParser::endDocument()
 	return false;
 }
 
-QString mapParser::errorString()
+QString mapParser::errorString() const
 {
 	if (!p_error.isEmpty()) return p_error;
 	return i18n("The XML document is malformed.");

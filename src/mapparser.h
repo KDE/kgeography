@@ -39,7 +39,7 @@ class mapParser : public QXmlDefaultHandler
 		bool endElement(const QString &, const QString &name, const QString &);
 		bool characters(const QString &ch);
 		bool endDocument();
-		QString errorString();
+		QString errorString() const;
 	
 	private:
 		QString getPreviousTag() const;
