@@ -53,7 +53,7 @@ mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count
 	
 	if (asker)
 	{
-		QVBoxLayout *vbl = dynamic_cast<QVBoxLayout*>(w -> layout());
+		QVBoxLayout *vbl = static_cast<QVBoxLayout*>(w -> layout());
 		p_next = new QLabel(w);
 		p_next -> setAlignment(Qt::AlignTop | Qt::AlignHCenter);
 		p_fill = new QWidget(w);

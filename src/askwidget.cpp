@@ -21,7 +21,7 @@ askWidget::askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool sho
 {
 	if (showLabel)
 	{
-		QVBoxLayout *vbl = dynamic_cast<QVBoxLayout*>(w -> layout());
+		QVBoxLayout *vbl = static_cast<QVBoxLayout*>(w -> layout());
 		p_answers = new QLabel(w);
 		vbl -> addWidget(p_answers);
 		p_answers -> setAlignment(Qt::AlignTop | Qt::AlignHCenter);
