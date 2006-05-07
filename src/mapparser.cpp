@@ -70,7 +70,7 @@ bool mapParser::startElement(const QString&, const QString &name, const QString&
 	QString prev;
 	bool b = true;
 	prev = getPreviousTag();
-	p_previousTags += ":" + name;
+	p_previousTags += ':' + name;
 	if (prev.isEmpty())
 	{
 		b = name == "map";

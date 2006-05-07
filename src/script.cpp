@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 
 	for (it = files.begin(); it != files.end(); ++it)
 	{
-		QFile *f = new QFile(d.absolutePath() + "/" + *it);
+		QFile *f = new QFile(d.absolutePath() + '/' + *it);
 		f -> open(QIODevice::ReadOnly);
 		dd.setContent(f);
 		
