@@ -8,6 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include <qdir.h>
+
 #include <klocale.h>
 
 #include "division.h"
@@ -25,7 +27,7 @@ bool mapReader::parseMap(const QString &path)
 	QString aux;
 	p_map = new KGmap();
 	p_map -> setFile(path);
-	aux = path.left(path.lastIndexOf('/') + 1); // aux = path but without the file name
+	aux = path.left(path.lastIndexOf(QDir::separator()) + 1); // aux = path but without the file name
 	mapParser handler(p_map, aux);
 	QFile xmlFile(path);
 	if (xmlFile.exists())
@@ -222,9 +224,9 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 	}
 	else if (aux == "flag")
 	{
-		b = p_division -> setFlagFile(p_path + "flags/" + p_contents);
+		b = p_division -> setFlagFile(p_path + "flags" + QDir::separator() + p_contents);
 		p_flagFileSet = true;
-		if (!b) p_error = i18n("Could not find flag file %1", p_path + "flags/" + p_contents);
+		if (!b) p_error = i18n("Could not find flag file %1", p_path + "flags" + QDir::separator() + p_contents);
 	}
 	else if (aux == "map")
 	{
