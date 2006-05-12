@@ -1,4 +1,3 @@
-kde4_header()
 
 
 
@@ -53,7 +52,6 @@ install_files( ${XDG_APPS_DIR} FILES kgeography.desktop )
 install_files( ${KCFG_INSTALL_DIR} FILES kgeography.kcfg )
 install_files( ${DATA_INSTALL_DIR}/kgeography FILES kgeographyui.rc )
 
-kde4_footer()
 
 
 

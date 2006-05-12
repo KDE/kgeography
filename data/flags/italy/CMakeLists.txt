@@ -1,4 +1,3 @@
-kde4_header()
 
 ########### install files ###############
 
@@ -25,7 +24,6 @@ install_files(${DATA_INSTALL_DIR}/kgeography/flags/italy FILES
    it-ven200.png
 )
 
-kde4_footer()
 
 
 

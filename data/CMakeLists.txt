@@ -1,4 +1,3 @@
-kde4_header()
 
 add_subdirectory(flags)
 
@@ -47,7 +46,6 @@ install_files(${DATA_INSTALL_DIR}/kgeography/ FILES
    hungary.png
 )
 
-kde4_footer()
 
 
 

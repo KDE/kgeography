@@ -1,4 +1,3 @@
-kde4_header()
 
 add_subdirectory(italy)
 
@@ -289,7 +288,6 @@ install_files(${DATA_INSTALL_DIR}/kgeography/flags FILES
    usa_wyoming.png
 )
 
-kde4_footer()
 
 
 
