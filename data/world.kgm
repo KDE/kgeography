@@ -311,6 +311,16 @@
 		</color>
 	</division>
 	<division>
+		<name>Liechtenstein</name>
+		<flag>liechtenstein.png</flag>
+		<capital>Vaduz</capital>
+		<color>
+			<red>205</red>
+			<green>195</green>
+			<blue>204</blue>
+		</color>
+	</division>
+	<division>
 		<name>Madagascar</name>
 		<flag>madagascar.png</flag>
 		<capital>Antananarivo</capital>
