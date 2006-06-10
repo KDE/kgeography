@@ -50,4 +50,5 @@ flags_DATA = albania.png djibouti.png latvia.png saarland.png algeria.png \
              greenland.png pei.png alberta.png bc.png manitoba.png \
              newbrunswick.png newfoundland.png novascotia.png \
              nunavut.png nwterritories.png ontario.png \
-             quebec.png saskatchewan.png yukon.png
+             quebec.png saskatchewan.png yukon.png \
+             liechtenstein.png
