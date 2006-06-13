@@ -36,8 +36,11 @@ class imageWidget : public QWidget
 		QPixmap pix;
 };
 
-mapChooser::mapChooser(QWidget *parent) : KDialog(parent, i18n("Choose Map to Use"), KDialog::Ok | KDialog::Cancel)
+mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 {
+	setCaption(i18n("Choose Map to Use"));
+	setButtons(KDialog::Ok | KDialog::Cancel);
+
 	QWidget *mainHB;
 	QHBoxLayout *mainHBLayout;
 	QStringList list;
