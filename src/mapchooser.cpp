@@ -94,7 +94,7 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 	
 	p_listBox -> sortItems();
 	if (p_listBox -> count() > 0) p_listBox -> setCurrentRow(0);
-	else enableButtonOK(false);
+	else enableButtonOk(false);
 	p_listBox -> setFocus();
 }
 
