@@ -3,7 +3,7 @@ add_subdirectory(flags)
 
 ########### install files ###############
 
-install_files(${DATA_INSTALL_DIR}/kgeography/ FILES
+install(²:wFILES
    africa.png
    europe.png
    france.png
@@ -44,7 +44,7 @@ install_files(${DATA_INSTALL_DIR}/kgeography/ FILES
    netherlands.kgm
    hungary.kgm
    hungary.png
-)
+	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
 
 
