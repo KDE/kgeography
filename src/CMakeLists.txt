@@ -48,9 +48,9 @@ target_link_libraries(script  ${KDE4_KDECORE_LIBS} )
 
 ########### install files ###############
 
-install_files( ${XDG_APPS_DIR} FILES kgeography.desktop )
-install_files( ${KCFG_INSTALL_DIR} FILES kgeography.kcfg )
-install_files( ${DATA_INSTALL_DIR}/kgeography FILES kgeographyui.rc )
+install( FILES kgeography.desktop  DESTINATION  ${XDG_APPS_DIR} )
+install( FILES kgeography.kcfg  DESTINATION  ${KCFG_INSTALL_DIR} )
+install( FILES kgeographyui.rc  DESTINATION  ${DATA_INSTALL_DIR}/kgeography )
 
 
 
