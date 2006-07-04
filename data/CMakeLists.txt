@@ -3,7 +3,7 @@ add_subdirectory(flags)
 
 ########### install files ###############
 
-install(²:wFILES
+install(FILES
    africa.png
    europe.png
    france.png
