@@ -3,7 +3,7 @@ add_subdirectory(italy)
 
 ########### install files ###############
 
-install_files(${DATA_INSTALL_DIR}/kgeography/flags FILES
+install(FILES
    albania.png
    djibouti.png
    latvia.png
@@ -286,7 +286,7 @@ install_files(${DATA_INSTALL_DIR}/kgeography/flags FILES
    usa_west_virginia.png
    usa_wisconsin.png
    usa_wyoming.png
-)
+	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags)
 
 
 

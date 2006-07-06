@@ -1,7 +1,7 @@
 
 ########### install files ###############
 
-install_files(${DATA_INSTALL_DIR}/kgeography/flags/italy FILES
+install(FILES
    it-bas200.png
    it-emi200.png
    it-lig200.png
@@ -22,7 +22,7 @@ install_files(${DATA_INSTALL_DIR}/kgeography/flags/italy FILES
    it-pug200.png
    it-tre200.png
    it-ven200.png
-)
+	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/italy)
 
 
 
