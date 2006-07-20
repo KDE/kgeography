@@ -4,6 +4,9 @@
 
 ########### next target ###############
 
+remove_definitions(-DQT3_SUPPORT_WARNINGS)
+remove_definitions(-DQT3_SUPPORT)
+
 set(kgeography_SRCS 
    main.cpp 
    mapwidget.cpp 
