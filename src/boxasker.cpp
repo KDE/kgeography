@@ -30,13 +30,11 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 	
 	QGroupBox *bg = new QGroupBox(this);
 	QVBoxLayout *gbLayout = new QVBoxLayout(bg);
-	p_bg = new QButtonGroup(this);
 	p_label = new QLabel(this);
 	p_rb = new QRadioButton*[4];
 	for(int i = 0; i < 4; i++)
 	{
 		p_rb[i] = new QRadioButton(bg);
-		p_bg -> addButton(p_rb[i]);
 		gbLayout -> addWidget(p_rb[i]);
 	}
 	gbLayout->addStretch(1);
@@ -64,10 +62,9 @@ void boxAsker::nextQuestionHook(const QString &division)
 	QStringList auxList;
 	int i;
 	
-	p_bg -> setExclusive(false);
-	QAbstractButton *b = p_bg -> checkedButton();
-	if (b) b -> setChecked(false);
-	p_bg -> setExclusive(true);
+	for(int i = 0; i < 4; i++) p_rb[i] -> setAutoExclusive(false);
+	for(int i = 0; i < 4; i++) p_rb[i] -> setChecked(false);
+	for(int i = 0; i < 4; i++) p_rb[i] -> setAutoExclusive(true);
 	
 	auxList << division;
 		

@@ -35,6 +35,7 @@ answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAns
 	p_sa -> setWidgetResizable(true);
 	
 	QGridLayout *lay = new QGridLayout(p_container);
+	lay -> setSpacing(0);
 	lay -> setColumnStretch(0, 1);
 	lay -> setColumnStretch(4, 1);
 	lay -> setRowStretch(totalAnswers + 4, 1);
