@@ -268,7 +268,7 @@ void kgeography::askDivisionFlags()
 
 void kgeography::removeOldAskWidget()
 {
-	delete p_askWidget;
+	p_askWidget->deleteLater();
 	p_askWidget = 0;
 	p_zoom -> setEnabled(false);
 	p_zoomOriginal -> setEnabled(false);
@@ -345,12 +345,12 @@ void kgeography::showResultsDialog()
 		int ca = p_askWidget -> correctAnswers();
 		QString q = p_askWidget -> getQuestionHook();
 		QVector<userAnswer> ua = p_askWidget -> userAnswers();
-		
-		consult();
 	
 		answersDialog *ad = new answersDialog(this, ua, q, ca);
 		ad -> exec();
 		delete ad;
+
+		consult();
 	}
 }
 
