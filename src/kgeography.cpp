@@ -295,7 +295,7 @@ void kgeography::putAskWidget()
 	connect(p_askWidget, SIGNAL(setMoveActionEnabled(bool)), p_move, SLOT(setEnabled(bool)));
 	connect(p_askWidget, SIGNAL(setMoveActionChecked(bool)), p_move, SLOT(setChecked(bool)));
 	connect(p_move, SIGNAL(toggled(bool)), p_askWidget, SLOT(setMovement(bool)));
-	connect(p_askWidget, SIGNAL(questionsEnded()), this, SLOT(showResultsDialog()));
+	connect(p_askWidget, SIGNAL(questionsEnded()), this, SLOT(questionsEnded()));
 }
 
 void kgeography::setMap(KGmap *m)
@@ -337,6 +337,12 @@ void kgeography::resizeMainWindow()
 	if (p_askWidget) resize(getPreferredSize());
 }
 
+void kgeography::questionsEnded()
+{
+	showResultsDialog();
+	consult();
+}
+
 void kgeography::showResultsDialog()
 {
 	if (p_mustShowResultsDialog)
@@ -349,8 +355,6 @@ void kgeography::showResultsDialog()
 		answersDialog *ad = new answersDialog(this, ua, q, ca);
 		ad -> exec();
 		delete ad;
-
-		consult();
 	}
 }
 

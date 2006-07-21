@@ -43,10 +43,11 @@ Q_OBJECT
 		void askDivisionFlags();
 		void disclaimer();
 		void resizeMainWindow();
-		void showResultsDialog();
+		void questionsEnded();
 
 	private:
 		QSize getPreferredSize();
+		void showResultsDialog();
 		
 		void putAskWidget();
 		void removeOldAskWidget();

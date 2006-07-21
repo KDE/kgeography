@@ -84,11 +84,10 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
 			
 			QFrame *inner = new QFrame(aux);
 			lay -> addWidget(inner);
-			QPalette palette = inner -> palette();
-			palette.setColor( inner -> backgroundRole(), v -> value<QColor>());
-			inner -> setPalette(palette);
-			inner -> setLineWidth(1);
-			lay -> setMargin(KDialog::marginHint() / 2);
+			inner -> setPalette(QPalette(v -> value<QColor>()));
+			inner -> setAutoFillBackground(true);
+			lay -> setMargin(2);
+			lay -> setSpacing(2);
 			widgets[i] = aux;
 		}
 		else if (v -> type() == QVariant::Pixmap)
@@ -103,13 +102,21 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
 		
 		lay -> addWidget(widgets[i], row, i + 1);
 	}
-	
+
 	if (!p_correct)
 	{
+		// Calc the background color
+		// using widgets[i] -> setBackgroundRole(QPalette::Highlight);
+		// does not work because "overwrites" the color when v -> type() == QVariant::Color
+		widgets[0]->show();
+		widgets[0]->setBackgroundRole(QPalette::Highlight);
+		QColor c = widgets[0]->palette().highlight().color();
+		widgets[0]->setBackgroundRole(QPalette::NoRole);
+	
 		for (int i = 0; i < 3; i++)
 		{
-			widgets[i] -> setBackgroundRole(QPalette::Highlight);
 			widgets[i] -> setForegroundRole(QPalette::HighlightedText);
+			widgets[i] -> setPalette( c );
 			widgets[i] -> setAutoFillBackground(true);
 		}
 	}
