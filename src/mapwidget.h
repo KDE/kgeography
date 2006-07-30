@@ -12,6 +12,7 @@
 #define MAPWIDGET_H
 
 #include <qimage.h>
+#include <qpixmap.h>
 #include <qpoint.h>
 #include <qwidget.h>
 
@@ -53,9 +54,11 @@ Q_OBJECT
 	private:
 		void emitMoveActionEnabled();
 		QImage *getCurrentImage();
+		QPixmap *getCurrentPixmap();
 		void updateShownImage();
 		
 		QImage p_originalImage, p_zoomedImageShown;
+		QPixmap p_originalPixmap, p_zoomedPixmapShown;
 		bool p_zooming, p_wantZoom, p_moving, p_wantMove;
 		QPoint p_initial, p_current; // rubberbanding and moving
 		int p_zoomX, p_zoomY, p_zoomW, p_zoomH;

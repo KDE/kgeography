@@ -39,6 +39,7 @@ void mapWidget::init(const QString &path, int scrollBarWidth, int scrollBarHeigh
 	p_scrollBarWidth = scrollBarWidth;
 	p_scrollBarHeight = scrollBarHeight;
 	p_originalImage.load(path);
+	p_originalPixmap.load(path);
 	emit updateMaximumSize(p_originalImage.width(), p_originalImage.height());
 	setOriginalImage();
 }
@@ -236,7 +237,7 @@ void mapWidget::resizeEvent(QResizeEvent *e)
 void mapWidget::paintEvent(QPaintEvent *)
 {
 	QPainter p(this);
-	p.drawImage(0, 0, *getCurrentImage());
+	p.drawPixmap(0, 0, *getCurrentPixmap());
 	if (p_zooming) p.drawRect(QRect(p_initial, p_current).normalized());
 }
 
@@ -271,9 +272,16 @@ QImage *mapWidget::getCurrentImage()
 	else return &p_zoomedImageShown;
 }
 
+QPixmap *mapWidget::getCurrentPixmap()
+{
+	if (p_zoomedImageShown.isNull()) return &p_originalPixmap;
+	else return &p_zoomedPixmapShown;
+}
+
 void mapWidget::setOriginalImage()
 {
 	p_zoomedImageShown = QImage();
+	p_zoomedPixmapShown = QPixmap();
 	p_lastFactorX = 1;
 	p_lastFactorY = 1;
 	p_zoomX = 0;
@@ -307,6 +315,7 @@ void mapWidget::updateShownImage()
 	{
 		p_zoomedImageShown = p_originalImage.copy(p_zoomX, p_zoomY, p_zoomW, p_zoomH);
 		p_zoomedImageShown = p_zoomedImageShown.scaled(size());
+		p_zoomedPixmapShown = QPixmap::fromImage( p_zoomedImageShown );
 		p_oldZoomX = p_zoomX;
 		p_oldZoomY = p_zoomY;
 		p_oldZoomW = p_zoomW;
