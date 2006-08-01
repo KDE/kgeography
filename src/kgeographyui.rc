@@ -1,5 +1,5 @@
 <!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
-<kpartgui name="kgeography" version="1">
+<kpartgui name="kgeography" version="2">
 	<MenuBar>
 		<Menu name="file">
 			<Action name="openMap" />
@@ -9,6 +9,7 @@
 		<Menu name="view">
 			<Action name="zoom_select" />
 			<Action name="zoom_original" />
+			<Action name="zoom_automatic" />
 			<Separator />
 			<Action name="move" />
 		</Menu>
@@ -19,6 +20,7 @@
 	<ToolBar name="mainToolBar">
 		<Action name="zoom_select" />
 		<Action name="zoom_original" />
+			<Action name="zoom_automatic" />
 		<Separator />
 		<Action name="move" />
 	</ToolBar>

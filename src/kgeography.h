@@ -64,6 +64,7 @@ Q_OBJECT
 		KPushButton *p_askDivisionFlags;
 		KToggleAction *p_zoom, *p_move;
 		KAction *p_zoomOriginal;
+		KAction *p_zoomAutomatic;
 		QLabel *p_currentMap;
 
 		KGmap *p_map;

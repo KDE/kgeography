@@ -32,6 +32,7 @@ Q_OBJECT
 	
 	public slots:
 		void setOriginalImage();
+        void setAutomaticZoom();
 	
 	signals:
 		void setMoveActionChecked(bool b);

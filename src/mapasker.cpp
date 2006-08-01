@@ -88,6 +88,12 @@ void mapAsker::setOriginalZoom()
 	p_popupManager.clear();
 }
 
+void mapAsker::setAutomaticZoom()
+{
+	p_mapWidget -> setAutomaticZoom();
+	p_popupManager.clear();
+}
+
 void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 {
 	QString aux, cap;

@@ -39,6 +39,7 @@ Q_OBJECT
 	
 	signals:
 		void setMoveActionChecked(bool b);
+		void setAutomaticZoomActionChecked(bool b);
 		void setZoomActionChecked(bool b);
 		void setMoveActionEnabled(bool b);
 		void questionsEnded();

@@ -14,6 +14,7 @@
 #include <QGraphicsScene>
 #include <QMouseEvent>
 #include <QScrollBar>
+#include <QTimer>
 
 #include <kapplication.h>
 #include <kdebug.h>
@@ -25,8 +26,9 @@ mapWidget::mapWidget(QWidget *parent) : QGraphicsView(parent)
 {
 	p_mode = None;
 	p_zoomRect = 0;
-	p_automaticZoom = true;
+	p_automaticZoom = false;
 	
+	setAlignment( Qt::AlignLeft | Qt::AlignTop );
 	setCacheMode( CacheBackground );
 	
 	p_scene = new QGraphicsScene( this );
@@ -36,8 +38,12 @@ mapWidget::mapWidget(QWidget *parent) : QGraphicsView(parent)
 void mapWidget::init(const QString &path)
 {
 	p_originalImage.load(path);
+	resetCachedContent();
 	p_scene->setSceneRect( p_originalImage.rect() );
 	setOriginalImage();
+	
+	// work around bug in QGraphicsView?
+	QTimer::singleShot( 0, this, SLOT(setOriginalImage()) );
 }
 
 void mapWidget::setMapMove(bool b)
@@ -143,14 +149,33 @@ void mapWidget::mouseReleaseEvent(QMouseEvent *)
 
 void mapWidget::resizeEvent(QResizeEvent *)
 {
+	resetCachedContent();
+	updateZoom();
+	updateActions();
+	
+	// Another hack to work around buginess in QGraphicsView
+	if ( matrix().isIdentity() )
+		QTimer::singleShot( 0, this, SLOT(setOriginalImage()) );
+}
+
+void mapWidget::setAutomaticZoom()
+{
+	p_automaticZoom = true;
 	updateZoom();
 	updateActions();
 }
 
 void mapWidget::setOriginalImage()
 {
-	p_automaticZoom = true;
-	updateZoom();
+	p_automaticZoom = false;
+	
+	// Possibly bug in QGraphicsView? The view isn't updated properly
+	// if the matrix isn't set to something non-identity first
+	setMatrix( QMatrix( 2, 0, 0, 2, 0, 0 ) );
+	resetMatrix();
+	
+	resetCachedContent();
+	updateActions();
 }
 
 void mapWidget::updateZoom()
@@ -167,8 +192,11 @@ QSize mapWidget::mapSize() const
 
 void mapWidget::updateActions()
 {
-	emit setMoveActionEnabled( !p_automaticZoom );
-	emit setMoveActionChecked( !p_automaticZoom && (p_mode == Moving || p_mode == WantMove) );
+	// Whether the image is bigger than that viewable
+	bool biggerThanView = (p_originalImage.width() >= width()) || (p_originalImage.height() >= height());
+	
+	emit setMoveActionEnabled( !p_automaticZoom && biggerThanView );
+	emit setMoveActionChecked( !p_automaticZoom && (p_mode == Moving || p_mode == WantMove) && biggerThanView );
 	emit setZoomActionChecked( p_mode == Zooming || p_mode == WantZoom );
 }
 

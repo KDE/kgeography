@@ -97,6 +97,9 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	
 	p_zoomOriginal = new KAction(KIcon("viewmag1"), i18n("&Original Size"), actionCollection(), "zoom_original");
 	p_zoomOriginal -> setEnabled(false);
+	
+	p_zoomAutomatic = new KAction(KIcon("viewmagfit"), i18n("&Automatic Zoom"), actionCollection(), "zoom_automatic");
+	p_zoomAutomatic -> setEnabled(false);
 
 	p_move = new KToggleAction(KIcon("move"), i18n("&Move"), actionCollection(), "move");
 	p_move -> setEnabled(false);
@@ -181,6 +184,7 @@ void kgeography::consult()
 	p_askWidget = new mapAsker(p_bigWidget, p_map, p_underLeftWidget, false);
 	p_zoom -> setEnabled(true);
 	p_zoomOriginal -> setEnabled(true);
+	p_zoomAutomatic -> setEnabled(true);
 	putAskWidget();
 }
 
@@ -228,6 +232,7 @@ void kgeography::askMap()
 		p_askWidget = new mapAsker(p_bigWidget, p_map, p_underLeftWidget, true, i);
 		p_zoom -> setEnabled(true);
 		p_zoomOriginal -> setEnabled(true);
+		p_zoomAutomatic -> setEnabled(true);
 		putAskWidget();
 		p_mustShowResultsDialog = true;
 	}
@@ -272,6 +277,7 @@ void kgeography::removeOldAskWidget()
 	p_askWidget = 0;
 	p_zoom -> setEnabled(false);
 	p_zoomOriginal -> setEnabled(false);
+	p_zoomAutomatic -> setEnabled(false);
 	p_move -> setEnabled(false);
 	p_zoom -> setChecked(false);
 	p_move -> setChecked(false);
@@ -282,7 +288,7 @@ QSize kgeography::getPreferredSize()
 	int ySize = 0;
 	
 	ySize = menuBar() -> size().height() + toolBar() -> size().height() + ((mapAsker*) p_askWidget)->mapSize().height();
-	return QSize(p_underLeftWidget -> size().width() + ((mapAsker*) p_askWidget)->mapSize().width() + 3, ySize + 3);
+	return QSize(p_underLeftWidget -> size().width() + ((mapAsker*) p_askWidget)->mapSize().width() + 10, ySize + 10);
 }
 
 void kgeography::putAskWidget()
@@ -292,6 +298,7 @@ void kgeography::putAskWidget()
 	connect(p_askWidget, SIGNAL(setZoomActionChecked(bool)), p_zoom, SLOT(setChecked(bool)));
 	connect(p_zoom, SIGNAL(toggled(bool)), p_askWidget, SLOT(setZoom(bool)));
 	connect(p_zoomOriginal, SIGNAL(triggered()), p_askWidget, SLOT(setOriginalZoom()));
+	connect(p_zoomAutomatic, SIGNAL(triggered()), p_askWidget, SLOT(setAutomaticZoom()));
 	connect(p_askWidget, SIGNAL(setMoveActionEnabled(bool)), p_move, SLOT(setEnabled(bool)));
 	connect(p_askWidget, SIGNAL(setMoveActionChecked(bool)), p_move, SLOT(setChecked(bool)));
 	connect(p_move, SIGNAL(toggled(bool)), p_askWidget, SLOT(setMovement(bool)));
