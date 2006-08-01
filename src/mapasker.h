@@ -46,16 +46,10 @@ Q_OBJECT
 	
 	private slots:
 		void handleMapClick(QRgb c, const QPoint &p);
-		void setScrollBarsPosition(int x, int y);
-		void setScrollBarsVisibleSize(int w, int h);
-		void setScrollBarsMaximumSize(int w, int h);
-		void showScrollBars(bool b);
 	
 	private:
 		QLabel *p_next;
 		QWidget *p_fill;
-		QScrollBar *p_hsb, *p_vsb;
-		int p_hsbms, p_vsbms; //H and V maximum size for scrollbars
 		
 		infoWidget *p_infoWidget;
 		mapWidget *p_mapWidget;

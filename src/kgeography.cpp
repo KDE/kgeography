@@ -334,7 +334,7 @@ void kgeography::disclaimer()
 
 void kgeography::resizeMainWindow()
 {
-	if (p_askWidget) resize(getPreferredSize());
+	if (p_askWidget && width() ) resize(getPreferredSize().expandedTo(size()));
 }
 
 void kgeography::questionsEnded()

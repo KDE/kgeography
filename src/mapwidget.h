@@ -11,28 +11,26 @@
 #ifndef MAPWIDGET_H
 #define MAPWIDGET_H
 
-#include <qimage.h>
-#include <qpixmap.h>
-#include <qpoint.h>
-#include <qwidget.h>
+#include <QGraphicsView>
 
-class mapWidget : public QWidget
+class QGraphicsPixmapItem;
+class QGraphicsRectItem;
+class QGraphicsScene;
+
+class mapWidget : public QGraphicsView
 {
 Q_OBJECT
 	public:
 		mapWidget(QWidget *parent);
 		
-		void init(const QString &path, int scrollBarWidth, int scrollBarHeight);
+		void init(const QString &path);
 
 		void setMapMove(bool b);
 		void setMapZoom(bool b);
 		
-		QSize sizeHint() const;
 		QSize mapSize() const;
 	
 	public slots:
-		void updateHPosition(int value);
-		void updateVPosition(int value);
 		void setOriginalImage();
 	
 	signals:
@@ -40,34 +38,29 @@ Q_OBJECT
 		void setZoomActionChecked(bool b);
 		void setMoveActionEnabled(bool b);
 		void clicked(QRgb, const QPoint&);
-		void updatePosition(int X, int Y);
-		void updateVisibleSize(int w, int h);
-		void updateMaximumSize(int w, int h);
 	
 	protected:
 		void mousePressEvent(QMouseEvent *e);
 		void mouseMoveEvent(QMouseEvent *e);
 		void mouseReleaseEvent(QMouseEvent *e);
 		void resizeEvent(QResizeEvent *e);
-		void paintEvent(QPaintEvent *e);
+		void drawBackground(QPainter *painter, const QRectF &rect);
 	
 	private:
-		void emitMoveActionEnabled();
-		QImage *getCurrentImage();
-		QPixmap *getCurrentPixmap();
-		void updateShownImage();
+		/**
+		 * Updates the move and zoom toggle states from the current mode.
+		 */
+		void updateActions();
+		void updateZoom();
 		
-		QImage p_originalImage, p_zoomedImageShown;
-		QPixmap p_originalPixmap, p_zoomedPixmapShown;
-		bool p_zooming, p_wantZoom, p_moving, p_wantMove;
-		QPoint p_initial, p_current; // rubberbanding and moving
-		int p_zoomX, p_zoomY, p_zoomW, p_zoomH;
-		double p_lastFactorX, p_lastFactorY;
-		// useful to not do that many updateShownImage
-		QSize p_oldSize;
-		int p_oldZoomX, p_oldZoomY, p_oldZoomW, p_oldZoomH;
-		int p_scrollBarWidth, p_scrollBarHeight;
-		bool p_scrollBarsVisible;
+		enum Mode { Zooming, WantZoom, Moving, WantMove, None };
+		Mode p_mode;
+		QImage p_originalImage;
+		QGraphicsRectItem *p_zoomRect;
+		QGraphicsScene *p_scene;
+		QPointF p_initial; // for rubberbanding, in scene coords
+		QPoint p_prev; // for moving, in view coords
+		bool p_automaticZoom;
 };
 
 #endif

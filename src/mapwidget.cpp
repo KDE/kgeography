@@ -8,326 +8,168 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include <math.h> // for rint
+#include <QCursor>
+#include <QGraphicsPixmapItem>
+#include <QGraphicsRectItem>
+#include <QGraphicsScene>
+#include <QMouseEvent>
+#include <QScrollBar>
 
 #include <kapplication.h>
+#include <kdebug.h>
 #include <klocale.h>
-
-#include <qcursor.h>
-#include <qevent.h>
-#include <qpainter.h>
 
 #include "mapwidget.h"
 
-mapWidget::mapWidget(QWidget *parent) : QWidget(parent)
+mapWidget::mapWidget(QWidget *parent) : QGraphicsView(parent)
 {
-	p_wantZoom = false;
-	p_zooming = false;
-	p_wantMove = false;
-	p_moving = false;
-	p_zoomW = 0;
-	p_zoomH = 0;
-	p_scrollBarWidth = 0;
-	p_scrollBarHeight = 0;
-	p_scrollBarsVisible = 0;
-	setAttribute(Qt::WA_NoSystemBackground);
-	setAttribute(Qt::WA_StaticContents);
+	p_mode = None;
+	p_zoomRect = 0;
+	p_automaticZoom = true;
+	
+	setCacheMode( CacheBackground );
+	
+	p_scene = new QGraphicsScene( this );
+	setScene(p_scene);
 }
 
-void mapWidget::init(const QString &path, int scrollBarWidth, int scrollBarHeight)
+void mapWidget::init(const QString &path)
 {
-	p_scrollBarWidth = scrollBarWidth;
-	p_scrollBarHeight = scrollBarHeight;
 	p_originalImage.load(path);
-	p_originalPixmap.load(path);
-	emit updateMaximumSize(p_originalImage.width(), p_originalImage.height());
+	p_scene->setSceneRect( p_originalImage.rect() );
 	setOriginalImage();
 }
 
 void mapWidget::setMapMove(bool b)
 {
-	p_wantMove = b;
 	if (b)
-	{
-		emit setZoomActionChecked(false);
-		p_wantZoom = false;
-	}
+		p_mode = WantMove;
+	else if ( p_mode == WantMove || p_mode == Moving )
+		p_mode = None;
+	updateActions();
 }
 
 void mapWidget::setMapZoom(bool b)
 {
-	p_wantZoom = b;
 	if (b)
-	{
-		emit setMoveActionChecked(false);
-		p_wantMove = false;
-	}
+		p_mode = WantZoom;
+	else if ( p_mode == WantZoom || p_mode == Zooming )
+		p_mode = None;
+	updateActions();
 }
 
-QSize mapWidget::sizeHint() const
+void mapWidget::drawBackground(QPainter *painter, const QRectF &_rect)
 {
-	return maximumSize();
-}
-
-void mapWidget::updateHPosition(int value)
-{
-	p_zoomX = value;
-	updateShownImage();
-}
-
-void mapWidget::updateVPosition(int value)
-{
-	p_zoomY = value;
-	updateShownImage();
+	QRect rect = _rect.toRect().adjusted( -2, -2, 2, 2 ) & p_originalImage.rect();
+	QImage copied = p_originalImage.copy( rect );
+	QPoint topLeft = rect.topLeft();
+	painter->drawImage( topLeft, copied );
 }
 
 void mapWidget::mousePressEvent(QMouseEvent *e)
 {
+	p_initial = mapToScene( e->pos() );
+	
 	if (e -> button() == Qt::LeftButton)
 	{
-		if (p_wantZoom)
+		if ( p_mode == WantZoom )
 		{
-			p_initial = e -> pos();
-			p_zooming = true;
+			p_zoomRect = p_scene->addRect( QRectF( p_initial, QSize( 0, 0 ) ) );
+			p_mode = Zooming;
 		}
-		else if (p_wantMove)
+		else if ( p_mode == WantMove )
 		{
-			p_initial = e -> pos();
+			p_prev = e->pos();
 			setCursor(Qt::SizeAllCursor);
-			p_moving = true;
+			p_mode = Moving;
 		}
 		else
 		{
-			QRgb rgb;
-			QImage *currentImage;
-			
-			currentImage = getCurrentImage();
-			
-			rgb = currentImage -> pixel(e -> x(), e -> y());
-			emit clicked(rgb, e -> pos());
+			if ( QRectF(p_originalImage.rect()).contains( p_initial ) )
+			{
+				QRgb rgb = p_originalImage.pixel( int(p_initial.x()), int(p_initial.y()) );
+				emit clicked( rgb, e->pos() );
+			}
 		}
 	}
-	else
+	else if ( p_mode == WantZoom )
 	{
-		if (p_wantZoom)
-		{
-			setOriginalImage();
-		}
-		else e->ignore(); // that makes the event go to mapasker and clear the popup
+		setOriginalImage();
 	}
+	else e->ignore(); // that makes the event go to mapasker and clear the popup
+	
+	updateActions();
 }
 
 void mapWidget::mouseMoveEvent(QMouseEvent *e)
 {
-	if (p_zooming)
+	if ( p_mode == Zooming )
 	{
-		p_current = e -> pos();
-		update();
+		QPointF current = mapToScene( e->pos() );
+		
+		QRectF r;
+		r.setTopLeft( p_initial );
+		r.setBottomRight( current );
+		p_zoomRect->setRect( r.normalized() );
 	}
-	else if (p_moving)
+	else if ( p_mode == Moving )
 	{
-		int oW, oH;
-		int auxX, auxY;
-		bool updatePos = false;
+		QPoint diff = p_prev - e->pos();
 		
-		// some shortcuts :-D 
-		oW = p_originalImage.width();
-		oH = p_originalImage.height();
+		horizontalScrollBar()->setValue( horizontalScrollBar()->value() + diff.x() );
+		verticalScrollBar()->setValue( verticalScrollBar()->value() + diff.y() );
 		
-		// where next x and y will be
-		auxX = (int) ((p_initial.x() - e -> pos().x()) * p_lastFactorX);
-		if (qAbs(auxX) > 0)
-		{
-			p_zoomX += auxX;
-			updatePos = true;
-		}
-		
-		auxY = (int) ((p_initial.y() - e -> pos().y()) * p_lastFactorY);
-		if (qAbs(auxY) > 0)
-		{
-			p_zoomY += auxY;
-			updatePos = true;
-		}
-		
-		// make sure we don't go out of bounds
-		if (p_zoomX < 0) p_zoomX = 0;
-		if (p_zoomY < 0) p_zoomY = 0;
-		if (p_zoomX > oW - width() * p_lastFactorX) p_zoomX = (int)rint(oW - width() * p_lastFactorX);
-		if (p_zoomY > oH - height() * p_lastFactorY) p_zoomY = (int)rint(oH - height() * p_lastFactorY);
-		
-		if (updatePos) p_initial = e -> pos();
-		
-		updateShownImage();
-		emit updatePosition(p_zoomX, p_zoomY);
+		p_prev = e->pos();
 	}
 }
 
-void mapWidget::mouseReleaseEvent(QMouseEvent *e)
+void mapWidget::mouseReleaseEvent(QMouseEvent *)
 {
-	if (p_zooming)
+	if ( p_mode == Zooming )
 	{
-		QRect r(p_initial, e -> pos());
+		p_automaticZoom = false;
+		fitInView( p_zoomRect );
+		delete p_zoomRect;
+		p_zoomRect = 0;
 		
-		r = r.normalized();
-		
-		p_zoomX += (int)rint(r.left() * p_lastFactorX);
-		p_zoomY += (int)rint(r.top() * p_lastFactorY);
-		
-		p_zoomW = (int)rint(r.width() * p_lastFactorX);
-		p_zoomH = (int)rint(r.height() * p_lastFactorY);
-		
-		if (r.right() > width()) p_zoomW = width() - p_zoomX;
-		if (r.height() > height()) p_zoomH = height() - p_zoomY;
-		if (p_zoomX < 0)
-		{
-			p_zoomX = 0;
-			p_zoomW = (int)rint(r.right() * p_lastFactorX);
-		}
-		if (p_zoomY < 0)
-		{
-			p_zoomY = 0;
-			p_zoomH = (int)rint(r.bottom() * p_lastFactorY);
-		}
-		
-		p_zooming = false;
-		
-		if (p_zoomW > 1 && p_zoomH > 1)
-		{
-			double factorX, factorY;
-			int maxX, maxY;
-			
-			updateShownImage();
-			
-			factorX = (double)p_zoomW / width();
-			factorY = (double)p_zoomH / height();
-			
-			maxX = (int)rint(p_originalImage.width() / factorX);
-			maxY = (int)rint(p_originalImage.height() / factorY);
-			setMaximumSize(maxX, maxY);
-			
-			emit updateVisibleSize(p_zoomW, p_zoomH);
-			emit updatePosition(p_zoomX, p_zoomY);
-			
-			p_lastFactorX = factorX;
-			p_lastFactorY = factorY;
-			
-			emitMoveActionEnabled();
-		}
-		else update();
+		p_mode = WantZoom;
 	}
-	else if (p_moving)
+	else if ( p_mode == Moving )
 	{
 		unsetCursor();
-		p_moving = false;
+		p_mode = WantMove;
 	}
 }
 
-void mapWidget::resizeEvent(QResizeEvent *e)
+void mapWidget::resizeEvent(QResizeEvent *)
 {
-	if (p_originalImage.isNull()) return;
-	
-	p_zoomW = (int)rint(e -> size().width() * p_lastFactorX);
-	p_zoomH = (int)rint(e -> size().height() * p_lastFactorY);
-	
-	emit updateVisibleSize(p_zoomW, p_zoomH);
-	updateShownImage();
-	emitMoveActionEnabled();
-}
-
-void mapWidget::paintEvent(QPaintEvent *)
-{
-	QPainter p(this);
-	p.drawPixmap(0, 0, *getCurrentPixmap());
-	if (p_zooming) p.drawRect(QRect(p_initial, p_current).normalized());
-}
-
-void mapWidget::emitMoveActionEnabled()
-{
-	int w, h;
-	
-	w = p_zoomW;
-	h = p_zoomH;
-	if (p_scrollBarsVisible)
-	{
-		w += p_scrollBarWidth;
-		h += p_scrollBarHeight;
-	}
-	
-	if (w < maximumWidth() * p_lastFactorX || h < maximumHeight() * p_lastFactorY)
-	{
-		p_scrollBarsVisible = true;
-		emit setMoveActionEnabled(true);
-	}
-	else
-	{
-		p_scrollBarsVisible = false;
-		emit setMoveActionChecked(false);
-		emit setMoveActionEnabled(false);
-	}
-}
-
-QImage *mapWidget::getCurrentImage()
-{
-	if (p_zoomedImageShown.isNull()) return &p_originalImage;
-	else return &p_zoomedImageShown;
-}
-
-QPixmap *mapWidget::getCurrentPixmap()
-{
-	if (p_zoomedImageShown.isNull()) return &p_originalPixmap;
-	else return &p_zoomedPixmapShown;
+	updateZoom();
+	updateActions();
 }
 
 void mapWidget::setOriginalImage()
 {
-	p_zoomedImageShown = QImage();
-	p_zoomedPixmapShown = QPixmap();
-	p_lastFactorX = 1;
-	p_lastFactorY = 1;
-	p_zoomX = 0;
-	p_zoomY = 0;
-	
-	if (p_zoomH != 0 && p_zoomW != 0)
-	{
-		/* setting the original image not when opening the app */
-		p_zoomW = width();
-		p_zoomH = height();
-	}
-	
-	p_oldZoomX = p_zoomX;
-	p_oldZoomY = p_zoomY;
-	p_oldZoomW = p_zoomW;
-	p_oldZoomH = p_zoomH;
-	p_oldSize = size();
-	
-	emit updatePosition(0, 0);
-	emit updateVisibleSize(p_zoomW, p_zoomH);
-	setMaximumSize(p_originalImage.size());
-	emitMoveActionEnabled();
-	repaint();
+	p_automaticZoom = true;
+	updateZoom();
 }
 
-void mapWidget::updateShownImage()
+void mapWidget::updateZoom()
 {
-	if (p_originalImage.isNull()) return;
-
-	if (p_oldZoomX != p_zoomX || p_oldZoomY != p_zoomY || p_oldZoomW != p_zoomW || p_oldZoomH != p_zoomH || size() != p_oldSize)
-	{
-		p_zoomedImageShown = p_originalImage.copy(p_zoomX, p_zoomY, p_zoomW, p_zoomH);
-		p_zoomedImageShown = p_zoomedImageShown.scaled(size());
-		p_zoomedPixmapShown = QPixmap::fromImage( p_zoomedImageShown );
-		p_oldZoomX = p_zoomX;
-		p_oldZoomY = p_zoomY;
-		p_oldZoomW = p_zoomW;
-		p_oldZoomH = p_zoomH;
-		p_oldSize = size();
-		repaint();
-	}
+	if ( !p_automaticZoom )
+		return;
+	fitInView( p_originalImage.rect() );
 }
 
 QSize mapWidget::mapSize() const
 {
 	return p_originalImage.size();
+}
+
+void mapWidget::updateActions()
+{
+	emit setMoveActionEnabled( !p_automaticZoom );
+	emit setMoveActionChecked( !p_automaticZoom && (p_mode == Moving || p_mode == WantMove) );
+	emit setZoomActionChecked( p_mode == Zooming || p_mode == WantZoom );
 }
 
 #include "mapwidget.moc"
