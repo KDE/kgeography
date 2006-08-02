@@ -28,9 +28,7 @@ mapWidget::mapWidget(QWidget *parent) : QGraphicsView(parent)
 	p_zoomRect = 0;
 	p_automaticZoom = false;
 	
-	setAlignment( Qt::AlignLeft | Qt::AlignTop );
 	setCacheMode( CacheBackground );
-	
 	p_scene = new QGraphicsScene( this );
 	setScene(p_scene);
 }
@@ -38,8 +36,9 @@ mapWidget::mapWidget(QWidget *parent) : QGraphicsView(parent)
 void mapWidget::init(const QString &path)
 {
 	p_originalImage.load(path);
-	resetCachedContent();
+	p_originalPixmap.load(path);
 	p_scene->setSceneRect( p_originalImage.rect() );
+	resetCachedContent();
 	setOriginalImage();
 	
 	// work around bug in QGraphicsView?
@@ -67,9 +66,17 @@ void mapWidget::setMapZoom(bool b)
 void mapWidget::drawBackground(QPainter *painter, const QRectF &_rect)
 {
 	QRect rect = _rect.toRect().adjusted( -2, -2, 2, 2 ) & p_originalImage.rect();
-	QImage copied = p_originalImage.copy( rect );
-	QPoint topLeft = rect.topLeft();
-	painter->drawImage( topLeft, copied );
+	
+	if ( painter->matrix().m11() == 1 && painter->matrix().m22() == 1 )
+	{
+		// Image won't need to be scaled; use pixmap for faster drawing
+		painter->drawPixmap( rect.topLeft(), p_originalPixmap, rect );
+	}
+	else
+	{
+		QImage copied = p_originalImage.copy( rect );
+		painter->drawImage( rect.topLeft(), copied );
+	}
 }
 
 void mapWidget::mousePressEvent(QMouseEvent *e)
@@ -160,6 +167,8 @@ void mapWidget::resizeEvent(QResizeEvent *)
 
 void mapWidget::setAutomaticZoom()
 {
+	if ( p_automaticZoom )
+		return;
 	p_automaticZoom = true;
 	updateZoom();
 	updateActions();
@@ -193,7 +202,7 @@ QSize mapWidget::mapSize() const
 void mapWidget::updateActions()
 {
 	// Whether the image is bigger than that viewable
-	bool biggerThanView = (p_originalImage.width() >= width()) || (p_originalImage.height() >= height());
+	bool biggerThanView = (p_originalImage.width() * matrix().m11() >= width()) || (p_originalImage.height() * matrix().m22() >= height());
 	
 	emit setMoveActionEnabled( !p_automaticZoom && biggerThanView );
 	emit setMoveActionChecked( !p_automaticZoom && (p_mode == Moving || p_mode == WantMove) && biggerThanView );

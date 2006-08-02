@@ -92,7 +92,7 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	a -> setText(i18n("&Open Map..."));
 	KStdAction::quit(this, SLOT(close()), actionCollection(), "quit");
 
-	p_zoom = new KToggleAction(KIcon("viewmagfit"), i18n("&Zoom"), actionCollection(), "zoom_select");
+	p_zoom = new KToggleAction(KIcon("viewmag+"), i18n("&Zoom"), actionCollection(), "zoom_select");
 	p_zoom -> setEnabled(false);
 	
 	p_zoomOriginal = new KAction(KIcon("viewmag1"), i18n("&Original Size"), actionCollection(), "zoom_original");

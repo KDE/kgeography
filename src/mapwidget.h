@@ -57,6 +57,7 @@ Q_OBJECT
 		enum Mode { Zooming, WantZoom, Moving, WantMove, None };
 		Mode p_mode;
 		QImage p_originalImage;
+		QPixmap p_originalPixmap;
 		QGraphicsRectItem *p_zoomRect;
 		QGraphicsScene *p_scene;
 		QPointF p_initial; // for rubberbanding, in scene coords
