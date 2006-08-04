@@ -18,6 +18,7 @@
 #include <ktoggleaction.h>
 #include <ktoolbar.h>
 #include <kmenubar.h>
+#include <kicon.h>
 
 #include <qlabel.h>
 #include <qlayout.h>
