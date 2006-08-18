@@ -1,6 +1,7 @@
 
 add_subdirectory(colombia)
 add_subdirectory(italy)
+add_subdirectory(peru)
 add_subdirectory(ukraine)
 
 ########### install files ###############

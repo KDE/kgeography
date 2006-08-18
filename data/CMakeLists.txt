@@ -52,6 +52,8 @@ install(FILES
    colombia.png
    ukraine.kgm
    ukraine.png
+   peru.kgm
+   peru.png
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
 
