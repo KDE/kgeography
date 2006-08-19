@@ -18,15 +18,15 @@
 <firstname>Anne-Marie</firstname>
 <surname>Mahfouf</surname>
 </personname>
-<email>annma@kde.org</email>
+<email>&Anne-Marie.Mahfouf.mail;</email>
 </author>
+<!-- TRANS:ROLES_OF_TRANSLATORS -->
 </authorgroup>
 
-<!-- TRANS:ROLES_OF_TRANSLATORS -->
 
 <copyright>
 <year>2005</year>
-<holder>Anne-Marie Mahfouf</holder>
+<holder>&Anne-Marie.Mahfouf;</holder>
 </copyright>
 
 <legalnotice>&FDLNotice;</legalnotice>
@@ -38,7 +38,7 @@
 
 <abstract>
 <para>
-&kgeography; is a geography learning tool for KDE. Right now it has six usage modes: 
+&kgeography; is a geography learning tool for &kde;. Right now it has six usage modes: 
 <itemizedlist>
 <listitem>
 <para>Browse the maps clicking in a map division to see its name</para>
@@ -573,7 +573,7 @@ Section</link> for the answer.</para>
 </qandaentry>
 <qandaentry>
 <question>
-<para>Why can't I twiddle my documents?</para>
+<para>Why am I not able to twiddle my documents?</para>
 </question>
 <answer>
 <para>You can only twiddle your documents if you have the foobar.lib
@@ -598,22 +598,13 @@ distribution. -->
 <para>
 Program copyright 2004-2005 Albert Astals Cid <email>tsdgeos@terra.es</email>
 </para>
-<!--<para>
-Contributors:
-<itemizedlist>
-<listitem><para>Konqui the KDE Dragon <email>konqui@kde.org</email></para>
-</listitem>
-<listitem><para>Tux the Linux Penguin <email>tux@linux.org</email></para>
-</listitem>
-</itemizedlist>
-</para>-->
+
 
 <para>
-Documentation Copyright &copy; 2005 Anne-Marie Mahfouf <email>annma@kde.org</email>
+Documentation Copyright &copy; 2005 &Anne-Marie.Mahfouf; <email>&Anne-Marie.Mahfouf.mail;</email>
 </para>
 
 <!-- TRANS:CREDIT_FOR_TRANSLATORS -->
-
 &underFDL;
 &underGPL;
 
@@ -627,7 +618,7 @@ Documentation Copyright &copy; 2005 Anne-Marie Mahfouf <email>annma@kde.org</ema
 
 <!-- This first entity contains boiler plate for applications that are
 part of KDE CVS.  You should remove it if you are releasing your
-application --> 
+application -->
 
 &install.intro.documentation;
 
