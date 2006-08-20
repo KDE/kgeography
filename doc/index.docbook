@@ -38,7 +38,7 @@
 
 <abstract>
 <para>
-&kgeography; is a geography learning tool for &kde;. Right now it has six usage modes: 
+&kgeography; is a geography learning tool for &kde;. Right now it has six usage modes:
 <itemizedlist>
 <listitem>
 <para>Browse the maps clicking in a map division to see its name</para>
@@ -81,7 +81,7 @@ problems. Basically a long version of the abstract.  Don't include a
 revision history. (see installation appendix comment) -->
 
 <para>
-&kgeography; is a geography learning tool for KDE. It allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).
+&kgeography; is a geography learning tool for &kde;. It allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).
 </para>
 <para>
 Maps available in current release are: Africa, Asia, Austria, Brazil, Canada, China, Europe, France, Germany, Italy, Italy by provinces, North and Central America, Norway, Poland, South America, Spain, USA and the world.
