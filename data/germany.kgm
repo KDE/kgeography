@@ -21,7 +21,7 @@
 	</division>
 	<division>
 		<name>Baden-Württemberg</name>
-		<flag>baden_wurttemberg.png</flag>
+		<flag>germany/baden_wurttemberg.png</flag>
 		<capital>Stuttgart</capital>
 		<color>
 			<red>130</red>
@@ -31,7 +31,7 @@
 	</division>
 	<division>
 		<name>Bavaria</name>
-		<flag>bavaria.png</flag>
+		<flag>germany/bavaria.png</flag>
 		<capital>Munich</capital>
 		<color>
 			<red>130</red>
@@ -41,7 +41,7 @@
 	</division>
 	<division>
 		<name>Berlin</name>
-		<flag>berlin.png</flag>
+		<flag>germany/berlin.png</flag>
 		<capital>Berlin</capital>
 		<color>
 			<red>130</red>
@@ -51,7 +51,7 @@
 	</division>
 	<division>
 		<name>Brandenburg</name>
-		<flag>brandenburg.png</flag>
+		<flag>germany/brandenburg.png</flag>
 		<capital>Potsdam</capital>
 		<color>
 			<red>130</red>
@@ -61,7 +61,7 @@
 	</division>
 	<division>
 		<name>Bremen</name>
-		<flag>bremen.png</flag>
+		<flag>germany/bremen.png</flag>
 		<capital>Bremen</capital>
 		<color>
 			<red>130</red>
@@ -71,7 +71,7 @@
 	</division>
 	<division>
 		<name>Hamburg</name>
-		<flag>hamburg.png</flag>
+		<flag>germany/hamburg.png</flag>
 		<capital>Hamburg</capital>
 		<color>
 			<red>130</red>
@@ -81,7 +81,7 @@
 	</division>
 	<division>
 		<name>Hesse</name>
-		<flag>hesse.png</flag>
+		<flag>germany/hesse.png</flag>
 		<capital>Wiesbaden</capital>
 		<color>
 			<red>130</red>
@@ -91,7 +91,7 @@
 	</division>
 	<division>
 		<name>Mecklenburg-Western Pomerania</name>
-		<flag>mecklenburg_western_pomerania.png</flag>
+		<flag>germany/mecklenburg_western_pomerania.png</flag>
 		<capital>Schwerin</capital>
 		<color>
 			<red>130</red>
@@ -101,7 +101,7 @@
 	</division>
 	<division>
 		<name>Lower Saxony</name>
-		<flag>lower_saxony.png</flag>
+		<flag>germany/lower_saxony.png</flag>
 		<capital>Hanover</capital>
 		<color>
 			<red>130</red>
@@ -111,7 +111,7 @@
 	</division>
 	<division>
 		<name>North Rhine-Westphalia</name>
-		<flag>north_rhine_westphalia.png</flag>
+		<flag>germany/north_rhine_westphalia.png</flag>
 		<capital>Düsseldorf</capital>
 		<color>
 			<red>190</red>
@@ -121,7 +121,7 @@
 	</division>
 	<division>
 		<name>Rhineland-Palatinate</name>
-		<flag>rhineland_palatinate.png</flag>
+		<flag>germany/rhineland_palatinate.png</flag>
 		<capital>Mainz</capital>
 		<color>
 			<red>190</red>
@@ -131,7 +131,7 @@
 	</division>
 	<division>
 		<name>Saarland</name>
-		<flag>saarland.png</flag>
+		<flag>germany/saarland.png</flag>
 		<capital>Saarbrücken</capital>
 		<color>
 			<red>190</red>
@@ -141,7 +141,7 @@
 	</division>
 	<division>
 		<name>Saxony</name>
-		<flag>saxony.png</flag>
+		<flag>germany/saxony.png</flag>
 		<capital>Dresden</capital>
 		<color>
 			<red>190</red>
@@ -151,7 +151,7 @@
 	</division>
 	<division>
 		<name>Saxony-Anhalt</name>
-		<flag>saxony_anhalt.png</flag>
+		<flag>germany/saxony_anhalt.png</flag>
 		<capital>Magdeburg</capital>
 		<color>
 			<red>190</red>
@@ -161,7 +161,7 @@
 	</division>
 	<division>
 		<name>Schleswig-Holstein</name>
-		<flag>schleswig_holstein.png</flag>
+		<flag>germany/schleswig_holstein.png</flag>
 		<capital>Kiel</capital>
 		<color>
 			<red>190</red>
@@ -171,7 +171,7 @@
 	</division>
 	<division>
 		<name>Thuringia</name>
-		<flag>thuringia.png</flag>
+		<flag>germany/thuringia.png</flag>
 		<capital>Erfurt</capital>
 		<color>
 			<red>190</red>
