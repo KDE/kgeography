@@ -1,4 +1,5 @@
 
+add_subdirectory(australia)
 add_subdirectory(brazil)
 add_subdirectory(canada)
 add_subdirectory(colombia)
