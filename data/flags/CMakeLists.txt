@@ -1,4 +1,5 @@
 
+add_subdirectory(brazil)
 add_subdirectory(colombia)
 add_subdirectory(italy)
 add_subdirectory(peru)
@@ -156,33 +157,6 @@ install(FILES
    paraguay.png
    argentina.png
    uruguay.png
-   br_AC.png
-   br_AP.png
-   br_DF.png
-   br_MA.png
-   br_MT.png
-   br_PI.png
-   br_RJ.png
-   br_RR.png
-   br_SE.png
-   br_AL.png
-   br_BA.png
-   br_ES.png
-   br_MG.png
-   br_PA.png
-   br_PN.png
-   br_RN.png
-   br_RS.png
-   br_SP.png
-   br_AM.png
-   br_CE.png
-   br_GO.png
-   br_MS.png
-   br_PE.png
-   br_PR.png
-   br_RO.png
-   br_SC.png
-   br_TO.png
    uae.png
    china.png
    india.png

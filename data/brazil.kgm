@@ -3,7 +3,7 @@
 	<name>Brazil</name>
 	<division>
 		<name>Sergipe</name>
-		<flag>br_SE.png</flag>
+		<flag>brazil/br_SE.png</flag>
 		<capital>Aracaju</capital>
 		<color>
 			<red>222</red>
@@ -13,7 +13,7 @@
 	</division>
 	<division>
 		<name>Para</name>
-		<flag>br_PA.png</flag>
+		<flag>brazil/br_PA.png</flag>
 		<capital>Belem</capital>
 		<color>
 			<red>0</red>
@@ -23,7 +23,7 @@
 	</division>
 	<division>
 		<name>Minas Gerais</name>
-		<flag>br_MG.png</flag>
+		<flag>brazil/br_MG.png</flag>
 		<capital>Belo Horizonte</capital>
 		<color>
 			<red>0</red>
@@ -33,7 +33,7 @@
 	</division>
 	<division>
 		<name>Roraima</name>
-		<flag>br_RR.png</flag>
+		<flag>brazil/br_RR.png</flag>
 		<capital>Boa Vista</capital>
 		<color>
 			<red>160</red>
@@ -43,7 +43,7 @@
 	</division>
 	<division>
 		<name>Federal District</name>
-		<flag>br_DF.png</flag>
+		<flag>brazil/br_DF.png</flag>
 		<capital>Brasilia</capital>
 		<color>
 			<red>218</red>
@@ -53,7 +53,7 @@
 	</division>
 	<division>
 		<name>Mato Grosso do Sul</name>
-		<flag>br_MS.png</flag>
+		<flag>brazil/br_MS.png</flag>
 		<capital>Campo Grande</capital>
 		<color>
 			<red>255</red>
@@ -63,7 +63,7 @@
 	</division>
 	<division>
 		<name>Mato Grosso</name>
-		<flag>br_MT.png</flag>
+		<flag>brazil/br_MT.png</flag>
 		<capital>Cuiaba</capital>
 		<color>
 			<red>222</red>
@@ -73,7 +73,7 @@
 	</division>
 	<division>
 		<name>Parana</name>
-		<flag>br_PN.png</flag>
+		<flag>brazil/br_PN.png</flag>
 		<capital>Curitiba</capital>
 		<color>
 			<red>140</red>
@@ -83,7 +83,7 @@
 	</division>
 	<division>
 		<name>Santa Catarina</name>
-		<flag>br_SC.png</flag>
+		<flag>brazil/br_SC.png</flag>
 		<capital>Florianopolis</capital>
 		<color>
 			<red>170</red>
@@ -93,7 +93,7 @@
 	</division>
 	<division>
 		<name>Ceara</name>
-		<flag>br_CE.png</flag>
+		<flag>brazil/br_CE.png</flag>
 		<capital>Fortaleza</capital>
 		<color>
 			<red>0</red>
@@ -103,7 +103,7 @@
 	</division>
 	<division>
 		<name>Goias</name>
-		<flag>br_GO.png</flag>
+		<flag>brazil/br_GO.png</flag>
 		<capital>Goiânia</capital>
 		<color>
 			<red>255</red>
@@ -113,7 +113,7 @@
 	</division>
 	<division>
 		<name>Paraiba</name>
-		<flag>br_PR.png</flag>
+		<flag>brazil/br_PR.png</flag>
 		<capital>Joao Pessoa</capital>
 		<color>
 			<red>207</red>
@@ -123,7 +123,7 @@
 	</division>
 	<division>
 		<name>Amapa</name>
-		<flag>br_AP.png</flag>
+		<flag>brazil/br_AP.png</flag>
 		<capital>Macapa</capital>
 		<color>
 			<red>167</red>
@@ -133,7 +133,7 @@
 	</division>
 	<division>
 		<name>Alagoas</name>
-		<flag>br_AL.png</flag>
+		<flag>brazil/br_AL.png</flag>
 		<capital>Maceio</capital>
 		<color>
 			<red>131</red>
@@ -143,7 +143,7 @@
 	</division>
 	<division>
 		<name>Amazonas</name>
-		<flag>br_AM.png</flag>
+		<flag>brazil/br_AM.png</flag>
 		<capital>Manaus</capital>
 		<color>
 			<red>24</red>
@@ -153,7 +153,7 @@
 	</division>
 	<division>
 		<name>Rio Grande do Norte</name>
-		<flag>br_RN.png</flag>
+		<flag>brazil/br_RN.png</flag>
 		<capital>Natal</capital>
 		<color>
 			<red>86</red>
@@ -164,7 +164,7 @@
 	<division>
 		<name>Tocantins</name>
 		<capital>Palmas</capital>
-		<flag>br_TO.png</flag>
+		<flag>brazil/br_TO.png</flag>
 		<color>
 			<red>0</red>
 			<green>66</green>
@@ -173,7 +173,7 @@
 	</division>
 	<division>
 		<name>Rio Grande do Sul</name>
-		<flag>br_RS.png</flag>
+		<flag>brazil/br_RS.png</flag>
 		<capital>Porto Alegre</capital>
 		<color>
 			<red>0</red>
@@ -183,7 +183,7 @@
 	</division>
 	<division>
 		<name>Rondonia</name>
-		<flag>br_RO.png</flag>
+		<flag>brazil/br_RO.png</flag>
 		<capital>Porto Velho</capital>
 		<color>
 			<red>255</red>
@@ -193,7 +193,7 @@
 	</division>
 	<division>
 		<name>Pernambuco</name>
-		<flag>br_PE.png</flag>
+		<flag>brazil/br_PE.png</flag>
 		<capital>Recife</capital>
 		<color>
 			<red>222</red>
@@ -203,7 +203,7 @@
 	</division>
 	<division>
 		<name>Acre</name>
-		<flag>br_AC.png</flag>
+		<flag>brazil/br_AC.png</flag>
 		<capital>Rio Branco</capital>
 		<color>
 			<red>156</red>
@@ -213,7 +213,7 @@
 	</division>
 	<division>
 		<name>Rio de Janeiro State</name>
-		<flag>br_RJ.png</flag>
+		<flag>brazil/br_RJ.png</flag>
 		<capital>Rio de Janeiro</capital>
 		<color>
 			<red>201</red>
@@ -223,7 +223,7 @@
 	</division>
 	<division>
 		<name>Bahia</name>
-		<flag>br_BA.png</flag>
+		<flag>brazil/br_BA.png</flag>
 		<capital>Salvador</capital>
 		<color>
 			<red>255</red>
@@ -233,7 +233,7 @@
 	</division>
 	<division>
 		<name>Maranhao</name>
-		<flag>br_MA.png</flag>
+		<flag>brazil/br_MA.png</flag>
 		<capital>Sao Luis</capital>
 		<color>
 			<red>163</red>
@@ -243,7 +243,7 @@
 	</division>
 	<division>
 		<name>Sao Paulo State</name>
-		<flag>br_SP.png</flag>
+		<flag>brazil/br_SP.png</flag>
 		<capital>Sao Paulo (city)</capital>
 		<color>
 			<red>0</red>
@@ -253,7 +253,7 @@
 	</division>
 	<division>
 		<name>Piaui</name>
-		<flag>br_PI.png</flag>
+		<flag>brazil/br_PI.png</flag>
 		<capital>Teresina</capital>
 		<color>
 			<red>102</red>
@@ -262,8 +262,8 @@
 		</color>
 	</division>
 	<division>
-		<name>Esperito Santo</name>
-		<flag>br_ES.png</flag>
+		<name>Espirito Santo</name>
+		<flag>brazil/br_ES.png</flag>
 		<capital>Vitoria</capital>
 		<color>
 			<red>186</red>
