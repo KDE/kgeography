@@ -21,6 +21,7 @@
 	</division>
 	<division>
 		<name>Andalucia</name>
+		<flag>spain/andalucia.png</flag>
 		<capital>Seville</capital>
 		<color>
 			<red>169</red>
@@ -30,6 +31,7 @@
 	</division>
 	<division>
 		<name>Aragon</name>
+		<flag>spain/aragon.png</flag>
 		<capital>Zaragoza</capital>
 		<color>
 			<red>181</red>
@@ -39,6 +41,7 @@
 	</division>
 	<division>
 		<name>Asturias</name>
+		<flag>spain/asturias.png</flag>
 		<capital>Oviedo</capital>
 		<color>
 			<red>121</red>
@@ -48,6 +51,7 @@
 	</division>
 	<division>
 		<name>Balearic Islands</name>
+		<flag>spain/balearic_islands.png</flag>
 		<capital>Palma de Mallorca</capital>
 		<color>
 			<red>77</red>
@@ -57,6 +61,7 @@
 	</division>
 	<division>
 		<name>Basque Country</name>
+		<flag>spain/basque_country.png</flag>
 		<capital>Vitoria</capital>
 		<color>
 			<red>238</red>
@@ -66,6 +71,7 @@
 	</division>
 	<division>
 		<name>Canary Islands</name>
+		<flag>spain/canary_islands.png</flag>
 		<capital>Las Palmas de Gran Canaria and Santa Cruz de Tenerife</capital>
 		<color>
 			<red>8</red>
@@ -75,6 +81,7 @@
 	</division>
 	<division>
 		<name>Cantabria</name>
+		<flag>spain/cantabria.png</flag>
 		<capital>Santander</capital>
 		<color>
 			<red>136</red>
@@ -84,6 +91,7 @@
 	</division>
 	<division>
 		<name>Castile-La Mancha</name>
+		<flag>spain/castilla_la_mancha.png</flag>
 		<capital>Toledo</capital>
 		<color>
 			<red>246</red>
@@ -93,6 +101,7 @@
 	</division>
 	<division>
 		<name>Castile and Leon</name>
+		<flag>spain/castilla_y_leon.png</flag>
 		<capital>Valladolid</capital>
 		<color>
 			<red>98</red>
@@ -102,6 +111,7 @@
 	</division>
 	<division>
 		<name>Catalonia</name>
+		<flag>spain/catalonia.png</flag>
 		<capital>Barcelona</capital>
 		<color>
 			<red>130</red>
@@ -111,6 +121,7 @@
 	</division>
 	<division>
 		<name>Extremadura</name>
+		<flag>spain/extremadura.png</flag>
 		<capital>Mérida</capital>
 		<color>
 			<red>206</red>
@@ -120,6 +131,7 @@
 	</division>
 	<division>
 		<name>Galicia</name>
+		<flag>spain/galicia.png</flag>
 		<capital>Santiago de Compostela</capital>
 		<color>
 			<red>94</red>
@@ -129,6 +141,7 @@
 	</division>
 	<division>
 		<name>La Rioja</name>
+		<flag>spain/la_rioja.png</flag>
 		<capital>Logroño</capital>
 		<color>
 			<red>238</red>
@@ -138,6 +151,7 @@
 	</division>
 	<division>
 		<name>Madrid</name>
+		<flag>spain/madrid.png</flag>
 		<capital>Madrid</capital>
 		<color>
 			<red>141</red>
@@ -147,6 +161,7 @@
 	</division>
 	<division>
 		<name>Murcia</name>
+		<flag>spain/murcia.png</flag>
 		<capital>Murcia</capital>
 		<color>
 			<red>206</red>
@@ -156,6 +171,7 @@
 	</division>
 	<division>
 		<name>Navarre</name>
+		<flag>spain/navarre.png</flag>
 		<capital>Pamplona</capital>
 		<color>
 			<red>255</red>
@@ -165,6 +181,7 @@
 	</division>
 	<division>
 		<name>Valencian Community</name>
+		<flag>spain/valencia.png</flag>
 		<capital>Valencia</capital>
 		<color>
 			<red>222</red>
