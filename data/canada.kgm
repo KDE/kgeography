@@ -22,7 +22,7 @@
 	<division>
 		<name>Prince Edward Island</name>
 		<capital>Charlottetown</capital>
-		<flag>pei.png</flag>
+		<flag>canada/pei.png</flag>
 		<color>
 			<red>255</red>
 			<green>0</green>
@@ -32,7 +32,7 @@
 	<division>
 		<name>British Columbia</name>
 		<capital>Victoria</capital>
-		<flag>bc.png</flag>
+		<flag>canada/bc.png</flag>
 		<color>
 			<red>12</red>
 			<green>255</green>
@@ -42,7 +42,7 @@
 	<division>
 		<name>Ontario</name>
 		<capital>Toronto</capital>
-		<flag>ontario.png</flag>
+		<flag>canada/ontario.png</flag>
 		<color>
 			<red>22</red>
 			<green>0</green>
@@ -52,7 +52,7 @@
 	<division>
 		<name>Newfoundland</name>
 		<capital>St John's</capital>
-		<flag>newfoundland.png</flag>
+		<flag>canada/newfoundland.png</flag>
 		<color>
 			<red>255</red>
 			<green>255</green>
@@ -62,7 +62,7 @@
 	<division>
 		<name>Nunavut</name>
 		<capital>Iqaluit</capital>
-		<flag>nunavut.png</flag>
+		<flag>canada/nunavut.png</flag>
 		<color>
 			<red>253</red>
 			<green>5</green>
@@ -72,7 +72,7 @@
 	<division>
 		<name>Alberta</name>
 		<capital>Edmonton</capital>
-		<flag>alberta.png</flag>
+		<flag>canada/alberta.png</flag>
 		<color>
 			<red>210</red>
 			<green>106</green>
@@ -82,7 +82,7 @@
 	<division>
 		<name>North West Territories</name>
 		<capital>Yellowknife</capital>
-		<flag>nwterritories.png</flag>
+		<flag>canada/nwterritories.png</flag>
 		<color>
 			<red>255</red>
 			<green>215</green>
@@ -92,7 +92,7 @@
 	<division>
 		<name>Quebec</name>
 		<capital>Quebec City</capital>
-		<flag>quebec.png</flag>
+		<flag>canada/quebec.png</flag>
 		<color>
 			<red>255</red>
 			<green>164</green>
@@ -102,7 +102,7 @@
 	<division>
 		<name>New Brunswick</name>
 		<capital>Fredericton</capital>
-		<flag>newbrunswick.png</flag>
+		<flag>canada/newbrunswick.png</flag>
 		<color>
 			<red>255</red>
 			<green>1</green>
@@ -112,7 +112,7 @@
 	<division>
 		<name>Manitoba</name>
 		<capital>Winnipeg</capital>
-		<flag>manitoba.png</flag>
+		<flag>canada/manitoba.png</flag>
 		<color>
 			<red>74</red>
 			<green>1</green>
@@ -122,7 +122,7 @@
 	<division>
 		<name>Nova Scotia</name>
 		<capital>Halifax</capital>
-		<flag>novascotia.png</flag>
+		<flag>canada/novascotia.png</flag>
 		<color>
 			<red>27</red>
 			<green>139</green>
@@ -132,7 +132,7 @@
 	<division>
 		<name>Yukon Territory</name>
 		<capital>Whitehorse</capital>
-		<flag>yukon.png</flag>
+		<flag>canada/yukon.png</flag>
 		<color>
 			<red>245</red>
 			<green>126</green>
@@ -142,7 +142,7 @@
 	<division>
 		<name>Saskatchewan</name>
 		<capital>Regina</capital>
-		<flag>saskatchewan.png</flag>
+		<flag>canada/saskatchewan.png</flag>
 		<color>
 			<red>255</red>
 			<green>67</green>

@@ -1,5 +1,6 @@
 
 add_subdirectory(brazil)
+add_subdirectory(canada)
 add_subdirectory(colombia)
 add_subdirectory(italy)
 add_subdirectory(peru)
@@ -199,19 +200,6 @@ install(FILES
    Monaco.png
    papua_new_guinea.png
    greenland.png
-   pei.png
-   alberta.png
-   bc.png
-   manitoba.png
-   newbrunswick.png
-   newfoundland.png
-   novascotia.png
-   nunavut.png
-   nwterritories.png
-   ontario.png
-   quebec.png
-   saskatchewan.png
-   yukon.png
    usa_alabama.png
    usa_alaska.png
    usa_arizona.png
