@@ -37,7 +37,8 @@ install(FILES
    barbados.png
    estonia.png
    luxembourg.png
-   serbiamontenegro_3x2.png
+   serbia.png
+   montenegro.png
    ethiopia.png
    macedonia.png
    sierra_leone.png
