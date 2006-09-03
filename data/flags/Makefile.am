@@ -8,7 +8,7 @@ flags_DATA = albania.png djibouti.png latvia.png saarland.png algeria.png \
              libya.png saxony.png baden_wurttemberg.png equatorial_guinea.png \
              lithuania.png schleswig_holstein.png bahamas.png eritrea.png \
              lower_saxony.png senegal.png barbados.png estonia.png \
-             luxembourg.png serbiamontenegro_3x2.png bavaria.png ethiopia.png \
+             luxembourg.png serbia.png montenegro.png bavaria.png ethiopia.png \
              macedonia.png sierra_leone.png belarus.png finland.png \
              madagascar.png slovakia.png belgium.png france.png malawi.png \
              slovenia.png belize.png gabon.png mali.png somalia.png benin.png \

@@ -940,13 +940,23 @@
 		</color>
 	</division>
 	<division>
-		<name>Serbia and Montenegro</name>
-		<flag>serbiamontenegro_3x2.png</flag>
+		<name>Serbia</name>
+		<flag>serbia.png</flag>
 		<capital>Belgrade</capital>
 		<color>
 			<red>120</red>
 			<green>144</green>
 			<blue>18</blue>
+		</color>
+	</division>
+	<division>
+		<name>Montenegro</name>
+		<flag>montenegro.png</flag>
+		<capital>Podgorica</capital>
+		<color>
+			<red>255</red>
+			<green>12</green>
+			<blue>12</blue>
 		</color>
 	</division>
 	<division>
