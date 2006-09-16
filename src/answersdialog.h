@@ -23,7 +23,7 @@ class userAnswer;
 class answersDialog : public KDialog
 {
 	public:
-		answersDialog(QWidget *parent, const QVector<userAnswer> &userAnswers, QString question, int correctAnswers);
+		answersDialog(QWidget *parent, const QVector<userAnswer> &userAnswers, const QString &question, int correctAnswers);
 	
 	private:
 		QWidget *p_container;
