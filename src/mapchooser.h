@@ -26,7 +26,7 @@ class mapChooser : public KDialog
 {
 Q_OBJECT
 	public:
-		mapChooser(QWidget *parent);
+		explicit mapChooser(QWidget *parent);
 		~mapChooser();
 
 		KGmap *getMap();

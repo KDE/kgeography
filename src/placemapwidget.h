@@ -23,7 +23,7 @@ class placeMapWidget : public QGraphicsView
 {
 Q_OBJECT
 	public:
-		placeMapWidget(QWidget *parent);
+		explicit placeMapWidget(QWidget *parent);
 		~placeMapWidget();
 		
 		void init(KGmap *map, QImage* mapImage);

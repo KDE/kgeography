@@ -21,7 +21,7 @@ class mapWidget : public QGraphicsView
 {
 Q_OBJECT
 	public:
-		mapWidget(QWidget *parent);
+		explicit mapWidget(QWidget *parent);
 		
 		void init(const QString &path);
 

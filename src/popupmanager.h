@@ -21,7 +21,7 @@ class popupManager : public QObject
 {
 Q_OBJECT
 	public:
-		popupManager(QWidget *parent);
+		explicit popupManager(QWidget *parent);
 
 		// shows text at p and the flag
 		void show(const QString &text, const QString &text2, const QPoint &p, const QString &flagFile);
