@@ -15,10 +15,8 @@
 #include <QMouseEvent>
 #include <QScrollBar>
 #include <QTimer>
-#include <QtDebug>
 
 #include <kapplication.h>
-#include <kdebug.h>
 #include <klocale.h>
 
 #include "placemapwidget.h"
@@ -110,8 +108,23 @@ void placeMapWidget::setMapZoom(bool b)
 
 void placeMapWidget::setCurrentDivisionImage(QImage *divisionImage)
 {
+	p_currentDivisionImage = divisionImage;
+	updateCursor();
+}
+
+void placeMapWidget::updateCursor()
+{
+	unsetCursor();
 	delete p_currentCursor;
-	p_currentCursor = new QCursor(QPixmap::fromImage(*divisionImage));
+	if (matrix().isIdentity())
+	{
+		p_currentCursor = new QCursor(QPixmap::fromImage(*p_currentDivisionImage));
+	}
+	else
+	{
+		QImage scaledDivisionImage = p_currentDivisionImage->scaled(static_cast<int>(p_currentDivisionImage->width() * matrix().m11()),static_cast<int>(p_currentDivisionImage->height() * matrix().m22()));
+		p_currentCursor = new QCursor(QPixmap::fromImage(scaledDivisionImage));
+	}
 	setCursor(*p_currentCursor);
 }
 
@@ -194,6 +207,7 @@ void placeMapWidget::mouseReleaseEvent(QMouseEvent *)
 	{
 		p_automaticZoom = false;
 		fitInView( p_zoomRect );
+		updateCursor();
 		delete p_zoomRect;
 		p_zoomRect = 0;
 		
@@ -234,6 +248,7 @@ void placeMapWidget::setGameImage()
 	// if the matrix isn't set to something non-identity first
 	setMatrix( QMatrix( 2, 0, 0, 2, 0, 0 ) );
 	resetMatrix();
+	updateCursor();
 	
 	resetCachedContent();
 	updateActions();
@@ -244,6 +259,7 @@ void placeMapWidget::updateZoom()
 	if ( !p_automaticZoom )
 		return;
 	fitInView( p_gameImage->rect() );
+	updateCursor();
 }
 
 QSize placeMapWidget::mapSize() const

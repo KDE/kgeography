@@ -17,7 +17,6 @@
 #include <qlayout.h>
 #include <qscrollbar.h>
 #include <qstring.h>
-#include <QtDebug>
 
 #include "map.h"
 #include "placeasker.h"

@@ -51,9 +51,10 @@ Q_OBJECT
 		void mouseReleaseEvent(QMouseEvent *e);
 		void resizeEvent(QResizeEvent *e);
 		void drawBackground(QPainter *painter, const QRectF &rect);
+		void createGameMapImage();
+		void updateCursor();
 	
 	private:
-		void createGameMapImage();
 
 		/**
 		 * Updates the move and zoom toggle states from the current mode.
@@ -66,6 +67,7 @@ Q_OBJECT
                 KGmap *p_map;
 		QImage *p_mapImage;
 		QImage *p_gameImage;
+		QImage *p_currentDivisionImage;
 		QCursor *p_currentCursor;
 		QGraphicsRectItem *p_zoomRect;
 		QGraphicsScene *p_scene;
