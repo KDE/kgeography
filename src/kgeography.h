@@ -39,6 +39,7 @@ Q_OBJECT
 		void askCapitalDivisions();
 		void askDivisionCapitals();
 		void askMap();
+		void askPlaceMap();
 		void askFlagDivisions();
 		void askDivisionFlags();
 		void disclaimer();
@@ -60,6 +61,7 @@ Q_OBJECT
 		KPushButton *p_askCapitalDivisions;
 		KPushButton *p_askDivisionCapitals;
 		KPushButton *p_askMap;
+		KPushButton *p_askPlaceMap;
 		KPushButton *p_askFlagDivisions;
 		KPushButton *p_askDivisionFlags;
 		KToggleAction *p_zoom, *p_move;

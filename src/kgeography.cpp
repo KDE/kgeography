@@ -36,6 +36,7 @@
 #include "mapchooser.h"
 #include "mapparser.h"
 #include "map.h"
+#include "placeasker.h"
 
 kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDialog(false)
 {
@@ -60,6 +61,8 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	testYourselfLabel->setAlignment( Qt::AlignHCenter );
 	p_askMap = new KPushButton(i18n("&Location of Regions"), leftWidget);
 	p_askMap->setWhatsThis(i18n("In this challenge you are given a division name on the left under the menu and you must find it on the map and click on it"));
+	p_askPlaceMap = new KPushButton(i18n("&Place Regions in the Map"), leftWidget);
+	p_askPlaceMap->setWhatsThis(i18n("In this challenge you are given theshape of a region and you must place it on the map"));
 	p_askCapitalDivisions = new KPushButton(i18n("&Regions by Capital"), leftWidget);
 	p_askCapitalDivisions->setWhatsThis(i18n("In this quiz you have to guess the division name given its capital"));
 	p_askDivisionCapitals = new KPushButton(i18n("&Capitals of Regions"), leftWidget);
@@ -77,6 +80,7 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	leftWidgetLayout -> addSpacing(10);
 	leftWidgetLayout -> addWidget(testYourselfLabel);
 	leftWidgetLayout -> addWidget(p_askMap);
+	leftWidgetLayout -> addWidget(p_askPlaceMap);
 	leftWidgetLayout -> addWidget(p_askCapitalDivisions);
 	leftWidgetLayout -> addWidget(p_askDivisionCapitals);
 	leftWidgetLayout -> addWidget(p_askFlagDivisions);
@@ -88,6 +92,7 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 
 	connect(p_consult, SIGNAL(clicked()), this, SLOT(consult()));
 	connect(p_askMap, SIGNAL(clicked()), this, SLOT(askMap()));
+	connect(p_askPlaceMap, SIGNAL(clicked()), this, SLOT(askPlaceMap()));
 	connect(p_askCapitalDivisions, SIGNAL(clicked()), this, SLOT(askCapitalDivisions()));
 	connect(p_askDivisionCapitals, SIGNAL(clicked()), this, SLOT(askDivisionCapitals()));
 	connect(p_askFlagDivisions, SIGNAL(clicked()), this, SLOT(askFlagDivisions()));
@@ -150,6 +155,7 @@ void kgeography::showEvent(QShowEvent *)
 			p_currentMap -> setText(i18n("There is no current map"));
 			p_consult -> setEnabled(false);
 			p_askMap -> setEnabled(false);
+			p_askPlaceMap -> setEnabled(false);
 			p_askFlagDivisions -> setEnabled(false);
 			p_askDivisionFlags -> setEnabled(false);
 			p_askCapitalDivisions -> setEnabled(false);
@@ -235,6 +241,25 @@ void kgeography::askMap()
 	{
 		removeOldAskWidget();
 		p_askWidget = new mapAsker(p_bigWidget, p_map, p_underLeftWidget, true, i);
+		p_zoom -> setEnabled(true);
+		p_zoomOriginal -> setEnabled(true);
+		p_zoomAutomatic -> setEnabled(true);
+		putAskWidget();
+		p_mustShowResultsDialog = true;
+	}
+	else consult();
+}
+
+void kgeography::askPlaceMap()
+{
+	int i;
+	bool ok;
+	showResultsDialog();
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(true)), 1, 1, p_map -> count(true), 1, &ok);
+	if (ok)
+	{
+		removeOldAskWidget();
+		p_askWidget = new placeAsker(p_bigWidget, p_map, p_underLeftWidget, true, i);
 		p_zoom -> setEnabled(true);
 		p_zoomOriginal -> setEnabled(true);
 		p_zoomAutomatic -> setEnabled(true);
@@ -332,6 +357,7 @@ void kgeography::setMap(KGmap *m)
 	}
 	p_consult -> setEnabled(true);
 	p_askMap -> setEnabled(true);
+	p_askPlaceMap -> setEnabled(true);
 	p_askFlagDivisions -> setEnabled(m -> hasAllFlags());
 	p_askDivisionFlags -> setEnabled(m -> hasAllFlags());
 	p_askCapitalDivisions -> setEnabled(true);

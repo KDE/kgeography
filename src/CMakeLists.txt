@@ -20,6 +20,8 @@ set(kgeography_SRCS
    flagdivisionasker.cpp 
    askwidget.cpp 
    mapasker.cpp 
+   placeasker.cpp 
+   placemapwidget.cpp 
    capitaldivisionasker.cpp 
    divisioncapitalasker.cpp 
    boxasker.cpp 
