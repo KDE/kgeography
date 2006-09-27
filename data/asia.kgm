@@ -11,6 +11,15 @@
 		</color>
 	</division>
 	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>65</red>
+			<green>95</green>
+			<blue>173</blue>
+		</color>
+	</division>
+	<division>
 		<name>Russia</name>
 		<flag>russia.png</flag>
 		<capital>Moscow</capital>
