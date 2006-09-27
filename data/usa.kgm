@@ -23,9 +23,9 @@
 		<name>Water</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>255</red>
-			<green>255</green>
-			<blue>255</blue>
+			<red>220</red>
+			<green>220</green>
+			<blue>220</blue>
 		</color>
 	</division>
 	<division>
