@@ -148,11 +148,11 @@ QColor KGmap::getColor(const QString &s) const
 	return QColor(colors[i]);
 }
 
-const QList<division*> *KGmap::getIgnoredDivisions() const
+const QList<division*> KGmap::getIgnoredDivisions() const
 {
-	QList<division*> *ignoredDivisions = new QList<division*>;
+	QList<division*> ignoredDivisions;
 	foreach (division* div, p_colorMap)
 		if (!div->canAsk(false)) 
-			*ignoredDivisions << div;
+			ignoredDivisions << div;
 	return ignoredDivisions;
 }
