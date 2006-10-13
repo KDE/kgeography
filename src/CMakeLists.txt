@@ -31,7 +31,7 @@ set(kgeography_SRCS
 
 kde4_automoc(kgeography ${kgeography_SRCS})
 
-kde4_add_kcfg_files(kgeography_SRCS settings.kcfgc )
+kde4_add_kcfg_files(kgeography kgeography_SRCS settings.kcfgc )
 
 kde4_add_executable(kgeography ${kgeography_SRCS})
 
