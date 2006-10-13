@@ -29,7 +29,7 @@ set(kgeography_SRCS
    answer.cpp 
    answersdialog.cpp )
 
-kde4_automoc(${kgeography_SRCS})
+kde4_automoc(kgeography ${kgeography_SRCS})
 
 kde4_add_kcfg_files(kgeography_SRCS settings.kcfgc )
 
@@ -44,7 +44,7 @@ install(TARGETS kgeography  DESTINATION ${BIN_INSTALL_DIR} )
 
 set(script_SRCS script.cpp )
 
-kde4_automoc(${script_SRCS})
+kde4_automoc(script ${script_SRCS})
 
 kde4_add_executable(script NOGUI ${script_SRCS})
 
