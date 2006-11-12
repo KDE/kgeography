@@ -1,0 +1,89 @@
+<map>
+	<mapFile>czech.png</mapFile>
+	<name>Czech Republic</name>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Czech</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Prague</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Central Bohemia</name>
+		<capital>Prague</capital>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>South Bohemia</name>
+		<capital>České Budějovice</capital>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Plzeň</name>
+		<capital>Plzeň</capital>
+		<color><red>170</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>  Karlovy Vary</name>
+		<capital>Karlovy Vary</capital>
+		<color><red>85</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Ústí nad Labem</name>
+		<capital>Ústí nad Labem</capital>
+		<color><red>85</red><green>255</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Liberec</name>
+		<capital>Liberec</capital>
+		<color><red>85</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Hradec Králové</name>
+		<capital>Hradec Králové</capital>
+		<color><red>85</red><green>170</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Pardubice</name>
+		<capital>Pardubice</capital>
+		<color><red>85</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Olomouc</name>
+		<capital>Olomouc</capital>
+		<color><red>170</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Moravia-Silesia</name>
+		<capital>Ostrava</capital>
+		<color><red>255</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>South Moravia</name>
+		<capital>Brno</capital>
+		<color><red>255</red><green>85</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Zlín</name>
+		<capital>Zlín</capital>
+		<color><red>227</red><green>113</green><blue>113</blue></color>
+	</division>
+	<division>
+		<name>Vysočina</name>
+		<capital>Jihlava</capital>
+		<color><red>227</red><green>170</green><blue>113</blue></color>
+	</division>
+</map>
