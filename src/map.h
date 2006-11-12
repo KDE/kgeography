@@ -40,7 +40,7 @@ class KGmap
 		QString getRandomDivision(bool clickDivisionMode) const;
 		QString getWhatIs(QRgb c, bool all) const;
 		QColor getColor(const QString &s) const;
-		const QList<division*> getIgnoredDivisions() const;
+		const QList<division*> getIgnoredDivisions(bool clickDivisionMode) const;
 		
 	private:
 		division *getDivision(const QString &divisionName) const;

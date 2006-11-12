@@ -131,11 +131,11 @@ QColor KGmap::getColor(const QString &s) const
 	return QColor(getDivision(s)->getRGB());
 }
 
-const QList<division*> KGmap::getIgnoredDivisions() const
+const QList<division*> KGmap::getIgnoredDivisions(bool clickDivisionMode) const
 {
 	QList<division*> ignoredDivisions;
 	foreach (division* div, p_divisions)
-		if (!div->canAsk(false)) 
+		if (!div->canAsk(clickDivisionMode)) 
 			ignoredDivisions << div;
 	return ignoredDivisions;
 }

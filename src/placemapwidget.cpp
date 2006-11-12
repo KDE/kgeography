@@ -62,7 +62,7 @@ void placeMapWidget::createGameMapImage()
 	p_gameImage = new QImage(p_mapImage->size(), QImage::Format_RGB32);
 	p_gameImage->fill(QColor(255,255,255).rgb());
 
-	QList<division*> ignoredDivisions = p_map->getIgnoredDivisions();
+	QList<division*> ignoredDivisions = p_map->getIgnoredDivisions(true);
 	foreach(division *id, ignoredDivisions)
 	{
 		QRgb color = id->getRGB();
