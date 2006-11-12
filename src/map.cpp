@@ -28,11 +28,10 @@ KGmap::~KGmap()
 {
 	qDeleteAll(p_divisions);
 }
-#include <kdebug.h>
+
 bool KGmap::addDivision(division *d)
 {
 	bool b;
-kDebug() << d->getName() << " " << getDivision(d -> getName()) << " " << getDivision(d -> getRGB()) << endl;
 	if ( ( getDivision(d -> getName()) == NULL && getDivision(d -> getRGB()) == NULL ) || 
 	     ( getDivision(d -> getName()) != NULL && getDivision(d -> getRGB()) == NULL && !d->canAsk(false) && !getDivision(d -> getName())->canAsk(false) ) )
 	{
