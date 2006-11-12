@@ -48,7 +48,7 @@ kde4_automoc(${script_SRCS})
 
 kde4_add_executable(script NOGUI ${script_SRCS})
 
-target_link_libraries(script ${KDE4_KDECORE_LIBS} ${QT_QTXML_LIBRARY} )
+target_link_libraries(script ${QT_QTCORE_LIBRARY} ${QT_QTXML_LIBRARY} )
 
 
 ########### install files ###############
