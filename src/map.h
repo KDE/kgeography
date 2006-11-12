@@ -31,8 +31,8 @@ class KGmap
 		// return the number of askable divisions
 		uint count(bool clickDivisionMode) const;
 		bool hasAllFlags() const;
-		QString getDivisionFlagFile(const QString &s) const;
-		QString getDivisionCapital(const QString &s) const;
+		QString getDivisionFlagFile(const QString &divisionName) const;
+		QString getDivisionCapital(const QString &divisionName) const;
 		QString getFile() const;
 		QString getFileName() const;
 		QString getMapFile() const;
@@ -43,8 +43,10 @@ class KGmap
 		const QList<division*> getIgnoredDivisions() const;
 		
 	private:
-		QMap<QRgb, division*> p_colorMap;
-		QMap<QString, division*> p_nameMap;
+		division *getDivision(const QString &divisionName) const;
+		division *getDivision(QRgb c) const;
+
+		QList<division*> p_divisions;
 		
 		QString p_name, p_file, p_mapFile;
 		bool p_hasAllFlags;

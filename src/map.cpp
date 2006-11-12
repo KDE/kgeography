@@ -26,19 +26,19 @@ KGmap::KGmap()
 
 KGmap::~KGmap()
 {
-	qDeleteAll(p_colorMap.values());
+	qDeleteAll(p_divisions);
 }
-
-bool KGmap::addDivision(division *c)
+#include <kdebug.h>
+bool KGmap::addDivision(division *d)
 {
 	bool b;
-	if (p_nameMap.find(c -> getName()) == p_nameMap.end() && 
-		p_colorMap.find(c -> getRGB()) == p_colorMap.end())
+kDebug() << d->getName() << " " << getDivision(d -> getName()) << " " << getDivision(d -> getRGB()) << endl;
+	if ( ( getDivision(d -> getName()) == NULL && getDivision(d -> getRGB()) == NULL ) || 
+	     ( getDivision(d -> getName()) != NULL && getDivision(d -> getRGB()) == NULL && !d->canAsk(false) && !getDivision(d -> getName())->canAsk(false) ) )
 	{
-		p_colorMap.insert(c -> getRGB(), c);
-		p_nameMap.insert(c -> getName(), c);
+		p_divisions.append(d);
 		b = true;
-		if (c -> canAsk(false)) p_hasAllFlags = p_hasAllFlags && !c -> getFlagFile().isNull();
+		if (d -> canAsk(false)) p_hasAllFlags = p_hasAllFlags && !d -> getFlagFile().isNull();
 	}
 	else b = false;
 	return b;
@@ -62,13 +62,10 @@ void KGmap::setName(const QString &s)
 
 uint KGmap::count(bool clickDivisionMode) const
 {
-	QList<division*> aux = p_nameMap.values();
-	QList<division*>::const_iterator it = aux.begin();
-	QList<division*>::const_iterator end = aux.end();
 	uint count = 0;
-	for( ; it != end; ++it)
+	foreach(const division *d, p_divisions)
 	{
-		if ((*it)->canAsk(clickDivisionMode)) count++;
+		if (d->canAsk(clickDivisionMode)) count++;
 	}
 	return count;
 }
@@ -80,12 +77,12 @@ bool KGmap::hasAllFlags() const
 
 QString KGmap::getDivisionFlagFile(const QString &s) const
 {
-	return p_nameMap[s] -> getFlagFile();
+	return getDivision(s) -> getFlagFile();
 }
 
 QString KGmap::getDivisionCapital(const QString &s) const
 {
-	return p_nameMap[s] -> getCapital();
+	return getDivision(s) -> getCapital();
 }
 
 QString KGmap::getFile() const
@@ -112,47 +109,52 @@ QString KGmap::getName() const
 QString KGmap::getRandomDivision(bool clickDivisionMode) const
 {
 	QList<division*> aux;
-	int i = (int)((float)p_nameMap.size() * KRandom::random() / (RAND_MAX + 1.0));
-	aux = p_nameMap.values();
-	if (!aux[i] -> canAsk(clickDivisionMode)) return getRandomDivision(clickDivisionMode);
-	else return aux[i] -> getName();
+	int i = (int)((float)p_divisions.size() * KRandom::random() / (RAND_MAX + 1.0));
+	if (!p_divisions[i] -> canAsk(clickDivisionMode)) return getRandomDivision(clickDivisionMode);
+	else return p_divisions[i] -> getName();
 }
 
 QString KGmap::getWhatIs(QRgb c, bool all) const
 {
 	// this is only asked from mapasker.cpp hence the true in canAsk
-	QMap<QRgb, division*>::const_iterator it;
-	it = p_colorMap.find(c);
-	if (it == p_colorMap.end()) return "nothing";
+	division *d = getDivision(c);
+	if (d == NULL) return "nothing";
 	else
 	{
-		if (all) return it.value() -> getName();
-		else if (it.value() -> canAsk(true)) return it.value() -> getName();
+		if (all) return d -> getName();
+		else if (d -> canAsk(true)) return d -> getName();
 		else return "";
 	}
 }
 
 QColor KGmap::getColor(const QString &s) const
 {
-	QList<division*> divisions;
-	QList<QRgb> colors;
-	division *d;
-	int i;
-	
-	d = p_nameMap[s];
-	divisions = p_colorMap.values();
-	colors = p_colorMap.keys();
-	
-	i = 0;
-	while(divisions[i] != d) i++;
-	return QColor(colors[i]);
+	return QColor(getDivision(s)->getRGB());
 }
 
 const QList<division*> KGmap::getIgnoredDivisions() const
 {
 	QList<division*> ignoredDivisions;
-	foreach (division* div, p_colorMap)
+	foreach (division* div, p_divisions)
 		if (!div->canAsk(false)) 
 			ignoredDivisions << div;
 	return ignoredDivisions;
+}
+
+division *KGmap::getDivision(const QString &divisionName) const
+{
+	foreach (division* div, p_divisions)
+	{
+		if (div->getName() == divisionName) return div;
+	}
+	return NULL;
+}
+
+division *KGmap::getDivision(QRgb c) const
+{
+	foreach (division* div, p_divisions)
+	{
+		if (div->getRGB() == c) return div;
+	}
+	return NULL;
 }
