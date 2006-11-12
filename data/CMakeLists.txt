@@ -60,5 +60,7 @@ install(FILES
    estonia.png
    belarus.kgm
    belarus.png
+   slovakia.kgm
+   slovakia.png
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
