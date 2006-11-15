@@ -44,6 +44,8 @@ install(FILES
    netherlands.kgm
    hungary.kgm
    hungary.png
+   hungary_regions.kgm
+   hungary_regions.png
    belgium.kgm
    belgium.png
    southkorea.kgm

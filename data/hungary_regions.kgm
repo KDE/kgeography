@@ -1,0 +1,59 @@
+<map>
+	<mapFile>hungary_regions.png</mapFile>
+	<name>Hungary (Regions)</name>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Hungary (Regions)</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Western Transdanubia</name>
+		<capital>Győr</capital>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Southern Transdanubia</name>
+		<capital>Pécs</capital>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Central Transdanubia</name>
+		<capital>Székesfehérvár</capital>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Central Hungary</name>
+		<capital>Budapest</capital>
+		<color><red>85</red><green>255</green><blue>182</blue></color>
+	</division>
+	<division>
+		<name>Northern Hungary</name>
+		<capital>Miskolc</capital>
+		<color><red>85</red><green>182</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Northern Great Plain</name>
+		<capital>Debrecen</capital>
+		<color><red>134</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Southern Great Plain</name>
+		<capital>Szeged</capital>
+		<color><red>255</red><green>85</green><blue>231</blue></color>
+	</division>
+</map>
