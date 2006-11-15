@@ -14,27 +14,12 @@
 #include <kstandarddirs.h>
 
 #include <qimage.h>
+#include <qlabel.h>
 #include <qlayout.h>
 #include <qlistwidget.h>
 #include <qpainter.h>
 
 #include "mapchooser.h"
-
-class imageWidget : public QWidget
-{
-	public:
-		imageWidget(QWidget *parent) : QWidget(parent)
-		{
-		}
-
-		void paintEvent(QPaintEvent *)
-		{
-			QPainter p(this);
-			p.drawPixmap(0, 0, pix);
-		}
-		
-		QPixmap pix;
-};
 
 mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 {
@@ -45,8 +30,6 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 	QHBoxLayout *mainHBLayout;
 	QStringList list;
 	KGmap *m;
-	QWidget *mapArea;
-	QGridLayout *mapLay;
 	
 	mainHB = new QWidget(this);
 	mainHBLayout = new QHBoxLayout(mainHB);
@@ -72,20 +55,10 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 		}
 	}
 	
-	mapArea = new QWidget(mainHB);
-	mapArea -> setFixedSize(300, 225);
-	mainHBLayout -> addWidget(mapArea);
-	
-	mapLay = new QGridLayout(mapArea);
-	mapLay -> setMargin(3);
-	mapLay -> setSpacing(3);
-	mapLay -> setColumnStretch(0, 1);
-	mapLay -> setColumnStretch(2, 1);
-	mapLay -> setRowStretch(0, 1);
-	mapLay -> setRowStretch(2, 1);
-	
-	p_image = new imageWidget(mapArea);
-	mapLay -> addWidget(p_image, 1, 1);
+	p_image = new QLabel(mainHB);
+	p_image -> setFixedSize(300, 225);
+	p_image -> setAlignment(Qt::AlignCenter);
+	mainHBLayout -> addWidget(p_image);
 	
 	connect(p_listBox, SIGNAL(currentTextChanged(const QString&)), this, SLOT(putImage(const QString&)));
 	connect(p_listBox, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(accept()));
@@ -117,8 +90,7 @@ void mapChooser::putImage(const QString &mapName)
 	m = p_maps[mapName];
 	QImage image(m -> getMapFile());
 	image = image.scaled(300, 225, Qt::KeepAspectRatio, Qt::SmoothTransformation);
-	p_image -> pix = QPixmap::fromImage(image);
-	p_image -> setFixedSize(image.size());
+	p_image -> setPixmap( QPixmap::fromImage(image) );
 }
 
 #include "mapchooser.moc"

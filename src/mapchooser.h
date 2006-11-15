@@ -20,8 +20,6 @@
 
 class QListWidget;
 
-class imageWidget;
-
 class mapChooser : public KDialog
 {
 Q_OBJECT
@@ -36,7 +34,7 @@ Q_OBJECT
 
 	private:
 		QListWidget *p_listBox;
-		imageWidget *p_image;
+		QLabel *p_image;
 		mapReader p_reader;
 		QHash<QString, KGmap*> p_maps;
 };
