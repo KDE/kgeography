@@ -18,7 +18,7 @@
 <firstname>Anne-Marie</firstname>
 <surname>Mahfouf</surname>
 </personname>
-&Anne-Marie.Mahfouf.mail;
+<email>&Anne-Marie.Mahfouf.mail;</email>
 </author>
 <!-- TRANS:ROLES_OF_TRANSLATORS -->
 </authorgroup>
@@ -38,10 +38,10 @@
 
 <abstract>
 <para>
-&kgeography; is a geography learning tool for &kde;. Right now it has six usage modes: 
+&kgeography; is a geography learning tool for &kde;. Right now it has six usage modes:
 <itemizedlist>
 <listitem>
-<para>Browse the maps clicking in a map division to see its name</para>
+<para>Browse the maps clicking in a map division to see its name, capital and flag</para>
 </listitem>
 <listitem>
 <para>The game tells you a map division name and you have to click on it</para>
@@ -385,7 +385,7 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
 <title>Map file</title>
 <para>
  The map file is quite simple but laborious to create. It has to be in <acronym>PNG</acronym> format.
- You can find some maps to transform at <ulink url="http://www.odci.gov/cia/publications/factbook/docs/refmaps.html">Cia Reference Maps</ulink>. If no map fits your needs you can download the <ulink url="http://www.odci.gov/cia/publications/factbook/reference_maps/pdf/political_world.pdf">world pdf</ulink>, take a screenshot of it and work from it.
+ You can find some maps to transform at <ulink url="https://www.cia.gov/cia/publications/factbook/docs/refmaps.html">Cia Reference Maps</ulink>. If no map fits your needs you can download the <ulink url="https://www.cia.gov/cia/publications/factbook/reference_maps/pdf/political_world.pdf">political world map</ulink>, take a screenshot of it and work from it.
  Each division in the map should have one and only one color. To achieve this you can use image processing programs like <application>The Gimp</application> and <application>Kolourpaint</application>.
 </para>
 </sect1>
@@ -573,7 +573,7 @@ Section</link> for the answer.</para>
 </qandaentry>
 <qandaentry>
 <question>
-<para>Why can't I twiddle my documents?</para>
+<para>Why am I not able to twiddle my documents?</para>
 </question>
 <answer>
 <para>You can only twiddle your documents if you have the foobar.lib
@@ -598,22 +598,13 @@ distribution. -->
 <para>
 Program copyright 2004-2005 Albert Astals Cid <email>tsdgeos@terra.es</email>
 </para>
-<!--<para>
-Contributors:
-<itemizedlist>
-<listitem><para>Konqui the KDE Dragon <email>konqui@kde.org</email></para>
-</listitem>
-<listitem><para>Tux the Linux Penguin <email>tux@linux.org</email></para>
-</listitem>
-</itemizedlist>
-</para>-->
+
 
 <para>
-Documentation Copyright &copy; 2005 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;
+Documentation Copyright &copy; 2005 &Anne-Marie.Mahfouf; <email>&Anne-Marie.Mahfouf.mail;</email>
 </para>
 
 <!-- TRANS:CREDIT_FOR_TRANSLATORS -->
-
 &underFDL;
 &underGPL;
 
@@ -627,7 +618,7 @@ Documentation Copyright &copy; 2005 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mai
 
 <!-- This first entity contains boiler plate for applications that are
 part of KDE CVS.  You should remove it if you are releasing your
-application --> 
+application -->
 
 &install.intro.documentation;
 
