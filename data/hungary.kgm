@@ -1,211 +1,124 @@
 <map>
 	<mapFile>hungary.png</mapFile>
-	<name>Hungary</name>
+	<name>Hungary (Counties)</name>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>
-		<color>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-		</color>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
 	</division>
 	<division>
-		<name>Not Hungary</name>
+		<name>Frontier</name>
 		<ignore>yes</ignore>
-		<color>
-			<red>220</red>
-			<green>220</green>
-			<blue>220</blue>
-		</color>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
 	</division>
 	<division>
 		<name>Water</name>
 		<ignore>yes</ignore>
-		<color>
-			<red>48</red>
-			<green>57</green>
-			<blue>182</blue>
-		</color>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Hungary</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Bács-Kiskun</name>
+		<capital>Kecskemét</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Baranya</name>
+		<capital>Pécs</capital>
+		<color><red>255</red><green>128</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Békés</name>
+		<capital>Békéscsaba</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Borsod-Abaúj-Zemplén</name>
+		<capital>Miskolc</capital>
+		<color><red>255</red><green>191</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Csongrád</name>
+		<capital>Szeged</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Fejér</name>
+		<capital>Székesfehérvár</capital>
+		<color><red>255</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Győr-Moson-Sopron</name>
+		<capital>Győr</capital>
+		<color><red>51</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Hajdú-Bihar</name>
+		<capital>Debrecen</capital>
+		<color><red>153</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Heves</name>
+		<capital>Eger</capital>
+		<color><red>0</red><green>255</green><blue>102</blue></color>
+	</division>
+	<division>
+		<name>Jász-Nagykun-Szolnok</name>
+		<capital>Szolnok</capital>
+		<color><red>128</red><green>255</green><blue>179</blue></color>
+	</division>
+	<division>
+		<name>Komárom-Esztergom</name>
+		<capital>Tatabánya</capital>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Nógrád</name>
+		<capital>Salgótarján</capital>
+		<color><red>128</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Pest</name>
+		<capital>Budapest</capital>
+		<color><red>0</red><green>102</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Somogy</name>
+		<capital>Kaposvár</capital>
+		<color><red>128</red><green>178</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Szabolcs-Szatmár-Bereg</name>
+		<capital>Nyíregyháza</capital>
+		<color><red>51</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Tolna</name>
+		<capital>Szekszárd</capital>
+		<color><red>153</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Vas</name>
+		<capital>Szombathely</capital>
+		<color><red>204</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Veszprém</name>
+		<capital>Veszprém</capital>
+		<color><red>229</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Zala</name>
+		<capital>Zalaegerszeg</capital>
+		<color><red>255</red><green>0</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>Budapest</name>
-		<capital>Budapest</capital>
-		<color>
-			<red>255</red>
-			<green>255</green>
-			<blue>0</blue>
-		</color>
-	</division>
-	<division>
-		<name>Győr-Moson-Sopron megye</name>
-		<capital>Győr</capital>
-		<color>
-			<red>208</red>
-			<green>237</green>
-			<blue>208</blue>
-		</color>
-	</division>
-	<division>
-		<name>Zala megye</name>
-		<capital>Zalaegerszeg</capital>
-		<color>
-			<red>178</red>
-			<green>237</green>
-			<blue>178</blue>
-		</color>
-	</division>
-	<division>
-		<name>Tolna megye</name>
-		<capital>Szekszárd</capital>
-		<color>
-			<red>148</red>
-			<green>237</green>
-			<blue>148</blue>
-		</color>
-	</division>
-	<division>
-		<name>Pest megye</name>
-		<capital>Budapest</capital>
-		<color>
-			<red>118</red>
-			<green>237</green>
-			<blue>118</blue>
-		</color>
-	</division>
-	<division>
-		<name>Szabolcs-Szatmár-Bereg megye</name>
-		<capital>Nyíregyháza</capital>
-		<color>
-			<red>88</red>
-			<green>237</green>
-			<blue>88</blue>
-		</color>
-	</division>
-	<division>
-		<name>Békés megye</name>
-		<capital>Békéscsaba</capital>
-		<color>
-			<red>58</red>
-			<green>237</green>
-			<blue>58</blue>
-		</color>
-	</division>
-	<division>
-		<name>Komárom-Esztergom megye</name>
-		<capital>Tatabánya</capital>
-		<color>
-			<red>255</red>
-			<green>28</green>
-			<blue>255</blue>
-		</color>
-	</division>
-	<division>
-		<name>Borsod-Abaúj-Zemplén megye</name>
-		<capital>Miskolc</capital>
-		<color>
-			<red>255</red>
-			<green>128</green>
-			<blue>255</blue>
-		</color>
-	</division>
-	<division>
-		<name>Baranya megye</name>
-		<capital>Pécs</capital>
-		<color>
-			<red>255</red>
-			<green>228</green>
-			<blue>255</blue>
-		</color>
-	</division>
-	<division>
-		<name>Veszprém megye</name>
-		<capital>Veszprém</capital>
-		<color>
-			<red>255</red>
-			<green>255</green>
-			<blue>128</blue>
-		</color>
-	</division>
-	<division>
-		<name>Bács-Kiskun megye</name>
-		<capital>Kecskemét</capital>
-		<color>
-			<red>255</red>
-			<green>255</green>
-			<blue>148</blue>
-		</color>
-	</division>
-	<division>
-		<name>Nógrád megye</name>
-		<capital>Salgótarján</capital>
-		<color>
-			<red>255</red>
-			<green>255</green>
-			<blue>168</blue>
-		</color>
-	</division>
-	<division>
-		<name>Hajdú-Bihar megye</name>
-		<capital>Debrecen</capital>
-		<color>
-			<red>255</red>
-			<green>255</green>
-			<blue>188</blue>
-		</color>
-	</division>
-	<division>
-		<name>vas megye</name>
-		<capital>Szombathely</capital>
-		<color>
-			<red>0</red>
-			<green>228</green>
-			<blue>255</blue>
-		</color>
-	</division>
-	<division>
-		<name>Fejér megye</name>
-		<capital>Székesfehérvár</capital>
-		<color>
-			<red>0</red>
-			<green>188</green>
-			<blue>255</blue>
-		</color>
-	</division>
-	<division>
-		<name>Jász-Nagykun-Szolnok megye</name>
-		<capital>Szolnok</capital>
-		<color>
-			<red>0</red>
-			<green>148</green>
-			<blue>255</blue>
-		</color>
-	</division>
-	<division>
-		<name>Somogy megye</name>
-		<capital>Kaposvár</capital>
-		<color>
-			<red>255</red>
-			<green>48</green>
-			<blue>128</blue>
-		</color>
-	</division>	
-	<division>
-		<name>Csongrád megye</name>
-		<capital>Szeged</capital>
-		<color>
-			<red>255</red>
-			<green>88</green>
-			<blue>128</blue>
-		</color>
-	</division>	
-	<division>
-		<name>Heves megye</name>
-		<capital>Eger</capital>
-		<color>
-			<red>255</red>
-			<green>128</green>
-			<blue>128</blue>
-		</color>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>128</green><blue>204</blue></color>
 	</division>
 </map>
