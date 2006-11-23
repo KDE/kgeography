@@ -167,7 +167,7 @@ void mapAsker::setScrollBarsMaximumSize(int w, int h)
 	p_hsbms = w;
 	p_vsbms = h;
 }
-
+#include <kdebug.h>
 void mapAsker::nextQuestionHook(const QString &division)
 {
 	QString sw = i18n("There are two ways of dealing with the translation of \"Please click on: %1\". The first option simply replaces %1 with the translated name of the relevant region/city. If the grammar of your language allows this, choose this option by setting the translation of this message to 1, and leave untranslated the translations of \"Please click on: %1\" that have the placename embedded (or translate them as - if you wish to show the file as fully translated. The second option is to translate all messages in full - this is likely to be required in the case of highly-inflected languages like Russian. To choose this option, set the translation of this message to 0, and translate all the messages.", "0");
@@ -176,14 +176,13 @@ void mapAsker::nextQuestionHook(const QString &division)
 		QString divisionName = i18n(p_map -> getFileName().utf8(), division.utf8());
 		QString text = i18n("Please click on:\n%1");
 		p_next -> setText(text.arg(divisionName));
-		p_currentAnswer.setQuestion(divisionName);
 	}
 	else
 	{
 		QString s = QString("Please click on:\n%1").arg(division);
-		p_next -> setText(i18n(p_map -> getFile().utf8(), s.utf8()));
-		p_currentAnswer.setQuestion(i18n(p_map -> getFile().utf8(), division.utf8()));
+		p_next -> setText(i18n(p_map -> getFileName().utf8(), s.utf8()));
 	}
+	p_currentAnswer.setQuestion(i18n(p_map -> getFileName().utf8(), division.utf8()));
 	p_next -> show();
 	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
 }
