@@ -176,14 +176,15 @@ void mapAsker::nextQuestionHook(const QString &division)
 		QString divisionName = i18n(p_map -> getFileName().utf8(), division.utf8());
 		QString text = i18n("Please click on:\n%1");
 		p_next -> setText(text.arg(divisionName));
+		p_currentAnswer.setQuestion(divisionName);
 	}
 	else
 	{
 		QString s = QString("Please click on:\n%1").arg(division);
 		p_next -> setText(i18n(p_map -> getFile().utf8(), s.utf8()));
+		p_currentAnswer.setQuestion(i18n(p_map -> getFile().utf8(), division.utf8()));
 	}
 	p_next -> show();
-	p_currentAnswer.setQuestion(i18n(p_map -> getFile().utf8(), division.utf8()));
 	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
 }
 
