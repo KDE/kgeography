@@ -25,17 +25,17 @@ mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count
 	QVBoxLayout *lay = new QVBoxLayout(this);
 	lay -> setMargin(0);
 	lay -> setSpacing(0);
-	
+
 	p_mapWidget = new mapWidget(this);
 	lay -> addWidget(p_mapWidget);
-	
+
 	p_shouldClearPopup = false;
-	
+
 	connect(p_mapWidget, SIGNAL(clicked(QRgb, const QPoint&)), this, SLOT(handleMapClick(QRgb, const QPoint&)));
 	connect(p_mapWidget, SIGNAL(setMoveActionChecked(bool)), this, SIGNAL(setMoveActionChecked(bool)));
 	connect(p_mapWidget, SIGNAL(setZoomActionChecked(bool)), this, SIGNAL(setZoomActionChecked(bool)));
 	connect(p_mapWidget, SIGNAL(setMoveActionEnabled(bool)), this, SIGNAL(setMoveActionEnabled(bool)));
-	
+
 	if (asker)
 	{
 		QVBoxLayout *vbl = static_cast<QVBoxLayout*>(w -> layout());
@@ -113,7 +113,7 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 			flagFile = p_map -> getDivisionFlagFile(aux);
 			cap = i18nc(p_map -> getFileName().toUtf8(), cap.toUtf8());
 		}
-		
+
 		aux = i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8());
 
 		if (!flagFile.isEmpty()) p_popupManager.show(aux, cap, p, flagFile);
@@ -135,14 +135,15 @@ void mapAsker::nextQuestionHook(const QString &division)
 	{
 		QString divisionName = i18nc(p_map -> getFileName().toUtf8(), division.toUtf8());
 		p_next -> setText(i18n("Please click on:\n%1", divisionName));
+		p_currentAnswer.setQuestion(divisionName);
 	}
 	else
 	{
 		QString s = QString("Please click on:\n%1").arg(division);
 		p_next -> setText(i18nc(p_map -> getFile().toUtf8(), s.toUtf8()));
+		p_currentAnswer.setQuestion(i18nc(p_map -> getFile().toUtf8(), division.toUtf8()));
 	}
 	p_next -> show();
-	p_currentAnswer.setQuestion(i18nc(p_map -> getFile().toUtf8(), division.toUtf8()));
 	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
 }
 
