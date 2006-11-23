@@ -167,7 +167,7 @@ void mapAsker::setScrollBarsMaximumSize(int w, int h)
 	p_hsbms = w;
 	p_vsbms = h;
 }
-#include <kdebug.h>
+
 void mapAsker::nextQuestionHook(const QString &division)
 {
 	QString sw = i18n("There are two ways of dealing with the translation of \"Please click on: %1\". The first option simply replaces %1 with the translated name of the relevant region/city. If the grammar of your language allows this, choose this option by setting the translation of this message to 1, and leave untranslated the translations of \"Please click on: %1\" that have the placename embedded (or translate them as - if you wish to show the file as fully translated. The second option is to translate all messages in full - this is likely to be required in the case of highly-inflected languages like Russian. To choose this option, set the translation of this message to 0, and translate all the messages.", "0");
