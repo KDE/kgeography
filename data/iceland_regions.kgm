@@ -1,0 +1,84 @@
+<map>
+	<mapFile>iceland_regions.png</mapFile>
+	<name>Iceland (Regions)</name>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
+	</division>
+	<division>
+		<name>Not Iceland (Regions)</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>East Region</name>
+		<capital>Egilsstaðir</capital>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Capital Region</name>
+		<capital>Reykjavík</capital>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Northeast Region</name>
+		<capital>Akureyri</capital>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Northwest Region</name>
+		<capital>Sauðárkrókur</capital>
+		<color><red>170</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>South Region</name>
+		<capital>Selfoss</capital>
+		<color><red>85</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Southern Peninsula</name>
+		<capital>Keflavík</capital>
+		<color><red>85</red><green>255</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Westfjords</name>
+		<capital>Ísafjörður</capital>
+		<color><red>85</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>West Region</name>
+		<capital>Borgarnes</capital>
+		<color><red>85</red><green>170</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Vatnajökull Glacier</name>
+		<ignore>yes</ignore>
+		<color><red>254</red><green>254</green><blue>254</blue></color>
+	</division>
+	<division>
+		<name>Langjökull Glacier</name>
+		<ignore>yes</ignore>
+		<color><red>253</red><green>253</green><blue>253</blue></color>
+	</division>
+	<division>
+		<name>Hofsjökull Glacier</name>
+		<ignore>yes</ignore>
+		<color><red>252</red><green>252</green><blue>252</blue></color>
+	</division>
+	<division>
+		<name>Mýrdalsjökull Glacier</name>
+		<ignore>yes</ignore>
+		<color><red>251</red><green>251</green><blue>251</blue></color>
+	</division>
+	<division>
+		<name>Drangajökull Glacier</name>
+		<ignore>yes</ignore>
+		<color><red>250</red><green>250</green><blue>250</blue></color>
+	</division>
+</map>
