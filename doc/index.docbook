@@ -41,7 +41,7 @@
 &kgeography; is a geography learning tool for &kde;. Right now it has six usage modes:
 <itemizedlist>
 <listitem>
-<para>Browse the maps clicking in a map division to see its name</para>
+<para>Browse the maps clicking in a map division to see its name, capital and flag</para>
 </listitem>
 <listitem>
 <para>The game tells you a map division name and you have to click on it</para>
@@ -385,7 +385,7 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
 <title>Map file</title>
 <para>
  The map file is quite simple but laborious to create. It has to be in <acronym>PNG</acronym> format.
- You can find some maps to transform at <ulink url="http://www.odci.gov/cia/publications/factbook/docs/refmaps.html">Cia Reference Maps</ulink>. If no map fits your needs you can download the <ulink url="http://www.odci.gov/cia/publications/factbook/reference_maps/pdf/political_world.pdf">world pdf</ulink>, take a screenshot of it and work from it.
+ You can find some maps to transform at <ulink url="https://www.cia.gov/cia/publications/factbook/docs/refmaps.html">Cia Reference Maps</ulink>. If no map fits your needs you can download the <ulink url="https://www.cia.gov/cia/publications/factbook/reference_maps/pdf/political_world.pdf">political world map</ulink>, take a screenshot of it and work from it.
  Each division in the map should have one and only one color. To achieve this you can use image processing programs like <application>The Gimp</application> and <application>Kolourpaint</application>.
 </para>
 </sect1>
