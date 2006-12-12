@@ -68,5 +68,11 @@ install(FILES
    czech.png
    iceland_regions.kgm
    iceland_regions.png
+   costa_rica.kgm
+   costa_rica.png
+   belize.kgm
+   belize.png
+   cuba.kgm
+   cuba.png
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 

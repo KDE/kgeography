@@ -1,0 +1,104 @@
+<map>
+	<mapFile>cuba.png</mapFile>
+	<name>Cuba</name>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
+	</division>
+	<division>
+		<name>Not Cuba</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Isla de la Juventud</name>
+		<capital>Nueva Gerona</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Pinar del Río</name>
+		<capital>Pinar del Río</capital>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>128</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>La Habana</name>
+		<capital>La Habana</capital>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Ciudad de La Habana</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>191</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Matanzas</name>
+		<capital>Matanzas</capital>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Cienfuegos</name>
+		<capital>Cienfuegos</capital>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Villa Clara</name>
+		<capital>Santa Clara</capital>
+		<color><red>73</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Sancti Spíritus</name>
+		<capital>Sancti Spíritus</capital>
+		<ignore>allowClickMode</ignore>
+		<color><red>164</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Ciego de Ávila</name>
+		<capital>Ciego de Ávila</capital>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>255</green><blue>146</blue></color>
+	</division>
+	<division>
+		<name>Camagüey</name>
+		<capital>Camagüey</capital>
+		<ignore>allowClickMode</ignore>
+		<color><red>128</red><green>255</green><blue>200</blue></color>
+	</division>
+	<division>
+		<name>Las Tunas</name>
+		<capital>Victoria de Las Tunas</capital>
+		<color><red>0</red><green>146</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Granma</name>
+		<capital>Bayamo</capital>
+		<color><red>128</red><green>200</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Holguín</name>
+		<capital>Holguín</capital>
+		<ignore>allowClickMode</ignore>
+		<color><red>73</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Santiago de Cuba</name>
+		<capital>Santiago de Cuba</capital>
+		<ignore>allowClickMode</ignore>
+		<color><red>164</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Guantánamo</name>
+		<capital>Guantánamo</capital>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>0</green><blue>219</blue></color>
+	</division>
+</map>

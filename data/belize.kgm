@@ -1,0 +1,54 @@
+<map>
+	<mapFile>belize.png</mapFile>
+	<name>Belize</name>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Belize</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Belize District</name>
+		<capital>Belize City</capital>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Cayo District</name>
+		<capital>San Ignacio</capital>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Corozal District</name>
+		<capital>Corozal Town</capital>
+		<color><red>85</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Orange Walk District</name>
+		<capital>Orange Walk Town</capital>
+		<color><red>85</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Stann Creek District</name>
+		<capital>Dangriga</capital>
+		<color><red>85</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Toledo District</name>
+		<capital>Punta Gorda</capital>
+		<color><red>255</red><green>85</green><blue>255</blue></color>
+	</division>
+</map>
