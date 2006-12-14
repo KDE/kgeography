@@ -1,0 +1,184 @@
+<map>
+	<mapFile>dominican_republic.png</mapFile>
+	<name>Dominican Republic</name>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Dominican Republic</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Azua</name>
+		<capital>Azua de Compostela</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Baoruco</name>
+		<capital>Neiba</capital>
+		<color><red>255</red><green>128</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Barahona</name>
+		<capital>Santa Cruz de Barahona</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Dajabón</name>
+		<capital>Dajabón</capital>
+		<color><red>255</red><green>191</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Duarte</name>
+		<capital>San Francisco de Macorís</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Elías Piña</name>
+		<capital>Comendador</capital>
+		<color><red>255</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>El Seibo</name>
+		<capital>Santa Cruz del Seibo</capital>
+		<color><red>128</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Espaillat</name>
+		<capital>Moca</capital>
+		<color><red>191</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Hato Mayor</name>
+		<capital>Hato Mayor del Rey</capital>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Independencia</name>
+		<capital>Jimaní</capital>
+		<color><red>128</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>La Altagracia</name>
+		<capital>Salvaleón de Higüey</capital>
+		<color><red>0</red><green>255</green><blue>127</blue></color>
+	</division>
+	<division>
+		<name>La Romana</name>
+		<capital>La Romana</capital>
+		<color><red>128</red><green>255</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>La Vega</name>
+		<capital>Concepción de La Vega</capital>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>María Trinidad Sánchez</name>
+		<capital>Nagua</capital>
+		<color><red>128</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Monseñor Nouel</name>
+		<capital>Bonao</capital>
+		<color><red>0</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Monte Cristi</name>
+		<capital>San Fernando de Monte Cristi</capital>
+		<color><red>128</red><green>191</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Monte Plata</name>
+		<capital>Monte Plata</capital>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Pedernales</name>
+		<capital>Pedernales</capital>
+		<color><red>128</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Peravia</name>
+		<capital>Baní</capital>
+		<color><red>127</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Puerto Plata</name>
+		<capital>San Felipe de Puerto Plata</capital>
+		<color><red>191</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Salcedo</name>
+		<capital>Salcedo</capital>
+		<color><red>255</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Samaná</name>
+		<capital>Santa Bárbara de Samaná</capital>
+		<color><red>255</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Sánchez Ramírez</name>
+		<capital>Cotuí</capital>
+		<color><red>255</red><green>0</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>San Cristóbal</name>
+		<capital>San Cristóbal</capital>
+		<color><red>255</red><green>128</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>San José de Ocoa</name>
+		<capital>San José de Ocoa</capital>
+		<color><red>212</red><green>43</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>San Juan</name>
+		<capital>San Juan de la Maguana</capital>
+		<color><red>234</red><green>149</green><blue>149</blue></color>
+	</division>
+	<division>
+		<name>San Pedro de Macorís</name>
+		<capital>San Pedro de Macorís</capital>
+		<color><red>212</red><green>128</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>Santiago</name>
+		<capital>Santiago de los Caballeros</capital>
+		<color><red>234</red><green>191</green><blue>149</blue></color>
+	</division>
+	<division>
+		<name>Santiago Rodríguez</name>
+		<capital>San Ignacio de Sabaneta</capital>
+		<color><red>212</red><green>212</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>Santo Domingo</name>
+		<capital>Santo Domingo de Guzmán</capital>
+		<color><red>234</red><green>234</green><blue>149</blue></color>
+	</division>
+	<division>
+		<name>Valverde</name>
+		<capital>Santa Cruz de Mao</capital>
+		<color><red>128</red><green>212</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>National District</name>
+		<capital>Santo Domingo de Guzmán</capital>
+		<color><red>191</red><green>234</green><blue>149</blue></color>
+	</division>
+</map>

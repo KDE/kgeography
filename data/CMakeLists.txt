@@ -74,5 +74,7 @@ install(FILES
    belize.png
    cuba.kgm
    cuba.png
+   dominican_republic.kgm
+   dominican_republic.png
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
