@@ -76,5 +76,11 @@ install(FILES
    cuba.png
    dominican_republic.kgm
    dominican_republic.png
+   ecuador.kgm
+   ecuador.png
+   el_salvador.kgm
+   el_salvador.png
+   guatemala.kgm
+   guatemala.png
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 

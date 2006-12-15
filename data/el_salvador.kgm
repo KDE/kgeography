@@ -1,0 +1,94 @@
+<map>
+	<mapFile>el_salvador.png</mapFile>
+	<name>El Salvador</name>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not El Salvador</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Ahuachapán</name>
+		<capital>Ahuachapán</capital>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Santa Ana</name>
+		<capital>Santa Ana</capital>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Sonsonate</name>
+		<capital>Sonsonate</capital>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Usulután</name>
+		<capital>Usulután</capital>
+		<color><red>206</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>San Miguel</name>
+		<capital>San Miguel</capital>
+		<color><red>134</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Morazán</name>
+		<capital>San Francisco Gotera</capital>
+		<color><red>85</red><green>255</green><blue>109</blue></color>
+	</division>
+	<division>
+		<name>La Unión</name>
+		<capital>La Unión</capital>
+		<color><red>85</red><green>255</green><blue>182</blue></color>
+	</division>
+	<division>
+		<name>La Libertad</name>
+		<capital>Santa Tecla</capital>
+		<color><red>85</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Chalatenango</name>
+		<capital>Chalatenango</capital>
+		<color><red>85</red><green>182</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Cuscatlán</name>
+		<capital>Cojutepeque</capital>
+		<color><red>85</red><green>109</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>San Salvador</name>
+		<capital>San Salvador</capital>
+		<color><red>134</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>La Paz</name>
+		<capital>Zacatecoluca</capital>
+		<color><red>206</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Cabañas</name>
+		<capital>Sensuntepeque</capital>
+		<color><red>255</red><green>85</green><blue>231</blue></color>
+	</division>
+	<division>
+		<name>San Vicente</name>
+		<capital>San Vicente</capital>
+		<color><red>255</red><green>85</green><blue>158</blue></color>
+	</division>
+</map>

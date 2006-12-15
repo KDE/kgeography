@@ -1,0 +1,129 @@
+<map>
+	<mapFile>guatemala.png</mapFile>
+	<name>Guatemala</name>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Guatemala</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Alta Verapaz</name>
+		<capital>Cobán</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Baja Verapaz</name>
+		<capital>Salamá</capital>
+		<color><red>255</red><green>128</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Chimaltenango</name>
+		<capital>Chimaltenango</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Chiquimula</name>
+		<capital>Chiquimula</capital>
+		<color><red>255</red><green>191</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Petén</name>
+		<capital>Flores</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>El Progreso</name>
+		<capital>Guastatoya</capital>
+		<color><red>255</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>El Quiché</name>
+		<capital>Santa Cruz del Quiché</capital>
+		<color><red>128</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Escuintla</name>
+		<capital>Escuintla</capital>
+		<color><red>191</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Guatemala</name>
+		<capital>Ciudad Guatemala</capital>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Huehuetenango</name>
+		<capital>Huehuetenango</capital>
+		<color><red>128</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Izabal</name>
+		<capital>Puerto Barrios</capital>
+		<color><red>0</red><green>255</green><blue>127</blue></color>
+	</division>
+	<division>
+		<name>Jalapa</name>
+		<capital>Jalapa</capital>
+		<color><red>128</red><green>255</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Jutiapa</name>
+		<capital>Jutiapa</capital>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Quetzaltenango</name>
+		<capital>Quetzaltenango</capital>
+		<color><red>128</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Retalhuleu</name>
+		<capital>Retalhuleu</capital>
+		<color><red>0</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Sacatepéquez</name>
+		<capital>Antigua Guatemala</capital>
+		<color><red>128</red><green>191</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>San Marcos</name>
+		<capital>San Marcos</capital>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Santa Rosa</name>
+		<capital>Cuilapa</capital>
+		<color><red>128</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Sololá</name>
+		<capital>Sololá</capital>
+		<color><red>127</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Suchitepéquez</name>
+		<capital>Mazatenango</capital>
+		<color><red>191</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Totonicapán</name>
+		<capital>Totonicapán</capital>
+		<color><red>255</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Zacapa</name>
+		<capital>Zacapa</capital>
+		<color><red>255</red><green>128</green><blue>255</blue></color>
+	</division>
+</map>
