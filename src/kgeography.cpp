@@ -14,7 +14,7 @@
 #include <kinputdialog.h>
 #include <kmessagebox.h>
 #include <kpushbutton.h>
-#include <kstdaction.h>
+#include <kstandardaction.h>
 #include <ktoggleaction.h>
 #include <ktoolbar.h>
 #include <kmenubar.h>
@@ -98,9 +98,9 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	connect(p_askFlagDivisions, SIGNAL(clicked()), this, SLOT(askFlagDivisions()));
 	connect(p_askDivisionFlags, SIGNAL(clicked()), this, SLOT(askDivisionFlags()));
 
-	KAction *a = KStdAction::open(this, SLOT(openMap()), actionCollection(), "openMap");
+	KAction *a = KStandardAction::open(this, SLOT(openMap()), actionCollection(), "openMap");
 	a -> setText(i18n("&Open Map..."));
-	KStdAction::quit(this, SLOT(close()), actionCollection(), "quit");
+	KStandardAction::quit(this, SLOT(close()), actionCollection(), "quit");
 
 	p_zoom = new KToggleAction(KIcon("viewmag+"), i18n("&Zoom"), actionCollection(), "zoom_select");
 	p_zoom -> setEnabled(false);
