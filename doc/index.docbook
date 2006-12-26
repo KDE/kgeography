@@ -392,7 +392,7 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
 <sect1 id="flags">
 <title>Flags</title>
 <para>
- If you have used the <sgmltag class="starttag">flag</sgmltag> tag you should provide the flag files. They have to be in <acronym>PNG</acronym> format and better if they are 300x200 pixels and you provide a <acronym>SVG</acronym> file for it. To obtain <acronym>SVG</acronym> flags of almost all countries in the world and some other divisions, you can consult the <ulink url="http://www.sodipodi.com/index.php3?section=clipart/flags">Sodipodi flags collection</ulink>.
+ If you have used the <sgmltag class="starttag">flag</sgmltag> tag you should provide the flag files. They have to be in <acronym>PNG</acronym> format and better if they are 300x200 pixels and you provide a <acronym>SVG</acronym> file for it. To obtain <acronym>SVG</acronym> flags of almost all countries in the world and some other divisions, you can consult the <ulink url="http://sourceforge.net/project/showfiles.php?group_id=4054&package_id=16668&release_id=208770">Sodipodi flags collection</ulink>.
 </para>
 </sect1>
 <sect1 id="how-to-test">
