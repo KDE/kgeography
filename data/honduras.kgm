@@ -1,0 +1,114 @@
+<map>
+	<mapFile>honduras.png</mapFile>
+	<name>Honduras</name>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Honduras</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Atlántida</name>
+		<capital>La Ceiba</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Choluteca</name>
+		<capital>Choluteca</capital>
+		<color><red>255</red><green>128</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Colón</name>
+		<capital>Trujillo</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Comayagua</name>
+		<capital>Comayagua</capital>
+		<color><red>255</red><green>191</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Copán</name>
+		<capital>Santa Rosa de Copán</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Cortés</name>
+		<capital>San Pedro Sula</capital>
+		<color><red>255</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>El Paraíso</name>
+		<capital>Yuscarán</capital>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Francisco Morazán</name>
+		<capital>Tegucigalpa</capital>
+		<color><red>128</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Gracias a Dios</name>
+		<capital>Puerto Lempira</capital>
+		<color><red>0</red><green>255</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Intibucá</name>
+		<capital>La Esperanza</capital>
+		<color><red>128</red><green>255</green><blue>212</blue></color>
+	</division>
+	<division>
+		<name>Islas de la Bahía</name>
+		<capital>Roatán</capital>
+		<color><red>0</red><green>170</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>La Paz</name>
+		<capital>La Paz</capital>
+		<color><red>128</red><green>212</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Lempira</name>
+		<capital>Gracias</capital>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Ocotepeque</name>
+		<capital>Nueva Octopeque</capital>
+		<color><red>128</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Olancho</name>
+		<capital>Juticalpa</capital>
+		<color><red>170</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Santa Bárbara</name>
+		<capital>Santa Bárbara</capital>
+		<color><red>212</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Valle</name>
+		<capital>Nacaome</capital>
+		<color><red>255</red><green>0</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Yoro</name>
+		<capital>Yoro</capital>
+		<color><red>255</red><green>128</green><blue>212</blue></color>
+	</division>
+</map>

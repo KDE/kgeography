@@ -1,0 +1,74 @@
+<map>
+	<mapFile>guyana.png</mapFile>
+	<name>Guyana</name>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Guyana</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Barima-Waini</name>
+		<capital>Mabaruma</capital>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Pomeroon-Supenaam</name>
+		<capital>Anna Regina</capital>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Essequibo Islands-West Demerara</name>
+		<capital>Vreed en Hoop</capital>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Dememara-Mahaica</name>
+		<capital>Paradise</capital>
+		<color><red>119</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Mahaica-Berbice</name>
+		<capital>Fort Wellington</capital>
+		<color><red>85</red><green>255</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Upper Dememara-Berbice</name>
+		<capital>Linden</capital>
+		<color><red>85</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Cuyuni-Mazaruni</name>
+		<capital>Bartica</capital>
+		<color><red>85</red><green>153</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Potaro-Siparuni</name>
+		<capital>Mahdia</capital>
+		<color><red>119</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Upper Takutu-Upper Essequibo</name>
+		<capital>Lethem</capital>
+		<color><red>221</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>East Berbice-Corentyne</name>
+		<capital>New Amsterdam</capital>
+		<color><red>255</red><green>85</green><blue>187</blue></color>
+	</division>
+</map>

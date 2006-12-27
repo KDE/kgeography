@@ -82,5 +82,11 @@ install(FILES
    el_salvador.png
    guatemala.kgm
    guatemala.png
+   guyana.kgm
+   guyana.png
+   haiti.kgm
+   haiti.png
+   honduras.kgm
+   honduras.png
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
