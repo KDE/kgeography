@@ -89,6 +89,11 @@ QString KGmap::getDivisionCapital(const QString &s) const
 	return getDivision(s) -> getCapital();
 }
 
+QStringList KGmap::getDivisionFalseCapitals(const QString &divisionName) const
+{
+	return getDivision(divisionName) -> getFalseCapitals();
+}
+
 QString KGmap::getFile() const
 {
 	return p_file;

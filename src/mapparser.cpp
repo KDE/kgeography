@@ -95,6 +95,17 @@ KGmap *mapReader::parseMap(const QString &path)
 					                getElementString("green", colorTag, Mandatory).toInt(),
 					                getElementString("blue", colorTag, Mandatory).toInt());
 					
+					// division false capitals
+					QStringList falseCapitals;
+					const QDomNodeList &falseCapitalTags = divisionTag.elementsByTagName("falseCapital");
+					QDomElement falseCapital;
+					for (int i = 0; i < falseCapitalTags.count(); ++i)
+					{
+						falseCapital = falseCapitalTags.item(i).toElement();
+						if (!falseCapital.isNull()) falseCapitals << falseCapital.text();
+					}
+					if (!falseCapitals.isEmpty()) kgdiv->setFalseCapitals(falseCapitals);
+					
 					if (!kgmap -> addDivision(kgdiv))
 					{
 						p_error = i18n("There is already either a division called %1 or a division with the same colors as %2", kgdiv -> getName(), kgdiv -> getName());

@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
- *   tsdgeos@terra.es                                                      *
+ *   Copyright (C) 2004-2006 by Albert Astals Cid                          *
+ *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -24,8 +24,10 @@ class division
 		QRgb getRGB() const;
 		QString getFlagFile() const;
 		QString getCapital() const;
+		QStringList getFalseCapitals() const;
 		
 		void setCapital(const QString &name);
+		void setFalseCapitals(const QStringList &falseCapitals);
 		void setIgnore(bool ignore, bool canAskClickDivision);
 		void setName(const QString &name);
 		void setRGB(int r, int g, int b);
@@ -33,6 +35,7 @@ class division
 		
 	private:
 		QString p_name, p_flagFile, p_capital;
+		QStringList p_falseCapitals;
 		QRgb p_color;
 		bool p_canAskAlways, p_canAskClickDivision;
 };
