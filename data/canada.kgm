@@ -1,6 +1,7 @@
 <map>
 	<mapFile>canada.png</mapFile>
 	<name>Canada</name>
+    <divisionsName>Provinces or Territories</divisionsName>
 	<division>
 		<name>Out of Bounds</name>
 		<ignore>yes</ignore>

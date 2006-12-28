@@ -1,6 +1,7 @@
 <map>
 	<mapFile>china.png</mapFile>
 	<name>China</name>
+    <divisionsName>Provinces</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

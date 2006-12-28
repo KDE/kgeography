@@ -1,6 +1,7 @@
 <map>
 	<mapFile>belize.png</mapFile>
 	<name>Belize</name>
+    <divisionsName>Districts</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

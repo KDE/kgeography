@@ -1,6 +1,7 @@
 <map>
 	<mapFile>colombia.png</mapFile>
 	<name>Colombia</name>
+    <divisionsName>Departments</divisionsName>
 	<division>
 		<name>Amazonas</name>
 		<flag>colombia/amazonas.png</flag>
