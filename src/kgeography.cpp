@@ -345,6 +345,13 @@ void kgeography::setMap(KGmap *m)
 	delete p_map;
 	p_map = m;
 	
+	p_askMap->setText(i18n("&Location of %1", p_map->getDivisionsString()));
+	p_askPlaceMap->setText(i18n("&Place %1 in the Map", p_map->getDivisionsString()));
+	p_askCapitalDivisions->setText(i18n("%1 by Capital", p_map->getDivisionsString()));
+	p_askDivisionCapitals->setText(i18n("&Capitals of %1", p_map->getDivisionsString()));
+	p_askFlagDivisions->setText(i18n("%1 by Flag", p_map->getDivisionsString()));
+	p_askDivisionFlags->setText(i18n("&Flags of %1", p_map->getDivisionsString()));
+	
 	QString sw = i18nc("There are two ways of dealing with the translation of \"Current map: %1\". The first option simply replaces %1 with the translated name of the relevant region. If the grammar of your language allows this, choose this option by setting the translation of this message to 1, and leave untranslated the translations of \"Current map: %1\" that have the placename embedded (or translate them as - if you wish to show the file as fully translated. The second option is to translate all messages in full - this is likely to be required in the case of highly-inflected languages like Russian. To choose this option, set the translation of this message to 0, and translate all the messages.", "0");
 	if (sw == "1")
 	{

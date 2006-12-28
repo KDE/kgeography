@@ -47,6 +47,14 @@ KGmap *mapReader::parseMap(const QString &path)
 					p_error = i18n("The map image file for %1 does not exist", kgmap -> getName());
 				}
 				
+				// Divisions string
+				QString divisionsString = getElementString("divisionsName", root, Optional);
+				if (!divisionsString.isNull())
+				{
+					qDebug("WUUUUUU");
+					kgmap -> setDivisionsString( divisionsString );
+				}
+				
 				QDomElement divisionTag = root.firstChildElement("division");
 				while (!divisionTag.isNull())
 				{
