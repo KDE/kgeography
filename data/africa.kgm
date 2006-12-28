@@ -1,6 +1,7 @@
 <map>
 	<mapFile>africa.png</mapFile>
 	<name>Africa</name>
+    <divisionsName>Countries</divisionsName>
 	<division>
 		<name>Water</name>
 		<ignore>yes</ignore>
