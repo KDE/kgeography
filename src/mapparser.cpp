@@ -51,7 +51,6 @@ KGmap *mapReader::parseMap(const QString &path)
 				QString divisionsString = getElementString("divisionsName", root, Optional);
 				if (!divisionsString.isNull())
 				{
-					qDebug("WUUUUUU");
 					kgmap -> setDivisionsString( divisionsString );
 				}
 				
