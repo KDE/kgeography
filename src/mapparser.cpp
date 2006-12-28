@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
- *   tsdgeos@terra.es                                                      *
+ *   Copyright (C) 2004-2006 by Albert Astals Cid                          *
+ *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -8,7 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include <qdir.h>
+#include <QDir>
+#include <QDomDocument>
 
 #include <klocale.h>
 
@@ -16,32 +17,108 @@
 #include "map.h"
 #include "mapparser.h"
 
-/* unitReader */
-
-mapReader::mapReader() : QXmlSimpleReader()
+mapReader::mapReader()
 {
 }
 
-bool mapReader::parseMap(const QString &path)
+KGmap *mapReader::parseMap(const QString &path)
 {
-	QString aux;
-	p_map = new KGmap();
-	p_map -> setFile(path);
-	aux = path.left(path.lastIndexOf(QDir::separator()) + 1); // aux = path but without the file name
-	mapParser handler(p_map, aux);
+	QString baseDir;
+	p_error.clear();
+	KGmap *kgmap = new KGmap();
+	kgmap -> setFile(path);
+	baseDir = path.left(path.lastIndexOf(QDir::separator()) + 1); // baseDir = path but without the file name
 	QFile xmlFile(path);
 	if (xmlFile.exists())
 	{
-		QXmlInputSource source(&xmlFile);
-		setContentHandler(&handler);
-		if (parse(source)) return true;
-		p_error = handler.errorString();
+		if (xmlFile.open(QIODevice::ReadOnly))
+		{
+			QDomDocument doc;
+			doc.setContent(xmlFile.readAll());
+			const QDomElement &root = doc.documentElement();
+			if (root.tagName() == "map")
+			{
+				// Map name
+				kgmap -> setName( getElementString("name", root, Mandatory) );
+				
+				// Map image file
+				if (!kgmap -> setMapFile( baseDir + getElementString("mapFile", root, Mandatory) ))
+				{
+					p_error = i18n("The map image file for %1 does not exist", kgmap -> getName());
+				}
+				
+				QDomElement divisionTag = root.firstChildElement("division");
+				while (!divisionTag.isNull())
+				{
+					division *kgdiv = new division();
+					
+					// division name
+					kgdiv -> setName( getElementString("name", divisionTag, Mandatory) );
+					
+					// division capital
+					QString capital = getElementString("capital", divisionTag, Optional);
+					if (!capital.isNull()) kgdiv -> setCapital( capital );
+					
+					// division flag
+					QString flagFile = getElementString("flag", divisionTag, Optional);
+					if (!flagFile.isNull())
+					{
+						if (!kgdiv -> setFlagFile( baseDir + "/flags/" + flagFile ))
+						{
+							p_error = i18n("The flag image file for %1 does not exist", kgdiv -> getName());
+						}
+					}
+					
+					// division ignoreness
+					const QString &ignore = getElementString("ignore", divisionTag, Optional).toLower();
+					if (!ignore.isNull())
+					{
+						if (ignore == "yes") kgdiv -> setIgnore(true, false);
+						else if (ignore == "no") kgdiv -> setIgnore(false, false);
+						else if (ignore == "allowclickmode") kgdiv -> setIgnore(true, true);
+						else
+						{
+							p_error = i18n("Invalid value in tag %1", QString("<ignore>"));
+						}
+					}
+					
+					// division color
+					const QDomElement &colorTag = getElement("color", divisionTag);
+					kgdiv -> setRGB(getElementString("red", colorTag, Mandatory).toInt(),
+					                getElementString("green", colorTag, Mandatory).toInt(),
+					                getElementString("blue", colorTag, Mandatory).toInt());
+					
+					if (!kgmap -> addDivision(kgdiv))
+					{
+						p_error = i18n("There is already either a division called %1 or a division with the same colors as %2", kgdiv -> getName(), kgdiv -> getName());
+						delete kgdiv;
+					}
+					
+					divisionTag = divisionTag.nextSiblingElement("division");
+				}
+			}
+			else
+			{
+				p_error = i18n("The map description file should begin with the %1 tag", QString("map"));
+			}
+			xmlFile.close();
+		}
+		else
+		{
+			p_error = i18n("Could not open %1 for reading.", path);
+		}
 	}
 	else
 	{
 		p_error = i18n("%1 does not exist.", path);
 	}
-	return false;
+	
+	if (p_error.isNull()) return kgmap;
+	else
+	{
+		delete kgmap;
+		return NULL;
+	}
 }
 
 QString mapReader::getError()
@@ -49,239 +126,44 @@ QString mapReader::getError()
 	return p_error;
 }
 
-KGmap *mapReader::getMap()
+QString mapReader::getElementString(const QString &tagName, const QDomElement &parentTag, eMandatoryness mandatoryness)
 {
-	return p_map;
-}
-
-/* mapParser */
-
-mapParser::mapParser(KGmap *m, const QString &path) : QXmlDefaultHandler(), p_map(m), p_path(path)
-{
-}
-
-bool mapParser::startDocument()
-{
-	p_mapNameSet = false;
-	p_mapFileSet = false;
-	return true;
-}
-
-bool mapParser::startElement(const QString&, const QString &name, const QString&, const QXmlAttributes&)
-{
-	QString prev;
-	bool b = true;
-	prev = getPreviousTag();
-	p_previousTags += ':' + name;
-	if (prev.isEmpty())
+	QString result;
+	const QDomElement &tag = parentTag.firstChildElement(tagName);
+	if (tag.isNull())
 	{
-		b = name == "map";
-		if (!b) p_error = i18n("The map description file should begin with the %1 tag", QString("map"));
-	}
-	else if (prev == "map")
-	{
-		if (name != "mapFile" && name != "name" && name != "division")
+		if (mandatoryness == Mandatory)
 		{
-			b = false;
-			p_error = i18n("%1 is not a valid tag inside tag %2. Valid tags are %3, %4 and %5", name, prev, "mapFile", "name", "division");
-		}
-		else if ((name == "mapFile" && p_mapFileSet) || (name == "name" && p_mapNameSet))
-		{
-			b = false;
-			p_error = i18n("%1 tag has already been set", name);
-		}
-		p_colorSet = false;
-		if (name == "division")
-		{
-			p_divisionNameSet = false;
-			p_divisionIgnoreSet = false;
-			p_flagFileSet = false;
-			p_capitalSet = false;
-			p_division = new division();
+			p_error = i18n("The map description file should have a %1 tag inside %2", tagName, parentTag.tagName());
 		}
 	}
-	else if (prev == "mapFile" || prev == "name" || prev == "red" || prev == "green" || prev == "blue" ||
-			prev == "ignore")
+	else
 	{
-		b = false;
-		p_error = i18n("There can not be a tag inside %1 tag", prev);
-	}
-	else if (prev == "division")
-	{
-		if (name != "color" && name != "name" && name != "ignore" && name != "flag" && name != "capital")
+		if (tag == parentTag.lastChildElement(tagName))
 		{
-			b = false;
-			p_error = ki18n("%1 is not a valid tag inside tag %2. Valid tags are %3, %4, %5, %6 and %7").subs(name).subs(prev).subs("color").subs("name").subs("ignore").subs("capital").subs("flag").toString();
-		}
-		else if ((name == "name" && p_divisionNameSet) || (name == "color" && p_colorSet) ||
-		(name == "ignore" && p_divisionIgnoreSet) || (name == "flag" && p_flagFileSet) ||
-		(name == "capital" && p_capitalSet))
-		{
-			b = false;
-			p_error = i18n("%1 tag has already been set", name);
-		}
-		p_red = -1;
-		p_green = -1;
-		p_blue = -1;
-	}
-	else if (prev == "color")
-	{
-		b = (name == "red" && p_red == -1) || (name == "green" && p_green == -1) ||
-			(name == "blue" && p_blue == -1);
-	}
-	else b = false;
-	return b;
-}
-
-bool mapParser::endElement(const QString &, const QString &, const QString &)
-{
-	QString aux;
-	bool b;
-	aux = getPreviousTag();
-	b = true;
-	if (p_previousTags == ":map:name")
-	{
-		p_map -> setName(p_contents);
-		p_mapNameSet = true;
-	}
-	else if (p_previousTags == ":map:mapFile")
-	{
-		b = p_map -> setMapFile(p_path + p_contents);
-		p_mapFileSet = true;
-		if (!b) p_error = i18n("File %1 does not exist", p_path + p_contents);
-	}
-	else if (aux == "division")
-	{
-		p_division -> setRGB(p_red, p_green , p_blue);
-		b = p_divisionNameSet;
-		if (!b) p_error = i18n("There is a division without name");
-		else
-		{
-			b = p_map -> addDivision(p_division);
-			if (!b) p_error = i18n("There is already either a division called %1 or a division with the same colors as %2", p_division -> getName(), p_division -> getName());
-			else
-			{
-				b = (p_capitalSet || !p_division -> canAsk(false));
-				if (!b) p_error = i18n("Division %1 has no capital", p_division -> getName());
-			}
-		}
-	}
-	else if (p_previousTags == ":map:division:name")
-	{
-		p_divisionNameSet = true;
-		p_division -> setName(p_contents);
-	}
-	else if (p_previousTags == ":map:division:capital")
-	{
-		p_capitalSet = true;
-		p_division -> setCapital(p_contents);
-	}
-	else if (aux == "color")
-	{
-		if (p_red == -1)
-		{
-			b = false;
-			p_error = i18n("Tag %1 has not the %2 tag.", QString("<color>"), QString("<red>"));
-		}
-		else if (p_green == -1)
-		{
-			b = false;
-			p_error = i18n("Tag %1 has not the %2 tag.", QString("<color>"), QString("<green>"));
-		}
-		else if (p_blue == -1)
-		{
-			b = false;
-			p_error = i18n("Tag %1 has not the %2 tag.", QString("<color>"), QString("<blue>"));
-		}
-		else p_colorSet = true;
-	}
-	else if (aux == "red")
-	{
-		p_red = p_contents.toInt();
-	}
-	else if (aux == "green")
-	{
-		p_green = p_contents.toInt();
-	}
-	else if (aux == "blue")
-	{
-		p_blue = p_contents.toInt();
-	}
-	else if (aux == "ignore")
-	{
-		p_divisionIgnoreSet = true;
-		if (p_contents.toLower() == "yes")
-		{
-			p_division -> setIgnore(true, false);
-		}
-		else if (p_contents.toLower() == "no")
-		{
-			p_division -> setIgnore(false, false);
-		}
-		else if (p_contents.toLower() == "allowclickmode")
-		{
-			p_division -> setIgnore(true, true);
+			result = tag.text();
 		}
 		else
 		{
-			b = false;
-			p_error = i18n("Invalid value in tag %1", QString("<ignore>"));
+			p_error = i18n("The map description file should have exactly one %1 tag inside %2", tagName, parentTag.tagName());
 		}
 	}
-	else if (aux == "flag")
+	return result;
+}
+
+QDomElement mapReader::getElement(const QString &tagName, const QDomElement &parentTag)
+{
+	const QDomElement &tag = parentTag.firstChildElement(tagName);
+	if (tag.isNull())
 	{
-		b = p_division -> setFlagFile(p_path + "flags" + QDir::separator() + p_contents);
-		p_flagFileSet = true;
-		if (!b) p_error = i18n("Could not find flag file %1", p_path + "flags" + QDir::separator() + p_contents);
+		p_error = i18n("The map description file should have a %1 tag inside %2", tagName, parentTag.tagName());
 	}
-	else if (aux == "map")
+	else
 	{
+		if (tag != parentTag.lastChildElement(tagName))
+		{
+			p_error = i18n("The map description file should have exactly one %1 tag inside %2", tagName, parentTag.tagName());
+		}
 	}
-	else b = false;
-	removeLastTag();
-	p_contents.clear();
-	return b;
-}
-
-bool mapParser::characters(const QString &ch)
-{
-	QString aux;
-	if (ch.simplified().length() == 0) return true;
-	aux = getPreviousTag();
-	if (aux == "mapFile" || aux == "name" || aux == "red" || aux == "green" || aux == "blue" || aux == "ignore" || aux == "flag" || aux == "capital")
-	{
-		p_contents += ch;
-		return true;
-	}
-	p_error = i18n("There are characters outside tags.");
-	return false;
-}
-
-bool mapParser::endDocument()
-{
-	QString aux;
-	if (p_mapNameSet && p_mapFileSet)
-	{
-		return true;
-	}
-	else if (!p_mapNameSet) aux = "name";
-	else if (!p_mapFileSet) aux = "mapFile";
-	p_error = i18n("Tag %1 is missing.", aux);
-	return false;
-}
-
-QString mapParser::errorString() const
-{
-	if (!p_error.isEmpty()) return p_error;
-	return i18n("The XML document is malformed.");
-}
-
-QString mapParser::getPreviousTag() const
-{
-	return p_previousTags.right(p_previousTags.length() - p_previousTags.lastIndexOf(':') - 1);
-}
-
-void mapParser::removeLastTag()
-{
-	p_previousTags = p_previousTags.left(p_previousTags.lastIndexOf(':'));
+	return tag;
 }

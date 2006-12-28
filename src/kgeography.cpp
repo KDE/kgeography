@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2004-2005 by Albert Astals Cid                          *
- *   tsdgeos@terra.es                                                      *
+ *   Copyright (C) 2004-2006 by Albert Astals Cid                          *
+ *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -20,6 +20,7 @@
 #include <kmenubar.h>
 #include <kicon.h>
 
+#include <qfile.h>
 #include <qlabel.h>
 #include <qlayout.h>
 #include <qsize.h>
@@ -137,14 +138,14 @@ void kgeography::showEvent(QShowEvent *)
 		if (QFile::exists(file))
 		{
 			mapReader reader;
-			if (reader.parseMap(file))
+			KGmap *kgmap = reader.parseMap(file);
+			if (kgmap)
 			{
-				setMap(reader.getMap());
+				setMap(kgmap);
 			}
 			else
 			{
 				KMessageBox::error(this, i18n("Could not open last used map. Error parsing %1: %2", file, reader.getError()));
-				delete reader.getMap();
 				openMap();
 			}
 		}

@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
- *   tsdgeos@terra.es                                                      *
+ *   Copyright (C) 2004-2006 by Albert Astals Cid                          *
+ *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -11,47 +11,25 @@
 #ifndef MAPPARSER_H
 #define MAPPARSER_H
 
-#include <qxml.h>
+class QDomElement;
 
 class division;
 class KGmap;
 
-class mapReader : public QXmlSimpleReader
+class mapReader
 {
 	public:
 		mapReader();
 		
-		bool parseMap(const QString &path);
+		KGmap *parseMap(const QString &path);
 		QString getError();
-		KGmap *getMap();
 	
 	private:
+		enum eMandatoryness { Mandatory, Optional };
+		QString getElementString(const QString &tagName, const QDomElement &parentTag, eMandatoryness mandatoryness);
+		QDomElement getElement(const QString &tagName, const QDomElement &parentTag);
+	
 		QString p_error;
-		KGmap *p_map;
-};
-
-class mapParser : public QXmlDefaultHandler
-{
-	public:
-		mapParser(KGmap *m, const QString &path);
-		bool startDocument();
-		bool startElement(const QString&, const QString&, const QString&, const QXmlAttributes&);
-		bool endElement(const QString &, const QString &name, const QString &);
-		bool characters(const QString &ch);
-		bool endDocument();
-		QString errorString() const;
-	
-	private:
-		QString getPreviousTag() const;
-		void removeLastTag();
-		
-		division *p_division;
-		int p_red, p_green, p_blue;
-		KGmap *p_map;
-		bool p_allowChars, p_mapNameSet, p_mapFileSet;
-		bool p_divisionNameSet, p_colorSet, p_divisionIgnoreSet, p_flagFileSet, p_capitalSet;
-		const QString &p_path;
-		QString p_error, p_contents, p_previousTags;
 };
 
 #endif
