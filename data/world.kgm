@@ -1,6 +1,7 @@
 <map>
 	<mapFile>world.png</mapFile>
 	<name>World</name>
+    <divisionsName>Countries</divisionsName>
 	<division>
 		<name>Not a Nation</name>
 		<ignore>yes</ignore>

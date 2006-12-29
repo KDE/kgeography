@@ -1,6 +1,7 @@
 <map>
 	<mapFile>usa.png</mapFile>
 	<name>USA</name>
+    <divisionsName>States</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

@@ -1,6 +1,7 @@
 <map>
 	<mapFile>czech.png</mapFile>
 	<name>Czech Republic</name>
+    <divisionsName>Regions</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

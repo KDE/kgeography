@@ -1,6 +1,7 @@
 <map>
 	<mapFile>honduras.png</mapFile>
 	<name>Honduras</name>
+    <divisionsName>Departments</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

@@ -1,6 +1,7 @@
 <map>
 	<mapFile>norway.png</mapFile>
 	<name>Norway</name>
+    <divisionsName>Counties</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

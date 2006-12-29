@@ -1,6 +1,7 @@
 <map>
 	<mapFile>ecuador.png</mapFile>
 	<name>Ecuador</name>
+    <divisionsName>Provinces</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

@@ -1,6 +1,7 @@
 <map>
 	<mapFile>el_salvador.png</mapFile>
 	<name>El Salvador</name>
+    <divisionsName>Departments</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

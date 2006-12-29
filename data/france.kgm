@@ -1,6 +1,7 @@
 <map>
 	<mapFile>france.png</mapFile>
 	<name>France</name>
+    <divisionsName>Departments</divisionsName>
 	<division>
 		<name>Not France</name>
 		<ignore>yes</ignore>

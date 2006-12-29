@@ -1,6 +1,7 @@
 <map>
 	<mapFile>sweden.png</mapFile>
 	<name>Sweden by Counties</name>
+    <divisionsName>Counties</divisionsName>
 	<division>
 		<name>County Border</name>
 		<ignore>yes</ignore>

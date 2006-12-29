@@ -1,6 +1,7 @@
 <map>
 	<mapFile>guyana.png</mapFile>
 	<name>Guyana</name>
+    <divisionsName>Provinces</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

@@ -1,6 +1,7 @@
 <map>
 	<mapFile>italyprovince.png</mapFile>
 	<name>Italy by Provinces</name>
+    <divisionsName>Provinces</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>
