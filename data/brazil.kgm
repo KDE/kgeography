@@ -1,6 +1,7 @@
 <map>
 	<mapFile>brazil.png</mapFile>
 	<name>Brazil</name>
+    <divisionsName>States</divisionsName>
 	<division>
 		<name>Sergipe</name>
 		<flag>brazil/br_SE.png</flag>

@@ -9,6 +9,7 @@
  ***************************************************************************/
 
 #include <klocale.h>
+#include <krandom.h>
 
 #include <qradiobutton.h>
  
@@ -41,6 +42,20 @@ bool divisionCapitalAsker::nextBoxAskerQuestionHook(const QString &division, int
 		p_currentAnswer.setCorrectAnswer(i18nc(p_map -> getFileName().toUtf8(), p_capital.toUtf8()));
 		p_rb[i] -> setText(i18nc(p_map -> getFileName().toUtf8(), p_capital.toUtf8()));
 		b = true;
+		
+		QStringList falseCapitals = p_map -> getDivisionFalseCapitals(division);
+		int index = 0;
+		while (!falseCapitals.isEmpty() && index < 4)
+		{
+			if (index != i)
+			{
+				int random = (int)((float)falseCapitals.size() * KRandom::random() / (RAND_MAX + 1.0));
+				QString falseCapital = falseCapitals.at(random);
+				falseCapitals.removeAt(random);
+				p_rb[index] -> setText(i18nc(p_map -> getFileName().toUtf8(), falseCapital.toUtf8()));
+			}
+			++index;
+		}
 	}
 	else
 	{

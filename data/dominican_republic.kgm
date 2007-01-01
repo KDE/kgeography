@@ -1,6 +1,7 @@
 <map>
 	<mapFile>dominican_republic.png</mapFile>
 	<name>Dominican Republic</name>
+    <divisionsName>Provinces</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

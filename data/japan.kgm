@@ -1,6 +1,7 @@
 <map>
 	<mapFile>japan.png</mapFile>
 	<name>Japan</name>
+    <divisionsName>Prefectures</divisionsName>
 	<division>
 		<name>Out of Bounds</name>
 		<ignore>yes</ignore>

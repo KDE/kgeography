@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
- *   tsdgeos@terra.es                                                      *
+ *   Copyright (C) 2004-2006 by Albert Astals Cid                          *
+ *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -41,14 +41,13 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 	QStringList::iterator it;
 	for(it = list.begin(); it != list.end(); ++it)
 	{
-		if (!p_reader.parseMap(*it))
+		m = p_reader.parseMap(*it);
+		if (!m)
 		{
 			KMessageBox::error(this, i18n("Error parsing %1: %2", *it, p_reader.getError()));
-			delete p_reader.getMap();
 		}
 		else
 		{
-			m = p_reader.getMap();
 			QString text = i18nc(m -> getFileName().toUtf8(), m -> getName().toUtf8());
 			p_listBox -> addItem(text);
 			p_maps.insert(text, m);

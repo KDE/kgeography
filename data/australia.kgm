@@ -1,6 +1,7 @@
 <map>
 	<mapFile>australia.png</mapFile>
 	<name>Australia</name>
+    <divisionsName>States</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

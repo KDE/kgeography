@@ -1,6 +1,7 @@
 <map>
 	<mapFile>germany.png</mapFile>
 	<name>Germany</name>
+    <divisionsName>States</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

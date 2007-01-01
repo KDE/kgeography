@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
- *   tsdgeos@terra.es                                                      *
+ *   Copyright (C) 2004-2006 by Albert Astals Cid                          *
+ *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -46,10 +46,21 @@ QString division::getCapital() const
 	return p_capital;
 }
 
+QStringList division::getFalseCapitals() const
+{
+	return p_falseCapitals;
+}
+
 void division::setCapital(const QString &name)
 {
 	p_capital = name;
 }
+
+void division::setFalseCapitals(const QStringList &falseCapitals)
+{
+	p_falseCapitals = falseCapitals;
+}
+
 
 void division::setIgnore(bool ignore, bool canAskClickDivision)
 {

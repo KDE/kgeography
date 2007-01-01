@@ -1,6 +1,7 @@
 <map>
 	<mapFile>costa_rica.png</mapFile>
 	<name>Costa Rica</name>
+    <divisionsName>Provinces</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

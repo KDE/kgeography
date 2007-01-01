@@ -1,6 +1,7 @@
 <map>
 	<mapFile>ncamerica.png</mapFile>
 	<name>North and Central America</name>
+    <divisionsName>Countries</divisionsName>
 	<division>
 		<name>Water</name>
 		<ignore>yes</ignore>

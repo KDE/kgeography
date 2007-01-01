@@ -1,6 +1,7 @@
 <map>
 	<mapFile>belarus.png</mapFile>
 	<name>Belarus</name>
+    <divisionsName>Provinces</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

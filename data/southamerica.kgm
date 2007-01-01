@@ -1,6 +1,7 @@
 <map>
 	<mapFile>southamerica.png</mapFile>
 	<name>South America</name>
+    <divisionsName>Countries</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

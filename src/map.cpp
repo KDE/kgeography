@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
- *   tsdgeos@terra.es                                                      *
+ *   Copyright (C) 2004-2006 by Albert Astals Cid                          *
+ *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -59,6 +59,11 @@ void KGmap::setName(const QString &s)
 	p_name = s;
 }
 
+void KGmap::setDivisionsString(const QString &s)
+{
+	p_divisionsString = s;
+}
+
 uint KGmap::count(bool clickDivisionMode) const
 {
 	uint count = 0;
@@ -84,6 +89,11 @@ QString KGmap::getDivisionCapital(const QString &s) const
 	return getDivision(s) -> getCapital();
 }
 
+QStringList KGmap::getDivisionFalseCapitals(const QString &divisionName) const
+{
+	return getDivision(divisionName) -> getFalseCapitals();
+}
+
 QString KGmap::getFile() const
 {
 	return p_file;
@@ -103,6 +113,12 @@ QString KGmap::getMapFile() const
 QString KGmap::getName() const
 {
 	return p_name;
+}
+
+QString KGmap::getDivisionsString() const
+{
+	if (p_divisionsString.isNull()) return i18n("Regions");
+	else return p_divisionsString;
 }
 
 QString KGmap::getRandomDivision(bool clickDivisionMode) const

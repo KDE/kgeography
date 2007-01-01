@@ -1,6 +1,7 @@
 <map>
 	<mapFile>spain.png</mapFile>
 	<name>Spain</name>
+	<divisionsName>Autonomous communities</divisionsName>
 	<division>
 		<name>Not Spain</name>
 		<ignore>yes</ignore>

@@ -1,6 +1,7 @@
 <map>
 	<mapFile>haiti.png</mapFile>
 	<name>Haiti</name>
+    <divisionsName>Departments</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

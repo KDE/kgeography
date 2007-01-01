@@ -1,6 +1,7 @@
 <map>
 	<mapFile>estonia.png</mapFile>
 	<name>Estonia</name>
+    <divisionsName>Counties</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>
