@@ -10,6 +10,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include <cmath>
+
 #include <klocale.h>
 #include <kmessagebox.h>
 
@@ -34,7 +36,7 @@ placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint c
 	
 	p_shouldClearPopup = false;
 	
-	connect(p_mapWidget, SIGNAL(clicked(QRgb, const QPoint&)), this, SLOT(handleMapClick(QRgb, const QPoint&)));
+	connect(p_mapWidget, SIGNAL(clicked(QRgb, const QPoint&, const QPointF&)), this, SLOT(handleMapClick(QRgb, const QPoint&, const QPointF&)));
 	connect(p_mapWidget, SIGNAL(setMoveActionChecked(bool)), this, SIGNAL(setMoveActionChecked(bool)));
 	connect(p_mapWidget, SIGNAL(setZoomActionChecked(bool)), this, SIGNAL(setZoomActionChecked(bool)));
 	connect(p_mapWidget, SIGNAL(setMoveActionEnabled(bool)), this, SIGNAL(setMoveActionEnabled(bool)));
@@ -98,7 +100,7 @@ void placeAsker::setAutomaticZoom()
 	p_popupManager.clear();
 }
 
-void placeAsker::handleMapClick(QRgb c, const QPoint &p)
+void placeAsker::handleMapClick(QRgb c, const QPoint &widgetPoint, const QPointF &mapPoint)
 {
 	QString aux, cap;
 	aux = p_map -> getWhatIs(c, !p_asker);
@@ -120,18 +122,22 @@ void placeAsker::handleMapClick(QRgb c, const QPoint &p)
 		
 		aux = i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8());
 
-		if (!flagFile.isEmpty()) p_popupManager.show(aux, cap, p, flagFile);
-		else if (!cap.isEmpty()) p_popupManager.show(aux, cap, p);
-		else p_popupManager.show(aux, p);
+		if (!flagFile.isEmpty()) p_popupManager.show(aux, cap, widgetPoint, flagFile);
+		else if (!cap.isEmpty()) p_popupManager.show(aux, cap, widgetPoint);
+		else p_popupManager.show(aux, widgetPoint);
 	}
-	else if (!aux.isEmpty())
+	else
 	{
 		p_mapWidget->placeDivision(p_currentDivisionImage, p_currentDivisionRect);
 		// the image is no longer needed
 		delete p_currentDivisionImage;
 
 		p_currentAnswer.setAnswer(QColor(c));
-		questionAnswered(aux == lastDivisionAsked());
+		double distX = p_currentDivisionRect.center().x() - mapPoint.x();
+		double distY = p_currentDivisionRect.center().y() - mapPoint.y();
+		double distance = sqrt(distX * distX + distY * distY); 
+		// TODO: See if 5 is big enough or we should take into account the division size or what
+		questionAnswered(distance < 5.0);
 		nextQuestion();
 	}
 }
