@@ -158,7 +158,7 @@ void placeAsker::nextQuestionHook(const QString &division)
 
 QString placeAsker::getQuestionHook() const
 {
-	return i18n("Place division in map");
+	return i18n("Place %1 in map", p_map->getDivisionsString());
 }
 
 void placeAsker::showEvent(QShowEvent *)

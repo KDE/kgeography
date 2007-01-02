@@ -69,5 +69,5 @@ void capitalDivisionAsker::setAnswerHook(int userSays)
 
 QString capitalDivisionAsker::getQuestionHook() const
 {
-	return i18n("Division From Its Capital");
+	return i18n("%1 From Its Capital", p_map->getDivisionsString());
 }
