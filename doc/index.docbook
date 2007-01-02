@@ -83,9 +83,6 @@ revision history. (see installation appendix comment) -->
 <para>
 &kgeography; is a geography learning tool for &kde;. It allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).
 </para>
-<para>
-Maps available in current release are: Africa, Asia, Austria, Brazil, Canada, China, Europe, France, Germany, Italy, Italy by provinces, North and Central America, Norway, Poland, South America, Spain, USA and the world.
-</para>
 </chapter>
 
 <chapter id="quick-start">
