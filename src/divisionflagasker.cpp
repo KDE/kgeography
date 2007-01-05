@@ -41,7 +41,7 @@ bool divisionFlagAsker::nextBoxAskerQuestionHook(const QString &division, int i,
 			setQuestion(i18nc(p_map -> getFileName().toUtf8(), s.toUtf8()));
 		}
 		p_currentAnswer.setCorrectAnswer(icon.pixmap(QSize(60, 40)));
-		p_currentAnswer.setQuestion(division);
+		p_currentAnswer.setQuestion(i18nc(p_map -> getFileName().toUtf8(), division.toUtf8()));
 	}
 	return true;
 }
