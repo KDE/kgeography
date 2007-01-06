@@ -67,5 +67,5 @@ void flagDivisionAsker::setAnswerHook(int userSays)
 
 QString flagDivisionAsker::getQuestionHook() const
 {
-	return i18n("Division From Its Flag");
+	return i18n("%1 From Their Flag", p_map->getDivisionsString());
 }

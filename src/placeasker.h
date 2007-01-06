@@ -48,7 +48,7 @@ Q_OBJECT
 		void setAutomaticZoom();
 	
 	private slots:
-		void handleMapClick(QRgb c, const QPoint &p);
+		void handleMapClick(QRgb c, const QPoint &widgetPoint, const QPointF &mapPoint);
 	
 	private:
 		void setCurrentDivision(const QString& division);

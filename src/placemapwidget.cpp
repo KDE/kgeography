@@ -165,7 +165,7 @@ void placeMapWidget::mousePressEvent(QMouseEvent *e)
 			if ( QRectF(p_gameImage->rect()).contains( p_initial ) )
 			{
 				QRgb rgb = p_mapImage->pixel( int(p_initial.x()), int(p_initial.y()) );
-				emit clicked( rgb, e->pos() );
+				emit clicked( rgb, e->pos(), p_initial - p_gameImage->rect().topLeft() );
 			}
 		}
 	}
