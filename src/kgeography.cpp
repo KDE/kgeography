@@ -19,7 +19,7 @@
 #include <ktoolbar.h>
 #include <kmenubar.h>
 #include <kicon.h>
-
+#include <kactioncollection.h>
 #include <qfile.h>
 #include <qlabel.h>
 #include <qlayout.h>
@@ -48,7 +48,7 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	QHBoxLayout *bigWidgetLayout = new QHBoxLayout(p_bigWidget);
 	bigWidgetLayout -> setSpacing(0);
 	bigWidgetLayout -> setMargin(0);
-	
+
 	QWidget *leftWidget = new QWidget(p_bigWidget);
 	QVBoxLayout *leftWidgetLayout = new QVBoxLayout(leftWidget);
 // 	leftWidgetLayout -> setSpacing(0);
@@ -99,23 +99,34 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	connect(p_askFlagDivisions, SIGNAL(clicked()), this, SLOT(askFlagDivisions()));
 	connect(p_askDivisionFlags, SIGNAL(clicked()), this, SLOT(askDivisionFlags()));
 
-	KAction *a = KStandardAction::open(this, SLOT(openMap()), actionCollection(), "openMap");
+	QAction *a = KStandardAction::open(this, SLOT(openMap()), actionCollection());
+        actionCollection()->addAction( "openMap", a );
 	a -> setText(i18n("&Open Map..."));
-	KStandardAction::quit(this, SLOT(close()), actionCollection(), "quit");
+	a = KStandardAction::quit(this, SLOT(close()), actionCollection());
+        actionCollection()->addAction( "quit", a );
 
-	p_zoom = new KToggleAction(KIcon("viewmag+"), i18n("&Zoom"), actionCollection(), "zoom_select");
+        p_zoom =  actionCollection()->add<KToggleAction>( "zoom_select" );
+        p_zoom->setText(i18n("&Zoom") );
+        p_zoom->setIcon( KIcon("viewmag+") );
 	p_zoom -> setEnabled(false);
-	
-	p_zoomOriginal = new KAction(KIcon("viewmag1"), i18n("&Original Size"), actionCollection(), "zoom_original");
+
+        p_zoomOriginal = actionCollection()->addAction( "zoom_original" );
+        p_zoomOriginal->setText( i18n("&Original Size") );
+        p_zoomOriginal->setIcon( KIcon("viewmag1") );
 	p_zoomOriginal -> setEnabled(false);
-	
-	p_zoomAutomatic = new KAction(KIcon("viewmagfit"), i18n("&Automatic Zoom"), actionCollection(), "zoom_automatic");
+
+        p_zoomAutomatic = actionCollection()->addAction( "zoom_automatic" );
+        p_zoomAutomatic->setText(  i18n("&Automatic Zoom") );
+        p_zoomAutomatic->setIcon( KIcon("viewmagfit") );
 	p_zoomAutomatic -> setEnabled(false);
 
-	p_move = new KToggleAction(KIcon("move"), i18n("&Move"), actionCollection(), "move");
+        p_move = actionCollection()->add<KToggleAction>( "move" );
+        p_move->setText( i18n("&Move") );
+        p_move->setIcon( KIcon("move") );
 	p_move -> setEnabled(false);
 
-	a = new KAction(i18n("Disclaimer"), actionCollection(), "disclaimer");
+        a = actionCollection()->addAction( "disclaimer" );
+        a->setText( i18n("Disclaimer") );
 	connect(a, SIGNAL(triggered()), this, SLOT(disclaimer()));
 
 	setupGUI(Keys | ToolBar | Save | Create);
@@ -134,7 +145,7 @@ void kgeography::showEvent(QShowEvent *)
 	if (p_firstShow)
 	{
 		QString file = kgeographySettings::self() -> lastMap();
-		
+
 		if (QFile::exists(file))
 		{
 			mapReader reader;
@@ -166,7 +177,7 @@ void kgeography::showEvent(QShowEvent *)
 		// i'll be glad to learn
 		QTimer::singleShot(0, this, SLOT(resizeMainWindow()));
 // 		resizeMainWindow();
-		
+
 		p_firstShow = false;
 	}
 }
@@ -190,7 +201,7 @@ void kgeography::consult()
 	// No need to create another map viewer if we are already in it
 	mapAsker *ma = dynamic_cast<mapAsker*>(p_askWidget);
 	if (ma && !ma -> isAsker()) return;
-	
+
 	showResultsDialog();
 	removeOldAskWidget();
 	p_askWidget = new mapAsker(p_bigWidget, p_map, p_underLeftWidget, false);
@@ -317,7 +328,7 @@ void kgeography::removeOldAskWidget()
 QSize kgeography::getPreferredSize()
 {
 	int ySize = 0;
-	
+
 	ySize = menuBar() -> size().height() + toolBar() -> size().height() + ((mapAsker*) p_askWidget)->mapSize().height();
 	return QSize(p_underLeftWidget -> size().width() + ((mapAsker*) p_askWidget)->mapSize().width() + 10, ySize + 10);
 }
@@ -344,14 +355,14 @@ void kgeography::setMap(KGmap *m)
 	set -> writeConfig();
 	delete p_map;
 	p_map = m;
-	
+
 	p_askMap->setText(i18n("&Location of %1", p_map->getDivisionsString()));
 	p_askPlaceMap->setText(i18n("&Place %1 in the Map", p_map->getDivisionsString()));
 	p_askCapitalDivisions->setText(i18n("%1 by Capital", p_map->getDivisionsString()));
 	p_askDivisionCapitals->setText(i18n("&Capitals of %1", p_map->getDivisionsString()));
 	p_askFlagDivisions->setText(i18n("%1 by Flag", p_map->getDivisionsString()));
 	p_askDivisionFlags->setText(i18n("&Flags of %1", p_map->getDivisionsString()));
-	
+
 	QString sw = i18nc("There are two ways of dealing with the translation of \"Current map: %1\". The first option simply replaces %1 with the translated name of the relevant region. If the grammar of your language allows this, choose this option by setting the translation of this message to 1, and leave untranslated the translations of \"Current map: %1\" that have the placename embedded (or translate them as - if you wish to show the file as fully translated. The second option is to translate all messages in full - this is likely to be required in the case of highly-inflected languages like Russian. To choose this option, set the translation of this message to 0, and translate all the messages.", "0");
 	if (sw == "1")
 	{
@@ -397,7 +408,7 @@ void kgeography::showResultsDialog()
 		int ca = p_askWidget -> correctAnswers();
 		QString q = p_askWidget -> getQuestionHook();
 		QVector<userAnswer> ua = p_askWidget -> userAnswers();
-	
+
 		answersDialog *ad = new answersDialog(this, ua, q, ca);
 		ad -> exec();
 		delete ad;
