@@ -1,0 +1,90 @@
+<map>
+	<mapFile>jamaica.png</mapFile>
+	<name>Jamaica</name>
+        <divisionsName>Parishes</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
+	</division>
+	<division>
+		<name>Not Jamaica</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Kingston</name>
+		<capital>Kingston</capital>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Portland</name>
+		<capital>Port Antonio</capital>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Saint Andrew</name>
+		<capital>Half Way Tree</capital>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Saint Thomas</name>
+		<capital>Morant Bay</capital>
+		<color><red>170</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Clarendon</name>
+		<capital>May Pen</capital>
+		<color><red>85</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Manchester</name>
+		<capital>Mandeville</capital>
+		<color><red>85</red><green>255</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Saint Ann</name>
+		<capital>Saint Ann's Bay</capital>
+		<color><red>85</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Saint Catherine</name>
+		<capital>Spanish Town</capital>
+		<color><red>85</red><green>170</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Saint Mary</name>
+		<capital>Port Maria</capital>
+		<color><red>85</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Hanover</name>
+		<capital>Lucea</capital>
+		<color><red>170</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Saint Elizabeth</name>
+		<capital>Black River</capital>
+		<color><red>255</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Saint James</name>
+		<capital>Montego Bay</capital>
+		<color><red>255</red><green>85</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Trelawny</name>
+		<capital>Falmouth</capital>
+		<color><red>227</red><green>113</green><blue>113</blue></color>
+	</division>
+	<division>
+		<name>Westmoreland</name>
+		<capital>Savanna-la-Mar</capital>
+		<color><red>227</red><green>170</green><blue>113</blue></color>
+	</division>
+</map>

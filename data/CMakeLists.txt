@@ -92,5 +92,13 @@ install(FILES
    japan.png
    sweden.kgm
    sweden.png
+   jamaica.kgm
+   jamaica.png
+   nicaragua.kgm
+   nicaragua.png
+   panama.kgm
+   panama.png
+   suriname.kgm
+   suriname.png
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
