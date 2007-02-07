@@ -1,0 +1,149 @@
+<map>
+	<mapFile>venezuela.png</mapFile>
+	<name>Venezuela</name>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Venezuela</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Amazonas</name>
+		<capital>Puerto Ayacucho</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Anzoátegui</name>
+		<capital>Barcelona</capital>
+		<color><red>255</red><green>128</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Apure</name>
+		<capital>San Fernando de Apure</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Aragua</name>
+		<capital>Maracay</capital>
+		<color><red>255</red><green>191</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Barinas</name>
+		<capital>Barinas</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Bolívar</name>
+		<capital>Ciudad Bolívar</capital>
+		<color><red>255</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Carabobo</name>
+		<capital>Valencia</capital>
+		<color><red>128</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Cojedes</name>
+		<capital>San Carlos</capital>
+		<color><red>191</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Delta Amacuro</name>
+		<capital>Tucupita</capital>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Falcón</name>
+		<capital>Coro</capital>
+		<color><red>128</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Guárico</name>
+		<capital>San Juan De Los Morros</capital>
+		<color><red>0</red><green>255</green><blue>127</blue></color>
+	</division>
+	<division>
+		<name>Lara</name>
+		<capital>Barquisimeto</capital>
+		<color><red>128</red><green>255</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Mérida</name>
+		<capital>Mérida</capital>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Miranda</name>
+		<capital>Los Teques</capital>
+		<color><red>128</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Monagas</name>
+		<capital>Maturín</capital>
+		<color><red>0</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Nueva Esparta</name>
+		<capital>La Asunción</capital>
+		<color><red>128</red><green>191</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Portuguesa</name>
+		<capital>Guanare</capital>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Sucre</name>
+		<capital>Cumaná</capital>
+		<color><red>128</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Táchira</name>
+		<capital>San Cristóbal</capital>
+		<color><red>127</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Trujillo</name>
+		<capital>Trujillo</capital>
+		<color><red>191</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Yaracuy</name>
+		<capital>San Felipe</capital>
+		<color><red>255</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Vargas</name>
+		<capital>La Guaira</capital>
+		<color><red>255</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Zulia</name>
+		<capital>Maracaibo</capital>
+		<color><red>255</red><green>0</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Federal Dependencies</name>
+		<capital>Caracas</capital>
+		<color><red>255</red><green>128</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Capital District</name>
+		<capital>Caracas ciudad</capital>
+		<color><red>212</red><green>43</green><blue>43</blue></color>
+	</division>
+</map>

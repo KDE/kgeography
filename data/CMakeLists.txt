@@ -100,5 +100,7 @@ install(FILES
    panama.png
    suriname.kgm
    suriname.png
+   venezuela.kgm
+   venezuela.png
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
