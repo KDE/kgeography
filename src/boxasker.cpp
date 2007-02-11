@@ -33,11 +33,11 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 	for(int i = 0; i < 4; i++)
 	{
 		p_rb[i] = new QRadioButton(bg);
+		p_rb[i]->setFocusPolicy(QWidget::StrongFocus);
 	}
 	p_accept = new KPushButton(this);
 
-	
-	p_lay -> addWidget( p_label);
+	p_lay -> addWidget(p_label);
 	p_lay -> addWidget(bg, 1);
 	p_lay -> addWidget(p_accept);
 	KAcceleratorManager::setNoAccel(this);
@@ -53,12 +53,19 @@ void boxAsker::setQuestion(const QString &q)
 	p_label -> setText(q);
 }
 
+void boxAsker::keyReleaseEvent(QKeyEvent *e)
+{
+	if (e -> key() == Qt::Key_Return || e -> key() == Qt::Key_Enter) checkAnswer();
+	else askWidget::keyReleaseEvent(e);
+}
+
 void boxAsker::nextQuestionHook(const QString &division)
 {
 	QString otherDivision;
 	QStringList auxList;
 	int i;
 	
+	setFocus();
 	for (i = 0; i < 4; i++) p_rb[i] -> setChecked(false);
 	
 	auxList << division;
