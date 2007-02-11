@@ -31,6 +31,8 @@ Q_OBJECT
 		void nextQuestionHook(const QString &division);
 		void setQuestion(const QString &q);
 		virtual void setAnswerHook(int userSays) = 0;
+
+		void keyReleaseEvent(QKeyEvent *e);
 		
 		QVBoxLayout *p_lay;
 		QRadioButton **p_rb;

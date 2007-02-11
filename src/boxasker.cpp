@@ -17,6 +17,7 @@
 
 #include <qbuttongroup.h>
 #include <qgroupbox.h>
+#include <qevent.h>
 #include <qlabel.h>
 #include <qlayout.h>
 #include <qradiobutton.h>
@@ -56,12 +57,19 @@ void boxAsker::setQuestion(const QString &q)
 	p_label -> setText(q);
 }
 
+void boxAsker::keyReleaseEvent(QKeyEvent *e)
+{
+	if (e -> key() == Qt::Key_Return || e -> key() == Qt::Key_Enter) checkAnswer();
+	else askWidget::keyReleaseEvent(e);
+}
+
 void boxAsker::nextQuestionHook(const QString &division)
 {
 	QString otherDivision;
 	QStringList auxList;
 	int i;
 	
+	setFocus();
 	for(int i = 0; i < 4; i++) p_rb[i] -> setAutoExclusive(false);
 	for(int i = 0; i < 4; i++) p_rb[i] -> setChecked(false);
 	for(int i = 0; i < 4; i++) p_rb[i] -> setText(QString());
