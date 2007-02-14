@@ -1,0 +1,94 @@
+<map>
+	<mapFile>chile.png</mapFile>
+	<name>Chile</name>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
+	</division>
+	<division>
+		<name>Not Chile</name>
+		<ignore>yes</ignore>
+		<color><red>145</red><green>145</green><blue>145</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Chile </name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Tarapacá</name>
+		<capital>Iquique</capital>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Antofagasta</name>
+		<capital>Antofagasta</capital>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Atacama</name>
+		<capital>Copiapo</capital>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Coquimbo</name>
+		<capital>La Serena</capital>
+		<color><red>170</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Valparaíso</name>
+		<capital>Valparaiso</capital>
+		<color><red>85</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>O'Higgins</name>
+		<capital>Rancagua</capital>
+		<color><red>85</red><green>255</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Maule</name>
+		<capital>Talca</capital>
+		<color><red>85</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Bío-Bío</name>
+		<capital>Concepción</capital>
+		<color><red>85</red><green>170</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Araucanía</name>
+		<capital>Temuco</capital>
+		<color><red>85</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Los Lagos</name>
+		<capital>Puerto Montt</capital>
+		<color><red>170</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Aysen</name>
+		<capital>Coyhaique</capital>
+		<color><red>255</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Magallanes y la Antártica Chilena</name>
+		<capital>Punta Arenas</capital>
+		<color><red>255</red><green>85</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Santiago Metropolitan Region</name>
+		<capital>Santiago</capital>
+		<color><red>227</red><green>113</green><blue>113</blue></color>
+	</division>
+</map>
