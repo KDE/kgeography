@@ -20,13 +20,14 @@
 #include "mapasker.h"
 #include "mapwidget.h"
 
-mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_popupManager(this), p_asker(asker), p_firstShow(true)
+mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_asker(asker), p_firstShow(true)
 {
 	QVBoxLayout *lay = new QVBoxLayout(this);
 	lay -> setMargin(0);
 	lay -> setSpacing(0);
 
 	p_mapWidget = new mapWidget(this);
+	p_popupManager.setWidget(p_mapWidget->viewport());
 	lay -> addWidget(p_mapWidget);
 
 	p_shouldClearPopup = false;

@@ -11,10 +11,15 @@
 #include "mypopup.h"
 #include "popupmanager.h"
 
-popupManager::popupManager(QWidget *parent)
+popupManager::popupManager()
 {
-	p_parent = parent;
+	p_parent = 0;
 	p_mp = 0;
+}
+
+void popupManager::setWidget(QWidget *w)
+{
+	p_parent = w;
 }
 
 void popupManager::show(const QString &text, const QString &text2, const QPoint &p, const QString &flagFile)
