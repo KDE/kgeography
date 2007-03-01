@@ -16,7 +16,6 @@
 #include <QScrollBar>
 #include <QTimer>
 
-#include <kapplication.h>
 #include <kdebug.h>
 #include <klocale.h>
 

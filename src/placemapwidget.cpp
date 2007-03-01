@@ -16,7 +16,6 @@
 #include <QScrollBar>
 #include <QTimer>
 
-#include <kapplication.h>
 #include <klocale.h>
 
 #include "placemapwidget.h"
