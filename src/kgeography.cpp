@@ -107,7 +107,7 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 
         p_zoom =  actionCollection()->add<KToggleAction>( "zoom_select" );
         p_zoom->setText(i18n("&Zoom") );
-        p_zoom->setIcon( KIcon("viewmag+") );
+        p_zoom->setIcon( KIcon("zoom-in") );
 	p_zoom -> setEnabled(false);
 
         p_zoomOriginal = actionCollection()->addAction( "zoom_original" );
@@ -117,7 +117,7 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 
         p_zoomAutomatic = actionCollection()->addAction( "zoom_automatic" );
         p_zoomAutomatic->setText(  i18n("&Automatic Zoom") );
-        p_zoomAutomatic->setIcon( KIcon("viewmagfit") );
+        p_zoomAutomatic->setIcon( KIcon("zoom-best-fit") );
 	p_zoomAutomatic -> setEnabled(false);
 
         p_move = actionCollection()->add<KToggleAction>( "move" );
