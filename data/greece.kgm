@@ -1,0 +1,216 @@
+<map>
+	<mapFile>greece.png</mapFile>
+	<name>Greece</name>
+	<division>
+		<name>Border</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</color>
+	</division>
+	<division>
+		<name>Border</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>1</red>
+			<green>1</green>
+			<blue>1</blue>
+		</color>
+	</division>
+	<division>
+		<name>Aegean Sea</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>255</red>
+			<green>255</green>
+			<blue>250</blue>
+		</color>
+	</division>
+	<division>
+		<name>Balkans</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>255</red>
+			<green>255</green>
+			<blue>251</blue>
+		</color>
+	</division>
+	<division>
+		<name>Sea of Crete</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>255</red>
+			<green>255</green>
+			<blue>252</blue>
+		</color>
+	</division>
+	<division>
+		<name>Ionian Sea</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>255</red>
+			<green>255</green>
+			<blue>253</blue>
+		</color>
+	</division>
+	<division>
+		<name>Mediterranean Sea</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>255</red>
+			<green>255</green>
+			<blue>254</blue>
+		</color>
+	</division>
+	<division>
+		<name>Not Greece</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>255</red>
+			<green>255</green>
+			<blue>255</blue>
+		</color>
+	</division>
+	<division>
+		<name>Attica</name>
+		<capital>Athens</capital>
+		<color>
+			<!-- FF99C2 -->
+			<red>255</red>
+			<green>153</green>
+			<blue>194</blue>
+		</color>
+	</division>
+	<division>
+		<name>Central Greece</name>
+		<capital>Lamia</capital>
+		<color>
+			<!-- 99D699 -->
+			<red>153</red>
+			<green>214</green>
+			<blue>153</blue>
+		</color>
+	</division>
+	<division>
+		<name>Central Macedonia</name>
+		<capital>Thessaloniki</capital>
+		<color>
+			<!-- 99FF99 -->
+			<red>153</red>
+			<green>255</green>
+			<blue>153</blue>
+		</color>
+	</division>
+	<division>
+		<name>Crete</name>
+		<capital>Heraklion</capital>
+		<color>
+			<!-- C2C2AD -->
+			<red>194</red>
+			<green>194</green>
+			<blue>173</blue>
+		</color>
+	</division>
+	<division>
+		<name>East Macedonia and Thrace</name>
+		<capital>Komotini</capital>
+		<color>
+			<!-- 99EBFF -->
+			<red>153</red>
+			<green>235</green>
+			<blue>255</blue>
+		</color>
+	</division>
+	<division>
+		<name>Epirus</name>
+		<capital>Ioannina</capital>
+		<color>
+			<!-- 99C2D6 -->
+			<red>153</red>
+			<green>194</green>
+			<blue>214</blue>
+		</color>
+	</division>
+	<division>
+		<name>Ionian Islands</name>
+		<capital>Corfu</capital>
+		<color>
+			<!-- EBAD99 -->
+			<red>235</red>
+			<green>173</green>
+			<blue>153</blue>
+		</color>
+	</division>
+	<division>
+		<name>North Aegean</name>
+		<capital>Mytilene</capital>
+		<color>
+			<!-- FFEB99 -->
+			<red>255</red>
+			<green>235</green>
+			<blue>153</blue>
+		</color>
+	</division>
+	<division>
+		<name>Peloponnese</name>
+		<capital>Tripoli</capital>
+		<color>
+			<!-- 9999FF -->
+			<red>153</red>
+			<green>153</green>
+			<blue>255</blue>
+		</color>
+	</division>
+	<division>
+		<name>South Aegean</name>
+		<capital>Ermoupoli</capital>
+		<color>
+			<!-- FF99FF -->
+			<red>255</red>
+			<green>153</green>
+			<blue>255</blue>
+		</color>
+	</division>
+	<division>
+		<name>Thessaly</name>
+		<capital>Larissa</capital>
+		<color>
+			<!-- D699FF -->
+			<red>214</red>
+			<green>153</green>
+			<blue>255</blue>
+		</color>
+	</division>
+	<division>
+		<name>West Greece</name>
+		<capital>Patras</capital>
+		<color>
+			<!-- FFFF99 -->
+			<red>255</red>
+			<green>255</green>
+			<blue>153</blue>
+		</color>
+	</division>
+	<division>
+		<name>West Macedonia</name>
+		<capital>Kozani</capital>
+		<color>
+			<!-- FFC299 -->
+			<red>255</red>
+			<green>194</green>
+			<blue>153</blue>
+		</color>
+	</division>
+	<division>
+		<name>Mount Athos</name>
+		<capital>Karyes</capital>
+		<color>
+			<!-- FF9999 -->
+			<red>255</red>
+			<green>153</green>
+			<blue>153</blue>
+		</color>
+	</division>
+</map>
