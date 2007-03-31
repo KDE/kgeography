@@ -1,0 +1,114 @@
+<map>
+	<mapFile>paraguay.png</mapFile>
+	<name>Paraguay</name>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Paraguay</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Alto Paraguay</name>
+		<capital>Fuerte Olimpo</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Alto Paraná</name>
+		<capital>Ciudad del Este</capital>
+		<color><red>255</red><green>128</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Amambay</name>
+		<capital>Pedro Juan Caballero</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Asunción Capitol District</name>
+		<capital>Asunción</capital>
+		<color><red>255</red><green>191</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Boquerón</name>
+		<capital>Filadelfia</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Caaguazú</name>
+		<capital>Coronel Oviedo</capital>
+		<color><red>255</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Caazapá</name>
+		<capital>Caazapá</capital>
+		<color><red>85</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Canindeyú</name>
+		<capital>Salto del Guairá</capital>
+		<color><red>85</red><green>255</green><blue>142</blue></color>
+	</division>
+	<division>
+		<name>Central</name>
+		<capital>Areguá</capital>
+		<color><red>85</red><green>255</green><blue>198</blue></color>
+	</division>
+	<division>
+		<name>Concepción</name>
+		<capital>Concepción</capital>
+		<color><red>85</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Cordillera</name>
+		<capital>Caacupé</capital>
+		<color><red>85</red><green>198</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Guairá</name>
+		<capital>Villarrica</capital>
+		<color><red>85</red><green>142</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Itapúa</name>
+		<capital>Encarnación</capital>
+		<color><red>85</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Misiones</name>
+		<capital>San Juan Bautista</capital>
+		<color><red>142</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Ñeembucú</name>
+		<capital>Pilar</capital>
+		<color><red>198</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Paraguarí</name>
+		<capital>Paraguarí</capital>
+		<color><red>255</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Presidente Hayes</name>
+		<capital>Pozo Colorado</capital>
+		<color><red>255</red><green>85</green><blue>198</blue></color>
+	</division>
+	<division>
+		<name>San Pedro</name>
+		<capital>San Pedro</capital>
+		<color><red>255</red><green>85</green><blue>142</blue></color>
+	</division>
+</map>

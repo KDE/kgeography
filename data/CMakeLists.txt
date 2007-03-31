@@ -110,5 +110,9 @@ install(FILES
    chile.png
    greece.kgm
    greece.png
+   paraguay.kgm
+   paraguay.png
+   uruguay.kgm
+   uruguay.png
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
