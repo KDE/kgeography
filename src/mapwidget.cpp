@@ -74,6 +74,7 @@ void mapWidget::drawBackground(QPainter *painter, const QRectF &_rect)
 	else
 	{
 		QImage copied = p_originalImage.copy( rect );
+		painter->setRenderHint( QPainter::SmoothPixmapTransform );
 		painter->drawImage( rect.topLeft(), copied );
 	}
 }
