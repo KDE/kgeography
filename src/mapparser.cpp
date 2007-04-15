@@ -8,6 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "mapparser.h"
+
 #include <QDir>
 #include <QDomDocument>
 
@@ -15,7 +17,6 @@
 
 #include "division.h"
 #include "map.h"
-#include "mapparser.h"
 
 mapReader::mapReader()
 {

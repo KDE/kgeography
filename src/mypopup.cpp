@@ -8,13 +8,12 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "mypopup.h"
+
 #include <qlabel.h>
 #include <qlayout.h>
 #include <qimage.h>
 #include <qpixmap.h>
-
-#include "mypopup.h"
-
 
 myPopup::myPopup(QWidget *parent, const QString &text, const QString &text2, const QString &flagFile) : QFrame(parent, Qt::FramelessWindowHint)
 {

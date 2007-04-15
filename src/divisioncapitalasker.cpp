@@ -8,12 +8,13 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "divisioncapitalasker.h"
+
 #include <klocale.h>
 #include <krandom.h>
 
 #include <qradiobutton.h>
  
-#include "divisioncapitalasker.h"
 #include "map.h"
 
 divisionCapitalAsker::divisionCapitalAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : boxAsker(parent, m, w, count)

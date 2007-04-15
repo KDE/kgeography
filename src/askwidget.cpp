@@ -8,13 +8,14 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "askwidget.h"
+
 #include <klocale.h>
 #include <kmessagebox.h>
 
 #include <qlabel.h>
 #include <qlayout.h>
 
-#include "askwidget.h"
 #include "map.h"
 
 askWidget::askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool showLabel) : QWidget(parent), p_map(m), p_count(count)

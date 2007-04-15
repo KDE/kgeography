@@ -8,6 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "boxasker.h"
+
 #include <stdlib.h> // for RAND_MAX
 
 #include <kacceleratormanager.h>
@@ -22,7 +24,6 @@
 #include <qlayout.h>
 #include <qradiobutton.h>
 
-#include "boxasker.h"
 #include "map.h"
 
 boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidget(parent, m, w, count)

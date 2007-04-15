@@ -8,6 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "map.h"
+
 #include <stdlib.h> // for RAND_MAX
 
 #include <klocale.h>
@@ -17,7 +19,6 @@
 #include <qfileinfo.h>
 
 #include "division.h"
-#include "map.h"
 
 KGmap::KGmap()
 {

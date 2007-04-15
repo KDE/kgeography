@@ -8,6 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "mapasker.h"
+
 #include <klocale.h>
 #include <kmessagebox.h>
 
@@ -17,7 +19,6 @@
 #include <qstring.h>
 
 #include "map.h"
-#include "mapasker.h"
 #include "mapwidget.h"
 
 mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_asker(asker), p_firstShow(true)

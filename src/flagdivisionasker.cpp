@@ -8,6 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "flagdivisionasker.h"
+
 #include <klocale.h>
 
 #include <qimage.h>
@@ -15,7 +17,6 @@
 #include <qpainter.h>
 #include <qradiobutton.h>
 
-#include "flagdivisionasker.h"
 #include "map.h"
 
 class flagWidget : public QWidget

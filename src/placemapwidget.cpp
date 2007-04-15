@@ -8,6 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "placemapwidget.h"
+
 #include <QCursor>
 #include <QGraphicsPixmapItem>
 #include <QGraphicsRectItem>
@@ -18,7 +20,6 @@
 
 #include <klocale.h>
 
-#include "placemapwidget.h"
 #include "division.h"
 
 placeMapWidget::placeMapWidget(QWidget *parent) : QGraphicsView(parent)

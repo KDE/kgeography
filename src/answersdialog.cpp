@@ -8,6 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "answersdialog.h"
+
 #include <klocale.h>
 
 #include <qlabel.h>
@@ -15,7 +17,6 @@
 #include <qscrollarea.h>
 
 #include "answer.h"
-#include "answersdialog.h"
 
 answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAnswers, const QString &question, int correctAnswers) : KDialog(parent)
 {

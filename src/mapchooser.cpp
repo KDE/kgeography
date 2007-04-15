@@ -8,6 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "mapchooser.h"
+
 #include <klocale.h>
 #include <kglobal.h>
 #include <kmessagebox.h>
@@ -18,8 +20,6 @@
 #include <qlayout.h>
 #include <qlistwidget.h>
 #include <qpainter.h>
-
-#include "mapchooser.h"
 
 mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 {

@@ -8,6 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "kgeography.h"
+
 #include <kaction.h>
 #include <kdialog.h>
 #include <klocale.h>
@@ -31,7 +33,6 @@
 #include "divisioncapitalasker.h"
 #include "divisionflagasker.h"
 #include "flagdivisionasker.h"
-#include "kgeography.h"
 #include "settings.h"
 #include "mapasker.h"
 #include "mapchooser.h"

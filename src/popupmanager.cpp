@@ -8,8 +8,9 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include "mypopup.h"
 #include "popupmanager.h"
+
+#include "mypopup.h"
 
 popupManager::popupManager()
 {

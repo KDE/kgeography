@@ -8,6 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "mapwidget.h"
+
 #include <QCursor>
 #include <QGraphicsPixmapItem>
 #include <QGraphicsRectItem>
@@ -18,8 +20,6 @@
 
 #include <kdebug.h>
 #include <klocale.h>
-
-#include "mapwidget.h"
 
 mapWidget::mapWidget(QWidget *parent) : QGraphicsView(parent)
 {

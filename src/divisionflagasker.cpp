@@ -8,12 +8,13 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "divisionflagasker.h"
+
 #include <klocale.h>
 
 #include <qimage.h>
 #include <qradiobutton.h>
  
-#include "divisionflagasker.h"
 #include "map.h"
 
 divisionFlagAsker::divisionFlagAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : boxAsker(parent, m, w, count)

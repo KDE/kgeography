@@ -10,6 +10,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "placeasker.h"
+
 #include <cmath>
 
 #include <klocale.h>
@@ -21,7 +23,6 @@
 #include <qstring.h>
 
 #include "map.h"
-#include "placeasker.h"
 #include "placemapwidget.h"
 
 placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_asker(asker), p_firstShow(true), p_currentDivisionImage(0)

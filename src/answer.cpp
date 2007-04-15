@@ -8,14 +8,14 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
+#include "answer.h"
+
 #include <qimage.h>
 #include <qlabel.h>
 #include <qlayout.h>
 #include <qpixmap.h>
 
 #include <kdialog.h>
-
-#include "answer.h"
 
 userAnswer::userAnswer()
 {

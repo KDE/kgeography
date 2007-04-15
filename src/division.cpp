@@ -8,9 +8,9 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include <qfile.h>
-
 #include "division.h"
+
+#include <qfile.h>
 
 division::division()
 {
