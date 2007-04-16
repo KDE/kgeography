@@ -19,7 +19,7 @@
 #include "mapparser.h"
 
 class QListWidget;
-
+class QLabel;
 class mapChooser : public KDialog
 {
 Q_OBJECT

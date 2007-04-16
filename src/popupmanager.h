@@ -12,10 +12,11 @@
 #define POPUPMANAGER_H
 
 #include <qobject.h>
-
+#include <QString>
 class QWidget;
 
 class myPopup;
+class QPoint;
 
 class popupManager : public QObject
 {

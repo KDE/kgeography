@@ -15,6 +15,7 @@ class QDomElement;
 
 class division;
 class KGmap;
+#include <QString>
 
 class mapReader
 {
