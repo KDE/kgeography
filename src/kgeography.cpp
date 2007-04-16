@@ -40,7 +40,7 @@
 #include "map.h"
 #include "placeasker.h"
 
-kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDialog(false)
+kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResultsDialog(false)
 {
 	p_map = 0;
 	p_askWidget = 0;

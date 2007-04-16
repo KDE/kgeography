@@ -11,7 +11,7 @@
 #ifndef KGEOGRAPHY_H
 #define KGEOGRAPHY_H
 
-#include <kmainwindow.h>
+#include <kxmlguiwindow.h>
 
 class KAction;
 class KPushButton;
@@ -22,7 +22,7 @@ class QLabel;
 class KGmap;
 class askWidget;
 
-class kgeography : public KMainWindow
+class kgeography : public KXmlGuiWindow
 {
 Q_OBJECT
 	public:
