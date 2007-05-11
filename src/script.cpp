@@ -50,7 +50,6 @@ int main(int argc, char *argv[])
 			if (n.nodeName() == "name")
 			{
 				os << "i18nc(\"" << *it << "\", \"" << n.firstChild().nodeValue() << "\");\n";
-				os << "i18nc(\"" << *it << "\", \"<qt>Current map:<br><b>" << n.firstChild().nodeValue() << "</b></qt>\");\n";
 			}
 			else if (n.nodeName() == "division")
 			{
@@ -60,22 +59,8 @@ int main(int argc, char *argv[])
 				n3 = n.namedItem("ignore");
 				if (n3.isNull() || (n3.firstChild().nodeValue() != "yes" && n3.firstChild().nodeValue() != "allowClickMode"))
 				{
-					os << "i18nc(\"" << *it << "\", \"The capital of " << n2.firstChild().nodeValue() << " is...\");\n";
-					os << "i18nc(\"" << *it << "\", \"Please click on:\\n" << n2.firstChild().nodeValue() << "\");\n";
-					
-					n4 = n.namedItem("flag");
-					if (!n4.isNull())
-					{
-						os << "i18nc(\"" << *it << "\", \"The flag of " << n2.firstChild().nodeValue() << " is...\");\n";
-					}
-					
 					n5 = n.namedItem("capital");
 					os << "i18nc(\"" << *it << "\", \"" << n5.firstChild().nodeValue() << "\");\n";
-					os << "i18nc(\"" << *it << "\", \"" << n5.firstChild().nodeValue() << " is the capital of...\");\n";
-				}
-				else if (n3.firstChild().nodeValue() == "allowClickMode")
-				{
-					os << "i18nc(\"" << *it << "\", \"Please click on:\\n" << n2.firstChild().nodeValue() << "\");\n";
 				}
 			}
 		}
