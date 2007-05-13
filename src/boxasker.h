@@ -37,6 +37,9 @@ Q_OBJECT
 		QVBoxLayout *p_lay;
 		QRadioButton **p_rb;
 
+		// the position the correct answer is in
+		int p_position;
+
 	protected slots:
 		void init();
 		
@@ -48,9 +51,6 @@ Q_OBJECT
 	
 		KPushButton *p_accept;
 
-		// the position the correct answer is in
-		int p_position;
-		
 		QLabel *p_label;
 };
 

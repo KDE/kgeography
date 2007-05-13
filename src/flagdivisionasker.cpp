@@ -57,7 +57,14 @@ bool flagDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int i,
 		p_currentAnswer.setQuestion(QPixmap::fromImage(image.scaled(image.width()/5, image.height()/5, Qt::IgnoreAspectRatio, Qt::SmoothTransformation)));
 		p_currentAnswer.setCorrectAnswer(i18nc(p_map -> getFileName().toUtf8(), division.toUtf8()));
 	}
+	else
+	{
+		// There are some maps like the Pacific one where two divisions have the same flag
+		QImage image(p_map -> getDivisionFlagFile(division));
+		if (p_flag -> img == image) return false;
+	}
 	p_rb[i] -> setText(i18nc(p_map -> getFileName().toUtf8(), division.toUtf8()));
+	
 	return true;
 }
 

@@ -24,10 +24,8 @@ divisionFlagAsker::divisionFlagAsker(QWidget *parent, KGmap *m, QWidget *w, uint
 
 bool divisionFlagAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
 {
+	QSize pixmapSize(60, 40);
 	QIcon icon(p_map -> getDivisionFlagFile(division));
-	p_rb[i] -> setIcon(icon);
-	p_rb[i] -> show();
-	p_rb[i] -> setIconSize(QSize(60, 40));
 	if (isAnswer)
 	{
 		QString divisionName = i18nc(p_map -> getFileName().toUtf8(), division.toUtf8());
@@ -35,6 +33,14 @@ bool divisionFlagAsker::nextBoxAskerQuestionHook(const QString &division, int i,
 		p_currentAnswer.setCorrectAnswer(icon.pixmap(QSize(60, 40)));
 		p_currentAnswer.setQuestion(i18nc(p_map -> getFileName().toUtf8(), division.toUtf8()));
 	}
+	else
+	{
+		// There are some maps like the Pacific one where two divisions have the same flag
+		if (icon.pixmap(pixmapSize).toImage() == p_rb[p_position]->icon().pixmap(pixmapSize).toImage()) return false;
+	}
+	p_rb[i] -> setIcon(icon);
+	p_rb[i] -> show();
+	p_rb[i] -> setIconSize(pixmapSize);
 	return true;
 }
 

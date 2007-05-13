@@ -74,6 +74,7 @@ void boxAsker::nextQuestionHook(const QString &division)
 	for(int i = 0; i < 4; i++) p_rb[i] -> setAutoExclusive(false);
 	for(int i = 0; i < 4; i++) p_rb[i] -> setChecked(false);
 	for(int i = 0; i < 4; i++) p_rb[i] -> setText(QString());
+	for(int i = 0; i < 4; i++) p_rb[i] -> setIcon(QIcon());
 	for(int i = 0; i < 4; i++) p_rb[i] -> setAutoExclusive(true);
 	
 	
@@ -87,7 +88,7 @@ void boxAsker::nextQuestionHook(const QString &division)
 	i = 0;
 	while (i < 4)
 	{
-		if (p_rb[i] -> text().isNull())
+		if (p_rb[i] -> text().isNull() && p_rb[i] -> icon().isNull())
 		{
 			// false because boxaskers never are clickOnDivision
 			otherDivision = p_map -> getRandomDivision(false);
