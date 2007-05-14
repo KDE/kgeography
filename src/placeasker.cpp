@@ -48,6 +48,7 @@ placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint c
 		QVBoxLayout *vbl = static_cast<QVBoxLayout*>(w -> layout());
 		p_next = new QLabel(w);
 		p_next -> setAlignment(Qt::AlignTop | Qt::AlignHCenter);
+		p_next -> setWordWrap(true);
 		p_fill = new QWidget(w);
 		p_fill -> show();
 		vbl -> addWidget(p_next);
@@ -147,7 +148,7 @@ void placeAsker::handleMapClick(QRgb c, const QPoint &widgetPoint, const QPointF
 void placeAsker::nextQuestionHook(const QString &division)
 {
 	QString divisionName = i18nc(p_map -> getFileName().toUtf8(), division.toUtf8());
-	p_next -> setText(i18n("Please place in the map:\n%1", divisionName));
+	p_next -> setText(i18n("<qt>Please place in the map:<br>%1</qt>", divisionName));
 	p_next -> show();
 	p_currentAnswer.setQuestion(i18nc(p_map -> getFile().toUtf8(), division.toUtf8()));
 	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
