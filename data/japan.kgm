@@ -30,7 +30,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Aomori</name>
+		<name>Aomori (Prefecture)</name>
 		<capital>Aomori</capital>
 		<color>
 			<red>0</red>
@@ -48,7 +48,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Akita</name>
+		<name>Akita (Prefecture)</name>
 		<capital>Akita</capital>
 		<color>
 			<red>192</red>
@@ -57,7 +57,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Yamagata</name>
+		<name>Yamagata (Prefecture)</name>
 		<capital>Yamagata</capital>
 		<color>
 			<red>128</red>
@@ -75,7 +75,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Niigata</name>
+		<name>Niigata (Prefecture)</name>
 		<capital>Niigata</capital>
 		<color>
 			<red>255</red>
@@ -84,7 +84,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Fukushima</name>
+		<name>Fukushima (Prefecture)</name>
 		<capital>Fukushima</capital>
 		<color>
 			<red>255</red>
@@ -93,7 +93,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Nagano</name>
+		<name>Nagano (Prefecture)</name>
 		<capital>Nagano</capital>
 		<color>
 			<red>255</red>
@@ -129,7 +129,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Chiba</name>
+		<name>Chiba (Prefecture)</name>
 		<capital>Chiba</capital>
 		<color>
 			<red>253</red>
@@ -138,7 +138,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Gifu</name>
+		<name>Gifu (Prefecture)</name>
 		<capital>Gifu</capital>
 		<color>
 			<red>5</red>
@@ -147,7 +147,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Shizuoka</name>
+		<name>Shizuoka (Prefecture)</name>
 		<capital>Shizuoka</capital>
 		<color>
 			<red>0</red>
@@ -156,8 +156,8 @@
 		</color>
 	</division>
 	<division>
-		<name>Saitama</name>
-		<capital>Urawa</capital>
+		<name>Saitama (Prefecture)</name>
+		<capital>Saitama</capital>
 		<color>
 			<red>241</red>
 			<green>0</green>
@@ -174,7 +174,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Toyama</name>
+		<name>Toyama (Prefecture)</name>
 		<capital>Toyama</capital>
 		<color>
 			<red>6</red>
@@ -201,7 +201,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Fukui</name>
+		<name>Fukui (Prefecture)</name>
 		<capital>Fukui</capital>
 		<color>
 			<red>40</red>
@@ -211,7 +211,7 @@
 	</division>
 	<division>
 		<name>Shiga</name>
-		<capital>Outsu</capital>
+		<capital>Ōtsu</capital>
 		<color>
 			<red>15</red>
 			<green>194</green>
@@ -228,7 +228,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Kyoto</name>
+		<name>Kyoto (Prefecture)</name>
 		<capital>Kyoto</capital>
 		<color>
 			<red>236</red>
@@ -246,7 +246,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Nara</name>
+		<name>Nara (Prefecture)</name>
 		<capital>Nara</capital>
 		<color>
 			<red>243</red>
@@ -255,7 +255,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Osaka</name>
+		<name>Osaka (Prefecture)</name>
 		<capital>Osaka</capital>
 		<color>
 			<red>76</red>
@@ -264,7 +264,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Wakayama</name>
+		<name>Wakayama (Prefecture)</name>
 		<capital>Wakayama</capital>
 		<color>
 			<red>37</red>
@@ -273,7 +273,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Okayama</name>
+		<name>Okayama (Prefecture)</name>
 		<capital>Okayama</capital>
 		<color>
 			<red>165</red>
@@ -282,7 +282,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Tottori</name>
+		<name>Tottori (Prefecture)</name>
 		<capital>Tottori</capital>
 		<color>
 			<red>10</red>
@@ -300,7 +300,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Hiroshima</name>
+		<name>Hiroshima (Prefecture)</name>
 		<capital>Hiroshima</capital>
 		<color>
 			<red>249</red>
@@ -309,7 +309,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Yamaguchi</name>
+		<name>Yamaguchi (Prefecture)</name>
 		<capital>Yamaguchi</capital>
 		<color>
 			<red>248</red>
@@ -317,7 +317,7 @@
 			<blue>76</blue>
 		</color>
 	</division><division>
-		<name>Fukuoka</name>
+		<name>Fukuoka (Prefecture)</name>
 		<capital>Fukuoka</capital>
 		<color>
 			<red>49</red>
@@ -325,15 +325,15 @@
 			<blue>210</blue>
 		</color>
 	</division><division>
-		<name>Oita</name>
-		<capital>Oita</capital>
+		<name>Ōita (Prefecture)</name>
+		<capital>Ōita</capital>
 		<color>
 			<red>246</red>
 			<green>58</green>
 			<blue>0</blue>
 		</color>
 	</division><division>
-		<name>Miyazaki</name>
+		<name>Miyazaki (Prefecture)</name>
 		<capital>Miyazaki</capital>
 		<color>
 			<red>88</red>
@@ -341,7 +341,7 @@
 			<blue>59</blue>
 		</color>
 	</division><division>
-		<name>Kagoshima</name>
+		<name>Kagoshima (Prefecture)</name>
 		<capital>Kagoshima</capital>
 		<color>
 			<red>242</red>
@@ -349,7 +349,7 @@
 			<blue>5</blue>
 		</color>
 	</division><division>
-		<name>Kumamoto</name>
+		<name>Kumamoto (Prefecture)</name>
 		<capital>Kumamoto</capital>
 		<color>
 			<red>236</red>
@@ -357,7 +357,7 @@
 			<blue>116</blue>
 		</color>
 	</division><division>
-		<name>Saga</name>
+		<name>Saga (Prefecture)</name>
 		<capital>Saga</capital>
 		<color>
 			<red>14</red>
@@ -365,8 +365,8 @@
 			<blue>29</blue>
 		</color>
 	</division><division>
-		<name>Nagazaki</name>
-		<capital>Nagazaki</capital>
+		<name>Nagasaki (Prefecture)</name>
+		<capital>Nagasaki</capital>
 		<color>
 			<red>22</red>
 			<green>168</green>
@@ -383,8 +383,8 @@
 		</color>
 	</division>
 	<division>
-		<name>Kochi</name>
-		<capital>Kochi</capital>
+		<name>Kōchi (Prefecture)</name>
+		<capital>Kōchi</capital>
 		<color>
 			<red>204</red>
 			<green>50</green>
@@ -392,7 +392,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Tokushima</name>
+		<name>Tokushima (Prefecture)</name>
 		<capital>Tokushima</capital>
 		<color>
 			<red>64</red>
@@ -419,7 +419,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Tokyo</name>
+		<name>Tokyo (Prefecture)</name>
 		<capital>Tokyo</capital>
 		<color>
 			<red>135</red>
