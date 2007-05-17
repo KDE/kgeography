@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
- *   tsdgeos@terra.es                                                      *
+ *   Copyright (C) 2004-2007 by Albert Astals Cid                          *
+ *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -12,6 +12,8 @@
 #define BOXASKER_H
 
 #include "askwidget.h"
+
+#include "division.h"
 
 class KPushButton;
 
@@ -31,6 +33,7 @@ Q_OBJECT
 		void nextQuestionHook(const QString &division);
 		void setQuestion(const QString &q);
 		virtual void setAnswerHook(int userSays) = 0;
+		virtual division::askMode askMode() const = 0;
 
 		void keyReleaseEvent(QKeyEvent *e);
 		

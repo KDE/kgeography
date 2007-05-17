@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2004-2006 by Albert Astals Cid                          *
+ *   Copyright (C) 2004-2007 by Albert Astals Cid                          *
  *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -19,7 +19,12 @@ class division
 	public:
 		division();
 		
-		bool canAsk(bool clickDivisionMode) const;
+		enum askMode { eNone = 0,
+		               eClick = 1,
+		               eCapital = 2,
+		               eFlag = 4};
+		
+		bool canAsk(askMode am) const;
 		QString getName() const;
 		QRgb getRGB() const;
 		QString getFlagFile() const;
@@ -28,7 +33,7 @@ class division
 		
 		void setCapital(const QString &name);
 		void setFalseCapitals(const QStringList &falseCapitals);
-		void setIgnore(bool ignore, bool canAskClickDivision);
+		void setCanAsk(int askMode);
 		void setName(const QString &name);
 		void setRGB(int r, int g, int b);
 		bool setFlagFile(const QString &path);
@@ -37,7 +42,7 @@ class division
 		QString p_name, p_flagFile, p_capital;
 		QStringList p_falseCapitals;
 		QRgb p_color;
-		bool p_canAskAlways, p_canAskClickDivision;
+		int p_askMode;
 };
 
 #endif

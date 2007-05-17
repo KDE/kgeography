@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2004-2006 by Albert Astals Cid                          *
+ *   Copyright (C) 2004-2007 by Albert Astals Cid                          *
  *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -217,7 +217,7 @@ void kgeography::askCapitalDivisions()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(division::eCapital)), 1, 1, p_map -> count(division::eCapital), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -233,7 +233,7 @@ void kgeography::askDivisionCapitals()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(division::eCapital)), 1, 1, p_map -> count(division::eCapital), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -249,7 +249,7 @@ void kgeography::askMap()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(true)), 1, 1, p_map -> count(true), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(division::eClick)), 1, 1, p_map -> count(division::eClick), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -268,7 +268,7 @@ void kgeography::askPlaceMap()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(true)), 1, 1, p_map -> count(true), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(division::eClick)), 1, 1, p_map -> count(division::eClick), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -287,7 +287,7 @@ void kgeography::askFlagDivisions()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(division::eFlag)), 1, 1, p_map -> count(division::eFlag), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -303,7 +303,7 @@ void kgeography::askDivisionFlags()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(false)), 1, 1, p_map -> count(false), 1, &ok);
+	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(division::eFlag)), 1, 1, p_map -> count(division::eFlag), 1, &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -367,12 +367,12 @@ void kgeography::setMap(KGmap *m)
 	QString mapName = i18nc(p_map -> getFileName().toUtf8(), p_map -> getName().toUtf8());
 	p_currentMap -> setText(i18n("<qt>Current map:<br><b>%1<b></qt>", mapName));
 	p_consult -> setEnabled(true);
-	p_askMap -> setEnabled(true);
-	p_askPlaceMap -> setEnabled(true);
-	p_askFlagDivisions -> setEnabled(m -> hasAllFlags());
-	p_askDivisionFlags -> setEnabled(m -> hasAllFlags());
-	p_askCapitalDivisions -> setEnabled(true);
-	p_askDivisionCapitals -> setEnabled(true);
+	p_askMap -> setEnabled(m -> count(division::eClick) > 0);
+	p_askPlaceMap -> setEnabled(m -> count(division::eClick) > 0);
+	p_askFlagDivisions -> setEnabled(m -> count(division::eFlag) > 0);
+	p_askDivisionFlags -> setEnabled(m -> count(division::eFlag) > 0);
+	p_askCapitalDivisions -> setEnabled(m -> count(division::eCapital) > 0);
+	p_askDivisionCapitals -> setEnabled(m -> count(division::eCapital) > 0);
 	consult();
 }
 

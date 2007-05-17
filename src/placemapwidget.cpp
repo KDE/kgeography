@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2004-2005 by Albert Astals Cid                          *
- *   tsdgeos@terra.es                                                      *
+ *   Copyright (C) 2004-2007 by Albert Astals Cid                          *
+ *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -62,7 +62,7 @@ void placeMapWidget::createGameMapImage()
 	p_gameImage = new QImage(p_mapImage->size(), QImage::Format_RGB32);
 	p_gameImage->fill(QColor(255,255,255).rgb());
 
-	QList<division*> ignoredDivisions = p_map->getIgnoredDivisions(true);
+	QList<division*> ignoredDivisions = p_map->getIgnoredDivisions(division::eClick);
 	foreach(division *id, ignoredDivisions)
 	{
 		QRgb color = id->getRGB();

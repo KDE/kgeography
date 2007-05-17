@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2004-2006 by Albert Astals Cid                          *
+ *   Copyright (C) 2004-2007 by Albert Astals Cid                          *
  *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -81,9 +81,10 @@ KGmap *mapReader::parseMap(const QString &path)
 					const QString &ignore = getElementString("ignore", divisionTag, Optional).toLower();
 					if (!ignore.isNull())
 					{
-						if (ignore == "yes") kgdiv -> setIgnore(true, false);
-						else if (ignore == "no") kgdiv -> setIgnore(false, false);
-						else if (ignore == "allowclickmode") kgdiv -> setIgnore(true, true);
+						if (ignore == "yes") kgdiv -> setCanAsk(division::eNone);
+						else if (ignore == "no") kgdiv -> setCanAsk(division::eClick | division::eCapital | division::eFlag);
+						else if (ignore == "allowclickmode") kgdiv -> setCanAsk(division::eClick);
+						else if (ignore == "allowclickflagmode") kgdiv -> setCanAsk(division::eClick | division::eFlag);
 						else
 						{
 							p_error = i18n("Invalid value in tag %1", QString("<ignore>"));

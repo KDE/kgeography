@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2004-2006 by Albert Astals Cid                          *
+ *   Copyright (C) 2004-2007 by Albert Astals Cid                          *
  *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -22,7 +22,6 @@
 
 KGmap::KGmap()
 {
-	p_hasAllFlags = true;
 }
 
 KGmap::~KGmap()
@@ -34,11 +33,10 @@ bool KGmap::addDivision(division *d)
 {
 	bool b;
 	if ( ( getDivision(d -> getName()) == NULL && getDivision(d -> getRGB()) == NULL ) || 
-	     ( getDivision(d -> getName()) != NULL && getDivision(d -> getRGB()) == NULL && !d->canAsk(false) && !getDivision(d -> getName())->canAsk(false) ) )
+	     ( getDivision(d -> getName()) != NULL && getDivision(d -> getRGB()) == NULL && !d->canAsk(division::eClick) && !getDivision(d -> getName())->canAsk(division::eClick) ) )
 	{
 		p_divisions.append(d);
 		b = true;
-		if (d -> canAsk(false)) p_hasAllFlags = p_hasAllFlags && !d -> getFlagFile().isNull();
 	}
 	else b = false;
 	return b;
@@ -65,19 +63,14 @@ void KGmap::setDivisionsString(const QString &s)
 	p_divisionsString = s;
 }
 
-uint KGmap::count(bool clickDivisionMode) const
+uint KGmap::count(division::askMode am) const
 {
 	uint count = 0;
 	foreach(const division *d, p_divisions)
 	{
-		if (d->canAsk(clickDivisionMode)) count++;
+		if (d->canAsk(am)) count++;
 	}
 	return count;
-}
-
-bool KGmap::hasAllFlags() const
-{
-	return p_hasAllFlags;
 }
 
 QString KGmap::getDivisionFlagFile(const QString &s) const
@@ -122,23 +115,23 @@ QString KGmap::getDivisionsString() const
 	else return p_divisionsString;
 }
 
-QString KGmap::getRandomDivision(bool clickDivisionMode) const
+QString KGmap::getRandomDivision(division::askMode am) const
 {
 	QList<division*> aux;
 	int i = (int)((float)p_divisions.size() * KRandom::random() / (RAND_MAX + 1.0));
-	if (!p_divisions[i] -> canAsk(clickDivisionMode)) return getRandomDivision(clickDivisionMode);
+	if (!p_divisions[i] -> canAsk(am)) return getRandomDivision(am);
 	else return p_divisions[i] -> getName();
 }
 
 QString KGmap::getWhatIs(QRgb c, bool all) const
 {
-	// this is only asked from mapasker.cpp hence the true in canAsk
+	// this is only asked from mapasker.cpp hence the division::eClick in canAsk
 	division *d = getDivision(c);
 	if (d == NULL) return "nothing";
 	else
 	{
 		if (all) return d -> getName();
-		else if (d -> canAsk(true)) return d -> getName();
+		else if (d -> canAsk(division::eClick)) return d -> getName();
 		else return "";
 	}
 }
@@ -148,11 +141,11 @@ QColor KGmap::getColor(const QString &s) const
 	return QColor(getDivision(s)->getRGB());
 }
 
-const QList<division*> KGmap::getIgnoredDivisions(bool clickDivisionMode) const
+const QList<division*> KGmap::getIgnoredDivisions(division::askMode am) const
 {
 	QList<division*> ignoredDivisions;
 	foreach (division* div, p_divisions)
-		if (!div->canAsk(clickDivisionMode)) 
+		if (!div->canAsk(am))
 			ignoredDivisions << div;
 	return ignoredDivisions;
 }

@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2004-2006 by Albert Astals Cid                          *
+ *   Copyright (C) 2004-2007 by Albert Astals Cid                          *
  *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -12,17 +12,33 @@
 
 #include <qfile.h>
 
-division::division()
+division::division() : p_askMode(eClick | eCapital | eFlag)
 {
-	p_canAskAlways = true;
-	p_canAskClickDivision = true;
-	p_flagFile.clear();
 }
 
-bool division::canAsk(bool clickDivisionMode) const
+bool division::canAsk(askMode am) const
 {
-	if (clickDivisionMode) return p_canAskClickDivision;
-	else return p_canAskAlways;
+	bool can = p_askMode & am;
+	
+	switch(am)
+	{
+		case eClick:
+			can = can && !p_name.isEmpty();
+		break;
+		
+		case eCapital:
+			can = can && !p_capital.isEmpty();
+		break;
+		
+		case eFlag:
+			can = can && !p_flagFile.isEmpty();
+		break;
+		
+		default:
+			can = false;
+		break;
+	}
+	return can;
 }
 
 QString division::getName() const
@@ -61,19 +77,9 @@ void division::setFalseCapitals(const QStringList &falseCapitals)
 	p_falseCapitals = falseCapitals;
 }
 
-
-void division::setIgnore(bool ignore, bool canAskClickDivision)
+void division::setCanAsk(int askMode)
 {
-	if (ignore)
-	{
-		p_canAskAlways = false;
-		p_canAskClickDivision = canAskClickDivision;
-	}
-	else
-	{
-		p_canAskAlways = true;
-		p_canAskClickDivision = true;
-	}
+	p_askMode = askMode;
 }
 
 void division::setName(const QString &name)

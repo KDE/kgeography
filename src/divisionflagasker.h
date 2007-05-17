@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
- *   tsdgeos@terra.es                                                      *
+ *   Copyright (C) 2004-2007 by Albert Astals Cid                          *
+ *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -22,6 +22,7 @@ class divisionFlagAsker : public boxAsker
 		bool nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer);
 		void setAnswerHook(int userSays);
 		QString getQuestionHook() const;
+		division::askMode askMode() const { return division::eFlag; }
 };
 
 #endif

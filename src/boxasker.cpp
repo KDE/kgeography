@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2004-2005 by Albert Astals Cid                          *
- *   tsdgeos@terra.es                                                      *
+ *   Copyright (C) 2004-2007 by Albert Astals Cid                          *
+ *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -90,9 +90,8 @@ void boxAsker::nextQuestionHook(const QString &division)
 	{
 		if (p_rb[i] -> text().isNull() && p_rb[i] -> icon().isNull())
 		{
-			// false because boxaskers never are clickOnDivision
-			otherDivision = p_map -> getRandomDivision(false);
-			while (auxList.contains(otherDivision)) otherDivision = p_map -> getRandomDivision(false);
+			otherDivision = p_map -> getRandomDivision(askMode());
+			while (auxList.contains(otherDivision)) otherDivision = p_map -> getRandomDivision(askMode());
 			if (nextBoxAskerQuestionHook(otherDivision, i, false)) i++;
 			auxList << otherDivision;
 		}
