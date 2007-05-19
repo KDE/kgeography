@@ -109,13 +109,9 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	}
 	else if (!p_asker)
 	{
-		QString flagFile;
+		QString flagFile = p_map -> getDivisionFlagFile(aux);
 		cap = p_map -> getDivisionCapital(aux);
-		if (!cap.isEmpty())
-		{
-			flagFile = p_map -> getDivisionFlagFile(aux);
-			cap = i18nc(p_map -> getFileName().toUtf8(), cap.toUtf8());
-		}
+		if (!cap.isEmpty()) cap = i18nc(p_map -> getFileName().toUtf8(), cap.toUtf8());
 
 		aux = i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8());
 
