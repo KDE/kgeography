@@ -8,6 +8,7 @@ add_subdirectory(germany)
 add_subdirectory(italy)
 add_subdirectory(peru)
 add_subdirectory(spain)
+add_subdirectory(slovakia)
 add_subdirectory(ukraine)
 add_subdirectory(usa)
 

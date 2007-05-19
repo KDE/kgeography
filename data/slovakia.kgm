@@ -23,42 +23,50 @@
 	</division>
 	<division>
 		<name>Bratislava</name>
-		<ignore>allowClickMode</ignore>
+		<ignore>allowClickFlagMode</ignore>
+		<flag>slovakia/Bratislavsky_vlajka.png</flag>
 		<color><red>255</red><green>85</green><blue>85</blue></color>
 	</division>
 	<division>
 		<name>Trnava</name>
-		<ignore>allowClickMode</ignore>
+		<ignore>allowClickFlagMode</ignore>
+		<flag>slovakia/Trnavsky_vlajka.png</flag>
 		<color><red>255</red><green>170</green><blue>85</blue></color>
 	</division>
 	<division>
 		<name>Trenčín</name>
-		<ignore>allowClickMode</ignore>
+		<ignore>allowClickFlagMode</ignore>
+		<flag>slovakia/Trenciansky_vlajka.png</flag>
 		<color><red>255</red><green>255</green><blue>85</blue></color>
 	</division>
 	<division>
 		<name>Nitra</name>
-		<ignore>allowClickMode</ignore>
+		<ignore>allowClickFlagMode</ignore>
+		<flag>slovakia/Nitriansky_vlajka.png</flag>
 		<color><red>85</red><green>255</green><blue>128</blue></color>
 	</division>
 	<division>
 		<name>Žilina</name>
-		<ignore>allowClickMode</ignore>
+		<ignore>allowClickFlagMode</ignore>
+		<flag>slovakia/Zilinsky_vlajka.png</flag>
 		<color><red>85</red><green>255</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Banská Bystrica</name>
-		<ignore>allowClickMode</ignore>
+		<ignore>allowClickFlagMode</ignore>
+		<flag>slovakia/Banskobystricky_vlajka.png</flag>
 		<color><red>85</red><green>127</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Prešov</name>
-		<ignore>allowClickMode</ignore>
+		<ignore>allowClickFlagMode</ignore>
+		<flag>slovakia/Presovsky_vlajka.png</flag>
 		<color><red>170</red><green>85</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Košice</name>
-		<ignore>allowClickMode</ignore>
+		<ignore>allowClickFlagMode</ignore>
+		<flag>slovakia/Kosicky_vlajka.png</flag>
 		<color><red>255</red><green>85</green><blue>212</blue></color>
 	</division>
 </map>
