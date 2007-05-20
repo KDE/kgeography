@@ -60,7 +60,10 @@ int main(int argc, char *argv[])
 				if (n3.isNull() || (n3.firstChild().nodeValue() != "yes" && n3.firstChild().nodeValue() != "allowClickMode"))
 				{
 					n5 = n.namedItem("capital");
-					os << "i18nc(\"" << *it << "\", \"" << n5.firstChild().nodeValue() << "\");\n";
+					if (!n5.firstChild().nodeValue().isEmpty())
+					{
+						os << "i18nc(\"" << *it << "\", \"" << n5.firstChild().nodeValue() << "\");\n";
+					}
 				}
 			}
 		}
