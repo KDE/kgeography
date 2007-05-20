@@ -1,0 +1,69 @@
+<map>
+	<mapFile>zimbabwe.png</mapFile>
+	<name>Zimbabwe</name>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
+	</division>
+	<division>
+		<name>Not Zimbabwe</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Bulawayo</name>
+		<capital>Bulawayo</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Harare</name>
+		<capital>Harare</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Manicaland</name>
+		<capital>Mutare</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Mashonaland central</name>
+		<capital>Bindura</capital>
+		<color><red>51</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Mashonaland east</name>
+		<capital>Marondera</capital>
+		<color><red>0</red><green>255</green><blue>102</blue></color>
+	</division>
+	<division>
+		<name>Mashonaland west</name>
+		<capital>Chinhoyi</capital>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Masvingo</name>
+		<capital>Masvingo</capital>
+		<color><red>0</red><green>102</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Matabeleland north</name>
+		<capital>Lupane</capital>
+		<color><red>51</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Matabeleland south</name>
+		<capital>Gwanda</capital>
+		<color><red>204</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Midlands</name>
+		<capital>Gweru</capital>
+		<color><red>255</red><green>0</green><blue>153</blue></color>
+	</division>
+</map>
