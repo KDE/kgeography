@@ -120,5 +120,7 @@ install(FILES
    latvia.png
    zimbabwe.kgm
    zimbabwe.png
+   puertorico.kgm
+   puertorico.png
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 

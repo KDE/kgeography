@@ -1,0 +1,822 @@
+<map>
+	<mapFile>puertorico.png</mapFile>
+	<name>Puerto Rico</name>
+
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>1</red>
+			<green>1</green>
+			<blue>1</blue>
+		</color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>136</red>
+			<green>192</green>
+			<blue>240</blue>
+		</color>
+	</division>
+	<division>
+		<name>Mona</name>
+		<color>
+			<red>40</red>
+			<green>128</green>
+			<blue>152</blue>
+		</color>
+	</division>
+
+
+<division>
+<name>Adjuntas</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>38 </red>
+     <green>40 </green>
+     <blue>132 </blue>
+</color>
+</division>
+
+<division>
+<name>Aguada</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>40 </red>
+     <green>204</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Aguadilla</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>19</red>
+     <green>40 </green>
+     <blue>212 </blue>
+</color>
+</division>
+
+<division>
+<name>Aguas Buenas</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>126</red>
+     <green>40</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Aibonito</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>31</red>
+     <green>212</green>
+     <blue>128</blue>
+</color>
+</division>
+
+<division>
+<name>Añasco</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>126</red>
+     <green>40</green>
+     <blue>212</blue>
+</color>
+</division>
+
+<division>
+<name>Arecibo</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>210</red>
+     <green>128</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Arroyo</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>134</red>
+     <green>176</green>
+     <blue>224</blue>
+</color>
+</division>
+
+<division>
+<name>Barceloneta</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>37</red>
+     <green>40</green>
+     <blue>212</blue>
+</color>
+</division>
+
+<division>
+<name>Barranquitas</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>128</red>
+     <green>124</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Bayamón</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>208</red>
+     <green>128</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Cabo Rojo</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>206</red>
+     <green>40</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Caguas</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>126</red>
+     <green>40</green>
+     <blue>128</blue>
+</color>
+</division>
+
+<division>
+<name>Camuy</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>196</red>
+     <green>128</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Canóvanas</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>28</red>
+     <green>40</green>
+     <blue>212</blue>
+</color>
+</division>
+
+<division>
+<name>Carolina</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>212</red>
+     <green>40</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Cataño</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>212</red>
+     <green>128</green>
+     <blue>128</blue>
+</color>
+</division>
+
+<division>
+<name>Cayey</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>206</red>
+     <green>128</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Ceiba</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>208</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Ciales</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>128</red>
+     <green>40</green>
+     <blue>128</blue>
+</color>
+</division>
+
+<division>
+<name>Cidra</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>212</red>
+     <green>124</green>
+     <blue>128</blue>
+</color>
+</division>
+
+<division>
+<name>Coamo</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>40</red>
+     <green>208</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Comerío</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>204</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Corozal</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>40</red>
+     <green>138</green>
+     <blue>128</blue>
+</color>
+</division>
+
+<division>
+<name>Culebra</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>33</red>
+     <green>107</green>
+     <blue>33</blue>
+</color>
+</division>
+
+<division>
+<name>Dorado</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>34</red>
+     <green>40</green>
+     <blue>212</blue>
+</color>
+</division>
+
+<division>
+<name>Fajardo</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>40</red>
+     <green>40</green>
+     <blue>212</blue>
+</color>
+</division>
+
+<division>
+<name>Florida</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>40</red>
+     <green>128</green>
+     <blue>96</blue>
+</color>
+</division>
+
+<division>
+<name>Guánica</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>34</red>
+     <green>212</green>
+     <blue>128</blue>
+</color>
+</division>
+
+<division>
+<name>Guayama</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>25</red>
+     <green>40</green>
+     <blue>212</blue>
+</color>
+</division>
+
+<division>
+<name>Guayanilla</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>200</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Guaynabo</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>31</red>
+     <green>40</green>
+     <blue>212</blue>
+</color>
+</division>
+
+<division>
+<name>Gurabo</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>122</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Hatillo</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>128</red>
+     <green>128</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Hormigueros</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>198</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Humacao</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>40</red>
+     <green>210</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Isabela</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>36</red>
+     <green>212</green>
+     <blue>128</blue>
+</color>
+</division>
+
+<division>
+<name>Jayuya</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>208</red>
+     <green>40</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Juana Díaz</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>204</red>
+     <green>128</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Juncos</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>206</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Lajas</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>202</red>
+     <green>128</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Lares</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>128</red>
+     <green>40</green>
+     <blue>212</blue>
+</color>
+</division>
+
+<division>
+<name>Las Marías</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>212</red>
+     <green>40</green>
+     <blue>128</blue>
+</color>
+</division>
+
+<division>
+<name>Las Piedras</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>208</red>
+     <green>192</green>
+     <blue>236</blue>
+</color>
+</division>
+
+<division>
+<name>Loíza</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>212</red>
+     <green>212</green>
+     <blue>128</blue>
+</color>
+</division>
+
+<division>
+<name>Luquillo</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>184</red>
+     <green>188</green>
+     <blue>240</blue>
+</color>
+</division>
+
+<division>
+<name>Manatí</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>126</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Maricao</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>212</red>
+     <green>128</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Maunabo</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>168</red>
+     <green>164</green>
+     <blue>124</blue>
+</color>
+</division>
+
+<division>
+<name>Mayagüez</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>72</red>
+     <green>28</green>
+     <blue>68</blue>
+</color>
+</division>
+
+<division>
+<name>Moca</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>198</red>
+     <green>128</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Morovis</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>128</red>
+     <green>40</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Nagüabo</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>128</red>
+     <green>126</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Naranjito</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>212</red>
+     <green>126</green>
+     <blue>128</blue>
+</color>
+</division>
+
+<division>
+<name>Orocovis</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>202</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Patillas</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>120</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Peñuelas</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>128</red>
+     <green>122</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Ponce</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>22</red>
+     <green>40</green>
+     <blue>212</blue>
+</color>
+</division>
+
+<division>
+<name>Quebradillas</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>128</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Rincón</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>212</red>
+     <green>128</green>
+     <blue>212</blue>
+</color>
+</division>
+
+<division>
+<name>Río Grande</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>40</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Sabana Grande</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>118</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Salinas</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>224</red>
+     <green>192</green>
+     <blue>216</blue>
+</color>
+</division>
+
+<division>
+<name>San Germán</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>124</red>
+     <green>40</green>
+     <blue>212</blue>
+</color>
+</division>
+
+<division>
+<name>San Juan</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>212</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>San Lorenzo</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>210</red>
+     <green>40</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>San Sebastián</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>214</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Santa Isabel</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>40</red>
+     <green>126</green>
+     <blue>96</blue>
+</color>
+</division>
+
+<division>
+<name>Toa Alta</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>124</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Toa Baja</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>136</red>
+     <green>176</green>
+     <blue>224</blue>
+</color>
+</division>
+
+<division>
+<name>Trujillo Alto</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>128</red>
+     <green>212</green>
+     <blue>128</blue>
+</color>
+</division>
+
+<division>
+<name>Utuado</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>40</red>
+     <green>206</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Vega Alta</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>40</red>
+     <green>40</green>
+     <blue>132</blue>
+</color>
+</division>
+
+<division>
+<name>Vega Baja</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>210</red>
+     <green>212</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Vieques</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>200</red>
+     <green>128</green>
+     <blue>40</blue>
+</color>
+</division>
+
+<division>
+<name>Villalba</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>36</red>
+     <green>40</green>
+     <blue>132</blue>
+</color>
+</division>
+
+<division>
+<name>Yabucoa</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>40</red>
+     <green>212</green>
+     <blue>128</blue>
+</color>
+</division>
+
+<division>
+<name>Yauco</name>
+<ignore>allowClickMode</ignore>
+<color>
+     <red>40</red>
+     <green>140</green>
+     <blue>128</blue>
+</color>
+</division>
+
+</map>
