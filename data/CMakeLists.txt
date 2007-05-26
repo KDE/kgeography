@@ -122,5 +122,7 @@ install(FILES
    zimbabwe.png
    puertorico.kgm
    puertorico.png
+   spain_provinces.kgm
+   spain_provinces.png
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
