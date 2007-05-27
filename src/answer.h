@@ -23,10 +23,10 @@ class userAnswer
 		
 		userAnswer &operator=(const userAnswer &qa);
 		
-		void setQuestion(QVariant question);
-		void setAnswer(QVariant answer);
+		void setQuestion(const QVariant &question);
+		void setAnswer(const QVariant &answer);
 		void setAnswerCorrect(bool correct);
-		void setCorrectAnswer(QVariant correctAnswer);
+		void setCorrectAnswer(const QVariant &correctAnswer);
 		
 		void putWidgets(QWidget *w, QGridLayout *lay, int row) const;
 		

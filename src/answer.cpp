@@ -38,12 +38,12 @@ userAnswer &userAnswer::operator=(const userAnswer &r)
 	return *this;
 }
 
-void userAnswer::setQuestion(QVariant question)
+void userAnswer::setQuestion(const QVariant &question)
 {
 	p_question = question;
 }
 
-void userAnswer::setAnswer(QVariant answer)
+void userAnswer::setAnswer(const QVariant &answer)
 {
 	p_answer = answer;
 }
@@ -53,7 +53,7 @@ void userAnswer::setAnswerCorrect(bool correct)
 	p_correct = correct;
 }
 
-void userAnswer::setCorrectAnswer(QVariant correctAnswer)
+void userAnswer::setCorrectAnswer(const QVariant &correctAnswer)
 {
 	p_correctAnswer = correctAnswer;
 }
