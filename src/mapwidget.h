@@ -13,7 +13,6 @@
 
 #include <QGraphicsView>
 
-class QGraphicsPixmapItem;
 class QGraphicsRectItem;
 class QGraphicsScene;
 

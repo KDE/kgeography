@@ -15,7 +15,6 @@
 
 #include "map.h"
 
-class QGraphicsPixmapItem;
 class QGraphicsRectItem;
 class QGraphicsScene;
 

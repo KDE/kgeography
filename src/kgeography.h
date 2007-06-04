@@ -13,7 +13,6 @@
 
 #include <kxmlguiwindow.h>
 
-class KAction;
 class KPushButton;
 class KToggleAction;
 

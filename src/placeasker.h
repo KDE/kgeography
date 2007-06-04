@@ -17,10 +17,8 @@
 #include "popupmanager.h"
 
 class QLabel;
-class QScrollBar;
 class QSize;
 
-class flagDivisionAsker;
 class infoWidget;
 class placeMapWidget;
 

@@ -13,7 +13,6 @@
 
 class QDomElement;
 
-class division;
 class KGmap;
 #include <QString>
 
