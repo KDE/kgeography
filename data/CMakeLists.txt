@@ -126,5 +126,7 @@ install(FILES
    spain_provinces.png
    afghanistan.kgm
    afghanistan.png
+   albania_districts.kgm
+   albania_districts.png
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
