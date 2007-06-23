@@ -68,7 +68,7 @@ void boxAsker::nextQuestionHook(const QString &division)
 {
 	QString otherDivision;
 	QStringList auxList;
-	int i;
+	int j;
 	
 	setFocus();
 	for(int i = 0; i < 4; i++) p_rb[i] -> setAutoExclusive(false);
@@ -85,17 +85,19 @@ void boxAsker::nextQuestionHook(const QString &division)
 	nextBoxAskerQuestionHook(division, p_position, true);
 	
 	// fill the other names
-	i = 0;
-	while (i < 4)
+	j = 0;
+	while (j < 4)
 	{
-		if (p_rb[i] -> text().isNull() && p_rb[i] -> icon().isNull())
+		if (p_rb[j] -> text().isNull() && p_rb[j] -> icon().isNull())
 		{
 			otherDivision = p_map -> getRandomDivision(askMode());
-			while (auxList.contains(otherDivision)) otherDivision = p_map -> getRandomDivision(askMode());
-			if (nextBoxAskerQuestionHook(otherDivision, i, false)) i++;
+			while (auxList.contains(otherDivision))
+                otherDivision = p_map -> getRandomDivision(askMode());
+			if (nextBoxAskerQuestionHook(otherDivision, i, false))
+                ++j;
 			auxList << otherDivision;
 		}
-		else ++i;
+		else ++j;
 	}
 }
 
