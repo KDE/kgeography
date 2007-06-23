@@ -93,7 +93,7 @@ void boxAsker::nextQuestionHook(const QString &division)
 			otherDivision = p_map -> getRandomDivision(askMode());
 			while (auxList.contains(otherDivision))
                 otherDivision = p_map -> getRandomDivision(askMode());
-			if (nextBoxAskerQuestionHook(otherDivision, i, false))
+			if (nextBoxAskerQuestionHook(otherDivision, j, false))
                 ++j;
 			auxList << otherDivision;
 		}
