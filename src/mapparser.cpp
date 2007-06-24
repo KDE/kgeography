@@ -12,6 +12,7 @@
 
 #include <QDir>
 #include <QDomDocument>
+#include <QFileInfo>
 
 #include <klocale.h>
 
@@ -28,7 +29,7 @@ KGmap *mapReader::parseMap(const QString &path)
 	p_error.clear();
 	KGmap *kgmap = new KGmap();
 	kgmap -> setFile(path);
-	baseDir = path.left(path.lastIndexOf(QDir::separator()) + 1); // baseDir = path but without the file name
+	baseDir = QFileInfo(path).absolutePath() + '/'; // baseDir = path but without the file name
 	QFile xmlFile(path);
 	if (xmlFile.exists())
 	{
