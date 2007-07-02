@@ -16,9 +16,9 @@
 
 int main(int argc, char *argv[])
 {
-	KAboutData about("kgeography", I18N_NOOP("KGeography"), "0.5", I18N_NOOP("A geography learning program"), KAboutData::License_GPL, "© 2004-2005 Albert Astals Cid", 0, "http://kgeography.berlios.de");
-	about.addAuthor("Albert Astals Cid", I18N_NOOP("Programmer and designer"), "tsdgeos@terra.es");
-	about.addCredit(I18N_NOOP("Sodipodi flags collection"), I18N_NOOP("Got some flags from it"), 0, "http://www.sodipodi.com/index.php3?section=clipart/flags");
+	KAboutData about("kgeography", 0, ki18n("KGeography"), "0.5", ki18n("A geography learning program"), KAboutData::License_GPL, ki18n("© 2004-2005 Albert Astals Cid"), KLocalizedString(), "http://kgeography.berlios.de");
+	about.addAuthor(ki18n("Albert Astals Cid"), ki18n("Programmer and designer"), "tsdgeos@terra.es");
+	about.addCredit(ki18n("Sodipodi flags collection"), ki18n("Got some flags from it"), 0, "http://www.sodipodi.com/index.php3?section=clipart/flags");
 	KCmdLineArgs::init(argc, argv, &about);
 	KApplication app;
 
