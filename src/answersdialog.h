@@ -13,7 +13,7 @@
 
 #include <kdialog.h>
 
-#include <qvector.h>
+#include <QtCore/qvector.h>
 
 class QScrollArea;
 class QWidget;

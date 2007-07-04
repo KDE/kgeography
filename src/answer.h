@@ -11,7 +11,7 @@
 #ifndef RESULT_H
 #define RESULT_H
 
-#include <qvariant.h>
+#include <QtCore/qvariant.h>
 
 class QGridLayout;
 

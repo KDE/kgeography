@@ -1516,7 +1516,7 @@ i18nc("haiti.kgm", "Water");
 i18nc("haiti.kgm", "Not Haiti");
 i18nc("haiti.kgm", "Artibonite");
 i18nc("haiti.kgm", "Les Gonaïves");
-i18nc("haiti.kgm", "Centre");
+i18nc("haiti.kgm", "Centre"); // krazy:exclude=spelling
 i18nc("haiti.kgm", "Hinche");
 i18nc("haiti.kgm", "Grand'Anse");
 i18nc("haiti.kgm", "Jérémie");

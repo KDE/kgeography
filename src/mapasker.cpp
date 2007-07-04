@@ -130,7 +130,7 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 void mapAsker::nextQuestionHook(const QString &division)
 {
 	QString divisionName = i18nc(p_map -> getFileName().toUtf8(), division.toUtf8());
-	p_next -> setText(i18n("<qt>Please click on:<br>%1</qt>", divisionName));
+	p_next -> setText(i18n("<qt>Please click on:<br />%1</qt>", divisionName));
 	p_currentAnswer.setQuestion(i18nc(p_map -> getFileName().toUtf8(), division.toUtf8()));
 	p_next -> show();
 	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
