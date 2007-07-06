@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2004 by Albert Astals Cid                               *
- *   tsdgeos@terra.es                                                      *
+ *   Copyright (C) 2004-2007 by Albert Astals Cid                          *
+ *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -15,6 +15,17 @@
 #include <qstring.h>
 #include <qstringlist.h>
 #include <qtextstream.h>
+
+static const QString copyright =
+"/***************************************************************************\n"
+" *   Copyright (C) 2004-2007 by Albert Astals Cid                          *\n"
+" *   aacid@kde.org                                                         *\n"
+" *                                                                         *\n"
+" *   This program is free software; you can redistribute it and/or modify  *\n"
+" *   it under the terms of the GNU General Public License as published by  *\n"
+" *   the Free Software Foundation; either version 2 of the License, or     *\n"
+" *   (at your option) any later version.                                   *\n"
+" ***************************************************************************/\n";
 
 int main(int argc, char *argv[])
 {
@@ -35,6 +46,8 @@ int main(int argc, char *argv[])
 	QStringList files = d.entryList();
 	QStringList::const_iterator it;
 	QDomDocument dd;
+
+	os << copyright;
 
 	for (it = files.begin(); it != files.end(); ++it)
 	{
