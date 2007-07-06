@@ -8,8 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef RESULT_H
-#define RESULT_H
+#ifndef ANSWER_H
+#define ANSWER_H
 
 #include <QtCore/qvariant.h>
 

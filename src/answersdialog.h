@@ -8,8 +8,8 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#ifndef RESULTSWIDGET_H
-#define RESULTSWIDGET_H
+#ifndef ANSWERSDIALOG_H
+#define ANSWERSDIALOG_H
 
 #include <kdialog.h>
 
