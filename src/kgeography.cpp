@@ -365,7 +365,7 @@ void kgeography::setMap(KGmap *m)
 	p_askDivisionFlags->setText(i18n("&Flags of %1", p_map->getDivisionsString()));
 
 	QString mapName = i18nc(p_map -> getFileName().toUtf8(), p_map -> getName().toUtf8());
-	p_currentMap -> setText(i18n("<qt>Current map:<br /><b>%1<b></qt>", mapName));
+	p_currentMap -> setText(i18n("<qt>Current map:<br /><b>%1</b></qt>", mapName));
 	p_consult -> setEnabled(true);
 	p_askMap -> setEnabled(m -> count(division::eClick) > 0);
 	p_askPlaceMap -> setEnabled(m -> count(division::eClick) > 0);
