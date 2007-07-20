@@ -54,4 +54,6 @@ class KGmap
 		QString p_divisionsString;
 };
 
+#define DIVTYPE_CONTEXT "Type of regional division"
+
 #endif

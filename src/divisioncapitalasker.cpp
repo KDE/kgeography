@@ -77,5 +77,6 @@ void divisionCapitalAsker::setAnswerHook(int userSays)
 
 QString divisionCapitalAsker::getQuestionHook() const
 {
-	return i18n("Capital of %1", p_map->getDivisionsString());
+	QString divisionType = i18nc(DIVTYPE_CONTEXT, p_map->getDivisionsString().toUtf8());
+	return i18n("Capital of %1", divisionType);
 }

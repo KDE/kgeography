@@ -75,5 +75,6 @@ void flagDivisionAsker::setAnswerHook(int userSays)
 
 QString flagDivisionAsker::getQuestionHook() const
 {
-	return i18n("%1 From Their Flag", p_map->getDivisionsString());
+	QString divisionType = i18nc(DIVTYPE_CONTEXT, p_map->getDivisionsString().toUtf8());
+	return i18n("%1 From Their Flag", divisionType);
 }
