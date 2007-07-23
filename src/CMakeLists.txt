@@ -48,7 +48,7 @@ target_link_libraries(script ${QT_QTCORE_LIBRARY} ${QT_QTXML_LIBRARY} )
 
 ########### install files ###############
 
-install( FILES kgeography.desktop  DESTINATION  ${XDG_APPS_DIR} )
+install( FILES kgeography.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
 install( FILES kgeography.kcfg  DESTINATION  ${KCFG_INSTALL_DIR} )
 install( FILES kgeographyui.rc  DESTINATION  ${DATA_INSTALL_DIR}/kgeography )
 
