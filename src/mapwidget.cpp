@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2004-2005 by Albert Astals Cid                          *
- *   tsdgeos@terra.es                                                      *
+ *   Copyright (C) 2004-2007 by Albert Astals Cid                          *
+ *   aacid@kde.org                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -141,7 +141,7 @@ void mapWidget::mouseReleaseEvent(QMouseEvent *)
 	if ( p_mode == Zooming )
 	{
 		p_automaticZoom = false;
-		fitInView( p_zoomRect );
+		fitInView( p_zoomRect, Qt::KeepAspectRatio );
 		delete p_zoomRect;
 		p_zoomRect = 0;
 		
@@ -165,13 +165,15 @@ void mapWidget::resizeEvent(QResizeEvent *)
 		QTimer::singleShot( 0, this, SLOT(setOriginalImage()) );
 }
 
-void mapWidget::setAutomaticZoom()
+void mapWidget::setAutomaticZoom(bool automaticZoom)
 {
-	if ( p_automaticZoom )
-		return;
-	p_automaticZoom = true;
-	updateZoom();
-	updateActions();
+	if (!automaticZoom) setOriginalImage();
+	else
+	{
+		p_automaticZoom = automaticZoom;
+		updateZoom();
+		updateActions();
+	}
 }
 
 void mapWidget::setOriginalImage()
@@ -191,7 +193,7 @@ void mapWidget::updateZoom()
 {
 	if ( !p_automaticZoom )
 		return;
-	fitInView( p_originalImage.rect() );
+	fitInView( p_originalImage.rect(), Qt::KeepAspectRatio );
 }
 
 QSize mapWidget::mapSize() const

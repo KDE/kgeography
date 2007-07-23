@@ -42,7 +42,7 @@ Q_OBJECT
 		void setMovement(bool b);
 		void setZoom(bool b);
 		void setOriginalZoom();
-		void setAutomaticZoom();
+		void setAutomaticZoom(bool b);
 	
 	private slots:
 		void handleMapClick(QRgb c, const QPoint &widgetPoint, const QPointF &mapPoint);

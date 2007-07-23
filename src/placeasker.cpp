@@ -1,8 +1,8 @@
 /***************************************************************************
- *   Copyright (C) 2004-2005 by Albert Astals Cid                          *
- *   tsdgeos@terra.es                                                      *
+ *   Copyright (C) 2004-2007 by Albert Astals Cid                          *
+ *   aacid@kde.org                                                         *
  *   Copyright (C) 2006 by Isaac Clerencia                                 *
- *   isaac@warp.es
+ *   isaac@warp.es                                                         *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -97,9 +97,9 @@ void placeAsker::setOriginalZoom()
 	p_popupManager.clear();
 }
 
-void placeAsker::setAutomaticZoom()
+void placeAsker::setAutomaticZoom(bool automaticZoom)
 {
-	p_mapWidget -> setAutomaticZoom();
+	p_mapWidget -> setAutomaticZoom(automaticZoom);
 	p_popupManager.clear();
 }
 

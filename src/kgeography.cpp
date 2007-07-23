@@ -101,33 +101,32 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 	connect(p_askDivisionFlags, SIGNAL(clicked()), this, SLOT(askDivisionFlags()));
 
 	QAction *a = KStandardAction::open(this, SLOT(openMap()), actionCollection());
-        actionCollection()->addAction( "openMap", a );
 	a -> setText(i18n("&Open Map..."));
-	a = KStandardAction::quit(this, SLOT(close()), actionCollection());
-        actionCollection()->addAction( "quit", a );
 
-        p_zoom =  actionCollection()->add<KToggleAction>( "zoom_select" );
-        p_zoom->setText(i18n("&Zoom") );
-        p_zoom->setIcon( KIcon("zoom-in") );
+	a = KStandardAction::quit(this, SLOT(close()), actionCollection());
+	
+	p_zoom =  actionCollection()->add<KToggleAction>( "zoom_select" );
+	p_zoom -> setText(i18n("&Zoom") );
+	p_zoom -> setIcon( KIcon("zoom-in") );
 	p_zoom -> setEnabled(false);
 
-        p_zoomOriginal = actionCollection()->addAction( "zoom_original" );
-        p_zoomOriginal->setText( i18n("&Original Size") );
-        p_zoomOriginal->setIcon( KIcon("viewmag1") );
+	p_zoomOriginal = actionCollection()->addAction( "zoom_original" );
+	p_zoomOriginal -> setText( i18n("&Original Size") );
+	p_zoomOriginal -> setIcon( KIcon("viewmag1") );
 	p_zoomOriginal -> setEnabled(false);
 
-        p_zoomAutomatic = actionCollection()->addAction( "zoom_automatic" );
-        p_zoomAutomatic->setText(  i18n("&Automatic Zoom") );
-        p_zoomAutomatic->setIcon( KIcon("zoom-best-fit") );
+	p_zoomAutomatic = actionCollection()->add<KToggleAction>( "zoom_automatic" );
+	p_zoomAutomatic -> setText(  i18n("&Automatic Zoom") );
+	p_zoomAutomatic -> setIcon( KIcon("zoom-best-fit") );
 	p_zoomAutomatic -> setEnabled(false);
 
-        p_move = actionCollection()->add<KToggleAction>( "move" );
-        p_move->setText( i18n("&Move") );
-        p_move->setIcon( KIcon("move") );
+	p_move = actionCollection()->add<KToggleAction>( "move" );
+	p_move->setText( i18n("&Move") );
+	p_move->setIcon( KIcon("move") );
 	p_move -> setEnabled(false);
 
-        a = actionCollection()->addAction( "disclaimer" );
-        a->setText( i18n("Disclaimer") );
+	a = actionCollection()->addAction( "disclaimer" );
+	a->setText( i18n("Disclaimer") );
 	connect(a, SIGNAL(triggered()), this, SLOT(disclaimer()));
 
 	setupGUI(Keys | ToolBar | Save | Create);
@@ -341,7 +340,7 @@ void kgeography::putAskWidget()
 	connect(p_askWidget, SIGNAL(setZoomActionChecked(bool)), p_zoom, SLOT(setChecked(bool)));
 	connect(p_zoom, SIGNAL(toggled(bool)), p_askWidget, SLOT(setZoom(bool)));
 	connect(p_zoomOriginal, SIGNAL(triggered()), p_askWidget, SLOT(setOriginalZoom()));
-	connect(p_zoomAutomatic, SIGNAL(triggered()), p_askWidget, SLOT(setAutomaticZoom()));
+	connect(p_zoomAutomatic, SIGNAL(toggled(bool)), p_askWidget, SLOT(setAutomaticZoom(bool)));
 	connect(p_askWidget, SIGNAL(setMoveActionEnabled(bool)), p_move, SLOT(setEnabled(bool)));
 	connect(p_askWidget, SIGNAL(setMoveActionChecked(bool)), p_move, SLOT(setChecked(bool)));
 	connect(p_move, SIGNAL(toggled(bool)), p_askWidget, SLOT(setMovement(bool)));

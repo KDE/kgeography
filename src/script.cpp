@@ -79,6 +79,10 @@ int main(int argc, char *argv[])
 					}
 				}
 			}
+			else if (n.nodeName() == "divisionsName")
+			{
+				os << "i18nc(\"" << *it << "\", \"" << n.firstChild().nodeValue() << "\");\n";
+			}
 		}
 		
 		f -> close();

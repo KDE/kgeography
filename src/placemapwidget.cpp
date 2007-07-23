@@ -27,8 +27,8 @@ placeMapWidget::placeMapWidget(QWidget *parent) : QGraphicsView(parent)
 	p_mode = None;
 	p_zoomRect = 0;
 	p_automaticZoom = false;
-        p_mapImage = 0;
-        p_gameImage = 0;
+	p_mapImage = 0;
+	p_gameImage = 0;
 	p_currentCursor = 0;
 	
 	setCacheMode( CacheBackground );
@@ -205,7 +205,7 @@ void placeMapWidget::mouseReleaseEvent(QMouseEvent *)
 	if ( p_mode == Zooming )
 	{
 		p_automaticZoom = false;
-		fitInView( p_zoomRect );
+		fitInView( p_zoomRect, Qt::KeepAspectRatio );
 		updateCursor();
 		delete p_zoomRect;
 		p_zoomRect = 0;
@@ -230,13 +230,16 @@ void placeMapWidget::resizeEvent(QResizeEvent *)
 		QTimer::singleShot( 0, this, SLOT(setGameImage()) );
 }
 
-void placeMapWidget::setAutomaticZoom()
+void placeMapWidget::setAutomaticZoom(bool automaticZoom)
 {
-	if ( p_automaticZoom )
-		return;
-	p_automaticZoom = true;
-	updateZoom();
-	updateActions();
+	
+	if (!automaticZoom) setGameImage();
+	else
+	{
+		p_automaticZoom = true;
+		updateZoom();
+		updateActions();
+	}
 }
 
 void placeMapWidget::setGameImage()
@@ -257,7 +260,7 @@ void placeMapWidget::updateZoom()
 {
 	if ( !p_automaticZoom )
 		return;
-	fitInView( p_gameImage->rect() );
+	fitInView( p_gameImage->rect(), Qt::KeepAspectRatio );
 	updateCursor();
 }
 
