@@ -40,7 +40,7 @@ flagDivisionAsker::flagDivisionAsker(QWidget *parent, KGmap *m, QWidget *w, uint
 {
 	p_flag = new flagWidget(this);
 	p_lay -> insertWidget(0, p_flag);
-	setQuestion(i18n("This flag belongs to:"));
+	setQuestion(i18nc("@title:group", "This flag belongs to:"));
 	init();
 }
 
@@ -55,7 +55,7 @@ bool flagDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int i,
 		p_flag -> update();
 		
 		p_currentAnswer.setQuestion(QPixmap::fromImage(image.scaled(image.width()/5, image.height()/5, Qt::IgnoreAspectRatio, Qt::SmoothTransformation)));
-		p_currentAnswer.setCorrectAnswer(i18nc(p_map -> getFileName().toUtf8(), division.toUtf8()));
+		p_currentAnswer.setCorrectAnswer(i18nc("@option:radio This flag belongs to:", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 	}
 	else
 	{
@@ -63,7 +63,7 @@ bool flagDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int i,
 		QImage image(p_map -> getDivisionFlagFile(division));
 		if (p_flag -> img == image) return false;
 	}
-	p_rb[i] -> setText(i18nc(p_map -> getFileName().toUtf8(), division.toUtf8()));
+	p_rb[i] -> setText(i18nc("@option:radio This flag belongs to:", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 	
 	return true;
 }
@@ -76,5 +76,5 @@ void flagDivisionAsker::setAnswerHook(int userSays)
 QString flagDivisionAsker::getQuestionHook() const
 {
 	QString divisionType = i18nc(p_map -> getFileName().toUtf8(), p_map->getDivisionsString().toUtf8());
-	return i18n("%1 From Their Flag", divisionType);
+	return i18nc("@title", "%1 From Their Flag", divisionType);
 }

@@ -28,11 +28,11 @@ bool divisionCapitalAsker::nextBoxAskerQuestionHook(const QString &division, int
 	if (isAnswer)
 	{
 		QString divisionName = i18nc(p_map -> getFileName().toUtf8(), division.toUtf8());
-		setQuestion(i18n("The capital of %1 is...", divisionName));
-		p_currentAnswer.setQuestion(i18nc(p_map -> getFileName().toUtf8(), division.toUtf8()));
+		setQuestion(i18nc("@title:group", "The capital of %1 is...", divisionName));
+		p_currentAnswer.setQuestion(i18nc("@item:intable column Question", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 		p_capital = p_map -> getDivisionCapital(division);
-		p_currentAnswer.setCorrectAnswer(i18nc(p_map -> getFileName().toUtf8(), p_capital.toUtf8()));
-		p_rb[i] -> setText(i18nc(p_map -> getFileName().toUtf8(), p_capital.toUtf8()));
+		p_currentAnswer.setCorrectAnswer(i18nc("@option:radio The capital of <Region> is...", "%1", i18nc(p_map -> getFileName().toUtf8(), p_capital.toUtf8())));
+		p_rb[i] -> setText(i18nc("@option:radio The capital of <Region> is...", "%1", i18nc(p_map -> getFileName().toUtf8(), p_capital.toUtf8())));
 		b = true;
 		
 		QStringList falseCapitals = p_map -> getDivisionFalseCapitals(division);
@@ -44,7 +44,7 @@ bool divisionCapitalAsker::nextBoxAskerQuestionHook(const QString &division, int
 				int random = (int)((float)falseCapitals.size() * KRandom::random() / (RAND_MAX + 1.0));
 				QString falseCapital = falseCapitals.at(random);
 				falseCapitals.removeAt(random);
-				p_rb[index] -> setText(i18nc(p_map -> getFileName().toUtf8(), falseCapital.toUtf8()));
+				p_rb[index] -> setText(i18nc("@option:radio The capital of <Region> is...", "%1", i18nc(p_map -> getFileName().toUtf8(), falseCapital.toUtf8())));
 			}
 			++index;
 		}
@@ -62,7 +62,7 @@ bool divisionCapitalAsker::nextBoxAskerQuestionHook(const QString &division, int
 		// Moss
 		if (capital != p_capital)
 		{
-			p_rb[i] -> setText(i18nc(p_map -> getFileName().toUtf8(), capital.toUtf8()));
+			p_rb[i] -> setText(i18nc("@option:radio The capital of <Region> is...", "%1", i18nc(p_map -> getFileName().toUtf8(), capital.toUtf8())));
 			b = true;
 		}
 		else b = false;
@@ -78,5 +78,5 @@ void divisionCapitalAsker::setAnswerHook(int userSays)
 QString divisionCapitalAsker::getQuestionHook() const
 {
 	QString divisionType = i18nc(p_map -> getFileName().toUtf8(), p_map->getDivisionsString().toUtf8());
-	return i18n("Capital of %1", divisionType);
+	return i18nc("@title", "Capital of %1", divisionType);
 }

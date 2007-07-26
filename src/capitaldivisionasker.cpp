@@ -27,12 +27,12 @@ bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int
 	if (isAnswer)
 	{
 		p_capital = p_map -> getDivisionCapital(division);
-		p_currentAnswer.setQuestion(i18nc(p_map -> getFileName().toUtf8(), p_capital.toUtf8()));
-		p_currentAnswer.setCorrectAnswer(i18nc(p_map -> getFileName().toUtf8(), division.toUtf8()));
+		p_currentAnswer.setQuestion(i18nc("@item:intable column Question", "%1", i18nc(p_map -> getFileName().toUtf8(), p_capital.toUtf8())));
+		p_currentAnswer.setCorrectAnswer(i18nc("@option:radio <City> is the capital of...", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 
 		QString capitalName = i18nc(p_map -> getFileName().toUtf8(), p_capital.toUtf8());
-		setQuestion(i18n("%1 is the capital of...", capitalName));
-		p_rb[i] -> setText(i18nc(p_map -> getFileName().toUtf8(), division.toUtf8()));
+		setQuestion(i18nc("@title:group", "%1 is the capital of...", capitalName));
+		p_rb[i] -> setText(i18nc("@option:radio <City> is the capital of...", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 		b = true;
 	}
 	else
@@ -46,7 +46,7 @@ bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int
 		// Hedmark
 		if (p_map -> getDivisionCapital(division) != p_capital)
 		{
-			p_rb[i] -> setText(i18nc(p_map -> getFileName().toUtf8(), division.toUtf8()));
+			p_rb[i] -> setText(i18nc("@option:radio <City> is the capital of...", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 			b = true;
 		}
 		else b = false;
@@ -62,5 +62,5 @@ void capitalDivisionAsker::setAnswerHook(int userSays)
 QString capitalDivisionAsker::getQuestionHook() const
 {
 	QString divisionType = i18nc(p_map -> getFileName().toUtf8(), p_map->getDivisionsString().toUtf8());
-	return i18n("%1 From Its Capital", divisionType);
+	return i18nc("@title", "%1 From Its Capital", divisionType);
 }
