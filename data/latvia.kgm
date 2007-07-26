@@ -1,6 +1,7 @@
 <map>
 	<mapFile>latvia.png</mapFile>
 	<name>Latvia</name>
+    <divisionsName>Regions</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

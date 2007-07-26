@@ -1,6 +1,7 @@
 <map>
 	<mapFile>southkorea.png</mapFile>
 	<name>Republic of Korea</name>
+    <divisionsName>Regions</divisionsName>
 	<division>
 		<name>Out of Bounds</name>
 		<ignore>yes</ignore>

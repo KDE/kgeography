@@ -1,6 +1,7 @@
 <map>
 	<mapFile>iceland_regions.png</mapFile>
 	<name>Iceland (Regions)</name>
+    <divisionsName>Regions</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

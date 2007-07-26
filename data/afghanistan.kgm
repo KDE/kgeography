@@ -1,6 +1,7 @@
 <map>
 	<mapFile>afghanistan.png</mapFile>
 	<name>Afghanistan</name>
+    <divisionsName>Provinces</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

@@ -1,6 +1,7 @@
 <map>
 	<mapFile>greece.png</mapFile>
 	<name>Greece</name>
+    <divisionsName>Peripheries</divisionsName>
 	<division>
 		<name>Border</name>
 		<ignore>yes</ignore>

@@ -1,6 +1,7 @@
 <map>
 	<mapFile>puertorico.png</mapFile>
 	<name>Puerto Rico</name>
+    <divisionsName>Municipalities</divisionsName>
 
 	<division>
 		<name>Frontier</name>

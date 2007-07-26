@@ -1,6 +1,7 @@
 <map>
 	<mapFile>iran.png</mapFile>
 	<name>Iran</name>
+    <divisionsName>Provinces</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

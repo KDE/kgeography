@@ -1,6 +1,7 @@
 <map>
 	<mapFile>argentina.png</mapFile>
 	<name>Argentina</name>
+    <divisionsName>Provinces</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

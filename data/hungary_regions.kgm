@@ -1,6 +1,7 @@
 <map>
 	<mapFile>hungary_regions.png</mapFile>
 	<name>Hungary (Regions)</name>
+    <divisionsName>Regions</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

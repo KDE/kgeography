@@ -1,6 +1,7 @@
 <map>
 	<mapFile>albania_prefectures.png</mapFile>
 	<name>Albania (Prefectures)</name>
+    <divisionsName>Prefectures</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

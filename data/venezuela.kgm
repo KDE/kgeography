@@ -1,6 +1,7 @@
 <map>
 	<mapFile>venezuela.png</mapFile>
 	<name>Venezuela</name>
+    <divisionsName>States</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

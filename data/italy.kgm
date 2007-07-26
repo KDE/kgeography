@@ -1,6 +1,7 @@
 <map>
 	<mapFile>italy.png</mapFile>
 	<name>Italy</name>
+    <divisionsName>Regions</divisionsName>
 	<division>
 		<name>Not Italy</name>
 		<ignore>yes</ignore>

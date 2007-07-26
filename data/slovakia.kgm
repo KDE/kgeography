@@ -1,6 +1,7 @@
 <map>
 	<mapFile>slovakia.png</mapFile>
 	<name>Slovakia</name>
+    <divisionsName>Regions</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

@@ -1,6 +1,7 @@
 <map>
 	<mapFile>panama.png</mapFile>
 	<name>Panama</name>
+    <divisionsName>Regions</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

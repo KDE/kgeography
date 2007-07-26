@@ -1,6 +1,7 @@
 <map>
 	<mapFile>paraguay.png</mapFile>
 	<name>Paraguay</name>
+    <divisionsName>Departments</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

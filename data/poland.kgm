@@ -1,6 +1,7 @@
 <map>
 	<mapFile>poland.png</mapFile>
 	<name>Poland</name>
+    <divisionsName>Regions</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

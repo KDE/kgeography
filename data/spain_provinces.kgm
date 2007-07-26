@@ -1,6 +1,7 @@
 <map>
 	<mapFile>spain_provinces.png</mapFile>
 	<name>Spain (Provinces)</name>
+    <divisionsName>Provinces</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

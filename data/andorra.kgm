@@ -1,6 +1,7 @@
 <map>
 	<mapFile>andorra.png</mapFile>
 	<name>Andorra</name>
+    <divisionsName>Parishes</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

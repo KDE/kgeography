@@ -1,6 +1,7 @@
 <map>
 	<mapFile>peru.png</mapFile>
 	<name>Peru</name>
+    <divisionsName>Regions</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

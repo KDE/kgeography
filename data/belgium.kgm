@@ -1,6 +1,7 @@
 <map>
 	<mapFile>belgium.png</mapFile>
 	<name>Belgium</name>
+    <divisionsName>Provinces</divisionsName>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>
