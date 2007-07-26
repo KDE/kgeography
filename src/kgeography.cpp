@@ -356,9 +356,8 @@ void kgeography::setMap(KGmap *m)
 	delete p_map;
 	p_map = m;
 
-	// Make sure map name is translated before division type (i18n/Transcript).
 	QString mapName = i18nc(p_map -> getFileName().toUtf8(), p_map -> getName().toUtf8());
-	QString divisionType = i18nc(DIVTYPE_CONTEXT, p_map->getDivisionsString().toUtf8());
+	QString divisionType = i18nc(p_map -> getFileName().toUtf8(), p_map->getDivisionsString().toUtf8());
 
 	p_askMap->setText(i18n("&Location of %1", divisionType));
 	p_askPlaceMap->setText(i18n("&Place %1 in the Map", divisionType));
