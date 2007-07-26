@@ -120,10 +120,10 @@ void placeAsker::handleMapClick(QRgb c, const QPoint &widgetPoint, const QPointF
 		if (!cap.isEmpty())
 		{
 			flagFile = p_map -> getDivisionFlagFile(aux);
-			cap = i18nc(p_map -> getFileName().toUtf8(), cap.toUtf8());
+			cap = i18nc("@item Capital name in map popup", "%1", i18nc(p_map -> getFileName().toUtf8(), cap.toUtf8()));
 		}
 		
-		aux = i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8());
+		aux = i18nc("@item Region name in map popup", "%1", i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8()));
 
 		if (!flagFile.isEmpty()) p_popupManager.show(aux, cap, widgetPoint, flagFile);
 		else if (!cap.isEmpty()) p_popupManager.show(aux, cap, widgetPoint);

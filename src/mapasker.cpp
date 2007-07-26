@@ -111,9 +111,9 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	{
 		QString flagFile = p_map -> getDivisionFlagFile(aux);
 		cap = p_map -> getDivisionCapital(aux);
-		if (!cap.isEmpty()) cap = i18nc(p_map -> getFileName().toUtf8(), cap.toUtf8());
+		if (!cap.isEmpty()) cap = i18nc("@item Capital name in map popup", "%1", i18nc(p_map -> getFileName().toUtf8(), cap.toUtf8()));
 
-		aux = i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8());
+		aux = i18nc("@item Region name in map popup", "%1", i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8()));
 
 		if (!flagFile.isEmpty()) p_popupManager.show(aux, cap, p, flagFile);
 		else if (!cap.isEmpty()) p_popupManager.show(aux, cap, p);
