@@ -107,7 +107,7 @@ void placeAsker::handleMapClick(QRgb c, const QPoint &widgetPoint, const QPointF
 {
 	QString aux, cap;
 	aux = p_map -> getWhatIs(c, !p_asker);
-	if (aux == "nothing") KMessageBox::error(this, i18n("You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.", p_map -> getFile(), qRed(c), qGreen(c), qBlue(c)));
+	if (aux == "nothing") KMessageBox::error(this, i18nc("@info", "You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.", p_map -> getFile(), qRed(c), qGreen(c), qBlue(c)));
 	else if (p_shouldClearPopup)
 	{
 		p_popupManager.clear();
@@ -148,9 +148,9 @@ void placeAsker::handleMapClick(QRgb c, const QPoint &widgetPoint, const QPointF
 void placeAsker::nextQuestionHook(const QString &division)
 {
 	QString divisionName = i18nc(p_map -> getFileName().toUtf8(), division.toUtf8());
-	p_next -> setText(i18n("<qt>Please place in the map:<br />%1</qt>", divisionName));
+	p_next -> setText(i18nc("@info", "<qt>Please place in the map:<br />%1</qt>", divisionName));
 	p_next -> show();
-	p_currentAnswer.setQuestion(i18nc(p_map -> getFile().toUtf8(), division.toUtf8()));
+	p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is region name", "%1", i18nc(p_map -> getFile().toUtf8(), division.toUtf8())));
 	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
 	setCurrentDivision(division);
 	p_mapWidget->setCurrentDivisionImage(p_currentDivisionImage);
@@ -159,7 +159,7 @@ void placeAsker::nextQuestionHook(const QString &division)
 QString placeAsker::getQuestionHook() const
 {
 	QString divisionType = i18nc(p_map -> getFileName().toUtf8(), p_map->getDivisionsString().toUtf8());
-	return i18n("Place %1 in map", divisionType);
+	return i18nc("@title", "Place %1 in map", divisionType);
 }
 
 void placeAsker::showEvent(QShowEvent *)

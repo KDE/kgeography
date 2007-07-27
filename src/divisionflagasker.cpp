@@ -29,9 +29,9 @@ bool divisionFlagAsker::nextBoxAskerQuestionHook(const QString &division, int i,
 	if (isAnswer)
 	{
 		QString divisionName = i18nc(p_map -> getFileName().toUtf8(), division.toUtf8());
-		setQuestion(i18n("The flag of %1 is...", divisionName));
+		setQuestion(i18nc("@title:group", "The flag of %1 is...", divisionName));
 		p_currentAnswer.setCorrectAnswer(icon.pixmap(QSize(60, 40)));
-		p_currentAnswer.setQuestion(i18nc(p_map -> getFileName().toUtf8(), division.toUtf8()));
+		p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is region name", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 	}
 	else
 	{
@@ -53,5 +53,5 @@ void divisionFlagAsker::setAnswerHook(int userSays)
 QString divisionFlagAsker::getQuestionHook() const
 {
 	QString divisionType = i18nc(p_map -> getFileName().toUtf8(), p_map->getDivisionsString().toUtf8());
-	return i18n("Flag of %1", divisionType);
+	return i18nc("@title", "Flag of %1", divisionType);
 }
