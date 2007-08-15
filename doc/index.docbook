@@ -32,13 +32,13 @@
 <legalnotice>&FDLNotice;</legalnotice>
 
 <date>2005-08-02</date>
-<releaseinfo>0.4</releaseinfo>
+<releaseinfo>0.5</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
 <abstract>
 <para>
-&kgeography; is a geography learning tool for &kde;. Right now it has six usage modes:
+&kgeography; is a geography learning tool for &kde;. Right now it has seven usage modes:
 <itemizedlist>
 <listitem>
 <para>Browse the maps clicking in a map division to see its name, capital and flag</para>
@@ -54,6 +54,8 @@
 <para>The game shows you a map division flag and you have to guess its name</para>
 </listitem><listitem>
 <para>The game tells you a map division name and you have to guess its flag</para>
+</listitem><listitem>
+<para>The game shows an empty map and you have to place divisions on it one by one</para>
 </listitem>
 </itemizedlist>
 </para>
@@ -331,6 +333,9 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
   <para><sgmltag class="starttag">name</sgmltag> and <sgmltag class="endtag">name</sgmltag>: the name of map, &eg; <quote>Europe</quote>.</para>
 </listitem>
 <listitem>
+  <para><sgmltag class="starttag">divisionsName</sgmltag> and <sgmltag class="endtag">divisionsName</sgmltag>: the name general name of divisions in this map, that is, Provinces, States, Countries, etc.</para>
+</listitem>
+<listitem>
   <para>A <sgmltag class="starttag">division</sgmltag> and <sgmltag class="endtag">division</sgmltag> for each division in the map.</para>
 </listitem>
 </itemizedlist>
@@ -345,7 +350,7 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
   <para><sgmltag class="starttag">capital</sgmltag> and <sgmltag class="endtag">capital</sgmltag>: the name of the capital of the division, &eg; <quote>Tirana</quote>.</para>
 </listitem>
 <listitem>
-  <para><sgmltag class="starttag">ignore</sgmltag> and <sgmltag class="endtag">ignore</sgmltag>: can be set to <userinput>yes</userinput>,  <userinput>allowClickMode</userinput> and <userinput>no</userinput>. If this tag is set to <userinput>yes</userinput> then the division will be ignored when asking for divisions in that map. It is then as if this division does not exist in &kgeography; quiz modes. If this tag is set to <userinput>allowClickMode</userinput> then &kgeography; will ask for the division in the <guibutton>Click Division in Map...</guibutton> mode but not in other quiz modes. Setting this tag to <userinput>no</userinput> means the division will appear in all modes (browse and quizzes). This tag is optional and when there is no <sgmltag class="starttag">ignore</sgmltag> tag that means as it is set to <userinput>no</userinput>. For example <quote>Algeria</quote> has this tag set to <userinput>yes</userinput> in the <quote>Europe</quote> map which means that <quote>Algeria</quote> will not be part of any quiz in the <quote>Europe</quote> map.</para>
+	<para><sgmltag class="starttag">ignore</sgmltag> and <sgmltag class="endtag">ignore</sgmltag>: can be set to <userinput>yes</userinput>, <userinput>allowClickMode</userinput>, <userinput>allowClickFlagMode</userinput> and <userinput>no</userinput>. If this tag is set to <userinput>yes</userinput> then the division will be ignored when asking for divisions in that map. It is then as if this division does not exist in &kgeography; quiz modes. If this tag is set to <userinput>allowClickMode</userinput> then &kgeography; will ask for the division in the <guibutton>Click Division in Map...</guibutton> mode but not in other quiz modes. If this tag is set to <userinput>allowClickFlagMode</userinput> then &kgeography; will ask for the division in the <guibutton>Click Division in Map...</guibutton> mode and in the flag related quizes but not in other quiz modes. Setting this tag to <userinput>no</userinput> means the division will appear in all modes (browse and quizzes). This tag is optional and when there is no <sgmltag class="starttag">ignore</sgmltag> tag that means as it is set to <userinput>no</userinput>. For example <quote>Algeria</quote> has this tag set to <userinput>yes</userinput> in the <quote>Europe</quote> map which means that <quote>Algeria</quote> will not be part of any quiz in the <quote>Europe</quote> map.</para>
 </listitem>
 <listitem>
   <para><sgmltag class="starttag">flag</sgmltag> and <sgmltag class="endtag">flag</sgmltag>: the file (without any path) containing the flag of the division, &eg; <quote>albania.png</quote>. This tag is optional. Not needed for the divisions whose <sgmltag class="starttag">ignore</sgmltag> tag is set to <userinput>yes</userinput>.</para>
