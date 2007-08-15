@@ -51,9 +51,13 @@ KGmap *mapReader::parseMap(const QString &path)
 				
 				// Divisions string
 				QString divisionsString = getElementString("divisionsName", root, Optional);
-				if (!divisionsString.isNull())
+				if (!divisionsString.isEmpty())
 				{
 					kgmap -> setDivisionsString( divisionsString );
+				}
+				else
+				{
+					p_error = i18n("The map %1 misses mandatory divisionsName tag", kgmap -> getName());
 				}
 				
 				QDomElement divisionTag = root.firstChildElement("division");
