@@ -35,6 +35,7 @@ Q_OBJECT
 		virtual void setMovement(bool b);
 		virtual void setZoom(bool b);
 		virtual void setOriginalZoom();
+		virtual void setAutomaticZoom(bool b);
 	
 	signals:
 		void setMoveActionChecked(bool b);

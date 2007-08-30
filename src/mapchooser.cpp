@@ -60,7 +60,7 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 	mainHBLayout -> addWidget(p_image);
 	
 	connect(p_listBox, SIGNAL(currentTextChanged(const QString&)), this, SLOT(putImage(const QString&)));
-	connect(p_listBox, SIGNAL(itemDoubleClicked(QListWidgetItem*)), this, SLOT(accept()));
+	connect(p_listBox, SIGNAL(itemActivated(QListWidgetItem*)), this, SLOT(accept()));
 	
 	setMainWidget(mainHB);
 	

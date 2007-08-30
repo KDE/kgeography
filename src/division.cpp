@@ -58,7 +58,6 @@ QString division::getFlagFile() const
 
 QString division::getCapital() const
 {
-	if (p_capital.isEmpty()) return "";
 	return p_capital;
 }
 
