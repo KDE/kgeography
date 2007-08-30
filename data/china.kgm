@@ -42,72 +42,72 @@
 		<name>Japan</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>237</red>
-			<green>0</green>
-			<blue>0</blue>
+			<red>93</red>
+			<green>163</green>
+			<blue>163</blue>
 		</color>
 	</division>
 	<division>
 		<name>Mongolia</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>202</red>
-			<green>114</green>
-			<blue>202</blue>
+			<red>92</red>
+			<green>163</green>
+			<blue>161</blue>
 		</color>
 	</division>
 	<division>
 		<name>North Korea</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>163</red>
-			<green>237</green>
-			<blue>163</blue>
+                        <red>92</red>
+                        <green>163</green>
+                        <blue>164</blue>
 		</color>
 	</division>
 	<division>
 		<name>South Korea</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>163</red>
-			<green>92</green>
-			<blue>92</blue>
+			<red>92</red>
+			<green>163</green>
+			<blue>165</blue>
 		</color>
 	</division>
 	<division>
 		<name>Kazakhstan</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>100</red>
-			<green>100</green>
-			<blue>177</blue>
+			<red>92</red>
+			<green>163</green>
+			<blue>162</blue>
 		</color>
 	</division>
 	<division>
 		<name>Kyrgyzstan</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>74</red>
-			<green>70</green>
-			<blue>74</blue>
+			<red>92</red>
+			<green>163</green>
+			<blue>160</blue>
 		</color>
 	</division>
 	<division>
 		<name>Tajikistan</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>86</red>
-			<green>86</green>
-			<blue>69</blue>
+			<red>92</red>
+			<green>163</green>
+			<blue>159</blue>
 		</color>
 	</division>
 	<division>
 		<name>Afghanistan</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>207</red>
-			<green>0</green>
-			<blue>117</blue>
+			<red>92</red>
+			<green>163</green>
+			<blue>158</blue>
 		</color>
 	</division>
 	<division>
@@ -115,89 +115,89 @@
 		<ignore>yes</ignore>
 		<color>
 			<red>92</red>
-			<green>237</green>
-			<blue>88</blue>
+			<green>163</green>
+			<blue>157</blue>
 		</color>
 	</division>
 	<division>
 		<name>India</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>88</red>
+			<red>92</red>
 			<green>163</green>
-			<blue>88</blue>
+			<blue>156</blue>
 		</color>
 	</division>
 	<division>
 		<name>Bhutan</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>163</red>
-			<green>0</green>
-			<blue>0</blue>
+			<red>92</red>
+			<green>163</green>
+			<blue>154</blue>
 		</color>
 	</division>
 	<division>
 		<name>Bangladesh</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>244</red>
-			<green>91</green>
-			<blue>91</blue>
+			<red>92</red>
+			<green>163</green>
+			<blue>155</blue>
 		</color>
 	</division>
 	<division>
 		<name>Myanmar</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>150</red>
-			<green>85</green>
-			<blue>85</blue>
+			<red>92</red>
+			<green>163</green>
+			<blue>153</blue>
 		</color>
 	</division>
 	<division>
 		<name>Thailand</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>163</red>
-			<green>88</green>
-			<blue>88</blue>
+			<red>92</red>
+			<green>163</green>
+			<blue>152</blue>
 		</color>
 	</division>
 	<division>
 		<name>Taiwan</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>78</red>
-			<green>201</green>
-			<blue>137</blue>
+			<red>92</red>
+			<green>163</green>
+			<blue>151</blue>
 		</color>
 	</division>
 	<division>
 		<name>Vietnam</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>237</red>
-			<green>88</green>
-			<blue>88</blue>
+			<red>92</red>
+			<green>163</green>
+			<blue>150</blue>
 		</color>
 	</division>
 	<division>
 		<name>Laos</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>163</red>
-			<green>74</green>
-			<blue>74</blue>
+			<red>92</red>
+			<green>163</green>
+			<blue>149</blue>
 		</color>
 	</division>
 	<division>
 		<name>Nepal</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>163</red>
-			<green>0</green>
-			<blue>92</blue>
+			<red>92</red>
+			<green>163</green>
+			<blue>148</blue>
 		</color>
 	</division>
 	<division>

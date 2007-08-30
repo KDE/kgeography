@@ -10,7 +10,7 @@
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>
-		<color><red>1</red><green>1</green><blue></blue></color>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
 	</division>
 	<division>
 		<name>France</name>

@@ -6,9 +6,9 @@
 		<name>Not France</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>255</red>
-			<green>255</green>
-			<blue>255</blue>
+			<red>220</red>
+			<green>220</green>
+			<blue>220</blue>
 		</color>
 	</division>
 	<division>
@@ -18,6 +18,15 @@
 			<red>0</red>
 			<green>0</green>
 			<blue>0</blue>
+		</color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>1</red>
+			<green>1</green>
+			<blue>1</blue>
 		</color>
 	</division>
 	<division>

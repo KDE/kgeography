@@ -6,9 +6,9 @@
 		<name>Not a Nation</name>
 		<ignore>yes</ignore>
 		<color>
-			<red>220</red>
-			<green>220</green>
-			<blue>220</blue>
+			<red>255</red>
+			<green>255</green>
+			<blue>255</blue>
 		</color>
 	</division>
 	<division>
@@ -1195,8 +1195,8 @@
 		<capital>Tegucigalpa</capital>
 		<flag>honduras.png</flag>
 		<color>
-			<red>255</red>
-			<green>255</green>
+			<red>0</red>
+			<green>0</green>
 			<blue>204</blue>
 		</color>
 	</division>

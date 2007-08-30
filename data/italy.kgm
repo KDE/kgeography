@@ -15,6 +15,15 @@
 		<name>Frontier</name>
 		<ignore>yes</ignore>
 		<color>
+			<red>1</red>
+			<green>1</green>
+			<blue>1</blue>
+		</color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color>
 			<red>0</red>
 			<green>0</green>
 			<blue>0</blue>
