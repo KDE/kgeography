@@ -23,7 +23,6 @@
 	<division>
 		<name>Chungcheongbuk-do</name>
 		<capital>Cheongju</capital>
-		<flag></flag>
 		<color>
 			<red>0</red>
 			<green>255</green>
@@ -33,7 +32,6 @@
 	<division>
 		<name>Chungcheongnam-do</name>
 		<capital>Daejon</capital>
-		<flag></flag>
 		<color>
 			<red>255</red>
 			<green>255</green>
@@ -42,8 +40,7 @@
 	</division>
 	<division>
 		<name>Daejon</name>
-		<capital>Daejon</capital>
-		<flag></flag>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>44</red>
 			<green>57</green>
@@ -53,7 +50,6 @@
 	<division>
 		<name>Jeollabuk-do</name>
 		<capital>Jeonju</capital>
-		<flag></flag>
 		<color>
 			<red>255</red>
 			<green>128</green>
@@ -63,7 +59,6 @@
 	<division>
 		<name>Jeollanam-do</name>
 		<capital>Muan</capital>
-		<flag></flag>
 		<color>
 			<red>0</red>
 			<green>128</green>
@@ -73,7 +68,6 @@
 	<division>
 		<name>Jeju-do</name>
 		<capital>Jeju</capital>
-		<flag></flag>
 		<color>
 			<red>255</red>
 			<green>0</green>
@@ -83,7 +77,6 @@
 	<division>
 		<name>Gyeongsangnam-do</name>
 		<capital>Changwon</capital>
-		<flag></flag>
 		<color>
 			<red>255</red>
 			<green>0</green>
@@ -93,7 +86,6 @@
 	<division>
 		<name>Gyeongsangbuk-do</name>
 		<capital>Daegu</capital>
-		<flag></flag>
 		<color>
 			<red>0</red>
 			<green>0</green>
@@ -102,8 +94,7 @@
 	</division>
 	<division>
 		<name>Daegu</name>
-		<capital>Daegu</capital>
-		<flag></flag>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>211</red>
 			<green>221</green>
@@ -113,7 +104,6 @@
 	<division>
 		<name>Gangwon-do</name>
 		<capital>Chuncheon</capital>
-		<flag></flag>
 		<color>
 			<red>255</red>
 			<green>0</green>
@@ -123,7 +113,6 @@
 	<division>
 		<name>Gyeonggi-do</name>
 		<capital>Suwon</capital>
-		<flag></flag>
 		<color>
 			<red>255</red>
 			<green>128</green>
@@ -132,8 +121,7 @@
 	</division>
         <division>
 		<name>Ulsan</name>
-		<capital>Ulsan</capital>
-		<flag></flag>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>255</red>
 			<green>0</green>
@@ -142,8 +130,7 @@
 	</division>
 	<division>
 		<name>Gwangju</name>
-		<capital>Gwangju</capital>
-		<flag></flag>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>32</red>
 			<green>255</green>
@@ -152,8 +139,7 @@
 	</division>
 	<division>
 		<name>Busan</name>
-		<capital>Busan</capital>
-		<flag></flag>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>255</red>
 			<green>255</green>
@@ -162,8 +148,7 @@
 	</division>
 	<division>
 		<name>Seoul</name>
-		<capital>Seoul</capital>
-		<flag></flag>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>32</red>
 			<green>128</green>
@@ -172,8 +157,7 @@
 	</division>
 	<division>
 		<name>Incheon</name>
-		<capital>Incheon</capital>
-		<flag></flag>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>64</red>
 			<green>255</green>

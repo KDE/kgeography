@@ -105,7 +105,7 @@
 
 <division> 
 <name>Donets'ka oblast'</name> <capital>Donets'k</capital> <flag>ukraine/Donetsk.png</flag>
-<color> <red> 0 </red> <green> 0 </green> <blue> 0 </blue> </color> 
+<color> <red> 31 </red> <green> 26 </green> <blue> 23 </blue> </color>
 </division>
 
 <division> 
@@ -129,12 +129,12 @@
 </division>
 
 <division> 
-<name>City of Kyiv</name> <capital>Kyiv</capital> <flag>ukraine/Kyiv-city.png</flag>
+<name>City of Kyiv</name> <ignore>allowClickMode</ignore> <flag>ukraine/Kyiv-city.png</flag>
 <color> <red> 0 </red> <green> 0 </green> <blue> 247 </blue> </color> 
 </division>
 
 <division> 
-<name>City of Sevastopol'</name> <capital>Sevastopol'</capital> <flag>ukraine/Sevastopol-city.png</flag>
+<name>City of Sevastopol'</name> <ignore>allowClickMode</ignore> <flag>ukraine/Sevastopol-city.png</flag>
 <color> <red> 0 </red> <green> 0 </green> <blue> 253 </blue> </color> 
 </division>
 
@@ -165,7 +165,7 @@
 
 <division>
 <name>Border/Coast</name> <ignore>yes</ignore>
-<color> <red> 31 </red> <green> 26 </green> <blue> 23 </blue> </color>
+<color> <red> 0 </red> <green> 0 </green> <blue> 0 </blue> </color> 
 </division>
 
 <division>
