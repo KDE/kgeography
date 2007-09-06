@@ -97,6 +97,6 @@ Comment[zh_TW]=學習地理的程式
 Exec=kgeography
 Icon=kgeography
 Type=Application
-DocPath=kgeography/index.html
+X-DocPath=kgeography/index.html
 Terminal=false
 Categories=Qt;KDE;Education;
