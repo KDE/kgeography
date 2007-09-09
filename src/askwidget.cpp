@@ -59,7 +59,7 @@ void askWidget::setOriginalZoom()
 {
 }
 
-void askWidget::setAutomaticZoom(bool b)
+void askWidget::setAutomaticZoom(bool)
 {
 }
 
