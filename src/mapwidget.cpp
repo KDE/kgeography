@@ -38,10 +38,9 @@ void mapWidget::init(const QString &path)
 	p_originalPixmap.load(path);
 	p_scene->setSceneRect( p_originalImage.rect() );
 	resetCachedContent();
-	setOriginalImage();
 	
 	// work around bug in QGraphicsView?
-	QTimer::singleShot( 0, this, SLOT(setOriginalImage()) );
+	QMetaObject::invokeMethod(this, "setAutomaticZoom", Qt::QueuedConnection, Q_ARG(bool, p_automaticZoom));
 }
 
 void mapWidget::setMapMove(bool b)
@@ -162,7 +161,9 @@ void mapWidget::resizeEvent(QResizeEvent *)
 	
 	// Another hack to work around buginess in QGraphicsView
 	if ( matrix().isIdentity() )
-		QTimer::singleShot( 0, this, SLOT(setOriginalImage()) );
+	{
+		QMetaObject::invokeMethod(this, "setAutomaticZoom", Qt::QueuedConnection, Q_ARG(bool, p_automaticZoom));
+	}
 }
 
 void mapWidget::setAutomaticZoom(bool automaticZoom)

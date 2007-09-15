@@ -49,10 +49,9 @@ void placeMapWidget::init(KGmap *map, QImage *mapImage)
         createGameMapImage();
 	p_scene->setSceneRect( p_gameImage->rect() );
 	resetCachedContent();
-	setGameImage();
 	
 	// work around bug in QGraphicsView?
-	QTimer::singleShot( 0, this, SLOT(setGameImage()) );
+	QMetaObject::invokeMethod(this, "setAutomaticZoom", Qt::QueuedConnection, Q_ARG(bool, p_automaticZoom));
 }
 
 void placeMapWidget::createGameMapImage()
@@ -227,7 +226,7 @@ void placeMapWidget::resizeEvent(QResizeEvent *)
 	
 	// Another hack to work around buginess in QGraphicsView
 	if ( matrix().isIdentity() )
-		QTimer::singleShot( 0, this, SLOT(setGameImage()) );
+		QMetaObject::invokeMethod(this, "setAutomaticZoom", Qt::QueuedConnection, Q_ARG(bool, p_automaticZoom));
 }
 
 void placeMapWidget::setAutomaticZoom(bool automaticZoom)
@@ -258,7 +257,7 @@ void placeMapWidget::setGameImage()
 
 void placeMapWidget::updateZoom()
 {
-	if ( !p_automaticZoom )
+	if ( !p_automaticZoom || !p_gameImage )
 		return;
 	fitInView( p_gameImage->rect(), Qt::KeepAspectRatio );
 	updateCursor();

@@ -336,6 +336,7 @@ QSize kgeography::getPreferredSize()
 void kgeography::putAskWidget()
 {
 	static_cast<QBoxLayout*>(p_bigWidget -> layout()) -> addWidget(p_askWidget, 1);
+	p_askWidget -> setAutomaticZoom(p_zoomAutomatic -> isChecked());
 	p_askWidget -> show();
 	connect(p_askWidget, SIGNAL(setZoomActionChecked(bool)), p_zoom, SLOT(setChecked(bool)));
 	connect(p_zoom, SIGNAL(toggled(bool)), p_askWidget, SLOT(setZoom(bool)));
