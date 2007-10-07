@@ -2,7 +2,7 @@
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
   <!ENTITY kgeography "<application>KGeography</application>">
   <!ENTITY kappname "&kgeography;">
-  <!ENTITY package "playground/edu">
+  <!ENTITY package "kdeedu">
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % English "INCLUDE"> 
 ]>
@@ -146,7 +146,7 @@ You can then choose what type of learning or testing you want to do by looking a
 </screenshot>
 </para>
 <para>
-Browse the map: a &LMB; click on an area of the map will display informations about that area:
+Explore Map: a &LMB; click on an area of the map will display informations about that area:
 <screenshot>
 <screeninfo>Browse the map</screeninfo>
 	<mediaobject>
@@ -160,7 +160,7 @@ Browse the map: a &LMB; click on an area of the map will display informations ab
 </screenshot>
 </para>
 <para>
-Click division in the map: you are first asked how many questions you want
+Location of Provices or Territories: you are first asked how many questions you want
 <screenshot>
 <screeninfo>How many questions</screeninfo>
 	<mediaobject>
@@ -202,7 +202,21 @@ When you finish all the questions, a result dialog is shown with your correct an
 </screenshot>
 </para>
 <para>
-Guess a division from its capital: you are asked to find the name of a province among a choice of 4 given its capital:
+Place Provices or Territories in the Map: the cursor takes the shape of a province and you have to place it in the map:
+<screenshot>
+<screeninfo>Place a division in the map</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start13.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Place a division in the map</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+Provices or Territories by Capital: you are asked to find the name of a province among a choice of 4 given its capital:
 <screenshot>
 <screeninfo>Guess a division from its capital</screeninfo>
 	<mediaobject>
@@ -230,10 +244,10 @@ And the results are displayed when the test is finished:
 </screenshot>
 </para>
 <para>
-Guess the capital from a division: you have a capital and four province names and you must choose the correct one. As before, at the end a result dialog is shown.
+Capitals of Provices or Territories: you have a capital and four province names and you must choose the correct one. As before, at the end a result dialog is shown.
 </para>
 <para>
-Guess division from its flag: a flag is shown and you must find the province it belongs to.
+Provices or Territories by Flag: a flag is shown and you must find the province it belongs to.
 <screenshot>
 <screeninfo>the flag question</screeninfo>
 	<mediaobject>
@@ -247,7 +261,7 @@ Guess division from its flag: a flag is shown and you must find the province it 
 </screenshot>
 </para>
 <para>
-Guess the flag of a division: a province name is given and you must find the correct flag among four.
+Flags of Provices or Territories: a province name is given and you must find the correct flag among four.
 <screenshot>
 <screeninfo>match the flag with the province</screeninfo>
 	<mediaobject>
@@ -298,7 +312,7 @@ Guess the flag of a division: a province name is given and you must find the cor
 	  </textobject>
 	</mediaobject>
 </screenshot>
-While in zoom mode, you can press &RMB; to go back to the original map size (the <guimenuitem>Original Size</guimenuitem> action has the same effect). Use the scroll bars to move around the zoomed map or use the <guimenuitem>Move</guimenuitem> action that will allow you to drag the map using &LMB;.
+While in zoom mode, you can press &RMB; to go back to the original map size (the <guimenuitem>Original Size</guimenuitem> action has the same effect). Use the scroll bars to move around the zoomed map or use the <guimenuitem>Move</guimenuitem> action that will allow you to drag the map using &LMB;. The <guimenuitem>Automatic Zoom</guimenuitem> feature will make the map as big as possible.
 </para>
 
 </sect1>
@@ -357,6 +371,9 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
 </listitem>
 <listitem>
   <para><sgmltag class="starttag">color</sgmltag> and <sgmltag class="endtag">color</sgmltag>: the color the division has in the map.</para>
+</listitem>
+<listitem>
+  <para><sgmltag class="starttag">falseCapital</sgmltag> and <sgmltag class="endtag">falseCapital</sgmltag>: There can be any number of falseCapital pairs, they are used to provide a list of false answers to the capital question instead of choosing the false answers amongst the other divisions capitals.</para>
 </listitem>
 </itemizedlist>
  </para>
@@ -495,6 +512,13 @@ or menu bars. -->
 <guimenuitem>Original Size</guimenuitem>
 </menuchoice></term>
 <listitem><para><action>Sets</action> the map back to its original size</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<guimenu>View</guimenu>
+<guimenuitem>Automatic Zoom</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Sets</action> the map to automatic zoom using as much space as possible</para></listitem>
 </varlistentry>
 <varlistentry>
 <term><menuchoice>
