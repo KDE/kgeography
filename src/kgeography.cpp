@@ -112,7 +112,7 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 
 	p_zoomOriginal = actionCollection()->addAction( "zoom_original" );
 	p_zoomOriginal -> setText( i18n("&Original Size") );
-	p_zoomOriginal -> setIcon( KIcon("viewmag1") );
+	p_zoomOriginal -> setIcon( KIcon("zoom-original") );
 	p_zoomOriginal -> setEnabled(false);
 
 	p_zoomAutomatic = actionCollection()->add<KToggleAction>( "zoom_automatic" );
