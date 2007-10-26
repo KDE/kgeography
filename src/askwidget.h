@@ -15,6 +15,7 @@
 #include <qwidget.h>
 
 #include "answer.h"
+#include "division.h"
 
 class QLabel;
 
@@ -49,6 +50,7 @@ Q_OBJECT
 		QString lastDivisionAsked();
 		void nextQuestion();
 		virtual void nextQuestionHook(const QString &division) = 0;
+		virtual division::askMode askMode() const = 0;
 		void questionAnswered(bool wasCorrect);
 		void resetAnswers();
 	

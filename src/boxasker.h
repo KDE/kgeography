@@ -13,8 +13,6 @@
 
 #include "askwidget.h"
 
-#include "division.h"
-
 class KPushButton;
 
 class QLabel;
@@ -33,7 +31,6 @@ Q_OBJECT
 		void nextQuestionHook(const QString &division);
 		void setQuestion(const QString &q);
 		virtual void setAnswerHook(int userSays) = 0;
-		virtual division::askMode askMode() const = 0;
 
 		void keyReleaseEvent(QKeyEvent *e);
 		

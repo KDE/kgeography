@@ -78,8 +78,8 @@ void askWidget::nextQuestion()
 	QString aux;
 	if (p_asked.count() < p_count)
 	{
-		aux = p_map -> getRandomDivision(division::eClick);
-		while (p_asked.indexOf(aux) != -1) aux = p_map -> getRandomDivision(division::eClick);
+		aux = p_map -> getRandomDivision(askMode());
+		while (p_asked.indexOf(aux) != -1) aux = p_map -> getRandomDivision(askMode());
 		p_asked << aux;
 		nextQuestionHook(aux);
 	}

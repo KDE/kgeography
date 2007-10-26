@@ -37,6 +37,7 @@ Q_OBJECT
 		void mousePressEvent(QMouseEvent *e);
 		QString getQuestionHook() const;
 		void showEvent(QShowEvent *e);
+		division::askMode askMode() const { return division::eClick; }
 
 	public slots:
 		void setMovement(bool b);
