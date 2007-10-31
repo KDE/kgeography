@@ -14,22 +14,22 @@
 </division>
 
 <division>
-<name>Zakarpats'ka oblast'</name> <capital> Uzhhorod </capital> <flag>ukraine/Zakarpatya.png</flag>
+<name>Zakarpats'ka oblast'</name> <capital>Uzhhorod</capital> <flag>ukraine/Zakarpatya.png</flag>
 <color> <red> 255 </red> <green> 192 </green> <blue> 128 </blue> </color> 
 </division>
 
 <division>
-<name>Rivnens'ka oblast'</name> <capital> Rivne </capital> <flag>ukraine/Rivne.png</flag>
+<name>Rivnens'ka oblast'</name> <capital>Rivne</capital> <flag>ukraine/Rivne.png</flag>
 <color> <red> 0 </red> <green> 0 </green> <blue> 128 </blue> </color> 
 </division>
 
 <division>
-<name>Ternopil's'ka oblast'</name> <capital> Ternopil'</capital> <flag>ukraine/Ternopil.png</flag>
+<name>Ternopil's'ka oblast'</name> <capital>Ternopil'</capital> <flag>ukraine/Ternopil.png</flag>
 <color> <red> 255 </red> <green> 255 </green> <blue> 128 </blue> </color> 
 </division>
 
 <division>
-<name>Khmel'nyts'ka oblast'</name> <capital> Khmel'nyts'ky</capital> <flag>ukraine/Khmelnitsky.png</flag>
+<name>Khmel'nyts'ka oblast'</name> <capital>Khmel'nyts'ky</capital> <flag>ukraine/Khmelnitsky.png</flag>
 <color> <red> 0 </red> <green> 255 </green> <blue> 255 </blue> </color> 
 </division>
 
@@ -39,27 +39,27 @@
 </division>
 
 <division>
-<name>Chernivets'ka oblast'</name> <capital> Chernivtsi </capital> <flag>ukraine/Chernivtsi.png</flag>
+<name>Chernivets'ka oblast'</name> <capital>Chernivtsi</capital> <flag>ukraine/Chernivtsi.png</flag>
 <color> <red> 128 </red> <green> 255 </green> <blue> 128 </blue> </color> 
 </division>
 
 <division> 
-<name>Zhytomyrs'ka oblast'</name> <capital> Zhytomyr </capital> <flag>ukraine/Zhitomir.png</flag>
+<name>Zhytomyrs'ka oblast'</name> <capital>Zhytomyr</capital> <flag>ukraine/Zhitomir.png</flag>
 <color> <red> 0 </red> <green> 0 </green> <blue> 255 </blue> </color> 
 </division>
 
 <division> 
-<name>Vinnyts'ka oblast'</name> <capital> Vinnytsya </capital> <flag>ukraine/Vinnytsa.png</flag>
+<name>Vinnyts'ka oblast'</name> <capital>Vinnytsya</capital> <flag>ukraine/Vinnytsa.png</flag>
 <color> <red> 255 </red> <green> 255 </green> <blue> 0 </blue> </color> 
 </division>
 
 <division> 
-<name>Kyivs'ka oblast'</name> <capital> Kyiv </capital> <flag>ukraine/Kyiv.png</flag>
+<name>Kyivs'ka oblast'</name> <capital>Kyiv</capital> <flag>ukraine/Kyiv.png</flag>
 <color> <red> 255 </red> <green> 0 </green> <blue> 0 </blue> </color> 
 </division>
 
 <division> 
-<name>Cherkas'ka oblast'</name> <capital> Cherkasy </capital> <flag>ukraine/Cherkasy.png</flag>
+<name>Cherkas'ka oblast'</name> <capital>Cherkasy</capital> <flag>ukraine/Cherkasy.png</flag>
 <color> <red> 128 </red> <green> 128 </green> <blue> 0 </blue> </color> 
 </division>
 
