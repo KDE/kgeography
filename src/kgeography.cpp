@@ -341,8 +341,8 @@ void kgeography::putAskWidget()
 	connect(p_askWidget, SIGNAL(setZoomActionChecked(bool)), p_zoom, SLOT(setChecked(bool)));
 	connect(p_zoom, SIGNAL(toggled(bool)), p_askWidget, SLOT(setZoom(bool)));
 	connect(p_zoomOriginal, SIGNAL(triggered()), p_askWidget, SLOT(setOriginalZoom()));
-	connect(p_zoomAutomatic, SIGNAL(toggled(bool)), p_askWidget, SLOT(setAutomaticZoom(bool)));
-	connect(p_askWidget, SIGNAL(setMoveActionEnabled(bool)), p_move, SLOT(setEnabled(bool)));
+	connect(p_zoomAutomatic, SIGNAL(toggled(bool)), this, SLOT(setAutomaticZoom(bool)));
+	connect(p_askWidget, SIGNAL(setMoveActionEnabled(bool)), this, SLOT(setMoveActionEnabled(bool)));
 	connect(p_askWidget, SIGNAL(setMoveActionChecked(bool)), p_move, SLOT(setChecked(bool)));
 	connect(p_move, SIGNAL(toggled(bool)), p_askWidget, SLOT(setMovement(bool)));
 	connect(p_askWidget, SIGNAL(questionsEnded()), this, SLOT(questionsEnded()));
@@ -392,6 +392,24 @@ void kgeography::questionsEnded()
 {
 	showResultsDialog();
 	consult();
+}
+
+void kgeography::setAutomaticZoom(bool b)
+{
+	p_zoom->setChecked(false);
+	p_askWidget->setAutomaticZoom(b);
+}
+
+void kgeography::setMoveActionEnabled(bool b)
+{
+	p_move->setEnabled(false);
+	if (b && p_zoomAutomatic->isChecked())
+	{
+		// we don't want the unchecking to bring us to the original zoom state
+		p_zoomAutomatic->blockSignals(true);
+		p_zoomAutomatic->setChecked(false);
+		p_zoomAutomatic->blockSignals(false);
+	}
 }
 
 void kgeography::showResultsDialog()

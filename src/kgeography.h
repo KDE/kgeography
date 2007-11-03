@@ -44,6 +44,9 @@ Q_OBJECT
 		void disclaimer();
 		void resizeMainWindow();
 		void questionsEnded();
+		
+		void setAutomaticZoom(bool b);
+		void setMoveActionEnabled(bool b);
 
 	private:
 		QSize getPreferredSize();
