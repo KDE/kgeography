@@ -152,12 +152,14 @@ void placeMapWidget::mousePressEvent(QMouseEvent *e)
 		{
 			p_zoomRect = p_scene->addRect( QRectF( p_initial, QSize( 0, 0 ) ) );
 			p_mode = Zooming;
+			updateActions();
 		}
 		else if ( p_mode == WantMove )
 		{
 			p_prev = e->pos();
 			setCursor(Qt::SizeAllCursor);
 			p_mode = Moving;
+			updateActions();
 		}
 		else
 		{
@@ -171,10 +173,9 @@ void placeMapWidget::mousePressEvent(QMouseEvent *e)
 	else if ( p_mode == WantZoom )
 	{
 		setGameImage();
+		updateActions();
 	}
 	else e->ignore(); // that makes the event go to mapasker and clear the popup
-	
-	updateActions();
 }
 
 void placeMapWidget::mouseMoveEvent(QMouseEvent *e)
@@ -231,7 +232,6 @@ void placeMapWidget::resizeEvent(QResizeEvent *)
 
 void placeMapWidget::setAutomaticZoom(bool automaticZoom)
 {
-	
 	if (!automaticZoom) setGameImage();
 	else
 	{

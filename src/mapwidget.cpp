@@ -88,12 +88,14 @@ void mapWidget::mousePressEvent(QMouseEvent *e)
 		{
 			p_zoomRect = p_scene->addRect( QRectF( p_initial, QSize( 0, 0 ) ) );
 			p_mode = Zooming;
+			updateActions();
 		}
 		else if ( p_mode == WantMove )
 		{
 			p_prev = e->pos();
 			setCursor(Qt::SizeAllCursor);
 			p_mode = Moving;
+			updateActions();
 		}
 		else
 		{
@@ -107,10 +109,9 @@ void mapWidget::mousePressEvent(QMouseEvent *e)
 	else if ( p_mode == WantZoom )
 	{
 		setOriginalImage();
+		updateActions();
 	}
 	else e->ignore(); // that makes the event go to mapasker and clear the popup
-	
-	updateActions();
 }
 
 void mapWidget::mouseMoveEvent(QMouseEvent *e)

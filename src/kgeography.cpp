@@ -315,7 +315,7 @@ void kgeography::askDivisionFlags()
 
 void kgeography::removeOldAskWidget()
 {
-	p_askWidget->deleteLater();
+	delete p_askWidget;
 	p_askWidget = 0;
 	p_zoom -> setEnabled(false);
 	p_zoomOriginal -> setEnabled(false);
