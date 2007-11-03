@@ -81,6 +81,7 @@ void mapAsker::setMovement(bool b)
 
 void mapAsker::setZoom(bool b)
 {
+	askWidget::setZoom(b);
 	p_mapWidget -> setMapZoom(b);
 	p_popupManager.clear();
 }

@@ -13,6 +13,7 @@
 #include <klocale.h>
 #include <kmessagebox.h>
 
+#include <qapplication.h>
 #include <qlabel.h>
 #include <qlayout.h>
 
@@ -51,8 +52,10 @@ void askWidget::setMovement(bool)
 {
 }
 
-void askWidget::setZoom(bool)
+void askWidget::setZoom(bool b)
 {
+	if (b) QApplication::setOverrideCursor(Qt::CrossCursor);
+	else QApplication::restoreOverrideCursor();
 }
 
 void askWidget::setOriginalZoom()
