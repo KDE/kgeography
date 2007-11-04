@@ -151,7 +151,7 @@ void placeAsker::nextQuestionHook(const QString &division)
 	QString divisionName = i18nc(p_map -> getFileName().toUtf8(), division.toUtf8());
 	p_next -> setText(i18nc("@info:status", "<qt><para>Please place in the map:<br/>%1</para></qt>", divisionName));
 	p_next -> show();
-	p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is region name", "%1", i18nc(p_map -> getFile().toUtf8(), division.toUtf8())));
+	p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is region name", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
 	setCurrentDivision(division);
 	p_mapWidget->setCurrentDivisionImage(p_currentDivisionImage);
