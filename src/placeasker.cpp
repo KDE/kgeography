@@ -25,7 +25,7 @@
 #include "map.h"
 #include "placemapwidget.h"
 
-placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_asker(asker), p_firstShow(true), p_currentDivisionImage(0)
+placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidget(parent, m, w, count, true), p_firstShow(true), p_currentDivisionImage(0)
 {
 	QVBoxLayout *lay = new QVBoxLayout(this);
 	lay -> setMargin(0);
@@ -33,33 +33,22 @@ placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint c
 
 	p_mapImage = new QImage(p_map->getMapFile());
 	p_mapWidget = new placeMapWidget(this);
-	p_popupManager.setWidget(p_mapWidget->viewport());
 	lay -> addWidget(p_mapWidget);
-	
-	p_shouldClearPopup = false;
 	
 	connect(p_mapWidget, SIGNAL(clicked(QRgb, const QPoint&, const QPointF&)), this, SLOT(handleMapClick(QRgb, const QPoint&, const QPointF&)));
 	connect(p_mapWidget, SIGNAL(setMoveActionChecked(bool)), this, SIGNAL(setMoveActionChecked(bool)));
 	connect(p_mapWidget, SIGNAL(setZoomActionChecked(bool)), this, SIGNAL(setZoomActionChecked(bool)));
 	connect(p_mapWidget, SIGNAL(setMoveActionEnabled(bool)), this, SIGNAL(setMoveActionEnabled(bool)));
 	
-	if (asker)
-	{
-		QVBoxLayout *vbl = static_cast<QVBoxLayout*>(w -> layout());
-		p_next = new QLabel(w);
-		p_next -> setAlignment(Qt::AlignTop | Qt::AlignHCenter);
-		p_next -> setWordWrap(true);
-		p_fill = new QWidget(w);
-		p_fill -> show();
-		vbl -> addWidget(p_next);
-		vbl -> addWidget(p_fill, 1);
-		nextQuestion();
-	}
-	else
-	{
-		p_next = 0;
-		p_fill = 0;
-	}
+	QVBoxLayout *vbl = static_cast<QVBoxLayout*>(w -> layout());
+	p_next = new QLabel(w);
+	p_next -> setAlignment(Qt::AlignTop | Qt::AlignHCenter);
+	p_next -> setWordWrap(true);
+	p_fill = new QWidget(w);
+	p_fill -> show();
+	vbl -> addWidget(p_next);
+	vbl -> addWidget(p_fill, 1);
+	nextQuestion();
 }
 
 placeAsker::~placeAsker()
@@ -76,60 +65,34 @@ bool placeAsker::isAsker() const
 
 void placeAsker::mousePressEvent(QMouseEvent*)
 {
-	p_popupManager.clear();
 }
 
 void placeAsker::setMovement(bool b)
 {
 	p_mapWidget -> setMapMove(b);
-	p_popupManager.clear();
 }
 
 void placeAsker::setZoom(bool b)
 {
 	askWidget::setZoom(b);
 	p_mapWidget -> setMapZoom(b);
-	p_popupManager.clear();
 }
 
 void placeAsker::setOriginalZoom()
 {
 	p_mapWidget -> setGameImage();
-	p_popupManager.clear();
 }
 
 void placeAsker::setAutomaticZoom(bool automaticZoom)
 {
 	p_mapWidget -> setAutomaticZoom(automaticZoom);
-	p_popupManager.clear();
 }
 
-void placeAsker::handleMapClick(QRgb c, const QPoint &widgetPoint, const QPointF &mapPoint)
+void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint)
 {
 	QString aux, cap;
-	aux = p_map -> getWhatIs(c, !p_asker);
+	aux = p_map -> getWhatIs(c, false);
 	if (aux == "nothing") KMessageBox::error(this, i18nc("@info", "You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.", p_map -> getFile(), qRed(c), qGreen(c), qBlue(c)));
-	else if (p_shouldClearPopup)
-	{
-		p_popupManager.clear();
-		p_shouldClearPopup = false;
-	}
-	else if (!p_asker)
-	{
-		QString flagFile;
-		cap = p_map -> getDivisionCapital(aux);
-		if (!cap.isEmpty())
-		{
-			flagFile = p_map -> getDivisionFlagFile(aux);
-			cap = i18nc("@item Capital name in map popup", "%1", i18nc(p_map -> getFileName().toUtf8(), cap.toUtf8()));
-		}
-		
-		aux = i18nc("@item Region name in map popup", "%1", i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8()));
-
-		if (!flagFile.isEmpty()) p_popupManager.show(aux, cap, widgetPoint, flagFile);
-		else if (!cap.isEmpty()) p_popupManager.show(aux, cap, widgetPoint);
-		else p_popupManager.show(aux, widgetPoint);
-	}
 	else
 	{
 		p_mapWidget->placeDivision(p_currentDivisionImage, p_currentDivisionRect);

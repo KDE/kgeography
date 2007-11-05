@@ -26,7 +26,7 @@ class placeAsker : public askWidget
 {
 Q_OBJECT
 	public:
-		placeAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count = 0);
+		placeAsker(QWidget *parent, KGmap *m, QWidget *w, uint count = 0);
 		~placeAsker();
 
 		QSize mapSize() const;
@@ -57,8 +57,7 @@ Q_OBJECT
 		infoWidget *p_infoWidget;
 		placeMapWidget *p_mapWidget;
 		
-		popupManager p_popupManager;
-		bool p_shouldClearPopup, p_asker, p_firstShow;
+		bool p_firstShow;
 
 		QImage *p_currentDivisionImage;
 		QImage *p_mapImage;

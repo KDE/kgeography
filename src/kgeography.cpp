@@ -271,7 +271,7 @@ void kgeography::askPlaceMap()
 	if (ok)
 	{
 		removeOldAskWidget();
-		p_askWidget = new placeAsker(p_bigWidget, p_map, p_underLeftWidget, true, i);
+		p_askWidget = new placeAsker(p_bigWidget, p_map, p_underLeftWidget, i);
 		p_zoom -> setEnabled(true);
 		p_zoomOriginal -> setEnabled(true);
 		p_zoomAutomatic -> setEnabled(true);
