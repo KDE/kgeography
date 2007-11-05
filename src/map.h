@@ -34,6 +34,7 @@ class KGmap
 		QString getDivisionFlagFile(const QString &divisionName) const;
 		QString getDivisionCapital(const QString &divisionName) const;
 		QStringList getDivisionFalseCapitals(const QString &divisionName) const;
+		bool getDivisionCanAsk(const QString &div, division::askMode am) const;
 		QString getFile() const;
 		QString getFileName() const;
 		QString getMapFile() const;

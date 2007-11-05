@@ -167,3 +167,8 @@ division *KGmap::getDivision(QRgb c) const
 	}
 	return NULL;
 }
+
+bool KGmap::getDivisionCanAsk(const QString &div, division::askMode am) const
+{
+	return getDivision(div) -> canAsk(am);
+}

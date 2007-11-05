@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
 				os << "i18nc(\"" << *it << "\", \"" << n2.firstChild().nodeValue() << "\");\n";
 				
 				n3 = n.namedItem("ignore");
-				if (n3.isNull() || (n3.firstChild().nodeValue() != "yes" && n3.firstChild().nodeValue() != "allowClickMode"))
+				if (n3.isNull() || n3.firstChild().nodeValue() == "no")
 				{
 					n5 = n.namedItem("capital");
 					if (!n5.firstChild().nodeValue().isEmpty())
