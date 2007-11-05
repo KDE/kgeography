@@ -351,7 +351,7 @@
 	</division>
 	<division>
 		<name>Indonesia</name>
-		<ignore>yes</ignore>
+		<flag>indonesia.png</flag>
 		<capital>Jakarta</capital>
 		<color>
 			<red>5</red>
