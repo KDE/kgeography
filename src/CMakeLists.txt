@@ -29,6 +29,14 @@ set(kgeography_SRCS
 
 kde4_add_kcfg_files(kgeography_SRCS settings.kcfgc )
 
+if(MSVC)
+  set(kgeography_SRCS ${kgeography_SRCS} kgeography.rc)
+endif(MSVC)
+
+if(MINGW)
+   KDE_ADD_RESOURCES2(kgeography_SRCS kgeography.rc)
+endif(MINGW)
+
 kde4_add_executable(kgeography ${kgeography_SRCS})
 
 target_link_libraries(kgeography   ${KDE4_KDEUI_LIBS} )
