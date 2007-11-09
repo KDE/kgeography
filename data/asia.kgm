@@ -3,7 +3,7 @@
 	<name>Asia</name>
     <divisionsName>Countries</divisionsName>
 	<division>
-		<name>Not a Nation</name>
+		<name>Frontier</name>
 		<ignore>yes</ignore>
 		<color>
 			<red>255</red>
@@ -577,6 +577,88 @@
 			<red>69</red>
 			<green>118</green>
 			<blue>65</blue>
+		</color>
+	</division>
+	<division>
+		<name>East Timor</name>
+		<flag>easttimor.png</flag>
+		<capital>Dili</capital>
+		<color>
+			<red>132</red>
+			<green>205</green>
+			<blue>208</blue>
+		</color>
+	</division>
+	<division>
+		<name>Tanzania</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>243</red>
+			<green>53</green>
+			<blue>141</blue>
+		</color>
+	</division>
+	<division>
+		<name>Zambia</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>156</red>
+			<green>214</green>
+			<blue>172</blue>
+		</color>
+	</division>
+	<division>
+		<name>Mozambique</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>104</red>
+			<green>118</green>
+			<blue>6</blue>
+		</color>
+	</division>
+	<division>
+		<name>Malawi</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>27</red>
+			<green>125</green>
+			<blue>255</blue>
+		</color>
+	</division>
+	<division>
+		<name>Madagascar</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>65</red>
+			<green>28</green>
+			<blue>87</blue>
+		</color>
+	</division>
+	<division>
+		<name>Papua New Guinea</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>184</red>
+			<green>46</green>
+			<blue>46</blue>
+		</color>
+	</division>
+	<division>
+		<name>Australia</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>0</red>
+			<green>255</green>
+			<blue>150</blue>
+		</color>
+	</division>
+	<division>
+		<name>Cyprus</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>213</red>
+			<green>99</green>
+			<blue>120</blue>
 		</color>
 	</division>
 </map>
