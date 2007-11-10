@@ -29,14 +29,14 @@ set(kgeography_SRCS
 
 kde4_add_kcfg_files(kgeography_SRCS settings.kcfgc )
 
-if(MSVC)
-  set(kgeography_SRCS ${kgeography_SRCS} kgeography.rc)
-endif(MSVC)
-
-if(MINGW)
-   KDE_ADD_RESOURCES2(kgeography_SRCS kgeography.rc)
-endif(MINGW)
-
+set(kgeography_icons
+    ${CMAKE_INSTALL_PREFIX}/share/icons/oxygen/16x16/apps/kgeography.png
+    ${CMAKE_INSTALL_PREFIX}/share/icons/oxygen/32x32/apps/kgeography.png
+    ${CMAKE_INSTALL_PREFIX}/share/icons/oxygen/48x48/apps/kgeography.png
+    ${CMAKE_INSTALL_PREFIX}/share/icons/oxygen/64x64/apps/kgeography.png
+    ${CMAKE_INSTALL_PREFIX}/share/icons/oxygen/128x128/apps/kgeography.png
+)
+kde4_add_win32_app_icon(kgeography kgeography_SRCS ${kgeography_icons})
 kde4_add_executable(kgeography ${kgeography_SRCS})
 
 target_link_libraries(kgeography   ${KDE4_KDEUI_LIBS} )
