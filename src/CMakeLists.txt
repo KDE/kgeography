@@ -36,7 +36,7 @@ set(kgeography_icons
     ${CMAKE_INSTALL_PREFIX}/share/icons/oxygen/64x64/apps/kgeography.png
     ${CMAKE_INSTALL_PREFIX}/share/icons/oxygen/128x128/apps/kgeography.png
 )
-kde4_add_win32_app_icon(kgeography kgeography_SRCS ${kgeography_icons})
+kde4_add_win32_app_icon(kgeography_SRCS ${kgeography_icons})
 kde4_add_executable(kgeography ${kgeography_SRCS})
 
 target_link_libraries(kgeography   ${KDE4_KDEUI_LIBS} )
