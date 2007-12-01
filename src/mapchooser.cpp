@@ -21,6 +21,11 @@
 #include <qlistwidget.h>
 #include <qpainter.h>
 
+bool myLessThan(const QString &s1, const QString &s2)
+{
+	return s1.localeAwareCompare(s2) < 0;
+}
+
 mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 {
 	setCaption(i18n("Choose Map to Use"));
@@ -39,6 +44,7 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 	p_listBox = new QListWidget(mainHB);
 	mainHBLayout -> addWidget(p_listBox);
 	QStringList::iterator it;
+	QStringList texts;
 	for(it = list.begin(); it != list.end(); ++it)
 	{
 		m = p_reader.parseMap(*it);
@@ -49,7 +55,7 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 		else
 		{
 			QString text = i18nc(m -> getFileName().toUtf8(), m -> getName().toUtf8());
-			p_listBox -> addItem(text);
+			texts << text;
 			p_maps.insert(text, m);
 		}
 	}
@@ -63,8 +69,8 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 	connect(p_listBox, SIGNAL(itemActivated(QListWidgetItem*)), this, SLOT(accept()));
 	
 	setMainWidget(mainHB);
-	
-	p_listBox -> sortItems();
+	qSort(texts.begin(), texts.end(), myLessThan);
+	foreach(const QString &text, texts) p_listBox -> addItem(text);
 	if (p_listBox -> count() > 0) p_listBox -> setCurrentRow(0);
 	else enableButtonOk(false);
 	p_listBox -> setFocus();
