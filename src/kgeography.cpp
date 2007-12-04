@@ -64,7 +64,7 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 	p_askMap = new KPushButton(i18n("&Location of Regions"), leftWidget);
 	p_askMap->setWhatsThis(i18n("In this challenge you are given a division name on the left under the menu and you must find it on the map and click on it"));
 	p_askPlaceMap = new KPushButton(i18n("&Place Regions in the Map"), leftWidget);
-	p_askPlaceMap->setWhatsThis(i18n("In this challenge you are given theshape of a region and you must place it on the map"));
+	p_askPlaceMap->setWhatsThis(i18n("In this challenge you are given the shape of a region and you must place it on the map"));
 	p_askCapitalDivisions = new KPushButton(i18n("&Regions by Capital"), leftWidget);
 	p_askCapitalDivisions->setWhatsThis(i18n("In this quiz you have to guess the division name given its capital"));
 	p_askDivisionCapitals = new KPushButton(i18n("&Capitals of Regions"), leftWidget);
