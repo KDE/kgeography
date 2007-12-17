@@ -30,11 +30,11 @@ set(kgeography_SRCS
 kde4_add_kcfg_files(kgeography_SRCS settings.kcfgc )
 
 set(kgeography_icons
-    ${CMAKE_INSTALL_PREFIX}/share/icons/oxygen/16x16/apps/kgeography.png
-    ${CMAKE_INSTALL_PREFIX}/share/icons/oxygen/32x32/apps/kgeography.png
-    ${CMAKE_INSTALL_PREFIX}/share/icons/oxygen/48x48/apps/kgeography.png
-    ${CMAKE_INSTALL_PREFIX}/share/icons/oxygen/64x64/apps/kgeography.png
-    ${CMAKE_INSTALL_PREFIX}/share/icons/oxygen/128x128/apps/kgeography.png
+    ${KDE4_ICON_DIR}/oxygen/16x16/apps/kgeography.png
+    ${KDE4_ICON_DIR}/oxygen/32x32/apps/kgeography.png
+    ${KDE4_ICON_DIR}/oxygen/48x48/apps/kgeography.png
+    ${KDE4_ICON_DIR}/oxygen/64x64/apps/kgeography.png
+    ${KDE4_ICON_DIR}/oxygen/128x128/apps/kgeography.png
 )
 kde4_add_win32_app_icon(kgeography_SRCS ${kgeography_icons})
 kde4_add_executable(kgeography ${kgeography_SRCS})
