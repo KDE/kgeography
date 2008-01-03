@@ -117,12 +117,12 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 
 	p_zoomAutomatic = actionCollection()->add<KToggleAction>( "zoom_automatic" );
 	p_zoomAutomatic -> setText(  i18n("&Automatic Zoom") );
-	p_zoomAutomatic -> setIcon( KIcon("zoom-best-fit") );
+	p_zoomAutomatic -> setIcon( KIcon("zoom-fit-best") );
 	p_zoomAutomatic -> setEnabled(false);
 
 	p_move = actionCollection()->add<KToggleAction>( "move" );
 	p_move->setText( i18n("&Move") );
-	p_move->setIcon( KIcon("move") );
+	p_move->setIcon( KIcon("transform-move") );
 	p_move -> setEnabled(false);
 
 	a = actionCollection()->addAction( "disclaimer" );
