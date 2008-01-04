@@ -49,7 +49,6 @@ Q_OBJECT
 		void setMoveActionEnabled(bool b);
 
 	private:
-		QSize getPreferredSize();
 		void showResultsDialog();
 		
 		void putAskWidget();

@@ -325,14 +325,6 @@ void kgeography::removeOldAskWidget()
 	p_move -> setChecked(false);
 }
 
-QSize kgeography::getPreferredSize()
-{
-	int ySize = 0;
-
-	ySize = menuBar() -> size().height() + toolBar() -> size().height() + ((mapAsker*) p_askWidget)->mapSize().height();
-	return QSize(p_underLeftWidget -> size().width() + ((mapAsker*) p_askWidget)->mapSize().width() + 10, ySize + 10);
-}
-
 void kgeography::putAskWidget()
 {
 	static_cast<QBoxLayout*>(p_bigWidget -> layout()) -> addWidget(p_askWidget, 1);
@@ -385,7 +377,7 @@ void kgeography::disclaimer()
 
 void kgeography::resizeMainWindow()
 {
-	if (p_askWidget && width() ) resize(getPreferredSize().expandedTo(size()));
+	if (p_askWidget && width()) resize(sizeHint().expandedTo(size()));
 }
 
 void kgeography::questionsEnded()
@@ -402,7 +394,7 @@ void kgeography::setAutomaticZoom(bool b)
 
 void kgeography::setMoveActionEnabled(bool b)
 {
-	p_move->setEnabled(false);
+	p_move->setEnabled(b);
 	if (b && p_zoomAutomatic->isChecked())
 	{
 		// we don't want the unchecking to bring us to the original zoom state
