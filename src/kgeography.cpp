@@ -327,10 +327,9 @@ void kgeography::removeOldAskWidget()
 
 QSize kgeography::getPreferredSize()
 {
-	int ySize = 0;
-
-	ySize = menuBar() -> size().height() + toolBar() -> size().height() + ((mapAsker*) p_askWidget)->mapSize().height();
-	return QSize(p_underLeftWidget -> size().width() + ((mapAsker*) p_askWidget)->mapSize().width() + 10, ySize + 10);
+	int ySize = menuBar() -> size().height() + toolBar() -> size().height() + ((mapAsker*) p_askWidget)->mapSize().height();
+	int xSize = p_underLeftWidget -> parentWidget()-> size().width() + ((mapAsker*) p_askWidget)->mapSize().width();
+	return QSize(xSize + 10, ySize + 10);
 }
 
 void kgeography::putAskWidget()
@@ -402,7 +401,7 @@ void kgeography::setAutomaticZoom(bool b)
 
 void kgeography::setMoveActionEnabled(bool b)
 {
-	p_move->setEnabled(false);
+	p_move->setEnabled(b);
 	if (b && p_zoomAutomatic->isChecked())
 	{
 		// we don't want the unchecking to bring us to the original zoom state
