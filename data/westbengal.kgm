@@ -1,0 +1,214 @@
+<map>
+<mapFile>westbengal.png</mapFile>
+<name>West Bengal</name>
+  <divisionsName>District</divisionsName>
+  
+  <division>
+    <name>Not bengal</name>
+    <ignore>yes</ignore>
+    <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+    </color>
+  </division>
+  <division>
+    <name>Border</name>
+    <ignore>yes</ignore>
+    <color>
+      <red>1</red>
+      <green>1</green>
+      <blue>1</blue>
+    </color>
+  </division>
+  <division>
+    <name>Purulia</name>
+    <capital>Purulia</capital>
+    <color>
+      <red>40</red>
+      <green>249</green>
+      <blue>99</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Bankura</name>
+    <capital>Bankura</capital>
+    <color>
+      <red>212</red>
+      <green>249</green>
+      <blue>40</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Paschim Medinipur</name>
+    <capital>Midnapore</capital>
+    <color>
+      <red>41</red>
+      <green>102</green>
+      <blue>130</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Purba Medinipur</name>
+    <capital>Tamluk</capital>
+    <color>
+      <red>172</red>
+      <green>174</green>
+      <blue>181</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Howrah</name>
+    <capital>Howrah</capital>
+    <color>
+      <red>140</red>
+      <green>142</green>
+      <blue>84</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>South 24-Parganas </name>
+    <capital>Alipur</capital>
+    <color>
+      <red>225</red>
+      <green>14</green>
+      <blue>244</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>North 24-Parganas</name>
+    <capital>Barasat</capital>
+    <color>
+      <red>81</red>
+      <green>27</green>
+      <blue>219</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Kolkata</name>
+    <capital>Kolkata</capital>
+    <color>
+      <red>237</red>
+      <green>139</green>
+      <blue>139</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Hooghly </name>
+    <capital>Chunchura </capital>
+    <color>
+      <red>14</red>
+      <green>244</green>
+      <blue>14</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Burdwan</name>
+    <capital>Burdwan</capital>
+    <color>
+      <red>234</red>
+      <green>17</green>
+      <blue>0</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Nadia</name>
+    <capital>Krishnagar</capital>
+    <color>
+      <red>255</red>
+      <green>235</green>
+      <blue>7</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Birbhum</name>
+    <capital>Suri</capital>
+    <color>
+      <red>37</red>
+      <green>112</green>
+      <blue>53</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Murshidabad</name>
+    <capital>Baharampur</capital>
+    <color>
+      <red>49</red>
+      <green>172</green>
+      <blue>229</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Malda</name>
+    <capital>Inreg Bazar</capital>
+    <color>
+      <red>229</red>
+      <green>49</green>
+      <blue>185</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Dakshin Dinajpur</name>
+    <capital>Balurghat</capital>
+    <color>
+      <red>20</red>
+      <green>244</green>
+      <blue>31</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Uttar Dinajpur</name>
+    <capital>Raiganj</capital>
+    <color>
+      <red>174</red>
+      <green>172</green>
+      <blue>31</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Darjeeling</name>
+    <capital>Darjeeling</capital>
+    <color>
+      <red>27</red>
+      <green>68</green>
+      <blue>246</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Jalpaiguri</name>
+    <capital>Jalpaiguri</capital>
+    <color>
+      <red>150</red>
+      <green>12</green>
+      <blue>67</blue>
+    </color>
+  </division>
+  
+  
+  <division>
+    <name>Cooch Behar</name>
+    <capital>Cooch Behar</capital>
+    <color>
+      <red>166</red>
+      <green>224</green>
+      <blue>236</blue>
+    </color>
+  </division>
+</map>
