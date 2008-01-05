@@ -325,6 +325,13 @@ void kgeography::removeOldAskWidget()
 	p_move -> setChecked(false);
 }
 
+QSize kgeography::getPreferredSize()
+{
+	int ySize = menuBar() -> size().height() + toolBar() -> size().height() + ((mapAsker*) p_askWidget)->mapSize().height();
+	int xSize = p_underLeftWidget -> parentWidget()-> size().width() + ((mapAsker*) p_askWidget)->mapSize().width();
+	return QSize(xSize + 10, ySize + 10);
+}
+
 void kgeography::putAskWidget()
 {
 	static_cast<QBoxLayout*>(p_bigWidget -> layout()) -> addWidget(p_askWidget, 1);
@@ -377,7 +384,7 @@ void kgeography::disclaimer()
 
 void kgeography::resizeMainWindow()
 {
-	if (p_askWidget && width()) resize(sizeHint().expandedTo(size()));
+	if (p_askWidget && width() ) resize(getPreferredSize().expandedTo(size()));
 }
 
 void kgeography::questionsEnded()
