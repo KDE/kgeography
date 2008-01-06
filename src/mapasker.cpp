@@ -21,6 +21,30 @@
 #include "map.h"
 #include "mapwidget.h"
 
+static QString guessWikipediaDomain()
+{
+    const QString &lang = KGlobal::locale() -> language();
+    QString code;
+
+    if ( lang.isEmpty() || lang == "POSIX" || lang == "C" )
+        code = "en";
+    else {
+
+        int index = lang.indexOf( '_' );
+        if ( index != -1 ) {
+            code = lang.left( index );
+        } else {
+            index = lang.indexOf( '@' );
+            if ( index != -1 )
+                code = lang.left( index );
+            else
+                code = lang;
+        }
+    }
+
+    return QString( "http://%1.wikipedia.org/wiki/" ).arg( code );
+}
+
 mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_asker(asker), p_firstShow(true)
 {
 	QVBoxLayout *lay = new QVBoxLayout(this);
@@ -114,11 +138,15 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 		if (p_map -> getDivisionCanAsk(aux, division::eCapital)) cap = p_map -> getDivisionCapital(aux);
 		if (!cap.isEmpty()) cap = i18nc("@item Capital name in map popup", "%1", i18nc(p_map -> getFileName().toUtf8(), cap.toUtf8()));
 
-		aux = i18nc("@item Region name in map popup", "%1", i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8()));
+		QString wikiLink (guessWikipediaDomain());
+		wikiLink.append(i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8()));
+		if (!p_map -> getDivisionCanAsk(aux, division::eClick)) wikiLink = "";
 
-		if (!flagFile.isEmpty()) p_popupManager.show(aux, cap, p, flagFile);
-		else if (!cap.isEmpty()) p_popupManager.show(aux, cap, p);
-		else p_popupManager.show(aux, p);
+		aux = i18nc("@item Region name in map popup", "%1", i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8()));
+		
+		if (!flagFile.isEmpty()) p_popupManager.show(aux, wikiLink, cap, p, flagFile);
+		else if (!cap.isEmpty()) p_popupManager.show(aux, wikiLink, cap , p);
+		else p_popupManager.show(aux, wikiLink, p);
 	}
 	else if (!aux.isEmpty())
 	{

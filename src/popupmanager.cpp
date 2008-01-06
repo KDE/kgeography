@@ -23,27 +23,27 @@ void popupManager::setWidget(QWidget *w)
 	p_parent = w;
 }
 
-void popupManager::show(const QString &text, const QString &text2, const QPoint &p, const QString &flagFile)
+void popupManager::show(const QString &text, const QString &wikiLink, const QString &text2, const QPoint &p, const QString &flagFile)
 {
 	delete p_mp;
 
-	p_mp = new myPopup(p_parent, text, text2, flagFile);
+	p_mp = new myPopup(p_parent, text, wikiLink, text2, flagFile);
 	init(p);
 }
 
-void popupManager::show(const QString &text, const QString &text2, const QPoint &p)
+void popupManager::show(const QString &text, const QString &wikiLink, const QString &text2, const QPoint &p)
 {
 	delete p_mp;
 	
-	p_mp = new myPopup(p_parent, text, text2);
+	p_mp = new myPopup(p_parent, text, wikiLink, text2);
 	init(p);
 }
 
-void popupManager::show(const QString &text, const QPoint &p)
+void popupManager::show(const QString &text, const QString &wikiLink, const QPoint &p)
 {
 	delete p_mp;
 	
-	p_mp = new myPopup(p_parent, text);
+	p_mp = new myPopup(p_parent, text, wikiLink);
 	init(p);
 }
 

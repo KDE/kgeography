@@ -13,19 +13,26 @@
 
 #include <qframe.h>
 
+class QLabel;
+
 class myPopup : public QFrame
 {
 Q_OBJECT
 	friend class popupManager;
 	
 	private:
-		myPopup(QWidget *parent, const QString &text, const QString &text2 = QString(), const QString &flagFile = QString());
+		myPopup(QWidget *parent, const QString &text, const QString &wikiLink, const QString &text2 = QString(), const QString &flagFile = QString());
 	
 	signals:
 		void deleteMe();
 
 	protected:
 		void mousePressEvent(QMouseEvent *);
+		bool eventFilter(QObject *obj, QEvent *ev);
+
+	private:
+		QString wikipedia;
+		QLabel *wiki;
 };
 
 #endif

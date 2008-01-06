@@ -10,19 +10,35 @@
 
 #include "mypopup.h"
 
+#include <kiconloader.h>
+#include <klocale.h>
+#include <ktoolinvocation.h>
+
+#include <qevent.h>
 #include <qlabel.h>
 #include <qlayout.h>
 #include <qimage.h>
-#include <qpixmap.h>
 
-myPopup::myPopup(QWidget *parent, const QString &text, const QString &text2, const QString &flagFile) : QFrame(parent, Qt::FramelessWindowHint)
+myPopup::myPopup(QWidget *parent, const QString &text, const QString &wikiLink, const QString &text2, const QString &flagFile) : QFrame(parent, Qt::FramelessWindowHint)
 {
+	wikipedia = wikiLink;
 	QHBoxLayout *lay = new QHBoxLayout(this);
 	lay -> setMargin(4);
 	lay -> setSpacing(4);
 	
+	if (!wikiLink.isEmpty())
+	{
+		wiki = new QLabel(this);
+		lay -> addWidget(wiki);
+		wiki -> setPixmap(SmallIcon( "dialog-information" ));
+		wiki -> setToolTip(i18n("Wikipedia page"));
+		wiki -> setAlignment(Qt::AlignCenter);
+		wiki -> installEventFilter(this);
+	}
+	
 	QWidget *vbox = new QWidget(this);
 	lay -> addWidget(vbox);
+	
 	QVBoxLayout *vboxLayout = new QVBoxLayout(vbox);
 	vboxLayout -> setMargin(0);
 	vboxLayout -> setSpacing(0);
@@ -63,4 +79,23 @@ void myPopup::mousePressEvent(QMouseEvent *)
 	emit deleteMe();
 }
 
+bool myPopup::eventFilter(QObject *obj, QEvent *event)
+{
+	if (obj == wiki)
+	{
+		
+		if (event -> type() == QEvent::MouseButtonPress)
+		{
+			KToolInvocation::invokeBrowser(wikipedia);
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	emit deleteMe();
+
+	return false;
+}
 #include "mypopup.moc"

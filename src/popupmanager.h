@@ -28,13 +28,13 @@ Q_OBJECT
 		void setWidget(QWidget *w);
 
 		// shows text at p and the flag
-		void show(const QString &text, const QString &text2, const QPoint &p, const QString &flagFile);
+		void show(const QString &text, const QString &wikiLink, const QString &text2, const QPoint &p, const QString &flagFile);
 	
 		// shows text at p
-		void show(const QString &text, const QString &text2, const QPoint &p);
+		void show(const QString &text, const QString &wikiLink, const QString &text2, const QPoint &p);
 		
 		// shows text at p
-		void show(const QString &text, const QPoint &p);
+		void show(const QString &text, const QString &wikiLink, const QPoint &p);
 		
 	public slots:
 		void clear();
