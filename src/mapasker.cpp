@@ -29,17 +29,8 @@ static QString guessWikipediaDomain()
     if ( lang.isEmpty() || lang == "POSIX" || lang == "C" )
         code = "en";
     else {
-
-        int index = lang.indexOf( '_' );
-        if ( index != -1 ) {
-            code = lang.left( index );
-        } else {
-            index = lang.indexOf( '@' );
-            if ( index != -1 )
-                code = lang.left( index );
-            else
-                code = lang;
-        }
+        QString dummy;
+        KLocale::splitLocale(lang, code, dummy, dummy, dummy);
     }
 
     return QString( "http://%1.wikipedia.org/wiki/" ).arg( code );
