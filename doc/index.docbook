@@ -20,6 +20,14 @@
 </personname>
 <email>&Anne-Marie.Mahfouf.mail;</email>
 </author>
+<author>
+<personname>
+<firstname>Kushal</firstname>
+<surname>Das</surname>
+</personname>
+<email>kushaldas@gmail.com</email>
+</author>
+
 <!-- TRANS:ROLES_OF_TRANSLATORS -->
 </authorgroup>
 
@@ -29,10 +37,15 @@
 <holder>&Anne-Marie.Mahfouf;</holder>
 </copyright>
 
+<copyright>
+<year>2008</year>
+<holder>Kushal Das</holder>
+</copyright>
+
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2005-08-02</date>
-<releaseinfo>0.5</releaseinfo>
+<date>2008-01-07</date>
+<releaseinfo>0.6</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -146,7 +159,7 @@ You can then choose what type of learning or testing you want to do by looking a
 </screenshot>
 </para>
 <para>
-Explore Map: a &LMB; click on an area of the map will display informations about that area:
+Explore Map: a &LMB; click on an area of the map will display informations about that area, if you click on the small info icon on the popmap, it will open the wikipedia page for that division in the system's default browser:
 <screenshot>
 <screeninfo>Browse the map</screeninfo>
 	<mediaobject>
@@ -312,7 +325,7 @@ Flags of Provices or Territories: a province name is given and you must find the
 	  </textobject>
 	</mediaobject>
 </screenshot>
-While in zoom mode, you can press &RMB; to go back to the original map size (the <guimenuitem>Original Size</guimenuitem> action has the same effect). Use the scroll bars to move around the zoomed map or use the <guimenuitem>Move</guimenuitem> action that will allow you to drag the map using &LMB;. The <guimenuitem>Automatic Zoom</guimenuitem> feature will make the map as big as possible.
+You can click the <guimenuitem>Zoom</guimenuitem> and then draw a rectangle to zoom in a part of the map. While in zoom mode, you can press &RMB; to go back to the original map size (the <guimenuitem>Original Size</guimenuitem> action has the same effect). Use the scroll bars to move around the zoomed map or use the <guimenuitem>Move</guimenuitem> action that will allow you to drag the map using &LMB;. The <guimenuitem>Automatic Zoom</guimenuitem> feature will make the map as big as possible.
 </para>
 
 </sect1>
@@ -331,6 +344,9 @@ guide the parent/teacher on how to help the child using it.
 <title>Helper tool</title>
 <para>
 You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a tool (made by Yann Verley) which helped him with the map of France. To find out its usage, simply execute it and read the help message. It basically creates the <literal role="extension">.kgm</literal> file from a plain text file and creates a file with the colors it has assigned to each division, so you can fill the map according to them.</para>
+<para>
+There is another tool colorchecker.py written by Albert Astals Cid. You need PyQt4 to run this. Just run this with the .kgm filename as argument (you also need the .png file of the map in the same folder). This will tell you if any pixel on the map has a different color which is not defined in the .kgm (description) file.
+</para>
 </sect1>
 <sect1 id="description-file">
 <title>Description file</title>
@@ -393,7 +409,7 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
 </para>
 <tip>
  <para>
- It is convenient to create 2 or 3 false divisions like <quote>Water</quote>, <quote>Frontier</quote> and <quote>Coast</quote> and set them with the <sgmltag class="starttag">ignore</sgmltag> tag set to <userinput>yes</userinput>.
+ It is convenient to create 2 or 3 false divisions like <quote>Water</quote>, <quote>Frontier</quote> and <quote>Coast</quote> and set them with the <sgmltag class="starttag">ignore</sgmltag> tag set to <userinput>yes</userinput>. Don't forget <userinput>not to set</userinput> color for any <quote>Frontier</quote> 0,0,0 in RGB. Please make it something like 1,1,1 so that a border outline comes while placing any division on the map.
  </para>
 </tip>
  <important>
@@ -431,6 +447,11 @@ You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a
  <para>
  If you don't know which is your <filename class="directory">$<envar>KDEDIR</envar></filename>, type <userinput><command>kde-config</command> <option>--prefix</option></userinput> in a shell.
 </para>
+<tip>
+<para>
+Use the colorchecker.py tool from the helper tools to check if any extra color left on the map which is not defined on the .kgm file. 
+</para>
+</tip>
 </sect1>
 <sect1 id="non-political-maps">
 <title>Non political maps</title>
@@ -622,12 +643,13 @@ distribution. -->
 &kgeography;
 </para>
 <para>
-Program copyright 2004-2005 Albert Astals Cid <email>tsdgeos@terra.es</email>
+Program copyright 2004-2008 Albert Astals Cid <email>tsdgeos@terra.es</email>
 </para>
 
 
 <para>
 Documentation Copyright &copy; 2005 &Anne-Marie.Mahfouf; <email>&Anne-Marie.Mahfouf.mail;</email>
+                               2008 Kushal Das <email>kushaldas@gmail.com</email>
 </para>
 
 <!-- TRANS:CREDIT_FOR_TRANSLATORS -->
