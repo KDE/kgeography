@@ -62,5 +62,5 @@ void capitalDivisionAsker::setAnswerHook(int userSays)
 QString capitalDivisionAsker::getQuestionHook() const
 {
 	QString divisionType = i18nc(p_map -> getFileName().toUtf8(), p_map->getDivisionsString().toUtf8());
-	return i18nc("@title", "%1 From Its Capital", divisionType);
+	return i18nc("@title", "%1 by Capital", divisionType);
 }

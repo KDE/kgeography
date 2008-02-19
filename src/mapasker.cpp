@@ -158,7 +158,8 @@ void mapAsker::nextQuestionHook(const QString &division)
 
 QString mapAsker::getQuestionHook() const
 {
-	return i18nc("@title", "Division in Map");
+        QString divisionType = i18nc(p_map -> getFileName().toUtf8(), p_map->getDivisionsString().toUtf8());
+        return i18nc("@title", "%1 in Map", divisionType);
 }
 
 void mapAsker::showEvent(QShowEvent *)
