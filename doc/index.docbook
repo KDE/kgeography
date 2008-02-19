@@ -18,7 +18,7 @@
 <firstname>Anne-Marie</firstname>
 <surname>Mahfouf</surname>
 </personname>
-<email>&Anne-Marie.Mahfouf.mail;</email>
+&Anne-Marie.Mahfouf.mail;
 </author>
 <author>
 <personname>
@@ -173,7 +173,7 @@ Explore Map: a &LMB; click on an area of the map will display informations about
 </screenshot>
 </para>
 <para>
-Location of Provices or Territories: you are first asked how many questions you want
+Location of Provinces or Territories: you are first asked how many questions you want
 <screenshot>
 <screeninfo>How many questions</screeninfo>
 	<mediaobject>
@@ -215,7 +215,7 @@ When you finish all the questions, a result dialog is shown with your correct an
 </screenshot>
 </para>
 <para>
-Place Provices or Territories in the Map: the cursor takes the shape of a province and you have to place it in the map:
+Place Provinces or Territories in the Map: the cursor takes the shape of a province and you have to place it in the map:
 <screenshot>
 <screeninfo>Place a division in the map</screeninfo>
 	<mediaobject>
@@ -229,7 +229,7 @@ Place Provices or Territories in the Map: the cursor takes the shape of a provin
 </screenshot>
 </para>
 <para>
-Provices or Territories by Capital: you are asked to find the name of a province among a choice of 4 given its capital:
+Provinces or Territories by Capital: you are asked to find the name of a province among a choice of 4 given its capital:
 <screenshot>
 <screeninfo>Guess a division from its capital</screeninfo>
 	<mediaobject>
@@ -257,10 +257,10 @@ And the results are displayed when the test is finished:
 </screenshot>
 </para>
 <para>
-Capitals of Provices or Territories: you have a capital and four province names and you must choose the correct one. As before, at the end a result dialog is shown.
+Capitals of Provinces or Territories: you have a capital and four province names and you must choose the correct one. As before, at the end a result dialog is shown.
 </para>
 <para>
-Provices or Territories by Flag: a flag is shown and you must find the province it belongs to.
+Provinces or Territories by Flag: a flag is shown and you must find the province it belongs to.
 <screenshot>
 <screeninfo>the flag question</screeninfo>
 	<mediaobject>
@@ -274,7 +274,7 @@ Provices or Territories by Flag: a flag is shown and you must find the province 
 </screenshot>
 </para>
 <para>
-Flags of Provices or Territories: a province name is given and you must find the correct flag among four.
+Flags of Provinces or Territories: a province name is given and you must find the correct flag among four.
 <screenshot>
 <screeninfo>match the flag with the province</screeninfo>
 	<mediaobject>
@@ -363,7 +363,7 @@ There is another tool colorchecker.py written by Albert Astals Cid. You need PyQ
   <para><sgmltag class="starttag">name</sgmltag> and <sgmltag class="endtag">name</sgmltag>: the name of map, &eg; <quote>Europe</quote>.</para>
 </listitem>
 <listitem>
-  <para><sgmltag class="starttag">divisionsName</sgmltag> and <sgmltag class="endtag">divisionsName</sgmltag>: the name general name of divisions in this map, that is, Provinces, States, Countries, etc.</para>
+  <para><sgmltag class="starttag">divisionsName</sgmltag> and <sgmltag class="endtag">divisionsName</sgmltag>: the general name of divisions in this map, that is, Provinces, States, Countries, etc.</para>
 </listitem>
 <listitem>
   <para>A <sgmltag class="starttag">division</sgmltag> and <sgmltag class="endtag">division</sgmltag> for each division in the map.</para>
@@ -380,7 +380,7 @@ There is another tool colorchecker.py written by Albert Astals Cid. You need PyQ
   <para><sgmltag class="starttag">capital</sgmltag> and <sgmltag class="endtag">capital</sgmltag>: the name of the capital of the division, &eg; <quote>Tirana</quote>.</para>
 </listitem>
 <listitem>
-	<para><sgmltag class="starttag">ignore</sgmltag> and <sgmltag class="endtag">ignore</sgmltag>: can be set to <userinput>yes</userinput>, <userinput>allowClickMode</userinput>, <userinput>allowClickFlagMode</userinput> and <userinput>no</userinput>. If this tag is set to <userinput>yes</userinput> then the division will be ignored when asking for divisions in that map. It is then as if this division does not exist in &kgeography; quiz modes. If this tag is set to <userinput>allowClickMode</userinput> then &kgeography; will ask for the division in the <guibutton>Click Division in Map...</guibutton> mode but not in other quiz modes. If this tag is set to <userinput>allowClickFlagMode</userinput> then &kgeography; will ask for the division in the <guibutton>Click Division in Map...</guibutton> mode and in the flag related quizes but not in other quiz modes. Setting this tag to <userinput>no</userinput> means the division will appear in all modes (browse and quizzes). This tag is optional and when there is no <sgmltag class="starttag">ignore</sgmltag> tag that means as it is set to <userinput>no</userinput>. For example <quote>Algeria</quote> has this tag set to <userinput>yes</userinput> in the <quote>Europe</quote> map which means that <quote>Algeria</quote> will not be part of any quiz in the <quote>Europe</quote> map.</para>
+	<para><sgmltag class="starttag">ignore</sgmltag> and <sgmltag class="endtag">ignore</sgmltag>: can be set to <userinput>yes</userinput>, <userinput>allowClickMode</userinput>, <userinput>allowClickFlagMode</userinput> and <userinput>no</userinput>. If this tag is set to <userinput>yes</userinput> then the division will be ignored when asking for divisions in that map. It is then as if this division does not exist in &kgeography; quiz modes. If this tag is set to <userinput>allowClickMode</userinput> then &kgeography; will ask for the division in the <guibutton>Location of ...</guibutton> mode but not in other quiz modes. If this tag is set to <userinput>allowClickFlagMode</userinput> then &kgeography; will ask for the division in the <guibutton>Location of ...</guibutton> mode and in the flag related quizes but not in other quiz modes. Setting this tag to <userinput>no</userinput> means the division will appear in all modes (browse and quizzes). This tag is optional and when there is no <sgmltag class="starttag">ignore</sgmltag> tag that means as it is set to <userinput>no</userinput>. For example <quote>Algeria</quote> has this tag set to <userinput>yes</userinput> in the <quote>Europe</quote> map which means that <quote>Algeria</quote> will not be part of any quiz in the <quote>Europe</quote> map.</para>
 </listitem>
 <listitem>
   <para><sgmltag class="starttag">flag</sgmltag> and <sgmltag class="endtag">flag</sgmltag>: the file (without any path) containing the flag of the division, &eg; <quote>albania.png</quote>. This tag is optional. Not needed for the divisions whose <sgmltag class="starttag">ignore</sgmltag> tag is set to <userinput>yes</userinput>.</para>
@@ -420,7 +420,7 @@ There is another tool colorchecker.py written by Albert Astals Cid. You need PyQ
 <title>Map file</title>
 <para>
  The map file is quite simple but laborious to create. It has to be in <acronym>PNG</acronym> format.
- You can find some maps to transform at <ulink url="https://www.cia.gov/cia/publications/factbook/docs/refmaps.html">Cia Reference Maps</ulink>. If no map fits your needs you can download the <ulink url="https://www.cia.gov/cia/publications/factbook/reference_maps/pdf/political_world.pdf">political world map</ulink>, take a screenshot of it and work from it.
+ You can find some maps to transform at <ulink url="https://www.cia.gov/library/publications/the-world-factbook/docs/refmaps.html">Cia Reference Maps</ulink>. If no map fits your needs you can download the <ulink url="https://www.cia.gov/library/publications/the-world-factbook/reference_maps/pdf/political_world.pdf">political world map</ulink>, take a screenshot of it and work from it.
  Each division in the map should have one and only one color. To achieve this you can use image processing programs like <application>The Gimp</application> and <application>Kolourpaint</application>.
 </para>
 </sect1>
@@ -561,7 +561,7 @@ or menu bars. -->
 <varlistentry>
 <term><menuchoice>
 <guimenu>Settings</guimenu>
-<guimenuitem>Show/Hide Toolbar</guimenuitem>
+<guimenuitem>Show Toolbar</guimenuitem>
 </menuchoice></term>
 <listitem><para><action>Show/Hide the &kgeography; toolbar.</action></para></listitem>
 </varlistentry>
@@ -648,7 +648,7 @@ Program copyright 2004-2008 Albert Astals Cid <email>tsdgeos@terra.es</email>
 
 
 <para>
-Documentation Copyright &copy; 2005 &Anne-Marie.Mahfouf; <email>&Anne-Marie.Mahfouf.mail;</email>
+Documentation Copyright &copy; 2005 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;
                                2008 Kushal Das <email>kushaldas@gmail.com</email>
 </para>
 
