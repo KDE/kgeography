@@ -356,19 +356,15 @@ void kgeography::setMap(KGmap *m)
 	delete p_map;
 	p_map = m;
 
-	QString filename=p_map->getFileName().toUtf8();
-	QString mapName=i18nc(filename, p_map->getName().toUtf8());
+	QString mapName = i18nc(p_map -> getFileName().toUtf8(), p_map -> getName().toUtf8());
+	QString divisionType = i18nc(p_map -> getFileName().toUtf8(), p_map->getDivisionsString().toUtf8());
 
-	QString divisionsName=p_map->getDivisionsString().toUtf8();
-	QString divisionType1=i18nc(filename+": "+divisionsName+" by Capital", divisionsName);
-        QString divisionType2=i18nc(filename+": Capitals of "+divisionsName, divisionsName);
-
-	p_askMap->setText(i18n("&Location of %1", divisionType2));
-	p_askPlaceMap->setText(i18n("&Place %1 in the Map", divisionType2));//NOTE is this kinda puzzle?
-	p_askCapitalDivisions->setText(i18n("%1 by Capital", divisionType1));
-	p_askDivisionCapitals->setText(i18n("&Capitals of %1", divisionType2));
-	p_askFlagDivisions->setText(i18n("%1 by Flag", divisionType1));
-	p_askDivisionFlags->setText(i18n("&Flags of %1", divisionType2));
+	p_askMap->setText(i18n("&Location of %1", divisionType));
+	p_askPlaceMap->setText(i18n("&Place %1 in the Map", divisionType));
+	p_askCapitalDivisions->setText(i18n("%1 by Capital", divisionType));
+	p_askDivisionCapitals->setText(i18n("&Capitals of %1", divisionType));
+	p_askFlagDivisions->setText(i18n("%1 by Flag", divisionType));
+	p_askDivisionFlags->setText(i18n("&Flags of %1", divisionType));
 
 	p_currentMap -> setText(i18n("<qt>Current map:<br /><b>%1</b></qt>", mapName));
 	p_consult -> setEnabled(true);
