@@ -81,7 +81,12 @@ int main(int argc, char *argv[])
 			}
 			else if (n.nodeName() == "divisionsName")
 			{
-				os << "i18nc(\"" << *it << "\", \"" << n.firstChild().nodeValue() << "\");\n";
+				//this is needed at least for Russian and Ukrainian because
+				//1) they have grammatical cases
+				//1) they allow only first word to be with a capital letter in titles
+				QString divisionsName=n.firstChild().nodeValue();
+				os << "i18nc(\""<<*it<<": "<<divisionsName<<" by Capital\", \"" << divisionsName << "\");\n";
+				os << "i18nc(\""<<*it<<": Capitals of "<<divisionsName<<"\", \"" << divisionsName << "\");\n";
 			}
 		}
 		
