@@ -106,6 +106,16 @@ void mapWidget::mousePressEvent(QMouseEvent *e)
 			}
 		}
 	}
+	else if (e -> button() == Qt::MidButton)
+	{
+		p_modeBeforeMidClick = p_mode;
+		p_mode = WantMove;
+		updateActions();
+		p_prev = e->pos();
+		setCursor(Qt::SizeAllCursor);
+		p_mode = Moving;
+		updateActions();
+	}
 	else if ( p_mode == WantZoom )
 	{
 		setOriginalImage();
@@ -136,7 +146,7 @@ void mapWidget::mouseMoveEvent(QMouseEvent *e)
 	}
 }
 
-void mapWidget::mouseReleaseEvent(QMouseEvent *)
+void mapWidget::mouseReleaseEvent(QMouseEvent *e)
 {
 	if ( p_mode == Zooming )
 	{
@@ -150,7 +160,12 @@ void mapWidget::mouseReleaseEvent(QMouseEvent *)
 	else if ( p_mode == Moving )
 	{
 		unsetCursor();
-		p_mode = WantMove;
+		if ( e -> button() == Qt::MidButton )
+		{
+			p_mode = p_modeBeforeMidClick;
+			updateActions();
+		}
+		else p_mode = WantMove;
 	}
 }
 

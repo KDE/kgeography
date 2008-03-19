@@ -54,7 +54,7 @@ Q_OBJECT
 		void updateZoom();
 		
 		enum Mode { Zooming, WantZoom, Moving, WantMove, None };
-		Mode p_mode;
+		Mode p_mode, p_modeBeforeMidClick;
 		QImage p_originalImage;
 		QPixmap p_originalPixmap;
 		QGraphicsRectItem *p_zoomRect;
