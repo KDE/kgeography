@@ -13,6 +13,7 @@
 #include "placeasker.h"
 
 #include <cmath>
+#include <math.h>
 
 #include <klocale.h>
 #include <kmessagebox.h>
@@ -102,7 +103,7 @@ void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint
 		p_currentAnswer.setAnswer(QColor(c));
 		double distX = p_currentDivisionRect.center().x() - mapPoint.x();
 		double distY = p_currentDivisionRect.center().y() - mapPoint.y();
-		double distance = sqrt(distX * distX + distY * distY); 
+		double distance = sqrt((double)distX * distX + distY * distY); 
 		// TODO: See if 5 is big enough or we should take into account the division size or what
 		questionAnswered(distance < 5.0);
 		nextQuestion();
