@@ -1,0 +1,90 @@
+<map>
+	<mapFile>north_korea.png</mapFile>
+	<name>North (Korea)</name>
+    <divisionsName>Provinces</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not North (Korea)</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Chagang</name>
+		<capital>Chagang-do</capital>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>North Hamgyŏng</name>
+		<capital>Hamgyŏng-pukto</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>South Hamgyŏng</name>
+		<capital>Hamgyŏng-namdo</capital>
+		<color><red>128</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>North Hwanghae</name>
+		<capital>Hwanghae-pukto</capital>
+		<color><red>255</red><green>0</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>South Hwanghae</name>
+		<capital>Hwanghae-namdo</capital>
+		<color><red>127</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Kangwŏn</name>
+		<capital>Kangwŏndo</capital>
+		<color><red>255</red><green>128</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>North P'yŏngan</name>
+		<capital>P'yŏngan-pukto</capital>
+		<color><red>0</red><green>255</green><blue>127</blue></color>
+	</division>
+	<division>
+		<name>South P'yŏngan</name>
+		<capital>P'yŏngan-namdo</capital>
+		<color><red>0</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Ryanggang</name>
+		<capital>Ryanggang-do</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Kaesŏng Industrial Region</name>
+		<capital>Kaesŏng Kong-ŏp Chigu</capital>
+		<color><red>255</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Kŭmgangsan Tourist Region</name>
+		<capital>Kŭmgangsan Kwangwang Chigu</capital>
+		<color><red>255</red><green>191</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Sinŭiju Special Administrative Region</name>
+		<capital>Sinŭiju T'ŭkpyŏl Haengjŏnggu</capital>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>P'yŏngyang</name>
+		<capital>P'yŏngyang Chikhalsi</capital>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Rasŏn (Rajin-Sŏnbong)</name>
+		<capital>Rasŏn (Rajin-Sŏnbong) Chikhalsi</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+</map>

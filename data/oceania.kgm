@@ -1,0 +1,200 @@
+<map>
+	<mapFile>oceania.png</mapFile>
+	<name>Oceania</name>
+    <divisionsName>Countries</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Oceania</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Australia</name>
+		<capital>Canberra</capital>
+		<flag>australia.png</flag>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Norfolk island (Australia)</name>
+		<capital>Kingston</capital>
+		<flag>norfolk_island.png</flag>
+		<color><red>255</red><green>128</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>New Zealand</name>
+		<capital>Wellington</capital>
+		<flag>new_zealand.png</flag>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Cook islands (New Zealand)</name>
+		<capital>Avarua</capital>
+		<flag>cook_islands.png</flag>
+		<color><red>255</red><green>191</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Niue (New Zealand)</name>
+		<capital>Alofi</capital>
+		<flag>niue.png</flag>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Tokelau (New Zealand)</name>
+		<ignore>allowClickMode</ignore>
+		<flag>tokelau.png</flag>
+		<color><red>255</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>East Timor</name>
+		<capital>Dili</capital>
+		<flag>easttimor.png</flag>
+		<color><red>128</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Easter Island</name>
+		<capital>Hanga Roa</capital>
+		<flag>easter_island.png</flag>
+		<color><red>191</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Fiji</name>
+		<capital>Suva</capital>
+		<flag>fiji.png</flag>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Indonesia</name>
+		<capital>Jakarta</capital>
+		<flag>indonesia.png</flag>
+		<color><red>128</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Papua New Guinea</name>
+		<capital>Port Moresby</capital>
+		<flag>papua_new_guinea.png</flag>
+		<color><red>0</red><green>255</green><blue>127</blue></color>
+	</division>
+	<division>
+		<name>Solomon Islands</name>
+		<capital>Honiara</capital>
+		<flag>solomon_islands.png</flag>
+		<color><red>128</red><green>255</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Vanuatu</name>
+		<capital>Port Vila</capital>
+		<flag>vanuatu.png</flag>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Federated States of Micronesia</name>
+		<capital>Palikir</capital>
+		<flag>micronesia.png</flag>
+		<color><red>128</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Kiribati</name>
+		<capital>South Tarawa</capital>
+		<flag>kiribati.png</flag>
+		<color><red>0</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Marshall Islands</name>
+		<capital>Majuro</capital>
+		<flag>marshall_islands.png</flag>
+		<color><red>128</red><green>191</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Nauru</name>
+		<capital>Yaren</capital>
+		<flag>nauru.png</flag>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Palau</name>
+		<capital>Melekeok</capital>
+		<flag>palau.png</flag>
+		<color><red>128</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>New Caledonia (France)</name>
+		<capital>Noumea</capital>
+		<flag>new_caledonia.png</flag>
+		<color><red>127</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>French Polynesia (France)</name>
+		<capital>Papeete</capital>
+		<flag>french_polynesia.png</flag>
+		<color><red>191</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Wallis and Futuna (France)</name>
+		<capital>Mata Utu</capital>
+		<flag>wallis_and_futuna.png</flag>
+		<color><red>255</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Samoa</name>
+		<capital>Apia</capital>
+		<flag>samoa.png</flag>
+		<color><red>255</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Tonga</name>
+		<capital>Nuku'alofa</capital>
+		<flag>tonga.png</flag>
+		<color><red>255</red><green>0</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Tuvalu</name>
+		<capital>Funafuti</capital>
+		<flag>tuvalu.png</flag>
+		<color><red>255</red><green>128</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Pitcairn islands (United Kingdom)</name>
+		<capital>Adamstown</capital>
+		<flag>pitcairn_islands.png</flag>
+		<color><red>212</red><green>43</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>Hawai (USA)</name>
+		<capital>Honolulu</capital>
+		<flag>usa_hawaii.png</flag>
+		<color><red>234</red><green>149</green><blue>149</blue></color>
+	</division>
+	<division>
+		<name>American Samoa (USA)</name>
+		<capital>Pago Pago</capital>
+		<flag>american_samoa.png</flag>
+		<color><red>212</red><green>128</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>Guam (USA)</name>
+		<capital>Hagåtña</capital>
+		<flag>guam.png</flag>
+		<color><red>234</red><green>191</green><blue>149</blue></color>
+	</division>
+	<division>
+		<name>Northern Mariana islands (USA)</name>
+		<capital>Saipan</capital>
+		<flag>northern_mariana_islands.png</flag>
+		<color><red>212</red><green>212</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>United States Minor Outlying Islands</name>
+		<ignore>allowClickMode</ignore>
+		<flag>usa.png</flag>
+		<color><red>234</red><green>234</green><blue>149</blue></color>
+	</division>
+</map>

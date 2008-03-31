@@ -1,0 +1,110 @@
+<map>
+	<mapFile>iraq.png</mapFile>
+	<name>Iraq</name>
+    <divisionsName>Provinces</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Iraq</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Baghdad</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Salah ad Din</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>85</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Diyala</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>170</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Wasit</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Maysan</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>170</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Al Basrah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>85</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Dhi Qar</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Al Muthanna</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Al-Qādisiyyah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>255</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Babil</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Karbala</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>170</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>An Najaf</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Al Anbar</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Ninawa</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>85</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Dahuk</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>170</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Arbil</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>At Ta'mim (Kirkuk)</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>0</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>As Sulaymaniyah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>0</green><blue>85</blue></color>
+	</division>
+</map>

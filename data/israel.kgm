@@ -1,0 +1,50 @@
+<map>
+	<mapFile>israel.png</mapFile>
+	<name>Israel</name>
+    <divisionsName>Districts</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Israel</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Jerusalem</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Northern</name>
+		<capital>Nazareth</capital>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Haifa</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Center</name>
+		<capital>Ramla</capital>
+		<color><red>85</red><green>255</green><blue>182</blue></color>
+	</division>
+	<division>
+		<name>Tel Aviv</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>85</red><green>182</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Southern</name>
+		<capital>Beersheba</capital>
+		<color><red>134</red><green>85</green><blue>255</blue></color>
+	</division>
+</map>

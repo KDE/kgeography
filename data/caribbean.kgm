@@ -1,0 +1,176 @@
+<map>
+	<mapFile>caribbean.png</mapFile>
+	<name>Caribbean</name>
+    <divisionsName>Countries</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Caribbean</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Bahamas</name>
+		<capital>Nassau</capital>
+		<flag>bahamas.png</flag>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Turks and Caicos Islands (UK)</name>
+		<capital>Cockburn Town</capital>
+		<flag>turk_and_caicos_islands.png</flag>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Cuba</name>
+		<capital>Havana</capital>
+		<flag>cuba_3x2.png</flag>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Haiti</name>
+		<capital>Port-au-Prince</capital>
+		<flag>haiti.png</flag>
+		<color><red>128</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Dominican Republic</name>
+		<capital>Santo Domingo</capital>
+		<flag>dominicanrepublic.png</flag>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Puerto Rico (USA)</name>
+		<capital>San Juan</capital>
+		<flag>puerto_rico.png</flag>
+		<color><red>0</red><green>255</green><blue>127</blue></color>
+	</division>
+	<division>
+		<name>U.S Virgin Islands (USA)</name>
+		<capital>Charlotte Amalie</capital>
+		<flag>us_virgin_islands.png</flag>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>British Virgin Islands (UK)</name>
+		<capital>Road Town</capital>
+		<flag>british_virgin_islands.png</flag>
+		<color><red>0</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Anguilla (UK)</name>
+		<capital>The Valley</capital>
+		<flag>anguilla.png</flag>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Saint Martin (France)</name>
+		<capital>Marigot</capital>
+		<flag>france.png</flag>
+		<color><red>127</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Saint Barthelemy (France)</name>
+		<capital>Gustavia</capital>
+		<flag>france.png</flag>
+		<color><red>255</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Antigua and Barbuda</name>
+		<capital>Saint John's</capital>
+		<flag>antigua_and_barbuda.png</flag>
+		<color><red>255</red><green>0</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Saint Kitts and Nevis</name>
+		<capital>Basseterre</capital>
+		<flag>st_kitts_and_nevis.png</flag>
+		<color><red>255</red><green>128</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Montserrat (UK)</name>
+		<capital>Plymouth</capital>
+		<flag>montserrat.png</flag>
+		<color><red>255</red><green>191</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Guadeloupe (France)</name>
+		<capital>Basse-Terre</capital>
+		<flag>france.png</flag>
+		<color><red>255</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Dominica</name>
+		<capital>Roseau</capital>
+		<flag>dominica.png</flag>
+		<color><red>191</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Martinique (France)</name>
+		<capital>Fort de France</capital>
+		<flag>martinique.png</flag>
+		<color><red>128</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Saint Lucia</name>
+		<capital>Castries</capital>
+		<flag>saint_lucia.png</flag>
+		<color><red>128</red><green>255</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Barbados</name>
+		<capital>Bridgetown</capital>
+		<flag>barbados.png</flag>
+		<color><red>128</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Saint Vincent and the Grenadines</name>
+		<capital>Kingstown</capital>
+		<flag>st_vincent_and_grenadines.png</flag>
+		<color><red>128</red><green>191</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Grenada</name>
+		<capital>Saint George's</capital>
+		<flag>grenada.png</flag>
+		<color><red>128</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Trinidad and Tobago</name>
+		<capital>Port of Spain</capital>
+		<flag>trinidad_tobago.png</flag>
+		<color><red>191</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Netherlands Antilles (NL)</name>
+		<capital>Willemstad</capital>
+		<flag>dutch_antilles.png</flag>
+		<color><red>255</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Aruba (NL)</name>
+		<capital>Oranjestad</capital>
+		<flag>aruba.png</flag>
+		<color><red>255</red><green>128</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Jamaica</name>
+		<capital>Kingston</capital>
+		<flag>jamaica.png</flag>
+		<color><red>212</red><green>43</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>Cayman Islands (UK)</name>
+		<capital>George Town</capital>
+		<flag>cayman_islands.png</flag>
+		<color><red>212</red><green>128</green><blue>43</blue></color>
+	</division>
+</map>

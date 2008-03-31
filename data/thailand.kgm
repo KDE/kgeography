@@ -1,0 +1,400 @@
+<map>
+	<mapFile>thailand.png</mapFile>
+	<name>Thailand</name>
+    <divisionsName>Provinces</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Thailand</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Chiang Mai</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>51</green><blue>51</blue></color>
+	</division>
+	<division>
+		<name>Chiang Rai</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>204</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Kamphaeng Phet</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>204</red><green>0</green><blue>102</blue></color>
+	</division>
+	<division>
+		<name>Lampang</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>204</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Lamphun</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>153</green><blue>51</blue></color>
+	</division>
+	<division>
+		<name>Mae Hong Son</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>153</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Nakhon Sawan</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>51</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Nan</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>255</green><blue>51</blue></color>
+	</division>
+	<division>
+		<name>Phayao</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>204</red><green>204</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Phetchabun</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>51</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Phichit</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>153</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Phitsanulok</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>204</red><green>255</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Phrae</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>255</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Sukhothai</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>102</red><green>204</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Tak</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>204</red><green>102</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Uthai Thani</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>153</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Uttaradit</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>153</red><green>255</green><blue>51</blue></color>
+	</division>
+	<division>
+		<name>Amnat Charoen</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>153</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Buri Ram</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>153</red><green>51</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Chaiyaphum</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>204</red><green>0</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Kalasin</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>51</red><green>51</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Khon Kaen</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>102</red><green>0</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Loei</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>204</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Maha Sarakham</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>153</red><green>153</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Mukdahan</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Nakhon Phanom</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>153</red><green>255</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Nakhon Ratchasima</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>204</red><green>153</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Nong Bua Lamphu</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>51</red><green>255</green><blue>51</blue></color>
+	</division>
+	<division>
+		<name>Nong Khai</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>204</green><blue>102</blue></color>
+	</division>
+	<division>
+		<name>Roi Et</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>0</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Sakon Nakhon</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>51</red><green>255</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Si Sa Ket</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>51</red><green>153</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Surin</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>153</red><green>204</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Ubon Ratchathani</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>102</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Udon Thani</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>153</red><green>255</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Yasothon</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>51</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Chachoengsao</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>204</red><green>242</green><blue>166</blue></color>
+	</division>
+	<division>
+		<name>Chanthaburi</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>229</red><green>230</green><blue>77</blue></color>
+	</division>
+	<division>
+		<name>Chon Buri</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>153</red><green>230</green><blue>77</blue></color>
+	</division>
+	<division>
+		<name>Prachin Buri</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>242</red><green>204</green><blue>166</blue></color>
+	</division>
+	<division>
+		<name>Rayong</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>102</red><green>179</green><blue>25</blue></color>
+	</division>
+	<division>
+		<name>Sa Kaeo</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>179</red><green>179</green><blue>25</blue></color>
+	</division>
+	<division>
+		<name>Trat</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>242</red><green>242</green><blue>166</blue></color>
+	</division>
+	<division>
+		<name>Ang Thong</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>166</red><green>242</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Phra Nakhon Si Ayutthaya</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>77</red><green>230</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Bangkok</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>77</red><green>230</green><blue>77</blue></color>
+	</division>
+	<division>
+		<name>Chainat</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>179</red><green>25</green><blue>25</blue></color>
+	</division>
+	<division>
+		<name>Kanchanaburi</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>77</red><green>229</green><blue>230</blue></color>
+	</division>
+	<division>
+		<name>Lop Buri</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>242</red><green>166</green><blue>166</blue></color>
+	</division>
+	<division>
+		<name>Nakhon Nayok</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>230</red><green>153</green><blue>77</blue></color>
+	</division>
+	<division>
+		<name>Nakhon Pathom</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>25</red><green>102</green><blue>179</blue></color>
+	</division>
+	<division>
+		<name>Nonthaburi</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>166</red><green>242</green><blue>166</blue></color>
+	</division>
+	<division>
+		<name>Pathum Thani</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>25</red><green>179</green><blue>102</blue></color>
+	</division>
+	<division>
+		<name>Phetchaburi</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>25</red><green>25</green><blue>179</blue></color>
+	</division>
+	<division>
+		<name>Prachuap Khiri Khan</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>77</red><green>77</green><blue>230</blue></color>
+	</division>
+	<division>
+		<name>Ratchaburi</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>166</red><green>242</green><blue>242</blue></color>
+	</division>
+	<division>
+		<name>Samut Prakan</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>25</red><green>179</green><blue>25</blue></color>
+	</division>
+	<division>
+		<name>Samut Sakhon</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>77</red><green>153</green><blue>230</blue></color>
+	</division>
+	<division>
+		<name>Samut Songkhram</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>166</red><green>204</green><blue>242</blue></color>
+	</division>
+	<division>
+		<name>Saraburi</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>179</red><green>102</green><blue>25</blue></color>
+	</division>
+	<division>
+		<name>Sing Buri</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>230</red><green>77</green><blue>77</blue></color>
+	</division>
+	<division>
+		<name>Suphan Buri</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>25</red><green>179</green><blue>179</blue></color>
+	</division>
+	<division>
+		<name>Chumphon</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>166</red><green>166</green><blue>242</blue></color>
+	</division>
+	<division>
+		<name>Krabi</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>178</red><green>25</green><blue>179</blue></color>
+	</division>
+	<division>
+		<name>Nakhon Si Thammarat</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>242</red><green>166</green><blue>242</blue></color>
+	</division>
+	<division>
+		<name>Narathiwat</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>230</red><green>179</green><blue>179</blue></color>
+	</division>
+	<division>
+		<name>Pattani</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>153</red><green>102</green><blue>51</blue></color>
+	</division>
+	<division>
+		<name>Phang Nga</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>153</red><green>77</green><blue>230</blue></color>
+	</division>
+	<division>
+		<name>Phatthalung</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>179</red><green>25</green><blue>102</blue></color>
+	</division>
+	<division>
+		<name>Phuket</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>204</red><green>166</green><blue>242</blue></color>
+	</division>
+	<division>
+		<name>Ranong</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>102</red><green>25</green><blue>179</blue></color>
+	</division>
+	<division>
+		<name>Satun</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>242</red><green>166</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Songkhla</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>153</red><green>51</green><blue>51</blue></color>
+	</division>
+	<division>
+		<name>Surat Thani</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>229</red><green>77</green><blue>230</blue></color>
+	</division>
+	<division>
+		<name>Trang</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>230</red><green>77</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Yala</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>204</red><green>102</green><blue>102</blue></color>
+	</division>
+</map>

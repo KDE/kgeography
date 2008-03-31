@@ -4,6 +4,7 @@ add_subdirectory(brazil)
 add_subdirectory(canada)
 add_subdirectory(colombia)
 add_subdirectory(estonia)
+add_subdirectory(france)
 add_subdirectory(germany)
 add_subdirectory(italy)
 add_subdirectory(peru)
@@ -191,6 +192,45 @@ install(FILES
    Monaco.png
    papua_new_guinea.png
    greenland.png
+   american_samoa.png
+   micronesia.png
+   samoa.png
+   cook_islands.png
+   nauru.png
+   solomon_islands.png
+   easter_island.png
+   new_caledonia.png
+   tokelau.png
+   east_timor.png
+   niue.png
+   tuvalu.png
+   french_polynesia.png
+   norfolk_island.png
+   vanuatu.png
+   guam.png
+   northern_mariana_islands.png
+   wallis_and_futuna.png
+   kiribati.png
+   palau.png
+   marshall_islands.png
+   pitcairn_islands.png
+   new_zealand.png
+   cayman_islands.png
+   aruba.png
+   dutch_antilles.png
+   grenada.png
+   st_vincent_and_grenadines.png
+   saint_lucia.png
+   martinique.png
+   montserrat.png
+   st_kitts_and_nevis.png
+   antigua_and_barbuda.png
+   anguilla.png
+   british_virgin_islands.png
+   us_virgin_islands.png
+   turk_and_caicos_islands.png
+   puerto_rico.png
+
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags)
 
 

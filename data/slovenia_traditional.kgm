@@ -1,0 +1,60 @@
+<map>
+	<mapFile>slovenia_traditional.png</mapFile>
+	<name>Slovenia (Traditional)</name>
+    <divisionsName>Regions</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Slovenia (Traditional)</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Upper Carniola</name>
+		<capital>Kranj</capital>
+		<color><red>85</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Styria</name>
+		<capital>Maribor</capital>
+		<color><red>85</red><green>127</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Prekmurje</name>
+		<capital>Murska Sobota</capital>
+		<color><red>255</red><green>85</green><blue>212</blue></color>
+	</division>
+	<division>
+		<name>Carinthia</name>
+		<capital>Dravograd</capital>
+		<color><red>170</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Inner Carniola</name>
+		<capital>Postojna</capital>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Lower Carniola</name>
+		<capital>Novo Mesto</capital>
+		<color><red>85</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Goriška</name>
+		<capital>Nova Gorica</capital>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Slovenian Istria</name>
+		<capital>Koper</capital>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+</map>

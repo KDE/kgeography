@@ -1,0 +1,340 @@
+<map>
+	<mapFile>vietnam.png</mapFile>
+	<name>Vietnam</name>
+    <divisionsName>Provinces</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Not Vietnam</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>An Giang</name>
+		<capital>Long Xuyen</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Bac Giang</name>
+		<capital>Bac Giang</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Bac Kan</name>
+		<capital>Bac Kan</capital>
+		<color><red>191</red><green>191</green><blue>64</blue></color>
+	</division>
+	<division>
+		<name>Bac Lieu</name>
+		<capital>Bac Lieu</capital>
+		<color><red>128</red><green>191</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Bac Ninh</name>
+		<capital>Bac Ninh</capital>
+		<color><red>223</red><green>159</green><blue>159</blue></color>
+	</division>
+	<division>
+		<name>Ba Ria-Vung Tau</name>
+		<capital>Vung Tau</capital>
+		<color><red>159</red><green>191</green><blue>223</blue></color>
+	</division>
+	<division>
+		<name>Ben Tre</name>
+		<capital>Ben Tre</capital>
+		<color><red>64</red><green>191</green><blue>127</blue></color>
+	</division>
+	<division>
+		<name>Binh Dinh</name>
+		<capital>Qui Nhon</capital>
+		<color><red>143</red><green>239</green><blue>239</blue></color>
+	</division>
+	<division>
+		<name>Binh Duong</name>
+		<capital>Thu Dau Mot</capital>
+		<color><red>239</red><green>143</green><blue>239</blue></color>
+	</division>
+	<division>
+		<name>Binh Phuoc</name>
+		<capital>Dong Xoai</capital>
+		<color><red>223</red><green>32</green><blue>223</blue></color>
+	</division>
+	<division>
+		<name>Binh Thuan</name>
+		<capital>Phan Thiet</capital>
+		<color><red>64</red><green>128</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Ca Mau</name>
+		<capital>Ca Mau</capital>
+		<color><red>223</red><green>191</green><blue>159</blue></color>
+	</division>
+	<division>
+		<name>Can Tho</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>191</red><green>223</green><blue>159</blue></color>
+	</division>
+	<division>
+		<name>Cao Bang</name>
+		<capital>Cao Bang</capital>
+		<color><red>255</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Dak Lak</name>
+		<capital>Buon Ma Thuot</capital>
+		<color><red>143</red><green>191</green><blue>239</blue></color>
+	</division>
+	<division>
+		<name>Dak Nong</name>
+		<capital>Gia Nghia</capital>
+		<color><red>191</red><green>143</green><blue>239</blue></color>
+	</division>
+	<division>
+		<name>Da Nang</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>32</red><green>223</green><blue>32</blue></color>
+	</division>
+	<division>
+		<name>Dien Bien</name>
+		<capital>Dien Bien Phu</capital>
+		<color><red>128</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Dong Nai</name>
+		<capital>Bien Hoa</capital>
+		<color><red>159</red><green>223</green><blue>223</blue></color>
+	</division>
+	<division>
+		<name>Dong Thap</name>
+		<capital>Cao Lanh</capital>
+		<color><red>191</red><green>64</green><blue>64</blue></color>
+	</division>
+	<division>
+		<name>Gia Lai</name>
+		<capital>PleiKu</capital>
+		<color><red>32</red><green>223</green><blue>223</blue></color>
+	</division>
+	<division>
+		<name>Ha Giang</name>
+		<capital>Ha Giang</capital>
+		<color><red>128</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Hai Duong</name>
+		<capital>Hai Duong</capital>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Hai Phong</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>128</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Ha Nam</name>
+		<capital>Phu Ly</capital>
+		<color><red>255</red><green>128</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Ha Noi</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Ha Tay</name>
+		<capital>Ha Dong</capital>
+		<color><red>255</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Ha Tinh</name>
+		<capital>Ha Tinh</capital>
+		<color><red>223</red><green>223</green><blue>32</blue></color>
+	</division>
+	<division>
+		<name>Hoa Binh</name>
+		<capital>Hoa Binh</capital>
+		<color><red>255</red><green>0</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Ho Chi Minh</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>64</red><green>191</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Hau Giang</name>
+		<capital>Vi Thanh</capital>
+		<color><red>128</red><green>191</green><blue>64</blue></color>
+	</division>
+	<division>
+		<name>Hung Yen</name>
+		<capital>Hung Yen</capital>
+		<color><red>191</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Khanh Hoa</name>
+		<capital>Nha Trang</capital>
+		<color><red>32</red><green>32</green><blue>223</blue></color>
+	</division>
+	<division>
+		<name>Kien Giang</name>
+		<capital>Rach Gia</capital>
+		<color><red>191</red><green>128</green><blue>64</blue></color>
+	</division>
+	<division>
+		<name>Kon Tum</name>
+		<capital>Kon Tum</capital>
+		<color><red>143</red><green>239</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Lai Chau</name>
+		<capital>Lai Chau</capital>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Lam Dong</name>
+		<capital>Da Lat</capital>
+		<color><red>127</red><green>32</green><blue>223</blue></color>
+	</division>
+	<division>
+		<name>Lang Son</name>
+		<capital>Lang Son</capital>
+		<color><red>255</red><green>128</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Lao Cai</name>
+		<capital>Lao Cai</capital>
+		<color><red>191</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Long An</name>
+		<capital>Tan An</capital>
+		<color><red>239</red><green>143</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Nam Dinh</name>
+		<capital>Nam Dinh</capital>
+		<color><red>223</red><green>32</green><blue>32</blue></color>
+	</division>
+	<division>
+		<name>Nghe An</name>
+		<capital>Vinh</capital>
+		<color><red>239</red><green>191</green><blue>143</blue></color>
+	</division>
+	<division>
+		<name>Ninh Binh</name>
+		<capital>Ninh Binh</capital>
+		<color><red>239</red><green>143</green><blue>143</blue></color>
+	</division>
+	<division>
+		<name>Ninh Thuan</name>
+		<capital>Phan Rang-Thap Cham</capital>
+		<color><red>143</red><green>143</green><blue>239</blue></color>
+	</division>
+	<division>
+		<name>Phu Tho</name>
+		<capital>Viet Tri</capital>
+		<color><red>255</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Phu Yen</name>
+		<capital>Tuy Hoa</capital>
+		<color><red>32</red><green>128</green><blue>223</blue></color>
+	</division>
+	<division>
+		<name>Quang Binh</name>
+		<capital>Dong Hoi</capital>
+		<color><red>239</red><green>239</green><blue>143</blue></color>
+	</division>
+	<division>
+		<name>Quang Nam</name>
+		<capital>Tam Ky</capital>
+		<color><red>143</red><green>239</green><blue>143</blue></color>
+	</division>
+	<division>
+		<name>Quang Ngai</name>
+		<capital>Quang Ngai</capital>
+		<color><red>32</red><green>223</green><blue>127</blue></color>
+	</division>
+	<division>
+		<name>Quang Ninh</name>
+		<capital>Ha Long</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Quang Tri</name>
+		<capital>Dong Ha</capital>
+		<color><red>128</red><green>223</green><blue>32</blue></color>
+	</division>
+	<division>
+		<name>Soc Trang</name>
+		<capital>Soc Trang</capital>
+		<color><red>223</red><green>223</green><blue>159</blue></color>
+	</division>
+	<division>
+		<name>Son La</name>
+		<capital>Son La</capital>
+		<color><red>0</red><green>255</green><blue>127</blue></color>
+	</division>
+	<division>
+		<name>Tay Ninh</name>
+		<capital>Tay Ninh</capital>
+		<color><red>223</red><green>32</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Thai Binh</name>
+		<capital>Thai Binh</capital>
+		<color><red>127</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Thai Nguyen</name>
+		<capital>Thai Nguyen</capital>
+		<color><red>255</red><green>191</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Thanh Hoa</name>
+		<capital>Thanh Hoa</capital>
+		<color><red>223</red><green>128</green><blue>32</blue></color>
+	</division>
+	<division>
+		<name>Thua Thien-Hue</name>
+		<capital>Hue</capital>
+		<color><red>191</red><green>239</green><blue>143</blue></color>
+	</division>
+	<division>
+		<name>Tien Giang</name>
+		<capital>My Tho</capital>
+		<color><red>159</red><green>223</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Tra Vinh</name>
+		<capital>Tra Vinh</capital>
+		<color><red>159</red><green>223</green><blue>159</blue></color>
+	</division>
+	<division>
+		<name>Tuyen Quang</name>
+		<capital>Tuyen Quang</capital>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Vinh Long</name>
+		<capital>Vinh Long</capital>
+		<color><red>64</red><green>191</green><blue>64</blue></color>
+	</division>
+	<division>
+		<name>Vinh Phuc</name>
+		<capital>Vinh Yen</capital>
+		<color><red>128</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Yen Bai</name>
+		<capital>Yen Bai</capital>
+		<color><red>128</red><green>255</green><blue>191</blue></color>
+	</division>
+</map>

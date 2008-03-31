@@ -1,0 +1,65 @@
+<map>
+	<mapFile>south_africa.png</mapFile>
+	<name>South Africa</name>
+    <divisionsName>Provinces</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Not South Africa</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Eastern Cape</name>
+		<capital>Bisho</capital>
+		<color><red>93</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Free State</name>
+		<capital>Bloemfontein</capital>
+		<color><red>0</red><green>255</green><blue>185</blue></color>
+	</division>
+	<division>
+		<name>Gauteng</name>
+		<capital>Johannesburg</capital>
+		<color><red>0</red><green>255</green><blue>46</blue></color>
+	</division>
+	<division>
+		<name>KwaZulu-Natal</name>
+		<capital>Pietermaritzburg</capital>
+		<color><red>232</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Mpumalanga</name>
+		<capital>Nelspruit</capital>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Limpopo</name>
+		<capital>Polokwane</capital>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Northern Cape</name>
+		<capital>Kimberley</capital>
+		<color><red>0</red><green>185</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>North West</name>
+		<capital>Mafikeng</capital>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Western Cape</name>
+		<capital>Cape Town</capital>
+		<color><red>0</red><green>46</green><blue>255</blue></color>
+	</division>
+</map>

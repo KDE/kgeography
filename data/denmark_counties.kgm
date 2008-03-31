@@ -1,0 +1,100 @@
+<map>
+	<mapFile>denmark_counties.png</mapFile>
+	<name>Denmark (Counties)</name>
+    <divisionsName>Counties</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Not Denmark (Counties)</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Copenhagen (city)</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>128</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Frederiksberg (city)</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Copenhagen (county)</name>
+		<capital>Glostrup</capital>
+		<color><red>255</red><green>191</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Frederiksborg</name>
+		<capital>Hillerød</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Roskilde</name>
+		<capital>Roskilde</capital>
+		<color><red>255</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>West Zealand</name>
+		<capital>Sorø</capital>
+		<color><red>85</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Storstrøm</name>
+		<capital>Næstved</capital>
+		<color><red>85</red><green>255</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Funen</name>
+		<capital>Odense</capital>
+		<color><red>85</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>South Jutland</name>
+		<capital>Aabenraa</capital>
+		<color><red>85</red><green>191</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Ribe</name>
+		<capital>Ribe</capital>
+		<color><red>85</red><green>127</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Vejle</name>
+		<capital>Vejle</capital>
+		<color><red>106</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Ringkjøbing</name>
+		<capital>Ringkøbing</capital>
+		<color><red>170</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Viborg</name>
+		<capital>Viborg</capital>
+		<color><red>234</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>North Jutland</name>
+		<capital>Ålborg</capital>
+		<color><red>255</red><green>85</green><blue>212</blue></color>
+	</division>
+	<division>
+		<name>Århus</name>
+		<capital>Århus</capital>
+		<color><red>255</red><green>85</green><blue>149</blue></color>
+	</division>
+	<division>
+		<name>Bornholm</name>
+		<capital>Rønne</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+</map>

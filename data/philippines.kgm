@@ -1,0 +1,425 @@
+<map>
+	<mapFile>philippines.png</mapFile>
+	<name>Philippines</name>
+    <divisionsName>Provinces</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Philippines</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Abra</name>
+		<capital>Bangued</capital>
+		<color><red>255</red><green>204</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Agusan del Norte</name>
+		<capital>Cabadbaran</capital>
+		<color><red>245</red><green>245</green><blue>163</blue></color>
+	</division>
+	<division>
+		<name>Agusan del Sur</name>
+		<capital>Prosperidad</capital>
+		<color><red>235</red><green>235</green><blue>71</blue></color>
+	</division>
+	<division>
+		<name>Aklan</name>
+		<capital>Kalibo</capital>
+		<color><red>214</red><green>214</green><blue>92</blue></color>
+	</division>
+	<division>
+		<name>Albay</name>
+		<capital>Legazpi City</capital>
+		<color><red>255</red><green>51</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Antique</name>
+		<capital>San Jose</capital>
+		<color><red>163</red><green>163</green><blue>41</blue></color>
+	</division>
+	<division>
+		<name>Apayao</name>
+		<capital>Kabugao</capital>
+		<color><red>255</red><green>153</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Aurora</name>
+		<capital>Baler</capital>
+		<color><red>153</red><green>255</green><blue>51</blue></color>
+	</division>
+	<division>
+		<name>Basilan</name>
+		<capital>Isabela City</capital>
+		<color><red>163</red><green>163</green><blue>245</blue></color>
+	</division>
+	<division>
+		<name>Bataan</name>
+		<capital>Balanga City</capital>
+		<color><red>153</red><green>255</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Batanes</name>
+		<capital>Basco</capital>
+		<color><red>204</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Batangas</name>
+		<capital>Batangas City</capital>
+		<color><red>153</red><green>153</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Benguet</name>
+		<capital>La Trinidad</capital>
+		<color><red>51</red><green>255</green><blue>51</blue></color>
+	</division>
+	<division>
+		<name>Biliran</name>
+		<capital>Naval</capital>
+		<color><red>184</red><green>20</green><blue>20</blue></color>
+	</division>
+	<division>
+		<name>Bohol</name>
+		<capital>Tagbilaran City</capital>
+		<color><red>163</red><green>41</green><blue>41</blue></color>
+	</division>
+	<division>
+		<name>Bukidnon</name>
+		<capital>Malaybalay City</capital>
+		<color><red>204</red><green>245</green><blue>163</blue></color>
+	</division>
+	<division>
+		<name>Bulacan</name>
+		<capital>Malolos</capital>
+		<color><red>0</red><green>102</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Cagayan</name>
+		<capital>Tuguegarao City</capital>
+		<color><red>255</red><green>51</green><blue>51</blue></color>
+	</division>
+	<division>
+		<name>Camarines Norte</name>
+		<capital>Daet</capital>
+		<color><red>153</red><green>51</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Camarines Sur</name>
+		<capital>Pili</capital>
+		<color><red>204</red><green>153</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Camiguin</name>
+		<capital>Mambajao</capital>
+		<color><red>102</red><green>184</green><blue>20</blue></color>
+	</division>
+	<division>
+		<name>Capiz</name>
+		<capital>Roxas City</capital>
+		<color><red>223</red><green>159</green><blue>96</blue></color>
+	</division>
+	<division>
+		<name>Catanduanes</name>
+		<capital>Virac</capital>
+		<color><red>204</red><green>0</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Cavite</name>
+		<capital>Trece Martires City</capital>
+		<color><red>51</red><green>51</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Cebu</name>
+		<capital>Cebu City</capital>
+		<color><red>245</red><green>163</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Compostela Valley</name>
+		<capital>Nabunturan</capital>
+		<color><red>184</red><green>184</green><blue>20</blue></color>
+	</division>
+	<division>
+		<name>Cotabato</name>
+		<capital>Kidapawan City</capital>
+		<color><red>71</red><green>235</green><blue>235</blue></color>
+	</division>
+	<division>
+		<name>Davao del Norte</name>
+		<capital>Tagum City</capital>
+		<color><red>20</red><green>184</green><blue>20</blue></color>
+	</division>
+	<division>
+		<name>Davao del Sur</name>
+		<capital>Digos City</capital>
+		<color><red>71</red><green>235</green><blue>71</blue></color>
+	</division>
+	<division>
+		<name>Davao Oriental</name>
+		<capital>Mati</capital>
+		<color><red>245</red><green>204</green><blue>163</blue></color>
+	</division>
+	<division>
+		<name>Eastern Samar</name>
+		<capital>Borongan</capital>
+		<color><red>255</red><green>51</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Guimaras</name>
+		<capital>Jordan</capital>
+		<color><red>214</red><green>153</green><blue>92</blue></color>
+	</division>
+	<division>
+		<name>Ifugao</name>
+		<capital>Lagawe</capital>
+		<color><red>255</red><green>255</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Ilocos Norte</name>
+		<capital>Laoag City</capital>
+		<color><red>204</red><green>102</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Ilocos Sur</name>
+		<capital>Vigan City</capital>
+		<color><red>255</red><green>153</green><blue>51</blue></color>
+	</division>
+	<division>
+		<name>Iloilo</name>
+		<capital>Iloilo City</capital>
+		<color><red>235</red><green>204</green><blue>173</blue></color>
+	</division>
+	<division>
+		<name>Isabela [1]</name>
+		<capital>Ilagan</capital>
+		<color><red>102</red><green>204</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Kalinga</name>
+		<capital>Tabuk</capital>
+		<color><red>204</red><green>204</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>La Union</name>
+		<capital>San Fernando City</capital>
+		<color><red>153</red><green>255</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Laguna</name>
+		<capital>Santa Cruz</capital>
+		<color><red>0</red><green>0</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Lanao del Norte</name>
+		<capital>Tubod</capital>
+		<color><red>20</red><green>102</green><blue>184</blue></color>
+	</division>
+	<division>
+		<name>Lanao del Sur</name>
+		<capital>Marawi City</capital>
+		<color><red>163</red><green>245</green><blue>245</blue></color>
+	</division>
+	<division>
+		<name>Leyte</name>
+		<capital>Tacloban City</capital>
+		<color><red>235</red><green>71</green><blue>71</blue></color>
+	</division>
+	<division>
+		<name>Maguindanao</name>
+		<capital>Shariff Aguak</capital>
+		<color><red>163</red><green>245</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Marinduque</name>
+		<capital>Boac</capital>
+		<color><red>245</red><green>163</green><blue>245</blue></color>
+	</division>
+	<division>
+		<name>Masbate</name>
+		<capital>Masbate City</capital>
+		<color><red>235</red><green>71</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Misamis Occidental</name>
+		<capital>Oroquieta City</capital>
+		<color><red>71</red><green>153</green><blue>235</blue></color>
+	</division>
+	<division>
+		<name>Misamis Oriental</name>
+		<capital>Cagayan de Oro City</capital>
+		<color><red>153</red><green>235</green><blue>71</blue></color>
+	</division>
+	<division>
+		<name>Mountain Province</name>
+		<capital>Bontoc</capital>
+		<color><red>255</red><green>255</green><blue>51</blue></color>
+	</division>
+	<division>
+		<name>Negros Occidental [2]</name>
+		<capital>Bacolod City</capital>
+		<color><red>163</red><green>102</green><blue>41</blue></color>
+	</division>
+	<division>
+		<name>Negros Oriental</name>
+		<capital>Dumaguete City</capital>
+		<color><red>235</red><green>173</green><blue>173</blue></color>
+	</division>
+	<division>
+		<name>Northern Samar</name>
+		<capital>Catarman</capital>
+		<color><red>204</red><green>0</green><blue>102</blue></color>
+	</division>
+	<division>
+		<name>Nueva Ecija</name>
+		<capital>Palayan City</capital>
+		<color><red>153</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Nueva Vizcaya</name>
+		<capital>Bayombong</capital>
+		<color><red>0</red><green>204</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Occidental Mindoro</name>
+		<capital>Mamburao</capital>
+		<color><red>184</red><green>20</green><blue>184</blue></color>
+	</division>
+	<division>
+		<name>Oriental Mindoro</name>
+		<capital>Calapan City</capital>
+		<color><red>235</red><green>71</green><blue>235</blue></color>
+	</division>
+	<division>
+		<name>Palawan</name>
+		<capital>Puerto Princesa City</capital>
+		<color><red>204</red><green>163</green><blue>245</blue></color>
+	</division>
+	<division>
+		<name>Pampanga</name>
+		<capital>San Fernando City</capital>
+		<color><red>0</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Pangasinan</name>
+		<capital>Lingayen</capital>
+		<color><red>0</red><green>204</green><blue>102</blue></color>
+	</division>
+	<division>
+		<name>Quezon</name>
+		<capital>Lucena City</capital>
+		<color><red>102</red><green>0</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Quirino</name>
+		<capital>Cabarroguis</capital>
+		<color><red>204</red><green>255</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Rizal</name>
+		<capital>Antipolo City</capital>
+		<color><red>153</red><green>204</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Romblon</name>
+		<capital>Romblon</capital>
+		<color><red>184</red><green>20</green><blue>102</blue></color>
+	</division>
+	<division>
+		<name>Samar</name>
+		<capital>Catbalogan</capital>
+		<color><red>255</red><green>153</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Sarangani</name>
+		<capital>Alabel</capital>
+		<color><red>163</red><green>245</green><blue>163</blue></color>
+	</division>
+	<division>
+		<name>Shariff Kabunsuan</name>
+		<capital>Kabuntalan</capital>
+		<color><red>20</red><green>184</green><blue>184</blue></color>
+	</division>
+	<division>
+		<name>Siquijor</name>
+		<capital>Siquijor</capital>
+		<color><red>214</red><green>92</green><blue>92</blue></color>
+	</division>
+	<division>
+		<name>Sorsogon</name>
+		<capital>Sorsogon City</capital>
+		<color><red>255</red><green>153</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>South Cotabato</name>
+		<capital>Koronadal City</capital>
+		<color><red>20</red><green>184</green><blue>102</blue></color>
+	</division>
+	<division>
+		<name>Southern Leyte</name>
+		<capital>Maasin City</capital>
+		<color><red>245</red><green>163</green><blue>163</blue></color>
+	</division>
+	<division>
+		<name>Sultan Kudarat</name>
+		<capital>Isulan</capital>
+		<color><red>71</red><green>235</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Sulu</name>
+		<capital>Jolo</capital>
+		<color><red>102</red><green>20</green><blue>184</blue></color>
+	</division>
+	<division>
+		<name>Surigao del Norte</name>
+		<capital>Surigao City</capital>
+		<color><red>184</red><green>102</green><blue>20</blue></color>
+	</division>
+	<division>
+		<name>Surigao del Sur</name>
+		<capital>Tandag</capital>
+		<color><red>235</red><green>153</green><blue>71</blue></color>
+	</division>
+	<division>
+		<name>Tarlac</name>
+		<capital>Tarlac City</capital>
+		<color><red>51</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Tawi-Tawi</name>
+		<capital>Panglima Sugala</capital>
+		<color><red>153</red><green>71</green><blue>235</blue></color>
+	</division>
+	<division>
+		<name>Zambales</name>
+		<capital>Iba</capital>
+		<color><red>51</red><green>255</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Zamboanga del Norte</name>
+		<capital>Dipolog City</capital>
+		<color><red>163</red><green>204</green><blue>245</blue></color>
+	</division>
+	<division>
+		<name>Zamboanga del Sur</name>
+		<capital>Pagadian City</capital>
+		<color><red>20</red><green>20</green><blue>184</blue></color>
+	</division>
+	<division>
+		<name>Zamboanga Sibugay</name>
+		<capital>Ipil</capital>
+		<color><red>71</red><green>71</green><blue>235</blue></color>
+	</division>
+	<division>
+		<name>National Capital</name>
+		<capital>Manila</capital>
+		<color><red>51</red><green>153</green><blue>255</blue></color>
+	</division>
+</map>

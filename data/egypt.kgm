@@ -1,0 +1,155 @@
+<map>
+	<mapFile>egypt.png</mapFile>
+	<name>Egypt</name>
+    <divisionsName>Governorates</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Egypt</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Alexandria</name>
+		<capital>Alexandria</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Aswan</name>
+		<capital>Aswan</capital>
+		<color><red>128</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Asyut</name>
+		<capital>Asyut</capital>
+		<color><red>128</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Beheira</name>
+		<capital>Damanhur</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Beni Suef</name>
+		<capital>Beni Suef</capital>
+		<color><red>255</red><green>128</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Cairo</name>
+		<capital>Cairo</capital>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Dakahlia</name>
+		<capital>Mansura</capital>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Damietta</name>
+		<capital>Damietta</capital>
+		<color><red>127</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Faiyum</name>
+		<capital>Faiyum</capital>
+		<color><red>212</red><green>43</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>Gharbia</name>
+		<capital>Tanta</capital>
+		<color><red>128</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Giza</name>
+		<capital>Giza</capital>
+		<color><red>212</red><green>128</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>Ismailia</name>
+		<capital>Ismailia</capital>
+		<color><red>255</red><green>0</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Kafr el-Sheikh</name>
+		<capital>Kafr el-Sheikh</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Matruh</name>
+		<capital>Mersa Matruh</capital>
+		<color><red>212</red><green>212</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>Minya</name>
+		<capital>Minya</capital>
+		<color><red>255</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Monufia</name>
+		<capital>Shibin el-Kom</capital>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>New Valley</name>
+		<capital>Kharga</capital>
+		<color><red>191</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>North Sinai</name>
+		<capital>Arish</capital>
+		<color><red>255</red><green>128</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Port Said</name>
+		<capital>Port Said</capital>
+		<color><red>255</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Qalyubia</name>
+		<capital>Banha</capital>
+		<color><red>0</red><green>255</green><blue>127</blue></color>
+	</division>
+	<division>
+		<name>Qena</name>
+		<capital>Qena</capital>
+		<color><red>128</red><green>255</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Red Sea</name>
+		<capital>Hurghada</capital>
+		<color><red>191</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Sharqia</name>
+		<capital>Zagazig</capital>
+		<color><red>0</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Sohag</name>
+		<capital>Sohag</capital>
+		<color><red>128</red><green>191</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>South Sinai</name>
+		<capital>el-Tor</capital>
+		<color><red>255</red><green>191</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Suez</name>
+		<capital>Suez</capital>
+		<color><red>255</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Luxor</name>
+		<capital>Luxo</capital>
+		<color><red>128</red><green>255</green><blue>255</blue></color>
+	</division>
+</map>

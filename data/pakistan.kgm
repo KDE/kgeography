@@ -1,0 +1,60 @@
+<map>
+	<mapFile>pakistan.png</mapFile>
+	<name>Pakistan</name>
+    <divisionsName>Provinces</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Pakistan</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Balochistan</name>
+		<capital>Quetta</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>North-West Frontier Province</name>
+		<capital>Peshawar</capital>
+		<color><red>0</red><green>255</green><blue>64</blue></color>
+	</division>
+	<division>
+		<name>Punjab</name>
+		<capital>Lahore</capital>
+		<color><red>255</red><green>235</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Sindh</name>
+		<capital>Karachi</capital>
+		<color><red>255</red><green>118</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Islamabad Capital Territory</name>
+		<capital>Islamabad</capital>
+		<color><red>0</red><green>64</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Federally Administered Tribal Areas</name>
+		<capital>Peshawar and Islamabad</capital>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Azad Kashmir</name>
+		<capital>Muzaffarabad</capital>
+		<color><red>255</red><green>0</green><blue>191</blue></color>
+	</division>
+	<division>
+		<name>Northern Areas</name>
+		<capital>Gilgit</capital>
+		<color><red>127</red><green>0</green><blue>255</blue></color>
+	</division>
+</map>

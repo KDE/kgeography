@@ -1,0 +1,55 @@
+<map>
+	<mapFile>portugal_regions.png</mapFile>
+	<name>Portugal (Regions)</name>
+    <divisionsName>Regions</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Not Portugal (Regions)</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Alentejo</name>
+		<capital>Evora</capital>
+		<color><red>85</red><green>255</green><blue>182</blue></color>
+	</division>
+	<division>
+		<name>Algarve</name>
+		<capital>Faro</capital>
+		<color><red>85</red><green>182</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Centro</name>
+		<capital>Coimbra</capital>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Lisboa(region)</name>
+		<capital>Lisboa</capital>
+		<color><red>134</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Norte</name>
+		<capital>Porto</capital>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Madeira</name>
+		<capital>Funchal</capital>
+		<color><red>255</red><green>85</green><blue>231</blue></color>
+	</division>
+	<division>
+		<name>Azores</name>
+		<capital>Ponta Delgada</capital>
+		<color><red>134</red><green>85</green><blue>255</blue></color>
+	</division>
+</map>

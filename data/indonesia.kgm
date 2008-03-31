@@ -1,0 +1,185 @@
+<map>
+	<mapFile>indonesia.png</mapFile>
+	<name>Indonesia</name>
+    <divisionsName>Provinces</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Indonesia</name>
+		<ignore>yes</ignore>
+		<color><red>187</red><green>187</green><blue>187</blue></color>
+	</division>
+	<division>
+		<name>Nanggroe Aceh Darussalam</name>
+		<capital>Banda Aceh</capital>
+		<color><red>170</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>North Sumatra</name>
+		<capital>Medan</capital>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>West Sumatra</name>
+		<capital>Padang</capital>
+		<color><red>170</red><green>85</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Riau</name>
+		<capital>Pekanbaru</capital>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Riau Islands</name>
+		<capital>Tanjung Pinang</capital>
+		<color><red>170</red><green>170</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Jambi</name>
+		<capital>Jambi</capital>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Bengkulu</name>
+		<capital>Bengkulu</capital>
+		<color><red>85</red><green>170</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>South Sumatra</name>
+		<capital>Palembang</capital>
+		<color><red>170</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Bangka-Belitung</name>
+		<capital>Pangkal Pinang</capital>
+		<color><red>0</red><green>170</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Lampung</name>
+		<capital>Bandar Lampung</capital>
+		<color><red>85</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Jakarta Special Capital Region</name>
+		<capital>Jakarta</capital>
+		<color><red>0</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Banten</name>
+		<capital>Serang</capital>
+		<color><red>85</red><green>255</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>West Java</name>
+		<capital>Bandung</capital>
+		<color><red>0</red><green>170</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Central Java</name>
+		<capital>Semarang</capital>
+		<color><red>85</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Yogyakarta Special Region</name>
+		<capital>Yogyakarta</capital>
+		<color><red>0</red><green>85</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>East Java</name>
+		<capital>Surabaya</capital>
+		<color><red>85</red><green>170</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Bali</name>
+		<capital>Denpasar</capital>
+		<color><red>0</red><green>0</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>West Nusa Tenggara</name>
+		<capital>Mataram</capital>
+		<color><red>85</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>East Nusa Tenggara</name>
+		<capital>Kupang</capital>
+		<color><red>85</red><green>0</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>West Kalimantan</name>
+		<capital>Pontianak</capital>
+		<color><red>170</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Central Kalimantan</name>
+		<capital>Palangkaraya</capital>
+		<color><red>170</red><green>0</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>South Kalimantan</name>
+		<capital>Banjarmasin</capital>
+		<color><red>255</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>East Kalimantan</name>
+		<capital>Samarinda</capital>
+		<color><red>170</red><green>0</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>North Sulawesi</name>
+		<capital>Manado</capital>
+		<color><red>255</red><green>85</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Gorontalo</name>
+		<capital>Gorontalo</capital>
+		<color><red>149</red><green>21</green><blue>21</blue></color>
+	</division>
+	<division>
+		<name>Central Sulawesi</name>
+		<capital>Palu</capital>
+		<color><red>234</red><green>106</green><blue>106</blue></color>
+	</division>
+	<division>
+		<name>South East Sulawesi</name>
+		<capital>Kendari</capital>
+		<color><red>149</red><green>85</green><blue>21</blue></color>
+	</division>
+	<division>
+		<name>South Sulawesi</name>
+		<capital>Makassar</capital>
+		<color><red>234</red><green>170</green><blue>106</blue></color>
+	</division>
+	<division>
+		<name>West Sulawesi</name>
+		<capital>Mamuju</capital>
+		<color><red>149</red><green>149</green><blue>21</blue></color>
+	</division>
+	<division>
+		<name>Maluku</name>
+		<capital>Ambon</capital>
+		<color><red>234</red><green>234</green><blue>106</blue></color>
+	</division>
+	<division>
+		<name>North Maluku</name>
+		<capital>Ternate</capital>
+		<color><red>85</red><green>149</green><blue>21</blue></color>
+	</division>
+	<division>
+		<name>Papua</name>
+		<capital>Jayapura</capital>
+		<color><red>170</red><green>234</green><blue>106</blue></color>
+	</division>
+	<division>
+		<name>West Irian Jaya</name>
+		<capital>Manokwari</capital>
+		<color><red>21</red><green>149</green><blue>21</blue></color>
+	</division>
+</map>

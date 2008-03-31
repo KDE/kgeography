@@ -1,0 +1,85 @@
+<map>
+	<mapFile>saudi_arabia.png</mapFile>
+	<name>Saudi Arabia</name>
+    <divisionsName>Provinces</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Saudi (Arabia)</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Al-Bahah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Al Hudud ash Shamaliyah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>127</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Al Jawf</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Al Madinah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>128</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Al Gassim</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Ar-Riyad</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Ash-Sharqiyah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>255</green><blue>127</blue></color>
+	</division>
+	<division>
+		<name>'Asir</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Ha'il</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Jizan</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>128</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Makkah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Najran</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Tabuk</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>0</green><blue>128</blue></color>
+	</division>
+</map>
