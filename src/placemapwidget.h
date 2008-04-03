@@ -51,6 +51,8 @@ Q_OBJECT
 		void mouseReleaseEvent(QMouseEvent *e);
 		void resizeEvent(QResizeEvent *e);
 		void drawBackground(QPainter *painter, const QRectF &rect);
+		bool isPixelInnerBorder(int x, int y, const QImage *srcImg,
+								const QList<QRgb> &ignoredColors, QRgb pixColor);
 		void createGameMapImage();
 		void updateCursor();
 	

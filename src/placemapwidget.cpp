@@ -17,8 +17,10 @@
 #include <QMouseEvent>
 #include <QScrollBar>
 #include <QTimer>
+#include <QTime>
 
 #include <klocale.h>
+#include <kdebug.h>
 
 #include "division.h"
 
@@ -54,33 +56,90 @@ void placeMapWidget::init(KGmap *map, QImage *mapImage)
 	QMetaObject::invokeMethod(this, "setAutomaticZoom", Qt::QueuedConnection, Q_ARG(bool, p_automaticZoom));
 }
 
+bool placeMapWidget::isPixelInnerBorder(int x, int y, const QImage *srcImg,
+										const QList<QRgb> &ignoredColors, QRgb pixColor)
+{
+	int deltaX[] = {-1,  0,  1,  1,  1,  0, -1, -1};
+	int deltaY[] = {-1, -1, -1,  0,  1,  1,  1,  0};
+	int width = p_mapImage->width();
+	int height = p_mapImage->height();
+
+	bool outerFound = false;
+	bool divisionColorFound = false;
+	for ( int neighbourIdx = 0 ;
+		  neighbourIdx < 8 && ! ( outerFound && divisionColorFound ) ;
+		  neighbourIdx ++ )
+	{
+		int ox = x + deltaX[neighbourIdx];
+		int oy = y + deltaY[neighbourIdx];
+		if ( ox >= 0 && oy >= 0 && ox < width && oy < height )
+		{
+			QRgb oPixColor = srcImg->pixel(ox, oy);
+			if (oPixColor != pixColor)
+			{
+				if ( ignoredColors.contains(oPixColor) )
+					outerFound = true;
+				else
+					divisionColorFound = true;
+			}
+		}
+	}
+	return ! outerFound && divisionColorFound;
+}
+
 void placeMapWidget::createGameMapImage()
 {
-	QList<QRgb> colorsToCopy;
-
+	QVector<uchar> indexesToCopy;
+	QVector<QRgb> colormap = p_mapImage->colorTable();
 	p_gameImage = new QImage(p_mapImage->size(), QImage::Format_RGB32);
-	p_gameImage->fill(QColor(255,255,255).rgb());
+	// So far, nobody has dedicated this color to a division :)
+	// I, for one, reserve grays for non-division pixels
+	p_gameImage->fill(QColor(224,224,224).rgb());
 
 	QList<division*> ignoredDivisions = p_map->getIgnoredDivisions(division::eClick);
 	foreach(division *id, ignoredDivisions)
 	{
-		QRgb color = id->getRGB();
-		// do not include black (used for frontiers)
-		if (color != qRgb(0,0,0)) {
-			colorsToCopy << id->getRGB();
-		}
+		QRgb rgb = id->getRGB();
+		int colorIdx = colormap.indexOf(rgb);
+		indexesToCopy << colorIdx;
 	}
+
+	int nbBytesPerLine = p_mapImage->bytesPerLine();
+	const uchar *bits = p_mapImage->bits();
 
 	int width = p_mapImage->width();
 	int height = p_mapImage->height();
+	int deltaX[] = {-1,  0,  1,  1,  1,  0, -1, -1};
+	int deltaY[] = {-1, -1, -1,  0,  1,  1,  1,  0};
 	
-	for (int x = 0; x < width; x++)
+	for (int x = 1; x < width -1; x++)
 	{
-		for (int y = 0; y < height; y++)
+		for (int y = 1; y < height -1; y++)
 		{
-			if(colorsToCopy.contains(p_mapImage->pixel(x,y)))
+			uchar pixi = bits[y * nbBytesPerLine + x];
+
+			if(indexesToCopy.contains(pixi) )
 			{
-				p_gameImage->setPixel(x,y,p_mapImage->pixel(x,y));
+				bool outerFound = false;
+				bool divisionColorFound = false;
+				for ( int neighbourIdx = 0 ;
+					  neighbourIdx < 8 && ! ( outerFound && divisionColorFound ) ;
+					  neighbourIdx ++ )
+				{
+					int ox = x + deltaX[neighbourIdx];
+					int oy = y + deltaY[neighbourIdx];
+					uchar oPixi = bits[oy * nbBytesPerLine + ox];
+					if (oPixi != pixi)
+					{
+						if ( indexesToCopy.contains(oPixi) )
+							outerFound = true;
+						else
+							divisionColorFound = true;
+					}
+				}
+
+				if ( outerFound || ! divisionColorFound )
+					p_gameImage->setPixel(x,y,p_mapImage->pixel(x,y));
 			}
 		}
 	}
