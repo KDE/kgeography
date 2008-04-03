@@ -230,6 +230,11 @@ install(FILES
    us_virgin_islands.png
    turk_and_caicos_islands.png
    puerto_rico.png
+   cape_verde.png
+   comoros.png
+   mauritius.png
+   sao_tome_and_principe.png
+   seychelles.png
 
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags)
 
