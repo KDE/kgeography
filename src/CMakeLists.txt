@@ -29,8 +29,9 @@ set(kgeography_SRCS
 
 kde4_add_kcfg_files(kgeography_SRCS settings.kcfgc )
 
-kde4_add_app_icon(kgeography_SRCS "${KDE4_ICON_DIR}/oxygen/*/apps/kgeography.png")
+#kde4_add_app_icon(kgeography_SRCS "${KDE4_ICON_DIR}/oxygen/*/apps/kgeography.png")
 #kde4_add_app_icon(kgeography_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/ox*-apps-kgeography.png")
+kde4_add_app_icon(kgeography_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/hi*-apps-kgeography.png")
 
 kde4_add_executable(kgeography ${kgeography_SRCS})
 
