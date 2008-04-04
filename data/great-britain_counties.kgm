@@ -89,7 +89,7 @@
 	</division>
 	<division>
 		<name>Dumbartonshire</name>
-		<capital>Bumbarton</capital>
+		<capital>Dumbarton</capital>
 		<color><red>113</red><green>113</green><blue>0</blue></color>
 	</division>
 	<division>
@@ -173,7 +173,7 @@
 		<color><red>0</red><green>227</green><blue>0</blue></color>
 	</division>
 	<division>
-		<name>Roxburgshire</name>
+		<name>Roxburghshire</name>
 		<capital>Roxburgh</capital>
 		<color><red>28</red><green>255</green><blue>28</blue></color>
 	</division>
