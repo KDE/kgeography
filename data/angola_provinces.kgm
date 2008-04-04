@@ -1,0 +1,110 @@
+<map>
+	<mapFile>angola_provinces.png</mapFile>
+	<name>Angola (Provinces)</name>
+    <divisionsName>Provinces</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Angola (Provinces)</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Bengo</name>
+		<capital>Caxito</capital>
+		<color><red>51</red><green>51</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Benguela</name>
+		<capital>Benguela</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Bié</name>
+		<capital>Kuito</capital>
+		<color><red>0</red><green>204</green><blue>102</blue></color>
+	</division>
+	<division>
+		<name>Cabinda</name>
+		<capital>Cabinda</capital>
+		<color><red>255</red><green>51</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Cuando Cubango</name>
+		<capital>Menongue</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Cuanza Norte</name>
+		<capital>Ndalatando</capital>
+		<color><red>102</red><green>0</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Cuanza Sul</name>
+		<capital>Sumbe</capital>
+		<color><red>51</red><green>153</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Cunene</name>
+		<capital>Ondjiva</capital>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Huambo</name>
+		<capital>Huambo</capital>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Huíla</name>
+		<capital>Lubango</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Luanda</name>
+		<capital>Luanda</capital>
+		<color><red>0</red><green>0</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Lunda Norte</name>
+		<capital>Lucapa</capital>
+		<color><red>51</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Lunda Sul</name>
+		<capital>Saurimo</capital>
+		<color><red>0</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Malanje</name>
+		<capital>Malanje</capital>
+		<color><red>0</red><green>102</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Namibe</name>
+		<capital>Namibe</capital>
+		<color><red>51</red><green>255</green><blue>153</blue></color>
+	</division>
+	<division>
+		<name>Moxico</name>
+		<capital>Luena</capital>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Uíge</name>
+		<capital>Uíge</capital>
+		<color><red>153</red><green>51</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Zaire</name>
+		<capital>Mbanza Congo</capital>
+		<color><red>204</red><green>0</green><blue>204</blue></color>
+	</division>
+</map>

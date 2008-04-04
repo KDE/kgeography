@@ -74,13 +74,13 @@
 		<name>Central African Republic</name>
 		<capital>Bangui</capital>
 		<flag>central_african_republic.png</flag>
-		<color><red>221</red><green>221</green><blue>85</blue></color>
+		<color><red>153</red><green>221</green><blue>85</blue></color>
 	</division>
 	<division>
 		<name>Chad</name>
 		<capital>N'Djamena</capital>
 		<flag>chad.png</flag>
-		<color><red>153</red><green>221</green><blue>85</blue></color>
+		<color><red>85</red><green>221</green><blue>85</blue></color>
 	</division>
 	<division>
 		<name>Comoros</name>
@@ -104,13 +104,13 @@
 		<name>Djibouti</name>
 		<capital>Djibouti</capital>
 		<flag>djibouti.png</flag>
-		<color><red>170</red><green>34</green><blue>102</blue></color>
+		<color><red>221</red><green>85</green><blue>85</blue></color>
 	</division>
 	<division>
 		<name>Egypt</name>
 		<capital>Cairo</capital>
 		<flag>egypt.png</flag>
-		<color><red>85</red><green>221</green><blue>153</blue></color>
+		<color><red>85</red><green>221</green><blue>221</blue></color>
 	</division>
 	<division>
 		<name>Equatorial Guinea</name>
@@ -122,13 +122,13 @@
 		<name>Eritrea</name>
 		<capital>Asmara</capital>
 		<flag>eritrea.png</flag>
-		<color><red>221</red><green>85</green><blue>85</blue></color>
+		<color><red>221</red><green>153</green><blue>85</blue></color>
 	</division>
 	<division>
 		<name>Ethiopia</name>
 		<capital>Addis Ababa</capital>
 		<flag>ethiopia.png</flag>
-		<color><red>170</red><green>34</green><blue>170</blue></color>
+		<color><red>170</red><green>34</green><blue>102</blue></color>
 	</division>
 	<division>
 		<name>Gabon</name>
@@ -182,7 +182,7 @@
 		<name>Libya</name>
 		<capital>Tripoli</capital>
 		<flag>libya.png</flag>
-		<color><red>85</red><green>221</green><blue>85</blue></color>
+		<color><red>85</red><green>221</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>Madagascar</name>
@@ -212,7 +212,7 @@
 		<name>Mauritius</name>
 		<capital>Port Louis</capital>
 		<flag>mauritius.png</flag>
-		<color><red>34</red><green>102</green><blue>170</blue></color>
+		<color><red>34</red><green>34</green><blue>170</blue></color>
 	</division>
 	<division>
 		<name>Morocco</name>
@@ -266,7 +266,7 @@
 		<name>Seychelles</name>
 		<capital>Victoria</capital>
 		<flag>seychelles.png</flag>
-		<color><red>34</red><green>34</green><blue>170</blue></color>
+		<color><red>102</red><green>34</green><blue>170</blue></color>
 	</division>
 	<division>
 		<name>Sierra Leone</name>
@@ -278,11 +278,11 @@
 		<name>Somalia</name>
 		<capital>Mogadishu</capital>
 		<flag>somalia.png</flag>
-		<color><red>102</red><green>34</green><blue>170</blue></color>
+		<color><red>170</red><green>34</green><blue>170</blue></color>
 	</division>
 	<division>
-		<name>South Africa</name>
-		<capital>Pretoria</capital>
+		<name>Réunion </name>
+		<capital>Saint Denis</capital>
 		<flag>southafrica.png</flag>
 		<color><red>153</red><green>255</green><blue>204</blue></color>
 	</division>
@@ -290,7 +290,7 @@
 		<name>Sudan</name>
 		<capital>Khartoum</capital>
 		<flag>sudan.png</flag>
-		<color><red>221</red><green>153</green><blue>85</blue></color>
+		<color><red>221</red><green>221</green><blue>85</blue></color>
 	</division>
 	<division>
 		<name>Swaziland</name>
@@ -345,5 +345,29 @@
 		<capital>Harare</capital>
 		<flag>zimbabwe.png</flag>
 		<color><red>204</red><green>153</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Canary Islands (Spain)</name>
+		<capital>Las Palmas</capital>
+		<flag>spain/canary_islands.png</flag>
+		<color><red>85</red><green>85</green><blue>221</blue></color>
+	</division>
+	<division>
+		<name>Madeira (Portugal)</name>
+		<capital>Funchal</capital>
+		<flag>madeira.png</flag>
+		<color><red>85</red><green>153</green><blue>221</blue></color>
+	</division>
+	<division>
+		<name>Réunion (France)</name>
+		<capital>Saint Denis</capital>
+		<flag>france.png</flag>
+		<color><red>34</red><green>102</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Saint Helena (UK)</name>
+		<capital>Jamestown</capital>
+		<flag>st_helena.png</flag>
+		<color><red>153</red><green>85</green><blue>221</blue></color>
 	</division>
 </map>

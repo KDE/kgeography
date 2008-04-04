@@ -1,0 +1,110 @@
+<map>
+	<mapFile>bosnia-herzegovina.png</mapFile>
+	<name>Bosnia-Herzegovina</name>
+    <divisionsName>Cantons</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Bosnia-Herzegovina</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Brčko</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>227</red><green>227</green><blue>113</blue></color>
+	</division>
+	<division>
+		<name>Bosnian Podrinje</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Central Bosnia</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>85</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Herzegovina-Neretva</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Posavina</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>113</red><green>227</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Sarajevo</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>85</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Tuzla</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>170</red><green>227</green><blue>113</blue></color>
+	</division>
+	<division>
+		<name>Una Sana</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>85</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>West Bosnia</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>170</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>West Herzegovina</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Zenica-Doboj</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>85</red><green>170</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Banja Luka</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>85</red><green>255</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Doboj</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>113</red><green>227</green><blue>113</blue></color>
+	</division>
+	<division>
+		<name>Bijeljina</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>227</red><green>170</green><blue>113</blue></color>
+	</division>
+	<division>
+		<name>Vlasenica</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>227</red><green>113</green><blue>113</blue></color>
+	</division>
+	<division>
+		<name>Sarajevo-Romanija or Sokolac</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>170</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Foča</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>85</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Trebinje</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+</map>

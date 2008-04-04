@@ -208,5 +208,32 @@ install(FILES
    zaire2006.png
    waters_world-class.kgm
    waters_world-class.png
+   angola_provinces.kgm
+   angola_provinces.png
+   bhutan.kgm
+   bhutan.png
+   bulgaria.kgm
+   bulgaria.png
+   burma.kgm
+   burma.png
+   botswana.kgm
+   botswana.png
+   bosnia-herzegovina.kgm
+   bosnia-herzegovina.png
+   cameroon_departments.kgm
+   cameroon_departments.png
+   cameroon_provinces.kgm
+   cameroon_provinces.png
+   cyprus.kgm
+   cyprus.png
+   emirates.kgm
+   emirates.png
+   georgia.kgm
+   georgia.png
+   greece_peripheries.kgm
+   greece_peripheries.png
+   greece_prefectures.kgm
+   greece_prefectures.png
+
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
