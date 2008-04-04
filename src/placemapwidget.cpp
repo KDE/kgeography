@@ -56,37 +56,6 @@ void placeMapWidget::init(KGmap *map, QImage *mapImage)
 	QMetaObject::invokeMethod(this, "setAutomaticZoom", Qt::QueuedConnection, Q_ARG(bool, p_automaticZoom));
 }
 
-bool placeMapWidget::isPixelInnerBorder(int x, int y, const QImage *srcImg,
-										const QList<QRgb> &ignoredColors, QRgb pixColor)
-{
-	int deltaX[] = {-1,  0,  1,  1,  1,  0, -1, -1};
-	int deltaY[] = {-1, -1, -1,  0,  1,  1,  1,  0};
-	int width = p_mapImage->width();
-	int height = p_mapImage->height();
-
-	bool outerFound = false;
-	bool divisionColorFound = false;
-	for ( int neighbourIdx = 0 ;
-		  neighbourIdx < 8 && ! ( outerFound && divisionColorFound ) ;
-		  neighbourIdx ++ )
-	{
-		int ox = x + deltaX[neighbourIdx];
-		int oy = y + deltaY[neighbourIdx];
-		if ( ox >= 0 && oy >= 0 && ox < width && oy < height )
-		{
-			QRgb oPixColor = srcImg->pixel(ox, oy);
-			if (oPixColor != pixColor)
-			{
-				if ( ignoredColors.contains(oPixColor) )
-					outerFound = true;
-				else
-					divisionColorFound = true;
-			}
-		}
-	}
-	return ! outerFound && divisionColorFound;
-}
-
 void placeMapWidget::createGameMapImage()
 {
 	QVector<uchar> indexesToCopy;
