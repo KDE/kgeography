@@ -1,0 +1,50 @@
+<map>
+	<mapFile>world_continents.png</mapFile>
+	<name>World continents (from North Pole)</name>
+    <divisionsName>Continents</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Africa</name>
+		<capital>Kilimanjaro</capital>
+		<color><red>0</red><green>255</green><blue>64</blue></color>
+	</division>
+	<division>
+		<name>North America</name>
+		<capital>Mac Kinley</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>South America</name>
+		<capital>Anconcagua</capital>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Antartica</name>
+		<capital>Vinson</capital>
+		<color><red>127</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Asia</name>
+		<capital>Everest</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Europe</name>
+		<capital>Elbrouz</capital>
+		<color><red>0</red><green>64</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Oceania</name>
+		<capital>Carstenz</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+</map>

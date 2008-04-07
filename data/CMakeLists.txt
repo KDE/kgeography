@@ -234,6 +234,8 @@ install(FILES
    greece_peripheries.png
    greece_prefectures.kgm
    greece_prefectures.png
+   world_continents.kgm
+   world_continents.png
 
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
