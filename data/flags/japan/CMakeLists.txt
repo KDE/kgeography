@@ -1,0 +1,52 @@
+
+install(FILES
+   jp-chiba.png
+   jp-fukushima.png
+   jp-hokkaido.png
+   jp-iwate.png
+   jp-kochi.png
+   jp-miyagi.png
+   jp-nara.png
+   jp-okinawa.png
+   jp-shiga.png
+   jp-tokushima.png
+   jp-wakayama.png
+   jp-aichi.png
+   jp-ehime.png
+   jp-gifu.png
+   jp-hyogo.png
+   jp-kagawa.png
+   jp-kumamoto.png
+   jp-miyazaki.png
+   jp-niigata.png
+   jp-osaka.png
+   jp-shimane.png
+   jp-tokyo.png
+   jp-yamagata.png
+   jp-akita.png
+   jp-fukui.png
+   jp-gunma.png
+   jp-ibaraki.png
+   jp-kagoshima.png
+   jp-kyoto.png
+   jp-nagano.png
+   jp-oita.png
+   jp-saga.png
+   jp-shizuoka.png
+   jp-tottori.png
+   jp-yamaguchi.png
+   jp-aomori.png
+   jp-fukuoka.png
+   jp-hiroshima.png
+   jp-ishikawa.png
+   jp-kanagawa.png
+   jp-mie.png
+   jp-nagasaki.png
+   jp-okayama.png
+   jp-saitama.png
+   jp-tochigi.png
+   jp-toyama.png
+   jp-yamanashi.png
+
+	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/japan)
+

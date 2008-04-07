@@ -12,16 +12,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Frontier</name>
-		<ignore>yes</ignore>
-		<color>
-			<red>1</red>
-			<green>1</green>
-			<blue>1</blue>
-		</color>
-	</division>
-	<division>
-		<name>Frontier</name>
+		<name>Border</name>
 		<ignore>yes</ignore>
 		<color>
 			<red>0</red>
@@ -32,6 +23,7 @@
 	<division>
 		<name>Hokkaido</name>
 		<capital>Sapporo</capital>
+                <flag>japan/jp-hokkaido.png</flag>
 		<color>
 			<red>255</red>
 			<green>0</green>
@@ -39,8 +31,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Aomori (Prefecture)</name>
+		<name>Aomori</name>
 		<capital>Aomori</capital>
+		<flag>japan/jp-aomori.png</flag>
 		<color>
 			<red>0</red>
 			<green>128</green>
@@ -50,6 +43,7 @@
 	<division>
 		<name>Iwate</name>
 		<capital>Morioka</capital>
+		<flag>japan/jp-iwate.png</flag>
 		<color>
 			<red>0</red>
 			<green>0</green>
@@ -57,8 +51,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Akita (Prefecture)</name>
+		<name>Akita</name>
 		<capital>Akita</capital>
+		<flag>japan/jp-akita.png</flag>
 		<color>
 			<red>192</red>
 			<green>0</green>
@@ -66,8 +61,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Yamagata (Prefecture)</name>
+		<name>Yamagata</name>
 		<capital>Yamagata</capital>
+		<flag>japan/jp-yamagata.png</flag>
 		<color>
 			<red>128</red>
 			<green>0</green>
@@ -77,6 +73,7 @@
 	<division>
 		<name>Miyagi</name>
 		<capital>Sendai</capital>
+		<flag>japan/jp-miyagi.png</flag>
 		<color>
 			<red>0</red>
 			<green>192</green>
@@ -84,8 +81,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Niigata (Prefecture)</name>
+		<name>Niigata</name>
 		<capital>Niigata</capital>
+		<flag>japan/jp-niigata.png</flag>
 		<color>
 			<red>255</red>
 			<green>255</green>
@@ -93,8 +91,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Fukushima (Prefecture)</name>
+		<name>Fukushima</name>
 		<capital>Fukushima</capital>
+		<flag>japan/jp-fukushima.png</flag>
 		<color>
 			<red>255</red>
 			<green>128</green>
@@ -102,8 +101,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Nagano (Prefecture)</name>
+		<name>Nagano</name>
 		<capital>Nagano</capital>
+		<flag>japan/jp-nagano.png</flag>
 		<color>
 			<red>255</red>
 			<green>192</green>
@@ -113,15 +113,17 @@
 	<division>
 		<name>Gunma</name>
 		<capital>Maebashi</capital>
+		<flag>japan/jp-gunma.png</flag>
 		<color>
 			<red>135</red>
 			<green>30</green>
-			<blue>100</blue>
+			<blue>120</blue>
 		</color>
 	</division>
 	<division>
 		<name>Tochigi</name>
 		<capital>Utsunomiya</capital>
+		<flag>japan/jp-tochigi.png</flag>
 		<color>
 			<red>106</red>
 			<green>205</green>
@@ -131,6 +133,7 @@
 	<division>
 		<name>Ibaraki</name>
 		<capital>Mito</capital>
+		<flag>japan/jp-ibaraki.png</flag>
 		<color>
 			<red>22</red>
 			<green>76</green>
@@ -138,8 +141,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Chiba (Prefecture)</name>
+		<name>Chiba</name>
 		<capital>Chiba</capital>
+		<flag>japan/jp-chiba.png</flag>
 		<color>
 			<red>253</red>
 			<green>251</green>
@@ -147,8 +151,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Gifu (Prefecture)</name>
+		<name>Gifu</name>
 		<capital>Gifu</capital>
+		<flag>japan/jp-gifu.png</flag>
 		<color>
 			<red>5</red>
 			<green>174</green>
@@ -156,8 +161,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Shizuoka (Prefecture)</name>
+		<name>Shizuoka</name>
 		<capital>Shizuoka</capital>
+		<flag>japan/jp-shizuoka.png</flag>
 		<color>
 			<red>0</red>
 			<green>147</green>
@@ -165,8 +171,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Saitama (Prefecture)</name>
-		<capital>Saitama</capital>
+		<name>Saitama</name>
+		<capital>Urawa</capital>
+		<flag>japan/jp-saitama.png</flag>
 		<color>
 			<red>241</red>
 			<green>0</green>
@@ -176,6 +183,7 @@
 	<division>
 		<name>Yamanashi</name>
 		<capital>Koufu</capital>
+		<flag>japan/jp-yamanashi.png</flag>
 		<color>
 			<red>193</red>
 			<green>21</green>
@@ -183,8 +191,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Toyama (Prefecture)</name>
+		<name>Toyama</name>
 		<capital>Toyama</capital>
+		<flag>japan/jp-toyama.png</flag>
 		<color>
 			<red>6</red>
 			<green>243</green>
@@ -194,6 +203,7 @@
 	<division>
 		<name>Ishikawa</name>
 		<capital>Kanazawa</capital>
+		<flag>japan/jp-ishikawa.png</flag>
 		<color>
 			<red>18</red>
 			<green>157</green>
@@ -203,6 +213,7 @@
 	<division>
 		<name>Aichi</name>
 		<capital>Nagoya</capital>
+		<flag>japan/jp-aichi.png</flag>
 		<color>
 			<red>157</red>
 			<green>9</green>
@@ -210,8 +221,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Fukui (Prefecture)</name>
+		<name>Fukui</name>
 		<capital>Fukui</capital>
+		<flag>japan/jp-fukui.png</flag>
 		<color>
 			<red>40</red>
 			<green>9</green>
@@ -220,7 +232,8 @@
 	</division>
 	<division>
 		<name>Shiga</name>
-		<capital>Ōtsu</capital>
+		<capital>Outsu</capital>
+		<flag>japan/jp-shiga.png</flag>
 		<color>
 			<red>15</red>
 			<green>194</green>
@@ -230,6 +243,7 @@
 	<division>
 		<name>Mie</name>
 		<capital>Tsu</capital>
+		<flag>japan/jp-mie.png</flag>
 		<color>
 			<red>54</red>
 			<green>224</green>
@@ -237,8 +251,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Kyoto (Prefecture)</name>
+		<name>Kyoto</name>
 		<capital>Kyoto</capital>
+		<flag>japan/jp-kyoto.png</flag>
 		<color>
 			<red>236</red>
 			<green>36</green>
@@ -248,6 +263,7 @@
 	<division>
 		<name>Hyogo</name>
 		<capital>Kobe</capital>
+		<flag>japan/jp-hyogo.png</flag>
 		<color>
 			<red>23</red>
 			<green>130</green>
@@ -255,8 +271,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Nara (Prefecture)</name>
+		<name>Nara</name>
 		<capital>Nara</capital>
+		<flag>japan/jp-nara.png</flag>
 		<color>
 			<red>243</red>
 			<green>18</green>
@@ -264,8 +281,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Osaka (Prefecture)</name>
+		<name>Osaka</name>
 		<capital>Osaka</capital>
+		<flag>japan/jp-osaka.png</flag>
 		<color>
 			<red>76</red>
 			<green>109</green>
@@ -273,8 +291,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Wakayama (Prefecture)</name>
+		<name>Wakayama</name>
 		<capital>Wakayama</capital>
+		<flag>japan/jp-wakayama.png</flag>
 		<color>
 			<red>37</red>
 			<green>1</green>
@@ -282,8 +301,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Okayama (Prefecture)</name>
+		<name>Okayama</name>
 		<capital>Okayama</capital>
+		<flag>japan/jp-okayama.png</flag>
 		<color>
 			<red>165</red>
 			<green>66</green>
@@ -291,8 +311,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Tottori (Prefecture)</name>
+		<name>Tottori</name>
 		<capital>Tottori</capital>
+		<flag>japan/jp-tottori.png</flag>
 		<color>
 			<red>10</red>
 			<green>16</green>
@@ -302,6 +323,7 @@
 	<division>
 		<name>Shimane</name>
 		<capital>Matsue</capital>
+		<flag>japan/jp-shimane.png</flag>
 		<color>
 			<red>251</red>
 			<green>253</green>
@@ -309,8 +331,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Hiroshima (Prefecture)</name>
+		<name>Hiroshima</name>
 		<capital>Hiroshima</capital>
+		<flag>japan/jp-hiroshima.png</flag>
 		<color>
 			<red>249</red>
 			<green>80</green>
@@ -318,64 +341,72 @@
 		</color>
 	</division>
 	<division>
-		<name>Yamaguchi (Prefecture)</name>
+		<name>Yamaguchi</name>
 		<capital>Yamaguchi</capital>
+		<flag>japan/jp-yamaguchi.png</flag>
 		<color>
 			<red>248</red>
 			<green>48</green>
 			<blue>76</blue>
 		</color>
 	</division><division>
-		<name>Fukuoka (Prefecture)</name>
+		<name>Fukuoka</name>
 		<capital>Fukuoka</capital>
+		<flag>japan/jp-fukuoka.png</flag>
 		<color>
 			<red>49</red>
 			<green>17</green>
 			<blue>210</blue>
 		</color>
 	</division><division>
-		<name>Ōita (Prefecture)</name>
-		<capital>Ōita</capital>
+		<name>Oita</name>
+		<capital>Oita</capital>
+		<flag>japan/jp-oita.png</flag>
 		<color>
 			<red>246</red>
 			<green>58</green>
 			<blue>0</blue>
 		</color>
 	</division><division>
-		<name>Miyazaki (Prefecture)</name>
+		<name>Miyazaki</name>
 		<capital>Miyazaki</capital>
+		<flag>japan/jp-miyazaki.png</flag>
 		<color>
 			<red>88</red>
 			<green>213</green>
 			<blue>59</blue>
 		</color>
 	</division><division>
-		<name>Kagoshima (Prefecture)</name>
+		<name>Kagoshima</name>
 		<capital>Kagoshima</capital>
+		<flag>japan/jp-kagoshima.png</flag>
 		<color>
 			<red>242</red>
 			<green>16</green>
 			<blue>5</blue>
 		</color>
 	</division><division>
-		<name>Kumamoto (Prefecture)</name>
+		<name>Kumamoto</name>
 		<capital>Kumamoto</capital>
+		<flag>japan/jp-kumamoto.png</flag>
 		<color>
 			<red>236</red>
 			<green>19</green>
 			<blue>116</blue>
 		</color>
 	</division><division>
-		<name>Saga (Prefecture)</name>
+		<name>Saga</name>
 		<capital>Saga</capital>
+		<flag>japan/jp-saga.png</flag>
 		<color>
 			<red>14</red>
 			<green>172</green>
 			<blue>29</blue>
 		</color>
 	</division><division>
-		<name>Nagasaki (Prefecture)</name>
+		<name>Nagasaki</name>
 		<capital>Nagasaki</capital>
+		<flag>japan/jp-nagasaki.png</flag>
 		<color>
 			<red>22</red>
 			<green>168</green>
@@ -385,6 +416,7 @@
 	<division>
 		<name>Ehime</name>
 		<capital>Matsuyama</capital>
+		<flag>japan/jp-ehime.png</flag>
 		<color>
 			<red>253</red>
 			<green>155</green>
@@ -392,8 +424,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Kōchi (Prefecture)</name>
-		<capital>Kōchi</capital>
+		<name>Kochi</name>
+		<capital>Kochi</capital>
+		<flag>japan/jp-kochi.png</flag>
 		<color>
 			<red>204</red>
 			<green>50</green>
@@ -401,8 +434,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Tokushima (Prefecture)</name>
+		<name>Tokushima</name>
 		<capital>Tokushima</capital>
+		<flag>japan/jp-tokushima.png</flag>
 		<color>
 			<red>64</red>
 			<green>64</green>
@@ -412,6 +446,7 @@
 	<division>
 		<name>Kagawa</name>
 		<capital>Takamatsu</capital>
+		<flag>japan/jp-kagawa.png</flag>
 		<color>
 			<red>41</red>
 			<green>151</green>
@@ -421,6 +456,7 @@
 	<division>
 		<name>Kanagawa</name>
 		<capital>Yokohama</capital>
+		<flag>japan/jp-kanagawa.png</flag>
 		<color>
 			<red>250</red>
 			<green>15</green>
@@ -428,8 +464,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Tokyo (Prefecture)</name>
+		<name>Tokyo</name>
 		<capital>Tokyo</capital>
+		<flag>japan/jp-tokyo.png</flag>
 		<color>
 			<red>135</red>
 			<green>55</green>
@@ -439,6 +476,7 @@
 	<division>
 		<name>Okinawa</name>
 		<capital>Naha</capital>
+		<flag>japan/jp-okinawa.png</flag>
 		<color>
 			<red>235</red>
 			<green>33</green>
@@ -446,3 +484,4 @@
 		</color>
 	</division>
 </map>
+
