@@ -17,7 +17,6 @@
 #include <QMouseEvent>
 #include <QScrollBar>
 #include <QTimer>
-#include <QTime>
 
 #include <klocale.h>
 #include <kdebug.h>
@@ -46,9 +45,9 @@ placeMapWidget::~placeMapWidget()
 
 void placeMapWidget::init(KGmap *map, QImage *mapImage)
 {
-        p_map = map;
+	p_map = map;
 	p_mapImage = mapImage;
-        createGameMapImage();
+	createGameMapImage();
 	p_scene->setSceneRect( p_gameImage->rect() );
 	resetCachedContent();
 	
@@ -62,7 +61,7 @@ void placeMapWidget::createGameMapImage()
 	QVector<QRgb> colormap = p_mapImage->colorTable();
 	p_gameImage = new QImage(p_mapImage->size(), QImage::Format_RGB32);
 	// So far, nobody has dedicated this color to a division :)
-	// I, for one, reserve grays for non-division pixels
+	// I, for one, reserve grays for non-division pixels.
 	p_gameImage->fill(QColor(224,224,224).rgb());
 
 	QList<division*> ignoredDivisions = p_map->getIgnoredDivisions(division::eClick);
@@ -148,7 +147,8 @@ void placeMapWidget::updateCursor()
 	}
 	else
 	{
-		QImage scaledDivisionImage = p_currentDivisionImage->scaled(static_cast<int>(p_currentDivisionImage->width() * matrix().m11()),static_cast<int>(p_currentDivisionImage->height() * matrix().m22()));
+		QImage scaledDivisionImage = p_currentDivisionImage->scaled(static_cast<int>(p_currentDivisionImage->width() * matrix().m11()),
+																	static_cast<int>(p_currentDivisionImage->height() * matrix().m22()));
 		p_currentCursor = new QCursor(QPixmap::fromImage(scaledDivisionImage));
 	}
 	setCursor(*p_currentCursor);
@@ -198,6 +198,16 @@ void placeMapWidget::mousePressEvent(QMouseEvent *e)
 			}
 		}
 	}
+	else if (e -> button() == Qt::MidButton)
+	{
+		p_modeBeforeMidClick = p_mode;
+		p_mode = WantMove;
+		updateActions();
+		p_prev = e->pos();
+		//setCursor(Qt::SizeAllCursor);
+		p_mode = Moving;
+		updateActions();
+	}
 	else if ( p_mode == WantZoom )
 	{
 		setGameImage();
@@ -228,7 +238,7 @@ void placeMapWidget::mouseMoveEvent(QMouseEvent *e)
 	}
 }
 
-void placeMapWidget::mouseReleaseEvent(QMouseEvent *)
+void placeMapWidget::mouseReleaseEvent(QMouseEvent *e)
 {
 	if ( p_mode == Zooming )
 	{
@@ -242,8 +252,9 @@ void placeMapWidget::mouseReleaseEvent(QMouseEvent *)
 	}
 	else if ( p_mode == Moving )
 	{
-		unsetCursor();
-		p_mode = WantMove;
+		if ( e->button() != Qt::MidButton)
+			unsetCursor();
+		p_mode = p_modeBeforeMidClick;
 	}
 }
 

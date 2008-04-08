@@ -63,8 +63,8 @@ Q_OBJECT
 		void updateZoom();
 		
 		enum Mode { Zooming, WantZoom, Moving, WantMove, None };
-		Mode p_mode;
-                KGmap *p_map;
+		Mode p_mode, p_modeBeforeMidClick;
+		KGmap *p_map;
 		QImage *p_mapImage;
 		QImage *p_gameImage;
 		QImage *p_currentDivisionImage;
