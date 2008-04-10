@@ -118,7 +118,7 @@
 		<color><red>85</red><green>170</green><blue>0</blue></color>
 	</division>
 	<division>
-		<name>Shaballe</name>
+		<name>Shabelle</name>
 		<ignore>allowClickMode</ignore>
 		<color><red>128</red><green>255</green><blue>0</blue></color>
 	</division>
@@ -323,7 +323,7 @@
 		<color><red>223</red><green>128</green><blue>32</blue></color>
 	</division>
 	<division>
-		<name>Idigirka</name>
+		<name>Indigirka</name>
 		<ignore>allowClickMode</ignore>
 		<color><red>234</red><green>170</green><blue>106</blue></color>
 	</division>
@@ -583,7 +583,7 @@
 		<color><red>191</red><green>191</green><blue>64</blue></color>
 	</division>
 	<division>
-		<name>Duro</name>
+		<name>Douro</name>
 		<ignore>allowClickMode</ignore>
 		<color><red>212</red><green>212</green><blue>128</blue></color>
 	</division>

@@ -1,6 +1,6 @@
 <map>
 	<mapFile>burma.png</mapFile>
-	<name>Burma</name>
+	<name>Myanmar</name>
     <divisionsName>States and divisions</divisionsName>
 	<division>
 		<name>Frontier</name>
