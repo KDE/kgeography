@@ -24,7 +24,7 @@
 	</division>
 	<division>
 		<name>South America</name>
-		<capital>Anconcagua</capital>
+		<capital>Aconcagua</capital>
 		<color><red>0</red><green>255</green><blue>255</blue></color>
 	</division>
 	<division>
@@ -39,7 +39,7 @@
 	</division>
 	<division>
 		<name>Europe</name>
-		<capital>Elbrouz</capital>
+		<capital>Elbrus</capital>
 		<color><red>0</red><green>64</green><blue>255</blue></color>
 	</division>
 	<division>

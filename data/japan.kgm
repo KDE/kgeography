@@ -172,7 +172,7 @@
 	</division>
 	<division>
 		<name>Saitama</name>
-		<capital>Urawa</capital>
+		<capital>Saitama</capital>
 		<flag>japan/jp-saitama.png</flag>
 		<color>
 			<red>241</red>
@@ -232,7 +232,7 @@
 	</division>
 	<division>
 		<name>Shiga</name>
-		<capital>Outsu</capital>
+		<capital>Otsu</capital>
 		<flag>japan/jp-shiga.png</flag>
 		<color>
 			<red>15</red>
