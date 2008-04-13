@@ -20,6 +20,7 @@
 
 #include <kdebug.h>
 #include <klocale.h>
+#include <math.h>
 
 mapWidget::mapWidget(QWidget *parent) : QGraphicsView(parent)
 {
@@ -179,6 +180,30 @@ void mapWidget::resizeEvent(QResizeEvent *)
 	if ( matrix().isIdentity() )
 	{
 		QMetaObject::invokeMethod(this, "setAutomaticZoom", Qt::QueuedConnection, Q_ARG(bool, p_automaticZoom));
+	}
+}
+
+void mapWidget::wheelEvent(QWheelEvent *e)
+{
+	if ( e->modifiers() == Qt::NoModifier )
+	{
+		int delta = e->delta();
+		verticalScrollBar()->setValue(verticalScrollBar()->value() - delta);
+	}
+	else if ( e->modifiers()  == Qt::ShiftModifier )
+	{
+		int delta = e->delta();
+		horizontalScrollBar()->setValue(horizontalScrollBar()->value() + delta);
+	}
+	else if ( e->modifiers()  == Qt::ControlModifier )
+	{
+		int delta = e->delta();
+		if ( delta != 0 )
+		{
+			qreal rescale = pow(2, qreal(delta/120)/2.0);
+			QMatrix m(rescale, 0, 0, rescale, 0, 0);
+			setMatrix(m, true);
+		}
 	}
 }
 
