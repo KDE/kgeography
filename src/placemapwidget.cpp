@@ -20,6 +20,7 @@
 
 #include <klocale.h>
 #include <kdebug.h>
+#include <math.h>
 
 #include "division.h"
 
@@ -267,6 +268,30 @@ void placeMapWidget::resizeEvent(QResizeEvent *)
 	// Another hack to work around buginess in QGraphicsView
 	if ( matrix().isIdentity() )
 		QMetaObject::invokeMethod(this, "setAutomaticZoom", Qt::QueuedConnection, Q_ARG(bool, p_automaticZoom));
+}
+
+void placeMapWidget::wheelEvent(QWheelEvent *e)
+{
+	if ( e->modifiers() == Qt::NoModifier )
+	{
+		int delta = e->delta();
+		verticalScrollBar()->setValue(verticalScrollBar()->value() - delta);
+	}
+	else if ( e->modifiers()  == Qt::ShiftModifier )
+	{
+		int delta = e->delta();
+		horizontalScrollBar()->setValue(horizontalScrollBar()->value() - delta);
+	}
+	else if ( e->modifiers()  == Qt::ControlModifier )
+	{
+		int delta = e->delta();
+		if ( delta != 0 )
+		{
+			qreal rescale = pow(2, qreal(delta/120)/2.0);
+			QMatrix m(rescale, 0, 0, rescale, 0, 0);
+			setMatrix(m, true);
+		}
+	}
 }
 
 void placeMapWidget::setAutomaticZoom(bool automaticZoom)

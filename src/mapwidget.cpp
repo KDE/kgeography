@@ -187,12 +187,12 @@ void mapWidget::wheelEvent(QWheelEvent *e)
 {
 	if ( e->modifiers() == Qt::NoModifier )
 	{
-		int delta = e->delta();
+		int delta = e->delta() * verticalScrollBar()->singleStep() / 120;
 		verticalScrollBar()->setValue(verticalScrollBar()->value() - delta);
 	}
 	else if ( e->modifiers()  == Qt::ShiftModifier )
 	{
-		int delta = e->delta();
+		int delta = e->delta() * horizontalScrollBar()->singleStep() / 120;
 		horizontalScrollBar()->setValue(horizontalScrollBar()->value() - delta);
 	}
 	else if ( e->modifiers()  == Qt::ControlModifier )
