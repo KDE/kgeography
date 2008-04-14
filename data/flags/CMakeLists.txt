@@ -13,6 +13,7 @@ add_subdirectory(slovakia)
 add_subdirectory(ukraine)
 add_subdirectory(usa)
 add_subdirectory(japan)
+add_subdirectory(ireland)
 
 ########### install files ###############
 

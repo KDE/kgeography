@@ -236,6 +236,8 @@ install(FILES
    greece_prefectures.png
    world_continents.kgm
    world_continents.png
+   ireland_provinces.kgm
+   ireland_provinces.png
 
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
