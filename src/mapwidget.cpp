@@ -185,15 +185,11 @@ void mapWidget::resizeEvent(QResizeEvent *)
 
 void mapWidget::wheelEvent(QWheelEvent *e)
 {
-	if ( e->modifiers() == Qt::NoModifier )
-	{
-		int delta = e->delta() * verticalScrollBar()->singleStep() / 120;
-		verticalScrollBar()->setValue(verticalScrollBar()->value() - delta);
-	}
+	if ( e->modifiers() == Qt::NoModifier ) QGraphicsView::wheelEvent(e);
 	else if ( e->modifiers()  == Qt::ShiftModifier )
 	{
-		int delta = e->delta() * horizontalScrollBar()->singleStep() / 120;
-		horizontalScrollBar()->setValue(horizontalScrollBar()->value() - delta);
+		QWheelEvent reorientedEvent(e->pos(), e->delta(), e->buttons(), Qt::NoModifier, Qt::Orientation(3 -int(e->orientation())));
+		QGraphicsView::wheelEvent(&reorientedEvent);
 	}
 	else if ( e->modifiers()  == Qt::ControlModifier )
 	{

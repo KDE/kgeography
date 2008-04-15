@@ -272,15 +272,11 @@ void placeMapWidget::resizeEvent(QResizeEvent *)
 
 void placeMapWidget::wheelEvent(QWheelEvent *e)
 {
-	if ( e->modifiers() == Qt::NoModifier )
-	{
-		int delta = e->delta();
-		verticalScrollBar()->setValue(verticalScrollBar()->value() - delta);
-	}
+	if ( e->modifiers() == Qt::NoModifier ) QGraphicsView::wheelEvent(e);
 	else if ( e->modifiers()  == Qt::ShiftModifier )
 	{
-		int delta = e->delta();
-		horizontalScrollBar()->setValue(horizontalScrollBar()->value() - delta);
+		QWheelEvent reorientedEvent(e->pos(), e->delta(), e->buttons(), Qt::NoModifier, Qt::Orientation(3 -int(e->orientation())));
+		QGraphicsView::wheelEvent(&reorientedEvent);
 	}
 	else if ( e->modifiers()  == Qt::ControlModifier )
 	{
