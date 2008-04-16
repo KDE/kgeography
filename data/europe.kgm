@@ -2,6 +2,7 @@
 	<mapFile>europe.png</mapFile>
 	<name>Europe</name>
     <divisionsName>Countries</divisionsName>
+    <author>Albert Astals Cid</author>
 	<division>
 		<name>Water</name>
 		<ignore>yes</ignore>

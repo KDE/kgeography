@@ -50,11 +50,10 @@ KGmap *mapReader::parseMap(const QString &path)
 				}
 				
 				// Divisions string
-				QString divisionsString = getElementString("divisionsName", root, Mandatory);
-				if (!divisionsString.isEmpty())
-				{
-					kgmap -> setDivisionsString( divisionsString );
-				}
+				kgmap -> setDivisionsString( getElementString("divisionsName", root, Mandatory) );
+				
+				// Author string
+				kgmap -> setAuthor( getElementString("author", root, Mandatory) );
 				
 				QDomElement divisionTag = root.firstChildElement("division");
 				while (!divisionTag.isNull())

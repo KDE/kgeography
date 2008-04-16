@@ -2,6 +2,7 @@
 	<mapFile>ncamerica.png</mapFile>
 	<name>North and Central America</name>
     <divisionsName>Countries</divisionsName>
+    <author>Justin Morgan</author>
 	<division>
 		<name>Water</name>
 		<ignore>yes</ignore>

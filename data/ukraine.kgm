@@ -2,6 +2,7 @@
 	<mapFile>ukraine.png</mapFile>
 	<name>Ukraine</name>
     <divisionsName>Oblasts</divisionsName>
+    <author>Nicolas Berger</author>
 
 <division>
 <name>Volyns'ka oblast'</name> <capital>Luts'k</capital> <flag>ukraine/Volyn.png</flag>

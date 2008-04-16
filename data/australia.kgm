@@ -2,6 +2,7 @@
 	<mapFile>australia.png</mapFile>
 	<name>Australia</name>
     <divisionsName>States</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

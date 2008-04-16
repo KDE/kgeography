@@ -2,6 +2,7 @@
 	<mapFile>honduras.png</mapFile>
 	<name>Honduras</name>
     <divisionsName>Departments</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

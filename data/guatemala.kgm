@@ -2,6 +2,7 @@
 	<mapFile>guatemala.png</mapFile>
 	<name>Guatemala</name>
     <divisionsName>Departments</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

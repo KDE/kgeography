@@ -2,6 +2,7 @@
 	<mapFile>switzerland.png</mapFile>
 	<name>Switzerland</name>
     <divisionsName>Cantons</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

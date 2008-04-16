@@ -1,7 +1,8 @@
 <map>
 	<mapFile>uruguay.png</mapFile>
 	<name>Uruguay</name>
-    <divisionsName>Departments</divisionsName>
+	<divisionsName>Departments</divisionsName>
+	<author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

@@ -2,6 +2,7 @@
 	<mapFile>slovakia.png</mapFile>
 	<name>Slovakia</name>
     <divisionsName>Regions</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

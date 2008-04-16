@@ -2,6 +2,7 @@
 	<mapFile>south_africa.png</mapFile>
 	<name>South Africa</name>
     <divisionsName>Provinces</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

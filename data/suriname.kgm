@@ -1,7 +1,8 @@
 <map>
 	<mapFile>suriname.png</mapFile>
 	<name>Suriname</name>
-        <divisionsName>Districts</divisionsName>
+	<divisionsName>Districts</divisionsName>
+	<author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

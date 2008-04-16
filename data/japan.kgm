@@ -2,6 +2,7 @@
 	<mapFile>japan.png</mapFile>
 	<name>Japan</name>
     <divisionsName>Prefectures</divisionsName>
+    <author>Ed Montgomery</author>
 	<division>
 		<name>Out of Bounds</name>
 		<ignore>yes</ignore>

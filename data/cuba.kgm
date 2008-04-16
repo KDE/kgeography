@@ -2,6 +2,7 @@
 	<mapFile>cuba.png</mapFile>
 	<name>Cuba</name>
     <divisionsName>Provinces</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

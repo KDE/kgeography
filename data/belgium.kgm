@@ -2,6 +2,7 @@
 	<mapFile>belgium.png</mapFile>
 	<name>Belgium</name>
     <divisionsName>Provinces</divisionsName>
+    <author>Wim Peeters</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

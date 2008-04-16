@@ -2,6 +2,7 @@
 	<mapFile>great-britain_counties.png</mapFile>
 	<name>Great-Britain (Counties)</name>
     <divisionsName>Counties</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

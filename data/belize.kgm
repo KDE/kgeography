@@ -2,6 +2,7 @@
 	<mapFile>belize.png</mapFile>
 	<name>Belize</name>
     <divisionsName>Districts</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

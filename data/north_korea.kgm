@@ -1,7 +1,8 @@
 <map>
 	<mapFile>north_korea.png</mapFile>
-	<name>North (Korea)</name>
+	<name>North Korea</name>
     <divisionsName>Provinces</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

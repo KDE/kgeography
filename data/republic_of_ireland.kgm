@@ -2,6 +2,7 @@
 	<mapFile>republic_of_ireland.png</mapFile>
 	<name>Republic Of Ireland</name>
     <divisionsName>Counties</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

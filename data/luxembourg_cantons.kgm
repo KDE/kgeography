@@ -2,6 +2,7 @@
 	<mapFile>luxembourg_cantons.png</mapFile>
 	<name>Luxembourg (Cantons)</name>
     <divisionsName>Cantons</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

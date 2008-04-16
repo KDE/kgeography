@@ -2,6 +2,7 @@
 	<mapFile>asia.png</mapFile>
 	<name>Asia</name>
     <divisionsName>Countries</divisionsName>
+    <author>Yukiko Bando</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

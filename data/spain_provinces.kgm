@@ -2,6 +2,7 @@
 	<mapFile>spain_provinces.png</mapFile>
 	<name>Spain (Provinces)</name>
     <divisionsName>Provinces</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

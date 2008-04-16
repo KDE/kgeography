@@ -42,6 +42,7 @@ Q_OBJECT
 		void askFlagDivisions();
 		void askDivisionFlags();
 		void disclaimer();
+		void showMapAuthor();
 		void resizeMainWindow();
 		void questionsEnded();
 		
@@ -70,6 +71,7 @@ Q_OBJECT
 		KToggleAction *p_move;
 		KToggleAction *p_zoomAutomatic;
 		QAction *p_zoomOriginal;
+		QAction *p_showAuthor;
 		QLabel *p_currentMap;
 
 		KGmap *p_map;

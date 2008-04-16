@@ -2,6 +2,7 @@
 	<mapFile>albania_districts.png</mapFile>
 	<name>Albania (Districts)</name>
     <divisionsName>Districts</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

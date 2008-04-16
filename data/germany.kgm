@@ -2,6 +2,7 @@
 	<mapFile>germany.png</mapFile>
 	<name>Germany</name>
     <divisionsName>States</divisionsName>
+    <author>Yann Verley</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

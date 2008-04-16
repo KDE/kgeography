@@ -2,6 +2,7 @@
 	<mapFile>southkorea.png</mapFile>
 	<name>Republic of Korea</name>
     <divisionsName>Regions</divisionsName>
+    <author>Ed Montgomery</author>
 	<division>
 		<name>Out of Bounds</name>
 		<ignore>yes</ignore>

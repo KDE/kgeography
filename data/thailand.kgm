@@ -2,6 +2,7 @@
 	<mapFile>thailand.png</mapFile>
 	<name>Thailand</name>
     <divisionsName>Provinces</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

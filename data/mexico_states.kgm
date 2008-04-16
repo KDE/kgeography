@@ -2,6 +2,7 @@
 	<mapFile>mexico_states.png</mapFile>
 	<name>Mexico (States)</name>
     <divisionsName>States</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

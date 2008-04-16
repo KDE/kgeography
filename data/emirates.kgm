@@ -2,6 +2,7 @@
 	<mapFile>emirates.png</mapFile>
 	<name>United Arab Emirates</name>
     <divisionsName>Emirates</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

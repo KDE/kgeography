@@ -2,6 +2,7 @@
 	<mapFile>caribbean.png</mapFile>
 	<name>Caribbean</name>
     <divisionsName>Countries</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

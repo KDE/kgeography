@@ -2,6 +2,7 @@
 	<mapFile>oceania.png</mapFile>
 	<name>Oceania</name>
     <divisionsName>Countries</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

@@ -2,6 +2,7 @@
 	<mapFile>lithuania_municipalities.png</mapFile>
 	<name>Lithuania (Municipalities)</name>
     <divisionsName>Municipalities</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

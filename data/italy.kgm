@@ -2,6 +2,7 @@
 	<mapFile>italy.png</mapFile>
 	<name>Italy</name>
     <divisionsName>Regions</divisionsName>
+    <author>Maurizio Paolini</author>
 	<division>
 		<name>Not Italy</name>
 		<ignore>yes</ignore>

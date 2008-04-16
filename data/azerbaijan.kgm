@@ -2,6 +2,7 @@
 	<mapFile>azerbaijan.png</mapFile>
 	<name>Azerbaijan</name>
     <divisionsName>Rayons</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

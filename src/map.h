@@ -28,6 +28,7 @@ class KGmap
 		bool setMapFile(const QString &s);
 		void setName(const QString &s);
 		void setDivisionsString(const QString &s);
+		void setAuthor(const QString &s);
 		
 		// return the number of askable divisions
 		uint count(division::askMode am) const;
@@ -42,6 +43,7 @@ class KGmap
 		QString getDivisionsString() const;
 		QString getRandomDivision(division::askMode am) const;
 		QString getWhatIs(QRgb c, bool all) const;
+		QString getAuthor() const;
 		QColor getColor(const QString &s) const;
 		const QList<division*> getIgnoredDivisions(division::askMode am) const;
 		
@@ -53,6 +55,7 @@ class KGmap
 		
 		QString p_name, p_file, p_mapFile;
 		QString p_divisionsString;
+		QString p_author;
 };
 
 #endif

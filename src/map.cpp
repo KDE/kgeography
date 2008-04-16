@@ -63,6 +63,11 @@ void KGmap::setDivisionsString(const QString &s)
 	p_divisionsString = s;
 }
 
+void KGmap::setAuthor(const QString &s)
+{
+	p_author = s;
+}
+
 uint KGmap::count(division::askMode am) const
 {
 	uint count = 0;
@@ -134,6 +139,11 @@ QString KGmap::getWhatIs(QRgb c, bool all) const
 		else if (d -> canAsk(division::eClick)) return d -> getName();
 		else return "";
 	}
+}
+
+QString KGmap::getAuthor() const
+{
+	return p_author;
 }
 
 QColor KGmap::getColor(const QString &s) const

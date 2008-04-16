@@ -2,6 +2,7 @@
 	<mapFile>china.png</mapFile>
 	<name>China</name>
     <divisionsName>Provinces</divisionsName>
+    <author>Melody Fink</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

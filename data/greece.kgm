@@ -2,6 +2,7 @@
 	<mapFile>greece.png</mapFile>
 	<name>Greece</name>
     <divisionsName>Peripheries</divisionsName>
+    <author>John Hall</author>
 	<division>
 		<name>Border</name>
 		<ignore>yes</ignore>

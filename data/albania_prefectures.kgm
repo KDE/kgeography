@@ -2,6 +2,7 @@
 	<mapFile>albania_prefectures.png</mapFile>
 	<name>Albania (Prefectures)</name>
     <divisionsName>Prefectures</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

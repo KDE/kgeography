@@ -2,6 +2,7 @@
 	<mapFile>norway.png</mapFile>
 	<name>Norway</name>
     <divisionsName>Counties</divisionsName>
+    <author>Mikolaj Machowski</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

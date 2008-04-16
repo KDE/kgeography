@@ -2,6 +2,7 @@
 	<mapFile>india.png</mapFile>
 	<name>India</name>
     <divisionsName>States and territories</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

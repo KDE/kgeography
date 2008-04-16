@@ -1,7 +1,8 @@
 <map>
 	<mapFile>waters_world-class.png</mapFile>
 	<name>Waters (World-Class)</name>
-    <divisionsName>Oceans and basins</divisionsName>
+	<divisionsName>Oceans and basins</divisionsName>
+	<author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

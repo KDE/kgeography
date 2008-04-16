@@ -2,6 +2,7 @@
 	<mapFile>egypt.png</mapFile>
 	<name>Egypt</name>
     <divisionsName>Governorates</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

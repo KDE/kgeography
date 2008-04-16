@@ -2,6 +2,7 @@
 	<mapFile>malaysia.png</mapFile>
 	<name>Malaysia</name>
     <divisionsName>States</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

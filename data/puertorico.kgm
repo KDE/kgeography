@@ -2,6 +2,7 @@
 	<mapFile>puertorico.png</mapFile>
 	<name>Puerto Rico</name>
     <divisionsName>Municipalities</divisionsName>
+    <author>Eduardo Caro</author>
 
 	<division>
 		<name>Frontier</name>

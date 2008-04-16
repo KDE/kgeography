@@ -2,6 +2,7 @@
 	<mapFile>france.png</mapFile>
 	<name>France</name>
     <divisionsName>Departments</divisionsName>
+    <author>Yann Verley</author>
 	<division>
 		<name>Not France</name>
 		<ignore>yes</ignore>

@@ -1,7 +1,8 @@
 <map>
 	<mapFile>world.png</mapFile>
 	<name>World</name>
-    <divisionsName>Countries</divisionsName>
+	<divisionsName>Countries</divisionsName>
+	<author>Justin Morgan</author>
 	<division>
 		<name>Not a Nation</name>
 		<ignore>yes</ignore>

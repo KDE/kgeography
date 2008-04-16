@@ -128,6 +128,11 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 	a = actionCollection()->addAction( "disclaimer" );
 	a->setText( i18n("Disclaimer") );
 	connect(a, SIGNAL(triggered()), this, SLOT(disclaimer()));
+	
+	p_showAuthor = actionCollection()->addAction( "author" );
+	p_showAuthor->setText( i18n("Map author") );
+	p_showAuthor->setEnabled(false);
+	connect(p_showAuthor, SIGNAL(triggered()), this, SLOT(showMapAuthor()));
 
 	setupGUI(Keys | ToolBar | Save | Create);
 
@@ -355,6 +360,7 @@ void kgeography::setMap(KGmap *m)
 	set -> writeConfig();
 	delete p_map;
 	p_map = m;
+	p_showAuthor->setEnabled(m);
 
 	QString mapName = i18nc(p_map -> getFileName().toUtf8(), p_map -> getName().toUtf8());
 	QString divisionType = i18nc(p_map -> getFileName().toUtf8(), p_map->getDivisionsString().toUtf8());
@@ -380,6 +386,14 @@ void kgeography::setMap(KGmap *m)
 void kgeography::disclaimer()
 {
 	KMessageBox::information(this, i18n("Maps, flags, translations, etc. are as accurate as their respective authors could achieve, but KGeography should not be taken as an authoritative source."), i18n("Disclaimer"));
+}
+
+void kgeography::showMapAuthor()
+{
+	if (p_map)
+	{
+		KMessageBox::information(this, i18n("This map has been created by %1.", p_map->getAuthor()), i18n("Map Author"));
+	}
 }
 
 void kgeography::resizeMainWindow()

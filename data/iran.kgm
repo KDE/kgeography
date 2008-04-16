@@ -2,6 +2,7 @@
 	<mapFile>iran.png</mapFile>
 	<name>Iran</name>
     <divisionsName>Provinces</divisionsName>
+    <author>Zahra Farahmandi</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

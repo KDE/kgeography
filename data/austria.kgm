@@ -2,6 +2,7 @@
 	<mapFile>austria.png</mapFile>
 	<name>Austria</name>
     <divisionsName>States</divisionsName>
+    <author>Mikolaj Machowski</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

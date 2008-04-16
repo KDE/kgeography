@@ -2,6 +2,7 @@
 	<mapFile>el_salvador.png</mapFile>
 	<name>El Salvador</name>
     <divisionsName>Departments</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

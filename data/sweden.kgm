@@ -2,6 +2,7 @@
 	<mapFile>sweden.png</mapFile>
 	<name>Sweden by Counties</name>
     <divisionsName>Counties</divisionsName>
+    <author>Erik Christiansson</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

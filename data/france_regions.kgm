@@ -2,6 +2,7 @@
 	<mapFile>france_regions.png</mapFile>
 	<name>France (Regions)</name>
     <divisionsName>Regions</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

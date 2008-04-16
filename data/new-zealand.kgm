@@ -2,6 +2,7 @@
 	<mapFile>new-zealand.png</mapFile>
 	<name>New-Zealand</name>
     <divisionsName>regions</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

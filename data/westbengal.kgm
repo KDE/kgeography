@@ -1,7 +1,8 @@
 <map>
-<mapFile>westbengal.png</mapFile>
-<name>West Bengal</name>
+  <mapFile>westbengal.png</mapFile>
+  <name>West Bengal</name>
   <divisionsName>District</divisionsName>
+  <author>Kushal Das</author>
   
   <division>
     <name>Not bengal</name>

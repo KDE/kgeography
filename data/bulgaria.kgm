@@ -2,6 +2,7 @@
 	<mapFile>bulgaria.png</mapFile>
 	<name>Bulgaria</name>
     <divisionsName>Provinces</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

@@ -2,6 +2,7 @@
 	<mapFile>colombia.png</mapFile>
 	<name>Colombia</name>
     <divisionsName>Departments</divisionsName>
+    <author>Ricardo Valbuena</author>
 	<division>
 		<name>Amazonas</name>
 		<flag>colombia/amazonas.png</flag>

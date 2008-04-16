@@ -2,6 +2,7 @@
 	<mapFile>spain.png</mapFile>
 	<name>Spain</name>
 	<divisionsName>Autonomous communities</divisionsName>
+	<author>Albert Astals Cid</author>
 	<division>
 		<name>Not Spain</name>
 		<ignore>yes</ignore>

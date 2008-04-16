@@ -2,6 +2,7 @@
 	<mapFile>burma.png</mapFile>
 	<name>Myanmar</name>
     <divisionsName>States and divisions</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

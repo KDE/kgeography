@@ -2,6 +2,7 @@
 	<mapFile>romania.png</mapFile>
 	<name>Romania</name>
     <divisionsName>Counties</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

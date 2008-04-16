@@ -1,7 +1,8 @@
 <map>
 	<mapFile>venezuela.png</mapFile>
 	<name>Venezuela</name>
-    <divisionsName>States</divisionsName>
+	<divisionsName>States</divisionsName>
+	<author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

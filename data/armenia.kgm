@@ -2,6 +2,7 @@
 	<mapFile>armenia.png</mapFile>
 	<name>Armenia</name>
     <divisionsName>Regions</divisionsName>
+    <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

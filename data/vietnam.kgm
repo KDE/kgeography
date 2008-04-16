@@ -1,7 +1,8 @@
 <map>
 	<mapFile>vietnam.png</mapFile>
 	<name>Vietnam</name>
-    <divisionsName>Provinces</divisionsName>
+	<divisionsName>Provinces</divisionsName>
+	<author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

@@ -1,7 +1,8 @@
 <map>
 	<mapFile>world_continents.png</mapFile>
 	<name>World continents (from North Pole)</name>
-    <divisionsName>Continents</divisionsName>
+	<divisionsName>Continents</divisionsName>
+	<author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

@@ -2,6 +2,7 @@
 	<mapFile>usa.png</mapFile>
 	<name>USA</name>
     <divisionsName>States</divisionsName>
+    <author>Yann Verley</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>

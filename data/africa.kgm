@@ -2,6 +2,7 @@
 	<mapFile>africa.png</mapFile>
 	<name>Africa</name>
     <divisionsName>Countries</divisionsName>
+    <author>Albert Astals Cid</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>
