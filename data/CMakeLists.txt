@@ -238,6 +238,8 @@ install(FILES
    world_continents.png
    ireland_provinces.kgm
    ireland_provinces.png
+   nepal_zones.kgm
+   nepal_zones.png
 
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
