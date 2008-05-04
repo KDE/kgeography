@@ -5558,7 +5558,7 @@ i18nc("turkey.kgm", "Hatay");
 i18nc("turkey.kgm", "Antakya");
 i18nc("turkey.kgm", "Isparta");
 i18nc("turkey.kgm", "Isparta");
-i18nc("turkey.kgm", "İçel");
+i18nc("turkey.kgm", "Mersin");
 i18nc("turkey.kgm", "Mersin");
 i18nc("turkey.kgm", "İstanbul");
 i18nc("turkey.kgm", "İstanbul");
