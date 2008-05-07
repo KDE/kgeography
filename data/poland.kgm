@@ -1,7 +1,7 @@
 <map>
 	<mapFile>poland.png</mapFile>
 	<name>Poland</name>
-    <divisionsName>Regions</divisionsName>
+    <divisionsName>Provinces</divisionsName>
     <author>Mikolaj Machowski</author>
 	<division>
 		<name>Frontier</name>

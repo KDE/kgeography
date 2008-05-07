@@ -4449,7 +4449,7 @@ i18nc("philippines.kgm", "Ipil");
 i18nc("philippines.kgm", "National Capital");
 i18nc("philippines.kgm", "Manila");
 i18nc("poland.kgm", "Poland");
-i18nc("poland.kgm", "Regions");
+i18nc("poland.kgm", "Provinces");
 i18nc("poland.kgm", "Frontier");
 i18nc("poland.kgm", "Not Poland");
 i18nc("poland.kgm", "Masovia");
