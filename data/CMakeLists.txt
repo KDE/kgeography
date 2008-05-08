@@ -240,6 +240,8 @@ install(FILES
    ireland_provinces.png
    nepal_zones.kgm
    nepal_zones.png
+   catalonia_comarques.kgm
+   catalonia_comarques.png
 
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 

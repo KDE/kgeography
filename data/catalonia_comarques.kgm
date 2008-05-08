@@ -1,0 +1,226 @@
+<map>
+	<mapFile>catalonia_comarques.png</mapFile>
+	<name>Catalonia (Comarques)</name>
+	<author>Orestes Mas</author>
+	<divisionsName>Comarques</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>1</red><green>1</green><blue>1</blue></color>
+	</division>
+	<division>
+		<name>Outside Catalonia</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Alt Camp</name>
+		<capital>Valls</capital>
+		<color><red>170</red><green>255</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Alt Empordà</name>
+		<capital>Figueres</capital>
+		<color><red>255</red><green>255</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Alt Penedès</name>
+		<capital>Vilafranca dPenedès</capital>
+		<color><red>0</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Alt Urgell</name>
+		<capital>La Seu d'Urgell</capital>
+		<color><red>85</red><green>255</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Alta Ribagorça</name>
+		<capital>Pont de Suert</capital>
+		<color><red>255</red><green>85</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Anoia</name>
+		<capital>Igualada</capital>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Bages</name>
+		<capital>Manresa</capital>
+		<color><red>142</red><green>28</green><blue>28</blue></color>
+	</division>
+	<division>
+		<name>Baix Camp</name>
+		<capital>Reus</capital>
+		<color><red>255</red><green>0</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Baix Ebre</name>
+		<capital>Tortosa</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Baix Empordà</name>
+		<capital>La Bisbal d'Empordà</capital>
+		<color><red>170</red><green>170</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Baix Llobregat</name>
+		<capital>Sant Feliu de Llobregat</capital>
+		<color><red>170</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Baix Penedès</name>
+		<capital>El Vendrell</capital>
+		<color><red>170</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Barcelonès</name>
+		<capital>Barcelona</capital>
+		<color><red>170</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Berguedà</name>
+		<capital>Berga</capital>
+		<color><red>255</red><green>170</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Cerdanya</name>
+		<capital>Puigcerdà</capital>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Conca de Barberà</name>
+		<capital>Montblanc</capital>
+		<color><red>0</red><green>0</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Garraf</name>
+		<capital>Vilanova i Geltrú</capital>
+		<color><red>255</red><green>127</green><blue>127</blue></color>
+	</division>
+	<division>
+		<name>Garrigues</name>
+		<capital>Les Borges Blanques</capital>
+		<color><red>212</red><green>42</green><blue>42</blue></color>
+	</division>
+	<division>
+		<name>Garrotxa</name>
+		<capital>Olot</capital>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Gironès</name>
+		<capital>Girona</capital>
+		<color><red>85</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Maresme</name>
+		<capital>Mataró</capital>
+		<color><red>127</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Montsià</name>
+		<capital>Amposta</capital>
+		<color><red>212</red><green>170</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Noguera</name>
+		<capital>Balaguer</capital>
+		<color><red>0</red><green>170</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Osona</name>
+		<capital>Vic</capital>
+		<color><red>0</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Pallars Jussà</name>
+		<capital>Tremp</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Pallars Sobirà</name>
+		<capital>Sort</capital>
+		<color><red>85</red><green>0</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Pla de l'Estany</name>
+		<capital>Banyoles</capital>
+		<color><red>170</red><green>85</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Pla d'Urgell</name>
+		<capital>Mollerussa</capital>
+		<color><red>255</red><green>170</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Priorat</name>
+		<capital>Falset</capital>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Ribera d'Ebre</name>
+		<capital>Móra d'Ebre</capital>
+		<color><red>0</red><green>170</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Ripollès</name>
+		<capital>Ripoll</capital>
+		<color><red>85</red><green>170</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Segarra</name>
+		<capital>Cervera</capital>
+		<color><red>170</red><green>0</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Segrià</name>
+		<capital>Lleida</capital>
+		<color><red>128</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Selva</name>
+		<capital>Santa Coloma de Farners</capital>
+		<color><red>255</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Solsonès</name>
+		<capital>Solsona</capital>
+		<color><red>255</red><green>212</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Tarragonès</name>
+		<capital>Tarragona</capital>
+		<color><red>85</red><green>170</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Terra Alta</name>
+		<capital>Gandesa</capital>
+		<color><red>170</red><green>255</green><blue>212</blue></color>
+	</division>
+	<division>
+		<name>Urgell</name>
+		<capital>Tàrrega</capital>
+		<color><red>170</red><green>213</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Vall d'Aran</name>
+		<capital>Vielha e Mijaran</capital>
+		<color><red>213</red><green>255</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Vallès Occidental</name>
+		<capital>Sabadell and Terrassa</capital>
+		<color><red>170</red><green>170</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Vallès Oriental</name>
+		<capital>Granollers</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+</map>
