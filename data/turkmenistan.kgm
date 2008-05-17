@@ -1,0 +1,46 @@
+<map>
+	<mapFile>turkmenistan.png</mapFile>
+	<name>Turkmenistan</name>
+	<divisionsName>Provinces</divisionsName>
+	<author>Laurent Garnier</author>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Turkmenistan</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Ahal</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Balkan</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Dashhowuz</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Lebap</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Mary</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+</map>

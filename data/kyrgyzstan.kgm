@@ -1,0 +1,66 @@
+<map>
+	<mapFile>kyrgyzstan.png</mapFile>
+	<name>Kyrgyzstan</name>
+	<divisionsName>Provinces</divisionsName>
+	<author>Laurent Garnier</author>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Kyrgyzstan</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Bishkek</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>85</red><green>127</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Batken</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Chui</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>85</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Jalal-Abad</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>85</green><blue>212</blue></color>
+	</division>
+	<division>
+		<name>Naryn</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Osh</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Talas</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>170</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Issyk Kul</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>85</red><green>255</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Osh city</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>64</green><blue>133</blue></color>
+	</division>
+</map>

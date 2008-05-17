@@ -242,6 +242,22 @@ install(FILES
    nepal_zones.png
    catalonia_comarques.kgm
    catalonia_comarques.png
+   zimbabwe_districts.kgm
+   zimbabwe_districts.png
+   zambia_provinces.kgm
+   zambia_provinces.png
+   zambia_districts.kgm
+   zambia_districts.png
+   yemen.kgm
+   yemen.png
+   uzbekistan.kgm
+   uzbekistan.png
+   turkmenistan.kgm
+   turkmenistan.png
+   tajikistan.kgm
+   tajikistan.png
+   kyrgyzstan.kgm
+   kyrgyzstan.png
 
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 

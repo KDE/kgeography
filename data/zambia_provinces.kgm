@@ -1,0 +1,66 @@
+<map>
+	<mapFile>zambia_provinces.png</mapFile>
+	<name>Zambia (Provinces)</name>
+	<divisionsName>Provinces</divisionsName>
+	<author>Laurent Garnier</author>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Zambia (Provinces)</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Central</name>
+		<capital>Kabwe</capital>
+		<color><red>0</red><green>255</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Copperbelt</name>
+		<capital>Ndola</capital>
+		<color><red>0</red><green>170</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Eastern</name>
+		<capital>Chipata</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Luapula</name>
+		<capital>Mansa</capital>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Lusaka</name>
+		<capital>Lusaka</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Northern</name>
+		<capital>Kasama</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>North-Western</name>
+		<capital>Solwezi</capital>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Southern</name>
+		<capital>Livingstone</capital>
+		<color><red>255</red><green>0</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Western</name>
+		<capital>Mongu</capital>
+		<color><red>170</red><green>0</green><blue>255</blue></color>
+	</division>
+</map>

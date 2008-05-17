@@ -1,0 +1,116 @@
+<map>
+	<mapFile>yemen.png</mapFile>
+	<name>Yemen</name>
+	<divisionsName>Governorates</divisionsName>
+	<author>Laurent Garnier</author>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Yemen</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Abyan</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>212</red><green>128</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>'Adan</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Ad Dali'</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>0</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Al Bayda'</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>212</red><green>43</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>Al Hudaydah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>128</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Al Jawf</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>43</red><green>212</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>Al Mahri</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>43</red><green>212</green><blue>212</blue></color>
+	</division>
+	<division>
+		<name>Al Mahwit</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>'Amran</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Dhamar</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>127</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Hadramaout</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>43</red><green>212</green><blue>127</blue></color>
+	</division>
+	<division>
+		<name>Hajjah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Ibb</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Lahij</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Ma'rib</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>128</red><green>212</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>Sa'dah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>255</green><blue>127</blue></color>
+	</division>
+	<division>
+		<name>Sanaa</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Shabwah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>212</red><green>212</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>Ta'izz</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+</map>

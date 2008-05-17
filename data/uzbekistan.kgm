@@ -1,0 +1,91 @@
+<map>
+	<mapFile>uzbekistan.png</mapFile>
+	<name>Uzbekistan</name>
+	<divisionsName>Provinces</divisionsName>
+	<author>Laurent Garnier</author>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Uzbekistan</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Andijon</name>
+		<capital>Andijon</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Buxoro</name>
+		<capital>Buxoro (Bukhara)</capital>
+		<color><red>127</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Farg'ona</name>
+		<capital>Farg'ona (Fergana)　</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Jizzax</name>
+		<capital>Jizzax</capital>
+		<color><red>0</red><green>255</green><blue>127</blue></color>
+	</division>
+	<division>
+		<name>Xorazm</name>
+		<capital>Urganch</capital>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Namangan</name>
+		<capital>Namangan</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Navoiy</name>
+		<capital>Navoiy</capital>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Qashqadaryo</name>
+		<capital>Qarshi</capital>
+		<color><red>255</red><green>0</green><blue>128</blue></color>
+	</division>
+	<division>
+		<name>Qaraqalpaqstan</name>
+		<capital>Nukus</capital>
+		<color><red>0</red><green>128</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Samarqand</name>
+		<capital>Samarqand</capital>
+		<color><red>255</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Sirdaryo</name>
+		<capital>Guliston</capital>
+		<color><red>0</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Surxondaryo</name>
+		<capital>Termez</capital>
+		<color><red>212</red><green>43</green><blue>43</blue></color>
+	</division>
+	<division>
+		<name>Toshkent (Viloyati)</name>
+		<capital>Tashkent</capital>
+		<color><red>128</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Toshkent (Shahri )</name>
+		<capital>Tashkent</capital>
+		<color><red>212</red><green>128</green><blue>43</blue></color>
+	</division>
+</map>
