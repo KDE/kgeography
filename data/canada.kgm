@@ -1,7 +1,7 @@
 <map>
 	<mapFile>canada.png</mapFile>
 	<name>Canada</name>
-    <divisionsName>Provinces and Territories</divisionsName>
+    <divisionsName>Provinces or Territories</divisionsName>
     <author>Ed Montgomery</author>
 	<division>
 		<name>Out of Bounds</name>
