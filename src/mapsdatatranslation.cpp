@@ -1149,7 +1149,7 @@ i18nc("cameroon_provinces.kgm", "Buea");
 i18nc("cameroon_provinces.kgm", "West");
 i18nc("cameroon_provinces.kgm", "Bafoussam");
 i18nc("canada.kgm", "Canada");
-i18nc("canada.kgm", "Provinces or Territories");
+i18nc("canada.kgm", "Provinces and Territories");
 i18nc("canada.kgm", "Out of Bounds");
 i18nc("canada.kgm", "Frontier");
 i18nc("canada.kgm", "Prince Edward Island");
