@@ -4021,7 +4021,7 @@ i18nc("netherlands.kgm", "Haarlem");
 i18nc("netherlands.kgm", "South Holland");
 i18nc("netherlands.kgm", "The Hague");
 i18nc("new-zealand.kgm", "New-Zealand");
-i18nc("new-zealand.kgm", "regions");
+i18nc("new-zealand.kgm", "Regions");
 i18nc("new-zealand.kgm", "Frontier");
 i18nc("new-zealand.kgm", "Not New-Zealand");
 i18nc("new-zealand.kgm", "Northland");
