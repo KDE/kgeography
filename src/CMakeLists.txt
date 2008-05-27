@@ -37,7 +37,7 @@ kde4_add_executable(kgeography ${kgeography_SRCS})
 
 target_link_libraries(kgeography   ${KDE4_KDEUI_LIBS} )
 
-install(TARGETS kgeography  DESTINATION ${BIN_INSTALL_DIR} )
+install(TARGETS kgeography  ${INSTALL_TARGETS_DEFAULT_ARGS} )
 
 
 ########### next target ###############
