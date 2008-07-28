@@ -89,4 +89,5 @@ int main(int argc, char *argv[])
 		delete f;
 	}
 	output->close();
+        delete output;
 }
