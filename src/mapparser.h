@@ -22,7 +22,7 @@ class mapReader
 		mapReader();
 		
 		KGmap *parseMap(const QString &path);
-		QString getError();
+		QString getError() const;
 	
 	private:
 		enum eMandatoryness { Mandatory, Optional };

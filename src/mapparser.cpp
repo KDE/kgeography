@@ -141,7 +141,7 @@ KGmap *mapReader::parseMap(const QString &path)
 	}
 }
 
-QString mapReader::getError()
+QString mapReader::getError() const
 {
 	return p_error;
 }
