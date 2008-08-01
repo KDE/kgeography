@@ -1205,8 +1205,8 @@
 		<capital>Tegucigalpa</capital>
 		<flag>honduras.png</flag>
 		<color>
-			<red>0</red>
-			<green>0</green>
+			<red>255</red>
+			<green>255</green>
 			<blue>204</blue>
 		</color>
 	</division>
