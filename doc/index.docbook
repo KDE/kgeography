@@ -44,8 +44,8 @@
 
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2008-01-07</date>
-<releaseinfo>0.6</releaseinfo>
+<date>2008-08-23</date>
+<releaseinfo>0.5.9</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -589,11 +589,31 @@ or menu bars. -->
 <sect2>
 <title>The <guimenu>Help</guimenu> Menu</title>
 
-<!-- Assuming you have a standard help menu (help, what's this, about -->
-<!-- &kgeography;, about KDE) then the documentation is already written. -->
-<!-- The following entity is valid anywhere that a variablelist is -->
-<!-- valid.  -->
+<para>&kgeography; has a default &kde; <guimenu>Help</guimenu> as described
+below, with two additionional entries:</para>
+	
+<variablelist>
+<varlistentry>
+<term><menuchoice><guimenu>Help</guimenu>
+<guimenuitem>Disclaimer</guimenuitem>
+</menuchoice></term>
+<listitem>
+<para><action>Displays</action> a disclaimer about the accuracy of maps, flags and translations used by &kgeography;.</para>
+</listitem>
+</varlistentry>
 
+<varlistentry>
+<term><menuchoice><guimenu>Help</guimenu>
+<guimenuitem>Map author</guimenuitem>
+</menuchoice></term>
+<listitem>
+<para><action>Displays</action> the name of author who created the current map.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+	
+<para>The default &kde; <guimenu>Help</guimenu> entries are:</para>
+	
 &help.menu.documentation;
 
 </sect2>
