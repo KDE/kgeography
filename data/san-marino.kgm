@@ -1,0 +1,66 @@
+<map>
+	<mapFile>san-marino.png</mapFile>
+	<name>San-Marino</name>
+    <divisionsName>Municipalities</divisionsName>
+    <author>Laurent Garnier</author>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not San-Marino</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Acquaviva</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Città di San Marino</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Chiesanouva</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Fiorentino</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>85</red><green>255</green><blue>85</blue></color>
+	</division>
+	<division>
+		<name>Montegiardino</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>85</red><green>255</green><blue>198</blue></color>
+	</division>
+	<division>
+		<name>Featano</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>85</red><green>198</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Domagnano</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>85</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Serravalle</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>198</red><green>85</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Borgo Marggiore</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>85</green><blue>198</blue></color>
+	</division>
+</map>

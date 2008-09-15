@@ -1,0 +1,61 @@
+<map>
+	<mapFile>oman.png</mapFile>
+	<name>Oman</name>
+    <divisionsName>Regions</divisionsName>
+    <author>Laurent Garnier</author>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Oman</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Ad Dakhiliyah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Al Batinah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>157</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Al Wusta</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Ash Sharqiyah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Ad Dhahirah</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>39</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Muscat</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>255</green><blue>102</blue></color>
+	</division>
+	<division>
+		<name>Musandam</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>0</green><blue>235</blue></color>
+	</division>
+	<division>
+		<name>Dhofar</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+</map>

@@ -258,6 +258,12 @@ install(FILES
    tajikistan.png
    kyrgyzstan.kgm
    kyrgyzstan.png
+   san-marino.kgm
+   san-marino.png
+   oman.kgm
+   oman.png
+   liechtenstein.kgm
+   liechtenstein.png
 
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
