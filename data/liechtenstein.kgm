@@ -19,7 +19,7 @@
 		<color><red>204</red><green>204</green><blue>204</blue></color>
 	</division>
 	<division>
-		<name>Batzers</name>
+		<name>Balzers</name>
 		<ignore>allowClickMode</ignore>
 		<color><red>255</red><green>85</green><blue>255</blue></color>
 	</division>
@@ -29,7 +29,7 @@
 		<color><red>170</red><green>255</green><blue>85</blue></color>
 	</division>
 	<division>
-		<name>Grampin</name>
+		<name>Gamprin</name>
 		<ignore>allowClickMode</ignore>
 		<color><red>85</red><green>255</green><blue>85</blue></color>
 	</division>
