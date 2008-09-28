@@ -57,6 +57,9 @@ Q_OBJECT
 		void removeOldAskWidget();
 		void setMap(KGmap *m);
 
+		int askQuestionNumber(int upto, bool *rOK);
+
+
 		QWidget *p_bigWidget;
 		QWidget *p_underLeftWidget;
 

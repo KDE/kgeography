@@ -39,6 +39,7 @@
 #include "mapparser.h"
 #include "map.h"
 #include "placeasker.h"
+#include "integerinputdialog.h"
 
 kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResultsDialog(false)
 {
@@ -216,12 +217,23 @@ void kgeography::consult()
 	putAskWidget();
 }
 
+int kgeography::askQuestionNumber(int upto, bool *rOK)
+{
+	int i;
+	bool ok;
+	i = IntegerInputDialog::GetInteger(NULL, i18n("Number of Questions"),
+					   i18n("How many questions do you want? (1 to %1)", upto),
+					   1, upto, 1, &ok);
+	if ( rOK != NULL ) *rOK = ok;
+	return i;
+}
+
 void kgeography::askCapitalDivisions()
 {
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(division::eCapital)), 1, 1, p_map -> count(division::eCapital), 1, &ok);
+	i = askQuestionNumber(p_map -> count(division::eCapital), &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -237,7 +249,7 @@ void kgeography::askDivisionCapitals()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(division::eCapital)), 1, 1, p_map -> count(division::eCapital), 1, &ok);
+	i = askQuestionNumber(p_map -> count(division::eCapital), &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -253,7 +265,7 @@ void kgeography::askMap()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(division::eClick)), 1, 1, p_map -> count(division::eClick), 1, &ok);
+	i = askQuestionNumber(p_map -> count(division::eClick), &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -272,7 +284,7 @@ void kgeography::askPlaceMap()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(division::eClick)), 1, 1, p_map -> count(division::eClick), 1, &ok);
+	i = askQuestionNumber(p_map -> count(division::eClick), &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -291,7 +303,7 @@ void kgeography::askFlagDivisions()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(division::eFlag)), 1, 1, p_map -> count(division::eFlag), 1, &ok);
+	i = askQuestionNumber(p_map -> count(division::eFlag), &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -307,7 +319,7 @@ void kgeography::askDivisionFlags()
 	int i;
 	bool ok;
 	showResultsDialog();
-	i = KInputDialog::getInteger(i18n("Number of Questions"), i18n("How many questions do you want? (1 to %1)", p_map -> count(division::eFlag)), 1, 1, p_map -> count(division::eFlag), 1, &ok);
+	i = askQuestionNumber(p_map -> count(division::eFlag), &ok);
 	if (ok)
 	{
 		removeOldAskWidget();
@@ -385,7 +397,8 @@ void kgeography::setMap(KGmap *m)
 
 void kgeography::disclaimer()
 {
-	KMessageBox::information(this, i18n("Maps, flags, translations, etc. are as accurate as their respective authors could achieve, but KGeography should not be taken as an authoritative source."), i18n("Disclaimer"));
+	KMessageBox::information(this, i18n("Maps, flags, translations, etc. are as accurate as their respective authors could achieve,"
+					    " but KGeography should not be taken as an authoritative source."), i18n("Disclaimer"));
 }
 
 void kgeography::showMapAuthor()

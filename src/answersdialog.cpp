@@ -18,7 +18,8 @@
 
 #include "answer.h"
 
-answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAnswers, const QString &question, int correctAnswers) : KDialog(parent)
+answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAnswers, const QString &question, int correctAnswers)
+	: KDialog(parent)
 {
 	setCaption(i18n("Your Answers Were"));
 	setButtons(KDialog::Ok);

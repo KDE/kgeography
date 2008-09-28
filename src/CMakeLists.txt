@@ -23,6 +23,7 @@ set(kgeography_SRCS
    divisioncapitalasker.cpp 
    boxasker.cpp 
    divisionflagasker.cpp 
+   integerinputdialog.cpp
    answer.cpp 
    answersdialog.cpp )
 

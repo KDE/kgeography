@@ -45,12 +45,13 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 	mainHBLayout -> addWidget(p_listBox);
 	QStringList::iterator it;
 	QStringList texts;
+	QStringList errorTexts;
 	for(it = list.begin(); it != list.end(); ++it)
 	{
 		m = p_reader.parseMap(*it);
 		if (!m)
 		{
-			KMessageBox::error(this, i18n("Error parsing %1: %2", *it, p_reader.getError()));
+			errorTexts << i18n("Error parsing %1: %2", *it, p_reader.getError());
 		}
 		else
 		{
@@ -58,6 +59,11 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 			texts << text;
 			p_maps.insert(text, m);
 		}
+	}
+
+	if ( errorTexts.size() > 0 )
+	{
+		KMessageBox::errorList(this, "Error parsing", errorTexts);
 	}
 	
 	p_image = new QLabel(mainHB);
