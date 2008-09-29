@@ -63,7 +63,7 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 
 	if ( errorTexts.size() > 0 )
 	{
-		KMessageBox::errorList(this, "Error parsing", errorTexts);
+		KMessageBox::errorList(this, i18n("Error parsing"), errorTexts);
 	}
 	
 	p_image = new QLabel(mainHB);
