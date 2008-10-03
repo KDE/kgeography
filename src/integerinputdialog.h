@@ -1,5 +1,3 @@
-
-#include <kdialog.h>
 /***************************************************************************
  *   Copyright (C) 2004-2008 by Albert Astals Cid                          *
  *   aacid@kde.org                                                         *
