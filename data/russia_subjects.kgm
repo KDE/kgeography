@@ -1,7 +1,7 @@
 <map>
 	<mapFile>russia_subjects.png</mapFile>
 	<name>Russia (Subjects)</name>
-    <divisionsName>Subjects</divisionsName>
+    <divisionsName>Districts</divisionsName>
     <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>
@@ -136,7 +136,7 @@
 	<division>
 		<name>Krasnoyarsk</name>
 		<capital>Krasnoyarsk</capital>
-		<color><red>153</red><green>255</green><blue>204</blue></color>
+		<color><red>0</red><green>204</green><blue>102</blue></color>
 	</division>
 	<division>
 		<name>Primorsky</name>
@@ -226,7 +226,7 @@
 	<division>
 		<name>Kamchatka</name>
 		<capital>Petropavlovsk-Kamchatsky</capital>
-		<color><red>204</red><green>0</green><blue>0</blue></color>
+		<color><red>255</red><green>51</green><blue>51</blue></color>
 	</division>
 	<division>
 		<name>Kemerovo</name>
@@ -389,7 +389,7 @@
 		<color><red>230</red><green>77</green><blue>77</blue></color>
 	</division>
 	<division>
-		<name>Chita</name>
+		<name>Zabaykalsky Krai</name>
 		<capital>Chita</capital>
 		<color><red>102</red><green>204</green><blue>0</blue></color>
 	</division>
@@ -414,29 +414,9 @@
 		<color><red>255</red><green>255</green><blue>51</blue></color>
 	</division>
 	<division>
-		<name>Aga Buryatia</name>
-		<capital>Aginskoye</capital>
-		<color><red>153</red><green>255</green><blue>51</blue></color>
-	</division>
-	<division>
-		<name>Koryakia</name>
-		<capital>Palana</capital>
-		<color><red>255</red><green>51</green><blue>51</blue></color>
-	</division>
-	<division>
 		<name>Nenetsia</name>
 		<capital>Naryan-Mar</capital>
 		<color><red>153</red><green>51</green><blue>255</blue></color>
-	</division>
-	<division>
-		<name>Taymyria</name>
-		<capital>Dudinka</capital>
-		<color><red>0</red><green>204</green><blue>102</blue></color>
-	</division>
-	<division>
-		<name>Ust-Orda Buryatia</name>
-		<capital>Ust-Ordynsky</capital>
-		<color><red>0</red><green>204</green><blue>0</blue></color>
 	</division>
 	<division>
 		<name>Khantia-Mansia</name>
@@ -447,11 +427,6 @@
 		<name>Chukotka</name>
 		<capital>Anadyr</capital>
 		<color><red>255</red><green>153</green><blue>153</blue></color>
-	</division>
-	<division>
-		<name>Evenkia</name>
-		<capital>Tura</capital>
-		<color><red>51</red><green>255</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>Yamalia</name>
