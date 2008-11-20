@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 
 	os << copyright;
 
-	for (it = files.begin(); it != files.end(); ++it)
+	for (it = files.constBegin(); it != files.constEnd(); ++it)
 	{
 		QFile *f = new QFile(d.absolutePath() + QDir::separator() + *it);
 		f -> open(QIODevice::ReadOnly);
