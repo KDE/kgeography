@@ -36,7 +36,7 @@ kde4_add_app_icon(kgeography_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/hi*-apps
 
 kde4_add_executable(kgeography ${kgeography_SRCS})
 
-target_link_libraries(kgeography   ${KDE4_KDEUI_LIBS} )
+target_link_libraries(kgeography   ${KDE4_KDEUI_LIBS} ${QT_QTXML_LIBRARY})
 
 install(TARGETS kgeography  ${INSTALL_TARGETS_DEFAULT_ARGS} )
 
