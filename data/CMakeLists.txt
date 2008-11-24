@@ -264,6 +264,10 @@ install(FILES
    oman.png
    liechtenstein.kgm
    liechtenstein.png
+   portugal_provinces.kgm
+   portugal_provinces.png
+   portugal_districts.kgm
+   portugal_districts.png
 
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
