@@ -16,7 +16,7 @@
 #include <qstringlist.h>
 #include <qtextstream.h>
 
-static const QString copyright =
+static const QString copyr =
 "/***************************************************************************\n"
 " *   Copyright (C) 2004-2007 by Albert Astals Cid                          *\n"
 " *   aacid@kde.org                                                         *\n"
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 	QStringList::const_iterator it;
 	QDomDocument dd;
 
-	os << copyright;
+	os << copyr;
 
 	for (it = files.constBegin(); it != files.constEnd(); ++it)
 	{
