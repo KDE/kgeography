@@ -42,6 +42,8 @@ IntegerInputDialog::IntegerInputDialog(QWidget *parent, const QString &title, co
 	_spinBox->setValue(value);
 	connect(_spinBox, SIGNAL(valueChanged(int)), this, SLOT(spinboxValueChanged(int)));
 	hbox->addWidget(_spinBox);
+    
+	_spinBox->setFocus();
 }
 
 int IntegerInputDialog::value() const
