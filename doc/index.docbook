@@ -159,7 +159,7 @@ You can then choose what type of learning or testing you want to do by looking a
 </screenshot>
 </para>
 <para>
-Explore Map: a &LMB; click on an area of the map will display informations about that area, if you click on the small info icon on the popmap, it will open the wikipedia page for that division in the system's default browser:
+Explore Map: a &LMB; click on an area of the map will display information about that area, if you click on the small info icon on the popmap, it will open the wikipedia page for that division in the system's default browser:
 <screenshot>
 <screeninfo>Browse the map</screeninfo>
 	<mediaobject>
@@ -293,7 +293,7 @@ Flags of Provinces or Territories: a province name is given and you must find th
 <title>Using &kgeography;</title>
 
 <para>
-&kgeography; displays informations about some countries and tests you about those informations.
+&kgeography; displays information about some countries and tests you about those information.
 
 
 <screenshot>
