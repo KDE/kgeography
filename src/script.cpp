@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 	QTextStream os(output);
 	os.setCodec("UTF-8");
 	
-	QStringList files = d.entryList();
+	const QStringList files = d.entryList();
 	QStringList::const_iterator it;
 	QDomDocument dd;
 
