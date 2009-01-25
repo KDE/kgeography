@@ -44,8 +44,8 @@
 
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2008-08-23</date>
-<releaseinfo>0.5.9</releaseinfo>
+<date>2009-01-25</date>
+<releaseinfo>0.5.9-10</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -257,7 +257,7 @@ And the results are displayed when the test is finished:
 </screenshot>
 </para>
 <para>
-Capitals of Provinces or Territories: you have a capital and four province names and you must choose the correct one. As before, at the end a result dialog is shown.
+Capitals of Provinces and Territories: you have a capital and four province names and you must choose the correct one. As before, at the end a result dialog is shown.
 </para>
 <para>
 Provinces or Territories by Flag: a flag is shown and you must find the province it belongs to.
@@ -274,7 +274,7 @@ Provinces or Territories by Flag: a flag is shown and you must find the province
 </screenshot>
 </para>
 <para>
-Flags of Provinces or Territories: a province name is given and you must find the correct flag among four.
+Flags of Provinces and Territories: a province name is given and you must find the correct flag among four.
 <screenshot>
 <screeninfo>match the flag with the province</screeninfo>
 	<mediaobject>
@@ -325,7 +325,7 @@ Flags of Provinces or Territories: a province name is given and you must find th
 	  </textobject>
 	</mediaobject>
 </screenshot>
-You can click the <guimenuitem>Zoom</guimenuitem> and then draw a rectangle to zoom in a part of the map. While in zoom mode, you can press &RMB; to go back to the original map size (the <guimenuitem>Original Size</guimenuitem> action has the same effect). Use the scroll bars to move around the zoomed map or use the <guimenuitem>Move</guimenuitem> action that will allow you to drag the map using &LMB;. The <guimenuitem>Automatic Zoom</guimenuitem> feature will make the map as big as possible.
+You can click the <guibutton>Zoom</guibutton> button and then draw a rectangle to zoom in a part of the map. While in zoom mode, you can press &RMB; to go back to the original map size (the <guimenuitem>Original Size</guimenuitem> action has the same effect). Use the scroll bars to move around the zoomed map or use the <guimenuitem>Move</guimenuitem> action that will allow you to drag the map using &LMB;. The <guimenuitem>Automatic Zoom</guimenuitem> feature will make the map as big as possible.
 </para>
 
 </sect1>
@@ -445,7 +445,7 @@ There is another tool colorchecker.py written by Albert Astals Cid. You need PyQ
  Once that has been done you should be able of opening your map from inside &kgeography;.
  </para>
  <para>
- If you don't know which is your <filename class="directory">$<envar>KDEDIR</envar></filename>, type <userinput><command>kde-config</command> <option>--prefix</option></userinput> in a shell.
+ If you don't know which is your <filename class="directory">$<envar>KDEDIR</envar></filename>, type <userinput><command>kde4-config</command> <option>--prefix</option></userinput> in a shell.
 </para>
 <tip>
 <para>
@@ -525,7 +525,7 @@ or menu bars. -->
 <guimenu>View</guimenu>
 <guimenuitem>Zoom</guimenuitem>
 </menuchoice></term>
-<listitem><para><action>Goes in zoom mode</action></para></listitem>
+<listitem><para><action>Goes in zoom mode, then draw a rectangle to zoom in a part of the map</action></para></listitem>
 </varlistentry>
 <varlistentry>
 <term><menuchoice>
@@ -546,7 +546,7 @@ or menu bars. -->
 <guimenu>View</guimenu>
 <guimenuitem>Move</guimenuitem>
 </menuchoice></term>
-<listitem><para><action>Moves</action> the current map</para></listitem>
+<listitem><para><action>Moves</action> the current map. This item is only enabled, if you have zoomed into the map.</para></listitem>
 </varlistentry>
 </variablelist>
 </para>
