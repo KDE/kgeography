@@ -325,7 +325,8 @@ Flags of Provinces and Territories: a province name is given and you must find t
 	  </textobject>
 	</mediaobject>
 </screenshot>
-You can click the <guibutton>Zoom</guibutton> button and then draw a rectangle to zoom in a part of the map. While in zoom mode, you can press &RMB; to go back to the original map size (the <guimenuitem>Original Size</guimenuitem> action has the same effect). Use the scroll bars to move around the zoomed map or use the <guimenuitem>Move</guimenuitem> action that will allow you to drag the map using &LMB;. The <guimenuitem>Automatic Zoom</guimenuitem> feature will make the map as big as possible.
+You can click the <guibutton>Zoom</guibutton> button and then draw a rectangle to zoom in a part of the map. While in zoom mode, you can press &RMB; to go back to the original map size 
+(the <guimenuitem>Original Size</guimenuitem> action has the same effect). Use the scroll bars, the arrow keys or the mouse wheel to move around the zoomed map or use the <guimenuitem>Move</guimenuitem> action that will allow you to drag the map using &LMB;. The <guimenuitem>Automatic Zoom</guimenuitem> feature will make the map as big as possible.
 </para>
 
 </sect1>
