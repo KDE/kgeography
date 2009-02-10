@@ -41,12 +41,12 @@
 	<division>
 		<name>Mpumalanga</name>
 		<capital>Nelspruit</capital>
-		<color><red>255</red><green>170</green><blue>85</blue></color>
+		<color><red>255</red><green>85</green><blue>85</blue></color>
 	</division>
 	<division>
 		<name>Limpopo</name>
 		<capital>Polokwane</capital>
-		<color><red>255</red><green>85</green><blue>85</blue></color>
+		<color><red>255</red><green>170</green><blue>85</blue></color>
 	</division>
 	<division>
 		<name>Northern Cape</name>
