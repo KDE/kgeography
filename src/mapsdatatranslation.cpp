@@ -6045,7 +6045,7 @@ i18nc("uzbekistan.kgm", "Andijon");
 i18nc("uzbekistan.kgm", "Buxoro");
 i18nc("uzbekistan.kgm", "Buxoro (Bukhara)");
 i18nc("uzbekistan.kgm", "Farg'ona");
-i18nc("uzbekistan.kgm", "Farg'ona (Fergana)　");
+i18nc("uzbekistan.kgm", "Farg'ona (Fergana)");
 i18nc("uzbekistan.kgm", "Jizzax");
 i18nc("uzbekistan.kgm", "Jizzax");
 i18nc("uzbekistan.kgm", "Xorazm");
