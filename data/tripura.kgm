@@ -1,0 +1,64 @@
+<map>
+  <mapFile>tripura.png</mapFile>
+  <name>Tripura</name>
+  <divisionsName>District</divisionsName>
+  <author>Soumya Kanti Chakraborty</author>
+  
+  <division>
+    <name>Not Tripura</name>
+    <ignore>yes</ignore>
+    <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+    </color>
+  </division>
+  <division>
+    <name>Border</name>
+    <ignore>yes</ignore>
+    <color>
+      <red>1</red>
+      <green>1</green>
+      <blue>1</blue>
+    </color>
+  </division>
+  <division>
+    <name>Dhalai</name>
+    <capital>Ambassa</capital>
+    <color>
+      <red>206</red>
+      <green>254</green>
+      <blue>175</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>North Tripura</name>
+    <capital>Kailashahar</capital>
+    <color>
+      <red>255</red>
+      <green>245</green>
+      <blue>182</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>South Tripura</name>
+    <capital>Udaipur</capital>
+    <color>
+      <red>192</red>
+      <green>221</green>
+      <blue>254</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>West Tripura</name>
+    <capital>Agartala</capital>
+    <color>
+      <red>215</red>
+      <green>161</green>
+      <blue>174</blue>
+    </color>
+  </division>   
+</map>
