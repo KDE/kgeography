@@ -268,6 +268,12 @@ install(FILES
    portugal_provinces.png
    portugal_districts.kgm
    portugal_districts.png
+   tripura.kgm
+   tripura.png
+   sikkim.kgm
+   sikkim.png
+   manipur.kgm
+   manipur.png
 
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 
