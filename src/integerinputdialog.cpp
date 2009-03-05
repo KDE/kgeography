@@ -14,6 +14,7 @@
 #include <qlabel.h>
 #include <qslider.h>
 #include <qspinbox.h>
+#include <knuminput.h>
 
 IntegerInputDialog::IntegerInputDialog(QWidget *parent, const QString &title, const QString &question,
 				       int from, int upto, int byDefault)
@@ -22,41 +23,66 @@ IntegerInputDialog::IntegerInputDialog(QWidget *parent, const QString &title, co
 	setCaption(title);
 	setButtons(KDialog::Ok | KDialog::Cancel);
 
+	int value = ( from <= byDefault && byDefault <= upto ) ? byDefault : from;
+
 	QWidget *container = new QWidget(this);
-	setMainWidget(container);
+	this->setMainWidget(container);
 	QVBoxLayout *vbox = new QVBoxLayout(container);
+
 	QLabel *questionLbl = new QLabel(question);
 	vbox->addWidget(questionLbl);
-	QHBoxLayout *hbox = new QHBoxLayout();
-	vbox->addLayout(hbox);
 
-	_slider = new QSlider(Qt::Horizontal);
-	_slider->setRange(from, upto);
-	int value = ( from <= byDefault && byDefault <= upto ) ? byDefault : from;
-	_slider->setValue(value);
-	connect(_slider, SIGNAL(valueChanged(int)), this, SLOT(sliderValueChanged(int)));
-	hbox->addWidget(_slider);
+	if ( upto % 2 )
+	{
+		_nojet = new KIntNumInput();
+		_nojet->setRange(from, upto, byDefault, true);
+		vbox->addWidget(_nojet);
+		_slider = NULL;
+	}
+	else
+	{
+		_nojet = NULL;
+		QHBoxLayout *hbox = new QHBoxLayout();
+		vbox->addLayout(hbox);
 
-	_spinBox = new QSpinBox();
-	_spinBox->setRange(from, upto);
-	_spinBox->setValue(value);
-	connect(_spinBox, SIGNAL(valueChanged(int)), this, SLOT(spinboxValueChanged(int)));
-	hbox->addWidget(_spinBox);
+		_slider = new QSlider(Qt::Horizontal);
+		_slider->setRange(from, upto);
+		_slider->setTickPosition(QSlider::TicksBelow);
+		_slider->setValue(value);
+		connect(_slider, SIGNAL(valueChanged(int)), this, SLOT(sliderValueChanged(int)));
+		hbox->addWidget(_slider);
+
+		_spinBox = new QSpinBox();
+		_spinBox->setRange(from, upto);
+		_spinBox->setValue(value);
+		connect(_spinBox, SIGNAL(valueChanged(int)), this, SLOT(spinboxValueChanged(int)));
+		hbox->addWidget(_spinBox);
+	}
     
 	_spinBox->setFocus();
 }
 
 int IntegerInputDialog::value() const
 {
-	return _slider->value();
+	return ( _nojet != NULL ) ? _nojet->value() : _slider->value();
 }
 
 void IntegerInputDialog::setValue(int newValue)
 {
+	if ( _nojet != NULL )
+	{
+		_nojet->setValue(newValue);
+	}
+	else
+	{
+		_slider->setValue(newValue);
+	}
+	/*
 	if ( _slider->value() != newValue )
 		_slider->setValue(newValue);
 	if ( _slider->value() != newValue )
 		_slider->setValue(newValue);
+	*/
 }
 
 void IntegerInputDialog::sliderValueChanged(int newValue)

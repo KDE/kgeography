@@ -19,7 +19,8 @@
 #include <qlayout.h>
 #include <qimage.h>
 
-myPopup::myPopup(QWidget *parent, const QString &text, const QString &wikiLink, const QString &text2, const QString &flagFile) : QFrame(parent, Qt::FramelessWindowHint)
+myPopup::myPopup(QWidget *parent, const QString &text, const QString &wikiLink, const QString &text2, const QString &flagFile)
+	: QFrame(parent, Qt::FramelessWindowHint)
 {
 	wikipedia = wikiLink;
 	QHBoxLayout *lay = new QHBoxLayout(this);
@@ -72,6 +73,11 @@ myPopup::myPopup(QWidget *parent, const QString &text, const QString &wikiLink, 
 	
 	setFixedSize(sizeHint());
 	setAutoFillBackground(true);
+}
+
+void myPopup::updateLink(const QString &wikiLink)
+{
+	wikipedia = wikiLink;
 }
 
 void myPopup::mousePressEvent(QMouseEvent *)

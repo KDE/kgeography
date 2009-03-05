@@ -70,4 +70,9 @@ void popupManager::init(const QPoint &p)
 	connect(p_mp, SIGNAL(deleteMe()), this, SLOT(clear()));
 }
 
+void popupManager::updateLink(const QString &wikiLink)
+{
+	p_mp->updateLink(wikiLink);
+}
+
 #include "popupmanager.moc"

@@ -15,6 +15,7 @@
 
 class QSpinBox;
 class QSlider;
+class KIntNumInput;
 
 class IntegerInputDialog : public KDialog
 {
@@ -35,6 +36,7 @@ Q_OBJECT
 		void spinboxValueChanged(int newValue);
 
 	private:
+		KIntNumInput *_nojet;
 		QSpinBox *_spinBox;
 		QSlider  *_slider;
 };

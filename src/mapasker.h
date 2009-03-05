@@ -17,6 +17,9 @@
 class QLabel;
 class QSize;
 
+class QNetworkReply;
+class QNetworkAccessManager;
+
 class infoWidget;
 class mapWidget;
 
@@ -45,6 +48,7 @@ Q_OBJECT
 	
 	private slots:
 		void handleMapClick(QRgb c, const QPoint &p);
+		void receiveWikipediaData(QNetworkReply*);
 	
 	private:
 		QLabel *p_next;
@@ -55,6 +59,8 @@ Q_OBJECT
 		
 		popupManager p_popupManager;
 		bool p_shouldClearPopup, p_asker, p_firstShow;
+
+		QNetworkAccessManager *p_wikiAccessMgr;
 };
 
 #endif
