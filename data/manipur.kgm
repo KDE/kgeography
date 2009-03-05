@@ -1,0 +1,114 @@
+<map>
+  <mapFile>manipur.png</mapFile>
+  <name>Manipur</name>
+  <divisionsName>District</divisionsName>
+  <author>Soumya Kanti Chakraborty</author>
+  
+  <division>
+    <name>Not Manipur</name>
+    <ignore>yes</ignore>
+    <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+    </color>
+  </division>
+  <division>
+    <name>Border</name>
+    <ignore>yes</ignore>
+    <color>
+      <red>1</red>
+      <green>1</green>
+      <blue>1</blue>
+    </color>
+  </division>
+  <division>
+    <name>Tamenglong</name>
+    <capital>Tamenglong</capital>
+    <color>
+      <red>248</red>
+      <green>55</green>
+      <blue>47</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Senapati</name>
+    <capital>Senapati</capital>
+    <color>
+      <red>176</red>
+      <green>227</green>
+      <blue>104</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Imphal</name>
+    <capital>Imphal</capital>
+    <color>
+      <red>104</red>
+      <green>24</green>
+      <blue>3</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Thoubal</name>
+    <capital>Thoubal</capital>
+    <color>
+      <red>114</red>
+      <green>207</green>
+      <blue>98</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Bishnupur</name>
+    <capital>Bishnupur</capital>
+    <color>
+      <red>254</red>
+      <green>127</green>
+      <blue>147</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Ukhrul</name>
+    <capital>Ukhrul</capital>
+    <color>
+      <red>226</red>
+      <green>189</green>
+      <blue>109</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Jiribam</name>
+    <capital>Jiribam</capital>
+    <color>
+      <red>201</red>
+      <green>254</green>
+      <blue>235</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Chandel</name>
+    <capital>Chandel</capital>
+    <color>
+      <red>238</red>
+      <green>230</green>
+      <blue>110</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>Churachandpur</name>
+    <capital>Churachandpur</capital>
+    <color>
+      <red>15</red>
+      <green>138</green>
+      <blue>188</blue>
+    </color>
+  </division>
+</map>

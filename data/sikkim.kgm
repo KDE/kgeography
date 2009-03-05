@@ -1,0 +1,64 @@
+<map>
+  <mapFile>sikkim.png</mapFile>
+  <name>Sikkim</name>
+  <divisionsName>District</divisionsName>
+  <author>Soumya Kanti Chakraborty</author>
+  
+  <division>
+    <name>Not Sikkim</name>
+    <ignore>yes</ignore>
+    <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+    </color>
+  </division>
+  <division>
+    <name>Border</name>
+    <ignore>yes</ignore>
+    <color>
+      <red>1</red>
+      <green>1</green>
+      <blue>1</blue>
+    </color>
+  </division>
+  <division>
+    <name>North Sikkim</name>
+    <capital>Mangan</capital>
+    <color>
+      <red>82</red>
+      <green>184</green>
+      <blue>232</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>West Sikkim</name>
+    <capital>Geyzing</capital>
+    <color>
+      <red>156</red>
+      <green>232</green>
+      <blue>82</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>South Sikkim</name>
+    <capital>Namchi</capital>
+    <color>
+      <red>191</red>
+      <green>131</green>
+      <blue>243</blue>
+    </color>
+  </division>
+  
+  <division>
+    <name>East Sikkim</name>
+    <capital>Gangtok</capital>
+    <color>
+      <red>242</red>
+      <green>197</green>
+      <blue>120</blue>
+    </color>
+  </division>   
+</map>
