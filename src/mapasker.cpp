@@ -99,7 +99,7 @@ void mapAsker::receiveWikipediaData(QNetworkReply *reply)
 {
 	if ( reply->error() == QNetworkReply::NoError )
 	{
-		QByteArray bigXml = reply->readAll();
+		QString bigXml = reply->readAll();
 		int closingTextTagPos = bigXml.lastIndexOf("</text>");
 		if ( closingTextTagPos > 0 )
 		{
@@ -120,7 +120,7 @@ void mapAsker::receiveWikipediaData(QNetworkReply *reply)
 					int chunkOffset = toSearchStart.length();
 					int chunkStart = start + chunkOffset;
 					int chunkEnd = end - chunkStart;
-					QString translated = QString::fromUtf8(bigXml.mid(chunkStart, chunkEnd).data());
+					QString translated = bigXml.mid(chunkStart, chunkEnd);
 					QString wikiLink = QString( "http://%1.wikipedia.org/wiki/%2" ).arg(localeCode).arg(translated);
 					p_popupManager.updateLink(wikiLink);
 				}
@@ -136,7 +136,7 @@ void mapAsker::receiveWikipediaData(QNetworkReply *reply)
 						int chunkOffset = toSearchStart.length();
 						int chunkStart = start + chunkOffset;
 						int chunkEnd = end - chunkStart;
-						QString redirected = QString::fromUtf8(bigXml.mid(chunkStart, chunkEnd).data());
+						QString redirected = bigXml.mid(chunkStart, chunkEnd);
 
 						QUrl url(QString("http://en.wikipedia.org/wiki/Special:Export/") + redirected);
 						QNetworkRequest request;
