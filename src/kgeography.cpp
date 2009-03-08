@@ -63,8 +63,7 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 	QLabel * testYourselfLabel = new QLabel( i18n("Test Yourself:"), this );
 	testYourselfLabel->setAlignment( Qt::AlignHCenter );
 	p_askMap = new KPushButton(i18n("&Location of Regions"), leftWidget);
-	p_askMap->setWhatsThis(i18n("In this challenge you are given a division name on the left"
-				    " under the menu and you must find it on the map and click on it"));
+	p_askMap->setWhatsThis(i18n("In this challenge you are given a division name on the left under the menu and you must find it on the map and click on it"));
 	p_askPlaceMap = new KPushButton(i18n("&Place Regions in the Map"), leftWidget);
 	p_askPlaceMap->setWhatsThis(i18n("In this challenge you are given the shape of a region and you must place it on the map"));
 	p_askCapitalDivisions = new KPushButton(i18n("&Regions by Capital"), leftWidget);
@@ -163,11 +162,9 @@ void kgeography::showEvent(QShowEvent *)
 			}
 			else
 			{
-				KMessageBox::error(this, i18n("Could not open last used map. Error parsing %1: %2",
-							      file, reader.getError()));
+				KMessageBox::error(this, i18n("Could not open last used map. Error parsing %1: %2", file, reader.getError()));
 				openMap();
 			}
-			p_consult -> setEnabled(false);
 		}
 		else openMap();
 
@@ -243,7 +240,6 @@ void kgeography::askCapitalDivisions()
 		p_askWidget = new capitalDivisionAsker(p_bigWidget, p_map, p_underLeftWidget, i);
 		putAskWidget();
 		p_mustShowResultsDialog = true;
-		p_consult -> setEnabled(true);
 	}
 	else consult();
 }
@@ -260,7 +256,6 @@ void kgeography::askDivisionCapitals()
 		p_askWidget = new divisionCapitalAsker(p_bigWidget, p_map, p_underLeftWidget, i);
 		putAskWidget();
 		p_mustShowResultsDialog = true;
-		p_consult -> setEnabled(true);
 	}
 	else consult();
 }
@@ -280,7 +275,6 @@ void kgeography::askMap()
 		p_zoomAutomatic -> setEnabled(true);
 		putAskWidget();
 		p_mustShowResultsDialog = true;
-		p_consult -> setEnabled(true);
 	}
 	else consult();
 }
@@ -300,7 +294,6 @@ void kgeography::askPlaceMap()
 		p_zoomAutomatic -> setEnabled(true);
 		putAskWidget();
 		p_mustShowResultsDialog = true;
-		p_consult -> setEnabled(true);
 	}
 	else consult();
 }
@@ -317,7 +310,6 @@ void kgeography::askFlagDivisions()
 		p_askWidget = new flagDivisionAsker(p_bigWidget, p_map, p_underLeftWidget, i);
 		putAskWidget();
 		p_mustShowResultsDialog = true;
-		p_consult -> setEnabled(true);
 	}
 	else consult();
 }
@@ -334,7 +326,6 @@ void kgeography::askDivisionFlags()
 		p_askWidget = new divisionFlagAsker(p_bigWidget, p_map, p_underLeftWidget, i);
 		putAskWidget();
 		p_mustShowResultsDialog = true;
-		p_consult -> setEnabled(true);
 	}
 	else consult();
 }
@@ -394,7 +385,7 @@ void kgeography::setMap(KGmap *m)
 	p_askDivisionFlags->setText(i18n("&Flags of %1", divisionType));
 
 	p_currentMap -> setText(i18n("<qt>Current map:<br /><b>%1</b></qt>", mapName));
-	p_consult -> setEnabled(false);
+	p_consult -> setEnabled(true);
 	p_askMap -> setEnabled(m -> count(division::eClick) > 0);
 	p_askPlaceMap -> setEnabled(m -> count(division::eClick) > 0);
 	p_askFlagDivisions -> setEnabled(m -> count(division::eFlag) > 0);
@@ -452,7 +443,6 @@ void kgeography::showResultsDialog()
 	if (p_mustShowResultsDialog)
 	{
 		p_mustShowResultsDialog = false;
-		p_consult -> setEnabled(false);
 		int ca = p_askWidget -> correctAnswers();
 		QString q = p_askWidget -> getQuestionHook();
 		QVector<userAnswer> ua = p_askWidget -> userAnswers();

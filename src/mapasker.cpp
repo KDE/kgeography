@@ -18,17 +18,10 @@
 #include <qscrollbar.h>
 #include <qstring.h>
 
-#include <QNetworkAccessManager>
-#include <QNetworkReply>
-#include <QNetworkRequest>
-#include <QUrl>
-
 #include "map.h"
 #include "mapwidget.h"
 
-#include <kdebug.h>
-
-static QString guessLocaleCode()
+static QString guessWikipediaDomain()
 {
     const QString &lang = KGlobal::locale() -> language();
     QString code;
@@ -39,11 +32,11 @@ static QString guessLocaleCode()
         QString dummy;
         KLocale::splitLocale(lang, code, dummy, dummy, dummy);
     }
-    return code;
+
+    return QString( "http://%1.wikipedia.org/wiki/" ).arg( code );
 }
 
-mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count)
-	: askWidget(parent, m, w, count, asker), p_asker(asker), p_firstShow(true)
+mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_asker(asker), p_firstShow(true)
 {
 	QVBoxLayout *lay = new QVBoxLayout(this);
 	lay -> setMargin(0);
@@ -76,11 +69,6 @@ mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count
 	{
 		p_next = 0;
 		p_fill = 0;
-
-		p_wikiAccessMgr = new QNetworkAccessManager(this);
-		connect(p_wikiAccessMgr, SIGNAL(finished(QNetworkReply*)),
-			this, SLOT(receiveWikipediaData(QNetworkReply*)));
-
 	}
 }
 
@@ -93,61 +81,6 @@ mapAsker::~mapAsker()
 bool mapAsker::isAsker() const
 {
 	return p_answers;
-}
-
-void mapAsker::receiveWikipediaData(QNetworkReply *reply)
-{
-	if ( reply->error() == QNetworkReply::NoError )
-	{
-		QString bigXml = reply->readAll();
-		int closingTextTagPos = bigXml.lastIndexOf("</text>");
-		if ( closingTextTagPos > 0 )
-		{
-			int start = -1;
-			QString localeCode = guessLocaleCode();
-			QString toSearchStart("\n[[");
-			toSearchStart.append(localeCode);
-			toSearchStart.append(":");
-			start = bigXml.lastIndexOf(toSearchStart, closingTextTagPos);
-
-			int end = -1;
-			if ( start > 0 )
-			{
-				QString toSearchEnd("]]");
-				end = bigXml.indexOf(toSearchEnd, start);
-				if ( end > 0 )
-				{
-					int chunkOffset = toSearchStart.length();
-					int chunkStart = start + chunkOffset;
-					int chunkEnd = end - chunkStart;
-					QString translated = bigXml.mid(chunkStart, chunkEnd);
-					QString wikiLink = QString( "http://%1.wikipedia.org/wiki/%2" ).arg(localeCode).arg(translated);
-					p_popupManager.updateLink(wikiLink);
-				}
-			}
-			else
-			{
-				toSearchStart = "#REDIRECT [[";
-				if ( (start = bigXml.lastIndexOf(toSearchStart, closingTextTagPos)) > 0 )
-				{
-					end = bigXml.indexOf(" ", start);
-					if ( end > 0 )
-					{
-						int chunkOffset = toSearchStart.length();
-						int chunkStart = start + chunkOffset;
-						int chunkEnd = end - chunkStart;
-						QString redirected = bigXml.mid(chunkStart, chunkEnd);
-
-						QUrl url(QString("http://en.wikipedia.org/wiki/Special:Export/") + redirected);
-						QNetworkRequest request;
-						request.setUrl(url);
-						request.setRawHeader("User-Agent", "KGeography user-bot");
-						p_wikiAccessMgr->get(request);
-					}
-				}
-			}
-		}
-	}
 }
 
 void mapAsker::mousePressEvent(QMouseEvent*)
@@ -184,10 +117,7 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 {
 	QString aux, cap;
 	aux = p_map -> getWhatIs(c, !p_asker);
-	if (aux == "nothing")
-		KMessageBox::error(this, i18nc("@info", "You have found a bug in a map."
-					       " Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.",
-					       p_map -> getFile(), qRed(c), qGreen(c), qBlue(c)));
+	if (aux == "nothing") KMessageBox::error(this, i18nc("@info", "You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.", p_map -> getFile(), qRed(c), qGreen(c), qBlue(c)));
 	else if (p_shouldClearPopup)
 	{
 		p_popupManager.clear();
@@ -197,25 +127,11 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	{
 		QString flagFile = p_map -> getDivisionFlagFile(aux);
 		if (p_map -> getDivisionCanAsk(aux, division::eCapital)) cap = p_map -> getDivisionCapital(aux);
-		if (!cap.isEmpty()) cap = i18nc("@item Capital name in map popup", "%1",
-						i18nc(p_map -> getFileName().toUtf8(), cap.toUtf8()));
+		if (!cap.isEmpty()) cap = i18nc("@item Capital name in map popup", "%1", i18nc(p_map -> getFileName().toUtf8(), cap.toUtf8()));
 
-		QString wikiLink;
-		if (p_map -> getDivisionCanAsk(aux, division::eClick))
-		{
-			QString localeCode = guessLocaleCode();
-			wikiLink = QString( "http://%1.wikipedia.org/wiki/" ).arg(localeCode);
-			wikiLink.append(i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8()));
-
-			if ( localeCode != "en" )
-			{
-				QUrl url(QString("http://en.wikipedia.org/wiki/Special:Export/") + aux.replace(' ', '_'));
-				QNetworkRequest request;
-				request.setUrl(url);
-				request.setRawHeader("User-Agent", "KGeography user-bot");
-				p_wikiAccessMgr->get(request);
-			}
-		}
+		QString wikiLink (guessWikipediaDomain());
+		wikiLink.append(i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8()));
+		if (!p_map -> getDivisionCanAsk(aux, division::eClick)) wikiLink = "";
 
 		aux = i18nc("@item Region name in map popup", "%1", i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8()));
 		
