@@ -119,13 +119,13 @@ When you run &kgeography; for the first time, it first asks you to choose a map 
 <para>
 Here we choose Canada
 <screenshot>
-<screeninfo>Canada is choosen</screeninfo>
+<screeninfo>Canada is chosen</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="first-start2.png" format="PNG"/>
 	  </imageobject>
 	  <textobject>
-	    <phrase>Canada is choosen</phrase>
+	    <phrase>Canada is chosen</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
