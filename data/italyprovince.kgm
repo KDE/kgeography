@@ -23,7 +23,7 @@
 	</division>
 	<division>
 		<name>Alessandria</name>
-		<capital>Alessandria</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>130</green>
@@ -32,7 +32,7 @@
 	</division>
 	<division>
 		<name>Asti</name>
-		<capital>Asti</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>130</green>
@@ -41,7 +41,7 @@
 	</division>
 	<division>
 		<name>Biella</name>
-		<capital>Biella</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>130</green>
@@ -50,7 +50,7 @@
 	</division>
 	<division>
 		<name>Cuneo</name>
-		<capital>Cuneo</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>130</green>
@@ -59,7 +59,7 @@
 	</division>
 	<division>
 		<name>Novara</name>
-		<capital>Novara</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>130</green>
@@ -68,7 +68,7 @@
 	</division>
 	<division>
 		<name>Turin</name>
-		<capital>Turin</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>160</green>
@@ -77,7 +77,7 @@
 	</division>
 	<division>
 		<name>Verbano-Cusio-Ossola</name>
-		<capital>Verbania</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>160</green>
@@ -86,7 +86,7 @@
 	</division>
 	<division>
 		<name>Vercelli</name>
-		<capital>Vercelli</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>160</green>
@@ -95,7 +95,7 @@
 	</division>
 	<division>
 		<name>Bergamo</name>
-		<capital>Bergamo</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>160</green>
@@ -104,7 +104,7 @@
 	</division>
 	<division>
 		<name>Brescia</name>
-		<capital>Brescia</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>160</green>
@@ -113,7 +113,7 @@
 	</division>
 	<division>
 		<name>Como</name>
-		<capital>Como</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>190</green>
@@ -122,7 +122,7 @@
 	</division>
 	<division>
 		<name>Cremona</name>
-		<capital>Cremona</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>190</green>
@@ -131,7 +131,7 @@
 	</division>
 	<division>
 		<name>Lecco</name>
-		<capital>Lecco</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>190</green>
@@ -140,7 +140,7 @@
 	</division>
 	<division>
 		<name>Lodi</name>
-		<capital>Lodi</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>190</green>
@@ -149,7 +149,7 @@
 	</division>
 	<division>
 		<name>Mantova</name>
-		<capital>Mantova</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>190</green>
@@ -158,7 +158,7 @@
 	</division>
 	<division>
 		<name>Milan</name>
-		<capital>Milan</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>220</green>
@@ -167,7 +167,7 @@
 	</division>
 	<division>
 		<name>Pavia</name>
-		<capital>Pavia</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>220</green>
@@ -176,7 +176,7 @@
 	</division>
 	<division>
 		<name>Sondrio</name>
-		<capital>Sondrio</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>220</green>
@@ -185,7 +185,7 @@
 	</division>
 	<division>
 		<name>Varese</name>
-		<capital>Varese</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>220</green>
@@ -194,7 +194,7 @@
 	</division>
 	<division>
 		<name>Aosta</name>
-		<capital>Aosta</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>220</green>
@@ -203,7 +203,7 @@
 	</division>
 	<division>
 		<name>Bolzano</name>
-		<capital>Bolzano</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>250</green>
@@ -212,7 +212,7 @@
 	</division>
 	<division>
 		<name>Trento</name>
-		<capital>Trento</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>250</green>
@@ -221,7 +221,7 @@
 	</division>
 	<division>
 		<name>Belluno</name>
-		<capital>Belluno</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>250</green>
@@ -230,7 +230,7 @@
 	</division>
 	<division>
 		<name>Padova</name>
-		<capital>Padova</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>250</green>
@@ -239,7 +239,7 @@
 	</division>
 	<division>
 		<name>Rovigo</name>
-		<capital>Rovigo</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>130</red>
 			<green>250</green>
@@ -248,7 +248,7 @@
 	</division>
 	<division>
 		<name>Treviso</name>
-		<capital>Treviso</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>130</green>
@@ -257,7 +257,7 @@
 	</division>
 	<division>
 		<name>Venice</name>
-		<capital>Venice</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>130</green>
@@ -266,7 +266,7 @@
 	</division>
 	<division>
 		<name>Verona</name>
-		<capital>Verona</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>130</green>
@@ -275,7 +275,7 @@
 	</division>
 	<division>
 		<name>Vicenza</name>
-		<capital>Vicenza</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>130</green>
@@ -284,7 +284,7 @@
 	</division>
 	<division>
 		<name>Gorizia</name>
-		<capital>Gorizia</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>130</green>
@@ -293,7 +293,7 @@
 	</division>
 	<division>
 		<name>Pordenone</name>
-		<capital>Pordenone</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>160</green>
@@ -302,7 +302,7 @@
 	</division>
 	<division>
 		<name>Trieste</name>
-		<capital>Trieste</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>160</green>
@@ -311,7 +311,7 @@
 	</division>
 	<division>
 		<name>Udine</name>
-		<capital>Udine</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>160</green>
@@ -320,7 +320,7 @@
 	</division>
 	<division>
 		<name>Genoa</name>
-		<capital>Genoa</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>160</green>
@@ -329,7 +329,7 @@
 	</division>
 	<division>
 		<name>Imperia</name>
-		<capital>Imperia</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>160</green>
@@ -338,7 +338,7 @@
 	</division>
 	<division>
 		<name>La Spezia</name>
-		<capital>La Spezia</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>190</green>
@@ -347,7 +347,7 @@
 	</division>
 	<division>
 		<name>Savona</name>
-		<capital>Savona</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>190</green>
@@ -356,7 +356,7 @@
 	</division>
 	<division>
 		<name>Bologna</name>
-		<capital>Bologna</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>190</green>
@@ -365,7 +365,7 @@
 	</division>
 	<division>
 		<name>Ferrara</name>
-		<capital>Ferrara</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>190</green>
@@ -374,7 +374,7 @@
 	</division>
 	<division>
 		<name>Forlì-Cesena</name>
-		<capital>Forlì</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>190</green>
@@ -383,7 +383,7 @@
 	</division>
 	<division>
 		<name>Modena</name>
-		<capital>Modena</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>220</green>
@@ -392,7 +392,7 @@
 	</division>
 	<division>
 		<name>Parma</name>
-		<capital>Parma</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>220</green>
@@ -401,7 +401,7 @@
 	</division>
 	<division>
 		<name>Piacenza</name>
-		<capital>Piacenza</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>220</green>
@@ -410,7 +410,7 @@
 	</division>
 	<division>
 		<name>Ravenna</name>
-		<capital>Ravenna</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>220</green>
@@ -419,7 +419,7 @@
 	</division>
 	<division>
 		<name>Reggio nell'Emilia</name>
-		<capital>Reggio nell'Emilia</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>220</green>
@@ -428,7 +428,7 @@
 	</division>
 	<division>
 		<name>Rimini</name>
-		<capital>Rimini</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>250</green>
@@ -437,7 +437,7 @@
 	</division>
 	<division>
 		<name>Arezzo</name>
-		<capital>Arezzo</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>250</green>
@@ -446,7 +446,7 @@
 	</division>
 	<division>
 		<name>Florence</name>
-		<capital>Florence</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>250</green>
@@ -455,7 +455,7 @@
 	</division>
 	<division>
 		<name>Grosseto</name>
-		<capital>Grosseto</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>250</green>
@@ -464,7 +464,7 @@
 	</division>
 	<division>
 		<name>Livorno</name>
-		<capital>Livorno</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>160</red>
 			<green>250</green>
@@ -473,7 +473,7 @@
 	</division>
 	<division>
 		<name>Lucca</name>
-		<capital>Lucca</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>130</green>
@@ -482,7 +482,7 @@
 	</division>
 	<division>
 		<name>Massa-Carrara</name>
-		<capital>Massa</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>130</green>
@@ -491,7 +491,7 @@
 	</division>
 	<division>
 		<name>Pisa</name>
-		<capital>Pisa</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>130</green>
@@ -500,7 +500,7 @@
 	</division>
 	<division>
 		<name>Pistoia</name>
-		<capital>Pistoia</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>130</green>
@@ -509,7 +509,7 @@
 	</division>
 	<division>
 		<name>Prato</name>
-		<capital>Prato</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>130</green>
@@ -518,7 +518,7 @@
 	</division>
 	<division>
 		<name>Siena</name>
-		<capital>Siena</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>160</green>
@@ -527,7 +527,7 @@
 	</division>
 	<division>
 		<name>Perugia</name>
-		<capital>Perugia</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>160</green>
@@ -536,7 +536,7 @@
 	</division>
 	<division>
 		<name>Terni</name>
-		<capital>Terni</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>160</green>
@@ -545,7 +545,7 @@
 	</division>
 	<division>
 		<name>Ancona</name>
-		<capital>Ancona</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>160</green>
@@ -554,7 +554,7 @@
 	</division>
 	<division>
 		<name>Ascoli Piceno</name>
-		<capital>Ascoli Piceno</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>160</green>
@@ -563,7 +563,7 @@
 	</division>
 	<division>
 		<name>Macerata</name>
-		<capital>Macerata</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>190</green>
@@ -572,7 +572,7 @@
 	</division>
 	<division>
 		<name>Pesaro and Urbino</name>
-		<capital>Pesaro</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>190</green>
@@ -581,7 +581,7 @@
 	</division>
 	<division>
 		<name>Frosinone</name>
-		<capital>Frosinone</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>190</green>
@@ -590,7 +590,7 @@
 	</division>
 	<division>
 		<name>Latina</name>
-		<capital>Latina</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>190</green>
@@ -599,7 +599,7 @@
 	</division>
 	<division>
 		<name>Rieti</name>
-		<capital>Rieti</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>190</green>
@@ -608,7 +608,7 @@
 	</division>
 	<division>
 		<name>Rome</name>
-		<capital>Rome</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>220</green>
@@ -617,7 +617,7 @@
 	</division>
 	<division>
 		<name>Viterbo</name>
-		<capital>Viterbo</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>220</green>
@@ -626,7 +626,7 @@
 	</division>
 	<division>
 		<name>Chieti</name>
-		<capital>Chieti</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>220</green>
@@ -635,7 +635,7 @@
 	</division>
 	<division>
 		<name>L'Aquila</name>
-		<capital>L'Aquila</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>220</green>
@@ -644,7 +644,7 @@
 	</division>
 	<division>
 		<name>Pescara</name>
-		<capital>Pescara</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>220</green>
@@ -653,7 +653,7 @@
 	</division>
 	<division>
 		<name>Teramo</name>
-		<capital>Teramo</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>250</green>
@@ -662,7 +662,7 @@
 	</division>
 	<division>
 		<name>Campobasso</name>
-		<capital>Campobasso</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>250</green>
@@ -671,7 +671,7 @@
 	</division>
 	<division>
 		<name>Isernia</name>
-		<capital>Isernia</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>250</green>
@@ -680,7 +680,7 @@
 	</division>
 	<division>
 		<name>Avellino</name>
-		<capital>Avellino</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>250</green>
@@ -689,7 +689,7 @@
 	</division>
 	<division>
 		<name>Benevento</name>
-		<capital>Benevento</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>190</red>
 			<green>250</green>
@@ -698,7 +698,7 @@
 	</division>
 	<division>
 		<name>Caserta</name>
-		<capital>Caserta</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>130</green>
@@ -707,7 +707,7 @@
 	</division>
 	<division>
 		<name>Naples</name>
-		<capital>Naples</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>130</green>
@@ -716,7 +716,7 @@
 	</division>
 	<division>
 		<name>Salerno</name>
-		<capital>Salerno</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>130</green>
@@ -725,7 +725,7 @@
 	</division>
 	<division>
 		<name>Bari</name>
-		<capital>Bari</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>130</green>
@@ -734,7 +734,7 @@
 	</division>
 	<division>
 		<name>Brindisi</name>
-		<capital>Brindisi</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>130</green>
@@ -743,7 +743,7 @@
 	</division>
 	<division>
 		<name>Foggia</name>
-		<capital>Foggia</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>160</green>
@@ -752,7 +752,7 @@
 	</division>
 	<division>
 		<name>Lecce</name>
-		<capital>Lecce</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>160</green>
@@ -761,7 +761,7 @@
 	</division>
 	<division>
 		<name>Taranto</name>
-		<capital>Taranto</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>160</green>
@@ -770,7 +770,7 @@
 	</division>
 	<division>
 		<name>Matera</name>
-		<capital>Matera</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>160</green>
@@ -779,7 +779,7 @@
 	</division>
 	<division>
 		<name>Potenza</name>
-		<capital>Potenza</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>160</green>
@@ -788,7 +788,7 @@
 	</division>
 	<division>
 		<name>Catanzaro</name>
-		<capital>Catanzaro</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>190</green>
@@ -797,7 +797,7 @@
 	</division>
 	<division>
 		<name>Cosenza</name>
-		<capital>Cosenza</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>190</green>
@@ -806,7 +806,7 @@
 	</division>
 	<division>
 		<name>Crotone</name>
-		<capital>Crotone</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>190</green>
@@ -815,7 +815,7 @@
 	</division>
 	<division>
 		<name>Reggio di Calabria</name>
-		<capital>Reggio di Calabria</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>190</green>
@@ -824,7 +824,7 @@
 	</division>
 	<division>
 		<name>Vibo Valentia</name>
-		<capital>Vibo Valentia</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>190</green>
@@ -833,7 +833,7 @@
 	</division>
 	<division>
 		<name>Agrigento</name>
-		<capital>Agrigento</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>220</green>
@@ -842,7 +842,7 @@
 	</division>
 	<division>
 		<name>Caltanissetta</name>
-		<capital>Caltanissetta</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>220</green>
@@ -851,7 +851,7 @@
 	</division>
 	<division>
 		<name>Catania</name>
-		<capital>Catania</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>220</green>
@@ -860,7 +860,7 @@
 	</division>
 	<division>
 		<name>Enna</name>
-		<capital>Enna</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>220</green>
@@ -869,7 +869,7 @@
 	</division>
 	<division>
 		<name>Messina</name>
-		<capital>Messina</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>220</green>
@@ -878,7 +878,7 @@
 	</division>
 	<division>
 		<name>Palermo</name>
-		<capital>Palermo</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>250</green>
@@ -887,7 +887,7 @@
 	</division>
 	<division>
 		<name>Ragusa</name>
-		<capital>Ragusa</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>250</green>
@@ -896,7 +896,7 @@
 	</division>
 	<division>
 		<name>Syracuse</name>
-		<capital>Syracuse</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>250</green>
@@ -905,7 +905,7 @@
 	</division>
 	<division>
 		<name>Trapani</name>
-		<capital>Trapani</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>250</green>
@@ -914,7 +914,7 @@
 	</division>
 	<division>
 		<name>Cagliari</name>
-		<capital>Cagliari</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>220</red>
 			<green>250</green>
@@ -923,7 +923,7 @@
 	</division>
 	<division>
 		<name>Nuoro</name>
-		<capital>Nuoro</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>250</red>
 			<green>130</green>
@@ -932,7 +932,7 @@
 	</division>
 	<division>
 		<name>Oristano</name>
-		<capital>Oristano</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>250</red>
 			<green>130</green>
@@ -941,7 +941,7 @@
 	</division>
 	<division>
 		<name>Sassari</name>
-		<capital>Sassari</capital>
+		<ignore>allowClickMode</ignore>
 		<color>
 			<red>250</red>
 			<green>130</green>
