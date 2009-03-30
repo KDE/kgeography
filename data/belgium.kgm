@@ -32,6 +32,7 @@
 	</division>
 	<division>
 		<name>Antwerp</name>
+	 	<flag>belgium/antwerp.png</flag>
 		<capital>Antwerp</capital>
 		<color>
 			<red>130</red>
@@ -41,6 +42,7 @@
 	</division>
 	<division>
 		<name>Brussels</name>
+	 	<flag>belgium/brussels.png</flag>
 		<capital>Brussels</capital>
 		<color>
 			<red>130</red>
@@ -50,6 +52,7 @@
 	</division>
 	<division>
 		<name>Flemish Brabant</name>
+		<flag>belgium/flemish_brabant.png</flag>
 		<capital>Louvain</capital>
 		<color>
 			<red>130</red>
@@ -59,6 +62,7 @@
 	</division>
 	<division>
 		<name>West Flanders</name>
+		<flag>belgium/west_flanders.png</flag>
 		<capital>Bruges</capital>
 		<color>
 			<red>130</red>
@@ -68,6 +72,7 @@
 	</division>
 	<division>
 		<name>East Flanders</name>
+		<flag>belgium/east_flanders.png</flag>
 		<capital>Ghent</capital>
 		<color>
 			<red>130</red>
@@ -77,6 +82,7 @@
 	</division>
 	<division>
 		<name>Limburg</name>
+		<flag>belgium/limburg.png</flag>
 		<capital>Hasselt</capital>
 		<color>
 			<red>130</red>
@@ -86,6 +92,7 @@
 	</division>
 	<division>
 		<name>Walloon Brabant</name>
+		<flag>belgium/walloon_brabant.png</flag>
 		<capital>Wavre</capital>
 		<color>
 			<red>130</red>
@@ -95,6 +102,7 @@
 	</division>
 	<division>
 		<name>Hainaut</name>
+		<flag>belgium/hainaut.png</flag>
 		<capital>Mons</capital>
 		<color>
 			<red>130</red>
@@ -104,6 +112,7 @@
 	</division>
 	<division>
 		<name>Liege</name>
+		<flag>belgium/liege.png</flag>
 		<capital>Liege</capital>
 		<color>
 			<red>130</red>
@@ -113,6 +122,7 @@
 	</division>
 	<division>
 		<name>Luxembourg</name>
+		<flag>belgium/luxembourg.png</flag>
 		<capital>Arlon</capital>
 		<color>
 			<red>190</red>
@@ -122,6 +132,7 @@
 	</division>
 	<division>
 		<name>Namur</name>
+		<flag>belgium/namur.png</flag>
 		<capital>Namur</capital>
 		<color>
 			<red>190</red>
