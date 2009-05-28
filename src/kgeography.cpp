@@ -388,10 +388,11 @@ void kgeography::setMap(KGmap *m)
 	p_consult -> setEnabled(true);
 	p_askMap -> setEnabled(m -> count(division::eClick) > 0);
 	p_askPlaceMap -> setEnabled(m -> count(division::eClick) > 0);
-	p_askFlagDivisions -> setEnabled(m -> count(division::eFlag) > 0);
-	p_askDivisionFlags -> setEnabled(m -> count(division::eFlag) > 0);
-	p_askCapitalDivisions -> setEnabled(m -> count(division::eCapital) > 0);
-	p_askDivisionCapitals -> setEnabled(m -> count(division::eCapital) > 0);
+	// as we always want to let user choose among 4 choices, verify we have the amunitions
+	p_askFlagDivisions -> setEnabled(m -> count(division::eFlag) > 3);
+	p_askDivisionFlags -> setEnabled(m -> count(division::eFlag) > 3);
+	p_askCapitalDivisions -> setEnabled(m -> count(division::eCapital) > 3);
+	p_askDivisionCapitals -> setEnabled(m -> count(division::eCapital) > 3);
 	consult();
 }
 
