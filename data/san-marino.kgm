@@ -1,6 +1,6 @@
 <map>
 	<mapFile>san-marino.png</mapFile>
-	<name>San-Marino</name>
+	<name>San Marino</name>
     <divisionsName>Municipalities</divisionsName>
     <author>Laurent Garnier</author>
 	<division>
@@ -59,7 +59,7 @@
 		<color><red>198</red><green>85</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>Borgo Marggiore</name>
+		<name>Borgo Maggiore</name>
 		<ignore>allowClickMode</ignore>
 		<color><red>255</red><green>85</green><blue>198</blue></color>
 	</division>
