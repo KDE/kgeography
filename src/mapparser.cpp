@@ -10,7 +10,6 @@
 
 #include "mapparser.h"
 
-#include <QDir>
 #include <QDomDocument>
 #include <QFileInfo>
 

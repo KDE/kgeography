@@ -10,13 +10,11 @@
 
 #include "mapwidget.h"
 
-#include <QCursor>
 #include <QGraphicsPixmapItem>
 #include <QGraphicsRectItem>
 #include <QGraphicsScene>
 #include <QMouseEvent>
 #include <QScrollBar>
-#include <QTimer>
 
 #include <kdebug.h>
 #include <klocale.h>

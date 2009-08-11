@@ -16,7 +16,6 @@
 #include <QGraphicsScene>
 #include <QMouseEvent>
 #include <QScrollBar>
-#include <QTimer>
 
 #include <klocale.h>
 #include <kdebug.h>

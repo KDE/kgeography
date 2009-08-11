@@ -10,7 +10,7 @@
 
 #include "integerinputdialog.h"
 
-#include <KNumInput>
+#include <KIntSpinBox>
 
 #include <qboxlayout.h>
 #include <qlabel.h>
