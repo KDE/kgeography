@@ -86,7 +86,7 @@
 	<division>
 		<name>México</name>
 		<capital>Toluca</capital>
-		<color><red>0</red><green>102</green><blue>204</blue></color>
+		<color><red>153</red><green>255</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Michoacán</name>
@@ -176,6 +176,6 @@
 	<division>
 		<name>Federal District</name>
 		<capital>Mexico City</capital>
-		<color><red>153</red><green>255</green><blue>255</blue></color>
+		<color><red>0</red><green>102</green><blue>204</blue></color>
 	</division>
 </map>
