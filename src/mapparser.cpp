@@ -14,6 +14,7 @@
 #include <QFileInfo>
 
 #include <klocale.h>
+#include <kdebug.h>
 
 #include "division.h"
 #include "map.h"
@@ -49,7 +50,49 @@ KGmap *mapReader::parseMap(const QString &path)
 				}
 				
 				// Divisions string
-				kgmap -> setDivisionsString( getElementString("divisionsName", root, Mandatory) );
+				QString divisionKindName = getElementString("divisionsName", root, Mandatory);
+				kgmap -> setDivisionsString(divisionKindName);
+
+				QString pat = getElementString("capitalToDivisionPattern", root, Optional);
+				if ( pat.contains('%') )
+				{
+					kgmap->setCapitalToDivisionQuestionPattern(pat);
+				}
+				else if ( ! pat.isEmpty() )
+				{
+					kDebug() << "capitalToDivisionPattern element should contain one '%%' in map " << kgmap->getName();
+				}
+
+				pat = getElementString("divisionToCapitalPattern", root, Optional);
+				if ( pat.contains('%') )
+				{
+					kgmap->setDivisionToCapitalQuestionPattern(pat);
+				}
+				else if ( ! pat.isEmpty() )
+				{
+					kDebug() << "divisionToCapitalPattern element should contain one '%%' in map " << kgmap->getName();
+				}
+
+				QString title = getElementString("capitalToDivisionTitle", root, Optional);
+				if ( ! title.isEmpty() )
+				{
+					kgmap->setCapitalToDivisionTitle(title);
+				}
+				else
+				{
+					kgmap->setCapitalToDivisionTitle(i18n("%1 by Capital", divisionKindName));
+				}
+
+				title = getElementString("divisionToCapitalTitle", root, Optional);
+				if ( ! title.isEmpty() )
+				{
+					kgmap->setDivisionToCapitalTitle(title);
+				}
+				else
+				{
+					kgmap->setDivisionToCapitalTitle(i18n("&Capitals of %1", divisionKindName));
+				}
+
 				
 				// Author string
 				kgmap -> setAuthor( getElementString("author", root, Mandatory) );

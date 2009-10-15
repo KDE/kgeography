@@ -31,7 +31,7 @@ bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int
 		p_currentAnswer.setCorrectAnswer(i18nc("@option:radio <City> is the capital of...", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 
 		QString capitalName = i18nc(p_map -> getFileName().toUtf8(), p_capital.toUtf8());
-		setQuestion(i18nc("@title:group", "%1 is the capital of...", capitalName));
+		setQuestion(i18nc("@title:group", p_map->getCapitalToDivisionQuestionPattern().toUtf8(), capitalName));
 		p_rb[i] -> setText(i18nc("@option:radio <City> is the capital of...", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 		b = true;
 	}
@@ -62,5 +62,6 @@ void capitalDivisionAsker::setAnswerHook(int userSays)
 QString capitalDivisionAsker::getQuestionHook() const
 {
 	QString divisionType = i18nc(p_map -> getFileName().toUtf8(), p_map->getDivisionsString().toUtf8());
-	return i18nc("@title", "%1 by Capital", divisionType);
+	return i18nc("@title", p_map->getCapitalToDivisionTitle().toUtf8());
+	//return i18nc("@title", p_map->getCapitalToDivisionTitle().toUtf8(), divisionType);
 }

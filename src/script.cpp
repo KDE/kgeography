@@ -83,6 +83,22 @@ int main(int argc, char *argv[])
 			{
 				os << "i18nc(\"" << *it << "\", \"" << n.firstChild().nodeValue() << "\");\n";
 			}
+			else if (n.nodeName() == "divisionToCapitalPattern")
+			{
+				os << "i18nc(\"@title:group\", \"" << n.firstChild().nodeValue() << "\");\n";
+			}
+			else if (n.nodeName() == "capitalToDivisionPattern")
+			{
+				os << "i18nc(\"@title:group\", \"" << n.firstChild().nodeValue() << "\");\n";
+			}
+			else if (n.nodeName() == "divisionToCapitalTitle")
+			{
+				os << "i18nc(\"@title\", \"" << n.firstChild().nodeValue() << "\");\n";
+			}
+			else if (n.nodeName() == "capitalToDivisionTitle")
+			{
+				os << "i18nc(\"@title\", \"" << n.firstChild().nodeValue() << "\");\n";
+			}
 		}
 		
 		f -> close();

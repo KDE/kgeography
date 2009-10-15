@@ -179,7 +179,7 @@ void placeAsker::setCurrentDivision(const QString& division)
 		for (int y = minY; y < maxY; y++)
 		{
 			if (p_mapImage->pixel(x,y) == divColor)
-				p_currentDivisionImage->setPixel(x - minX, y - minY, p_mapImage->pixel(x,y));
+				p_currentDivisionImage->setPixel(x - minX, y - minY, divColor);
 		}
 	}
 }

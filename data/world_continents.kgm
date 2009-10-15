@@ -2,6 +2,10 @@
 	<mapFile>world_continents.png</mapFile>
 	<name>World continents (from North Pole)</name>
 	<divisionsName>Continents</divisionsName>
+	<divisionToCapitalPattern>What is the highest summit of %1 ?</divisionToCapitalPattern>
+	<divisionToCapitalTitle>Continents by highest summit</divisionToCapitalTitle>
+	<capitalToDivisionPattern>Which has %1 as highest summit ?</capitalToDivisionPattern>
+	<capitalToDivisionTitle>Highest summit of continents</capitalToDivisionTitle>
 	<author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>

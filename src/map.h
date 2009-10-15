@@ -29,6 +29,10 @@ class KGmap
 		void setName(const QString &s);
 		void setDivisionsString(const QString &s);
 		void setAuthor(const QString &s);
+		void setCapitalToDivisionQuestionPattern(const QString &str);
+		void setDivisionToCapitalQuestionPattern(const QString &str);
+		void setCapitalToDivisionTitle(const QString &str);
+		void setDivisionToCapitalTitle(const QString &str);
 		
 		// return the number of askable divisions
 		uint count(division::askMode am) const;
@@ -46,6 +50,10 @@ class KGmap
 		QString getAuthor() const;
 		QColor getColor(const QString &s) const;
 		const QList<division*> getIgnoredDivisions(division::askMode am) const;
+		QString getCapitalToDivisionQuestionPattern() const;
+		QString getDivisionToCapitalQuestionPattern() const;
+		QString getCapitalToDivisionTitle() const;
+		QString getDivisionToCapitalTitle() const;
 		
 	private:
 		division *getDivision(const QString &divisionName) const;
@@ -55,6 +63,10 @@ class KGmap
 		
 		QString p_name, p_file, p_mapFile;
 		QString p_divisionsString;
+		QString p_capitalToDivisionPattern;
+		QString p_divisionToCapitalPattern;
+		QString p_capitalToDivisionTitle;
+		QString p_divisionToCapitalTitle;
 		QString p_author;
 };
 

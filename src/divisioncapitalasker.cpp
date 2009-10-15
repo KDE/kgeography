@@ -28,7 +28,7 @@ bool divisionCapitalAsker::nextBoxAskerQuestionHook(const QString &division, int
 	if (isAnswer)
 	{
 		QString divisionName = i18nc(p_map -> getFileName().toUtf8(), division.toUtf8());
-		setQuestion(i18nc("@title:group", "The capital of %1 is...", divisionName));
+		setQuestion(i18nc("@title:group", p_map->getDivisionToCapitalQuestionPattern().toUtf8(), divisionName));
 		p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is region name", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 		p_capital = p_map -> getDivisionCapital(division);
 		p_currentAnswer.setCorrectAnswer(i18nc("@option:radio The capital of <Region> is...", "%1", i18nc(p_map -> getFileName().toUtf8(), p_capital.toUtf8())));
@@ -78,5 +78,5 @@ void divisionCapitalAsker::setAnswerHook(int userSays)
 QString divisionCapitalAsker::getQuestionHook() const
 {
 	QString divisionType = i18nc(p_map -> getFileName().toUtf8(), p_map->getDivisionsString().toUtf8());
-	return i18nc("@title", "Capital of %1", divisionType);
+	return i18nc("@title", p_map->getDivisionToCapitalTitle().toUtf8());
 }

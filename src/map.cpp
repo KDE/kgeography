@@ -22,6 +22,8 @@
 
 KGmap::KGmap()
 {
+	p_capitalToDivisionPattern = "%1 is the capital of...";
+	p_divisionToCapitalPattern = "The capital of %1 is...";
 }
 
 KGmap::~KGmap()
@@ -68,6 +70,26 @@ void KGmap::setAuthor(const QString &s)
 	p_author = s;
 }
 
+void KGmap::setCapitalToDivisionQuestionPattern(const QString &str)
+{
+	p_capitalToDivisionPattern = str;
+}
+
+void KGmap::setDivisionToCapitalQuestionPattern(const QString &str)
+{
+	p_divisionToCapitalPattern = str;
+}
+
+void KGmap::setCapitalToDivisionTitle(const QString &str)
+{
+	p_capitalToDivisionTitle = str;
+}
+
+void KGmap::setDivisionToCapitalTitle(const QString &str)
+{
+	p_divisionToCapitalTitle = str;
+}
+
 uint KGmap::count(division::askMode am) const
 {
 	uint count = 0;
@@ -91,6 +113,26 @@ QString KGmap::getDivisionCapital(const QString &s) const
 QStringList KGmap::getDivisionFalseCapitals(const QString &divisionName) const
 {
 	return getDivision(divisionName) -> getFalseCapitals();
+}
+
+QString KGmap::getCapitalToDivisionQuestionPattern() const
+{
+	return p_capitalToDivisionPattern;
+}
+
+QString KGmap::getDivisionToCapitalQuestionPattern() const
+{
+	return p_divisionToCapitalPattern;
+}
+
+QString KGmap::getCapitalToDivisionTitle() const
+{
+	return p_capitalToDivisionTitle;
+}
+
+QString KGmap::getDivisionToCapitalTitle() const
+{
+	return p_divisionToCapitalTitle;
 }
 
 QString KGmap::getFile() const
