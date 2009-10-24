@@ -9,22 +9,12 @@
 		<color><red>0</red><green>0</green><blue>0</blue></color>
 	</division>
 	<division>
-		<name>Frontier</name>
-		<ignore>yes</ignore>
-		<color><red>1</red><green>1</green><blue>1</blue></color>
-	</division>
-	<division>
-		<name>Not Chile</name>
-		<ignore>yes</ignore>
-		<color><red>145</red><green>145</green><blue>145</blue></color>
-	</division>
-	<division>
 		<name>Water</name>
 		<ignore>yes</ignore>
 		<color><red>255</red><green>255</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>Not Chile </name>
+		<name>Not Chile</name>
 		<ignore>yes</ignore>
 		<color><red>204</red><green>204</green><blue>204</blue></color>
 	</division>
@@ -92,5 +82,15 @@
 		<name>Santiago Metropolitan Region</name>
 		<capital>Santiago</capital>
 		<color><red>227</red><green>113</green><blue>113</blue></color>
+	</division>
+	<division>
+		<name>Los Rios</name>
+		<capital>Valvidia</capital>
+		<color><red>227</red><green>170</green><blue>113</blue></color>
+	</division>
+	<division>
+		<name>Arica and Parinacota</name>
+		<capital>Arica</capital>
+		<color><red>227</red><green>227</green><blue>113</blue></color>
 	</division>
 </map>
