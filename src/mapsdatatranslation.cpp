@@ -1354,7 +1354,7 @@ i18nc("chile.kgm", "Punta Arenas");
 i18nc("chile.kgm", "Santiago Metropolitan Region");
 i18nc("chile.kgm", "Santiago");
 i18nc("chile.kgm", "Los Rios");
-i18nc("chile.kgm", "Valvidia");
+i18nc("chile.kgm", "Valdivia");
 i18nc("chile.kgm", "Arica and Parinacota");
 i18nc("chile.kgm", "Arica");
 i18nc("china.kgm", "China");
