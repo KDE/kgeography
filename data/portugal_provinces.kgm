@@ -22,7 +22,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Border2</name>
+		<name>Espanha</name>
 		<ignore>yes</ignore>
 		<color>
 			<red>218</red>
@@ -37,15 +37,6 @@
 			<red>255</red>
 			<green>255</green>
 			<blue>255</blue>
-		</color>
-	</division>
-	<division>
-		<name>Espanha</name>
-		<ignore>yes</ignore>
-		<color>
-			<red>224</red>
-			<green>193</green>
-			<blue>116</blue>
 		</color>
 	</division>
 	<division>
