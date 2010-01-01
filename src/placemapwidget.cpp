@@ -58,33 +58,33 @@ void placeMapWidget::init(KGmap *map, QImage *mapImage)
 void placeMapWidget::createGameMapImage()
 {
 	QVector<uchar> indexesToCopy;
-	QVector<QRgb> colormap = p_mapImage->colorTable();
+	const QVector<QRgb> colormap = p_mapImage->colorTable();
 	p_gameImage = new QImage(p_mapImage->size(), QImage::Format_RGB32);
 	// So far, nobody has dedicated this color to a division :)
 	// I, for one, reserve grays for non-division pixels.
 	p_gameImage->fill(QColor(224,224,224).rgb());
 
-	QList<division*> ignoredDivisions = p_map->getIgnoredDivisions(division::eClick);
+	const QList<division*> ignoredDivisions = p_map->getIgnoredDivisions(division::eClick);
 	foreach(division *id, ignoredDivisions)
 	{
-		QRgb rgb = id->getRGB();
-		int colorIdx = colormap.indexOf(rgb);
+		const QRgb rgb = id->getRGB();
+		const int colorIdx = colormap.indexOf(rgb);
 		indexesToCopy << colorIdx;
 	}
 
-	int nbBytesPerLine = p_mapImage->bytesPerLine();
+	const int nbBytesPerLine = p_mapImage->bytesPerLine();
 	const uchar *bits = p_mapImage->bits();
 
-	int width = p_mapImage->width();
-	int height = p_mapImage->height();
-	int deltaX[] = {-1,  0,  1,  1,  1,  0, -1, -1};
-	int deltaY[] = {-1, -1, -1,  0,  1,  1,  1,  0};
+	const int width = p_mapImage->width();
+	const int height = p_mapImage->height();
+	const int deltaX[] = {-1,  0,  1,  1,  1,  0, -1, -1};
+	const int deltaY[] = {-1, -1, -1,  0,  1,  1,  1,  0};
 	
 	for (int x = 1; x < width -1; x++)
 	{
 		for (int y = 1; y < height -1; y++)
 		{
-			uchar pixi = bits[y * nbBytesPerLine + x];
+			const uchar pixi = bits[y * nbBytesPerLine + x];
 
 			if(indexesToCopy.contains(pixi) )
 			{
@@ -94,9 +94,9 @@ void placeMapWidget::createGameMapImage()
 					  neighbourIdx < 8 && ! ( outerFound && divisionColorFound ) ;
 					  neighbourIdx ++ )
 				{
-					int ox = x + deltaX[neighbourIdx];
-					int oy = y + deltaY[neighbourIdx];
-					uchar oPixi = bits[oy * nbBytesPerLine + ox];
+					const int ox = x + deltaX[neighbourIdx];
+					const int oy = y + deltaY[neighbourIdx];
+					const uchar oPixi = bits[oy * nbBytesPerLine + ox];
 					if (oPixi != pixi)
 					{
 						if ( indexesToCopy.contains(oPixi) )
