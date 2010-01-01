@@ -160,18 +160,8 @@
 </division>
 
 <division>
-<name>City Limit</name> <ignore>yes</ignore>
-<color> <red> 1 </red> <green> 255 </green> <blue> 255 </blue> </color>
-</division>
-
-<division>
 <name>Border/Coast</name> <ignore>yes</ignore>
 <color> <red> 0 </red> <green> 0 </green> <blue> 0 </blue> </color> 
-</division>
-
-<division>
-<name>Coast</name> <ignore>yes</ignore>
-<color> <red> 92 </red> <green> 130 </green> <blue> 168 </blue> </color>
 </division>
 
 <division>
