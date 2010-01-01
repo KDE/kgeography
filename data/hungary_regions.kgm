@@ -14,11 +14,6 @@
 		<color><red>1</red><green>1</green><blue>1</blue></color>
 	</division>
 	<division>
-		<name>Water</name>
-		<ignore>yes</ignore>
-		<color><red>255</red><green>255</green><blue>255</blue></color>
-	</division>
-	<division>
 		<name>Not Hungary (Regions)</name>
 		<ignore>yes</ignore>
 		<color><red>204</red><green>204</green><blue>204</blue></color>
