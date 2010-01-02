@@ -37,7 +37,7 @@
 		<flag>japan/jp-aomori.png</flag>
 		<color>
 			<red>0</red>
-			<green>128</green>
+			<green>108</green>
 			<blue>0</blue>
 		</color>
 	</division>
@@ -116,9 +116,9 @@
 		<capital>Maebashi</capital>
 		<flag>japan/jp-gunma.png</flag>
 		<color>
-			<red>135</red>
-			<green>30</green>
-			<blue>120</blue>
+			<red>95</red>
+			<green>21</green>
+			<blue>84</blue>
 		</color>
 	</division>
 	<division>
@@ -469,9 +469,9 @@
 		<capital>Tokyo</capital>
 		<flag>japan/jp-tokyo.png</flag>
 		<color>
-			<red>135</red>
-			<green>55</green>
-			<blue>135</blue>
+			<red>95</red>
+			<green>39</green>
+			<blue>95</blue>
 		</color>
 	</division>
 	<division>
