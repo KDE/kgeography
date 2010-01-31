@@ -5005,7 +5005,7 @@ i18nc("russia_subjects.kgm", "Rostov-na-Donu");
 i18nc("russia_subjects.kgm", "Ryazan");
 i18nc("russia_subjects.kgm", "Ryazan");
 i18nc("russia_subjects.kgm", "Samara");
-i18nc("russia_subjects.kgm", "Samara, Russia");
+i18nc("russia_subjects.kgm", "Samara");
 i18nc("russia_subjects.kgm", "Saratov");
 i18nc("russia_subjects.kgm", "Saratov");
 i18nc("russia_subjects.kgm", "Sakhalin");
