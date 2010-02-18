@@ -39,7 +39,7 @@
 		<color><red>255</red><green>255</green><blue>85</blue></color>
 	</division>
 	<division>
-		<name>Dememara-Mahaica</name>
+		<name>Demerara-Mahaica</name>
 		<capital>Paradise</capital>
 		<color><red>119</red><green>255</green><blue>85</blue></color>
 	</division>
@@ -49,7 +49,7 @@
 		<color><red>85</red><green>255</green><blue>153</blue></color>
 	</division>
 	<division>
-		<name>Upper Dememara-Berbice</name>
+		<name>Upper Demerara-Berbice</name>
 		<capital>Linden</capital>
 		<color><red>85</red><green>255</green><blue>255</blue></color>
 	</division>
