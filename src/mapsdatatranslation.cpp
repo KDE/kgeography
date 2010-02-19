@@ -3622,7 +3622,7 @@ i18nc("jharkhand.kgm", "Seraikela");
 i18nc("jharkhand.kgm", "Purba Singhbhum");
 i18nc("jharkhand.kgm", "Jamshedpur");
 i18nc("jharkhand.kgm", "Hazaribag");
-i18nc("jharkhand.kgm", "Harzaribag");
+i18nc("jharkhand.kgm", "Hazaribag");
 i18nc("jharkhand.kgm", "Koderma");
 i18nc("jharkhand.kgm", "Koderma");
 i18nc("jharkhand.kgm", "Giridih");
