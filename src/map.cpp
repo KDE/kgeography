@@ -22,8 +22,8 @@
 
 KGmap::KGmap()
 {
-	p_capitalToDivisionPattern = "%1 is the capital of...";
-	p_divisionToCapitalPattern = "The capital of %1 is...";
+	p_capitalToDivisionPattern = I18N_NOOP2("@title:group", "%1 is the capital of...");
+	p_divisionToCapitalPattern = I18N_NOOP2("@title:group", "The capital of %1 is...");
 }
 
 KGmap::~KGmap()
