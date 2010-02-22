@@ -33,7 +33,7 @@ IntegerInputDialog::IntegerInputDialog(QWidget *parent, const QString &title, co
 
 	_slider = new QSlider(Qt::Horizontal);
 	_slider->setRange(from, upto);
-	int value = ( from <= byDefault && byDefault <= upto ) ? byDefault : from;
+	int value = ( from <= byDefault && byDefault <= upto ) ? byDefault : upto;
 	_slider->setValue(value);
 	connect(_slider, SIGNAL(valueChanged(int)), this, SLOT(sliderValueChanged(int)));
 	hbox->addWidget(_slider);
