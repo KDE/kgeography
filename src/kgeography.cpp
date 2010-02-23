@@ -223,7 +223,7 @@ int kgeography::askQuestionNumber(int upto, bool *rOK)
 	bool ok;
 	i = IntegerInputDialog::GetInteger(NULL, i18n("Number of Questions"),
 					   i18n("How many questions do you want? (1 to %1)", upto),
-					   1, upto, 1, &ok);
+					   1, upto, upto, &ok);
 	if ( rOK != NULL ) *rOK = ok;
 	return i;
 }
