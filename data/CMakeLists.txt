@@ -274,6 +274,10 @@ install(FILES
    sikkim.png
    manipur.kgm
    manipur.png
+   andhrapradesh.kgm
+   andhrapradesh.png
+   arunachalpradesh.kgm
+   arunachalpradesh.png
 
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 

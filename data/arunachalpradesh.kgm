@@ -1,0 +1,101 @@
+<map>
+          <mapFile>arunachalpradesh.png</mapFile>
+          <name>Arunchal Pradesh</name>
+    <divisionsName>District</divisionsName>
+    <author>Stephanie Das Gupta</author>    
+        <division>
+                <name>Not Arunchal Pradesh</name>
+                <ignore>yes</ignore>
+                <color><red>255</red><green>255</green><blue>255</blue></color>
+        </division>
+        <division>
+                <name>Frontier</name>
+                <ignore>yes</ignore>
+                <color><red>0</red><green>0</green><blue></blue></color>
+        </division>
+        <division>
+             <name>Border</name>
+	     <ignore>yes</ignore>
+             <color><red>1</red><green>1</green><blue>1</blue></color>
+        </division>
+        <division>
+                <name>Tirap</name>
+                <capital>Khonsa</capital>
+                <color><red>143</red><green>6</green><blue>248</blue></color>
+        </division>
+        <division>
+                <name>Changlang</name>
+                <capital>Changlang</capital>
+                <color><red>41</red><green>184</green><blue>244</blue></color>
+        </division>
+        <division>
+                <name>Lohit</name>
+                <capital>Tezu</capital>
+                <color><red>243</red><green>69</green><blue>77</blue></color>
+        </division>
+        <division>
+                <name>Anjaw</name>
+                <capital>Hawai</capital>
+                <color><red>239</red><green>205</green><blue>182</blue></color>
+        </division>
+        <division>
+                <name>Lower Dibang Valley</name>
+                <capital>Roing</capital>
+                <color><red>174</red><green>34</green><blue>169</blue></color>
+        </division>
+        <division>
+                <name>Dibang Valley</name>
+                <capital>Anini</capital>
+                <color><red>237</red><green>191</green><blue>150</blue></color>
+        </division>
+        <division>
+                <name>Upper Siang</name>
+                <capital>Yingyong</capital>
+                <color><red>43</red><green>255</green><blue>143</blue></color>
+        </division>
+        <division>
+                <name>East Siang</name>
+                <capital>Pasighat</capital>
+                <color><red>59</red><green>232</green><blue>218</blue></color>
+        </division>
+        <division>
+                <name>West Siang</name>
+                <capital>Along</capital>
+                <color><red>249</red><green>183</green><blue>244</blue></color>
+        </division>
+        <division>
+                <name>Tawang</name>
+                <capital>Tawang</capital>
+                <color><red>241</red><green>102</green><blue>9</blue></color>
+        </division>
+        <division>
+                <name>West Kameng</name>
+                <capital>Bomdila</capital>
+                <color><red>186</red><green>236</green><blue>210</blue></color>
+        </division>
+        <division>
+                <name>East Kameng</name>
+                <capital>Seppa</capital>
+                <color><red>237</red><green>243</green><blue>69</blue></color>
+        </division>
+        <division>
+                <name>Papumpare</name>
+                <capital>Yupia</capital>
+                <color><red>164</red><green>210</green><blue>229</blue></color>
+        </division>
+        <division>
+                <name>Lower Subansiri</name>
+                <capital>Ziro</capital>
+                <color><red>232</red><green>175</green><blue>65</blue></color>
+        </division>
+        <division>
+                <name>Karung Kumey</name>
+                <capital>Koloriang</capital>
+                <color><red>193</red><green>101</green><blue>185</blue></color>
+        </division>
+        <division>
+                <name>Upper Subansiri</name>
+                <capital>Daporijo</capital>
+                <color><red>36</red><green>152</green><blue>241</blue></color>
+        </division>
+</map>
