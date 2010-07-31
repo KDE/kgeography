@@ -14,42 +14,48 @@
 		<color><red>1</red><green>1</green><blue>1</blue></color>
 	</division>
 	<division>
-		<name>Not Bielorussia</name>
+		<name>Not Belarus</name>
 		<ignore>yes</ignore>
 		<color><red>204</red><green>204</green><blue>204</blue></color>
 	</division>
 	<division>
-		<name>Minsk(City)</name>
+		<name>Minsk</name>
 		<ignore>allowClickMode</ignore>
 		<color><red>255</red><green>85</green><blue>85</blue></color>
 	</division>
 	<division>
-		<name>Brest</name>
+		<name>Brest Voblast</name>
+		<capital>Brest</capital>
 		<ignore>allowClickMode</ignore>
 		<color><red>255</red><green>170</green><blue>85</blue></color>
 	</division>
 	<division>
-		<name>Homyel</name>
+		<name>Homyel Voblast</name>
+		<capital>Homyel</capital>
 		<ignore>allowClickMode</ignore>
 		<color><red>255</red><green>255</green><blue>85</blue></color>
 	</division>
 	<division>
-		<name>Hrodna</name>
+		<name>Hrodna Voblast</name>
+		<capital>Hrodna</capital>
 		<ignore>allowClickMode</ignore>
 		<color><red>85</red><green>255</green><blue>182</blue></color>
 	</division>
 	<division>
-		<name>Mahilyow</name>
+		<name>Mahilyow Voblast</name>
+		<capital>Mahilyow</capital>
 		<ignore>allowClickMode</ignore>
 		<color><red>85</red><green>182</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>Minsk(Oblast)</name>
+		<name>Minsk Voblast</name>
+		<capital>Minsk</capital>
 		<ignore>allowClickMode</ignore>
 		<color><red>134</red><green>85</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>Vitebsk</name>
+		<name>Vitebsk Voblast</name>
+		<capital>Vitebsk</capital>
 		<ignore>allowClickMode</ignore>
 		<color><red>255</red><green>85</green><blue>231</blue></color>
 	</division>
