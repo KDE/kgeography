@@ -11,8 +11,8 @@
 #ifndef DIVISION_H
 #define DIVISION_H
 
-#include <qcolor.h>
-#include <qstring.h>
+#include <tqcolor.h>
+#include <tqstring.h>
 
 class division
 {
@@ -20,19 +20,19 @@ class division
 		division();
 		
 		bool canAsk(bool clickDivisionMode) const;
-		QString getName() const;
+		TQString getName() const;
 		QRgb getRGB() const;
-		QString getFlagFile() const;
-		QString getCapital() const;
+		TQString getFlagFile() const;
+		TQString getCapital() const;
 		
-		void setCapital(const QString &name);
+		void setCapital(const TQString &name);
 		void setIgnore(bool ignore, bool canAskClickDivision);
-		void setName(const QString &name);
+		void setName(const TQString &name);
 		void setRGB(int r, int g, int b);
-		bool setFlagFile(const QString &path);
+		bool setFlagFile(const TQString &path);
 		
 	private:
-		QString p_name, p_flagFile, p_capital;
+		TQString p_name, p_flagFile, p_capital;
 		QRgb p_color;
 		bool p_canAskAlways, p_canAskClickDivision;
 };

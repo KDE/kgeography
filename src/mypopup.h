@@ -11,7 +11,7 @@
 #ifndef MYPOPUP_H
 #define MYPOPUP_H
 
-#include <qframe.h>
+#include <tqframe.h>
 
 class myPopup : public QFrame
 {
@@ -19,13 +19,13 @@ Q_OBJECT
 	friend class popupManager;
 	
 	private:
-		myPopup(QWidget *parent, const QString &text, const QString &text2 = QString::null, const QString &flagFile = QString::null);
+		myPopup(TQWidget *parent, const TQString &text, const TQString &text2 = TQString::null, const TQString &flagFile = TQString::null);
 	
 	signals:
 		void deleteMe();
 
 	protected:
-		void mousePressEvent(QMouseEvent *);
+		void mousePressEvent(TQMouseEvent *);
 };
 
 #endif

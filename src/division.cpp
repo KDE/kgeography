@@ -8,7 +8,7 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include <qfile.h>
+#include <tqfile.h>
 
 #include "division.h"
 
@@ -16,7 +16,7 @@ division::division()
 {
 	p_canAskAlways = true;
 	p_canAskClickDivision = true;
-	p_flagFile = QString::null;
+	p_flagFile = TQString::null;
 }
 
 bool division::canAsk(bool clickDivisionMode) const
@@ -25,7 +25,7 @@ bool division::canAsk(bool clickDivisionMode) const
 	else return p_canAskAlways;
 }
 
-QString division::getName() const
+TQString division::getName() const
 {
 	return p_name;
 }
@@ -35,18 +35,18 @@ QRgb division::getRGB() const
 	return p_color;
 }
 
-QString division::getFlagFile() const
+TQString division::getFlagFile() const
 {
 	return p_flagFile;
 }
 
-QString division::getCapital() const
+TQString division::getCapital() const
 {
 	if (p_capital.isEmpty()) return "";
 	return p_capital;
 }
 
-void division::setCapital(const QString &name)
+void division::setCapital(const TQString &name)
 {
 	p_capital = name;
 }
@@ -65,7 +65,7 @@ void division::setIgnore(bool ignore, bool canAskClickDivision)
 	}
 }
 
-void division::setName(const QString &name)
+void division::setName(const TQString &name)
 {
 	p_name = name;
 }
@@ -75,8 +75,8 @@ void division::setRGB(int r, int g, int b)
 	p_color = qRgb(r, g, b);
 }
 
-bool division::setFlagFile(const QString &path)
+bool division::setFlagFile(const TQString &path)
 {
 	p_flagFile = path;
-	return QFile::exists(path);
+	return TQFile::exists(path);
 }

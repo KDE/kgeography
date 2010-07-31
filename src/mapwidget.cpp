@@ -14,12 +14,12 @@
 #include <kapplication.h>
 #include <klocale.h>
 
-#include <qcursor.h>
-#include <qpainter.h>
+#include <tqcursor.h>
+#include <tqpainter.h>
 
 #include "mapwidget.h"
 
-mapWidget::mapWidget(QWidget *parent) : QWidget(parent)
+mapWidget::mapWidget(TQWidget *parent) : TQWidget(parent)
 {
 	p_wantZoom = false;
 	p_zooming = false;
@@ -32,7 +32,7 @@ mapWidget::mapWidget(QWidget *parent) : QWidget(parent)
 	p_scrollBarsVisible = 0;
 }
 
-void mapWidget::init(const QString &path, int scrollBarWidth, int scrollBarHeight)
+void mapWidget::init(const TQString &path, int scrollBarWidth, int scrollBarHeight)
 {
 	p_scrollBarWidth = scrollBarWidth;
 	p_scrollBarHeight = scrollBarHeight;
@@ -61,7 +61,7 @@ void mapWidget::setMapZoom(bool b)
 	}
 }
 
-QSize mapWidget::sizeHint() const
+TQSize mapWidget::sizeHint() const
 {
 	return maximumSize();
 }
@@ -78,7 +78,7 @@ void mapWidget::updateVPosition(int value)
 	updateShownImage();
 }
 
-void mapWidget::mousePressEvent(QMouseEvent *e)
+void mapWidget::mousePressEvent(TQMouseEvent *e)
 {
 	if (e -> button() == Qt::LeftButton)
 	{
@@ -97,7 +97,7 @@ void mapWidget::mousePressEvent(QMouseEvent *e)
 		else
 		{
 			QRgb rgb;
-			QImage *currentImage;
+			TQImage *currentImage;
 			
 			currentImage = getCurrentImage();
 			
@@ -115,19 +115,19 @@ void mapWidget::mousePressEvent(QMouseEvent *e)
 	}
 }
 
-void mapWidget::mouseMoveEvent(QMouseEvent *e)
+void mapWidget::mouseMoveEvent(TQMouseEvent *e)
 {
 	if (p_zooming)
 	{
-		QPainter p(this);
+		TQPainter p(this);
 		
 		p.setRasterOp(Qt::XorROP);
-		p.setPen(QPen(Qt::white, 1, Qt::DotLine));
+		p.setPen(TQPen(Qt::white, 1, Qt::DotLine));
 
 		// remove previous rectangle
-		p.drawRect(QRect(p_initial, p_prev));
+		p.drawRect(TQRect(p_initial, p_prev));
 		// put new rectangle
-		p.drawRect(QRect(p_initial, e -> pos()));
+		p.drawRect(TQRect(p_initial, e -> pos()));
 		
 		p_prev = e -> pos();
 	}
@@ -169,15 +169,15 @@ void mapWidget::mouseMoveEvent(QMouseEvent *e)
 	}
 }
 
-void mapWidget::mouseReleaseEvent(QMouseEvent *e)
+void mapWidget::mouseReleaseEvent(TQMouseEvent *e)
 {
 	if (p_zooming)
 	{
-		QPainter p(this);
-		QRect r(p_initial, e -> pos());
+		TQPainter p(this);
+		TQRect r(p_initial, e -> pos());
 		
 		p.setRasterOp(Qt::XorROP);
-		p.setPen(QPen(Qt::white, 1, Qt::DotLine));
+		p.setPen(TQPen(Qt::white, 1, Qt::DotLine));
 		// remove previous rectangle
 		p.drawRect(r);
 		
@@ -234,7 +234,7 @@ void mapWidget::mouseReleaseEvent(QMouseEvent *e)
 	}
 }
 
-void mapWidget::resizeEvent(QResizeEvent *e)
+void mapWidget::resizeEvent(TQResizeEvent *e)
 {
 	if (p_originalImage.isNull()) return;
 	
@@ -271,7 +271,7 @@ void mapWidget::emitMoveActionEnabled()
 	}
 }
 
-QImage *mapWidget::getCurrentImage()
+TQImage *mapWidget::getCurrentImage()
 {
 	if (p_zoomedImageShown.isNull()) return &p_originalImage;
 	else return &p_zoomedImageShown;
@@ -281,7 +281,7 @@ void mapWidget::setOriginalImage()
 {
 	setPaletteBackgroundPixmap(p_originalImage);
 	erase();
-	p_zoomedImageShown = QImage();
+	p_zoomedImageShown = TQImage();
 	p_lastFactorX = 1;
 	p_lastFactorY = 1;
 	p_zoomX = 0;
@@ -324,7 +324,7 @@ void mapWidget::updateShownImage()
 	}
 }
 
-QSize mapWidget::mapSize() const
+TQSize mapWidget::mapSize() const
 {
 	return p_originalImage.size();
 }

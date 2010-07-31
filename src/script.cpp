@@ -10,10 +10,10 @@
 
 #include <stdio.h>
 
-#include <qdir.h>
-#include <qdom.h>
-#include <qstring.h>
-#include <qstringlist.h>
+#include <tqdir.h>
+#include <tqdom.h>
+#include <tqstring.h>
+#include <tqstringlist.h>
 
 int main(int argc, char *argv[])
 {
@@ -23,26 +23,26 @@ int main(int argc, char *argv[])
 		return 1;
 	}
 	
-	QDir d(argv[1], "*.kgm");
+	TQDir d(argv[1], "*.kgm");
 	if (!d.exists()) return 2;
 	
-	QFile *output = new QFile(argv[2]);
+	TQFile *output = new TQFile(argv[2]);
 	output->open(IO_WriteOnly | IO_Truncate);
-	QTextStream os(output);
-	os.setEncoding(QTextStream::UnicodeUTF8);
+	TQTextStream os(output);
+	os.setEncoding(TQTextStream::UnicodeUTF8);
 	
-	QStringList files = d.entryList();
-	QStringList::const_iterator it;
-	QDomDocument dd;
+	TQStringList files = d.entryList();
+	TQStringList::const_iterator it;
+	TQDomDocument dd;
 
 	for (it = files.begin(); it != files.end(); ++it)
 	{
-		QFile *f = new QFile(d.absPath() + "/" + *it);
+		TQFile *f = new TQFile(d.absPath() + "/" + *it);
 		f -> open(IO_ReadOnly);
 		dd.setContent(f);
 		
-		QDomNode n, n2, n3, n4, n5;
-		QDomNodeList nodes = dd.firstChild().childNodes();
+		TQDomNode n, n2, n3, n4, n5;
+		TQDomNodeList nodes = dd.firstChild().childNodes();
 		for (uint i = 0; i < nodes.count(); i++)
 		{
 			n = nodes.item(i);

@@ -11,7 +11,7 @@
 #ifndef RESULT_H
 #define RESULT_H
 
-#include <qvariant.h>
+#include <tqvariant.h>
 
 class QGridLayout;
 
@@ -23,15 +23,15 @@ class userAnswer
 		
 		userAnswer &operator=(const userAnswer &qa);
 		
-		void setQuestion(QVariant question);
-		void setAnswer(QVariant answer);
+		void setQuestion(TQVariant question);
+		void setAnswer(TQVariant answer);
 		void setAnswerCorrect(bool correct);
-		void setCorrectAnswer(QVariant correctAnswer);
+		void setCorrectAnswer(TQVariant correctAnswer);
 		
-		void putWidgets(QWidget *w, QGridLayout *lay, int row) const;
+		void putWidgets(TQWidget *w, TQGridLayout *lay, int row) const;
 		
 	private:
-		QVariant p_question, p_answer, p_correctAnswer;
+		TQVariant p_question, p_answer, p_correctAnswer;
 		bool p_correct;
 };
 

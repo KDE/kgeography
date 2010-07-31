@@ -23,19 +23,19 @@ class boxAsker : public askWidget
 {
 Q_OBJECT
 	public:
-		boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count);
+		boxAsker(TQWidget *parent, KGmap *m, TQWidget *w, uint count);
 		~boxAsker();
 	
 	protected:
-		virtual bool nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer) = 0;
-		void nextQuestionHook(const QString &division);
-		void setQuestion(const QString &q);
+		virtual bool nextBoxAskerQuestionHook(const TQString &division, int i, bool isAnswer) = 0;
+		void nextQuestionHook(const TQString &division);
+		void setQuestion(const TQString &q);
 		virtual void setAnswerHook(int userSays) = 0;
 		
-		void keyReleaseEvent(QKeyEvent *e);
+		void keyReleaseEvent(TQKeyEvent *e);
 		
-		QVBoxLayout *p_lay;
-		QRadioButton **p_rb;
+		TQVBoxLayout *p_lay;
+		TQRadioButton **p_rb;
 
 	protected slots:
 		void init();
@@ -51,7 +51,7 @@ Q_OBJECT
 		// the position the correct answer is in
 		int p_position;
 		
-		QLabel *p_label;
+		TQLabel *p_label;
 };
 
 #endif

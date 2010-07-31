@@ -11,23 +11,23 @@
 #ifndef MAPWIDGET_H
 #define MAPWIDGET_H
 
-#include <qimage.h>
-#include <qpoint.h>
-#include <qwidget.h>
+#include <tqimage.h>
+#include <tqpoint.h>
+#include <tqwidget.h>
 
 class mapWidget : public QWidget
 {
 Q_OBJECT
 	public:
-		mapWidget(QWidget *parent);
+		mapWidget(TQWidget *parent);
 		
-		void init(const QString &path, int scrollBarWidth, int scrollBarHeight);
+		void init(const TQString &path, int scrollBarWidth, int scrollBarHeight);
 
 		void setMapMove(bool b);
 		void setMapZoom(bool b);
 		
-		QSize sizeHint() const;
-		QSize mapSize() const;
+		TQSize sizeHint() const;
+		TQSize mapSize() const;
 	
 	public slots:
 		void updateHPosition(int value);
@@ -38,29 +38,29 @@ Q_OBJECT
 		void setMoveActionChecked(bool b);
 		void setZoomActionChecked(bool b);
 		void setMoveActionEnabled(bool b);
-		void clicked(QRgb, const QPoint&);
+		void clicked(QRgb, const TQPoint&);
 		void updatePosition(int X, int Y);
 		void updateVisibleSize(int w, int h);
 		void updateMaximumSize(int w, int h);
 	
 	protected:
-		void mousePressEvent(QMouseEvent *e);
-		void mouseMoveEvent(QMouseEvent *e);
-		void mouseReleaseEvent(QMouseEvent *e);
-		void resizeEvent(QResizeEvent *e);
+		void mousePressEvent(TQMouseEvent *e);
+		void mouseMoveEvent(TQMouseEvent *e);
+		void mouseReleaseEvent(TQMouseEvent *e);
+		void resizeEvent(TQResizeEvent *e);
 	
 	private:
 		void emitMoveActionEnabled();
-		QImage *getCurrentImage();
+		TQImage *getCurrentImage();
 		void updateShownImage();
 		
-		QImage p_originalImage, p_zoomedImageShown;
+		TQImage p_originalImage, p_zoomedImageShown;
 		bool p_zooming, p_wantZoom, p_moving, p_wantMove;
-		QPoint p_initial, p_prev; // rubberbanding and moving
+		TQPoint p_initial, p_prev; // rubberbanding and moving
 		int p_zoomX, p_zoomY, p_zoomW, p_zoomH;
 		double p_lastFactorX, p_lastFactorY;
 		// useful to not do that many updateShownImage
-		QSize p_oldSize;
+		TQSize p_oldSize;
 		int p_oldZoomX, p_oldZoomY, p_oldZoomW, p_oldZoomH;
 		int p_scrollBarWidth, p_scrollBarHeight;
 		bool p_scrollBarsVisible;

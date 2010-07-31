@@ -26,18 +26,18 @@ class mapAsker : public askWidget
 {
 Q_OBJECT
 	public:
-		mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count = 0);
+		mapAsker(TQWidget *parent, KGmap *m, TQWidget *w, bool asker, uint count = 0);
 		~mapAsker();
 
-		QSize mapSize() const;
+		TQSize mapSize() const;
 		bool isAsker() const;
 		virtual bool isClickOnDivision() const { return true; }
 		
 	protected:
-		void nextQuestionHook(const QString &division);
-		void mousePressEvent(QMouseEvent *e);
-		QString getQuestionHook() const;
-		void showEvent(QShowEvent *e);
+		void nextQuestionHook(const TQString &division);
+		void mousePressEvent(TQMouseEvent *e);
+		TQString getQuestionHook() const;
+		void showEvent(TQShowEvent *e);
 
 	public slots:
 		void setMovement(bool b);
@@ -45,16 +45,16 @@ Q_OBJECT
 		void setOriginalZoom();
 	
 	private slots:
-		void handleMapClick(QRgb c, const QPoint &p);
+		void handleMapClick(QRgb c, const TQPoint &p);
 		void setScrollBarsPosition(int x, int y);
 		void setScrollBarsVisibleSize(int w, int h);
 		void setScrollBarsMaximumSize(int w, int h);
 		void showScrollBars(bool b);
 	
 	private:
-		QLabel *p_next;
-		QWidget *p_fill;
-		QScrollBar *p_hsb, *p_vsb;
+		TQLabel *p_next;
+		TQWidget *p_fill;
+		TQScrollBar *p_hsb, *p_vsb;
 		int p_hsbms, p_vsbms; //H and V maximum size for scrollbars
 		
 		infoWidget *p_infoWidget;

@@ -8,9 +8,9 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include <qimage.h>
-#include <qlabel.h>
-#include <qlayout.h>
+#include <tqimage.h>
+#include <tqlabel.h>
+#include <tqlayout.h>
 
 #include <kdialog.h>
 
@@ -37,12 +37,12 @@ userAnswer &userAnswer::operator=(const userAnswer &r)
 	return *this;
 }
 
-void userAnswer::setQuestion(QVariant question)
+void userAnswer::setQuestion(TQVariant question)
 {
 	p_question = question;
 }
 
-void userAnswer::setAnswer(QVariant answer)
+void userAnswer::setAnswer(TQVariant answer)
 {
 	p_answer = answer;
 }
@@ -52,15 +52,15 @@ void userAnswer::setAnswerCorrect(bool correct)
 	p_correct = correct;
 }
 
-void userAnswer::setCorrectAnswer(QVariant correctAnswer)
+void userAnswer::setCorrectAnswer(TQVariant correctAnswer)
 {
 	p_correctAnswer = correctAnswer;
 }
 
-void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
+void userAnswer::putWidgets(TQWidget *w, TQGridLayout *lay, int row) const
 {
-	QWidget *widgets[3];
-	const QVariant *v;
+	TQWidget *widgets[3];
+	const TQVariant *v;
 	
 	for (int i = 0; i < 3; i++)
 	{
@@ -68,30 +68,30 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
 		else if (i == 1) v = &p_answer;
 		else v = &p_correctAnswer;
 		
-		if (v -> type() == QVariant::String)
+		if (v -> type() == TQVariant::String)
 		{
-			QLabel *l;
-			l = new QLabel(w);
+			TQLabel *l;
+			l = new TQLabel(w);
 			l -> setText(v -> toString());
 			l -> setMargin(KDialog::marginHint() / 2);
 			widgets[i] = l;
 		}
-		else if (v -> type() == QVariant::Color)
+		else if (v -> type() == TQVariant::Color)
 		{
-			QWidget *aux = new QWidget(w);
-			QHBoxLayout *lay = new QHBoxLayout(aux);
+			TQWidget *aux = new TQWidget(w);
+			TQHBoxLayout *lay = new TQHBoxLayout(aux);
 			
-			QFrame *inner = new QFrame(aux);
+			TQFrame *inner = new TQFrame(aux);
 			lay -> addWidget(inner);
 			inner -> setBackgroundColor(v -> toColor());
 			inner -> setLineWidth(1);
 			lay -> setMargin(KDialog::marginHint() / 2);
 			widgets[i] = aux;
 		}
-		else if (v -> type() == QVariant::Image)
+		else if (v -> type() == TQVariant::Image)
 		{
-			QLabel *l;
-			l = new QLabel(w);
+			TQLabel *l;
+			l = new TQLabel(w);
 			l -> setPixmap(v -> toImage());
 			l -> setAlignment(Qt::AlignHCenter);
 			l -> setMargin(KDialog::marginHint() / 2);
@@ -103,7 +103,7 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
 	
 	if (!p_correct)
 	{
-		QColor back, fore;
+		TQColor back, fore;
 		back = widgets[0] -> colorGroup().highlight();
 		fore = widgets[0] -> colorGroup().highlightedText();
 		for (int i = 0; i < 3; i++)

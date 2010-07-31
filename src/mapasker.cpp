@@ -11,25 +11,25 @@
 #include <klocale.h>
 #include <kmessagebox.h>
 
-#include <qlabel.h>
-#include <qlayout.h>
-#include <qscrollbar.h>
-#include <qstring.h>
+#include <tqlabel.h>
+#include <tqlayout.h>
+#include <tqscrollbar.h>
+#include <tqstring.h>
 
 #include "map.h"
 #include "mapasker.h"
 #include "mapwidget.h"
 
-mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_popupManager(this), p_asker(asker), p_firstShow(true)
+mapAsker::mapAsker(TQWidget *parent, KGmap *m, TQWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_popupManager(this), p_asker(asker), p_firstShow(true)
 {
-	QGridLayout *lay = new QGridLayout(this, 2, 2);
+	TQGridLayout *lay = new TQGridLayout(this, 2, 2);
 
 	p_mapWidget = new mapWidget(this);
 	lay -> addWidget(p_mapWidget, 0, 0);
 
-	p_hsb = new QScrollBar(Horizontal, this);
+	p_hsb = new TQScrollBar(Horizontal, this);
 	lay -> addWidget(p_hsb, 1, 0);
-	p_vsb = new QScrollBar(Vertical, this);
+	p_vsb = new TQScrollBar(Vertical, this);
 	lay -> addWidget(p_vsb, 0, 1);
 
 	lay -> setRowStretch(2, 1);
@@ -37,24 +37,24 @@ mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count
 
 	p_shouldClearPopup = false;
 
-	connect(p_mapWidget, SIGNAL(clicked(QRgb, const QPoint&)), this, SLOT(handleMapClick(QRgb, const QPoint&)));
-	connect(p_mapWidget, SIGNAL(setMoveActionChecked(bool)), this, SIGNAL(setMoveActionChecked(bool)));
-	connect(p_mapWidget, SIGNAL(setZoomActionChecked(bool)), this, SIGNAL(setZoomActionChecked(bool)));
-	connect(p_mapWidget, SIGNAL(setMoveActionEnabled(bool)), this, SIGNAL(setMoveActionEnabled(bool)));
-	connect(p_mapWidget, SIGNAL(setMoveActionEnabled(bool)), this, SLOT(showScrollBars(bool)));
-	connect(p_mapWidget, SIGNAL(updatePosition(int, int)), this, SLOT(setScrollBarsPosition(int, int)));
-	connect(p_mapWidget, SIGNAL(updateVisibleSize(int, int)), this, SLOT(setScrollBarsVisibleSize(int, int)));
-	connect(p_mapWidget, SIGNAL(updateMaximumSize(int, int)), this, SLOT(setScrollBarsMaximumSize(int, int)));
+	connect(p_mapWidget, TQT_SIGNAL(clicked(QRgb, const TQPoint&)), this, TQT_SLOT(handleMapClick(QRgb, const TQPoint&)));
+	connect(p_mapWidget, TQT_SIGNAL(setMoveActionChecked(bool)), this, TQT_SIGNAL(setMoveActionChecked(bool)));
+	connect(p_mapWidget, TQT_SIGNAL(setZoomActionChecked(bool)), this, TQT_SIGNAL(setZoomActionChecked(bool)));
+	connect(p_mapWidget, TQT_SIGNAL(setMoveActionEnabled(bool)), this, TQT_SIGNAL(setMoveActionEnabled(bool)));
+	connect(p_mapWidget, TQT_SIGNAL(setMoveActionEnabled(bool)), this, TQT_SLOT(showScrollBars(bool)));
+	connect(p_mapWidget, TQT_SIGNAL(updatePosition(int, int)), this, TQT_SLOT(setScrollBarsPosition(int, int)));
+	connect(p_mapWidget, TQT_SIGNAL(updateVisibleSize(int, int)), this, TQT_SLOT(setScrollBarsVisibleSize(int, int)));
+	connect(p_mapWidget, TQT_SIGNAL(updateMaximumSize(int, int)), this, TQT_SLOT(setScrollBarsMaximumSize(int, int)));
 
-	connect(p_hsb, SIGNAL(valueChanged(int)), p_mapWidget, SLOT(updateHPosition(int)));
-	connect(p_vsb, SIGNAL(valueChanged(int)), p_mapWidget, SLOT(updateVPosition(int)));
+	connect(p_hsb, TQT_SIGNAL(valueChanged(int)), p_mapWidget, TQT_SLOT(updateHPosition(int)));
+	connect(p_vsb, TQT_SIGNAL(valueChanged(int)), p_mapWidget, TQT_SLOT(updateVPosition(int)));
 
 	if (asker)
 	{
-		QBoxLayout *vbl = dynamic_cast<QBoxLayout*>(w -> layout());
-		p_next = new QLabel(w);
+		TQBoxLayout *vbl = dynamic_cast<TQBoxLayout*>(w -> layout());
+		p_next = new TQLabel(w);
 		p_next -> setAlignment(AlignTop | AlignHCenter);
-		p_fill = new QWidget(w);
+		p_fill = new TQWidget(w);
 		p_fill -> show();
 		vbl -> setStretchFactor(p_fill, 1);
 		nextQuestion();
@@ -77,7 +77,7 @@ bool mapAsker::isAsker() const
 	return p_answers;
 }
 
-void mapAsker::mousePressEvent(QMouseEvent*)
+void mapAsker::mousePressEvent(TQMouseEvent*)
 {
 	p_popupManager.clear();
 }
@@ -100,9 +100,9 @@ void mapAsker::setOriginalZoom()
 	p_popupManager.clear();
 }
 
-void mapAsker::handleMapClick(QRgb c, const QPoint &p)
+void mapAsker::handleMapClick(QRgb c, const TQPoint &p)
 {
-	QString aux, cap;
+	TQString aux, cap;
 	aux = p_map -> getWhatIs(c, !p_asker);
 	if (aux == "nothing") KMessageBox::error(this, i18n("You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.").arg(p_map -> getFile()).arg(qRed(c)).arg(qGreen(c)).arg(qBlue(c)));
 	else if (p_shouldClearPopup)
@@ -112,7 +112,7 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	}
 	else if (!p_asker)
 	{
-		QString flagFile;
+		TQString flagFile;
 		cap = p_map -> getDivisionCapital(aux);
 		if (!cap.isEmpty())
 		{
@@ -128,7 +128,7 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	}
 	else if (!aux.isEmpty())
 	{
-		p_currentAnswer.setAnswer(QColor(c));
+		p_currentAnswer.setAnswer(TQColor(c));
 		questionAnswered(aux == lastDivisionAsked());
 		nextQuestion();
 	}
@@ -168,18 +168,18 @@ void mapAsker::setScrollBarsMaximumSize(int w, int h)
 	p_vsbms = h;
 }
 
-void mapAsker::nextQuestionHook(const QString &division)
+void mapAsker::nextQuestionHook(const TQString &division)
 {
-	QString sw = i18n("There are two ways of dealing with the translation of \"Please click on: %1\". The first option simply replaces %1 with the translated name of the relevant region/city. If the grammar of your language allows this, choose this option by setting the translation of this message to 1, and leave untranslated the translations of \"Please click on: %1\" that have the placename embedded (or translate them as - if you wish to show the file as fully translated. The second option is to translate all messages in full - this is likely to be required in the case of highly-inflected languages like Russian. To choose this option, set the translation of this message to 0, and translate all the messages.", "0");
+	TQString sw = i18n("There are two ways of dealing with the translation of \"Please click on: %1\". The first option simply replaces %1 with the translated name of the relevant region/city. If the grammar of your language allows this, choose this option by setting the translation of this message to 1, and leave untranslated the translations of \"Please click on: %1\" that have the placename embedded (or translate them as - if you wish to show the file as fully translated. The second option is to translate all messages in full - this is likely to be required in the case of highly-inflected languages like Russian. To choose this option, set the translation of this message to 0, and translate all the messages.", "0");
 	if (sw == "1")
 	{
-		QString divisionName = i18n(p_map -> getFileName().utf8(), division.utf8());
-		QString text = i18n("Please click on:\n%1");
+		TQString divisionName = i18n(p_map -> getFileName().utf8(), division.utf8());
+		TQString text = i18n("Please click on:\n%1");
 		p_next -> setText(text.arg(divisionName));
 	}
 	else
 	{
-		QString s = QString("Please click on:\n%1").arg(division);
+		TQString s = TQString("Please click on:\n%1").arg(division);
 		p_next -> setText(i18n(p_map -> getFileName().utf8(), s.utf8()));
 	}
 	p_currentAnswer.setQuestion(i18n(p_map -> getFileName().utf8(), division.utf8()));
@@ -187,12 +187,12 @@ void mapAsker::nextQuestionHook(const QString &division)
 	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
 }
 
-QString mapAsker::getQuestionHook() const
+TQString mapAsker::getQuestionHook() const
 {
 	return i18n("Division in Map");
 }
 
-void mapAsker::showEvent(QShowEvent *)
+void mapAsker::showEvent(TQShowEvent *)
 {
 	if (p_firstShow)
 	{
@@ -201,7 +201,7 @@ void mapAsker::showEvent(QShowEvent *)
 	}
 }
 
-QSize mapAsker::mapSize() const
+TQSize mapAsker::mapSize() const
 {
 	return p_mapWidget -> mapSize();
 }

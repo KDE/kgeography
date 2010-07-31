@@ -11,7 +11,7 @@
 #ifndef MAPPARSER_H
 #define MAPPARSER_H
 
-#include <qxml.h>
+#include <tqxml.h>
 
 class division;
 class KGmap;
@@ -21,28 +21,28 @@ class mapReader : public QXmlSimpleReader
 	public:
 		mapReader();
 		
-		bool parseMap(const QString &path);
-		QString getError();
+		bool parseMap(const TQString &path);
+		TQString getError();
 		KGmap *getMap();
 	
 	private:
-		QString p_error;
+		TQString p_error;
 		KGmap *p_map;
 };
 
 class mapParser : public QXmlDefaultHandler
 {
 	public:
-		mapParser(KGmap *m, const QString &path);
+		mapParser(KGmap *m, const TQString &path);
 		bool startDocument();
-		bool startElement(const QString&, const QString&, const QString&, const QXmlAttributes&);
-		bool endElement(const QString &, const QString &name, const QString &);
-		bool characters(const QString &ch);
+		bool startElement(const TQString&, const TQString&, const TQString&, const TQXmlAttributes&);
+		bool endElement(const TQString &, const TQString &name, const TQString &);
+		bool characters(const TQString &ch);
 		bool endDocument();
-		QString errorString();
+		TQString errorString();
 	
 	private:
-		QString getPreviousTag() const;
+		TQString getPreviousTag() const;
 		void removeLastTag();
 		
 		division *p_division;
@@ -50,8 +50,8 @@ class mapParser : public QXmlDefaultHandler
 		KGmap *p_map;
 		bool p_allowChars, p_mapNameSet, p_mapFileSet;
 		bool p_divisionNameSet, p_colorSet, p_divisionIgnoreSet, p_flagFileSet, p_capitalSet;
-		const QString &p_path;
-		QString p_error, p_contents, p_previousTags;
+		const TQString &p_path;
+		TQString p_error, p_contents, p_previousTags;
 };
 
 #endif

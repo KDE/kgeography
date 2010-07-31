@@ -11,8 +11,8 @@
 #ifndef ASKWIDGET_H
 #define ASKWIDGET_H
 
-#include <qvaluevector.h>
-#include <qwidget.h>
+#include <tqvaluevector.h>
+#include <tqwidget.h>
 
 #include "answer.h"
 
@@ -24,13 +24,13 @@ class askWidget : public QWidget
 {
 Q_OBJECT
 	public:
-		askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool showLabel = true);
+		askWidget(TQWidget *parent, KGmap *m, TQWidget *w, uint count, bool showLabel = true);
 		virtual ~askWidget();
 		
-		virtual QString getQuestionHook() const = 0;
+		virtual TQString getQuestionHook() const = 0;
 		virtual bool isClickOnDivision() const { return false; }
 		int correctAnswers() const;
-		QValueVector<userAnswer> userAnswers() const;
+		TQValueVector<userAnswer> userAnswers() const;
 	
 	public slots:
 		virtual void setMovement(bool b);
@@ -45,25 +45,25 @@ Q_OBJECT
 	
 	protected:
 		void clearAsked();
-		QString lastDivisionAsked();
+		TQString lastDivisionAsked();
 		void nextQuestion();
-		virtual void nextQuestionHook(const QString &division) = 0;
+		virtual void nextQuestionHook(const TQString &division) = 0;
 		void questionAnswered(bool wasCorrect);
 		void resetAnswers();
 	
 		KGmap *p_map;
 		userAnswer p_currentAnswer;
-		QLabel *p_answers;
+		TQLabel *p_answers;
 	
 	private:
 		void updateLabel();
 		
 		int p_correctAnswers, p_incorrectAnswers;
 		
-		QValueVector<userAnswer> p_userAnswers;
+		TQValueVector<userAnswer> p_userAnswers;
 		
 		// the list of asked divisions
-		QStringList p_asked;
+		TQStringList p_asked;
 		
 		// the number of questions to do
 		uint p_count;

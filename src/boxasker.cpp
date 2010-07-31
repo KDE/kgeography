@@ -15,25 +15,25 @@
 #include <klocale.h>
 #include <kpushbutton.h>
 
-#include <qlabel.h>
-#include <qlayout.h>
-#include <qradiobutton.h>
-#include <qvbuttongroup.h>
+#include <tqlabel.h>
+#include <tqlayout.h>
+#include <tqradiobutton.h>
+#include <tqvbuttongroup.h>
 
 #include "boxasker.h"
 #include "map.h"
 
-boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidget(parent, m, w, count)
+boxAsker::boxAsker(TQWidget *parent, KGmap *m, TQWidget *w, uint count) : askWidget(parent, m, w, count)
 {
-	p_lay = new QVBoxLayout(this);
+	p_lay = new TQVBoxLayout(this);
 	
-	QVButtonGroup *bg = new QVButtonGroup(this);
-	p_label = new QLabel(this);
-	p_rb = new QRadioButton*[4];
+	TQVButtonGroup *bg = new TQVButtonGroup(this);
+	p_label = new TQLabel(this);
+	p_rb = new TQRadioButton*[4];
 	for(int i = 0; i < 4; i++)
 	{
-		p_rb[i] = new QRadioButton(bg);
-		p_rb[i]->setFocusPolicy(QWidget::StrongFocus);
+		p_rb[i] = new TQRadioButton(bg);
+		p_rb[i]->setFocusPolicy(TQWidget::StrongFocus);
 	}
 	p_accept = new KPushButton(this);
 
@@ -48,21 +48,21 @@ boxAsker::~boxAsker()
 	delete[] p_rb;
 }
 
-void boxAsker::setQuestion(const QString &q)
+void boxAsker::setQuestion(const TQString &q)
 {
 	p_label -> setText(q);
 }
 
-void boxAsker::keyReleaseEvent(QKeyEvent *e)
+void boxAsker::keyReleaseEvent(TQKeyEvent *e)
 {
 	if (e -> key() == Qt::Key_Return || e -> key() == Qt::Key_Enter) checkAnswer();
 	else askWidget::keyReleaseEvent(e);
 }
 
-void boxAsker::nextQuestionHook(const QString &division)
+void boxAsker::nextQuestionHook(const TQString &division)
 {
-	QString otherDivision;
-	QStringList auxList;
+	TQString otherDivision;
+	TQStringList auxList;
 	int i;
 	
 	setFocus();
@@ -122,7 +122,7 @@ void boxAsker::init()
 	nextQuestion();
 	
 	p_accept -> disconnect();
-	connect(p_accept, SIGNAL(clicked()), this, SLOT(checkAnswer()));
+	connect(p_accept, TQT_SIGNAL(clicked()), this, TQT_SLOT(checkAnswer()));
 }
 
 #include "boxasker.moc"

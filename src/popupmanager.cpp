@@ -11,13 +11,13 @@
 #include "mypopup.h"
 #include "popupmanager.h"
 
-popupManager::popupManager(QWidget *parent)
+popupManager::popupManager(TQWidget *parent)
 {
 	p_parent = parent;
 	p_mp = 0;
 }
 
-void popupManager::show(const QString &text, const QString &text2, const QPoint &p, const QString &flagFile)
+void popupManager::show(const TQString &text, const TQString &text2, const TQPoint &p, const TQString &flagFile)
 {
 	delete p_mp;
 
@@ -25,7 +25,7 @@ void popupManager::show(const QString &text, const QString &text2, const QPoint 
 	init(p);
 }
 
-void popupManager::show(const QString &text, const QString &text2, const QPoint &p)
+void popupManager::show(const TQString &text, const TQString &text2, const TQPoint &p)
 {
 	delete p_mp;
 	
@@ -33,7 +33,7 @@ void popupManager::show(const QString &text, const QString &text2, const QPoint 
 	init(p);
 }
 
-void popupManager::show(const QString &text, const QPoint &p)
+void popupManager::show(const TQString &text, const TQPoint &p)
 {
 	delete p_mp;
 	
@@ -50,7 +50,7 @@ void popupManager::clear()
 	}
 }
 
-void popupManager::init(const QPoint &p)
+void popupManager::init(const TQPoint &p)
 {
 	int x, y, maxX, maxY;
 	maxX = p_parent -> width() - p_mp -> width();
@@ -61,7 +61,7 @@ void popupManager::init(const QPoint &p)
 	else y = maxY;
 	p_mp -> move(x, y);
 	p_mp -> show();
-	connect(p_mp, SIGNAL(deleteMe()), this, SLOT(clear()));
+	connect(p_mp, TQT_SIGNAL(deleteMe()), this, TQT_SLOT(clear()));
 }
 
 #include "popupmanager.moc"

@@ -11,8 +11,8 @@
 #ifndef MAP_H
 #define MAP_H
 
-#include <qcolor.h>
-#include <qmap.h>
+#include <tqcolor.h>
+#include <tqmap.h>
 
 class division;
 
@@ -24,28 +24,28 @@ class KGmap
 		
 		bool addDivision(division *d);
 		
-		void setFile(const QString &s);
-		bool setMapFile(const QString &s);
-		void setName(const QString &s);
+		void setFile(const TQString &s);
+		bool setMapFile(const TQString &s);
+		void setName(const TQString &s);
 		
 		// return the number of askable divisions
 		uint count(bool clickDivisionMode) const;
 		bool hasAllFlags() const;
-		QString getDivisionFlagFile(const QString &s) const;
-		QString getDivisionCapital(const QString &s) const;
-		QString getFile() const;
-		QString getFileName() const;
-		QString getMapFile() const;
-		QString getName() const;
-		QString getRandomDivision(bool clickDivisionMode) const;
-		QString getWhatIs(QRgb c, bool all) const;
-		QColor getColor(const QString &s) const;
+		TQString getDivisionFlagFile(const TQString &s) const;
+		TQString getDivisionCapital(const TQString &s) const;
+		TQString getFile() const;
+		TQString getFileName() const;
+		TQString getMapFile() const;
+		TQString getName() const;
+		TQString getRandomDivision(bool clickDivisionMode) const;
+		TQString getWhatIs(QRgb c, bool all) const;
+		TQColor getColor(const TQString &s) const;
 		
 	private:
-		QMap<QRgb, division*> p_colorMap;
-		QMap<QString, division*> p_nameMap;
+		TQMap<QRgb, division*> p_colorMap;
+		TQMap<TQString, division*> p_nameMap;
 		
-		QString p_name, p_file, p_mapFile;
+		TQString p_name, p_file, p_mapFile;
 		bool p_hasAllFlags;
 };
 

@@ -13,7 +13,7 @@
 
 #include <kdialogbase.h>
 
-#include <qdict.h>
+#include <tqdict.h>
 
 #include "map.h"
 #include "mapparser.h"
@@ -22,19 +22,19 @@ class mapChooser : public KDialogBase
 {
 Q_OBJECT
 	public:
-		mapChooser(QWidget *parent);
+		mapChooser(TQWidget *parent);
 		~mapChooser();
 
 		KGmap *getMap();
 	
 	private slots:
-		void putImage(const QString &mapName);
+		void putImage(const TQString &mapName);
 
 	private:
-		QListBox *p_listBox;
-		QWidget *p_image;
+		TQListBox *p_listBox;
+		TQWidget *p_image;
 		mapReader p_reader;
-		QDict<KGmap> p_maps;
+		TQDict<KGmap> p_maps;
 };
 
 #endif

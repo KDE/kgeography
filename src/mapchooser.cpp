@@ -13,25 +13,25 @@
 #include <kmessagebox.h>
 #include <kstandarddirs.h>
 
-#include <qhbox.h>
-#include <qimage.h>
-#include <qlayout.h>
+#include <tqhbox.h>
+#include <tqimage.h>
+#include <tqlayout.h>
 
 #include "mapchooser.h"
 
-mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Choose Map to Use"), KDialogBase::Ok | KDialogBase::Cancel, KDialogBase::Ok, true)
+mapChooser::mapChooser(TQWidget *parent) : KDialogBase(parent, 0, true, i18n("Choose Map to Use"), KDialogBase::Ok | KDialogBase::Cancel, KDialogBase::Ok, true)
 {
-	QHBox *mainHB;
-	QStringList list;
+	TQHBox *mainHB;
+	TQStringList list;
 	KGmap *m;
-	QWidget *mapArea;
-	QGridLayout *mapLay;
+	TQWidget *mapArea;
+	TQGridLayout *mapLay;
 	
-	mainHB = new QHBox(this);
+	mainHB = new TQHBox(this);
 	mainHB -> setSpacing(KDialog::spacingHint());
 	list = KGlobal::dirs() -> findAllResources("appdata", "*.kgm");
-	p_listBox = new QListBox(mainHB);
-	QStringList::iterator it;
+	p_listBox = new TQListBox(mainHB);
+	TQStringList::iterator it;
 	for(it = list.begin(); it != list.end(); ++it)
 	{
 		if (!p_reader.parseMap(*it))
@@ -42,22 +42,22 @@ mapChooser::mapChooser(QWidget *parent) : KDialogBase(parent, 0, true, i18n("Cho
 		else
 		{
 			m = p_reader.getMap();
-			QString text = i18n(m -> getFileName().utf8(), m -> getName().utf8());
+			TQString text = i18n(m -> getFileName().utf8(), m -> getName().utf8());
 			p_listBox -> insertItem(text);
 			p_maps.insert(text, m);
 		}
 	}
 	
-	mapArea = new QWidget(mainHB);
+	mapArea = new TQWidget(mainHB);
 	mapArea -> setFixedSize(300, 225);
 	
-	mapLay = new QGridLayout(mapArea, 3, 3);
+	mapLay = new TQGridLayout(mapArea, 3, 3);
 	
-	p_image = new QWidget(mapArea);
+	p_image = new TQWidget(mapArea);
 	mapLay -> addWidget(p_image, 1, 1);
 	
-	connect(p_listBox, SIGNAL(highlighted(const QString&)), this, SLOT(putImage(const QString&)));
-	connect(p_listBox, SIGNAL(selected(int)), this, SLOT(slotOk()));
+	connect(p_listBox, TQT_SIGNAL(highlighted(const TQString&)), this, TQT_SLOT(putImage(const TQString&)));
+	connect(p_listBox, TQT_SIGNAL(selected(int)), this, TQT_SLOT(slotOk()));
 	
 	setMainWidget(mainHB);
 	
@@ -80,12 +80,12 @@ KGmap *mapChooser::getMap()
 	return m;
 }
 
-void mapChooser::putImage(const QString &mapName)
+void mapChooser::putImage(const TQString &mapName)
 {
 	KGmap *m;
 	m = p_maps[mapName];
-	QImage image(m -> getMapFile());
-	image = image.smoothScale(300, 225, QImage::ScaleMin);
+	TQImage image(m -> getMapFile());
+	image = image.smoothScale(300, 225, TQImage::ScaleMin);
 	p_image -> setPaletteBackgroundPixmap(image);
 	p_image -> setFixedSize(image.size());
 }

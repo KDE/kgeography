@@ -11,16 +11,16 @@
 #include <klocale.h>
 #include <kmessagebox.h>
 
-#include <qlabel.h>
+#include <tqlabel.h>
 
 #include "askwidget.h"
 #include "map.h"
 
-askWidget::askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool showLabel) : QWidget(parent), p_map(m), p_count(count)
+askWidget::askWidget(TQWidget *parent, KGmap *m, TQWidget *w, uint count, bool showLabel) : TQWidget(parent), p_map(m), p_count(count)
 {
 	if (showLabel)
 	{
-		p_answers = new QLabel(w);
+		p_answers = new TQLabel(w);
 		p_answers -> setAlignment(AlignTop | AlignHCenter);
 		resetAnswers();
 		p_answers -> show();
@@ -38,7 +38,7 @@ int askWidget::correctAnswers() const
 	return p_correctAnswers;
 }
 
-QValueVector<userAnswer> askWidget::userAnswers() const
+TQValueVector<userAnswer> askWidget::userAnswers() const
 {
 	return p_userAnswers;
 }
@@ -60,14 +60,14 @@ void askWidget::clearAsked()
 	p_asked.clear();
 }
 
-QString askWidget::lastDivisionAsked()
+TQString askWidget::lastDivisionAsked()
 {
 	return p_asked.last();
 }
 
 void askWidget::nextQuestion()
 {
-	QString aux;
+	TQString aux;
 	
 	if (p_asked.count() < p_count)
 	{

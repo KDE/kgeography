@@ -11,7 +11,7 @@
 #ifndef POPUPMANAGER_H
 #define POPUPMANAGER_H
 
-#include <qobject.h>
+#include <tqobject.h>
 
 class QWidget;
 
@@ -21,25 +21,25 @@ class popupManager : public QObject
 {
 Q_OBJECT
 	public:
-		popupManager(QWidget *parent);
+		popupManager(TQWidget *parent);
 
 		// shows text at p and the flag
-		void show(const QString &text, const QString &text2, const QPoint &p, const QString &flagFile);
+		void show(const TQString &text, const TQString &text2, const TQPoint &p, const TQString &flagFile);
 	
 		// shows text at p
-		void show(const QString &text, const QString &text2, const QPoint &p);
+		void show(const TQString &text, const TQString &text2, const TQPoint &p);
 		
 		// shows text at p
-		void show(const QString &text, const QPoint &p);
+		void show(const TQString &text, const TQPoint &p);
 		
 	public slots:
 		void clear();
 
 	private:
-		void init(const QPoint &p);
+		void init(const TQPoint &p);
 	
 		myPopup *p_mp;
-		QWidget *p_parent;
+		TQWidget *p_parent;
 };
 
 #endif

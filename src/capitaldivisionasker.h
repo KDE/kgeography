@@ -18,15 +18,15 @@ class QLabel;
 class capitalDivisionAsker : public boxAsker
 {
 	public:
-		capitalDivisionAsker(QWidget *parent, KGmap *m, QWidget *w, uint count);
+		capitalDivisionAsker(TQWidget *parent, KGmap *m, TQWidget *w, uint count);
 
 	protected:
-		bool nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer);
+		bool nextBoxAskerQuestionHook(const TQString &division, int i, bool isAnswer);
 		void setAnswerHook(int userSays);
-		QString getQuestionHook() const;
+		TQString getQuestionHook() const;
 	
 	private:
-		QString p_capital;
+		TQString p_capital;
 };
 
 #endif

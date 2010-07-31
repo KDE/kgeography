@@ -16,21 +16,21 @@
 
 /* unitReader */
 
-mapReader::mapReader() : QXmlSimpleReader()
+mapReader::mapReader() : TQXmlSimpleReader()
 {
 }
 
-bool mapReader::parseMap(const QString &path)
+bool mapReader::parseMap(const TQString &path)
 {
-	QString aux;
+	TQString aux;
 	p_map = new KGmap();
 	p_map -> setFile(path);
 	aux = path.left(path.findRev('/') + 1); // aux = path but without the file name
 	mapParser handler(p_map, aux);
-	QFile xmlFile(path);
+	TQFile xmlFile(path);
 	if (xmlFile.exists())
 	{
-		QXmlInputSource source(&xmlFile);
+		TQXmlInputSource source(&xmlFile);
 		setContentHandler(&handler);
 		if (parse(source)) return true;
 		p_error = handler.errorString();
@@ -42,7 +42,7 @@ bool mapReader::parseMap(const QString &path)
 	return false;
 }
 
-QString mapReader::getError()
+TQString mapReader::getError()
 {
 	return p_error;
 }
@@ -54,7 +54,7 @@ KGmap *mapReader::getMap()
 
 /* mapParser */
 
-mapParser::mapParser(KGmap *m, const QString &path) : QXmlDefaultHandler(), p_map(m), p_path(path)
+mapParser::mapParser(KGmap *m, const TQString &path) : TQXmlDefaultHandler(), p_map(m), p_path(path)
 {
 }
 
@@ -65,9 +65,9 @@ bool mapParser::startDocument()
 	return true;
 }
 
-bool mapParser::startElement(const QString&, const QString &name, const QString&, const QXmlAttributes&)
+bool mapParser::startElement(const TQString&, const TQString &name, const TQString&, const TQXmlAttributes&)
 {
-	QString prev;
+	TQString prev;
 	bool b = true;
 	prev = getPreviousTag();
 	p_previousTags += ":" + name;
@@ -131,9 +131,9 @@ bool mapParser::startElement(const QString&, const QString &name, const QString&
 	return b;
 }
 
-bool mapParser::endElement(const QString &, const QString &, const QString &)
+bool mapParser::endElement(const TQString &, const TQString &, const TQString &)
 {
-	QString aux;
+	TQString aux;
 	bool b;
 	aux = getPreviousTag();
 	b = true;
@@ -231,13 +231,13 @@ bool mapParser::endElement(const QString &, const QString &, const QString &)
 	}
 	else b = false;
 	removeLastTag();
-	p_contents = QString::null;
+	p_contents = TQString::null;
 	return b;
 }
 
-bool mapParser::characters(const QString &ch)
+bool mapParser::characters(const TQString &ch)
 {
-	QString aux;
+	TQString aux;
 	if (ch.simplifyWhiteSpace().length() == 0) return true;
 	aux = getPreviousTag();
 	if (aux == "mapFile" || aux == "name" || aux == "red" || aux == "green" || aux == "blue" || aux == "ignore" || aux == "flag" || aux == "capital")
@@ -251,7 +251,7 @@ bool mapParser::characters(const QString &ch)
 
 bool mapParser::endDocument()
 {
-	QString aux;
+	TQString aux;
 	if (p_mapNameSet && p_mapFileSet)
 	{
 		return true;
@@ -262,13 +262,13 @@ bool mapParser::endDocument()
 	return false;
 }
 
-QString mapParser::errorString()
+TQString mapParser::errorString()
 {
 	if (!p_error.isEmpty()) return p_error;
 	return i18n("The XML document is malformed.");
 }
 
-QString mapParser::getPreviousTag() const
+TQString mapParser::getPreviousTag() const
 {
 	return p_previousTags.right(p_previousTags.length() - p_previousTags.findRev(':') - 1);
 }

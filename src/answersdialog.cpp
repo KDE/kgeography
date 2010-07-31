@@ -10,27 +10,27 @@
 
 #include <klocale.h>
 
-#include <qlabel.h>
-#include <qlayout.h>
-#include <qscrollview.h>
+#include <tqlabel.h>
+#include <tqlayout.h>
+#include <tqscrollview.h>
 
 #include "answer.h"
 #include "answersdialog.h"
 
-answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &userAnswers, QString question, int correctAnswers) : KDialogBase(parent, 0, true, i18n("Your Answers Were"), Ok)
+answersDialog::answersDialog(TQWidget *parent, const TQValueVector<userAnswer> &userAnswers, TQString question, int correctAnswers) : KDialogBase(parent, 0, true, i18n("Your Answers Were"), Ok)
 {
-	QLabel *l1, *l2, *l3;
-	QFont boldFont, bigFont;
+	TQLabel *l1, *l2, *l3;
+	TQFont boldFont, bigFont;
 	uint totalAnswers;
 	totalAnswers = userAnswers.count();
 	
-	p_sv = new QScrollView(this);
+	p_sv = new TQScrollView(this);
 	setMainWidget(p_sv);
 	
-	p_container = new QWidget(p_sv -> viewport());
+	p_container = new TQWidget(p_sv -> viewport());
 	p_sv -> viewport() -> setPaletteBackgroundColor(p_container -> paletteBackgroundColor());
 	
-	QGridLayout *lay = new QGridLayout(p_container);
+	TQGridLayout *lay = new TQGridLayout(p_container);
 	lay -> setColStretch(0, 1);
 	lay -> setColStretch(4, 1);
 	lay -> setRowStretch(totalAnswers + 4, 1);
@@ -38,7 +38,7 @@ answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &us
 	// Title
 	bigFont = p_container -> font();
 	bigFont.setPointSize(24);
-	l1 = new QLabel(question, p_container);
+	l1 = new TQLabel(question, p_container);
 	l1 -> setFont(bigFont);
 	l1 -> setAlignment(Qt::AlignCenter);
 	lay->addMultiCellWidget(l1, 0, 0, 0, 4);
@@ -47,11 +47,11 @@ answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &us
 	boldFont = p_container -> font();
 	boldFont.setBold(true);
 	
-	l1 = new QLabel(i18n("Question"), p_container);
+	l1 = new TQLabel(i18n("Question"), p_container);
 	l1 -> setFont(boldFont);
-	l2 = new QLabel(i18n("Your Answer"), p_container);
+	l2 = new TQLabel(i18n("Your Answer"), p_container);
 	l2 -> setFont(boldFont);
-	l3 = new QLabel(i18n("Correct Answer"), p_container);
+	l3 = new TQLabel(i18n("Correct Answer"), p_container);
 	l3 -> setFont(boldFont);
 	l1 -> setMargin(KDialog::marginHint() / 2);
 	l2 -> setMargin(KDialog::marginHint() / 2);
@@ -65,9 +65,9 @@ answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &us
 		userAnswers[i].putWidgets(p_container, lay, i + 2);
 	}
 
-	lay -> addItem(new QSpacerItem(20, 20, QSizePolicy::Fixed, QSizePolicy::Fixed), totalAnswers + 3, 2);
+	lay -> addItem(new TQSpacerItem(20, 20, TQSizePolicy::Fixed, TQSizePolicy::Fixed), totalAnswers + 3, 2);
 	
-	l1 = new QLabel(i18n("You answered correctly %1 out of %2 questions.").arg(correctAnswers).arg(totalAnswers), p_container);
+	l1 = new TQLabel(i18n("You answered correctly %1 out of %2 questions.").arg(correctAnswers).arg(totalAnswers), p_container);
 	l1 -> setAlignment(Qt::AlignCenter);
 	lay->addMultiCellWidget(l1, totalAnswers + 4, totalAnswers + 4, 0, 4);
 	
@@ -75,12 +75,12 @@ answersDialog::answersDialog(QWidget *parent, const QValueVector<userAnswer> &us
 	resize(500, 500);
 }
 
-void answersDialog::showEvent(QShowEvent *)
+void answersDialog::showEvent(TQShowEvent *)
 {
 	positionContainer();
 }
 
-void answersDialog::resizeEvent(QResizeEvent *)
+void answersDialog::resizeEvent(TQResizeEvent *)
 {
 	positionContainer();
 }

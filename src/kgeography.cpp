@@ -17,12 +17,12 @@
 #include <kstdaction.h>
 #include <kmenubar.h>
 
-#include <qlabel.h>
-#include <qlayout.h>
-#include <qvbox.h>
-#include <qsize.h>
-#include <qtimer.h>
-#include <qwhatsthis.h>
+#include <tqlabel.h>
+#include <tqlayout.h>
+#include <tqvbox.h>
+#include <tqsize.h>
+#include <tqtimer.h>
+#include <tqwhatsthis.h>
 
 #include "answersdialog.h"
 #include "capitaldivisionasker.h"
@@ -41,40 +41,40 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	p_map = 0;
 	p_askWidget = 0;
 
-	p_bigWidget = new QHBox(this);
+	p_bigWidget = new TQHBox(this);
 
-	QVBox *p_leftWidget = new QVBox(p_bigWidget);
-	p_currentMap = new QLabel(p_leftWidget);
+	TQVBox *p_leftWidget = new TQVBox(p_bigWidget);
+	p_currentMap = new TQLabel(p_leftWidget);
 	p_currentMap -> setAlignment(AlignCenter);
 	p_consult = new KPushButton(i18n("&Browse Map"), p_leftWidget);
-	QWhatsThis::add(p_consult, i18n("In this section left click on any part of the map to learn about the divisions" ));
+	TQWhatsThis::add(p_consult, i18n("In this section left click on any part of the map to learn about the divisions" ));
 	p_askMap = new KPushButton(i18n("&Click Division in Map..."), p_leftWidget);
-	QWhatsThis::add(p_askMap, i18n("In this challenge you are given a division name on the left under the menu and you must find it on the map and click on it"));
+	TQWhatsThis::add(p_askMap, i18n("In this challenge you are given a division name on the left under the menu and you must find it on the map and click on it"));
 	p_askCapitalDivisions = new KPushButton(i18n("Guess Division From Its &Capital..."), p_leftWidget);
-	QWhatsThis::add(p_askCapitalDivisions, i18n("In this quiz you have to guess the division name given its capital"));
+	TQWhatsThis::add(p_askCapitalDivisions, i18n("In this quiz you have to guess the division name given its capital"));
 	p_askDivisionCapitals = new KPushButton(i18n("Guess Capital of &Division..."), p_leftWidget);
-	QWhatsThis::add(p_askDivisionCapitals, i18n("In this quiz you have to guess the capital of a given division name"));
+	TQWhatsThis::add(p_askDivisionCapitals, i18n("In this quiz you have to guess the capital of a given division name"));
 	p_askFlagDivisions = new KPushButton(i18n("&Guess Division From Its Flag..."), p_leftWidget);
-	QWhatsThis::add(p_askFlagDivisions, i18n("In this quiz you have to guess the division name given its flag"));
+	TQWhatsThis::add(p_askFlagDivisions, i18n("In this quiz you have to guess the division name given its flag"));
 	p_askDivisionFlags = new KPushButton(i18n("G&uess Flag of Division..."), p_leftWidget);
-	QWhatsThis::add(p_askDivisionFlags, i18n("In this quiz you have to guess the flag of a division given its name"));
-	p_underLeftWidget = new QVBox(p_leftWidget);
+	TQWhatsThis::add(p_askDivisionFlags, i18n("In this quiz you have to guess the flag of a division given its name"));
+	p_underLeftWidget = new TQVBox(p_leftWidget);
 	p_underLeftWidget -> layout() -> setSpacing(KDialog::spacingHint());
 	p_underLeftWidget -> layout() -> setMargin(KDialog::marginHint());
 	p_leftWidget -> setStretchFactor(p_underLeftWidget, 1);
 
 	setCentralWidget(p_bigWidget);
 
-	connect(p_consult, SIGNAL(clicked()), this, SLOT(consult()));
-	connect(p_askMap, SIGNAL(clicked()), this, SLOT(askMap()));
-	connect(p_askCapitalDivisions, SIGNAL(clicked()), this, SLOT(askCapitalDivisions()));
-	connect(p_askDivisionCapitals, SIGNAL(clicked()), this, SLOT(askDivisionCapitals()));
-	connect(p_askFlagDivisions, SIGNAL(clicked()), this, SLOT(askFlagDivisions()));
-	connect(p_askDivisionFlags, SIGNAL(clicked()), this, SLOT(askDivisionFlags()));
+	connect(p_consult, TQT_SIGNAL(clicked()), this, TQT_SLOT(consult()));
+	connect(p_askMap, TQT_SIGNAL(clicked()), this, TQT_SLOT(askMap()));
+	connect(p_askCapitalDivisions, TQT_SIGNAL(clicked()), this, TQT_SLOT(askCapitalDivisions()));
+	connect(p_askDivisionCapitals, TQT_SIGNAL(clicked()), this, TQT_SLOT(askDivisionCapitals()));
+	connect(p_askFlagDivisions, TQT_SIGNAL(clicked()), this, TQT_SLOT(askFlagDivisions()));
+	connect(p_askDivisionFlags, TQT_SIGNAL(clicked()), this, TQT_SLOT(askDivisionFlags()));
 
-	KAction *a = KStdAction::open(this, SLOT(openMap()), actionCollection(), "openMap");
+	KAction *a = KStdAction::open(this, TQT_SLOT(openMap()), actionCollection(), "openMap");
 	a -> setText(i18n("&Open Map..."));
-	KStdAction::quit(this, SLOT(close()), actionCollection(), "quit");
+	KStdAction::quit(this, TQT_SLOT(close()), actionCollection(), "quit");
 
 	p_zoom = new KToggleAction(i18n("&Zoom"), "viewmagfit", 0, 0, 0, actionCollection(), "zoom_select");
 	p_zoom -> setEnabled(false);
@@ -85,7 +85,7 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	p_move = new KToggleAction(i18n("&Move"), "move", 0, 0, 0, actionCollection(), "move");
 	p_move -> setEnabled(false);
 
-	new KAction(i18n("Disclaimer"), 0, this, SLOT(disclaimer()), actionCollection(), "disclaimer");
+	new KAction(i18n("Disclaimer"), 0, this, TQT_SLOT(disclaimer()), actionCollection(), "disclaimer");
 
 	setupGUI(Keys | ToolBar | Save | Create);
 
@@ -98,13 +98,13 @@ kgeography::~kgeography()
 	delete p_map;
 }
 
-void kgeography::showEvent(QShowEvent *)
+void kgeography::showEvent(TQShowEvent *)
 {
 	if (p_firstShow)
 	{
-		QString file = kgeographySettings::self() -> lastMap();
+		TQString file = kgeographySettings::self() -> lastMap();
 		
-		if (QFile::exists(file))
+		if (TQFile::exists(file))
 		{
 			mapReader reader;
 			if (reader.parseMap(file))
@@ -132,7 +132,7 @@ void kgeography::showEvent(QShowEvent *)
 		}
 		// if anyone can explain why with the slot works and now without
 		// i'll be glad to learn
-		QTimer::singleShot(0, this, SLOT(resizeMainWindow()));
+		TQTimer::singleShot(0, this, TQT_SLOT(resizeMainWindow()));
 // 		resizeMainWindow();
 		
 		p_firstShow = false;
@@ -257,25 +257,25 @@ void kgeography::removeOldAskWidget()
 	p_move -> setChecked(false);
 }
 
-QSize kgeography::getPreferredSize()
+TQSize kgeography::getPreferredSize()
 {
 	int ySize = 0;
 	
 	ySize = menuBar() -> size().height() + toolBar() -> size().height() + ((mapAsker*) p_askWidget)->mapSize().height();
-	return QSize(p_underLeftWidget -> size().width() + ((mapAsker*) p_askWidget)->mapSize().width() + 1, ySize + 1);
+	return TQSize(p_underLeftWidget -> size().width() + ((mapAsker*) p_askWidget)->mapSize().width() + 1, ySize + 1);
 }
 
 void kgeography::putAskWidget()
 {
 	p_bigWidget -> setStretchFactor(p_askWidget, 1);
 	p_askWidget -> show();
-	connect(p_askWidget, SIGNAL(setZoomActionChecked(bool)), p_zoom, SLOT(setChecked(bool)));
-	connect(p_zoom, SIGNAL(toggled(bool)), p_askWidget, SLOT(setZoom(bool)));
-	connect(p_zoomOriginal, SIGNAL(activated()), p_askWidget, SLOT(setOriginalZoom()));
-	connect(p_askWidget, SIGNAL(setMoveActionEnabled(bool)), p_move, SLOT(setEnabled(bool)));
-	connect(p_askWidget, SIGNAL(setMoveActionChecked(bool)), p_move, SLOT(setChecked(bool)));
-	connect(p_move, SIGNAL(toggled(bool)), p_askWidget, SLOT(setMovement(bool)));
-	connect(p_askWidget, SIGNAL(questionsEnded()), this, SLOT(showResultsDialog()));
+	connect(p_askWidget, TQT_SIGNAL(setZoomActionChecked(bool)), p_zoom, TQT_SLOT(setChecked(bool)));
+	connect(p_zoom, TQT_SIGNAL(toggled(bool)), p_askWidget, TQT_SLOT(setZoom(bool)));
+	connect(p_zoomOriginal, TQT_SIGNAL(activated()), p_askWidget, TQT_SLOT(setOriginalZoom()));
+	connect(p_askWidget, TQT_SIGNAL(setMoveActionEnabled(bool)), p_move, TQT_SLOT(setEnabled(bool)));
+	connect(p_askWidget, TQT_SIGNAL(setMoveActionChecked(bool)), p_move, TQT_SLOT(setChecked(bool)));
+	connect(p_move, TQT_SIGNAL(toggled(bool)), p_askWidget, TQT_SLOT(setMovement(bool)));
+	connect(p_askWidget, TQT_SIGNAL(questionsEnded()), this, TQT_SLOT(showResultsDialog()));
 }
 
 void kgeography::setMap(KGmap *m)
@@ -287,16 +287,16 @@ void kgeography::setMap(KGmap *m)
 	delete p_map;
 	p_map = m;
 	
-	QString sw = i18n("There are two ways of dealing with the translation of \"Current map: %1\". The first option simply replaces %1 with the translated name of the relevant region. If the grammar of your language allows this, choose this option by setting the translation of this message to 1, and leave untranslated the translations of \"Current map: %1\" that have the placename embedded (or translate them as - if you wish to show the file as fully translated. The second option is to translate all messages in full - this is likely to be required in the case of highly-inflected languages like Russian. To choose this option, set the translation of this message to 0, and translate all the messages.", "0");
+	TQString sw = i18n("There are two ways of dealing with the translation of \"Current map: %1\". The first option simply replaces %1 with the translated name of the relevant region. If the grammar of your language allows this, choose this option by setting the translation of this message to 1, and leave untranslated the translations of \"Current map: %1\" that have the placename embedded (or translate them as - if you wish to show the file as fully translated. The second option is to translate all messages in full - this is likely to be required in the case of highly-inflected languages like Russian. To choose this option, set the translation of this message to 0, and translate all the messages.", "0");
 	if (sw == "1")
 	{
-		QString mapName = i18n(p_map -> getFileName().utf8(), p_map -> getName().utf8());
-		QString text = i18n("<qt>Current map:<br><b>%1<b></qt>");
+		TQString mapName = i18n(p_map -> getFileName().utf8(), p_map -> getName().utf8());
+		TQString text = i18n("<qt>Current map:<br><b>%1<b></qt>");
 		p_currentMap -> setText(text.arg(mapName));
 	}
 	else
 	{
-		QString s = QString("<qt>Current map:<br><b>%1</b></qt>").arg(p_map -> getName());
+		TQString s = TQString("<qt>Current map:<br><b>%1</b></qt>").arg(p_map -> getName());
 		p_currentMap -> setText(i18n(p_map -> getFileName().utf8(), s.utf8()));
 	}
 	p_consult -> setEnabled(true);
@@ -324,8 +324,8 @@ void kgeography::showResultsDialog()
 	{
 		p_mustShowResultsDialog = false;
 		int ca = p_askWidget -> correctAnswers();
-		QString q = p_askWidget -> getQuestionHook();
-		QValueVector<userAnswer> ua = p_askWidget -> userAnswers();
+		TQString q = p_askWidget -> getQuestionHook();
+		TQValueVector<userAnswer> ua = p_askWidget -> userAnswers();
 		
 		consult();
 	

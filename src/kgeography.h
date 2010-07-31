@@ -32,7 +32,7 @@ Q_OBJECT
 		~kgeography();
 	
 	protected:
-		void showEvent(QShowEvent *e);
+		void showEvent(TQShowEvent *e);
 
 	private slots:
 		void openMap();
@@ -48,14 +48,14 @@ Q_OBJECT
 		void showResultsDialog();
 
 	private:
-		QSize getPreferredSize();
+		TQSize getPreferredSize();
 		
 		void putAskWidget();
 		void removeOldAskWidget();
 		void setMap(KGmap *m);
 
-		QHBox *p_bigWidget;
-		QVBox *p_underLeftWidget;
+		TQHBox *p_bigWidget;
+		TQVBox *p_underLeftWidget;
 
 		KPushButton *p_consult;
 		KPushButton *p_askCapitalDivisions;
@@ -65,7 +65,7 @@ Q_OBJECT
 		KPushButton *p_askDivisionFlags;
 		KToggleAction *p_zoom, *p_move;
 		KAction *p_zoomOriginal;
-		QLabel *p_currentMap;
+		TQLabel *p_currentMap;
 
 		KGmap *p_map;
 		askWidget *p_askWidget;

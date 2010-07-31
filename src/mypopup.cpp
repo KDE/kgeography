@@ -8,57 +8,57 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include <qlabel.h>
-#include <qlayout.h>
-#include <qimage.h>
-#include <qpixmap.h>
+#include <tqlabel.h>
+#include <tqlayout.h>
+#include <tqimage.h>
+#include <tqpixmap.h>
 
 #include "mypopup.h"
 
 
-myPopup::myPopup(QWidget *parent, const QString &text, const QString &text2, const QString &flagFile) : QFrame(parent)
+myPopup::myPopup(TQWidget *parent, const TQString &text, const TQString &text2, const TQString &flagFile) : TQFrame(parent)
 {
-	QHBoxLayout *lay = new QHBoxLayout(this);
+	TQHBoxLayout *lay = new TQHBoxLayout(this);
 	lay -> setMargin(4);
 	lay -> setSpacing(4);
 	
-	QWidget *vbox = new QWidget(this);
+	TQWidget *vbox = new TQWidget(this);
 	lay -> addWidget(vbox);
-	QVBoxLayout *vboxLayout = new QVBoxLayout(vbox);
+	TQVBoxLayout *vboxLayout = new TQVBoxLayout(vbox);
 	vboxLayout -> setMargin(0);
 	vboxLayout -> setSpacing(0);
-	QLabel *l = new QLabel(text, vbox);
+	TQLabel *l = new TQLabel(text, vbox);
 	vboxLayout -> addWidget(l);
 	
 	if (!text2.isNull())
 	{
-		QLabel *l2 = new QLabel(text2, vbox);
+		TQLabel *l2 = new TQLabel(text2, vbox);
 		l2 -> setAlignment(Qt::AlignCenter);
 		vboxLayout -> addWidget(l2);
 	}
 	
 	if (!flagFile.isNull())
 	{
-		QLabel *flag = new QLabel(this);
+		TQLabel *flag = new TQLabel(this);
 		lay -> addWidget(flag);
-		QImage flagImg(flagFile);
+		TQImage flagImg(flagFile);
 		flag -> setPixmap(flagImg.smoothScale(flagImg.width() / 5, flagImg. height() / 5));
 		flag -> setAlignment(Qt::AlignCenter);
 	}
 	
 	l -> setAlignment(Qt::AlignCenter);
-	QFont f = l -> font();
+	TQFont f = l -> font();
 	f.setBold(true);
 	l -> setFont(f);
 	
 	
-	setFrameStyle(QFrame::Box | QFrame::Plain);
+	setFrameStyle(TQFrame::Box | TQFrame::Plain);
 	setLineWidth(2);
 	
 	setFixedSize(sizeHint());
 }
 
-void myPopup::mousePressEvent(QMouseEvent *)
+void myPopup::mousePressEvent(TQMouseEvent *)
 {
 	emit deleteMe();
 }

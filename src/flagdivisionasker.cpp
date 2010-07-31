@@ -10,27 +10,27 @@
 
 #include <klocale.h>
 
-#include <qimage.h>
-#include <qlayout.h>
-#include <qradiobutton.h>
+#include <tqimage.h>
+#include <tqlayout.h>
+#include <tqradiobutton.h>
 
 #include "flagdivisionasker.h"
 #include "map.h"
 
-flagDivisionAsker::flagDivisionAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : boxAsker(parent, m, w, count)
+flagDivisionAsker::flagDivisionAsker(TQWidget *parent, KGmap *m, TQWidget *w, uint count) : boxAsker(parent, m, w, count)
 {
-	p_flag = new QWidget(this);
+	p_flag = new TQWidget(this);
 	p_lay -> insertWidget(0, p_flag);
 	setQuestion(i18n("This flag belongs to:"));
 	init();
 }
 
-bool flagDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
+bool flagDivisionAsker::nextBoxAskerQuestionHook(const TQString &division, int i, bool isAnswer)
 {
 	if (isAnswer)
 	{
 		// we put the flag image
-		QImage image(p_map -> getDivisionFlagFile(division));
+		TQImage image(p_map -> getDivisionFlagFile(division));
 		p_flag -> setPaletteBackgroundPixmap(image);
 		p_flag -> setFixedSize(image.size());
 		
@@ -46,7 +46,7 @@ void flagDivisionAsker::setAnswerHook(int userSays)
 	p_currentAnswer.setAnswer(p_rb[userSays] -> text());
 }
 
-QString flagDivisionAsker::getQuestionHook() const
+TQString flagDivisionAsker::getQuestionHook() const
 {
 	return i18n("Division From Its Flag");
 }
