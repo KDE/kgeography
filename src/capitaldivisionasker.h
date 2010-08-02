@@ -13,7 +13,7 @@
 
 #include "boxasker.h"
 
-class QLabel;
+class TQLabel;
 
 class capitalDivisionAsker : public boxAsker
 {

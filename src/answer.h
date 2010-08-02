@@ -13,7 +13,7 @@
 
 #include <tqvariant.h>
 
-class QGridLayout;
+class TQGridLayout;
 
 class userAnswer
 {

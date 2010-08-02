@@ -15,8 +15,8 @@
 
 #include <tqvaluevector.h>
 
-class QScrollView;
-class QWidget;
+class TQScrollView;
+class TQWidget;
 
 class userAnswer;
 

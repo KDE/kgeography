@@ -16,7 +16,7 @@
 
 #include "answer.h"
 
-class QLabel;
+class TQLabel;
 
 class KGmap;
 

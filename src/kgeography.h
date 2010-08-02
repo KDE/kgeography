@@ -17,9 +17,9 @@ class KAction;
 class KPushButton;
 class KToggleAction;
 
-class QHBox;
-class QLabel;
-class QVBox;
+class TQHBox;
+class TQLabel;
+class TQVBox;
 
 class KGmap;
 class askWidget;

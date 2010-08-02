@@ -14,9 +14,9 @@
 #include "askwidget.h"
 #include "popupmanager.h"
 
-class QLabel;
-class QScrollBar;
-class QSize;
+class TQLabel;
+class TQScrollBar;
+class TQSize;
 
 class flagDivisionAsker;
 class infoWidget;

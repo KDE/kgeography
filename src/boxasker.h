@@ -15,9 +15,9 @@
 
 class KPushButton;
 
-class QLabel;
-class QRadioButton;
-class QVBoxLayout;
+class TQLabel;
+class TQRadioButton;
+class TQVBoxLayout;
 
 class boxAsker : public askWidget
 {
