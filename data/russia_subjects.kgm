@@ -21,296 +21,355 @@
 	<division>
 		<name>Adygeya</name>
 		<capital>Maykop</capital>
+		<flag>russia/adygeya.png</flag>
 		<color><red>229</red><green>230</green><blue>179</blue></color>
 	</division>
 	<division>
 		<name>Bashkortostan</name>
 		<capital>Ufa</capital>
+		<flag>russia/bashkortostan.png</flag>
 		<color><red>242</red><green>166</green><blue>166</blue></color>
 	</division>
 	<division>
 		<name>Buryatia</name>
 		<capital>Ulan-Ude</capital>
+		<flag>russia/buryatia.png</flag>
 		<color><red>204</red><green>255</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>Altai Republic</name>
 		<capital>Gorno-Altaysk</capital>
+		<flag>russia/altai_republic.png</flag>
 		<color><red>51</red><green>255</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Dagestan</name>
 		<capital>Makhachkala</capital>
+		<flag>russia/dagestan.png</flag>
 		<color><red>51</red><green>153</green><blue>102</blue></color>
 	</division>
 	<division>
 		<name>Ingushetia</name>
 		<capital>Magas</capital>
+		<flag>russia/ingushetia.png</flag>
 		<color><red>102</red><green>204</green><blue>102</blue></color>
 	</division>
 	<division>
 		<name>Kabardino-Balkaria</name>
 		<capital>Nalchik</capital>
+		<flag>russia/kabardino-balkaria.png</flag>
 		<color><red>204</red><green>230</green><blue>179</blue></color>
 	</division>
 	<division>
 		<name>Kalmykia</name>
 		<capital>Elista</capital>
+		<flag>russia/kalmykia.png</flag>
 		<color><red>230</red><green>204</green><blue>179</blue></color>
 	</division>
 	<division>
 		<name>Karachay-Cherkessia</name>
 		<capital>Cherkessk</capital>
+		<flag>russia/karachay-cherkessia.png</flag>
 		<color><red>153</red><green>204</green><blue>102</blue></color>
 	</division>
 	<division>
 		<name>Karelia</name>
 		<capital>Petrozavodsk</capital>
+		<flag>russia/karelia.png</flag>
 		<color><red>204</red><green>0</green><blue>204</blue></color>
 	</division>
 	<division>
 		<name>Komi</name>
 		<capital>Syktyvkar</capital>
+		<flag>russia/komi.png</flag>
 		<color><red>255</red><green>153</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Mari El</name>
 		<capital>Yoshkar-Ola</capital>
+		<flag>russia/mari_el.png</flag>
 		<color><red>102</red><green>179</green><blue>25</blue></color>
 	</division>
 	<division>
 		<name>Mordovia</name>
 		<capital>Saransk</capital>
+		<flag>russia/mordovia.png</flag>
 		<color><red>204</red><green>166</green><blue>242</blue></color>
 	</division>
 	<division>
 		<name>Sakha</name>
 		<capital>Yakutsk</capital>
+		<flag>russia/sakha.png</flag>
 		<color><red>153</red><green>255</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>North Ossetia-Alania</name>
 		<capital>Vladikavkaz</capital>
+		<flag>russia/north_ossetia.png</flag>
 		<color><red>51</red><green>153</green><blue>51</blue></color>
 	</division>
 	<division>
 		<name>Tatarstan</name>
 		<capital>Kazan</capital>
+		<flag>russia/tatarstan.png</flag>
 		<color><red>179</red><green>179</green><blue>25</blue></color>
 	</division>
 	<division>
 		<name>Tyva</name>
 		<capital>Kyzyl</capital>
+		<flag>russia/tuva.png</flag>
 		<color><red>0</red><green>204</green><blue>204</blue></color>
 	</division>
 	<division>
 		<name>Udmurtia</name>
 		<capital>Izhevsk</capital>
+		<flag>russia/udmurtia.png</flag>
 		<color><red>229</red><green>230</green><blue>77</blue></color>
 	</division>
 	<division>
 		<name>Khakassia</name>
 		<capital>Abakan</capital>
+		<flag>russia/khakassia.png</flag>
 		<color><red>153</red><green>255</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Chechnya</name>
 		<capital>Grozny</capital>
+		<flag>russia/chechen_republic.png</flag>
 		<color><red>179</red><green>230</green><blue>179</blue></color>
 	</division>
 	<division>
 		<name>Chuvashia</name>
 		<capital>Cheboksary</capital>
+		<flag>russia/chuvashia.png</flag>
 		<color><red>153</red><green>230</green><blue>77</blue></color>
 	</division>
 	<division>
 		<name>Altai Krai</name>
 		<capital>Barnaul</capital>
+		<flag>russia/altai_krai.png</flag>
 		<color><red>51</red><green>153</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Krasnodar Krai</name>
 		<capital>Krasnodar</capital>
+		<flag>russia/krasnodar_krai.png</flag>
 		<color><red>204</red><green>204</green><blue>102</blue></color>
 	</division>
 	<division>
 		<name>Krasnoyarsk Krai</name>
 		<capital>Krasnoyarsk</capital>
+		<flag>russia/krasnoyarsk_krai.png</flag>
 		<color><red>0</red><green>204</green><blue>102</blue></color>
 	</division>
 	<division>
 		<name>Primorsky Krai</name>
 		<capital>Vladivostok</capital>
+		<flag>russia/primorsky_krai.png</flag>
 		<color><red>204</red><green>204</green><blue>0</blue></color>
 	</division>
 	<division>
 		<name>Stavropol Krai</name>
 		<capital>Stavropol</capital>
+		<flag>russia/stavropol_krai.png</flag>
 		<color><red>102</red><green>153</green><blue>51</blue></color>
 	</division>
 	<division>
 		<name>Khabarovsk Krai</name>
 		<capital>Khabarovsk</capital>
+		<flag>russia/khabarovsk_krai.png</flag>
 		<color><red>255</red><green>153</green><blue>51</blue></color>
 	</division>
 	<division>
 		<name>Perm Krai</name>
 		<capital>Perm</capital>
+		<flag>russia/perm_krai.png</flag>
 		<color><red>204</red><green>0</green><blue>102</blue></color>
 	</division>
 	<division>
 		<name>Amur Oblast</name>
 		<capital>Blagoveshchensk</capital>
+		<flag>russia/amur_oblast.png</flag>
 		<color><red>255</red><green>255</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>Arkhangelsk Oblast</name>
 		<capital>Arkhangelsk</capital>
+		<flag>russia/arkhangelsk_oblast.png</flag>
 		<color><red>255</red><green>51</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Astrakhan Oblast</name>
 		<capital>Astrakhan</capital>
+		<flag>russia/astrakhan_oblast.png</flag>
 		<color><red>204</red><green>153</green><blue>102</blue></color>
 	</division>
 	<division>
 		<name>Belgorod Oblast</name>
 		<capital>Belgorod</capital>
+		<flag>russia/belgorod_oblast.png</flag>
 		<color><red>153</red><green>51</green><blue>51</blue></color>
 	</division>
 	<division>
 		<name>Bryansk Oblast</name>
 		<capital>Bryansk</capital>
+		<flag>russia/bryansk_oblast.png</flag>
 		<color><red>230</red><green>77</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>Vladimir Oblast</name>
 		<capital>Vladimir</capital>
+		<flag>russia/vladimir_oblast.png</flag>
 		<color><red>102</red><green>25</green><blue>179</blue></color>
 	</division>
 	<division>
 		<name>Volgograd Oblast</name>
 		<capital>Volgograd</capital>
+		<flag>russia/volgograd_oblast.png</flag>
 		<color><red>153</red><green>102</green><blue>51</blue></color>
 	</division>
 	<division>
 		<name>Vologda Oblast</name>
 		<capital>Vologda</capital>
+		<flag>russia/vologda_oblast.png</flag>
 		<color><red>25</red><green>179</green><blue>102</blue></color>
 	</division>
 	<division>
 		<name>Voronezh Oblast</name>
 		<capital>Voronezh</capital>
+		<flag>russia/voronezh_oblast.png</flag>
 		<color><red>204</red><green>102</green><blue>102</blue></color>
 	</division>
 	<division>
 		<name>Ivanovo Oblast</name>
 		<capital>Ivanovo</capital>
+		<flag>russia/ivanovo_oblast.png</flag>
 		<color><red>25</red><green>179</green><blue>25</blue></color>
 	</division>
 	<division>
 		<name>Irkutsk Oblast</name>
 		<capital>Irkutsk</capital>
+		<flag>russia/irkutsk_oblast.png</flag>
 		<color><red>51</red><green>255</green><blue>51</blue></color>
 	</division>
 	<division>
 		<name>Kaliningrad Oblast</name>
 		<capital>Kaliningrad</capital>
+		<flag>russia/kaliningrad_oblast.png</flag>
 		<color><red>25</red><green>179</green><blue>179</blue></color>
 	</division>
 	<division>
 		<name>Kaluga Oblast</name>
 		<capital>Kaluga</capital>
+		<flag>russia/kaluga_oblast.png</flag>
 		<color><red>166</red><green>204</green><blue>242</blue></color>
 	</division>
 	<division>
 		<name>Kamchatka Krai</name>
 		<capital>Petropavlovsk-Kamchatsky</capital>
+		<flag>russia/kamchatka_krai.png</flag>
 		<color><red>255</red><green>51</green><blue>51</blue></color>
 	</division>
 	<division>
 		<name>Kemerovo Oblast</name>
 		<capital>Kemerovo</capital>
+		<flag>russia/kemerovo_oblast.png</flag>
 		<color><red>0</red><green>102</green><blue>204</blue></color>
 	</division>
 	<division>
 		<name>Kirov Oblast</name>
 		<capital>Kirov</capital>
+		<flag>russia/kirov_oblast.png</flag>
 		<color><red>242</red><green>242</green><blue>166</blue></color>
 	</division>
 	<division>
 		<name>Kostroma Oblast</name>
 		<capital>Kostroma</capital>
+		<flag>russia/kostroma_oblast.png</flag>
 		<color><red>77</red><green>230</green><blue>77</blue></color>
 	</division>
 	<division>
 		<name>Kurgan Oblast</name>
 		<capital>Kurgan</capital>
+		<flag>russia/kurgan_oblast.png</flag>
 		<color><red>179</red><green>25</green><blue>25</blue></color>
 	</division>
 	<division>
 		<name>Kursk Oblast</name>
 		<capital>Kursk</capital>
+		<flag>russia/kursk_oblast.png</flag>
 		<color><red>242</red><green>166</green><blue>204</blue></color>
 	</division>
 	<division>
 		<name>Leningrad Oblast</name>
 		<capital>St. Petersburg</capital>
+		<flag>russia/leningrad_oblast.png</flag>
 		<color><red>77</red><green>230</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>Lipetsk Oblast</name>
 		<capital>Lipetsk</capital>
+		<flag>russia/lipetsk_oblast.png</flag>
 		<color><red>242</red><green>166</green><blue>242</blue></color>
 	</division>
 	<division>
 		<name>Magadan Oblast</name>
 		<capital>Magadan</capital>
+		<flag>russia/magadan_oblast.png</flag>
 		<color><red>204</red><green>102</green><blue>0</blue></color>
 	</division>
 	<division>
 		<name>Moscow Oblast</name>
 		<capital>Moscow</capital>
+		<flag>russia/moscow_oblast.png</flag>
 		<color><red>77</red><green>77</green><blue>230</blue></color>
 	</division>
 	<division>
 		<name>Murmansk Oblast</name>
 		<capital>Murmansk</capital>
+		<flag>russia/murmansk_oblast.png</flag>
 		<color><red>204</red><green>153</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Nizhny Novgorod Oblast</name>
 		<capital>Nizhny Novgorod</capital>
+		<flag>russia/nizhny_novgorod_oblast.png</flag>
 		<color><red>204</red><green>242</green><blue>166</blue></color>
 	</division>
 	<division>
 		<name>Novgorod Oblast</name>
 		<capital>Novgorod</capital>
+		<flag>russia/novgorod_oblast.png</flag>
 		<color><red>166</red><green>242</green><blue>242</blue></color>
 	</division>
 	<division>
 		<name>Novosibirsk Oblast</name>
 		<capital>Novosibirsk</capital>
+		<flag>russia/novosibirsk_oblast.png</flag>
 		<color><red>153</red><green>204</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Omsk Oblast</name>
 		<capital>Omsk</capital>
+		<flag>russia/omsk_oblast.png</flag>
 		<color><red>0</red><green>0</green><blue>204</blue></color>
 	</division>
 	<division>
 		<name>Orenburg Oblast</name>
 		<capital>Orenburg</capital>
+		<flag>russia/orenburg_oblast.png</flag>
 		<color><red>179</red><green>102</green><blue>25</blue></color>
 	</division>
 	<division>
 		<name>Oryol Oblast</name>
 		<capital>Oryol</capital>
+		<flag>russia/oryol_oblast.png</flag>
 		<color><red>179</red><green>25</green><blue>102</blue></color>
 	</division>
 	<division>
 		<name>Penza Oblast</name>
 		<capital>Penza</capital>
+		<flag>russia/penza_oblast.png</flag>
 		<color><red>178</red><green>25</green><blue>179</blue></color>
 	</division>
 	<division>
@@ -321,116 +380,139 @@
 	<division>
 		<name>Rostov Oblast</name>
 		<capital>Rostov-na-Donu</capital>
+		<flag>russia/rostov_oblast.png</flag>
 		<color><red>153</red><green>153</green><blue>51</blue></color>
 	</division>
 	<division>
 		<name>Ryazan Oblast</name>
 		<capital>Ryazan</capital>
+		<flag>russia/ryazan_oblast.png</flag>
 		<color><red>153</red><green>77</green><blue>230</blue></color>
 	</division>
 	<division>
 		<name>Samara Oblast</name>
 		<capital>Samara</capital>
+		<flag>russia/samara_oblast.png</flag>
 		<color><red>230</red><green>153</green><blue>77</blue></color>
 	</division>
 	<division>
 		<name>Saratov Oblast</name>
 		<capital>Saratov</capital>
+		<flag>russia/saratov_oblast.png</flag>
 		<color><red>230</red><green>179</green><blue>179</blue></color>
 	</division>
 	<division>
 		<name>Sakhalin Oblast</name>
 		<capital>Yuzhno-Sakhalinsk</capital>
+		<flag>russia/sakhalin_oblast.png</flag>
 		<color><red>255</red><green>204</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>Sverdlovsk Oblast</name>
 		<capital>Yekaterinburg</capital>
+		<flag>russia/sverdlovsk_oblast.png</flag>
 		<color><red>255</red><green>51</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>Smolensk Oblast</name>
 		<capital>Smolensk</capital>
+		<flag>russia/smolensk_oblast.png</flag>
 		<color><red>77</red><green>153</green><blue>230</blue></color>
 	</division>
 	<division>
 		<name>Tambov Oblast</name>
 		<capital>Tambov</capital>
+		<flag>russia/tambov_oblast.png</flag>
 		<color><red>229</red><green>77</green><blue>230</blue></color>
 	</division>
 	<division>
 		<name>Tver Oblast</name>
 		<capital>Tver</capital>
+		<flag>russia/tver_oblast.png</flag>
 		<color><red>25</red><green>102</green><blue>179</blue></color>
 	</division>
 	<division>
 		<name>Tomsk Oblast</name>
 		<capital>Tomsk</capital>
+		<flag>russia/tomsk_oblast.png</flag>
 		<color><red>51</red><green>51</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Tula Oblast</name>
 		<capital>Tula</capital>
+		<flag>russia/tula_oblast.png</flag>
 		<color><red>25</red><green>25</green><blue>179</blue></color>
 	</division>
 	<division>
 		<name>Tyumen Oblast</name>
 		<capital>Tyumen</capital>
+		<flag>russia/tyumen_oblast.png</flag>
 		<color><red>255</red><green>153</green><blue>204</blue></color>
 	</division>
 	<division>
 		<name>Ulyanovsk Oblast</name>
 		<capital>Ulyanovsk</capital>
+		<flag>russia/ulyanovsk_oblast.png</flag>
 		<color><red>242</red><green>204</green><blue>166</blue></color>
 	</division>
 	<division>
 		<name>Chelyabinsk Oblast</name>
 		<capital>Chelyabinsk</capital>
+		<flag>russia/chelyabinsk_oblast.png</flag>
 		<color><red>230</red><green>77</green><blue>77</blue></color>
 	</division>
 	<division>
 		<name>Zabaykalsky Krai</name>
 		<capital>Chita</capital>
+		<flag>russia/zabaykalsky_krai.png</flag>
 		<color><red>102</red><green>204</green><blue>0</blue></color>
 	</division>
 	<division>
 		<name>Yaroslavl Oblast</name>
 		<capital>Yaroslavl</capital>
+		<flag>russia/yaroslavl_oblast.png</flag>
 		<color><red>166</red><green>242</green><blue>166</blue></color>
 	</division>
 	<division>
 		<name>Moscow</name>
 		<capital>Moscow</capital>
+		<flag>russia/moscow.png</flag>
 		<color><red>166</red><green>166</green><blue>242</blue></color>
 	</division>
 	<division>
 		<name>St. Petersburg</name>
 		<capital>St. Petersburg</capital>
+		<flag>russia/saint_petersburg.png</flag>
 		<color><red>166</red><green>242</green><blue>204</blue></color>
 	</division>
 	<division>
 		<name>Jewish Autonomous Oblast</name>
 		<capital>Birobidzhan</capital>
+		<flag>russia/jewish_autonomous_oblast.png</flag>
 		<color><red>255</red><green>255</green><blue>51</blue></color>
 	</division>
 	<division>
 		<name>Nenetsia</name>
 		<capital>Naryan-Mar</capital>
+		<flag>russia/nenets_autonomous_district.png</flag>
 		<color><red>153</red><green>51</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Khantia-Mansia</name>
 		<capital>Khanty-Mansiysk</capital>
+		<flag>russia/khantia-mansia.png</flag>
 		<color><red>153</red><green>153</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Chukotka</name>
 		<capital>Anadyr</capital>
+		<flag>russia/chukotka.png</flag>
 		<color><red>255</red><green>153</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>Yamalia</name>
 		<capital>Salekhard</capital>
+		<flag>russia/yamal-nenets_autonomous_district.png</flag>
 		<color><red>102</red><green>0</green><blue>204</blue></color>
 	</division>
 </map>
