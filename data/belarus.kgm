@@ -20,42 +20,49 @@
 	</division>
 	<division>
 		<name>Minsk</name>
+		<flag>belarus/Minsk.png</flag>
 		<ignore>allowClickMode</ignore>
 		<color><red>255</red><green>85</green><blue>85</blue></color>
 	</division>
 	<division>
 		<name>Brest Voblast</name>
 		<capital>Brest</capital>
+		<flag>belarus/Brest.png</flag>
 		<ignore>allowClickMode</ignore>
 		<color><red>255</red><green>170</green><blue>85</blue></color>
 	</division>
 	<division>
 		<name>Homyel Voblast</name>
 		<capital>Homyel</capital>
+		<flag>belarus/Homyel.png</flag>
 		<ignore>allowClickMode</ignore>
 		<color><red>255</red><green>255</green><blue>85</blue></color>
 	</division>
 	<division>
 		<name>Hrodna Voblast</name>
 		<capital>Hrodna</capital>
+		<flag>belarus/Hrodna.png</flag>
 		<ignore>allowClickMode</ignore>
 		<color><red>85</red><green>255</green><blue>182</blue></color>
 	</division>
 	<division>
 		<name>Mahilyow Voblast</name>
 		<capital>Mahilyow</capital>
+		<flag>belarus/Mahilyow.png</flag>
 		<ignore>allowClickMode</ignore>
 		<color><red>85</red><green>182</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Minsk Voblast</name>
 		<capital>Minsk</capital>
+		<flag>belarus/Minsk_vobl.png</flag>
 		<ignore>allowClickMode</ignore>
 		<color><red>134</red><green>85</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Vitebsk Voblast</name>
 		<capital>Vitebsk</capital>
+		<flag>belarus/Vitebsk.png</flag>
 		<ignore>allowClickMode</ignore>
 		<color><red>255</red><green>85</green><blue>231</blue></color>
 	</division>
