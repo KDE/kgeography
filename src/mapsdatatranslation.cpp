@@ -2701,7 +2701,7 @@ i18nc("great-britain_counties.kgm", "Monmouthshire");
 i18nc("great-britain_counties.kgm", "Monmouth");
 i18nc("great-britain_counties.kgm", "Glamorgan");
 i18nc("great-britain_counties.kgm", "Cardiff");
-i18nc("great-britain_counties.kgm", "Carmathenshire");
+i18nc("great-britain_counties.kgm", "Carmarthenshire");
 i18nc("great-britain_counties.kgm", "Llanelli");
 i18nc("great-britain_counties.kgm", "Pembrokeshire");
 i18nc("great-britain_counties.kgm", "Haverfordwest");
