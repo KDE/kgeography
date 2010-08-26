@@ -1,10 +1,10 @@
 <map>
           <mapFile>arunachalpradesh.png</mapFile>
-          <name>Arunchal Pradesh</name>
+          <name>Arunachal Pradesh</name>
     <divisionsName>District</divisionsName>
     <author>Stephanie Das Gupta</author>    
         <division>
-                <name>Not Arunchal Pradesh</name>
+                <name>Not Arunachal Pradesh</name>
                 <ignore>yes</ignore>
                 <color><red>255</red><green>255</green><blue>255</blue></color>
         </division>
