@@ -540,7 +540,7 @@ i18nc("arunachalpradesh.kgm", "Roing");
 i18nc("arunachalpradesh.kgm", "Dibang Valley");
 i18nc("arunachalpradesh.kgm", "Anini");
 i18nc("arunachalpradesh.kgm", "Upper Siang");
-i18nc("arunachalpradesh.kgm", "Yingyong");
+i18nc("arunachalpradesh.kgm", "Yingkiong");
 i18nc("arunachalpradesh.kgm", "East Siang");
 i18nc("arunachalpradesh.kgm", "Pasighat");
 i18nc("arunachalpradesh.kgm", "West Siang");
