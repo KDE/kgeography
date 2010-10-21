@@ -747,7 +747,7 @@ i18nc("azerbaijan.kgm", "Tovuz");
 i18nc("azerbaijan.kgm", "Ujar");
 i18nc("azerbaijan.kgm", "Khachmaz");
 i18nc("azerbaijan.kgm", "Khankendi city");
-i18nc("azerbaijan.kgm", "Khanlar");
+i18nc("azerbaijan.kgm", "Goygol");
 i18nc("azerbaijan.kgm", "Khizi");
 i18nc("azerbaijan.kgm", "Khojali");
 i18nc("azerbaijan.kgm", "Khojavend");
