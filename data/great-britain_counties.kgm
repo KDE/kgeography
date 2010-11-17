@@ -354,7 +354,7 @@
 		<color><red>142</red><green>28</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>Whiltshire</name>
+		<name>Wiltshire</name>
 		<capital>Trowbridge</capital>
 		<color><red>170</red><green>85</green><blue>255</blue></color>
 	</division>
@@ -420,7 +420,7 @@
 	</division>
 	<division>
 		<name>Merionethshire</name>
-		<capital>Dolgeliau</capital>
+		<capital>Dolgellau</capital>
 		<color><red>255</red><green>28</green><blue>142</blue></color>
 	</division>
 	<division>
