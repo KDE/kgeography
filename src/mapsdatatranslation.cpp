@@ -555,7 +555,7 @@ i18nc("arunachalpradesh.kgm", "Papum Pare");
 i18nc("arunachalpradesh.kgm", "Yupia");
 i18nc("arunachalpradesh.kgm", "Lower Subansiri");
 i18nc("arunachalpradesh.kgm", "Ziro");
-i18nc("arunachalpradesh.kgm", "Karung Kumey");
+i18nc("arunachalpradesh.kgm", "Kurung Kumey");
 i18nc("arunachalpradesh.kgm", "Koloriang");
 i18nc("arunachalpradesh.kgm", "Upper Subansiri");
 i18nc("arunachalpradesh.kgm", "Daporijo");
