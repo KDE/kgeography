@@ -14,11 +14,6 @@
                 <color><red>0</red><green>0</green><blue></blue></color>
         </division>
         <division>
-             <name>Border</name>
-	     <ignore>yes</ignore>
-             <color><red>1</red><green>1</green><blue>1</blue></color>
-        </division>
-        <division>
                 <name>Chandigarh</name>
                 <capital>Chandigarh</capital>
                 <color><red>66</red><green>186</green><blue>185</blue></color>

@@ -14,11 +14,6 @@
                 <color><red>0</red><green>0</green><blue></blue></color>
         </division>
         <division>
-             <name>Border</name>
-	     <ignore>yes</ignore>
-             <color><red>1</red><green>1</green><blue>1</blue></color>
-        </division>
-        <division>
                 <name>Kutch / Kachchh</name>
                 <capital>Bhuj</capital>
                 <color><red>0</red><green>255</green><blue>0</blue></color>
