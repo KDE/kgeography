@@ -5845,7 +5845,7 @@ i18nc("sweden.kgm", "Kalmar");
 i18nc("sweden.kgm", "Gotland County");
 i18nc("sweden.kgm", "Visby");
 i18nc("sweden.kgm", "Blekinge County");
-i18nc("sweden.kgm", "Blekinge");
+i18nc("sweden.kgm", "Karlskrona");
 i18nc("sweden.kgm", "Skåne County");
 i18nc("sweden.kgm", "Malmö");
 i18nc("sweden.kgm", "Halland County");
