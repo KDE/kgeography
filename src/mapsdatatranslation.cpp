@@ -6774,7 +6774,7 @@ i18nc("waters_world-class.kgm", "Caspian sea");
 i18nc("waters_world-class.kgm", "Tiber");
 i18nc("westbengal.kgm", "West Bengal");
 i18nc("westbengal.kgm", "District");
-i18nc("westbengal.kgm", "Not bengal");
+i18nc("westbengal.kgm", "Not West Bengal");
 i18nc("westbengal.kgm", "Border");
 i18nc("westbengal.kgm", "Purulia");
 i18nc("westbengal.kgm", "Purulia");
