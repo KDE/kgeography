@@ -49,7 +49,12 @@ answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAns
 	l1 -> setFont(bigFont);
 	lay -> addWidget(l1, 0, 0, 1, 5, Qt::AlignHCenter);
 	
-	// Headers
+        l1 = new QLabel(i18n("You answered correctly %1 out of %2 questions.", correctAnswers, totalAnswers), p_container);
+        l1 -> setAlignment(Qt::AlignCenter);
+        lay -> addWidget(l1, 1, 0, 1, 5);
+        //lay -> addWidget(l1, totalAnswers + 4, 0, 1, 5);
+
+        // Headers
 	boldFont = p_container -> font();
 	boldFont.setBold(true);
 	
@@ -62,21 +67,17 @@ answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAns
 	l1 -> setMargin(KDialog::marginHint() / 2);
 	l2 -> setMargin(KDialog::marginHint() / 2);
 	l3 -> setMargin(KDialog::marginHint() / 2);
-	lay->addWidget(l1, 1, 1);
-	lay->addWidget(l2, 1, 2);
-	lay->addWidget(l3, 1, 3);
+        lay->addWidget(l1, 2, 1);
+        lay->addWidget(l2, 2, 2);
+        lay->addWidget(l3, 2, 3);
 	
 	for(uint i = 0; i < totalAnswers; i++)
 	{
-		userAnswers[i].putWidgets(p_container, lay, i + 2);
+                userAnswers[i].putWidgets(p_container, lay, i + 3);
 	}
 
-	lay -> addItem(new QSpacerItem(20, 20, QSizePolicy::Fixed, QSizePolicy::Fixed), totalAnswers + 3, 2);
+        //lay -> addItem(new QSpacerItem(20, 20, QSizePolicy::Fixed, QSizePolicy::Fixed), totalAnswers + 3, 2);
 	
-	l1 = new QLabel(i18n("You answered correctly %1 out of %2 questions.", correctAnswers, totalAnswers), p_container);
-	l1 -> setAlignment(Qt::AlignCenter);
-	lay -> addWidget(l1, totalAnswers + 4, 0, 1, 5);
-	
-	resize(500, 500);
+        resize(500, 500);
 }
 
