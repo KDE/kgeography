@@ -1,7 +1,7 @@
 <map>
 	<mapFile>latvia.png</mapFile>
-	<name>Latvia</name>
-    <divisionsName>Regions</divisionsName>
+	<name>Latvia Districts (Pre 2009)</name>
+    <divisionsName>Districts</divisionsName>
     <author>Laurent Garnier</author>
 	<division>
 		<name>Frontier</name>

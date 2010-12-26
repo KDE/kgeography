@@ -20,7 +20,7 @@
         </division>
         <division>
                 <name>Koriya</name>
-                <capital>Baikunthpur</capital>
+                <capital>Koriya</capital>
                 <color><red>0</red><green>174</green><blue>0</blue></color>
         </division>
         <division>
@@ -44,7 +44,7 @@
                 <color><red>255</red><green>211</green><blue>32</blue></color>
         </division>
         <division>
-                <name>Kawardha</name>
+                <name>Kabirdham</name>
                 <capital>Kawardha</capital>
                 <color><red>230</red><green>255</green><blue>0</blue></color>
         </division>
