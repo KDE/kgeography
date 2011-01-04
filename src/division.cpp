@@ -72,7 +72,7 @@ void division::setName(const TQString &name)
 
 void division::setRGB(int r, int g, int b)
 {
-	p_color = qRgb(r, g, b);
+	p_color = tqRgb(r, g, b);
 }
 
 bool division::setFlagFile(const TQString &path)

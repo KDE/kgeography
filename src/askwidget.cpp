@@ -21,7 +21,7 @@ askWidget::askWidget(TQWidget *parent, KGmap *m, TQWidget *w, uint count, bool s
 	if (showLabel)
 	{
 		p_answers = new TQLabel(w);
-		p_answers -> setAlignment(AlignTop | AlignHCenter);
+		p_answers -> tqsetAlignment(AlignTop | AlignHCenter);
 		resetAnswers();
 		p_answers -> show();
 	}

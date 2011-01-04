@@ -40,7 +40,7 @@ answersDialog::answersDialog(TQWidget *parent, const TQValueVector<userAnswer> &
 	bigFont.setPointSize(24);
 	l1 = new TQLabel(question, p_container);
 	l1 -> setFont(bigFont);
-	l1 -> setAlignment(Qt::AlignCenter);
+	l1 -> tqsetAlignment(Qt::AlignCenter);
 	lay->addMultiCellWidget(l1, 0, 0, 0, 4);
 	
 	// Headers
@@ -68,7 +68,7 @@ answersDialog::answersDialog(TQWidget *parent, const TQValueVector<userAnswer> &
 	lay -> addItem(new TQSpacerItem(20, 20, TQSizePolicy::Fixed, TQSizePolicy::Fixed), totalAnswers + 3, 2);
 	
 	l1 = new TQLabel(i18n("You answered correctly %1 out of %2 questions.").arg(correctAnswers).arg(totalAnswers), p_container);
-	l1 -> setAlignment(Qt::AlignCenter);
+	l1 -> tqsetAlignment(Qt::AlignCenter);
 	lay->addMultiCellWidget(l1, totalAnswers + 4, totalAnswers + 4, 0, 4);
 	
 	p_sv -> addChild(p_container);

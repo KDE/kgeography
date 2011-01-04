@@ -45,7 +45,7 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 
 	TQVBox *p_leftWidget = new TQVBox(p_bigWidget);
 	p_currentMap = new TQLabel(p_leftWidget);
-	p_currentMap -> setAlignment(AlignCenter);
+	p_currentMap -> tqsetAlignment(AlignCenter);
 	p_consult = new KPushButton(i18n("&Browse Map"), p_leftWidget);
 	TQWhatsThis::add(p_consult, i18n("In this section left click on any part of the map to learn about the divisions" ));
 	p_askMap = new KPushButton(i18n("&Click Division in Map..."), p_leftWidget);
@@ -59,8 +59,8 @@ kgeography::kgeography() : KMainWindow(), p_firstShow(true), p_mustShowResultsDi
 	p_askDivisionFlags = new KPushButton(i18n("G&uess Flag of Division..."), p_leftWidget);
 	TQWhatsThis::add(p_askDivisionFlags, i18n("In this quiz you have to guess the flag of a division given its name"));
 	p_underLeftWidget = new TQVBox(p_leftWidget);
-	p_underLeftWidget -> layout() -> setSpacing(KDialog::spacingHint());
-	p_underLeftWidget -> layout() -> setMargin(KDialog::marginHint());
+	p_underLeftWidget -> tqlayout() -> setSpacing(KDialog::spacingHint());
+	p_underLeftWidget -> tqlayout() -> setMargin(KDialog::marginHint());
 	p_leftWidget -> setStretchFactor(p_underLeftWidget, 1);
 
 	setCentralWidget(p_bigWidget);
@@ -287,7 +287,7 @@ void kgeography::setMap(KGmap *m)
 	delete p_map;
 	p_map = m;
 	
-	TQString sw = i18n("There are two ways of dealing with the translation of \"Current map: %1\". The first option simply replaces %1 with the translated name of the relevant region. If the grammar of your language allows this, choose this option by setting the translation of this message to 1, and leave untranslated the translations of \"Current map: %1\" that have the placename embedded (or translate them as - if you wish to show the file as fully translated. The second option is to translate all messages in full - this is likely to be required in the case of highly-inflected languages like Russian. To choose this option, set the translation of this message to 0, and translate all the messages.", "0");
+	TQString sw = i18n("There are two ways of dealing with the translation of \"Current map: %1\". The first option simply tqreplaces %1 with the translated name of the relevant region. If the grammar of your language allows this, choose this option by setting the translation of this message to 1, and leave untranslated the translations of \"Current map: %1\" that have the placename embedded (or translate them as - if you wish to show the file as fully translated. The second option is to translate all messages in full - this is likely to be required in the case of highly-inflected languages like Russian. To choose this option, set the translation of this message to 0, and translate all the messages.", "0");
 	if (sw == "1")
 	{
 		TQString mapName = i18n(p_map -> getFileName().utf8(), p_map -> getName().utf8());

@@ -26,7 +26,7 @@ Q_OBJECT
 		void setMapMove(bool b);
 		void setMapZoom(bool b);
 		
-		TQSize sizeHint() const;
+		TQSize tqsizeHint() const;
 		TQSize mapSize() const;
 	
 	public slots:
