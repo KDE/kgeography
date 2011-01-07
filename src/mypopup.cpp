@@ -33,7 +33,7 @@ myPopup::myPopup(TQWidget *parent, const TQString &text, const TQString &text2, 
 	if (!text2.isNull())
 	{
 		TQLabel *l2 = new TQLabel(text2, vbox);
-		l2 -> tqsetAlignment(Qt::AlignCenter);
+		l2 -> setAlignment(Qt::AlignCenter);
 		vboxLayout -> addWidget(l2);
 	}
 	
@@ -43,10 +43,10 @@ myPopup::myPopup(TQWidget *parent, const TQString &text, const TQString &text2, 
 		lay -> addWidget(flag);
 		TQImage flagImg(flagFile);
 		flag -> setPixmap(flagImg.smoothScale(flagImg.width() / 5, flagImg. height() / 5));
-		flag -> tqsetAlignment(Qt::AlignCenter);
+		flag -> setAlignment(Qt::AlignCenter);
 	}
 	
-	l -> tqsetAlignment(Qt::AlignCenter);
+	l -> setAlignment(Qt::AlignCenter);
 	TQFont f = l -> font();
 	f.setBold(true);
 	l -> setFont(f);
@@ -55,7 +55,7 @@ myPopup::myPopup(TQWidget *parent, const TQString &text, const TQString &text2, 
 	setFrameStyle(TQFrame::Box | TQFrame::Plain);
 	setLineWidth(2);
 	
-	setFixedSize(tqsizeHint());
+	setFixedSize(sizeHint());
 }
 
 void myPopup::mousePressEvent(TQMouseEvent *)

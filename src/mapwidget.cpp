@@ -61,9 +61,9 @@ void mapWidget::setMapZoom(bool b)
 	}
 }
 
-TQSize mapWidget::tqsizeHint() const
+TQSize mapWidget::sizeHint() const
 {
-	return tqmaximumSize();
+	return maximumSize();
 }
 
 void mapWidget::updateHPosition(int value)

@@ -93,7 +93,7 @@ void userAnswer::putWidgets(TQWidget *w, TQGridLayout *lay, int row) const
 			TQLabel *l;
 			l = new TQLabel(w);
 			l -> setPixmap(v -> toImage());
-			l -> tqsetAlignment(Qt::AlignHCenter);
+			l -> setAlignment(Qt::AlignHCenter);
 			l -> setMargin(KDialog::marginHint() / 2);
 			widgets[i] = l;
 		}
@@ -104,8 +104,8 @@ void userAnswer::putWidgets(TQWidget *w, TQGridLayout *lay, int row) const
 	if (!p_correct)
 	{
 		TQColor back, fore;
-		back = widgets[0] -> tqcolorGroup().highlight();
-		fore = widgets[0] -> tqcolorGroup().highlightedText();
+		back = widgets[0] -> colorGroup().highlight();
+		fore = widgets[0] -> colorGroup().highlightedText();
 		for (int i = 0; i < 3; i++)
 		{
 			widgets[i] -> setPaletteBackgroundColor(back);
