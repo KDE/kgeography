@@ -51,7 +51,6 @@ Q_OBJECT
 		void checkAnswer();
 	
 	private:
-		/*void nextQuestion();*/
 	
 		QVBoxLayout *p_lay;
 		KPushButton *p_accept;

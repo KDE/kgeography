@@ -36,14 +36,16 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 	
 	QGroupBox *bg = new QGroupBox(this);
 	QHBoxLayout *centeringLayout = new QHBoxLayout(bg);
-	QVBoxLayout *gbLayout = new QVBoxLayout();
+	QGridLayout *gridLayout = new QGridLayout();
+	gridLayout -> setHorizontalSpacing(6);
 	p_label = new QLabel(this);
 	p_label -> setAlignment(Qt::AlignHCenter);
 	p_rb = new QRadioButton*[NB_CHOICES];
 	for(int i = 0; i < NB_CHOICES; i++)
 	{
+		gridLayout -> addWidget(new QLabel(QString::number(i +1), bg), i, 0);
 		p_rb[i] = new QRadioButton(bg);
-		gbLayout -> addWidget(p_rb[i]);
+		gridLayout -> addWidget(p_rb[i], i, 1);
 
 		p_rb[i] -> installEventFilter(this);
 		connect(p_rb[i], SIGNAL(toggled(bool)), this, SLOT(atLeastOneSelected()));
@@ -51,7 +53,7 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 	p_accept = new KPushButton(this);
 	
 	centeringLayout -> addStretch(1);
-	centeringLayout -> addItem(gbLayout);
+	centeringLayout -> addItem(gridLayout);
 	centeringLayout -> addStretch(1);
 	
 	p_lay -> addStretch(1);
@@ -110,6 +112,7 @@ void boxAsker::keyReleaseEvent(QKeyEvent *e)
 	else if ( e -> key() >= Qt::Key_1 && e -> key() <= (Qt::Key_1 + NB_CHOICES -1) )
 	{
 		p_rb[e -> key() - Qt::Key_1] -> setChecked(true);
+		p_rb[e -> key() - Qt::Key_1] -> setFocus();
 	}
 	else askWidget::keyReleaseEvent(e);
 }
