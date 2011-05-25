@@ -53,6 +53,8 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 	p_lay -> addStretch(1);
 	p_lay -> addWidget(p_accept);
 	KAcceleratorManager::setNoAccel(this);
+
+	bg -> setFocus();
 }
 
 boxAsker::~boxAsker()
@@ -77,7 +79,6 @@ void boxAsker::nextQuestionHook(const QString &division)
 	QStringList auxList;
 	int j;
 	
-	setFocus();
 	for(int i = 0; i < 4; i++) p_rb[i] -> setAutoExclusive(false);
 	for(int i = 0; i < 4; i++) p_rb[i] -> setChecked(false);
 	for(int i = 0; i < 4; i++) p_rb[i] -> setText(QString());
