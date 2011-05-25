@@ -37,7 +37,7 @@ Q_OBJECT
 		void keyPressEvent(QKeyEvent *e);
 		void keyReleaseEvent(QKeyEvent *e);
 		
-		QVBoxLayout *p_lay;
+		void setHeadWidget(QWidget *headWidget);
 		QRadioButton **p_rb;
 
 		// the position the correct answer is in
@@ -53,6 +53,7 @@ Q_OBJECT
 	private:
 		/*void nextQuestion();*/
 	
+		QVBoxLayout *p_lay;
 		KPushButton *p_accept;
 
 		QLabel *p_label;

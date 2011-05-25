@@ -194,4 +194,9 @@ void boxAsker::init()
 	connect(p_accept, SIGNAL(clicked()), this, SLOT(checkAnswer()));
 }
 
+void boxAsker::setHeadWidget(QWidget *headWidget)
+{
+	p_lay -> insertWidget(0, headWidget);
+}
+
 #include "boxasker.moc"

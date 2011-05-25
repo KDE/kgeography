@@ -39,7 +39,7 @@ class flagWidget : public QWidget
 flagDivisionAsker::flagDivisionAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : boxAsker(parent, m, w, count)
 {
 	p_flag = new flagWidget(this);
-	p_lay -> insertWidget(0, p_flag);
+	setHeadWidget(p_flag);
 	setQuestion(i18nc("@title:group", "This flag belongs to:"));
 	init();
 }
