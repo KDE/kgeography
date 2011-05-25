@@ -98,6 +98,7 @@ void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint
 	else
 	{
 		p_mapWidget->placeDivision(p_currentDivisionImage, p_currentDivisionRect);
+		p_mapWidget->unsetCursor();
 		// the image is no longer needed
 		delete p_currentDivisionImage;
 
