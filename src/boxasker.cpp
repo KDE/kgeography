@@ -26,6 +26,8 @@
 
 #include "map.h"
 
+static const int NB_CHOICES = 4;
+
 boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidget(parent, m, w, count)
 {
 	QVBoxLayout *vbl = static_cast<QVBoxLayout*>(w -> layout());
@@ -37,8 +39,8 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 	QVBoxLayout *gbLayout = new QVBoxLayout();
 	p_label = new QLabel(this);
 	p_label -> setAlignment(Qt::AlignHCenter);
-	p_rb = new QRadioButton*[4];
-	for(int i = 0; i < 4; i++)
+	p_rb = new QRadioButton*[NB_CHOICES];
+	for(int i = 0; i < NB_CHOICES; i++)
 	{
 		p_rb[i] = new QRadioButton(bg);
 		gbLayout -> addWidget(p_rb[i]);
@@ -90,15 +92,15 @@ void boxAsker::keyPressEvent(QKeyEvent *e)
 {
 	// we do this on press because it is done so for 0->1-2->3 and 3->2->1->0 movements
 	// (those keys are subject to repeat, they have to be treated as press)
-	if ( e -> key() == Qt::Key_Down && p_rb[3] -> hasFocus() )
+	if ( e -> key() == Qt::Key_Down && p_rb[NB_CHOICES -1] -> hasFocus() )
 	{
-		if ( p_rb[3] -> isChecked() ) p_rb[0] -> setChecked(true);
+		if ( p_rb[NB_CHOICES -1] -> isChecked() ) p_rb[0] -> setChecked(true);
 		p_rb[0] -> setFocus();
 	}
 	else if ( e -> key() == Qt::Key_Up && p_rb[0] -> hasFocus() )
 	{
-		if ( p_rb[0] -> isChecked() ) p_rb[3] -> setChecked(true);
-		p_rb[3] -> setFocus();
+		if ( p_rb[0] -> isChecked() ) p_rb[NB_CHOICES -1] -> setChecked(true);
+		p_rb[NB_CHOICES -1] -> setFocus();
 	}
 }
 
@@ -114,23 +116,23 @@ void boxAsker::nextQuestionHook(const QString &division)
 	QStringList auxList;
 	int j;
 	
-	for(int i = 0; i < 4; i++) p_rb[i] -> setAutoExclusive(false);
-	for(int i = 0; i < 4; i++) p_rb[i] -> setChecked(false);
-	for(int i = 0; i < 4; i++) p_rb[i] -> setText(QString());
-	for(int i = 0; i < 4; i++) p_rb[i] -> setIcon(QIcon());
-	for(int i = 0; i < 4; i++) p_rb[i] -> setAutoExclusive(true);
+	for(int i = 0; i < NB_CHOICES; i++) p_rb[i] -> setAutoExclusive(false);
+	for(int i = 0; i < NB_CHOICES; i++) p_rb[i] -> setChecked(false);
+	for(int i = 0; i < NB_CHOICES; i++) p_rb[i] -> setText(QString());
+	for(int i = 0; i < NB_CHOICES; i++) p_rb[i] -> setIcon(QIcon());
+	for(int i = 0; i < NB_CHOICES; i++) p_rb[i] -> setAutoExclusive(true);
 	
 	p_accept -> setEnabled(false);
 
 	auxList << division;
 
 	// we put the division in a random place
-	p_position = (int)((float)4 * KRandom::random() / (RAND_MAX + 1.0));
+	p_position = (int)((float)NB_CHOICES * KRandom::random() / (RAND_MAX + 1.0));
 	nextBoxAskerQuestionHook(division, p_position, true);
 	
 	// fill the other names
 	j = 0;
-	while (j < 4)
+	while (j < NB_CHOICES)
 	{
 		if (p_rb[j] -> text().isNull() && p_rb[j] -> icon().isNull())
 		{
@@ -158,7 +160,7 @@ void boxAsker::checkAnswer()
 	correct = false;	
 	any = false;
 	i = 0;
-	while(!any && i < 4)
+	while(!any && i < NB_CHOICES)
 	{
 		if (p_rb[i] -> isChecked())
 		{
