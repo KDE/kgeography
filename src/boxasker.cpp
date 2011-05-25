@@ -86,6 +86,22 @@ void boxAsker::setQuestion(const QString &q)
 	p_label -> setText(q);
 }
 
+void boxAsker::keyPressEvent(QKeyEvent *e)
+{
+	// we do this on press because it is done so for 0->1-2->3 and 3->2->1->0 movements
+	// (those keys are subject to repeat, they have to be treated as press)
+	if ( e -> key() == Qt::Key_Down && p_rb[3] -> hasFocus() )
+	{
+		if ( p_rb[3] -> isChecked() ) p_rb[0] -> setChecked(true);
+		p_rb[0] -> setFocus();
+	}
+	else if ( e -> key() == Qt::Key_Up && p_rb[0] -> hasFocus() )
+	{
+		if ( p_rb[0] -> isChecked() ) p_rb[3] -> setChecked(true);
+		p_rb[3] -> setFocus();
+	}
+}
+
 void boxAsker::keyReleaseEvent(QKeyEvent *e)
 {
 	if (e -> key() == Qt::Key_Return || e -> key() == Qt::Key_Enter) checkAnswer();

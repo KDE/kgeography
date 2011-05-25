@@ -34,6 +34,7 @@ Q_OBJECT
 		void setQuestion(const QString &q);
 		virtual void setAnswerHook(int userSays) = 0;
 
+		void keyPressEvent(QKeyEvent *e);
 		void keyReleaseEvent(QKeyEvent *e);
 		
 		QVBoxLayout *p_lay;
