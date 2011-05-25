@@ -42,7 +42,9 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 	{
 		p_rb[i] = new QRadioButton(bg);
 		gbLayout -> addWidget(p_rb[i]);
+
 		p_rb[i] -> installEventFilter(this);
+		connect(p_rb[i], SIGNAL(toggled(bool)), this, SLOT(atLeastOneSelected()));
 	}
 	p_accept = new KPushButton(this);
 	
@@ -102,9 +104,10 @@ void boxAsker::nextQuestionHook(const QString &division)
 	for(int i = 0; i < 4; i++) p_rb[i] -> setIcon(QIcon());
 	for(int i = 0; i < 4; i++) p_rb[i] -> setAutoExclusive(true);
 	
-	
+	p_accept -> setEnabled(false);
+
 	auxList << division;
-	
+
 	// we put the division in a random place
 	p_position = (int)((float)4 * KRandom::random() / (RAND_MAX + 1.0));
 	nextBoxAskerQuestionHook(division, p_position, true);
@@ -124,6 +127,11 @@ void boxAsker::nextQuestionHook(const QString &division)
 		}
 		else ++j;
 	}
+}
+
+void boxAsker::atLeastOneSelected()
+{
+	p_accept -> setEnabled(true);
 }
 
 void boxAsker::checkAnswer()

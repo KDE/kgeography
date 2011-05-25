@@ -44,6 +44,7 @@ Q_OBJECT
 
 	protected slots:
 		void init();
+		void atLeastOneSelected();
 		
 	private slots:
 		void checkAnswer();
