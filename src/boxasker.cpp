@@ -42,6 +42,7 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 	{
 		p_rb[i] = new QRadioButton(bg);
 		gbLayout -> addWidget(p_rb[i]);
+		p_rb[i] -> installEventFilter(this);
 	}
 	p_accept = new KPushButton(this);
 	
@@ -57,6 +58,20 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 	KAcceleratorManager::setNoAccel(this);
 
 	bg -> setFocus();
+}
+
+bool boxAsker::eventFilter(QObject *obj, QEvent *event)
+{
+	if (event -> type() == QEvent::Enter) {
+		if (obj == p_accept)
+			p_accept -> setFocus();
+		else
+			((QRadioButton*)obj) -> setFocus();
+		return true;
+	} else {
+		// pass the event on to the parent class
+		return QWidget::eventFilter(obj, event);
+	}
 }
 
 boxAsker::~boxAsker()

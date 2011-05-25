@@ -25,7 +25,9 @@ Q_OBJECT
 	public:
 		boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count);
 		~boxAsker();
-	
+
+		bool eventFilter(QObject *obj, QEvent *event);
+
 	protected:
 		virtual bool nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer) = 0;
 		void nextQuestionHook(const QString &division);
