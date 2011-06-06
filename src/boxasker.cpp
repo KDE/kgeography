@@ -31,26 +31,19 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 	p_lay = new QVBoxLayout(this);
 	
 	QGroupBox *bg = new QGroupBox(this);
-	QHBoxLayout *centeringLayout = new QHBoxLayout(bg);
-	QVBoxLayout *gbLayout = new QVBoxLayout();
+	QVBoxLayout *gbLayout = new QVBoxLayout(bg);
 	p_label = new QLabel(this);
-	p_label -> setAlignment(Qt::AlignHCenter);
 	p_rb = new QRadioButton*[4];
 	for(int i = 0; i < 4; i++)
 	{
 		p_rb[i] = new QRadioButton(bg);
 		gbLayout -> addWidget(p_rb[i]);
 	}
+	gbLayout->addStretch(1);
 	p_accept = new KPushButton(this);
 	
-	centeringLayout -> addStretch(1);
-	centeringLayout -> addItem(gbLayout);
-	centeringLayout -> addStretch(1);
-	
-	p_lay -> addStretch(1);
 	p_lay -> addWidget(p_label);
 	p_lay -> addWidget(bg, 1);
-	p_lay -> addStretch(1);
 	p_lay -> addWidget(p_accept);
 	KAcceleratorManager::setNoAccel(this);
 
