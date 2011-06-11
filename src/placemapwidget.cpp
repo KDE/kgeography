@@ -10,6 +10,7 @@
 
 #include "placemapwidget.h"
 
+#include <QColormap>
 #include <QCursor>
 #include <QGraphicsPixmapItem>
 #include <QGraphicsRectItem>
@@ -55,6 +56,51 @@ void placeMapWidget::init(KGmap *map, QImage *mapImage)
 	QMetaObject::invokeMethod(this, "setAutomaticZoom", Qt::QueuedConnection, Q_ARG(bool, p_automaticZoom));
 }
 
+size_t placeMapWidget::nbPixels(int pixi) const
+{
+	return p_pixelsStats[pixi];
+}
+
+static int indexOfPair(uchar pixiMin, uchar pixiMax)
+{
+	const int pairIdx = pixiMin + pixiMax * (pixiMax - 1) / 2;
+	return pairIdx;
+}
+
+
+size_t placeMapWidget::nbBorderPixels(int pixi1, int pixi2) const
+{
+	int pairIdx = indexOfPair(qMin(pixi1, pixi2), qMax(pixi1, pixi2));
+	return p_bordersStats[pairIdx];
+}
+
+static void addOrderedPixel(QVector<uchar> *pixels, uchar pixi)
+{
+	int i = pixels->size();
+	do { --i;} while ( i >= 0 && pixels->at(i) > pixi );;
+	if ( i < 0 || pixels->at(i) < pixi )
+			pixels->insert(i+1, pixi);
+}
+
+QString writeUpBorderStats(const QVector<size_t> &stats, const QVector<size_t> &histo, const QVector<QRgb> &cmap)
+{
+	int nbCells = stats.size(); // = n * (n*1) / 2 => 2p == n2 + n => n2 + n -2p == 0
+	// delta = 1 + 8p -> n = (-1 +/- sqrt(1 + 8p))/2
+	int nbRows = (sqrt(1 + 8 * nbCells) -1) /2;
+	QString ret;
+	ret += "\n";
+	ret.reserve(17 * nbCells + nbRows * 20);
+	for ( int ic = 0 ; ic < nbRows ; ic++ )
+		ret += QString("%1(%2,%3,%4):%5\n").arg(ic).arg(qRed(cmap[ic])).arg(qGreen(cmap[ic])).arg(qBlue(cmap[ic])).arg(histo[ic]);
+	ret += "\n";
+	for ( int m = 0 ; m < nbRows ; m++ ) {
+		for ( int p = 0 ; p < m ; p++ )
+			ret += QString("(%1, %2):%3 ").arg(m).arg(p).arg(stats[indexOfPair(p, m)]);
+		ret += "\n";
+	}
+	return ret;
+}
+
 void placeMapWidget::createGameMapImage()
 {
 	QVector<uchar> indexesToCopy;
@@ -79,19 +125,25 @@ void placeMapWidget::createGameMapImage()
 	const int height = p_mapImage->height();
 	const int deltaX[] = {-1,  0,  1,  1,  1,  0, -1, -1};
 	const int deltaY[] = {-1, -1, -1,  0,  1,  1,  1,  0};
+
+	const size_t nbColors = p_mapImage->colorTable().size();
+	p_pixelsStats.resize(nbColors);
+	p_bordersStats.resize(nbColors * (nbColors +1) / 2);
 	
 	for (int x = 1; x < width -1; x++)
 	{
 		for (int y = 1; y < height -1; y++)
 		{
 			const uchar pixi = bits[y * nbBytesPerLine + x];
+			p_pixelsStats[pixi] += 1;
 
 			if(indexesToCopy.contains(pixi) )
 			{
+				QVector<uchar> orderedNeighbours;
 				bool outerFound = false;
 				bool divisionColorFound = false;
 				for ( int neighbourIdx = 0 ;
-					  neighbourIdx < 8 && ! ( outerFound && divisionColorFound ) ;
+					  neighbourIdx < 8 ;
 					  neighbourIdx ++ )
 				{
 					const int ox = x + deltaX[neighbourIdx];
@@ -99,6 +151,7 @@ void placeMapWidget::createGameMapImage()
 					const uchar oPixi = bits[oy * nbBytesPerLine + ox];
 					if (oPixi != pixi)
 					{
+						addOrderedPixel(&orderedNeighbours, oPixi);
 						if ( indexesToCopy.contains(oPixi) )
 							outerFound = true;
 						else
@@ -108,9 +161,23 @@ void placeMapWidget::createGameMapImage()
 
 				if ( outerFound || ! divisionColorFound )
 					p_gameImage->setPixel(x,y,p_mapImage->pixel(x,y));
+
+				if ( ! divisionColorFound )
+					continue;
+				for ( int maxIdx = orderedNeighbours.size() - 1 ; --maxIdx >= 0 ; )
+				{
+					for ( int minIdx = maxIdx ; minIdx >= 0 ; minIdx-- )
+					{
+						const uchar pixiMin = orderedNeighbours[minIdx];
+						const uchar pixiMax = orderedNeighbours[maxIdx + 1];
+						const int pairIdx = indexOfPair(pixiMin, pixiMax);
+						p_bordersStats[pairIdx] += 1;
+					}
+				}
 			}
 		}
 	}
+	p_outerPixis = indexesToCopy;
 }
 
 void placeMapWidget::setMapMove(bool b)

@@ -49,6 +49,7 @@ placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askW
 	p_fill -> show();
 	vbl -> addWidget(p_next);
 	vbl -> addWidget(p_fill, 1);
+	p_placedPixels = p_mapWidget -> outerPixis();
 	nextQuestion();
 }
 
@@ -103,12 +104,24 @@ void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint
 		double distX = p_currentDivisionRect.center().x() - mapPoint.x();
 		double distY = p_currentDivisionRect.center().y() - mapPoint.y();
 		double distance = sqrt((double)distX * distX + distY * distY); 
+		int indexOfCurrent = p_mapImage -> colorTable().indexOf(p_currentRgb);
 		bool consideredGood = distance < 5.0;
 		// if we consider it good enough don't transmit a may be wrong color
 		if (consideredGood) c = p_currentRgb;
-		else
+		if (! consideredGood)
 		{
-			int indexOfCurrent = p_mapImage -> colorTable().indexOf(p_currentRgb);
+			bool hasBorderShown = false;
+			for ( int i = p_placedPixels.size() ; --i >= 0 && !hasBorderShown ; )
+			{
+				uchar pixi = p_placedPixels[i];
+				size_t nb = p_mapWidget -> nbBorderPixels(pixi, indexOfCurrent);
+				hasBorderShown = nb > 3;
+			}
+			consideredGood = !hasBorderShown && distance < 16.0;
+			if (consideredGood) c = p_currentRgb;
+		}
+		if (! consideredGood)
+		{
 			QRect definedRect(0, 0, p_mapImage -> width(), p_mapImage -> height());
 			QPoint v = QPoint(mapPoint.x(), mapPoint.y()) - p_currentDivisionRect.center();
 			QRect initialRect(p_currentDivisionRect);
@@ -159,6 +172,7 @@ void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint
 				c = p_mapImage -> colorTable()[indexOfMax];
 			}
 		}
+		p_placedPixels.append(indexOfCurrent);
 		p_currentAnswer.setAnswer(QColor(c));
 		questionAnswered(consideredGood);
 		nextQuestion();

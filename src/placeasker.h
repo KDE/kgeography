@@ -63,6 +63,7 @@ Q_OBJECT
 		QImage *p_mapImage;
 		QRect p_currentDivisionRect;
 		QRgb p_currentRgb;
+		QVector<uchar> p_placedPixels;
 };
 
 #endif
