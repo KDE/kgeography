@@ -64,8 +64,8 @@ void placeMapWidget::createGameMapImage()
 	// I, for one, reserve grays for non-division pixels.
 	p_gameImage->fill(QColor(224,224,224).rgb());
 
-	const QList<division*> ignoredDivisions = p_map->getIgnoredDivisions(division::eClick);
-	foreach(division *id, ignoredDivisions)
+	QList<const division*> ignoredDivisions = p_map->getIgnoredDivisions(division::eClick);
+	foreach(const division *id, ignoredDivisions)
 	{
 		const QRgb rgb = id->getRGB();
 		const int colorIdx = colormap.indexOf(rgb);

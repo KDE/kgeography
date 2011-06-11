@@ -100,12 +100,67 @@ void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint
 		// the image is no longer needed
 		delete p_currentDivisionImage;
 
-		p_currentAnswer.setAnswer(QColor(c));
 		double distX = p_currentDivisionRect.center().x() - mapPoint.x();
 		double distY = p_currentDivisionRect.center().y() - mapPoint.y();
 		double distance = sqrt((double)distX * distX + distY * distY); 
-		// TODO: See if 5 is big enough or we should take into account the division size or what
-		questionAnswered(distance < 5.0);
+		bool consideredGood = distance < 5.0;
+		// if we consider it good enough don't transmit a may be wrong color
+		if (consideredGood) c = p_currentRgb;
+		else
+		{
+			int indexOfCurrent = p_mapImage -> colorTable().indexOf(p_currentRgb);
+			QRect definedRect(0, 0, p_mapImage -> width(), p_mapImage -> height());
+			QPoint v = QPoint(mapPoint.x(), mapPoint.y()) - p_currentDivisionRect.center();
+			QRect initialRect(p_currentDivisionRect);
+			QRect userRect = initialRect.translated(v);
+			QRect definedRectUser = userRect & definedRect;
+			QPoint definedFirstDiag = definedRectUser.bottomRight() - definedRectUser.topLeft();
+			QPoint origFirstDiag = userRect.bottomRight() - userRect.topLeft();
+			QPoint badDiff = origFirstDiag -definedFirstDiag;
+			QPoint diagDiff = origFirstDiag -badDiff;
+			QVector<size_t> stats(p_mapImage -> colorTable().size());
+			size_t goodCount = 0;
+			size_t outCount = badDiff.x() * badDiff.y() + badDiff.x() * diagDiff.y() + diagDiff.x() * badDiff.y();
+			size_t badCount = outCount;
+			for ( int dy = definedFirstDiag.y() -1 ; dy >= 0 ; dy-- )
+			{
+				for ( int dx = definedFirstDiag.x() -1 ; dx >= 0 ; dx-- )
+				{
+					int origPixi = p_mapImage -> pixelIndex(initialRect.left() + dx, initialRect.top() + dy);
+					if ( origPixi != indexOfCurrent )
+						continue;
+					int userPixi = p_mapImage -> pixelIndex(definedRectUser.left() + dx, definedRectUser.top() + dy);
+					if ( userPixi == origPixi ) goodCount++;
+					else
+					{
+						stats[userPixi]++;
+						badCount++;
+					}
+				}
+			}
+			consideredGood = goodCount > 0.5 * (goodCount + badCount);
+			if (consideredGood) c = p_currentRgb;
+			else if (outCount > 0.5 * (goodCount + badCount))
+			{
+				c = p_map -> getIgnoredDivisions(askMode())[0] -> getRGB();
+			}
+			else
+			{
+				int indexOfMax = -1;
+				size_t maxCount = 0;
+				for ( int i = stats.size() -1 ; i >= 0 ; i-- )
+				{
+					if ( stats[i] > maxCount )
+					{
+						indexOfMax = i;
+						maxCount = stats[i];
+					}
+				}
+				c = p_mapImage -> colorTable()[indexOfMax];
+			}
+		}
+		p_currentAnswer.setAnswer(QColor(c));
+		questionAnswered(consideredGood);
 		nextQuestion();
 	}
 }
@@ -116,7 +171,9 @@ void placeAsker::nextQuestionHook(const QString &division)
 	p_next -> setText(i18nc("@info:status", "Please place in the map:<nl/>%1", divisionName));
 	p_next -> show();
 	p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is region name", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
-	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
+	QColor color = p_map -> getColor(division);
+	p_currentRgb = color.rgb();
+	p_currentAnswer.setCorrectAnswer(color);
 	setCurrentDivision(division);
 	p_mapWidget->setCurrentDivisionImage(p_currentDivisionImage);
 }
