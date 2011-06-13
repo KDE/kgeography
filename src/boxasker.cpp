@@ -28,6 +28,8 @@
 
 boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidget(parent, m, w, count)
 {
+	QVBoxLayout *vbl = static_cast<QVBoxLayout*>(w -> layout());
+	vbl -> addStretch(1);
 	p_lay = new QVBoxLayout(this);
 	
 	QGroupBox *bg = new QGroupBox(this);
