@@ -7182,7 +7182,7 @@ i18nc("world_continents.kgm", "North America");
 i18nc("world_continents.kgm", "Mac Kinley");
 i18nc("world_continents.kgm", "South America");
 i18nc("world_continents.kgm", "Aconcagua");
-i18nc("world_continents.kgm", "Antartica");
+i18nc("world_continents.kgm", "Antarctica");
 i18nc("world_continents.kgm", "Vinson");
 i18nc("world_continents.kgm", "Asia");
 i18nc("world_continents.kgm", "Everest");
