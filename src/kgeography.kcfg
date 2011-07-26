@@ -11,5 +11,9 @@
 		<entry name="questionPlacingScheme" type="Int">
 			<label>Placement scheme of the question</label>
 		</entry>
+		<entry name="waitsForValidation" type="Bool">
+			<label>Ask for validation before next question</label>
+			<default>true</default>
+		</entry>
   </group>
 </kcfg>

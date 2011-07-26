@@ -47,10 +47,9 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 		p_rb[i] -> installEventFilter(this);
 		connect(p_rb[i], SIGNAL(toggled(bool)), this, SLOT(atLeastOneSelected()));
 	}
-	p_accept = new KPushButton(this);
+	p_accept = new KPushButton();
 
-	kgeographySettings *settings = kgeographySettings::self();
-	if ( settings -> questionPlacingScheme() < 1 )
+	if ( kgeographySettings::self() -> questionPlacingScheme() < 1 )
 		layoutTop(bg, labels);
 	else
 		layoutCentered(bg, labels);
@@ -83,7 +82,9 @@ void boxAsker::layoutCentered(QGroupBox *bg, QLabel ** labels)
 	p_lay -> addWidget(p_label);
 	p_lay -> addWidget(bg, 1);
 	p_lay -> addStretch(1);
-	p_lay -> addWidget(p_accept);
+
+	if ( kgeographySettings::self() -> waitsForValidation() )
+		p_lay -> addWidget(p_accept);
 }
 
 void boxAsker::layoutTop(QGroupBox *bg, QLabel ** labels)
@@ -105,7 +106,9 @@ void boxAsker::layoutTop(QGroupBox *bg, QLabel ** labels)
 	p_lay -> addWidget(p_label);
 	p_lay -> addWidget(bg);
 	p_lay -> addStretch(1);
-	p_lay -> addWidget(p_accept);
+
+	if ( kgeographySettings::self() -> waitsForValidation() )
+		p_lay -> addWidget(p_accept);
 }
 
 bool boxAsker::eventFilter(QObject *obj, QEvent *event)
@@ -155,6 +158,8 @@ void boxAsker::keyReleaseEvent(QKeyEvent *e)
 	{
 		p_rb[e -> key() - Qt::Key_1] -> setChecked(true);
 		p_rb[e -> key() - Qt::Key_1] -> setFocus();
+		if ( ! kgeographySettings::self() -> waitsForValidation() )
+			checkAnswer();
 	}
 	else askWidget::keyReleaseEvent(e);
 }
@@ -198,7 +203,10 @@ void boxAsker::nextQuestionHook(const QString &division)
 
 void boxAsker::atLeastOneSelected()
 {
-	p_accept -> setEnabled(true);
+	if ( ! kgeographySettings::self() -> waitsForValidation() )
+		checkAnswer();
+	else
+		p_accept -> setEnabled(true);
 }
 
 void boxAsker::checkAnswer()
