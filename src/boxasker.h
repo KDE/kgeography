@@ -15,6 +15,7 @@
 
 class KPushButton;
 
+class QGroupBox;
 class QLabel;
 class QRadioButton;
 class QVBoxLayout;
@@ -51,6 +52,8 @@ Q_OBJECT
 		void checkAnswer();
 	
 	private:
+		void layoutCentered(QGroupBox *bg, QLabel ** labels);
+		void layoutTop(QGroupBox *bg, QLabel ** labels);
 	
 		QVBoxLayout *p_lay;
 		KPushButton *p_accept;

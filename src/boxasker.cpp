@@ -25,6 +25,7 @@
 #include <qradiobutton.h>
 
 #include "map.h"
+#include "settings.h"
 
 static const int NB_CHOICES = 4;
 
@@ -33,37 +34,78 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 	QVBoxLayout *vbl = static_cast<QVBoxLayout*>(w -> layout());
 	vbl -> addStretch(1);
 	p_lay = new QVBoxLayout(this);
-	
+
 	QGroupBox *bg = new QGroupBox(this);
-	QHBoxLayout *centeringLayout = new QHBoxLayout(bg);
-	QGridLayout *gridLayout = new QGridLayout();
-	gridLayout -> setHorizontalSpacing(6);
 	p_label = new QLabel(this);
-	p_label -> setAlignment(Qt::AlignHCenter);
 	p_rb = new QRadioButton*[NB_CHOICES];
+	QLabel ** labels = new QLabel*[NB_CHOICES];
 	for(int i = 0; i < NB_CHOICES; i++)
 	{
-		gridLayout -> addWidget(new QLabel(QString::number(i +1), bg), i, 0);
+		labels[i] = new QLabel(QString::number(i +1), bg);
 		p_rb[i] = new QRadioButton(bg);
-		gridLayout -> addWidget(p_rb[i], i, 1);
 
 		p_rb[i] -> installEventFilter(this);
 		connect(p_rb[i], SIGNAL(toggled(bool)), this, SLOT(atLeastOneSelected()));
 	}
 	p_accept = new KPushButton(this);
-	
+
+	kgeographySettings *settings = kgeographySettings::self();
+	if ( settings -> questionPlacingScheme() < 1 )
+		layoutTop(bg, labels);
+	else
+		layoutCentered(bg, labels);
+
+	KAcceleratorManager::setNoAccel(this);
+
+	bg -> setFocus();
+	delete labels;
+}
+
+
+void boxAsker::layoutCentered(QGroupBox *bg, QLabel ** labels)
+{
+	QHBoxLayout *centeringLayout = new QHBoxLayout(bg);
+	QGridLayout *gridLayout = new QGridLayout();
+	gridLayout -> setHorizontalSpacing(6);
+	p_label -> setAlignment(Qt::AlignHCenter);
+	for(int i = 0; i < NB_CHOICES; i++)
+	{
+		gridLayout -> addWidget(labels[i], i, 0);
+		gridLayout -> addWidget(p_rb[i], i, 1);
+	}
+
 	centeringLayout -> addStretch(1);
 	centeringLayout -> addItem(gridLayout);
 	centeringLayout -> addStretch(1);
-	
+
+	while ( p_lay->takeAt(0) != NULL ) { }
 	p_lay -> addStretch(1);
 	p_lay -> addWidget(p_label);
 	p_lay -> addWidget(bg, 1);
 	p_lay -> addStretch(1);
 	p_lay -> addWidget(p_accept);
-	KAcceleratorManager::setNoAccel(this);
+}
 
-	bg -> setFocus();
+void boxAsker::layoutTop(QGroupBox *bg, QLabel ** labels)
+{
+	//QVBoxLayout *gbLayout = new QVBoxLayout(bg);
+	QHBoxLayout *centeringLayout = new QHBoxLayout(bg);
+	QGridLayout *gridLayout = new QGridLayout();
+	for(int i = 0; i < NB_CHOICES; i++)
+	{
+		gridLayout -> addWidget(labels[i], i, 0);
+		gridLayout -> addWidget(p_rb[i], i, 1);
+		gridLayout -> addWidget(p_rb[i], i, 1);
+	}
+	//gbLayout->addStretch(1);
+	centeringLayout -> addItem(gridLayout);
+	centeringLayout -> addStretch(1);
+
+	while ( p_lay->takeAt(0) != NULL ) { }
+	p_lay -> addWidget(p_label);
+	p_lay -> addWidget(bg);
+	p_lay -> addStretch(1);
+	p_lay -> addWidget(p_accept);
 }
 
 bool boxAsker::eventFilter(QObject *obj, QEvent *event)

@@ -8,5 +8,8 @@
 		<entry name="lastMap" type="String">
 			<label>The last opened map</label>
 		</entry>
-	</group>
+		<entry name="questionPlacingScheme" type="Int">
+			<label>Placement scheme of the question</label>
+		</entry>
+  </group>
 </kcfg>
