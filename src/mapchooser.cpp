@@ -21,6 +21,8 @@
 #include <qlistwidget.h>
 #include <qpainter.h>
 
+#include "settings.h"
+
 bool myLessThan(const QString &s1, const QString &s2)
 {
 	return s1.localeAwareCompare(s2) < 0;
@@ -46,18 +48,23 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 	QStringList::iterator it;
 	QStringList texts;
 	QStringList errorTexts;
+	QString lastMapFile = kgeographySettings::self() -> lastMap();
+	QString stringToSelect;
 	for(it = list.begin(); it != list.end(); ++it)
 	{
-		m = p_reader.parseMap(*it);
+		QString mapFilename = *it;
+		m = p_reader.parseMap(mapFilename);
 		if (!m)
 		{
-			errorTexts << i18n("Error parsing %1: %2", *it, p_reader.getError());
+			errorTexts << i18n("Error parsing %1: %2", mapFilename, p_reader.getError());
 		}
 		else
 		{
 			QString text = i18nc(m -> getFileName().toUtf8(), m -> getName().toUtf8());
 			texts << text;
 			p_maps.insert(text, m);
+			if ( mapFilename == lastMapFile )
+				stringToSelect = text;
 		}
 	}
 
@@ -77,8 +84,15 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 	setMainWidget(mainHB);
 	qSort(texts.begin(), texts.end(), myLessThan);
 	foreach(const QString &text, texts) p_listBox -> addItem(text);
-	if (p_listBox -> count() > 0) p_listBox -> setCurrentRow(0);
-	else enableButtonOk(false);
+	if (p_listBox -> count() == 0)
+		enableButtonOk(false);
+	else {
+		QList<QListWidgetItem *> itemsWhere = p_listBox->findItems(stringToSelect, Qt::MatchExactly);
+		if ( itemsWhere.size() > 0 )
+			p_listBox->setCurrentItem(itemsWhere[0]);
+		else
+			p_listBox -> setCurrentRow(0);
+	}
 	p_listBox -> setFocus();
 }
 
