@@ -113,7 +113,7 @@ void boxAsker::layoutTop(QGroupBox *bg, QLabel ** labels)
 
 bool boxAsker::eventFilter(QObject *obj, QEvent *event)
 {
-	if (event -> type() == QEvent::Enter) {
+	if ( kgeographySettings::self() -> focusFollowsMouse() && event -> type() == QEvent::Enter) {
 		if (obj == p_accept)
 			p_accept -> setFocus();
 		else

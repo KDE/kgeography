@@ -15,5 +15,9 @@
 			<label>Ask for validation before next question</label>
 			<default>true</default>
 		</entry>
+		<entry name="focusFollowsMouse" type="Bool">
+			<label>Whether press on space while hovering a button should trigger that button</label>
+			<default>false</default>
+		</entry>
   </group>
 </kcfg>
