@@ -156,10 +156,12 @@ void boxAsker::keyReleaseEvent(QKeyEvent *e)
 	if (e -> key() == Qt::Key_Return || e -> key() == Qt::Key_Enter) checkAnswer();
 	else if ( e -> key() >= Qt::Key_1 && e -> key() <= (Qt::Key_1 + NB_CHOICES -1) )
 	{
-		p_rb[e -> key() - Qt::Key_1] -> setChecked(true);
+		kDebug() << e->key();
 		p_rb[e -> key() - Qt::Key_1] -> setFocus();
-		if ( ! kgeographySettings::self() -> waitsForValidation() )
-			checkAnswer();
+		// we check the box after the focus because the check can trigger immediate destruction of the asker at last question
+		p_rb[e -> key() - Qt::Key_1] -> setChecked(true);
+		// next line triggered by previous, no need to go this way, crashes at end.
+		//if ( ! kgeographySettings::self() -> waitsForValidation() )			checkAnswer();
 	}
 	else askWidget::keyReleaseEvent(e);
 }
@@ -169,13 +171,13 @@ void boxAsker::nextQuestionHook(const QString &division)
 	QString otherDivision;
 	QStringList auxList;
 	int j;
-	
+
 	for(int i = 0; i < NB_CHOICES; i++) p_rb[i] -> setAutoExclusive(false);
 	for(int i = 0; i < NB_CHOICES; i++) p_rb[i] -> setChecked(false);
 	for(int i = 0; i < NB_CHOICES; i++) p_rb[i] -> setText(QString());
 	for(int i = 0; i < NB_CHOICES; i++) p_rb[i] -> setIcon(QIcon());
 	for(int i = 0; i < NB_CHOICES; i++) p_rb[i] -> setAutoExclusive(true);
-	
+
 	p_accept -> setEnabled(false);
 
 	auxList << division;
@@ -183,7 +185,7 @@ void boxAsker::nextQuestionHook(const QString &division)
 	// we put the division in a random place
 	p_position = (int)((float)NB_CHOICES * KRandom::random() / (RAND_MAX + 1.0));
 	nextBoxAskerQuestionHook(division, p_position, true);
-	
+
 	// fill the other names
 	j = 0;
 	while (j < NB_CHOICES)
@@ -214,7 +216,7 @@ void boxAsker::checkAnswer()
 	bool any, correct;
 	int i;
 
-	correct = false;	
+	correct = false;
 	any = false;
 	i = 0;
 	while(!any && i < NB_CHOICES)
@@ -226,7 +228,7 @@ void boxAsker::checkAnswer()
 		}
 		else i++;
 	}
-		
+
 	if (any)
 	{
 		setAnswerHook(i);
@@ -242,7 +244,7 @@ void boxAsker::init()
 	resetAnswers();
 	clearAsked();
 	nextQuestion();
-	
+
 	p_accept -> disconnect();
 	connect(p_accept, SIGNAL(clicked()), this, SLOT(checkAnswer()));
 }
