@@ -45,6 +45,7 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 	mainHBLayout -> addWidget(p_listBox);
 	QStringList::iterator it;
 	QStringList texts;
+	QSet<QString> alreadySeens;
 	QStringList errorTexts;
 	for(it = list.begin(); it != list.end(); ++it)
 	{
@@ -56,8 +57,12 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 		else
 		{
 			QString text = i18nc(m -> getFileName().toUtf8(), m -> getName().toUtf8());
-			texts << text;
-			p_maps.insert(text, m);
+			// avoid multiple and should guarantee that first in KDEDIRS is chosen)
+			if (!alreadySeens.contains(text)) {
+				texts << text;
+				alreadySeens.insert(text);
+				p_maps.insert(text, m);
+			}
 		}
 	}
 
