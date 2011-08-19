@@ -156,7 +156,6 @@ void boxAsker::keyReleaseEvent(QKeyEvent *e)
 	if (e -> key() == Qt::Key_Return || e -> key() == Qt::Key_Enter) checkAnswer();
 	else if ( e -> key() >= Qt::Key_1 && e -> key() <= (Qt::Key_1 + NB_CHOICES -1) )
 	{
-		kDebug() << e->key();
 		p_rb[e -> key() - Qt::Key_1] -> setFocus();
 		// we check the box after the focus because the check can trigger immediate destruction of the asker at last question
 		p_rb[e -> key() - Qt::Key_1] -> setChecked(true);
