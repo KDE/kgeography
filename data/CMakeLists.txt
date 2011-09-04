@@ -284,6 +284,8 @@ install(FILES
    gujarat.png
    haryana.kgm
    haryana.png
+   sri-lanka.kgm
+   sri-lanka.png
 
 	DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
 

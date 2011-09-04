@@ -1,0 +1,66 @@
+<map>
+	<mapFile>sri-lanka.png</mapFile>
+	<name>Sri-Lanka</name>
+	<author>Laurent Garnier</author>
+	<divisionsName>Provinces</divisionsName>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Water</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Not Sri-Lanka</name>
+		<ignore>yes</ignore>
+		<color><red>204</red><green>204</green><blue>204</blue></color>
+	</division>
+	<division>
+		<name>Central</name>
+		<capital>Kandy</capital>
+		<color><red>0</red><green>170</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>North Central</name>
+		<capital>Anuradhapura</capital>
+		<color><red>170</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>North</name>
+		<capital>Jaffna</capital>
+		<color><red>255</red><green>0</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Eastern</name>
+		<capital>Trincomalee</capital>
+		<color><red>0</red><green>168</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>North Western</name>
+		<capital>Kurunegala</capital>
+		<color><red>0</red><green>0</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Southern</name>
+		<capital>Galle</capital>
+		<color><red>255</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Uva</name>
+		<capital>Badulla</capital>
+		<color><red>0</red><green>255</green><blue>170</blue></color>
+	</division>
+	<division>
+		<name>Sabaragamuwa</name>
+		<capital>Ratnapura</capital>
+		<color><red>255</red><green>255</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Western</name>
+		<capital>Colombo</capital>
+		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+</map>
