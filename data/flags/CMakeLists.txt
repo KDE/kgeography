@@ -228,7 +228,6 @@ install(FILES
    martinique.png
    montserrat.png
    st_kitts_and_nevis.png
-   antigua_and_barbuda.png
    anguilla.png
    british_virgin_islands.png
    us_virgin_islands.png
