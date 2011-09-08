@@ -192,7 +192,6 @@ install(FILES
    fiji.png
    tonga.png
    australia.png
-   NewZealand.png
    Vatican.png
    andorra.png
    Monaco.png
