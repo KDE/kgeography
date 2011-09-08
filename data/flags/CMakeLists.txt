@@ -206,7 +206,6 @@ install(FILES
    easter_island.png
    new_caledonia.png
    tokelau.png
-   east_timor.png
    niue.png
    tuvalu.png
    french_polynesia.png
