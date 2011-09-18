@@ -54,41 +54,6 @@
 		<color><red>255</red><green>128</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>Lakes</name>
-		<capital>Rumbek</capital>
-		<color><red>0</red><green>0</green><blue>255</blue></color>
-	</division>
-	<division>
-		<name>North Bahr al Ghazal</name>
-		<capital>Aweil</capital>
-		<color><red>191</red><green>128</green><blue>255</blue></color>
-	</division>
-	<division>
-		<name>West Bahr al Ghazal</name>
-		<capital>Wau</capital>
-		<color><red>127</red><green>0</green><blue>255</blue></color>
-	</division>
-	<division>
-		<name>Warab</name>
-		<capital>Warab</capital>
-		<color><red>128</red><green>128</green><blue>255</blue></color>
-	</division>
-	<division>
-		<name>Central Equatoria</name>
-		<capital>Juba</capital>
-		<color><red>0</red><green>128</green><blue>255</blue></color>
-	</division>
-	<division>
-		<name>East Equatoria</name>
-		<capital>Kapoita</capital>
-		<color><red>128</red><green>255</green><blue>255</blue></color>
-	</division>
-	<division>
-		<name>West Equatoria</name>
-		<capital>Yambio</capital>
-		<color><red>128</red><green>191</green><blue>255</blue></color>
-	</division>
-	<division>
 		<name>Kassala</name>
 		<capital>Kassala</capital>
 		<color><red>255</red><green>128</green><blue>0</blue></color>
@@ -132,20 +97,5 @@
 		<name>River Nile</name>
 		<capital>Ad-Damir</capital>
 		<color><red>255</red><green>128</green><blue>128</blue></color>
-	</division>
-	<division>
-		<name>Jonglei</name>
-		<capital>Bor</capital>
-		<color><red>0</red><green>255</green><blue>255</blue></color>
-	</division>
-	<division>
-		<name>Unity</name>
-		<capital>Bentiu</capital>
-		<color><red>128</red><green>255</green><blue>191</blue></color>
-	</division>
-	<division>
-		<name>Upper Nile</name>
-		<capital>Malakal</capital>
-		<color><red>128</red><green>255</green><blue>128</blue></color>
 	</division>
 </map>
