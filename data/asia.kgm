@@ -192,6 +192,16 @@
 		</color>
 	</division>
 	<division>
+		<name>South Sudan</name>
+		<ignore>yes</ignore>
+		<capital>Juba</capital>
+		<color>
+			<red>5</red>
+			<green>121</green>
+			<blue>22</blue>
+		</color>
+	</division>
+	<division>
 		<name>Syria</name>
 		<capital>Damascus</capital>
 		<flag>syria.png</flag>

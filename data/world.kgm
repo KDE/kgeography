@@ -512,6 +512,16 @@
 		</color>
 	</division>
 	<division>
+		<name>South Sudan</name>
+		<flag>southsudan.png</flag>
+		<capital>Juba</capital>
+		<color>
+			<red>254</red>
+			<green>218</green>
+			<blue>185</blue>
+		</color>
+	</division>
+	<division>
 		<name>Swaziland</name>
 		<flag>swaziland.png</flag>
 		<capital>Mbabane</capital>
