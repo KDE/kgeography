@@ -75,6 +75,7 @@ install(FILES
    ghana.png
    mexico.png
    sudan.png
+   southsudan.png
    botswana.png
    greece.png
    moldova.png
