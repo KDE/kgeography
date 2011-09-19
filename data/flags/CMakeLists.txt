@@ -75,6 +75,7 @@ install(FILES
    ghana.png
    mexico.png
    sudan.png
+   southsudan.png
    botswana.png
    greece.png
    moldova.png
@@ -192,7 +193,6 @@ install(FILES
    fiji.png
    tonga.png
    australia.png
-   NewZealand.png
    Vatican.png
    andorra.png
    Monaco.png
@@ -207,7 +207,6 @@ install(FILES
    easter_island.png
    new_caledonia.png
    tokelau.png
-   east_timor.png
    niue.png
    tuvalu.png
    french_polynesia.png
@@ -230,7 +229,6 @@ install(FILES
    martinique.png
    montserrat.png
    st_kitts_and_nevis.png
-   antigua_and_barbuda.png
    anguilla.png
    british_virgin_islands.png
    us_virgin_islands.png
