@@ -127,6 +127,8 @@ bool boxAsker::eventFilter(QObject *obj, QEvent *event)
 
 boxAsker::~boxAsker()
 {
+	if ( p_accept->parent() == NULL )
+		delete p_accept;
 	delete[] p_rb;
 }
 
