@@ -56,30 +56,30 @@ void placeMapWidget::init(KGmap *map, QImage *mapImage)
 	QMetaObject::invokeMethod(this, "setAutomaticZoom", Qt::QueuedConnection, Q_ARG(bool, p_automaticZoom));
 }
 
-size_t placeMapWidget::nbPixels(int pixi) const
+size_t placeMapWidget::nbPixels(int pixelIndex) const
 {
-	return p_pixelsStats[pixi];
+	return p_pixelsStats[pixelIndex];
 }
 
-static int indexOfPair(uchar pixiMin, uchar pixiMax)
+static int indexOfPair(uchar pixelIndexMin, uchar pixelIndexMax)
 {
-	const int pairIdx = pixiMin + pixiMax * (pixiMax - 1) / 2;
-	return pairIdx;
+	const int pairIndex = pixelIndexMin + pixelIndexMax * (pixelIndexMax - 1) / 2;
+	return pairIndex;
 }
 
 
-size_t placeMapWidget::nbBorderPixels(int pixi1, int pixi2) const
+size_t placeMapWidget::nbBorderPixels(int pixelIndex1, int pixelIndex2) const
 {
-	int pairIdx = indexOfPair(qMin(pixi1, pixi2), qMax(pixi1, pixi2));
-	return p_bordersStats[pairIdx];
+	int pairIndex = indexOfPair(qMin(pixelIndex1, pixelIndex2), qMax(pixelIndex1, pixelIndex2));
+	return p_bordersStats[pairIndex];
 }
 
-static void addOrderedPixel(QVector<uchar> *pixels, uchar pixi)
+static void addOrderedPixel(QVector<uchar> *pixels, uchar pixelIndex)
 {
 	int i = pixels->size();
-	do { --i;} while ( i >= 0 && pixels->at(i) > pixi );;
-	if ( i < 0 || pixels->at(i) < pixi )
-			pixels->insert(i+1, pixi);
+	do { --i;} while ( i >= 0 && pixels->at(i) > pixelIndex );;
+	if ( i < 0 || pixels->at(i) < pixelIndex )
+			pixels->insert(i+1, pixelIndex);
 }
 
 QString writeUpBorderStats(const QVector<size_t> &stats, const QVector<size_t> &histo, const QVector<QRgb> &cmap)
@@ -134,10 +134,10 @@ void placeMapWidget::createGameMapImage()
 	{
 		for (int y = 1; y < height -1; y++)
 		{
-			const uchar pixi = bits[y * nbBytesPerLine + x];
-			p_pixelsStats[pixi] += 1;
+			const uchar pixelIndex = bits[y * nbBytesPerLine + x];
+			p_pixelsStats[pixelIndex] += 1;
 
-			if(indexesToCopy.contains(pixi) )
+			if(indexesToCopy.contains(pixelIndex) )
 			{
 				QVector<uchar> orderedNeighbours;
 				bool outerFound = false;
@@ -148,11 +148,11 @@ void placeMapWidget::createGameMapImage()
 				{
 					const int ox = x + deltaX[neighbourIdx];
 					const int oy = y + deltaY[neighbourIdx];
-					const uchar oPixi = bits[oy * nbBytesPerLine + ox];
-					if (oPixi != pixi)
+					const uchar oPixelIndex = bits[oy * nbBytesPerLine + ox];
+					if (oPixelIndex != pixelIndex)
 					{
-						addOrderedPixel(&orderedNeighbours, oPixi);
-						if ( indexesToCopy.contains(oPixi) )
+						addOrderedPixel(&orderedNeighbours, oPixelIndex);
+						if ( indexesToCopy.contains(oPixelIndex) )
 							outerFound = true;
 						else
 							divisionColorFound = true;
@@ -168,16 +168,16 @@ void placeMapWidget::createGameMapImage()
 				{
 					for ( int minIdx = maxIdx ; minIdx >= 0 ; minIdx-- )
 					{
-						const uchar pixiMin = orderedNeighbours[minIdx];
-						const uchar pixiMax = orderedNeighbours[maxIdx + 1];
-						const int pairIdx = indexOfPair(pixiMin, pixiMax);
-						p_bordersStats[pairIdx] += 1;
+						const uchar pixelIndexMin = orderedNeighbours[minIdx];
+						const uchar pixelIndexMax = orderedNeighbours[maxIdx + 1];
+						const int pairIndex = indexOfPair(pixelIndexMin, pixelIndexMax);
+						p_bordersStats[pairIndex] += 1;
 					}
 				}
 			}
 		}
 	}
-	p_outerPixis = indexesToCopy;
+	p_outerPixelIndices = indexesToCopy;
 }
 
 void placeMapWidget::setMapMove(bool b)

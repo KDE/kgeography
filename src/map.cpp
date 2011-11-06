@@ -202,15 +202,6 @@ QList<const division*> KGmap::getIgnoredDivisions(division::askMode am) const
 	return ignoredDivisions;
 }
 
-QList<const division*> KGmap::getDivisions(division::askMode am) const
-{
-	QList<const division*> divisions;
-	foreach (const division* div, p_divisions)
-		if (div->canAsk(am))
-			divisions << div;
-	return divisions;
-}
-
 division *KGmap::getDivision(const QString &divisionName) const
 {
 	foreach (division* div, p_divisions)

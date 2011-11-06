@@ -49,7 +49,7 @@ placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askW
 	p_fill -> show();
 	vbl -> addWidget(p_next);
 	vbl -> addWidget(p_fill, 1);
-	p_placedPixels = p_mapWidget -> outerPixis();
+	p_placedPixelIndices = p_mapWidget -> outerPixelIndices();
 	nextQuestion();
 }
 
@@ -112,10 +112,10 @@ void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint
 		if (! consideredGood)
 		{
 			bool hasBorderShown = false;
-			for ( int i = p_placedPixels.size() ; --i >= 0 && !hasBorderShown ; )
+			for ( int i = p_placedPixelIndices.size() ; --i >= 0 && !hasBorderShown ; )
 			{
-				uchar pixi = p_placedPixels[i];
-				size_t nb = p_mapWidget -> nbBorderPixels(pixi, indexOfCurrent);
+				uchar pixelIndex = p_placedPixelIndices[i];
+				size_t nb = p_mapWidget -> nbBorderPixels(pixelIndex, indexOfCurrent);
 				hasBorderShown = nb > 3;
 			}
 			consideredGood = !hasBorderShown && distance < 16.0;
@@ -140,14 +140,14 @@ void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint
 			{
 				for ( int dx = definedFirstDiag.x() -1 ; dx >= 0 ; dx-- )
 				{
-					int origPixi = p_mapImage -> pixelIndex(initialRect.left() + dx, initialRect.top() + dy);
-					if ( origPixi != indexOfCurrent )
+					int origPixelIndex = p_mapImage -> pixelIndex(initialRect.left() + dx, initialRect.top() + dy);
+					if ( origPixelIndex != indexOfCurrent )
 						continue;
-					int userPixi = p_mapImage -> pixelIndex(definedRectUser.left() + dx, definedRectUser.top() + dy);
-					if ( userPixi == origPixi ) goodCount++;
+					int userPixelIndex = p_mapImage -> pixelIndex(definedRectUser.left() + dx, definedRectUser.top() + dy);
+					if ( userPixelIndex == origPixelIndex ) goodCount++;
 					else
 					{
-						stats[userPixi]++;
+						stats[userPixelIndex]++;
 						badCount++;
 					}
 				}
@@ -173,7 +173,7 @@ void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint
 				c = p_mapImage -> colorTable()[indexOfMax];
 			}
 		}
-		p_placedPixels.append(indexOfCurrent);
+		p_placedPixelIndices.append(indexOfCurrent);
 		p_currentAnswer.setAnswer(QColor(c));
 		questionAnswered(consideredGood);
 		nextQuestion();

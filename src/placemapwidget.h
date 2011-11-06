@@ -34,9 +34,9 @@ Q_OBJECT
 		void placeDivision(QImage *divisionImage, QRect& position);
 		QSize mapSize() const;
 
-		size_t nbPixels(int pixi) const;
-		size_t nbBorderPixels(int pixi1, int pixi2) const;
-		const QVector<uchar> outerPixis() const { return p_outerPixis;}
+		size_t nbPixels(int pixelIndex) const;
+		size_t nbBorderPixels(int pixelIndex1, int pixelIndex2) const;
+		const QVector<uchar> outerPixelIndices() const { return p_outerPixelIndices;}
 
 	public slots:
 		void setGameImage();
@@ -80,7 +80,7 @@ Q_OBJECT
 		QPoint p_prev; // for moving, in view coords
 		bool p_automaticZoom;
 
-		QVector<uchar> p_outerPixis;
+		QVector<uchar> p_outerPixelIndices;
 		QVector<size_t> p_pixelsStats; // how many pixels have given indexed val
 		QVector<size_t> p_bordersStats;// how many border-like pixels have indexed vals pair
 };
