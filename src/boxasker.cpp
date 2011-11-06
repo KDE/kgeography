@@ -37,15 +37,15 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 
 	QGroupBox *bg = new QGroupBox(this);
 	p_label = new QLabel(this);
-	p_rb = new QRadioButton*[NB_CHOICES];
+	p_radioButtons.resize(NB_CHOICES);
 	QLabel ** labels = new QLabel*[NB_CHOICES];
 	for(int i = 0; i < NB_CHOICES; i++)
 	{
-		labels[i] = new QLabel(QString::number(i +1), bg);
-		p_rb[i] = new QRadioButton(bg);
+		labels[i] = new QLabel(QString::number(i +1));
+		p_radioButtons[i] = new QRadioButton(bg);
 
-		p_rb[i] -> installEventFilter(this);
-		connect(p_rb[i], SIGNAL(toggled(bool)), this, SLOT(atLeastOneSelected()));
+		p_radioButtons[i] -> installEventFilter(this);
+		connect(p_radioButtons[i], SIGNAL(toggled(bool)), this, SLOT(atLeastOneSelected()));
 	}
 	p_accept = new KPushButton();
 
@@ -60,6 +60,11 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 	delete labels;
 }
 
+boxAsker::~boxAsker()
+{
+	if ( p_accept->parent() == NULL )
+		delete p_accept;
+}
 
 void boxAsker::layoutCentered(QGroupBox *bg, QLabel ** labels)
 {
@@ -70,7 +75,7 @@ void boxAsker::layoutCentered(QGroupBox *bg, QLabel ** labels)
 	for(int i = 0; i < NB_CHOICES; i++)
 	{
 		gridLayout -> addWidget(labels[i], i, 0);
-		gridLayout -> addWidget(p_rb[i], i, 1);
+		gridLayout -> addWidget(p_radioButtons[i], i, 1);
 	}
 
 	centeringLayout -> addStretch(1);
@@ -89,20 +94,22 @@ void boxAsker::layoutCentered(QGroupBox *bg, QLabel ** labels)
 
 void boxAsker::layoutTop(QGroupBox *bg, QLabel ** labels)
 {
-	//QVBoxLayout *gbLayout = new QVBoxLayout(bg);
 	QHBoxLayout *centeringLayout = new QHBoxLayout(bg);
 	QGridLayout *gridLayout = new QGridLayout();
+
 	for(int i = 0; i < NB_CHOICES; i++)
 	{
 		gridLayout -> addWidget(labels[i], i, 0);
-		gridLayout -> addWidget(p_rb[i], i, 1);
-		gridLayout -> addWidget(p_rb[i], i, 1);
+		gridLayout -> addWidget(p_radioButtons[i], i, 1);
+		gridLayout -> addWidget(p_radioButtons[i], i, 1);
 	}
+
 	//gbLayout->addStretch(1);
 	centeringLayout -> addItem(gridLayout);
 	centeringLayout -> addStretch(1);
 
 	while ( p_lay->takeAt(0) != NULL ) { }
+
 	p_lay -> addWidget(p_label);
 	p_lay -> addWidget(bg);
 	p_lay -> addStretch(1);
@@ -125,13 +132,6 @@ bool boxAsker::eventFilter(QObject *obj, QEvent *event)
 	}
 }
 
-boxAsker::~boxAsker()
-{
-	if ( p_accept->parent() == NULL )
-		delete p_accept;
-	delete[] p_rb;
-}
-
 void boxAsker::setQuestion(const QString &q)
 {
 	p_label -> setText(q);
@@ -141,15 +141,15 @@ void boxAsker::keyPressEvent(QKeyEvent *e)
 {
 	// we do this on press because it is done so for 0->1-2->3 and 3->2->1->0 movements
 	// (those keys are subject to repeat, they have to be treated as press)
-	if ( e -> key() == Qt::Key_Down && p_rb[NB_CHOICES -1] -> hasFocus() )
+	if ( e -> key() == Qt::Key_Down && p_radioButtons[NB_CHOICES -1] -> hasFocus() )
 	{
-		if ( p_rb[NB_CHOICES -1] -> isChecked() ) p_rb[0] -> setChecked(true);
-		p_rb[0] -> setFocus();
+		if ( p_radioButtons[NB_CHOICES -1] -> isChecked() ) p_radioButtons[0] -> setChecked(true);
+		p_radioButtons[0] -> setFocus();
 	}
-	else if ( e -> key() == Qt::Key_Up && p_rb[0] -> hasFocus() )
+	else if ( e -> key() == Qt::Key_Up && p_radioButtons[0] -> hasFocus() )
 	{
-		if ( p_rb[0] -> isChecked() ) p_rb[NB_CHOICES -1] -> setChecked(true);
-		p_rb[NB_CHOICES -1] -> setFocus();
+		if ( p_radioButtons[0] -> isChecked() ) p_radioButtons[NB_CHOICES -1] -> setChecked(true);
+		p_radioButtons[NB_CHOICES -1] -> setFocus();
 	}
 }
 
@@ -158,9 +158,9 @@ void boxAsker::keyReleaseEvent(QKeyEvent *e)
 	if (e -> key() == Qt::Key_Return || e -> key() == Qt::Key_Enter) checkAnswer();
 	else if ( e -> key() >= Qt::Key_1 && e -> key() <= (Qt::Key_1 + NB_CHOICES -1) )
 	{
-		p_rb[e -> key() - Qt::Key_1] -> setFocus();
+		p_radioButtons[e -> key() - Qt::Key_1] -> setFocus();
 		// we check the box after the focus because the check can trigger immediate destruction of the asker at last question
-		p_rb[e -> key() - Qt::Key_1] -> setChecked(true);
+		p_radioButtons[e -> key() - Qt::Key_1] -> setChecked(true);
 		// next line triggered by previous, no need to go this way, crashes at end.
 		//if ( ! kgeographySettings::self() -> waitsForValidation() )			checkAnswer();
 	}
@@ -173,11 +173,11 @@ void boxAsker::nextQuestionHook(const QString &division)
 	QStringList auxList;
 	int j;
 
-	for(int i = 0; i < NB_CHOICES; i++) p_rb[i] -> setAutoExclusive(false);
-	for(int i = 0; i < NB_CHOICES; i++) p_rb[i] -> setChecked(false);
-	for(int i = 0; i < NB_CHOICES; i++) p_rb[i] -> setText(QString());
-	for(int i = 0; i < NB_CHOICES; i++) p_rb[i] -> setIcon(QIcon());
-	for(int i = 0; i < NB_CHOICES; i++) p_rb[i] -> setAutoExclusive(true);
+	for(int i = 0; i < NB_CHOICES; i++) p_radioButtons[i] -> setAutoExclusive(false);
+	for(int i = 0; i < NB_CHOICES; i++) p_radioButtons[i] -> setChecked(false);
+	for(int i = 0; i < NB_CHOICES; i++) p_radioButtons[i] -> setText(QString());
+	for(int i = 0; i < NB_CHOICES; i++) p_radioButtons[i] -> setIcon(QIcon());
+	for(int i = 0; i < NB_CHOICES; i++) p_radioButtons[i] -> setAutoExclusive(true);
 
 	p_accept -> setEnabled(false);
 
@@ -191,7 +191,7 @@ void boxAsker::nextQuestionHook(const QString &division)
 	j = 0;
 	while (j < NB_CHOICES)
 	{
-		if (p_rb[j] -> text().isNull() && p_rb[j] -> icon().isNull())
+		if (p_radioButtons[j] -> text().isNull() && p_radioButtons[j] -> icon().isNull())
 		{
 			otherDivision = p_map -> getRandomDivision(askMode());
 			while (auxList.contains(otherDivision))
@@ -222,7 +222,7 @@ void boxAsker::checkAnswer()
 	i = 0;
 	while(!any && i < NB_CHOICES)
 	{
-		if (p_rb[i] -> isChecked())
+		if (p_radioButtons[i] -> isChecked())
 		{
 			any = true;
 			correct = (i == p_position);

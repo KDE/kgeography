@@ -63,14 +63,14 @@ bool flagDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int i,
 		QImage image(p_map -> getDivisionFlagFile(division));
 		if (p_flag -> img == image) return false;
 	}
-	p_rb[i] -> setText(i18nc("@option:radio This flag belongs to:", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
+	p_radioButtons[i] -> setText(i18nc("@option:radio This flag belongs to:", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 	
 	return true;
 }
 
 void flagDivisionAsker::setAnswerHook(int userSays)
 {
-	p_currentAnswer.setAnswer(p_rb[userSays] -> text());
+	p_currentAnswer.setAnswer(p_radioButtons[userSays] -> text());
 }
 
 QString flagDivisionAsker::getQuestionHook() const
