@@ -33,31 +33,32 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 {
 	QVBoxLayout *vbl = static_cast<QVBoxLayout*>(w -> layout());
 	vbl -> addStretch(1);
+
+	p_headWidget = NULL;
 	p_lay = new QVBoxLayout(this);
 
-	QGroupBox *bg = new QGroupBox(this);
+	p_groupBox = new QGroupBox(this);
+	p_groupLayout = new QGridLayout(p_groupBox);
 	p_label = new QLabel(this);
+
 	p_radioButtons.resize(NB_CHOICES);
-	QLabel ** labels = new QLabel*[NB_CHOICES];
+	p_answerLabels.resize(NB_CHOICES);
 	for(int i = 0; i < NB_CHOICES; i++)
 	{
-		labels[i] = new QLabel(QString::number(i +1));
-		p_radioButtons[i] = new QRadioButton(bg);
+		p_answerLabels[i] = new QLabel(QString::number(i +1));
+		p_radioButtons[i] = new QRadioButton(p_groupBox);
 
 		p_radioButtons[i] -> installEventFilter(this);
 		connect(p_radioButtons[i], SIGNAL(toggled(bool)), this, SLOT(atLeastOneSelected()));
 	}
 	p_accept = new KPushButton();
 
-	if ( kgeographySettings::self() -> questionPlacingScheme() < 1 )
-		layoutTop(bg, labels);
-	else
-		layoutCentered(bg, labels);
+	layoutGroupBox();
+	layoutAligned();
 
 	KAcceleratorManager::setNoAccel(this);
 
-	bg -> setFocus();
-	delete labels;
+	p_groupBox -> setFocus();
 }
 
 boxAsker::~boxAsker()
@@ -66,56 +67,66 @@ boxAsker::~boxAsker()
 		delete p_accept;
 }
 
-void boxAsker::layoutCentered(QGroupBox *bg, QLabel ** labels)
+void boxAsker::updateLayout()
 {
-	QHBoxLayout *centeringLayout = new QHBoxLayout(bg);
-	QGridLayout *gridLayout = new QGridLayout();
-	gridLayout -> setHorizontalSpacing(6);
-	p_label -> setAlignment(Qt::AlignHCenter);
-	for(int i = 0; i < NB_CHOICES; i++)
-	{
-		gridLayout -> addWidget(labels[i], i, 0);
-		gridLayout -> addWidget(p_radioButtons[i], i, 1);
-	}
-
-	centeringLayout -> addStretch(1);
-	centeringLayout -> addItem(gridLayout);
-	centeringLayout -> addStretch(1);
-
-	while ( p_lay->takeAt(0) != NULL ) { }
-	p_lay -> addStretch(1);
-	p_lay -> addWidget(p_label);
-	p_lay -> addWidget(bg, 1);
-	p_lay -> addStretch(1);
-
-	if ( kgeographySettings::self() -> waitsForValidation() )
-		p_lay -> addWidget(p_accept);
+	layoutGroupBox();
+	layoutAligned();
 }
 
-void boxAsker::layoutTop(QGroupBox *bg, QLabel ** labels)
+void boxAsker::layoutGroupBox()
 {
-	QHBoxLayout *centeringLayout = new QHBoxLayout(bg);
-	QGridLayout *gridLayout = new QGridLayout();
+	while ( p_groupLayout->takeAt(0) != NULL ) { }
 
+	int horizAlignCode = kgeographySettings::self() -> questionPlacingScheme() % 3;
+	Qt::Alignment horizAlignment = horizAlignCode == 0 ? Qt::AlignLeft : horizAlignCode == 1 ? Qt::AlignHCenter : Qt::AlignRight;
+	p_groupLayout->setColumnStretch(0, horizAlignment == Qt::AlignLeft ? 0 : 1);
+	p_groupLayout->setColumnStretch(3, horizAlignment == Qt::AlignRight ? 0 : 1);
+
+	p_groupLayout -> setHorizontalSpacing(6);
 	for(int i = 0; i < NB_CHOICES; i++)
 	{
-		gridLayout -> addWidget(labels[i], i, 0);
-		gridLayout -> addWidget(p_radioButtons[i], i, 1);
-		gridLayout -> addWidget(p_radioButtons[i], i, 1);
+		p_answerLabels[i]->setAlignment(Qt::AlignRight);
+		p_groupLayout -> addWidget(p_answerLabels[i], i, 0);
+		p_groupLayout -> addWidget(p_radioButtons[i], i, 1);
 	}
+}
 
-	//gbLayout->addStretch(1);
-	centeringLayout -> addItem(gridLayout);
-	centeringLayout -> addStretch(1);
-
+void boxAsker::layoutAligned()
+{
 	while ( p_lay->takeAt(0) != NULL ) { }
 
-	p_lay -> addWidget(p_label);
-	p_lay -> addWidget(bg);
-	p_lay -> addStretch(1);
+	if ( p_headWidget != NULL )
+		p_lay->addWidget(p_headWidget);
 
-	if ( kgeographySettings::self() -> waitsForValidation() )
-		p_lay -> addWidget(p_accept);
+	int horizAlignCode = kgeographySettings::self() -> questionPlacingScheme() % 3;
+	Qt::Alignment horizAlignment = horizAlignCode == 0 ? Qt::AlignLeft : horizAlignCode == 1 ? Qt::AlignHCenter : Qt::AlignRight;
+	int vertAlignCode = kgeographySettings::self() -> questionPlacingScheme() / 3 % 3;
+	Qt::Alignment vertAlignment = vertAlignCode == 0 ? Qt::AlignTop : vertAlignCode == 1 ? Qt::AlignVCenter : Qt::AlignBottom;
+
+	p_label -> setAlignment(horizAlignment);
+	p_groupBox -> setAlignment(horizAlignment);
+
+	p_lay -> addWidget(p_label);
+
+	if ( vertAlignment != Qt::AlignTop ) {
+		p_lay -> addStretch(1);
+	}
+
+	p_lay -> addWidget(p_groupBox, 0);
+
+	if ( vertAlignment != Qt::AlignBottom ) {
+		p_lay -> addStretch(1);
+	}
+
+	if ( kgeographySettings::self() -> waitsForValidation() ) {
+		p_lay->addWidget(p_accept);
+		p_accept->show();
+	}
+	else {
+		if ( p_accept->isVisible() )
+			checkAnswer();
+		p_accept -> hide();
+	}
 }
 
 bool boxAsker::eventFilter(QObject *obj, QEvent *event)
@@ -252,6 +263,7 @@ void boxAsker::init()
 
 void boxAsker::setHeadWidget(QWidget *headWidget)
 {
+	p_headWidget = headWidget;
 	p_lay -> insertWidget(0, headWidget);
 }
 

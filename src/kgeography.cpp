@@ -167,10 +167,18 @@ void kgeography::showPreferencesDialog()
 
 	// User edited the configuration - update your local copies of the 
 	// configuration data 
-	connect( dialog, SIGNAL(settingsChanged()), 
-			 this, SLOT(updateConfiguration()) ); 
+	connect(dialog, SIGNAL(settingsChanged(const QString&)), 
+			this, SLOT(updateConfiguration()) ); 
 
 	dialog->show();
+}
+
+void kgeography::updateConfiguration()
+{
+    boxAsker *aBoxAsker = dynamic_cast<boxAsker*>(p_askWidget);
+    if ( aBoxAsker != NULL ) {
+        aBoxAsker->updateLayout();
+    }
 }
 
 void kgeography::showEvent(QShowEvent *)

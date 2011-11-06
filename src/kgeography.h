@@ -50,6 +50,7 @@ Q_OBJECT
 		void setMoveActionEnabled(bool b);
 
 		void showPreferencesDialog();
+		void updateConfiguration();
 
 	private:
 		QSize getPreferredSize();

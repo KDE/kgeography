@@ -29,6 +29,9 @@ Q_OBJECT
 
 		bool eventFilter(QObject *obj, QEvent *event);
 
+	public slots:
+		void updateLayout();
+
 	protected:
 		virtual bool nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer) = 0;
 		void nextQuestionHook(const QString &division);
@@ -52,13 +55,17 @@ Q_OBJECT
 		void checkAnswer();
 	
 	private:
-		void layoutCentered(QGroupBox *bg, QLabel ** labels);
-		void layoutTop(QGroupBox *bg, QLabel ** labels);
+		void layoutGroupBox();
+		void layoutAligned();
 	
 		QVBoxLayout *p_lay;
+		QGridLayout *p_groupLayout;
 		KPushButton *p_accept;
 
+		QWidget *p_headWidget;
 		QLabel *p_label;
+		QGroupBox *p_groupBox;;
+		QVector<QLabel*> p_answerLabels;
 };
 
 #endif
