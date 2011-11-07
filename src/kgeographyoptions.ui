@@ -16,25 +16,67 @@
      <property name="title">
       <string>&amp;Question alignment</string>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="topleftRadio">
+        <property name="text">
+         <string>TopL&amp;eft</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QRadioButton" name="topRadio">
+        <property name="text">
+         <string>&amp;Top</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QRadioButton" name="toprightRadio">
+        <property name="text">
+         <string>TopR&amp;ight</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
        <widget class="QRadioButton" name="leftRadio">
         <property name="text">
          <string>&amp;Left</string>
         </property>
        </widget>
       </item>
-      <item>
+      <item row="1" column="1">
        <widget class="QRadioButton" name="centerRadio">
         <property name="text">
          <string>&amp;Center</string>
         </property>
        </widget>
       </item>
-      <item>
+      <item row="1" column="2">
        <widget class="QRadioButton" name="rightRadio">
         <property name="text">
          <string>&amp;Right</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QRadioButton" name="bottomleftRadio">
+        <property name="text">
+         <string>BottomLe&amp;ft</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QRadioButton" name="bottomRadio">
+        <property name="text">
+         <string>&amp;Bottom</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QRadioButton" name="bottomrightRadio">
+        <property name="text">
+         <string>BottomRi&amp;ght</string>
         </property>
        </widget>
       </item>
@@ -44,7 +86,7 @@
    <item>
     <widget class="QCheckBox" name="kcfg_waitsForValidation">
      <property name="toolTip">
-      <string>Whether to user will have to click &quot;Accept&quot; after choosing an answer or not</string>
+      <string>Whether the user will have to click &quot;Accept&quot; after choosing an answer or not</string>
      </property>
      <property name="text">
       <string>&amp;Wait for validation</string>
@@ -54,7 +96,7 @@
    <item>
     <widget class="QCheckBox" name="kcfg_focusFollowsMouse">
      <property name="toolTip">
-      <string>Whether moving the mouse over answers focus them or not</string>
+      <string>Whether pressing space will trigger button under mouse or not</string>
      </property>
      <property name="text">
       <string>&amp;Focus follows mouse</string>

@@ -10,11 +10,17 @@
 		</entry>
 		<entry name="questionPlacingScheme" type="Enum">
 			<label>Placement alignment of the question</label>
-			<default>Left</default>
+			<default>TopLeft</default>
 			<choices>
+				<choice name="TopLeft" />
+				<choice name="Top" />
+				<choice name="TopRight" />
 				<choice name="Left" />
 				<choice name="Center" />
 				<choice name="Right" />
+				<choice name="BottomLeft" />
+				<choice name="Bottom" />
+				<choice name="BottomRight" />
 			</choices>
 		</entry>
 		<entry name="waitsForValidation" type="Bool">
