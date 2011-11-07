@@ -49,6 +49,7 @@ placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askW
 	p_fill -> show();
 	vbl -> addWidget(p_next);
 	vbl -> addWidget(p_fill, 1);
+	p_placedPixelIndices = p_mapWidget -> outerPixelIndices();
 	nextQuestion();
 }
 
@@ -97,15 +98,84 @@ void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint
 	else
 	{
 		p_mapWidget->placeDivision(p_currentDivisionImage, p_currentDivisionRect);
+		p_mapWidget->unsetCursor();
 		// the image is no longer needed
 		delete p_currentDivisionImage;
 
-		p_currentAnswer.setAnswer(QColor(c));
 		double distX = p_currentDivisionRect.center().x() - mapPoint.x();
 		double distY = p_currentDivisionRect.center().y() - mapPoint.y();
 		double distance = sqrt((double)distX * distX + distY * distY); 
-		// TODO: See if 5 is big enough or we should take into account the division size or what
-		questionAnswered(distance < 5.0);
+		int indexOfCurrent = p_mapImage -> colorTable().indexOf(p_currentRgb);
+		bool consideredGood = distance < 5.0;
+		// if we consider it good enough don't transmit a may be wrong color
+		if (consideredGood) c = p_currentRgb;
+		if (! consideredGood)
+		{
+			bool hasBorderShown = false;
+			for ( int i = p_placedPixelIndices.size() ; --i >= 0 && !hasBorderShown ; )
+			{
+				uchar pixelIndex = p_placedPixelIndices[i];
+				size_t nb = p_mapWidget -> nbBorderPixels(pixelIndex, indexOfCurrent);
+				hasBorderShown = nb > 3;
+			}
+			consideredGood = !hasBorderShown && distance < 16.0;
+			if (consideredGood) c = p_currentRgb;
+		}
+		if (! consideredGood)
+		{
+			QRect definedRect(0, 0, p_mapImage -> width(), p_mapImage -> height());
+			QPoint v = QPoint(mapPoint.x(), mapPoint.y()) - p_currentDivisionRect.center();
+			QRect initialRect(p_currentDivisionRect);
+			QRect userRect = initialRect.translated(v);
+			QRect definedRectUser = userRect & definedRect;
+			QPoint definedFirstDiag = definedRectUser.bottomRight() - definedRectUser.topLeft();
+			QPoint origFirstDiag = userRect.bottomRight() - userRect.topLeft();
+			QPoint badDiff = origFirstDiag -definedFirstDiag;
+			QPoint diagDiff = origFirstDiag -badDiff;
+			QVector<size_t> stats(p_mapImage -> colorTable().size());
+			size_t goodCount = 0;
+			size_t outCount = badDiff.x() * badDiff.y() + badDiff.x() * diagDiff.y() + diagDiff.x() * badDiff.y();
+			size_t badCount = outCount;
+			for ( int dy = definedFirstDiag.y() -1 ; dy >= 0 ; dy-- )
+			{
+				for ( int dx = definedFirstDiag.x() -1 ; dx >= 0 ; dx-- )
+				{
+					int origPixelIndex = p_mapImage -> pixelIndex(initialRect.left() + dx, initialRect.top() + dy);
+					if ( origPixelIndex != indexOfCurrent )
+						continue;
+					int userPixelIndex = p_mapImage -> pixelIndex(definedRectUser.left() + dx, definedRectUser.top() + dy);
+					if ( userPixelIndex == origPixelIndex ) goodCount++;
+					else
+					{
+						stats[userPixelIndex]++;
+						badCount++;
+					}
+				}
+			}
+			consideredGood = goodCount > 0.5 * (goodCount + badCount);
+			if (consideredGood) c = p_currentRgb;
+			else if (outCount > 0.5 * (goodCount + badCount))
+			{
+				c = p_map -> getIgnoredDivisions(askMode())[0] -> getRGB();
+			}
+			else
+			{
+				int indexOfMax = -1;
+				size_t maxCount = 0;
+				for ( int i = stats.size() -1 ; i >= 0 ; i-- )
+				{
+					if ( stats[i] > maxCount )
+					{
+						indexOfMax = i;
+						maxCount = stats[i];
+					}
+				}
+				c = p_mapImage -> colorTable()[indexOfMax];
+			}
+		}
+		p_placedPixelIndices.append(indexOfCurrent);
+		p_currentAnswer.setAnswer(QColor(c));
+		questionAnswered(consideredGood);
 		nextQuestion();
 	}
 }
@@ -116,7 +186,9 @@ void placeAsker::nextQuestionHook(const QString &division)
 	p_next -> setText(i18nc("@info:status", "Please place in the map:<nl/>%1", divisionName));
 	p_next -> show();
 	p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is region name", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
-	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
+	QColor color = p_map -> getColor(division);
+	p_currentRgb = color.rgb();
+	p_currentAnswer.setCorrectAnswer(color);
 	setCurrentDivision(division);
 	p_mapWidget->setCurrentDivisionImage(p_currentDivisionImage);
 }

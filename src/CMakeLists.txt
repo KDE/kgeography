@@ -28,6 +28,8 @@ set(kgeography_SRCS
    answersdialog.cpp )
 
 
+kde4_add_ui_files(kgeography_SRCS KGeographyOptions.ui )
+
 kde4_add_kcfg_files(kgeography_SRCS settings.kcfgc )
 
 #kde4_add_app_icon(kgeography_SRCS "${KDE4_ICON_DIR}/oxygen/*/apps/kgeography.png")

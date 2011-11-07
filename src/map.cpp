@@ -193,9 +193,9 @@ QColor KGmap::getColor(const QString &s) const
 	return QColor(getDivision(s)->getRGB());
 }
 
-const QList<division*> KGmap::getIgnoredDivisions(division::askMode am) const
+QList<const division*> KGmap::getIgnoredDivisions(division::askMode am) const
 {
-	QList<division*> ignoredDivisions;
+	QList<const division*> ignoredDivisions;
 	foreach (division* div, p_divisions)
 		if (!div->canAsk(am))
 			ignoredDivisions << div;

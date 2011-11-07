@@ -13,6 +13,7 @@
 #include <kaction.h>
 #include <kdialog.h>
 #include <klocale.h>
+#include <kconfigdialog.h>
 #include <kinputdialog.h>
 #include <kmessagebox.h>
 #include <kpushbutton.h>
@@ -40,6 +41,7 @@
 #include "map.h"
 #include "placeasker.h"
 #include "integerinputdialog.h"
+#include "ui_KGeographyOptions.h"
 
 kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResultsDialog(false)
 {
@@ -135,6 +137,8 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 	p_showAuthor->setEnabled(false);
 	connect(p_showAuthor, SIGNAL(triggered()), this, SLOT(showMapAuthor()));
 
+	QAction *prefAction = KStandardAction::preferences(this, SLOT(showPreferencesDialog()), actionCollection());
+
 	setupGUI(Keys | ToolBar | Save | Create);
 
 	show();
@@ -144,6 +148,37 @@ kgeography::~kgeography()
 {
 	delete p_askWidget;
 	delete p_map;
+}
+
+void kgeography::showPreferencesDialog()
+{
+	if ( KConfigDialog::showDialog( "settings" ) )
+		return; 
+
+	// KConfigDialog didn't find an instance of this dialog, so lets
+	// create it : 
+	KConfigDialog* dialog = new KConfigDialog(this, "settings",
+											  kgeographySettings::self()); 
+	QWidget *w = new QWidget();
+	Ui::Options confWdg;
+	confWdg.setupUi(w);
+
+	dialog->addPage(w, i18n("General"), "general" ); 
+
+	// User edited the configuration - update your local copies of the 
+	// configuration data 
+	connect(dialog, SIGNAL(settingsChanged(const QString&)), 
+			this, SLOT(updateConfiguration()) ); 
+
+	dialog->show();
+}
+
+void kgeography::updateConfiguration()
+{
+    boxAsker *aBoxAsker = dynamic_cast<boxAsker*>(p_askWidget);
+    if ( aBoxAsker != NULL ) {
+        aBoxAsker->updateLayout();
+    }
 }
 
 void kgeography::showEvent(QShowEvent *)

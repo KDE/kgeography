@@ -36,17 +36,17 @@ bool divisionFlagAsker::nextBoxAskerQuestionHook(const QString &division, int i,
 	else
 	{
 		// There are some maps like the Pacific one where two divisions have the same flag
-		if (icon.pixmap(pixmapSize).toImage() == p_rb[p_position]->icon().pixmap(pixmapSize).toImage()) return false;
+		if (icon.pixmap(pixmapSize).toImage() == p_radioButtons[p_position]->icon().pixmap(pixmapSize).toImage()) return false;
 	}
-	p_rb[i] -> setIcon(icon);
-	p_rb[i] -> show();
-	p_rb[i] -> setIconSize(pixmapSize);
+	p_radioButtons[i] -> setIcon(icon);
+	p_radioButtons[i] -> show();
+	p_radioButtons[i] -> setIconSize(pixmapSize);
 	return true;
 }
 
 void divisionFlagAsker::setAnswerHook(int userSays)
 {
-	QIcon i = p_rb[userSays] -> icon();
+	QIcon i = p_radioButtons[userSays] -> icon();
 	p_currentAnswer.setAnswer(i.pixmap(QSize(60, 40)));
 }
 

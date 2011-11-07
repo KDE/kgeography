@@ -32,7 +32,7 @@ bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int
 
 		QString capitalName = i18nc(p_map -> getFileName().toUtf8(), p_capital.toUtf8());
 		setQuestion(i18nc("@title:group", p_map->getCapitalToDivisionQuestionPattern().toUtf8(), capitalName));
-		p_rb[i] -> setText(i18nc("@option:radio <City> is the capital of...", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
+		p_radioButtons[i] -> setText(i18nc("@option:radio <City> is the capital of...", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 		b = true;
 	}
 	else
@@ -46,7 +46,7 @@ bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int
 		// Hedmark
 		if (p_map -> getDivisionCapital(division) != p_capital)
 		{
-			p_rb[i] -> setText(i18nc("@option:radio <City> is the capital of...", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
+			p_radioButtons[i] -> setText(i18nc("@option:radio <City> is the capital of...", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 			b = true;
 		}
 		else b = false;
@@ -56,7 +56,7 @@ bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int
 
 void capitalDivisionAsker::setAnswerHook(int userSays)
 {
-	p_currentAnswer.setAnswer(p_rb[userSays] -> text());
+	p_currentAnswer.setAnswer(p_radioButtons[userSays] -> text());
 }
 
 QString capitalDivisionAsker::getQuestionHook() const

@@ -49,6 +49,9 @@ Q_OBJECT
 		void setAutomaticZoom(bool b);
 		void setMoveActionEnabled(bool b);
 
+		void showPreferencesDialog();
+		void updateConfiguration();
+
 	private:
 		QSize getPreferredSize();
 		void showResultsDialog();

@@ -58,12 +58,15 @@ Q_OBJECT
 		userAnswer p_currentAnswer;
 		QLabel *p_answers;
 	
+	private slots:
+		void resetLabelColor();
 	private:
 		void updateLabel();
 		
 		int p_correctAnswers, p_incorrectAnswers;
 		
 		QVector<userAnswer> p_userAnswers;
+		QColor p_defaultBg;
 		
 		// the list of asked divisions
 		QStringList p_asked;

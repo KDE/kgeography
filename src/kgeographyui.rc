@@ -12,6 +12,8 @@
 			<Action name="zoom_automatic" />
 			<Separator />
 			<Action name="move" />
+			<Separator />
+			<Action name="preferences"/>
 		</Menu>
 		<Menu name="help">
 			<Action name="disclaimer"/>

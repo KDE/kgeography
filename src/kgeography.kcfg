@@ -8,5 +8,16 @@
 		<entry name="lastMap" type="String">
 			<label>The last opened map</label>
 		</entry>
-	</group>
+		<entry name="questionPlacingScheme" type="Int">
+			<label>Placement scheme of the question</label>
+		</entry>
+		<entry name="waitsForValidation" type="Bool">
+			<label>Ask for validation before next question</label>
+			<default>true</default>
+		</entry>
+		<entry name="focusFollowsMouse" type="Bool">
+			<label>Whether press on space while hovering a button should trigger that button</label>
+			<default>false</default>
+		</entry>
+  </group>
 </kcfg>
