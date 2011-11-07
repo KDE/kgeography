@@ -41,7 +41,7 @@
 #include "map.h"
 #include "placeasker.h"
 #include "integerinputdialog.h"
-#include "ui_KGeographyOptions.h"
+#include "ui_kgeographyoptions.h"
 
 kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResultsDialog(false)
 {

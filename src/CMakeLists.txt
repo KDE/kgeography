@@ -28,7 +28,7 @@ set(kgeography_SRCS
    answersdialog.cpp )
 
 
-kde4_add_ui_files(kgeography_SRCS KGeographyOptions.ui )
+kde4_add_ui_files(kgeography_SRCS kgeographyoptions.ui )
 
 kde4_add_kcfg_files(kgeography_SRCS settings.kcfgc )
 
