@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>193</width>
+    <width>238</width>
     <height>114</height>
    </rect>
   </property>
@@ -23,7 +23,7 @@
      <item>
       <widget class="QSpinBox" name="kcfg_questionPlacingScheme">
        <property name="maximum">
-        <number>1</number>
+        <number>2</number>
        </property>
       </widget>
      </item>
@@ -31,17 +31,36 @@
    </item>
    <item>
     <widget class="QCheckBox" name="kcfg_waitsForValidation">
+     <property name="toolTip">
+      <string>Whether to user will have to click &quot;Accept&quot; after choosing an answer or not</string>
+     </property>
      <property name="text">
-      <string>Waits for validation</string>
+      <string>&amp;Wait for validation</string>
      </property>
     </widget>
    </item>
    <item>
     <widget class="QCheckBox" name="kcfg_focusFollowsMouse">
+     <property name="toolTip">
+      <string>Whether moving the mouse over answers focus them or not</string>
+     </property>
      <property name="text">
-      <string>Focus follows mouse</string>
+      <string>&amp;Focus follows mouse</string>
      </property>
     </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
    </item>
   </layout>
  </widget>
