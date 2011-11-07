@@ -175,10 +175,10 @@ void kgeography::showPreferencesDialog()
 
 void kgeography::updateConfiguration()
 {
-    boxAsker *aBoxAsker = dynamic_cast<boxAsker*>(p_askWidget);
-    if ( aBoxAsker != NULL ) {
-        aBoxAsker->updateLayout();
-    }
+	boxAsker *aBoxAsker = dynamic_cast<boxAsker*>(p_askWidget);
+	if ( aBoxAsker != NULL ) {
+		aBoxAsker->updateLayout();
+	}
 }
 
 void kgeography::showEvent(QShowEvent *)

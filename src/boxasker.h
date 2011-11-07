@@ -42,7 +42,7 @@ Q_OBJECT
 		void keyReleaseEvent(QKeyEvent *e);
 		
 		void setHeadWidget(QWidget *headWidget);
-        QVector<QRadioButton*> p_radioButtons;
+		QVector<QRadioButton*> p_radioButtons;
 
 		// the position the correct answer is in
 		int p_position;
