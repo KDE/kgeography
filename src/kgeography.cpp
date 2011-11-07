@@ -137,7 +137,7 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 	p_showAuthor->setEnabled(false);
 	connect(p_showAuthor, SIGNAL(triggered()), this, SLOT(showMapAuthor()));
 
-	QAction *prefAction = KStandardAction::preferences(this, SLOT(showPreferencesDialog()), actionCollection());
+	KStandardAction::preferences(this, SLOT(showPreferencesDialog()), actionCollection());
 
 	setupGUI(Keys | ToolBar | Save | Create);
 
