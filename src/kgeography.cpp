@@ -163,7 +163,7 @@ void kgeography::showPreferencesDialog()
 	Ui::Options confWdg;
 	confWdg.setupUi(w);
 
-	dialog->addPage(w, i18n("General"), "general" ); 
+	dialog->addPage(w, i18n("General"), "kgeography" ); 
 
 	// User edited the configuration - update your local copies of the 
 	// configuration data 
