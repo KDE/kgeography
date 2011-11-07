@@ -8,9 +8,14 @@
 		<entry name="lastMap" type="String">
 			<label>The last opened map</label>
 		</entry>
-		<entry name="questionPlacingScheme" type="Int">
+		<entry name="questionPlacingScheme" type="Enum">
 			<label>Placement alignment of the question</label>
-                        <default>0</default>
+			<default>Left</default>
+			<choices>
+				<choice name="Left" />
+				<choice name="Center" />
+				<choice name="Right" />
+			</choices>
 		</entry>
 		<entry name="waitsForValidation" type="Bool">
 			<label>Ask for validation before next question</label>

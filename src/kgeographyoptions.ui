@@ -6,28 +6,40 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>238</width>
-    <height>114</height>
+    <width>671</width>
+    <height>599</height>
    </rect>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>Question placing scheme</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QSpinBox" name="kcfg_questionPlacingScheme">
-       <property name="maximum">
-        <number>2</number>
-       </property>
-      </widget>
-     </item>
-    </layout>
+    <widget class="KButtonGroup" name="kcfg_questionPlacingScheme">
+     <property name="title">
+      <string>&amp;Question alignment</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QRadioButton" name="leftRadio">
+        <property name="text">
+         <string>&amp;Left</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="centerRadio">
+        <property name="text">
+         <string>&amp;Center</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rightRadio">
+        <property name="text">
+         <string>&amp;Right</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </item>
    <item>
     <widget class="QCheckBox" name="kcfg_waitsForValidation">
@@ -64,6 +76,14 @@
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KButtonGroup</class>
+   <extends>QGroupBox</extends>
+   <header>kbuttongroup.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
