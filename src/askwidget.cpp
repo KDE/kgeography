@@ -30,8 +30,6 @@ askWidget::askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool sho
 		p_answers -> setAlignment(Qt::AlignTop | Qt::AlignHCenter);
 		resetAnswers();
 		p_answers -> show();
-		p_answers -> setAutoFillBackground(true);
-		p_defaultBg = p_answers -> palette() . color(QPalette::Window);
 	}
 	else p_answers = 0;
 }
@@ -98,6 +96,7 @@ void askWidget::questionAnswered(bool wasCorrect)
 	p_userAnswers.append(p_currentAnswer);
 	QPalette pal = p_answers -> palette();
 	
+	p_answers -> setAutoFillBackground(true);
 	if (wasCorrect)
 	{
 		pal.setColor(QPalette::Window, QColor(0, 0xbb, 0));
@@ -123,9 +122,8 @@ void askWidget::resetAnswers()
 
 void askWidget::resetLabelColor()
 {
-	QPalette pal = p_answers -> palette();
-	pal.setColor(QPalette::Window, p_defaultBg);
-	p_answers -> setPalette(pal);
+	p_answers -> setAutoFillBackground(false);
+	p_answers -> setPalette(QPalette());
 }
 
 void askWidget::updateLabel()
