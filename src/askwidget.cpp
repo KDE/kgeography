@@ -16,12 +16,12 @@
 #include <qapplication.h>
 #include <qlabel.h>
 #include <qlayout.h>
-#include <qtimer.h>
 
 #include "map.h"
 
 askWidget::askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool showLabel) : QWidget(parent), p_map(m), p_count(count)
 {
+	connect(&m_timer, SIGNAL(timeout()), SLOT(resetLabelColor()));
 	if (showLabel)
 	{
 		QVBoxLayout *vbl = static_cast<QVBoxLayout*>(w -> layout());
@@ -110,7 +110,7 @@ void askWidget::questionAnswered(bool wasCorrect)
 		p_incorrectAnswers++;
 	}
 	updateLabel();
-	QTimer::singleShot(850, this, SLOT(resetLabelColor()));
+	m_timer.start(850);
 }
 
 void askWidget::resetAnswers()

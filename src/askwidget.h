@@ -11,6 +11,7 @@
 #ifndef ASKWIDGET_H
 #define ASKWIDGET_H
 
+#include <qtimer.h>
 #include <qvector.h>
 #include <qwidget.h>
 
@@ -72,6 +73,8 @@ Q_OBJECT
 		
 		// the number of questions to do
 		int p_count;
+		
+		QTimer m_timer;
 };
 
 #endif
