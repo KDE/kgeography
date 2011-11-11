@@ -367,6 +367,9 @@ void kgeography::askDivisionFlags()
 
 void kgeography::removeOldAskWidget()
 {
+	// next lines because setZoom(true) (may have) put cursor at application level
+	if ( p_askWidget != NULL )
+		p_askWidget->setZoom(false);
 	delete p_askWidget;
 	p_askWidget = 0;
 	p_zoom -> setEnabled(false);
