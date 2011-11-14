@@ -14,13 +14,13 @@
    <item>
     <widget class="KButtonGroup" name="kcfg_questionPlacingScheme">
      <property name="title">
-      <string>&amp;Question alignment</string>
+      <string>&amp;Question Alignment</string>
      </property>
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="0">
        <widget class="QRadioButton" name="topleftRadio">
         <property name="text">
-         <string>TopL&amp;eft</string>
+         <string>Top-l&amp;eft</string>
         </property>
        </widget>
       </item>
@@ -34,7 +34,7 @@
       <item row="0" column="2">
        <widget class="QRadioButton" name="toprightRadio">
         <property name="text">
-         <string>TopR&amp;ight</string>
+         <string>Top-r&amp;ight</string>
         </property>
        </widget>
       </item>
@@ -62,7 +62,7 @@
       <item row="2" column="0">
        <widget class="QRadioButton" name="bottomleftRadio">
         <property name="text">
-         <string>BottomLe&amp;ft</string>
+         <string>Bottom-le&amp;ft</string>
         </property>
        </widget>
       </item>
@@ -76,7 +76,7 @@
       <item row="2" column="2">
        <widget class="QRadioButton" name="bottomrightRadio">
         <property name="text">
-         <string>BottomRi&amp;ght</string>
+         <string>Bottom-ri&amp;ght</string>
         </property>
        </widget>
       </item>
