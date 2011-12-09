@@ -90,7 +90,7 @@ KGmap *mapReader::parseMap(const QString &path)
 				}
 				else
 				{
-					kgmap->setDivisionToCapitalTitle(i18n("&Capitals of %1", i18nc(kgmap->getFileName().toUtf8(), divisionKindName.toUtf8())));
+					kgmap->setDivisionToCapitalTitle(i18n("Capitals of %1", i18nc(kgmap->getFileName().toUtf8(), divisionKindName.toUtf8())));
 				}
 
 				
