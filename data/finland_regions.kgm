@@ -109,11 +109,6 @@
 		<color><red>255</red><green>0</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>Eastern Nylandia</name>
-		<capital>Porvoo</capital>
-		<color><red>127</red><green>0</green><blue>255</blue></color>
-	</division>
-	<division>
 		<name>Kymenlaakso</name>
 		<capital>Kouvola</capital>
 		<color><red>0</red><green>0</green><blue>255</blue></color>
