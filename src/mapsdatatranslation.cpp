@@ -2207,8 +2207,6 @@ i18nc("finland_regions.kgm", "Southern Savonia");
 i18nc("finland_regions.kgm", "Mikkeli");
 i18nc("finland_regions.kgm", "Nylandia");
 i18nc("finland_regions.kgm", "Helsinki");
-i18nc("finland_regions.kgm", "Eastern Nylandia");
-i18nc("finland_regions.kgm", "Porvoo");
 i18nc("finland_regions.kgm", "Kymenlaakso");
 i18nc("finland_regions.kgm", "Kouvola");
 i18nc("france.kgm", "France");
