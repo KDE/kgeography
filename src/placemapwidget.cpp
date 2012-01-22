@@ -86,7 +86,7 @@ QString writeUpBorderStats(const QVector<size_t> &stats, const QVector<size_t> &
 {
 	int nbCells = stats.size(); // = n * (n*1) / 2 => 2p == n2 + n => n2 + n -2p == 0
 	// delta = 1 + 8p -> n = (-1 +/- sqrt(1 + 8p))/2
-	int nbRows = (sqrt(1 + 8 * nbCells) -1) /2;
+	int nbRows = (sqrt((double)1 + 8 * nbCells) -1) /2;
 	QString ret;
 	ret += "\n";
 	ret.reserve(17 * nbCells + nbRows * 20);
