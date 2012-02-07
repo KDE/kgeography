@@ -99,6 +99,16 @@
 		<color><red>0</red><green>85</green><blue>170</blue></color>
 	</division>
 	<division>
+		<name>Santa Elena</name>
+		<capital>Santa Elena</capital>
+		<color><red>77</red><green>230</green><blue>232</blue></color>
+	</division>
+	<division>
+		<name>Santo Domingo de los Tsáchilas</name>
+		<capital>Santo Domingo de Los Colorados</capital>
+		<color><red>142</red><green>108</green><blue>67</blue></color>
+	</division>
+	<division>
 		<name>Napo</name>
 		<capital>Tena</capital>
 		<color><red>85</red><green>170</green><blue>255</blue></color>
