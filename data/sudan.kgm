@@ -84,11 +84,6 @@
 		<color><red>0</red><green>255</green><blue>127</blue></color>
 	</division>
 	<division>
-		<name>West Kurdufan</name>
-		<capital>Al-Fulah</capital>
-		<color><red>255</red><green>128</green><blue>191</blue></color>
-	</division>
-	<division>
 		<name>Northern</name>
 		<capital>Dongola</capital>
 		<color><red>234</red><green>149</green><blue>149</blue></color>
