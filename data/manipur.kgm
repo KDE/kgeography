@@ -43,12 +43,12 @@
   </division>
   
   <division>
-    <name>Imphal</name>
-    <capital>Imphal</capital>
+    <name>Imphal West</name>
+    <capital>Lamphelpat</capital>
     <color>
-      <red>104</red>
-      <green>24</green>
-      <blue>3</blue>
+      <red>50</red>
+      <green>81</green>
+      <blue>159</blue>
     </color>
   </division>
   
@@ -83,12 +83,12 @@
   </division>
   
   <division>
-    <name>Jiribam</name>
-    <capital>Jiribam</capital>
+    <name>Imphal East</name>
+    <capital>Porompat</capital>
     <color>
-      <red>201</red>
-      <green>254</green>
-      <blue>235</blue>
+      <red>104</red>
+      <green>24</green>
+      <blue>3</blue>
     </color>
   </division>
   
