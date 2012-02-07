@@ -21,12 +21,12 @@
 	<division>
 		<name>Al Jazirah</name>
 		<capital>Wad-Madani</capital>
-		<color><red>255</red><green>255</green><blue>128</blue></color>
+		<color><red>255</red><green>255</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>Blue Nile/Central</name>
 		<capital>Ad-Damazin</capital>
-		<color><red>128</red><green>255</green><blue>0</blue></color>
+		<color><red>153</red><green>255</green><blue>0</blue></color>
 	</division>
 	<division>
 		<name>Sennar</name>
@@ -36,12 +36,12 @@
 	<division>
 		<name>White Nile</name>
 		<capital>Rabak</capital>
-		<color><red>191</red><green>255</green><blue>128</blue></color>
+		<color><red>204</red><green>255</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>North Darfur</name>
 		<capital>Al-Fashir</capital>
-		<color><red>255</red><green>0</green><blue>128</blue></color>
+		<color><red>255</red><green>0</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>South Darfur</name>
@@ -51,12 +51,12 @@
 	<division>
 		<name>West Darfur</name>
 		<capital>Al-Junaynah</capital>
-		<color><red>255</red><green>128</green><blue>255</blue></color>
+		<color><red>255</red><green>153</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Kassala</name>
 		<capital>Kassala</capital>
-		<color><red>255</red><green>128</green><blue>0</blue></color>
+		<color><red>255</red><green>153</green><blue>0</blue></color>
 	</division>
 	<division>
 		<name>Al Qadarif</name>
@@ -71,22 +71,22 @@
 	<division>
 		<name>Khartoum</name>
 		<capital>Khartoum</capital>
-		<color><red>255</red><green>191</green><blue>128</blue></color>
+		<color><red>255</red><green>204</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>North Kurdufan</name>
 		<capital>Al-Ubayyid</capital>
-		<color><red>212</red><green>43</green><blue>43</blue></color>
+		<color><red>204</red><green>51</green><blue>51</blue></color>
 	</division>
 	<division>
 		<name>South Kurdufan</name>
 		<capital>Kaduqli</capital>
-		<color><red>0</red><green>255</green><blue>127</blue></color>
+		<color><red>0</red><green>255</green><blue>102</blue></color>
 	</division>
 	<division>
 		<name>Northern</name>
 		<capital>Dongola</capital>
-		<color><red>234</red><green>149</green><blue>149</blue></color>
+		<color><red>255</red><green>153</green><blue>153</blue></color>
 	</division>
 	<division>
 		<name>River Nile</name>
