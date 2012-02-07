@@ -21,7 +21,7 @@
 			<blue>1</blue>
 		</color>
 	</division>
-        <division>
+	<division>
 		<name>Tehran</name>
 		<capital>Tehran</capital>
 		<color>
@@ -30,7 +30,16 @@
 			<blue>192</blue>
 		</color>
 	</division>
-        <division>
+	<division>
+		<name>Alborz</name>
+		<capital>Karaj</capital>
+		<color>
+			<red>135</red>
+			<green>193</green>
+			<blue>149</blue>
+		</color>
+	</division>
+	<division>
 		<name>Qom</name>
 		<capital>Qom</capital>
 		<color>
