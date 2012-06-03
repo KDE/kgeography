@@ -12,6 +12,7 @@
 
 #include <klocale.h>
 #include <kmessagebox.h>
+#include <krandom.h>
 
 #include <qlabel.h>
 #include <qlayout.h>
@@ -20,6 +21,8 @@
 
 #include "map.h"
 #include "mapwidget.h"
+
+#include "settings.h"
 
 static QString guessWikipediaDomain()
 {
@@ -115,9 +118,23 @@ void mapAsker::setAutomaticZoom(bool automaticZoom)
 
 void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 {
+	QString correctDivision = lastDivisionAsked();
+	QRgb correctRgb = p_map -> getColor(correctDivision).rgb();
+	QRgb colorSeen = c;
+	if ( ! p_shuffledColormap.empty() )
+	{
+		int i = p_originalColormap.indexOf(correctRgb);
+		correctRgb = p_shuffledColormap[i];
+
+		i = p_shuffledColormap.indexOf(c);
+		c = p_originalColormap[i];
+	}
 	QString aux, cap;
 	aux = p_map -> getWhatIs(c, !p_asker);
-	if (aux == "nothing") KMessageBox::error(this, i18nc("@info", "You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.", p_map -> getFile(), qRed(c), qGreen(c), qBlue(c)));
+	if (aux == "nothing")
+		KMessageBox::error(this, i18nc("@info", "You have found a bug in a map."
+									   "Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.",
+									   p_map -> getFile(), qRed(c), qGreen(c), qBlue(c)));
 	else if (p_shouldClearPopup)
 	{
 		p_popupManager.clear();
@@ -141,8 +158,9 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	}
 	else if (!aux.isEmpty())
 	{
-		p_currentAnswer.setAnswer(QColor(c));
-		questionAnswered(aux == lastDivisionAsked());
+		p_currentAnswer.setCorrectAnswer(QColor(correctRgb));
+		p_currentAnswer.setAnswer(QColor(colorSeen));
+		questionAnswered(aux == correctDivision);
 		nextQuestion();
 	}
 }
@@ -153,7 +171,8 @@ void mapAsker::nextQuestionHook(const QString &division)
 	p_next -> setText(i18nc("@info:status", "Please click on:<nl/>%1", divisionName));
 	p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is region name", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 	p_next -> show();
-	p_currentAnswer.setCorrectAnswer(p_map -> getColor(division));
+	QRgb c = p_map -> getColor(division).rgb();
+	p_currentAnswer.setCorrectAnswer(QColor(c));
 }
 
 QString mapAsker::getQuestionHook() const
@@ -166,7 +185,44 @@ void mapAsker::showEvent(QShowEvent *)
 {
 	if (p_firstShow)
 	{
-		p_mapWidget -> init(p_map -> getMapFile());
+		bool isForAsking = p_next != NULL;
+
+		QImage image;
+		image.load(p_map->getMapFile());
+
+		if ( isForAsking
+		  && kgeographySettings::self()->colorDisguise() == kgeographySettings::EnumColorDisguise::Scramble )
+		{
+			QVector<QRgb> colormap = image.colorTable();
+			p_originalColormap = colormap;
+
+			QVector<uchar> swapableIndexes;
+			QList<const division*> divisions = p_map->getAllDivisionsOrdered();
+			foreach(const division *id, divisions)
+			{
+				if ( id->canAsk(division::eClick) )
+				{
+					const QRgb rgb = id->getRGB();
+					const int colorIdx = colormap.indexOf(rgb);
+					swapableIndexes << colorIdx;
+				}
+			}
+			QVector<uchar> shuffling = swapableIndexes;
+
+			const int n = swapableIndexes.size();
+			for ( int i = 2; i < n ; ++i )
+			{
+				int o = int(float(i) * KRandom::random() / (RAND_MAX + 1.0));
+				int ci = shuffling[i];
+				int co = shuffling[o];
+				qSwap(shuffling[i], shuffling[o]);
+				qSwap(colormap[ci], colormap[co]);
+			}
+			p_shuffledColormap = colormap;
+			image.setColorTable(colormap);
+		}
+
+		p_mapWidget -> init(image);
 		p_firstShow = false;
 	}
 }

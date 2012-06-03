@@ -55,6 +55,9 @@ Q_OBJECT
 		
 		popupManager p_popupManager;
 		bool p_shouldClearPopup, p_asker, p_firstShow;
+
+		QVector<QRgb> p_shuffledColormap;
+		QVector<QRgb> p_originalColormap;
 };
 
 #endif

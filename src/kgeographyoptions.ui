@@ -6,11 +6,11 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>671</width>
-    <height>599</height>
+    <width>684</width>
+    <height>594</height>
    </rect>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_2">
+  <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="KButtonGroup" name="kcfg_questionPlacingScheme">
      <property name="title">
@@ -101,6 +101,32 @@
      <property name="text">
       <string>&amp;Focus follows mouse</string>
      </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="KButtonGroup" name="kcfg_colorDisguise">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Color disguise</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="noColorDisguiseRadio">
+        <property name="text">
+         <string>None</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QRadioButton" name="scrambleColorDisguiseRadio">
+        <property name="text">
+         <string>Scramble</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </item>
    <item>
