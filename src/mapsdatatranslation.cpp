@@ -414,7 +414,7 @@ i18nc("angola_provinces.kgm", "Cabinda");
 i18nc("angola_provinces.kgm", "Cuando Cubango");
 i18nc("angola_provinces.kgm", "Menongue");
 i18nc("angola_provinces.kgm", "Cuanza Norte");
-i18nc("angola_provinces.kgm", "Ndalatando");
+i18nc("angola_provinces.kgm", "N'dalatando");
 i18nc("angola_provinces.kgm", "Cuanza Sul");
 i18nc("angola_provinces.kgm", "Sumbe");
 i18nc("angola_provinces.kgm", "Cunene");
