@@ -1510,7 +1510,7 @@ i18nc("chile.kgm", "Copiapo");
 i18nc("chile.kgm", "Coquimbo");
 i18nc("chile.kgm", "La Serena");
 i18nc("chile.kgm", "Valparaíso");
-i18nc("chile.kgm", "Valparaiso");
+i18nc("chile.kgm", "Valparaíso");
 i18nc("chile.kgm", "O'Higgins");
 i18nc("chile.kgm", "Rancagua");
 i18nc("chile.kgm", "Maule");
