@@ -66,7 +66,7 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
 	for (int i = 0; i < 3; i++)
 	{
 		if (i == 0) v = &p_question;
-		else if (i == 1) v = &p_answer;
+		else if (i == 2) v = &p_answer;
 		else v = &p_correctAnswer;
 		
 		if (v -> type() == QVariant::String)
