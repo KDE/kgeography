@@ -16,7 +16,6 @@
 #include <QMouseEvent>
 #include <QScrollBar>
 
-#include <kdebug.h>
 #include <klocale.h>
 #include <math.h>
 
@@ -31,10 +30,9 @@ mapWidget::mapWidget(QWidget *parent) : QGraphicsView(parent)
 	setScene(p_scene);
 }
 
-void mapWidget::init(const QString &path)
+void mapWidget::init(const QImage &mapImage)
 {
-	p_originalImage.load(path);
-	p_originalPixmap.load(path);
+	p_originalImage = mapImage;
 	p_scene->setSceneRect( p_originalImage.rect() );
 	resetCachedContent();
 	
@@ -64,17 +62,9 @@ void mapWidget::drawBackground(QPainter *painter, const QRectF &_rect)
 {
 	QRect rect = _rect.toRect().adjusted( -2, -2, 2, 2 ) & p_originalImage.rect();
 	
-	if ( painter->matrix().m11() == 1 && painter->matrix().m22() == 1 )
-	{
-		// Image won't need to be scaled; use pixmap for faster drawing
-		painter->drawPixmap( rect.topLeft(), p_originalPixmap, rect );
-	}
-	else
-	{
-		QImage copied = p_originalImage.copy( rect );
-		painter->setRenderHint( QPainter::SmoothPixmapTransform );
-		painter->drawImage( rect.topLeft(), copied );
-	}
+	QImage copied = p_originalImage.copy( rect );
+	painter->setRenderHint( QPainter::SmoothPixmapTransform );
+	painter->drawImage( rect.topLeft(), copied );
 }
 
 void mapWidget::mousePressEvent(QMouseEvent *e)
