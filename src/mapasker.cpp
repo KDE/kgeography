@@ -131,7 +131,10 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	}
 	QString aux, cap;
 	aux = p_map -> getWhatIs(c, !p_asker);
-	if (aux == "nothing") KMessageBox::error(this, i18nc("@info", "You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.", p_map -> getFile(), qRed(c), qGreen(c), qBlue(c)));
+	if (aux == "nothing")
+		KMessageBox::error(this, i18nc("@info", "You have found a bug in a map. "
+									   "Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.",
+									   p_map -> getFile(), qRed(c), qGreen(c), qBlue(c)));
 	else if (p_shouldClearPopup)
 	{
 		p_popupManager.clear();
