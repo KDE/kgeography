@@ -50,6 +50,7 @@ class KGmap
 		QString getAuthor() const;
 		QColor getColor(const QString &s) const;
 		QList<const division*> getIgnoredDivisions(division::askMode am) const;
+		QList<const division*> getAllDivisionsOrdered() const;
 		QString getCapitalToDivisionQuestionPattern() const;
 		QString getDivisionToCapitalQuestionPattern() const;
 		QString getCapitalToDivisionTitle() const;

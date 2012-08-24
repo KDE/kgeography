@@ -13,6 +13,8 @@
 
 #include <QGraphicsView>
 
+#include "map.h"
+
 class QGraphicsRectItem;
 class QGraphicsScene;
 
@@ -22,7 +24,7 @@ Q_OBJECT
 	public:
 		explicit mapWidget(QWidget *parent);
 		
-		void init(const QString &path);
+		void init(const QImage &mapImage);
 
 		void setMapMove(bool b);
 		void setMapZoom(bool b);
@@ -57,7 +59,6 @@ Q_OBJECT
 		enum Mode { Zooming, WantZoom, Moving, WantMove, None };
 		Mode p_mode, p_modeBeforeMidClick;
 		QImage p_originalImage;
-		QPixmap p_originalPixmap;
 		QGraphicsRectItem *p_zoomRect;
 		QGraphicsScene *p_scene;
 		QPointF p_initial; // for rubberbanding, in scene coords

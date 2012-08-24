@@ -31,5 +31,13 @@
 			<label>Whether press on space while hovering a button should trigger that button</label>
 			<default>false</default>
 		</entry>
+		<entry name="colorDisguise" type="Enum">
+			<label>What to do to colors of divisions</label>
+			<default>Nothing</default>
+			<choices>
+				<choice name="Nothing" />
+				<choice name="Scramble" />
+			</choices>
+		</entry>
   </group>
 </kcfg>
