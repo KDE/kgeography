@@ -118,16 +118,23 @@ void mapAsker::setAutomaticZoom(bool automaticZoom)
 
 void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 {
-	QString correctDivision = lastDivisionAsked();
-	QRgb correctRgb = p_map -> getColor(correctDivision).rgb();
 	QRgb colorSeen = c;
-	if ( ! p_shuffledColormap.empty() )
-	{
-		int i = p_originalColormap.indexOf(correctRgb);
-		correctRgb = p_shuffledColormap[i];
+	QString correctDivision;
+	QRgb correctRgb;
 
-		i = p_shuffledColormap.indexOf(c);
-		c = p_originalColormap[i];
+	if ( p_asker )
+	{
+		correctDivision = lastDivisionAsked();
+		correctRgb = p_map -> getColor(correctDivision).rgb();
+
+		if ( ! p_shuffledColormap.empty() )
+		{
+			int i = p_originalColormap.indexOf(correctRgb);
+			correctRgb = p_shuffledColormap[i];
+
+			i = p_shuffledColormap.indexOf(c);
+			c = p_originalColormap[i];
+		}
 	}
 	QString aux, cap;
 	aux = p_map -> getWhatIs(c, !p_asker);
