@@ -43,16 +43,6 @@ target_link_libraries(kgeography   ${KDE4_KDEUI_LIBS} ${QT_QTXML_LIBRARY})
 install(TARGETS kgeography  ${INSTALL_TARGETS_DEFAULT_ARGS} )
 
 
-########### next target ###############
-
-set(script_SRCS script.cpp )
-
-
-kde4_add_executable(script NOGUI ${script_SRCS})
-
-target_link_libraries(script ${QT_QTCORE_LIBRARY} ${QT_QTXML_LIBRARY} )
-
-
 ########### install files ###############
 
 install( PROGRAMS kgeography.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
