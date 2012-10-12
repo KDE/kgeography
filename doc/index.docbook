@@ -7,9 +7,9 @@
   <!ENTITY % English "INCLUDE"> 
 ]>
 
-<book lang="&language;">
+<book id="kgeography" lang="&language;">
 
-<bookinfo>
+<book id="kgeography"info>
 <title>The &kgeography; Handbook</title>
 
 <authorgroup>
