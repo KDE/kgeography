@@ -7,7 +7,7 @@
   <!ENTITY % English "INCLUDE"> 
 ]>
 
-<book lang="&language;">
+<book id="kgeography" lang="&language;">
 
 <bookinfo>
 <title>The &kgeography; Handbook</title>
