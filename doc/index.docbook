@@ -434,7 +434,7 @@ There is another tool colorchecker.py written by Albert Astals Cid. You need PyQ
 <sect1 id="how-to-test">
 <title>How to test</title>
 <para>
- Before sending your map to Albert <email>tsdgeos@terra.es</email>, you should test it to see it has no errors. To achieve that, you have to do the following:
+ Before sending your map to Albert &Albert.Astals.Cid.mail;, you should test it to see it has no errors. To achieve that, you have to do the following:
 <itemizedlist>
 <listitem>
   <para>Put the map description and map image file in <filename class="directory">$<envar>KDEDIR</envar>/share/apps/kgeography/</filename></para>
@@ -664,7 +664,7 @@ distribution. -->
 &kgeography;
 </para>
 <para>
-Program copyright 2004-2008 Albert Astals Cid <email>tsdgeos@terra.es</email>
+Program copyright 2004-2008 Albert Astals Cid &Albert.Astals.Cid.mail;
 </para>
 
 
