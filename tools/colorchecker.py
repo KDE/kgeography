@@ -65,8 +65,9 @@ for fileIndex in range(1, len(sys.argv)):
 				for x in range(0, image.width()):
 					for y in range(0, image.height()):
 						rgbcolor = image.pixel(x,y)
-						contains = colorList.count(rgbcolor)
-						usedColors.add(rgbcolor)
+						qcolor = QtGui.qRgb(QtGui.qRed(rgbcolor), QtGui.qGreen(rgbcolor), QtGui.qBlue(rgbcolor))
+						contains = colorList.count(qcolor)
+						usedColors.add(qcolor)
 						if contains == 0:
 							qcolor = QtGui.QColor(rgbcolor)
 							print QtCore.QString("Error: The pixel (%1,%2) has color %3,%4,%5 that is not defined in the kgm file").arg(x).arg(y).arg(qcolor.red()).arg(qcolor.green()).arg(qcolor.blue())
