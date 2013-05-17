@@ -258,6 +258,8 @@ sweden.kgm
 sweden.png
 switzerland.kgm
 switzerland.png
+tamilnadu.kgm
+tamilnadu.png
 tajikistan.kgm
 tajikistan.png
 thailand.kgm
