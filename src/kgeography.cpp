@@ -159,6 +159,7 @@ void kgeography::showPreferencesDialog()
 	// create it : 
 	KConfigDialog* dialog = new KConfigDialog(this, "settings",
 											  kgeographySettings::self()); 
+        dialog->setHelp("configuration", "kgeography");
 	QWidget *w = new QWidget();
 	Ui::Options confWdg;
 	confWdg.setupUi(w);
