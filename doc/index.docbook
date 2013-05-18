@@ -31,7 +31,6 @@
 <!-- TRANS:ROLES_OF_TRANSLATORS -->
 </authorgroup>
 
-
 <copyright>
 <year>2005</year>
 <holder>&Anne-Marie.Mahfouf;</holder>
@@ -44,8 +43,8 @@
 
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2009-01-25</date>
-<releaseinfo>0.5.9-10</releaseinfo>
+<date>2013-05-18</date>
+<releaseinfo>0.8.0 (&kde; 4.11)</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -344,15 +343,21 @@ guide the parent/teacher on how to help the child using it.
 <sect1 id="helper-tool">
 <title>Helper tool</title>
 <para>
-You can find <ulink url="http://kgeography.berlios.de/gen_map.pl">here</ulink> a tool (made by Yann Verley) which helped him with the map of France. To find out its usage, simply execute it and read the help message. It basically creates the <literal role="extension">.kgm</literal> file from a plain text file and creates a file with the colors it has assigned to each division, so you can fill the map according to them.</para>
+You can find <ulink url="https://projects.kde.org/projects/kde/kdeedu/kgeography/repository/revisions/master/changes/tools/gen_map.pl">here</ulink> a tool (made by Yann Verley) which helped him with the map of France. To find out its usage, simply execute it and read the help message. It basically creates the <literal role="extension">.kgm</literal> file from a plain text file and creates a file with the colors it has assigned to each division, so you can fill the map according to them.</para>
 <para>
-There is another tool colorchecker.py written by Albert Astals Cid. You need PyQt4 to run this. Just run this with the .kgm filename as argument (you also need the .png file of the map in the same folder). This will tell you if any pixel on the map has a different color which is not defined in the .kgm (description) file.
+There is another tool <ulink url="https://projects.kde.org/projects/kde/kdeedu/kgeography/repository/revisions/master/changes/tools/colorchecker.py">colorchecker.py</ulink> written by Albert Astals Cid. You need PyQt4 to run this. Just run this with the .kgm filename as argument (you also need the .png file of the map in the same folder). This will tell you if any pixel on the map has a different color which is not defined in the .kgm (description) file.
 </para>
+<tip>
+<para>
+Please read also the tutorial <ulink url="http://edu.kde.org/kgeography/tutorials/kgeography-addmaps.pdf">How to add maps</ulink>
+on the &kgeography; website.
+</para>
+</tip>
 </sect1>
 <sect1 id="description-file">
 <title>Description file</title>
 <para>
- The description file is needed and its file extension is <literal role="extension">.kgm</literal>. It should begin with <sgmltag class="starttag">map</sgmltag> and end with <sgmltag class="endtag">map</sgmltag>.
+ The description file is needed and its file extension is <literal role="extension">.kgm</literal>. It should begin with <sgmltag class="starttag">!DOCTYPE kgeographyMap</sgmltag>, followed by <sgmltag class="starttag">map</sgmltag> and end with <sgmltag class="endtag">map</sgmltag>.
 </para>
 <para>
  Inside of those tags there should be:
@@ -489,7 +494,7 @@ or menu bars. -->
 <title>The main &kgeography; window</title>
 
 <sect2>
-<title>The <guimenu>File</guimenu> Menu</title>
+<title>The File Menu</title>
 <para>
 <variablelist>
 <varlistentry>
@@ -518,7 +523,7 @@ or menu bars. -->
 </sect2>
 
 <sect2>
-<title>The <guimenu>View</guimenu> Menu</title>
+<title>The View Menu</title>
 <para>
 <variablelist>
 <varlistentry>
@@ -533,14 +538,15 @@ or menu bars. -->
 <guimenu>View</guimenu>
 <guimenuitem>Original Size</guimenuitem>
 </menuchoice></term>
-<listitem><para><action>Sets</action> the map back to its original size</para></listitem>
+<listitem><para><action>Sets</action> the map back to its original size as defined in the map file. 
+A &RMB; click in zoomed mode performes the same action</para></listitem>
 </varlistentry>
 <varlistentry>
 <term><menuchoice>
 <guimenu>View</guimenu>
 <guimenuitem>Automatic Zoom</guimenuitem>
 </menuchoice></term>
-<listitem><para><action>Sets</action> the map to automatic zoom using as much space as possible</para></listitem>
+<listitem><para><action>Sets</action> the map to automatic zoom using as much space as possible when resizing the &kgeography;  window</para></listitem>
 </varlistentry>
 <varlistentry>
 <term><menuchoice>
@@ -555,43 +561,19 @@ or menu bars. -->
 </sect2>
 
 <sect2>
-<title>The <guimenu>Settings</guimenu> Menu</title>
+<title>The Settings Menu</title>
 <para>
-<variablelist>
-
-<varlistentry>
-<term><menuchoice>
-<guimenu>Settings</guimenu>
-<guimenuitem>Show Toolbar</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Show/Hide the &kgeography; toolbar.</action></para></listitem>
-</varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<guimenu>Settings</guimenu>
-<guimenuitem>Configure Shortcuts...</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Configure key shortcuts for &kgeography;.</action></para></listitem>
-</varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<guimenu>Settings</guimenu>
-<guimenuitem>Configure Toolbars...</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Configure the &kgeography; toolbar.</action></para></listitem>
-</varlistentry>
-
-</variablelist>
+&kgeography; has the common &kde; <guimenu>Settings</guimenu> menu items, for more information read the section
+about the <ulink url="help:/fundamentals/ui.html#menus-settings">Settings Menu</ulink> of the &kde; Fundamentals.
 </para>
 
 </sect2>
 <sect2>
-<title>The <guimenu>Help</guimenu> Menu</title>
+<title>The Help Menu</title>
 
-<para>&kgeography; has a default &kde; <guimenu>Help</guimenu> as described
-below, with two additionional entries:</para>
+<para>&kgeography; has a default &kde; <guimenu>Help</guimenu> menu as described in the 
+<ulink url="help:/fundamentals/ui.html#menus-help">&kde; Fundamentals</ulink> 
+with two additionional entries:</para>
 	
 <variablelist>
 <varlistentry>
@@ -612,14 +594,38 @@ below, with two additionional entries:</para>
 </listitem>
 </varlistentry>
 </variablelist>
-	
-<para>The default &kde; <guimenu>Help</guimenu> entries are:</para>
-	
-&help.menu.documentation;
 
 </sect2>
 
 </sect1>
+
+</chapter>
+
+<chapter id="configuration">
+<title>Configuration</title>
+<para>
+<variablelist>
+<varlistentry>
+<term><guilabel>Question Alignment</guilabel></term>
+<listitem><para>Determines the position of the questions in the window, default is <guilabel>Top-left</guilabel>.</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Wait for Validation</guilabel></term>
+<listitem><para>If enabled the user will have to press <guibutton>Accept</guibutton> after choosing an answer.</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Focus follows Mouse</guilabel></term>
+<listitem><para>If enabled pressing Space will trigger the button under the mouse pointer.</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Color disguise</guilabel></term>
+<listitem><para>
+With this option random colors are assigned to the divisions in the map.
+This helps the user to focus and learn the division shapes and not the division colors.
+</para></listitem>
+</varlistentry>
+</variablelist>
+</para>
 </chapter>
 
 <!--<chapter id="faq">
