@@ -539,7 +539,7 @@ or menu bars. -->
 <guimenuitem>Original Size</guimenuitem>
 </menuchoice></term>
 <listitem><para><action>Sets</action> the map back to its original size as defined in the map file. 
-A &RMB; click in zoomed mode performes the same action</para></listitem>
+A &RMB; click in zoomed mode performs the same action</para></listitem>
 </varlistentry>
 <varlistentry>
 <term><menuchoice>
@@ -573,7 +573,7 @@ about the <ulink url="help:/fundamentals/ui.html#menus-settings">Settings Menu</
 
 <para>&kgeography; has a default &kde; <guimenu>Help</guimenu> menu as described in the 
 <ulink url="help:/fundamentals/ui.html#menus-help">&kde; Fundamentals</ulink> 
-with two additionional entries:</para>
+with two additional entries:</para>
 	
 <variablelist>
 <varlistentry>
