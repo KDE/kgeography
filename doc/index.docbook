@@ -505,7 +505,8 @@ or menu bars. -->
 <guimenu>File</guimenu>
 <guimenuitem>Open Map...</guimenuitem>
 </menuchoice></term>
-<listitem><para><action>Open the choose map dialog</action></para></listitem>
+<listitem><para><action>Open the choose map dialog. If you type quickly enough the first letters 
+of the map you look for will select the first map that matches.</action></para></listitem>
 </varlistentry>
 <varlistentry>
 <term><menuchoice>
