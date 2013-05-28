@@ -43,7 +43,7 @@
 
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2013-05-18</date>
+<date>2013-05-28</date>
 <releaseinfo>0.8.0 (&kde; 4.11)</releaseinfo>
 
 <!-- Abstract about this handbook -->
@@ -619,9 +619,9 @@ with two additional entries:</para>
 <listitem><para>If enabled pressing Space will trigger the button under the mouse pointer.</para></listitem>
 </varlistentry>
 <varlistentry>
-<term><guilabel>Color disguise</guilabel></term>
+<term><guilabel>Map divisions colors</guilabel></term>
 <listitem><para>
-With this option random colors are assigned to the divisions in the map.
+You can choose if you always want to keep the same colors (default) or if you want to use random colors: with this option random colors are assigned to the divisions in the map.
 This helps the user to focus and learn the division shapes and not the division colors.
 </para></listitem>
 </varlistentry>
