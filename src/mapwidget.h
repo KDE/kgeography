@@ -47,7 +47,6 @@ Q_OBJECT
 		void mouseReleaseEvent(QMouseEvent *e);
 		void wheelEvent(QWheelEvent *e);
 		void resizeEvent(QResizeEvent *e);
-		void drawBackground(QPainter *painter, const QRectF &rect);
 	
 	private:
 		/**

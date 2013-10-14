@@ -24,18 +24,21 @@ mapWidget::mapWidget(QWidget *parent) : QGraphicsView(parent)
 	p_mode = None;
 	p_zoomRect = 0;
 	p_automaticZoom = false;
-	
+
 	setCacheMode( CacheBackground );
 	p_scene = new QGraphicsScene( this );
 	setScene(p_scene);
+	setViewportUpdateMode(SmartViewportUpdate);
 }
 
 void mapWidget::init(const QImage &mapImage)
 {
 	p_originalImage = mapImage;
-	p_scene->setSceneRect( p_originalImage.rect() );
+	p_scene->clear();
 	resetCachedContent();
-	
+	p_scene->addPixmap(QPixmap::fromImage(p_originalImage));
+	p_scene->setSceneRect( p_originalImage.rect() );
+
 	// work around bug in QGraphicsView?
 	QMetaObject::invokeMethod(this, "setAutomaticZoom", Qt::QueuedConnection, Q_ARG(bool, p_automaticZoom));
 }
@@ -58,19 +61,10 @@ void mapWidget::setMapZoom(bool b)
 	updateActions();
 }
 
-void mapWidget::drawBackground(QPainter *painter, const QRectF &_rect)
-{
-	QRect rect = _rect.toRect().adjusted( -2, -2, 2, 2 ) & p_originalImage.rect();
-	
-	QImage copied = p_originalImage.copy( rect );
-	painter->setRenderHint( QPainter::SmoothPixmapTransform );
-	painter->drawImage( rect.topLeft(), copied );
-}
-
 void mapWidget::mousePressEvent(QMouseEvent *e)
 {
 	p_initial = mapToScene( e->pos() );
-	
+
 	if (e -> button() == Qt::LeftButton)
 	{
 		if ( p_mode == WantZoom )
@@ -160,10 +154,9 @@ void mapWidget::mouseReleaseEvent(QMouseEvent *e)
 
 void mapWidget::resizeEvent(QResizeEvent *)
 {
-	resetCachedContent();
 	updateZoom();
 	updateActions();
-	
+
 	// Another hack to work around buginess in QGraphicsView
 	if ( matrix().isIdentity() )
 	{
@@ -210,8 +203,7 @@ void mapWidget::setOriginalImage()
 	// if the matrix isn't set to something non-identity first
 	setMatrix( QMatrix( 2, 0, 0, 2, 0, 0 ) );
 	resetMatrix();
-	
-	resetCachedContent();
+
 	updateActions();
 }
 
