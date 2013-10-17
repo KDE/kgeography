@@ -46,7 +46,7 @@ mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count
 	lay -> setSpacing(0);
 
 	p_mapWidget = new mapWidget(this);
-	p_popupManager.setWidget(p_mapWidget);
+	p_popupManager.setWidget(p_mapWidget->viewport());
 	lay -> addWidget(p_mapWidget);
 
 	p_shouldClearPopup = false;
