@@ -31,9 +31,6 @@ static const int NB_CHOICES = 4;
 
 boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidget(parent, m, w, count)
 {
-	QVBoxLayout *vbl = static_cast<QVBoxLayout*>(w -> layout());
-	vbl -> addStretch(1);
-
 	p_headWidget = NULL;
 	p_lay = new QVBoxLayout(this);
 

@@ -77,9 +77,11 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 	p_askDivisionFlags = new KPushButton(i18n("&Flags of Regions"), leftWidget);
 	p_askDivisionFlags->setWhatsThis(i18n("In this quiz you have to guess the flag of a division given its name"));
 	p_underLeftWidget = new QWidget(leftWidget);
+	// where the number of answers will be shown
 	QVBoxLayout *underLeftWidgetLayout = new QVBoxLayout(p_underLeftWidget);
-	underLeftWidgetLayout -> layout() -> setSpacing(KDialog::spacingHint());
-	underLeftWidgetLayout -> layout() -> setMargin(KDialog::marginHint());
+	underLeftWidgetLayout -> setSpacing(KDialog::spacingHint());
+	underLeftWidgetLayout -> setMargin(KDialog::marginHint());
+
 	leftWidgetLayout -> addWidget(p_currentMap);
 	leftWidgetLayout -> addWidget(p_consult);
 	leftWidgetLayout -> addSpacing(10);
@@ -90,7 +92,13 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 	leftWidgetLayout -> addWidget(p_askDivisionCapitals);
 	leftWidgetLayout -> addWidget(p_askFlagDivisions);
 	leftWidgetLayout -> addWidget(p_askDivisionFlags);
-	leftWidgetLayout -> addWidget(p_underLeftWidget, 1);
+	leftWidgetLayout -> addWidget(p_underLeftWidget);
+
+	// Make p_underLeftWidget as thin as possible, and always be shown in the same place
+	QWidget* p_underUnderLeftWidget = new QWidget(leftWidget);
+	QVBoxLayout *underUnderLeftWidgetLayout = new QVBoxLayout(p_underUnderLeftWidget);
+	underUnderLeftWidgetLayout -> addStretch(1);
+	leftWidgetLayout -> addWidget(p_underUnderLeftWidget);
 
 	bigWidgetLayout -> addWidget(leftWidget);
 	setCentralWidget(p_bigWidget);
@@ -433,6 +441,10 @@ void kgeography::setMap(KGmap *m)
 	p_askCapitalDivisions -> setEnabled(m -> count(division::eCapital) > 3);
 	p_askDivisionCapitals -> setEnabled(m -> count(division::eCapital) > 3);
 	consult();
+
+	// set a maximum width for the under left widget, enabling the labels wordwrap and
+	// avoiding the move of the map in case of large division names.
+	p_underLeftWidget->setMaximumWidth(static_cast<QWidget*>(p_underLeftWidget->parent())->width()- (KDialog::marginHint()+KDialog::spacingHint())*2 );
 }
 
 void kgeography::disclaimer()
