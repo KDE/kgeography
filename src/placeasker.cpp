@@ -183,7 +183,7 @@ void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint
 void placeAsker::nextQuestionHook(const QString &division)
 {
 	QString divisionName = i18nc(p_map -> getFileName().toUtf8(), division.toUtf8());
-	p_next -> setText(i18nc("@info:status", "Please place in the map:<nl/>%1", divisionName));
+	p_next -> setText(i18nc("@info:status", "Please place in the map:<br/><b>%1</b>", divisionName));
 	p_next -> show();
 	p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is region name", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
 	QColor color = p_map -> getColor(division);
