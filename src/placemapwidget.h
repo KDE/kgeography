@@ -29,9 +29,9 @@ Q_OBJECT
 
 		void setMapMove(bool b);
 		void setMapZoom(bool b);
-	
+
 		void setCurrentDivisionImage(QImage *divisionImage);
-		void placeDivision(QImage *divisionImage, QRect& position);
+		void placeDivision(QRect& position);
 		QSize mapSize() const;
 
 		size_t nbPixels(int pixelIndex) const;
@@ -53,12 +53,13 @@ Q_OBJECT
 		void mousePressEvent(QMouseEvent *e);
 		void mouseMoveEvent(QMouseEvent *e);
 		void mouseReleaseEvent(QMouseEvent *e);
+		void enterEvent(QEvent *e);
+		void leaveEvent(QEvent *e);
 		void wheelEvent(QWheelEvent *e);
 		void resizeEvent(QResizeEvent *e);
-		void drawBackground(QPainter *painter, const QRectF &rect);
 		void createGameMapImage();
 		void updateCursor();
-	
+
 	private:
 
 		/**
@@ -79,6 +80,8 @@ Q_OBJECT
 		QPointF p_initial; // for rubberbanding, in scene coords
 		QPoint p_prev; // for moving, in view coords
 		bool p_automaticZoom;
+		QGraphicsPixmapItem *p_currentDivisionItem;
+		QPoint lastMouseEvent; // to first show the division under the mouse
 
 		QVector<uchar> p_outerPixelIndices;
 		QVector<size_t> p_pixelsStats; // how many pixels have given indexed val

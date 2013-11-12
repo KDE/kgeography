@@ -25,17 +25,21 @@
 #include "division.h"
 
 placeMapWidget::placeMapWidget(QWidget *parent) : QGraphicsView(parent)
+	, p_mode(None)
+	, p_mapImage(0)
+	, p_gameImage(0)
+	, p_currentCursor(0)
+	, p_zoomRect(0)
+	, p_automaticZoom(false)
+	, p_currentDivisionItem(0)
+	, lastMouseEvent(QPoint(0,0))
 {
-	p_mode = None;
-	p_zoomRect = 0;
-	p_automaticZoom = false;
-	p_mapImage = 0;
-	p_gameImage = 0;
-	p_currentCursor = 0;
-	
 	setCacheMode( CacheBackground );
 	p_scene = new QGraphicsScene( this );
+	p_scene->setBackgroundBrush(Qt::white);
 	setScene(p_scene);
+	p_scene->setItemIndexMethod(QGraphicsScene::NoIndex);
+	setViewportUpdateMode(QGraphicsView::FullViewportUpdate);
 }
 
 placeMapWidget::~placeMapWidget()
@@ -49,9 +53,11 @@ void placeMapWidget::init(KGmap *map, QImage *mapImage)
 	p_map = map;
 	p_mapImage = mapImage;
 	createGameMapImage();
+	p_scene->clear();
+	p_scene->addPixmap(QPixmap::fromImage(*p_gameImage));
 	p_scene->setSceneRect( p_gameImage->rect() );
-	resetCachedContent();
-	
+	setMouseTracking(true);
+
 	// work around bug in QGraphicsView?
 	QMetaObject::invokeMethod(this, "setAutomaticZoom", Qt::QueuedConnection, Q_ARG(bool, p_automaticZoom));
 }
@@ -183,58 +189,52 @@ void placeMapWidget::createGameMapImage()
 void placeMapWidget::setMapMove(bool b)
 {
 	if (b)
+	{
 		p_mode = WantMove;
+		setCursor(QCursor(Qt::OpenHandCursor));
+	}
 	else if ( p_mode == WantMove || p_mode == Moving )
+	{
 		p_mode = None;
+		setCursor(QCursor(Qt::BlankCursor));
+	}
 	updateActions();
 }
 
 void placeMapWidget::setMapZoom(bool b)
 {
 	if (b)
+	{
 		p_mode = WantZoom;
+	}
 	else if ( p_mode == WantZoom || p_mode == Zooming )
+	{
 		p_mode = None;
+	}
 	updateActions();
 }
 
 void placeMapWidget::setCurrentDivisionImage(QImage *divisionImage)
 {
 	p_currentDivisionImage = divisionImage;
+	// add the pixmap and set position to the middle of the pixmap under the mouse
+	p_currentDivisionItem = p_scene->addPixmap(QPixmap::fromImage(*p_currentDivisionImage));
+	p_currentDivisionItem->setFlag(QGraphicsItem::ItemIsMovable, true);
+	QPoint p(lastMouseEvent.x()-p_currentDivisionImage->width()/2,lastMouseEvent.y()-p_currentDivisionImage->height()/2);
+	p_currentDivisionItem->setPos(mapToScene(p));
 	updateCursor();
 }
 
 void placeMapWidget::updateCursor()
 {
-	unsetCursor();
-	delete p_currentCursor;
-	if (matrix().isIdentity())
-	{
-		p_currentCursor = new QCursor(QPixmap::fromImage(*p_currentDivisionImage));
-	}
-	else
-	{
-		QImage scaledDivisionImage = p_currentDivisionImage->scaled(static_cast<int>(p_currentDivisionImage->width() * matrix().m11()),
-																	static_cast<int>(p_currentDivisionImage->height() * matrix().m22()));
-		p_currentCursor = new QCursor(QPixmap::fromImage(scaledDivisionImage));
-	}
-	setCursor(*p_currentCursor);
+	// enable the normal cursor over the scrollbars
+	viewport()->setCursor(QCursor(Qt::BlankCursor));
 }
 
-void placeMapWidget::placeDivision(QImage *divisionImage, QRect& position)
+void placeMapWidget::placeDivision(QRect& position)
 {
-	QImage copied = divisionImage->copy();	
-	QPainter painter( p_gameImage );
-	painter.drawImage( position.topLeft(), copied );
-	resetCachedContent();
-}
-
-void placeMapWidget::drawBackground(QPainter *painter, const QRectF &_rect)
-{
-	QRect rect = _rect.toRect().adjusted( -2, -2, 2, 2 ) & p_gameImage->rect();
-	
-	QImage copied = p_gameImage->copy( rect );
-	painter->drawImage( rect.topLeft(), copied );
+	// TODO: An animation to position
+	p_currentDivisionItem->setPos(position.topLeft());
 }
 
 void placeMapWidget::mousePressEvent(QMouseEvent *e)
@@ -261,7 +261,9 @@ void placeMapWidget::mousePressEvent(QMouseEvent *e)
 			if ( QRectF(p_gameImage->rect()).contains( p_initial ) )
 			{
 				QRgb rgb = p_mapImage->pixel( int(p_initial.x()), int(p_initial.y()) );
-				emit clicked( rgb, e->pos(), p_initial - p_gameImage->rect().topLeft() );
+				// check against the topleft corner, because the image is 1x1 size smaller than the image rectangle
+				QPoint p(e->pos().x()-p_currentDivisionImage->width()/2,e->pos().y()-p_currentDivisionImage->height()/2);
+				emit clicked( rgb, e->pos(), mapToScene(p));
 			}
 		}
 	}
@@ -271,7 +273,6 @@ void placeMapWidget::mousePressEvent(QMouseEvent *e)
 		p_mode = WantMove;
 		updateActions();
 		p_prev = e->pos();
-		//setCursor(Qt::SizeAllCursor);
 		p_mode = Moving;
 		updateActions();
 	}
@@ -285,10 +286,11 @@ void placeMapWidget::mousePressEvent(QMouseEvent *e)
 
 void placeMapWidget::mouseMoveEvent(QMouseEvent *e)
 {
+	lastMouseEvent = e->pos();
 	if ( p_mode == Zooming )
 	{
 		QPointF current = mapToScene( e->pos() );
-		
+
 		QRectF r;
 		r.setTopLeft( p_initial );
 		r.setBottomRight( current );
@@ -297,11 +299,16 @@ void placeMapWidget::mouseMoveEvent(QMouseEvent *e)
 	else if ( p_mode == Moving )
 	{
 		QPoint diff = p_prev - e->pos();
-		
+
 		horizontalScrollBar()->setValue( horizontalScrollBar()->value() + diff.x() );
 		verticalScrollBar()->setValue( verticalScrollBar()->value() + diff.y() );
-		
+
 		p_prev = e->pos();
+	}
+	if (p_currentDivisionItem)
+	{
+		QPoint p(e->pos().x()-p_currentDivisionImage->width()/2,e->pos().y()-p_currentDivisionImage->height()/2);
+		p_currentDivisionItem->setPos(mapToScene(p));
 	}
 }
 
@@ -311,26 +318,22 @@ void placeMapWidget::mouseReleaseEvent(QMouseEvent *e)
 	{
 		p_automaticZoom = false;
 		fitInView( p_zoomRect, Qt::KeepAspectRatio );
-		updateCursor();
 		delete p_zoomRect;
 		p_zoomRect = 0;
-		
+
 		p_mode = WantZoom;
 	}
 	else if ( p_mode == Moving )
 	{
-		if ( e->button() != Qt::MidButton)
-			unsetCursor();
 		p_mode = p_modeBeforeMidClick;
 	}
 }
 
 void placeMapWidget::resizeEvent(QResizeEvent *)
 {
-	resetCachedContent();
 	updateZoom();
 	updateActions();
-	
+
 	// Another hack to work around buginess in QGraphicsView
 	if ( matrix().isIdentity() )
 		QMetaObject::invokeMethod(this, "setAutomaticZoom", Qt::QueuedConnection, Q_ARG(bool, p_automaticZoom));
@@ -356,9 +359,29 @@ void placeMapWidget::wheelEvent(QWheelEvent *e)
 	}
 }
 
+void placeMapWidget::enterEvent(QEvent* e)
+{
+	if (p_currentDivisionItem)
+	{
+		p_currentDivisionItem->show();
+	}
+}
+
+void placeMapWidget::leaveEvent(QEvent* e)
+{
+	if (p_currentDivisionItem)
+	{
+		p_currentDivisionItem->hide();
+	}
+}
+
+
 void placeMapWidget::setAutomaticZoom(bool automaticZoom)
 {
-	if (!automaticZoom) setGameImage();
+	if (!automaticZoom)
+	{
+		setGameImage();
+	}
 	else
 	{
 		p_automaticZoom = true;
@@ -370,14 +393,10 @@ void placeMapWidget::setAutomaticZoom(bool automaticZoom)
 void placeMapWidget::setGameImage()
 {
 	p_automaticZoom = false;
-	
 	// Possibly bug in QGraphicsView? The view isn't updated properly
 	// if the matrix isn't set to something non-identity first
 	setMatrix( QMatrix( 2, 0, 0, 2, 0, 0 ) );
 	resetMatrix();
-	updateCursor();
-	
-	resetCachedContent();
 	updateActions();
 }
 
@@ -386,7 +405,6 @@ void placeMapWidget::updateZoom()
 	if ( !p_automaticZoom || !p_gameImage )
 		return;
 	fitInView( p_gameImage->rect(), Qt::KeepAspectRatio );
-	updateCursor();
 }
 
 QSize placeMapWidget::mapSize() const
@@ -398,12 +416,21 @@ void placeMapWidget::updateActions()
 {
 	if(p_gameImage)
 	{
+		if ( p_mode != Zooming && p_mode != WantZoom )
+		{
+		  p_currentDivisionItem->show();
+		}
+		else
+		{
+		  p_currentDivisionItem->hide();
+		}
 		// Whether the image is bigger than that viewable
 		bool biggerThanView = (p_gameImage->width() * matrix().m11() >= width()) || (p_gameImage->height() * matrix().m22() >= height());
-	
+
 		emit setMoveActionEnabled( !p_automaticZoom && biggerThanView );
 		emit setMoveActionChecked( !p_automaticZoom && (p_mode == Moving || p_mode == WantMove) && biggerThanView );
 	}
+
 	emit setZoomActionChecked( p_mode == Zooming || p_mode == WantZoom );
 }
 
