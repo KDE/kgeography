@@ -14,6 +14,7 @@
 #include <kglobal.h>
 #include <kmessagebox.h>
 #include <kstandarddirs.h>
+#include <klistwidgetsearchline.h>
 
 #include <qimage.h>
 #include <qlabel.h>
@@ -35,16 +36,25 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 
 	QWidget *mainHB;
 	QHBoxLayout *mainHBLayout;
+	QVBoxLayout *listFilterLayout;
 	QStringList list;
 	KGmap *m;
-	
+	KListWidgetSearchLine *line;
+
 	mainHB = new QWidget(this);
 	mainHBLayout = new QHBoxLayout(mainHB);
 	mainHBLayout -> setMargin(0);
 	mainHBLayout -> setSpacing(KDialog::spacingHint());
 	list = KGlobal::dirs() -> findAllResources("appdata", "*.kgm");
 	p_listBox = new QListWidget(mainHB);
-	mainHBLayout -> addWidget(p_listBox);
+	line = new KListWidgetSearchLine(mainHB, p_listBox);
+	line->setClickMessage(i18n("Filter Maps"));
+	listFilterLayout = new QVBoxLayout();
+	listFilterLayout -> setMargin(0);
+	listFilterLayout -> setSpacing(KDialog::spacingHint());
+	mainHBLayout -> addLayout(listFilterLayout);
+	listFilterLayout -> addWidget(line);
+	listFilterLayout -> addWidget(p_listBox);
 	QStringList::iterator it;
 	QStringList texts;
 	QSet<QString> alreadySeens;
