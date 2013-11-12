@@ -31,12 +31,11 @@ Q_OBJECT
 
 		QSize mapSize() const;
 		bool isAsker() const;
-		
+
 	protected:
 		void nextQuestionHook(const QString &division);
 		void mousePressEvent(QMouseEvent *e);
 		QString getQuestionHook() const;
-		void showEvent(QShowEvent *e);
 		division::askMode askMode() const { return division::eClick; }
 
 	public slots:
@@ -53,11 +52,9 @@ Q_OBJECT
 
 		QLabel *p_next;
 		QWidget *p_fill;
-		
+
 		infoWidget *p_infoWidget;
 		placeMapWidget *p_mapWidget;
-		
-		bool p_firstShow;
 
 		QImage *p_currentDivisionImage;
 		QImage *p_mapImage;

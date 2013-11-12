@@ -26,7 +26,7 @@
 #include "map.h"
 #include "placemapwidget.h"
 
-placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidget(parent, m, w, count, true), p_firstShow(true), p_currentDivisionImage(0)
+placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidget(parent, m, w, count, true), p_currentDivisionImage(0)
 {
 	QVBoxLayout *lay = new QVBoxLayout(this);
 	lay -> setMargin(0);
@@ -35,12 +35,12 @@ placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askW
 	p_mapImage = new QImage(p_map->getMapFile());
 	p_mapWidget = new placeMapWidget(this);
 	lay -> addWidget(p_mapWidget);
-	
+
 	connect(p_mapWidget, SIGNAL(clicked(QRgb, const QPoint&, const QPointF&)), this, SLOT(handleMapClick(QRgb, const QPoint&, const QPointF&)));
 	connect(p_mapWidget, SIGNAL(setMoveActionChecked(bool)), this, SIGNAL(setMoveActionChecked(bool)));
 	connect(p_mapWidget, SIGNAL(setZoomActionChecked(bool)), this, SIGNAL(setZoomActionChecked(bool)));
 	connect(p_mapWidget, SIGNAL(setMoveActionEnabled(bool)), this, SIGNAL(setMoveActionEnabled(bool)));
-	
+
 	QVBoxLayout *vbl = static_cast<QVBoxLayout*>(w -> layout());
 	p_next = new QLabel(w);
 	p_next -> setAlignment(Qt::AlignTop | Qt::AlignHCenter);
@@ -50,6 +50,9 @@ placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askW
 	vbl -> addWidget(p_next);
 	vbl -> addWidget(p_fill, 1);
 	p_placedPixelIndices = p_mapWidget -> outerPixelIndices();
+	// Set the background image before start asking
+	p_mapWidget -> init(p_map, p_mapImage);
+
 	nextQuestion();
 }
 
@@ -97,14 +100,15 @@ void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint
 	if (aux == "nothing") KMessageBox::error(this, i18nc("@info", "You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.", p_map -> getFile(), qRed(c), qGreen(c), qBlue(c)));
 	else
 	{
-		p_mapWidget->placeDivision(p_currentDivisionImage, p_currentDivisionRect);
+		p_mapWidget->placeDivision(p_currentDivisionRect);
 		p_mapWidget->unsetCursor();
 		// the image is no longer needed
 		delete p_currentDivisionImage;
 
-		double distX = p_currentDivisionRect.center().x() - mapPoint.x();
-		double distY = p_currentDivisionRect.center().y() - mapPoint.y();
-		double distance = sqrt((double)distX * distX + distY * distY); 
+		double distX = p_currentDivisionRect.x() - mapPoint.x();
+		double distY = p_currentDivisionRect.y() - mapPoint.y();
+		double distance = sqrt(static_cast<double>(distX * distX + distY * distY));
+
 		int indexOfCurrent = p_mapImage -> colorTable().indexOf(p_currentRgb);
 		bool consideredGood = distance < 5.0;
 		// if we consider it good enough don't transmit a may be wrong color
@@ -124,7 +128,7 @@ void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint
 		if (! consideredGood)
 		{
 			QRect definedRect(0, 0, p_mapImage -> width(), p_mapImage -> height());
-			QPoint v = QPoint(mapPoint.x(), mapPoint.y()) - p_currentDivisionRect.center();
+			QPoint v = QPoint(mapPoint.x(), mapPoint.y()) - p_currentDivisionRect.topLeft();
 			QRect initialRect(p_currentDivisionRect);
 			QRect userRect = initialRect.translated(v);
 			QRect definedRectUser = userRect & definedRect;
@@ -199,15 +203,6 @@ QString placeAsker::getQuestionHook() const
 	return i18nc("@title", "Place %1 in Map", divisionType);
 }
 
-void placeAsker::showEvent(QShowEvent *)
-{
-	if (p_firstShow)
-	{
-		p_mapWidget -> init(p_map, p_mapImage);
-		p_firstShow = false;
-	}
-}
-
 QSize placeAsker::mapSize() const
 {
 	return p_mapWidget -> mapSize();
@@ -242,8 +237,7 @@ void placeAsker::setCurrentDivision(const QString& division)
 
 	p_currentDivisionImage = new QImage(maxX - minX, maxY - minY, QImage::Format_ARGB32);
 	p_currentDivisionRect.setCoords(minX, minY, maxX, maxY);
-	QColor transparent(0,0,0,0);
-	p_currentDivisionImage->fill(transparent.rgba());
+	p_currentDivisionImage->fill(Qt::transparent);
 
 	//second iteration, copy the color to the new image
 	for (int x = minX; x < maxX; x++)
