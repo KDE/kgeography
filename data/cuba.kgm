@@ -31,10 +31,15 @@
 		<color><red>255</red><green>128</green><blue>128</blue></color>
 	</division>
 	<division>
-		<name>La Habana</name>
-		<capital>La Habana</capital>
+		<name>Artemisa</name>
+		<capital>Artemisa</capital>
 		<ignore>allowClickMode</ignore>
 		<color><red>255</red><green>128</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Mayabeque</name>
+		<capital>San José de las Lajas</capital>
+		<color><red>163</red><green>33</green><blue>33</blue></color>
 	</division>
 	<division>
 		<name>Ciudad de La Habana</name>
