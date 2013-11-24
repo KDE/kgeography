@@ -35,7 +35,7 @@
 		<color><red>255</red><green>36</green><blue>36</blue></color>
 	</division>
 	<division>
-		<name>Rodopi</name>
+		<name>Rhodope</name>
 		<capital>Komotini</capital>
 		<color><red>255</red><green>109</green><blue>109</blue></color>
 	</division>
@@ -125,8 +125,8 @@
 		<color><red>0</red><green>146</green><blue>0</blue></color>
 	</division>
 	<division>
-		<name>Larisa</name>
-		<capital>Larisa</capital>
+		<name>Larissa</name>
+		<capital>Larissa</capital>
 		<color><red>0</red><green>219</green><blue>0</blue></color>
 	</division>
 	<division>
@@ -145,7 +145,7 @@
 		<color><red>182</red><green>255</green><blue>182</blue></color>
 	</division>
 	<division>
-		<name>Kefallinia</name>
+		<name>Kefalonia</name>
 		<capital>Argostoli</capital>
 		<color><red>0</red><green>146</green><blue>73</blue></color>
 	</division>
@@ -155,7 +155,7 @@
 		<color><red>0</red><green>219</green><blue>109</blue></color>
 	</division>
 	<division>
-		<name>Zante</name>
+		<name>Zakynthos</name>
 		<capital>Zakynthos</capital>
 		<color><red>36</red><green>255</green><blue>146</blue></color>
 	</division>
@@ -170,7 +170,7 @@
 		<color><red>182</red><green>255</green><blue>219</blue></color>
 	</division>
 	<division>
-		<name>Ileia</name>
+		<name>Elis</name>
 		<capital>Pyrgos</capital>
 		<color><red>0</red><green>146</green><blue>146</blue></color>
 	</division>

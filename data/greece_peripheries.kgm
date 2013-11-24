@@ -46,12 +46,12 @@
 	</division>
 	<division>
 		<name>West Greece</name>
-		<capital>Patra</capital>
+		<capital>Patras</capital>
 		<color><red>85</red><green>255</green><blue>170</blue></color>
 	</division>
 	<division>
 		<name>Thessaly</name>
-		<capital>Larisa</capital>
+		<capital>Larissa</capital>
 		<color><red>85</red><green>255</green><blue>255</blue></color>
 	</division>
 	<division>
@@ -81,7 +81,7 @@
 	</division>
 	<division>
 		<name>Crete</name>
-		<capital>Iraklio</capital>
+		<capital>Heraklion</capital>
 		<color><red>227</red><green>113</green><blue>113</blue></color>
 	</division>
 	<division>

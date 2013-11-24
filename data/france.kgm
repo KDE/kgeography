@@ -60,7 +60,7 @@
 	</division>
 	<division>
 		<name>Alpes de Haute-Provence</name>
-		<capital>Digne</capital>
+		<capital>Digne-les-Bains</capital>
 		<color>
 			<red>130</red>
 			<green>130</green>
@@ -420,7 +420,7 @@
 	</division>
 	<division>
 		<name>Haute-Loire</name>
-		<capital>Le Puy</capital>
+		<capital>Le Puy-en-Velay</capital>
 		<color>
 			<red>160</red>
 			<green>220</green>
@@ -492,7 +492,7 @@
 	</division>
 	<division>
 		<name>Marne</name>
-		<capital>Châlon en Champagne</capital>
+		<capital>Châlons-en-Champagne</capital>
 		<color>
 			<red>190</red>
 			<green>130</green>
