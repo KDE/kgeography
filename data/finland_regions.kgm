@@ -25,12 +25,12 @@
 		<color><red>255</red><green>0</green><blue>0</blue></color>
 	</division>
 	<division>
-		<name>North Carelia</name>
+		<name>North Karelia</name>
 		<capital>Joensuu</capital>
 		<color><red>0</red><green>255</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>South Carelia</name>
+		<name>South Karelia</name>
 		<capital>Lappeenranta</capital>
 		<color><red>0</red><green>128</green><blue>255</blue></color>
 	</division>
@@ -105,7 +105,7 @@
 		<color><red>0</red><green>255</green><blue>127</blue></color>
 	</division>
 	<division>
-		<name>Nylandia</name>
+		<name>Uusimaa</name>
 		<capital>Helsinki</capital>
 		<color><red>255</red><green>0</green><blue>255</blue></color>
 	</division>
