@@ -19,7 +19,8 @@
                 <color><red>222</red><green>62</green><blue>205</blue></color>
         </division>
         <division>
-                <name>Udagamandalam</name>
+                <name>Nilgiris</name>
+                <capital>Udagamandalam</capital>
                 <color><red>119</red><green>137</green><blue>199</blue></color>
         </division>
         <division>
@@ -91,7 +92,8 @@
                 <color><red>6</red><green>23</green><blue>248</blue></color>
         </division>
         <division>
-                <name>Nagercoil</name>
+                <name>Kanyakumari</name>
+                <capital>Nagercoil</capital>
                 <color><red>183</red><green>234</green><blue>179</blue></color>
         </division>
         <division>
