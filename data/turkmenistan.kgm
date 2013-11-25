@@ -21,12 +21,12 @@
 	</division>
 	<division>
 		<name>Ahal</name>
-		<ignore>allowClickMode</ignore>
+		<capital>Anau</capital>
 		<color><red>255</red><green>0</green><blue>0</blue></color>
 	</division>
 	<division>
 		<name>Balkan</name>
-		<ignore>allowClickMode</ignore>
+		<capital>Balkanabat</capital>
 		<color><red>255</red><green>255</green><blue>0</blue></color>
 	</division>
 	<division>
@@ -36,7 +36,7 @@
 	</division>
 	<division>
 		<name>Lebap</name>
-		<ignore>allowClickMode</ignore>
+		<capital>Türkmenabat</capital>
 		<color><red>0</red><green>255</green><blue>255</blue></color>
 	</division>
 	<division>
