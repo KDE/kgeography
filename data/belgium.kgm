@@ -54,7 +54,7 @@
 	<division>
 		<name>Flemish Brabant</name>
 		<flag>belgium/flemish_brabant.png</flag>
-		<capital>Louvain</capital>
+		<capital>Leuven</capital>
 		<color>
 			<red>130</red>
 			<green>130</green>
@@ -112,7 +112,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Liege</name>
+		<name>Liège</name>
 		<flag>belgium/liege.png</flag>
 		<capital>Liege</capital>
 		<color>
