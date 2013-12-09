@@ -190,7 +190,7 @@
 		<color><red>255</red><green>153</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>Tiranë</name>
+		<name>Tirana</name>
 		<ignore>allowClickMode</ignore>
 		<color><red>204</red><green>0</green><blue>102</blue></color>
 	</division>
