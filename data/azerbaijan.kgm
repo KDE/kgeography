@@ -100,7 +100,7 @@
 		<color><red>153</red><green>51</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>Davachi</name>
+		<name>Shabran</name>
 		<ignore>allowClickMode</ignore>
 		<color><red>0</red><green>204</green><blue>102</blue></color>
 	</division>
@@ -195,7 +195,7 @@
 		<color><red>25</red><green>179</green><blue>102</blue></color>
 	</division>
 	<division>
-		<name>Oguz</name>
+		<name>Oghuz</name>
 		<ignore>allowClickMode</ignore>
 		<color><red>204</red><green>0</green><blue>204</blue></color>
 	</division>
