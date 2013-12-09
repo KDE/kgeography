@@ -15,9 +15,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Para</name>
+		<name>Pará</name>
 		<flag>brazil/br_PA.png</flag>
-		<capital>Belem</capital>
+		<capital>Belém</capital>
 		<color>
 			<red>0</red>
 			<green>216</green>
@@ -47,7 +47,7 @@
 	<division>
 		<name>Federal District</name>
 		<flag>brazil/br_DF.png</flag>
-		<capital>Brasilia</capital>
+		<capital>Brasília</capital>
 		<color>
 			<red>218</red>
 			<green>224</green>
@@ -67,7 +67,7 @@
 	<division>
 		<name>Mato Grosso</name>
 		<flag>brazil/br_MT.png</flag>
-		<capital>Cuiaba</capital>
+		<capital>Cuiabá</capital>
 		<color>
 			<red>222</red>
 			<green>0</green>
@@ -75,7 +75,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Parana</name>
+		<name>Paraná</name>
 		<flag>brazil/br_PN.png</flag>
 		<capital>Curitiba</capital>
 		<color>
@@ -87,7 +87,7 @@
 	<division>
 		<name>Santa Catarina</name>
 		<flag>brazil/br_SC.png</flag>
-		<capital>Florianopolis</capital>
+		<capital>Florianópolis</capital>
 		<color>
 			<red>170</red>
 			<green>220</green>
@@ -95,7 +95,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Ceara</name>
+		<name>Ceará</name>
 		<flag>brazil/br_CE.png</flag>
 		<capital>Fortaleza</capital>
 		<color>
@@ -105,7 +105,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Goias</name>
+		<name>Goiás</name>
 		<flag>brazil/br_GO.png</flag>
 		<capital>Goiânia</capital>
 		<color>
@@ -115,9 +115,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Paraiba</name>
+		<name>Paraíba</name>
 		<flag>brazil/br_PR.png</flag>
-		<capital>Joao Pessoa</capital>
+		<capital>João Pessoa</capital>
 		<color>
 			<red>207</red>
 			<green>18</green>
@@ -125,9 +125,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Amapa</name>
+		<name>Amapá</name>
 		<flag>brazil/br_AP.png</flag>
-		<capital>Macapa</capital>
+		<capital>Macapá</capital>
 		<color>
 			<red>167</red>
 			<green>171</green>
@@ -137,7 +137,7 @@
 	<division>
 		<name>Alagoas</name>
 		<flag>brazil/br_AL.png</flag>
-		<capital>Maceio</capital>
+		<capital>Maceió</capital>
 		<color>
 			<red>131</red>
 			<green>222</green>
@@ -185,7 +185,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Rondonia</name>
+		<name>Rondônia</name>
 		<flag>brazil/br_RO.png</flag>
 		<capital>Porto Velho</capital>
 		<color>
@@ -235,9 +235,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Maranhao</name>
+		<name>Maranhão</name>
 		<flag>brazil/br_MA.png</flag>
-		<capital>Sao Luis</capital>
+		<capital>São Luís</capital>
 		<color>
 			<red>163</red>
 			<green>0</green>
@@ -245,9 +245,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Sao Paulo State</name>
+		<name>São Paulo State</name>
 		<flag>brazil/br_SP.png</flag>
-		<capital>Sao Paulo (city)</capital>
+		<capital>São Paulo (city)</capital>
 		<color>
 			<red>0</red>
 			<green>103</green>
@@ -255,7 +255,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Piaui</name>
+		<name>Piauí</name>
 		<flag>brazil/br_PI.png</flag>
 		<capital>Teresina</capital>
 		<color>
@@ -265,9 +265,9 @@
 		</color>
 	</division>
 	<division>
-		<name>Espirito Santo</name>
+		<name>Espírito Santo</name>
 		<flag>brazil/br_ES.png</flag>
-		<capital>Vitoria</capital>
+		<capital>Vitória</capital>
 		<color>
 			<red>186</red>
 			<green>170</green>
