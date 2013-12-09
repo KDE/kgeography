@@ -150,7 +150,7 @@
 		<color><red>0</red><green>255</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>Lowgar</name>
+		<name>Logar</name>
 		<capital>Pul-i-Alam</capital>
 		<color><red>128</red><green>255</green><blue>255</blue></color>
 	</division>
@@ -166,7 +166,7 @@
 	</division>
 	<division>
 		<name>Nuristan</name>
-		<capital>Kamdish</capital>
+		<capital>Parun</capital>
 		<color><red>128</red><green>191</green><blue>255</blue></color>
 	</division>
 	<division>
@@ -196,7 +196,7 @@
 	</division>
 	<division>
 		<name>Samangan</name>
-		<capital>Aybak</capital>
+		<capital>Samangan</capital>
 		<color><red>191</red><green>128</green><blue>255</blue></color>
 	</division>
 	<division>
