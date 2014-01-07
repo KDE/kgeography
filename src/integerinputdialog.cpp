@@ -10,39 +10,46 @@
 
 #include "integerinputdialog.h"
 
-#include <QSpinBox>
-
+#include <qspinbox.h>
 #include <qboxlayout.h>
 #include <qlabel.h>
 #include <qslider.h>
+#include <qdialogbuttonbox.h>
 
 IntegerInputDialog::IntegerInputDialog(QWidget *parent, const QString &title, const QString &question,
 				       int from, int upto, int byDefault)
-	: KDialog(parent)
+	: QDialog(parent)
 {
-	setCaption(title);
-	setButtons(KDialog::Ok | KDialog::Cancel);
+	setWindowTitle(title);
 
-	QWidget *container = new QWidget(this);
-	setMainWidget(container);
-	QVBoxLayout *vbox = new QVBoxLayout(container);
-	QLabel *questionLbl = new QLabel(question);
-	vbox->addWidget(questionLbl);
-	QHBoxLayout *hbox = new QHBoxLayout();
-	vbox->addLayout(hbox);
+	QVBoxLayout *mainLayout = new QVBoxLayout(this);
+
+	QLabel *questionLabel = new QLabel(question);
+	mainLayout->addWidget(questionLabel);
+
+	QHBoxLayout *horizontalLayout = new QHBoxLayout();
+	mainLayout->addLayout(horizontalLayout);
 
 	_slider = new QSlider(Qt::Horizontal);
 	_slider->setRange(from, upto);
 	int value = ( from <= byDefault && byDefault <= upto ) ? byDefault : upto;
 	_slider->setValue(value);
 	connect(_slider, SIGNAL(valueChanged(int)), this, SLOT(sliderValueChanged(int)));
-	hbox->addWidget(_slider);
+	horizontalLayout->addWidget(_slider);
 
 	_spinBox = new QSpinBox();
 	_spinBox->setRange(from, upto);
 	_spinBox->setValue(value);
 	connect(_spinBox, SIGNAL(valueChanged(int)), this, SLOT(spinboxValueChanged(int)));
-	hbox->addWidget(_spinBox);
+	horizontalLayout->addWidget(_spinBox);
+
+	QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok
+									 | QDialogButtonBox::Cancel);
+	connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
+	connect(buttonBox, SIGNAL(rejected()), this, SLOT(reject()));
+	mainLayout->addWidget(buttonBox);
+
+	setLayout(mainLayout);
     
 	_spinBox->setFocus();
 }
@@ -54,8 +61,6 @@ int IntegerInputDialog::value() const
 
 void IntegerInputDialog::setValue(int newValue)
 {
-	if ( _slider->value() != newValue )
-		_slider->setValue(newValue);
 	if ( _slider->value() != newValue )
 		_slider->setValue(newValue);
 }

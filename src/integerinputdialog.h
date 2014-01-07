@@ -11,12 +11,12 @@
 #ifndef _INTEGER_INPUT_DIALOG_H
 #define _INTEGER_INPUT_DIALOG_H
 
-#include <kdialog.h>
+#include <qdialog.h>
 
 class QSpinBox;
 class QSlider;
 
-class IntegerInputDialog : public KDialog
+class IntegerInputDialog : public QDialog
 {
 Q_OBJECT
 	public:
