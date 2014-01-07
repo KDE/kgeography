@@ -10,7 +10,7 @@
 
 #include "capitaldivisionasker.h"
 
-#include <klocale.h>
+#include <klocalizedstring.h>
 
 #include <qradiobutton.h>
  

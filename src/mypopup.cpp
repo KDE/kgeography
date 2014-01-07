@@ -11,7 +11,7 @@
 #include "mypopup.h"
 
 #include <kiconloader.h>
-#include <klocale.h>
+#include <klocalizedstring.h>
 #include <ktoolinvocation.h>
 
 #include <qevent.h>

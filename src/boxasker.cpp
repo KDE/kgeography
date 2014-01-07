@@ -13,8 +13,7 @@
 #include <stdlib.h> // for RAND_MAX
 
 #include <kacceleratormanager.h>
-#include <klocale.h>
-#include <kpushbutton.h>
+#include <klocalizedstring.h>
 #include <krandom.h>
 
 #include <qbuttongroup.h>
@@ -23,6 +22,7 @@
 #include <qlabel.h>
 #include <qlayout.h>
 #include <qradiobutton.h>
+#include <qpushbutton.h>
 
 #include "map.h"
 #include "settings.h"
@@ -48,7 +48,7 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 		p_radioButtons[i] -> installEventFilter(this);
 		connect(p_radioButtons[i], SIGNAL(toggled(bool)), this, SLOT(atLeastOneSelected()));
 	}
-	p_accept = new KPushButton();
+	p_accept = new QPushButton();
 
 	layoutGroupBox();
 	layoutAligned();

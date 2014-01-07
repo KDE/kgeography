@@ -9,20 +9,29 @@
  ***************************************************************************/
 
 #include <kaboutdata.h>
-#include <kcmdlineargs.h>
-#include <klocale.h>
-#include <kapplication.h>
+#include <klocalizedstring.h>
+#include <qapplication.h>
+#include <qcommandlineparser.h>
 #include "kgeography.h"
 
 int main(int argc, char *argv[])
 {
-	KAboutData about("kgeography", 0, ki18n("KGeography"), "0.8.1", ki18n("A geography learning program"), KAboutData::License_GPL, ki18n("© 2004-2005 Albert Astals Cid"), KLocalizedString(), "http://userbase.kde.org/KGeography");
-	about.addAuthor(ki18n("Albert Astals Cid"), ki18n("Programmer and designer"), "aacid@kde.org");
-	about.addCredit(ki18n("Sodipodi flags collection"), ki18n("Got some flags from it"), 0, "http://www.sodipodi.com/index.php3?section=clipart/flags");
-	KCmdLineArgs::init(argc, argv, &about);
-	KApplication app;
+	QApplication app(argc, argv);
+	KAboutData about("kgeography", 0, i18n("KGeography"), "0.8.1", i18n("A Geography learning program"), KAboutData::License_GPL, i18n("© 2004-2005 Albert Astals Cid"), QString(), "http://userbase.kde.org/KGeography");
+	about.addAuthor(i18n("Albert Astals Cid"), i18n("Programmer and designer"), "aacid@kde.org");
+	about.addCredit(i18n("Sodipodi flags collection"), i18n("Got some flags from it"), 0, "http://www.sodipodi.com/index.php3?section=clipart/flags");
 
-	app.setTopWidget(new kgeography());
+	QCoreApplication::setApplicationName(about.catalogName());
+	QCoreApplication::setApplicationVersion(about.version());
+	QCoreApplication::setOrganizationDomain("kde.org");
+
+	QCommandLineParser parser;
+	parser.addVersionOption();
+	about.setupCommandLine(&parser);
+	parser.process(app);
+	about.processCommandLine(&parser);
+
+	new kgeography();
 
 	return app.exec();
 }

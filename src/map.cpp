@@ -12,7 +12,7 @@
 
 #include <stdlib.h> // for RAND_MAX
 
-#include <klocale.h>
+#include <klocalizedstring.h>
 #include <krandom.h>
 
 #include <qfile.h>

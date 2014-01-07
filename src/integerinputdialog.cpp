@@ -10,7 +10,7 @@
 
 #include "integerinputdialog.h"
 
-#include <KIntSpinBox>
+#include <QSpinBox>
 
 #include <qboxlayout.h>
 #include <qlabel.h>
@@ -38,7 +38,7 @@ IntegerInputDialog::IntegerInputDialog(QWidget *parent, const QString &title, co
 	connect(_slider, SIGNAL(valueChanged(int)), this, SLOT(sliderValueChanged(int)));
 	hbox->addWidget(_slider);
 
-	_spinBox = new KIntSpinBox();
+	_spinBox = new QSpinBox();
 	_spinBox->setRange(from, upto);
 	_spinBox->setValue(value);
 	connect(_spinBox, SIGNAL(valueChanged(int)), this, SLOT(spinboxValueChanged(int)));

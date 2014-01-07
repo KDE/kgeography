@@ -10,24 +10,22 @@
 
 #include "kgeography.h"
 
-#include <kaction.h>
 #include <kdialog.h>
-#include <klocale.h>
 #include <kconfigdialog.h>
-#include <kinputdialog.h>
 #include <kmessagebox.h>
-#include <kpushbutton.h>
 #include <kstandardaction.h>
 #include <ktoggleaction.h>
 #include <ktoolbar.h>
-#include <kmenubar.h>
 #include <kicon.h>
 #include <kactioncollection.h>
+
+#include <qmenubar.h>
 #include <qfile.h>
 #include <qlabel.h>
 #include <qlayout.h>
 #include <qsize.h>
 #include <qtimer.h>
+#include <qpushbutton.h>
 
 #include "answersdialog.h"
 #include "capitaldivisionasker.h"
@@ -60,21 +58,21 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 
 	p_currentMap = new QLabel(leftWidget);
 	p_currentMap -> setAlignment(Qt::AlignCenter);
-	p_consult = new KPushButton(i18n("E&xplore Map"), leftWidget);
+	p_consult = new QPushButton(i18n("E&xplore Map"), leftWidget);
 	p_consult->setWhatsThis(i18n("In this section left click on any part of the map to learn about the divisions" ));
 	QLabel * testYourselfLabel = new QLabel( i18n("Test Yourself:"), this );
 	testYourselfLabel->setAlignment( Qt::AlignHCenter );
-	p_askMap = new KPushButton(i18n("&Location of Regions"), leftWidget);
+	p_askMap = new QPushButton(i18n("&Location of Regions"), leftWidget);
 	p_askMap->setWhatsThis(i18n("In this challenge you are given a division name on the left under the menu and you must find it on the map and click on it"));
-	p_askPlaceMap = new KPushButton(i18n("&Place Regions in the Map"), leftWidget);
+	p_askPlaceMap = new QPushButton(i18n("&Place Regions in the Map"), leftWidget);
 	p_askPlaceMap->setWhatsThis(i18n("In this challenge you are given the shape of a region and you must place it on the map"));
-	p_askCapitalDivisions = new KPushButton(i18n("&Regions by Capital"), leftWidget);
+	p_askCapitalDivisions = new QPushButton(i18n("&Regions by Capital"), leftWidget);
 	p_askCapitalDivisions->setWhatsThis(i18n("In this quiz you have to guess the division name given its capital"));
-	p_askDivisionCapitals = new KPushButton(i18n("&Capitals of Regions"), leftWidget);
+	p_askDivisionCapitals = new QPushButton(i18n("&Capitals of Regions"), leftWidget);
 	p_askDivisionCapitals->setWhatsThis(i18n("In this quiz you have to guess the capital of a given division name"));
-	p_askFlagDivisions = new KPushButton(i18n("Re&gions by Flag"), leftWidget);
+	p_askFlagDivisions = new QPushButton(i18n("Re&gions by Flag"), leftWidget);
 	p_askFlagDivisions->setWhatsThis(i18n("In this quiz you have to guess the division name given its flag"));
-	p_askDivisionFlags = new KPushButton(i18n("&Flags of Regions"), leftWidget);
+	p_askDivisionFlags = new QPushButton(i18n("&Flags of Regions"), leftWidget);
 	p_askDivisionFlags->setWhatsThis(i18n("In this quiz you have to guess the flag of a division given its name"));
 	p_underLeftWidget = new QWidget(leftWidget);
 	// where the number of answers will be shown
@@ -167,7 +165,8 @@ void kgeography::showPreferencesDialog()
 	// create it : 
 	KConfigDialog* dialog = new KConfigDialog(this, "settings",
 											  kgeographySettings::self()); 
-        dialog->setHelp("configuration", "kgeography");
+//	FIXME: Waiting for the answer from Kévin about what to do with it
+//	dialog->setHelp("configuration", "kgeography");
 	QWidget *w = new QWidget();
 	Ui::Options confWdg;
 	confWdg.setupUi(w);

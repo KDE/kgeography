@@ -1,11 +1,33 @@
 project(kgeography)
 
-find_package(KDE4 REQUIRED)
-include(KDE4Defaults)
+# minimal cmake requirement
+cmake_minimum_required (VERSION 2.8.12 FATAL_ERROR)
 
-include_directories (${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} ${KDE4_INCLUDES} ${QT4_INCLUDES})
+# minimal Qt requirement
+set (QT_MIN_VERSION "5.2.0")
+
+# ECM
+find_package (ECM 0.0.9 REQUIRED NO_MODULE)
+
+# where to look first for cmake modules
+set (CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
+
+find_package (Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED Core Widgets
+)
+
+find_package (KF5 CONFIG REQUIRED COMPONENTS
+    CoreAddons I18n KDE4Support WidgetsAddons XmlGui ConfigWidgets ItemViews Service ItemModels Emoticons
+)
+
+include(KDEInstallDirs)
+include(KDECompilerSettings)
+include(KDECMakeSettings)
+include(FeatureSummary)
+
 add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
 
+# global include directories
+include_directories (${CMAKE_CURRENT_BINARY_DIR})
 
 add_subdirectory( doc )
 add_subdirectory( src ) 

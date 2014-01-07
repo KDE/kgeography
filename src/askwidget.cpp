@@ -10,7 +10,7 @@
 
 #include "askwidget.h"
 
-#include <klocale.h>
+#include <klocalizedstring.h>
 #include <kmessagebox.h>
 
 #include <qapplication.h>

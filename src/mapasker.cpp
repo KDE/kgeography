@@ -10,9 +10,9 @@
 
 #include "mapasker.h"
 
-#include <klocale.h>
 #include <kmessagebox.h>
 #include <krandom.h>
+#include <klocalizedstring.h>
 
 #include <qlabel.h>
 #include <qlayout.h>
@@ -26,17 +26,16 @@
 
 static QString guessWikipediaDomain()
 {
-    const QString &lang = KGlobal::locale() -> language();
-    QString code;
+	QLocale systemLocale = QLocale::system();
+	QString languageCode;
+	QLocale::Language systemLanguage = systemLocale.language();
+	if ( systemLanguage == QLocale::AnyLanguage || systemLanguage == QLocale::C ) {
+		languageCode = "en";
+	} else {
+		languageCode = systemLocale.name().split('_').first();
+	}
 
-    if ( lang.isEmpty() || lang == "POSIX" || lang == "C" )
-        code = "en";
-    else {
-        QString dummy;
-        KLocale::splitLocale(lang, code, dummy, dummy, dummy);
-    }
-
-    return QString( "http://%1.wikipedia.org/wiki/" ).arg( code );
+	return QString( "http://%1.wikipedia.org/wiki/" ).arg( languageCode );
 }
 
 mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_asker(asker), p_firstShow(true)

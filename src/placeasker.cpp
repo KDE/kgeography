@@ -15,7 +15,7 @@
 #include <cmath>
 #include <math.h>
 
-#include <klocale.h>
+#include <klocalizedstring.h>
 #include <kmessagebox.h>
 
 #include <qlabel.h>

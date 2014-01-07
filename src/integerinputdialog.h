@@ -13,7 +13,7 @@
 
 #include <kdialog.h>
 
-class KIntSpinBox;
+class QSpinBox;
 class QSlider;
 
 class IntegerInputDialog : public KDialog
@@ -35,7 +35,7 @@ Q_OBJECT
 		void spinboxValueChanged(int newValue);
 
 	private:
-		KIntSpinBox *_spinBox;
+		QSpinBox *_spinBox;
 		QSlider  *_slider;
 };
 

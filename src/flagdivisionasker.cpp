@@ -10,7 +10,7 @@
 
 #include "flagdivisionasker.h"
 
-#include <klocale.h>
+#include <klocalizedstring.h>
 
 #include <qimage.h>
 #include <qlayout.h>

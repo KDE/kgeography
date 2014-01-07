@@ -10,7 +10,7 @@
 
 #include "mapchooser.h"
 
-#include <klocale.h>
+#include <klocalizedstring.h>
 #include <kglobal.h>
 #include <kmessagebox.h>
 #include <kstandarddirs.h>
@@ -48,7 +48,7 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 	list = KGlobal::dirs() -> findAllResources("appdata", "*.kgm");
 	p_listBox = new QListWidget(mainHB);
 	line = new KListWidgetSearchLine(mainHB, p_listBox);
-	line->setClickMessage(i18n("Filter Maps"));
+	line->setPlaceholderText(i18n("Filter Maps"));
 	listFilterLayout = new QVBoxLayout();
 	listFilterLayout -> setMargin(0);
 	listFilterLayout -> setSpacing(KDialog::spacingHint());

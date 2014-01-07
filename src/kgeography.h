@@ -13,10 +13,10 @@
 
 #include <kxmlguiwindow.h>
 
-class KPushButton;
 class KToggleAction;
 
 class QLabel;
+class QPushButton;
 
 class KGmap;
 class askWidget;
@@ -66,13 +66,13 @@ Q_OBJECT
 		QWidget *p_bigWidget;
 		QWidget *p_underLeftWidget;
 
-		KPushButton *p_consult;
-		KPushButton *p_askCapitalDivisions;
-		KPushButton *p_askDivisionCapitals;
-		KPushButton *p_askMap;
-		KPushButton *p_askPlaceMap;
-		KPushButton *p_askFlagDivisions;
-		KPushButton *p_askDivisionFlags;
+		QPushButton *p_consult;
+		QPushButton *p_askCapitalDivisions;
+		QPushButton *p_askDivisionCapitals;
+		QPushButton *p_askMap;
+		QPushButton *p_askPlaceMap;
+		QPushButton *p_askFlagDivisions;
+		QPushButton *p_askDivisionFlags;
 		KToggleAction *p_zoom;
 		KToggleAction *p_move;
 		KToggleAction *p_zoomAutomatic;

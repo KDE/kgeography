@@ -13,7 +13,7 @@
 #include <QDomDocument>
 #include <QFileInfo>
 
-#include <klocale.h>
+#include <klocalizedstring.h>
 #include <kdebug.h>
 
 #include "division.h"

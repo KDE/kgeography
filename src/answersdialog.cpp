@@ -10,7 +10,7 @@
 
 #include "answersdialog.h"
 
-#include <klocale.h>
+#include <klocalizedstring.h>
 
 #include <qlabel.h>
 #include <qlayout.h>

@@ -13,8 +13,7 @@
 
 #include "askwidget.h"
 
-class KPushButton;
-
+class QPushButton;
 class QGroupBox;
 class QLabel;
 class QRadioButton;
@@ -60,11 +59,11 @@ Q_OBJECT
 	
 		QVBoxLayout *p_lay;
 		QGridLayout *p_groupLayout;
-		KPushButton *p_accept;
+		QPushButton *p_accept;
 
 		QWidget *p_headWidget;
 		QLabel *p_label;
-		QGroupBox *p_groupBox;;
+		QGroupBox *p_groupBox;
 		QVector<QLabel*> p_answerLabels;
 };
 

@@ -12,7 +12,7 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="KButtonGroup" name="kcfg_questionPlacingScheme">
+    <widget class="QGroupBox" name="kcfg_questionPlacingScheme">
      <property name="title">
       <string>&amp;Question Alignment</string>
      </property>
@@ -104,7 +104,7 @@
     </widget>
    </item>
    <item>
-    <widget class="KButtonGroup" name="kcfg_colorDisguise">
+    <widget class="QGroupBox" name="kcfg_colorDisguise">
      <property name="enabled">
       <bool>true</bool>
      </property>
@@ -147,14 +147,6 @@
    </item>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>KButtonGroup</class>
-   <extends>QGroupBox</extends>
-   <header>kbuttongroup.h</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>
