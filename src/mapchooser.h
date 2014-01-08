@@ -11,8 +11,7 @@
 #ifndef MAPCHOOSER_H
 #define MAPCHOOSER_H
 
-#include <kdialog.h>
-
+#include <qdialog.h>
 #include <qhash.h>
 
 #include "map.h"
@@ -20,7 +19,7 @@
 
 class QListWidget;
 class QLabel;
-class mapChooser : public KDialog
+class mapChooser : public QDialog
 {
 Q_OBJECT
 	public:
@@ -34,7 +33,7 @@ Q_OBJECT
 
 	private:
 		QListWidget *p_listBox;
-		QLabel *p_image;
+		QLabel *p_imageContainer;
 		mapReader p_reader;
 		QHash<QString, KGmap*> p_maps;
 };

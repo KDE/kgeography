@@ -20,7 +20,8 @@
 #include <qlabel.h>
 #include <qlayout.h>
 #include <qlistwidget.h>
-#include <qpainter.h>
+#include <qdialogbuttonbox.h>
+#include <qpushbutton.h>
 
 #include "settings.h"
 
@@ -29,38 +30,45 @@ bool myLessThan(const QString &s1, const QString &s2)
 	return s1.localeAwareCompare(s2) < 0;
 }
 
-mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
+mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 {
-	setCaption(i18n("Choose Map to Use"));
-	setButtons(KDialog::Ok | KDialog::Cancel);
+	setWindowTitle(i18n("Choose Map to Use"));
 
-	QWidget *mainHB;
-	QHBoxLayout *mainHBLayout;
-	QVBoxLayout *listFilterLayout;
-	QStringList list;
-	KGmap *m;
-	KListWidgetSearchLine *line;
+	QVBoxLayout *mainLayout = new QVBoxLayout();
 
-	mainHB = new QWidget(this);
-	mainHBLayout = new QHBoxLayout(mainHB);
-	mainHBLayout -> setMargin(0);
-	mainHBLayout -> setSpacing(KDialog::spacingHint());
-	list = KGlobal::dirs() -> findAllResources("appdata", "*.kgm");
-	p_listBox = new QListWidget(mainHB);
-	line = new KListWidgetSearchLine(mainHB, p_listBox);
-	line->setPlaceholderText(i18n("Filter Maps"));
-	listFilterLayout = new QVBoxLayout();
-	listFilterLayout -> setMargin(0);
-	listFilterLayout -> setSpacing(KDialog::spacingHint());
-	mainHBLayout -> addLayout(listFilterLayout);
-	listFilterLayout -> addWidget(line);
+	QHBoxLayout *horizontalLayout = new QHBoxLayout();
+
+	QVBoxLayout *listFilterLayout = new QVBoxLayout();
+	p_listBox = new QListWidget();
+	KListWidgetSearchLine *searchLine = new KListWidgetSearchLine(this, p_listBox);
+	searchLine->setPlaceholderText(i18n("Filter Maps"));
+	listFilterLayout -> addWidget(searchLine);
 	listFilterLayout -> addWidget(p_listBox);
+
+	horizontalLayout->addLayout(listFilterLayout);
+
+	p_imageContainer = new QLabel();
+	p_imageContainer -> setFixedSize(300, 225);
+	p_imageContainer -> setAlignment(Qt::AlignCenter);
+	horizontalLayout -> addWidget(p_imageContainer);
+
+	mainLayout->addLayout(horizontalLayout);
+
+	QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok
+									 | QDialogButtonBox::Cancel);
+	connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
+	connect(buttonBox, SIGNAL(rejected()), this, SLOT(reject()));
+	mainLayout->addWidget(buttonBox);
+
+	// FIXME: KGlobal::dirs() is deprecated
+	QStringList list = KGlobal::dirs() -> findAllResources("appdata", "*.kgm");
 	QStringList::iterator it;
 	QStringList texts;
 	QSet<QString> alreadySeens;
 	QStringList errorTexts;
 	QString lastMapFile = kgeographySettings::self() -> lastMap();
 	QString stringToSelect;
+	KGmap *m;
 	for(it = list.begin(); it != list.end(); ++it)
 	{
 		QString mapFilename = *it;
@@ -89,20 +97,14 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 	{
 		KMessageBox::errorList(this, i18n("Error parsing"), errorTexts);
 	}
-	
-	p_image = new QLabel(mainHB);
-	p_image -> setFixedSize(300, 225);
-	p_image -> setAlignment(Qt::AlignCenter);
-	mainHBLayout -> addWidget(p_image);
-	
+
 	connect(p_listBox, SIGNAL(currentTextChanged(const QString&)), this, SLOT(putImage(const QString&)));
 	connect(p_listBox, SIGNAL(itemActivated(QListWidgetItem*)), this, SLOT(accept()));
 	
-	setMainWidget(mainHB);
 	qSort(texts.begin(), texts.end(), myLessThan);
 	foreach(const QString &text, texts) p_listBox -> addItem(text);
 	if (p_listBox -> count() == 0)
-		enableButtonOk(false);
+		buttonBox->button(QDialogButtonBox::Ok)->setDisabled(true);
 	else {
 		QList<QListWidgetItem *> itemsWhere = p_listBox->findItems(stringToSelect, Qt::MatchExactly);
 		if ( itemsWhere.size() > 0 )
@@ -110,6 +112,9 @@ mapChooser::mapChooser(QWidget *parent) : KDialog(parent)
 		else
 			p_listBox -> setCurrentRow(0);
 	}
+
+	setLayout(mainLayout);
+
 	p_listBox -> setFocus();
 }
 
@@ -132,7 +137,7 @@ void mapChooser::putImage(const QString &mapName)
 	m = p_maps[mapName];
 	QImage image(m -> getMapFile());
 	image = image.scaled(300, 225, Qt::KeepAspectRatio, Qt::SmoothTransformation);
-	p_image -> setPixmap( QPixmap::fromImage(image) );
+	p_imageContainer -> setPixmap( QPixmap::fromImage(image) );
 }
 
 #include "mapchooser.moc"
