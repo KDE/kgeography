@@ -11,7 +11,7 @@
 #ifndef ANSWERSDIALOG_H
 #define ANSWERSDIALOG_H
 
-#include <kdialog.h>
+#include <qdialog.h>
 
 #include <QtCore/qvector.h>
 
@@ -20,14 +20,14 @@ class QWidget;
 
 class userAnswer;
 
-class answersDialog : public KDialog
+class answersDialog : public QDialog
 {
 	public:
 		answersDialog(QWidget *parent, const QVector<userAnswer> &userAnswers, const QString &question, int correctAnswers);
 	
 	private:
 		QWidget *p_container;
-		QScrollArea *p_sa;
+		QScrollArea *p_scrollArea;
 };
 
 #endif

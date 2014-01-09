@@ -15,69 +15,71 @@
 #include <qlabel.h>
 #include <qlayout.h>
 #include <qscrollarea.h>
+#include <qdialogbuttonbox.h>
 
 #include "answer.h"
 
 answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAnswers, const QString &question, int correctAnswers)
-	: KDialog(parent)
+	: QDialog(parent)
 {
-	setCaption(i18n("Your Answers Were"));
-	setButtons(KDialog::Ok);
+	setWindowTitle(i18n("Your Answers Were"));
 
-	QLabel *l1, *l2, *l3;
-	QFont boldFont, bigFont;
-	uint totalAnswers;
-	totalAnswers = userAnswers.count();
-	
-	p_sa = new QScrollArea(this);
-	setMainWidget(p_sa);
-	
+	QVBoxLayout *mainLayout = new QVBoxLayout;
+
+	p_scrollArea = new QScrollArea(this);
+	mainLayout->addWidget(p_scrollArea);
+
 	p_container = new QWidget(this);
-	p_sa -> setWidget(p_container);
-	p_sa -> setWidgetResizable(true);
-	
-	QGridLayout *lay = new QGridLayout(p_container);
-	lay -> setSpacing(0);
-	lay -> setColumnStretch(0, 1);
-	lay -> setColumnStretch(4, 1);
-	lay -> setRowStretch(totalAnswers + 4, 1);
-	
-	// Title
-	bigFont = p_container -> font();
-	bigFont.setPointSize(24);
-	l1 = new QLabel(question, p_container);
-	l1 -> setFont(bigFont);
-	lay -> addWidget(l1, 0, 0, 1, 5, Qt::AlignHCenter);
-	
-        l1 = new QLabel(i18n("You answered correctly %1 out of %2 questions.", correctAnswers, totalAnswers), p_container);
-        l1 -> setAlignment(Qt::AlignCenter);
-        lay -> addWidget(l1, 1, 0, 1, 5);
-        //lay -> addWidget(l1, totalAnswers + 4, 0, 1, 5);
+	p_scrollArea -> setWidget(p_container);
+	p_scrollArea -> setWidgetResizable(true);
 
-        // Headers
-	boldFont = p_container -> font();
-	boldFont.setBold(true);
+	uint totalAnswers = userAnswers.count();
 	
-	l1 = new QLabel(i18n("Question"), p_container);
-	l1 -> setFont(boldFont);
-	l2 = new QLabel(i18n("Your Answer"), p_container);
-	l2 -> setFont(boldFont);
-	l3 = new QLabel(i18n("Correct Answer"), p_container);
-	l3 -> setFont(boldFont);
-	l1 -> setMargin(KDialog::marginHint() / 2);
-	l2 -> setMargin(KDialog::marginHint() / 2);
-	l3 -> setMargin(KDialog::marginHint() / 2);
-        lay->addWidget(l1, 2, 1);
-        lay->addWidget(l2, 2, 2);
-        lay->addWidget(l3, 2, 3);
+	QGridLayout *gridLayout = new QGridLayout(p_container);
+	gridLayout -> setSpacing(0);
+	gridLayout -> setColumnStretch(0, 1);
+	gridLayout -> setColumnStretch(4, 1);
+	gridLayout -> setRowStretch(totalAnswers + 4, 1);
 	
+	p_container->setLayout(gridLayout);
+
+	QFont titleFont = p_container -> font();
+	titleFont.setPointSize(24);
+
+	QLabel *titleLabel = new QLabel(question);
+	titleLabel -> setFont(titleFont);
+	gridLayout -> addWidget(titleLabel, 0, 0, 1, 5, Qt::AlignHCenter);
+
+	QLabel *correctAnswersInfoLabel = new QLabel(i18n("You answered correctly %1 out of %2 questions.", correctAnswers, totalAnswers));
+	correctAnswersInfoLabel -> setAlignment(Qt::AlignCenter);
+	gridLayout -> addWidget(correctAnswersInfoLabel, 1, 0, 1, 5);
+
+	QFont headerFont = p_container -> font();
+	headerFont.setBold(true);
+	
+	QLabel *questionHeaderLabel = new QLabel(i18n("Question"));
+	questionHeaderLabel -> setFont(headerFont);
+	gridLayout->addWidget(questionHeaderLabel, 2, 1);
+
+	QLabel *userAnswerHeaderLabel = new QLabel(i18n("Your Answer"));
+	userAnswerHeaderLabel -> setFont(headerFont);
+	gridLayout->addWidget(userAnswerHeaderLabel, 2, 2);
+
+	QLabel *correctAnswerHeaderLabel = new QLabel(i18n("Correct Answer"));
+	correctAnswerHeaderLabel -> setFont(headerFont);
+	gridLayout->addWidget(correctAnswerHeaderLabel, 2, 3);
+
 	for(uint i = 0; i < totalAnswers; i++)
 	{
-                userAnswers[i].putWidgets(p_container, lay, i + 3);
+		userAnswers[i].putWidgets(p_container, gridLayout, i + 3);
 	}
 
-        //lay -> addItem(new QSpacerItem(20, 20, QSizePolicy::Fixed, QSizePolicy::Fixed), totalAnswers + 3, 2);
-	
-        resize(500, 500);
+	QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok);
+	connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
+	mainLayout->addWidget(buttonBox);
+
+	setLayout(mainLayout);
+
+	resize(500, 500);
 }
 
