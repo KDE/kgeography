@@ -104,7 +104,7 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 	qSort(texts.begin(), texts.end(), myLessThan);
 	foreach(const QString &text, texts) p_listBox -> addItem(text);
 	if (p_listBox -> count() == 0)
-		buttonBox->button(QDialogButtonBox::Ok)->setDisabled(true);
+		buttonBox->button(QDialogButtonBox::Ok)->setEnabled(false);
 	else {
 		QList<QListWidgetItem *> itemsWhere = p_listBox->findItems(stringToSelect, Qt::MatchExactly);
 		if ( itemsWhere.size() > 0 )
