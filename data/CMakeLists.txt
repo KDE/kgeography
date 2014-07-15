@@ -46,6 +46,8 @@ belize.kgm
 belize.png
 bhutan.kgm
 bhutan.png
+bihar-map.png
+bihar.kgm
 bolivia.kgm
 bolivia.png
 bosnia-herzegovina.kgm
