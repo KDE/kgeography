@@ -19,7 +19,6 @@
 #include <QScrollBar>
 
 #include <klocalizedstring.h>
-#include <kdebug.h>
 #include <math.h>
 
 #include "division.h"

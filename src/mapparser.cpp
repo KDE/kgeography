@@ -12,9 +12,9 @@
 
 #include <QDomDocument>
 #include <QFileInfo>
+#include <QTextStream>
 
 #include <klocalizedstring.h>
-#include <kdebug.h>
 
 #include "division.h"
 #include "map.h"
@@ -60,7 +60,8 @@ KGmap *mapReader::parseMap(const QString &path)
 				}
 				else if ( ! pat.isEmpty() )
 				{
-					kDebug() << "capitalToDivisionPattern element should contain one '%%' in map " << kgmap->getName();
+					QTextStream stream(stderr);
+					stream << "capitalToDivisionPattern element should contain one '%%' in map " << kgmap->getName();
 				}
 
 				pat = getElementString("divisionToCapitalPattern", root, Optional);
@@ -70,7 +71,8 @@ KGmap *mapReader::parseMap(const QString &path)
 				}
 				else if ( ! pat.isEmpty() )
 				{
-					kDebug() << "divisionToCapitalPattern element should contain one '%%' in map " << kgmap->getName();
+					QTextStream stream(stderr);
+					stream << "divisionToCapitalPattern element should contain one '%%' in map " << kgmap->getName();
 				}
 
 				QString title = getElementString("capitalToDivisionTitle", root, Optional);
