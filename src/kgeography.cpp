@@ -113,22 +113,22 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 	
 	p_zoom =  actionCollection()->add<KToggleAction>( "zoom_select" );
 	p_zoom -> setText(i18n("&Zoom") );
-	p_zoom -> setIcon( KIcon("zoom-in") );
+	p_zoom -> setIcon( QIcon::fromTheme("zoom-in") );
 	p_zoom -> setEnabled(false);
 
 	p_zoomOriginal = actionCollection()->addAction( "zoom_original" );
 	p_zoomOriginal -> setText( i18n("&Original Size") );
-	p_zoomOriginal -> setIcon( KIcon("zoom-original") );
+	p_zoomOriginal -> setIcon( QIcon::fromTheme("zoom-original") );
 	p_zoomOriginal -> setEnabled(false);
 
 	p_zoomAutomatic = actionCollection()->add<KToggleAction>( "zoom_automatic" );
 	p_zoomAutomatic -> setText(  i18n("&Automatic Zoom") );
-	p_zoomAutomatic -> setIcon( KIcon("zoom-fit-best") );
+	p_zoomAutomatic -> setIcon( QIcon::fromTheme("zoom-fit-best") );
 	p_zoomAutomatic -> setEnabled(false);
 
 	p_move = actionCollection()->add<KToggleAction>( "move" );
 	p_move->setText( i18n("&Move") );
-	p_move->setIcon( KIcon("transform-move") );
+	p_move->setIcon( QIcon::fromTheme("transform-move") );
 	p_move -> setEnabled(false);
 
 	a = actionCollection()->addAction( "disclaimer" );
