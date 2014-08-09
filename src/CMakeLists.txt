@@ -53,7 +53,7 @@ install(TARGETS kgeography EXPORT KGeography ${INSTALL_TARGETS_DEFAULT_ARGS} )
 
 install( PROGRAMS kgeography.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
 install( FILES kgeography.kcfg  DESTINATION  ${KCFG_INSTALL_DIR} )
-install( FILES kgeographyui.rc  DESTINATION  ${DATA_INSTALL_DIR}/kgeography )
+install( FILES kgeographyui.rc  DESTINATION  ${KXMLGUI_INSTALL_DIR}/kgeography )
 
 
 
