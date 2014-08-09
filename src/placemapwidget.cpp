@@ -311,7 +311,7 @@ void placeMapWidget::mouseMoveEvent(QMouseEvent *e)
 	}
 }
 
-void placeMapWidget::mouseReleaseEvent(QMouseEvent *e)
+void placeMapWidget::mouseReleaseEvent(QMouseEvent *)
 {
 	if ( p_mode == Zooming )
 	{
@@ -358,7 +358,7 @@ void placeMapWidget::wheelEvent(QWheelEvent *e)
 	}
 }
 
-void placeMapWidget::enterEvent(QEvent* e)
+void placeMapWidget::enterEvent(QEvent*)
 {
 	if (p_currentDivisionItem)
 	{
@@ -366,7 +366,7 @@ void placeMapWidget::enterEvent(QEvent* e)
 	}
 }
 
-void placeMapWidget::leaveEvent(QEvent* e)
+void placeMapWidget::leaveEvent(QEvent*)
 {
 	if (p_currentDivisionItem)
 	{
