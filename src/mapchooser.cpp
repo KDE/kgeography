@@ -11,11 +11,10 @@
 #include "mapchooser.h"
 
 #include <klocalizedstring.h>
-#include <kglobal.h>
 #include <kmessagebox.h>
-#include <kstandarddirs.h>
 #include <klistwidgetsearchline.h>
 
+#include <qdir.h>
 #include <qimage.h>
 #include <qlabel.h>
 #include <qlayout.h>
@@ -61,17 +60,24 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 	mainLayout->addWidget(buttonBox);
 
 	// FIXME: KGlobal::dirs() is deprecated
-	QStringList list = KGlobal::dirs() -> findAllResources("appdata", "*.kgm");
-	QStringList::iterator it;
+	QSet<QString> list;
+	const QStringList dirs = QStandardPaths::locateAll(QStandardPaths::DataLocation, "", QStandardPaths::LocateDirectory);
+	Q_FOREACH (const QString &dir, dirs)
+	{
+		const QStringList fileNames = QDir(dir).entryList(QStringList() << QStringLiteral("*.kgm"));
+		Q_FOREACH (const QString &file, fileNames)
+		{
+			list <<dir + '/' + file;
+		}
+	}
 	QStringList texts;
 	QSet<QString> alreadySeens;
 	QStringList errorTexts;
 	QString lastMapFile = kgeographySettings::self() -> lastMap();
 	QString stringToSelect;
 	KGmap *m;
-	for(it = list.begin(); it != list.end(); ++it)
+	foreach(const QString &mapFilename, list)
 	{
-		QString mapFilename = *it;
 		m = p_reader.parseMap(mapFilename);
 		if (!m)
 		{
