@@ -412,7 +412,7 @@ void kgeography::setMap(KGmap *m)
 	removeOldAskWidget();
 	kgeographySettings *set = kgeographySettings::self();
 	set -> setLastMap(m -> getFile());
-	set -> writeConfig();
+	set -> save();
 	delete p_map;
 	p_map = m;
 	p_showAuthor->setEnabled(m);
