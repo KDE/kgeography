@@ -36,6 +36,7 @@ answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAns
 	uint totalAnswers = userAnswers.count();
 	
 	QGridLayout *gridLayout = new QGridLayout(p_container);
+	int spacing = gridLayout -> spacing();
 	gridLayout -> setSpacing(0);
 	gridLayout -> setColumnStretch(0, 1);
 	gridLayout -> setColumnStretch(4, 1);
@@ -59,19 +60,22 @@ answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAns
 	
 	QLabel *questionHeaderLabel = new QLabel(i18n("Question"));
 	questionHeaderLabel -> setFont(headerFont);
+	questionHeaderLabel -> setMargin(spacing);
 	gridLayout->addWidget(questionHeaderLabel, 2, 1);
 
 	QLabel *userAnswerHeaderLabel = new QLabel(i18n("Your Answer"));
 	userAnswerHeaderLabel -> setFont(headerFont);
+	userAnswerHeaderLabel -> setMargin(spacing);
 	gridLayout->addWidget(userAnswerHeaderLabel, 2, 2);
 
 	QLabel *correctAnswerHeaderLabel = new QLabel(i18n("Correct Answer"));
 	correctAnswerHeaderLabel -> setFont(headerFont);
+	correctAnswerHeaderLabel	 -> setMargin(spacing);
 	gridLayout->addWidget(correctAnswerHeaderLabel, 2, 3);
 
 	for(uint i = 0; i < totalAnswers; i++)
 	{
-		userAnswers[i].putWidgets(p_container, gridLayout, i + 3);
+		userAnswers[i].putWidgets(p_container, gridLayout, i + 3, spacing);
 	}
 
 	QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok);

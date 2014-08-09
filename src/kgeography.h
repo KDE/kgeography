@@ -17,6 +17,7 @@ class KToggleAction;
 
 class QLabel;
 class QPushButton;
+class QVBoxLayout;
 
 class KGmap;
 class askWidget;
@@ -83,6 +84,8 @@ Q_OBJECT
 		KGmap *p_map;
 		askWidget *p_askWidget;
 		bool p_firstShow, p_mustShowResultsDialog;
+
+		QVBoxLayout *m_underLeftWidgetLayout;
 };
 
 #endif

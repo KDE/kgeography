@@ -28,7 +28,7 @@ class userAnswer
 		void setAnswerCorrect(bool correct);
 		void setCorrectAnswer(const QVariant &correctAnswer);
 		
-		void putWidgets(QWidget *w, QGridLayout *lay, int row) const;
+		void putWidgets(QWidget *w, QGridLayout *lay, int row, int margin) const;
 		
 	private:
 		QVariant p_question, p_answer, p_correctAnswer;

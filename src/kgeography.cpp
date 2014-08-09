@@ -10,7 +10,6 @@
 
 #include "kgeography.h"
 
-#include <kdialog.h>
 #include <kconfigdialog.h>
 #include <kmessagebox.h>
 #include <kstandardaction.h>
@@ -76,9 +75,7 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 	p_askDivisionFlags->setWhatsThis(i18n("In this quiz you have to guess the flag of a division given its name"));
 	p_underLeftWidget = new QWidget(leftWidget);
 	// where the number of answers will be shown
-	QVBoxLayout *underLeftWidgetLayout = new QVBoxLayout(p_underLeftWidget);
-	underLeftWidgetLayout -> setSpacing(KDialog::spacingHint());
-	underLeftWidgetLayout -> setMargin(KDialog::marginHint());
+	m_underLeftWidgetLayout = new QVBoxLayout(p_underLeftWidget);
 
 	leftWidgetLayout -> addWidget(p_currentMap);
 	leftWidgetLayout -> addWidget(p_consult);
@@ -443,7 +440,7 @@ void kgeography::setMap(KGmap *m)
 
 	// set a maximum width for the under left widget, enabling the labels wordwrap and
 	// avoiding the move of the map in case of large division names.
-	p_underLeftWidget->setMaximumWidth(static_cast<QWidget*>(p_underLeftWidget->parent())->width()- (KDialog::marginHint()+KDialog::spacingHint())*2 );
+	p_underLeftWidget->setMaximumWidth(static_cast<QWidget*>(p_underLeftWidget->parent())->width()- (m_underLeftWidgetLayout->margin()+m_underLeftWidgetLayout->spacing())*2 );
 }
 
 void kgeography::disclaimer()

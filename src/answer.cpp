@@ -15,8 +15,6 @@
 #include <qlayout.h>
 #include <qpixmap.h>
 
-#include <kdialog.h>
-
 userAnswer::userAnswer()
 {
 }
@@ -58,7 +56,7 @@ void userAnswer::setCorrectAnswer(const QVariant &correctAnswer)
 	p_correctAnswer = correctAnswer;
 }
 
-void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
+void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row, int margin) const
 {
 	QWidget *widgets[3];
 	const QVariant *v;
@@ -74,7 +72,7 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
 			QLabel *l;
 			l = new QLabel(w);
 			l -> setText(v -> toString());
-			l -> setMargin(KDialog::marginHint() / 2);
+			l -> setMargin(margin);
 			widgets[i] = l;
 		}
 		else if (v -> type() == QVariant::Color)
@@ -96,7 +94,7 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row) const
 			l = new QLabel(w);
 			l -> setPixmap(v -> value<QPixmap>());
 			l -> setAlignment(Qt::AlignHCenter);
-			l -> setMargin(KDialog::marginHint() / 2);
+			l -> setMargin(margin);
 			widgets[i] = l;
 		}
 		
