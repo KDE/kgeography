@@ -17,6 +17,7 @@
 #include <ktoolbar.h>
 #include <kicon.h>
 #include <kactioncollection.h>
+#include <klocalizedstring.h>
 
 #include <qmenubar.h>
 #include <qfile.h>

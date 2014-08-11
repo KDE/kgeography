@@ -12,17 +12,17 @@ find_package (ECM 0.0.9 REQUIRED NO_MODULE)
 # where to look first for cmake modules
 set (CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
-find_package (Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED Core Widgets
-)
+find_package (Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED Core Widgets)
 
 find_package (KF5 REQUIRED COMPONENTS
-    CoreAddons I18n KDELibs4Support WidgetsAddons XmlGui ConfigWidgets ItemViews Service ItemModels Emoticons
+    XmlGui WidgetsAddons CoreAddons ConfigWidgets I18n ItemViews IconThemes Service DocTools
 )
 
 include(KDEInstallDirs)
 include(KDECompilerSettings)
 include(KDECMakeSettings)
 include(FeatureSummary)
+include(ECMInstallIcons)
 
 add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
 

@@ -28,22 +28,19 @@ set(kgeography_SRCS
    answersdialog.cpp )
 
 
-kde4_add_ui_files(kgeography_SRCS kgeographyoptions.ui )
+qt5_wrap_ui(kgeography_SRCS kgeographyoptions.ui )
 
-kde4_add_kcfg_files(kgeography_SRCS settings.kcfgc )
-
-#kde4_add_app_icon(kgeography_SRCS "${KDE4_ICON_DIR}/oxygen/*/apps/kgeography.png")
-#kde4_add_app_icon(kgeography_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/ox*-apps-kgeography.png")
-kde4_add_app_icon(kgeography_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/hi*-apps-kgeography.png")
+kconfig_add_kcfg_files(kgeography_SRCS settings.kcfgc )
 
 add_executable(kgeography ${kgeography_SRCS})
 
-target_link_libraries(kgeography   ${KDE4_KDEUI_LIBS} ${QT_QTXML_LIBRARY})
 target_link_libraries(kgeography KF5::XmlGui
                                  KF5::WidgetsAddons
                                  KF5::CoreAddons
                                  KF5::ConfigWidgets
+                                 KF5::I18n
                                  KF5::ItemViews
+                                 KF5::IconThemes
                                  KF5::Service
 )
 install(TARGETS kgeography EXPORT KGeography ${INSTALL_TARGETS_DEFAULT_ARGS} )
