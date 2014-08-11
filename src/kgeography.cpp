@@ -15,7 +15,6 @@
 #include <kstandardaction.h>
 #include <ktoggleaction.h>
 #include <ktoolbar.h>
-#include <kicon.h>
 #include <kactioncollection.h>
 #include <klocalizedstring.h>
 
