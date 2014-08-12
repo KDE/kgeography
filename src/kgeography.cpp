@@ -52,8 +52,6 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 
 	QWidget *leftWidget = new QWidget(p_bigWidget);
 	QVBoxLayout *leftWidgetLayout = new QVBoxLayout(leftWidget);
-// 	leftWidgetLayout -> setSpacing(0);
-// 	leftWidgetLayout -> setMargin(0);
 
 	p_currentMap = new QLabel(leftWidget);
 	p_currentMap -> setAlignment(Qt::AlignCenter);
@@ -76,6 +74,7 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 	p_underLeftWidget = new QWidget(leftWidget);
 	// where the number of answers will be shown
 	m_underLeftWidgetLayout = new QVBoxLayout(p_underLeftWidget);
+	m_underLeftWidgetLayout->setMargin(0);
 
 	leftWidgetLayout -> addWidget(p_currentMap);
 	leftWidgetLayout -> addWidget(p_consult);
@@ -440,7 +439,7 @@ void kgeography::setMap(KGmap *m)
 
 	// set a maximum width for the under left widget, enabling the labels wordwrap and
 	// avoiding the move of the map in case of large division names.
-	p_underLeftWidget->setMaximumWidth(static_cast<QWidget*>(p_underLeftWidget->parent())->width()- (m_underLeftWidgetLayout->margin()+m_underLeftWidgetLayout->spacing())*2 );
+	p_underLeftWidget->setMaximumWidth(p_underLeftWidget->width());
 }
 
 void kgeography::disclaimer()

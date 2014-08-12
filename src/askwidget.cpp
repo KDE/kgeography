@@ -24,9 +24,8 @@ askWidget::askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool sho
 	connect(&m_timer, SIGNAL(timeout()), SLOT(resetLabelColor()));
 	if (showLabel)
 	{
-		QVBoxLayout *vbl = static_cast<QVBoxLayout*>(w -> layout());
 		p_answers = new QLabel(w);
-		vbl -> addWidget(p_answers);
+		w -> layout() -> addWidget(p_answers);
 		p_answers -> setAlignment(Qt::AlignTop | Qt::AlignHCenter);
 		resetAnswers();
 		p_answers -> show();
