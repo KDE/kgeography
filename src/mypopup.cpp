@@ -12,12 +12,12 @@
 
 #include <kiconloader.h>
 #include <klocalizedstring.h>
-#include <ktoolinvocation.h>
 
 #include <qevent.h>
 #include <qlabel.h>
 #include <qlayout.h>
 #include <qimage.h>
+#include <qdesktopservices.h>
 
 myPopup::myPopup(QWidget *parent, const QString &text, const QString &wikiLink, const QString &text2, const QString &flagFile) : QFrame(parent, Qt::FramelessWindowHint)
 {
@@ -86,7 +86,7 @@ bool myPopup::eventFilter(QObject *obj, QEvent *event)
 		
 		if (event -> type() == QEvent::MouseButtonPress)
 		{
-			KToolInvocation::invokeBrowser(wikipedia);
+			QDesktopServices::openUrl(wikipedia);
 			return true;
 		}
 		else
