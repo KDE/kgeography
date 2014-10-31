@@ -255,7 +255,7 @@ void boxAsker::init()
 	nextQuestion();
 
 	p_accept -> disconnect();
-	connect(p_accept, SIGNAL(clicked()), this, SLOT(checkAnswer()));
+	connect(p_accept, &QPushButton::clicked, this, &boxAsker::checkAnswer);
 }
 
 void boxAsker::setHeadWidget(QWidget *headWidget)
@@ -264,4 +264,4 @@ void boxAsker::setHeadWidget(QWidget *headWidget)
 	p_lay -> insertWidget(0, headWidget);
 }
 
-#include "boxasker.moc"
+

@@ -79,7 +79,7 @@ answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAns
 	}
 
 	QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok);
-	connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
+	connect(buttonBox, &QDialogButtonBox::accepted, this, &answersDialog::accept);
 	mainLayout->addWidget(buttonBox);
 
 	setLayout(mainLayout);

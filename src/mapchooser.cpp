@@ -55,8 +55,8 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 
 	QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok
 									 | QDialogButtonBox::Cancel);
-	connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
-	connect(buttonBox, SIGNAL(rejected()), this, SLOT(reject()));
+	connect(buttonBox, &QDialogButtonBox::accepted, this, &mapChooser::accept);
+	connect(buttonBox, &QDialogButtonBox::rejected, this, &mapChooser::reject);
 	mainLayout->addWidget(buttonBox);
 
 	// FIXME: KGlobal::dirs() is deprecated
@@ -104,8 +104,8 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 		KMessageBox::errorList(this, i18n("Error parsing"), errorTexts);
 	}
 
-	connect(p_listBox, SIGNAL(currentTextChanged(const QString&)), this, SLOT(putImage(const QString&)));
-	connect(p_listBox, SIGNAL(itemActivated(QListWidgetItem*)), this, SLOT(accept()));
+	connect(p_listBox, &QListWidget::currentTextChanged, this, &mapChooser::putImage);
+	connect(p_listBox, &QListWidget::itemActivated, this, &mapChooser::accept);
 	
 	qSort(texts.begin(), texts.end(), myLessThan);
 	foreach(const QString &text, texts) p_listBox -> addItem(text);
@@ -146,4 +146,4 @@ void mapChooser::putImage(const QString &mapName)
 	p_imageContainer -> setPixmap( QPixmap::fromImage(image) );
 }
 
-#include "mapchooser.moc"
+

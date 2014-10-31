@@ -12,10 +12,15 @@
 #include <klocalizedstring.h>
 #include <qapplication.h>
 #include <qcommandlineparser.h>
+#include <Kdelibs4ConfigMigrator>
 #include "kgeography.h"
 
 int main(int argc, char *argv[])
 {
+    Kdelibs4ConfigMigrator migrate(QLatin1String("kgeography"));
+    migrate.setConfigFiles(QStringList() << QLatin1String("kgeographyrc"));
+    migrate.setUiFiles(QStringList() << QLatin1String("kgeographyui.rc"));
+    migrate.migrate();
 	KLocalizedString::setApplicationDomain("kgeography");
 
 	QApplication app(argc, argv);

@@ -67,7 +67,7 @@ void popupManager::init(const QPoint &p)
 	else y = maxY;
 	p_mp -> move(x, y);
 	p_mp -> show();
-	connect(p_mp, SIGNAL(deleteMe()), this, SLOT(clear()));
+	connect(p_mp, &myPopup::deleteMe, this, &popupManager::clear);
 }
 
-#include "popupmanager.moc"
+

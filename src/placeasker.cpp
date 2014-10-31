@@ -36,10 +36,10 @@ placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askW
 	p_mapWidget = new placeMapWidget(this);
 	lay -> addWidget(p_mapWidget);
 
-	connect(p_mapWidget, SIGNAL(clicked(QRgb, const QPoint&, const QPointF&)), this, SLOT(handleMapClick(QRgb, const QPoint&, const QPointF&)));
-	connect(p_mapWidget, SIGNAL(setMoveActionChecked(bool)), this, SIGNAL(setMoveActionChecked(bool)));
-	connect(p_mapWidget, SIGNAL(setZoomActionChecked(bool)), this, SIGNAL(setZoomActionChecked(bool)));
-	connect(p_mapWidget, SIGNAL(setMoveActionEnabled(bool)), this, SIGNAL(setMoveActionEnabled(bool)));
+	connect(p_mapWidget, &placeMapWidget::clicked, this, &placeAsker::handleMapClick);
+	connect(p_mapWidget, &placeMapWidget::setMoveActionChecked, this, &placeAsker::setMoveActionChecked);
+	connect(p_mapWidget, &placeMapWidget::setZoomActionChecked, this, &placeAsker::setZoomActionChecked);
+	connect(p_mapWidget, &placeMapWidget::setMoveActionEnabled, this, &placeAsker::setMoveActionEnabled);
 
 	QVBoxLayout *vbl = static_cast<QVBoxLayout*>(w -> layout());
 	p_next = new QLabel(w);
@@ -250,4 +250,4 @@ void placeAsker::setCurrentDivision(const QString& division)
 	}
 }
 
-#include "placeasker.moc"
+

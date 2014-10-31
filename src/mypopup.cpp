@@ -98,4 +98,4 @@ bool myPopup::eventFilter(QObject *obj, QEvent *event)
 
 	return false;
 }
-#include "mypopup.moc"
+

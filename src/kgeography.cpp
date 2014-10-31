@@ -97,13 +97,13 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 	bigWidgetLayout -> addWidget(leftWidget);
 	setCentralWidget(p_bigWidget);
 
-	connect(p_consult, SIGNAL(clicked()), this, SLOT(consult()));
-	connect(p_askMap, SIGNAL(clicked()), this, SLOT(askMap()));
-	connect(p_askPlaceMap, SIGNAL(clicked()), this, SLOT(askPlaceMap()));
-	connect(p_askCapitalDivisions, SIGNAL(clicked()), this, SLOT(askCapitalDivisions()));
-	connect(p_askDivisionCapitals, SIGNAL(clicked()), this, SLOT(askDivisionCapitals()));
-	connect(p_askFlagDivisions, SIGNAL(clicked()), this, SLOT(askFlagDivisions()));
-	connect(p_askDivisionFlags, SIGNAL(clicked()), this, SLOT(askDivisionFlags()));
+	connect(p_consult, &QPushButton::clicked, this, &kgeography::consult);
+	connect(p_askMap, &QPushButton::clicked, this, &kgeography::askMap);
+	connect(p_askPlaceMap, &QPushButton::clicked, this, &kgeography::askPlaceMap);
+	connect(p_askCapitalDivisions, &QPushButton::clicked, this, &kgeography::askCapitalDivisions);
+	connect(p_askDivisionCapitals, &QPushButton::clicked, this, &kgeography::askDivisionCapitals);
+	connect(p_askFlagDivisions, &QPushButton::clicked, this, &kgeography::askFlagDivisions);
+	connect(p_askDivisionFlags, &QPushButton::clicked, this, &kgeography::askDivisionFlags);
 
 	QAction *a = KStandardAction::open(this, SLOT(openMap()), actionCollection());
 	a -> setText(i18n("&Open Map..."));
@@ -132,12 +132,12 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 
 	a = actionCollection()->addAction( "disclaimer" );
 	a->setText( i18n("Disclaimer") );
-	connect(a, SIGNAL(triggered()), this, SLOT(disclaimer()));
+	connect(a, &QAction::triggered, this, &kgeography::disclaimer);
 	
 	p_showAuthor = actionCollection()->addAction( "author" );
 	p_showAuthor->setText( i18n("Map author") );
 	p_showAuthor->setEnabled(false);
-	connect(p_showAuthor, SIGNAL(triggered()), this, SLOT(showMapAuthor()));
+	connect(p_showAuthor, &QAction::triggered, this, &kgeography::showMapAuthor);
 
 	KStandardAction::preferences(this, SLOT(showPreferencesDialog()), actionCollection());
 
@@ -171,8 +171,7 @@ void kgeography::showPreferencesDialog()
 
 	// User edited the configuration - update your local copies of the 
 	// configuration data 
-	connect(dialog, SIGNAL(settingsChanged(const QString&)), 
-			this, SLOT(updateConfiguration()) ); 
+	connect(dialog, &KConfigDialog::settingsChanged, this, &kgeography::updateConfiguration);
 
 	dialog->show();
 }
@@ -396,14 +395,14 @@ void kgeography::putAskWidget()
 	static_cast<QBoxLayout*>(p_bigWidget -> layout()) -> addWidget(p_askWidget, 1);
 	p_askWidget -> setAutomaticZoom(p_zoomAutomatic -> isChecked());
 	p_askWidget -> show();
-	connect(p_askWidget, SIGNAL(setZoomActionChecked(bool)), p_zoom, SLOT(setChecked(bool)));
-	connect(p_zoom, SIGNAL(toggled(bool)), p_askWidget, SLOT(setZoom(bool)));
-	connect(p_zoomOriginal, SIGNAL(triggered()), p_askWidget, SLOT(setOriginalZoom()));
-	connect(p_zoomAutomatic, SIGNAL(toggled(bool)), this, SLOT(setAutomaticZoom(bool)));
-	connect(p_askWidget, SIGNAL(setMoveActionEnabled(bool)), this, SLOT(setMoveActionEnabled(bool)));
-	connect(p_askWidget, SIGNAL(setMoveActionChecked(bool)), p_move, SLOT(setChecked(bool)));
-	connect(p_move, SIGNAL(toggled(bool)), p_askWidget, SLOT(setMovement(bool)));
-	connect(p_askWidget, SIGNAL(questionsEnded()), this, SLOT(questionsEnded()));
+	connect(p_askWidget, &askWidget::setZoomActionChecked, p_zoom, &KToggleAction::setChecked);
+	connect(p_zoom, &KToggleAction::toggled, p_askWidget, &askWidget::setZoom);
+	connect(p_zoomOriginal, &QAction::triggered, p_askWidget, &askWidget::setOriginalZoom);
+	connect(p_zoomAutomatic, &KToggleAction::toggled, this, &kgeography::setAutomaticZoom);
+	connect(p_askWidget, &askWidget::setMoveActionEnabled, this, &kgeography::setMoveActionEnabled);
+	connect(p_askWidget, &askWidget::setMoveActionChecked, p_move, &KToggleAction::setChecked);
+	connect(p_move, &KToggleAction::toggled, p_askWidget, &askWidget::setMovement);
+	connect(p_askWidget, &askWidget::questionsEnded, this, &kgeography::questionsEnded);
 }
 
 void kgeography::setMap(KGmap *m)
@@ -500,4 +499,4 @@ void kgeography::showResultsDialog()
 	}
 }
 
-#include "kgeography.moc"
+

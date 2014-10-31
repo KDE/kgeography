@@ -21,7 +21,7 @@
 
 askWidget::askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool showLabel) : QWidget(parent), p_map(m), p_count(count)
 {
-	connect(&m_timer, SIGNAL(timeout()), SLOT(resetLabelColor()));
+	connect(&m_timer, &QTimer::timeout, this, &askWidget::resetLabelColor);
 	if (showLabel)
 	{
 		p_answers = new QLabel(w);
@@ -130,4 +130,4 @@ void askWidget::updateLabel()
 	p_answers -> setText(i18n("Correct answers: %1/%2", p_correctAnswers, p_correctAnswers + p_incorrectAnswers));
 }
 
-#include "askwidget.moc"
+

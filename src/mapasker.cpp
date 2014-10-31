@@ -50,10 +50,10 @@ mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count
 
 	p_shouldClearPopup = false;
 
-	connect(p_mapWidget, SIGNAL(clicked(QRgb, const QPoint&)), this, SLOT(handleMapClick(QRgb, const QPoint&)));
-	connect(p_mapWidget, SIGNAL(setMoveActionChecked(bool)), this, SIGNAL(setMoveActionChecked(bool)));
-	connect(p_mapWidget, SIGNAL(setZoomActionChecked(bool)), this, SIGNAL(setZoomActionChecked(bool)));
-	connect(p_mapWidget, SIGNAL(setMoveActionEnabled(bool)), this, SIGNAL(setMoveActionEnabled(bool)));
+	connect(p_mapWidget, &mapWidget::clicked, this, &mapAsker::handleMapClick);
+	connect(p_mapWidget, &mapWidget::setMoveActionChecked, this, &mapAsker::setMoveActionChecked);
+	connect(p_mapWidget, &mapWidget::setZoomActionChecked, this, &mapAsker::setZoomActionChecked);
+	connect(p_mapWidget, &mapWidget::setMoveActionEnabled, this, &mapAsker::setMoveActionEnabled);
 
 	if (asker)
 	{
@@ -235,4 +235,4 @@ QSize mapAsker::mapSize() const
 	return p_mapWidget -> mapSize();
 }
 
-#include "mapasker.moc"
+

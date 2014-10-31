@@ -28,7 +28,7 @@ set(kgeography_SRCS
    answersdialog.cpp )
 
 
-qt5_wrap_ui(kgeography_SRCS kgeographyoptions.ui )
+ki18n_wrap_ui(kgeography_SRCS kgeographyoptions.ui )
 
 kconfig_add_kcfg_files(kgeography_SRCS settings.kcfgc )
 
@@ -48,7 +48,7 @@ install(TARGETS kgeography EXPORT KGeography ${INSTALL_TARGETS_DEFAULT_ARGS} )
 
 ########### install files ###############
 
-install( PROGRAMS kgeography.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
+install( PROGRAMS org.kde.kgeography.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
 install( FILES kgeography.kcfg  DESTINATION  ${KCFG_INSTALL_DIR} )
 install( FILES kgeographyui.rc  DESTINATION  ${KXMLGUI_INSTALL_DIR}/kgeography )
 

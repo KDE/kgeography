@@ -34,19 +34,19 @@ IntegerInputDialog::IntegerInputDialog(QWidget *parent, const QString &title, co
 	_slider->setRange(from, upto);
 	int value = ( from <= byDefault && byDefault <= upto ) ? byDefault : upto;
 	_slider->setValue(value);
-	connect(_slider, SIGNAL(valueChanged(int)), this, SLOT(sliderValueChanged(int)));
+	connect(_slider, &QSlider::valueChanged, this, &IntegerInputDialog::sliderValueChanged);
 	horizontalLayout->addWidget(_slider);
 
 	_spinBox = new QSpinBox();
 	_spinBox->setRange(from, upto);
 	_spinBox->setValue(value);
-	connect(_spinBox, SIGNAL(valueChanged(int)), this, SLOT(spinboxValueChanged(int)));
+	connect(_spinBox, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged), this, &IntegerInputDialog::spinboxValueChanged);
 	horizontalLayout->addWidget(_spinBox);
 
 	QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok
 									 | QDialogButtonBox::Cancel);
-	connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
-	connect(buttonBox, SIGNAL(rejected()), this, SLOT(reject()));
+	connect(buttonBox, &QDialogButtonBox::accepted, this, &IntegerInputDialog::accept);
+	connect(buttonBox, &QDialogButtonBox::rejected, this, &IntegerInputDialog::reject);
 	mainLayout->addWidget(buttonBox);
 
 	setLayout(mainLayout);
@@ -93,5 +93,5 @@ int IntegerInputDialog::GetInteger(QWidget *parent, const QString &title, const 
 
 }
 
-#include "integerinputdialog.moc"
+
 
