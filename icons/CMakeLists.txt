@@ -1,11 +1,12 @@
 ecm_install_icons( ICONS
-	hi128-apps-kgeography.png
-	hi16-apps-kgeography.png
-	hi22-apps-kgeography.png
-	hi32-apps-kgeography.png
-	hi48-apps-kgeography.png
-	hi64-apps-kgeography.png
-	hisc-apps-kgeography.svgz
-DESTINATION apps
+	128-apps-kgeography.png
+	16-apps-kgeography.png
+	22-apps-kgeography.png
+	32-apps-kgeography.png
+	48-apps-kgeography.png
+	64-apps-kgeography.png
+	sc-apps-kgeography.svgz
+        DESTINATION ${ICON_INSTALL_DIR}
+        THEME hicolor
 )
 
