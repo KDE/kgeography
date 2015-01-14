@@ -398,6 +398,7 @@ void kgeography::putAskWidget()
 	connect(p_askWidget, &askWidget::setZoomActionChecked, p_zoom, &KToggleAction::setChecked);
 	connect(p_zoom, &KToggleAction::toggled, p_askWidget, &askWidget::setZoom);
 	connect(p_zoomOriginal, &QAction::triggered, p_askWidget, &askWidget::setOriginalZoom);
+	connect(p_zoomOriginal, &QAction::triggered, p_zoomAutomatic, &QAction::setChecked);
 	connect(p_zoomAutomatic, &KToggleAction::toggled, this, &kgeography::setAutomaticZoom);
 	connect(p_askWidget, &askWidget::setMoveActionEnabled, this, &kgeography::setMoveActionEnabled);
 	connect(p_askWidget, &askWidget::setMoveActionChecked, p_move, &KToggleAction::setChecked);
