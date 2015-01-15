@@ -439,7 +439,12 @@ void kgeography::setMap(KGmap *m)
 
 	// set a maximum width for the under left widget, enabling the labels wordwrap and
 	// avoiding the move of the map in case of large division names.
-	p_underLeftWidget->setMaximumWidth(p_underLeftWidget->width());
+	int width = qMax(p_askMap->sizeHint().width(), p_askPlaceMap->sizeHint().width());
+	width = qMax(width, p_askCapitalDivisions->sizeHint().width());
+	width = qMax(width, p_askDivisionCapitals->sizeHint().width());
+	width = qMax(width, p_askFlagDivisions->sizeHint().width());
+	width = qMax(width, p_askDivisionFlags->sizeHint().width());
+	p_underLeftWidget->setMaximumWidth(width);
 }
 
 void kgeography::disclaimer()
