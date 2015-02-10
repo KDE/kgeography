@@ -59,7 +59,6 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 	connect(buttonBox, &QDialogButtonBox::rejected, this, &mapChooser::reject);
 	mainLayout->addWidget(buttonBox);
 
-	// FIXME: KGlobal::dirs() is deprecated
 	QSet<QString> list;
 	const QStringList dirs = QStandardPaths::locateAll(QStandardPaths::DataLocation, "", QStandardPaths::LocateDirectory);
 	Q_FOREACH (const QString &dir, dirs)
