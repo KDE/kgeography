@@ -50,6 +50,6 @@ install(FILES
    usa_west_virginia.png
    usa_wisconsin.png
    usa_wyoming.png
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags)
 
 

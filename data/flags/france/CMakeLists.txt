@@ -25,5 +25,5 @@ install(FILES
    poitou_charentes.png
    rhone_alpes.png
 
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/france)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/france)
 

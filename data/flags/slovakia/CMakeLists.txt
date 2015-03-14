@@ -10,4 +10,4 @@ Bratislavsky_vlajka.png
 Kosicky_vlajka.png
 Presovsky_vlajka.png
 Trnavsky_vlajka.png
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/slovakia)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/slovakia)

@@ -29,4 +29,4 @@ install(FILES
    br_RO.png
    br_SC.png
    br_TO.png
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/brazil)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/brazil)

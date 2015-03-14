@@ -83,5 +83,5 @@ install(FILES
 	yaroslavl_oblast.png
 	zabaykalsky_krai.png
 
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/russia)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/russia)
 

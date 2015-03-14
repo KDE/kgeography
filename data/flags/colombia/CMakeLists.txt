@@ -35,5 +35,5 @@ install(FILES
    santander.png
    tolima.png
    vichada.png
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/colombia)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/colombia)
 

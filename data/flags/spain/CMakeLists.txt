@@ -19,4 +19,4 @@ catalonia.png
 galicia.png      
 madrid.png    
 navarre.png
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/spain)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/spain)

@@ -8,5 +8,5 @@ install(FILES
 	Minsk_vobl.png
 	Vitebsk.png
 
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/belarus)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/belarus)
 

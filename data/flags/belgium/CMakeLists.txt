@@ -10,6 +10,6 @@ install(FILES
    limburg.png
    namur.png
    west_flanders.png
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/belgium)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/belgium)
 
 

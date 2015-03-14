@@ -242,6 +242,6 @@ install(FILES
    st_helena.png
    madeira.png
 
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags)
 
 

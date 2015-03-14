@@ -43,14 +43,14 @@ target_link_libraries(kgeography KF5::XmlGui
                                  KF5::IconThemes
                                  KF5::Service
 )
-install(TARGETS kgeography EXPORT KGeography ${INSTALL_TARGETS_DEFAULT_ARGS} )
+install(TARGETS kgeography EXPORT KGeography ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} )
 
 
 ########### install files ###############
 
-install( PROGRAMS org.kde.kgeography.desktop  DESTINATION  ${XDG_APPS_INSTALL_DIR} )
-install( FILES kgeography.kcfg  DESTINATION  ${KCFG_INSTALL_DIR} )
-install( FILES kgeographyui.rc  DESTINATION  ${KXMLGUI_INSTALL_DIR}/kgeography )
+install( PROGRAMS org.kde.kgeography.desktop  DESTINATION  ${KDE_INSTALL_APPDIR} )
+install( FILES kgeography.kcfg  DESTINATION  ${KDE_INSTALL_KCFGDIR} )
+install( FILES kgeographyui.rc  DESTINATION  ${KDE_INSTALL_KXMLGUI5DIR}/kgeography )
 
 
 

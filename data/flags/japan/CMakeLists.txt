@@ -48,5 +48,5 @@ install(FILES
    jp-toyama.png
    jp-yamanashi.png
 
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/japan)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/japan)
 

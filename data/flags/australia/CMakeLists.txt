@@ -10,4 +10,4 @@ south_australia.png
 tasmania.png  
 victoria.png  
 western_australia.png
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/australia)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/australia)

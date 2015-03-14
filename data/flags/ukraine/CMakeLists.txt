@@ -29,5 +29,5 @@ Poltava.png
 Sumi.png             
 Volyn.png     
 Zhitomir.png
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/ukraine)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/ukraine)
 

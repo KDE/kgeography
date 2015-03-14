@@ -15,4 +15,4 @@ install(FILES
    quebec.png
    saskatchewan.png
    yukon.png
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/canada)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/canada)

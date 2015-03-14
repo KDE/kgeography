@@ -21,5 +21,5 @@ install(FILES
 	setubal.png
 	vila_real.png
 
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/portugal)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/portugal)
 

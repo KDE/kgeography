@@ -304,4 +304,4 @@ zimbabwe_districts.kgm
 zimbabwe_districts.png
 zimbabwe.kgm
 zimbabwe.png
-DESTINATION ${DATA_INSTALL_DIR}/kgeography/)
+DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/)

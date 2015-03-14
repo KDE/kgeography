@@ -6,7 +6,7 @@ ecm_install_icons( ICONS
 	48-apps-kgeography.png
 	64-apps-kgeography.png
 	sc-apps-kgeography.svgz
-        DESTINATION ${ICON_INSTALL_DIR}
+        DESTINATION ${KDE_INSTALL_ICONDIR}
         THEME hicolor
 )
 

@@ -5,5 +5,5 @@ install(FILES
 	connacht.png
 	ulster.png
 
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/ireland)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/ireland)
 

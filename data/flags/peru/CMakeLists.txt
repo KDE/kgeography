@@ -26,4 +26,4 @@ loreto.png
 pasco.png          
 san_martin.png  
 ucayali.png
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/peru)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/peru)

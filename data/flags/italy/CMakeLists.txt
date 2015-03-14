@@ -22,7 +22,7 @@ install(FILES
    it-pug200.png
    it-tre200.png
    it-ven200.png
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/italy)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/italy)
 
 
 

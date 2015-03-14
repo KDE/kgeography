@@ -18,4 +18,4 @@ install(FILES
    saxony_anhalt.png
    schleswig_holstein.png
    thuringia.png	
-	DESTINATION ${DATA_INSTALL_DIR}/kgeography/flags/germany)
+	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/germany)
