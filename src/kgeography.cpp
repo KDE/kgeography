@@ -110,31 +110,31 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 
 	a = KStandardAction::quit(this, SLOT(close()), actionCollection());
 	
-	p_zoom =  actionCollection()->add<KToggleAction>( "zoom_select" );
+	p_zoom =  actionCollection()->add<KToggleAction>( QStringLiteral("zoom_select") );
 	p_zoom -> setText(i18n("&Zoom") );
-	p_zoom -> setIcon( QIcon::fromTheme("zoom-in") );
+	p_zoom -> setIcon( QIcon::fromTheme(QStringLiteral("zoom-in")) );
 	p_zoom -> setEnabled(false);
 
-	p_zoomOriginal = actionCollection()->addAction( "zoom_original" );
+	p_zoomOriginal = actionCollection()->addAction( QStringLiteral("zoom_original") );
 	p_zoomOriginal -> setText( i18n("&Original Size") );
-	p_zoomOriginal -> setIcon( QIcon::fromTheme("zoom-original") );
+	p_zoomOriginal -> setIcon( QIcon::fromTheme(QStringLiteral("zoom-original")) );
 	p_zoomOriginal -> setEnabled(false);
 
-	p_zoomAutomatic = actionCollection()->add<KToggleAction>( "zoom_automatic" );
+	p_zoomAutomatic = actionCollection()->add<KToggleAction>( QStringLiteral("zoom_automatic") );
 	p_zoomAutomatic -> setText(  i18n("&Automatic Zoom") );
-	p_zoomAutomatic -> setIcon( QIcon::fromTheme("zoom-fit-best") );
+	p_zoomAutomatic -> setIcon( QIcon::fromTheme(QStringLiteral("zoom-fit-best")) );
 	p_zoomAutomatic -> setEnabled(false);
 
-	p_move = actionCollection()->add<KToggleAction>( "move" );
+	p_move = actionCollection()->add<KToggleAction>( QStringLiteral("move") );
 	p_move->setText( i18n("&Move") );
-	p_move->setIcon( QIcon::fromTheme("transform-move") );
+	p_move->setIcon( QIcon::fromTheme(QStringLiteral("transform-move")) );
 	p_move -> setEnabled(false);
 
-	a = actionCollection()->addAction( "disclaimer" );
+	a = actionCollection()->addAction( QStringLiteral("disclaimer") );
 	a->setText( i18n("Disclaimer") );
 	connect(a, &QAction::triggered, this, &kgeography::disclaimer);
 	
-	p_showAuthor = actionCollection()->addAction( "author" );
+	p_showAuthor = actionCollection()->addAction( QStringLiteral("author") );
 	p_showAuthor->setText( i18n("Map author") );
 	p_showAuthor->setEnabled(false);
 	connect(p_showAuthor, &QAction::triggered, this, &kgeography::showMapAuthor);
@@ -154,12 +154,12 @@ kgeography::~kgeography()
 
 void kgeography::showPreferencesDialog()
 {
-	if ( KConfigDialog::showDialog( "settings" ) )
+	if ( KConfigDialog::showDialog( QStringLiteral("settings") ) )
 		return; 
 
 	// KConfigDialog didn't find an instance of this dialog, so lets
 	// create it : 
-	KConfigDialog* dialog = new KConfigDialog(this, "settings",
+	KConfigDialog* dialog = new KConfigDialog(this, QStringLiteral("settings"),
 											  kgeographySettings::self()); 
 //	FIXME: Waiting for the answer from Kévin about what to do with it
 //	dialog->setHelp("configuration", "kgeography");
@@ -167,7 +167,7 @@ void kgeography::showPreferencesDialog()
 	Ui::Options confWdg;
 	confWdg.setupUi(w);
 
-	dialog->addPage(w, i18n("General"), "kgeography" ); 
+	dialog->addPage(w, i18n("General"), QStringLiteral("kgeography") ); 
 
 	// User edited the configuration - update your local copies of the 
 	// configuration data 
@@ -219,7 +219,7 @@ void kgeography::showEvent(QShowEvent *)
 		}
 		// if anyone can explain why with the slot works and now without
 		// i'll be glad to learn
-		QTimer::singleShot(0, this, SLOT(resizeMainWindow()));
+		QTimer::singleShot(0, this, &kgeography::resizeMainWindow);
 // 		resizeMainWindow();
 
 		p_firstShow = false;
@@ -235,7 +235,7 @@ void kgeography::openMap()
 		setMap(mp.getMap());
 		// if anyone can explain why with the slot works and now without
 		// i'll be glad to learn
-		QTimer::singleShot(0, this, SLOT(resizeMainWindow()));
+		QTimer::singleShot(0, this, &kgeography::resizeMainWindow);
 // 		resizeMainWindow();
 	}
 }

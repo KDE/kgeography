@@ -174,12 +174,12 @@ QString KGmap::getWhatIs(QRgb c, bool all) const
 {
 	// this is only asked from mapasker.cpp hence the division::eClick in canAsk
 	division *d = getDivision(c);
-	if (d == NULL) return "nothing";
+	if (d == NULL) return QStringLiteral("nothing");
 	else
 	{
 		if (all) return d -> getName();
 		else if (d -> canAsk(division::eClick)) return d -> getName();
-		else return "";
+		else return QLatin1String("");
 	}
 }
 

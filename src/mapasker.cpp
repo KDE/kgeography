@@ -30,12 +30,12 @@ static QString guessWikipediaDomain()
 	QString languageCode;
 	QLocale::Language systemLanguage = systemLocale.language();
 	if ( systemLanguage == QLocale::AnyLanguage || systemLanguage == QLocale::C ) {
-		languageCode = "en";
+		languageCode = QStringLiteral("en");
 	} else {
 		languageCode = systemLocale.name().split('_').first();
 	}
 
-	return QString( "http://%1.wikipedia.org/wiki/" ).arg( languageCode );
+	return QStringLiteral( "http://%1.wikipedia.org/wiki/" ).arg( languageCode );
 }
 
 mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_asker(asker), p_firstShow(true)
@@ -137,7 +137,7 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	}
 	QString aux, cap;
 	aux = p_map -> getWhatIs(c, !p_asker);
-	if (aux == "nothing") KMessageBox::error(this, i18nc("@info", "You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.", p_map -> getFile(), qRed(c), qGreen(c), qBlue(c)));
+	if (aux == QLatin1String("nothing")) KMessageBox::error(this, i18nc("@info", "You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.", p_map -> getFile(), qRed(c), qGreen(c), qBlue(c)));
 	else if (p_shouldClearPopup)
 	{
 		p_popupManager.clear();
@@ -151,7 +151,7 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 
 		QString wikiLink (guessWikipediaDomain());
 		wikiLink.append(i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8()));
-		if (!p_map -> getDivisionCanAsk(aux, division::eClick)) wikiLink = "";
+		if (!p_map -> getDivisionCanAsk(aux, division::eClick)) wikiLink = QLatin1String("");
 
 		aux = i18nc("@item Region name in map popup", "%1", i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8()));
 		

@@ -30,7 +30,7 @@ myPopup::myPopup(QWidget *parent, const QString &text, const QString &wikiLink, 
 	{
 		wiki = new QLabel(this);
 		lay -> addWidget(wiki);
-		wiki -> setPixmap(SmallIcon( "dialog-information" ));
+		wiki -> setPixmap(SmallIcon( QStringLiteral("dialog-information") ));
 		wiki -> setToolTip(i18n("Wikipedia page"));
 		wiki -> setAlignment(Qt::AlignCenter);
 		wiki -> installEventFilter(this);

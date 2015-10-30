@@ -38,22 +38,22 @@ KGmap *mapReader::parseMap(const QString &path)
 			QDomDocument doc;
 			doc.setContent(xmlFile.readAll());
 			const QDomElement &root = doc.documentElement();
-			if (root.tagName() == "map")
+			if (root.tagName() == QLatin1String("map"))
 			{
 				// Map name
-				kgmap -> setName( getElementString("name", root, Mandatory) );
+				kgmap -> setName( getElementString(QStringLiteral("name"), root, Mandatory) );
 				
 				// Map image file
-				if (!kgmap -> setMapFile( baseDir + getElementString("mapFile", root, Mandatory) ))
+				if (!kgmap -> setMapFile( baseDir + getElementString(QStringLiteral("mapFile"), root, Mandatory) ))
 				{
 					p_error = i18n("The map image file for %1 does not exist", kgmap -> getName());
 				}
 				
 				// Divisions string
-				QString divisionKindName = getElementString("divisionsName", root, Mandatory);
+				QString divisionKindName = getElementString(QStringLiteral("divisionsName"), root, Mandatory);
 				kgmap -> setDivisionsString(divisionKindName);
 
-				QString pat = getElementString("capitalToDivisionPattern", root, Optional);
+				QString pat = getElementString(QStringLiteral("capitalToDivisionPattern"), root, Optional);
 				if ( pat.contains('%') )
 				{
 					kgmap->setCapitalToDivisionQuestionPattern(pat);
@@ -64,7 +64,7 @@ KGmap *mapReader::parseMap(const QString &path)
 					stream << "capitalToDivisionPattern element should contain one '%%' in map " << kgmap->getName();
 				}
 
-				pat = getElementString("divisionToCapitalPattern", root, Optional);
+				pat = getElementString(QStringLiteral("divisionToCapitalPattern"), root, Optional);
 				if ( pat.contains('%') )
 				{
 					kgmap->setDivisionToCapitalQuestionPattern(pat);
@@ -75,7 +75,7 @@ KGmap *mapReader::parseMap(const QString &path)
 					stream << "divisionToCapitalPattern element should contain one '%%' in map " << kgmap->getName();
 				}
 
-				QString title = getElementString("capitalToDivisionTitle", root, Optional);
+				QString title = getElementString(QStringLiteral("capitalToDivisionTitle"), root, Optional);
 				if ( ! title.isEmpty() )
 				{
 					kgmap->setCapitalToDivisionTitle(title);
@@ -85,7 +85,7 @@ KGmap *mapReader::parseMap(const QString &path)
 					kgmap->setCapitalToDivisionTitle(i18n("%1 by Capital", i18nc(kgmap->getFileName().toUtf8(), divisionKindName.toUtf8())));
 				}
 
-				title = getElementString("divisionToCapitalTitle", root, Optional);
+				title = getElementString(QStringLiteral("divisionToCapitalTitle"), root, Optional);
 				if ( ! title.isEmpty() )
 				{
 					kgmap->setDivisionToCapitalTitle(title);
@@ -97,22 +97,22 @@ KGmap *mapReader::parseMap(const QString &path)
 
 				
 				// Author string
-				kgmap -> setAuthor( getElementString("author", root, Mandatory) );
+				kgmap -> setAuthor( getElementString(QStringLiteral("author"), root, Mandatory) );
 				
-				QDomElement divisionTag = root.firstChildElement("division");
+				QDomElement divisionTag = root.firstChildElement(QStringLiteral("division"));
 				while (!divisionTag.isNull())
 				{
 					division *kgdiv = new division();
 					
 					// division name
-					kgdiv -> setName( getElementString("name", divisionTag, Mandatory) );
+					kgdiv -> setName( getElementString(QStringLiteral("name"), divisionTag, Mandatory) );
 					
 					// division capital
-					QString capital = getElementString("capital", divisionTag, Optional);
+					QString capital = getElementString(QStringLiteral("capital"), divisionTag, Optional);
 					if (!capital.isNull()) kgdiv -> setCapital( capital );
 					
 					// division flag
-					QString flagFile = getElementString("flag", divisionTag, Optional);
+					QString flagFile = getElementString(QStringLiteral("flag"), divisionTag, Optional);
 					if (!flagFile.isNull())
 					{
 						if (!kgdiv -> setFlagFile( baseDir + "/flags/" + flagFile ))
@@ -122,28 +122,28 @@ KGmap *mapReader::parseMap(const QString &path)
 					}
 					
 					// division ignoreness
-					const QString &ignore = getElementString("ignore", divisionTag, Optional).toLower();
+					const QString &ignore = getElementString(QStringLiteral("ignore"), divisionTag, Optional).toLower();
 					if (!ignore.isNull())
 					{
-						if (ignore == "yes") kgdiv -> setCanAsk(division::eNone);
-						else if (ignore == "no") kgdiv -> setCanAsk(division::eClick | division::eCapital | division::eFlag);
-						else if (ignore == "allowclickmode") kgdiv -> setCanAsk(division::eClick);
-						else if (ignore == "allowclickflagmode") kgdiv -> setCanAsk(division::eClick | division::eFlag);
+						if (ignore == QLatin1String("yes")) kgdiv -> setCanAsk(division::eNone);
+						else if (ignore == QLatin1String("no")) kgdiv -> setCanAsk(division::eClick | division::eCapital | division::eFlag);
+						else if (ignore == QLatin1String("allowclickmode")) kgdiv -> setCanAsk(division::eClick);
+						else if (ignore == QLatin1String("allowclickflagmode")) kgdiv -> setCanAsk(division::eClick | division::eFlag);
 						else
 						{
-							p_error = i18n("Invalid value in tag %1", QString("<ignore>"));
+							p_error = i18n("Invalid value in tag %1", QStringLiteral("<ignore>"));
 						}
 					}
 					
 					// division color
-					const QDomElement &colorTag = getElement("color", divisionTag);
-					kgdiv -> setRGB(getElementString("red", colorTag, Mandatory).toInt(),
-					                getElementString("green", colorTag, Mandatory).toInt(),
-					                getElementString("blue", colorTag, Mandatory).toInt());
+					const QDomElement &colorTag = getElement(QStringLiteral("color"), divisionTag);
+					kgdiv -> setRGB(getElementString(QStringLiteral("red"), colorTag, Mandatory).toInt(),
+					                getElementString(QStringLiteral("green"), colorTag, Mandatory).toInt(),
+					                getElementString(QStringLiteral("blue"), colorTag, Mandatory).toInt());
 					
 					// division false capitals
 					QStringList falseCapitals;
-					const QDomNodeList &falseCapitalTags = divisionTag.elementsByTagName("falseCapital");
+					const QDomNodeList &falseCapitalTags = divisionTag.elementsByTagName(QStringLiteral("falseCapital"));
 					QDomElement falseCapital;
 					for (int i = 0; i < falseCapitalTags.count(); ++i)
 					{
@@ -158,12 +158,12 @@ KGmap *mapReader::parseMap(const QString &path)
 						delete kgdiv;
 					}
 					
-					divisionTag = divisionTag.nextSiblingElement("division");
+					divisionTag = divisionTag.nextSiblingElement(QStringLiteral("division"));
 				}
 			}
 			else
 			{
-				p_error = i18n("The map description file should begin with the %1 tag", QString("map"));
+				p_error = i18n("The map description file should begin with the %1 tag", QStringLiteral("map"));
 			}
 			xmlFile.close();
 		}

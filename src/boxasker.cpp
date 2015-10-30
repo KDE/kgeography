@@ -46,7 +46,7 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 		p_radioButtons[i] = new QRadioButton(p_groupBox);
 
 		p_radioButtons[i] -> installEventFilter(this);
-		connect(p_radioButtons[i], SIGNAL(toggled(bool)), this, SLOT(atLeastOneSelected()));
+		connect(p_radioButtons[i], &QAbstractButton::toggled, this, &boxAsker::atLeastOneSelected);
 	}
 	p_accept = new QPushButton();
 

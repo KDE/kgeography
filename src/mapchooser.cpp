@@ -60,7 +60,7 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 	mainLayout->addWidget(buttonBox);
 
 	QSet<QString> list;
-	const QStringList dirs = QStandardPaths::locateAll(QStandardPaths::DataLocation, "", QStandardPaths::LocateDirectory);
+	const QStringList dirs = QStandardPaths::locateAll(QStandardPaths::DataLocation, QLatin1String(""), QStandardPaths::LocateDirectory);
 	Q_FOREACH (const QString &dir, dirs)
 	{
 		const QStringList fileNames = QDir(dir).entryList(QStringList() << QStringLiteral("*.kgm"));
