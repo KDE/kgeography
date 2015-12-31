@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
 	KAboutData::setApplicationData(about);
 
         app.setWindowIcon(QIcon::fromTheme(QStringLiteral("kgeography")));
+	app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
 	KCrash::initialize();
 
