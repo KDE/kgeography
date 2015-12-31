@@ -13,6 +13,7 @@
 #include <qapplication.h>
 #include <qcommandlineparser.h>
 #include <Kdelibs4ConfigMigrator>
+#include <KCrash>
 #include "kgeography.h"
 
 int main(int argc, char *argv[])
@@ -32,6 +33,8 @@ int main(int argc, char *argv[])
 	KAboutData::setApplicationData(about);
 
         app.setWindowIcon(QIcon::fromTheme(QStringLiteral("kgeography")));
+
+	KCrash::initialize();
 
 	QCommandLineParser parser;
 	about.setupCommandLine(&parser);

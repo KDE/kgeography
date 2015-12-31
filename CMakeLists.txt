@@ -14,8 +14,8 @@ set (CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 find_package (Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED Core Widgets)
 
-find_package (KF5 REQUIRED COMPONENTS
-    XmlGui WidgetsAddons CoreAddons ConfigWidgets I18n ItemViews IconThemes Service DocTools
+find_package (KF5 5.15 REQUIRED COMPONENTS
+    XmlGui WidgetsAddons CoreAddons ConfigWidgets I18n ItemViews IconThemes Service Crash DocTools
 )
 
 include(KDEInstallDirs)

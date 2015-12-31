@@ -38,6 +38,7 @@ target_link_libraries(kgeography KF5::XmlGui
                                  KF5::WidgetsAddons
                                  KF5::CoreAddons
                                  KF5::ConfigWidgets
+                                 KF5::Crash
                                  KF5::I18n
                                  KF5::ItemViews
                                  KF5::IconThemes
