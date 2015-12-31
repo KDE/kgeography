@@ -42,7 +42,6 @@ target_link_libraries(kgeography KF5::XmlGui
                                  KF5::I18n
                                  KF5::ItemViews
                                  KF5::IconThemes
-                                 KF5::Service
 )
 install(TARGETS kgeography EXPORT KGeography ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} )
 
