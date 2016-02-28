@@ -125,7 +125,7 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 
 mapChooser::~mapChooser()
 {
-	qDeleteAll(p_maps.values());
+	qDeleteAll(p_maps);
 }
 
 KGmap *mapChooser::getMap()
