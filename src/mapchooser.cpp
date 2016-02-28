@@ -74,10 +74,9 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 	QStringList errorTexts;
 	QString lastMapFile = kgeographySettings::self() -> lastMap();
 	QString stringToSelect;
-	KGmap *m;
 	foreach(const QString &mapFilename, list)
 	{
-		m = p_reader.parseMap(mapFilename);
+		KGmap *m = p_reader.parseMap(mapFilename);
 		if (!m)
 		{
 			errorTexts << i18n("Error parsing %1: %2", mapFilename, p_reader.getError());
@@ -94,6 +93,8 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 				{
 					stringToSelect = text;
 				}
+			} else {
+				delete m;
 			}
 		}
 	}
@@ -125,7 +126,7 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 
 mapChooser::~mapChooser()
 {
-	qDeleteAll(p_maps.values());
+	qDeleteAll(p_maps);
 }
 
 KGmap *mapChooser::getMap()
