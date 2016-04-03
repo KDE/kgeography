@@ -348,9 +348,9 @@ guide the parent/teacher on how to help the child using it.
 <sect1 id="helper-tool">
 <title>Helper tool</title>
 <para>
-You can find <ulink url="https://projects.kde.org/projects/kde/kdeedu/kgeography/repository/revisions/master/changes/tools/gen_map.pl">here</ulink> a tool (made by Yann Verley) which helped him with the map of France. To find out its usage, simply execute it and read the help message. It basically creates the <literal role="extension">.kgm</literal> file from a plain text file and creates a file with the colors it has assigned to each division, so you can fill the map according to them.</para>
+You can find <ulink url="https://quickgit.kde.org/?p=kgeography.git&amp;a=blob&amp;f=tools%2Fgen_map.pl&amp;o=plain">here</ulink> a tool (made by Yann Verley) which helped him with the map of France. To find out its usage, simply execute it and read the help message. It basically creates the <literal role="extension">.kgm</literal> file from a plain text file and creates a file with the colors it has assigned to each division, so you can fill the map according to them.</para>
 <para>
-There is another tool <ulink url="https://projects.kde.org/projects/kde/kdeedu/kgeography/repository/revisions/master/changes/tools/colorchecker.py">colorchecker.py</ulink> written by Albert Astals Cid. You need PyQt4 to run this. Just run this with the .kgm filename as argument (you also need the .png file of the map in the same folder). This will tell you if any pixel on the map has a different color which is not defined in the .kgm (description) file.
+There is another tool <ulink url="http://quickgit.kde.org/?p=kgeography.git&amp;a=blob&amp;f=tools%2Fcolorchecker.py&amp;o=plain">colorchecker.py</ulink> written by Albert Astals Cid. You need PyQt4 to run this. Just run this with the .kgm filename as argument (you also need the .png file of the map in the same folder). This will tell you if any pixel on the map has a different color which is not defined in the .kgm (description) file.
 </para>
 <tip>
 <para>
