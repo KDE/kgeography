@@ -1,0 +1,82 @@
+<!DOCTYPE kgeographyMap>
+<map>
+	<mapFile>burkina_regions.png</mapFile>
+	<name>Burkina Faso (Regions)</name>
+    <divisionsName>Regions</divisionsName>
+    <author>Julien REINE</author>
+	<division>
+		<name>Frontier</name>
+		<ignore>yes</ignore>
+		<color><red>0</red><green>0</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Not Burkina Faso</name>
+		<ignore>yes</ignore>
+		<color><red>255</red><green>255</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Est</name>
+		<capital>Fada N'Gourma</capital>
+		<color><red>255</red><green>27</green><blue>50</blue></color>
+	</division>
+	<division>
+		<name>Sahel</name>
+		<capital>Dori</capital>
+		<color><red>182</red><green>24</green><blue>102</blue></color>
+	</division>
+	<division>
+		<name>Centre-Nord</name>
+		<capital>Kaya</capital>
+		<color><red>82</red><green>170</green><blue>30</blue></color>
+	</division>
+	<division>
+		<name>Nord</name>
+		<capital>Ouahigouya</capital>
+		<color><red>255</red><green>255</green><blue>35</blue></color>
+	</division>
+	<division>
+		<name>Plateau central</name>
+		<capital>Ziniaré</capital>
+		<color><red>52</red><green>55</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Centre-Est</name>
+		<capital>Tenkodogo</capital>
+		<color><red>255</red><green>147</green><blue>47</blue></color>
+	</division>
+	<division>
+		<name>Centre-Sud</name>
+		<capital>Manga</capital>
+		<color><red>203</red><green>203</green><blue>0</blue></color>
+	</division>
+	<division>
+		<name>Centre</name>
+		<capital>Ouagadougou</capital>
+		<color><red>0</red><green>255</green><blue>41</blue></color>
+	</division>
+	<division>
+		<name>Centre-Ouest</name>
+		<capital>Koudougou</capital>
+		<color><red>162</red><green>49</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Boucle du Mouhoun</name>
+		<capital>Dédougou</capital>
+		<color><red>255</red><green>148</green><blue>255</blue></color>
+	</division>
+	<division>
+		<name>Hauts-bassins</name>
+		<capital>Bobo Dioulasso</capital>
+		<color><red>34</red><green>55</green><blue>236</blue></color>
+	</division>
+	<division>
+		<name>Cascades</name>
+		<capital>Banfora</capital>
+		<color><red>141</red><green>64</green><blue>140</blue></color>
+	</division>
+	<division>
+		<name>Sud-Ouest</name>
+		<capital>Gaoua</capital>
+		<color><red>216</red><green>97</green><blue>0</blue></color>
+	</division>
+</map>

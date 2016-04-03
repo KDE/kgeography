@@ -60,6 +60,10 @@ bulgaria.kgm
 bulgaria.png
 burma.kgm
 burma.png
+burkina_provinces.kgm
+burkina_provinces.png
+burkina_regions.kgm
+burkina_regions.png
 cameroon_departments.kgm
 cameroon_departments.png
 cameroon_provinces.kgm
