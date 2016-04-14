@@ -174,7 +174,7 @@ void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint
 						maxCount = stats[i];
 					}
 				}
-				c = p_mapImage -> colorTable()[indexOfMax];
+				c = p_mapImage -> colorTable().at(indexOfMax);
 			}
 		}
 		p_placedPixelIndices.append(indexOfCurrent);
