@@ -95,7 +95,7 @@ void placeAsker::setAutomaticZoom(bool automaticZoom)
 
 void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint)
 {
-	QString aux, cap;
+	QString aux;
 	aux = p_map -> getWhatIs(c, false);
 	if (aux == QLatin1String("nothing")) KMessageBox::error(this, i18nc("@info", "You have found a bug in a map. Please contact the author and tell the %1 map has nothing associated to color %2,%3,%4.", p_map -> getFile(), qRed(c), qGreen(c), qBlue(c)));
 	else
