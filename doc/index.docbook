@@ -1,8 +1,5 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
-  <!ENTITY kgeography "<application>KGeography</application>">
-  <!ENTITY kappname "&kgeography;">
-  <!ENTITY package "kdeedu">
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % English "INCLUDE"> 
 ]>
@@ -43,8 +40,8 @@
 
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2013-11-13</date>
-<releaseinfo>0.8.1 (&kde; 4.13)</releaseinfo>
+<date>2016-05-08</date>
+<releaseinfo>0.9 (Applications)</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -88,11 +85,6 @@
 
 <chapter id="introduction">
 <title>Introduction</title>
-
-<!-- The introduction chapter contains a brief introduction for the
-application that explains what it does and where to report
-problems. Basically a long version of the abstract.  Don't include a
-revision history. (see installation appendix comment) -->
 
 <para>
 &kgeography; is a geography learning tool for &kde;. It allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).
@@ -348,9 +340,9 @@ guide the parent/teacher on how to help the child using it.
 <sect1 id="helper-tool">
 <title>Helper tool</title>
 <para>
-You can find <ulink url="https://quickgit.kde.org/?p=kgeography.git&amp;a=blob&amp;f=tools%2Fgen_map.pl&amp;o=plain">here</ulink> a tool (made by Yann Verley) which helped him with the map of France. To find out its usage, simply execute it and read the help message. It basically creates the <literal role="extension">.kgm</literal> file from a plain text file and creates a file with the colors it has assigned to each division, so you can fill the map according to them.</para>
+You can find <ulink url="https://commits.kde.org/kgeography?path=tools/gen_map.pl">here</ulink> a tool (made by Yann Verley) which helped him with the map of France. To find out its usage, simply execute it and read the help message. It basically creates the <literal role="extension">.kgm</literal> file from a plain text file and creates a file with the colors it has assigned to each division, so you can fill the map according to them.</para>
 <para>
-There is another tool <ulink url="http://quickgit.kde.org/?p=kgeography.git&amp;a=blob&amp;f=tools%2Fcolorchecker.py&amp;o=plain">colorchecker.py</ulink> written by Albert Astals Cid. You need PyQt4 to run this. Just run this with the .kgm filename as argument (you also need the .png file of the map in the same folder). This will tell you if any pixel on the map has a different color which is not defined in the .kgm (description) file.
+There is another tool <ulink url="https://commits.kde.org/kgeography?path=tools/colorchecker.py">colorchecker.py</ulink> written by Albert Astals Cid. You need PyQt4 to run this. Just run this with the .kgm filename as argument (you also need the .png file of the map in the same folder). This will tell you if any pixel on the map has a different color which is not defined in the .kgm (description) file.
 </para>
 <tip>
 <para>
@@ -432,7 +424,7 @@ starttag">ignore</sgmltag> tag that means as it is set to <userinput>no</userinp
 <title>Map file</title>
 <para>
  The map file is quite simple but laborious to create. It has to be in <acronym>PNG</acronym> format.
- You can find some maps to transform at <ulink url="https://www.cia.gov/library/publications/the-world-factbook/docs/refmaps.html">Cia Reference Maps</ulink>. If no map fits your needs you can download the <ulink url="https://www.cia.gov/library/publications/the-world-factbook/reference_maps/pdf/political_world.pdf">political world map</ulink>, take a screenshot of it and work from it.
+ You can find some maps to transform at <ulink url="https://www.cia.gov/library/publications/the-world-factbook/docs/refmaps.html">Cia Reference Maps</ulink>. If no map fits your needs you can download the <ulink url="https://www.cia.gov/library/publications/resources/the-world-factbook/graphics/ref_maps/political/pdf/world.pdf">political world map</ulink>, take a screenshot of it and work from it.
  Each division in the map should have one and only one color. To achieve this you can use image processing programs like <application>The Gimp</application> and <application>Kolourpaint</application>.
 </para>
 </sect1>
@@ -448,17 +440,17 @@ starttag">ignore</sgmltag> tag that means as it is set to <userinput>no</userinp
  Before sending your map to Albert &Albert.Astals.Cid.mail;, you should test it to see it has no errors. To achieve that, you have to do the following:
 <itemizedlist>
 <listitem>
-  <para>Put the map description and map image file in <filename class="directory">$<envar>KDEDIR</envar>/share/apps/kgeography/</filename></para>
+    <para>Put the map description and map image file in <filename class="directory">$<envar>XDG_DATA_HOME</envar>/share/apps/kgeography/</filename></para>
 </listitem>
 <listitem>
-  <para>Put the flag <acronym>PNG</acronym> files (if any) in <filename class="directory">$<envar>KDEDIR</envar>/share/apps/kgeography/flags/</filename></para>
+  <para>Put the flag <acronym>PNG</acronym> files (if any) in <filename class="directory">$<envar>XDG_DATA_HOME</envar>/share/apps/kgeography/flags/</filename></para>
 </listitem>
 </itemizedlist>
  Once that has been done you should be able of opening your map from inside &kgeography;.
  </para>
  <para>
- If you don't know which is your <filename class="directory">$<envar>KDEDIR</envar></filename>, type <userinput><command>kde4-config</command> <option>--prefix</option></userinput> in a shell.
-</para>
+ If you don't know which is your <filename class="directory">$<envar>XDG_DATA_HOME</envar></filename>, type <userinput><command>qtpaths</command> <option>--paths HomeLocation</option></userinput> in a shell.
+ </para>
 <tip>
 <para>
 Use the colorchecker.py tool from the helper tools to check if any extra color left on the map which is not defined on the .kgm file. 
@@ -489,12 +481,6 @@ Use the colorchecker.py tool from the helper tools to check if any extra color l
 
 <chapter id="commands">
 <title>Command Reference</title>
-
-<!-- (OPTIONAL, BUT RECOMMENDED) This chapter should list all of the
-application windows and their menubar and toolbar commands for easy reference.
-Also include any keys that have a special function but have no equivalent in the
-menus or toolbars. This may not be necessary for small apps or apps with no tool
-or menu bars. -->
 
 <sect1 id="kapp-mainwindow">
 <title>The main &kgeography; window</title>
@@ -635,41 +621,7 @@ This helps the user to focus and learn the division shapes and not the division 
 </para>
 </chapter>
 
-<!--<chapter id="faq">
-<title>Questions and Answers</title>
-
-
-&reporting.bugs;
-&updating.documentation;
-
-<qandaset id="faqlist">
-<qandaentry>
-<question>
-<para>My Mouse doesn't work. How do I quit &kgeography;?</para>
-</question>
-<answer>
-<para>You silly goose! Check out the <link linkend="commands">Commands
-Section</link> for the answer.</para>
-</answer>
-</qandaentry>
-<qandaentry>
-<question>
-<para>Why am I not able to twiddle my documents?</para>
-</question>
-<answer>
-<para>You can only twiddle your documents if you have the foobar.lib
-installed.</para>
-</answer>
-</qandaentry>
-</qandaset>
-</chapter>-->
-
 <chapter id="credits">
-
-<!-- Include credits for the programmers, documentation writers, and
-contributors here. The license for your software should then be included below
-the credits with a reference to the appropriate license file included in the KDE
-distribution. -->
 
 <title>Credits and License</title>
 
@@ -691,35 +643,6 @@ Documentation Copyright &copy; 2005 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mai
 &underGPL;
 
 </chapter>
-
-<appendix id="installation">
-<title>Installation</title>
-
-<sect1 id="getting-kapp">
-<title>How to obtain &kgeography;</title>
-
-<!-- This first entity contains boiler plate for applications that are
-part of KDE CVS.  You should remove it if you are releasing your
-application -->
-
-&install.intro.documentation;
-
-</sect1>
-
-
-<sect1 id="compilation">
-<title>Compilation and Installation</title>
-
-<!-- This entity contains the boilerplate text for standard -->
-<!-- compilation instructions.  If your application requires any -->
-<!-- special handling, remove it, and replace with your own text. -->
-
-&install.compile.documentation;
-
-</sect1>
-
-
-</appendix>
 
 &documentation.index;
 </book>
