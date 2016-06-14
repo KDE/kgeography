@@ -47,7 +47,7 @@
 
 <abstract>
 <para>
-&kgeography; is a geography learning tool for &kde;. Right now it has seven usage modes:
+&kgeography; is a geography learning tool by &kde;. Right now it has seven usage modes:
 <itemizedlist>
 <listitem>
 <para>Browse the maps clicking in a map division to see its name, capital and flag</para>
@@ -87,7 +87,7 @@
 <title>Introduction</title>
 
 <para>
-&kgeography; is a geography learning tool for &kde;. It allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).
+&kgeography; is a geography learning tool by &kde;. It allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).
 </para>
 </chapter>
 
