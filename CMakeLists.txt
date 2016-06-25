@@ -26,6 +26,7 @@ include(ECMAddAppIcon)
 include(ECMInstallIcons)
 
 add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
+add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 
 # global include directories
 include_directories (${CMAKE_CURRENT_BINARY_DIR})

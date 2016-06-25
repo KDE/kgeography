@@ -86,7 +86,7 @@ bool myPopup::eventFilter(QObject *obj, QEvent *event)
 		
 		if (event -> type() == QEvent::MouseButtonPress)
 		{
-			QDesktopServices::openUrl(wikipedia);
+			QDesktopServices::openUrl(QUrl(wikipedia));
 			return true;
 		}
 		else
