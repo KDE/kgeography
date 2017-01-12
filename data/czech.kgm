@@ -1,7 +1,7 @@
 <!DOCTYPE kgeographyMap>
 <map>
 	<mapFile>czech.png</mapFile>
-	<name>Czech Republic</name>
+	<name>Czechia</name>
     <divisionsName>Regions</divisionsName>
     <author>Laurent Garnier</author>
 	<division>
