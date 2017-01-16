@@ -116,6 +116,8 @@ georgia.kgm
 georgia.png
 germany.kgm
 germany.png
+ghana.kgm
+ghana.png
 goa.kgm
 goa.png
 great-britain_counties.kgm
