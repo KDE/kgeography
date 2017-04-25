@@ -232,8 +232,3 @@ bool KGmap::getDivisionCanAsk(const QString &div, division::askMode am) const
 {
 	return getDivision(div) -> canAsk(am);
 }
-
-division *KGmap::getDivisionByRgb(QRgb c) const
-{
-	return getDivision(c);
-}

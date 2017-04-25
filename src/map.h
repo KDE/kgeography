@@ -55,14 +55,10 @@ class KGmap
 		QString getDivisionToCapitalQuestionPattern() const;
 		QString getCapitalToDivisionTitle() const;
 		QString getDivisionToCapitalTitle() const;
-		/**
-		* Public alternative of getDivision(QRgb c)
-		*/
-		division *getDivisionByRgb(QRgb c) const;
+		division *getDivision(QRgb c) const;
 		
 	private:
 		division *getDivision(const QString &divisionName) const;
-		division *getDivision(QRgb c) const;
 
 		QList<division*> p_divisions;
 		

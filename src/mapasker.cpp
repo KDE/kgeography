@@ -173,11 +173,11 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 		{
 			int i = p_shuffledColormap.indexOf(vColorRgb);
 			origColor = p_originalColormap[i];
-			vDivision = p_map->getDivisionByRgb(origColor);
+			vDivision = p_map->getDivision(origColor);
 		}
 		else
 		{
-			vDivision = p_map->getDivisionByRgb(vColorRgb);
+			vDivision = p_map->getDivision(vColorRgb);
 		}
 		vDivisionName = i18nc(p_map -> getFileName().toUtf8(), vDivision->getName().toUtf8());
 		vAnswer.append(vDivisionName);
