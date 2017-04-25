@@ -162,7 +162,26 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	else if (!aux.isEmpty())
 	{
 		p_currentAnswer.setCorrectAnswer(QColor(correctRgb));
-		p_currentAnswer.setAnswer(QColor(colorSeen));
+		QVariantList vAnswer;
+		QColor vColor = QColor(colorSeen);
+		QRgb vColorRgb = vColor.toRgb().rgb();
+		vAnswer.append(vColor);
+		QString vDivisionName;
+		QRgb origColor;
+		division * vDivision;
+		if (kgeographySettings::self()->colorDisguise() == kgeographySettings::EnumColorDisguise::Scramble)
+		{
+			int i = p_shuffledColormap.indexOf(vColorRgb);
+			origColor = p_originalColormap[i];
+			vDivision = p_map->getDivisionByRgb(origColor);
+		}
+		else
+		{
+			vDivision = p_map->getDivisionByRgb(vColorRgb);
+		}
+		vDivisionName = i18nc(p_map -> getFileName().toUtf8(), vDivision->getName().toUtf8());
+		vAnswer.append(vDivisionName);
+		p_currentAnswer.setAnswer(vAnswer);
 		questionAnswered(aux == correctDivision);
 		nextQuestion();
 	}
