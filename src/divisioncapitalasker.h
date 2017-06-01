@@ -19,10 +19,10 @@ class divisionCapitalAsker : public boxAsker
 		divisionCapitalAsker(QWidget *parent, KGmap *m, QWidget *w, uint count);
 
 	protected:
-		bool nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer);
-		void setAnswerHook(int userSays);
-		QString getQuestionHook() const;
-		division::askMode askMode() const { return division::eCapital; }
+		bool nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer) Q_DECL_OVERRIDE;
+		void setAnswerHook(int userSays) Q_DECL_OVERRIDE;
+		QString getQuestionHook() const Q_DECL_OVERRIDE;
+		division::askMode askMode() const Q_DECL_OVERRIDE { return division::eCapital; }
 	
 	private:
 		QString p_capital;

@@ -29,7 +29,7 @@ class flagWidget : public QWidget
 		QImage img;
 
 	protected:
-		void paintEvent(QPaintEvent *)
+		void paintEvent(QPaintEvent *) Q_DECL_OVERRIDE
 		{
 			QPainter p(this);
 			p.drawImage((width() - img.width()) / 2, 0, img);
