@@ -26,19 +26,19 @@ Q_OBJECT
 		boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count);
 		~boxAsker();
 
-		bool eventFilter(QObject *obj, QEvent *event) Q_DECL_OVERRIDE;
+		bool eventFilter(QObject *obj, QEvent *event) override;
 
 	public slots:
 		void updateLayout();
 
 	protected:
 		virtual bool nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer) = 0;
-		void nextQuestionHook(const QString &division) Q_DECL_OVERRIDE;
+		void nextQuestionHook(const QString &division) override;
 		void setQuestion(const QString &q);
 		virtual void setAnswerHook(int userSays) = 0;
 
-		void keyPressEvent(QKeyEvent *e) Q_DECL_OVERRIDE;
-		void keyReleaseEvent(QKeyEvent *e) Q_DECL_OVERRIDE;
+		void keyPressEvent(QKeyEvent *e) override;
+		void keyReleaseEvent(QKeyEvent *e) override;
 		
 		void setHeadWidget(QWidget *headWidget);
 		QVector<QRadioButton*> p_radioButtons;

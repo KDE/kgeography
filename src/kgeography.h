@@ -30,7 +30,7 @@ Q_OBJECT
 		~kgeography();
 	
 	protected:
-		void showEvent(QShowEvent *e) Q_DECL_OVERRIDE;
+		void showEvent(QShowEvent *e) override;
 
 	private slots:
 		void openMap();

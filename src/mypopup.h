@@ -27,8 +27,8 @@ Q_OBJECT
 		void deleteMe();
 
 	protected:
-		void mousePressEvent(QMouseEvent *) Q_DECL_OVERRIDE;
-		bool eventFilter(QObject *obj, QEvent *ev) Q_DECL_OVERRIDE;
+		void mousePressEvent(QMouseEvent *) override;
+		bool eventFilter(QObject *obj, QEvent *ev) override;
 
 	private:
 		QString wikipedia;

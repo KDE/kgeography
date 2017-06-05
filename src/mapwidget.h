@@ -42,11 +42,11 @@ Q_OBJECT
 		void clicked(QRgb, const QPoint&);
 	
 	protected:
-		void mousePressEvent(QMouseEvent *e) Q_DECL_OVERRIDE;
-		void mouseMoveEvent(QMouseEvent *e) Q_DECL_OVERRIDE;
-		void mouseReleaseEvent(QMouseEvent *e) Q_DECL_OVERRIDE;
-		void wheelEvent(QWheelEvent *e) Q_DECL_OVERRIDE;
-		void resizeEvent(QResizeEvent *e) Q_DECL_OVERRIDE;
+		void mousePressEvent(QMouseEvent *e) override;
+		void mouseMoveEvent(QMouseEvent *e) override;
+		void mouseReleaseEvent(QMouseEvent *e) override;
+		void wheelEvent(QWheelEvent *e) override;
+		void resizeEvent(QResizeEvent *e) override;
 	
 	private:
 		/**

@@ -33,16 +33,16 @@ Q_OBJECT
 		bool isAsker() const;
 
 	protected:
-		void nextQuestionHook(const QString &division) Q_DECL_OVERRIDE;
-		void mousePressEvent(QMouseEvent *e) Q_DECL_OVERRIDE;
-		QString getQuestionHook() const Q_DECL_OVERRIDE;
-		division::askMode askMode() const Q_DECL_OVERRIDE { return division::eClick; }
+		void nextQuestionHook(const QString &division) override;
+		void mousePressEvent(QMouseEvent *e) override;
+		QString getQuestionHook() const override;
+		division::askMode askMode() const override { return division::eClick; }
 
 	public slots:
-		void setMovement(bool b) Q_DECL_OVERRIDE;
-		void setZoom(bool b) Q_DECL_OVERRIDE;
-		void setOriginalZoom() Q_DECL_OVERRIDE;
-		void setAutomaticZoom(bool b) Q_DECL_OVERRIDE;
+		void setMovement(bool b) override;
+		void setZoom(bool b) override;
+		void setOriginalZoom() override;
+		void setAutomaticZoom(bool b) override;
 	
 	private slots:
 		void handleMapClick(QRgb c, const QPoint &, const QPointF &mapPoint);
