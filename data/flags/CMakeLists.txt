@@ -242,6 +242,7 @@ install(FILES
    seychelles.png
    st_helena.png
    madeira.png
+   malta.png
 
 	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags)
 

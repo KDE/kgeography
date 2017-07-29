@@ -507,4 +507,14 @@
 			<blue>177</blue>
 		</color>
 	</division>
+	<division>
+		<name>Malta</name>
+		<flag>malta.png</flag>
+		<capital>Valletta</capital>
+		<color>
+			<red>202</red>
+			<green>0</green>
+			<blue>0</blue>
+		</color>
+	</division>
 </map>
