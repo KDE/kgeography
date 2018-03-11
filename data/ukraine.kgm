@@ -79,7 +79,7 @@
 
 <division> 
 <name>Kirovohrads'ka oblast'</name>
-<capital>Kirovohrad</capital> <flag>ukraine/Kirovohrad.png</flag>
+<capital>Kropyvnytskiy</capital> <flag>ukraine/Kirovohrad.png</flag>
 <color> <red> 0 </red> <green> 255 </green> <blue> 0 </blue> </color> 
 </division>
 
@@ -121,7 +121,7 @@
 
 <division> 
 <name>Dnipropetrovs'ka oblast'</name>
-<capital>Dnipropetrovs'k</capital> <flag>ukraine/Dnipopetrovsk.png</flag>
+<capital>Dnipro</capital> <flag>ukraine/Dnipopetrovsk.png</flag>
 <color> <red> 192 </red> <green> 192 </green> <blue> 192 </blue> </color> 
 </division>
 
