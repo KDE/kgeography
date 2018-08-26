@@ -3,7 +3,7 @@
 	<mapFile>norway.png</mapFile>
 	<name>Norway</name>
     <divisionsName>Counties</divisionsName>
-    <author>Mikolaj Machowski</author>
+    <author>Mikolaj Machowski / Karl Ove Hufthammer</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>
@@ -50,17 +50,8 @@
 		</color>
 	</division>
 	<division>
-		<name>Nord-Trøndelag</name>
+		<name>Trøndelag</name>
 		<capital>Steinkjer</capital>
-		<color>
-			<red>241</red>
-			<green>228</green>
-			<blue>14</blue>
-		</color>
-	</division>
-	<division>
-		<name>Sør-Trøndelag</name>
-		<capital>Trondheim</capital>
 		<color>
 			<red>241</red>
 			<green>142</green>
