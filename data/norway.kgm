@@ -59,7 +59,7 @@
 		</color>
 	</division>
 	<division>
-		<name>Møre Og Romsdal</name>
+		<name>Møre og Romsdal</name>
 		<capital>Molde</capital>
 		<color>
 			<red>198</red>
@@ -86,8 +86,8 @@
 		</color>
 	</division>
 	<division>
-		<name>Sogn Og Fjordane</name>
-		<capital>Hermansverk</capital>
+		<name>Sogn og Fjordane</name>
+		<capital>Leikanger</capital>
 		<color>
 			<red>149</red>
 			<green>137</green>
