@@ -17,19 +17,19 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import sys
-from PyQt4 import QtCore
-from PyQt4 import QtGui
-from PyQt4 import QtXml
+from PyQt5 import QtCore
+from PyQt5 import QtGui
+from PyQt5 import QtXml
 
-app = QtGui.QApplication(sys.argv)
+app = QtGui.QGuiApplication(sys.argv)
 
 if len(sys.argv) == 1:
-	print "Error: You have to specify the file to check"
+	print("Error: You have to specify the file to check")
 	sys.exit(1)
 
 for fileIndex in range(1, len(sys.argv)):
 	path = sys.argv[fileIndex]
-	print "Processing " + path
+	print("Processing " + path)
 	xmlFile = QtCore.QFile(path)
 	
 	if xmlFile.exists():
@@ -41,21 +41,21 @@ for fileIndex in range(1, len(sys.argv)):
 				imagePath = QtCore.QFileInfo(path).absolutePath() + "/" + root.firstChildElement("mapFile").text()
 				
 				if not QtCore.QFile.exists(imagePath):
-					print QtCore.QString("Error: Map file %1 does not exist").arg(imagePath)
+					print ("Error: Map file {} does not exist".format(imagePath))
 					sys.exit(2)
 				
 				colorList = [];
 				divisionTag = root.firstChildElement("division");
 				while (not divisionTag.isNull()):
 					colorTag = divisionTag.firstChildElement("color");
-					red = colorTag.firstChildElement("red").text().toInt()[0]
-					green = colorTag.firstChildElement("green").text().toInt()[0]
-					blue = colorTag.firstChildElement("blue").text().toInt()[0]
+					red = int(colorTag.firstChildElement("red").text())
+					green = int(colorTag.firstChildElement("green").text())
+					blue = int(colorTag.firstChildElement("blue").text())
 					contains = colorList.count(QtGui.qRgb(red, green, blue))
 					if (contains == 0):
 						colorList.append(QtGui.qRgb(red, green, blue))
 					else:
-						print QtCore.QString("Error: The color %1,%2,%3 is used more than once in the kgm file").arg(red).arg(green).arg(blue)
+						print("Error: The color {},{},{} is used more than once in the kgm file".format(red, green, blue))
 					
 					divisionTag = divisionTag.nextSiblingElement("division");
 				
@@ -70,28 +70,28 @@ for fileIndex in range(1, len(sys.argv)):
 						usedColors.add(qcolor)
 						if contains == 0:
 							qcolor = QtGui.QColor(rgbcolor)
-							print QtCore.QString("Error: The pixel (%1,%2) has color %3,%4,%5 that is not defined in the kgm file").arg(x).arg(y).arg(qcolor.red()).arg(qcolor.green()).arg(qcolor.blue())
+							print("Error: The pixel ({},{}) has color {},{},{} that is not defined in the kgm file".format(x, y, qcolor.red(), qcolor.green(), qcolor.blue()))
 							error = True
 				
 				if not error:
 					if len(colorList) == len(usedColors):
 						if (len(image.colorTable()) > 0):
-							print "The map is correctly formed"
+							print("The map is correctly formed")
 						else:
-							print "Error: The PNG file should be in indexed color mode"
+							print("Error: The PNG file should be in indexed color mode")
 					else:
 						nonUsedColors = set(colorList)
 						nonUsedColors.difference_update(usedColors)
-						print "Warning: There are colors defined that are not used in the map file"
+						print("Warning: There are colors defined that are not used in the map file")
 						for color in nonUsedColors:
 							qcolor = QtGui.QColor(color)
-							print QtCore.QString("%1,%2,%3").arg(qcolor.red()).arg(qcolor.green()).arg(qcolor.blue())
+							print("{},{},{}".format(qcolor.red(), qcolor.green(), qcolor.blue()))
 			else:
-				print "Error: The map description file should begin with the map tag"
+				print("Error: The map description file should begin with the map tag")
 			xmlFile.close();
 		else:
-			print QtCore.QString("Error: Could not open %1 for reading").arg(path)
+			print("Error: Could not open {} for reading".format(path))
 	else:
-		print QtCore.QString("Error: File %1 does not exist").arg(path)
+		print("Error: File {} does not exist".format(path))
 
 sys.exit(0)
