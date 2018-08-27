@@ -25,6 +25,7 @@
 	<division>
 		<name>Finnmark</name>
 		<capital>Vadsø</capital>
+		<flag>norway/finnmark.png</flag>
 		<color>
 			<red>241</red>
 			<green>14</green>
@@ -34,6 +35,7 @@
 	<division>
 		<name>Troms</name>
 		<capital>Tromsø</capital>
+		<flag>norway/troms.png</flag>
 		<color>
 			<red>14</red>
 			<green>41</green>
@@ -43,6 +45,7 @@
 	<division>
 		<name>Nordland</name>
 		<capital>Bodø</capital>
+		<flag>norway/nordland.png</flag>
 		<color>
 			<red>14</red>
 			<green>238</green>
@@ -52,6 +55,7 @@
 	<division>
 		<name>Trøndelag</name>
 		<capital>Steinkjer</capital>
+		<flag>norway/trondelag.png</flag>
 		<color>
 			<red>241</red>
 			<green>142</green>
@@ -61,6 +65,7 @@
 	<division>
 		<name>Møre og Romsdal</name>
 		<capital>Molde</capital>
+		<flag>norway/more_og_romsdal.png</flag>
 		<color>
 			<red>198</red>
 			<green>0</green>
@@ -70,6 +75,7 @@
 	<division>
 		<name>Oppland</name>
 		<capital>Lillehammer</capital>
+		<flag>norway/oppland.png</flag>
 		<color>
 			<red>255</red>
 			<green>255</green>
@@ -79,6 +85,7 @@
 	<division>
 		<name>Hedmark</name>
 		<capital>Hamar</capital>
+		<flag>norway/hedmark.png</flag>
 		<color>
 			<red>241</red>
 			<green>14</green>
@@ -88,6 +95,7 @@
 	<division>
 		<name>Sogn og Fjordane</name>
 		<capital>Leikanger</capital>
+		<flag>norway/sogn_og_fjordane.png</flag>
 		<color>
 			<red>149</red>
 			<green>137</green>
@@ -97,6 +105,7 @@
 	<division>
 		<name>Hordaland</name>
 		<capital>Bergen</capital>
+		<flag>norway/hordaland.png</flag>
 		<color>
 			<red>45</red>
 			<green>95</green>
@@ -106,6 +115,7 @@
 	<division>
 		<name>Rogaland</name>
 		<capital>Stavanger</capital>
+		<flag>norway/rogaland.png</flag>
 		<color>
 			<red>255</red>
 			<green>79</green>
@@ -115,6 +125,7 @@
 	<division>
 		<name>Vest-Agder</name>
 		<capital>Kristiansand</capital>
+		<flag>norway/vest-agder.png</flag>
 		<color>
 			<red>18</red>
 			<green>235</green>
@@ -124,6 +135,7 @@
 	<division>
 		<name>Aust-Agder</name>
 		<capital>Arendal</capital>
+		<flag>norway/aust-agder.png</flag>
 		<color>
 			<red>255</red>
 			<green>186</green>
@@ -133,6 +145,7 @@
 	<division>
 		<name>Telemark</name>
 		<capital>Skien</capital>
+		<flag>norway/telemark.png</flag>
 		<color>
 			<red>189</red>
 			<green>217</green>
@@ -142,6 +155,7 @@
 	<division>
 		<name>Buskerud</name>
 		<capital>Drammen</capital>
+		<flag>norway/buskerud.png</flag>
 		<color>
 			<red>45</red>
 			<green>48</green>
@@ -151,6 +165,7 @@
 	<division>
 		<name>Vestfold</name>
 		<capital>Tønsberg</capital>
+		<flag>norway/vestfold.png</flag>
 		<color>
 			<red>125</red>
 			<green>172</green>
@@ -160,6 +175,7 @@
 	<division>
 		<name>Oslo</name>
 		<capital>Oslo</capital>
+		<flag>norway/oslo.png</flag>
 		<color>
 			<red>168</red>
 			<green>223</green>
@@ -169,6 +185,7 @@
 	<division>
 		<name>Akershus</name>
 		<capital>Oslo</capital>
+		<flag>norway/akershus.png</flag>
 		<color>
 			<red>255</red>
 			<green>102</green>
@@ -178,6 +195,7 @@
 	<division>
 		<name>Østfold</name>
 		<capital>Sarpsborg</capital>
+		<flag>norway/ostfold.png</flag>
 		<color>
 			<red>219</red>
 			<green>185</green>
