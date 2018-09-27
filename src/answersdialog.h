@@ -11,9 +11,9 @@
 #ifndef ANSWERSDIALOG_H
 #define ANSWERSDIALOG_H
 
-#include <qdialog.h>
+#include <QDialog>
 
-#include <QtCore/qvector.h>
+#include <QVector>
 
 class QScrollArea;
 class QWidget;

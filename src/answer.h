@@ -11,7 +11,7 @@
 #ifndef ANSWER_H
 #define ANSWER_H
 
-#include <QtCore/qvariant.h>
+#include <QVariant>
 
 class QGridLayout;
 
