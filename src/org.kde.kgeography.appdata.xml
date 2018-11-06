@@ -29,4 +29,7 @@
     </screenshot>
   </screenshots>
   <project_group>KDE</project_group>
+  <provides>
+    <binary>kgeography</binary>
+  </provides>
 </component>
