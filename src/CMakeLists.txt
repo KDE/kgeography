@@ -49,6 +49,7 @@ install(TARGETS kgeography EXPORT KGeography ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
 ########### install files ###############
 
 install( PROGRAMS org.kde.kgeography.desktop  DESTINATION  ${KDE_INSTALL_APPDIR} )
+install( FILES org.kde.kgeography.appdata.xml DESTINATION  ${KDE_INSTALL_METAINFODIR})
 install( FILES kgeography.kcfg  DESTINATION  ${KDE_INSTALL_KCFGDIR} )
 install( FILES kgeographyui.rc  DESTINATION  ${KDE_INSTALL_KXMLGUI5DIR}/kgeography )
 

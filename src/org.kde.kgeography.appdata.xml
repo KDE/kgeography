@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component>
+  <id>org.kde.kgeography.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>KGeography</name>
+  <summary>Geography learning tool</summary>
+  <description>
+    <p>KGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).</p>
+    <p>Features:</p>
+    <ul>
+        <li>Browse the maps clicking in a map division to see its name, capital and flag</li>
+        <li>The game tells you a map division name and you have to click on it</li>
+        <li>The game tells you a capital and you have to guess the division it belongs to</li>
+        <li>The game tells you a division and you have to guess its capital</li>
+        <li>The game shows you a map division flag and you have to guess its name</li>
+        <li>The game tells you a map division name and you have to guess its flag</li>
+        <li>The game shows an empty map and you have to place divisions on it one by one</li>
+    </ul>
+  </description>
+  <url type="homepage">http://edu.kde.org/kgeography/</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kgeography</url>
+  <url type="help">https://docs.kde.org/?application=kgeography</url>
+  <update_contact>yurchor_at_mageia.org</update_contact>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Training geography with KGeography</caption>
+      <image type="source" width="1030" height="617">https://www.kde.org/images/screenshots/kgeography.png</image>
+    </screenshot>
+  </screenshots>
+  <project_group>KDE</project_group>
+</component>
