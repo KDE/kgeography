@@ -4,18 +4,106 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>KGeography</name>
+  <name xml:lang="ca">KGeography</name>
+  <name xml:lang="ca-valencia">KGeography</name>
+  <name xml:lang="de">KGeography</name>
+  <name xml:lang="gl">KGeography</name>
+  <name xml:lang="nl">KGeography</name>
+  <name xml:lang="sv">Kgeografi</name>
+  <name xml:lang="uk">KGeography</name>
+  <name xml:lang="x-test">xxKGeographyxx</name>
   <summary>Geography learning tool</summary>
+  <summary xml:lang="ca">Eina per aprendre geografia</summary>
+  <summary xml:lang="ca-valencia">Eina per aprendre geografia</summary>
+  <summary xml:lang="de">Erdkunde-Lernprogramm</summary>
+  <summary xml:lang="gl">Ferramenta para aprender xeografía</summary>
+  <summary xml:lang="nl">Hulpmiddel voor het leren van Aardrijkskunde</summary>
+  <summary xml:lang="sv">Inlärningsverktyg av geografi</summary>
+  <summary xml:lang="uk">Програма для вивчення географії</summary>
+  <summary xml:lang="x-test">xxGeography learning toolxx</summary>
   <description>
     <p>KGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).</p>
+    <p xml:lang="ca">El KGeography és una eina per aprendre geografia, que permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'aquestes divisions i les seves banderes associades si n'hi ha alguna).</p>
+    <p xml:lang="ca-valencia">El KGeography és una eina per aprendre geografia, que permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'aquestes divisions i les seues banderes associades si n'hi ha alguna).</p>
+    <p xml:lang="de">KGeography ist ein Erdkunde-Lernprogramm. Damit können Sie die politischen Daten einiger Länder lernen (Länder, ihre Hauptstädte und ihre Flaggen).</p>
+    <p xml:lang="gl">KGeography é unha ferramenta para aprender xeografía, que lle permite aprender as divisións políticas  dalgúns países (divisións, capitais desas divisións e as súas bandeiras se as teñen).</p>
+    <p xml:lang="nl">KGeography is een programma om aardrijkskunde te leren, waarmee je iets kunt leren over de politieke indeling van sommige landen (onderdelen ervan, de bijbehorende hoofdsteden en eventuele vlaggen).</p>
+    <p xml:lang="sv">Kgeografi är ett inlärningsverktyg av geografi, som gör att du kan lära dig om den politiska uppdelningen av ett antal länder (landsdelar, huvudstäder i dessa landsdelar och deras tillhörande flaggor om det finns några).</p>
+    <p xml:lang="uk">KGgeography — інструмент з вивчення географії. Ця програма надасть вам змогу вивчити адміністративний устрій деяких країн (території, столиці цих територій і відповідні прапори, якщо такі є).</p>
+    <p xml:lang="x-test">xxKGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).xx</p>
     <p>Features:</p>
+    <p xml:lang="ca">Característiques:</p>
+    <p xml:lang="ca-valencia">Característiques:</p>
+    <p xml:lang="de">Funktionen:</p>
+    <p xml:lang="gl">Funcionalidades:</p>
+    <p xml:lang="nl">Mogelijkheden:</p>
+    <p xml:lang="sv">Funktioner:</p>
+    <p xml:lang="uk">Можливості:</p>
+    <p xml:lang="x-test">xxFeatures:xx</p>
     <ul>
-        <li>Browse the maps clicking in a map division to see its name, capital and flag</li>
-        <li>The game tells you a map division name and you have to click on it</li>
-        <li>The game tells you a capital and you have to guess the division it belongs to</li>
-        <li>The game tells you a division and you have to guess its capital</li>
-        <li>The game shows you a map division flag and you have to guess its name</li>
-        <li>The game tells you a map division name and you have to guess its flag</li>
-        <li>The game shows an empty map and you have to place divisions on it one by one</li>
+      <li>Browse the maps clicking in a map division to see its name, capital and flag</li>
+      <li xml:lang="ca">Busqueu en els mapes fent clic a sobre d'una zona del mapa per a veure el seu nom, capital i bandera</li>
+      <li xml:lang="ca-valencia">Busqueu en els mapes fent clic damunt d'una zona del mapa per a veure el seu nom, capital i bandera</li>
+      <li xml:lang="de">Landkarte erkunden, indem Sie in der Karte auf ein Land klicken und dessen Name, Hauptstadt und Flagge angezeigt wird</li>
+      <li xml:lang="gl">Examina os mapas premendo unha división do mapa para ver o nome, capital e bandeira</li>
+      <li xml:lang="nl">Het bekijken van kaarten door op kaartgedeelten te klikken waarna je de naam ervan ziet, de hoofdstad en de vlag</li>
+      <li xml:lang="sv">Läs kartan och klicka på en landsdel för att se dess namn, huvudstad och flagga</li>
+      <li xml:lang="uk">Перегляд карти з натисканням на територіях, щоб побачити їх назви, столиці і прапори</li>
+      <li xml:lang="x-test">xxBrowse the maps clicking in a map division to see its name, capital and flagxx</li>
+      <li>The game tells you a map division name and you have to click on it</li>
+      <li xml:lang="ca">El joc us mostra el nom d'una zona del mapa i heu de fer clic sobre el lloc on està</li>
+      <li xml:lang="ca-valencia">El joc vos mostra el nom d'una zona del mapa i heu de fer clic sobre el lloc on està</li>
+      <li xml:lang="de">Der Name eines Landes wird gefragt und Sie müssen es auf der Karte anklicken.</li>
+      <li xml:lang="gl">O xogo diche un nome de división do mapa e tela que premer</li>
+      <li xml:lang="nl">Een spel waarin de naam van een kaartgedeelte wordt genoemd waarna je erop moet klikken</li>
+      <li xml:lang="sv">Programmet talar om namnet på en landsdel och du ska klicka på den</li>
+      <li xml:lang="uk">Гра з вгадування за назвою території на карті</li>
+      <li xml:lang="x-test">xxThe game tells you a map division name and you have to click on itxx</li>
+      <li>The game tells you a capital and you have to guess the division it belongs to</li>
+      <li xml:lang="ca">El joc us mostra una capital i heu d'esbrinar el país a la qual pertany</li>
+      <li xml:lang="ca-valencia">El joc vos mostra una capital i heu d'esbrinar el país a la qual pertany</li>
+      <li xml:lang="de">Ein Land anhand des Namens der Hauptstadt raten</li>
+      <li xml:lang="gl">O xogo diche unha capital e debes adiviñar a división á que pertence</li>
+      <li xml:lang="nl">Een spel waarin een hoofdstad wordt genoemd waarna je moet antwoorden bij welk kaartgedeelte die hoort</li>
+      <li xml:lang="sv">Programmet namnger en huvudstad och du ska gissa vilken landsdel den hör till</li>
+      <li xml:lang="uk">Гра з вгадування за столицею території на карті</li>
+      <li xml:lang="x-test">xxThe game tells you a capital and you have to guess the division it belongs toxx</li>
+      <li>The game tells you a division and you have to guess its capital</li>
+      <li xml:lang="ca">El joc us mostra un país i heu d'esbrinar la seva capital</li>
+      <li xml:lang="ca-valencia">El joc vos mostra un país i heu d'esbrinar la seua capital</li>
+      <li xml:lang="de">Die Hauptstadt eines Landes raten</li>
+      <li xml:lang="gl">O xogo diche unha división e debes adiviñar a súa capital</li>
+      <li xml:lang="nl">Een spel waarin een kaartgedeelte wordt genoemd en je moet antwoorden wat daarvan de hoofdstad is</li>
+      <li xml:lang="sv">Programmet namnger en landsdel och du ska gissa dess huvudstad</li>
+      <li xml:lang="uk">Гра з вгадування за територією на карті столиці цієї території</li>
+      <li xml:lang="x-test">xxThe game tells you a division and you have to guess its capitalxx</li>
+      <li>The game shows you a map division flag and you have to guess its name</li>
+      <li xml:lang="ca">El joc us mostra la bandera d'un país i heu d'esbrinar el seu nom</li>
+      <li xml:lang="ca-valencia">El joc vos mostra la bandera d'un país i heu d'esbrinar el seu nom</li>
+      <li xml:lang="de">Ein Land anhand der Flagge erraten</li>
+      <li xml:lang="gl">O xogo móstrache a bandeira dunha división do mapa e tes que adiviñar o seu nome</li>
+      <li xml:lang="nl">Een spel waarin de vlag wordt getoond van een kaartgedeelte en je moet antwoorden met de naam van dat kaartgedeelte</li>
+      <li xml:lang="sv">Programmet visar flaggan för en landsdel och du ska gissa dess namn</li>
+      <li xml:lang="uk">Гра з вгадування назви території на карті за її прапором</li>
+      <li xml:lang="x-test">xxThe game shows you a map division flag and you have to guess its namexx</li>
+      <li>The game tells you a map division name and you have to guess its flag</li>
+      <li xml:lang="ca">El joc us mostra el nom d'un país i heu d'esbrinar la seva bandera</li>
+      <li xml:lang="ca-valencia">El joc vos mostra el nom d'un país i heu d'esbrinar la seua bandera</li>
+      <li xml:lang="de">Die Flagge eines Landes erraten</li>
+      <li xml:lang="gl">O xogo diche o nome dunha división do mapa e tes que adiviñar a súa bandeira</li>
+      <li xml:lang="nl">Een spel waarin de naam wordt genoemd van een kaartgedeelte en je moet opgeven welke vlag erbij hoort</li>
+      <li xml:lang="sv">Programmet talar om namnet på en landsdel och du ska gissa dess flagga</li>
+      <li xml:lang="uk">Гра з вгадування прапору території на карті за її назвою</li>
+      <li xml:lang="x-test">xxThe game tells you a map division name and you have to guess its flagxx</li>
+      <li>The game shows an empty map and you have to place divisions on it one by one</li>
+      <li xml:lang="ca">El joc us mostra un mapa buit i heu de situar les divisions una a una</li>
+      <li xml:lang="ca-valencia">El joc vos mostra un mapa buit i heu de situar les divisions una a una</li>
+      <li xml:lang="de">Länder auf einer leeren Landkarte platzieren</li>
+      <li xml:lang="gl">O xogo mostra un mapa baleiro e hai que colocar as divisións unha a unha</li>
+      <li xml:lang="nl">In dit spel wordt een lege kaart getoond, waarin je de kaartgedeelten een voor een moet plaatsen</li>
+      <li xml:lang="sv">Programmet visar en tom karta och du ska placera ut landsdelarna på den en i taget</li>
+      <li xml:lang="uk">Гра у заповнення порожньої карти територіями одна за одною</li>
+      <li xml:lang="x-test">xxThe game shows an empty map and you have to place divisions on it one by onexx</li>
     </ul>
   </description>
   <url type="homepage">http://edu.kde.org/kgeography/</url>
@@ -26,6 +114,14 @@
   <screenshots>
     <screenshot type="default">
       <caption>Training geography with KGeography</caption>
+      <caption xml:lang="ca">Entrenament de geografia amb el KGeography</caption>
+      <caption xml:lang="ca-valencia">Entrenament de geografia amb el KGeography</caption>
+      <caption xml:lang="de">Erdkunde lernen mit KGeography</caption>
+      <caption xml:lang="gl">Practicando xeografía con KGeography</caption>
+      <caption xml:lang="nl">Aardrijkskunde leren met KGeography</caption>
+      <caption xml:lang="sv">Geografiövning med Kgeografi</caption>
+      <caption xml:lang="uk">Вивчення географічних назв за допомогою KGeography</caption>
+      <caption xml:lang="x-test">xxTraining geography with KGeographyxx</caption>
       <image type="source" width="1030" height="617">https://www.kde.org/images/screenshots/kgeography.png</image>
     </screenshot>
   </screenshots>
