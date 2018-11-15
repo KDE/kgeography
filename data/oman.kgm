@@ -59,4 +59,9 @@
 		<ignore>allowClickMode</ignore>
 		<color><red>255</red><green>0</green><blue>0</blue></color>
 	</division>
+	<division>
+		<name>Al Buraymi</name>
+		<ignore>allowClickMode</ignore>
+		<color><red>0</red><green>144</green><blue>255</blue></color>
+	</division>
 </map>
