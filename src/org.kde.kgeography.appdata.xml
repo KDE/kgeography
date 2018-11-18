@@ -9,6 +9,7 @@
   <name xml:lang="cs">KGeography</name>
   <name xml:lang="de">KGeography</name>
   <name xml:lang="es">KGeography</name>
+  <name xml:lang="fr">KGeography</name>
   <name xml:lang="gl">KGeography</name>
   <name xml:lang="nl">KGeography</name>
   <name xml:lang="pt">KGeography</name>
@@ -45,6 +46,7 @@
     <p xml:lang="cs">Vlastnosti:</p>
     <p xml:lang="de">Funktionen:</p>
     <p xml:lang="es">Funcionalidades:</p>
+    <p xml:lang="fr">Fonctionnalités :</p>
     <p xml:lang="gl">Funcionalidades:</p>
     <p xml:lang="nl">Mogelijkheden:</p>
     <p xml:lang="pt">Funcionalidades:</p>
@@ -58,6 +60,7 @@
       <li xml:lang="ca-valencia">Busqueu en els mapes fent clic damunt d'una zona del mapa per a veure el seu nom, capital i bandera</li>
       <li xml:lang="de">Landkarte erkunden, indem Sie in der Karte auf ein Land klicken und dessen Name, Hauptstadt und Flagge angezeigt wird</li>
       <li xml:lang="es">Exploración de mapas pulsando sobre divisiones para ver su nombre, su capital y su bandera</li>
+      <li xml:lang="fr">Naviguer dans les cartes en cliquant dans une région de la carte pour voir son nom, sa capitale et son drapeau</li>
       <li xml:lang="gl">Examina os mapas premendo unha división do mapa para ver o nome, capital e bandeira</li>
       <li xml:lang="nl">Het bekijken van kaarten door op kaartgedeelten te klikken waarna je de naam ervan ziet, de hoofdstad en de vlag</li>
       <li xml:lang="pt">Navegar nos mapas, carregando numa divisão do mapa, para ver o seu nome, a capital e a bandeira</li>
@@ -69,6 +72,7 @@
       <li xml:lang="ca-valencia">El joc vos mostra el nom d'una zona del mapa i heu de fer clic sobre el lloc on està</li>
       <li xml:lang="de">Der Name eines Landes wird gefragt und Sie müssen es auf der Karte anklicken.</li>
       <li xml:lang="es">El juego le muestra un nombre de división del mapa sobre la que debe hacer clic</li>
+      <li xml:lang="fr">Le jeu vous indique le nom de la région sur la carte et vous devez cliquer dessus</li>
       <li xml:lang="gl">O xogo diche un nome de división do mapa e tela que premer</li>
       <li xml:lang="nl">Een spel waarin de naam van een kaartgedeelte wordt genoemd waarna je erop moet klikken</li>
       <li xml:lang="pt">O jogo diz-lhe o nome de uma divisão do mapa e você terá de carregar nela</li>
@@ -80,6 +84,7 @@
       <li xml:lang="ca-valencia">El joc vos mostra una capital i heu d'esbrinar el país a la qual pertany</li>
       <li xml:lang="de">Ein Land anhand des Namens der Hauptstadt raten</li>
       <li xml:lang="es">El juego le muestra una capital y debe adivinar la división a la que pertenece</li>
+      <li xml:lang="fr">Le jeu vous indique une capitale et vous devez deviner la région à laquelle elle correspond</li>
       <li xml:lang="gl">O xogo diche unha capital e debes adiviñar a división á que pertence</li>
       <li xml:lang="nl">Een spel waarin een hoofdstad wordt genoemd waarna je moet antwoorden bij welk kaartgedeelte die hoort</li>
       <li xml:lang="pt">O jogo diz-lhe o nome de uma capital e você terá de adivinhar a divisão a que pertence</li>
@@ -91,6 +96,7 @@
       <li xml:lang="ca-valencia">El joc vos mostra un país i heu d'esbrinar la seua capital</li>
       <li xml:lang="de">Die Hauptstadt eines Landes raten</li>
       <li xml:lang="es">El juego le muestra una división y debe adivinar su capital</li>
+      <li xml:lang="fr">Le jeu vous indique une région et vous devez en deviner la capitale</li>
       <li xml:lang="gl">O xogo diche unha división e debes adiviñar a súa capital</li>
       <li xml:lang="nl">Een spel waarin een kaartgedeelte wordt genoemd en je moet antwoorden wat daarvan de hoofdstad is</li>
       <li xml:lang="pt">O jogo indica-lhe uma divisão e você terá de adivinhar a sua capital</li>
@@ -102,6 +108,7 @@
       <li xml:lang="ca-valencia">El joc vos mostra la bandera d'un país i heu d'esbrinar el seu nom</li>
       <li xml:lang="de">Ein Land anhand der Flagge erraten</li>
       <li xml:lang="es">El juego le muestra la bandera de una división y debe adivinar su nombre</li>
+      <li xml:lang="fr">Le jeu vous présente un drapeau pour une région de la carte et vous devez en deviner le nom</li>
       <li xml:lang="gl">O xogo móstrache a bandeira dunha división do mapa e tes que adiviñar o seu nome</li>
       <li xml:lang="nl">Een spel waarin de vlag wordt getoond van een kaartgedeelte en je moet antwoorden met de naam van dat kaartgedeelte</li>
       <li xml:lang="pt">O jogo mostra-lhe a bandeira de uma divisão do mapa e você terá de adivinhar o seu nome</li>
@@ -113,6 +120,7 @@
       <li xml:lang="ca-valencia">El joc vos mostra el nom d'un país i heu d'esbrinar la seua bandera</li>
       <li xml:lang="de">Die Flagge eines Landes erraten</li>
       <li xml:lang="es">El juego le muestra un nombre de división y debe adivinar su bandera</li>
+      <li xml:lang="fr">Le jeu vous indique un nom de région de la carte et vous devez en deviner le drapeau</li>
       <li xml:lang="gl">O xogo diche o nome dunha división do mapa e tes que adiviñar a súa bandeira</li>
       <li xml:lang="nl">Een spel waarin de naam wordt genoemd van een kaartgedeelte en je moet opgeven welke vlag erbij hoort</li>
       <li xml:lang="pt">O jogo indica-lhe o nome de uma divisão do mapa e terá de adivinhar a sua bandeira</li>
@@ -124,6 +132,7 @@
       <li xml:lang="ca-valencia">El joc vos mostra un mapa buit i heu de situar les divisions una a una</li>
       <li xml:lang="de">Länder auf einer leeren Landkarte platzieren</li>
       <li xml:lang="es">El juego le muestra un mapa vacío y debe situar las divisiones sobre él</li>
+      <li xml:lang="fr">Le jeu vous indique une carte vide et vous devez placer les régions dessus, une par une</li>
       <li xml:lang="gl">O xogo mostra un mapa baleiro e hai que colocar as divisións unha a unha</li>
       <li xml:lang="nl">In dit spel wordt een lege kaart getoond, waarin je de kaartgedeelten een voor een moet plaatsen</li>
       <li xml:lang="pt">O jogo mostra um mapa vazio e você terá de colocar as divisões nele, uma a uma</li>
