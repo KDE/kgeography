@@ -13,7 +13,6 @@
   <name xml:lang="gl">KGeography</name>
   <name xml:lang="nl">KGeography</name>
   <name xml:lang="pt">KGeography</name>
-  <name xml:lang="pt-BR">KGeography</name>
   <name xml:lang="sk">KGeography</name>
   <name xml:lang="sv">Kgeografi</name>
   <name xml:lang="uk">KGeography</name>
@@ -26,7 +25,6 @@
   <summary xml:lang="gl">Ferramenta para aprender xeografía</summary>
   <summary xml:lang="nl">Hulpmiddel voor het leren van Aardrijkskunde</summary>
   <summary xml:lang="pt">Ferramenta de aprendizagem de geografia</summary>
-  <summary xml:lang="pt-BR">Ferramenta de aprendizado de Geografia</summary>
   <summary xml:lang="sv">Inlärningsverktyg av geografi</summary>
   <summary xml:lang="uk">Програма для вивчення географії</summary>
   <summary xml:lang="x-test">xxGeography learning toolxx</summary>
@@ -52,7 +50,6 @@
     <p xml:lang="gl">Funcionalidades:</p>
     <p xml:lang="nl">Mogelijkheden:</p>
     <p xml:lang="pt">Funcionalidades:</p>
-    <p xml:lang="pt-BR">Recursos:</p>
     <p xml:lang="sk">Funkcie:</p>
     <p xml:lang="sv">Funktioner:</p>
     <p xml:lang="uk">Можливості:</p>
@@ -159,7 +156,6 @@
       <caption xml:lang="gl">Practicando xeografía con KGeography</caption>
       <caption xml:lang="nl">Aardrijkskunde leren met KGeography</caption>
       <caption xml:lang="pt">Exercício de geografia com o KGeography</caption>
-      <caption xml:lang="pt-BR">Treinando Geografia com o KGeography</caption>
       <caption xml:lang="sv">Geografiövning med Kgeografi</caption>
       <caption xml:lang="uk">Вивчення географічних назв за допомогою KGeography</caption>
       <caption xml:lang="x-test">xxTraining geography with KGeographyxx</caption>
