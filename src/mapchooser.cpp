@@ -59,56 +59,48 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 	connect(buttonBox, &QDialogButtonBox::rejected, this, &mapChooser::reject);
 	mainLayout->addWidget(buttonBox);
 
-	QSet<QString> list;
-	const QStringList dirs = QStandardPaths::locateAll(QStandardPaths::DataLocation, QLatin1String(""), QStandardPaths::LocateDirectory);
-	Q_FOREACH (const QString &dir, dirs)
-	{
-		const QStringList fileNames = QDir(dir).entryList(QStringList() << QStringLiteral("*.kgm"));
-		Q_FOREACH (const QString &file, fileNames)
-		{
-			list <<dir + '/' + file;
-		}
-	}
-	QStringList texts;
-	QSet<QString> alreadySeens;
 	QStringList errorTexts;
 	QString lastMapFile = kgeographySettings::self() -> lastMap();
 	QString stringToSelect;
-	foreach(const QString &mapFilename, list)
+	QStringList texts;
+	const QStringList dirs = QStandardPaths::locateAll(QStandardPaths::DataLocation, QLatin1String(""), QStandardPaths::LocateDirectory);
+	foreach (const QString &dir, dirs)
 	{
-		KGmap *m = p_reader.parseMap(mapFilename);
-		if (!m)
+		const QStringList fileNames = QDir(dir).entryList(QStringList() << QStringLiteral("*.kgm"));
+		foreach (const QString &file, fileNames)
 		{
-			errorTexts << i18n("Error parsing %1: %2", mapFilename, p_reader.getError());
-		}
-		else
-		{
-			QString text = i18nc(m -> getFileName().toUtf8(), m -> getName().toUtf8());
-			// avoid multiple and should guarantee that first in KDEDIRS is chosen)
-			if (!alreadySeens.contains(text)) {
-				texts << text;
-				alreadySeens.insert(text);
-				p_maps.insert(text, m);
-				if ( mapFilename == lastMapFile )
+			QString mapFilename = dir + '/' + file;
+
+			KGmap *m = p_reader.parseMap(mapFilename);
+			if (!m)
+				errorTexts << i18n("Error parsing %1: %2", mapFilename, p_reader.getError());
+			else
+			{
+				QString text = i18nc(m->getFileName().toUtf8(), m->getName().toUtf8());
+				// avoid multiple and should guarantee that first in XDG_DATA_DIRS is chosen)
+				if (texts.contains(text))
+					delete m;
+				else
 				{
-					stringToSelect = text;
+					texts << text;
+					p_maps.insert(text, m);
+					if ( mapFilename == lastMapFile )
+						stringToSelect = text;
 				}
-			} else {
-				delete m;
 			}
 		}
 	}
 
-	if ( errorTexts.size() > 0 )
-	{
+	if (errorTexts.size() > 0)
 		KMessageBox::errorList(this, i18n("Error parsing"), errorTexts);
-	}
 
 	connect(p_listBox, &QListWidget::currentTextChanged, this, &mapChooser::putImage);
 	connect(p_listBox, &QListWidget::itemActivated, this, &mapChooser::accept);
 	
 	qSort(texts.begin(), texts.end(), myLessThan);
-	foreach(const QString &text, texts) p_listBox -> addItem(text);
+	foreach(const QString &text, texts)
+		p_listBox -> addItem(text);
+
 	if (p_listBox -> count() == 0)
 		buttonBox->button(QDialogButtonBox::Ok)->setEnabled(false);
 	else {
