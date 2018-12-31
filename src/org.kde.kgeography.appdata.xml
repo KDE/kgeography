@@ -48,6 +48,7 @@
     <p xml:lang="id">KGeography adalah alat pembelajaran geografi, yang memungkinkan kamu untuk belajar tentang perpecahan politik di beberapa negara (divisi, ibukota dari divisi tersebut dan bendera terkait jika ada).</p>
     <p xml:lang="nl">KGeography is een programma om aardrijkskunde te leren, waarmee je iets kunt leren over de politieke indeling van sommige landen (onderdelen ervan, de bijbehorende hoofdsteden en eventuele vlaggen).</p>
     <p xml:lang="pt">O KGeography é uma ferramenta de aprendizagem de geografia, a qual lhe permite aprender as divisões políticas de alguns países (divisões, capitais dessas divisões e as suas bandeiras associadas, se existirem).</p>
+    <p xml:lang="pt-BR">KGeography é uma ferramenta de aprendizagem de geografia, que lhe permite aprender as divisões políticas de alguns países (divisões, capitais dessas divisões e as suas bandeiras associadas, se existirem).</p>
     <p xml:lang="sv">Kgeografi är ett inlärningsverktyg av geografi, som gör att du kan lära dig om den politiska uppdelningen av ett antal länder (landsdelar, huvudstäder i dessa landsdelar och deras tillhörande flaggor om det finns några).</p>
     <p xml:lang="uk">KGgeography — інструмент з вивчення географії. Ця програма надасть вам змогу вивчити адміністративний устрій деяких країн (території, столиці цих територій і відповідні прапори, якщо такі є).</p>
     <p xml:lang="x-test">xxKGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).xx</p>
@@ -83,6 +84,7 @@
       <li xml:lang="id">Jelajahi peta dengan mengklik di divisi peta untuk melihat nama, ibukota, dan benderanya</li>
       <li xml:lang="nl">Het bekijken van kaarten door op kaartgedeelten te klikken waarna je de naam ervan ziet, de hoofdstad en de vlag</li>
       <li xml:lang="pt">Navegar nos mapas, carregando numa divisão do mapa, para ver o seu nome, a capital e a bandeira</li>
+      <li xml:lang="pt-BR">Navegue pelos mapas clicando em sua seção para ver seu nome, capital e bandeira</li>
       <li xml:lang="sv">Läs kartan och klicka på en landsdel för att se dess namn, huvudstad och flagga</li>
       <li xml:lang="uk">Перегляд карти з натисканням на територіях, щоб побачити їх назви, столиці і прапори</li>
       <li xml:lang="x-test">xxBrowse the maps clicking in a map division to see its name, capital and flagxx</li>
@@ -98,6 +100,7 @@
       <li xml:lang="id">Permainan ini memberi tahumu nama divisi peta dan kamu harus mengekliknya</li>
       <li xml:lang="nl">Een spel waarin de naam van een kaartgedeelte wordt genoemd waarna je erop moet klikken</li>
       <li xml:lang="pt">O jogo diz-lhe o nome de uma divisão do mapa e você terá de carregar nela</li>
+      <li xml:lang="pt-BR">O jogo informa o nome da seção do mapa e você deve clicar nela</li>
       <li xml:lang="sv">Programmet talar om namnet på en landsdel och du ska klicka på den</li>
       <li xml:lang="uk">Гра з вгадування за назвою території на карті</li>
       <li xml:lang="x-test">xxThe game tells you a map division name and you have to click on itxx</li>
@@ -113,6 +116,7 @@
       <li xml:lang="id">Permainan ini memberi tahumu ibukota dan kamu harus menebak divisi yang dimilikinya</li>
       <li xml:lang="nl">Een spel waarin een hoofdstad wordt genoemd waarna je moet antwoorden bij welk kaartgedeelte die hoort</li>
       <li xml:lang="pt">O jogo diz-lhe o nome de uma capital e você terá de adivinhar a divisão a que pertence</li>
+      <li xml:lang="pt-BR">O jogo informa a capital e você deve adivinhar a qual seção ela pertence</li>
       <li xml:lang="sv">Programmet namnger en huvudstad och du ska gissa vilken landsdel den hör till</li>
       <li xml:lang="uk">Гра з вгадування за столицею території на карті</li>
       <li xml:lang="x-test">xxThe game tells you a capital and you have to guess the division it belongs toxx</li>
@@ -128,6 +132,7 @@
       <li xml:lang="id">Permainan ini memberi tahumu sebuah divisi dan kamu harus menebak ibukotanya</li>
       <li xml:lang="nl">Een spel waarin een kaartgedeelte wordt genoemd en je moet antwoorden wat daarvan de hoofdstad is</li>
       <li xml:lang="pt">O jogo indica-lhe uma divisão e você terá de adivinhar a sua capital</li>
+      <li xml:lang="pt-BR">O jogo informa a seção e você deve adivinhar a capital</li>
       <li xml:lang="sv">Programmet namnger en landsdel och du ska gissa dess huvudstad</li>
       <li xml:lang="uk">Гра з вгадування за територією на карті столиці цієї території</li>
       <li xml:lang="x-test">xxThe game tells you a division and you have to guess its capitalxx</li>
@@ -143,6 +148,7 @@
       <li xml:lang="id">Permainan ini memperlihatkan bendera divisi peta dan kamu harus menebak namanya</li>
       <li xml:lang="nl">Een spel waarin de vlag wordt getoond van een kaartgedeelte en je moet antwoorden met de naam van dat kaartgedeelte</li>
       <li xml:lang="pt">O jogo mostra-lhe a bandeira de uma divisão do mapa e você terá de adivinhar o seu nome</li>
+      <li xml:lang="pt-BR">O jogo mostra uma bandeira de uma seção do mapa e você deve adivinhar seu nome</li>
       <li xml:lang="sv">Programmet visar flaggan för en landsdel och du ska gissa dess namn</li>
       <li xml:lang="uk">Гра з вгадування назви території на карті за її прапором</li>
       <li xml:lang="x-test">xxThe game shows you a map division flag and you have to guess its namexx</li>
@@ -158,6 +164,7 @@
       <li xml:lang="id">Permainan ini memberi tahumu nama divisi peta dan kamu harus menebak benderanya</li>
       <li xml:lang="nl">Een spel waarin de naam wordt genoemd van een kaartgedeelte en je moet opgeven welke vlag erbij hoort</li>
       <li xml:lang="pt">O jogo indica-lhe o nome de uma divisão do mapa e terá de adivinhar a sua bandeira</li>
+      <li xml:lang="pt-BR">O jogo informa um nome de uma seção do mapa e você deve adivinhar sua bandeira</li>
       <li xml:lang="sv">Programmet talar om namnet på en landsdel och du ska gissa dess flagga</li>
       <li xml:lang="uk">Гра з вгадування прапору території на карті за її назвою</li>
       <li xml:lang="x-test">xxThe game tells you a map division name and you have to guess its flagxx</li>
@@ -173,6 +180,7 @@
       <li xml:lang="id">Permainan ini menampilkan peta kosong dan kamu harus menempatkan divisi di atasnya satu per satu</li>
       <li xml:lang="nl">In dit spel wordt een lege kaart getoond, waarin je de kaartgedeelten een voor een moet plaatsen</li>
       <li xml:lang="pt">O jogo mostra um mapa vazio e você terá de colocar as divisões nele, uma a uma</li>
+      <li xml:lang="pt-BR">O jogo mostra um mapa vazio e você deve posicionar as seções uma a uma</li>
       <li xml:lang="sv">Programmet visar en tom karta och du ska placera ut landsdelarna på den en i taget</li>
       <li xml:lang="uk">Гра у заповнення порожньої карти територіями одна за одною</li>
       <li xml:lang="x-test">xxThe game shows an empty map and you have to place divisions on it one by onexx</li>
@@ -196,6 +204,7 @@
       <caption xml:lang="id">Berlajar geografi dengan KGeography</caption>
       <caption xml:lang="nl">Aardrijkskunde leren met KGeography</caption>
       <caption xml:lang="pt">Exercício de geografia com o KGeography</caption>
+      <caption xml:lang="pt-BR">Exercício de geografia com o KGeography</caption>
       <caption xml:lang="sv">Geografiövning med Kgeografi</caption>
       <caption xml:lang="uk">Вивчення географічних назв за допомогою KGeography</caption>
       <caption xml:lang="x-test">xxTraining geography with KGeographyxx</caption>
