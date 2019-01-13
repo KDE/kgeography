@@ -22,6 +22,7 @@
   <name xml:lang="uk">KGeography</name>
   <name xml:lang="x-test">xxKGeographyxx</name>
   <name xml:lang="zh-CN">KGeography</name>
+  <name xml:lang="zh-TW">KGeography</name>
   <summary>Geography learning tool</summary>
   <summary xml:lang="ca">Eina per aprendre geografia</summary>
   <summary xml:lang="ca-valencia">Eina per aprendre geografia</summary>
@@ -37,6 +38,7 @@
   <summary xml:lang="uk">Програма для вивчення географії</summary>
   <summary xml:lang="x-test">xxGeography learning toolxx</summary>
   <summary xml:lang="zh-CN">地理学习工具</summary>
+  <summary xml:lang="zh-TW">地理學習工具</summary>
   <description>
     <p>KGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).</p>
     <p xml:lang="ca">El KGeography és una eina per aprendre geografia, que permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'aquestes divisions i les seves banderes associades si n'hi ha alguna).</p>
@@ -72,6 +74,7 @@
     <p xml:lang="uk">Можливості:</p>
     <p xml:lang="x-test">xxFeatures:xx</p>
     <p xml:lang="zh-CN">功能：</p>
+    <p xml:lang="zh-TW">功能：</p>
     <ul>
       <li>Browse the maps clicking in a map division to see its name, capital and flag</li>
       <li xml:lang="ca">Busqueu en els mapes fent clic a sobre d'una zona del mapa per a veure el seu nom, capital i bandera</li>
