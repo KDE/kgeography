@@ -14,6 +14,7 @@
   <name xml:lang="gl">KGeography</name>
   <name xml:lang="id">KGeography</name>
   <name xml:lang="nl">KGeography</name>
+  <name xml:lang="pl">KGeography</name>
   <name xml:lang="pt">KGeography</name>
   <name xml:lang="pt-BR">KGeography</name>
   <name xml:lang="ru">KGeography</name>
@@ -32,6 +33,7 @@
   <summary xml:lang="gl">Ferramenta para aprender xeografía</summary>
   <summary xml:lang="id">Alat pembelajaran geografi</summary>
   <summary xml:lang="nl">Hulpmiddel voor het leren van Aardrijkskunde</summary>
+  <summary xml:lang="pl">Program do nauki geografii</summary>
   <summary xml:lang="pt">Ferramenta de aprendizagem de geografia</summary>
   <summary xml:lang="pt-BR">Ferramenta de aprendizado de Geografia</summary>
   <summary xml:lang="sv">Inlärningsverktyg av geografi</summary>
@@ -49,6 +51,7 @@
     <p xml:lang="gl">KGeography é unha ferramenta para aprender xeografía, que lle permite aprender as divisións políticas  dalgúns países (divisións, capitais desas divisións e as súas bandeiras se as teñen).</p>
     <p xml:lang="id">KGeography adalah alat pembelajaran geografi, yang memungkinkan kamu untuk belajar tentang perpecahan politik di beberapa negara (divisi, ibukota dari divisi tersebut dan bendera terkait jika ada).</p>
     <p xml:lang="nl">KGeography is een programma om aardrijkskunde te leren, waarmee je iets kunt leren over de politieke indeling van sommige landen (onderdelen ervan, de bijbehorende hoofdsteden en eventuele vlaggen).</p>
+    <p xml:lang="pl">KGeography jest narzędziem do nauki geografii, które pozwala uczyć się na temat podziałów politycznych niektórych państw (podziały, stolice tych podziałów i skojarzone z nimi flagi, jeśli jakieś istnieją).</p>
     <p xml:lang="pt">O KGeography é uma ferramenta de aprendizagem de geografia, a qual lhe permite aprender as divisões políticas de alguns países (divisões, capitais dessas divisões e as suas bandeiras associadas, se existirem).</p>
     <p xml:lang="pt-BR">KGeography é uma ferramenta de aprendizagem de geografia, que lhe permite aprender as divisões políticas de alguns países (divisões, capitais dessas divisões e as suas bandeiras associadas, se existirem).</p>
     <p xml:lang="sv">Kgeografi är ett inlärningsverktyg av geografi, som gör att du kan lära dig om den politiska uppdelningen av ett antal länder (landsdelar, huvudstäder i dessa landsdelar och deras tillhörande flaggor om det finns några).</p>
@@ -66,6 +69,7 @@
     <p xml:lang="gl">Funcionalidades:</p>
     <p xml:lang="id">Fitur:</p>
     <p xml:lang="nl">Mogelijkheden:</p>
+    <p xml:lang="pl">Możliwości:</p>
     <p xml:lang="pt">Funcionalidades:</p>
     <p xml:lang="pt-BR">Recursos:</p>
     <p xml:lang="ru">Возможности:</p>
@@ -86,6 +90,7 @@
       <li xml:lang="gl">Examina os mapas premendo unha división do mapa para ver o nome, capital e bandeira</li>
       <li xml:lang="id">Jelajahi peta dengan mengklik di divisi peta untuk melihat nama, ibukota, dan benderanya</li>
       <li xml:lang="nl">Het bekijken van kaarten door op kaartgedeelten te klikken waarna je de naam ervan ziet, de hoofdstad en de vlag</li>
+      <li xml:lang="pl">Przeglądanie mapy przez klikanie na obszarach w celu poznania ich nazwy, stolicy i flagi</li>
       <li xml:lang="pt">Navegar nos mapas, carregando numa divisão do mapa, para ver o seu nome, a capital e a bandeira</li>
       <li xml:lang="pt-BR">Navegue pelos mapas clicando em sua seção para ver seu nome, capital e bandeira</li>
       <li xml:lang="sv">Läs kartan och klicka på en landsdel för att se dess namn, huvudstad och flagga</li>
@@ -102,6 +107,7 @@
       <li xml:lang="gl">O xogo diche un nome de división do mapa e tela que premer</li>
       <li xml:lang="id">Permainan ini memberi tahumu nama divisi peta dan kamu harus mengekliknya</li>
       <li xml:lang="nl">Een spel waarin de naam van een kaartgedeelte wordt genoemd waarna je erop moet klikken</li>
+      <li xml:lang="pl">Grę, która podaje ci nazwę obszaru, na który musisz kliknąć</li>
       <li xml:lang="pt">O jogo diz-lhe o nome de uma divisão do mapa e você terá de carregar nela</li>
       <li xml:lang="pt-BR">O jogo informa o nome da seção do mapa e você deve clicar nela</li>
       <li xml:lang="sv">Programmet talar om namnet på en landsdel och du ska klicka på den</li>
@@ -118,6 +124,7 @@
       <li xml:lang="gl">O xogo diche unha capital e debes adiviñar a división á que pertence</li>
       <li xml:lang="id">Permainan ini memberi tahumu ibukota dan kamu harus menebak divisi yang dimilikinya</li>
       <li xml:lang="nl">Een spel waarin een hoofdstad wordt genoemd waarna je moet antwoorden bij welk kaartgedeelte die hoort</li>
+      <li xml:lang="pl">Grę, która podaje ci nazwę stolicy, a ty musisz podać, do którego obszaru ona należy</li>
       <li xml:lang="pt">O jogo diz-lhe o nome de uma capital e você terá de adivinhar a divisão a que pertence</li>
       <li xml:lang="pt-BR">O jogo informa a capital e você deve adivinhar a qual seção ela pertence</li>
       <li xml:lang="sv">Programmet namnger en huvudstad och du ska gissa vilken landsdel den hör till</li>
@@ -134,6 +141,7 @@
       <li xml:lang="gl">O xogo diche unha división e debes adiviñar a súa capital</li>
       <li xml:lang="id">Permainan ini memberi tahumu sebuah divisi dan kamu harus menebak ibukotanya</li>
       <li xml:lang="nl">Een spel waarin een kaartgedeelte wordt genoemd en je moet antwoorden wat daarvan de hoofdstad is</li>
+      <li xml:lang="pl">Grę, która podaje ci nazwę obszaru, a ty musisz podać nazwę jego stolicy</li>
       <li xml:lang="pt">O jogo indica-lhe uma divisão e você terá de adivinhar a sua capital</li>
       <li xml:lang="pt-BR">O jogo informa a seção e você deve adivinhar a capital</li>
       <li xml:lang="sv">Programmet namnger en landsdel och du ska gissa dess huvudstad</li>
@@ -150,6 +158,7 @@
       <li xml:lang="gl">O xogo móstrache a bandeira dunha división do mapa e tes que adiviñar o seu nome</li>
       <li xml:lang="id">Permainan ini memperlihatkan bendera divisi peta dan kamu harus menebak namanya</li>
       <li xml:lang="nl">Een spel waarin de vlag wordt getoond van een kaartgedeelte en je moet antwoorden met de naam van dat kaartgedeelte</li>
+      <li xml:lang="pl">Grę, która pokazuje ci flagę obszaru, a ty musisz podać jego nazwę</li>
       <li xml:lang="pt">O jogo mostra-lhe a bandeira de uma divisão do mapa e você terá de adivinhar o seu nome</li>
       <li xml:lang="pt-BR">O jogo mostra uma bandeira de uma seção do mapa e você deve adivinhar seu nome</li>
       <li xml:lang="sv">Programmet visar flaggan för en landsdel och du ska gissa dess namn</li>
@@ -166,6 +175,7 @@
       <li xml:lang="gl">O xogo diche o nome dunha división do mapa e tes que adiviñar a súa bandeira</li>
       <li xml:lang="id">Permainan ini memberi tahumu nama divisi peta dan kamu harus menebak benderanya</li>
       <li xml:lang="nl">Een spel waarin de naam wordt genoemd van een kaartgedeelte en je moet opgeven welke vlag erbij hoort</li>
+      <li xml:lang="pl">Grę, która podaje ci nazwę obszaru, a ty musisz podać, jaka jest jego flaga</li>
       <li xml:lang="pt">O jogo indica-lhe o nome de uma divisão do mapa e terá de adivinhar a sua bandeira</li>
       <li xml:lang="pt-BR">O jogo informa um nome de uma seção do mapa e você deve adivinhar sua bandeira</li>
       <li xml:lang="sv">Programmet talar om namnet på en landsdel och du ska gissa dess flagga</li>
@@ -182,6 +192,7 @@
       <li xml:lang="gl">O xogo mostra un mapa baleiro e hai que colocar as divisións unha a unha</li>
       <li xml:lang="id">Permainan ini menampilkan peta kosong dan kamu harus menempatkan divisi di atasnya satu per satu</li>
       <li xml:lang="nl">In dit spel wordt een lege kaart getoond, waarin je de kaartgedeelten een voor een moet plaatsen</li>
+      <li xml:lang="pl">Grę, która wyświetla pustą mapę, a twoim zadaniem jest nałożenie na nią po kolei obszarów</li>
       <li xml:lang="pt">O jogo mostra um mapa vazio e você terá de colocar as divisões nele, uma a uma</li>
       <li xml:lang="pt-BR">O jogo mostra um mapa vazio e você deve posicionar as seções uma a uma</li>
       <li xml:lang="sv">Programmet visar en tom karta och du ska placera ut landsdelarna på den en i taget</li>
@@ -206,6 +217,7 @@
       <caption xml:lang="gl">Practicando xeografía con KGeography</caption>
       <caption xml:lang="id">Berlajar geografi dengan KGeography</caption>
       <caption xml:lang="nl">Aardrijkskunde leren met KGeography</caption>
+      <caption xml:lang="pl">Ćwiczenie geografii z KGeography</caption>
       <caption xml:lang="pt">Exercício de geografia com o KGeography</caption>
       <caption xml:lang="pt-BR">Exercício de geografia com o KGeography</caption>
       <caption xml:lang="sv">Geografiövning med Kgeografi</caption>
