@@ -29,7 +29,7 @@
 placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidget(parent, m, w, count, true), p_currentDivisionImage(0)
 {
 	QVBoxLayout *lay = new QVBoxLayout(this);
-	lay -> setMargin(0);
+	lay -> setContentsMargins(0, 0, 0, 0);
 	lay -> setSpacing(0);
 
 	p_mapImage = new QImage(p_map->getMapFile());

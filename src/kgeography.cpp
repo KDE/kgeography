@@ -48,7 +48,7 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 	p_bigWidget = new QWidget(this);
 	QHBoxLayout *bigWidgetLayout = new QHBoxLayout(p_bigWidget);
 	bigWidgetLayout -> setSpacing(0);
-	bigWidgetLayout -> setMargin(0);
+	bigWidgetLayout -> setContentsMargins(0, 0, 0, 0);
 
 	QWidget *leftWidget = new QWidget(p_bigWidget);
 	QVBoxLayout *leftWidgetLayout = new QVBoxLayout(leftWidget);
@@ -74,7 +74,7 @@ kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResults
 	p_underLeftWidget = new QWidget(leftWidget);
 	// where the number of answers will be shown
 	m_underLeftWidgetLayout = new QVBoxLayout(p_underLeftWidget);
-	m_underLeftWidgetLayout->setMargin(0);
+	m_underLeftWidgetLayout->setContentsMargins(0, 0, 0, 0);
 
 	leftWidgetLayout -> addWidget(p_currentMap);
 	leftWidgetLayout -> addWidget(p_consult);

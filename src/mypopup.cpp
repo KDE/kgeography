@@ -40,7 +40,7 @@ myPopup::myPopup(QWidget *parent, const QString &text, const QString &wikiLink, 
 	lay -> addWidget(vbox);
 	
 	QVBoxLayout *vboxLayout = new QVBoxLayout(vbox);
-	vboxLayout -> setMargin(0);
+	vboxLayout -> setContentsMargins(0, 0, 0, 0);
 	vboxLayout -> setSpacing(0);
 	QLabel *l = new QLabel(text, vbox);
 	vboxLayout -> addWidget(l);

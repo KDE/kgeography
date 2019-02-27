@@ -41,7 +41,7 @@ static QString guessWikipediaDomain()
 mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_asker(asker), p_firstShow(true)
 {
 	QVBoxLayout *lay = new QVBoxLayout(this);
-	lay -> setMargin(0);
+	lay -> setContentsMargins(0, 0, 0, 0);
 	lay -> setSpacing(0);
 
 	p_mapWidget = new mapWidget(this);
