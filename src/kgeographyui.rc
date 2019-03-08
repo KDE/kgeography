@@ -1,5 +1,5 @@
-<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
-<kpartgui name="kgeography" version="333">
+<!DOCTYPE gui SYSTEM "kpartgui.dtd">
+<gui name="kgeography" version="333">
 	<MenuBar>
 		<Menu name="file">
 			<Action name="openMap" />
@@ -26,4 +26,4 @@
 		<Separator />
 		<Action name="move" />
 	</ToolBar>
-</kpartgui>
+</gui>
