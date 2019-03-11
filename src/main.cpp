@@ -28,7 +28,6 @@ int main(int argc, char *argv[])
 
 	KAboutData about(QStringLiteral("kgeography"), i18n("KGeography"), QStringLiteral("0.9"), i18n("A Geography learning program"), KAboutLicense::GPL, i18n("© 2004-2005 Albert Astals Cid"), QString(), QStringLiteral("http://userbase.kde.org/KGeography"));
 	about.addAuthor(i18n("Albert Astals Cid"), i18n("Programmer and designer"), QStringLiteral("aacid@kde.org"));
-	about.addCredit(i18n("Sodipodi flags collection"), i18n("Got some flags from it"), 0, QStringLiteral("http://www.sodipodi.com/index.php3?section=clipart/flags"));
 
 	KAboutData::setApplicationData(about);
 
