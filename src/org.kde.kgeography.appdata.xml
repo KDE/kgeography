@@ -30,6 +30,7 @@
   <summary xml:lang="de">Erdkunde-Lernprogramm</summary>
   <summary xml:lang="en-GB">Geography learning tool</summary>
   <summary xml:lang="es">Herramienta de aprendizaje de geografía</summary>
+  <summary xml:lang="fr">Un outil pour apprendre la géographie</summary>
   <summary xml:lang="gl">Ferramenta para aprender xeografía</summary>
   <summary xml:lang="id">Alat pembelajaran geografi</summary>
   <summary xml:lang="nl">Hulpmiddel voor het leren van Aardrijkskunde</summary>
@@ -48,6 +49,7 @@
     <p xml:lang="de">KGeography ist ein Erdkunde-Lernprogramm. Damit können Sie die politischen Daten einiger Länder lernen (Länder, ihre Hauptstädte und ihre Flaggen).</p>
     <p xml:lang="en-GB">KGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).</p>
     <p xml:lang="es">KGeography es una herramienta de aprendizaje de geografía que le permite conocer las divisiones políticas de algunos países (divisiones, las capitales de estas divisiones y sus banderas asociadas, si existe alguna).</p>
+    <p xml:lang="fr">KGeography est un outil d'apprentissage de la géographie, vous permettant d'apprendre les divisions politiques de certains pays (régions, capitales de ces régions et drapeaux associés, le cas échéant).</p>
     <p xml:lang="gl">KGeography é unha ferramenta para aprender xeografía, que lle permite aprender as divisións políticas  dalgúns países (divisións, capitais desas divisións e as súas bandeiras se as teñen).</p>
     <p xml:lang="id">KGeography adalah alat pembelajaran geografi, yang memungkinkan kamu untuk belajar tentang perpecahan politik di beberapa negara (divisi, ibukota dari divisi tersebut dan bendera terkait jika ada).</p>
     <p xml:lang="nl">KGeography is een programma om aardrijkskunde te leren, waarmee je iets kunt leren over de politieke indeling van sommige landen (onderdelen ervan, de bijbehorende hoofdsteden en eventuele vlaggen).</p>
@@ -214,6 +216,7 @@
       <caption xml:lang="de">Erdkunde lernen mit KGeography</caption>
       <caption xml:lang="en-GB">Training geography with KGeography</caption>
       <caption xml:lang="es">Entrenando geografía con KGeography</caption>
+      <caption xml:lang="fr">Exercice de géographie sur KGeography</caption>
       <caption xml:lang="gl">Practicando xeografía con KGeography</caption>
       <caption xml:lang="id">Berlajar geografi dengan KGeography</caption>
       <caption xml:lang="nl">Aardrijkskunde leren met KGeography</caption>
