@@ -35,7 +35,7 @@ static QString guessWikipediaDomain()
 		languageCode = systemLocale.name().split('_').first();
 	}
 
-	return QStringLiteral( "http://%1.wikipedia.org/wiki/" ).arg( languageCode );
+	return QStringLiteral( "https://%1.wikipedia.org/wiki/" ).arg( languageCode );
 }
 
 mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count) : askWidget(parent, m, w, count, asker), p_asker(asker), p_firstShow(true)

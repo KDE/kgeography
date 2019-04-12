@@ -214,7 +214,7 @@
       <li xml:lang="zh-CN">此游戏显示一个空的地图，您必须把分区逐一放置在上面</li>
     </ul>
   </description>
-  <url type="homepage">http://edu.kde.org/kgeography/</url>
+  <url type="homepage">https://edu.kde.org/kgeography/</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kgeography</url>
   <url type="help">https://docs.kde.org/?application=kgeography</url>
   <url type="donation">https://www.kde.org/community/donations/?app=kgeography&amp;source=appdata</url>
