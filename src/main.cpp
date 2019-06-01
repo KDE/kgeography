@@ -15,6 +15,7 @@
 #include <Kdelibs4ConfigMigrator>
 #include <KCrash>
 #include "kgeography.h"
+#include "kgeography_version.h"
 
 int main(int argc, char *argv[])
 {
@@ -26,7 +27,7 @@ int main(int argc, char *argv[])
 	migrate.migrate();
 	KLocalizedString::setApplicationDomain("kgeography");
 
-	KAboutData about(QStringLiteral("kgeography"), i18n("KGeography"), QStringLiteral("0.9"), i18n("A Geography learning program"), KAboutLicense::GPL, i18n("© 2004-2005 Albert Astals Cid"), QString(), QStringLiteral("https://userbase.kde.org/KGeography"));
+	KAboutData about(QStringLiteral("kgeography"), i18n("KGeography"), KGEOGRAPHY_VERSION_STRING, i18n("A Geography learning program"), KAboutLicense::GPL, i18n("© 2004-2005 Albert Astals Cid"), QString(), QStringLiteral("https://userbase.kde.org/KGeography"));
 	about.addAuthor(i18n("Albert Astals Cid"), i18n("Programmer and designer"), QStringLiteral("aacid@kde.org"));
 
 	KAboutData::setApplicationData(about);
