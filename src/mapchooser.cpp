@@ -22,6 +22,8 @@
 #include <qdialogbuttonbox.h>
 #include <qpushbutton.h>
 
+#include <algorithm>
+
 #include "settings.h"
 
 bool myLessThan(const QString &s1, const QString &s2)
@@ -97,7 +99,7 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 	connect(p_listBox, &QListWidget::currentTextChanged, this, &mapChooser::putImage);
 	connect(p_listBox, &QListWidget::itemActivated, this, &mapChooser::accept);
 	
-	qSort(texts.begin(), texts.end(), myLessThan);
+	std::sort(texts.begin(), texts.end(), myLessThan);
 	foreach(const QString &text, texts)
 		p_listBox -> addItem(text);
 
