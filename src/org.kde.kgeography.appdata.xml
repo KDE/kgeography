@@ -36,6 +36,7 @@
   <summary xml:lang="id">Alat pembelajaran geografi</summary>
   <summary xml:lang="it">Programma per l'insegnamento della geografia</summary>
   <summary xml:lang="nl">Hulpmiddel voor het leren van Aardrijkskunde</summary>
+  <summary xml:lang="nn">Program for å læra geografi</summary>
   <summary xml:lang="pl">Program do nauki geografii</summary>
   <summary xml:lang="pt">Ferramenta de aprendizagem de geografia</summary>
   <summary xml:lang="pt-BR">Ferramenta de aprendizado de Geografia</summary>
@@ -75,6 +76,7 @@
     <p xml:lang="id">Fitur:</p>
     <p xml:lang="it">Funzionalità:</p>
     <p xml:lang="nl">Mogelijkheden:</p>
+    <p xml:lang="nn">Funksjonar:</p>
     <p xml:lang="pl">Możliwości:</p>
     <p xml:lang="pt">Funcionalidades:</p>
     <p xml:lang="pt-BR">Recursos:</p>
@@ -232,6 +234,7 @@
       <caption xml:lang="id">Berlajar geografi dengan KGeography</caption>
       <caption xml:lang="it">Sessione di apprendimento con KGeography</caption>
       <caption xml:lang="nl">Aardrijkskunde leren met KGeography</caption>
+      <caption xml:lang="nn">Lær geografi med KGeography</caption>
       <caption xml:lang="pl">Ćwiczenie geografii z KGeography</caption>
       <caption xml:lang="pt">Exercício de geografia com o KGeography</caption>
       <caption xml:lang="pt-BR">Exercício de geografia com o KGeography</caption>
