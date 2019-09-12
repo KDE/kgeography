@@ -93,15 +93,15 @@ QString writeUpBorderStats(const QVector<size_t> &stats, const QVector<size_t> &
 	// delta = 1 + 8p -> n = (-1 +/- sqrt(1 + 8p))/2
 	int nbRows = (sqrt((double)1 + 8 * nbCells) -1) /2;
 	QString ret;
-	ret += QLatin1String("\n");
+	ret += QLatin1Char('\n');
 	ret.reserve(17 * nbCells + nbRows * 20);
 	for ( int ic = 0 ; ic < nbRows ; ic++ )
 		ret += QStringLiteral("%1(%2,%3,%4):%5\n").arg(ic).arg(qRed(cmap[ic])).arg(qGreen(cmap[ic])).arg(qBlue(cmap[ic])).arg(histo[ic]);
-	ret += QLatin1String("\n");
+	ret += QLatin1Char('\n');
 	for ( int m = 0 ; m < nbRows ; m++ ) {
 		for ( int p = 0 ; p < m ; p++ )
 			ret += QStringLiteral("(%1, %2):%3 ").arg(m).arg(p).arg(stats[indexOfPair(p, m)]);
-		ret += QLatin1String("\n");
+		ret += QLatin1Char('\n');
 	}
 	return ret;
 }
