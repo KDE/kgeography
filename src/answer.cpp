@@ -71,7 +71,7 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row, int margin) c
 			QLabel *l;
 			l = new QLabel(w);
 			l -> setText(v -> toString());
-			l -> setMargin(margin);
+			l -> setContentsMargins(margin, margin, margin, margin);
 			widgets[i] = l;
 		}
 		else if (v -> type() == QVariant::Color)
@@ -83,7 +83,7 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row, int margin) c
 			lay -> addWidget(inner);
 			inner -> setPalette(QPalette(v -> value<QColor>()));
 			inner -> setAutoFillBackground(true);
-			lay -> setMargin(2);
+			lay -> setContentsMargins(2, 2, 2, 2);
 			lay -> setSpacing(2);
 			widgets[i] = aux;
 		}
@@ -97,8 +97,8 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row, int margin) c
 			QLabel *coloredLabel = new QLabel(aux);
 			lay -> addWidget(coloredLabel);
 			coloredLabel-> setAutoFillBackground(true);
-			coloredLabel-> setMargin(margin);
-			lay -> setMargin(2);
+			coloredLabel-> setContentsMargins(margin, margin, margin, margin);
+			lay -> setContentsMargins(2, 2, 2, 2);
 			lay -> setSpacing(2);
 
 			for (int i=0; i<vl.count(); i++)
@@ -121,7 +121,7 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row, int margin) c
 			l = new QLabel(w);
 			l -> setPixmap(v -> value<QPixmap>());
 			l -> setAlignment(Qt::AlignHCenter);
-			l -> setMargin(margin);
+			l -> setContentsMargins(margin, margin, margin, margin);
 			widgets[i] = l;
 		}
 		

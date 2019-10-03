@@ -60,17 +60,17 @@ answersDialog::answersDialog(QWidget *parent, const QVector<userAnswer> &userAns
 	
 	QLabel *questionHeaderLabel = new QLabel(i18n("Question"));
 	questionHeaderLabel -> setFont(headerFont);
-	questionHeaderLabel -> setMargin(spacing);
+	questionHeaderLabel -> setContentsMargins(spacing, spacing, spacing, spacing);
 	gridLayout->addWidget(questionHeaderLabel, 2, 1);
 
 	QLabel *userAnswerHeaderLabel = new QLabel(i18n("Your Answer"));
 	userAnswerHeaderLabel -> setFont(headerFont);
-	userAnswerHeaderLabel -> setMargin(spacing);
+	userAnswerHeaderLabel -> setContentsMargins(spacing, spacing, spacing, spacing);
 	gridLayout->addWidget(userAnswerHeaderLabel, 2, 2);
 
 	QLabel *correctAnswerHeaderLabel = new QLabel(i18n("Correct Answer"));
 	correctAnswerHeaderLabel -> setFont(headerFont);
-	correctAnswerHeaderLabel	 -> setMargin(spacing);
+	correctAnswerHeaderLabel	 -> setContentsMargins(spacing, spacing, spacing, spacing);
 	gridLayout->addWidget(correctAnswerHeaderLabel, 2, 3);
 
 	for(uint i = 0; i < totalAnswers; i++)

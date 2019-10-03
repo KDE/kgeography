@@ -23,7 +23,7 @@ myPopup::myPopup(QWidget *parent, const QString &text, const QString &wikiLink, 
 {
 	wikipedia = wikiLink;
 	QHBoxLayout *lay = new QHBoxLayout(this);
-	lay -> setMargin(4);
+	lay -> setContentsMargins(4, 4, 4, 4);
 	lay -> setSpacing(4);
 	
 	if (!wikiLink.isEmpty())
