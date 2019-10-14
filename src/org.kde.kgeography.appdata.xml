@@ -117,7 +117,7 @@
       <li xml:lang="es">El juego le muestra un nombre de división del mapa sobre la que debe hacer clic</li>
       <li xml:lang="fr">Le jeu vous indique le nom de la région sur la carte et vous devez cliquer dessus</li>
       <li xml:lang="gl">O xogo diche un nome de división do mapa e tela que premer</li>
-      <li xml:lang="id">Permainan ini memberi tahumu nama divisi peta dan kamu harus mengekliknya</li>
+      <li xml:lang="id">Permainan ini memberi tau kamu nama divisi peta dan kamu harus mengekliknya</li>
       <li xml:lang="it">Il gioco ti dice il nome della divisione della mappa e tu devi farci clic sopra</li>
       <li xml:lang="nl">Een spel waarin de naam van een kaartgedeelte wordt genoemd waarna je erop moet klikken</li>
       <li xml:lang="pl">Grę, która podaje ci nazwę obszaru, na który musisz kliknąć</li>
@@ -136,7 +136,7 @@
       <li xml:lang="es">El juego le muestra una capital y debe adivinar la división a la que pertenece</li>
       <li xml:lang="fr">Le jeu vous indique une capitale et vous devez deviner la région à laquelle elle correspond</li>
       <li xml:lang="gl">O xogo diche unha capital e debes adiviñar a división á que pertence</li>
-      <li xml:lang="id">Permainan ini memberi tahumu ibukota dan kamu harus menebak divisi yang dimilikinya</li>
+      <li xml:lang="id">Permainan ini memberi tau kamu ibukota dan kamu harus menebak divisi yang dimilikinya</li>
       <li xml:lang="it">Il gioco ti dice una capitale e tu devi indovinare la divisione a cui appartiene</li>
       <li xml:lang="nl">Een spel waarin een hoofdstad wordt genoemd waarna je moet antwoorden bij welk kaartgedeelte die hoort</li>
       <li xml:lang="pl">Grę, która podaje ci nazwę stolicy, a ty musisz podać, do którego obszaru ona należy</li>
@@ -155,7 +155,7 @@
       <li xml:lang="es">El juego le muestra una división y debe adivinar su capital</li>
       <li xml:lang="fr">Le jeu vous indique une région et vous devez en deviner la capitale</li>
       <li xml:lang="gl">O xogo diche unha división e debes adiviñar a súa capital</li>
-      <li xml:lang="id">Permainan ini memberi tahumu sebuah divisi dan kamu harus menebak ibukotanya</li>
+      <li xml:lang="id">Permainan ini memberi tau kamu sebuah divisi dan kamu harus menebak ibukotanya</li>
       <li xml:lang="it">Il gioco ti dice una divisione e tu devi indovinare la sua capitale</li>
       <li xml:lang="nl">Een spel waarin een kaartgedeelte wordt genoemd en je moet antwoorden wat daarvan de hoofdstad is</li>
       <li xml:lang="pl">Grę, która podaje ci nazwę obszaru, a ty musisz podać nazwę jego stolicy</li>
@@ -193,7 +193,7 @@
       <li xml:lang="es">El juego le muestra un nombre de división y debe adivinar su bandera</li>
       <li xml:lang="fr">Le jeu vous indique un nom de région de la carte et vous devez en deviner le drapeau</li>
       <li xml:lang="gl">O xogo diche o nome dunha división do mapa e tes que adiviñar a súa bandeira</li>
-      <li xml:lang="id">Permainan ini memberi tahumu nama divisi peta dan kamu harus menebak benderanya</li>
+      <li xml:lang="id">Permainan ini memberi tau kamu nama divisi peta dan kamu harus menebak benderanya</li>
       <li xml:lang="it">Il gioco ti dice il nome di una divisione della mappa e tu devi indovinare la sua bandiera</li>
       <li xml:lang="nl">Een spel waarin de naam wordt genoemd van een kaartgedeelte en je moet opgeven welke vlag erbij hoort</li>
       <li xml:lang="pl">Grę, która podaje ci nazwę obszaru, a ty musisz podać, jaka jest jego flaga</li>
