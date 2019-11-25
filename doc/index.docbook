@@ -557,7 +557,7 @@ A &RMB; click in zoomed mode performs the same action</para></listitem>
 <title>The Settings Menu</title>
 <para>
 &kgeography; has the common &kde; <guimenu>Settings</guimenu> menu items, for more information read the section
-about the <ulink url="help:/fundamentals/ui.html#menus-settings">Settings Menu</ulink> of the &kde; Fundamentals.
+about the <ulink url="help:/fundamentals/menus.html#menus-settings">Settings Menu</ulink> of the &kde; Fundamentals.
 </para>
 
 </sect2>
@@ -565,7 +565,7 @@ about the <ulink url="help:/fundamentals/ui.html#menus-settings">Settings Menu</
 <title>The Help Menu</title>
 
 <para>&kgeography; has a default &kde; <guimenu>Help</guimenu> menu as described in the 
-<ulink url="help:/fundamentals/ui.html#menus-help">&kde; Fundamentals</ulink> 
+<ulink url="help:/fundamentals/menus.html#menus-help">&kde; Fundamentals</ulink> 
 with two additional entries:</para>
 	
 <variablelist>
