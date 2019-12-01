@@ -2,24 +2,17 @@
 ########### install files ###############
 
 install(FILES
-  akershus.png
-  aust-agder.png
-  buskerud.png
-  finnmark.png
-  hedmark.png
-  hordaland.png
+  agder.png
+  innlandet.png
   more_og_romsdal.png
   nordland.png
-  oppland.png
   oslo.png
-  ostfold.png
   rogaland.png
-  sogn_og_fjordane.png
-  telemark.png
-  troms.png
+  troms_og_finnmark.png
   trondelag.png
-  vest-agder.png
-  vestfold.png
+  vestfold_og_telemark.png
+  vestland.png
+  viken.png
 
 	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags/norway)
 
