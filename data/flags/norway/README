@@ -1,9 +1,19 @@
-These ‘flags’ (really coat of arms) for the Norwegian
-counties were downloaded from Wikipedia
+The ‘flags’ (really coat of arms) for the pre-2020
+Norwegian counties were downloaded from Wikipedia
 https://no.wikipedia.org/wiki/Fylkesv%C3%A5pen_i_Norge
 on 2018-08-27. They were then converted to PNG
 files with a common height (200 pixels).
 
+For the new counties (official from January 2020),
+the coat of arms of Agder, Innlandet, Vestfold og Telemark,
+Vestland and Viken have been taken from the official
+graphic profiles of these counties. For Troms og Finnmark,
+a (temporary) coat of arms have been created by merging the
+(Wikipedia) images of the coat of arms for the two (pre-2020)
+counties Troms and Finnmark.
+
 Note that the images at Wikipedia have been improved
 over time, so the KGeography images should probably
-also be updated in the future.
+also be updated in the future. And the coat of arms
+should be taken from official sources (instead of
+from Wikipedia) if possible.
