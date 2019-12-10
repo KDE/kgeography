@@ -1,6 +1,6 @@
 
 
-ecm_setup_version(${KDE_APPLICATIONS_VERSION} VARIABLE_PREFIX KGEOGRAPHY VERSION_HEADER kgeography_version.h)
+ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX KGEOGRAPHY VERSION_HEADER kgeography_version.h)
 
 ########### next target ###############
 
