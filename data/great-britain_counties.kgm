@@ -1,7 +1,7 @@
 <!DOCTYPE kgeographyMap>
 <map>
 	<mapFile>great-britain_counties.png</mapFile>
-	<name>Great-Britain (Counties)</name>
+	<name>Great-Britain (Historic Counties)</name>
     <divisionsName>Counties</divisionsName>
     <author>Laurent Garnier</author>
 	<division>
@@ -15,7 +15,7 @@
 		<color><red>255</red><green>255</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>Not Great-Britain (Counties)</name>
+		<name>Not Great-Britain (Historic Counties)</name>
 		<ignore>yes</ignore>
 		<color><red>204</red><green>204</green><blue>204</blue></color>
 	</division>
