@@ -3,7 +3,7 @@
 	<mapFile>france_regions.png</mapFile>
 	<name>France (Regions)</name>
     <divisionsName>Regions</divisionsName>
-    <author>Laurent Garnier</author>
+    <author>Julien REINE</author>
 	<division>
 		<name>Frontier</name>
 		<ignore>yes</ignore>
@@ -22,133 +22,66 @@
 	<division>
 		<name>Provence-Alpes-Côte d'Azur</name>
 		<capital>Marseille</capital>
-		<flag>france/provence_alpes_cote_d_azur.png</flag>
 		<color><red>255</red><green>128</green><blue>128</blue></color>
 	</division>
 	<division>
-		<name>Basse Normandie</name>
-		<capital>Caen</capital>
-		<flag>france/basse_normandie.png</flag>
+		<name>Normandie</name>
+		<capital>Rouen</capital>
 		<color><red>0</red><green>255</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Corse</name>
 		<capital>Ajaccio</capital>
-		<flag>france/corse.png</flag>
 		<color><red>255</red><green>0</green><blue>0</blue></color>
 	</division>
 	<division>
-		<name>Bourgogne</name>
+		<name>Bourgogne-Franche-Comté</name>
 		<capital>Dijon</capital>
-		<flag>france/bourgogne.png</flag>
-		<color><red>255</red><green>191</green><blue>128</blue></color>
-	</division>
-	<division>
-		<name>Franche Comté</name>
-		<capital>Besançon</capital>
-		<flag>france/franche_comte.png</flag>
 		<color><red>255</red><green>255</green><blue>0</blue></color>
 	</division>
 	<division>
-		<name>Midi-Pyrénées</name>
+		<name>Occitanie</name>
 		<capital>Toulouse</capital>
-		<flag>france/midi_pyrenees.png</flag>
 		<color><red>255</red><green>0</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>Aquitaine</name>
+		<name>Nouvelle-Aquitaine</name>
 		<capital>Bordeaux</capital>
-		<flag>france/aquitaine.png</flag>
 		<color><red>191</red><green>128</green><blue>255</blue></color>
-	</division>
-	<division>
-		<name>Languedoc-Roussilon</name>
-		<capital>Montpellier</capital>
-		<flag>france/languedoc_roussillon.png</flag>
-		<color><red>255</red><green>128</green><blue>255</blue></color>
 	</division>
 	<division>
 		<name>Bretagne</name>
 		<capital>Rennes</capital>
-		<flag>france/bretagne.png</flag>
-		<color><red>128</red><green>255</green><blue>255</blue></color>
+		<color><red>187</red><green>255</green><blue>187</blue></color>
 	</division>
 	<division>
 		<name>Pays de Loire</name>
 		<capital>Nantes</capital>
-		<flag>france/pays_de_la_loire.png</flag>
 		<color><red>0</red><green>128</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>Centre</name>
+		<name>Centre-Val-de-Loire</name>
 		<capital>Orléans</capital>
-		<flag>france/centre_val_de_loire.png</flag>
 		<color><red>128</red><green>191</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>Champagne-Ardennes</name>
-		<capital>Châlons-en-Champagne</capital>
-		<flag>france/champagne-ardennes.png</flag>
-		<color><red>191</red><green>255</green><blue>128</blue></color>
-	</division>
-	<division>
-		<name>Lorraine</name>
-		<capital>Metz</capital>
-		<flag>france/lorraine.png</flag>
+		<name>Grand-Est</name>
+		<capital>Strasbourg</capital>
 		<color><red>128</red><green>255</green><blue>0</blue></color>
 	</division>
 	<division>
-		<name>Nord-Pas de Calais</name>
-		<capital>Lille</capital>
-		<flag>france/nord-pas_de_calais.png</flag>
-		<color><red>0</red><green>255</green><blue>0</blue></color>
-	</division>
-	<division>
-		<name>Auvergne</name>
-		<capital>Clermont Ferrand</capital>
-		<flag>france/auvergne.png</flag>
-		<color><red>0</red><green>0</green><blue>255</blue></color>
-	</division>
-	<division>
-		<name>Alsace</name>
-		<capital>Strasbourg</capital>
-		<flag>france/alsace.png</flag>
-		<color><red>255</red><green>255</green><blue>128</blue></color>
-	</division>
-	<division>
-		<name>Rhône-Alpes</name>
+		<name>Auvergne-Rhône-Alpes</name>
 		<capital>Lyon</capital>
-		<flag>france/rhone_alpes.png</flag>
 		<color><red>255</red><green>128</green><blue>0</blue></color>
 	</division>
 	<division>
 		<name>Île de France</name>
 		<capital>Paris</capital>
-		<flag>france/ile_de_france.png</flag>
-		<color><red>0</red><green>255</green><blue>127</blue></color>
+		<color><red>255</red><green>128</green><blue>255</blue></color>
 	</division>
 	<division>
-		<name>Haute Normandie</name>
-		<capital>Rouen</capital>
-		<flag>france/haute_normandie.png</flag>
-		<color><red>128</red><green>255</green><blue>191</blue></color>
-	</division>
-	<division>
-		<name>Picardie</name>
-		<capital>Amiens</capital>
-		<flag>france/picardie.png</flag>
+		<name>Hauts-de-France</name>
+		<capital>Lille</capital>
 		<color><red>128</red><green>255</green><blue>128</blue></color>
-	</division>
-	<division>
-		<name>Poitou-Charentes</name>
-		<capital>Poitiers</capital>
-		<flag>france/poitou_charentes.png</flag>
-		<color><red>127</red><green>0</green><blue>255</blue></color>
-	</division>
-	<division>
-		<name>Limousin</name>
-		<capital>Limoges</capital>
-		<flag>france/limousin.png</flag>
-		<color><red>128</red><green>128</green><blue>255</blue></color>
 	</division>
 </map>
