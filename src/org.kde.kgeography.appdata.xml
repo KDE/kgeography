@@ -8,6 +8,7 @@
   <name xml:lang="ca-valencia">KGeography</name>
   <name xml:lang="cs">KGeography</name>
   <name xml:lang="de">KGeography</name>
+  <name xml:lang="el">KGeography</name>
   <name xml:lang="en-GB">KGeography</name>
   <name xml:lang="es">KGeography</name>
   <name xml:lang="et">KGeography</name>
@@ -33,6 +34,7 @@
   <summary xml:lang="ca">Eina per aprendre geografia</summary>
   <summary xml:lang="ca-valencia">Eina per aprendre geografia</summary>
   <summary xml:lang="de">Erdkunde-Lernprogramm</summary>
+  <summary xml:lang="el">Εργαλείο εξάσκησης στη Γεωγραφία</summary>
   <summary xml:lang="en-GB">Geography learning tool</summary>
   <summary xml:lang="es">Herramienta de aprendizaje de geografía</summary>
   <summary xml:lang="et">Geograafia tundmaõppimise vahend</summary>
@@ -58,6 +60,7 @@
     <p xml:lang="ca">El KGeography és una eina per aprendre geografia, que permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'aquestes divisions i les seves banderes associades si n'hi ha alguna).</p>
     <p xml:lang="ca-valencia">El KGeography és una eina per aprendre geografia, que permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'aquestes divisions i les seues banderes associades si n'hi ha alguna).</p>
     <p xml:lang="de">KGeography ist ein Erdkunde-Lernprogramm. Damit können Sie die politischen Daten einiger Länder lernen (Länder, ihre Hauptstädte und ihre Flaggen).</p>
+    <p xml:lang="el">Το KGeography είναι ένα εργαλείο εκμάθησης γεωγραφίας, το οποίο σας επιτρέπει να μάθετε την πολιτική διαίρεση κάποιων χωρών (περιφέρειες, πρωτεύουσες περιφερειών και τις σημαίες τους αν υπάρχουν).</p>
     <p xml:lang="en-GB">KGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).</p>
     <p xml:lang="es">KGeography es una herramienta de aprendizaje de geografía que le permite conocer las divisiones políticas de algunos países (divisiones, las capitales de estas divisiones y sus banderas asociadas, si existe alguna).</p>
     <p xml:lang="et">KGeography on geograafia tundmaõppimise vahend, mis võimaldab teada saada paljude maade haldusjaotust (haldusüksused, nende pealinnad ja kui on, ka nende lipud).</p>
@@ -81,6 +84,7 @@
     <p xml:lang="ca-valencia">Característiques:</p>
     <p xml:lang="cs">Vlastnosti:</p>
     <p xml:lang="de">Funktionen:</p>
+    <p xml:lang="el">Λειτουργίες:</p>
     <p xml:lang="en-GB">Features:</p>
     <p xml:lang="es">Funcionalidades:</p>
     <p xml:lang="et">Omadused:</p>
@@ -107,6 +111,7 @@
       <li xml:lang="ca">Busqueu en els mapes fent clic a sobre d'una zona del mapa per a veure el seu nom, capital i bandera</li>
       <li xml:lang="ca-valencia">Busqueu en els mapes fent clic damunt d'una zona del mapa per a veure el seu nom, capital i bandera</li>
       <li xml:lang="de">Landkarte erkunden, indem Sie in der Karte auf ein Land klicken und dessen Name, Hauptstadt und Flagge angezeigt wird</li>
+      <li xml:lang="el">Περιηγηθείτε στους χάρτες με κλικ σε μια διαίρεση στο χάρτη για να δείτε το όνομά της, την πρωτεύουσα και τη σημαία</li>
       <li xml:lang="en-GB">Browse the maps clicking in a map division to see its name, capital and flag</li>
       <li xml:lang="es">Exploración de mapas pulsando sobre divisiones para ver su nombre, su capital y su bandera</li>
       <li xml:lang="et">Kaardi sirvimine, klõpsates siia või sinna antud koha nime, pealinna ja lipu nägemiseks</li>
@@ -129,6 +134,7 @@
       <li xml:lang="ca">El joc us mostra el nom d'una zona del mapa i heu de fer clic sobre el lloc on està</li>
       <li xml:lang="ca-valencia">El joc vos mostra el nom d'una zona del mapa i heu de fer clic sobre el lloc on està</li>
       <li xml:lang="de">Der Name eines Landes wird gefragt und Sie müssen es auf der Karte anklicken.</li>
+      <li xml:lang="el">Το παιχνίδι σάς λέει τη διαίρεση στο χάρτη και εσείς πρέπει να κάνετε κλικ επάνω της</li>
       <li xml:lang="en-GB">The game tells you a map division name and you have to click on it</li>
       <li xml:lang="es">El juego le muestra un nombre de división del mapa sobre la que debe hacer clic</li>
       <li xml:lang="et">Mäng ütleb sulle haldusüksuse nime ja sa pead selle peale klõpsama</li>
@@ -151,6 +157,7 @@
       <li xml:lang="ca">El joc us mostra una capital i heu d'esbrinar el país a la qual pertany</li>
       <li xml:lang="ca-valencia">El joc vos mostra una capital i heu d'esbrinar el país a la qual pertany</li>
       <li xml:lang="de">Ein Land anhand des Namens der Hauptstadt raten</li>
+      <li xml:lang="el">Το παιχνίδι σάς λέει μια πρωτεύουσα και εσείς πρέπει να μαντέψετε σε ποια διαίρεση ανήκει</li>
       <li xml:lang="en-GB">The game tells you a capital and you have to guess the division it belongs to</li>
       <li xml:lang="es">El juego le muestra una capital y debe adivinar la división a la que pertenece</li>
       <li xml:lang="et">Mäng ütleb sulle pealinna nime ja sa pead ära arvama, millises haldusüksuses see asub</li>
@@ -173,6 +180,7 @@
       <li xml:lang="ca">El joc us mostra un país i heu d'esbrinar la seva capital</li>
       <li xml:lang="ca-valencia">El joc vos mostra un país i heu d'esbrinar la seua capital</li>
       <li xml:lang="de">Die Hauptstadt eines Landes raten</li>
+      <li xml:lang="el">Το παιχνίδι σάς λέει μια διαίρεση και εσείς πρέπει να μαντέψετε την πρωτεύουσα</li>
       <li xml:lang="en-GB">The game tells you a division and you have to guess its capital</li>
       <li xml:lang="es">El juego le muestra una división y debe adivinar su capital</li>
       <li xml:lang="et">Mäng ütleb sulle haldusüksuse ja sa pead ära arvama selle pealinna</li>
@@ -195,6 +203,7 @@
       <li xml:lang="ca">El joc us mostra la bandera d'un país i heu d'esbrinar el seu nom</li>
       <li xml:lang="ca-valencia">El joc vos mostra la bandera d'un país i heu d'esbrinar el seu nom</li>
       <li xml:lang="de">Ein Land anhand der Flagge erraten</li>
+      <li xml:lang="el">Το παιχνίδι σάς δείχνει τη σημαία μιας διαίρεσης στο χάρτη και εσείς πρέπει να μαντέψετε το όνομά της</li>
       <li xml:lang="en-GB">The game shows you a map division flag and you have to guess its name</li>
       <li xml:lang="es">El juego le muestra la bandera de una división y debe adivinar su nombre</li>
       <li xml:lang="et">Mäng näitab sulle haldusüksuse lippu ja sa pead selle ära arvama</li>
@@ -217,6 +226,7 @@
       <li xml:lang="ca">El joc us mostra el nom d'un país i heu d'esbrinar la seva bandera</li>
       <li xml:lang="ca-valencia">El joc vos mostra el nom d'un país i heu d'esbrinar la seua bandera</li>
       <li xml:lang="de">Die Flagge eines Landes erraten</li>
+      <li xml:lang="el">Το παιχνίδι σάς λέει ένα όνομα διάιρεσης στο χάρτη και εσείς πρέπει να μαντέψετε τη σημαία της</li>
       <li xml:lang="en-GB">The game tells you a map division name and you have to guess its flag</li>
       <li xml:lang="es">El juego le muestra un nombre de división y debe adivinar su bandera</li>
       <li xml:lang="et">Mäng ütleb sulle haldusüksuse nime ja sa pead ära arvama selle lipu</li>
@@ -239,6 +249,7 @@
       <li xml:lang="ca">El joc us mostra un mapa buit i heu de situar les divisions una a una</li>
       <li xml:lang="ca-valencia">El joc vos mostra un mapa buit i heu de situar les divisions una a una</li>
       <li xml:lang="de">Länder auf einer leeren Landkarte platzieren</li>
+      <li xml:lang="el">Το παιχνίδι σάς δείχνει έναν κενό χάρτη και εσείς πρέπει να τοποθετήσετε πάνω του τις διαιρέσεις μία προς μία</li>
       <li xml:lang="en-GB">The game shows an empty map and you have to place divisions on it one by one</li>
       <li xml:lang="es">El juego le muestra un mapa vacío y debe situar las divisiones sobre él</li>
       <li xml:lang="et">Mäng näitab tühja kaarti ja sa pead asetama sellel paika haldusüksused</li>
@@ -270,6 +281,7 @@
       <caption xml:lang="ca">Entrenament de geografia amb el KGeography</caption>
       <caption xml:lang="ca-valencia">Entrenament de geografia amb el KGeography</caption>
       <caption xml:lang="de">Erdkunde lernen mit KGeography</caption>
+      <caption xml:lang="el">Εξάσκηση στη γεωγραφία με το KGeography</caption>
       <caption xml:lang="en-GB">Training geography with KGeography</caption>
       <caption xml:lang="es">Entrenando geografía con KGeography</caption>
       <caption xml:lang="et">Geograafia tundmaõppimine KGeographyga</caption>
