@@ -334,7 +334,7 @@ void placeMapWidget::resizeEvent(QResizeEvent *)
 	updateActions();
 
 	// Another hack to work around buginess in QGraphicsView
-	if ( matrix().isIdentity() )
+	if ( transform().isIdentity() )
 		QMetaObject::invokeMethod(this, "setAutomaticZoom", Qt::QueuedConnection, Q_ARG(bool, p_automaticZoom));
 }
 
@@ -351,9 +351,8 @@ void placeMapWidget::wheelEvent(QWheelEvent *e)
 		int delta = e->delta();
 		if ( delta != 0 )
 		{
-			qreal rescale = pow(2, qreal(delta/120)/2.0);
-			QMatrix m(rescale, 0, 0, rescale, 0, 0);
-			setMatrix(m, true);
+			const qreal rescale = pow(2, qreal(delta/120)/2.0);
+			scale(rescale, rescale);
 		}
 	}
 }
@@ -394,8 +393,8 @@ void placeMapWidget::setGameImage()
 	p_automaticZoom = false;
 	// Possibly bug in QGraphicsView? The view isn't updated properly
 	// if the matrix isn't set to something non-identity first
-	setMatrix( QMatrix( 2, 0, 0, 2, 0, 0 ) );
-	resetMatrix();
+	setTransform( QTransform( 2, 0, 0, 2, 0, 0 ) );
+	resetTransform();
 	updateActions();
 }
 
@@ -424,7 +423,7 @@ void placeMapWidget::updateActions()
 		  p_currentDivisionItem->hide();
 		}
 		// Whether the image is bigger than that viewable
-		bool biggerThanView = (p_gameImage->width() * matrix().m11() >= width()) || (p_gameImage->height() * matrix().m22() >= height());
+		bool biggerThanView = (p_gameImage->width() * transform().m11() >= width()) || (p_gameImage->height() * transform().m22() >= height());
 
 		emit setMoveActionEnabled( !p_automaticZoom && biggerThanView );
 		emit setMoveActionChecked( !p_automaticZoom && (p_mode == Moving || p_mode == WantMove) && biggerThanView );
