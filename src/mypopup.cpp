@@ -14,6 +14,7 @@
 #include <klocalizedstring.h>
 
 #include <qevent.h>
+#include <qicon.h>
 #include <qlabel.h>
 #include <qlayout.h>
 #include <qimage.h>
@@ -30,7 +31,7 @@ myPopup::myPopup(QWidget *parent, const QString &text, const QString &wikiLink, 
 	{
 		wiki = new QLabel(this);
 		lay -> addWidget(wiki);
-		wiki -> setPixmap(SmallIcon( QStringLiteral("dialog-information") ));
+		wiki -> setPixmap(QIcon::fromTheme( QStringLiteral("dialog-information") ).pixmap(KIconLoader::SizeSmall));
 		wiki -> setToolTip(i18n("Wikipedia page"));
 		wiki -> setAlignment(Qt::AlignCenter);
 		wiki -> installEventFilter(this);
