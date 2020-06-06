@@ -77,5 +77,5 @@ void divisionCapitalAsker::setAnswerHook(int userSays)
 
 QString divisionCapitalAsker::getQuestionHook() const
 {
-	return i18nc("@title", p_map->getDivisionToCapitalTitle().toUtf8());
+	return p_map->getDivisionToCapitalTitle();
 }

@@ -422,7 +422,7 @@ void kgeography::setMap(KGmap *m)
 	p_askMap->setText(i18n("&Location of %1", divisionType));
 	p_askPlaceMap->setText(i18n("&Place %1 in the Map", divisionType));
 	p_askCapitalDivisions->setText(p_map->getCapitalToDivisionTitle());
-	p_askDivisionCapitals->setText(i18nc("@title", p_map->getDivisionToCapitalTitle().toUtf8()));
+	p_askDivisionCapitals->setText(p_map->getDivisionToCapitalTitle());
 	p_askFlagDivisions->setText(i18n("%1 by Flag", divisionType));
 	p_askDivisionFlags->setText(i18n("&Flags of %1", divisionType));
 

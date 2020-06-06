@@ -90,7 +90,7 @@ KGmap *mapReader::parseMap(const QString &path)
 				title = getElementString(QStringLiteral("divisionToCapitalTitle"), root, Optional);
 				if ( ! title.isEmpty() )
 				{
-					kgmap->setDivisionToCapitalTitle(title);
+					kgmap->setDivisionToCapitalTitle(i18nc("@title", title.toUtf8()));
 				}
 				else
 				{
