@@ -111,7 +111,7 @@ KGmap *mapReader::parseMap(const QString &path)
 					
 					// division capital
 					QString capital = getElementString(QStringLiteral("capital"), divisionTag, Optional);
-					if (!capital.isNull()) kgdiv -> setCapital( capital );
+					if (!capital.isEmpty()) kgdiv -> setCapital(i18nc(ctxt, capital.toUtf8()));
 					
 					// division flag
 					QString flagFile = getElementString(QStringLiteral("flag"), divisionTag, Optional);

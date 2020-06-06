@@ -147,7 +147,7 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	{
 		QString flagFile = p_map -> getDivisionFlagFile(aux);
 		if (p_map -> getDivisionCanAsk(aux, division::eCapital)) cap = p_map -> getDivisionCapital(aux);
-		if (!cap.isEmpty()) cap = i18nc("@item Capital name in map popup", "%1", i18nc(p_map -> getFileName().toUtf8(), cap.toUtf8()));
+		if (!cap.isEmpty()) cap = i18nc("@item Capital name in map popup", "%1", cap);
 
 		QString wikiLink (guessWikipediaDomain());
 		wikiLink.append(i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8()));
