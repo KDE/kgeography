@@ -53,7 +53,7 @@ KGmap *mapReader::parseMap(const QString &path)
 				
 				// Divisions string
 				QString divisionKindName = getElementString(QStringLiteral("divisionsName"), root, Mandatory);
-				kgmap -> setDivisionsString(divisionKindName);
+				kgmap -> setDivisionsString(i18nc(ctxt, divisionKindName.toUtf8()));
 
 				QString pat = getElementString(QStringLiteral("capitalToDivisionPattern"), root, Optional);
 				if ( pat.contains('%') )
@@ -84,7 +84,7 @@ KGmap *mapReader::parseMap(const QString &path)
 				}
 				else
 				{
-					kgmap->setCapitalToDivisionTitle(i18n("%1 by Capital", i18nc(ctxt, divisionKindName.toUtf8())));
+					kgmap->setCapitalToDivisionTitle(i18n("%1 by Capital", kgmap -> getDivisionsString()));
 				}
 
 				title = getElementString(QStringLiteral("divisionToCapitalTitle"), root, Optional);
@@ -94,7 +94,7 @@ KGmap *mapReader::parseMap(const QString &path)
 				}
 				else
 				{
-					kgmap->setDivisionToCapitalTitle(i18n("Capitals of %1", i18nc(ctxt, divisionKindName.toUtf8())));
+					kgmap->setDivisionToCapitalTitle(i18n("Capitals of %1", kgmap -> getDivisionsString()));
 				}
 
 				

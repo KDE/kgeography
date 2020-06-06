@@ -199,7 +199,7 @@ void mapAsker::nextQuestionHook(const QString &division)
 
 QString mapAsker::getQuestionHook() const
 {
-        QString divisionType = i18nc(p_map -> getFileName().toUtf8(), p_map->getDivisionsString().toUtf8());
+        QString divisionType = p_map->getDivisionsString();
         return i18nc("@title", "%1 in Map", divisionType);
 }
 

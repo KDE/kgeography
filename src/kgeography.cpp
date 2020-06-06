@@ -417,7 +417,7 @@ void kgeography::setMap(KGmap *m)
 	p_showAuthor->setEnabled(m);
 
 	QString mapName = i18nc(p_map -> getFileName().toUtf8(), p_map -> getName().toUtf8());
-	QString divisionType = i18nc(p_map -> getFileName().toUtf8(), p_map->getDivisionsString().toUtf8());
+	QString divisionType = p_map->getDivisionsString();
 
 	p_askMap->setText(i18n("&Location of %1", divisionType));
 	p_askPlaceMap->setText(i18n("&Place %1 in the Map", divisionType));

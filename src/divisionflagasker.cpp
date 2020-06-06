@@ -52,6 +52,6 @@ void divisionFlagAsker::setAnswerHook(int userSays)
 
 QString divisionFlagAsker::getQuestionHook() const
 {
-	QString divisionType = i18nc(p_map -> getFileName().toUtf8(), p_map->getDivisionsString().toUtf8());
+	QString divisionType = p_map->getDivisionsString();
 	return i18nc("@title", "Flag of %1", divisionType);
 }
