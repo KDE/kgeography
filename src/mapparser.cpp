@@ -151,7 +151,7 @@ KGmap *mapReader::parseMap(const QString &path)
 					for (int i = 0; i < falseCapitalTags.count(); ++i)
 					{
 						falseCapital = falseCapitalTags.item(i).toElement();
-						if (!falseCapital.isNull()) falseCapitals << falseCapital.text();
+						if (!falseCapital.isNull() && !falseCapital.text().isEmpty()) falseCapitals << i18nc(ctxt, falseCapital.text().toUtf8());
 					}
 					if (!falseCapitals.isEmpty()) kgdiv->setFalseCapitals(falseCapitals);
 					

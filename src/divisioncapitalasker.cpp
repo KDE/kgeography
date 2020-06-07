@@ -44,7 +44,7 @@ bool divisionCapitalAsker::nextBoxAskerQuestionHook(const QString &division, int
 				int random = (int)((float)falseCapitals.size() * KRandom::random() / (RAND_MAX + 1.0));
 				QString falseCapital = falseCapitals.at(random);
 				falseCapitals.removeAt(random);
-				p_radioButtons[index] -> setText(i18nc("@option:radio The capital of <Region> is...", "%1", i18nc(p_map -> getFileName().toUtf8(), falseCapital.toUtf8())));
+				p_radioButtons[index] -> setText(i18nc("@option:radio The capital of <Region> is...", "%1", falseCapital));
 			}
 			++index;
 		}
