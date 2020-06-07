@@ -21,6 +21,7 @@
 #include <qlistwidget.h>
 #include <qdialogbuttonbox.h>
 #include <qpushbutton.h>
+#include <qset.h>
 
 #include <algorithm>
 
@@ -65,12 +66,17 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 	QString lastMapFile = kgeographySettings::self() -> lastMap();
 	QString stringToSelect;
 	QStringList texts;
+	QSet<QString> loadedMaps;
 	const QStringList dirs = QStandardPaths::locateAll(QStandardPaths::DataLocation, QLatin1String(""), QStandardPaths::LocateDirectory);
 	foreach (const QString &dir, dirs)
 	{
 		const QStringList fileNames = QDir(dir).entryList(QStringList() << QStringLiteral("*.kgm"));
 		foreach (const QString &file, fileNames)
 		{
+			// avoid multiple and should guarantee that first in XDG_DATA_DIRS is chosen)
+			if (loadedMaps.contains(file))
+				continue;
+
 			QString mapFilename = dir + '/' + file;
 
 			KGmap *m = p_reader.parseMap(mapFilename);
@@ -79,15 +85,19 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 			else
 			{
 				QString text = m -> getName();
-				// avoid multiple and should guarantee that first in XDG_DATA_DIRS is chosen)
-				if (texts.contains(text))
+				KGmap* existingMap = p_maps.value(text);
+				if (existingMap)
+				{
+					errorTexts << i18n("The map %1 has the same name of map %2", mapFilename, existingMap -> getFile());
 					delete m;
+				}
 				else
 				{
 					texts << text;
 					p_maps.insert(text, m);
 					if ( mapFilename == lastMapFile )
 						stringToSelect = text;
+					loadedMaps << file;
 				}
 			}
 		}
