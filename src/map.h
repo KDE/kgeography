@@ -54,7 +54,7 @@ class KGmap
 		QList<const division*> getIgnoredDivisions(division::askMode am) const;
 		QList<const division*> getAllDivisionsOrdered() const;
 		KLocalizedString getCapitalToDivisionQuestionPattern() const;
-		QString getDivisionToCapitalQuestionPattern() const;
+		KLocalizedString getDivisionToCapitalQuestionPattern() const;
 		QString getCapitalToDivisionTitle() const;
 		QString getDivisionToCapitalTitle() const;
 		division *getDivision(QRgb c) const;

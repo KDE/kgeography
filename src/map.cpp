@@ -120,9 +120,9 @@ KLocalizedString KGmap::getCapitalToDivisionQuestionPattern() const
 	return ki18nc("@title:group", p_capitalToDivisionPattern.toUtf8());
 }
 
-QString KGmap::getDivisionToCapitalQuestionPattern() const
+KLocalizedString KGmap::getDivisionToCapitalQuestionPattern() const
 {
-	return p_divisionToCapitalPattern;
+	return ki18nc("@title:group", p_divisionToCapitalPattern.toUtf8());
 }
 
 QString KGmap::getCapitalToDivisionTitle() const
