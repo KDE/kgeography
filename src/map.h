@@ -11,6 +11,8 @@
 #ifndef MAP_H
 #define MAP_H
 
+#include <klocalizedstring.h>
+
 #include <qcolor.h>
 #include <qmap.h>
 
@@ -51,7 +53,7 @@ class KGmap
 		QColor getColor(const QString &s) const;
 		QList<const division*> getIgnoredDivisions(division::askMode am) const;
 		QList<const division*> getAllDivisionsOrdered() const;
-		QString getCapitalToDivisionQuestionPattern() const;
+		KLocalizedString getCapitalToDivisionQuestionPattern() const;
 		QString getDivisionToCapitalQuestionPattern() const;
 		QString getCapitalToDivisionTitle() const;
 		QString getDivisionToCapitalTitle() const;

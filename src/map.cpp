@@ -115,9 +115,9 @@ QStringList KGmap::getDivisionFalseCapitals(const QString &divisionName) const
 	return getDivision(divisionName) -> getFalseCapitals();
 }
 
-QString KGmap::getCapitalToDivisionQuestionPattern() const
+KLocalizedString KGmap::getCapitalToDivisionQuestionPattern() const
 {
-	return p_capitalToDivisionPattern;
+	return ki18nc("@title:group", p_capitalToDivisionPattern.toUtf8());
 }
 
 QString KGmap::getDivisionToCapitalQuestionPattern() const

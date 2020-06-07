@@ -31,7 +31,7 @@ bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int
 		p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is capital name", "%1", p_capital));
 		p_currentAnswer.setCorrectAnswer(i18nc("@option:radio <City> is the capital of...", "%1", divisionName));
 
-		setQuestion(i18nc("@title:group", p_map->getCapitalToDivisionQuestionPattern().toUtf8(), p_capital));
+		setQuestion(p_map->getCapitalToDivisionQuestionPattern().subs(p_capital).toString());
 		p_radioButtons[i] -> setText(i18nc("@option:radio <City> is the capital of...", "%1", divisionName));
 		b = true;
 	}
