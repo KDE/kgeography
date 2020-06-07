@@ -41,6 +41,11 @@ bool division::canAsk(askMode am) const
 	return can;
 }
 
+QString division::getUntranslatedName() const
+{
+	return p_untranslatedName;
+}
+
 QString division::getName() const
 {
 	return p_name;
@@ -79,6 +84,11 @@ void division::setFalseCapitals(const QStringList &falseCapitals)
 void division::setCanAsk(int askMode)
 {
 	p_askMode = askMode;
+}
+
+void division::setUntranslatedName(const QString &name)
+{
+	p_untranslatedName = name;
 }
 
 void division::setName(const QString &name)

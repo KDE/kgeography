@@ -25,6 +25,7 @@ class division
 		               eFlag = 4};
 		
 		bool canAsk(askMode am) const;
+		QString getUntranslatedName() const;
 		QString getName() const;
 		QRgb getRGB() const;
 		QString getFlagFile() const;
@@ -34,12 +35,13 @@ class division
 		void setCapital(const QString &name);
 		void setFalseCapitals(const QStringList &falseCapitals);
 		void setCanAsk(int askMode);
+		void setUntranslatedName(const QString &name);
 		void setName(const QString &name);
 		void setRGB(int r, int g, int b);
 		bool setFlagFile(const QString &path);
 		
 	private:
-		QString p_name, p_flagFile, p_capital;
+		QString p_untranslatedName, p_name, p_flagFile, p_capital;
 		QStringList p_falseCapitals;
 		QRgb p_color;
 		int p_askMode;
