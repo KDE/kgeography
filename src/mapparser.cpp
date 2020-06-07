@@ -43,7 +43,7 @@ KGmap *mapReader::parseMap(const QString &path)
 				const QByteArray ctxt = kgmap -> getFileName().toUtf8();
 				
 				// Map name
-				kgmap -> setName( getElementString(QStringLiteral("name"), root, Mandatory) );
+				kgmap -> setName(i18nc(ctxt, getElementString(QStringLiteral("name"), root, Mandatory).toUtf8()));
 				
 				// Map image file
 				if (!kgmap -> setMapFile( baseDir + getElementString(QStringLiteral("mapFile"), root, Mandatory) ))
@@ -63,7 +63,7 @@ KGmap *mapReader::parseMap(const QString &path)
 				else if ( ! pat.isEmpty() )
 				{
 					QTextStream stream(stderr);
-					stream << "capitalToDivisionPattern element should contain one '%%' in map " << kgmap->getName();
+					stream << "capitalToDivisionPattern element should contain one '%%' in map " << kgmap->getName() << kgmap -> getFile();
 				}
 
 				pat = getElementString(QStringLiteral("divisionToCapitalPattern"), root, Optional);
@@ -74,7 +74,7 @@ KGmap *mapReader::parseMap(const QString &path)
 				else if ( ! pat.isEmpty() )
 				{
 					QTextStream stream(stderr);
-					stream << "divisionToCapitalPattern element should contain one '%%' in map " << kgmap->getName();
+					stream << "divisionToCapitalPattern element should contain one '%%' in map " << kgmap->getName() << kgmap -> getFile();
 				}
 
 				QString title = getElementString(QStringLiteral("capitalToDivisionTitle"), root, Optional);

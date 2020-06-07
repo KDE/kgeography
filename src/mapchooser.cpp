@@ -78,7 +78,7 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 				errorTexts << i18n("Error parsing %1: %2", mapFilename, p_reader.getError());
 			else
 			{
-				QString text = i18nc(m->getFileName().toUtf8(), m->getName().toUtf8());
+				QString text = m -> getName();
 				// avoid multiple and should guarantee that first in XDG_DATA_DIRS is chosen)
 				if (texts.contains(text))
 					delete m;
