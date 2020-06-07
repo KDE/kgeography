@@ -18,6 +18,7 @@
 #include <qradiobutton.h>
 
 #include "map.h"
+#include "division.h"
 
 class flagWidget : public QWidget
 {
@@ -46,24 +47,25 @@ flagDivisionAsker::flagDivisionAsker(QWidget *parent, KGmap *m, QWidget *w, uint
 
 bool flagDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
 {
+	const class division *vDivision = p_map -> getDivision(division);
 	if (isAnswer)
 	{
 		// we put the flag image
-		QImage image(p_map -> getDivisionFlagFile(division));
+		QImage image(vDivision -> getFlagFile());
 		p_flag -> img = image;
 		p_flag -> setMinimumSize(image.size());
 		p_flag -> update();
 		
 		p_currentAnswer.setQuestion(QPixmap::fromImage(image.scaled(image.width()/5, image.height()/5, Qt::IgnoreAspectRatio, Qt::SmoothTransformation)));
-		p_currentAnswer.setCorrectAnswer(i18nc("@option:radio This flag belongs to:", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
+		p_currentAnswer.setCorrectAnswer(i18nc("@option:radio This flag belongs to:", "%1", vDivision -> getName()));
 	}
 	else
 	{
 		// There are some maps like the Pacific one where two divisions have the same flag
-		QImage image(p_map -> getDivisionFlagFile(division));
+		QImage image(vDivision -> getFlagFile());
 		if (p_flag -> img == image) return false;
 	}
-	p_radioButtons[i] -> setText(i18nc("@option:radio This flag belongs to:", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
+	p_radioButtons[i] -> setText(i18nc("@option:radio This flag belongs to:", "%1", vDivision -> getName()));
 	
 	return true;
 }

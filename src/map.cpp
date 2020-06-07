@@ -34,8 +34,8 @@ KGmap::~KGmap()
 bool KGmap::addDivision(division *d)
 {
 	bool b;
-	if ( ( getDivision(d -> getName()) == NULL && getDivision(d -> getRGB()) == NULL ) || 
-	     ( getDivision(d -> getName()) != NULL && getDivision(d -> getRGB()) == NULL && !d->canAsk(division::eClick) && !getDivision(d -> getName())->canAsk(division::eClick) ) )
+	if ( ( getDivision(d -> getUntranslatedName()) == NULL && getDivision(d -> getRGB()) == NULL ) || 
+	     ( getDivision(d -> getUntranslatedName()) != NULL && getDivision(d -> getRGB()) == NULL && !d->canAsk(division::eClick) && !getDivision(d -> getUntranslatedName())->canAsk(division::eClick) ) )
 	{
 		p_divisions.append(d);
 		b = true;
@@ -167,7 +167,7 @@ QString KGmap::getRandomDivision(division::askMode am) const
 	QList<division*> aux;
 	int i = (int)((float)p_divisions.size() * KRandom::random() / (RAND_MAX + 1.0));
 	if (!p_divisions[i] -> canAsk(am)) return getRandomDivision(am);
-	else return p_divisions[i] -> getName();
+	else return p_divisions[i] -> getUntranslatedName();
 }
 
 QString KGmap::getWhatIs(QRgb c, bool all) const
@@ -177,8 +177,8 @@ QString KGmap::getWhatIs(QRgb c, bool all) const
 	if (d == NULL) return QStringLiteral("nothing");
 	else
 	{
-		if (all) return d -> getName();
-		else if (d -> canAsk(division::eClick)) return d -> getName();
+		if (all) return d -> getUntranslatedName();
+		else if (d -> canAsk(division::eClick)) return d -> getUntranslatedName();
 		else return QLatin1String("");
 	}
 }
@@ -214,7 +214,7 @@ division *KGmap::getDivision(const QString &divisionName) const
 {
 	foreach (division* div, p_divisions)
 	{
-		if (div->getName() == divisionName) return div;
+		if (div->getUntranslatedName() == divisionName) return div;
 	}
 	return NULL;
 }

@@ -145,15 +145,16 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 	}
 	else if (!p_asker)
 	{
-		QString flagFile = p_map -> getDivisionFlagFile(aux);
-		if (p_map -> getDivisionCanAsk(aux, division::eCapital)) cap = p_map -> getDivisionCapital(aux);
+		const division *vDivision = p_map -> getDivision(aux);
+		QString flagFile = vDivision -> getFlagFile();
+		if (vDivision -> canAsk(division::eCapital)) cap = vDivision -> getCapital();
 		if (!cap.isEmpty()) cap = i18nc("@item Capital name in map popup", "%1", cap);
 
 		QString wikiLink (guessWikipediaDomain());
-		wikiLink.append(i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8()));
-		if (!p_map -> getDivisionCanAsk(aux, division::eClick)) wikiLink = QLatin1String("");
+		wikiLink.append(vDivision -> getName ());
+		if (!vDivision -> canAsk(division::eClick)) wikiLink = QLatin1String("");
 
-		aux = i18nc("@item Region name in map popup", "%1", i18nc(p_map -> getFileName().toUtf8(), aux.toUtf8()));
+		aux = i18nc("@item Region name in map popup", "%1", vDivision -> getName ());
 		
 		if (!flagFile.isEmpty()) p_popupManager.show(aux, wikiLink, cap, p, flagFile);
 		else if (!cap.isEmpty()) p_popupManager.show(aux, wikiLink, cap , p);
@@ -179,7 +180,7 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 		{
 			vDivision = p_map->getDivision(vColorRgb);
 		}
-		vDivisionName = i18nc(p_map -> getFileName().toUtf8(), vDivision->getName().toUtf8());
+		vDivisionName = vDivision -> getName();
 		vAnswer.append(vDivisionName);
 		p_currentAnswer.setAnswer(vAnswer);
 		questionAnswered(aux == correctDivision);
@@ -189,9 +190,9 @@ void mapAsker::handleMapClick(QRgb c, const QPoint &p)
 
 void mapAsker::nextQuestionHook(const QString &division)
 {
-	QString divisionName = i18nc(p_map -> getFileName().toUtf8(), division.toUtf8());
+	const QString divisionName = p_map -> getDivision(division) -> getName();
 	p_next -> setText(i18nc("@info:status", "Please click on:<br/><b>%1</b>", divisionName));
-	p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is region name", "%1", i18nc(p_map -> getFileName().toUtf8(), division.toUtf8())));
+	p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is region name", "%1", divisionName));
 	p_next -> show();
 	QRgb c = p_map -> getColor(division).rgb();
 	p_currentAnswer.setCorrectAnswer(QColor(c));

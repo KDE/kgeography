@@ -56,10 +56,9 @@ class KGmap
 		QString getCapitalToDivisionTitle() const;
 		QString getDivisionToCapitalTitle() const;
 		division *getDivision(QRgb c) const;
+		division *getDivision(const QString &divisionName) const;
 		
 	private:
-		division *getDivision(const QString &divisionName) const;
-
 		QList<division*> p_divisions;
 		
 		QString p_name, p_file, p_mapFile;

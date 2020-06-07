@@ -108,7 +108,7 @@ KGmap *mapReader::parseMap(const QString &path)
 					
 					// division name
 					kgdiv -> setUntranslatedName( getElementString(QStringLiteral("name"), divisionTag, Mandatory) );
-					kgdiv -> setName( kgdiv -> getUntranslatedName() );
+					kgdiv -> setName(i18nc(ctxt, kgdiv -> getUntranslatedName().toUtf8()));
 					
 					// division capital
 					QString capital = getElementString(QStringLiteral("capital"), divisionTag, Optional);
