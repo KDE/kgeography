@@ -34,8 +34,10 @@ KGmap::~KGmap()
 bool KGmap::addDivision(division *d)
 {
 	bool b;
-	if ( ( getDivision(d -> getUntranslatedName()) == NULL && getDivision(d -> getRGB()) == NULL ) || 
-	     ( getDivision(d -> getUntranslatedName()) != NULL && getDivision(d -> getRGB()) == NULL && !d->canAsk(division::eClick) && !getDivision(d -> getUntranslatedName())->canAsk(division::eClick) ) )
+	const division *divByName = getDivision(d -> getUntranslatedName());
+	const division *divByColor = getDivision(d -> getRGB());
+	if ( ( divByName == NULL && divByColor == NULL ) || 
+	     ( divByName != NULL && divByColor == NULL && !d->canAsk(division::eClick) && !divByName->canAsk(division::eClick) ) )
 	{
 		p_divisions.append(d);
 		b = true;
