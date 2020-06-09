@@ -100,21 +100,6 @@ uint KGmap::count(division::askMode am) const
 	return count;
 }
 
-QString KGmap::getDivisionFlagFile(const QString &s) const
-{
-	return getDivision(s) -> getFlagFile();
-}
-
-QString KGmap::getDivisionCapital(const QString &s) const
-{
-	return getDivision(s) -> getCapital();
-}
-
-QStringList KGmap::getDivisionFalseCapitals(const QString &divisionName) const
-{
-	return getDivision(divisionName) -> getFalseCapitals();
-}
-
 KLocalizedString KGmap::getCapitalToDivisionQuestionPattern() const
 {
 	return ki18nc("@title:group", p_capitalToDivisionPattern.toUtf8());
@@ -226,9 +211,4 @@ division *KGmap::getDivision(QRgb c) const
 		if (div->getRGB() == c) return div;
 	}
 	return NULL;
-}
-
-bool KGmap::getDivisionCanAsk(const QString &div, division::askMode am) const
-{
-	return getDivision(div) -> canAsk(am);
 }
