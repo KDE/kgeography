@@ -81,10 +81,13 @@ void askWidget::nextQuestion()
 	QString aux;
 	if (p_asked.count() < p_count)
 	{
-		aux = p_map -> getRandomDivision(askMode());
-		while (p_asked.indexOf(aux) != -1) aux = p_map -> getRandomDivision(askMode());
+		division *div;
+		do
+		{
+			div = p_map -> getRandomDivision(askMode());
+			aux = div -> getUntranslatedName();
+		} while (p_asked.indexOf(aux) != -1);
 		p_asked << aux;
-		const division *div = p_map -> getDivision(aux);
 		nextQuestionHook(div);
 	}
 	else emit questionsEnded();

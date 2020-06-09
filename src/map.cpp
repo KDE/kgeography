@@ -162,12 +162,12 @@ QString KGmap::getDivisionsString() const
 	else return p_divisionsString;
 }
 
-QString KGmap::getRandomDivision(division::askMode am) const
+division *KGmap::getRandomDivision(division::askMode am) const
 {
 	QList<division*> aux;
 	int i = (int)((float)p_divisions.size() * KRandom::random() / (RAND_MAX + 1.0));
 	if (!p_divisions[i] -> canAsk(am)) return getRandomDivision(am);
-	else return p_divisions[i] -> getUntranslatedName();
+	else return p_divisions[i];
 }
 
 QString KGmap::getWhatIs(QRgb c, bool all) const

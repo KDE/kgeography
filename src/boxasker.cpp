@@ -201,10 +201,12 @@ void boxAsker::nextQuestionHook(const division *div)
 	{
 		if (p_radioButtons[j] -> text().isNull() && p_radioButtons[j] -> icon().isNull())
 		{
-			otherDivision = p_map -> getRandomDivision(askMode());
-			while (auxList.contains(otherDivision))
-				otherDivision = p_map -> getRandomDivision(askMode());
-			const division *otherDiv = p_map -> getDivision(otherDivision);
+			division *otherDiv;
+			do
+			{
+				otherDiv = p_map -> getRandomDivision(askMode());
+				otherDivision = otherDiv -> getUntranslatedName();
+			} while (auxList.contains(otherDivision));
 			if (nextBoxAskerQuestionHook(otherDiv, j, false))
 				++j;
 			auxList << otherDivision;

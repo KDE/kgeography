@@ -47,7 +47,7 @@ class KGmap
 		QString getMapFile() const;
 		QString getName() const;
 		QString getDivisionsString() const;
-		QString getRandomDivision(division::askMode am) const;
+		division *getRandomDivision(division::askMode am) const;
 		QString getWhatIs(QRgb c, bool all) const;
 		QString getAuthor() const;
 		QColor getColor(const QString &s) const;
