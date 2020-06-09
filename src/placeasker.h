@@ -33,7 +33,7 @@ Q_OBJECT
 		bool isAsker() const;
 
 	protected:
-		void nextQuestionHook(const QString &division) override;
+		void nextQuestionHook(const division *div) override;
 		void mousePressEvent(QMouseEvent *e) override;
 		QString getQuestionHook() const override;
 		division::askMode askMode() const override { return division::eClick; }
@@ -48,7 +48,7 @@ Q_OBJECT
 		void handleMapClick(QRgb c, const QPoint &, const QPointF &mapPoint);
 	
 	private:
-		void setCurrentDivision(const QString& division);
+		void setCurrentDivision(const division *div);
 
 		QLabel *p_next;
 		QWidget *p_fill;

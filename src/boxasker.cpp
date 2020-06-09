@@ -175,7 +175,7 @@ void boxAsker::keyReleaseEvent(QKeyEvent *e)
 	else askWidget::keyReleaseEvent(e);
 }
 
-void boxAsker::nextQuestionHook(const QString &division)
+void boxAsker::nextQuestionHook(const division *div)
 {
 	QString otherDivision;
 	QStringList auxList;
@@ -189,11 +189,11 @@ void boxAsker::nextQuestionHook(const QString &division)
 
 	p_accept -> setEnabled(false);
 
-	auxList << division;
+	auxList << div -> getUntranslatedName ();
 
 	// we put the division in a random place
 	p_position = (int)((float)NB_CHOICES * KRandom::random() / (RAND_MAX + 1.0));
-	nextBoxAskerQuestionHook(division, p_position, true);
+	nextBoxAskerQuestionHook(div, p_position, true);
 
 	// fill the other names
 	j = 0;
@@ -204,7 +204,8 @@ void boxAsker::nextQuestionHook(const QString &division)
 			otherDivision = p_map -> getRandomDivision(askMode());
 			while (auxList.contains(otherDivision))
 				otherDivision = p_map -> getRandomDivision(askMode());
-			if (nextBoxAskerQuestionHook(otherDivision, j, false))
+			const division *otherDiv = p_map -> getDivision(otherDivision);
+			if (nextBoxAskerQuestionHook(otherDiv, j, false))
 				++j;
 			auxList << otherDivision;
 		}

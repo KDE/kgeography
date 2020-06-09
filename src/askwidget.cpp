@@ -84,7 +84,8 @@ void askWidget::nextQuestion()
 		aux = p_map -> getRandomDivision(askMode());
 		while (p_asked.indexOf(aux) != -1) aux = p_map -> getRandomDivision(askMode());
 		p_asked << aux;
-		nextQuestionHook(aux);
+		const division *div = p_map -> getDivision(aux);
+		nextQuestionHook(div);
 	}
 	else emit questionsEnded();
 }

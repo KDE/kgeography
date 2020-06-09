@@ -184,16 +184,16 @@ void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint
 	}
 }
 
-void placeAsker::nextQuestionHook(const QString &division)
+void placeAsker::nextQuestionHook(const division *div)
 {
-	const QString divisionName = p_map -> getDivision(division) -> getName();
+	const QString divisionName = div -> getName();
 	p_next -> setText(i18nc("@info:status", "Please place in the map:<br/><b>%1</b>", divisionName));
 	p_next -> show();
 	p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is region name", "%1", divisionName));
-	QColor color = p_map -> getColor(division);
+	QColor color = QColor(div -> getRGB());
 	p_currentRgb = color.rgb();
 	p_currentAnswer.setCorrectAnswer(color);
-	setCurrentDivision(division);
+	setCurrentDivision(div);
 	p_mapWidget->setCurrentDivisionImage(p_currentDivisionImage);
 }
 
@@ -208,7 +208,7 @@ QSize placeAsker::mapSize() const
 	return p_mapWidget -> mapSize();
 }
 
-void placeAsker::setCurrentDivision(const QString& division)
+void placeAsker::setCurrentDivision(const division *div)
 {
 	int width = p_mapImage->width();
 	int height = p_mapImage->height();
@@ -218,7 +218,7 @@ void placeAsker::setCurrentDivision(const QString& division)
 	int minY = height;
 	int maxY = 0;
 
-	QRgb divColor = p_map->getColor(division).rgb();
+	QRgb divColor = div -> getRGB();
 
 	//first iteration, detect size required by the image
 	for (int x = 0; x < width; x++)

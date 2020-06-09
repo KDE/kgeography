@@ -31,7 +31,7 @@ Q_OBJECT
 		bool isAsker() const;
 		
 	protected:
-		void nextQuestionHook(const QString &division) override;
+		void nextQuestionHook(const division *div) override;
 		void mousePressEvent(QMouseEvent *e) override;
 		QString getQuestionHook() const override;
 		void showEvent(QShowEvent *e) override;

@@ -45,27 +45,26 @@ flagDivisionAsker::flagDivisionAsker(QWidget *parent, KGmap *m, QWidget *w, uint
 	init();
 }
 
-bool flagDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
+bool flagDivisionAsker::nextBoxAskerQuestionHook(const division *div, int i, bool isAnswer)
 {
-	const class division *vDivision = p_map -> getDivision(division);
 	if (isAnswer)
 	{
 		// we put the flag image
-		QImage image(vDivision -> getFlagFile());
+		QImage image(div -> getFlagFile());
 		p_flag -> img = image;
 		p_flag -> setMinimumSize(image.size());
 		p_flag -> update();
 		
 		p_currentAnswer.setQuestion(QPixmap::fromImage(image.scaled(image.width()/5, image.height()/5, Qt::IgnoreAspectRatio, Qt::SmoothTransformation)));
-		p_currentAnswer.setCorrectAnswer(i18nc("@option:radio This flag belongs to:", "%1", vDivision -> getName()));
+		p_currentAnswer.setCorrectAnswer(i18nc("@option:radio This flag belongs to:", "%1", div -> getName()));
 	}
 	else
 	{
 		// There are some maps like the Pacific one where two divisions have the same flag
-		QImage image(vDivision -> getFlagFile());
+		QImage image(div -> getFlagFile());
 		if (p_flag -> img == image) return false;
 	}
-	p_radioButtons[i] -> setText(i18nc("@option:radio This flag belongs to:", "%1", vDivision -> getName()));
+	p_radioButtons[i] -> setText(i18nc("@option:radio This flag belongs to:", "%1", div -> getName()));
 	
 	return true;
 }

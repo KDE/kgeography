@@ -21,13 +21,13 @@ capitalDivisionAsker::capitalDivisionAsker(QWidget *parent, KGmap *m, QWidget *w
 	init();
 }
 
-bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
+bool capitalDivisionAsker::nextBoxAskerQuestionHook(const division *div, int i, bool isAnswer)
 {
 	bool b;
 	if (isAnswer)
 	{
-		const QString divisionName = p_map -> getDivision(division) -> getName();
-		p_capital = p_map -> getDivisionCapital(division);
+		const QString divisionName = div -> getName();
+		p_capital = div -> getCapital();
 		p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is capital name", "%1", p_capital));
 		p_currentAnswer.setCorrectAnswer(i18nc("@option:radio <City> is the capital of...", "%1", divisionName));
 
@@ -44,9 +44,9 @@ bool capitalDivisionAsker::nextBoxAskerQuestionHook(const QString &division, int
 		// Akershus (true)
 		// Buskerud
 		// Hedmark
-		if (p_map -> getDivisionCapital(division) != p_capital)
+		if (div -> getCapital() != p_capital)
 		{
-			const QString divisionName = p_map -> getDivision(division) -> getName();
+			const QString divisionName = div -> getName();
 			p_radioButtons[i] -> setText(i18nc("@option:radio <City> is the capital of...", "%1", divisionName));
 			b = true;
 		}

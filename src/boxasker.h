@@ -32,8 +32,8 @@ Q_OBJECT
 		void updateLayout();
 
 	protected:
-		virtual bool nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer) = 0;
-		void nextQuestionHook(const QString &division) override;
+		virtual bool nextBoxAskerQuestionHook(const division *div, int i, bool isAnswer) = 0;
+		void nextQuestionHook(const division *div) override;
 		void setQuestion(const QString &q);
 		virtual void setAnswerHook(int userSays) = 0;
 

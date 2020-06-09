@@ -19,7 +19,7 @@ class divisionCapitalAsker : public boxAsker
 		divisionCapitalAsker(QWidget *parent, KGmap *m, QWidget *w, uint count);
 
 	protected:
-		bool nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer) override;
+		bool nextBoxAskerQuestionHook(const division *div, int i, bool isAnswer) override;
 		void setAnswerHook(int userSays) override;
 		QString getQuestionHook() const override;
 		division::askMode askMode() const override { return division::eCapital; }

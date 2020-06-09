@@ -22,13 +22,13 @@ divisionFlagAsker::divisionFlagAsker(QWidget *parent, KGmap *m, QWidget *w, uint
 	init();
 }
 
-bool divisionFlagAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
+bool divisionFlagAsker::nextBoxAskerQuestionHook(const division *div, int i, bool isAnswer)
 {
 	QSize pixmapSize(60, 40);
-	QIcon icon(p_map -> getDivisionFlagFile(division));
+	QIcon icon(div -> getFlagFile());
 	if (isAnswer)
 	{
-		const QString divisionName = p_map -> getDivision(division) -> getName();
+		const QString divisionName = div -> getName();
 		setQuestion(i18nc("@title:group", "The flag of %1 is...", divisionName));
 		p_currentAnswer.setCorrectAnswer(icon.pixmap(QSize(60, 40)));
 		p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is region name", "%1", divisionName));

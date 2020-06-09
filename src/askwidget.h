@@ -50,7 +50,7 @@ Q_OBJECT
 		void clearAsked();
 		QString lastDivisionAsked();
 		void nextQuestion();
-		virtual void nextQuestionHook(const QString &division) = 0;
+		virtual void nextQuestionHook(const division *div) = 0;
 		virtual division::askMode askMode() const = 0;
 		void questionAnswered(bool wasCorrect);
 		void resetAnswers();

@@ -22,20 +22,20 @@ divisionCapitalAsker::divisionCapitalAsker(QWidget *parent, KGmap *m, QWidget *w
 	init();
 }
 
-bool divisionCapitalAsker::nextBoxAskerQuestionHook(const QString &division, int i, bool isAnswer)
+bool divisionCapitalAsker::nextBoxAskerQuestionHook(const division *div, int i, bool isAnswer)
 {
 	bool b;
 	if (isAnswer)
 	{
-		const QString divisionName = p_map -> getDivision(division) -> getName();
+		const QString divisionName = div -> getName();
 		setQuestion(p_map->getDivisionToCapitalQuestionPattern().subs(divisionName).toString());
 		p_currentAnswer.setQuestion(i18nc("@item:intable column Question, %1 is region name", "%1", divisionName));
-		p_capital = p_map -> getDivisionCapital(division);
+		p_capital = div -> getCapital();
 		p_currentAnswer.setCorrectAnswer(i18nc("@option:radio The capital of <Region> is...", "%1", p_capital));
 		p_radioButtons[i] -> setText(i18nc("@option:radio The capital of <Region> is...", "%1", p_capital));
 		b = true;
 		
-		QStringList falseCapitals = p_map -> getDivisionFalseCapitals(division);
+		QStringList falseCapitals = div -> getFalseCapitals();
 		int index = 0;
 		while (!falseCapitals.isEmpty() && index < 4)
 		{
@@ -52,7 +52,7 @@ bool divisionCapitalAsker::nextBoxAskerQuestionHook(const QString &division, int
 	else
 	{
 		QString capital;
-		capital = p_map -> getDivisionCapital(division);
+		capital = div -> getCapital();
 		// There are crazy countries like Norway where two different divisions
 		// have the same capital, avoid asking
 		// The capital of Akershus is ...
