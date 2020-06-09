@@ -30,6 +30,7 @@ sub print_header
 {
 	my ($map_file, $map_name) = @_;
 
+	print "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n";
 	print "<map>\n";
 
 	print "\t<mapFile>$map_file</mapFile>\n";

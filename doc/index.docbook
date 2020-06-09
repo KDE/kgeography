@@ -354,7 +354,7 @@ on the &kgeography; website.
 <sect1 id="description-file">
 <title>Description file</title>
 <para>
- The description file is needed and its file extension is <literal role="extension">.kgm</literal>. It should begin with <sgmltag class="starttag">!DOCTYPE kgeographyMap</sgmltag>, followed by <sgmltag class="starttag">map</sgmltag> and end with <sgmltag class="endtag">map</sgmltag>.
+ The description file is needed and its file extension is <literal role="extension">.kgm</literal>. It should begin with <sgmltag class="starttag">?xml version="1.0" encoding="utf-8"</sgmltag>, then <sgmltag class="starttag">!DOCTYPE kgeographyMap</sgmltag>, followed by <sgmltag class="starttag">map</sgmltag> and end with <sgmltag class="endtag">map</sgmltag>.
 </para>
 <para>
  Inside of those tags there should be:
