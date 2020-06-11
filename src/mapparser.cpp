@@ -198,7 +198,7 @@ QString mapReader::getElementString(const QString &tagName, const QDomElement &p
 	}
 	else
 	{
-		if (tag == parentTag.lastChildElement(tagName))
+		if (tag.nextSiblingElement(tagName).isNull())
 		{
 			result = tag.text();
 		}
@@ -219,7 +219,7 @@ QDomElement mapReader::getElement(const QString &tagName, const QDomElement &par
 	}
 	else
 	{
-		if (tag != parentTag.lastChildElement(tagName))
+		if (!tag.nextSiblingElement(tagName).isNull())
 		{
 			p_error = i18n("The map description file should have exactly one %1 tag inside %2", tagName, parentTag.tagName());
 		}
