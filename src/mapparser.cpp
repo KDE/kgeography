@@ -82,19 +82,11 @@ KGmap *mapReader::parseMap(const QString &path)
 				{
 					kgmap->setCapitalToDivisionTitle(i18nc("@title", title.toUtf8()));
 				}
-				else
-				{
-					kgmap->setCapitalToDivisionTitle(i18n("%1 by Capital", kgmap -> getDivisionsString()));
-				}
 
 				title = getElementString(QStringLiteral("divisionToCapitalTitle"), root, Optional);
 				if ( ! title.isEmpty() )
 				{
 					kgmap->setDivisionToCapitalTitle(i18nc("@title", title.toUtf8()));
-				}
-				else
-				{
-					kgmap->setDivisionToCapitalTitle(i18n("Capitals of %1", kgmap -> getDivisionsString()));
 				}
 
 				

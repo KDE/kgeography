@@ -114,12 +114,14 @@ KLocalizedString KGmap::getDivisionToCapitalQuestionPattern() const
 
 QString KGmap::getCapitalToDivisionTitle() const
 {
-	return p_capitalToDivisionTitle;
+	if (p_capitalToDivisionTitle.isNull()) return i18n("%1 by Capital", getDivisionsString());
+	else return p_capitalToDivisionTitle;
 }
 
 QString KGmap::getDivisionToCapitalTitle() const
 {
-	return p_divisionToCapitalTitle;
+	if (p_divisionToCapitalTitle.isNull()) return i18n("Capitals of %1", getDivisionsString());
+	else return p_divisionToCapitalTitle;
 }
 
 QString KGmap::getFile() const
