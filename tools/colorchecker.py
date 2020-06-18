@@ -27,8 +27,7 @@ if len(sys.argv) == 1:
 	print("Error: You have to specify the file to check")
 	sys.exit(1)
 
-for fileIndex in range(1, len(sys.argv)):
-	path = sys.argv[fileIndex]
+for path in sys.argv[1:]:
 	print("Processing " + path)
 	xmlFile = QtCore.QFile(path)
 
