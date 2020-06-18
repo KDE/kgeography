@@ -50,7 +50,7 @@ for fileIndex in range(1, len(sys.argv)):
 					print ("Error: Map file {} does not exist".format(imagePath))
 					sys.exit(2)
 
-				colorList = [];
+				colorList = set()
 				divisionTag = root.firstChildElement("division");
 				while not divisionTag.isNull():
 					colorTag = divisionTag.firstChildElement("color");
@@ -59,7 +59,7 @@ for fileIndex in range(1, len(sys.argv)):
 					blue = int(colorTag.firstChildElement("blue").text())
 					rgba = (red, green, blue, 255)
 					if rgba not in colorList:
-						colorList.append(rgba)
+						colorList.add(rgba)
 					else:
 						print("Error: The color {},{},{} is used more than once in the kgm file".format(red, green, blue))
 
@@ -71,7 +71,7 @@ for fileIndex in range(1, len(sys.argv)):
 					print("Error: The PNG file should be in indexed color mode")
 				image = image.convert('RGBA')
 				usedColors = set([rgba for count, rgba in image.getcolors()])
-				notFoundColors = usedColors - set(colorList)
+				notFoundColors = usedColors - colorList
 
 				error |= len(notFoundColors) > 0
 				if notFoundColors:
@@ -86,7 +86,7 @@ for fileIndex in range(1, len(sys.argv)):
 									x, y, rgba[0], rgba[1], rgba[2], rgba[3]))
 								notFoundColorsToSearch.remove(rgba)
 
-				nonUsedColors = set(colorList)
+				nonUsedColors = colorList
 				nonUsedColors.difference_update(usedColors)
 				error |= len(nonUsedColors) > 0
 				for rgba in nonUsedColors:
