@@ -18,11 +18,10 @@
 
 import sys
 from PyQt5 import QtCore
-from PyQt5 import QtGui
 from PyQt5 import QtXml
 from PIL import Image
 
-app = QtGui.QGuiApplication(sys.argv)
+app = QtCore.QCoreApplication(sys.argv)
 
 if len(sys.argv) == 1:
 	print("Error: You have to specify the file to check")
