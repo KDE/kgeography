@@ -27,6 +27,7 @@
   <name xml:lang="sl">KGeography</name>
   <name xml:lang="sv">Kgeografi</name>
   <name xml:lang="uk">KGeography</name>
+  <name xml:lang="x-test">xxKGeographyxx</name>
   <name xml:lang="zh-CN">KGeography</name>
   <name xml:lang="zh-TW">KGeography</name>
   <summary>Geography learning tool</summary>
@@ -51,6 +52,7 @@
   <summary xml:lang="sl">Orodje za učenje zemljepisa</summary>
   <summary xml:lang="sv">Inlärningsverktyg av geografi</summary>
   <summary xml:lang="uk">Програма для вивчення географії</summary>
+  <summary xml:lang="x-test">xxGeography learning toolxx</summary>
   <summary xml:lang="zh-CN">地理学习工具</summary>
   <summary xml:lang="zh-TW">地理學習工具</summary>
   <description>
@@ -75,6 +77,7 @@
     <p xml:lang="sl">KGeography je orodje za učenje geografije, ki vam omogoča, da spoznate politične delitve nekaterih držav (dežele, glavna mesta teh dežel in z njimi povezane zastave, če obstajajo).</p>
     <p xml:lang="sv">Kgeografi är ett inlärningsverktyg av geografi, som gör att du kan lära dig om den politiska uppdelningen av ett antal länder (landsdelar, huvudstäder i dessa landsdelar och deras tillhörande flaggor om det finns några).</p>
     <p xml:lang="uk">KGgeography — інструмент з вивчення географії. Ця програма надасть вам змогу вивчити адміністративний устрій деяких країн (території, столиці цих територій і відповідні прапори, якщо такі є).</p>
+    <p xml:lang="x-test">xxKGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).xx</p>
     <p xml:lang="zh-CN">KGeography 是一个地理学习工具，它可以让你了解一些国家的政治分区 (分区，首都，及旗帜(如果有的话)) 。</p>
     <p>Features:</p>
     <p xml:lang="ca">Característiques:</p>
@@ -100,6 +103,7 @@
     <p xml:lang="sl">Možnosti:</p>
     <p xml:lang="sv">Funktioner:</p>
     <p xml:lang="uk">Можливості:</p>
+    <p xml:lang="x-test">xxFeatures:xx</p>
     <p xml:lang="zh-CN">功能：</p>
     <p xml:lang="zh-TW">功能：</p>
     <ul>
@@ -124,6 +128,7 @@
       <li xml:lang="sl">Brskajte po zemljevidih s klikom v razdelku zemljevida in si ogledate njegovo ime, glavno mesto in zastavo</li>
       <li xml:lang="sv">Läs kartan och klicka på en landsdel för att se dess namn, huvudstad och flagga</li>
       <li xml:lang="uk">Перегляд карти з натисканням на територіях, щоб побачити їх назви, столиці і прапори</li>
+      <li xml:lang="x-test">xxBrowse the maps clicking in a map division to see its name, capital and flagxx</li>
       <li xml:lang="zh-CN">浏览地图，点击地图分区查看它的名字，首都和旗帜</li>
       <li>The game tells you a map division name and you have to click on it</li>
       <li xml:lang="ca">El joc us mostra el nom d'una zona del mapa i heu de fer clic sobre el lloc on està</li>
@@ -146,6 +151,7 @@
       <li xml:lang="sl">Igra pove ime dela zemljevida in nanj morate klikniti</li>
       <li xml:lang="sv">Programmet talar om namnet på en landsdel och du ska klicka på den</li>
       <li xml:lang="uk">Гра з вгадування за назвою території на карті</li>
+      <li xml:lang="x-test">xxThe game tells you a map division name and you have to click on itxx</li>
       <li xml:lang="zh-CN">此游戏告诉您地图分区的名字，您必须点击它</li>
       <li>The game tells you a capital and you have to guess the division it belongs to</li>
       <li xml:lang="ca">El joc us mostra una capital i heu d'esbrinar el país a la qual pertany</li>
@@ -168,6 +174,7 @@
       <li xml:lang="sl">Igra vam pove glavno mesto in vi morate uganiti del, ki mu pripada</li>
       <li xml:lang="sv">Programmet namnger en huvudstad och du ska gissa vilken landsdel den hör till</li>
       <li xml:lang="uk">Гра з вгадування за столицею території на карті</li>
+      <li xml:lang="x-test">xxThe game tells you a capital and you have to guess the division it belongs toxx</li>
       <li xml:lang="zh-CN">此游戏告诉您首都，您必须猜它属于哪个分区</li>
       <li>The game tells you a division and you have to guess its capital</li>
       <li xml:lang="ca">El joc us mostra un país i heu d'esbrinar la seva capital</li>
@@ -190,6 +197,7 @@
       <li xml:lang="sl">Igra vam pove del ozemlja in ugibati morate njeno glavno mesto</li>
       <li xml:lang="sv">Programmet namnger en landsdel och du ska gissa dess huvudstad</li>
       <li xml:lang="uk">Гра з вгадування за територією на карті столиці цієї території</li>
+      <li xml:lang="x-test">xxThe game tells you a division and you have to guess its capitalxx</li>
       <li xml:lang="zh-CN">此游戏告诉您分区，您必须猜它的首都是什么</li>
       <li>The game shows you a map division flag and you have to guess its name</li>
       <li xml:lang="ca">El joc us mostra la bandera d'un país i heu d'esbrinar el seu nom</li>
@@ -212,6 +220,7 @@
       <li xml:lang="sl">Igra vam prikaže zastavico dela ozemlja in morate uganiti ime dela</li>
       <li xml:lang="sv">Programmet visar flaggan för en landsdel och du ska gissa dess namn</li>
       <li xml:lang="uk">Гра з вгадування назви території на карті за її прапором</li>
+      <li xml:lang="x-test">xxThe game shows you a map division flag and you have to guess its namexx</li>
       <li xml:lang="zh-CN">此游戏告诉您一个地图分区的旗帜，您必须猜它的名字</li>
       <li>The game tells you a map division name and you have to guess its flag</li>
       <li xml:lang="ca">El joc us mostra el nom d'un país i heu d'esbrinar la seva bandera</li>
@@ -234,6 +243,7 @@
       <li xml:lang="sl">Igra vam pove ime dela ozemlja in morate uganiti zastavo tega dela</li>
       <li xml:lang="sv">Programmet talar om namnet på en landsdel och du ska gissa dess flagga</li>
       <li xml:lang="uk">Гра з вгадування прапору території на карті за її назвою</li>
+      <li xml:lang="x-test">xxThe game tells you a map division name and you have to guess its flagxx</li>
       <li xml:lang="zh-CN">此游戏告诉您地图分区的名字，您必须猜它的旗帜</li>
       <li>The game shows an empty map and you have to place divisions on it one by one</li>
       <li xml:lang="ca">El joc us mostra un mapa buit i heu de situar les divisions una a una</li>
@@ -256,6 +266,7 @@
       <li xml:lang="sl">Igra prikazuje prazen zemljevid in na njem morate postaviti dele enega po enega</li>
       <li xml:lang="sv">Programmet visar en tom karta och du ska placera ut landsdelarna på den en i taget</li>
       <li xml:lang="uk">Гра у заповнення порожньої карти територіями одна за одною</li>
+      <li xml:lang="x-test">xxThe game shows an empty map and you have to place divisions on it one by onexx</li>
       <li xml:lang="zh-CN">此游戏显示一个空的地图，您必须把分区逐一放置在上面</li>
     </ul>
   </description>
@@ -288,6 +299,7 @@
       <caption xml:lang="sl">Vaja zemljepisa s KGeography</caption>
       <caption xml:lang="sv">Geografiövning med Kgeografi</caption>
       <caption xml:lang="uk">Вивчення географічних назв за допомогою KGeography</caption>
+      <caption xml:lang="x-test">xxTraining geography with KGeographyxx</caption>
       <caption xml:lang="zh-CN">使用 KGeography 训练地理知识</caption>
       <image type="source" width="1030" height="617">https://cdn.kde.org/screenshots/kgeography/kgeography.png</image>
     </screenshot>
