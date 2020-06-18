@@ -20,6 +20,7 @@ import sys
 from PyQt5 import QtCore
 from PyQt5 import QtGui
 from PyQt5 import QtXml
+from PIL import Image
 
 app = QtGui.QGuiApplication(sys.argv)
 
@@ -57,7 +58,7 @@ for fileIndex in range(1, len(sys.argv)):
 					red = int(colorTag.firstChildElement("red").text())
 					green = int(colorTag.firstChildElement("green").text())
 					blue = int(colorTag.firstChildElement("blue").text())
-					rgba = QtGui.qRgba(red, green, blue, 255)
+					rgba = (red, green, blue, 255)
 					if rgba not in colorList:
 						colorList.append(rgba)
 					else:
@@ -65,47 +66,33 @@ for fileIndex in range(1, len(sys.argv)):
 
 					divisionTag = divisionTag.nextSiblingElement("division");
 
-				image = QtGui.QImage(imagePath)
-				ct = image.colorTable()
-				error = len(image.colorTable()) == 0
+				image = Image.open(imagePath)
+				error = image.mode != 'P'
 				if error:
 					print("Error: The PNG file should be in indexed color mode")
-				ac = image.convertToFormat(QtGui.QImage.Format_Alpha8)
-				act = ac.colorTable()
-				usedColors = set()
-				notfoundcolors = {}
-				for x in range(0, image.width()):
-					for y in range(0, image.height()):
-						rgbcolor = image.pixel(x, y)
-						ipix = image.pixelIndex(x, y)
-						c = ct[ipix]
-						al0 = ac.pixel(x, y)
-						al = QtGui.qAlpha(al0)
-						rgba = QtGui.qRgba(QtGui.qRed(rgbcolor), QtGui.qGreen(rgbcolor), QtGui.qBlue(rgbcolor), al)
-						usedColors.add(rgba)
-						if rgbcolor not in colorList:
-							tri = notfoundcolors.get(rgba)
-							if tri is None:
-								notfoundcolors[rgba] = [(x, y), 1, (x, y)]
-							else:
-								tri[1] += 1
-								tri[2] = (x, y)
+				image = image.convert('RGBA')
+				usedColors = set([rgba for count, rgba in image.getcolors()])
+				notFoundColors = usedColors - set(colorList)
 
-				error |= len(notfoundcolors) > 0
-				for rgba, tri in notfoundcolors.items():
-					qcolor = QtGui.QColor.fromRgba(rgba)
-					first, c, last = tri
-					x, y = first
-					print ("Error: The pixel (%d ,%d) has color rgba %d,%d,%d,%d that is not defined in the kgm file" % (
-						x, y, qcolor.red(), qcolor.green(), qcolor.blue(), qcolor.alpha()))
+				error |= len(notFoundColors) > 0
+				if notFoundColors:
+					pixels = image.load()
+					width, height = image.size
+					notFoundColorsToSearch = notFoundColors
+					for x in range(width):
+						for y in range(height):
+							rgba = pixels[x, y]
+							if rgba in notFoundColorsToSearch:
+								print ("Error: The pixel (%d ,%d) has color rgba %d,%d,%d,%d that is not defined in the kgm file" % (
+									x, y, rgba[0], rgba[1], rgba[2], rgba[3]))
+								notFoundColorsToSearch.remove(rgba)
 
 				nonUsedColors = set(colorList)
 				nonUsedColors.difference_update(usedColors)
 				error |= len(nonUsedColors) > 0
 				for rgba in nonUsedColors:
-					qcolor = QtGui.QColor.fromRgba(rgba)
 					print("Error: the rgb(a) color {},{},{},({}) is absent from the png pixels".format(
-						qcolor.red(), qcolor.green(), qcolor.blue(), qcolor.alpha()))
+						rgba[0], rgba[1], rgba[2], rgba[3]))
 
 				if not error:
 					print("The map is correctly formed")
