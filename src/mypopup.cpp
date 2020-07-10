@@ -10,15 +10,16 @@
 
 #include "mypopup.h"
 
-#include <kiconloader.h>
-#include <klocalizedstring.h>
+#include <KIconLoader>
+#include <KLocalizedString>
 
-#include <qevent.h>
-#include <qicon.h>
-#include <qlabel.h>
-#include <qlayout.h>
-#include <qimage.h>
-#include <qdesktopservices.h>
+#include <QEvent>
+#include <QIcon>
+#include <QLabel>
+#include <QLayout>
+#include <QImage>
+#include <QDesktopServices>
+#include <QUrl>
 
 myPopup::myPopup(QWidget *parent, const QString &text, const QString &wikiLink, const QString &text2, const QString &flagFile) : QFrame(parent, Qt::FramelessWindowHint)
 {

@@ -18,7 +18,7 @@
 #include <QMouseEvent>
 #include <QScrollBar>
 
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 #include <math.h>
 
 #include "division.h"

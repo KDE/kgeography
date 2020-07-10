@@ -14,7 +14,7 @@
 #include <QFileInfo>
 #include <QTextStream>
 
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
 #include "division.h"
 #include "map.h"

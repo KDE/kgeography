@@ -10,11 +10,11 @@
 
 #include "integerinputdialog.h"
 
-#include <qspinbox.h>
-#include <qboxlayout.h>
-#include <qlabel.h>
-#include <qslider.h>
-#include <qdialogbuttonbox.h>
+#include <QSpinBox>
+#include <QBoxLayout>
+#include <QLabel>
+#include <QSlider>
+#include <QDialogButtonBox>
 
 IntegerInputDialog::IntegerInputDialog(QWidget *parent, const QString &title, const QString &question,
 				       int from, int upto, int byDefault)

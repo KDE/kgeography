@@ -10,7 +10,7 @@
 
 #include "division.h"
 
-#include <qfile.h>
+#include <QFile>
 
 division::division() : p_askMode(eClick | eCapital | eFlag)
 {

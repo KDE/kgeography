@@ -10,12 +10,12 @@
 
 #include "askwidget.h"
 
-#include <klocalizedstring.h>
-#include <kmessagebox.h>
+#include <KLocalizedString>
+#include <KMessageBox>
 
-#include <qapplication.h>
-#include <qlabel.h>
-#include <qlayout.h>
+#include <QApplication>
+#include <QLabel>
+#include <QLayout>
 
 #include "map.h"
 

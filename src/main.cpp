@@ -8,10 +8,10 @@
  *   (at your option) any later version.                                   *
  ***************************************************************************/
 
-#include <kaboutdata.h>
-#include <klocalizedstring.h>
-#include <qapplication.h>
-#include <qcommandlineparser.h>
+#include <KAboutData>
+#include <KLocalizedString>
+#include <QApplication>
+#include <QCommandLineParser>
 #include <Kdelibs4ConfigMigrator>
 #include <KCrash>
 #include "kgeography.h"

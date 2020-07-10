@@ -11,10 +11,10 @@
 #ifndef MAP_H
 #define MAP_H
 
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
-#include <qcolor.h>
-#include <qmap.h>
+#include <QColor>
+#include <QMap>
 
 #include "division.h"
 

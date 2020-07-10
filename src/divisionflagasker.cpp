@@ -10,10 +10,10 @@
 
 #include "divisionflagasker.h"
 
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
-#include <qimage.h>
-#include <qradiobutton.h>
+#include <QImage>
+#include <QRadioButton>
  
 #include "map.h"
 

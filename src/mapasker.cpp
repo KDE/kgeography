@@ -10,14 +10,14 @@
 
 #include "mapasker.h"
 
-#include <kmessagebox.h>
-#include <krandom.h>
-#include <klocalizedstring.h>
+#include <KMessageBox>
+#include <KRandom>
+#include <KLocalizedString>
 
-#include <qlabel.h>
-#include <qlayout.h>
-#include <qscrollbar.h>
-#include <qstring.h>
+#include <QLabel>
+#include <QLayout>
+#include <QScrollBar>
+#include <QString>
 
 #include "map.h"
 #include "mapwidget.h"

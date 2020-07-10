@@ -11,7 +11,7 @@
 #ifndef _INTEGER_INPUT_DIALOG_H
 #define _INTEGER_INPUT_DIALOG_H
 
-#include <qdialog.h>
+#include <QDialog>
 
 class QSpinBox;
 class QSlider;

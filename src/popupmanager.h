@@ -11,7 +11,7 @@
 #ifndef POPUPMANAGER_H
 #define POPUPMANAGER_H
 
-#include <qobject.h>
+#include <QObject>
 
 class QWidget;
 

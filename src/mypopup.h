@@ -11,7 +11,7 @@
 #ifndef MYPOPUP_H
 #define MYPOPUP_H
 
-#include <qframe.h>
+#include <QFrame>
 
 class QLabel;
 

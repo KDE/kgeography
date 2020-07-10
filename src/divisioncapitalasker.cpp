@@ -10,10 +10,10 @@
 
 #include "divisioncapitalasker.h"
 
-#include <klocalizedstring.h>
-#include <krandom.h>
+#include <KLocalizedString>
+#include <KRandom>
 
-#include <qradiobutton.h>
+#include <QRadioButton>
  
 #include "map.h"
 

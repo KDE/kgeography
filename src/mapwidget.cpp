@@ -16,7 +16,7 @@
 #include <QMouseEvent>
 #include <QScrollBar>
 
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 #include <math.h>
 
 mapWidget::mapWidget(QWidget *parent) : QGraphicsView(parent)

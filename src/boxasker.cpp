@@ -12,17 +12,18 @@
 
 #include <stdlib.h> // for RAND_MAX
 
-#include <kacceleratormanager.h>
-#include <klocalizedstring.h>
-#include <krandom.h>
+#include <KAcceleratorManager>
+#include <KLocalizedString>
+#include <KRandom>
 
-#include <qbuttongroup.h>
-#include <qgroupbox.h>
-#include <qevent.h>
-#include <qlabel.h>
-#include <qlayout.h>
-#include <qradiobutton.h>
-#include <qpushbutton.h>
+#include <QButtonGroup>
+#include <QGroupBox>
+#include <QEvent>
+#include <QLabel>
+#include <QLayout>
+#include <QRadioButton>
+#include <QPushButton>
+#include <QKeyEvent>
 
 #include "map.h"
 #include "settings.h"

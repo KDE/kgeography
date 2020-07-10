@@ -12,11 +12,11 @@
 
 #include <stdlib.h> // for RAND_MAX
 
-#include <klocalizedstring.h>
-#include <krandom.h>
+#include <KLocalizedString>
+#include <KRandom>
 
-#include <qfile.h>
-#include <qfileinfo.h>
+#include <QFile>
+#include <QFileInfo>
 
 #include "division.h"
 

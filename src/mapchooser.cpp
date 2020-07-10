@@ -10,18 +10,18 @@
 
 #include "mapchooser.h"
 
-#include <klocalizedstring.h>
-#include <kmessagebox.h>
-#include <klistwidgetsearchline.h>
+#include <KLocalizedString>
+#include <KMessageBox>
+#include <KListWidgetSearchLine>
 
-#include <qdir.h>
-#include <qimage.h>
-#include <qlabel.h>
-#include <qlayout.h>
-#include <qlistwidget.h>
-#include <qdialogbuttonbox.h>
-#include <qpushbutton.h>
-#include <qset.h>
+#include <QDir>
+#include <QImage>
+#include <QLabel>
+#include <QLayout>
+#include <QListWidget>
+#include <QDialogButtonBox>
+#include <QPushButton>
+#include <QSet>
 
 #include <algorithm>
 

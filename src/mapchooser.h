@@ -11,8 +11,8 @@
 #ifndef MAPCHOOSER_H
 #define MAPCHOOSER_H
 
-#include <qdialog.h>
-#include <qhash.h>
+#include <QDialog>
+#include <QHash>
 
 #include "map.h"
 #include "mapparser.h"

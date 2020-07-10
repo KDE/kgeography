@@ -15,13 +15,13 @@
 #include <cmath>
 #include <math.h>
 
-#include <klocalizedstring.h>
-#include <kmessagebox.h>
+#include <KLocalizedString>
+#include <KMessageBox>
 
-#include <qlabel.h>
-#include <qlayout.h>
-#include <qscrollbar.h>
-#include <qstring.h>
+#include <QLabel>
+#include <QLayout>
+#include <QScrollBar>
+#include <QString>
 
 #include "map.h"
 #include "placemapwidget.h"

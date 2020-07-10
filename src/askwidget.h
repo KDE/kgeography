@@ -11,9 +11,9 @@
 #ifndef ASKWIDGET_H
 #define ASKWIDGET_H
 
-#include <qtimer.h>
-#include <qvector.h>
-#include <qwidget.h>
+#include <QTimer>
+#include <QVector>
+#include <QWidget>
 
 #include "answer.h"
 #include "division.h"

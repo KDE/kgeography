@@ -11,8 +11,8 @@
 #ifndef DIVISION_H
 #define DIVISION_H
 
-#include <qcolor.h>
-#include <qstring.h>
+#include <QColor>
+#include <QString>
 
 class division
 {

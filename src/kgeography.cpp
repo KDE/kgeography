@@ -10,21 +10,21 @@
 
 #include "kgeography.h"
 
-#include <kconfigdialog.h>
-#include <kmessagebox.h>
-#include <kstandardaction.h>
-#include <ktoggleaction.h>
-#include <ktoolbar.h>
-#include <kactioncollection.h>
-#include <klocalizedstring.h>
+#include <KConfigDialog>
+#include <KMessageBox>
+#include <KStandardAction>
+#include <KToggleAction>
+#include <KToolBar>
+#include <KActionCollection>
+#include <KLocalizedString>
 
-#include <qmenubar.h>
-#include <qfile.h>
-#include <qlabel.h>
-#include <qlayout.h>
-#include <qsize.h>
-#include <qtimer.h>
-#include <qpushbutton.h>
+#include <QMenuBar>
+#include <QFile>
+#include <QLabel>
+#include <QLayout>
+#include <QSize>
+#include <QTimer>
+#include <QPushButton>
 
 #include "answersdialog.h"
 #include "capitaldivisionasker.h"

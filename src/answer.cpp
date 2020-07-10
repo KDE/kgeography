@@ -10,10 +10,10 @@
 
 #include "answer.h"
 
-#include <qimage.h>
-#include <qlabel.h>
-#include <qlayout.h>
-#include <qpixmap.h>
+#include <QImage>
+#include <QLabel>
+#include <QLayout>
+#include <QPixmap>
 
 userAnswer::userAnswer()
 {

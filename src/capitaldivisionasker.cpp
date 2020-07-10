@@ -10,9 +10,9 @@
 
 #include "capitaldivisionasker.h"
 
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
-#include <qradiobutton.h>
+#include <QRadioButton>
  
 #include "map.h"
 

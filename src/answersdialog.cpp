@@ -10,12 +10,12 @@
 
 #include "answersdialog.h"
 
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
-#include <qlabel.h>
-#include <qlayout.h>
-#include <qscrollarea.h>
-#include <qdialogbuttonbox.h>
+#include <QLabel>
+#include <QLayout>
+#include <QScrollArea>
+#include <QDialogButtonBox>
 
 #include "answer.h"
 
