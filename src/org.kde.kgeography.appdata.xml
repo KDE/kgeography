@@ -31,8 +31,8 @@
   <name xml:lang="zh-CN">KGeography</name>
   <name xml:lang="zh-TW">KGeography</name>
   <summary>Geography learning tool</summary>
-  <summary xml:lang="ca">Eina per aprendre geografia</summary>
-  <summary xml:lang="ca-valencia">Eina per aprendre geografia</summary>
+  <summary xml:lang="ca">Eina per a aprendre geografia</summary>
+  <summary xml:lang="ca-valencia">Eina per a aprendre geografia</summary>
   <summary xml:lang="de">Erdkunde-Lernprogramm</summary>
   <summary xml:lang="el">Εργαλείο εξάσκησης στη Γεωγραφία</summary>
   <summary xml:lang="en-GB">Geography learning tool</summary>
@@ -57,8 +57,8 @@
   <summary xml:lang="zh-TW">地理學習工具</summary>
   <description>
     <p>KGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).</p>
-    <p xml:lang="ca">El KGeography és una eina per aprendre geografia, que permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'aquestes divisions i les seves banderes associades si n'hi ha alguna).</p>
-    <p xml:lang="ca-valencia">El KGeography és una eina per aprendre geografia, que permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'aquestes divisions i les seues banderes associades si n'hi ha alguna).</p>
+    <p xml:lang="ca">El KGeography és una eina per a aprendre geografia, la qual permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'aquestes divisions i les seves banderes associades si n'hi ha alguna).</p>
+    <p xml:lang="ca-valencia">El KGeography és una eina per a aprendre geografia, la qual permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'aquestes divisions i les seues banderes associades si n'hi ha alguna).</p>
     <p xml:lang="de">KGeography ist ein Erdkunde-Lernprogramm. Damit können Sie die politischen Daten einiger Länder lernen (Länder, ihre Hauptstädte und ihre Flaggen).</p>
     <p xml:lang="el">Το KGeography είναι ένα εργαλείο εκμάθησης γεωγραφίας, το οποίο σας επιτρέπει να μάθετε την πολιτική διαίρεση κάποιων χωρών (περιφέρειες, πρωτεύουσες περιφερειών και τις σημαίες τους αν υπάρχουν).</p>
     <p xml:lang="en-GB">KGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).</p>
@@ -131,8 +131,8 @@
       <li xml:lang="x-test">xxBrowse the maps clicking in a map division to see its name, capital and flagxx</li>
       <li xml:lang="zh-CN">浏览地图，点击地图分区查看它的名字，首都和旗帜</li>
       <li>The game tells you a map division name and you have to click on it</li>
-      <li xml:lang="ca">El joc us mostra el nom d'una zona del mapa i heu de fer clic sobre el lloc on està</li>
-      <li xml:lang="ca-valencia">El joc vos mostra el nom d'una zona del mapa i heu de fer clic sobre el lloc on està</li>
+      <li xml:lang="ca">El joc mostra el nom d'una zona en el mapa i heu de fer clic sobre el lloc on està</li>
+      <li xml:lang="ca-valencia">El joc mostra el nom d'una zona en el mapa i heu de fer clic sobre el lloc on està</li>
       <li xml:lang="de">Der Name eines Landes wird gefragt und Sie müssen es auf der Karte anklicken.</li>
       <li xml:lang="el">Το παιχνίδι σάς λέει τη διαίρεση στο χάρτη και εσείς πρέπει να κάνετε κλικ επάνω της</li>
       <li xml:lang="en-GB">The game tells you a map division name and you have to click on it</li>
@@ -154,8 +154,8 @@
       <li xml:lang="x-test">xxThe game tells you a map division name and you have to click on itxx</li>
       <li xml:lang="zh-CN">此游戏告诉您地图分区的名字，您必须点击它</li>
       <li>The game tells you a capital and you have to guess the division it belongs to</li>
-      <li xml:lang="ca">El joc us mostra una capital i heu d'esbrinar el país a la qual pertany</li>
-      <li xml:lang="ca-valencia">El joc vos mostra una capital i heu d'esbrinar el país a la qual pertany</li>
+      <li xml:lang="ca">El joc mostra una capital i heu d'esbrinar el país al qual pertany</li>
+      <li xml:lang="ca-valencia">El joc mostra una capital i heu d'esbrinar el país al qual pertany</li>
       <li xml:lang="de">Ein Land anhand des Namens der Hauptstadt raten</li>
       <li xml:lang="el">Το παιχνίδι σάς λέει μια πρωτεύουσα και εσείς πρέπει να μαντέψετε σε ποια διαίρεση ανήκει</li>
       <li xml:lang="en-GB">The game tells you a capital and you have to guess the division it belongs to</li>
@@ -177,8 +177,8 @@
       <li xml:lang="x-test">xxThe game tells you a capital and you have to guess the division it belongs toxx</li>
       <li xml:lang="zh-CN">此游戏告诉您首都，您必须猜它属于哪个分区</li>
       <li>The game tells you a division and you have to guess its capital</li>
-      <li xml:lang="ca">El joc us mostra un país i heu d'esbrinar la seva capital</li>
-      <li xml:lang="ca-valencia">El joc vos mostra un país i heu d'esbrinar la seua capital</li>
+      <li xml:lang="ca">El joc mostra un país i heu d'esbrinar la seva capital</li>
+      <li xml:lang="ca-valencia">El joc mostra un país i heu d'esbrinar la seua capital</li>
       <li xml:lang="de">Die Hauptstadt eines Landes raten</li>
       <li xml:lang="el">Το παιχνίδι σάς λέει μια διαίρεση και εσείς πρέπει να μαντέψετε την πρωτεύουσα</li>
       <li xml:lang="en-GB">The game tells you a division and you have to guess its capital</li>
@@ -200,8 +200,8 @@
       <li xml:lang="x-test">xxThe game tells you a division and you have to guess its capitalxx</li>
       <li xml:lang="zh-CN">此游戏告诉您分区，您必须猜它的首都是什么</li>
       <li>The game shows you a map division flag and you have to guess its name</li>
-      <li xml:lang="ca">El joc us mostra la bandera d'un país i heu d'esbrinar el seu nom</li>
-      <li xml:lang="ca-valencia">El joc vos mostra la bandera d'un país i heu d'esbrinar el seu nom</li>
+      <li xml:lang="ca">El joc mostra la bandera d'un país i heu d'esbrinar el seu nom</li>
+      <li xml:lang="ca-valencia">El joc mostra la bandera d'un país i heu d'esbrinar el seu nom</li>
       <li xml:lang="de">Ein Land anhand der Flagge erraten</li>
       <li xml:lang="el">Το παιχνίδι σάς δείχνει τη σημαία μιας διαίρεσης στο χάρτη και εσείς πρέπει να μαντέψετε το όνομά της</li>
       <li xml:lang="en-GB">The game shows you a map division flag and you have to guess its name</li>
@@ -223,8 +223,8 @@
       <li xml:lang="x-test">xxThe game shows you a map division flag and you have to guess its namexx</li>
       <li xml:lang="zh-CN">此游戏告诉您一个地图分区的旗帜，您必须猜它的名字</li>
       <li>The game tells you a map division name and you have to guess its flag</li>
-      <li xml:lang="ca">El joc us mostra el nom d'un país i heu d'esbrinar la seva bandera</li>
-      <li xml:lang="ca-valencia">El joc vos mostra el nom d'un país i heu d'esbrinar la seua bandera</li>
+      <li xml:lang="ca">El joc mostra el nom d'un país i heu d'esbrinar la seva bandera</li>
+      <li xml:lang="ca-valencia">El joc mostra el nom d'un país i heu d'esbrinar la seua bandera</li>
       <li xml:lang="de">Die Flagge eines Landes erraten</li>
       <li xml:lang="el">Το παιχνίδι σάς λέει ένα όνομα διάιρεσης στο χάρτη και εσείς πρέπει να μαντέψετε τη σημαία της</li>
       <li xml:lang="en-GB">The game tells you a map division name and you have to guess its flag</li>
@@ -246,8 +246,8 @@
       <li xml:lang="x-test">xxThe game tells you a map division name and you have to guess its flagxx</li>
       <li xml:lang="zh-CN">此游戏告诉您地图分区的名字，您必须猜它的旗帜</li>
       <li>The game shows an empty map and you have to place divisions on it one by one</li>
-      <li xml:lang="ca">El joc us mostra un mapa buit i heu de situar les divisions una a una</li>
-      <li xml:lang="ca-valencia">El joc vos mostra un mapa buit i heu de situar les divisions una a una</li>
+      <li xml:lang="ca">El joc mostra un mapa buit i heu de situar les divisions una a una</li>
+      <li xml:lang="ca-valencia">El joc mostra un mapa buit i heu de situar les divisions una a una</li>
       <li xml:lang="de">Länder auf einer leeren Landkarte platzieren</li>
       <li xml:lang="el">Το παιχνίδι σάς δείχνει έναν κενό χάρτη και εσείς πρέπει να τοποθετήσετε πάνω του τις διαιρέσεις μία προς μία</li>
       <li xml:lang="en-GB">The game shows an empty map and you have to place divisions on it one by one</li>
