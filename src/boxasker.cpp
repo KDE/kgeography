@@ -10,11 +10,8 @@
 
 #include "boxasker.h"
 
-#include <stdlib.h> // for RAND_MAX
-
 #include <KAcceleratorManager>
 #include <KLocalizedString>
-#include <KRandom>
 
 #include <QButtonGroup>
 #include <QGroupBox>
@@ -22,6 +19,7 @@
 #include <QLabel>
 #include <QLayout>
 #include <QRadioButton>
+#include <QRandomGenerator>
 #include <QPushButton>
 #include <QKeyEvent>
 
@@ -193,7 +191,7 @@ void boxAsker::nextQuestionHook(const division *div)
 	auxList << div -> getUntranslatedName ();
 
 	// we put the division in a random place
-	p_position = (int)((float)NB_CHOICES * KRandom::random() / (RAND_MAX + 1.0));
+	p_position = QRandomGenerator::global()->bounded(NB_CHOICES);
 	nextBoxAskerQuestionHook(div, p_position, true);
 
 	// fill the other names

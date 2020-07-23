@@ -11,11 +11,11 @@
 #include "mapasker.h"
 
 #include <KMessageBox>
-#include <KRandom>
 #include <KLocalizedString>
 
 #include <QLabel>
 #include <QLayout>
+#include <QRandomGenerator>
 #include <QScrollBar>
 #include <QString>
 
@@ -235,7 +235,7 @@ void mapAsker::showEvent(QShowEvent *)
 			const int n = swapableIndexes.size();
 			for ( int i = 2; i < n ; ++i )
 			{
-				int o = int(float(i) * KRandom::random() / (RAND_MAX + 1.0));
+				int o = QRandomGenerator::global()->bounded(i);
 				int ci = shuffling[i];
 				int co = shuffling[o];
 				qSwap(shuffling[i], shuffling[o]);

@@ -10,13 +10,11 @@
 
 #include "map.h"
 
-#include <stdlib.h> // for RAND_MAX
-
 #include <KLocalizedString>
-#include <KRandom>
 
 #include <QFile>
 #include <QFileInfo>
+#include <QRandomGenerator>
 
 #include "division.h"
 
@@ -154,7 +152,7 @@ QString KGmap::getDivisionsString() const
 division *KGmap::getRandomDivision(division::askMode am) const
 {
 	QList<division*> aux;
-	int i = (int)((float)p_divisions.size() * KRandom::random() / (RAND_MAX + 1.0));
+	const int i = QRandomGenerator::global()->bounded(p_divisions.size());
 	if (!p_divisions[i] -> canAsk(am)) return getRandomDivision(am);
 	else return p_divisions[i];
 }

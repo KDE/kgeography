@@ -11,9 +11,9 @@
 #include "divisioncapitalasker.h"
 
 #include <KLocalizedString>
-#include <KRandom>
 
 #include <QRadioButton>
+#include <QRandomGenerator>
  
 #include "map.h"
 
@@ -41,7 +41,7 @@ bool divisionCapitalAsker::nextBoxAskerQuestionHook(const division *div, int i, 
 		{
 			if (index != i)
 			{
-				int random = (int)((float)falseCapitals.size() * KRandom::random() / (RAND_MAX + 1.0));
+				const int random = QRandomGenerator::global()->bounded(falseCapitals.size());
 				QString falseCapital = falseCapitals.at(random);
 				falseCapitals.removeAt(random);
 				p_radioButtons[index] -> setText(i18nc("@option:radio The capital of <Region> is...", "%1", falseCapital));
