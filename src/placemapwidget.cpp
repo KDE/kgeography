@@ -266,7 +266,7 @@ void placeMapWidget::mousePressEvent(QMouseEvent *e)
 			}
 		}
 	}
-	else if (e -> button() == Qt::MidButton)
+	else if (e -> button() == Qt::MiddleButton)
 	{
 		p_modeBeforeMidClick = p_mode;
 		p_mode = WantMove;

@@ -89,7 +89,7 @@ void mapWidget::mousePressEvent(QMouseEvent *e)
 			}
 		}
 	}
-	else if (e -> button() == Qt::MidButton)
+	else if (e -> button() == Qt::MiddleButton)
 	{
 		p_modeBeforeMidClick = p_mode;
 		p_mode = WantMove;
@@ -143,7 +143,7 @@ void mapWidget::mouseReleaseEvent(QMouseEvent *e)
 	else if ( p_mode == Moving )
 	{
 		unsetCursor();
-		if ( e -> button() == Qt::MidButton )
+		if ( e -> button() == Qt::MiddleButton )
 		{
 			p_mode = p_modeBeforeMidClick;
 			updateActions();
