@@ -45,4 +45,6 @@ add_subdirectory( src )
 add_subdirectory( data ) 
 add_subdirectory( icons ) 
 
+ki18n_install(po)
+
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
