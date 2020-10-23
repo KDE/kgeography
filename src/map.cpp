@@ -10,13 +10,11 @@
 
 #include "map.h"
 
-#include <KLocalizedString>
 
 #include <QFile>
 #include <QFileInfo>
 #include <QRandomGenerator>
 
-#include "division.h"
 
 KGmap::KGmap()
 {
