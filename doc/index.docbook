@@ -40,8 +40,8 @@
 
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2016-05-08</date>
-<releaseinfo>0.9 (Applications 16.04)</releaseinfo>
+<date>2020-12-22</date>
+<releaseinfo>Applications 20.12</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -155,7 +155,7 @@ You can then choose what type of learning or testing you want to do by looking a
 </screenshot>
 </para>
 <para>
-Explore Map: a &LMB; click on an area of the map will display information about that area, if you click on the small info icon on the popmap, it will open the wikipedia page for that division in the system's default browser:
+Explore Map: a &LMB; click on an area of the map will display information about that area, if you click on the small &nbsp;<inlinemediaobject> <imageobject> <imagedata fileref="dialog-information.png" format="PNG"/> </imageobject> </inlinemediaobject> <guiicon>Info</guiicon> icon on the popmap, it will open the wikipedia page for that division in the system's default browser:
 <screenshot>
 <screeninfo>Browse the map</screeninfo>
 	<mediaobject>
@@ -169,7 +169,7 @@ Explore Map: a &LMB; click on an area of the map will display information about 
 </screenshot>
 </para>
 <para>
-Location of Provinces or Territories: you are first asked how many questions you want
+Location of Provinces or Territories: you are first asked how many questions you want.
 <screenshot>
 <screeninfo>How many questions</screeninfo>
 	<mediaobject>
@@ -336,13 +336,13 @@ guide the parent/teacher on how to help the child using it.
 
 <chapter id="how-to-maps">
 <title>How to make maps</title>
-<para>A map in &kgeography; is made by two files, one is the image of the map and the other one is its description. </para>
+<para>A map in &kgeography; is made by two files, one is the image of the map and the other one is its description.</para>
 <sect1 id="helper-tool">
 <title>Helper tool</title>
 <para>
-You can find <ulink url="https://commits.kde.org/kgeography?path=tools/gen_map.pl">here</ulink> a tool (made by Yann Verley) which helped him with the map of France. To find out its usage, simply execute it and read the help message. It basically creates the <literal role="extension">.kgm</literal> file from a plain text file and creates a file with the colors it has assigned to each division, so you can fill the map according to them.</para>
+You can find <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/gen_map.pl">here</ulink> a tool (made by Yann Verley) which helped him with the map of France. To find out its usage, simply execute it and read the help message. It basically creates the <literal role="extension">.kgm</literal> file from a plain text file and creates a file with the colors it has assigned to each division, so you can fill the map according to them.</para>
 <para>
-There is another tool <ulink url="https://commits.kde.org/kgeography?path=tools/colorchecker.py">colorchecker.py</ulink> written by Albert Astals Cid. You need PyQt4 to run this. Just run this with the .kgm filename as argument (you also need the .png file of the map in the same folder). This will tell you if any pixel on the map has a different color which is not defined in the .kgm (description) file.
+There is another tool <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py">colorchecker.py</ulink> written by Albert Astals Cid. You need PyQt4 to run this. Just run this with the <literal role="extension">.kgm</literal> filename as argument (you also need the <literal role="extension">.png</literal> file of the map in the same folder). This will tell you if any pixel on the map has a different color which is not defined in the <literal role="extension">.kgm</literal> (description) file.
 </para>
 <tip>
 <para>
@@ -360,13 +360,13 @@ on the &kgeography; website.
  Inside of those tags there should be:
 <itemizedlist>
 <listitem>
-  <para><sgmltag class="starttag">mapFile</sgmltag> and <sgmltag class="endtag">mapFile</sgmltag>: the name of the file (without any path) containing the map image, &eg; <quote>europe.png</quote>.</para>
+  <para><sgmltag class="starttag">mapFile</sgmltag> and <sgmltag class="endtag">mapFile</sgmltag>: the name of the file (without any path) containing the map image, &eg; <quote><literal>europe.png</literal></quote>.</para>
 </listitem>
 <listitem>
-  <para><sgmltag class="starttag">name</sgmltag> and <sgmltag class="endtag">name</sgmltag>: the name of map, &eg; <quote>Europe</quote>.</para>
+  <para><sgmltag class="starttag">name</sgmltag> and <sgmltag class="endtag">name</sgmltag>: the name of map, &eg; <quote><literal>Europe</literal></quote>.</para>
 </listitem>
 <listitem>
-  <para><sgmltag class="starttag">divisionsName</sgmltag> and <sgmltag class="endtag">divisionsName</sgmltag>: the general name of divisions in this map, that is, Provinces, States, Countries, etc.</para>
+  <para><sgmltag class="starttag">divisionsName</sgmltag> and <sgmltag class="endtag">divisionsName</sgmltag>: the general name of divisions in this map, that is, Provinces, States, Countries, &etc;</para>
 </listitem>
 <listitem>
   <para>A <sgmltag class="starttag">division</sgmltag> and <sgmltag class="endtag">division</sgmltag> for each division in the map.</para>
@@ -377,23 +377,22 @@ on the &kgeography; website.
  Each division has these tags:
 <itemizedlist>
 <listitem>
-  <para><sgmltag class="starttag">name</sgmltag> and <sgmltag class="endtag">name</sgmltag>: the name of the division, &eg; <quote>Albania</quote>.</para>
+  <para><sgmltag class="starttag">name</sgmltag> and <sgmltag class="endtag">name</sgmltag>: the name of the division, &eg; <quote><literal>Albania</literal></quote>.</para>
 </listitem>
 <listitem>
-  <para><sgmltag class="starttag">capital</sgmltag> and <sgmltag class="endtag">capital</sgmltag>: the name of the capital of the division, &eg; <quote>Tirana</quote>.</para>
+  <para><sgmltag class="starttag">capital</sgmltag> and <sgmltag class="endtag">capital</sgmltag>: the name of the capital of the division, &eg; <quote><literal>Tirana</literal></quote>.</para>
 </listitem>
 <listitem>
-	<para><sgmltag class="starttag">ignore</sgmltag> and <sgmltag class="endtag">ignore</sgmltag>: can be set to <userinput>yes</userinput>, <userinput>allowClickMode</userinput>, <userinput>allowClickFlagMode</userinput> and <userinput>no</userinput>. If this tag is set to <userinput>yes</userinput> then the division will be ignored when asking for divisions in that map. It is then as if this division does not exist in &kgeography; quiz modes. If this tag is set to <userinput>allowClickMode</userinput> then &kgeography; will ask for the division in the <guibutton>Location of ...</guibutton> mode but not in other quiz modes. If this tag is set to <userinput>allowClickFlagMode</userinput> then &kgeography; will ask for the division in the <guibutton>Location of ...</guibutton> mode and in the flag related quizes but not in other quiz modes. Setting this tag to <userinput>no</userinput> means the division will appear in all modes (browse and quizzes). This tag is optional and when there is no <sgmltag class="
-starttag">ignore</sgmltag> tag that means as it is set to <userinput>no</userinput>. For example <quote>Algeria</quote> has this tag set to <userinput>yes</userinput> in the <quote>Europe</quote> map which means that <quote>Algeria</quote> will not be part of any quiz in the <quote>Europe</quote> map.</para>
+	<para><sgmltag class="starttag">ignore</sgmltag> and <sgmltag class="endtag">ignore</sgmltag>: can be set to <userinput>yes</userinput>, <userinput>allowClickMode</userinput>, <userinput>allowClickFlagMode</userinput> and <userinput>no</userinput>. If this tag is set to <userinput>yes</userinput> then the division will be ignored when asking for divisions in that map. It is then as if this division does not exist in &kgeography; quiz modes. If this tag is set to <userinput>allowClickMode</userinput> then &kgeography; will ask for the division in the <guibutton>Location of ...</guibutton> mode but not in other quiz modes. If this tag is set to <userinput>allowClickFlagMode</userinput> then &kgeography; will ask for the division in the <guibutton>Location of ...</guibutton> mode and in the flag related quizes but not in other quiz modes. Setting this tag to <userinput>no</userinput> means the division will appear in all modes (browse and quizzes). This tag is optional and when there is no <sgmltag class="starttag">ignore</sgmltag> tag that means as it is set to <userinput>no</userinput>. For example <quote><literal>Algeria</literal></quote> has this tag set to <userinput>yes</userinput> in the <quote><literal>Europe</literal></quote> map which means that <quote><literal>Algeria</literal></quote> will not be part of any quiz in the <quote><literal>Europe</literal></quote> map.</para>
 </listitem>
 <listitem>
-  <para><sgmltag class="starttag">flag</sgmltag> and <sgmltag class="endtag">flag</sgmltag>: the file (without any path) containing the flag of the division, &eg; <quote>albania.png</quote>. This tag is optional. Not needed for the divisions whose <sgmltag class="starttag">ignore</sgmltag> tag is set to <userinput>yes</userinput>.</para>
+  <para><sgmltag class="starttag">flag</sgmltag> and <sgmltag class="endtag">flag</sgmltag>: the file (without any path) containing the flag of the division, &eg; <quote><literal>albania.png</literal></quote>. This tag is optional. Not needed for the divisions whose <sgmltag class="starttag">ignore</sgmltag> tag is set to <userinput>yes</userinput>.</para>
 </listitem>
 <listitem>
   <para><sgmltag class="starttag">color</sgmltag> and <sgmltag class="endtag">color</sgmltag>: the color the division has in the map.</para>
 </listitem>
 <listitem>
-  <para><sgmltag class="starttag">falseCapital</sgmltag> and <sgmltag class="endtag">falseCapital</sgmltag>: There can be any number of falseCapital pairs, they are used to provide a list of false answers to the capital question instead of choosing the false answers amongst the other divisions capitals.</para>
+  <para><sgmltag class="starttag">falseCapital</sgmltag> and <sgmltag class="endtag">falseCapital</sgmltag>: There can be any number of <userinput>falseCapital</userinput> pairs, they are used to provide a list of false answers to the capital question instead of choosing the false answers amongst the other divisions capitals.</para>
 </listitem>
 </itemizedlist>
  </para>
@@ -413,7 +412,7 @@ starttag">ignore</sgmltag> tag that means as it is set to <userinput>no</userinp
 </para>
 <tip>
  <para>
- It is convenient to create 2 or 3 false divisions like <quote>Water</quote>, <quote>Frontier</quote> and <quote>Coast</quote> and set them with the <sgmltag class="starttag">ignore</sgmltag> tag set to <userinput>yes</userinput>. Don't forget <userinput>not to set</userinput> color for any <quote>Frontier</quote> 0,0,0 in RGB. Please make it something like 1,1,1 so that a border outline comes while placing any division on the map.
+ It is convenient to create 2 or 3 false divisions like <quote><literal>Water</literal></quote>, <quote><literal>Frontier</literal></quote> and <quote><literal>Coast</literal></quote> and set them with the <sgmltag class="starttag">ignore</sgmltag> tag set to <userinput>yes</userinput>. Don't forget <userinput>not to set</userinput> color for any <quote><literal>Frontier</literal></quote> 0,0,0 in RGB. Please make it something like 1,1,1 so that a border outline comes while placing any division on the map.
  </para>
 </tip>
  <important>
@@ -425,13 +424,13 @@ starttag">ignore</sgmltag> tag that means as it is set to <userinput>no</userinp
 <para>
  The map file is quite simple but laborious to create. It has to be in <acronym>PNG</acronym> format.
  You can find some maps to transform at <ulink url="https://www.cia.gov/library/publications/the-world-factbook/docs/refmaps.html">Cia Reference Maps</ulink>. If no map fits your needs you can download the <ulink url="https://www.cia.gov/library/publications/resources/the-world-factbook/graphics/ref_maps/political/pdf/world.pdf">political world map</ulink>, take a screenshot of it and work from it.
- Each division in the map should have one and only one color. To achieve this you can use image processing programs like <application>The Gimp</application> and <application>Kolourpaint</application>.
+ Each division in the map should have one and only one color. To achieve this you can use image processing programs like <application>The Gimp</application> and &kolourpaint;.
 </para>
 </sect1>
 <sect1 id="flags">
 <title>Flags</title>
 <para>
- If you have used the <sgmltag class="starttag">flag</sgmltag> tag you should provide the flag files. They have to be in <acronym>PNG</acronym> format and better if they are 300x200 pixels and you provide a <acronym>SVG</acronym> file for it. To obtain <acronym>SVG</acronym> flags of almost all countries in the world and some other divisions, you can consult the <ulink url="https://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770">Sodipodi flags collection</ulink>.
+ If you have used the <sgmltag class="starttag">flag</sgmltag> tag you should provide the flag files. They have to be in <acronym>PNG</acronym> format and better if they are 300x200 pixels and you provide a &SVG; file for it. To obtain &SVG; flags of almost all countries in the world and some other divisions, you can consult the <ulink url="https://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770">Sodipodi flags collection</ulink>.
 </para>
 </sect1>
 <sect1 id="how-to-test">
@@ -453,7 +452,7 @@ starttag">ignore</sgmltag> tag that means as it is set to <userinput>no</userinp
  </para>
 <tip>
 <para>
-Use the colorchecker.py tool from the helper tools to check if any extra color left on the map which is not defined on the .kgm file. 
+Use the colorchecker.py tool from the helper tools to check if any extra color left on the map which is not defined on the <literal role="extension">.kgm</literal> file.
 </para>
 </tip>
 </sect1>
@@ -508,7 +507,7 @@ of the map you look for will select the first map that matches.</action></para><
 <guimenu>File</guimenu>
 <guimenuitem>Quit</guimenuitem>
 </menuchoice></term>
-<listitem><para><action>Quits</action> &kgeography;</para></listitem>
+<listitem><para><action>Quits</action> &kgeography;.</para></listitem>
 </varlistentry>
 </variablelist>
 </para>
@@ -524,7 +523,7 @@ of the map you look for will select the first map that matches.</action></para><
 <guimenu>View</guimenu>
 <guimenuitem>Zoom</guimenuitem>
 </menuchoice></term>
-<listitem><para><action>Goes in zoom mode, then draw a rectangle to zoom in a part of the map</action></para></listitem>
+<listitem><para><action>Goes in zoom mode, then draw a rectangle to zoom in a part of the map.</action></para></listitem>
 </varlistentry>
 <varlistentry>
 <term><menuchoice>
@@ -532,14 +531,14 @@ of the map you look for will select the first map that matches.</action></para><
 <guimenuitem>Original Size</guimenuitem>
 </menuchoice></term>
 <listitem><para><action>Sets</action> the map back to its original size as defined in the map file. 
-A &RMB; click in zoomed mode performs the same action</para></listitem>
+A &RMB; click in zoomed mode performs the same action.</para></listitem>
 </varlistentry>
 <varlistentry>
 <term><menuchoice>
 <guimenu>View</guimenu>
 <guimenuitem>Automatic Zoom</guimenuitem>
 </menuchoice></term>
-<listitem><para><action>Sets</action> the map to automatic zoom using as much space as possible when resizing the &kgeography;  window</para></listitem>
+<listitem><para><action>Sets</action> the map to automatic zoom using as much space as possible when resizing the &kgeography;  window.</para></listitem>
 </varlistentry>
 <varlistentry>
 <term><menuchoice>
@@ -608,7 +607,7 @@ with two additional entries:</para>
 </varlistentry>
 <varlistentry>
 <term><guilabel>Focus follows Mouse</guilabel></term>
-<listitem><para>If enabled pressing Space will trigger the button under the mouse pointer.</para></listitem>
+<listitem><para>If enabled pressing &Space; will trigger the button under the mouse pointer.</para></listitem>
 </varlistentry>
 <varlistentry>
 <term><guilabel>Map divisions colors</guilabel></term>
