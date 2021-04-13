@@ -217,7 +217,7 @@ void boxAsker::nextQuestionHook(const division *div)
 void boxAsker::atLeastOneSelected()
 {
 	if ( ! kgeographySettings::self() -> waitsForValidation() )
-		checkAnswer();
+		QMetaObject::invokeMethod(this, &boxAsker::checkAnswer, Qt::QueuedConnection);
 	else
 		p_accept -> setEnabled(true);
 }
