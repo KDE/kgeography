@@ -1,0 +1,1089 @@
+<!DOCTYPE kgeographyMap>
+<map>
+	<mapFile>virginia.png</mapFile>
+	<name>Virginia (USA)</name>
+    <divisionsName>Counties and Independent Cities</divisionsName>
+    <author>teslahitchhiker42</author>
+	<division>
+		<name>Borders</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</color>
+	</division>
+	<division>
+		<name>Not Virginia</name>
+		<ignore>yes</ignore>
+		<color>
+			<red>255</red>
+			<green>255</green>
+			<blue>255</blue>
+		</color>
+	</division>
+	<division>
+		<name>Accomack County</name>
+		<color>
+			<red>145</red>
+			<green>7</green>
+			<blue>103</blue>
+		</color>
+	</division>
+	<division>
+		<name>Albemarle County</name>
+		<color>
+			<red>68</red>
+			<green>98</green>
+			<blue>188</blue>
+		</color>
+	</division>
+	<division>
+		<name>Alleghany County</name>
+		<color>
+			<red>167</red>
+			<green>194</green>
+			<blue>234</blue>
+		</color>
+	</division>
+	<division>
+		<name>Amelia County</name>
+		<color>
+			<red>156</red>
+			<green>10</green>
+			<blue>96</blue>
+		</color>
+	</division>
+	<division>
+		<name>Amherst County</name>
+		<color>
+			<red>248</red>
+			<green>97</green>
+			<blue>14</blue>
+		</color>
+	</division>
+	<division>
+		<name>Appomattox County</name>
+		<color>
+			<red>33</red>
+			<green>229</green>
+			<blue>74</blue>
+		</color>
+	</division>
+	<division>
+		<name>Arlington County</name>
+		<color>
+			<red>72</red>
+			<green>203</green>
+			<blue>65</blue>
+		</color>
+	</division>
+	<division>
+		<name>Augusta County</name>
+		<color>
+			<red>19</red>
+			<green>79</green>
+			<blue>2</blue>
+		</color>
+	</division>
+	<division>
+		<name>Bath County</name>
+		<color>
+			<red>240</red>
+			<green>254</green>
+			<blue>59</blue>
+		</color>
+	</division>
+	<division>
+		<name>Bedford County</name>
+		<color>
+			<red>41</red>
+			<green>206</green>
+			<blue>198</blue>
+		</color>
+	</division>
+	<division>
+		<name>Bland County</name>
+		<color>
+			<red>44</red>
+			<green>148</green>
+			<blue>39</blue>
+		</color>
+	</division>
+	<division>
+		<name>Botetourt County</name>
+		<color>
+			<red>37</red>
+			<green>176</green>
+			<blue>90</blue>
+		</color>
+	</division>
+	<division>
+		<name>Brunswick County</name>
+		<color>
+			<red>192</red>
+			<green>26</green>
+			<blue>128</blue>
+		</color>
+	</division>
+	<division>
+		<name>Buchanan County</name>
+		<color>
+			<red>198</red>
+			<green>120</green>
+			<blue>4</blue>
+		</color>
+	</division>
+	<division>
+		<name>Buckingham County</name>
+		<color>
+			<red>204</red>
+			<green>248</green>
+			<blue>253</blue>
+		</color>
+	</division>
+	<division>
+		<name>Campbell County</name>
+		<color>
+			<red>57</red>
+			<green>42</green>
+			<blue>248</blue>
+		</color>
+	</division>
+	<division>
+		<name>Caroline County</name>
+		<color>
+			<red>70</red>
+			<green>169</green>
+			<blue>92</blue>
+		</color>
+	</division>
+	<division>
+		<name>Carroll County</name>
+		<color>
+			<red>218</red>
+			<green>227</green>
+			<blue>24</blue>
+		</color>
+	</division>
+	<division>
+		<name>Charles City County</name>
+		<color>
+			<red>119</red>
+			<green>4</green>
+			<blue>236</blue>
+		</color>
+	</division>
+	<division>
+		<name>Charlotte County</name>
+		<color>
+			<red>98</red>
+			<green>31</green>
+			<blue>83</blue>
+		</color>
+	</division>
+	<division>
+		<name>Chesterfield County</name>
+		<color>
+			<red>168</red>
+			<green>141</green>
+			<blue>73</blue>
+		</color>
+	</division>
+	<division>
+		<name>Clarke County</name>
+		<color>
+			<red>128</red>
+			<green>207</green>
+			<blue>58</blue>
+		</color>
+	</division>
+	<division>
+		<name>Craig County</name>
+		<color>
+			<red>181</red>
+			<green>18</green>
+			<blue>250</blue>
+		</color>
+	</division>
+	<division>
+		<name>Culpeper County</name>
+		<color>
+			<red>50</red>
+			<green>80</green>
+			<blue>232</blue>
+		</color>
+	</division>
+	<division>
+		<name>Cumberland County</name>
+		<color>
+			<red>121</red>
+			<green>65</green>
+			<blue>169</blue>
+		</color>
+	</division>
+	<division>
+		<name>Dickenson County</name>
+		<color>
+			<red>171</red>
+			<green>115</green>
+			<blue>9</blue>
+		</color>
+	</division>
+	<division>
+		<name>Dinwiddie County</name>
+		<color>
+			<red>26</red>
+			<green>98</green>
+			<blue>246</blue>
+		</color>
+	</division>
+	<division>
+		<name>Essex County</name>
+		<color>
+			<red>232</red>
+			<green>8</green>
+			<blue>9</blue>
+		</color>
+	</division>
+	<division>
+		<name>Fairfax County</name>
+		<color>
+			<red>125</red>
+			<green>225</green>
+			<blue>189</blue>
+		</color>
+	</division>
+	<division>
+		<name>Fauquier County</name>
+		<color>
+			<red>215</red>
+			<green>190</green>
+			<blue>42</blue>
+		</color>
+	</division>
+	<division>
+		<name>Floyd County</name>
+		<color>
+			<red>160</red>
+			<green>78</green>
+			<blue>251</blue>
+		</color>
+	</division>
+	<division>
+		<name>Fluvanna County</name>
+		<color>
+			<red>15</red>
+			<green>200</green>
+			<blue>246</blue>
+		</color>
+	</division>
+	<division>
+		<name>Franklin County</name>
+		<color>
+			<red>171</red>
+			<green>65</green>
+			<blue>238</blue>
+		</color>
+	</division>
+	<division>
+		<name>Frederick County</name>
+		<color>
+			<red>230</red>
+			<green>23</green>
+			<blue>73</blue>
+		</color>
+	</division>
+	<division>
+		<name>Giles County</name>
+		<color>
+			<red>161</red>
+			<green>20</green>
+			<blue>23</blue>
+		</color>
+	</division>
+	<division>
+		<name>Gloucester County</name>
+		<color>
+			<red>56</red>
+			<green>158</green>
+			<blue>25</blue>
+		</color>
+	</division>
+	<division>
+		<name>Goochland County</name>
+		<color>
+			<red>2</red>
+			<green>181</green>
+			<blue>1</blue>
+		</color>
+	</division>
+	<division>
+		<name>Grayson County</name>
+		<color>
+			<red>49</red>
+			<green>88</green>
+			<blue>9</blue>
+		</color>
+	</division>
+	<division>
+		<name>Greene County</name>
+		<color>
+			<red>32</red>
+			<green>169</green>
+			<blue>20</blue>
+		</color>
+	</division>
+	<division>
+		<name>Greensville County</name>
+		<color>
+			<red>68</red>
+			<green>253</green>
+			<blue>96</blue>
+		</color>
+	</division>
+	<division>
+		<name>Halifax County</name>
+		<color>
+			<red>35</red>
+			<green>189</green>
+			<blue>113</blue>
+		</color>
+	</division>
+	<division>
+		<name>Hanover County</name>
+		<color>
+			<red>44</red>
+			<green>251</green>
+			<blue>17</blue>
+		</color>
+	</division>
+	<division>
+		<name>Henrico County</name>
+		<color>
+			<red>193</red>
+			<green>39</green>
+			<blue>237</blue>
+		</color>
+	</division>
+	<division>
+		<name>Henry County</name>
+		<color>
+			<red>40</red>
+			<green>157</green>
+			<blue>23</blue>
+		</color>
+	</division>
+	<division>
+		<name>Highland County</name>
+		<color>
+			<red>86</red>
+			<green>51</green>
+			<blue>75</blue>
+		</color>
+	</division>
+	<division>
+		<name>Isle of Wight County</name>
+		<color>
+			<red>99</red>
+			<green>147</green>
+			<blue>234</blue>
+		</color>
+	</division>
+	<division>
+		<name>James City County</name>
+		<color>
+			<red>196</red>
+			<green>236</green>
+			<blue>96</blue>
+		</color>
+	</division>
+	<division>
+		<name>King and Queen County</name>
+		<color>
+			<red>82</red>
+			<green>69</green>
+			<blue>68</blue>
+		</color>
+	</division>
+	<division>
+		<name>King George County</name>
+		<color>
+			<red>54</red>
+			<green>230</green>
+			<blue>248</blue>
+		</color>
+	</division>
+	<division>
+		<name>King William County</name>
+		<color>
+			<red>186</red>
+			<green>69</green>
+			<blue>102</blue>
+		</color>
+	</division>
+	<division>
+		<name>Lancaster County</name>
+		<color>
+			<red>122</red>
+			<green>145</green>
+			<blue>228</blue>
+		</color>
+	</division>
+	<division>
+		<name>Lee County</name>
+		<color>
+			<red>251</red>
+			<green>25</green>
+			<blue>44</blue>
+		</color>
+	</division>
+	<division>
+		<name>Loudoun County</name>
+		<color>
+			<red>92</red>
+			<green>78</green>
+			<blue>84</blue>
+		</color>
+	</division>
+	<division>
+		<name>Louisa County</name>
+		<color>
+			<red>59</red>
+			<green>26</green>
+			<blue>46</blue>
+		</color>
+	</division>
+	<division>
+		<name>Lunenburg County</name>
+		<color>
+			<red>146</red>
+			<green>162</green>
+			<blue>216</blue>
+		</color>
+	</division>
+	<division>
+		<name>Madison County</name>
+		<color>
+			<red>254</red>
+			<green>179</green>
+			<blue>8</blue>
+		</color>
+	</division>
+	<division>
+		<name>Mathews County</name>
+		<color>
+			<red>251</red>
+			<green>133</green>
+			<blue>56</blue>
+		</color>
+	</division>
+	<division>
+		<name>Mecklenburg County</name>
+		<color>
+			<red>70</red>
+			<green>142</green>
+			<blue>70</blue>
+		</color>
+	</division>
+	<division>
+		<name>Middlesex County</name>
+		<color>
+			<red>63</red>
+			<green>129</green>
+			<blue>50</blue>
+		</color>
+	</division>
+	<division>
+		<name>Montgomery County</name>
+		<color>
+			<red>151</red>
+			<green>61</green>
+			<blue>253</blue>
+		</color>
+	</division>
+	<division>
+		<name>Nelson County</name>
+		<color>
+			<red>147</red>
+			<green>241</green>
+			<blue>125</blue>
+		</color>
+	</division>
+	<division>
+		<name>New Kent County</name>
+		<color>
+			<red>83</red>
+			<green>96</green>
+			<blue>210</blue>
+		</color>
+	</division>
+	<division>
+		<name>Northampton County</name>
+		<color>
+			<red>125</red>
+			<green>59</green>
+			<blue>217</blue>
+		</color>
+	</division>
+	<division>
+		<name>Northumberland County</name>
+		<color>
+			<red>249</red>
+			<green>183</green>
+			<blue>103</blue>
+		</color>
+	</division>
+	<division>
+		<name>Nottoway County</name>
+		<color>
+			<red>252</red>
+			<green>75</green>
+			<blue>61</blue>
+		</color>
+	</division>
+	<division>
+		<name>Orange County</name>
+		<color>
+			<red>186</red>
+			<green>191</green>
+			<blue>197</blue>
+		</color>
+	</division>
+	<division>
+		<name>Page County</name>
+		<color>
+			<red>16</red>
+			<green>220</green>
+			<blue>216</blue>
+		</color>
+	</division>
+	<division>
+		<name>Patrick County</name>
+		<color>
+			<red>162</red>
+			<green>58</green>
+			<blue>223</blue>
+		</color>
+	</division>
+	<division>
+		<name>Pittsylvania County</name>
+		<color>
+			<red>255</red>
+			<green>246</green>
+			<blue>234</blue>
+		</color>
+	</division>
+	<division>
+		<name>Powhatan County</name>
+		<color>
+			<red>77</red>
+			<green>234</green>
+			<blue>91</blue>
+		</color>
+	</division>
+	<division>
+		<name>Prince Edward County</name>
+		<color>
+			<red>209</red>
+			<green>216</green>
+			<blue>231</blue>
+		</color>
+	</division>
+	<division>
+		<name>Prince George County</name>
+		<color>
+			<red>55</red>
+			<green>169</green>
+			<blue>33</blue>
+		</color>
+	</division>
+	<division>
+		<name>Prince William County</name>
+		<color>
+			<red>60</red>
+			<green>226</green>
+			<blue>40</blue>
+		</color>
+	</division>
+	<division>
+		<name>Pulaski County</name>
+		<color>
+			<red>250</red>
+			<green>12</green>
+			<blue>78</blue>
+		</color>
+	</division>
+	<division>
+		<name>Rappahannock County</name>
+		<color>
+			<red>238</red>
+			<green>106</green>
+			<blue>134</blue>
+		</color>
+	</division>
+	<division>
+		<name>Richmond County</name>
+		<color>
+			<red>12</red>
+			<green>210</green>
+			<blue>69</blue>
+		</color>
+	</division>
+	<division>
+		<name>Roanoke County</name>
+		<color>
+			<red>93</red>
+			<green>83</green>
+			<blue>36</blue>
+		</color>
+	</division>
+	<division>
+		<name>Rockbridge County</name>
+		<color>
+			<red>5</red>
+			<green>255</green>
+			<blue>171</blue>
+		</color>
+	</division>
+	<division>
+		<name>Rockingham County</name>
+		<color>
+			<red>212</red>
+			<green>131</green>
+			<blue>245</blue>
+		</color>
+	</division>
+	<division>
+		<name>Russell County</name>
+		<color>
+			<red>210</red>
+			<green>112</green>
+			<blue>247</blue>
+		</color>
+	</division>
+	<division>
+		<name>Scott County</name>
+		<color>
+			<red>222</red>
+			<green>135</green>
+			<blue>42</blue>
+		</color>
+	</division>
+	<division>
+		<name>Shenandoah County</name>
+		<color>
+			<red>53</red>
+			<green>250</green>
+			<blue>225</blue>
+		</color>
+	</division>
+	<division>
+		<name>Smyth County</name>
+		<color>
+			<red>1</red>
+			<green>196</green>
+			<blue>85</blue>
+		</color>
+	</division>
+	<division>
+		<name>Southampton County</name>
+		<color>
+			<red>170</red>
+			<green>5</green>
+			<blue>202</blue>
+		</color>
+	</division>
+	<division>
+		<name>Spotsylvania County</name>
+		<color>
+			<red>115</red>
+			<green>91</green>
+			<blue>33</blue>
+		</color>
+	</division>
+	<division>
+		<name>Stafford County</name>
+		<color>
+			<red>24</red>
+			<green>172</green>
+			<blue>23</blue>
+		</color>
+	</division>
+	<division>
+		<name>Surry County</name>
+		<color>
+			<red>52</red>
+			<green>188</green>
+			<blue>44</blue>
+		</color>
+	</division>
+	<division>
+		<name>Sussex County</name>
+		<color>
+			<red>181</red>
+			<green>12</green>
+			<blue>62</blue>
+		</color>
+	</division>
+	<division>
+		<name>Tazewell County</name>
+		<color>
+			<red>41</red>
+			<green>189</green>
+			<blue>173</blue>
+		</color>
+	</division>
+	<division>
+		<name>Warren County</name>
+		<color>
+			<red>131</red>
+			<green>71</green>
+			<blue>31</blue>
+		</color>
+	</division>
+	<division>
+		<name>Washington County</name>
+		<color>
+			<red>249</red>
+			<green>187</green>
+			<blue>71</blue>
+		</color>
+	</division>
+	<division>
+		<name>Westmoreland County</name>
+		<color>
+			<red>78</red>
+			<green>68</green>
+			<blue>197</blue>
+		</color>
+	</division>
+	<division>
+		<name>Wise County</name>
+		<color>
+			<red>200</red>
+			<green>56</green>
+			<blue>165</blue>
+		</color>
+	</division>
+	<division>
+		<name>Wythe County</name>
+		<color>
+			<red>22</red>
+			<green>23</green>
+			<blue>147</blue>
+		</color>
+	</division>
+	<division>
+		<name>York County</name>
+		<color>
+			<red>28</red>
+			<green>165</green>
+			<blue>119</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Alexandria</name>
+		<color>
+			<red>210</red>
+			<green>244</green>
+			<blue>91</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Bristol</name>
+		<color>
+			<red>22</red>
+			<green>186</green>
+			<blue>195</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Buena Vista</name>
+		<color>
+			<red>221</red>
+			<green>118</green>
+			<blue>160</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Charlottesville</name>
+		<color>
+			<red>1</red>
+			<green>244</green>
+			<blue>105</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Chesapeake</name>
+		<color>
+			<red>103</red>
+			<green>148</green>
+			<blue>221</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Colonial Heights</name>
+		<color>
+			<red>44</red>
+			<green>209</green>
+			<blue>106</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Covington</name>
+		<color>
+			<red>243</red>
+			<green>181</green>
+			<blue>250</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Danville</name>
+		<color>
+			<red>109</red>
+			<green>140</green>
+			<blue>177</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Emporia</name>
+		<color>
+			<red>183</red>
+			<green>135</green>
+			<blue>76</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Fairfax</name>
+		<color>
+			<red>100</red>
+			<green>85</green>
+			<blue>104</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Falls Church</name>
+		<color>
+			<red>120</red>
+			<green>142</green>
+			<blue>83</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Franklin</name>
+		<color>
+			<red>207</red>
+			<green>251</green>
+			<blue>127</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Fredericksburg</name>
+		<color>
+			<red>135</red>
+			<green>228</green>
+			<blue>41</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Galax</name>
+		<color>
+			<red>75</red>
+			<green>210</green>
+			<blue>72</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Hampton</name>
+		<color>
+			<red>55</red>
+			<green>201</green>
+			<blue>121</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Harrisonburg</name>
+		<color>
+			<red>136</red>
+			<green>47</green>
+			<blue>120</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Hopewell</name>
+		<color>
+			<red>99</red>
+			<green>227</green>
+			<blue>168</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Lexington</name>
+		<color>
+			<red>167</red>
+			<green>219</green>
+			<blue>42</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Lynchburg</name>
+		<color>
+			<red>43</red>
+			<green>43</green>
+			<blue>199</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Manassas</name>
+		<color>
+			<red>146</red>
+			<green>24</green>
+			<blue>123</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Manassas Park</name>
+		<color>
+			<red>151</red>
+			<green>125</green>
+			<blue>106</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Martinsville</name>
+		<color>
+			<red>127</red>
+			<green>225</green>
+			<blue>246</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Newport News</name>
+		<color>
+			<red>85</red>
+			<green>175</green>
+			<blue>106</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Norfolk</name>
+		<color>
+			<red>204</red>
+			<green>176</green>
+			<blue>136</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Norton</name>
+		<color>
+			<red>229</red>
+			<green>60</green>
+			<blue>76</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Petersburg</name>
+		<color>
+			<red>60</red>
+			<green>101</green>
+			<blue>99</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Poquoson</name>
+		<color>
+			<red>51</red>
+			<green>126</green>
+			<blue>176</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Portsmouth</name>
+		<color>
+			<red>223</red>
+			<green>61</green>
+			<blue>151</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Radford</name>
+		<color>
+			<red>189</red>
+			<green>156</green>
+			<blue>54</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Richmond</name>
+		<color>
+			<red>195</red>
+			<green>17</green>
+			<blue>245</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Roanoke</name>
+		<color>
+			<red>46</red>
+			<green>187</green>
+			<blue>44</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Salem</name>
+		<color>
+			<red>146</red>
+			<green>244</green>
+			<blue>93</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Staunton</name>
+		<color>
+			<red>169</red>
+			<green>73</green>
+			<blue>84</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Suffolk</name>
+		<color>
+			<red>12</red>
+			<green>8</green>
+			<blue>179</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Virginia Beach</name>
+		<color>
+			<red>7</red>
+			<green>53</green>
+			<blue>66</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Waynesboro</name>
+		<color>
+			<red>71</red>
+			<green>230</green>
+			<blue>64</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Williamsburg</name>
+		<color>
+			<red>246</red>
+			<green>87</green>
+			<blue>254</blue>
+		</color>
+	</division>
+	<division>
+		<name>City of Winchester</name>
+		<color>
+			<red>186</red>
+			<green>251</green>
+			<blue>170</blue>
+		</color>
+	</division>
+</map>

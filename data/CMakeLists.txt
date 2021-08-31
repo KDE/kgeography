@@ -290,6 +290,8 @@ venezuela.kgm
 venezuela.png
 vietnam.kgm
 vietnam.png
+virginia.kgm
+virginia.png
 waters_world-class.kgm
 waters_world-class.png
 westbengal.kgm
