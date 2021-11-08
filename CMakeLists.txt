@@ -41,9 +41,9 @@ add_definitions(-DKF_DEPRECATED_WARNINGS_SINCE=0x053E00)
 include_directories (${CMAKE_CURRENT_BINARY_DIR})
 
 add_subdirectory( doc )
-add_subdirectory( src ) 
-add_subdirectory( data ) 
-add_subdirectory( icons ) 
+add_subdirectory( src )
+add_subdirectory( data )
+add_subdirectory( icons )
 
 ki18n_install(po)
 if (KF5DocTools_FOUND)
