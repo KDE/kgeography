@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.13 FATAL_ERROR)
+cmake_minimum_required (VERSION 3.16 FATAL_ERROR)
 
 # KDE Application Version, managed by release script
 set(RELEASE_SERVICE_VERSION_MAJOR "22")
@@ -10,7 +10,7 @@ project(kgeography VERSION ${RELEASE_SERVICE_VERSION})
 
 # minimal Qt requirement
 set(QT_MIN_VERSION "5.12.0") # Remember to update the QT_DEPRECATED_WARNINGS_SINCE below
-set(KF5_REQUIRED_VERSION "5.62.0") # Remember to update the KF_DEPRECATED_WARNINGS_SINCE below
+set(KF5_REQUIRED_VERSION "5.68.0") # Remember to update the KF_DEPRECATED_WARNINGS_SINCE below
 
 # ECM
 find_package (ECM ${KF5_REQUIRED_VERSION} REQUIRED NO_MODULE)
@@ -35,7 +35,7 @@ include(ECMSetupVersion)
 add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
 add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 add_definitions(-DQT_DEPRECATED_WARNINGS_SINCE=0x050C00)
-add_definitions(-DKF_DEPRECATED_WARNINGS_SINCE=0x053E00)
+add_definitions(-DKF_DEPRECATED_WARNINGS_SINCE=0x054400)
 
 # global include directories
 include_directories (${CMAKE_CURRENT_BINARY_DIR})
