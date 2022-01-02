@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=KGeography
+Name[ar]=الجغرافي
 Name[be]=KGeography
 Name[bg]=KGeography
 Name[bn]=কে-জিওগ্রাফি
@@ -63,6 +64,7 @@ Name[x-test]=xxKGeographyxx
 Name[zh_CN]=KGeography
 Name[zh_TW]=地理_KGeography
 GenericName=Geography Trainer
+GenericName[ar]=المدرب الجغرافي
 GenericName[be]=Настаўнік па геаграфіі
 GenericName[bg]=Географски тренировки
 GenericName[bn]=ভূগোল প্রশিক্ষক
@@ -124,6 +126,7 @@ GenericName[x-test]=xxGeography Trainerxx
 GenericName[zh_CN]=地理老师
 GenericName[zh_TW]=地理知識
 Comment=A Geography Learning Program
+Comment[ar]=برنامج تعليم الجغرافيا
 Comment[be]=Праграма для вывучэння геаграфіі
 Comment[bg]=Програма за изучаване на география
 Comment[bn]=ভূগোল শেখার প্রোগ্রাম
