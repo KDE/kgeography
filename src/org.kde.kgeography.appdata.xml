@@ -4,6 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>KGeography</name>
+  <name xml:lang="ar">الجغرافي</name>
   <name xml:lang="ca">KGeography</name>
   <name xml:lang="ca-valencia">KGeography</name>
   <name xml:lang="cs">KGeography</name>
@@ -33,6 +34,7 @@
   <name xml:lang="zh-CN">KGeography</name>
   <name xml:lang="zh-TW">KGeography</name>
   <summary>Geography learning tool</summary>
+  <summary xml:lang="ar">أداة تعلم الجغرافيا</summary>
   <summary xml:lang="ca">Eina per a aprendre geografia</summary>
   <summary xml:lang="ca-valencia">Eina per a aprendre geografia</summary>
   <summary xml:lang="de">Erdkunde-Lernprogramm</summary>
@@ -60,6 +62,7 @@
   <summary xml:lang="zh-TW">地理學習工具</summary>
   <description>
     <p>KGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).</p>
+    <p xml:lang="ar">الجغرافي هي أداة تعلم الجغرافيا ، والتي تتيح لك التعرف على التقسيمات السياسية لبعض البلدان (الأقسام وعواصم تلك الأقسام والأعلام المرتبطة بها إذا كان هناك بعضها).</p>
     <p xml:lang="ca">El KGeography és una eina per a aprendre geografia, la qual permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'aquestes divisions i les seves banderes associades si n'hi ha alguna).</p>
     <p xml:lang="ca-valencia">El KGeography és una eina per a aprendre geografia, la qual permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'aquestes divisions i les seues banderes associades si n'hi ha alguna).</p>
     <p xml:lang="de">KGeography ist ein Erdkunde-Lernprogramm. Damit können Sie die politischen Daten einiger Länder lernen (Länder, ihre Hauptstädte und ihre Flaggen).</p>
@@ -84,6 +87,7 @@
     <p xml:lang="x-test">xxKGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).xx</p>
     <p xml:lang="zh-CN">KGeography 是一个地理学习工具，它可以让你了解一些国家的政治分区 (分区，首都，及旗帜(如果有的话)) 。</p>
     <p>Features:</p>
+    <p xml:lang="ar">الميزات:</p>
     <p xml:lang="ca">Característiques:</p>
     <p xml:lang="ca-valencia">Característiques:</p>
     <p xml:lang="cs">Vlastnosti:</p>
@@ -113,6 +117,7 @@
     <p xml:lang="zh-TW">功能：</p>
     <ul>
       <li>Browse the maps clicking in a map division to see its name, capital and flag</li>
+      <li xml:lang="ar">تصفح الخرائط بالنقر على المنطقة لمعرفة الاسم والعاصمة والعلم</li>
       <li xml:lang="ca">Busqueu en els mapes fent clic a sobre d'una divisió en el mapa per a veure el seu nom, capital i bandera</li>
       <li xml:lang="ca-valencia">Busqueu en els mapes fent clic damunt d'una divisió en el mapa per a veure el seu nom, capital i bandera</li>
       <li xml:lang="de">Landkarte erkunden, indem Sie in der Karte auf ein Land klicken und dessen Name, Hauptstadt und Flagge angezeigt wird</li>
@@ -137,6 +142,7 @@
       <li xml:lang="x-test">xxBrowse the maps clicking in a map division to see its name, capital and flagxx</li>
       <li xml:lang="zh-CN">浏览地图，点击地图分区查看它的名字，首都和旗帜</li>
       <li>The game tells you a map division name and you have to click on it</li>
+      <li xml:lang="ar">تخبرك اللعبة باسم قسم الخريطة وعليك النقر فوقه</li>
       <li xml:lang="ca">El joc mostra el nom d'una divisió en el mapa i heu de fer clic sobre el lloc on està</li>
       <li xml:lang="ca-valencia">El joc mostra el nom d'una divisió en el mapa i heu de fer clic sobre el lloc on està</li>
       <li xml:lang="de">Der Name eines Landes wird gefragt und Sie müssen es auf der Karte anklicken.</li>
@@ -161,6 +167,7 @@
       <li xml:lang="x-test">xxThe game tells you a map division name and you have to click on itxx</li>
       <li xml:lang="zh-CN">此游戏告诉您地图分区的名字，您必须点击它</li>
       <li>The game tells you a capital and you have to guess the division it belongs to</li>
+      <li xml:lang="ar">تخبرك اللعبة بالعاصمة وعليك تخمين المنطقة التي تنتمي إليه</li>
       <li xml:lang="ca">El joc mostra una capital i heu d'esbrinar la divisió a la qual pertany</li>
       <li xml:lang="ca-valencia">El joc mostra una capital i heu d'esbrinar la divisió a la qual pertany</li>
       <li xml:lang="de">Ein Land anhand des Namens der Hauptstadt raten</li>
@@ -185,6 +192,7 @@
       <li xml:lang="x-test">xxThe game tells you a capital and you have to guess the division it belongs toxx</li>
       <li xml:lang="zh-CN">此游戏告诉您首都，您必须猜它属于哪个分区</li>
       <li>The game tells you a division and you have to guess its capital</li>
+      <li xml:lang="ar">تخبرك اللعبة بالمنطقة وعليك تخمين عاصمتها</li>
       <li xml:lang="ca">El joc mostra una divisió i heu d'esbrinar la seva capital</li>
       <li xml:lang="ca-valencia">El joc mostra una divisió i heu d'esbrinar la seua capital</li>
       <li xml:lang="de">Die Hauptstadt eines Landes raten</li>
@@ -209,6 +217,7 @@
       <li xml:lang="x-test">xxThe game tells you a division and you have to guess its capitalxx</li>
       <li xml:lang="zh-CN">此游戏告诉您分区，您必须猜它的首都是什么</li>
       <li>The game shows you a map division flag and you have to guess its name</li>
+      <li xml:lang="ar">تظهر لك اللعبة علم المنطقة وعليك تخمين اسمه</li>
       <li xml:lang="ca">El joc mostra la bandera d'una divisió en el mapa i heu d'esbrinar el seu nom</li>
       <li xml:lang="ca-valencia">El joc mostra la bandera d'una divisió en el mapa i heu d'esbrinar el seu nom</li>
       <li xml:lang="de">Ein Land anhand der Flagge erraten</li>
@@ -233,6 +242,7 @@
       <li xml:lang="x-test">xxThe game shows you a map division flag and you have to guess its namexx</li>
       <li xml:lang="zh-CN">此游戏告诉您一个地图分区的旗帜，您必须猜它的名字</li>
       <li>The game tells you a map division name and you have to guess its flag</li>
+      <li xml:lang="ar">تخبرك اللعبة باسم المنطقة وعليك تخمين علمها</li>
       <li xml:lang="ca">El joc mostra el nom d'una divisió en el mapa i heu d'esbrinar la seva bandera</li>
       <li xml:lang="ca-valencia">El joc mostra el nom d'una divisió en el mapa i heu d'esbrinar la seua bandera</li>
       <li xml:lang="de">Die Flagge eines Landes erraten</li>
@@ -257,6 +267,7 @@
       <li xml:lang="x-test">xxThe game tells you a map division name and you have to guess its flagxx</li>
       <li xml:lang="zh-CN">此游戏告诉您地图分区的名字，您必须猜它的旗帜</li>
       <li>The game shows an empty map and you have to place divisions on it one by one</li>
+      <li xml:lang="ar">تظهر اللعبة خريطة فارغة وعليك وضع التقسيمات عليها واحدة تلو الأخرى</li>
       <li xml:lang="ca">El joc mostra un mapa buit i heu de situar les divisions una a una</li>
       <li xml:lang="ca-valencia">El joc mostra un mapa buit i heu de situar les divisions una a una</li>
       <li xml:lang="de">Länder auf einer leeren Landkarte platzieren</li>
@@ -290,6 +301,7 @@
   <screenshots>
     <screenshot type="default">
       <caption>Training geography with KGeography</caption>
+      <caption xml:lang="ar">تدريب الجغرافيا مع الجغرافي</caption>
       <caption xml:lang="ca">Entrenament de geografia amb el KGeography</caption>
       <caption xml:lang="ca-valencia">Entrenament de geografia amb el KGeography</caption>
       <caption xml:lang="de">Erdkunde lernen mit KGeography</caption>
