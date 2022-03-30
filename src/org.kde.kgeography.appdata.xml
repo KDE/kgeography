@@ -65,7 +65,7 @@
     <p>KGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).</p>
     <p xml:lang="ar">الجغرافي هي أداة تعلم الجغرافيا ، والتي تتيح لك التعرف على التقسيمات السياسية لبعض البلدان (الأقسام وعواصم تلك الأقسام والأعلام المرتبطة بها إذا كان هناك بعضها).</p>
     <p xml:lang="ca">El KGeography és una eina per a aprendre geografia, la qual permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'aquestes divisions i les seves banderes associades si n'hi ha alguna).</p>
-    <p xml:lang="ca-valencia">El KGeography és una eina per a aprendre geografia, la qual permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'estes divisions i les seues banderes associades si n'hi ha alguna).</p>
+    <p xml:lang="ca-valencia">KGeography és una eina per a aprendre geografia, la qual permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'estes divisions i les seues banderes associades si n'hi ha alguna).</p>
     <p xml:lang="de">KGeography ist ein Erdkunde-Lernprogramm. Damit können Sie die politischen Daten einiger Länder lernen (Länder, ihre Hauptstädte und ihre Flaggen).</p>
     <p xml:lang="el">Το KGeography είναι ένα εργαλείο εκμάθησης γεωγραφίας, το οποίο σας επιτρέπει να μάθετε την πολιτική διαίρεση κάποιων χωρών (περιφέρειες, πρωτεύουσες περιφερειών και τις σημαίες τους αν υπάρχουν).</p>
     <p xml:lang="en-GB">KGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).</p>
@@ -312,7 +312,7 @@
       <caption>Training geography with KGeography</caption>
       <caption xml:lang="ar">تدريب الجغرافيا مع الجغرافي</caption>
       <caption xml:lang="ca">Entrenament de geografia amb el KGeography</caption>
-      <caption xml:lang="ca-valencia">Entrenament de geografia amb el KGeography</caption>
+      <caption xml:lang="ca-valencia">Entrenament de geografia amb KGeography</caption>
       <caption xml:lang="de">Erdkunde lernen mit KGeography</caption>
       <caption xml:lang="el">Εξάσκηση στη γεωγραφία με το KGeography</caption>
       <caption xml:lang="en-GB">Training geography with KGeography</caption>
