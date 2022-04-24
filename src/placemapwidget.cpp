@@ -362,7 +362,11 @@ void placeMapWidget::wheelEvent(QWheelEvent *e)
 	}
 }
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+void placeMapWidget::enterEvent(QEnterEvent*)
+#else
 void placeMapWidget::enterEvent(QEvent*)
+#endif
 {
 	if (p_currentDivisionItem)
 	{
