@@ -353,7 +353,7 @@ void placeMapWidget::wheelEvent(QWheelEvent *e)
 	}
 	else if ( e->modifiers()  == Qt::ControlModifier )
 	{
-		int delta = e->delta();
+		int delta = e->angleDelta().y();
 		if ( delta != 0 )
 		{
 			const qreal rescale = pow(2, qreal(delta/120)/2.0);
