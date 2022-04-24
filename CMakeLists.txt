@@ -9,8 +9,9 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 project(kgeography VERSION ${RELEASE_SERVICE_VERSION})
 
 # minimal Qt requirement
-set(QT_MIN_VERSION "5.12.0") # Remember to update the QT_DEPRECATED_WARNINGS_SINCE below
-set(KF5_REQUIRED_VERSION "5.68.0") # Remember to update the KF_DEPRECATED_WARNINGS_SINCE below
+set(QT_MIN_VERSION "5.15.2") # Remember to update the QT_DEPRECATED_WARNINGS_SINCE below
+set(KF5_REQUIRED_VERSION "5.89.0") # Remember to update the KF_DEPRECATED_WARNINGS_SINCE below
+set(KDE_COMPILERSETTINGS_LEVEL "5.82.0")
 
 # ECM
 find_package (ECM ${KF5_REQUIRED_VERSION} REQUIRED NO_MODULE)
@@ -34,8 +35,8 @@ include(ECMSetupVersion)
 
 add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
 add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
-add_definitions(-DQT_DEPRECATED_WARNINGS_SINCE=0x050C00)
-add_definitions(-DKF_DEPRECATED_WARNINGS_SINCE=0x054400)
+add_definitions(-DQT_DEPRECATED_WARNINGS_SINCE=0x050F02)
+add_definitions(-DKF_DEPRECATED_WARNINGS_SINCE=0x055900)
 
 # global include directories
 include_directories (${CMAKE_CURRENT_BINARY_DIR})

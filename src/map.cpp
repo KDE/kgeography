@@ -15,11 +15,12 @@
 #include <QFileInfo>
 #include <QRandomGenerator>
 
+#include <KLazyLocalizedString>
 
 KGmap::KGmap()
 {
-	p_capitalToDivisionPattern = I18N_NOOP2("@title:group", "%1 is the capital of...");
-	p_divisionToCapitalPattern = I18N_NOOP2("@title:group", "The capital of %1 is...");
+	p_capitalToDivisionPattern = kli18nc("@title:group", "%1 is the capital of...").untranslatedText();
+	p_divisionToCapitalPattern = kli18nc("@title:group", "The capital of %1 is...").untranslatedText();
 }
 
 KGmap::~KGmap()
