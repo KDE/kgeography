@@ -21,11 +21,13 @@ int main(int argc, char *argv[])
 {
         QApplication app(argc, argv);
 
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 	Kdelibs4ConfigMigrator migrate(QStringLiteral("kgeography"));
 	migrate.setConfigFiles(QStringList() << QStringLiteral("kgeographyrc"));
 	migrate.setUiFiles(QStringList() << QStringLiteral("kgeographyui.rc"));
 	migrate.migrate();
 	KLocalizedString::setApplicationDomain("kgeography");
+#endif
 
 	KAboutData about(QStringLiteral("kgeography"), i18n("KGeography"), KGEOGRAPHY_VERSION_STRING, i18n("A Geography learning program"), KAboutLicense::GPL, i18n("© 2004-2005 Albert Astals Cid"), QString(), QStringLiteral("https://userbase.kde.org/KGeography"));
 	about.addAuthor(i18n("Albert Astals Cid"), i18n("Programmer and designer"), QStringLiteral("aacid@kde.org"));
