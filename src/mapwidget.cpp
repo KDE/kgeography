@@ -173,7 +173,7 @@ void mapWidget::wheelEvent(QWheelEvent *e)
 #if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
 		QWheelEvent reorientedEvent(e->position(), e->globalPosition(), e->pixelDelta().transposed(), -e->angleDelta().transposed(), e->buttons(), Qt::NoModifier, e->phase(), e->inverted(), e->source(), e->pointingDevice());
 #else
-		QWheelEvent reorientedEvent(e->pos(), e->globalPos(), e->pixelDelta().transposed(), e->angleDelta().transposed(), e->buttons(), Qt::NoModifier, e->phase(), e->inverted(), e->source());
+		QWheelEvent reorientedEvent(e->position(), e->globalPosition(), e->pixelDelta().transposed(), e->angleDelta().transposed(), e->buttons(), Qt::NoModifier, e->phase(), e->inverted(), e->source());
 #endif
 		QGraphicsView::wheelEvent(&reorientedEvent);
 	}
