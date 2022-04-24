@@ -343,7 +343,12 @@ void placeMapWidget::wheelEvent(QWheelEvent *e)
 	if ( e->modifiers() == Qt::NoModifier ) QGraphicsView::wheelEvent(e);
 	else if ( e->modifiers()  == Qt::ShiftModifier )
 	{
-		QWheelEvent reorientedEvent(e->pos(), e->delta(), e->buttons(), Qt::NoModifier, Qt::Orientation(3 -int(e->orientation())));
+		// Scroll horizontally by swapping x and y for the delta
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+		QWheelEvent reorientedEvent(e->position(), e->globalPosition(), e->pixelDelta().transposed(), -e->angleDelta().transposed(), e->buttons(), Qt::NoModifier, e->phase(), e->inverted(), e->source(), e->pointingDevice());
+#else
+		QWheelEvent reorientedEvent(e->pos(), e->globalPos(), e->pixelDelta().transposed(), e->angleDelta().transposed(), e->buttons(), Qt::NoModifier, e->phase(), e->inverted(), e->source());
+#endif
 		QGraphicsView::wheelEvent(&reorientedEvent);
 	}
 	else if ( e->modifiers()  == Qt::ControlModifier )
