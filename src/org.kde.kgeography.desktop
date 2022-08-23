@@ -191,6 +191,5 @@ Exec=kgeography
 Icon=kgeography
 Type=Application
 X-DocPath=kgeography/index.html
-Terminal=false
 Categories=Qt;KDE;Education;Geography;
 X-DBUS-ServiceName=org.kde.kgeography
