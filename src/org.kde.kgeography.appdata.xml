@@ -80,7 +80,7 @@
     <p xml:lang="fr">KGeography est un outil d'apprentissage de la géographie, vous permettant d'apprendre les divisions politiques de certains pays (régions, capitales de ces régions et drapeaux associés, le cas échéant).</p>
     <p xml:lang="gl">KGeography é unha ferramenta para aprender xeografía, que lle permite aprender as divisións políticas  dalgúns países (divisións, capitais desas divisións e as súas bandeiras se as teñen).</p>
     <p xml:lang="id">KGeography adalah alat pembelajaran geografi, yang memungkinkan kamu untuk belajar tentang perpecahan politik di beberapa negara (divisi, ibukota dari divisi tersebut dan bendera terkait jika ada).</p>
-    <p xml:lang="it">KGeography è uno strumento per l'apprendimento della geografia, che ti permette di apprendere le divisioni politiche di alcune nazioni (divisioni, capitali di queste divisioni e le loro bandiere se ve ne sono).</p>
+    <p xml:lang="it">KGeography è uno strumento per l'apprendimento della geografia, che ti permette di apprendere le divisioni politiche di alcune nazioni (divisioni, capitali di queste divisioni e le loro bandiere, se ve ne sono).</p>
     <p xml:lang="ka">KGeography არის გეოგრაფიის შემსწავლელი ინსტრუმენტი, რომელიც საშუალებას გაძლევთ გაეცნოთ ზოგიერთი ქვეყნის პოლიტიკურ დაყოფას (განყოფილებები, ამ განყოფილებების დედაქალაქები და მათთან დაკავშირებული დროშები, თუ არსებობს).</p>
     <p xml:lang="nl">KGeography is een programma om aardrijkskunde te leren, waarmee je iets kunt leren over de politieke indeling van sommige landen (onderdelen ervan, de bijbehorende hoofdsteden en eventuele vlaggen).</p>
     <p xml:lang="pl">KGeography jest narzędziem do nauki geografii, które pozwala uczyć się na temat podziałów politycznych niektórych państw (podziały, stolice tych podziałów i skojarzone z nimi flagi, jeśli jakieś istnieją).</p>
@@ -168,7 +168,7 @@
       <li xml:lang="fr">Le jeu vous indique le nom de la région sur la carte et vous devez cliquer dessus</li>
       <li xml:lang="gl">O xogo diche un nome de división do mapa e tela que premer</li>
       <li xml:lang="id">Permainan ini memberi tau kamu nama divisi peta dan kamu harus mengekliknya</li>
-      <li xml:lang="it">Il gioco ti dice il nome della divisione della mappa e tu devi farci clic sopra</li>
+      <li xml:lang="it">Il gioco ti dice il nome della divisione della mappa, e devi farci clic sopra</li>
       <li xml:lang="ka">თამაში გეუბნებათ რუკის ოლქის სახელს და თქვენ უნდა დააჭიროთ მას</li>
       <li xml:lang="nl">Een spel waarin de naam van een kaartgedeelte wordt genoemd waarna je erop moet klikken</li>
       <li xml:lang="pl">Grę, która podaje ci nazwę obszaru, na który musisz kliknąć</li>
@@ -196,7 +196,7 @@
       <li xml:lang="fr">Le jeu vous indique une capitale et vous devez deviner la région à laquelle elle correspond</li>
       <li xml:lang="gl">O xogo diche unha capital e debes adiviñar a división á que pertence</li>
       <li xml:lang="id">Permainan ini memberi tau kamu ibukota dan kamu harus menebak divisi yang dimilikinya</li>
-      <li xml:lang="it">Il gioco ti dice una capitale e tu devi indovinare la divisione a cui appartiene</li>
+      <li xml:lang="it">Il gioco ti dice una capitale, e devi indovinare la divisione a cui appartiene</li>
       <li xml:lang="ka">თამაში გეუბნებათ დედაქალაქს და თქვენ უნდა გამოიცნოთ ოლქი, რომელსაც ის ეკუთვნის</li>
       <li xml:lang="nl">Een spel waarin een hoofdstad wordt genoemd waarna je moet antwoorden bij welk kaartgedeelte die hoort</li>
       <li xml:lang="pl">Grę, która podaje ci nazwę stolicy, a ty musisz podać, do którego obszaru ona należy</li>
@@ -224,7 +224,7 @@
       <li xml:lang="fr">Le jeu vous indique une région et vous devez en deviner la capitale</li>
       <li xml:lang="gl">O xogo diche unha división e debes adiviñar a súa capital</li>
       <li xml:lang="id">Permainan ini memberi tau kamu sebuah divisi dan kamu harus menebak ibukotanya</li>
-      <li xml:lang="it">Il gioco ti dice una divisione e tu devi indovinare la sua capitale</li>
+      <li xml:lang="it">Il gioco ti dice una divisione, e devi indovinare la sua capitale</li>
       <li xml:lang="ka">თამაში გიჩვენებთ ოლქს და თქვენ უნდა გამოიცნოთ მისი დედაქალაქი</li>
       <li xml:lang="nl">Een spel waarin een kaartgedeelte wordt genoemd en je moet antwoorden wat daarvan de hoofdstad is</li>
       <li xml:lang="pl">Grę, która podaje ci nazwę obszaru, a ty musisz podać nazwę jego stolicy</li>
@@ -252,7 +252,7 @@
       <li xml:lang="fr">Le jeu vous présente un drapeau pour une région de la carte et vous devez en deviner le nom</li>
       <li xml:lang="gl">O xogo móstrache a bandeira dunha división do mapa e tes que adiviñar o seu nome</li>
       <li xml:lang="id">Permainan ini memperlihatkan bendera divisi peta dan kamu harus menebak namanya</li>
-      <li xml:lang="it">Il gioco ti mostra la bandiera di una divisione della mappa e devi indovinare il suo nome</li>
+      <li xml:lang="it">Il gioco ti mostra la bandiera di una divisione della mappa, e devi indovinare il suo nome</li>
       <li xml:lang="ka">თამაში გიჩვენებთ რუკის ოლქის დროშას და თქვენ უნდა გამოიცნოთ მისი სახელი</li>
       <li xml:lang="nl">Een spel waarin de vlag wordt getoond van een kaartgedeelte en je moet antwoorden met de naam van dat kaartgedeelte</li>
       <li xml:lang="pl">Grę, która pokazuje ci flagę obszaru, a ty musisz podać jego nazwę</li>
@@ -280,7 +280,7 @@
       <li xml:lang="fr">Le jeu vous indique un nom de région de la carte et vous devez en deviner le drapeau</li>
       <li xml:lang="gl">O xogo diche o nome dunha división do mapa e tes que adiviñar a súa bandeira</li>
       <li xml:lang="id">Permainan ini memberi tau kamu nama divisi peta dan kamu harus menebak benderanya</li>
-      <li xml:lang="it">Il gioco ti dice il nome di una divisione della mappa e tu devi indovinare la sua bandiera</li>
+      <li xml:lang="it">Il gioco ti dice il nome di una divisione della mappa, e devi indovinare la sua bandiera</li>
       <li xml:lang="ka">თამაში გეუბნებათ რუკის ოლქის სახელს და თქვენ უნდა გამოიცნოთ მისი დროშა</li>
       <li xml:lang="nl">Een spel waarin de naam wordt genoemd van een kaartgedeelte en je moet opgeven welke vlag erbij hoort</li>
       <li xml:lang="pl">Grę, która podaje ci nazwę obszaru, a ty musisz podać, jaka jest jego flaga</li>
@@ -308,7 +308,7 @@
       <li xml:lang="fr">Le jeu vous indique une carte vide et vous devez placer les régions dessus, une par une</li>
       <li xml:lang="gl">O xogo mostra un mapa baleiro e hai que colocar as divisións unha a unha</li>
       <li xml:lang="id">Permainan ini menampilkan peta kosong dan kamu harus menempatkan divisi di atasnya satu per satu</li>
-      <li xml:lang="it">Il gioco mostra una mappa vuota e devi piazzarci sopra le divisioni, una per una</li>
+      <li xml:lang="it">Il gioco ti mostra una mappa vuota e devi piazzarci sopra le divisioni, una per una</li>
       <li xml:lang="ka">თამაში გიჩვენებთ ცარიელ რუკას და თქვენ მასზე ოლქები სათითაოდ უნდა დაალაგოთ</li>
       <li xml:lang="nl">In dit spel wordt een lege kaart getoond, waarin je de kaartgedeelten een voor een moet plaatsen</li>
       <li xml:lang="pl">Grę, która wyświetla pustą mapę, a twoim zadaniem jest nałożenie na nią po kolei obszarów</li>
