@@ -35,8 +35,9 @@ int main(int argc, char *argv[])
 	KAboutData::setApplicationData(about);
 
         app.setWindowIcon(QIcon::fromTheme(QStringLiteral("kgeography")));
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 	app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
-
+#endif
 	KCrash::initialize();
 
 	QCommandLineParser parser;
