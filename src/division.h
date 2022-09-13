@@ -29,8 +29,10 @@ class division
 		QString getName() const;
 		QRgb getRGB() const;
 		QString getFlagFile() const;
+		QString getBlurredFlagFile() const;
 		QString getCapital() const;
 		QStringList getFalseCapitals() const;
+		QString getFlagForQuestion() const;
 		
 		void setCapital(const QString &name);
 		void setFalseCapitals(const QStringList &falseCapitals);
@@ -39,9 +41,10 @@ class division
 		void setName(const QString &name);
 		void setRGB(int r, int g, int b);
 		bool setFlagFile(const QString &path);
+		bool setBlurredFlagFile(const QString &path);
 		
 	private:
-		QString p_untranslatedName, p_name, p_flagFile, p_capital;
+		QString p_untranslatedName, p_name, p_flagFile, p_blurredFlagFile, p_capital;
 		QStringList p_falseCapitals;
 		QRgb p_color;
 		int p_askMode;

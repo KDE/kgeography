@@ -71,6 +71,7 @@
 	<division>
 		<name>Amazonas</name>
 		<flag>peru/amazonas.png</flag>
+		<blurredflag>peru/blurred_amazonas.png</blurredflag>
 		<capital>Chachapoyas</capital>
 		<color>
 			<red>130</red>
@@ -81,6 +82,7 @@
 	<division>
 		<name>Ancash</name>
 		<flag>peru/ancash.png</flag>
+		<blurredflag>peru/blurred_ancash.png</blurredflag>
 		<capital>Huaraz</capital>
 		<color>
 			<red>130</red>
@@ -251,6 +253,7 @@
 	<division>
 		<name>Tacna</name>
 		<flag>peru/tacna.png</flag>
+		<blurredflag>peru/blurred_tacna.png</blurredflag>
 		<capital>Tacna</capital>
 		<color>
 			<red>250</red>
@@ -291,6 +294,7 @@
 	<division>
 		<name>San Martin</name>
 		<flag>peru/san_martin.png</flag>
+		<blurredflag>peru/blurred_san_martin.png</blurredflag>
 		<capital>Moyobamba</capital>
 		<color>
 			<red>250</red>

@@ -3,53 +3,79 @@ install(FILES
    usa_alaska.png
    usa_arizona.png
    usa_arkansas.png
+   blurred_usa_arkansas.png
    usa_california.png
+   blurred_usa_california.png
    usa_colorado.png
    usa_connecticut.png
    usa_delaware.png
    usa_district_of_columbia.png
    usa_florida.png
+   blurred_usa_florida.png
    usa_georgia.png
    usa_hawaii.png
    usa_idaho.png
+   blurred_usa_idaho.png
    usa_illinois.png
+   blurred_usa_illinois.png
    usa_indiana.png
    usa_iowa.png
+   blurred_usa_iowa.png
    usa_kansas.png
+   blurred_usa_kansas.png
    usa_kentucky.png
+   blurred_usa_kentucky.png
    usa_louisiana.png
    usa_maine.png
+   blurred_usa_maine.png
    usa_maryland.png
    usa_massachusetts.png
    usa_michigan.png
    usa_minnesota.png
+   blurred_usa_minnesota.png
    usa_mississippi.png
    usa_missouri.png
    usa_montana.png
+   blurred_usa_montana.png
    usa_nebraska.png
+   blurred_usa_nebraska.png
    usa_nevada.png
+   blurred_usa_nevada.png
    usa_new_hampshire.png
+   blurred_usa_new_hampshire.png
    usa_new_jersey.png
    usa_new_mexico.png
    usa_new_york.png
    usa_north_carolina.png
+   blurred_usa_north_carolina.png
    usa_north_dakota.png
+   blurred_usa_north_dakota.png
    usa_ohio.png
    usa_oklahoma.png
+   blurred_usa_oklahoma.png
    usa_oregon.png
+   blurred_usa_oregon.png
    usa_pennsylvania.png
    usa_rhode_island.png
    usa_south_carolina.png
    usa_south_dakota.png
+   blurred_usa_south_dakota.png
    usa_tennessee.png
    usa_texas.png
    usa_utah.png
+   blurred_usa_utah.png
    usa_vermont.png
+   blurred_usa_vermont.png
    usa_virginia.png
+   blurred_usa_virginia.png
    usa_washington.png
+   blurred_usa_washington.png
    usa_west_virginia.png
+   blurred_usa_west_virginia.png
    usa_wisconsin.png
+   blurred_usa_wisconsin.png
    usa_wyoming.png
+   blurred_usa_wyoming.png
 	DESTINATION ${KDE_INSTALL_DATADIR}/kgeography/flags)
 
 

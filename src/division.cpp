@@ -61,6 +61,11 @@ QString division::getFlagFile() const
 	return p_flagFile;
 }
 
+QString division::getBlurredFlagFile() const
+{
+	return p_blurredFlagFile;
+}
+
 QString division::getCapital() const
 {
 	return p_capital;
@@ -105,4 +110,15 @@ bool division::setFlagFile(const QString &path)
 {
 	p_flagFile = path;
 	return QFile::exists(path);
+}
+
+bool division::setBlurredFlagFile(const QString &path)
+{
+	p_blurredFlagFile = path;
+	return QFile::exists(path);
+}
+
+QString division::getFlagForQuestion() const
+{
+	return p_blurredFlagFile.isNull() ? p_flagFile : p_blurredFlagFile;
 }

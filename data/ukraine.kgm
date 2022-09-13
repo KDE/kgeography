@@ -74,7 +74,7 @@
 
 <division> 
 <name>Cherkas'ka oblast'</name>
-<capital>Cherkasy</capital> <flag>ukraine/Cherkasy.png</flag>
+<capital>Cherkasy</capital> <flag>ukraine/Cherkasy.png</flag> <blurredflag>ukraine/blurred_Cherkasy.png</blurredflag>
 <color> <red> 128 </red> <green> 128 </green> <blue> 0 </blue> </color> 
 </division>
 

@@ -25,7 +25,8 @@ divisionFlagAsker::divisionFlagAsker(QWidget *parent, KGmap *m, QWidget *w, uint
 bool divisionFlagAsker::nextBoxAskerQuestionHook(const division *div, int i, bool isAnswer)
 {
 	QSize pixmapSize(60, 40);
-	QIcon icon(div -> getFlagFile());
+	QIcon icon(div -> getFlagForQuestion());
+
 	if (isAnswer)
 	{
 		const QString divisionName = div -> getName();

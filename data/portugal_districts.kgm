@@ -44,6 +44,7 @@
 	<division>
 		<name>Viana do Castelo</name>
 		<flag>portugal/viana_do_castelo.png</flag>
+		<blurredflag>portugal/blurred_viana_do_castelo.png</blurredflag>
 		<capital>Viana do Castelo</capital>
 		<color>
 			<red>146</red>
@@ -74,6 +75,7 @@
 	<division>
 		<name>Braga</name>
 		<flag>portugal/braga.png</flag>
+		<blurredflag>portugal/blurred_braga.png</blurredflag>
 		<capital>Braga</capital>
 		<color>
 			<red>90</red>
@@ -84,6 +86,7 @@
 	<division>
 		<name>Vila Real</name>
 		<flag>portugal/vila_real.png</flag>
+		<blurredflag>portugal/blurred_vila_real.png</blurredflag>
 		<capital>Vila Real</capital>
 		<color>
 			<red>146</red>
@@ -94,6 +97,7 @@
 	<division>
 		<name>Bragança</name>
 		<flag>portugal/braganca.png</flag>
+		<blurredflag>portugal/blurred_braganca.png</blurredflag>
 		<capital>Bragança</capital>
 		<color>
 			<red>227</red>
@@ -104,6 +108,7 @@
 	<division>
 		<name>Porto</name>
 		<flag>portugal/porto.png</flag>
+		<blurredflag>portugal/blurred_porto.png</blurredflag>
 		<capital>Porto</capital>
 		<color>
 			<red>158</red>
@@ -114,6 +119,7 @@
 	<division>
 		<name>Aveiro</name>
 		<flag>portugal/aveiro.png</flag>
+		<blurredflag>portugal/blurred_aveiro.png</blurredflag>
 		<capital>Aveiro</capital>
 		<color>
 			<red>210</red>
@@ -124,6 +130,7 @@
 	<division>
 		<name>Viseu</name>
 		<flag>portugal/viseu.png</flag>
+		<blurredflag>portugal/blurred_viseu.png</blurredflag>
 		<capital>Viseu</capital>
 		<color>
 			<red>227</red>
@@ -134,6 +141,7 @@
 	<division>
 		<name>Guarda</name>
 		<flag>portugal/guarda.png</flag>
+		<blurredflag>portugal/blurred_guarda.png</blurredflag>
 		<capital>Guarda</capital>
 		<color>
 			<red>227</red>
@@ -144,6 +152,7 @@
 	<division>
 		<name>Coimbra</name>
 		<flag>portugal/coimbra.png</flag>
+		<blurredflag>portugal/blurred_coimbra.png</blurredflag>
 		<capital>Coimbra</capital>
 		<color>
 			<red>152</red>
@@ -154,6 +163,7 @@
 	<division>
 		<name>Castelo Branco</name>
 		<flag>portugal/castelo_branco.png</flag>
+		<blurredflag>portugal/blurred_castelo_branco.png</blurredflag>
 		<capital>Castelo Branco</capital>
 		<color>
 			<red>83</red>
@@ -164,6 +174,7 @@
 	<division>
 		<name>Leiria</name>
 		<flag>portugal/leiria.png</flag>
+		<blurredflag>portugal/blurred_leiria.png</blurredflag>
 		<capital>Leiria</capital>
 		<color>
 			<red>83</red>
@@ -174,6 +185,7 @@
 	<division>
 		<name>Santarém</name>
 		<flag>portugal/santarem.png</flag>
+		<blurredflag>portugal/blurred_santarem.png</blurredflag>
 		<capital>Santarém</capital>
 		<color>
 			<red>83</red>
@@ -184,6 +196,7 @@
 	<division>
 		<name>Lisboa</name>
 		<flag>portugal/lisboa.png</flag>
+		<blurredflag>portugal/blurred_lisboa.png</blurredflag>
 		<capital>Lisboa</capital>
 		<color>
 			<red>83</red>
@@ -194,6 +207,7 @@
 	<division>
 		<name>Évora</name>
 		<flag>portugal/evora.png</flag>
+		<blurredflag>portugal/blurred_evora.png</blurredflag>
 		<capital>Évora</capital>
 		<color>
 			<red>215</red>
@@ -204,6 +218,7 @@
 	<division>
 		<name>Setúbal</name>
 		<flag>portugal/setubal.png</flag>
+		<blurredflag>portugal/blurred_setubal.png</blurredflag>
 		<capital>Setúbal</capital>
 		<color>
 			<red>227</red>
@@ -214,6 +229,7 @@
 	<division>
 		<name>Beja</name>
 		<flag>portugal/beja.png</flag>
+		<blurredflag>portugal/blurred_beja.png</blurredflag>
 		<capital>Beja</capital>
 		<color>
 			<red>227</red>
@@ -224,6 +240,7 @@
 	<division>
 		<name>Faro</name>
 		<flag>portugal/faro.png</flag>
+		<blurredflag>portugal/blurred_faro.png</blurredflag>
 		<capital>Faro</capital>
 		<color>
 			<red>232</red>
@@ -234,6 +251,7 @@
 	<division>
 		<name>Portalegre</name>
 		<flag>portugal/portalegre.png</flag>
+		<blurredflag>portugal/blurred_portalegre.png</blurredflag>
 		<capital>Portalegre</capital>
 		<color>
 			<red>148</red>

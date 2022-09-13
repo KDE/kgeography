@@ -78,6 +78,7 @@
 	<division>
 		<name>Paraná</name>
 		<flag>brazil/br_PN.png</flag>
+		<blurredflag>brazil/blurred_br_PN.png</blurredflag>
 		<capital>Curitiba</capital>
 		<color>
 			<red>140</red>
@@ -218,6 +219,7 @@
 	<division>
 		<name>Rio de Janeiro State</name>
 		<flag>brazil/br_RJ.png</flag>
+		<blurredflag>brazil/blurred_br_RJ.png</blurredflag>
 		<capital>Rio de Janeiro</capital>
 		<color>
 			<red>201</red>

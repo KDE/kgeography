@@ -9,6 +9,7 @@ install(FILES
    br_MT.png
    br_PI.png
    br_RJ.png
+   blurred_br_RJ.png
    br_RR.png
    br_SE.png
    br_AL.png
@@ -17,6 +18,7 @@ install(FILES
    br_MG.png
    br_PA.png
    br_PN.png
+   blurred_br_PN.png
    br_RN.png
    br_RS.png
    br_SP.png

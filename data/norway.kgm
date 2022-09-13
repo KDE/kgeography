@@ -127,6 +127,7 @@
 		<name>Oslo</name>
 		<capital>Oslo</capital>
 		<flag>norway/oslo.png</flag>
+		<blurredflag>norway/blurred_oslo.png</blurredflag>
 		<color>
 			<red>168</red>
 			<green>223</green>

@@ -2,7 +2,8 @@
 ########### install files ###############
 
 install(FILES
-Cherkasy.png    
+Cherkasy.png
+blurred_Cherkasy.png
 Crimea.png         
 Ivano-Frankivsk.png  
 Khmelnitsky.png  

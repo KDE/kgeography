@@ -7,6 +7,7 @@ install(FILES
   more_og_romsdal.png
   nordland.png
   oslo.png
+  blurred_oslo.png
   rogaland.png
   troms_og_finnmark.png
   trondelag.png

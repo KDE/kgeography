@@ -389,6 +389,9 @@ on the &kgeography; website.
   <para><sgmltag class="starttag">flag</sgmltag> and <sgmltag class="endtag">flag</sgmltag>: the file (without any path) containing the flag of the division, &eg; <quote><literal>albania.png</literal></quote>. This tag is optional. Not needed for the divisions whose <sgmltag class="starttag">ignore</sgmltag> tag is set to <userinput>yes</userinput>.</para>
 </listitem>
 <listitem>
+  <para><sgmltag class="starttag">blurredflag</sgmltag> and <sgmltag class="endtag">blurredflag</sgmltag>: the file (without any path) containing the blurred flag of the division, &eg; <quote><literal>blurred_albania.png</literal></quote>. This tag is optional. It should be used in situations where the flag has the name of the division to which it belongs written on it. This can cause the flag guessing games to become too easy, and as such submission of the flags with the text blurred out is encouraged.</para>
+</listitem>
+<listitem>
   <para><sgmltag class="starttag">color</sgmltag> and <sgmltag class="endtag">color</sgmltag>: the color the division has in the map.</para>
 </listitem>
 <listitem>
@@ -431,6 +434,9 @@ on the &kgeography; website.
 <title>Flags</title>
 <para>
  If you have used the <sgmltag class="starttag">flag</sgmltag> tag you should provide the flag files. They have to be in <acronym>PNG</acronym> format and better if they are 300x200 pixels and you provide a &SVG; file for it. To obtain &SVG; flags of almost all countries in the world and some other divisions, you can consult the <ulink url="https://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770">Sodipodi flags collection</ulink>.
+</para>
+<para>
+ As noted previously, we encourage you to provide blurred flag files for flags that have the division written on them. The same requirements apply to the blurred flag files as to the regular flag files. While there is no prescribed naming notation for the blurred files, we recommend saving these down with the name of the original flag prefixed with <literal>blurred_</literal>, &eg; <quote><literal>blurred_albania.png</literal></quote>
 </para>
 </sect1>
 <sect1 id="how-to-test">

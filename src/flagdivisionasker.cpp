@@ -50,7 +50,7 @@ bool flagDivisionAsker::nextBoxAskerQuestionHook(const division *div, int i, boo
 	if (isAnswer)
 	{
 		// we put the flag image
-		QImage image(div -> getFlagFile());
+		QImage image(div -> getFlagForQuestion());
 		p_flag -> img = image;
 		p_flag -> setMinimumSize(image.size());
 		p_flag -> update();
@@ -61,7 +61,7 @@ bool flagDivisionAsker::nextBoxAskerQuestionHook(const division *div, int i, boo
 	else
 	{
 		// There are some maps like the Pacific one where two divisions have the same flag
-		QImage image(div -> getFlagFile());
+		QImage image(div -> getFlagForQuestion());
 		if (p_flag -> img == image) return false;
 	}
 	p_radioButtons[i] -> setText(i18nc("@option:radio This flag belongs to:", "%1", div -> getName()));

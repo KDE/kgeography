@@ -115,6 +115,16 @@ KGmap *mapReader::parseMap(const QString &path)
 							p_error = i18n("The flag image file for %1 does not exist", kgdiv -> getName());
 						}
 					}
+
+					QString blurredFlagFile = getElementString(QStringLiteral("blurredflag"), divisionTag, Optional);
+
+					if (!blurredFlagFile.isNull())
+					{
+						if (!kgdiv -> setBlurredFlagFile( baseDir + "/flags/" + blurredFlagFile ))
+						{
+							p_error = i18n("The blurred flag image file for %1 does not exist", kgdiv -> getName());
+						}
+					}
 					
 					// division ignoreness
 					const QString &ignore = getElementString(QStringLiteral("ignore"), divisionTag, Optional).toLower();

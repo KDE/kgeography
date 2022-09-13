@@ -165,6 +165,7 @@
 		<name>Arkansas</name>
 		<capital>Little Rock</capital>
                 <flag>usa_arkansas.png</flag>
+				<blurredflag>blurred_usa_arkansas.png</blurredflag>
 		<color>
 			<red>130</red>
 			<green>130</green>
@@ -175,6 +176,7 @@
 		<name>California</name>
 		<capital>Sacramento</capital>
                 <flag>usa_california.png</flag>
+				<blurredflag>blurred_usa_california.png</blurredflag>
 		<color>
 			<red>130</red>
 			<green>170</green>
@@ -215,6 +217,7 @@
 		<name>Florida</name>
 		<capital>Tallahassee</capital>
                 <flag>usa_florida.png</flag>
+				<blurredflag>blurred_usa_florida.png</blurredflag>
 		<color>
 			<red>130</red>
 			<green>210</green>
@@ -245,6 +248,7 @@
 		<name>Idaho</name>
 		<capital>Boise</capital>
                 <flag>usa_idaho.png</flag>
+				<blurredflag>blurred_usa_idaho.png</blurredflag>
 		<color>
 			<red>130</red>
 			<green>210</green>
@@ -255,6 +259,7 @@
 		<name>Illinois</name>
 		<capital>Springfield</capital>
                 <flag>usa_illinois.png</flag>
+				<blurredflag>blurred_usa_illinois.png</blurredflag>
 		<color>
 			<red>130</red>
 			<green>250</green>
@@ -275,6 +280,7 @@
 		<name>Iowa</name>
 		<capital>Des Moines</capital>
                 <flag>usa_iowa.png</flag>
+				<blurredflag>blurred_usa_iowa.png</blurredflag>
 		<color>
 			<red>130</red>
 			<green>250</green>
@@ -285,6 +291,7 @@
 		<name>Kansas</name>
 		<capital>Topeka</capital>
                 <flag>usa_kansas.png</flag>
+				<blurredflag>blurred_usa_kansas.png</blurredflag>
 		<color>
 			<red>130</red>
 			<green>250</green>
@@ -295,6 +302,7 @@
 		<name>Kentucky</name>
 		<capital>Frankfort</capital>
                 <flag>usa_kentucky.png</flag>
+				<blurredflag>blurred_usa_kentucky.png</blurredflag>
 		<color>
 			<red>170</red>
 			<green>130</green>
@@ -315,6 +323,7 @@
 		<name>Maine</name>
 		<capital>Augusta</capital>
                 <flag>usa_maine.png</flag>
+				<blurredflag>blurred_usa_maine.png</blurredflag>
 		<color>
 			<red>170</red>
 			<green>130</green>
@@ -355,6 +364,7 @@
 		<name>Minnesota</name>
 		<capital>Saint Paul</capital>
                 <flag>usa_minnesota.png</flag>
+				<blurredflag>blurred_usa_minnesota.png</blurredflag>
 		<color>
 			<red>170</red>
 			<green>170</green>
@@ -385,6 +395,7 @@
 		<name>Montana</name>
 		<capital>Helena</capital>
                 <flag>usa_montana.png</flag>
+				<blurredflag>blurred_usa_montana.png</blurredflag>
 		<color>
 			<red>170</red>
 			<green>210</green>
@@ -395,6 +406,7 @@
 		<name>Nebraska</name>
 		<capital>Lincoln</capital>
                 <flag>usa_nebraska.png</flag>
+				<blurredflag>blurred_usa_nebraska.png</blurredflag>
 		<color>
 			<red>170</red>
 			<green>210</green>
@@ -405,6 +417,7 @@
 		<name>Nevada</name>
 		<capital>Carson City</capital>
                 <flag>usa_nevada.png</flag>
+				<blurredflag>blurred_usa_nevada.png</blurredflag>
 		<color>
 			<red>170</red>
 			<green>210</green>
@@ -415,6 +428,7 @@
 		<name>New Hampshire</name>
 		<capital>Concord</capital>
                 <flag>usa_new_hampshire.png</flag>
+				<blurredflag>blurred_usa_new_hampshire.png</blurredflag>
 		<color>
 			<red>170</red>
 			<green>250</green>
@@ -455,6 +469,7 @@
 		<name>North Carolina</name>
 		<capital>Raleigh</capital>
                 <flag>usa_north_carolina.png</flag>
+				<blurredflag>blurred_usa_north_carolina.png</blurredflag>
 		<color>
 			<red>210</red>
 			<green>130</green>
@@ -465,6 +480,7 @@
 		<name>North Dakota</name>
 		<capital>Bismarck</capital>
                 <flag>usa_north_dakota.png</flag>
+				<blurredflag>blurred_usa_north_dakota.png</blurredflag>
 		<color>
 			<red>210</red>
 			<green>130</green>
@@ -485,6 +501,7 @@
 		<name>Oklahoma</name>
 		<capital>Oklahoma City</capital>
                 <flag>usa_oklahoma.png</flag>
+				<blurredflag>blurred_usa_oklahoma.png</blurredflag>
 		<color>
 			<red>210</red>
 			<green>130</green>
@@ -495,6 +512,7 @@
 		<name>Oregon</name>
 		<capital>Salem</capital>
                 <flag>usa_oregon.png</flag>
+				<blurredflag>blurred_usa_oregon.png</blurredflag>
 		<color>
 			<red>210</red>
 			<green>170</green>
@@ -535,6 +553,7 @@
 		<name>South Dakota</name>
 		<capital>Pierre</capital>
                 <flag>usa_south_dakota.png</flag>
+				<blurredflag>blurred_usa_south_dakota.png</blurredflag>
 		<color>
 			<red>210</red>
 			<green>210</green>
@@ -565,6 +584,7 @@
 		<name>Utah</name>
 		<capital>Salt Lake City</capital>
                 <flag>usa_utah.png</flag>
+				<blurredflag>blurred_usa_utah.png</blurredflag>
 		<color>
 			<red>210</red>
 			<green>210</green>
@@ -575,6 +595,7 @@
 		<name>Vermont</name>
 		<capital>Montpelier</capital>
                 <flag>usa_vermont.png</flag>
+				<blurredflag>blurred_usa_vermont.png</blurredflag>
 		<color>
 			<red>210</red>
 			<green>250</green>
@@ -585,6 +606,7 @@
 		<name>Virginia</name>
 		<capital>Richmond</capital>
                 <flag>usa_virginia.png</flag>
+				<blurredflag>blurred_usa_virginia.png</blurredflag>
 		<color>
 			<red>210</red>
 			<green>250</green>
@@ -595,6 +617,7 @@
 		<name>Washington</name>
 		<capital>Olympia</capital>
                 <flag>usa_washington.png</flag>
+				<blurredflag>blurred_usa_washington.png</blurredflag>
 		<color>
 			<red>210</red>
 			<green>250</green>
@@ -605,6 +628,7 @@
 		<name>West Virginia</name>
 		<capital>Charleston</capital>
                 <flag>usa_west_virginia.png</flag>
+				<blurredflag>blurred_usa_west_virginia.png</blurredflag>
 		<color>
 			<red>210</red>
 			<green>250</green>
@@ -615,6 +639,7 @@
 		<name>Wisconsin</name>
 		<capital>Madison</capital>
                 <flag>usa_wisconsin.png</flag>
+				<blurredflag>blurred_usa_wisconsin.png</blurredflag>
 		<color>
 			<red>250</red>
 			<green>130</green>
@@ -625,6 +650,7 @@
 		<name>Wyoming</name>
 		<capital>Cheyenne</capital>
                 <flag>usa_wyoming.png</flag>
+				<blurredflag>blurred_usa_wyoming.png</blurredflag>
 		<color>
 			<red>250</red>
 			<green>130</green>

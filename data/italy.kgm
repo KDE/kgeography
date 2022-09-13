@@ -65,6 +65,7 @@
 	<division>
 		<name>Latium</name>
 		<flag>italy/it-lat200.png</flag>
+		<blurredflag>italy/blurred_it-lat200.png</blurredflag>
 		<capital>Rome</capital>
 		<color>
 			<red>190</red>
@@ -75,6 +76,7 @@
 	<division>
 		<name>Calabria</name>
 		<flag>italy/it-cal200.png</flag>
+		<blurredflag>italy/blurred_it-cal200.png</blurredflag>
 		<capital>Catanzaro</capital>
 		<color>
 			<red>190</red>
@@ -95,6 +97,7 @@
 	<division>
 		<name>Apulia</name>
 		<flag>italy/it-pug200.png</flag>
+		<blurredflag>italy/blurred_it-pug200.png</blurredflag>
 		<capital>Bari</capital>
 		<color>
 			<red>190</red>
@@ -135,6 +138,7 @@
 	<division>
 		<name>Molise</name>
 		<flag>italy/it-mol200.png</flag>
+		<blurredflag>italy/blurred_it-mol200.png</blurredflag>
 		<capital>Campobasso</capital>
 		<color>
 			<red>190</red>
@@ -155,6 +159,7 @@
 	<division>
 		<name>Emilia Romagna</name>
 		<flag>italy/it-emi200.png</flag>
+		<blurredflag>italy/blurred_it-emi200.png</blurredflag>
 		<capital>Bologna</capital>
 		<color>
 			<red>190</red>
@@ -215,6 +220,7 @@
 	<division>
 		<name>Marches</name>
 		<flag>italy/it-mar200.png</flag>
+		<blurredflag>italy/it-mar200.png</blurredflag>
 		<capital>Ancona</capital>
 		<color>
 			<red>220</red>
@@ -225,6 +231,7 @@
 	<division>
 		<name>Veneto</name>
 		<flag>italy/it-ven200.png</flag>
+		<blurredflag>italy/blurred_it-ven200.png</blurredflag>
 		<capital>Venice</capital>
 		<color>
 			<red>220</red>
