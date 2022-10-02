@@ -1,0 +1,1013 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Portuguese "INCLUDE"
+> 
+]>
+
+<book id="kgeography" lang="&language;">
+
+<bookinfo>
+<title
+>O Manual do &kgeography;</title>
+
+<authorgroup>
+<author
+><personname
+> <firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> </personname
+> &Anne-Marie.Mahfouf.mail; </author>
+<author
+><personname
+> <firstname
+>Kushal</firstname
+> <surname
+>Das</surname
+> </personname
+> <email
+>kushaldas@gmail.com</email
+> </author>
+
+<othercredit role="translator"
+><firstname
+>José</firstname
+><surname
+>Pires</surname
+><affiliation
+><address
+><email
+>zepires@gmail.com</email
+></address
+></affiliation
+><contrib
+>Tradução</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2005</year>
+<holder
+>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<copyright>
+<year
+>2008</year>
+<holder
+>Kushal Das</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2016-05-08</date>
+<releaseinfo
+>0.9 (Aplicações 16.04)</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>O &kgeography; é uma ferramenta de aprendizagem de geografia do &kde;. De momento, tem sete modos de utilização: <itemizedlist>
+<listitem>
+<para
+>Navegar nos mapas, carregando numa divisão do mapa, para ver o seu nome, a capital e a bandeira</para>
+</listitem>
+<listitem>
+<para
+>O jogo diz-lhe o nome de uma divisão do mapa e você terá de carregar nela</para>
+</listitem>
+<listitem>
+<para
+>O jogo diz-lhe o nome de uma capital e você terá de adivinhar a divisão a que pertence</para>
+</listitem
+><listitem>
+<para
+>O jogo indica-lhe uma divisão e você terá de adivinhar a sua capital</para>
+</listitem
+><listitem>
+<para
+>O jogo mostra-lhe a bandeira de uma divisão do mapa e você terá de adivinhar o seu nome</para>
+</listitem
+><listitem>
+<para
+>O jogo indica-lhe o nome de uma divisão do mapa e terá de adivinhar a sua bandeira</para>
+</listitem
+><listitem>
+<para
+>O jogo mostra um mapa vazio e você terá de colocar as divisões nele, uma a uma</para>
+</listitem>
+</itemizedlist>
+</para>
+
+</abstract>
+
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdeedu</keyword>
+<keyword
+>KGeography</keyword>
+<keyword
+>geografia</keyword>
+<keyword
+>mapas</keyword>
+<keyword
+>países</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Introdução</title>
+
+<para
+>O &kgeography; é uma ferramenta de aprendizagem de geografia do &kde;. Permite-lhe aprender sobre as divisões políticas de alguns países (divisões, capitais dessas divisões e as bandeiras associadas a elas, se existirem). </para>
+</chapter>
+
+<chapter id="quick-start">
+<title
+>Introdução Rápida ao &kgeography;</title>
+<para
+>Quando iniciar o &kgeography; pela primeira vez, ele perguntar-lhe-á para escolher um mapa com o qual iniciar. </para>
+<tip>
+<para
+>Poderá filtrar a lista de mapas com o campo de texto <guilabel
+>Filtrar os Mapas</guilabel
+>. Basta escrever algumas letras no nome do mapa para restringir a lista a apenas algumas ocorrências. </para>
+</tip>
+<screenshot>
+<screeninfo
+>Aqui está uma imagem do &kgeography; no primeiro arranque</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start1.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Aqui está uma imagem do &kgeography; no primeiro arranque</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Aqui foi escolhido o Canadá <screenshot>
+<screeninfo
+>Foi escolhido o Canadá</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start2.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Foi escolhido o Canadá</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Para que a janela principal do &kgeography; apareça com o mapa do Canadá: <screenshot>
+<screeninfo
+>Janela principal do &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start3.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Janela principal do &kgeography;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Poderá então escolher o tipo de aprendizagem ou teste que deseja fazer, olhando para o menu à esquerda: <screenshot>
+<screeninfo
+>Menu do &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start4.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Menu do &kgeography;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Explorar o Mapa: se carregar com o &LMB; numa área do mapa, irá mostrar informações acerca dessa área; se carregar no pequeno ícone de informação do mapa, irá abrir a página do Wikipédia para essa divisão no navegador por omissão do sistema: <screenshot>
+<screeninfo
+>Navegar no mapa</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start5.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Navegar no mapa</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Localização das Províncias ou Territórios: terá de indicar primeiro quantas perguntas deseja <screenshot>
+<screeninfo
+>Quantas perguntas</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start6.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Quantas perguntas</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Depois, poderá então carregar numa dada província: <screenshot>
+<screeninfo
+>Carregar numa província</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start7.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Carregar numa província</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Quando terminar todas as perguntas, irá aparecer uma janela de resultado com as suas respostas certas e erradas: <screenshot>
+<screeninfo
+>Os seus resultados</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start8.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Os seus resultados</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Colocar as Províncias ou Territórios no Mapa: o cursor fica com a forma de uma província e você terá de o colocar no mapa: <screenshot>
+<screeninfo
+>Colocar uma divisão no mapa</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start13.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Colocar uma divisão no mapa</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Províncias ou Territórios por Capital: ser-lhe-á pedido o nome de uma província, a partir de 4 opções, dada a sua capital: <screenshot>
+<screeninfo
+>Adivinhar uma divisão a partir da sua capital</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start9.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Adivinhar uma divisão a partir da sua capital</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Para que os resultados sejam apresentados quando o teste terminar: <screenshot>
+<screeninfo
+>Os seus resultados</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start10.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Os seus resultados</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Capitais das Províncias ou Territórios: recebe o nome de uma capital e de quatro províncias, e terá de escolher a correcta. Como anteriormente, no fim aparece uma janela de resultado. </para>
+<para
+>Províncias ou Territórios por Bandeira: é mostrada uma bandeira e terá de adivinhar a província a que pertence. <screenshot>
+<screeninfo
+>a pergunta da bandeira</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start11.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>a pergunta da bandeira</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Bandeiras das Províncias ou Territórios: é dado o nome de uma província e você terá de adivinhar a bandeira correcta entre 4 opções. <screenshot>
+<screeninfo
+>corresponder a bandeira à província</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start12.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>corresponder a bandeira à província</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</chapter>
+
+<chapter id="using-kapp">
+<title
+>Usar o &kgeography;</title>
+
+<para
+>O &kgeography; mostra informações sobre alguns países e testa-o com base nesses dados. <screenshot>
+<screeninfo
+>Aqui está uma imagem do &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kgeography.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Imagem</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+
+
+<sect1 id="kapp-features">
+<title
+>Mais funcionalidades do &kgeography;</title>
+
+<para
+>Outra funcionalidade do &kgeography; é a possibilidade de ampliar um mapa. <screenshot
+> <screeninfo
+>Ampliação</screeninfo
+> <mediaobject
+> <imageobject
+> <imagedata fileref="zoom.png" format="PNG"/> </imageobject
+> <textobject
+> <phrase
+>Ampliação</phrase
+> </textobject
+> </mediaobject
+> </screenshot
+> Enquanto estiver no modo de ampliação, poderá carregar com o &RMB; para voltar ao tamanho do mapa origina (a opção <guimenuitem
+>Tamanho Original</guimenuitem
+> tem o mesmo efeito). Use as barras de posicionamento para circular pelo mapa ampliado ou use a acção <guimenuitem
+>Mover</guimenuitem
+> que lhe permitirá arrastar o mapa com o &LMB;. A funcionalidade de <guimenuitem
+>Ampliação Automática</guimenuitem
+> tornará o mapa o maior possível. </para>
+
+</sect1>
+</chapter>
+
+<!--<chapter id="teachers-parents">
+<title
+>Teachers/Parents guide to &kgeography; </title>
+ This chapter should emphasize the educational aims of your app and
+guide the parent/teacher on how to help the child using it.
+</chapter
+>-->
+
+<chapter id="how-to-maps">
+<title
+>Como criar mapas</title>
+<para
+>Um mapa no &kgeography; é composto por dois ficheiros, sendo um a imagem do mapa e o outro a sua descrição. </para>
+<sect1 id="helper-tool">
+<title
+>Ferramenta auxiliar</title>
+<para
+>Poderá encontrar <ulink url="https://commits.kde.org/kgeography?path=tools/gen_map.pl"
+>aqui</ulink
+> uma ferramenta (feita por Yann Verley) que o ajudou com o mapa de França. Para descobrir como funciona, basta executá-la e ler a mensagem de ajuda. Basicamente, cria o ficheiro <literal role="extension"
+>.kgm</literal
+> a partir de um ficheiro de texto simples e cria um ficheiro com as cores que atribuiu a cada divisão, para que possa preencher o mapa de acordo com ele.</para>
+<para
+>Existe outra ferramenta <ulink url="http://commits.kde.org/kgeography?path=tools/colorchecker.py"
+>colorchecker.py</ulink
+>, escrita por Albert Astals Cid. É necessário o PyQt4 para a executar. Basta corrê-la com o ficheiro .kgm como argumento (também necessita do ficheiro PNG do mapa na mesma pasta). Isto dir-lhe-á se algum pixel do mapa tem uma cor diferente que não esteja definida no ficheiro .kgm (descrição). </para>
+<tip>
+<para
+>Por favor, leia também o tutorial para <ulink url="http://edu.kde.org/kgeography/tutorials/kgeography-addmaps.pdf"
+>Adicionar mapas</ulink
+> da página Web do &kgeography;. </para>
+</tip>
+</sect1>
+<sect1 id="description-file">
+<title
+>Ficheiro de descrição</title>
+<para
+>O ficheiro da descrição é necessário e a sua extensão de ficheiro é <literal role="extension"
+>.kgm</literal
+>. Deverá começar por <sgmltag class="starttag"
+>!DOCTYPE kgeographyMap</sgmltag
+>, seguida de <sgmltag class="starttag"
+>map</sgmltag
+> e terminar em <sgmltag class="endtag"
+>map</sgmltag
+>. </para>
+<para
+>Dentro destas marcas, deverá existir: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>mapFile</sgmltag
+> e <sgmltag class="endtag"
+>mapFile</sgmltag
+>: o nome do ficheiro (sem o local completo) que contém a imagem do mapa, &eg; <quote
+>europa.png</quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>name</sgmltag
+> e <sgmltag class="endtag"
+>name</sgmltag
+>: o nome do mapa, &eg; <quote
+>Europa</quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>divisionsName</sgmltag
+> e <sgmltag class="endtag"
+>divisionsName</sgmltag
+>: o nome geral das divisões deste mapa, isto é, Províncias, Estados, Países, etc.</para>
+</listitem>
+<listitem>
+  <para
+>Um <sgmltag class="starttag"
+>division</sgmltag
+> e <sgmltag class="endtag"
+>division</sgmltag
+> para cada divisão do mapa.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>Cada divisão tem estas marcas: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>name</sgmltag
+> e <sgmltag class="endtag"
+>name</sgmltag
+>: o nome da divisão, &eg; <quote
+>Albania</quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>capital</sgmltag
+> e <sgmltag class="endtag"
+>capital</sgmltag
+>: o nome da capital da divisão, &eg; <quote
+>Tirana</quote
+>.</para>
+</listitem>
+<listitem>
+	<para
+>O <sgmltag class="starttag"
+>ignore</sgmltag
+> e <sgmltag class="endtag"
+>ignore</sgmltag
+>: poderão ser configurados como <userinput
+>yes</userinput
+>, <userinput
+>allowClickMode</userinput
+>, <userinput
+>allowClickFlagMode</userinput
+> e <userinput
+>no</userinput
+>. Se esta marca for igual a <userinput
+>yes</userinput
+>, a divisão será ignorada ao pedir divisões nesse mapa. É como se esta divisão não existisse nos modos de questionário do &kgeography;. Se esta marca for igual a <userinput
+>allowClickMode</userinput
+>, então o &kgeography; irá perguntar a divisão no modo <guibutton
+>Carregar a Divisão no Mapa...</guibutton
+> mas não nos outros modos de questionário. Se esta marca for igual a <userinput
+>allowClickFlagMode</userinput
+>, o &kgeography; irá perguntar a divisão no modo <guibutton
+>Carregar a Divisão no Mapa...</guibutton
+> e nos questionários relacionados com bandeiras, mas não nos outros modos de questionários. Se configurar esta marca como <userinput
+>no</userinput
+>, significa que a divisão irá aparecer em todos os modos (navegação e questionários). Esta marca é opcional e, quando não existir qualquer marca <sgmltag class="starttag"
+>ignore</sgmltag
+>, significa que é iguala <userinput
+>no</userinput
+>. Por exemplo, a <quote
+>Argélia</quote
+> tem esta marca como <userinput
+>yes</userinput
+> no mapa da <quote
+>Europa</quote
+>, o que significa que a <quote
+>Argélia</quote
+> não fará parte de qualquer questionário sobre o mapa da <quote
+>Europa</quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>flag</sgmltag
+> e <sgmltag class="endtag"
+>flag</sgmltag
+>: o ficheiro (sem qualquer informação da sua localização) que contém a bandeira da divisão, &eg; <quote
+>albania.png</quote
+>. Esta marca é opcional. Não é necessário para as divisões cuja marca <sgmltag class="starttag"
+>ignore</sgmltag
+> seja igual a <userinput
+>yes</userinput
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>color</sgmltag
+> e <sgmltag class="endtag"
+>color</sgmltag
+>: a cor que a divisão tem no mapa.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>falseCapital</sgmltag
+> e <sgmltag class="endtag"
+>falseCapital</sgmltag
+>: Poderão existir vários pares de 'falseCapital', sendo usados para conter uma lista de respostas falsas para a questão da capital, em vez de escolher as respostas falsas entre as capitais de outras divisões.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>A cor é definida com três marcas: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>red</sgmltag
+> e <sgmltag class="endtag"
+>red</sgmltag
+>: a componente vermelha da cor. Os valores válidos encontram-se entre 0 e 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>green</sgmltag
+> e <sgmltag class="endtag"
+>green</sgmltag
+>: a componente verde da cor. Os valores válidos encontram-se entre 0 e 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blue</sgmltag
+> e <sgmltag class="endtag"
+>blue</sgmltag
+>: a componente azul da cor. Os valores válidos encontram-se entre 0 e 255.</para>
+</listitem>
+</itemizedlist>
+</para>
+<tip>
+ <para
+>É conveniente criar 2 ou 3 divisões falsas, como a <quote
+>Água</quote
+>, <quote
+>Fronteira</quote
+> e <quote
+>Costa</quote
+> e configurá-las com a marca <sgmltag class="starttag"
+>ignore</sgmltag
+> igual a <userinput
+>yes</userinput
+>. Não se esqueça de <userinput
+>não definir</userinput
+> a cor para qualquer <quote
+>Fronteira</quote
+> como sendo 0, 0, 0 em RGB. Torne-a algo do tipo 1, 1, 1 para que apareça um contorno da fronteira e coloca uma divisão no mapa. </para>
+</tip>
+ <important>
+   <para
+>Todos os nomes (capitais e divisões) deverão estar em Inglês.</para>
+</important>
+</sect1>
+<sect1 id="map-file">
+<title
+>Ficheiro do mapa</title>
+<para
+>O ficheiro do mapa é bastante simples mas é difícil de criar. Terá de estar no formato <acronym
+>PNG</acronym
+>. Poderá encontrar alguns mapas para transformar nos <ulink url="https://www.cia.gov/library/publications/the-world-factbook/docs/refmaps.html"
+>Mapas de Referência da CIA</ulink
+>. Se nenhum dos mapas corresponder às suas necessidades, poderá obter o ficheiro <ulink url="https://www.cia.gov/library/publications/the-world-factbook/graphics/ref_maps/pdf/world.pdf"
+>world pdf</ulink
+>, tirar uma imagem dele e trabalhar a partir daí. Cada divisão do mapa deverá ter uma e só uma cor. Para o fazer, poderá usar programas de processamento de imagem como o <application
+>The Gimp</application
+> e o <application
+>Kolourpaint</application
+>. </para>
+</sect1>
+<sect1 id="flags">
+<title
+>Opções</title>
+<para
+>Se tiver usado a marca <sgmltag class="starttag"
+>flag</sgmltag
+>, deverá indicar aos ficheiros das bandeiras. Terão de estar no formato <acronym
+>PNG</acronym
+> e o melhor será que tenham 300x200 pixels e exista um ficheiro <acronym
+>SVG</acronym
+> para ele. Para obter bandeiras em <acronym
+>SVG</acronym
+> de quase todos os países do mundo e de algumas divisões, poderá consultar a <ulink url="http://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770"
+>colecção de bandeiras do Sodipodi</ulink
+>. </para>
+</sect1>
+<sect1 id="how-to-test">
+<title
+>Como testar</title>
+<para
+>Antes de enviar o seu mapa para o Albert &Albert.Astals.Cid.mail;, deverá testá-lo para ver se não tem erros. Para o fazer, terá de efectuar o seguinte: <itemizedlist
+> <listitem
+> <para
+>Colocar a descrição e o ficheiro de imagem do mapa em <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/</filename
+></para
+> </listitem
+> <listitem
+> <para
+>Colocar os ficheiros <acronym
+>PNG</acronym
+> da bandeira (se existirem) em <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/flags/</filename
+></para
+> </listitem
+> </itemizedlist
+> Logo que tenha feito isto, deverá ser capaz de abrir o seu mapa dentro do &kgeography;. </para>
+ <para
+>Se não souber qual é a sua <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+></filename
+>, escreva <userinput
+><command
+>qtpaths</command
+> <option
+>--paths HomeLocation</option
+></userinput
+> numa consola. </para>
+<tip>
+<para
+>Use a ferramenta colorchecker.py das ferramentas auxiliares para verificar se alguma cor extra está definida no mapa e não está definida no ficheiro .kgm. </para>
+</tip>
+</sect1>
+<sect1 id="non-political-maps">
+<title
+>Mapas não-políticos</title>
+<para
+>É possível criar mapas não-políticos? Sim, é! <screenshot>
+<screeninfo
+>Exemplo de como criar um mapa não-político</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="river.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Exemplo de como criar um mapa não-político</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Obviamente, o conceito da divisão poderá ser extendido a um rio ou montanha. Durante a criação do mapa, deverá ter em mente que, na maior parte dos casos, o rio ou a montanha serão demasiado pequenos, pelo que deverá oferecer uma área adicional onde carregar. Neste exemplo, o rio teria a zona acastanhada e a cor &lt;20,76,34&gt; como identificação. </para>
+</sect1>
+</chapter>
+
+<chapter id="commands">
+<title
+>Referência de Comandos</title>
+
+<sect1 id="kapp-mainwindow">
+<title
+>A janela principal do &kgeography;</title>
+
+<sect2>
+<title
+>O Menu Ficheiro</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ficheiro</guimenu
+> <guimenuitem
+>Abrir um Mapa...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Abre a janela de selecção do mapa. Se escrever rapidamente as primeiras letras do mapa que procura, irá seleccionar a primeira correspondência.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Ficheiro</guimenu
+> <guimenuitem
+>Sair</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Sai</action
+> do &kgeography;</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>O Menu Ver</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ver</guimenu
+> <guimenuitem
+>Ampliação</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Vai para o modo de ampliação, desenhando depois um rectângulo para ampliar essa área do mapa</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ver</guimenu
+> <guimenuitem
+>Tamanho Original</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Repõe</action
+> o mapa de volta no seu tamanho original, tal como definido no ficheiro do mapa. Se carregar com o &RMB; no modo ampliado, irá efectuar a mesma acção</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ver</guimenu
+> <guimenuitem
+>Ampliação Automática</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Coloca</action
+> o mapa num modo de ampliação automático que ocupe o máximo de espaço possível ao dimensionar a janela do &kgeography;</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ver</guimenu
+> <guimenuitem
+>Mover</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Move</action
+> o ecrã actual. Este item só estará activo se tiver efectuado uma ampliação no mapa.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>O Menu Configuração</title>
+<para
+>O &kgeography; tem o menu de <guimenu
+>Configuração</guimenu
+> normal do &kde;; para mais informações, leia a secção sobre o menu de <ulink url="help:/fundamentals/ui.html#menus-settings"
+>Configuração</ulink
+> dos Fundamentos do &kde;. </para>
+
+</sect2>
+<sect2>
+<title
+>O Menu Ajuda</title>
+
+<para
+>O &kgeography; tem um menu de <guimenu
+>Ajuda</guimenu
+> do &kde; predefinido, tal como se encontra descrito nos <ulink url="help:/fundamentals/ui.html#menus-help"
+>Fundamentos do &kde;</ulink
+>, com dois itens adicionais:</para>
+	
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ajuda</guimenu
+> <guimenuitem
+>Aviso</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Mostra</action
+> um aviso sobre a precisão dos mapas, bandeiras e traduções usadas no &kgeography;.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ajuda</guimenu
+> <guimenuitem
+>Autor do Mapa</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Mostra</action
+> o nome do autor que criou o mapa actual.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+</sect1>
+
+</chapter>
+
+<chapter id="configuration">
+<title
+>Configuração</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Alinhamento das Perguntas</guilabel
+></term>
+<listitem
+><para
+>Define a posição das perguntas na janela; por omissão é <guilabel
+>Cima-esquerda</guilabel
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Esperar pela Validação</guilabel
+></term>
+<listitem
+><para
+>Se estiver activo, o utilizador terá de carregar em <guibutton
+>Aceitar</guibutton
+> depois de escolher uma resposta.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>O Foco Segue o Rato</guilabel
+></term>
+<listitem
+><para
+>Se estiver activo, ao carregar em Espaço, irá activar o botão sob o cursor do rato.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Cores das divisões do mapa</guilabel
+></term>
+<listitem
+><para
+>Poderá escolher se deseja manter sempre as mesmas cores (por omissão) ou se deseja usar cores aleatórias: com esta opção, são atribuídas cores aleatórias às divisões no mapa. Isto ajuda o utilizador a focar-se e a aprender as formas da divisão e não as cores da divisão. </para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Créditos e Licença</title>
+
+<para
+>&kgeography; </para>
+<para
+>Programa com 'copyright' 2004-2008 de Albert Astals Cid &Albert.Astals.Cid.mail; </para>
+
+
+<para
+>Documentação com 'copyright' &copy; 2005 de &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; 2008 Kushal Das <email
+>kushaldas@gmail.com</email
+> </para>
+
+<para
+>Tradução de José Nuno Pires <email
+>zepires@gmail.com</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab 
+-->

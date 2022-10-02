@@ -1,0 +1,1072 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Catalan  "INCLUDE"
+> 
+]>
+
+<book id="kgeography" lang="&language;">
+
+<bookinfo>
+<title
+>El manual del &kgeography;</title>
+
+<authorgroup>
+<author
+><personname
+> <firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> </personname
+> &Anne-Marie.Mahfouf.mail; </author>
+<author
+><personname
+> <firstname
+>Kushal</firstname
+> <surname
+>Das</surname
+> </personname
+> <email
+>kushaldas@gmail.com</email
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Daniel</firstname
+><surname
+>Fortuny Anguera</surname
+><affiliation
+><address
+><email
+>dfortuny@xtec.cat</email
+></address
+></affiliation
+><contrib
+>Traductor</contrib
+></othercredit
+> &traductor.Antoni.Bella; 
+</authorgroup>
+
+<copyright>
+<year
+>2005</year>
+<holder
+>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<copyright>
+<year
+>2008</year>
+<holder
+>Kushal Das</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>22 de desembre de 2020</date>
+<releaseinfo
+>Aplicacions 20.12</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>El &kgeography; és una eina d'aprenentatge per al &kde;. En aquests moments hi ha set maneres diferents d'emprar l'aplicació: <itemizedlist>
+<listitem>
+<para
+>Busqueu en els mapes fent clic a sobre d'una divisió en el mapa per a veure el seu nom, capital i bandera</para>
+</listitem>
+<listitem>
+<para
+>El joc mostra el nom d'una divisió en el mapa i heu de fer clic sobre el lloc on està</para>
+</listitem>
+<listitem>
+<para
+>El joc mostra una capital i heu d'esbrinar la divisió a la qual pertany</para>
+</listitem
+><listitem>
+<para
+>El joc mostra una divisió i heu d'esbrinar la seva capital</para>
+</listitem
+><listitem>
+<para
+>El joc mostra la bandera d'una divisió en el mapa i heu d'esbrinar el seu nom</para>
+</listitem
+><listitem>
+<para
+>El joc mostra el nom d'una divisió en el mapa i heu d'esbrinar la seva bandera</para>
+</listitem
+><listitem>
+<para
+>El joc mostra un mapa buit i heu de situar les divisions una a una</para>
+</listitem>
+</itemizedlist>
+</para>
+
+</abstract>
+
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdeedu</keyword>
+<keyword
+>KGeography</keyword>
+<keyword
+>geografia</keyword>
+<keyword
+>mapes</keyword>
+<keyword
+>països</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Introducció</title>
+
+<para
+>El &kgeography; és una eina per a aprendre geografia per al &kde;. Aquesta aplicació permet aprendre les divisions polítiques d'alguns països (fronteres, capitals d'aquestes divisions i les seves banderes associades, si n'hi ha alguna). </para>
+</chapter>
+
+<chapter id="quick-start">
+<title
+>Inici ràpid al &kgeography;</title>
+<para
+>Quan inicieu el &kgeography; per primera vegada, us preguntarà amb quin mapa voleu començar el joc. </para>
+<tip>
+<para
+>Podeu filtrar la llista de mapes utilitzant el camp de text <guilabel
+>Filtre de mapes</guilabel
+>. Només cal introduir unes quantes lletres del nom del mapa per a reduir la llista a unes poques coincidències. </para>
+</tip>
+<screenshot>
+<screeninfo
+>Aquí teniu una captura de pantalla del &kgeography; quan l'inicieu per primera vegada</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start1.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Aquí teniu una captura de pantalla del &kgeography; quan l'inicieu per primera vegada</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>A on hem escollit el Canadà <screenshot>
+<screeninfo
+>S'ha escollit el Canadà</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start2.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>S'ha escollit el Canadà</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>I la finestra principal del &kgeography; s'inicia amb el mapa del Canadà: <screenshot>
+<screeninfo
+>La finestra principal del &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start3.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>La finestra principal del &kgeography;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>També podeu triar quin mode o prova desitgeu fer amb el menú que hi ha a l'esquerra: <screenshot>
+<screeninfo
+>Menú del &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start4.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Menú del &kgeography;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Explorar el mapa: un clic amb el &BER; en una àrea del mapa mostrarà informació sobre aquesta, si feu clic a la petita icona &nbsp;<inlinemediaobject
+> <imageobject
+> <imagedata fileref="dialog-information.png" format="PNG"/> </imageobject
+> </inlinemediaobject
+> <guiicon
+>Informació</guiicon
+> sobre l'emergent, s'obrirà la pàgina de la Viquipèdia per a aquesta zona en el navegador predeterminat del sistema: <screenshot>
+<screeninfo
+>Navega pel mapa</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start5.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Navega pel mapa</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Ubicació de províncies o territoris: primer us demana quantes preguntes voleu. <screenshot>
+<screeninfo
+>Quantes preguntes voleu?</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start6.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Quantes preguntes voleu?</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Després us demanarà que feu clic sobre una província: <screenshot>
+<screeninfo
+>Clic sobre una província</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start7.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Clic sobre una província</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Quan finalitzeu totes les preguntes, un diàleg de resultats us dirà les vostres respostes correctes i incorrectes: <screenshot>
+<screeninfo
+>Els vostres resultats</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start8.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Els vostres resultats</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Situeu províncies o territoris en el mapa: el cursor prendrà la figura d'una província i l'haureu de situar al seu lloc en el mapa: <screenshot>
+<screeninfo
+>Situar una zona en el mapa</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start13.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Situar una zona en el mapa</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Províncies o territoris a partir de la capital: se us demanarà cercar el nom d'una capital d'una província entre quatre opcions: <screenshot>
+<screeninfo
+>Endevineu una zona a partir de la seva capital</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start9.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Endevineu una zona a partir de la seva capital</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>I els resultats són els que es mostren quan es finalitza la prova: <screenshot>
+<screeninfo
+>Els vostres resultats</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start10.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Els vostres resultats</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Capitals de províncies i territoris: teniu una capital i quatre noms de província com a opcions. Com abans, al final se us mostrarà el diàleg de resultats. </para>
+<para
+>Províncies o territoris a partir de la bandera: mostra una bandera i heu de cercar la província a la qual pertany. <screenshot>
+<screeninfo
+>La pregunta de bandera</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start11.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>La pregunta de bandera</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Banderes de províncies i territoris: mostra un nom de província i heu de cercar la bandera correcta entre quatre opcions. <screenshot>
+<screeninfo
+>Emparelleu la bandera amb la província</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start12.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Emparelleu la bandera amb la província</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</chapter>
+
+<chapter id="using-kapp">
+<title
+>Usar el &kgeography;</title>
+
+<para
+>El &kgeography; mostra informació sobre alguns països i us avaluarà sobre el coneixement d'aquesta informació. <screenshot>
+<screeninfo
+>Aquí teniu una captura de pantalla del &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kgeography.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Captura de pantalla</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+
+
+<sect1 id="kapp-features">
+<title
+>Més característiques del &kgeography;</title>
+
+<para
+>Una altra característica del &kgeography; és la possibilitat de fer zoom en el mapa. <screenshot
+> <screeninfo
+>Zoom</screeninfo
+> <mediaobject
+> <imageobject
+> <imagedata fileref="zoom.png" format="PNG"/> </imageobject
+> <textobject
+> <phrase
+>Zoom</phrase
+> </textobject
+> </mediaobject
+> </screenshot
+> Mentre estigui actiu el mode de zoom, podeu prémer el &BDR; per a tornar a la mida original del mapa (l'acció <guimenuitem
+>Mida original</guimenuitem
+> és equivalent). Empreu les barres de desplaçament, les tecles de cursor o la roda del ratolí per a moure-us pel mapa augmentat desmesuradament o feu ús de l'acció <guimenuitem
+>Mou</guimenuitem
+> que us permetrà arrossegar el mapa emprant el &BER;. La característica <guimenuitem
+>Zoom automàtic</guimenuitem
+> farà el mapa el més gran possible. </para>
+
+</sect1>
+</chapter>
+
+<!--<chapter id="teachers-parents">
+<title
+>Teachers/Parents guide to &kgeography; </title>
+ This chapter should emphasize the educational aims of your app and
+guide the parent/teacher on how to help the child using it.
+</chapter
+>-->
+
+<chapter id="how-to-maps">
+<title
+>Com crear mapes</title>
+<para
+>Els mapes al &kgeography; estan fets amb dos fitxers, un és la imatge del mapa i l'altre conté la seva descripció.</para>
+<sect1 id="helper-tool">
+<title
+>Eina d'ajuda</title>
+<para
+>Trobareu l'eina <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/gen_map.pl"
+>aquí</ulink
+> (creada per en Yann Verley) la qual us ajudarà amb el mapa de França. Per a utilitzar-la, només cal executar i llegir el missatge d'ajuda. Us crearà un fitxer amb extensió <literal role="extension"
+>.kgm</literal
+> de tipus de text net i un altre fitxer amb els colors assignats per a cada zona, de manera que podreu omplir el mapa correctament.</para>
+<para
+>Hi ha una altra eina <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
+>colorchecker.py</ulink
+> escrita per l'Albert Astals Cid. Necessitareu PyQt4 per a executar-la. Simplement s'executa amb el nom del fitxer <literal role="extension"
+>.kgm</literal
+> com a argument (també necessitareu el fitxer <literal role="extension"
+>.png</literal
+> del mapa a la mateixa carpeta). Aquesta us dirà si un píxel al mapa té un color diferent que no es defineix al fitxer <literal role="extension"
+>.kgm</literal
+> (descripció). </para>
+<tip>
+<para
+>Llegiu la guia d'aprenentatge <ulink url="https://edu.kde.org/kgeography/tutorials/kgeography-addmaps.pdf"
+>Com afegir mapes</ulink
+> al lloc web del &kgeography;. </para>
+</tip>
+</sect1>
+<sect1 id="description-file">
+<title
+>Fitxer de descripció</title>
+<para
+>El fitxer de descripció és necessari i la seva extensió de fitxer serà <literal role="extension"
+>.kgm</literal
+>. Haurà de començar amb <sgmltag class="starttag"
+>?xml version="1.0" encoding="utf-8"</sgmltag
+>, després <sgmltag class="starttag"
+>!DOCTYPE kgeographyMap</sgmltag
+>, seguit per <sgmltag class="starttag"
+>map</sgmltag
+> i finalitzar amb <sgmltag class="endtag"
+>map</sgmltag
+>. </para>
+<para
+>Incloure les etiquetes en el seu lloc: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>mapFile</sgmltag
+> i <sgmltag class="endtag"
+>mapFile</sgmltag
+>: el nom de fitxer (sense el camí) que conté la imatge del mapa, &pex; <quote
+><literal
+>europe.png</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>name</sgmltag
+> i <sgmltag class="endtag"
+>name</sgmltag
+>: el nom del mapa, &pex; <quote
+><literal
+>Europe</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>divisionsName</sgmltag
+> i <sgmltag class="endtag"
+>divisionsName</sgmltag
+>: els noms en general de les xones en aquest mapa, que són, províncies, estats, països, &etc;</para>
+</listitem>
+<listitem>
+  <para
+>Una <sgmltag class="starttag"
+>division</sgmltag
+> i <sgmltag class="endtag"
+>division</sgmltag
+> per a cada zona en el mapa.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>Cada zona té aquestes etiquetes: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>name</sgmltag
+> i <sgmltag class="endtag"
+>name</sgmltag
+>: el nom de la zona, &pex; <quote
+><literal
+>Albania</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>capital</sgmltag
+> i <sgmltag class="endtag"
+>capital</sgmltag
+>: el nom de la capital de la zona, &pex; <quote
+><literal
+>Tirana</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+	<para
+><sgmltag class="starttag"
+>ignore</sgmltag
+> i <sgmltag class="endtag"
+>ignore</sgmltag
+>: es poden establir a <userinput
+>yes</userinput
+>, <userinput
+>allowClickMode</userinput
+>, <userinput
+>allowClickFlagMode</userinput
+> i <userinput
+>no</userinput
+>. Si s'estableix a <userinput
+>yes</userinput
+> aleshores seran ignorades quan es preguntin zones en el mapa. Després serà com si aquesta zona no existís en el &kgeography; en el mode qüestionari. Si s'estableix a <userinput
+>allowClickMode</userinput
+>, aleshores el &kgeography; demanarà per la zona en el mode <guibutton
+>Ubicació de «...»</guibutton
+> però no en els altres modes de qüestionari. Si s'estableix a <userinput
+>allowClickFlagMode</userinput
+>, aleshores el &kgeography; demanarà per la zona en el mode <guibutton
+>Ubicació de «...»</guibutton
+> i la bandera relacionada, però no en els altres modes de qüestionari. Si s'estableix a <userinput
+>no</userinput
+>, significarà que les zones apareixeran en tots els modes (navegació i qüestionari). Aquesta etiqueta és opcional, sempre que no hi hagi l'etiqueta <sgmltag class="starttag"
+>ignore</sgmltag
+> voldrà dir que s'estableix l'etiqueta <userinput
+>no</userinput
+>. Per exemple, <quote
+><literal
+>Algeria</literal
+></quote
+> té aquesta etiqueta establerta a <userinput
+>yes</userinput
+> en el mapa <quote
+><literal
+>Europe</literal
+></quote
+>, vol dir que <quote
+><literal
+>Algeria</literal
+></quote
+> no formarà part de cap qüestionari en el mapa <quote
+><literal
+>Europe</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>flag</sgmltag
+> i <sgmltag class="endtag"
+>flag</sgmltag
+>: el fitxer (sense el camí) conté l'etiqueta de la zona, &pex;, <quote
+><literal
+>albania.png</literal
+></quote
+>. Aquesta etiqueta és opcional. No és necessària per a les zones mentre l'etiqueta <sgmltag class="starttag"
+>ignore</sgmltag
+> estigui establerta a <userinput
+>yes</userinput
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blurredflag</sgmltag
+> i <sgmltag class="endtag"
+>blurredflag</sgmltag
+>: el fitxer (sense el camí) que conté la bandera borrosa de la divisió, &pex;, <quote
+><literal
+>blurred_albania.png</literal
+></quote
+>. Aquesta etiqueta és opcional. S'hauria d'utilitzar en situacions en les quals la bandera tingui el nom escrit de la divisió a la qual pertany. Això pot fer que els jocs d'endevinar la bandera esdevinguin massa fàcil, i com a tal, es fomenta l'enviament de banderes amb el text borrós.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>color</sgmltag
+> i <sgmltag class="endtag"
+>color</sgmltag
+>: el color de la zona en el mapa.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>falseCapital</sgmltag
+> i <sgmltag class="endtag"
+>falseCapital</sgmltag
+>: a on podrà ser qualsevol número de <userinput
+>falseCapital</userinput
+> parella, aquestes s'usaran per a proveir una llista de falses respostes al qüestionari de capital en comptes d'escollir-les entres les altres capitals de zona.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>El color està definit emprant tres etiquetes: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>red</sgmltag
+> i <sgmltag class="endtag"
+>red</sgmltag
+>: component de color vermell. Té com a valors entre 0 i 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>green</sgmltag
+> i <sgmltag class="endtag"
+>green</sgmltag
+>: component de color verd. Té com a valors entre 0 i 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blue</sgmltag
+> i <sgmltag class="endtag"
+>blue</sgmltag
+>: component de color blau. Té com a valors entre 0 i 255.</para>
+</listitem>
+</itemizedlist>
+</para>
+<tip>
+ <para
+>És útil crear 2 o 3 zones falses amb el <quote
+><literal
+>Water</literal
+></quote
+> (mar), <quote
+><literal
+>Frontier</literal
+></quote
+> (frontera) i <quote
+><literal
+>Coast</literal
+></quote
+> (costa) establint l'etiqueta <sgmltag class="starttag"
+>ignore</sgmltag
+> a <userinput
+>yes</userinput
+>. No oblideu <userinput
+>de no establir</userinput
+> el color per a qualsevol <quote
+><literal
+>Frontier</literal
+></quote
+> 0,0,0 en RGB. Si us plau, que sigui alguna cosa com 1,1,1 de manera que una vora situï qualsevol divisió en el mapa. </para>
+</tip>
+ <important>
+   <para
+>Tots els noms (capitals i zones) hauran d'estar en anglès.</para>
+</important>
+</sect1>
+<sect1 id="map-file">
+<title
+>Fitxer de mapa</title>
+<para
+>El fitxer de mapa és molt senzill però laboriós de crear. Es troba en el format <acronym
+>PNG</acronym
+>. Trobareu alguns mapes per a transformar a <ulink url="https://www.cia.gov/library/publications/the-world-factbook/docs/refmaps.html"
+>Cia Reference Maps</ulink
+>. Si no trobeu el mapa que necessiteu, haureu de descarregar el <ulink url="https://www.cia.gov/library/publications/resources/the-world-factbook/graphics/ref_maps/political/pdf/world.pdf"
+>mapa polític del món</ulink
+>, agafeu una captura de pantalla d'aquest mapa i treballeu des d'aquesta. Cada zona en el mapa haurà de tenir un únic color. Per a aconseguir-ho, podeu utilitzar programes de processament d'imatges com <application
+>The Gimp</application
+> i &kolourpaint;. </para>
+</sect1>
+<sect1 id="flags">
+<title
+>Banderes</title>
+<para
+>Si heu emprat l'etiqueta <sgmltag class="starttag"
+>flag</sgmltag
+>, haureu de proveir els fitxers de bandera. Aquests estaran en el format <acronym
+>PNG</acronym
+> i a 300x200 píxels, i proveïu un fitxer &SVG; per a aquesta. Per a obtenir les banderes &SVG; de la majoria de països en el món i d'algunes altres zones, podeu consultar la <ulink url="https://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770"
+>Col·lecció de banderes de Sodipodi</ulink
+>. </para>
+<para
+>Com s'ha assenyalat anteriorment, us animem a proporcionar fitxers de bandera borrosa per a les banderes que tenen la divisió escrita sobre elles. Els mateixos requisits s'apliquen als fitxers de bandera borrosa quant als fitxers de bandera normals. Encara que no hi ha una notació de nomenclatura prescrita per als fitxers borrosos, recomanem desar-los amb el nom de la bandera original prefixada amb <literal
+>blurred_</literal
+>, &pex; <quote
+><literal
+>blurred_albania.png</literal
+></quote
+> </para>
+</sect1>
+<sect1 id="how-to-test">
+<title
+>Comprovar si funciona?</title>
+<para
+>Abans d'enviar el vostre mapa a l'Albert &Albert.Astals.Cid.mail;, comproveu que aquest no tingui errades. Per a desar-lo, heu de fer el següent: <itemizedlist
+> <listitem
+> <para
+>Posar la descripció del mapa i el fitxer de la imatge del mapa a la carpeta <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/</filename
+></para
+> </listitem
+> <listitem
+> <para
+>Posar els fitxers de la bandera en <acronym
+>PNG</acronym
+> (si n'hi ha cap) a la carpeta <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/flags/</filename
+></para
+> </listitem
+> </itemizedlist
+> Una vegada que tot això ha estat fet hauríeu de poder obrir el vostre mapa des del &kgeography;. </para>
+ <para
+>Si no coneixeu quina és la vostra carpeta <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+></filename
+>, escriviu <userinput
+><command
+>qtpaths</command
+> <option
+>--paths HomeLocation</option
+></userinput
+> en un intèrpret d'ordres. </para>
+<tip>
+<para
+>Utilitzeu l'eina colorchecker.py de les eines d'ajuda per a comprovar si qualsevol color que estigui en el mapa no està definit al fitxer <literal role="extension"
+>.kgm</literal
+>. </para>
+</tip>
+</sect1>
+<sect1 id="non-political-maps">
+<title
+>Mapes no polítics</title>
+<para
+>És possible fer mapes no polítics? Sí, es pot! <screenshot>
+<screeninfo
+>Exemple de com crear un mapa no polític</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="river.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Exemple de com crear un mapa no polític</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>De moment, el concepte de zona pot ser extensiu a un riu o una muntanya. Durant la creació del mapa, podeu mantenir en la vostra ment quina muntanya o riu serà objecte del treball. En aquest exemple el riu tindrà el color &lt;20,76,34&gt; com a identificador. </para>
+</sect1>
+</chapter>
+
+<chapter id="commands">
+<title
+>Referència d'ordres</title>
+
+<sect1 id="kapp-mainwindow">
+<title
+>La finestra principal del &kgeography;</title>
+
+<sect2>
+<title
+>El menú Fitxer</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Fitxer</guimenu
+> <guimenuitem
+>Obre un Mapa...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Obriu el diàleg per a escollir el mapa. Si escriviu amb prou rapidesa les primeres lletres del mapa se cercarà i seleccionarà el primer mapa coincident.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Fitxer</guimenu
+> <guimenuitem
+>Surt</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Surt</action
+> del &kgeography;.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>El menú Visualitza</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visualitza</guimenu
+> <guimenuitem
+>Zoom</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Entreu en el mode de zoom, tot seguit dibuixeu un rectangle en una part del mapa per a fer-lo augmentar.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visualitza</guimenu
+> <guimenuitem
+>Mida original</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Estableix</action
+> el mapa de nou a la mida original com es defineix al fitxer de mapa. Un clic del &BDR; en el mode zoom realitzarà la mateixa acció.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visualitza</guimenu
+> <guimenuitem
+>Zoom automàtic</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Estableix</action
+> el mapa a zoom automàtic amb l'espai més gran possible en canviar la mida de la finestra del &kgeography;.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visualitza</guimenu
+> <guimenuitem
+>Mou</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Mou</action
+> el mapa actual. Aquest element només estarà habilitat si heu fet zoom en el mapa per sobre de l'espai disponible.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>El menú Arranjament</title>
+<para
+>El &kgeography; té els elements comuns del &kde; i els elements del menú <guimenu
+>Arranjament</guimenu
+>. Per a obtenir més informació, llegiu la secció <ulink url="help:/fundamentals/menus.html#menus-settings"
+>El menú Arranjament</ulink
+> en els Fonaments del &kde;. </para>
+
+</sect2>
+<sect2>
+<title
+>El menú Ajuda</title>
+
+<para
+>El &kgeography; té un menú <guimenu
+>Ajuda</guimenu
+> predeterminat del &kde;, com es descriu en els <ulink url="help:/fundamentals/menus.html#menus-help"
+>Fonaments del &kde;</ulink
+> amb dues entrades addicionals:</para>
+	
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ajuda</guimenu
+> <guimenuitem
+>Renúncia</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Mostra</action
+> una renúncia sobre l'exactitud dels mapes, banderes i traduccions utilitzades pel &kgeography;.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Ajuda</guimenu
+> <guimenuitem
+>Autor del mapa</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Mostra</action
+> el nom de l'autor que va crear el mapa actual.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+</sect1>
+
+</chapter>
+
+<chapter id="configuration">
+<title
+>Configuració</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Alineació de les preguntes</guilabel
+></term>
+<listitem
+><para
+>Determina la posició de les preguntes a la finestra, de manera predeterminada és <guilabel
+>Superior esquerra</guilabel
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Espera la validació</guilabel
+></term>
+<listitem
+><para
+>Si està activada, l'usuari haurà de prémer <guibutton
+>Accepta</guibutton
+> després de triar una resposta.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>El focus segueix el ratolí</guilabel
+></term>
+<listitem
+><para
+>Activarà prémer &Space; per a activar el botó que es trobi sota el punter del ratolí.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Colors de les divisions en el mapa</guilabel
+></term>
+<listitem
+><para
+>Podeu escollir si voleu mantenir els mateixos colors (predeterminat) o si voleu utilitzar colors a l'atzar: amb aquesta opció s'assignaran colors a l'atzar a les divisions en el mapa. Això ajuda l'usuari a concentrar-se i aprendre les formes de divisió i no els colors de la divisió. </para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Crèdits i llicència</title>
+
+<para
+>&kgeography; </para>
+<para
+>Copyright del programa 2004-2008 Albert Astals Cid &Albert.Astals.Cid.mail; </para>
+
+
+<para
+>Copyright de la documentació &copy; 2005 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; 2008 Kushal Das <email
+>kushaldas@gmail.com</email
+> </para>
+
+<para
+>Traductor de la documentació: Daniel Fortuny Anguera <email
+>dfortuny@xtec.cat</email
+></para
+><para
+>Traductor/Revisor de la documentació: &credits.Antoni.Bella;</para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab 
+-->

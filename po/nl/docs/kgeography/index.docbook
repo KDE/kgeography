@@ -1,0 +1,1044 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Dutch "INCLUDE"
+> 
+]>
+
+<book id="kgeography" lang="&language;">
+
+<bookinfo>
+<title
+>Handboek van &kgeography;</title>
+
+<authorgroup>
+<author
+><personname
+> <firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> </personname
+> &Anne-Marie.Mahfouf.mail; </author>
+<author
+><personname
+> <firstname
+>Kushal</firstname
+> <surname
+>Das</surname
+> </personname
+> <email
+>kushaldas@gmail.com</email
+> </author>
+
+&Jaap.Woldringh; 
+</authorgroup>
+
+<copyright>
+<year
+>2005</year>
+<holder
+>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<copyright>
+<year
+>2008</year>
+<holder
+>Kushal Das</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2020-12-22</date>
+<releaseinfo
+>Applicaties 20.12</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&kgeography; is een leerprogramma van &kde; voor Aardrijkskunde. Het op zeven manieren worden gebruikt: <itemizedlist>
+<listitem>
+<para
+>Het bekijken van kaarten door op kaartgedeelten te klikken waarna je de naam ervan ziet, de hoofdstad en de vlag</para>
+</listitem>
+<listitem>
+<para
+>Een spel waarin de naam van een kaartgedeelte wordt genoemd waarna je erop moet klikken</para>
+</listitem>
+<listitem>
+<para
+>Een spel waarin een hoofdstad wordt genoemd waarna je moet antwoorden bij welk kaartgedeelte die hoort</para>
+</listitem
+><listitem>
+<para
+>Een spel waarin een kaartgedeelte wordt genoemd en je moet antwoorden wat daarvan de hoofdstad is</para>
+</listitem
+><listitem>
+<para
+>Een spel waarin de vlag wordt getoond van een kaartgedeelte en je moet antwoorden met de naam van dat kaartgedeelte</para>
+</listitem
+><listitem>
+<para
+>Een spel waarin de naam wordt genoemd van een kaartgedeelte en je moet opgeven welke vlag erbij hoort</para>
+</listitem
+><listitem>
+<para
+>In dit spel wordt een lege kaart getoond, waarin je de kaartgedeelten een voor een moet plaatsen</para>
+</listitem>
+</itemizedlist>
+</para>
+
+</abstract>
+
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdeedu</keyword>
+<keyword
+>KGeography</keyword>
+<keyword
+>aardrijkskunde</keyword>
+<keyword
+>kaarten</keyword>
+<keyword
+>landen</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Inleiding</title>
+
+<para
+>&kgeography; is een programma van &kde; voor het leren van Aardrijkskunde. Hiermee kun je iets leren over de politieke indeling van sommige landen (onderdelen ervan, de bijbehorende hoofdsteden en eventuele vlaggen). </para>
+</chapter>
+
+<chapter id="quick-start">
+<title
+>Snelgids voor &kgeography;</title>
+<para
+>Bij de eerste keer dat &kgeography; wordt gestart word je gevraagd met welke kaart je wilt beginnen. </para>
+<tip>
+<para
+>U kunt de kaart filteren met het tekstveld <guilabel
+>Kaarten filteren</guilabel
+>. Als u de eerste letters invult van de naam van de kaart, wordt de keuze al snel beperkt tot slechts enkele er mee overeenkomende namen. </para>
+</tip>
+<screenshot>
+<screeninfo
+>Dit is een schermbeeld van &kgeography; na de eerste keer dat het wordt gestart</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start1.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Dit is een schermbeeld van &kgeography; na de eerste keer dat het wordt gestart</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>We kiezen hier Canada <screenshot>
+<screeninfo
+>Canada is gekozen</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start2.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Canada is gekozen</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>En het hoofdvenster van &kgeography; met de kaart van Canada verschijnt: <screenshot>
+<screeninfo
+>hoofdvenster van &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start3.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>hoofdvenster van &kgeography;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>In het menu links kun je nu kiezen wat voor oefening je wilt gaan doen: <screenshot>
+<screeninfo
+>menu van &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start4.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>menu van &kgeography;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Kaart onderzoeken: Klikken met de &LMB; op een gebied in de kaart geeft informatie over dat gebied. Klikken op het kleine pictogram &nbsp;<inlinemediaobject
+> <imageobject
+> <imagedata fileref="dialog-information.png" format="PNG"/> </imageobject
+> </inlinemediaobject
+> <guiicon
+>Info</guiicon
+> opent de wikipedia-pagina voor dit gedeelte in de standaard browser: <screenshot>
+<screeninfo
+>Ontdekkingsreis in de kaart</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start5.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Ontdekkingsreis in de kaart</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Locatie van provincies of gebieden: eerst krijg je de vraag hoeveel vragen je wilt beantwoorden <screenshot>
+<screeninfo
+>Hoeveel vragen</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start6.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Hoeveel vragen</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Dan moet je op een bepaalde provincie klikken: <screenshot>
+<screeninfo
+>Klik op een provincie</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start7.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Klik op een provincie</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Als je klaar bent met alle vragen zie je als resultaat een dialoogscherm met daarin je goede en foute antwoorden: <screenshot>
+<screeninfo
+>Je score</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start8.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Je score</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Plaats provincies of gebieden in de kaart: de muisaanwijzer krijgt de vorm van de provincie, die je in de kaart moet plaatsen: <screenshot>
+<screeninfo
+>Plaats een kaartgedeelte in de kaart</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start13.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Plaats een kaartgedeelte in de kaart</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Provincies of gebieden als je de naam weet van de hoofdstad: je kunt de naam van een provincie kiezen uit vier gegeven namen, als de hoofdstad is gegeven: <screenshot>
+<screeninfo
+>Geef de naam van het kaartgedeelte als je de hoofdstad weet</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start9.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Geef de naam van het kaartgedeelte als je de hoofdstad weet</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>En de resultaten kun je zien als de test klaar is: <screenshot>
+<screeninfo
+>Je score</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start10.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Je score</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Hoofdsteden van provincies of gebieden: je krijgt een hoofdstad en vier namen van provincies waarvan je de goede moet kiezen. Net zoals hiervoor zie je als je klaar bent een dialoogscherm met de resultaten. </para>
+<para
+>Provincies of gebieden als de vlag is gegeven: je ziet een vlag waarna je moet antwoorden bij welke provincie die vlag hoort. <screenshot>
+<screeninfo
+>de vraag met de vlag</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start11.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>de vraag met de vlag</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>De vlag van een provincie of gebied: je krijgt een naam van een provincie waarna je uit vier vlaggen de juiste moet kiezen. <screenshot>
+<screeninfo
+>kies de vlag bij de provincie</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start12.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>kies de vlag bij de provincie</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</chapter>
+
+<chapter id="using-kapp">
+<title
+>Het werken met &kgeography;</title>
+
+<para
+>&kgeography; toont informatie over enkele landen en test je kennis van deze landen. <screenshot>
+<screeninfo
+>Hier zie je een schermbeeld van &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kgeography.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Schermafdruk</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+
+
+<sect1 id="kapp-features">
+<title
+>Nog meer eigenschappen van &kgeography;</title>
+
+<para
+>Nog een eigenschap van &kgeography; is de mogelijkheid in een kaart te zoomen.<screenshot
+> <screeninfo
+>Zoom</screeninfo
+> <mediaobject
+> <imageobject
+> <imagedata fileref="zoom.png" format="PNG"/> </imageobject
+> <textobject
+> <phrase
+>Zoom</phrase
+> </textobject
+> </mediaobject
+> </screenshot
+>. Je kunt op de knop <guibutton
+>Zoom</guibutton
+> drukken, en dan een rechthoek in de kaart maken met de muis, om op een bepaald gedeelte van de kaart in te zoomen. In de zoom-modus kun je door op de rechter muisknop te drukken terugkeren naar de gewone kaartgrootte (de actie <guimenuitem
+>Originele grootte</guimenuitem
+> heeft hetzelfde effect). Met behulp van de schuifbalken kun je in de gezoomde kaart verplaatsen, of gebruik de actie <guimenuitem
+>Verplaatsen</guimenuitem
+> waarmee je de kaart kunt slepen met behulp van de linker muisknop. Met <guimenuitem
+>Automatisch Zoom</guimenuitem
+> kun je de kaart zo groot mogelijk maken. </para>
+
+</sect1>
+</chapter>
+
+<!--<chapter id="teachers-parents">
+<title
+>Teachers/Parents guide to &kgeography; </title>
+ This chapter should emphasize the educational aims of your app and
+guide the parent/teacher on how to help the child using it.
+</chapter
+>-->
+
+<chapter id="how-to-maps">
+<title
+>Hoe kaarten te maken</title>
+<para
+>Een kaart in &kgeography; wordt opgebouwd met behulp van twee bestanden, een bevat de kaartafbeelding en het andere de beschrijving.</para>
+<sect1 id="helper-tool">
+<title
+>Hulpgereedschap</title>
+<para
+>Je vindt <ulink url="https://commits.kde.org/kgeography?path=tools/gen_map.pl"
+>hier</ulink
+> een hulpprogramma (gemaakt door Yann Verley, waarmee hij de kaart van Frankrijk heeft gemaakt). Om te weten hoe je het moet  gebruiken moet je het gewoon uitvoeren en de hulptekst lezen. In principe maakt het van een gewoon tekstbestand een <literal role="extension"
+>.kgm</literal
+>-bestand, en maakt het een bestand aan met daarin de kleuren voor elk kaartgedeelte, en waarmee dus de kaart kunt kleuren.</para>
+<para
+>Nog een hulpmiddel is <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
+>colorchecker.py</ulink
+> (kleuren kiezen),  gemaakt door Albert Astals Cid. Hiervoor is PyQt4 nodig. Gebruik het maar  met bestandsnaam <literal role="extension"
+>.kgm</literal
+> als argument (het bestand met de extensie  <literal role="extension"
+>.png</literal
+> voor de kaart moet in dezelfde map aanwezig zijn). Hiermee kun je zien of er pixels zijn in de kaart met een onbekende  kleur. </para>
+<tip>
+<para
+>Lees ook de cursus <ulink url="http://edu.kde.org/kgeography/tutorials/kgeography-addmaps.pdf"
+>Hoe kaarten toe te voegen</ulink
+> op de webpagina van &kgeography;. </para>
+</tip>
+</sect1>
+<sect1 id="description-file">
+<title
+>Bestand met beschrijving</title>
+<para
+>Het bestand met de beschrijving is nodig, met de extensie <literal role="extension"
+>.kgm</literal
+>. Het moet beginnen met <sgmltag class="starttag"
+>?xml version="1.0" encoding="utf-8"</sgmltag
+>, daarna <sgmltag class="starttag"
+>!DOCTYPE kgeographyMap</sgmltag
+>, gevolgd door <sgmltag class="starttag"
+>map</sgmltag
+> en eindigen met <sgmltag class="endtag"
+>map</sgmltag
+>. </para>
+<para
+>Binnen deze zogenaamde "tags" moet aanwezig zijn: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>mapFile</sgmltag
+> en <sgmltag class="endtag"
+>mapFile</sgmltag
+>: de naam van het bestand (zonder pad er naar toe) dat de afbeelding bevat van de kaart, &eg; <quote
+><literal
+>europe.png</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>naam</sgmltag
+> en <sgmltag class="endtag"
+>naam</sgmltag
+>: de naam van de kaart, &eg; <quote
+><literal
+>Europa</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>divisionsName</sgmltag
+> en <sgmltag class="endtag"
+>divisionsName</sgmltag
+>: de algemene naam van kaartgedeelten in deze kaart, dus Provincies, Staten, Landen, &etc;</para>
+</listitem>
+<listitem>
+  <para
+>Een <sgmltag class="starttag"
+>division</sgmltag
+> en <sgmltag class="endtag"
+>division</sgmltag
+> voor elk kaartgedeelte.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>Elk kaartgedeelte heeft deze "tags": <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>name</sgmltag
+> en <sgmltag class="endtag"
+>name</sgmltag
+>: de naam van het kaartgedeelte, &eg; <quote
+><literal
+>Albania</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>hoofdstad</sgmltag
+> en <sgmltag class="endtag"
+>hoofdstad</sgmltag
+>: de naam van de hoofdstad van het kaartgedeelte, &eg; <quote
+><literal
+>Tirana</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+	<para
+><sgmltag class="starttag"
+>negeren</sgmltag
+> en <sgmltag class="endtag"
+>negeren</sgmltag
+>: kunnen worden ingesteld op <userinput
+>ja</userinput
+>, <userinput
+>allowClickMode</userinput
+>, <userinput
+>allowClickFlagMode</userinput
+> en op <userinput
+>nee</userinput
+>. Indien ingesteld op <userinput
+>ja</userinput
+> wordt het kaartgedeelte genegeerd bij het vragen naar kaartgedeelten in deze kaart. Het is dan alsof dit kaartgedeelte niet bestaat voor vragen in &kgeography;. Indien ingesteld op <userinput
+>allowClickMode</userinput
+> vraagt &kgeography; naar dit kaartgedeelte in de modus <guibutton
+>Locatie van ...</guibutton
+> maar niet bij andere vragen. Indien ingesteld op <userinput
+>allowClickFlagMode</userinput
+> vraagt &kgeography; naar dit kaartgedeelte in de modus <guibutton
+>Locatie van ...</guibutton
+> en in de vragen met vlaggen, maar niet in andere vragen. Instellen op <userinput
+>nee</userinput
+> betekent dat het kaartgedeelte in alle vragen kan worden gevraagd, (bladeren en quizzen). Deze instelling is optioneel, en als er geen instelling <sgmltag class="starttag"
+>ignore</sgmltag
+> is, betekent dit hetzelfde als de instelling <userinput
+>nee</userinput
+>. Bijvoorbeeld voor <quote
+>Algerije</quote
+> is de instelling <userinput
+>ja</userinput
+> in de kaart van <quote
+>Europa</quote
+>, wat betekent dat <quote
+>Algerije</quote
+> in geen enkele vraag over de kaart van<quote
+>Europa</quote
+> wordt gevraagd.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>vlag</sgmltag
+> en <sgmltag class="endtag"
+>vlag</sgmltag
+>: het bestand (zonder pad) met de vlag van het kaartgedeelte, bijvoorbeeld <quote
+>albania.png</quote
+>. Deze "tag" is optioneel. Niet nodig voor die kaartgedeelten waarvan de "tag" <sgmltag class="starttag"
+>negeren</sgmltag
+> op <userinput
+>ja</userinput
+> is ingesteld.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blurredflag</sgmltag
+> en <sgmltag class="endtag"
+>blurredflag</sgmltag
+>: het bestand (zonder enig pad) die de vervaagde vlag van de opdeling bevat, &eg; <quote
+><literal
+>blurred_albania.png</literal
+></quote
+>. Deze tag is optioneel. Het zou gebruikt moeten worden in situaties waar de vlag de naam heeft van de opdeling heeft waarop het behoort te worden geschreven. Dit kan het spel de vlag raden te gemakkelijk maken en daarom wordt het indienen van de vlaggen met de vervaagde tekst aangemoedigd.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>kleur</sgmltag
+> en <sgmltag class="endtag"
+>kleur</sgmltag
+>: de kleur van het kaartgedeelte.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>foutHoofdstad</sgmltag
+> en <sgmltag class="endtag"
+>foutHoofdstad</sgmltag
+>: Er kan elk gewenst aantal paren zijn van foutieve hoofdsteden, die worden gebruikt in een lijst van foutieve antwoorden op de vraag naar de hoofdstad, in plaats van het kiezen van de foute antwoorden uit die van de hoofdsteden van andere kaartgedeelten.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>De kleur wordt met behulp van drie "tags" gegeven: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>red</sgmltag
+> en <sgmltag class="endtag"
+>red</sgmltag
+>: rode kleurcomponent. Geldige waarden zijn tussen 0 en 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>green</sgmltag
+> en <sgmltag class="endtag"
+>green</sgmltag
+>: groene kleurcomponent. Geldige waarden zijn tussen 0 en 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blue</sgmltag
+> en <sgmltag class="endtag"
+>blue</sgmltag
+>: blauwe kleurcomponent. Geldige waarden zijn tussen 0 en 255.</para>
+</listitem>
+</itemizedlist>
+</para>
+<tip>
+ <para
+>Het is gemakkelijk 2 of 3 lege kaartgedeelten te maken zoals <quote
+><literal
+>Water</literal
+></quote
+>, <quote
+><literal
+>Grens</literal
+></quote
+> en  <quote
+><literal
+>Kust</literal
+></quote
+> en daarna de "tag" <sgmltag class="starttag"
+>negeren</sgmltag
+> op <userinput
+>ja</userinput
+> in te stellen. Vergeet niet <userinput
+> geen </userinput
+> kleur 0,0,0 in RGB in te stellen voor  enige <quote
+><literal
+>Grens</literal
+></quote
+>. Maak het maar zoiets als 1,1,1 zodat in de kaart een grenslijn verschijnt zodra er een kaartgedeelte in de kaart wordt geplaatst. </para>
+</tip>
+ <important>
+   <para
+>Alle namen (hoofdsteden en kaartgedeelten) moeten in het Engels zijn.</para>
+</important>
+</sect1>
+<sect1 id="map-file">
+<title
+>Het kaartbestand</title>
+<para
+>Het is vrij eenvoudig om dit kaartbestand te maken, maar het vereist wel veel werk. Het moet een <acronym
+>PNG</acronym
+> -bestand zijn. U kunt enige kaarten vinden op <ulink url="https://www.cia.gov/library/publications/the-world-factbook/docs/refmaps.html"
+>Cia Reference Maps</ulink
+> die u kunt aanpassen. Als er geen kaarten bij zijn die u kunt gebruiken kunt u de<ulink url="https://www.cia.gov/library/publications/resources/the-world-factbook/graphics/ref_maps/political/pdf/world.pdf"
+>political world map</ulink
+> ophalen van het internet, een schermbeeld ervan maken en van daaruit werken. Ieder kaartgedeelte moet een en slechts een kleur hebben. Om dit voor elkaar te krijgen kunt u gebruik maken van beeldbewerkingsprogramma's zoals <application
+>The Gimp</application
+> en &kolourpaint;. </para>
+</sect1>
+<sect1 id="flags">
+<title
+>Vlaggen</title>
+<para
+>Als u de "tag" <sgmltag class="starttag"
+>vlag</sgmltag
+>  gebruikt moet u de  vlagbestanden aanleveren. Met de extensie <acronym
+>PNG</acronym
+>. Nog beter is het als zij 300x200 pixels groot zijn en u hiervoor een &SVG;-bestand levert. Voor bijna alle &SVG;-vlaggen kunt u terecht op de <ulink url="https://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770"
+>Sodipodi vlaggenverzameling</ulink
+>.  </para>
+<para
+>Zoals eerder opgemerkt moedigen we u aan om vervaagde vlagbestanden voor vlaggen te leveren die de opdeling erop heeft geschreven. Dezelfde vereisten zijn van toepassing op de vervaagde vlagbestanden als op de reguliere vlagbestanden. Terwijl er geen voorgeschreven naamnotatie voor de vervaagde bestanden zijn, bevelen we aan deze op te slaan met de naam van de originele vlag met voorloop <literal
+>blurred_</literal
+>, &eg; <quote
+><literal
+>blurred_albania.png</literal
+></quote
+> </para>
+</sect1>
+<sect1 id="how-to-test">
+<title
+>Hoe te testen</title>
+<para
+>Voordat u uw kaart opstuurt naar Albert &Albert.Astals.Cid.mail;, moet u die testen op fouten. U kunt dit als volgt doen: <itemizedlist
+> <listitem
+> <para
+>Plaats de beschrijving en het beeldbestand van de kaart in de map <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/</filename
+></para
+> </listitem
+> <listitem
+> <para
+>Plaats de <acronym
+>PNG</acronym
+>-bestanden voor de vlaggen (als die er zijn) in <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/flags/</filename
+></para
+> </listitem
+> </itemizedlist
+>. Hierna moet u de kaart kunnen openen vanuit &kgeography;. </para>
+ <para
+>U kunt uw <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+></filename
+> te weten komen door in een tekstscherm de opdracht <userinput
+><command
+>qtpath</command
+> <option
+>--path HomeLocation</option
+></userinput
+> in te typen. </para>
+<tip>
+<para
+>Met het hulpmiddel colorchecker.py kunt u controleren of er nog kleuren in de kaart aanwezig zijn, die niet in het <literal role="extension"
+>.kgm</literal
+> zijn gedefinieerd. </para>
+</tip>
+</sect1>
+<sect1 id="non-political-maps">
+<title
+>Niet-politieke kaarten</title>
+<para
+>Is het mogelijk om niet-politieke kaarten te maken? Ja zeker! <screenshot>
+<screeninfo
+>Voorbeeld van het maken van een niet-politieke kaart</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="river.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Voorbeeld van het maken van een niet-politieke kaart</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Natuurlijk, het idee van kaartgedeelten kan worden uitgebreid tot een rivier of een berg. Tijdens het maken van de kaart zult u eraan moeten denken dat de rivier of berg meestal zo klein is dat u in een extra klikbare oppervlakte moet voorzien. In dit voorbeeld krijgt de rivier een kastanjebruine oppervlakte met de naam in de kleur &lt;20,76,34&gt;. </para>
+</sect1>
+</chapter>
+
+<chapter id="commands">
+<title
+>Overzicht van de opdrachten</title>
+
+<sect1 id="kapp-mainwindow">
+<title
+>Het hoofdvenster van &kgeography;</title>
+
+<sect2>
+<title
+>Het menu Bestand</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Bestand</guimenu
+> <guimenuitem
+>Kaart openen...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Openen van de dialoog waarin u een kaart kunt kiezen. Tijdens het typen van  de eerste letters van de door u gezochte kaart, wordt de eerst kaart die hieraan voldoet getoond.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Bestand</guimenu
+> <guimenuitem
+>Afsluiten</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>&kgeography; <action
+>Afsluiten</action
+>.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>Het menu Beeld</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Beeld</guimenu
+> <guimenuitem
+>Zoom</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Gaat in zoom-modus, daarna wordt een rechthoek in de kaart getekend waarin wordt ingezoomd</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Beeld</guimenu
+> <guimenuitem
+>Originele grootte</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+>Weer <action
+>Instellen</action
+> van de kaartgrootte op  de oorspronkelijke waarde, zoals gedefinieerd in het kaartbestand. Dit zelfde wordt bereikt door te klikken met de &RMB; in zoom-modus.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Beeld</guimenu
+> <guimenuitem
+>Automatisch Zoom</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Instellen</action
+> van automatisch zoomen in de kaart, zodat de beschikbare ruimte zo goed mogelijk wordt gebruikt,  bij wijzigen van het het venster van &kgeography;.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Beeld</guimenu
+> <guimenuitem
+>Verplaatsen</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Verplaatst</action
+> de huidige kaart. Dit is alleen actief na inzoomen in de kaart.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>Het menu Instellingen</title>
+<para
+>&kgeography; heeft de voor &kde; gebruikelijke ingangen in het menu <guimenu
+>Instellingen</guimenu
+>.  Meer informatie vindt u in de sectie  <ulink url="help:/fundamentals/menus.html#menus-settings"
+>Instelllingenmenu</ulink
+> in de Basisinformatie van &kde;. </para>
+
+</sect2>
+<sect2>
+<title
+>Het menu Help</title>
+
+<para
+>&kgeography; heeft een voor &kde; standaard <guimenu
+>Help</guimenu
+>-menu voor, zoals is beschreven in de <ulink url="help:/fundamentals/ui.html#menus-help"
+>Basisinformatie van &kde; </ulink
+>, maar met nog twee extra ingangen:</para>
+	
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Beeld</guimenu
+> <guimenuitem
+>Afwijzing van verantwoordelijkheid</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Toont</action
+> een tekst, waarin de verantwoordelijkheid voor de nauwkeurigheid van de kaarten, vlaggen en vertalingen in &kgeography;.wordt afgewezen.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Help</guimenu
+> <guimenuitem
+>Auteur kaart</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Toont</action
+> de naam van de auteur van de huidige kaart.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+</sect1>
+
+</chapter>
+
+<chapter id="configuration">
+<title
+>Configuratie</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Uitlijnen van vragen</guilabel
+></term>
+<listitem
+><para
+>Bepaalt de positie van de vragen in het venster, standaard is <guilabel
+>Links boven</guilabel
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Wachten op bevestigen</guilabel
+></term>
+<listitem
+><para
+>Indien aan, moet de gebruiker klikken op de knop <guibutton
+>Accepteren</guibutton
+> na het kiezen van een antwoord.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Focus volgt muis</guilabel
+></term>
+<listitem
+><para
+>Indien aangezet, triggert het drukken op  &Space; de knop onder de muisaanwijzer.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Kleuren van de kaartdelen</guilabel
+></term>
+<listitem
+><para
+>U kunt kiezen of u altijd dezelfde kleuren wilt behouden (standaard), of dat u de kleuren willekeurig wilt kiezen: met deze optie aan, worden de diverse kaartdelen willekeurig gekleurd. Hierdoor moet de gebruiker zich er toe zetten om de vormen van de kaartdelen te leren, in plaats van de kleuren. </para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Dankbetuigingen en Licentie</title>
+
+<para
+>&kgeography; </para>
+<para
+>Programma copyright 2004-2008 Albert Astals Cid &Albert.Astals.Cid.mail; </para>
+
+
+<para
+>Documentatie Copyright &copy; 2005 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; 2008 Kushal Das <email
+>kushaldas@gmail.com</email
+> </para>
+
+<para
+>Jaap Woldringh<email
+>jjh punt woldringh op planet punt nl</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab 
+-->

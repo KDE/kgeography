@@ -1,0 +1,1078 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Ukrainian "INCLUDE"
+> 
+]>
+
+<book id="kgeography" lang="&language;">
+
+<bookinfo>
+<title
+>Підручник з &kgeography;</title>
+
+<authorgroup>
+<author
+><personname
+> <firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> </personname
+> &Anne-Marie.Mahfouf.mail; </author>
+<author
+><personname
+> <firstname
+>Kushal</firstname
+> <surname
+>Das</surname
+> </personname
+> <email
+>kushaldas@gmail.com</email
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Юрій</firstname
+><surname
+>Чорноіван</surname
+><affiliation
+><address
+><email
+>yurchor@ukr.net</email
+></address
+></affiliation
+><contrib
+>Переклад українською</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2005</year>
+<holder
+>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<copyright>
+<year
+>2008</year>
+<holder
+>Kushal Das</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>22 грудня 2020 року</date>
+<releaseinfo
+>Програми 20.12</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&kgeography; — це інструмент для вивчення географії у &kde;. У поточній версії він має сім режимів використання: <itemizedlist>
+<listitem>
+<para
+>Перегляд карти з натисканням на територіях, щоб побачити їх назви, столиці і прапори</para>
+</listitem>
+<listitem>
+<para
+>Гра з вгадування за назвою території на карті</para>
+</listitem>
+<listitem>
+<para
+>Гра з вгадування за столицею території на карті</para>
+</listitem
+><listitem>
+<para
+>Гра з вгадування за територією на карті столиці цієї території</para>
+</listitem
+><listitem>
+<para
+>Гра з вгадування назви території на карті за її прапором</para>
+</listitem
+><listitem>
+<para
+>Гра з вгадування прапору території на карті за її назвою</para>
+</listitem
+><listitem>
+<para
+>Гра у заповнення порожньої карти територіями одна за одною</para>
+</listitem>
+</itemizedlist>
+</para>
+
+</abstract>
+
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdeedu</keyword>
+<keyword
+>KGeography</keyword>
+<keyword
+>географія</keyword>
+<keyword
+>карти</keyword>
+<keyword
+>країни</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Вступ</title>
+
+<para
+>&kgeography; — інструмент з вивчення географії від &kde;. Ця програма надасть вам змогу вивчити адміністративний устрій деяких країн (території, столиці цих територій і відповідні прапори, якщо такі є). </para>
+</chapter>
+
+<chapter id="quick-start">
+<title
+>Початок роботи з &kgeography;</title>
+<para
+>Коли ви запускаєте &kgeography; перший раз, програма запитає вас про карту, з якої слід розпочати. </para>
+<tip>
+<para
+>Ви можете виконати фільтрування списку карт за допомогою текстового поля <guilabel
+>Фільтрувати карти</guilabel
+>. Достатньо ввести декілька літер з назви карти, щоб список звузився до декількох відповідників. </para>
+</tip>
+<screenshot>
+<screeninfo
+>Ось знімок вікна &kgeography; після першого запуску</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start1.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Ось знімок вікна &kgeography; після першого запуску</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Тут ми обрали Канаду <screenshot>
+<screeninfo
+>Вибрано Канаду</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start2.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Вибрано Канаду</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>І в результаті головне вікно &kgeography; з’явилося з картою Канади: <screenshot>
+<screeninfo
+>Головне вікно &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start3.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Головне вікно &kgeography;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Потім ви, поглянувши на меню ліворуч, можете вибрати тип навчання або перевірки знань, який вам до вподоби: <screenshot>
+<screeninfo
+>Меню &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start4.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Меню &kgeography;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Перегляд карти: якщо навести вказівник миші на територію на карті і натиснути ліву кнопку миші, буде показано інформацію про цю територію, якщо ж ви натиснете на маленьку піктограму <inlinemediaobject
+> <imageobject
+> <imagedata fileref="dialog-information.png" format="PNG"/> </imageobject
+> </inlinemediaobject
+> <guiicon
+>Інформація</guiicon
+> у контекстному віконечку, у типовому системному переглядачі мережі буде відкрито сторінку Вікіпедії з інформацією про цю територію: <screenshot>
+<screeninfo
+>Перегляд карти</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start5.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Перегляд карти</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Розташування провінцій або територій: спочатку вас запитають про кількість питань у тесті. <screenshot>
+<screeninfo
+>Кількість питань</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start6.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Кількість питань</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Потім попросять натиснути на вказану територію: <screenshot>
+<screeninfo
+>Натискання на території</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start7.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Натискання на території</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Коли ви відповісте на всі питання, з’явиться діалогове вікно, у якому буде показано ваші правильні і неправильні відповіді: <screenshot>
+<screeninfo
+>Ваші результати</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start8.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Ваші результати</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Знайти територію на карті: курсор набуде форми території, а вам слід буде розмістити цю територію на карті: <screenshot>
+<screeninfo
+>Розташування території на карті</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start13.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Розташування території на карті</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Територія за столицею: вас повідомлять про назву столиці території і попросять вказати назву території серед 4 варіантів: <screenshot>
+<screeninfo
+>Вгадування території за її столицею</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start9.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Вгадування території за її столицею</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>А по завершенню тесту буде показано його результати: <screenshot>
+<screeninfo
+>Ваші результати</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start10.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Ваші результати</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Столиці територій: вам відома назва столиці і чотири назви територій, вам слід вибрати серед них ту, чию столицю названо. Як і раніше, по завершенню ви побачите діалогове вікно з результатами. </para>
+<para
+>Території за прапором: вам покажуть прапор, за яким слід буде визначити територію, які він належить. <screenshot>
+<screeninfo
+>Питання про прапор</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start11.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Питання про прапор</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Прапори територій: вам буде дано назву території, за якою слід буде вибрати її прапор серед чотирьох варіантів. <screenshot>
+<screeninfo
+>Знаходження прапора за назвою території</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start12.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Знаходження прапора за назвою території</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</chapter>
+
+<chapter id="using-kapp">
+<title
+>Користування &kgeography;</title>
+
+<para
+>&kgeography; показує інформацію про деякі країни і перевіряє ваші знання цієї інформації. <screenshot>
+<screeninfo
+>Ось знімок вікна &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kgeography.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Знімок вікна</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+
+
+<sect1 id="kapp-features">
+<title
+>Додаткові можливості &kgeography;</title>
+
+<para
+>Ще однією з можливостей &kgeography; є можливість збільшення областей карти. <screenshot
+> <screeninfo
+>Збільшення</screeninfo
+> <mediaobject
+> <imageobject
+> <imagedata fileref="zoom.png" format="PNG"/> </imageobject
+> <textobject
+> <phrase
+>Збільшення</phrase
+> </textobject
+> </mediaobject
+> </screenshot
+> Ви можете натиснути на кнопку <guibutton
+>Збільшити</guibutton
+>, а потім намалювати прямокутник на карті, який і буде збільшено до розмірів області перегляду. Знаходячись у режимі збільшення, ви можете натиснути праву кнопку миші, щоб повернутися до початкового розміру карти (дія <guimenuitem
+>Початковий розмір</guimenuitem
+> має той самий ефект). Скористайтеся панелями гортання, клавішами зі стрілочками або коліщатком миші для пересування області перегляду по збільшеній карті або скористайтеся дією <guimenuitem
+>Пересунути</guimenuitem
+>, яка надає вам змогу пересувати область за допомогою лівої кнопки миші. Можливість <guimenuitem
+>Автоматичний Масштаб</guimenuitem
+> змінить розмір карти таким чином, щоб вона цілком розмістилася у області перегляду. </para>
+
+</sect1>
+</chapter>
+
+<!--<chapter id="teachers-parents">
+<title
+>Teachers/Parents guide to &kgeography; </title>
+ This chapter should emphasize the educational aims of your app and
+guide the parent/teacher on how to help the child using it.
+</chapter
+>-->
+
+<chapter id="how-to-maps">
+<title
+>Як створювати карти</title>
+<para
+>Карта &kgeography; складається з двох файлів, одного файла зображення карти і одного файла її опису.</para>
+<sect1 id="helper-tool">
+<title
+>Допоміжний інструмент</title>
+<para
+><ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/gen_map.pl"
+>Тут</ulink
+> ви знайдете інструмент (автором якого є Yann Verley), який допоміг йому створити карту Франції. Щоб дізнатися про спосіб його використання, просто виконайте цей код і прочитайте довідкове повідомлення. Загалом кажучи, цей код створює з текстового файла файл <literal role="extension"
+>.kgm</literal
+> та файл з кольорами, які відповідають кожній з територій, отже, ви зможете заповнювати кольорами карту відповідно до цього файла.</para>
+<para
+>Існує і інший інструмент — <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
+>colorchecker.py</ulink
+>, написаний Albert Astals Cid. Щоб працювати з ним, вам потрібен буде пакунок з PyQt4. Просто запустіть цю програму, передавши їй назву файла <literal role="extension"
+>.kgm</literal
+> як параметр (вам також слід буде розмістити файл карти <literal role="extension"
+>.png</literal
+> у тій же теці). Інструмент повідомить вас про те, чи є на карті хоч один піксель з кольором, якого немає серед визначених у файлі опису <literal role="extension"
+>.kgm</literal
+>. </para>
+<tip>
+<para
+>Будь ласка, ознайомтеся з підручником щодо <ulink url="https://edu.kde.org/kgeography/tutorials/kgeography-addmaps.pdf"
+>додавання карт</ulink
+> на сайті &kgeography;. </para>
+</tip>
+</sect1>
+<sect1 id="description-file">
+<title
+>Файл опису</title>
+<para
+>Потрібен файл опису, суфіксом якого має бути сполучення літер <literal role="extension"
+>.kgm</literal
+>. Його вміст має розпочинатися з <sgmltag class="starttag"
+>?xml version="1.0" encoding="utf-8"</sgmltag
+>, продовжуватися <sgmltag class="starttag"
+>map</sgmltag
+> і завершуватися на <sgmltag class="endtag"
+>map</sgmltag
+>. </para>
+<para
+>Між цими тегами у файлі мають бути: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>mapFile</sgmltag
+> і <sgmltag class="endtag"
+>mapFile</sgmltag
+>: назва файла (без шляху до нього), у якому міститься зображення карти, наприклад <quote
+><literal
+>europe.png</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>name</sgmltag
+> і <sgmltag class="endtag"
+>name</sgmltag
+>: назва карти, наприклад <quote
+><literal
+>Europe</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>divisionsName</sgmltag
+> і <sgmltag class="endtag"
+>divisionsName</sgmltag
+>: загальна назва територій на цій карті, тобто, Provinces, States, Countries тощо.</para>
+</listitem>
+<listitem>
+  <para
+>A <sgmltag class="starttag"
+>division</sgmltag
+> і <sgmltag class="endtag"
+>division</sgmltag
+> для кожної території на карті.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>Кожна територія має такі теги: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>name</sgmltag
+> і <sgmltag class="endtag"
+>name</sgmltag
+>: назва території, наприклад <quote
+><literal
+>Albania</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>capital</sgmltag
+> і <sgmltag class="endtag"
+>capital</sgmltag
+>: назва столиці території, наприклад <quote
+><literal
+>Tirana</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+	<para
+><sgmltag class="starttag"
+>ignore</sgmltag
+> і <sgmltag class="endtag"
+>ignore</sgmltag
+>: можна встановити у значення <userinput
+>yes</userinput
+>, <userinput
+>allowClickMode</userinput
+>, <userinput
+>allowClickFlagMode</userinput
+> і <userinput
+>no</userinput
+>. Якщо цей тег встановлено у значення <userinput
+>yes</userinput
+>, територію буде проігноровано під час тестів з територіями на карті. Тобто ця територія не існуватиме для режимів тестів у &kgeography;. Якщо цей тег встановлено у значення <userinput
+>allowClickMode</userinput
+>, &kgeography; питатиме про цю територію у режимі <guibutton
+>Розташування...</guibutton
+>, але не у інших режимах тестів. Якщо цей тег встановлено у значення <userinput
+>allowClickFlagMode</userinput
+>, &kgeography; запитуватиме про територію у режимі <guibutton
+>Розташування...</guibutton
+> і у режимах, пов’язаних з запитаннями про прапори, але не у інших режимах. Якщо встановити значення <userinput
+>no</userinput
+>, територія з’являтиметься у всіх режимах (перегляду і тестів). Це тег є допоміжним, якщо немає тегу <sgmltag class="starttag"
+>ignore</sgmltag
+>, буде вважатися, що його встановлено у значення <userinput
+>no</userinput
+>. Наприклад, <quote
+><literal
+>Algeria</literal
+></quote
+> має цей тег зі значенням <userinput
+>yes</userinput
+> на карті <quote
+><literal
+>Europe</literal
+></quote
+>, це означає, що <quote
+><literal
+>Algeria</literal
+></quote
+> не буде частиною жодного тесту, пов’язаного з картою <quote
+><literal
+>Europe</literal
+></quote
+> map.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>flag</sgmltag
+> і <sgmltag class="endtag"
+>flag</sgmltag
+>: файл (без шляху до нього), у якому міститься зображення прапору території, наприклад <quote
+><literal
+>albania.png</literal
+></quote
+>. Цей тег є необов’язковим. Не потрібен для територій, чий тег <sgmltag class="starttag"
+>ignore</sgmltag
+> встановлено у значення <userinput
+>yes</userinput
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blurredflag</sgmltag
+> і <sgmltag class="endtag"
+>blurredflag</sgmltag
+>: файл (без шляху до нього), у якому міститься зображення розмитого прапору території, наприклад <quote
+><literal
+>blurred_albania.png</literal
+></quote
+>. Цей теґ є необов’язковим. Ним слід користуватися у випадках, коли на прапорі є напис із назвою території. Такі написи роблять вгадування надто простим. Для таких прапорів варто робити розмиту версію, де не можна розібрати текст.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>color</sgmltag
+> і <sgmltag class="endtag"
+>color</sgmltag
+>: колір території на карті.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>falseCapital</sgmltag
+> і <sgmltag class="endtag"
+>falseCapital</sgmltag
+>: можна вказати будь-яку кількість пар <userinput
+>falseCapital</userinput
+>, їх використовують для того, щоб вказати неправильні варіанти для питань про столицю для доповнення варіантів, заснованих на виборі серед назв столиць інших територій.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>Колір визначається за допомогою трьох тегів: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>red</sgmltag
+> і <sgmltag class="endtag"
+>red</sgmltag
+>: червоний компонент кольору. Коректні значення знаходяться у діапазоні від 0 до 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>green</sgmltag
+> і <sgmltag class="endtag"
+>green</sgmltag
+>: зелений компонент кольору. Коректні значення знаходяться у діапазоні від 0 до 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blue</sgmltag
+> і <sgmltag class="endtag"
+>blue</sgmltag
+>: синій компонент кольору. Коректні значення знаходяться у діапазоні від 0 до 255.</para>
+</listitem>
+</itemizedlist>
+</para>
+<tip>
+ <para
+>Для зручності слід створити 2 або 3 псевдотериторії, зокрема <quote
+><literal
+>Water</literal
+></quote
+>, <quote
+><literal
+>Frontier</literal
+></quote
+> і <quote
+><literal
+>Coast</literal
+></quote
+>, і встановити для них тег <sgmltag class="starttag"
+>ignore</sgmltag
+> у значення <userinput
+>yes</userinput
+>. Не забудьте, що <userinput
+>не можна встановлювати</userinput
+> колір для <quote
+><literal
+>Frontier</literal
+></quote
+> у значення 0,0,0 палітри RGB. Будь ласка, виберіть для цього щось на зразок 1,1,1, щоб контури кордону завжди відображалися у тестах на розташування територій на карті. </para>
+</tip>
+ <important>
+   <para
+>Всі назви (столиць та регіонів) слід писати англійською.</para>
+</important>
+</sect1>
+<sect1 id="map-file">
+<title
+>Файл карти</title>
+<para
+>Файл карти є простим, але його створення досить трудомістке. Його слід записувати у форматі <acronym
+>PNG</acronym
+>. Деякі карти для такого перетворення можна знайти у <ulink url="https://www.cia.gov/library/publications/the-world-factbook/docs/refmaps.html"
+>Довідкових картах ЦРУ</ulink
+>. Якщо жоден з цих файлів не відповідає вашим потребам, ви можете отримати <ulink url="https://www.cia.gov/library/publications/resources/the-world-factbook/graphics/ref_maps/political/pdf/world.pdf"
+>політичну карту світу</ulink
+>, зробити її знімок і працювати з ним. Кожній території на карті має відповідати один і лише один колір. Щоб досягти цього, ви можете скористатися програмами для обробки зображень на зразок <application
+>The Gimp</application
+> і <application
+>Kolourpaint</application
+>. </para>
+</sect1>
+<sect1 id="flags">
+<title
+>Прапори</title>
+<para
+>Якщо ви використовувати тег <sgmltag class="starttag"
+>flag</sgmltag
+>, вам слід додати і файли прапорів. Їх слід перевести у формат <acronym
+>PNG</acronym
+>, найкраще якщо вони будуть розміром 300x200 пікселів і для кожного з них існуватиме <acronym
+>SVG</acronym
+>-відповідник. Прапори майже всіх країн і деяких інших територій у форматі <acronym
+>SVG</acronym
+> ви зможете знайти у <ulink url="https://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770"
+>Колекції прапорів Sodipodi</ulink
+>. </para>
+<para
+>Як ми вже зазначали вище, ми будемо раді наданим вами файлам розмитих прапорів для прапорів, на яких написано назву частини карти. Файлів розмитих прапорів стосуються ті самі вимоги, що і файлів звичайних прапорів. Хоча немає загальноприйнятих умов щодо назв файлів розмитих зображень, ми рекомендуємо зберігати їх із назвою початкового файла з префіксом <literal
+>blurred_</literal
+>, наприклад <quote
+><literal
+>blurred_albania.png</literal
+></quote
+> </para>
+</sect1>
+<sect1 id="how-to-test">
+<title
+>Як перевірити</title>
+<para
+>Перш ніж надсилати вашу карту Альбертові за адресою &Albert.Astals.Cid.mail;, вам слід перевірити її на відсутність помилок. Щоб виконати перевірку, зробіть так: <itemizedlist
+> <listitem
+> <para
+>Розмістіть опис карти і файл зображення карти у <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/</filename
+></para
+> </listitem
+> <listitem
+> <para
+>Розмістіть файли прапорів (якщо такі є) у форматі <acronym
+>PNG</acronym
+> у <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/flags/</filename
+></para
+> </listitem
+> </itemizedlist
+> Після цього ви повинні мати змогу відкрити вашу карту за допомогою &kgeography;. </para>
+ <para
+>Якщо ви не знаєте де знаходиться ваша тека <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+></filename
+>, виконайте команду <userinput
+><command
+>qtpaths</command
+> <option
+>--paths HomeLocation</option
+></userinput
+> з командної оболонки. </para>
+<tip>
+<para
+>Для того, щоб перевірити чи не залишилося на карті додаткових кольорів, які не визначено у файлі <literal role="extension"
+>.kgm</literal
+>, скористайтеся інструментом colorchecker.py з допоміжних інструментів. </para>
+</tip>
+</sect1>
+<sect1 id="non-political-maps">
+<title
+>Не політичні карти</title>
+<para
+>Чи можна створювати не політичні карти? Звичайно, так! <screenshot>
+<screeninfo
+>Приклад створення не політичної карти</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="river.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Приклад створення не політичної карти</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Звичайно, концепцію територій можна поширити на річку або гору. Під час створення карти пам’ятайте, що зазвичай річка і гора на картах замалі для простого наведення на них вказівника миші, отже, вам доведеться їх трохи розширити. У цьому прикладі річка має брунатний колір з компонентами&lt;20,76,34&gt;. </para>
+</sect1>
+</chapter>
+
+<chapter id="commands">
+<title
+>Довідка щодо команд</title>
+
+<sect1 id="kapp-mainwindow">
+<title
+>Головне вікно &kgeography;</title>
+
+<sect2>
+<title
+>Меню «Файл»</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Файл</guimenu
+> <guimenuitem
+>Відкрити карту...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Відкрити діалогове вікно вибору карти. Якщо ви достатньо швидко введете початкові літери назви карти, буде вибрано першу з відповідних карт.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Файл</guimenu
+> <guimenuitem
+>Вийти</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Завершує роботу</action
+> &kgeography;.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>Меню «Перегляд»</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Перегляд</guimenu
+> <guimenuitem
+>Збільшити</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Переводить програму у режим збільшення, у цьому режимі ви можете вибрати на карті прямокутну область, яку буде збільшено.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Перегляд</guimenu
+> <guimenuitem
+>Початковий розмір</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Встановлює</action
+> початковий розмір карти, встановлений у файлі карти. Клацання правою кнопкою миші у режимі змінено масштабу призначено для виконання тієї самої дії.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Перегляд</guimenu
+> <guimenuitem
+>Автоматичний Масштаб</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Встановлює</action
+> масштаб карти автоматично, щоб використати якомога більше простору у разі зміни розмірів вікна &kgeography;.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Перегляд</guimenu
+> <guimenuitem
+>Пересунути</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Пересуває</action
+> поточну карту. Цей пункт буде увімкнено лише за достатнього збільшення карти.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>Меню «Параметри»</title>
+<para
+>У &kgeography; передбачено типові пункти меню <guimenu
+>Параметри</guimenu
+> &kde;. Щоб дізнатися більше, ознайомтеся з розділом, присвяченим <ulink url="help:/fundamentals/menus.html#menus-settings"
+>меню «Параметри»</ulink
+> підручника з основ роботи у &kde;. </para>
+
+</sect2>
+<sect2>
+<title
+>Меню «Довідка»</title>
+
+<para
+>&kgeography; має типове меню <guimenu
+>Довідка</guimenu
+> &kde;, яке описано у <ulink url="help:/fundamentals/menus.html#menus-help"
+>підручнику з основ &kde;</ulink
+>, з двома додатковими пунктами:</para>
+	
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Довідка</guimenu
+> <guimenuitem
+>Достовірність</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Показує</action
+> повідомлення про точність карт, прапорів та перекладів, використаних у &kgeography;.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Довідка</guimenu
+> <guimenuitem
+>Автор карти</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Показує</action
+> ім’я автора, який створив поточну карту.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+</sect1>
+
+</chapter>
+
+<chapter id="configuration">
+<title
+>Налаштування</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Вирівнювання питання</guilabel
+></term>
+<listitem
+><para
+>Визначає розташування панелі питання у вікні. Типовим розташуванням є <guilabel
+>Вгору і ліворуч</guilabel
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Очікувати на підтвердження</guilabel
+></term>
+<listitem
+><para
+>Якщо позначено, користувачеві доведеться натискати кнопку <guibutton
+>Прийняти</guibutton
+> після вибору відповіді.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Фокус слідує за вказівником</guilabel
+></term>
+<listitem
+><para
+>Якщо позначено, натискання клавіші <keycap
+>Пробіл</keycap
+> перемикатиме стан кнопки під вказівником миші.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Кольори областей на карті</guilabel
+></term>
+<listitem
+><para
+>Ви можете вибрати між декількома варіантами: завжди використовувати ті самі кольори (типовий) або використати випадкові кольори. За допомогою цього пункту можна призначити різним областям на карті випадкові кольори. Це допомагає користувачеві зосередитися на вивченні форм областей, а не їхніх кольорів. </para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Подяки і ліцензія</title>
+
+<para
+>&kgeography; </para>
+<para
+>Авторські права на програму Albert Astals Cid &Albert.Astals.Cid.mail;, 2004–2008  </para>
+
+
+<para
+>Авторські права на документацію Copyright &copy; 2005 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; 2008 Kushal Das <email
+>kushaldas@gmail.com</email
+> </para>
+
+<para
+>Юрій Чорноіван <email
+>yurchor@ukr.net</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab 
+-->

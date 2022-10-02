@@ -1,0 +1,1091 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY kgeography "<application
+>KGeography</application
+>">
+  <!ENTITY kappname "&kgeography;">
+  <!ENTITY package "kdeedu">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Estonian  "INCLUDE"
+> 
+]>
+
+<book id="kgeography" lang="&language;">
+
+<bookinfo>
+<title
+>&kgeography; käsiraamat</title>
+
+<authorgroup>
+<author
+><personname
+> <firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> </personname
+> &Anne-Marie.Mahfouf.mail; </author>
+<author
+><personname
+> <firstname
+>Kushal</firstname
+> <surname
+>Das</surname
+> </personname
+> <email
+>kushaldas@gmail.com</email
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Marek</firstname
+><surname
+>Laane</surname
+><affiliation
+><address
+><email
+>bald@starman.ee</email
+></address
+></affiliation
+><contrib
+>Tõlge eesti keelde</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2005</year>
+<holder
+>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<copyright>
+<year
+>2008</year>
+<holder
+>Kushal Das</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2013-11-13</date>
+<releaseinfo
+>0.8.1 (&kde; 4.13)</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&kgeography; on &kde; geograafia õpiprogramm. Praegu saab kasutada seitset erinevat õppemeetodit: <itemizedlist>
+<listitem>
+<para
+>Kaartide sirvimine ja neile klõpsates kohanimede, pealinnade ja lippude tundmaõppimine</para>
+</listitem>
+<listitem>
+<para
+>Mäng, mis annab ette geograafilise nimetuse ja sina pead kaardil sellele klõpsama</para>
+</listitem>
+<listitem>
+<para
+>Mäng, mis annab sulle ette pealinna ja sina pead ära arvama, mille pealinn see on</para>
+</listitem
+><listitem>
+<para
+>Mäng, mis annab ette poliitilise üksuse ja sina pead ära arvama selle pealinna</para>
+</listitem
+><listitem>
+<para
+>Mäng, mis näitab poliitilise üksuse lippu ja sina pead ära arvama üksuse nime</para>
+</listitem
+><listitem>
+<para
+>Mäng, mis annab ette poliitilise üksuse nime ja sina pead ära arvama selle lipu</para>
+</listitem
+><listitem>
+<para
+>Mäng, mis annab ette tühja kaardi ja sul tuleb sinna asetada poliitilised üksused</para>
+</listitem>
+</itemizedlist>
+</para>
+
+</abstract>
+
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdeedu</keyword>
+<keyword
+>KGeography</keyword>
+<keyword
+>geograafia</keyword>
+<keyword
+>kaardid</keyword>
+<keyword
+>riigid</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Sissejuhatus</title>
+
+<!-- The introduction chapter contains a brief introduction for the
+application that explains what it does and where to report
+problems. Basically a long version of the abstract.  Don't include a
+revision history. (see installation appendix comment) -->
+
+<para
+>&kgeography; on &kde; õpiprogramm. See lubab tundma õppida mõningate riikide poliitilist struktuuri (poliitilised üksused, nende pealinnad ja lipud). </para>
+</chapter>
+
+<chapter id="quick-start">
+<title
+>&kgeography; kiirtutvustus</title>
+<para
+>Kui käivitad &kgeography; esimest korda, palutakse sul valida mõne riigi kaart. </para>
+<tip>
+<para
+>Kaartide loendit saab filtreerida tekstivälja <guilabel
+>Kaartide filtreerimine</guilabel
+> abil. Kirjuta lihtsalt paar kaardi nime algustähte kasti, millega juba piiratakse tunduvalt nimekirja. </para>
+</tip>
+<screenshot>
+<screeninfo
+>&kgeography; esimesel käivitamisel</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start1.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>&kgeography; esimesel käivitamisel</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Valime Kanada <screenshot>
+<screeninfo
+>Valitud on Kanada</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start2.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Valitud on Kanada</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Seejärel ilmub &kgeography; peaaken Kanada kaardiga: <screenshot>
+<screeninfo
+>&kgeography; peaaken</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start3.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>&kgeography; peaaken</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Nüüd võid valida vasakul asuvast menüüst, millist laadi õppimist või testimist soovid ette võtta: <screenshot>
+<screeninfo
+>&kgeography; menüü</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start4.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>&kgeography; menüü</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Kaardi uurimine: klõps &HPNga; kaardi mõnel osal näitab teavet selle kohta.Kui klõpsad seal pisikesele teabeikoonile, avatakse süsteemi vaikimisi brauseris vastava osa kohta käiv Wikipedia lehekülg: <screenshot>
+<screeninfo
+>Kaardi uurimine</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start5.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Kaardi uurimine</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Haldusüksuse asukoht: kõigepealt päritakse, mitmele küsimusele soovid vastata <screenshot>
+<screeninfo
+>Mitu küsimust</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start6.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Mitu küsimust</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Siis palutakse sul klõpsata konkreetsel poliitilisel üksusel: <screenshot>
+<screeninfo
+>Klõpsa poliitilisel üksusel</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start7.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Klõpsa poliitilisel üksusel</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Kui oled kõigile küsimustele vastanud, näidatakse tulemusi, kus on kirjas õiged ja valed vastused: <screenshot>
+<screeninfo
+>Sinu tulemused</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start8.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Sinu tulemused</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Haldusüksusee asetamine kaardile: kursor võtab haldusüksuse kuju ja sa pead selle kaardile asetama: <screenshot>
+<screeninfo
+>Haldusüksuse asetamine kaardile</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start13.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Haldusüksuse asetamine kaardile</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Haldusüksus äraarvamine pealinna põhjal: sinu käest küsitakse, millisele neljast pakutavast poliitilisest üksusest kuulub etteantud pealinn: <screenshot>
+<screeninfo
+>Haldusüksuse äraarvamine pealinna põhjal</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start9.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Haldusüksuse äraarvamine pealinna põhjal</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Testi lõppemisel näidatakse sulle tulemusi: <screenshot>
+<screeninfo
+>Sinu tulemused</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start10.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Sinu tulemused</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Haldusüksuse pealinnad: sulle antakse ette pealinn ja neli haldusüksuse nime, mille seast tuleb valida õige. Testi lõppemisel näidatakse tulemusi. </para>
+<para
+>Haldusüksuse äraarvamine lipu põhjal: sulle näidatakse lippu ja sa pead arvama, millisele poliitilisele üksusele see kuulub. <screenshot>
+<screeninfo
+>Lipuküsimus</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start11.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Lipuküsimus</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Haldusüksuste lipud: sulle antakse ette poliitilise üksuse nimi ja sa pead valima nelja lipu seast õige. <screenshot>
+<screeninfo
+>Poliitilise üksuse lipu arvamine</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start12.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Poliitilise üksuse lipu arvamine</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</chapter>
+
+<chapter id="using-kapp">
+<title
+>&kgeography; kasutamine</title>
+
+<para
+>&kgeography; näitab infot mõningate maade kohta ja testib sind selle info tundmises. <screenshot>
+<screeninfo
+>&kgeography; pilt</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kgeography.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Pilt</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+
+
+<sect1 id="kapp-features">
+<title
+>&kgeography; muud omadused</title>
+
+<para
+>&kgeography; üks võimalusi on kaarti suurendada või vähendada. <screenshot
+> <screeninfo
+>Suurendus</screeninfo
+> <mediaobject
+> <imageobject
+> <imagedata fileref="zoom.png" format="PNG"/> </imageobject
+> <textobject
+> <phrase
+>Suurendus</phrase
+> </textobject
+> </mediaobject
+> </screenshot
+> Kui klõpsata ikoonile <guimenuitem
+>Suurendus</guimenuitem
+>, võib kaardil joonistada nelinurga, mida suurendatakse. Suurendusrežiimis saab &HPNga; klõpsates taastada kaardi originaalsuuruse (sama tulemuse annab käsk <guimenuitem
+>Originaalsuurus</guimenuitem
+>), kerimisribadega kaardil liikuda või <guimenuitem
+>liikumis</guimenuitem
+>käsuga lohistada kaarti &HVNga;. <guimenuitem
+>Automaatse suurenduse</guimenuitem
+> võimalus muudab kaardi võimalikult suureks. </para>
+
+</sect1>
+</chapter>
+
+<!--<chapter id="teachers-parents">
+<title
+>Teachers/Parents guide to &kgeography; </title>
+ This chapter should emphasize the educational aims of your app and
+guide the parent/teacher on how to help the child using it.
+</chapter
+>-->
+
+<chapter id="how-to-maps">
+<title
+>Kaartide loomine</title>
+<para
+>&kgeography; kaart koosneb vähemalt kahest failist: üks on kaardi pilt, teine selle kirjeldus. </para>
+<sect1 id="helper-tool">
+<title
+>Abitööriist</title>
+<para
+>Sellelt <ulink url="https://projects.kde.org/projects/kde/kdeedu/kgeography/repository/revisions/master/changes/tools/gen_map.pl"
+> aadressilt</ulink
+> leiab Yann Verley loodud tööriista, mille abil ta valmistas Prantsusmaa kaardi. Kasutamiseks käivita see ja loe abiteadet. Põhimõtteliselt tekitab see lihttekstifailist <literal role="extension"
+>.kgm</literal
+>-faili ning omistab igale poliitilisele üksusele erineva värvi, millega saad siis kaardi värviliseks muuta.</para>
+<para
+>Albert Astals Cid on kirjutanud teisegi tööriista nimetusega <ulink url="https://projects.kde.org/projects/kde/kdeedu/kgeography/repository/revisions/master/changes/tools/colorchecker.py"
+>colorchecker.py</ulink
+>. Selle kasutamiseks on vajalik PyQt4. Anna käivitamisel argumendiks vajalik .kgm-fail (samas kataloogis peab olema ka kaardi .png-fail). See teatab sulle, kas mõni kaardi piksel on teist värvi, kui on määratud .kgm-failis. </para>
+<tip>
+<para
+>Palun tutvu ka õppematerjaliga <ulink url="http://edu.kde.org/kgeography/tutorials/kgeography-addmaps.pdf"
+>How to add maps</ulink
+> &kgeography; veebileheküljel. </para>
+</tip>
+</sect1>
+<sect1 id="description-file">
+<title
+>Kirjeldusfail</title>
+<para
+>Kirjeldusfail on nõutav ja selle laiend on <literal role="extension"
+>.kgm</literal
+>. Selle alguses peab seisma <sgmltag class="starttag"
+>!DOCTYPE kgeographyMap</sgmltag
+>, seejärel <sgmltag class="starttag"
+>map</sgmltag
+> ja lõpus <sgmltag class="endtag"
+>map</sgmltag
+>. </para>
+<para
+>Nende siltide vahel peab asuma: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>mapFile</sgmltag
+> ja <sgmltag class="endtag"
+>mapFile</sgmltag
+>: kaardi pilti sisaldava faili nimi, &eg; <quote
+>europe.png</quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>name</sgmltag
+> ja <sgmltag class="endtag"
+>name</sgmltag
+>: kaardi nimi, &eg; <quote
+>Europe</quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>divisionsName</sgmltag
+> ja <sgmltag class="endtag"
+>divisionsName</sgmltag
+>: poliitilise üksuse üldnimi kaardil, s.t. provints, osariik, maakond vms.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>division</sgmltag
+> ja <sgmltag class="endtag"
+>division</sgmltag
+> iga kaardi poliitilise üksuse kohta.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>Igal poliitilisel üksusel peavad olema järgmised sildid: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>name</sgmltag
+> ja <sgmltag class="endtag"
+>name</sgmltag
+>: haldusüksuse nimi, &eg; <quote
+>Albania</quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>capital</sgmltag
+> ja <sgmltag class="endtag"
+>capital</sgmltag
+>: poliitilise üksuse pealinna nimi, &eg; <quote
+>Tirana</quote
+>.</para>
+</listitem>
+<listitem>
+	<para
+><sgmltag class="starttag"
+>ignore</sgmltag
+> ja <sgmltag class="endtag"
+>ignore</sgmltag
+>: võib olla <userinput
+>yes</userinput
+>, <userinput
+>allowClickMode</userinput
+>, <userinput
+>allowClickFlagMode</userinput
+> ja <userinput
+>no</userinput
+>. Kui silt on <userinput
+>yes</userinput
+>, ignoreeritakse poliitilist üksust antud kaardi üksuste näitamisel. Sel juhul paistab, nagu poleks seda üksust &kgeography; viktoriinirežiimides üldse olemas. Kui see on <userinput
+>allowClickMode</userinput
+>, küsib &kgeography; haldusüksust ainult režiimis <guibutton
+>Klõpsa kaardil haldusüksusel...</guibutton
+>, mitte aga teiste viktoriinide korral. Kui see on <userinput
+>allowClickFlagMode</userinput
+>, küsib &kgeography; haldusüksust ainult režiimis <guibutton
+>Klõpsa kaardil haldusüksusel...</guibutton
+> ja lipuviktoriinides, mitte aga teiste viktoriinide korral. Kui see on <userinput
+>no</userinput
+>, on üksus näha kõigis režiimides (nii viktoriinides kui ka lihtsal sirvimisel). See ei ole kohustuslik silt ja kui silt <sgmltag class="starttag"
+>ignore</sgmltag
+> puudub, arvestatakse automaatselt selle väärtuseks <userinput
+>no</userinput
+>. Näiteks <quote
+>Algeria</quote
+> korral on sellele sildile määratud väärtuseks <userinput
+>yes</userinput
+> <quote
+>Europe</quote
+> kaardi kohta, mis tähendab, et <quote
+>Algeria</quote
+> on nähtamatu kõigis viktoriinides, mis korraldatakse kaardiga <quote
+>Europe</quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>flag</sgmltag
+> ja <sgmltag class="endtag"
+>flag</sgmltag
+>: poliitilise üksuse lippu sisaldav fail, &eg; <quote
+>albania.png</quote
+>. See ei ole kohustuslik silt. Pole vaja üksuste korral, mille ignoreerimissildi (<sgmltag class="starttag"
+>ignore</sgmltag
+>) väärtuseks on <userinput
+>yes</userinput
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>color</sgmltag
+> ja <sgmltag class="endtag"
+>color</sgmltag
+>: värv, millega poliitilist üksust kaardil näidatakse.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>falseCapital</sgmltag
+> ja <sgmltag class="endtag"
+>falseCapital</sgmltag
+>: neid võib olla suvaline arv, neid kasutatakse väärate vastuste pakkumisel pealinnaviktoriini nimekirja; vastasel juhul kasutatakse teiste haldusüksuste pealinnade nimesid.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>Värv määratakse kolme sildiga: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>red</sgmltag
+> ja <sgmltag class="endtag"
+>red</sgmltag
+>: värvi punane komponent. Sobivad väärtused vahemikus 0 kuni 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>green</sgmltag
+> ja <sgmltag class="endtag"
+>green</sgmltag
+>: värvi roheline komponent. Sobivad väärtused vahemikus 0 kuni 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blue</sgmltag
+> ja <sgmltag class="endtag"
+>blue</sgmltag
+>: värvi sinine komponent. Sobivad väärtused vahemikus 0 kuni 255.</para>
+</listitem>
+</itemizedlist>
+</para>
+<tip>
+ <para
+>Mõistlik on luua kaks-kolm libaüksust, näiteks vesi (<quote
+>Water</quote
+>), piir (<quote
+>Frontier</quote
+>) ja rannik (<quote
+>Coast</quote
+>), ning anda nende sildile <sgmltag class="starttag"
+>ignore</sgmltag
+> väärtuseks <userinput
+>yes</userinput
+>. Ära unusta <userinput
+>määramast</userinput
+> värvi kõigile <quote
+>piiridele</quote
+> 0,0,0 kujul RGB-s. Anna väärtuseks 1,1,1 või midagi sellist, et piirijoon oleks näha haldusüksuse asetamisel kaardile. </para>
+</tip>
+ <important>
+   <para
+>Kõik nimed (pealinnad ja üksused) peavad olema inglise keeles.</para>
+</important>
+</sect1>
+<sect1 id="map-file">
+<title
+>Kaardifail</title>
+<para
+>Kaardifail on õieti päris lihtne, aga selle loomine nõuab omajagu vaeva. See peab olema <acronym
+>PNG</acronym
+>-vormingus. Mõned kaardid eeskujuks leiab <ulink url="https://www.cia.gov/cia/publications/factbook/docs/refmaps.html"
+>CIA kaardikogust</ulink
+>. Kui ükski kaart sulle ei sobi, võid alla laadida <ulink url="https://www.cia.gov/cia/publications/factbook/reference_maps/pdf/political_world.pdf"
+>maailma PDF-faili</ulink
+>, teha sellest ekraanipildi ja asuda seda töötlema. Kõik poliitilised üksused kaardil peavad olema ühe konkreetse värviga. Selleks on kõige parem kasutada pilditöötlemisrakendusi, näiteks <application
+>The Gimp</application
+> ja <application
+>Kolourpaint</application
+>. </para>
+</sect1>
+<sect1 id="flags">
+<title
+>Lipud</title>
+<para
+>Kui kasutad lipusilti (<sgmltag class="starttag"
+>flag</sgmltag
+>), pead pakkuma ka lipufaili. Need peavad olema <acronym
+>PNG</acronym
+>-vormingus ning parem oleks, kui need oleks mõõtmetes 300x200 pikslit ja sa saaksid pakkuda ka <acronym
+>SVG</acronym
+>-faili. Peaaegu kõigi maailma riikide ja mõningate riikide poliitiliste üksuste <acronym
+>SVG</acronym
+>-lipud leiab <ulink url="http://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770"
+>Sodipodi lipukogust</ulink
+>. </para>
+</sect1>
+<sect1 id="how-to-test">
+<title
+>Testimine</title>
+<para
+>Enne seda, kui saadad kaardi Albertile &Albert.Astals.Cid.mail;, peaksid seda testima, et selles poleks vigu. Selleks talita järgmiselt: <itemizedlist
+> <listitem
+> <para
+>Aseta kaardi kirjelduse ja kaardi pildi fail kataloogi <filename class="directory"
+>$<envar
+>KDEDIR</envar
+>/share/apps/kgeography/</filename
+></para
+> </listitem
+> <listitem
+> <para
+>Aseta lipu <acronym
+>PNG</acronym
+>-failid (kui neid on) kataloogi <filename class="directory"
+>$<envar
+>KDEDIR</envar
+>/share/apps/kgeography/flags/</filename
+></para
+> </listitem
+> </itemizedlist
+> Seejärel peaksid saama avada oma kaardi &kgeography;s. </para>
+ <para
+>Kui sa ei tea, milline on sinu muutuja <filename class="directory"
+>$<envar
+>KDEDIR</envar
+></filename
+> väärtus, anna käsureal korraldus <userinput
+><command
+>kde4-config</command
+> <option
+>--prefix</option
+></userinput
+>. </para>
+<tip>
+<para
+>Tööriistaga colorchecker.py saab kontrollida, kas kaardile ei ole jäänud ülearuseid värve, mis on .kgm-failis defineerimata. </para>
+</tip>
+</sect1>
+<sect1 id="non-political-maps">
+<title
+>Mittepoliitilised kaardid</title>
+<para
+>Kas mittepoliitilisi kaarte võib ka teha? Jah, muidugi! <screenshot>
+<screeninfo
+>Näide mittepoliitilise kaardi loomise kohta</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="river.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Näide mittepoliitilise kaardi loomise kohta</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Mõistagi võib üksuse mõistet laiendada jõgedele või mägedele. Sellise kaardi loomisel tuleks silmas pidada, et enamasti on jõgi või mägi liiga pisike, nii et tuleks luua mõnevõrra avaram klõpsamisala. Toodud näites ongi jõel laiem ala ning seda tuvastab värv &lt;20,76,34&gt;. </para>
+</sect1>
+</chapter>
+
+<chapter id="commands">
+<title
+>Käskude seletused</title>
+
+<!-- (OPTIONAL, BUT RECOMMENDED) This chapter should list all of the
+application windows and their menubar and toolbar commands for easy reference.
+Also include any keys that have a special function but have no equivalent in the
+menus or toolbars. This may not be necessary for small apps or apps with no tool
+or menu bars. -->
+
+<sect1 id="kapp-mainwindow">
+<title
+>&kgeography; peaaken</title>
+
+<sect2>
+<title
+>Menüü Fail</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Fail</guimenu
+> <guimenuitem
+>Ava kaart...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Avab kaardi valimise dialoogi. Kui kirjutad piisavalt kiiresti paar soovitud kaardi nime algustähte, valitakse esimene sobiv kaart.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Fail</guimenu
+> <guimenuitem
+>Välju</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Lõpetab</action
+> &kgeography; töö</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>Menüü Vaade</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Vaade</guimenu
+> <guimenuitem
+>Suurendus</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Lülitab sisse suurendusrežiimi, mille puhul saab kaardi osa suurendada kaardile vastavat ristkülikut joonistades</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Vaade</guimenu
+> <guimenuitem
+>Originaalsuurus</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Kehtestab</action
+> kaardi esialgse suuruse, nagu selle määrab kaardifail. Sama toimega on klõps &HPNga; suurendusrežiimis.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Vaade</guimenu
+> <guimenuitem
+>Automaatne suurendus</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Kehtestab</action
+> &kgeography; akna suuruse muutmisel kaardile automaatse suurenduse, kasutades ära võimalikult suure pinna</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Vaade</guimenu
+> <guimenuitem
+>Liiguta</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Liigutab</action
+> aktiivset kaarti. Seda saab kasutada ainult siis, kui oled kaarti suurendanud.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>Menüü Seadistused</title>
+<para
+>&kgeography; kasutab tavapäraseid &kde; menüü <guimenu
+>Seadistused</guimenu
+> kirjeid, millest kõneleb lähemalt &kde; põhialuste käsiraamatu <ulink url="help:/fundamentals/ui.html#menus-settings"
+>menüüd Seadistused</ulink
+> käsitlev osa. </para>
+
+</sect2>
+<sect2>
+<title
+>Menüü Abi</title>
+
+<para
+>&kgeography; kasutab &kde; tavapärast <guimenu
+>abi</guimenu
+>menüüd, mida kirjeldab <ulink url="help:/fundamentals/ui.html#menus-help"
+>&kde; põhialuste käsiraamat</ulink
+>, kuid lisab sellele omalt poolt kaks kirjet:</para>
+	
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Abi</guimenu
+> <guimenuitem
+>Lahtiütlus</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Näitab</action
+> lahtiütlust &kgeography;s kasutatud kaartide, lippude ja tõlgete täpsuse kohta.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Abi</guimenu
+> <guimenuitem
+>Kaardi autor</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Näitab</action
+> aktiivse kaardi loonud autori nime.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+</sect1>
+
+</chapter>
+
+<chapter id="configuration">
+<title
+>Seadistamine</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Küsimuse joondus</guilabel
+></term>
+<listitem
+><para
+>Määrab küsimuse asukoha aknas. Vaikimisi on selleks <guilabel
+>Ülal vasakul</guilabel
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Ootamine kontrollimise järel</guilabel
+></term>
+<listitem
+><para
+>Märkimise korral tuleb pärast vastuse andmist klõpsata nupule <guibutton
+>Nõus</guibutton
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Fookus järgib hiirt</guilabel
+></term>
+<listitem
+><para
+>Märkimise korral võrdub tühikuklahvi vajutamine hiirekursori all asuvale nupule klõpsamisega.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Kaardijaotiste värvid</guilabel
+></term>
+<listitem
+><para
+>Siin saab valida, kas värvid on alati ühesugused (nii on see vaikimisi) või hoopis juhuslikud. Viimasel juhul võib olla hõlpsam keskenduda haldusüksuste kujule, mitte neid tähistavale värvile. </para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+</chapter>
+
+<!--<chapter id="faq">
+<title
+>Questions and Answers</title>
+
+
+&reporting.bugs;
+&updating.documentation;
+
+<qandaset id="faqlist">
+<qandaentry>
+<question>
+<para
+>My Mouse doesn't work. How do I quit &kgeography;?</para>
+</question>
+<answer>
+<para
+>You silly goose! Check out the <link linkend="commands"
+>Commands
+Section</link
+> for the answer.</para>
+</answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Why am I not able to twiddle my documents?</para>
+</question>
+<answer>
+<para
+>You can only twiddle your documents if you have the foobar.lib
+installed.</para>
+</answer>
+</qandaentry>
+</qandaset>
+</chapter
+>-->
+
+<chapter id="credits">
+
+<!-- Include credits for the programmers, documentation writers, and
+contributors here. The license for your software should then be included below
+the credits with a reference to the appropriate license file included in the KDE
+distribution. -->
+
+<title
+>Autorid ja litsents</title>
+
+<para
+>&kgeography; </para>
+<para
+>Rakenduse autoriõigus 2004-2008: Albert Astals Cid &Albert.Astals.Cid.mail; </para>
+
+
+<para
+>Dokumentatsiooni autoriõigus &copy; 2005: &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; 2008: Kushal Das <email
+>kushaldas@gmail.com</email
+> </para>
+
+<para
+>Tõlge eesti keelde: Marek Laane <email
+>bald@starman.ee</email
+></para
+> 
+&underFDL; &underGPL; </chapter>
+
+<appendix id="installation">
+<title
+>Paigaldamine</title>
+
+<sect1 id="getting-kapp">
+<title
+>&kgeography; hankimine</title>
+&install.intro.documentation; </sect1>
+
+
+<sect1 id="compilation">
+<title
+>Kompileerimine ja paigaldamine</title>
+&install.compile.documentation; </sect1>
+
+
+</appendix>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab 
+-->

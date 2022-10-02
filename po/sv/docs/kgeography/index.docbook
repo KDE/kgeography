@@ -1,0 +1,1072 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Swedish "INCLUDE"
+> 
+]>
+
+<book id="kgeography" lang="&language;">
+
+<bookinfo>
+<title
+>Handbok Kgeografi</title>
+
+<authorgroup>
+<author
+><personname
+> <firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> </personname
+> &Anne-Marie.Mahfouf.mail; </author>
+<author
+><personname
+> <firstname
+>Kushal</firstname
+> <surname
+>Das</surname
+> </personname
+> <email
+>kushaldas@gmail.com</email
+> </author>
+
+<othercredit role="translator"
+> <firstname
+>Stefan</firstname
+> <surname
+>Asserhäll</surname
+> <affiliation
+><address
+><email
+>stefan.asserhall@bredband.net</email
+></address
+></affiliation
+> <contrib
+>Översättare</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2005</year>
+<holder
+>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<copyright>
+<year
+>2008</year>
+<holder
+>Kushal Das</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2020-12-22</date>
+<releaseinfo
+>Program 20.12</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>Kgeografi är ett inlärningsverktyg av geografi av &kde;. Just nu har det sju användningssätt: <itemizedlist>
+<listitem>
+<para
+>Studera kartan genom att klicka på en del av kartan för att se dess namn, huvudstad och flagga</para>
+</listitem>
+<listitem>
+<para
+>Programmet talar om namnet på en del av kartan och du måste klicka på den</para>
+</listitem>
+<listitem>
+<para
+>Programmet talar om en huvudstad och du måste gissa vilken landsdel den hör till</para>
+</listitem
+><listitem>
+<para
+>Programmet talar om en landsdel för dig och du måste gissa dess huvudstad</para>
+</listitem
+><listitem>
+<para
+>Programmet visar dig flaggan för en del av kartan och du måste gissa dess namn</para>
+</listitem
+><listitem>
+<para
+>Programmet talar om namnet på en del av kartan och du måste gissa dess flagga</para>
+</listitem
+><listitem>
+<para
+>Programmet visar en tom karta och du måste placera ut landsdelar på den en i taget</para>
+</listitem>
+</itemizedlist>
+</para>
+
+</abstract>
+
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdeedu</keyword>
+<keyword
+>Kgeografi</keyword>
+<keyword
+>geografi</keyword>
+<keyword
+>kartor</keyword>
+<keyword
+>länder</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Inledning</title>
+
+<para
+>Kgeografi är ett inlärningsverktyg av geografi av &kde;. Det låter dig lära in politiska uppdelningen av vissa länder (landsdelar, huvudstäder i dessa landsdelar och deras tillhörande flaggor om det finns några). </para>
+</chapter>
+
+<chapter id="quick-start">
+<title
+>Snabbstart av Kgeografi</title>
+<para
+>När du kör Kgeografi för första gången, ombeds du först välja en karta att börja med. </para>
+<tip>
+<para
+>Det går att filtrera kartlistan genom att använda textfältet <guilabel
+>Filtrera kartor</guilabel
+>. Skriv bara in några få av de första bokstäverna i kartans namn för att begränsa listan till några få träffar. </para>
+</tip>
+<screenshot>
+<screeninfo
+>Här är en skärmbild av Kgeografi vid första start</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start1.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Här är en skärmbild av Kgeografi vid första start</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Här väljer vi Kanada <screenshot>
+<screeninfo
+>Kanada är valt</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start2.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Kanada är valt</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Och Kgeografis huvudfönster visas med Kanadas karta: <screenshot>
+<screeninfo
+>Kgeografis huvudfönster</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start3.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Kgeografis huvudfönster</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Du kan därefter välja vilken typ av inlärning eller prov som du vill göra genom att titta i menyn till vänster: <screenshot>
+<screeninfo
+>Kgeografis meny</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start4.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Kgeografis meny</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Utforska kartan: Ett vänsterklick i ett område på kartan visar information om det området. Om du klickar på den lilla ikonen &nbsp;<inlinemediaobject
+> <imageobject
+> <imagedata fileref="dialog-information.png" format="PNG"/> </imageobject
+> </inlinemediaobject
+> <guiicon
+>Information</guiicon
+> i rutan, öppnas Wikipedia-sidan för den delen i systemets normala webbläsare: <screenshot>
+<screeninfo
+>Studera kartan</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start5.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Studera kartan</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Hitta landsdelar och territorier: Du blir först tillfrågad om hur många frågor du vill ha. <screenshot>
+<screeninfo
+>Hur många frågor</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start6.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Hur många frågor</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Därefter blir du tillfrågad om att klicka på en specifik landsdel: <screenshot>
+<screeninfo
+>Klicka på en landsdel</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start7.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Klicka på en landsdel</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>När du är klar med alla frågor, visas en resultatdialogruta med rätta och felaktiga svar: <screenshot>
+<screeninfo
+>Dina resultat</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start8.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Dina resultat</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Placera landsdelar eller territorier på kartan: Markören får formen av en landsdel och du måste placera den på kartan: <screenshot>
+<screeninfo
+>Placera en landsdel på kartan</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start13.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Placera en landsdel på kartan</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Landsdel eller territorium från huvudstaden: Du blir tillfrågad om att hitta namnet på en landsdel från ett urval av fyra given dess huvudstad: <screenshot>
+<screeninfo
+>Gissa en del av kartan från huvudstaden</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start9.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Gissa en del av kartan från huvudstaden</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Och resultatet visas när provet är klart: <screenshot>
+<screeninfo
+>Dina resultat</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start10.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Dina resultat</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Huvudstäder för landsdelar eller territorier: Du har en huvudstad och fyra namn på landsdelar och du måste välja den rätta. Som tidigare visas en resultatdialogruta i slutet. </para>
+<para
+>Landsdelar eller territorier från flaggan: En flagga visas och du måste hitta landsdelen den hör till. <screenshot>
+<screeninfo
+>flaggfrågan</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start11.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>flaggfrågan</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Flaggor för landsdelar eller territorier: Namnet på en landsdel anges och du måste hitta rätt flagga av fyra. <screenshot>
+<screeninfo
+>koppla ihop flaggan med landsdelen</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start12.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>koppla ihop flaggan med landsdelen</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</chapter>
+
+<chapter id="using-kapp">
+<title
+>Använda Kgeografi</title>
+
+<para
+>Kgeografi visar information om vissa länder och testar dig med denna information. <screenshot>
+<screeninfo
+>Här är en skärmbild av Kgeografi</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kgeography.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Skärmbild</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+
+
+<sect1 id="kapp-features">
+<title
+>Fler funktioner i Kgeografi</title>
+
+<para
+>En annan funktion i Kgeografi är möjligheten att zooma i kartan. <screenshot
+> <screeninfo
+>Zooma</screeninfo
+> <mediaobject
+> <imageobject
+> <imagedata fileref="zoom.png" format="PNG"/> </imageobject
+> <textobject
+> <phrase
+>Zooma</phrase
+> </textobject
+> </mediaobject
+> </screenshot
+> Du kan klicka på knappen <guibutton
+>Zooma</guibutton
+> och därefter rita en rektangel för att zooma in till en del av kartan. I zoomläget kan du klicka med höger musknapp för att gå tillbaka till ursprunglig kartstorlek (alternativet <guimenuitem
+>Originalstorlek</guimenuitem
+> har samma effekt). Använd rullningslisterna, piltangenterna eller mushjulet för att flytta omkring i den zoomade kartan eller använd alternativet <guimenuitem
+>Flytta</guimenuitem
+> som låter dig dra kartan med vänster musknapp. Funktionen <guimenuitem
+>Automatisk zoom</guimenuitem
+> gör kartan så stor som möjligt. </para>
+
+</sect1>
+</chapter>
+
+<!--<chapter id="teachers-parents">
+<title
+>Teachers/Parents guide to &kgeography; </title>
+ This chapter should emphasize the educational aims of your app and
+guide the parent/teacher on how to help the child using it.
+</chapter
+>-->
+
+<chapter id="how-to-maps">
+<title
+>Hur man skapar kartor</title>
+<para
+>En karta i Kgeografi består av två filer, en är kartbilden och den andra är dess beskrivning.</para>
+<sect1 id="helper-tool">
+<title
+>Hjälpverktyg</title>
+<para
+>Du hittar ett verktyg (skapat av Yann Verley) <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/gen_map.pl"
+>här</ulink
+> som hjälpte honom med Frankrikes karta. För att ta reda på hur det fungerar, kör det helt enkelt och läs hjälpmeddelandet. Det skapar i huvudsak <literal role="extension"
+>.kgm</literal
+>-filen från en vanlig textfil och skapar en fil med färgerna det har tilldelat varje del av kartan, så att du kan fylla kartan i enlighet med dem.</para>
+<para
+>Det finns ett annat verktyg, <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
+>colorchecker.py</ulink
+>, skrivet av Albert Astals Cid. Du behöver PyQt4 för att köra det. Kör det bara med <literal role="extension"
+>.kgm</literal
+>-filnamnet som argument (kartans <literal role="extension"
+>.png</literal
+>-fil behövs också i samma katalog). Det talat om för dig om någon bildpunkt på kartan har en annan färg som inte är definierad i <literal role="extension"
+>.kgm</literal
+>-filen (beskrivningsfilen). </para>
+<tip>
+<para
+>Läs också handledningen <ulink url="https://edu.kde.org/kgeography/tutorials/kgeography-addmaps.pdf"
+>How to add maps</ulink
+> på Kgeografis webbsida. </para>
+</tip>
+</sect1>
+<sect1 id="description-file">
+<title
+>Beskrivningsfil</title>
+<para
+>Beskrivningsfilen är nödvändig och dess filändelse är <literal role="extension"
+>.kgm</literal
+>. Den ska börja med <sgmltag class="starttag"
+>?xml version="1.0" encoding="utf-8"</sgmltag
+>, then <sgmltag class="starttag"
+>!DOCTYPE kgeographyMap</sgmltag
+>, följt av <sgmltag class="starttag"
+>map</sgmltag
+> och sluta med <sgmltag class="endtag"
+>map</sgmltag
+>. </para>
+<para
+>Inne i dessa taggar ska finnas: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>mapFile</sgmltag
+> och <sgmltag class="endtag"
+>mapFile</sgmltag
+>: Namnet på filen (utan sökväg) som innehåller kartbilden, t.ex. <quote
+><literal
+>europe.png</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>name</sgmltag
+> och <sgmltag class="endtag"
+>name</sgmltag
+>: Kartans namn, t.ex. <quote
+><literal
+>Europe</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+>En <sgmltag class="starttag"
+>divisionsName</sgmltag
+> och <sgmltag class="endtag"
+>divisionsName</sgmltag
+>: Det allmänna namnet på delarna på kartan, dvs. provinser, stater, län, etc.</para>
+</listitem>
+<listitem>
+  <para
+>En <sgmltag class="starttag"
+>division</sgmltag
+> och <sgmltag class="endtag"
+>division</sgmltag
+> för varje del av kartan.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>Varje del har dessa taggar: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>name</sgmltag
+> och <sgmltag class="endtag"
+>name</sgmltag
+>: Namnet på kartdelen, t.ex. <quote
+><literal
+>Albania</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>capital</sgmltag
+> och <sgmltag class="endtag"
+>capital</sgmltag
+>: Namnet på delens huvudstad, t.ex. <quote
+><literal
+>Tirana</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+	<para
+>Taggen <sgmltag class="starttag"
+>ignore</sgmltag
+> och <sgmltag class="endtag"
+>ignore</sgmltag
+> kan anges som <userinput
+>yes</userinput
+>, <userinput
+>allowClickMode</userinput
+>, <userinput
+>allowClickFlagMode</userinput
+>och <userinput
+>no</userinput
+>. Om taggen anges som <userinput
+>yes</userinput
+> ignoreras kartdelen när frågor ställs om kartdelarna på den här kartan. Det förefaller då som om kartdelen inte finns vid prov i Kgeografi. Om taggen anges som <userinput
+>allowClickMode</userinput
+> frågar Kgeografi om kartdelen i läget <guibutton
+>Klicka på en del av kartan...</guibutton
+> men inte i övriga prov. Om taggen anges som <userinput
+>allowClickFlagMode</userinput
+> frågar Kgeografi om kartdelen i läget <guibutton
+>Klicka på en del av kartan...</guibutton
+> och i flaggrelaterade prov men inte i övriga prov. Att ange taggen som <userinput
+>no</userinput
+> betyder att kartdelen syns i alla lägen (studie och prov). Taggen är valfri och när det inte finns någon <sgmltag class="starttag"
+>ignore</sgmltag
+> betyder det att den är satt till <userinput
+>no</userinput
+>. Exempelvis har <quote
+><literal
+>Algeriet</literal
+></quote
+> den satt till <userinput
+>yes</userinput
+> på kartan över <quote
+><literal
+>Europa</literal
+></quote
+> vilket betyder att <quote
+><literal
+>Algeriet</literal
+></quote
+> inte ingår i några frågor på <quote
+><literal
+>Europa</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>flag</sgmltag
+> och <sgmltag class="endtag"
+>flag</sgmltag
+>: Filen (utan någon sökväg) som innehåller delens flagga, t.ex. <quote
+><literal
+>albania.png</literal
+></quote
+>. Taggen är valfri. Den behövs inte för delar som har taggen <sgmltag class="starttag"
+>ignore</sgmltag
+> inställd till <userinput
+>yes</userinput
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blurredflag</sgmltag
+> och <sgmltag class="endtag"
+>blurredflag</sgmltag
+>: Filen (utan någon sökväg) som innehåller landsdelens suddiga flagga, t.ex. <quote
+><literal
+>blurred_albania.png</literal
+></quote
+>. Taggen är valfri. Den bör användas i fall då flaggan har namnet på delen som den hör till skrivet på den. Det kan göra att flaggissning blir för enkel, och därmed uppmuntras inskickning av flaggan med texten utsuddad.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>color</sgmltag
+> och <sgmltag class="endtag"
+>color</sgmltag
+>: Färgen som delen har på kartan.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>falseCapital</sgmltag
+> och <sgmltag class="endtag"
+>falseCapital</sgmltag
+>: Det kan finnas hur många par med <userinput
+>falseCapital</userinput
+> som helst. De används för att tillhandahålla en lista med felaktiga svar på frågor om huvudstäder, istället för att de felaktiga svaren väljes bland övriga landsdelars huvudstäder.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>Färgen definieras genom att använda tre taggar: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>red</sgmltag
+> och <sgmltag class="endtag"
+>red</sgmltag
+>: Färgens röda del. Giltiga värden är mellan 0 och 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>green</sgmltag
+> och <sgmltag class="endtag"
+>green</sgmltag
+>: Färgens gröna del. Giltiga värden är mellan 0 och 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blue</sgmltag
+> och <sgmltag class="endtag"
+>blue</sgmltag
+>: Färgens blåa del. Giltiga värden är mellan 0 och 255.</para>
+</listitem>
+</itemizedlist>
+</para>
+<tip>
+ <para
+>Det är bekvämt att skapa två eller tre falska delar som <quote
+><literal
+>Water</literal
+></quote
+>, <quote
+><literal
+>Frontier</literal
+></quote
+> och <quote
+><literal
+>Coast</literal
+></quote
+> och ge dem taggen <sgmltag class="starttag"
+>ignore</sgmltag
+> med värdet <userinput
+>yes</userinput
+>. Glöm inte att <userinput
+>inte ställa in</userinput
+> färgen 0,0,0 i RGB för någon <quote
+><literal
+>Frontier</literal
+></quote
+>. Låt den vara någonting i stil med 1,1,1 så att en gränskontur visas när någon del placeras på kartan. </para>
+</tip>
+ <important>
+   <para
+>Alla namn (huvudstäder och landsdelar) måste vara på engelska.</para>
+</important>
+</sect1>
+<sect1 id="map-file">
+<title
+>Kartfil</title>
+<para
+>Kartfilen är mycket enkel, men arbetsam att skapa. Den måste vara på <acronym
+>PNG</acronym
+>-format. Du kan hitta några kartor att omvandla på <ulink url="https://www.cia.gov/cia/publications/factbook/docs/refmaps.html"
+>Cia Reference Maps</ulink
+>. Om ingen karta passar ditt behov kan du ladda ner <ulink url="https://www.cia.gov/library/publications/the-world-factbook/docs/refmaps.html"
+>politisk världskarta</ulink
+>, ta en skärmbild och fortsätta därifrån. Varje del av kartan ska ha en och endast en färg. För att åstadkomma det kan du använda bildbehandlingsprogram som <application
+>Gimp</application
+> och &kolourpaint;. </para>
+</sect1>
+<sect1 id="flags">
+<title
+>Flaggor</title>
+<para
+>Om du har använt taggen <sgmltag class="starttag"
+>flag</sgmltag
+> måste du tillhandahålla flaggfilerna. De måste vara på <acronym
+>PNG</acronym
+>-format och bättre om de är 300 x 200 bildpunkter och du tillhandahåller en &SVG;-fil för dem. För att skaffa &SVG;-flaggor för nästan alla länder i världen och för vissa andra delar, kan du rådfråga <ulink url="https://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770"
+>Sodipodis flaggsamling</ulink
+>. </para>
+<para
+>Som tidigare nämnts, uppmuntrar vi dig att tillhandahålla suddiga flaggfiler för flaggor som har sin landsdel skriven på dem. Samma krav som för de vanliga flaggfilerna gäller för de suddiga flaggfilerna. Även om det inte finns någon föreskriven namngivning för de suddiga filerna, rekommenderar vi att de sparas med namnet på den ursprungliga flaggan med prefixet <literal
+>blurred_</literal
+>, t.ex. <quote
+><literal
+>blurred_albania.png</literal
+></quote
+>. </para>
+</sect1>
+<sect1 id="how-to-test">
+<title
+>Hur man testar</title>
+<para
+>Innan du skickar din karta till Albert &Albert.Astals.Cid.mail;, bör du testa den för att se att den inte har några fel. För att åstadkomma det, måste du göra följande: <itemizedlist
+> <listitem
+> <para
+>Placera kartbeskrivningen och kartans bildfil i <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/</filename
+></para
+> </listitem
+> <listitem
+> <para
+>Placera flaggornas <acronym
+>PNG</acronym
+>-filer (om det finns några) i <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/flags/</filename
+></para
+> </listitem
+> </itemizedlist
+> När du väl har gjort det ska du kunna öppna din karta inne i Kgeografi. </para>
+ <para
+>Om du inte vet vad <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+></filename
+> är, skriv <userinput
+><command
+>qtpaths</command
+> <option
+>--paths hemkatalog</option
+></userinput
+> i ett skal. </para>
+<tip>
+<para
+>Använd verktyget colorchecker.py från hjälpverktygen för att kontrollera om det finns någon extra färg kvar på kartan som inte är definierad i <literal role="extension"
+>.kgm</literal
+>-filen. </para>
+</tip>
+</sect1>
+<sect1 id="non-political-maps">
+<title
+>Icke-politiska kartor</title>
+<para
+>Är det möjligt att skapa icke-politiska kartor? Ja, det är det! <screenshot>
+<screeninfo
+>Exempel på att skapa en icke-politisk karta</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="river.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Exempel på att skapa en icke-politisk karta</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Naturligtvis kan delkonceptet utökas till en flod eller ett berg. När kartan skapas, bör du hålla i minnet att oftast är floden eller berget för litet och att du måste tillhandahålla ett extra område att klicka. I exemplet skulle floden ha det mörkgröna området med färgen &lt;20,76,34&gt; som identifiering. </para>
+</sect1>
+</chapter>
+
+<chapter id="commands">
+<title
+>Kommandoreferens</title>
+
+<sect1 id="kapp-mainwindow">
+<title
+>Kgeografis huvudfönster</title>
+
+<sect2>
+<title
+>Menyn Arkiv</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Arkiv</guimenu
+> <guimenuitem
+>Öppna karta...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Öppna dialogrutan för att välja karta. Om du skriver in de första bokstäverna för kartan du söker snabbt nog, väljes den första kartan som passar in.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Arkiv</guimenu
+> <guimenuitem
+>Avsluta</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Avslutar</action
+> Kgeografi.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>Menyn Visa</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visa</guimenu
+> <guimenuitem
+>Zooma</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Går till zoomläge, och ritar därefter en rektangel för att zooma in på en del av kartan.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visa</guimenu
+> <guimenuitem
+>Originalstorlek</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Ställer in</action
+> kartan till dess originalstorlek enligt definitionen i kartfilen. Ett högerklick i zoomläge utför samma åtgärd.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visa</guimenu
+> <guimenuitem
+>Automatisk zoom</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Ställer in</action
+> kartan att automatiskt zooma för att använda så mycket utrymme som möjligt när storleken på Kgeografis fönster ändras.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Visa</guimenu
+> <guimenuitem
+>Flytta</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Flyttar</action
+> aktuell karta. Alternativet är bara aktiverat om du har zoomat in kartan.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>Menyn Inställningar</title>
+<para
+>Kgeografi har &kde;:s vanliga menyalternativ i menyn <guimenu
+>Inställningar</guimenu
+>. För mer information läs avsnittet om <ulink url="help:/fundamentals/menus.html#menus-settings"
+>menyn inställningar</ulink
+> i &kde;:s grunder. </para>
+
+</sect2>
+<sect2>
+<title
+>Menyn Hjälp</title>
+
+<para
+>Kgeografi har &kde;:s vanliga <guimenu
+>Hjälp</guimenu
+>-meny som beskrivs i <ulink url="help:/fundamentals/menus.html#menus-help"
+>&kde;:s grunder</ulink
+>, med två ytterligare alternativ:</para>
+	
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Hjälp</guimenu
+> <guimenuitem
+>Friskrivning</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Visar</action
+> en friskrivning om riktigheten hos kartor, flaggor och översättningar som används i Kgeografi.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Hjälp</guimenu
+> <guimenuitem
+>Kartans upphovsman</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Visar</action
+> namnet på upphovsmannen som har skapat nuvarande karta.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+</sect1>
+
+</chapter>
+
+<chapter id="configuration">
+<title
+>Inställning</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Justering av frågor</guilabel
+></term>
+<listitem
+><para
+>Bestämmer position för frågorna i fönstret, normalvärdet är <guilabel
+>Uppe till vänster</guilabel
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Vänta på validering</guilabel
+></term>
+<listitem
+><para
+>Om aktiverat måste användaren klicka på <guibutton
+>Acceptera</guibutton
+> efter att ha valt ett svar.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Fokus följer musen</guilabel
+></term>
+<listitem
+><para
+>Om aktiverad klickas knappen under muspekaren genom att trycka på mellanslag.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Kartans landsdelsfärger</guilabel
+></term>
+<listitem
+><para
+>Du kan välja om du alltid vill behålla samma färger (normalvärdet) eller om du vill använda slumpmässiga färger. Med det alternativet tilldelas slumpmässiga färger till kartans delar. Det hjälper användare att fokusera på och lära sig delarnas former och inte deras färger. </para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Tack till och licens</title>
+
+<para
+>Kgeografi </para>
+<para
+>Program copyright 2004-2008 Albert Astals Cid &Albert.Astals.Cid.mail; </para>
+
+
+<para
+>Dokumentation Copyright &copy; 2005 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; 2008 Kushal Das <email
+>kushaldas@gmail.com</email
+> </para>
+
+<para
+>Översättning Stefan Asserhäll <email
+>stefan.asserhall@bredband.net</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab 
+-->
