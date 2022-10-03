@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-19 00:41+0000\n"
-"PO-Revision-Date: 2022-05-10 14:29+0300\n"
+"PO-Revision-Date: 2022-10-02 14:43+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -24240,10 +24240,9 @@ msgid "The flag image file for %1 does not exist"
 msgstr "Изображение флага для %1 не найдено"
 
 #: mapparser.cpp:125
-#, fuzzy, kde-format
-#| msgid "The flag image file for %1 does not exist"
+#, kde-format
 msgid "The blurred flag image file for %1 does not exist"
-msgstr "Изображение флага для %1 не найдено"
+msgstr "Изображение расплывчатого флага для %1 не найдено"
 
 #: mapparser.cpp:139
 #, kde-format
