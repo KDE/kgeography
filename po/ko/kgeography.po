@@ -3374,7 +3374,7 @@ msgid "Kazakhstan"
 msgstr "카자흐스탄"
 
 #: asia.kgm:318
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "asia.kgm"
 msgid "Astana"
 msgstr "아스타나"
