@@ -22626,7 +22626,7 @@ msgstr "En esta prova heu d'encertar la bandera a partir del nom de la divisió"
 #: kgeography.cpp:109
 #, kde-format
 msgid "&Open Map..."
-msgstr "&Obri un mapa..."
+msgstr "O&bri un mapa..."
 
 #: kgeography.cpp:114
 #, kde-format
