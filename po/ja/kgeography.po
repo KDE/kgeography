@@ -3479,12 +3479,10 @@ msgid "Kazakhstan"
 msgstr "カザフスタン"
 
 #: asia.kgm:318
-#, fuzzy, kde-format
-#| msgctxt "armenia.kgm"
-#| msgid "Ashtarak"
+#, kde-format
 msgctxt "asia.kgm"
 msgid "Astana"
-msgstr "アシュタラク"
+msgstr "アスタナ"
 
 #: asia.kgm:326
 #, kde-format
@@ -23553,12 +23551,10 @@ msgid "Not Kazakhstan"
 msgstr "ここはカザフスタンではありません"
 
 #: kazakhstan.kgm:24
-#, fuzzy, kde-format
-#| msgctxt "armenia.kgm"
-#| msgid "Ashtarak"
+#, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Astana"
-msgstr "アシュタラク"
+msgstr "アスタナ"
 
 #: kazakhstan.kgm:29
 #, kde-format
@@ -43309,12 +43305,10 @@ msgid "Kazakhstan"
 msgstr "カザフスタン"
 
 #: world.kgm:1478
-#, fuzzy, kde-format
-#| msgctxt "armenia.kgm"
-#| msgid "Ashtarak"
+#, kde-format
 msgctxt "world.kgm"
 msgid "Astana"
-msgstr "アシュタラク"
+msgstr "アスタナ"
 
 #: world.kgm:1486
 #, kde-format
@@ -45581,18 +45575,3 @@ msgstr ""
 msgctxt "zimbabwe_districts.kgm"
 msgid "Zvishavane"
 msgstr ""
-
-#, fuzzy
-#~| msgctxt "europe.kgm"
-#~| msgid "Kiev"
-#~ msgctxt "asia.kgm"
-#~ msgid "Kiev"
-#~ msgstr "キエフ"
-
-#~ msgctxt "europe.kgm"
-#~ msgid "Kiev"
-#~ msgstr "キエフ"
-
-#~ msgctxt "world.kgm"
-#~ msgid "Kiev"
-#~ msgstr "キエフ"
