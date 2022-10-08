@@ -1,0 +1,35 @@
+# general.pmap
+# Ukrainian language, general directory entries for KGeography.
+# Contains: 
+# * cases of different region types
+#
+# Usage: =:directory entry:key=value::
+# Case names are given in Ukrainian (translit).
+=:Автономні області:nazyvyi=Автономні області:rodovyi=Автономних областей:davalnyi=Автономним областям:znahidnyi=Автономні області:orudnyi=Автономними областями:miscevyi=Автономних областях::
+=:Аймаки:nazyvyi=Аймаки:rodovyi=Аймаків:davalnyi=Аймакам:znahidnyi=Аймаки:orudnyi=Аймаками:miscevyi=Аймаках::
+=:Графства:nazyvyi=Графства:rodovyi=Графств:davalnyi=Графствам:znahidnyi=Графства:orudnyi=Графствами:miscevyi=Графствах::
+=:Губернаторства:nazyvyi=Губернаторства:rodovyi=Губернаторств:davalnyi=Губернаторствам:znahidnyi=Губернаторства:orudnyi=Губернаторствами:miscevyi=Губернаторствах::
+=:Департаменти:nazyvyi=Департаменти:rodovyi=Департаментів:davalnyi=Департаментам:znahidnyi=Департаменти:orudnyi=Департаментами:miscevyi=Департаментах::
+=:Емірати:nazyvyi=Емірати:rodovyi=Еміратів:davalnyi=Еміратам:znahidnyi=Емірати:orudnyi=Еміратами:miscevyi=Еміратах::
+=:Землі:nazyvyi=Землі:rodovyi=Земель:davalnyi=Землям:znahidnyi=Землі:orudnyi=Землями:miscevyi=Землях::
+=:Зони:nazyvyi=Зони:rodovyi=Зон:davalnyi=Зонам:znahidnyi=Зони:orudnyi=Зонами:miscevyi=Зонах::
+=:Кантони:nazyvyi=Кантони:rodovyi=Кантонів:davalnyi=Кантонам:znahidnyi=Кантони:orudnyi=Кантонами:miscevyi=Кантонах::
+=:Комарки:nazyvyi=Комарки:rodovyi=Комарків:davalnyi=Комаркам:znahidnyi=Комарки:orudnyi=Комарками:miscevyi=Комарках::
+=:Країни:nazyvyi=Країни:rodovyi=Країн:davalnyi=Країнам:znahidnyi=Країни:orudnyi=Країнами:miscevyi=Країнах::
+=:Лени:nazyvyi=Лени:rodovyi=Ленів:davalnyi=Ленам:znahidnyi=Лени:orudnyi=Ленами:miscevyi=Ленах::
+=:Муніципалітети:nazyvyi=Муніципалітети:rodovyi=Муніципалітетів:davalnyi=Муніципалітетам:znahidnyi=Муніципалітети:orudnyi=Муніципалітетами:miscevyi=Муніципалітетах::
+=:Номи:nazyvyi=Номи:rodovyi=Номів:davalnyi=Номам:znahidnyi=Номи:orudnyi=Номами:miscevyi=Номах::
+=:Області:nazyvyi=Області:rodovyi=Областей:davalnyi=Областям:znahidnyi=Області:orudnyi=Областями:miscevyi=Областях::
+=:Океани і водойми:nazyvyi=Океани і водойми:rodovyi=Океанів і водойм:davalnyi=Океанам і водоймам:znahidnyi=Океани і водойми:orudnyi=Океанами і водоймами:miscevyi=Океанах і водоймах::
+=:Округи:nazyvyi=Округи:rodovyi=Округів:davalnyi=Округам:znahidnyi=Округи:orudnyi=Округами:miscevyi=Округах::
+=:Пароккії:nazyvyi=Пароккії:rodovyi=Пароккій:davalnyi=Пароккіям:znahidnyi=Пароккії:orudnyi=Пароккіями:miscevyi=Пароккіях::
+=:Повіти:nazyvyi=Повіти:rodovyi=Повітів:davalnyi=Повітам:znahidnyi=Повіти:orudnyi=Повітами:miscevyi=Повітах::
+=:Префектури:nazyvyi=Префектури:rodovyi=Префектур:davalnyi=Префектурам:znahidnyi=Префектури:orudnyi=Префектурами:miscevyi=Префектурах::
+=:Провінції і Території:nazyvyi=Провінції і Території:rodovyi=Провінцій і Територій:davalnyi=Провінціям і Територіям:znahidnyi=Провінції і Території:orudnyi=Провінціями і Територіями:miscevyi=Провінціях і Територіях::
+=:Провінції:nazyvyi=Провінції:rodovyi=Провінцій:davalnyi=Провінціям:znahidnyi=Провінції:orudnyi=Провінціями:miscevyi=Провінціях::
+=:Райони:nazyvyi=Райони:rodovyi=Районів:davalnyi=Районам:znahidnyi=Райони:orudnyi=Районами:miscevyi=Районах::
+=:Території:nazyvyi=Території:rodovyi=Територій:davalnyi=Територіям:znahidnyi=Території:orudnyi=Територіями:miscevyi=Територіях::
+=:Фольки:nazyvyi=Фольки:rodovyi=Фольків:davalnyi=Фолькам:znahidnyi=Фольки:orudnyi=Фольками:miscevyi=Фольках::
+=:Штати і області:nazyvyi=Штати і області:rodovyi=Штатів і областей:davalnyi=Штатам і областям:znahidnyi=Штати і області:orudnyi=Штатами і областями:miscevyi=Штатах і областях::
+=:Штати і території:nazyvyi=Штати і території:rodovyi=Штатів і територій:davalnyi=Штатам і територіям:znahidnyi=Штати і території:orudnyi=Штатами і територіями:miscevyi=Штатах і територіях::
+=:Штати:nazyvyi=Штати:rodovyi=Штатів:davalnyi=Штатам:znahidnyi=Штати:orudnyi=Штатами:miscevyi=Штатах::

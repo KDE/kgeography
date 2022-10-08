@@ -1,0 +1,23 @@
+# general.pmap
+# Polish language, general directory entries for KGeography.
+# Contains: 
+# * cases of different region types
+#
+# Usage: =:directory entry:key=value::
+# Case names are given in Polish.
+=:Kraje:mianownik=Kraje:dopelniacz=Krajów:celownik=Krajom:biernik=Kraje:narzednik=Krajami:miejscownik=Krajach::
+=:Regiony:mianownik=Regiony:dopelniacz=Regionów:celownik=Regionom:biernik=Regiony:narzednik=Regionami:miejscownik=Regionach::
+=:Prowincje:mianownik=Prowincje:dopelniacz=Prowincji:celownik=Prowncjom:biernik=Prowincje:narzednik=Prowincjami:miejscownik=Prowincjach::
+=:Okręgi:mianownik=Okręgi:dopelniacz=Okręgów:celownik=Okręgom:biernik=Okręgi:narzednik=Okręgami:miejscownik=Okręgach::
+=:Prefektury:mianownik=Prefektury:dopelniacz=Prefektur:celownik=Prefekturom:biernik=Prefektury:narzednik=Prefekturami:miejscownik=Prefekturach::
+=:Parafie:mianownik=Parafie:dopelniacz=Parafii:celownik=Parafiom:biernik=Parafie:narzednik=Parafiami:miejscownik=Parafiach::
+=:Stany:mianownik=Stany:dopelniacz=Stanów:celownik=Stanom:biernik=Stany:narzednik=Stanami:miejscownik=Stanach::
+=:Prowincje lub terytoria:mianownik=Prowincje lub terytoria:dopelniacz=Prowincji lub terytoriów:celownik=Prowincjom lub terytoriom:biernik=Prowincje lub terytoria:narzednik=Prowincjami lub terytoriami:miejscownik=Prowincjach lub terytoriach::
+=:Dystrykty:mianownik=Dystrykty:dopelniacz=Dystryktów:celownik=Dystryktom:biernik=Dystrykty:narzednik=Dystryktami:miejscownik=Dystryktach::
+=:Departamenty:mianownik=Departamenty:dopelniacz=Departamentów:celownik=Departamentom:biernik=Departamenty:narzednik=Departamentami:miejscownik=Deparamentach::
+=:Regiony autonomiczne:mianownik=Regiony autonomiczne:dopelniacz=Regionów autonomicznych:celownik=Regionom autonomicznym:biernik=Regiony autonomiczne:narzednik=Regionami autonomicznymi:miejscownik=Regionach autonomicznych::
+=:Landy:mianownik=Landy:dopelniacz=Landów:celownik=Landom:biernik=Landy:narzednik=Landami:miejscownik=Landach::
+=:Gminy:mianownik=Gminy:dopelniacz=Gmin:celownik=Gminom:biernik=Gminy:narzednik=Gminami:miejscownik=Gminach::
+=:Obwody:mianownik=Obwody:dopelniacz=Obwodów:celownik=Obwodom:biernik=Obwody:narzednik=Obwodami:miejscownik=Obwodach::
+=:Komitaty:mianownik=Komitaty:dopelniacz=Komitatów:celownik=Komitatom:biernik=Komitaty:narzednik=Komitatami:miejscownik=Komitatach::
+=:Województwa:mianownik=Województwa:dopelniacz=Województw:celownik=Województwom:biernik=Województwa:narzednik=Województwami:miejscownik=Województwach::
