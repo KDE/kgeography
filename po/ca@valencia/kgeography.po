@@ -24165,7 +24165,7 @@ msgstr "%1 al mapa"
 #: mapchooser.cpp:38
 #, kde-format
 msgid "Choose Map to Use"
-msgstr "Escolliu el mapa que s'utilitzarà"
+msgstr "Escolliu el mapa que s'ha d'utilitzar"
 
 #: mapchooser.cpp:47
 #, kde-format
