@@ -5,20 +5,20 @@
 # Krzysztof Lichota <lichota@mimuw.edu.pl>, 2006, 2007.
 # Marta Rybczyńska <kde-i18n@rybczynska.net>, 2007, 2008, 2009, 2010, 2013.
 # Michał Lachowski <michal@lachowski.info>, 2010.
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2011, 2012, 2014, 2015, 2016, 2017, 2018, 2019, 2021.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2011, 2012, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-19 00:41+0000\n"
-"PO-Revision-Date: 2021-11-14 09:16+0100\n"
+"PO-Revision-Date: 2022-10-18 17:59+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.03.70\n"
+"X-Generator: Lokalize 22.08.1\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
@@ -24189,10 +24189,9 @@ msgid "The flag image file for %1 does not exist"
 msgstr "Plik z flagą %1 nie istnieje"
 
 #: mapparser.cpp:125
-#, fuzzy, kde-format
-#| msgid "The flag image file for %1 does not exist"
+#, kde-format
 msgid "The blurred flag image file for %1 does not exist"
-msgstr "Plik z flagą %1 nie istnieje"
+msgstr "Plik obrazu z rozmytą flagą dla %1 nie istnieje"
 
 #: mapparser.cpp:139
 #, kde-format
