@@ -140,9 +140,9 @@ void placeAsker::handleMapClick(QRgb c, const QPoint & , const QPointF &mapPoint
 			size_t goodCount = 0;
 			size_t outCount = badDiff.x() * badDiff.y() + badDiff.x() * diagDiff.y() + diagDiff.x() * badDiff.y();
 			size_t badCount = outCount;
-			for ( int dy = definedFirstDiag.y() -1 ; dy >= 0 ; dy-- )
+			for ( int dy = definedFirstDiag.y(); dy >= 0 ; dy-- )
 			{
-				for ( int dx = definedFirstDiag.x() -1 ; dx >= 0 ; dx-- )
+				for ( int dx = definedFirstDiag.x(); dx >= 0 ; dx-- )
 				{
 					int origPixelIndex = p_mapImage -> pixelIndex(initialRect.left() + dx, initialRect.top() + dy);
 					if ( origPixelIndex != indexOfCurrent )
@@ -235,14 +235,14 @@ void placeAsker::setCurrentDivision(const division *div)
 		}
 	}
 
-	p_currentDivisionImage = new QImage(maxX - minX, maxY - minY, QImage::Format_ARGB32);
+	p_currentDivisionImage = new QImage(maxX - minX + 1, maxY - minY + 1, QImage::Format_ARGB32);
 	p_currentDivisionRect.setCoords(minX, minY, maxX, maxY);
 	p_currentDivisionImage->fill(Qt::transparent);
 
 	//second iteration, copy the color to the new image
-	for (int x = minX; x < maxX; x++)
+	for (int x = minX; x <= maxX; x++)
 	{
-		for (int y = minY; y < maxY; y++)
+		for (int y = minY; y <= maxY; y++)
 		{
 			if (p_mapImage->pixel(x,y) == divColor)
 				p_currentDivisionImage->setPixel(x - minX, y - minY, divColor);
