@@ -22546,7 +22546,7 @@ msgid ""
 "In this section left click on any part of the map to learn about the "
 "divisions"
 msgstr ""
-"En esta secció podeu fer clic dret sobre qualsevol part en el mapa per a "
+"En esta secció podeu fer clic dret damunt de qualsevol part en el mapa per a "
 "aprendre sobre les divisions"
 
 #: kgeography.cpp:60
