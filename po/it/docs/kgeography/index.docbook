@@ -606,6 +606,18 @@ guide the parent/teacher on how to help the child using it.
 <listitem>
   <para
 ><sgmltag class="starttag"
+>blurredflag</sgmltag
+> e <sgmltag class="endtag"
+>blurredflag</sgmltag
+>: il file (senza il percorso) contenente la bandiera sfocata della divisione, &eg; <quote
+><literal
+>blurred_albania.png</literal
+></quote
+>. Questa etichetta è facoltativa, dovrebbe essere utilizzata in quelle situazioni in cui la bandiera ha il nome della divisione alla quale appartiene scritta su di essa. In questi casi il gioco di indovinare la bandiera potrebbe essere troppo semplice, quindi la presentazione delle bandiere con il testo sfocato è incoraggiata.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
 >color</sgmltag
 > e <sgmltag class="endtag"
 >color</sgmltag
@@ -707,6 +719,14 @@ guide the parent/teacher on how to help the child using it.
 >, ed è meglio che siano grandi 300x200 pixel e dei file &SVG;. Per avere bandiere &SVG; di quasi tutti i paesi nel mondo e di alcune altre divisioni, consulta la <ulink url="https://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770"
 >collezione delle bandiere di Sodipodi</ulink
 >. </para>
+<para
+>Come detto in precedenza, t'incoraggiamo a fornirci i file delle bandiere sfocate quando hanno la divisione scritta su di esse. Lo stesso requisito si applica ai file delle bandiere sfocate normali. Sebbene non ci esista nessuna prescrizione sulla denominazione dei file sfocati, ti raccomandiamo di salvarle con <literal
+>blurred_</literal
+> prima del nome stesso, &eg; <quote
+><literal
+>blurred_albania.png</literal
+></quote
+> </para>
 </sect1>
 <sect1 id="how-to-test">
 <title
