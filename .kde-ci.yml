@@ -14,3 +14,6 @@ Dependencies:
     'frameworks/kiconthemes': '@stable'
     'frameworks/kcrash': '@stable'
     'frameworks/kdoctools': '@stable'
+
+Options:
+  require-passing-tests-on: [ '@all' ]
