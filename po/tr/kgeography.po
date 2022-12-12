@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: kdeedu-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-19 00:41+0000\n"
-"PO-Revision-Date: 2022-12-10 18:23+0300\n"
+"PO-Revision-Date: 2022-12-11 14:23+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 22.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -4924,7 +4924,7 @@ msgstr "Hasselt"
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Walloon Brabant"
-msgstr "Walloon Brabant"
+msgstr "Valon Brabant"
 
 #: belgium.kgm:98
 #, kde-format
@@ -14622,7 +14622,7 @@ msgstr "Dijon"
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Occitanie"
-msgstr "Occitanie"
+msgstr "Oksitanya"
 
 #: france_regions.kgm:45
 #, kde-format
@@ -32370,7 +32370,7 @@ msgstr "Palma de Mallorca"
 #, kde-format
 msgctxt "spain.kgm"
 msgid "Basque Country"
-msgstr "Basque Country"
+msgstr "Bask Ülkesi"
 
 #: spain.kgm:78
 #, kde-format
@@ -34416,7 +34416,7 @@ msgstr "Phrae"
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Sukhothai"
-msgstr "Sukhothai"
+msgstr "Suhotay"
 
 #: thailand.kgm:94
 #, kde-format
@@ -34428,7 +34428,7 @@ msgstr "Tak"
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Uthai Thani"
-msgstr "Uthai Thani"
+msgstr "Utay Tani"
 
 #: thailand.kgm:104
 #, kde-format
@@ -37698,13 +37698,13 @@ msgstr "Tay Ninh"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Thai Binh"
-msgstr "Thai Binh"
+msgstr "Tay Binh"
 
 #: vietnam.kgm:299 vietnam.kgm:300
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Thai Nguyen"
-msgstr "Thai Nguyen"
+msgstr "Tay Nguyen"
 
 #: vietnam.kgm:304 vietnam.kgm:305
 #, kde-format
@@ -41460,7 +41460,7 @@ msgstr "Aşkabad"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Uzbekistan"
-msgstr "Üzbekistan"
+msgstr "Özbekistan"
 
 #: world.kgm:1628
 #, kde-format
