@@ -24182,7 +24182,6 @@ msgstr "Файлът с флаг за %1 не съществува"
 
 #: mapparser.cpp:125
 #, fuzzy, kde-format
-#| msgid "The flag image file for %1 does not exist"
 msgid "The blurred flag image file for %1 does not exist"
 msgstr "Файлът с флаг за %1 не съществува"
 
