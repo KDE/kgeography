@@ -3368,7 +3368,7 @@ msgid "Kazakhstan"
 msgstr "Kazahstan"
 
 #: asia.kgm:318
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "asia.kgm"
 msgid "Astana"
 msgstr "Astana"
@@ -22767,7 +22767,7 @@ msgid "Not Kazakhstan"
 msgstr "În afara Kazahstanului"
 
 #: kazakhstan.kgm:24
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Astana"
 msgstr "Astana"
@@ -42088,7 +42088,7 @@ msgid "Kazakhstan"
 msgstr "Kazahstan"
 
 #: world.kgm:1478
-#, kde-format
+#, fuzzy, kde-format
 msgctxt "world.kgm"
 msgid "Astana"
 msgstr "Astana"
