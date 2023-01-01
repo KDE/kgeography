@@ -3338,7 +3338,9 @@ msgid "Kazakhstan"
 msgstr "Casaquistán"
 
 #: asia.kgm:318
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "asia.kgm"
+#| msgid "Astana"
 msgctxt "asia.kgm"
 msgid "Astana"
 msgstr "Astana"
@@ -22389,7 +22391,9 @@ msgid "Not Kazakhstan"
 msgstr "Fóra de Casaquistán"
 
 #: kazakhstan.kgm:24
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "kazakhstan.kgm"
+#| msgid "Astana"
 msgctxt "kazakhstan.kgm"
 msgid "Astana"
 msgstr "Astana"
@@ -41570,7 +41574,9 @@ msgid "Kazakhstan"
 msgstr "Casaquistán"
 
 #: world.kgm:1478
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "world.kgm"
+#| msgid "Astana"
 msgctxt "world.kgm"
 msgid "Astana"
 msgstr "Astana"
