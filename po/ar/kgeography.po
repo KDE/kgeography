@@ -16912,7 +16912,7 @@ msgstr "كسانتي"
 #, kde-format
 msgctxt "greece_prefectures.kgm"
 msgid "Chalcidice"
-msgstr "شالكيديك"
+msgstr "شالكِيدِيك"
 
 #: greece_prefectures.kgm:50
 #, kde-format
@@ -22700,7 +22700,7 @@ msgid ""
 "could achieve, but KGeography should not be taken as an authoritative source."
 msgstr ""
 "يتحرى مؤلفو الخرائط والأعلام والترجمات الدقة في عملهم ما استطاعوا، إلا أنه "
-"لا يمكن اعتبار برنامج الجغرافيا لكدي مصدرا موثوقا. "
+"لا يمكن اعتبار برنامج الجغرافيا لكِيدِي مصدرا موثوقا. "
 
 #: kgeography.cpp:460
 #, kde-format
@@ -34192,7 +34192,7 @@ msgstr "تيرونلفلي"
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Thoothukudi"
-msgstr "ثوثكدي"
+msgstr "ثوثكِيدِي"
 
 #: tamilnadu.kgm:109
 #, kde-format
