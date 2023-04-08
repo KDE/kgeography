@@ -566,18 +566,6 @@ guide the parent/teacher on how to help the child using it.
 <listitem>
   <para
 ><sgmltag class="starttag"
->blurredflag</sgmltag
-> en <sgmltag class="endtag"
->blurredflag</sgmltag
->: het bestand (zonder enig pad) die de vervaagde vlag van de opdeling bevat, &eg; <quote
-><literal
->blurred_albania.png</literal
-></quote
->. Deze tag is optioneel. Het zou gebruikt moeten worden in situaties waar de vlag de naam heeft van de opdeling heeft waarop het behoort te worden geschreven. Dit kan het spel de vlag raden te gemakkelijk maken en daarom wordt het indienen van de vlaggen met de vervaagde tekst aangemoedigd.</para>
-</listitem>
-<listitem>
-  <para
-><sgmltag class="starttag"
 >kleur</sgmltag
 > en <sgmltag class="endtag"
 >kleur</sgmltag
@@ -677,14 +665,6 @@ guide the parent/teacher on how to help the child using it.
 >. Nog beter is het als zij 300x200 pixels groot zijn en u hiervoor een &SVG;-bestand levert. Voor bijna alle &SVG;-vlaggen kunt u terecht op de <ulink url="https://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770"
 >Sodipodi vlaggenverzameling</ulink
 >.  </para>
-<para
->Zoals eerder opgemerkt moedigen we u aan om vervaagde vlagbestanden voor vlaggen te leveren die de opdeling erop heeft geschreven. Dezelfde vereisten zijn van toepassing op de vervaagde vlagbestanden als op de reguliere vlagbestanden. Terwijl er geen voorgeschreven naamnotatie voor de vervaagde bestanden zijn, bevelen we aan deze op te slaan met de naam van de originele vlag met voorloop <literal
->blurred_</literal
->, &eg; <quote
-><literal
->blurred_albania.png</literal
-></quote
-> </para>
 </sect1>
 <sect1 id="how-to-test">
 <title
