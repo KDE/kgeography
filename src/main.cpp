@@ -12,7 +12,9 @@
 #include <KLocalizedString>
 #include <QApplication>
 #include <QCommandLineParser>
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include <Kdelibs4ConfigMigrator>
+#endif
 #include <KCrash>
 #include "kgeography.h"
 #include "kgeography_version.h"

@@ -34,14 +34,14 @@ kconfig_add_kcfg_files(kgeography_SRCS settings.kcfgc )
 
 add_executable(kgeography ${kgeography_SRCS})
 
-target_link_libraries(kgeography KF5::XmlGui
-                                 KF5::WidgetsAddons
-                                 KF5::CoreAddons
-                                 KF5::ConfigWidgets
-                                 KF5::Crash
-                                 KF5::I18n
-                                 KF5::ItemViews
-                                 KF5::IconThemes
+target_link_libraries(kgeography KF${QT_MAJOR_VERSION}::XmlGui
+                                 KF${QT_MAJOR_VERSION}::WidgetsAddons
+                                 KF${QT_MAJOR_VERSION}::CoreAddons
+                                 KF${QT_MAJOR_VERSION}::ConfigWidgets
+                                 KF${QT_MAJOR_VERSION}::Crash
+                                 KF${QT_MAJOR_VERSION}::I18n
+                                 KF${QT_MAJOR_VERSION}::ItemViews
+                                 KF${QT_MAJOR_VERSION}::IconThemes
 )
 install(TARGETS kgeography EXPORT KGeography ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} )
 

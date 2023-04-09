@@ -10,11 +10,11 @@ project(kgeography VERSION ${RELEASE_SERVICE_VERSION})
 
 # minimal Qt requirement
 set(QT_MIN_VERSION "5.15.2") # Remember to update the QT_DEPRECATED_WARNINGS_SINCE below
-set(KF5_REQUIRED_VERSION "5.89.0") # Remember to update the KF_DEPRECATED_WARNINGS_SINCE below
+set(KF_REQUIRED_VERSION "5.89.0") # Remember to update the KF_DEPRECATED_WARNINGS_SINCE below
 set(KDE_COMPILERSETTINGS_LEVEL "5.82.0")
 
 # ECM
-find_package (ECM ${KF5_REQUIRED_VERSION} REQUIRED NO_MODULE)
+find_package (ECM ${KF_REQUIRED_VERSION} REQUIRED NO_MODULE)
 
 # where to look first for cmake modules
 set (CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -29,7 +29,7 @@ include(ECMSetupVersion)
 
 find_package (Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED Core Widgets)
 
-find_package (KF5 ${KF5_REQUIRED_VERSION} REQUIRED COMPONENTS
+find_package (KF${QT_MAJOR_VERSION} ${KF_REQUIRED_VERSION} REQUIRED COMPONENTS
     XmlGui WidgetsAddons CoreAddons ConfigWidgets I18n ItemViews IconThemes Crash DocTools
 )
 
@@ -47,7 +47,7 @@ add_subdirectory( data )
 add_subdirectory( icons ) 
 
 ki18n_install(po)
-if (KF5DocTools_FOUND)
+if (KF${QT_MAJOR_VERSION}DocTools_FOUND)
     kdoctools_install(po)
 endif()
 
