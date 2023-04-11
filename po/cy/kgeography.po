@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-19 00:41+0000\n"
+"POT-Creation-Date: 2023-04-11 00:43+0000\n"
 "PO-Revision-Date: 2005-11-02 13:59+0000\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -28531,28 +28531,28 @@ msgctxt "luxembourg_cantons.kgm"
 msgid "Mersch"
 msgstr "Marches"
 
-#: main.cpp:32
+#: main.cpp:34
 #, kde-format
 msgid "KGeography"
 msgstr "KGeography"
 
-#: main.cpp:32
+#: main.cpp:34
 #, fuzzy, kde-format
 #| msgid "A geography learning program"
 msgid "A Geography learning program"
 msgstr "Rhaglen dysgu daearyddiaeth"
 
-#: main.cpp:32
+#: main.cpp:34
 #, kde-format
 msgid "© 2004-2005 Albert Astals Cid"
 msgstr ""
 
-#: main.cpp:33
+#: main.cpp:35
 #, kde-format
 msgid "Albert Astals Cid"
 msgstr ""
 
-#: main.cpp:33
+#: main.cpp:35
 #, kde-format
 msgid "Programmer and designer"
 msgstr "Rhaglennwr a dyluniwr"

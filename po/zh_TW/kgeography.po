@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-19 00:41+0000\n"
+"POT-Creation-Date: 2023-04-11 00:43+0000\n"
 "PO-Revision-Date: 2019-12-22 21:22+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
@@ -23814,27 +23814,27 @@ msgctxt "luxembourg_cantons.kgm"
 msgid "Mersch"
 msgstr "Mersch"
 
-#: main.cpp:32
+#: main.cpp:34
 #, kde-format
 msgid "KGeography"
 msgstr "KGeography"
 
-#: main.cpp:32
+#: main.cpp:34
 #, kde-format
 msgid "A Geography learning program"
 msgstr "學習地理的程式"
 
-#: main.cpp:32
+#: main.cpp:34
 #, kde-format
 msgid "© 2004-2005 Albert Astals Cid"
 msgstr "© 2004-2005 Albert Astals Cid"
 
-#: main.cpp:33
+#: main.cpp:35
 #, kde-format
 msgid "Albert Astals Cid"
 msgstr "Albert Astals Cid"
 
-#: main.cpp:33
+#: main.cpp:35
 #, kde-format
 msgid "Programmer and designer"
 msgstr "程式設計者"

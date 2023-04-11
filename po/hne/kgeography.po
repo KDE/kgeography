@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-19 00:41+0000\n"
+"POT-Creation-Date: 2023-04-11 00:43+0000\n"
 "PO-Revision-Date: 2009-02-23 12:51+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -24678,28 +24678,28 @@ msgctxt "luxembourg_cantons.kgm"
 msgid "Mersch"
 msgstr "मर्सच"
 
-#: main.cpp:32
+#: main.cpp:34
 #, kde-format
 msgid "KGeography"
 msgstr "के-जिओग्राफी"
 
-#: main.cpp:32
+#: main.cpp:34
 #, fuzzy, kde-format
 #| msgid "A geography learning program"
 msgid "A Geography learning program"
 msgstr "भूगोल सीखने के प्रोग्राम"
 
-#: main.cpp:32
+#: main.cpp:34
 #, kde-format
 msgid "© 2004-2005 Albert Astals Cid"
 msgstr "© 2004-2005 अल्बर्ट एस्टल्स सिड"
 
-#: main.cpp:33
+#: main.cpp:35
 #, kde-format
 msgid "Albert Astals Cid"
 msgstr "अलबर्ट एस्टल्स सिड"
 
-#: main.cpp:33
+#: main.cpp:35
 #, kde-format
 msgid "Programmer and designer"
 msgstr "प्रोग्रामर अउ डिजाइनर"
