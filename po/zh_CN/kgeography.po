@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-19 00:41+0000\n"
-"PO-Revision-Date: 2023-04-10 14:13\n"
+"PO-Revision-Date: 2023-04-16 12:33\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -2960,7 +2960,7 @@ msgstr "上苏班西里州"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Daporijo"
-msgstr ""
+msgstr "达波里霍"
 
 #: asia.kgm:5
 #, kde-format
@@ -3745,109 +3745,109 @@ msgstr "边界"
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Kokrajhar"
-msgstr ""
+msgstr "科克拉贾尔"
 
 #: assam.kgm:24 assam.kgm:25
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Dhuburi"
-msgstr ""
+msgstr "杜布里"
 
 #: assam.kgm:29 assam.kgm:30
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Goalpara"
-msgstr ""
+msgstr "戈阿尔帕拉"
 
 #: assam.kgm:34 assam.kgm:35
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Bongaigaon"
-msgstr ""
+msgstr "邦格艾加奥恩"
 
 #: assam.kgm:39 assam.kgm:40
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Barpeta"
-msgstr ""
+msgstr "巴尔佩塔"
 
 #: assam.kgm:44 assam.kgm:45
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Nalbari"
-msgstr ""
+msgstr "纳尔巴里"
 
 #: assam.kgm:49 assam.kgm:50
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Dispur"
-msgstr ""
+msgstr "第斯普尔"
 
 #: assam.kgm:54
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Kamrup"
-msgstr ""
+msgstr "坎如普"
 
 #: assam.kgm:55
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Guwahati"
-msgstr ""
+msgstr "古瓦哈提"
 
 #: assam.kgm:59 assam.kgm:60
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Darrang"
-msgstr ""
+msgstr "达让"
 
 #: assam.kgm:64 assam.kgm:65
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Marigaon"
-msgstr ""
+msgstr "马里加奥恩"
 
 #: assam.kgm:69
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Karbi Anglong"
-msgstr ""
+msgstr "卡比昂隆"
 
 #: assam.kgm:70
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Diphu"
-msgstr ""
+msgstr "迪普"
 
 #: assam.kgm:74
 #, kde-format
 msgctxt "assam.kgm"
 msgid "North Cachar Hills"
-msgstr ""
+msgstr "北卡查山"
 
 #: assam.kgm:75
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Haflong"
-msgstr ""
+msgstr "哈夫隆格"
 
 #: assam.kgm:79
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Cachar"
-msgstr ""
+msgstr "察查"
 
 #: assam.kgm:80
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Silchar"
-msgstr ""
+msgstr "西尔恰尔"
 
 #: assam.kgm:84 assam.kgm:85
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Hailakandi"
-msgstr ""
+msgstr "海拉卡恩迪"
 
 #: assam.kgm:89 assam.kgm:90
 #, kde-format
