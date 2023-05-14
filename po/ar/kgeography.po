@@ -22948,7 +22948,7 @@ msgstr "مدينة اوش"
 #, kde-format
 msgctxt "latvia.kgm"
 msgid "Latvia Districts (Pre 2009)"
-msgstr "مقاطعات لاتفيا (قبل ٢٠٠٩)"
+msgstr "مقاطعات لاتفيا (قبل 2009)"
 
 #: latvia.kgm:6
 #, kde-format
@@ -28558,7 +28558,7 @@ msgstr "أسبانيا"
 #, kde-format
 msgctxt "portugal_districts.kgm"
 msgid "Border2"
-msgstr "الحدود٢"
+msgstr "الحدود2"
 
 #: portugal_districts.kgm:45 portugal_districts.kgm:48
 #, kde-format
@@ -28726,7 +28726,7 @@ msgstr "أسبانيا"
 #, kde-format
 msgctxt "portugal_provinces.kgm"
 msgid "Border2"
-msgstr "الحدود٢"
+msgstr "الحدود2"
 
 #: portugal_provinces.kgm:45
 #, kde-format
