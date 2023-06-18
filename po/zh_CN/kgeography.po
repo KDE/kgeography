@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-09-19 00:41+0000\n"
-"PO-Revision-Date: 2023-05-22 14:04\n"
+"PO-Revision-Date: 2023-06-17 04:13\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -3853,25 +3853,25 @@ msgstr "海拉卡恩迪"
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Karimganj"
-msgstr ""
+msgstr "卡里姆加恩杰"
 
 #: assam.kgm:94 assam.kgm:95
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Golaghat"
-msgstr ""
+msgstr "戈拉加特"
 
 #: assam.kgm:99 assam.kgm:100
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Nagaon"
-msgstr ""
+msgstr "纳加奥恩"
 
 #: assam.kgm:104 assam.kgm:105
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Sonitpur"
-msgstr ""
+msgstr "索尼特普"
 
 #: assam.kgm:109
 #, kde-format
