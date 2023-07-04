@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-11 00:43+0000\n"
-"PO-Revision-Date: 2023-06-17 04:11\n"
+"PO-Revision-Date: 2023-07-03 11:38\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -2762,19 +2762,19 @@ msgstr "埃里温"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Arunachal Pradesh"
-msgstr "阿鲁纳恰尔邦"
+msgstr "藏南地区 (伪阿鲁纳恰尔邦)"
 
 #: arunachalpradesh.kgm:6
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "District"
-msgstr "区域"
+msgstr "区"
 
 #: arunachalpradesh.kgm:9
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Not Arunachal Pradesh"
-msgstr "不是阿鲁纳恰尔邦"
+msgstr "不是藏南地区 (伪阿鲁纳恰尔邦)"
 
 #: arunachalpradesh.kgm:14
 #, kde-format
@@ -2786,7 +2786,7 @@ msgstr "边界"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Tirap"
-msgstr "特拉普"
+msgstr "第来普县"
 
 #: arunachalpradesh.kgm:20
 #, kde-format
@@ -2804,7 +2804,7 @@ msgstr "长朗"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Lohit"
-msgstr "鲁西特"
+msgstr "洛西特县"
 
 #: arunachalpradesh.kgm:30
 #, kde-format
@@ -2816,19 +2816,19 @@ msgstr "德泽"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Anjaw"
-msgstr "安娇"
+msgstr "安娇县"
 
 #: arunachalpradesh.kgm:35
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Hawai"
-msgstr "夏威夷"
+msgstr "哈威"
 
 #: arunachalpradesh.kgm:39
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Lower Dibang Valley"
-msgstr "下迪邦山谷"
+msgstr "下迪邦山谷县"
 
 #: arunachalpradesh.kgm:40
 #, kde-format
@@ -2840,7 +2840,7 @@ msgstr "罗营"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Dibang Valley"
-msgstr "迪邦山谷"
+msgstr "迪邦山谷县"
 
 #: arunachalpradesh.kgm:45
 #, kde-format
@@ -2852,31 +2852,31 @@ msgstr "阿尼尼"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Upper Siang"
-msgstr "上桑朗"
+msgstr "上帝杭县"
 
 #: arunachalpradesh.kgm:50
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Yingkiong"
-msgstr "英炯"
+msgstr "营琼"
 
 #: arunachalpradesh.kgm:54
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "East Siang"
-msgstr "东桑朗"
+msgstr "东帝杭县"
 
 #: arunachalpradesh.kgm:55
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Pasighat"
-msgstr "巴昔卡"
+msgstr "帕西格"
 
 #: arunachalpradesh.kgm:59
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "West Siang"
-msgstr "西桑朗"
+msgstr "西帝杭县"
 
 #: arunachalpradesh.kgm:60
 #, kde-format
@@ -2888,13 +2888,13 @@ msgstr "阿隆"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Tawang"
-msgstr "达旺"
+msgstr "达旺县"
 
 #: arunachalpradesh.kgm:69
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "West Kameng"
-msgstr "西卡门"
+msgstr "西卡门县"
 
 #: arunachalpradesh.kgm:70
 #, kde-format
@@ -2906,7 +2906,7 @@ msgstr "邦迪拉"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "East Kameng"
-msgstr "东卡门"
+msgstr "东卡门县"
 
 #: arunachalpradesh.kgm:75
 #, kde-format
@@ -2918,19 +2918,19 @@ msgstr "色帕"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Papum Pare"
-msgstr "帕普派尔"
+msgstr "帕普姆县"
 
 #: arunachalpradesh.kgm:80
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Yupia"
-msgstr "尤皮亚"
+msgstr "伊塔那噶"
 
 #: arunachalpradesh.kgm:84
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Lower Subansiri"
-msgstr "下苏班西里"
+msgstr "下苏班西里县"
 
 #: arunachalpradesh.kgm:85
 #, kde-format
@@ -2942,25 +2942,25 @@ msgstr "泽洛"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Kurung Kumey"
-msgstr "库朗库美"
+msgstr "库朗库美县"
 
 #: arunachalpradesh.kgm:90
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Koloriang"
-msgstr "Koloriang"
+msgstr "科勒瑞恩"
 
 #: arunachalpradesh.kgm:94
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Upper Subansiri"
-msgstr "上苏班西里州"
+msgstr "上苏班西里县"
 
 #: arunachalpradesh.kgm:95
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Daporijo"
-msgstr "达波里霍"
+msgstr "达波日觉"
 
 #: asia.kgm:5
 #, kde-format
@@ -10153,7 +10153,7 @@ msgstr "杭州"
 #, kde-format
 msgctxt "china.kgm"
 msgid "Hong Kong"
-msgstr "中国香港特别行政区"
+msgstr "中国香港"
 
 #: china.kgm:495
 #, kde-format
@@ -19167,7 +19167,7 @@ msgstr "海得拉巴 "
 #, kde-format
 msgctxt "india.kgm"
 msgid "Arunachal Pradesh"
-msgstr "阿鲁纳恰尔邦"
+msgstr "藏南地区 (伪阿鲁纳恰尔邦)"
 
 #: india.kgm:30
 #, kde-format
