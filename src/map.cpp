@@ -33,8 +33,8 @@ bool KGmap::addDivision(division *d)
 	bool b;
 	const division *divByName = getDivision(d -> getUntranslatedName());
 	const division *divByColor = getDivision(d -> getRGB());
-	if ( ( divByName == NULL && divByColor == NULL ) || 
-	     ( divByName != NULL && divByColor == NULL && !d->canAsk(division::eClick) && !divByName->canAsk(division::eClick) ) )
+	if ( ( divByName == nullptr && divByColor == nullptr ) || 
+	     ( divByName != nullptr && divByColor == nullptr && !d->canAsk(division::eClick) && !divByName->canAsk(division::eClick) ) )
 	{
 		p_divisions.append(d);
 		b = true;
@@ -160,7 +160,7 @@ QString KGmap::getWhatIs(QRgb c, bool all) const
 {
 	// this is only asked from mapasker.cpp hence the division::eClick in canAsk
 	division *d = getDivision(c);
-	if (d == NULL) return QStringLiteral("nothing");
+	if (d == nullptr) return QStringLiteral("nothing");
 	else
 	{
 		if (all) return d -> getUntranslatedName();
@@ -202,7 +202,7 @@ division *KGmap::getDivision(const QString &divisionName) const
 	{
 		if (div->getUntranslatedName() == divisionName) return div;
 	}
-	return NULL;
+	return nullptr;
 }
 
 division *KGmap::getDivision(QRgb c) const
@@ -211,5 +211,5 @@ division *KGmap::getDivision(QRgb c) const
 	{
 		if (div->getRGB() == c) return div;
 	}
-	return NULL;
+	return nullptr;
 }

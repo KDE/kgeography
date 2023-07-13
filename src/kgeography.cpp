@@ -42,8 +42,8 @@
 
 kgeography::kgeography() : KXmlGuiWindow(), p_firstShow(true), p_mustShowResultsDialog(false)
 {
-	p_map = 0;
-	p_askWidget = 0;
+	p_map = nullptr;
+	p_askWidget = nullptr;
 
 	p_bigWidget = new QWidget(this);
 	QHBoxLayout *bigWidgetLayout = new QHBoxLayout(p_bigWidget);
@@ -179,7 +179,7 @@ void kgeography::showPreferencesDialog()
 void kgeography::updateConfiguration()
 {
 	boxAsker *aBoxAsker = dynamic_cast<boxAsker*>(p_askWidget);
-	if ( aBoxAsker != NULL ) {
+	if ( aBoxAsker != nullptr ) {
 		aBoxAsker->updateLayout();
 	}
 }
@@ -262,7 +262,7 @@ int kgeography::askQuestionNumber(int upto, bool *rOK)
 	i = IntegerInputDialog::GetInteger(this, i18n("Number of Questions"),
 					   i18n("How many questions do you want? (1 to %1)", upto),
 					   1, upto, upto, &ok);
-	if ( rOK != NULL ) *rOK = ok;
+	if ( rOK != nullptr ) *rOK = ok;
 	return i;
 }
 
@@ -371,10 +371,10 @@ void kgeography::askDivisionFlags()
 void kgeography::removeOldAskWidget()
 {
 	// next lines because setZoom(true) (may have) put cursor at application level
-	if ( p_askWidget != NULL )
+	if ( p_askWidget != nullptr )
 		p_askWidget->setZoom(false);
 	delete p_askWidget;
-	p_askWidget = 0;
+	p_askWidget = nullptr;
 	p_zoom -> setEnabled(false);
 	p_zoomOriginal -> setEnabled(false);
 	p_zoomAutomatic -> setEnabled(false);

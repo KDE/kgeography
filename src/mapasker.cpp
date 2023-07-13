@@ -69,8 +69,8 @@ mapAsker::mapAsker(QWidget *parent, KGmap *m, QWidget *w, bool asker, uint count
 	}
 	else
 	{
-		p_next = 0;
-		p_fill = 0;
+		p_next = nullptr;
+		p_fill = nullptr;
 	}
 }
 
@@ -208,7 +208,7 @@ void mapAsker::showEvent(QShowEvent *)
 {
 	if (p_firstShow)
 	{
-		bool isForAsking = p_next != NULL;
+		bool isForAsking = p_next != nullptr;
 
 		QImage image;
 		image.load(p_map->getMapFile());

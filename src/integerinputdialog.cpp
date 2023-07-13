@@ -88,7 +88,7 @@ int IntegerInputDialog::GetInteger(QWidget *parent, const QString &title, const 
 		ok = true;
 		ret = dialog.value();
 	}
-	if ( rOK != NULL ) *rOK = ok;
+	if ( rOK != nullptr ) *rOK = ok;
 	return ret;
 
 }

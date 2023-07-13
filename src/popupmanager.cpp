@@ -14,8 +14,8 @@
 
 popupManager::popupManager()
 {
-	p_parent = 0;
-	p_mp = 0;
+	p_parent = nullptr;
+	p_mp = nullptr;
 }
 
 void popupManager::setWidget(QWidget *w)
@@ -52,7 +52,7 @@ void popupManager::clear()
 	if (p_mp)
 	{
 		p_mp -> deleteLater();
-		p_mp = 0;
+		p_mp = nullptr;
 	}
 }
 

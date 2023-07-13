@@ -30,7 +30,7 @@ askWidget::askWidget(QWidget *parent, KGmap *m, QWidget *w, uint count, bool sho
 		resetAnswers();
 		p_answers -> show();
 	}
-	else p_answers = 0;
+	else p_answers = nullptr;
 }
 
 askWidget::~askWidget()

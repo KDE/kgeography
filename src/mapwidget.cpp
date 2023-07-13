@@ -22,7 +22,7 @@
 mapWidget::mapWidget(QWidget *parent) : QGraphicsView(parent)
 {
 	p_mode = None;
-	p_zoomRect = 0;
+	p_zoomRect = nullptr;
 	p_automaticZoom = false;
 
 	setCacheMode( CacheBackground );
@@ -136,7 +136,7 @@ void mapWidget::mouseReleaseEvent(QMouseEvent *e)
 		p_automaticZoom = false;
 		fitInView( p_zoomRect, Qt::KeepAspectRatio );
 		delete p_zoomRect;
-		p_zoomRect = 0;
+		p_zoomRect = nullptr;
 		
 		p_mode = WantZoom;
 	}

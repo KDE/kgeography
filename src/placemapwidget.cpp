@@ -25,12 +25,12 @@
 
 placeMapWidget::placeMapWidget(QWidget *parent) : QGraphicsView(parent)
 	, p_mode(None)
-	, p_mapImage(0)
-	, p_gameImage(0)
-	, p_currentCursor(0)
-	, p_zoomRect(0)
+	, p_mapImage(nullptr)
+	, p_gameImage(nullptr)
+	, p_currentCursor(nullptr)
+	, p_zoomRect(nullptr)
 	, p_automaticZoom(false)
-	, p_currentDivisionItem(0)
+	, p_currentDivisionItem(nullptr)
 	, lastMouseEvent(QPoint(0,0))
 {
 	setCacheMode( CacheBackground );
@@ -318,7 +318,7 @@ void placeMapWidget::mouseReleaseEvent(QMouseEvent *)
 		p_automaticZoom = false;
 		fitInView( p_zoomRect, Qt::KeepAspectRatio );
 		delete p_zoomRect;
-		p_zoomRect = 0;
+		p_zoomRect = nullptr;
 
 		p_mode = WantZoom;
 	}

@@ -186,7 +186,7 @@ KGmap *mapReader::parseMap(const QString &path)
 	else
 	{
 		delete kgmap;
-		return NULL;
+		return nullptr;
 	}
 }
 

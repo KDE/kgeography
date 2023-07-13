@@ -26,7 +26,7 @@
 #include "map.h"
 #include "placemapwidget.h"
 
-placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidget(parent, m, w, count, true), p_currentDivisionImage(0)
+placeAsker::placeAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidget(parent, m, w, count, true), p_currentDivisionImage(nullptr)
 {
 	QVBoxLayout *lay = new QVBoxLayout(this);
 	lay -> setContentsMargins(0, 0, 0, 0);

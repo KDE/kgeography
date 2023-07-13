@@ -30,7 +30,7 @@ static const int NB_CHOICES = 4;
 
 boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidget(parent, m, w, count)
 {
-	p_headWidget = NULL;
+	p_headWidget = nullptr;
 	p_lay = new QVBoxLayout(this);
 
 	p_groupBox = new QGroupBox(this);
@@ -59,7 +59,7 @@ boxAsker::boxAsker(QWidget *parent, KGmap *m, QWidget *w, uint count) : askWidge
 
 boxAsker::~boxAsker()
 {
-	if ( p_accept->parent() == NULL )
+	if ( p_accept->parent() == nullptr )
 		delete p_accept;
 }
 
@@ -71,7 +71,7 @@ void boxAsker::updateLayout()
 
 void boxAsker::layoutGroupBox()
 {
-	while ( p_groupLayout->takeAt(0) != NULL ) { }
+	while ( p_groupLayout->takeAt(0) != nullptr ) { }
 
 	int horizAlignCode = kgeographySettings::self() -> questionPlacingScheme() % 3;
 	Qt::Alignment horizAlignment = horizAlignCode == 0 ? Qt::AlignLeft : horizAlignCode == 1 ? Qt::AlignHCenter : Qt::AlignRight;
@@ -89,9 +89,9 @@ void boxAsker::layoutGroupBox()
 
 void boxAsker::layoutAligned()
 {
-	while ( p_lay->takeAt(0) != NULL ) { }
+	while ( p_lay->takeAt(0) != nullptr ) { }
 
-	if ( p_headWidget != NULL )
+	if ( p_headWidget != nullptr )
 		p_lay->addWidget(p_headWidget);
 
 	int horizAlignCode = kgeographySettings::self() -> questionPlacingScheme() % 3;
