@@ -266,4 +266,4 @@ void boxAsker::setHeadWidget(QWidget *headWidget)
 	p_lay -> insertWidget(0, headWidget);
 }
 
-
+#include "moc_boxasker.cpp"

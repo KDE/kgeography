@@ -505,4 +505,4 @@ void kgeography::showResultsDialog()
 	}
 }
 
-
+#include "moc_kgeography.cpp"

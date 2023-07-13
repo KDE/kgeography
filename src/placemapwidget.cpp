@@ -441,4 +441,4 @@ void placeMapWidget::updateActions()
 	emit setZoomActionChecked( p_mode == Zooming || p_mode == WantZoom );
 }
 
-
+#include "moc_placemapwidget.cpp"

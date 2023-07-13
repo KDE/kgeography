@@ -255,4 +255,4 @@ QSize mapAsker::mapSize() const
 	return p_mapWidget -> mapSize();
 }
 
-
+#include "moc_mapasker.cpp"

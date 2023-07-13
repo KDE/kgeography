@@ -93,5 +93,4 @@ int IntegerInputDialog::GetInteger(QWidget *parent, const QString &title, const 
 
 }
 
-
-
+#include "moc_integerinputdialog.cpp"

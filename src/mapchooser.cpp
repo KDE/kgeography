@@ -140,4 +140,4 @@ void mapChooser::putImage(const QString &mapName)
 	p_imageContainer -> setPixmap( QPixmap::fromImage(image) );
 }
 
-
+#include "moc_mapchooser.cpp"

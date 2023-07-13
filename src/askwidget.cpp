@@ -134,4 +134,4 @@ void askWidget::updateLabel()
 	p_answers -> setText(i18n("Correct answers: %1/%2", p_correctAnswers, p_correctAnswers + p_incorrectAnswers));
 }
 
-
+#include "moc_askwidget.cpp"

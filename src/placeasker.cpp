@@ -250,4 +250,4 @@ void placeAsker::setCurrentDivision(const division *div)
 	}
 }
 
-
+#include "moc_placeasker.cpp"

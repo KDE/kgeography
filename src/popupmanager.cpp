@@ -70,4 +70,4 @@ void popupManager::init(const QPoint &p)
 	connect(p_mp, &myPopup::deleteMe, this, &popupManager::clear);
 }
 
-
+#include "moc_popupmanager.cpp"
