@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-11 00:43+0000\n"
-"PO-Revision-Date: 2023-07-03 11:38\n"
+"PO-Revision-Date: 2023-07-18 11:14\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-trunk/messages/kgeography/kgeography.pot\n"
-"X-Crowdin-File-ID: 5056\n"
+"X-Crowdin-File: /kf5-stable/messages/kgeography/kgeography.pot\n"
+"X-Crowdin-File-ID: 4315\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -37751,19 +37751,19 @@ msgstr ""
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "Virginia (USA)"
-msgstr ""
+msgstr "弗吉尼亚州（美国）"
 
 #: virginia.kgm:5
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "Counties and Independent Cities"
-msgstr ""
+msgstr "县和独立市"
 
 #: virginia.kgm:8
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "Borders"
-msgstr ""
+msgstr "国界"
 
 #: virginia.kgm:17
 #, kde-format
