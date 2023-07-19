@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-11 00:43+0000\n"
-"PO-Revision-Date: 2023-07-03 11:38\n"
+"PO-Revision-Date: 2023-07-18 11:11\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -37751,19 +37751,19 @@ msgstr ""
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "Virginia (USA)"
-msgstr ""
+msgstr "弗吉尼亚州（美国）"
 
 #: virginia.kgm:5
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "Counties and Independent Cities"
-msgstr ""
+msgstr "县和独立市"
 
 #: virginia.kgm:8
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "Borders"
-msgstr ""
+msgstr "国界"
 
 #: virginia.kgm:17
 #, kde-format
