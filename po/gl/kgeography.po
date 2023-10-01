@@ -22689,7 +22689,7 @@ msgstr "Xeral"
 #: kgeography.cpp:203
 #, kde-format
 msgid "Could not open last used map. Error parsing %1: %2"
-msgstr "Non se puido abrir o último mapa usado. Erro ao procesar %1: %2"
+msgstr "Non foi posíbel abrir o último mapa usado. Erro ao procesar %1: %2"
 
 #: kgeography.cpp:211
 #, kde-format
@@ -24242,7 +24242,7 @@ msgstr "O ficheiro de descrición do mapa debe comezar coa etiqueta %1"
 #: mapparser.cpp:177
 #, kde-format
 msgid "Could not open %1 for reading."
-msgstr "Non se puido abrir %1 para ler."
+msgstr "Non foi posíbel abrir %1 para ler."
 
 #: mapparser.cpp:182
 #, kde-format
