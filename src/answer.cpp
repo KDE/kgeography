@@ -66,7 +66,7 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row, int margin) c
 		if (i == 0) v = &p_question;
 		else if (i == 1) v = &p_answer;
 		else v = &p_correctAnswer;
-		if (v -> type() == QVariant::String)
+		if (v -> typeId() == QVariant::String)
 		{
 			QLabel *l;
 			l = new QLabel(w);
@@ -74,7 +74,7 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row, int margin) c
 			l -> setContentsMargins(margin, margin, margin, margin);
 			widgets[i] = l;
 		}
-		else if (v -> type() == QVariant::Color)
+		else if (v -> typeId() == QVariant::Color)
 		{
 			QWidget *aux = new QWidget(w);
 			QHBoxLayout *lay = new QHBoxLayout(aux);
@@ -87,7 +87,7 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row, int margin) c
 			lay -> setSpacing(2);
 			widgets[i] = aux;
 		}
-		else if (v -> type() == QVariant::List)
+		else if (v -> typeId() == QVariant::List)
 		{
 			QVariantList vl = v->value<QVariantList>();
 			QVariant vi;
@@ -104,18 +104,18 @@ void userAnswer::putWidgets(QWidget *w, QGridLayout *lay, int row, int margin) c
 			for (int i=0; i<vl.count(); i++)
 			{
 				vi = vl[i];
-				if(vi.type() == QVariant::Color)
+				if(vi.typeId() == QVariant::Color)
 				{
 					coloredLabel -> setPalette(QPalette(vi.value<QColor>()));
 				}
-				if(vi.type() == QVariant::String)
+				if(vi.typeId() == QVariant::String)
 				{
 					coloredLabel -> setText(vi.value<QString>());
 				}
 			}
 			widgets[i] = aux;
         }
-		else if (v -> type() == QVariant::Pixmap)
+		else if (v -> typeId() == QVariant::Pixmap)
 		{
 			QLabel *l;
 			l = new QLabel(w);
