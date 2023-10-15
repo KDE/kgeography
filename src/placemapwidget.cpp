@@ -262,7 +262,7 @@ void placeMapWidget::mousePressEvent(QMouseEvent *e)
 				QRgb rgb = p_mapImage->pixel( int(p_initial.x()), int(p_initial.y()) );
 				// check against the topleft corner, because the image is 1x1 size smaller than the image rectangle
 				QPoint p(e->pos().x()-p_currentDivisionImage->width()/2,e->pos().y()-p_currentDivisionImage->height()/2);
-				emit clicked( rgb, e->pos(), mapToScene(p));
+				Q_EMIT clicked( rgb, e->pos(), mapToScene(p));
 			}
 		}
 	}
@@ -434,11 +434,11 @@ void placeMapWidget::updateActions()
 		// Whether the image is bigger than that viewable
 		bool biggerThanView = (p_gameImage->width() * transform().m11() >= width()) || (p_gameImage->height() * transform().m22() >= height());
 
-		emit setMoveActionEnabled( !p_automaticZoom && biggerThanView );
-		emit setMoveActionChecked( !p_automaticZoom && (p_mode == Moving || p_mode == WantMove) && biggerThanView );
+		Q_EMIT setMoveActionEnabled( !p_automaticZoom && biggerThanView );
+		Q_EMIT setMoveActionChecked( !p_automaticZoom && (p_mode == Moving || p_mode == WantMove) && biggerThanView );
 	}
 
-	emit setZoomActionChecked( p_mode == Zooming || p_mode == WantZoom );
+	Q_EMIT setZoomActionChecked( p_mode == Zooming || p_mode == WantZoom );
 }
 
 #include "moc_placemapwidget.cpp"

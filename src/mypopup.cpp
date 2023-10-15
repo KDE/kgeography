@@ -78,7 +78,7 @@ myPopup::myPopup(QWidget *parent, const QString &text, const QString &wikiLink, 
 
 void myPopup::mousePressEvent(QMouseEvent *)
 {
-	emit deleteMe();
+	Q_EMIT deleteMe();
 }
 
 bool myPopup::eventFilter(QObject *obj, QEvent *event)
@@ -96,7 +96,7 @@ bool myPopup::eventFilter(QObject *obj, QEvent *event)
 			return false;
 		}
 	}
-	emit deleteMe();
+	Q_EMIT deleteMe();
 
 	return false;
 }

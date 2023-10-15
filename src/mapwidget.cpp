@@ -85,7 +85,7 @@ void mapWidget::mousePressEvent(QMouseEvent *e)
 			if ( QRectF(p_originalImage.rect()).contains( p_initial ) )
 			{
 				QRgb rgb = p_originalImage.pixel( int(p_initial.x()), int(p_initial.y()) );
-				emit clicked( rgb, e->pos() );
+				Q_EMIT clicked( rgb, e->pos() );
 			}
 		}
 	}
@@ -230,9 +230,9 @@ void mapWidget::updateActions()
 	// Whether the image is bigger than that viewable
 	const bool biggerThanView = (p_originalImage.width() * transform().m11() >= width()) || (p_originalImage.height() * transform().m22() >= height());
 	
-	emit setMoveActionEnabled( !p_automaticZoom && biggerThanView );
-	emit setMoveActionChecked( !p_automaticZoom && (p_mode == Moving || p_mode == WantMove) && biggerThanView );
-	emit setZoomActionChecked( p_mode == Zooming || p_mode == WantZoom );
+	Q_EMIT setMoveActionEnabled( !p_automaticZoom && biggerThanView );
+	Q_EMIT setMoveActionChecked( !p_automaticZoom && (p_mode == Moving || p_mode == WantMove) && biggerThanView );
+	Q_EMIT setZoomActionChecked( p_mode == Zooming || p_mode == WantZoom );
 }
 
 #include "moc_mapwidget.cpp"

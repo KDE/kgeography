@@ -90,7 +90,7 @@ void askWidget::nextQuestion()
 		p_asked << aux;
 		nextQuestionHook(div);
 	}
-	else emit questionsEnded();
+	else Q_EMIT questionsEnded();
 }
 
 void askWidget::questionAnswered(bool wasCorrect)
