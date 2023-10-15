@@ -100,7 +100,7 @@ mapChooser::mapChooser(QWidget *parent) : QDialog(parent)
 	connect(p_listBox, &QListWidget::itemActivated, this, &mapChooser::accept);
 	
 	std::sort(texts.begin(), texts.end(), myLessThan);
-	foreach(const QString &text, texts)
+	for(const QString &text : qAsConst(texts))
 		p_listBox -> addItem(text);
 
 	if (p_listBox -> count() == 0)

@@ -92,7 +92,7 @@ void KGmap::setDivisionToCapitalTitle(const QString &str)
 uint KGmap::count(division::askMode am) const
 {
 	uint count = 0;
-	foreach(const division *d, p_divisions)
+	for(const division *d : p_divisions)
 	{
 		if (d->canAsk(am)) count++;
 	}
@@ -182,7 +182,7 @@ QColor KGmap::getColor(const QString &s) const
 QList<const division*> KGmap::getIgnoredDivisions(division::askMode am) const
 {
 	QList<const division*> ignoredDivisions;
-	foreach (division* div, p_divisions)
+	for (division* div : p_divisions)
 		if (!div->canAsk(am))
 			ignoredDivisions << div;
 	return ignoredDivisions;
@@ -191,14 +191,14 @@ QList<const division*> KGmap::getIgnoredDivisions(division::askMode am) const
 QList<const division*> KGmap::getAllDivisionsOrdered() const
 {
 	QList<const division*> constDivisions;
-	foreach (const division* div, p_divisions)
+	for (const division* div : p_divisions)
 		constDivisions << div;
 	return constDivisions;
 }
 
 division *KGmap::getDivision(const QString &divisionName) const
 {
-	foreach (division* div, p_divisions)
+	for (division* div : p_divisions)
 	{
 		if (div->getUntranslatedName() == divisionName) return div;
 	}
@@ -207,7 +207,7 @@ division *KGmap::getDivision(const QString &divisionName) const
 
 division *KGmap::getDivision(QRgb c) const
 {
-	foreach (division* div, p_divisions)
+	for (division* div : p_divisions)
 	{
 		if (div->getRGB() == c) return div;
 	}

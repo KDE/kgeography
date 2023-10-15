@@ -220,8 +220,8 @@ void mapAsker::showEvent(QShowEvent *)
 			p_originalColormap = colormap;
 
 			QVector<uchar> swapableIndexes;
-			QList<const division*> divisions = p_map->getAllDivisionsOrdered();
-			foreach(const division *id, divisions)
+			const QList<const division*> divisions = p_map->getAllDivisionsOrdered();
+			for(const division *id : divisions)
 			{
 				if ( id->canAsk(division::eClick) )
 				{
