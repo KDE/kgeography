@@ -33,13 +33,13 @@ Q_OBJECT
 		int correctAnswers() const;
 		QVector<userAnswer> userAnswers() const;
 	
-	public slots:
+	public Q_SLOTS:
 		virtual void setMovement(bool b);
 		virtual void setZoom(bool b);
 		virtual void setOriginalZoom();
 		virtual void setAutomaticZoom(bool b);
 	
-	signals:
+	Q_SIGNALS:
 		void setMoveActionChecked(bool b);
 		void setAutomaticZoomActionChecked(bool b);
 		void setZoomActionChecked(bool b);
@@ -59,7 +59,7 @@ Q_OBJECT
 		userAnswer p_currentAnswer;
 		QLabel *p_answers;
 	
-	private slots:
+	private Q_SLOTS:
 		void resetLabelColor();
 	private:
 		void updateLabel();

@@ -31,11 +31,11 @@ Q_OBJECT
 		
 		QSize mapSize() const;
 	
-	public slots:
+	public Q_SLOTS:
 		void setOriginalImage();
         void setAutomaticZoom(bool b);
 	
-	signals:
+	Q_SIGNALS:
 		void setMoveActionChecked(bool b);
 		void setZoomActionChecked(bool b);
 		void setMoveActionEnabled(bool b);

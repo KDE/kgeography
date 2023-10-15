@@ -23,7 +23,7 @@ Q_OBJECT
 	private:
 		myPopup(QWidget *parent, const QString &text, const QString &wikiLink, const QString &text2 = QString(), const QString &flagFile = QString());
 	
-	signals:
+	Q_SIGNALS:
 		void deleteMe();
 
 	protected:

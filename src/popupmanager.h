@@ -36,7 +36,7 @@ Q_OBJECT
 		// shows text at p
 		void show(const QString &text, const QString &wikiLink, const QPoint &p);
 		
-	public slots:
+	public Q_SLOTS:
 		void clear();
 
 	private:

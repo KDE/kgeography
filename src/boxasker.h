@@ -28,7 +28,7 @@ Q_OBJECT
 
 		bool eventFilter(QObject *obj, QEvent *event) override;
 
-	public slots:
+	public Q_SLOTS:
 		void updateLayout();
 
 	protected:
@@ -46,11 +46,11 @@ Q_OBJECT
 		// the position the correct answer is in
 		int p_position;
 
-	protected slots:
+	protected Q_SLOTS:
 		void init();
 		void atLeastOneSelected();
 		
-	private slots:
+	private Q_SLOTS:
 		void checkAnswer();
 	
 	private:

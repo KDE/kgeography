@@ -38,11 +38,11 @@ Q_OBJECT
 		size_t nbBorderPixels(int pixelIndex1, int pixelIndex2) const;
 		const QVector<uchar> outerPixelIndices() const { return p_outerPixelIndices;}
 
-	public slots:
+	public Q_SLOTS:
 		void setGameImage();
 		void setAutomaticZoom(bool b);
 	
-	signals:
+	Q_SIGNALS:
 		void setMoveActionChecked(bool b);
 		void setZoomActionChecked(bool b);
 		void setMoveActionEnabled(bool b);

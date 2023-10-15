@@ -37,13 +37,13 @@ Q_OBJECT
 		void showEvent(QShowEvent *e) override;
 		division::askMode askMode() const override { return division::eClick; }
 
-	public slots:
+	public Q_SLOTS:
 		void setMovement(bool b) override;
 		void setZoom(bool b) override;
 		void setOriginalZoom() override;
 		void setAutomaticZoom(bool b) override;
 	
-	private slots:
+	private Q_SLOTS:
 		void handleMapClick(QRgb c, const QPoint &p);
 	
 	private:

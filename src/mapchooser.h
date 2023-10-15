@@ -28,7 +28,7 @@ Q_OBJECT
 
 		KGmap *getMap();
 	
-	private slots:
+	private Q_SLOTS:
 		void putImage(const QString &mapName);
 
 	private:

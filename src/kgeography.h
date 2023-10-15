@@ -32,7 +32,7 @@ Q_OBJECT
 	protected:
 		void showEvent(QShowEvent *e) override;
 
-	private slots:
+	private Q_SLOTS:
 		void openMap();
 
 		void consult();

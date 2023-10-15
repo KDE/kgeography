@@ -27,10 +27,10 @@ Q_OBJECT
 
 		int value() const;
 
-	public slots:
+	public Q_SLOTS:
 		void setValue(int newValue);
 
-	private slots:
+	private Q_SLOTS:
 		void sliderValueChanged(int newValue);
 		void spinboxValueChanged(int newValue);
 
