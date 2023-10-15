@@ -32,7 +32,7 @@ static QString guessWikipediaDomain()
 	if ( systemLanguage == QLocale::AnyLanguage || systemLanguage == QLocale::C ) {
 		languageCode = QStringLiteral("en");
 	} else {
-		languageCode = systemLocale.name().split('_').first();
+		languageCode = systemLocale.name().split(QLatin1Char('_')).first();
 	}
 
 	return QStringLiteral( "https://%1.wikipedia.org/wiki/" ).arg( languageCode );

@@ -9,9 +9,8 @@ set(RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_
 project(kgeography VERSION ${RELEASE_SERVICE_VERSION})
 
 # minimal Qt requirement
-set(QT_MIN_VERSION "5.15.2") # Remember to update the QT_DEPRECATED_WARNINGS_SINCE below
-set(KF_REQUIRED_VERSION "5.89.0") # Remember to update the KF_DEPRECATED_WARNINGS_SINCE below
-set(KDE_COMPILERSETTINGS_LEVEL "5.82.0")
+set(QT_MIN_VERSION "5.15.2")
+set(KF_REQUIRED_VERSION "5.89.0")
 
 # ECM
 find_package (ECM ${KF_REQUIRED_VERSION} REQUIRED NO_MODULE)
@@ -32,11 +31,6 @@ find_package (Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED Core Widge
 find_package (KF${QT_MAJOR_VERSION} ${KF_REQUIRED_VERSION} REQUIRED COMPONENTS
     XmlGui WidgetsAddons CoreAddons ConfigWidgets I18n ItemViews IconThemes Crash DocTools
 )
-
-add_definitions(-DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS)
-add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
-add_definitions(-DQT_DEPRECATED_WARNINGS_SINCE=0x050F02)
-add_definitions(-DKF_DEPRECATED_WARNINGS_SINCE=0x055900)
 
 # global include directories
 include_directories (${CMAKE_CURRENT_BINARY_DIR})

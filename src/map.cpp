@@ -19,8 +19,8 @@
 
 KGmap::KGmap()
 {
-	p_capitalToDivisionPattern = kli18nc("@title:group", "%1 is the capital of...").untranslatedText();
-	p_divisionToCapitalPattern = kli18nc("@title:group", "The capital of %1 is...").untranslatedText();
+	p_capitalToDivisionPattern = QString::fromUtf8(kli18nc("@title:group", "%1 is the capital of...").untranslatedText());
+	p_divisionToCapitalPattern = QString::fromUtf8(kli18nc("@title:group", "The capital of %1 is...").untranslatedText());
 }
 
 KGmap::~KGmap()
@@ -101,12 +101,12 @@ uint KGmap::count(division::askMode am) const
 
 KLocalizedString KGmap::getCapitalToDivisionQuestionPattern() const
 {
-	return ki18nc("@title:group", p_capitalToDivisionPattern.toUtf8());
+	return ki18nc("@title:group", p_capitalToDivisionPattern.toUtf8().constData());
 }
 
 KLocalizedString KGmap::getDivisionToCapitalQuestionPattern() const
 {
-	return ki18nc("@title:group", p_divisionToCapitalPattern.toUtf8());
+	return ki18nc("@title:group", p_divisionToCapitalPattern.toUtf8().constData());
 }
 
 QString KGmap::getCapitalToDivisionTitle() const

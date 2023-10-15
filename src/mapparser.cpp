@@ -25,11 +25,10 @@ mapReader::mapReader()
 
 KGmap *mapReader::parseMap(const QString &path)
 {
-	QString baseDir;
 	p_error.clear();
 	KGmap *kgmap = new KGmap();
 	kgmap -> setFile(path);
-	baseDir = QFileInfo(path).absolutePath() + '/'; // baseDir = path but without the file name
+	const QString baseDir = QFileInfo(path).absolutePath() + QLatin1Char('/'); // baseDir = path but without the file name
 	QFile xmlFile(path);
 	if (xmlFile.exists())
 	{
@@ -43,7 +42,7 @@ KGmap *mapReader::parseMap(const QString &path)
 				const QByteArray ctxt = kgmap -> getFileName().toUtf8();
 				
 				// Map name
-				kgmap -> setName(i18nc(ctxt, getElementString(QStringLiteral("name"), root, Mandatory).toUtf8()));
+				kgmap -> setName(i18nc(ctxt.constData(), getElementString(QStringLiteral("name"), root, Mandatory).toUtf8().constData()));
 				
 				// Map image file
 				if (!kgmap -> setMapFile( baseDir + getElementString(QStringLiteral("mapFile"), root, Mandatory) ))
@@ -53,10 +52,10 @@ KGmap *mapReader::parseMap(const QString &path)
 				
 				// Divisions string
 				QString divisionKindName = getElementString(QStringLiteral("divisionsName"), root, Mandatory);
-				kgmap -> setDivisionsString(i18nc(ctxt, divisionKindName.toUtf8()));
+				kgmap -> setDivisionsString(i18nc(ctxt.constData(), divisionKindName.toUtf8().constData()));
 
 				QString pat = getElementString(QStringLiteral("capitalToDivisionPattern"), root, Optional);
-				if ( pat.contains('%') )
+				if ( pat.contains(QLatin1Char('%')) )
 				{
 					kgmap->setCapitalToDivisionQuestionPattern(pat);
 				}
@@ -67,7 +66,7 @@ KGmap *mapReader::parseMap(const QString &path)
 				}
 
 				pat = getElementString(QStringLiteral("divisionToCapitalPattern"), root, Optional);
-				if ( pat.contains('%') )
+				if ( pat.contains(QLatin1Char('%')) )
 				{
 					kgmap->setDivisionToCapitalQuestionPattern(pat);
 				}
@@ -80,13 +79,13 @@ KGmap *mapReader::parseMap(const QString &path)
 				QString title = getElementString(QStringLiteral("capitalToDivisionTitle"), root, Optional);
 				if ( ! title.isEmpty() )
 				{
-					kgmap->setCapitalToDivisionTitle(i18nc("@title", title.toUtf8()));
+					kgmap->setCapitalToDivisionTitle(i18nc("@title", title.toUtf8().constData()));
 				}
 
 				title = getElementString(QStringLiteral("divisionToCapitalTitle"), root, Optional);
 				if ( ! title.isEmpty() )
 				{
-					kgmap->setDivisionToCapitalTitle(i18nc("@title", title.toUtf8()));
+					kgmap->setDivisionToCapitalTitle(i18nc("@title", title.toUtf8().constData()));
 				}
 
 				
@@ -100,17 +99,17 @@ KGmap *mapReader::parseMap(const QString &path)
 					
 					// division name
 					kgdiv -> setUntranslatedName( getElementString(QStringLiteral("name"), divisionTag, Mandatory) );
-					kgdiv -> setName(i18nc(ctxt, kgdiv -> getUntranslatedName().toUtf8()));
+					kgdiv -> setName(i18nc(ctxt.constData(), kgdiv -> getUntranslatedName().toUtf8().constData()));
 					
 					// division capital
 					QString capital = getElementString(QStringLiteral("capital"), divisionTag, Optional);
-					if (!capital.isEmpty()) kgdiv -> setCapital(i18nc(ctxt, capital.toUtf8()));
+					if (!capital.isEmpty()) kgdiv -> setCapital(i18nc(ctxt.constData(), capital.toUtf8().constData()));
 					
 					// division flag
 					QString flagFile = getElementString(QStringLiteral("flag"), divisionTag, Optional);
 					if (!flagFile.isNull())
 					{
-						if (!kgdiv -> setFlagFile( baseDir + "/flags/" + flagFile ))
+						if (!kgdiv -> setFlagFile( baseDir + QLatin1String("/flags/") + flagFile ))
 						{
 							p_error = i18n("The flag image file for %1 does not exist", kgdiv -> getName());
 						}
@@ -120,7 +119,7 @@ KGmap *mapReader::parseMap(const QString &path)
 
 					if (!blurredFlagFile.isNull())
 					{
-						if (!kgdiv -> setBlurredFlagFile( baseDir + "/flags/" + blurredFlagFile ))
+						if (!kgdiv -> setBlurredFlagFile( baseDir + QLatin1String("/flags/") + blurredFlagFile ))
 						{
 							p_error = i18n("The blurred flag image file for %1 does not exist", kgdiv -> getName());
 						}
@@ -153,7 +152,7 @@ KGmap *mapReader::parseMap(const QString &path)
 					for (int i = 0; i < falseCapitalTags.count(); ++i)
 					{
 						falseCapital = falseCapitalTags.item(i).toElement();
-						if (!falseCapital.isNull() && !falseCapital.text().isEmpty()) falseCapitals << i18nc(ctxt, falseCapital.text().toUtf8());
+						if (!falseCapital.isNull() && !falseCapital.text().isEmpty()) falseCapitals << i18nc(ctxt.constData(), falseCapital.text().toUtf8().constData());
 					}
 					if (!falseCapitals.isEmpty()) kgdiv->setFalseCapitals(falseCapitals);
 					
