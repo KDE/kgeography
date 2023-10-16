@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-11 00:43+0000\n"
+"POT-Creation-Date: 2023-10-16 00:39+0000\n"
 "PO-Revision-Date: 2013-11-16 04:14+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -24529,28 +24529,28 @@ msgstr ""
 msgid "Error parsing"
 msgstr "Талдау қатесі"
 
-#: mapparser.cpp:51
+#: mapparser.cpp:50
 #, kde-format
 msgid "The map image file for %1 does not exist"
 msgstr "%1 картасының кескін файлы жоқ"
 
-#: mapparser.cpp:115
+#: mapparser.cpp:114
 #, kde-format
 msgid "The flag image file for %1 does not exist"
 msgstr "%1 жалауының кескін файлы жоқ"
 
-#: mapparser.cpp:125
+#: mapparser.cpp:124
 #, fuzzy, kde-format
 #| msgid "The flag image file for %1 does not exist"
 msgid "The blurred flag image file for %1 does not exist"
 msgstr "%1 жалауының кескін файлы жоқ"
 
-#: mapparser.cpp:139
+#: mapparser.cpp:138
 #, kde-format
 msgid "Invalid value in tag %1"
 msgstr "%1 тегте жарамсыз мәні бар"
 
-#: mapparser.cpp:162
+#: mapparser.cpp:161
 #, kde-format
 msgid ""
 "There is already either a division called %1 or a division with the same "
@@ -24559,27 +24559,27 @@ msgstr ""
 "Екеуінің бірі - немесе %1 деп аталған немесе түсі %2 түсімен бірдей аумағы "
 "бар"
 
-#: mapparser.cpp:171
+#: mapparser.cpp:170
 #, kde-format
 msgid "The map description file should begin with the %1 tag"
 msgstr "Картаның сипаттама файлы %1 тегтен басталуы тиіс"
 
-#: mapparser.cpp:177
+#: mapparser.cpp:176
 #, kde-format
 msgid "Could not open %1 for reading."
 msgstr "%1 деген оқуға ашылмады."
 
-#: mapparser.cpp:182
+#: mapparser.cpp:181
 #, kde-format
 msgid "%1 does not exist."
 msgstr "%1 деген жоқ."
 
-#: mapparser.cpp:206 mapparser.cpp:228
+#: mapparser.cpp:205 mapparser.cpp:227
 #, kde-format
 msgid "The map description file should have a %1 tag inside %2"
 msgstr "Картаның сипаттама файлында %2 дегеннің ішінде %1 тег болуға тиіс"
 
-#: mapparser.cpp:217 mapparser.cpp:234
+#: mapparser.cpp:216 mapparser.cpp:233
 #, kde-format
 msgid "The map description file should have exactly one %1 tag inside %2"
 msgstr ""

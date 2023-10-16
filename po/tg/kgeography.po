@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-11 00:43+0000\n"
+"POT-Creation-Date: 2023-10-16 00:39+0000\n"
 "PO-Revision-Date: 2019-09-29 12:43+0500\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -28934,27 +28934,27 @@ msgstr ""
 msgid "Error parsing"
 msgstr "Саҳв дар кушодани %1: %2"
 
-#: mapparser.cpp:51
+#: mapparser.cpp:50
 #, fuzzy, kde-format
 msgid "The map image file for %1 does not exist"
 msgstr "Файли %1 вуҷуд надорад"
 
-#: mapparser.cpp:115
+#: mapparser.cpp:114
 #, fuzzy, kde-format
 msgid "The flag image file for %1 does not exist"
 msgstr "Файли %1 вуҷуд надорад"
 
-#: mapparser.cpp:125
+#: mapparser.cpp:124
 #, fuzzy, kde-format
 msgid "The blurred flag image file for %1 does not exist"
 msgstr "Файли %1 вуҷуд надорад"
 
-#: mapparser.cpp:139
+#: mapparser.cpp:138
 #, kde-format
 msgid "Invalid value in tag %1"
 msgstr "Мазмуни нораво дар теги %1"
 
-#: mapparser.cpp:162
+#: mapparser.cpp:161
 #, kde-format
 msgid ""
 "There is already either a division called %1 or a division with the same "
@@ -28963,27 +28963,27 @@ msgstr ""
 "Кишвар ва ё минтақа бо номи %1 аллакай муайян гаштааст ва ё ранги амалишудаи "
 "%2 истифода мешавад"
 
-#: mapparser.cpp:171
+#: mapparser.cpp:170
 #, kde-format
 msgid "The map description file should begin with the %1 tag"
 msgstr "Файли тасвири харита бояд бо теги %1 сар шавад"
 
-#: mapparser.cpp:177
+#: mapparser.cpp:176
 #, kde-format
 msgid "Could not open %1 for reading."
 msgstr ""
 
-#: mapparser.cpp:182
+#: mapparser.cpp:181
 #, kde-format
 msgid "%1 does not exist."
 msgstr "%1 вуҷуд надорад."
 
-#: mapparser.cpp:206 mapparser.cpp:228
+#: mapparser.cpp:205 mapparser.cpp:227
 #, fuzzy, kde-format
 msgid "The map description file should have a %1 tag inside %2"
 msgstr "Файли тасвири харита бояд бо теги %1 сар шавад"
 
-#: mapparser.cpp:217 mapparser.cpp:234
+#: mapparser.cpp:216 mapparser.cpp:233
 #, fuzzy, kde-format
 msgid "The map description file should have exactly one %1 tag inside %2"
 msgstr "Файли тасвири харита бояд бо теги %1 сар шавад"

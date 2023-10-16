@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-11 00:43+0000\n"
+"POT-Creation-Date: 2023-10-16 00:39+0000\n"
 "PO-Revision-Date: 2022-09-19 10:52+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -24188,27 +24188,27 @@ msgstr "El mapa %1 té el mateix nom del mapa %2"
 msgid "Error parsing"
 msgstr "Error analitzant"
 
-#: mapparser.cpp:51
+#: mapparser.cpp:50
 #, kde-format
 msgid "The map image file for %1 does not exist"
 msgstr "El fitxer d'imatge de mapa per a %1 no existeix"
 
-#: mapparser.cpp:115
+#: mapparser.cpp:114
 #, kde-format
 msgid "The flag image file for %1 does not exist"
 msgstr "El fitxer d'imatge de bandera per a %1 no existeix"
 
-#: mapparser.cpp:125
+#: mapparser.cpp:124
 #, kde-format
 msgid "The blurred flag image file for %1 does not exist"
 msgstr "El fitxer d'imatge de bandera borrosa per a %1 no existeix"
 
-#: mapparser.cpp:139
+#: mapparser.cpp:138
 #, kde-format
 msgid "Invalid value in tag %1"
 msgstr "Valor no vàlid a l'etiqueta %1"
 
-#: mapparser.cpp:162
+#: mapparser.cpp:161
 #, kde-format
 msgid ""
 "There is already either a division called %1 or a division with the same "
@@ -24217,28 +24217,28 @@ msgstr ""
 "Ja hi ha una divisió anomenada %1 o una divisió amb els mateixos colors que "
 "%2"
 
-#: mapparser.cpp:171
+#: mapparser.cpp:170
 #, kde-format
 msgid "The map description file should begin with the %1 tag"
 msgstr "El fitxer de descripció del mapa ha de començar per l'etiqueta %1"
 
-#: mapparser.cpp:177
+#: mapparser.cpp:176
 #, kde-format
 msgid "Could not open %1 for reading."
 msgstr "No s'ha pogut obrir %1 per a lectura."
 
-#: mapparser.cpp:182
+#: mapparser.cpp:181
 #, kde-format
 msgid "%1 does not exist."
 msgstr "%1 no existeix."
 
-#: mapparser.cpp:206 mapparser.cpp:228
+#: mapparser.cpp:205 mapparser.cpp:227
 #, kde-format
 msgid "The map description file should have a %1 tag inside %2"
 msgstr ""
 "El fitxer de descripció del mapa ha de tenir una etiqueta %1 dins de %2"
 
-#: mapparser.cpp:217 mapparser.cpp:234
+#: mapparser.cpp:216 mapparser.cpp:233
 #, kde-format
 msgid "The map description file should have exactly one %1 tag inside %2"
 msgstr ""

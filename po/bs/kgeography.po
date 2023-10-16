@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeedu\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-11 00:43+0000\n"
+"POT-Creation-Date: 2023-10-16 00:39+0000\n"
 "PO-Revision-Date: 2015-01-07 00:29+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
@@ -24372,55 +24372,55 @@ msgstr ""
 msgid "Error parsing"
 msgstr "Greškau analizi"
 
-#: mapparser.cpp:51
+#: mapparser.cpp:50
 #, kde-format
 msgid "The map image file for %1 does not exist"
 msgstr "Datoteka slike mape %1 ne postoji"
 
-#: mapparser.cpp:115
+#: mapparser.cpp:114
 #, kde-format
 msgid "The flag image file for %1 does not exist"
 msgstr "Datoteka s zastavom za %1 ne postoji"
 
-#: mapparser.cpp:125
+#: mapparser.cpp:124
 #, fuzzy, kde-format
 #| msgid "The flag image file for %1 does not exist"
 msgid "The blurred flag image file for %1 does not exist"
 msgstr "Datoteka s zastavom za %1 ne postoji"
 
-#: mapparser.cpp:139
+#: mapparser.cpp:138
 #, kde-format
 msgid "Invalid value in tag %1"
 msgstr "Neispravna vrijednost u oznaci %1"
 
-#: mapparser.cpp:162
+#: mapparser.cpp:161
 #, kde-format
 msgid ""
 "There is already either a division called %1 or a division with the same "
 "colors as %2"
 msgstr "Ili već postoji oblast po imenu %1 ili oblast istih boja kao %2"
 
-#: mapparser.cpp:171
+#: mapparser.cpp:170
 #, kde-format
 msgid "The map description file should begin with the %1 tag"
 msgstr "Datoteka opisa mape bi trebalo da počinje oznakom %1"
 
-#: mapparser.cpp:177
+#: mapparser.cpp:176
 #, kde-format
 msgid "Could not open %1 for reading."
 msgstr "Ne mogu otvoriti %1 za čitanje."
 
-#: mapparser.cpp:182
+#: mapparser.cpp:181
 #, kde-format
 msgid "%1 does not exist."
 msgstr "%1 ne postoji."
 
-#: mapparser.cpp:206 mapparser.cpp:228
+#: mapparser.cpp:205 mapparser.cpp:227
 #, kde-format
 msgid "The map description file should have a %1 tag inside %2"
 msgstr "Datoteka s opisom mape treba imati %1 oznaku unutar %2"
 
-#: mapparser.cpp:217 mapparser.cpp:234
+#: mapparser.cpp:216 mapparser.cpp:233
 #, kde-format
 msgid "The map description file should have exactly one %1 tag inside %2"
 msgstr "Datoteka s opisommate treba imati tačno %1 oznaku unutar %2"

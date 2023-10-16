@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-11 00:43+0000\n"
+"POT-Creation-Date: 2023-10-16 00:39+0000\n"
 "PO-Revision-Date: 2012-12-23 09:06+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
@@ -26345,55 +26345,55 @@ msgstr ""
 msgid "Error parsing"
 msgstr "ਪਾਰਸ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ"
 
-#: mapparser.cpp:51
+#: mapparser.cpp:50
 #, kde-format
 msgid "The map image file for %1 does not exist"
 msgstr "%1 ਲਈ ਚਿੱਤਰ ਨਕਸ਼ਾ ਫਾਇਲ ਮੌਜੂਦ ਨਹੀਂ ਹੈ"
 
-#: mapparser.cpp:115
+#: mapparser.cpp:114
 #, kde-format
 msgid "The flag image file for %1 does not exist"
 msgstr "%1 ਲਈ ਝੰਡਾ ਫਾਇਲ ਮੌਜੂਦ ਨਹੀਂ ਹੈ"
 
-#: mapparser.cpp:125
+#: mapparser.cpp:124
 #, fuzzy, kde-format
 #| msgid "The flag image file for %1 does not exist"
 msgid "The blurred flag image file for %1 does not exist"
 msgstr "%1 ਲਈ ਝੰਡਾ ਫਾਇਲ ਮੌਜੂਦ ਨਹੀਂ ਹੈ"
 
-#: mapparser.cpp:139
+#: mapparser.cpp:138
 #, kde-format
 msgid "Invalid value in tag %1"
 msgstr "ਟੈਗ %1 ਵਿੱਚ ਗਲਤ ਮੁੱਲ ਹੈ"
 
-#: mapparser.cpp:162
+#: mapparser.cpp:161
 #, kde-format
 msgid ""
 "There is already either a division called %1 or a division with the same "
 "colors as %2"
 msgstr ""
 
-#: mapparser.cpp:171
+#: mapparser.cpp:170
 #, kde-format
 msgid "The map description file should begin with the %1 tag"
 msgstr "ਨਕਸ਼ੇ ਦਾ ਵੇਰਵਾ ਦੇਣ ਵਾਲੀ ਫਾਇਲ %1 ਟੈਗ ਨਾਲ ਸ਼ੁਰੂ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ"
 
-#: mapparser.cpp:177
+#: mapparser.cpp:176
 #, kde-format
 msgid "Could not open %1 for reading."
 msgstr ""
 
-#: mapparser.cpp:182
+#: mapparser.cpp:181
 #, kde-format
 msgid "%1 does not exist."
 msgstr "%1 ਮੌਜੂਦ ਨਹੀਂ ਹੈ।"
 
-#: mapparser.cpp:206 mapparser.cpp:228
+#: mapparser.cpp:205 mapparser.cpp:227
 #, kde-format
 msgid "The map description file should have a %1 tag inside %2"
 msgstr "ਨਕਸ਼ੇ ਦਾ ਵੇਰਵਾ ਦੇਣ ਵਾਲੀ ਫਾਇਲ ਲਈ %2 ਵਿੱਚ %1 ਟੈਗ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।"
 
-#: mapparser.cpp:217 mapparser.cpp:234
+#: mapparser.cpp:216 mapparser.cpp:233
 #, fuzzy, kde-format
 msgid "The map description file should have exactly one %1 tag inside %2"
 msgstr "ਨਕਸ਼ੇ ਦਾ ਵੇਰਵਾ ਦੇਣ ਵਾਲੀ ਫਾਇਲ %1 ਟੈਗ ਨਾਲ ਸ਼ੁਰੂ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ"

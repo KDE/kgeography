@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-11 00:43+0000\n"
+"POT-Creation-Date: 2023-10-16 00:39+0000\n"
 "PO-Revision-Date: 2005-11-02 13:59+0000\n"
 "Last-Translator: Kevin Donnelly <kevin@dotmon.com>\n"
 "Language-Team: Cymraeg <cy@li.org>\n"
@@ -28995,54 +28995,54 @@ msgstr ""
 msgid "Error parsing"
 msgstr "Gwall wrth ddosrannu %1:%2"
 
-#: mapparser.cpp:51
+#: mapparser.cpp:50
 #, fuzzy, kde-format
 msgid "The map image file for %1 does not exist"
 msgstr "Nid yw'r ffeil %1 mewn bod"
 
-#: mapparser.cpp:115
+#: mapparser.cpp:114
 #, fuzzy, kde-format
 msgid "The flag image file for %1 does not exist"
 msgstr "Nid yw'r ffeil %1 mewn bod"
 
-#: mapparser.cpp:125
+#: mapparser.cpp:124
 #, fuzzy, kde-format
 msgid "The blurred flag image file for %1 does not exist"
 msgstr "Nid yw'r ffeil %1 mewn bod"
 
-#: mapparser.cpp:139
+#: mapparser.cpp:138
 #, kde-format
 msgid "Invalid value in tag %1"
 msgstr "Gwerth annilys tu mewn i dag %1"
 
-#: mapparser.cpp:162
+#: mapparser.cpp:161
 #, kde-format
 msgid ""
 "There is already either a division called %1 or a division with the same "
 "colors as %2"
 msgstr "Mae rhanbarth eisoes o'r enw %1, neu ranbarth efo'r un lliwiau â %2"
 
-#: mapparser.cpp:171
+#: mapparser.cpp:170
 #, kde-format
 msgid "The map description file should begin with the %1 tag"
 msgstr "Dylai'r disgrifiad map ddechrau efo'r tag %1"
 
-#: mapparser.cpp:177
+#: mapparser.cpp:176
 #, kde-format
 msgid "Could not open %1 for reading."
 msgstr ""
 
-#: mapparser.cpp:182
+#: mapparser.cpp:181
 #, kde-format
 msgid "%1 does not exist."
 msgstr "Nid yw %1 yn bodoli."
 
-#: mapparser.cpp:206 mapparser.cpp:228
+#: mapparser.cpp:205 mapparser.cpp:227
 #, fuzzy, kde-format
 msgid "The map description file should have a %1 tag inside %2"
 msgstr "Dylai'r disgrifiad map ddechrau efo'r tag %1"
 
-#: mapparser.cpp:217 mapparser.cpp:234
+#: mapparser.cpp:216 mapparser.cpp:233
 #, fuzzy, kde-format
 msgid "The map description file should have exactly one %1 tag inside %2"
 msgstr "Dylai'r disgrifiad map ddechrau efo'r tag %1"
