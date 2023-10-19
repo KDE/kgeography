@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-16 00:39+0000\n"
-"PO-Revision-Date: 2023-10-17 22:09+0100\n"
+"PO-Revision-Date: 2023-10-18 21:55+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
 "Language: eo\n"
@@ -22537,11 +22537,13 @@ msgid ""
 "In this section left click on any part of the map to learn about the "
 "divisions"
 msgstr ""
+"En ĉi tiu sekcio maldekstre alklaku iun ajn parton de la mapo por lerni pri "
+"la dividoj"
 
 #: kgeography.cpp:60
 #, kde-format
 msgid "Test Yourself:"
-msgstr "Testu vi-mem:"
+msgstr "Testu vin-mem:"
 
 #: kgeography.cpp:62
 #, kde-format
@@ -22554,6 +22556,8 @@ msgid ""
 "In this challenge you are given a division name on the left under the menu "
 "and you must find it on the map and click on it"
 msgstr ""
+"En ĉi tiu defio vi ricevas dividan nomon maldekstre sub la menuo kaj vi "
+"devas trovi ĝin sur la mapo kaj klaki sur ĝi"
 
 #: kgeography.cpp:64
 #, kde-format
@@ -22566,6 +22570,8 @@ msgid ""
 "In this challenge you are given the shape of a region and you must place it "
 "on the map"
 msgstr ""
+"En ĉi tiu defio vi ricevas la formon de regiono kaj vi devas meti ĝin sur la "
+"mapo"
 
 #: kgeography.cpp:66
 #, kde-format
@@ -22700,6 +22706,8 @@ msgid ""
 "Maps, flags, translations, etc. are as accurate as their respective authors "
 "could achieve, but KGeography should not be taken as an authoritative source."
 msgstr ""
+"Mapoj, flagoj, tradukoj ktp estas same precizaj kiel iliaj respektivaj "
+"aŭtoroj povus atingi, sed KGeography ne estu prenita kiel aŭtoritata fonto."
 
 #: kgeography.cpp:460
 #, kde-format
@@ -22734,7 +22742,7 @@ msgstr "Ask for validation before next question"
 #, kde-format
 msgid ""
 "Whether press on space while hovering a button should trigger that button"
-msgstr ""
+msgstr "Ĉu premo de spaceto dum ŝvebado sur butono devus ekigi tiun butonon"
 
 #. i18n: ectx: label, entry (colorDisguise), group (general)
 #: kgeography.kcfg:35
@@ -22808,7 +22816,7 @@ msgstr "Bottom-ri&ght"
 msgid ""
 "Whether the user will have to click \"Accept\" after choosing an answer or "
 "not"
-msgstr ""
+msgstr "Ĉu la uzanto devos klaki \"Akcepti\" post elekto de respondo aŭ ne"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_waitsForValidation)
 #: kgeographyoptions.ui:92
@@ -22834,6 +22842,7 @@ msgstr "&Focus follows mouse"
 msgid ""
 "Choose if you want to keep current divisions colors or have random colors."
 msgstr ""
+"Elektu ĉu vi volas reteni aktualajn dividkolorojn aŭ havi hazardajn kolorojn."
 
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_colorDisguise)
 #: kgeographyoptions.ui:115
