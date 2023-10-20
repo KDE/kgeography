@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-16 00:39+0000\n"
-"PO-Revision-Date: 2023-10-18 10:33+0200\n"
+"PO-Revision-Date: 2023-10-19 10:17+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -2936,31 +2936,31 @@ msgstr "Subansiri Inferior"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Ziro"
-msgstr ""
+msgstr "Ziro"
 
 #: arunachalpradesh.kgm:89
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Kurung Kumey"
-msgstr ""
+msgstr "Kurung Kumey"
 
 #: arunachalpradesh.kgm:90
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Koloriang"
-msgstr ""
+msgstr "Koloriang"
 
 #: arunachalpradesh.kgm:94
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Upper Subansiri"
-msgstr ""
+msgstr "Subansiri Superior"
 
 #: arunachalpradesh.kgm:95
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Daporijo"
-msgstr ""
+msgstr "Daporijo"
 
 #: asia.kgm:5
 #, kde-format
@@ -3248,7 +3248,7 @@ msgstr "Muscat"
 #, kde-format
 msgctxt "asia.kgm"
 msgid "West Bank"
-msgstr ""
+msgstr "Banco West"
 
 #: asia.kgm:256
 #, kde-format
@@ -3284,7 +3284,7 @@ msgstr "China"
 #, kde-format
 msgctxt "asia.kgm"
 msgid "Beijing"
-msgstr ""
+msgstr "Beijing"
 
 #: asia.kgm:286
 #, kde-format
@@ -3296,7 +3296,7 @@ msgstr "India"
 #, kde-format
 msgctxt "asia.kgm"
 msgid "New Delhi"
-msgstr ""
+msgstr "Nove Delhi"
 
 #: asia.kgm:296
 #, kde-format
@@ -3745,175 +3745,175 @@ msgstr "Frontiera"
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Kokrajhar"
-msgstr ""
+msgstr "Kokrajhar"
 
 #: assam.kgm:24 assam.kgm:25
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Dhuburi"
-msgstr ""
+msgstr "Dhuburi"
 
 #: assam.kgm:29 assam.kgm:30
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Goalpara"
-msgstr ""
+msgstr "Goalpara"
 
 #: assam.kgm:34 assam.kgm:35
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Bongaigaon"
-msgstr ""
+msgstr "Bongaigaon"
 
 #: assam.kgm:39 assam.kgm:40
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Barpeta"
-msgstr ""
+msgstr "Barpeta"
 
 #: assam.kgm:44 assam.kgm:45
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Nalbari"
-msgstr ""
+msgstr "Nalbari"
 
 #: assam.kgm:49 assam.kgm:50
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Dispur"
-msgstr ""
+msgstr "Dispur"
 
 #: assam.kgm:54
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Kamrup"
-msgstr ""
+msgstr "Kamrup"
 
 #: assam.kgm:55
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Guwahati"
-msgstr ""
+msgstr "Guwahati"
 
 #: assam.kgm:59 assam.kgm:60
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Darrang"
-msgstr ""
+msgstr "Darrang"
 
 #: assam.kgm:64 assam.kgm:65
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Marigaon"
-msgstr ""
+msgstr "Marigaon"
 
 #: assam.kgm:69
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Karbi Anglong"
-msgstr ""
+msgstr "Karbi Anglong"
 
 #: assam.kgm:70
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Diphu"
-msgstr ""
+msgstr "Diphu"
 
 #: assam.kgm:74
 #, kde-format
 msgctxt "assam.kgm"
 msgid "North Cachar Hills"
-msgstr ""
+msgstr "Collinas de Cachar de Nord"
 
 #: assam.kgm:75
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Haflong"
-msgstr ""
+msgstr "Haflong"
 
 #: assam.kgm:79
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Cachar"
-msgstr ""
+msgstr "Cachar"
 
 #: assam.kgm:80
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Silchar"
-msgstr ""
+msgstr "Silchar"
 
 #: assam.kgm:84 assam.kgm:85
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Hailakandi"
-msgstr ""
+msgstr "Hailakandi"
 
 #: assam.kgm:89 assam.kgm:90
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Karimganj"
-msgstr ""
+msgstr "Karimganj"
 
 #: assam.kgm:94 assam.kgm:95
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Golaghat"
-msgstr ""
+msgstr "Golaghat"
 
 #: assam.kgm:99 assam.kgm:100
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Nagaon"
-msgstr ""
+msgstr "Nagaon"
 
 #: assam.kgm:104 assam.kgm:105
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Sonitpur"
-msgstr ""
+msgstr "Sonitpur"
 
 #: assam.kgm:109
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Lakhimpur"
-msgstr ""
+msgstr "Lakhimpur"
 
 #: assam.kgm:110
 #, kde-format
 msgctxt "assam.kgm"
 msgid "North Lakhimpur"
-msgstr ""
+msgstr "Lakhimpur Nord"
 
 #: assam.kgm:114 assam.kgm:115
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Jorhat"
-msgstr ""
+msgstr "Jorhat"
 
 #: assam.kgm:119 assam.kgm:120
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Dhemaji"
-msgstr ""
+msgstr "Dhemaji"
 
 #: assam.kgm:124 assam.kgm:125
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Sibsagar"
-msgstr ""
+msgstr "Sibsagar"
 
 #: assam.kgm:129 assam.kgm:130
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Dibrugarh"
-msgstr ""
+msgstr "Dibrugarh"
 
 #: assam.kgm:134 assam.kgm:135
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Tinsukia"
-msgstr ""
+msgstr "Tinsukia"
 
 #: australia.kgm:5
 #, kde-format
@@ -4075,91 +4075,91 @@ msgstr "Vienna"
 #, kde-format
 msgctxt "austria.kgm"
 msgid "Burgenland"
-msgstr ""
+msgstr "Burgenland"
 
 #: austria.kgm:37
 #, kde-format
 msgctxt "austria.kgm"
 msgid "Eisenstadt"
-msgstr ""
+msgstr "Eisenstadt"
 
 #: austria.kgm:45
 #, kde-format
 msgctxt "austria.kgm"
 msgid "Styria"
-msgstr ""
+msgstr "Styria"
 
 #: austria.kgm:46
 #, kde-format
 msgctxt "austria.kgm"
 msgid "Graz"
-msgstr ""
+msgstr "Graz"
 
 #: austria.kgm:54
 #, kde-format
 msgctxt "austria.kgm"
 msgid "Carinthia"
-msgstr ""
+msgstr "Carinthia"
 
 #: austria.kgm:55
 #, kde-format
 msgctxt "austria.kgm"
 msgid "Klagenfurt"
-msgstr ""
+msgstr "Klagenfurt"
 
 #: austria.kgm:63
 #, kde-format
 msgctxt "austria.kgm"
 msgid "Tyrol"
-msgstr ""
+msgstr "Tyrol"
 
 #: austria.kgm:64
 #, kde-format
 msgctxt "austria.kgm"
 msgid "Innsbruck"
-msgstr ""
+msgstr "Innsbruck"
 
 #: austria.kgm:72
 #, kde-format
 msgctxt "austria.kgm"
 msgid "Vorarlberg"
-msgstr ""
+msgstr "Vorarlberg"
 
 #: austria.kgm:73
 #, kde-format
 msgctxt "austria.kgm"
 msgid "Bregenz"
-msgstr ""
+msgstr "Bregenz"
 
 #: austria.kgm:81 austria.kgm:82
 #, kde-format
 msgctxt "austria.kgm"
 msgid "Salzburg"
-msgstr ""
+msgstr "Salzburg"
 
 #: austria.kgm:90
 #, kde-format
 msgctxt "austria.kgm"
 msgid "Upper Austria"
-msgstr ""
+msgstr "Austria Superior"
 
 #: austria.kgm:91
 #, kde-format
 msgctxt "austria.kgm"
 msgid "Linz"
-msgstr ""
+msgstr "Linz"
 
 #: austria.kgm:99
 #, kde-format
 msgctxt "austria.kgm"
 msgid "Lower Austria"
-msgstr ""
+msgstr "Austria Inferior"
 
 #: austria.kgm:100
 #, kde-format
 msgctxt "austria.kgm"
 msgid "St. Pölten"
-msgstr ""
+msgstr "St. Pölten"
 
 #: azerbaijan.kgm:5
 #, kde-format
@@ -4171,7 +4171,7 @@ msgstr "Azerbaijan"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Rayons"
-msgstr ""
+msgstr "Rayons"
 
 #: azerbaijan.kgm:9
 #, kde-format
@@ -4189,475 +4189,475 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Not Azerbaijan"
-msgstr ""
+msgstr "Non Azerbaijan"
 
 #: azerbaijan.kgm:24
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Absheron"
-msgstr ""
+msgstr "Absheron"
 
 #: azerbaijan.kgm:29
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Agjabadi"
-msgstr ""
+msgstr "Agjabadi"
 
 #: azerbaijan.kgm:34
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Agdam"
-msgstr ""
+msgstr "Agdam"
 
 #: azerbaijan.kgm:39
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Agdash"
-msgstr ""
+msgstr "Agdash"
 
 #: azerbaijan.kgm:44
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Agstafa"
-msgstr ""
+msgstr "Agstafa"
 
 #: azerbaijan.kgm:49
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Agsu"
-msgstr ""
+msgstr "Agsu"
 
 #: azerbaijan.kgm:54
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shirvan city"
-msgstr ""
+msgstr "Shirvan citate"
 
 #: azerbaijan.kgm:59
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Astara"
-msgstr ""
+msgstr "Astara"
 
 #: azerbaijan.kgm:64
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Baku city"
-msgstr ""
+msgstr "Baku citate"
 
 #: azerbaijan.kgm:69
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Balakan"
-msgstr ""
+msgstr "Balakan"
 
 #: azerbaijan.kgm:74
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Barda"
-msgstr ""
+msgstr "Barda"
 
 #: azerbaijan.kgm:79
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Beylagan"
-msgstr ""
+msgstr "Beylagan"
 
 #: azerbaijan.kgm:84
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Bilasuvar"
-msgstr ""
+msgstr "Bilasuvar"
 
 #: azerbaijan.kgm:89
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Jabrayil"
-msgstr ""
+msgstr "Jabrayil"
 
 #: azerbaijan.kgm:94
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Jalilabad"
-msgstr ""
+msgstr "Jalilabad"
 
 #: azerbaijan.kgm:99
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Dashkasan"
-msgstr ""
+msgstr "Dashkasan"
 
 #: azerbaijan.kgm:104
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shabran"
-msgstr ""
+msgstr "Shabran"
 
 #: azerbaijan.kgm:109
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Fizuli"
-msgstr ""
+msgstr "Fizuli"
 
 #: azerbaijan.kgm:114
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Gadabay"
-msgstr ""
+msgstr "Gadabay"
 
 #: azerbaijan.kgm:119
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Ganja city"
-msgstr ""
+msgstr "Ganja city"
 
 #: azerbaijan.kgm:124
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Goranboy"
-msgstr ""
+msgstr "Goranboy"
 
 #: azerbaijan.kgm:129
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Goychay"
-msgstr ""
+msgstr "Goychay"
 
 #: azerbaijan.kgm:134
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Hajigabul"
-msgstr ""
+msgstr "Hajigabul"
 
 #: azerbaijan.kgm:139
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Imishli"
-msgstr ""
+msgstr "Imishli"
 
 #: azerbaijan.kgm:144
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Ismailli"
-msgstr ""
+msgstr "Ismailli"
 
 #: azerbaijan.kgm:149
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Kalbajar"
-msgstr ""
+msgstr "Kalbajar"
 
 #: azerbaijan.kgm:154
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Kurdamir"
-msgstr ""
+msgstr "Kurdamir"
 
 #: azerbaijan.kgm:159
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Lachin"
-msgstr ""
+msgstr "Lachin"
 
 #: azerbaijan.kgm:164
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Lankaran"
-msgstr ""
+msgstr "Lankaran"
 
 #: azerbaijan.kgm:169
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Lankaran city"
-msgstr ""
+msgstr "Lankaran citate"
 
 #: azerbaijan.kgm:174
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Lerik"
-msgstr ""
+msgstr "Lerik"
 
 #: azerbaijan.kgm:179
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Masally"
-msgstr ""
+msgstr "Masally"
 
 #: azerbaijan.kgm:184
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Mingachevir city"
-msgstr ""
+msgstr "Mingachevir citate"
 
 #: azerbaijan.kgm:189
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Naftalan city"
-msgstr ""
+msgstr "Naftalan citate"
 
 #: azerbaijan.kgm:194
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Neftchala"
-msgstr ""
+msgstr "Neftchala"
 
 #: azerbaijan.kgm:199
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Oghuz"
-msgstr ""
+msgstr "Oghuz"
 
 #: azerbaijan.kgm:204
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Qabala"
-msgstr ""
+msgstr "Qabala"
 
 #: azerbaijan.kgm:209
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Qakh"
-msgstr ""
+msgstr "Qakh"
 
 #: azerbaijan.kgm:214
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Qazakh"
-msgstr ""
+msgstr "Qazakh"
 
 #: azerbaijan.kgm:219
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Qobustan"
-msgstr ""
+msgstr "Qobustan"
 
 #: azerbaijan.kgm:224
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Quba"
-msgstr ""
+msgstr "Quba"
 
 #: azerbaijan.kgm:229
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Qubadli"
-msgstr ""
+msgstr "Qubadli"
 
 #: azerbaijan.kgm:234
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Qusar"
-msgstr ""
+msgstr "Qusar"
 
 #: azerbaijan.kgm:239
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Saatly"
-msgstr ""
+msgstr "Saatly"
 
 #: azerbaijan.kgm:244
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Sabirabad"
-msgstr ""
+msgstr "Sabirabad"
 
 #: azerbaijan.kgm:249
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shaki"
-msgstr ""
+msgstr "Shaki"
 
 #: azerbaijan.kgm:254
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shaki city"
-msgstr ""
+msgstr "Shaki citate"
 
 #: azerbaijan.kgm:259
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Salyan"
-msgstr ""
+msgstr "Salyan"
 
 #: azerbaijan.kgm:264
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shamakhi"
-msgstr ""
+msgstr "Shamakhi"
 
 #: azerbaijan.kgm:269
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shamkir"
-msgstr ""
+msgstr "Shamkir"
 
 #: azerbaijan.kgm:274
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Samukh"
-msgstr ""
+msgstr "Samukh"
 
 #: azerbaijan.kgm:279
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Siazan"
-msgstr ""
+msgstr "Siazan"
 
 #: azerbaijan.kgm:284
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Sumqayit city"
-msgstr ""
+msgstr "Sumqayit citate"
 
 #: azerbaijan.kgm:289
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shusha"
-msgstr ""
+msgstr "Shusha"
 
 #: azerbaijan.kgm:294
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shusha city"
-msgstr ""
+msgstr "Shusha citate"
 
 #: azerbaijan.kgm:299
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Tartar"
-msgstr ""
+msgstr "Tartar"
 
 #: azerbaijan.kgm:304
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Tovuz"
-msgstr ""
+msgstr "Tovuz"
 
 #: azerbaijan.kgm:309
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Ujar"
-msgstr ""
+msgstr "Ujar"
 
 #: azerbaijan.kgm:314
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Khachmaz"
-msgstr ""
+msgstr "Khachmaz"
 
 #: azerbaijan.kgm:319
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Khankendi city"
-msgstr ""
+msgstr "Khankendi citate"
 
 #: azerbaijan.kgm:324
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Goygol"
-msgstr ""
+msgstr "Goygol"
 
 #: azerbaijan.kgm:329
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Khizi"
-msgstr ""
+msgstr "Khizi"
 
 #: azerbaijan.kgm:334
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Khojali"
-msgstr ""
+msgstr "Khojali"
 
 #: azerbaijan.kgm:339
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Khojavend"
-msgstr ""
+msgstr "Khojavend"
 
 #: azerbaijan.kgm:344
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Yardymli"
-msgstr ""
+msgstr "Yardymli"
 
 #: azerbaijan.kgm:349
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Yevlakh"
-msgstr ""
+msgstr "Yevlakh"
 
 #: azerbaijan.kgm:354
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Yevlakh city"
-msgstr ""
+msgstr "Yevlakh citate"
 
 #: azerbaijan.kgm:359
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Zangilan"
-msgstr ""
+msgstr "Zangilan"
 
 #: azerbaijan.kgm:364
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Zaqatala"
-msgstr ""
+msgstr "Zaqatala"
 
 #: azerbaijan.kgm:369
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Zardab"
-msgstr ""
+msgstr "Zardab"
 
 #: azerbaijan.kgm:374
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Babek"
-msgstr ""
+msgstr "Babek"
 
 #: azerbaijan.kgm:379
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Julfa"
-msgstr ""
+msgstr "Julfa"
 
 #: azerbaijan.kgm:384
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Kangarli"
-msgstr ""
+msgstr "Kangarli"
 
 #: azerbaijan.kgm:389
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Nakhichevan City"
-msgstr ""
+msgstr "Nakhichevan Citate"
 
 #: azerbaijan.kgm:394
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Ordubad"
-msgstr ""
+msgstr "Ordubad"
 
 #: azerbaijan.kgm:399
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Sadarak"
-msgstr ""
+msgstr "Sadarak"
 
 #: azerbaijan.kgm:404
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shakhbuz"
-msgstr ""
+msgstr "Shakhbuz"
 
 #: azerbaijan.kgm:409
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Sharur"
-msgstr ""
+msgstr "Sharur"
 
 #: bangladesh.kgm:5
 #, kde-format
@@ -4687,19 +4687,19 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "bangladesh.kgm"
 msgid "Not Bangladesh"
-msgstr ""
+msgstr "Non Bangladesh"
 
 #: bangladesh.kgm:24
 #, kde-format
 msgctxt "bangladesh.kgm"
 msgid "Barisa"
-msgstr ""
+msgstr "Barisa"
 
 #: bangladesh.kgm:29
 #, kde-format
 msgctxt "bangladesh.kgm"
 msgid "Chittagong"
-msgstr ""
+msgstr "Chittagong"
 
 #: bangladesh.kgm:34
 #, kde-format
@@ -4711,19 +4711,19 @@ msgstr "Dhaka"
 #, kde-format
 msgctxt "bangladesh.kgm"
 msgid "Khulna"
-msgstr ""
+msgstr "Khulna"
 
 #: bangladesh.kgm:44
 #, kde-format
 msgctxt "bangladesh.kgm"
 msgid "Rajshahi"
-msgstr ""
+msgstr "Rajshahi"
 
 #: bangladesh.kgm:49
 #, kde-format
 msgctxt "bangladesh.kgm"
 msgid "Sylhet"
-msgstr ""
+msgstr "Sylhet"
 
 #: belarus.kgm:5
 #, kde-format
@@ -4747,7 +4747,7 @@ msgstr "Frontiera"
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Not Belarus"
-msgstr ""
+msgstr "Non Bielorussia"
 
 #: belarus.kgm:24 belarus.kgm:59
 #, kde-format
@@ -4759,67 +4759,67 @@ msgstr "Minsk"
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Brest Voblast"
-msgstr ""
+msgstr "Brest Voblast"
 
 #: belarus.kgm:31
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Brest"
-msgstr ""
+msgstr "Brest"
 
 #: belarus.kgm:37
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Homyel Voblast"
-msgstr ""
+msgstr "Homyel Voblast"
 
 #: belarus.kgm:38
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Homyel"
-msgstr ""
+msgstr "Homyel"
 
 #: belarus.kgm:44
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Hrodna Voblast"
-msgstr ""
+msgstr "Hrodna Voblast"
 
 #: belarus.kgm:45
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Hrodna"
-msgstr ""
+msgstr "Hrodna"
 
 #: belarus.kgm:51
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Mahilyow Voblast"
-msgstr ""
+msgstr "Mahilyow Voblast"
 
 #: belarus.kgm:52
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Mahilyow"
-msgstr ""
+msgstr "Mahilyow"
 
 #: belarus.kgm:58
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Minsk Voblast"
-msgstr ""
+msgstr " "
 
 #: belarus.kgm:65
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Vitebsk Voblast"
-msgstr ""
+msgstr "Vitebsk Voblast"
 
 #: belarus.kgm:66
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Vitebsk"
-msgstr ""
+msgstr "Vitebsk"
 
 #: belgium.kgm:5
 #, kde-format
@@ -4843,7 +4843,7 @@ msgstr "Frontiera"
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Not Belgium"
-msgstr ""
+msgstr "Not Belgica"
 
 #: belgium.kgm:27
 #, kde-format
@@ -4855,7 +4855,7 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Antwerp"
-msgstr ""
+msgstr "Antwerp"
 
 #: belgium.kgm:46 belgium.kgm:48
 #, kde-format
@@ -4867,85 +4867,85 @@ msgstr "Brussels"
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Flemish Brabant"
-msgstr ""
+msgstr "Brabante Flamingo"
 
 #: belgium.kgm:58
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Leuven"
-msgstr ""
+msgstr "Leuven"
 
 #: belgium.kgm:66
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "West Flanders"
-msgstr ""
+msgstr "Flanders West"
 
 #: belgium.kgm:68
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Bruges"
-msgstr ""
+msgstr "Bruges"
 
 #: belgium.kgm:76
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "East Flanders"
-msgstr ""
+msgstr "Flanders Est"
 
 #: belgium.kgm:78
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Ghent"
-msgstr ""
+msgstr "Ghent"
 
 #: belgium.kgm:86
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Limburg"
-msgstr ""
+msgstr "Limburg"
 
 #: belgium.kgm:88
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Hasselt"
-msgstr ""
+msgstr "Hasselt"
 
 #: belgium.kgm:96
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Walloon Brabant"
-msgstr ""
+msgstr "Brabante Valloniano"
 
 #: belgium.kgm:98
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Wavre"
-msgstr ""
+msgstr "Wavre"
 
 #: belgium.kgm:106
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Hainaut"
-msgstr ""
+msgstr "Hainaut"
 
 #: belgium.kgm:108
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Mons"
-msgstr ""
+msgstr "Mons"
 
 #: belgium.kgm:116
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Liège"
-msgstr ""
+msgstr "Liège"
 
 #: belgium.kgm:118
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Liege"
-msgstr ""
+msgstr "Liege"
 
 #: belgium.kgm:126
 #, kde-format
@@ -4957,13 +4957,13 @@ msgstr "Luxembourg"
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Arlon"
-msgstr ""
+msgstr "Arlon"
 
 #: belgium.kgm:136 belgium.kgm:138
 #, kde-format
 msgctxt "belgium.kgm"
 msgid "Namur"
-msgstr ""
+msgstr "Namur"
 
 #: belize.kgm:5
 #, kde-format
@@ -4993,79 +4993,79 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "belize.kgm"
 msgid "Not Belize"
-msgstr ""
+msgstr "Non Belize"
 
 #: belize.kgm:29
 #, kde-format
 msgctxt "belize.kgm"
 msgid "Belize District"
-msgstr ""
+msgstr "Belize Districto"
 
 #: belize.kgm:30
 #, kde-format
 msgctxt "belize.kgm"
 msgid "Belize City"
-msgstr ""
+msgstr "Citate de Belize"
 
 #: belize.kgm:34
 #, kde-format
 msgctxt "belize.kgm"
 msgid "Cayo District"
-msgstr ""
+msgstr "Cayo Districto"
 
 #: belize.kgm:35
 #, kde-format
 msgctxt "belize.kgm"
 msgid "San Ignacio"
-msgstr ""
+msgstr "San Ignacio"
 
 #: belize.kgm:39
 #, kde-format
 msgctxt "belize.kgm"
 msgid "Corozal District"
-msgstr ""
+msgstr "Corozal Districto"
 
 #: belize.kgm:40
 #, kde-format
 msgctxt "belize.kgm"
 msgid "Corozal Town"
-msgstr ""
+msgstr "Corozal  Urbe"
 
 #: belize.kgm:44
 #, kde-format
 msgctxt "belize.kgm"
 msgid "Orange Walk District"
-msgstr ""
+msgstr "Orange Walk Districto"
 
 #: belize.kgm:45
 #, kde-format
 msgctxt "belize.kgm"
 msgid "Orange Walk Town"
-msgstr ""
+msgstr "Orange Walk Urbe"
 
 #: belize.kgm:49
 #, kde-format
 msgctxt "belize.kgm"
 msgid "Stann Creek District"
-msgstr ""
+msgstr "Stann Creek Districto"
 
 #: belize.kgm:50
 #, kde-format
 msgctxt "belize.kgm"
 msgid "Dangriga"
-msgstr ""
+msgstr "Dangriga"
 
 #: belize.kgm:54
 #, kde-format
 msgctxt "belize.kgm"
 msgid "Toledo District"
-msgstr ""
+msgstr "Toledo Districto"
 
 #: belize.kgm:55
 #, kde-format
 msgctxt "belize.kgm"
 msgid "Punta Gorda"
-msgstr ""
+msgstr "Punta Gorda"
 
 #: bhutan.kgm:5
 #, kde-format
@@ -5089,85 +5089,85 @@ msgstr "Frontiera"
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Not Bhutan"
-msgstr ""
+msgstr "Non Bhutan"
 
 #: bhutan.kgm:19
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Bumthang"
-msgstr ""
+msgstr "Bumthang"
 
 #: bhutan.kgm:24
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Chukha"
-msgstr ""
+msgstr "Chukha"
 
 #: bhutan.kgm:29
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Dagana"
-msgstr ""
+msgstr "Dagana"
 
 #: bhutan.kgm:34
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Gasa"
-msgstr ""
+msgstr "Gasa"
 
 #: bhutan.kgm:39
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Haa"
-msgstr ""
+msgstr "Haa"
 
 #: bhutan.kgm:44
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Lhuntse"
-msgstr ""
+msgstr "Lhuntse"
 
 #: bhutan.kgm:49
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Mongar"
-msgstr ""
+msgstr "Mongar"
 
 #: bhutan.kgm:54
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Paro"
-msgstr ""
+msgstr "Paro"
 
 #: bhutan.kgm:59
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Pemagatshel"
-msgstr ""
+msgstr "Pemagatshel"
 
 #: bhutan.kgm:64
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Punakha"
-msgstr ""
+msgstr "Punakha"
 
 #: bhutan.kgm:69
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Samdrup Jongkhar"
-msgstr ""
+msgstr "Samdrup Jongkhar"
 
 #: bhutan.kgm:74
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Samtse"
-msgstr ""
+msgstr "Samtse"
 
 #: bhutan.kgm:79
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Sarpang"
-msgstr ""
+msgstr "Sarpang"
 
 #: bhutan.kgm:84
 #, kde-format
@@ -5179,43 +5179,43 @@ msgstr "Thimphu"
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Trashigang"
-msgstr ""
+msgstr "Trashigang"
 
 #: bhutan.kgm:94
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Trashiyangste"
-msgstr ""
+msgstr "Trashiyangste"
 
 #: bhutan.kgm:99
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Trongsa"
-msgstr ""
+msgstr "Trongsa"
 
 #: bhutan.kgm:104
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Tsirang"
-msgstr ""
+msgstr "Tsirang"
 
 #: bhutan.kgm:109
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Wangdue Phodrang"
-msgstr ""
+msgstr "Wangdue Phodrang"
 
 #: bhutan.kgm:114
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Zhemgang"
-msgstr ""
+msgstr "Zhemgang"
 
 #: bihar.kgm:5
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Bihar"
-msgstr ""
+msgstr "Bihar"
 
 #: bihar.kgm:6
 #, kde-format
@@ -5227,31 +5227,31 @@ msgstr "Districto"
 #, no-c-format, kde-format
 msgctxt "@title:group"
 msgid "The %1 district has its headquarters at..."
-msgstr ""
+msgstr "Le districto %1 ha su sede a ..."
 
 #: bihar.kgm:8
 #, kde-format
 msgctxt "@title"
 msgid "Headquarters of Districts"
-msgstr ""
+msgstr "Sede de Districtos"
 
 #: bihar.kgm:9
 #, no-c-format, kde-format
 msgctxt "@title:group"
 msgid "%1 is the district headquarters of..."
-msgstr ""
+msgstr "%1 es le sede de districto de ... "
 
 #: bihar.kgm:10
 #, kde-format
 msgctxt "@title"
 msgid "District by Headquarters"
-msgstr ""
+msgstr "Districto per Sede"
 
 #: bihar.kgm:13
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Not Bihar"
-msgstr ""
+msgstr "Non Bihar"
 
 #: bihar.kgm:18
 #, kde-format
@@ -5263,277 +5263,277 @@ msgstr "Frontiera"
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Paschim Champaran"
-msgstr ""
+msgstr "Paschim Champaran"
 
 #: bihar.kgm:24
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Bettiah"
-msgstr ""
+msgstr "Bettiah"
 
 #: bihar.kgm:28
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Purbi Champaran"
-msgstr ""
+msgstr "Purbi Champaran"
 
 #: bihar.kgm:29
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Motihari"
-msgstr ""
+msgstr "Motihari"
 
 #: bihar.kgm:33 bihar.kgm:34
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Sheohar"
-msgstr ""
+msgstr "Sheohar"
 
 #: bihar.kgm:38 bihar.kgm:39
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Sitamarhi"
-msgstr ""
+msgstr "Sitamarhi"
 
 #: bihar.kgm:43 bihar.kgm:44
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Madhubani"
-msgstr ""
+msgstr "Madhubani"
 
 #: bihar.kgm:48 bihar.kgm:49
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Supaul"
-msgstr ""
+msgstr "Supaul"
 
 #: bihar.kgm:53 bihar.kgm:54
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Araria"
-msgstr ""
+msgstr "Araria"
 
 #: bihar.kgm:58 bihar.kgm:59
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Kishanganj"
-msgstr ""
+msgstr "Kishanganj"
 
 #: bihar.kgm:63 bihar.kgm:64
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Purnia"
-msgstr ""
+msgstr "Purnia"
 
 #: bihar.kgm:68 bihar.kgm:69
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Madhepura"
-msgstr ""
+msgstr "Madhepura"
 
 #: bihar.kgm:73 bihar.kgm:74
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Saharsa"
-msgstr ""
+msgstr "Saharsa"
 
 #: bihar.kgm:78 bihar.kgm:79
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Darbhanga"
-msgstr ""
+msgstr "Darbhanga"
 
 #: bihar.kgm:83 bihar.kgm:84
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Muzaffarpur"
-msgstr ""
+msgstr "Muzaffarpur"
 
 #: bihar.kgm:88 bihar.kgm:89
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Gopalganj"
-msgstr ""
+msgstr "Gopalganj"
 
 #: bihar.kgm:93 bihar.kgm:94
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Siwan"
-msgstr ""
+msgstr "Siwan"
 
 #: bihar.kgm:98
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Saran"
-msgstr ""
+msgstr "Saran"
 
 #: bihar.kgm:99
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Chhapra"
-msgstr ""
+msgstr "Chhapra"
 
 #: bihar.kgm:103
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Vaishali"
-msgstr ""
+msgstr "Vaishali"
 
 #: bihar.kgm:104
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Hajipur"
-msgstr ""
+msgstr "Hajipur"
 
 #: bihar.kgm:108 bihar.kgm:109
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Samastipur"
-msgstr ""
+msgstr "Samastipur"
 
 #: bihar.kgm:113 bihar.kgm:114
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Begusarai"
-msgstr ""
+msgstr "Begusarai"
 
 #: bihar.kgm:118 bihar.kgm:119
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Khagaria"
-msgstr ""
+msgstr "Khagaria"
 
 #: bihar.kgm:123 bihar.kgm:124
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Bhagalpur"
-msgstr ""
+msgstr "Bhagalpur"
 
 #: bihar.kgm:128 bihar.kgm:129
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Katihar"
-msgstr ""
+msgstr "Katihar"
 
 #: bihar.kgm:133 bihar.kgm:134
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Munger"
-msgstr ""
+msgstr "Munger"
 
 #: bihar.kgm:138 bihar.kgm:139
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Lakhisarai"
-msgstr ""
+msgstr "Lakhisarai"
 
 #: bihar.kgm:143 bihar.kgm:144
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Sheikhpura"
-msgstr ""
+msgstr "Sheikhpura"
 
 #: bihar.kgm:148
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Nalanda"
-msgstr ""
+msgstr "Nalanda"
 
 #: bihar.kgm:149
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Bihar Sharif"
-msgstr ""
+msgstr "Bihar Sharif"
 
 #: bihar.kgm:153 bihar.kgm:154
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Patna"
-msgstr ""
+msgstr "Patna"
 
 #: bihar.kgm:158
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Bhojpur"
-msgstr ""
+msgstr "Bhojpur"
 
 #: bihar.kgm:159
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Ara"
-msgstr ""
+msgstr "Ara"
 
 #: bihar.kgm:163 bihar.kgm:164
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Buxar"
-msgstr ""
+msgstr "Buxar"
 
 #: bihar.kgm:168
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Kaimur"
-msgstr ""
+msgstr "Kaimur"
 
 #: bihar.kgm:169
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Bhabhua"
-msgstr ""
+msgstr "Bhabhua"
 
 #: bihar.kgm:173
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Rohtas"
-msgstr ""
+msgstr "Rohtas"
 
 #: bihar.kgm:174
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Sasaram"
-msgstr ""
+msgstr "Sasaram"
 
 #: bihar.kgm:178 bihar.kgm:179
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Aurangabad"
-msgstr ""
+msgstr "Aurangabad"
 
 #: bihar.kgm:183 bihar.kgm:184
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Arwal"
-msgstr ""
+msgstr "Arwal"
 
 #: bihar.kgm:188 bihar.kgm:189
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Jehanabad"
-msgstr ""
+msgstr "Jehanabad"
 
 #: bihar.kgm:193 bihar.kgm:194
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Gaya"
-msgstr ""
+msgstr "Gaya"
 
 #: bihar.kgm:198 bihar.kgm:199
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Nawada"
-msgstr ""
+msgstr "Nawada"
 
 #: bihar.kgm:203 bihar.kgm:204
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Jamui"
-msgstr ""
+msgstr "Jamui"
 
 #: bihar.kgm:208 bihar.kgm:209
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Banka"
-msgstr ""
+msgstr "Banka"
 
 #: bolivia.kgm:5
 #, kde-format
@@ -5563,37 +5563,37 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "bolivia.kgm"
 msgid "Not Bolivia"
-msgstr ""
+msgstr "Non Bolivia"
 
 #: bolivia.kgm:29
 #, kde-format
 msgctxt "bolivia.kgm"
 msgid "Beni"
-msgstr ""
+msgstr "Beni"
 
 #: bolivia.kgm:30
 #, kde-format
 msgctxt "bolivia.kgm"
 msgid "Trinidad"
-msgstr ""
+msgstr "Trinidad"
 
 #: bolivia.kgm:34
 #, kde-format
 msgctxt "bolivia.kgm"
 msgid "Chuquisaca"
-msgstr ""
+msgstr "Chuquisaca"
 
 #: bolivia.kgm:35
 #, kde-format
 msgctxt "bolivia.kgm"
 msgid "Sucre"
-msgstr ""
+msgstr "Sucre"
 
 #: bolivia.kgm:39 bolivia.kgm:40
 #, kde-format
 msgctxt "bolivia.kgm"
 msgid "Cochabamba"
-msgstr ""
+msgstr "Cochabamba"
 
 #: bolivia.kgm:44 bolivia.kgm:45
 #, kde-format
@@ -5605,25 +5605,25 @@ msgstr "La Paz"
 #, kde-format
 msgctxt "bolivia.kgm"
 msgid "Oruro"
-msgstr ""
+msgstr "Oruro"
 
 #: bolivia.kgm:54
 #, kde-format
 msgctxt "bolivia.kgm"
 msgid "Pando"
-msgstr ""
+msgstr "Pando"
 
 #: bolivia.kgm:55
 #, kde-format
 msgctxt "bolivia.kgm"
 msgid "Cobija"
-msgstr ""
+msgstr "Cobija"
 
 #: bolivia.kgm:59 bolivia.kgm:60
 #, kde-format
 msgctxt "bolivia.kgm"
 msgid "Potosí"
-msgstr ""
+msgstr "Potosí"
 
 #: bolivia.kgm:64
 #, kde-format
@@ -5635,25 +5635,25 @@ msgstr "Santa Cruz"
 #, kde-format
 msgctxt "bolivia.kgm"
 msgid "Santa Cruz de la Sierra"
-msgstr ""
+msgstr "Santa Cruz de la Sierra"
 
 #: bolivia.kgm:69 bolivia.kgm:70
 #, kde-format
 msgctxt "bolivia.kgm"
 msgid "Tarija"
-msgstr ""
+msgstr "Tarija"
 
 #: bosnia-herzegovina.kgm:5
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Bosnia-Herzegovina"
-msgstr ""
+msgstr "Bosnia-Herzegovina"
 
 #: bosnia-herzegovina.kgm:6
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Cantons"
-msgstr ""
+msgstr "Cantones"
 
 #: bosnia-herzegovina.kgm:9
 #, kde-format
@@ -5671,37 +5671,37 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Not Bosnia-Herzegovina"
-msgstr ""
+msgstr "Non Bosnia-Herzegovina"
 
 #: bosnia-herzegovina.kgm:24
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Brčko"
-msgstr ""
+msgstr "Brčko"
 
 #: bosnia-herzegovina.kgm:29
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Bosnian Podrinje"
-msgstr ""
+msgstr "Podrinje Bosniaco"
 
 #: bosnia-herzegovina.kgm:34
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Central Bosnia"
-msgstr ""
+msgstr "Bosnia Central"
 
 #: bosnia-herzegovina.kgm:39
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Herzegovina-Neretva"
-msgstr ""
+msgstr "Herzegovina-Neretva"
 
 #: bosnia-herzegovina.kgm:44
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Posavina"
-msgstr ""
+msgstr "Posavina"
 
 #: bosnia-herzegovina.kgm:49
 #, kde-format
@@ -5713,73 +5713,73 @@ msgstr "Sarajevo"
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Tuzla"
-msgstr ""
+msgstr "Tuzla"
 
 #: bosnia-herzegovina.kgm:59
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Una Sana"
-msgstr ""
+msgstr "Una Sana"
 
 #: bosnia-herzegovina.kgm:64
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "West Bosnia"
-msgstr ""
+msgstr "Bosnia West"
 
 #: bosnia-herzegovina.kgm:69
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "West Herzegovina"
-msgstr ""
+msgstr "Herzegovina West"
 
 #: bosnia-herzegovina.kgm:74
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Zenica-Doboj"
-msgstr ""
+msgstr "Zenica-Doboj"
 
 #: bosnia-herzegovina.kgm:79
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Banja Luka"
-msgstr ""
+msgstr "Banja Luka"
 
 #: bosnia-herzegovina.kgm:84
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Doboj"
-msgstr ""
+msgstr "Doboj"
 
 #: bosnia-herzegovina.kgm:89
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Bijeljina"
-msgstr ""
+msgstr "Bijeljina"
 
 #: bosnia-herzegovina.kgm:94
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Vlasenica"
-msgstr ""
+msgstr "Vlasenica"
 
 #: bosnia-herzegovina.kgm:99
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Sarajevo-Romanija or Sokolac"
-msgstr ""
+msgstr "Sarajevo-Romanija o Sokolac"
 
 #: bosnia-herzegovina.kgm:104
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Foča"
-msgstr ""
+msgstr "Foča"
 
 #: bosnia-herzegovina.kgm:109
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Trebinje"
-msgstr ""
+msgstr "Trebinje"
 
 #: botswana.kgm:5
 #, kde-format
@@ -5809,91 +5809,91 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "Not Botswana"
-msgstr ""
+msgstr "Non Botswana"
 
 #: botswana.kgm:24
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "Central"
-msgstr ""
+msgstr "Central"
 
 #: botswana.kgm:25
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "Serowe"
-msgstr ""
+msgstr "Serowe"
 
 #: botswana.kgm:29 botswana.kgm:30
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "Ghanzi"
-msgstr ""
+msgstr "Ghanzi"
 
 #: botswana.kgm:34
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "Kgalagadi"
-msgstr ""
+msgstr "Kgalagadi"
 
 #: botswana.kgm:35
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "Tshabong"
-msgstr ""
+msgstr "Tshabong"
 
 #: botswana.kgm:39
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "Kgatleng"
-msgstr ""
+msgstr "Kgatleng"
 
 #: botswana.kgm:40
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "Mochudi"
-msgstr ""
+msgstr "Mochudi"
 
 #: botswana.kgm:44
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "Kweneng"
-msgstr ""
+msgstr "Kweneng"
 
 #: botswana.kgm:45
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "Molepolole"
-msgstr ""
+msgstr "Molepolole"
 
 #: botswana.kgm:49
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "North-East"
-msgstr ""
+msgstr "Nord-Est"
 
 #: botswana.kgm:50
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "Francistown"
-msgstr ""
+msgstr "Francistown"
 
 #: botswana.kgm:54
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "North-West"
-msgstr ""
+msgstr "Nord-West"
 
 #: botswana.kgm:55
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "Maun"
-msgstr ""
+msgstr "Maun"
 
 #: botswana.kgm:59
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "South-East"
-msgstr ""
+msgstr "Sud-Est"
 
 #: botswana.kgm:60
 #, kde-format
@@ -5905,13 +5905,13 @@ msgstr "Gaborone"
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "Southern"
-msgstr ""
+msgstr "Meridional"
 
 #: botswana.kgm:65
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "Kanye"
-msgstr ""
+msgstr "Kanye"
 
 #: boxasker.cpp:253
 #, kde-format
@@ -5934,37 +5934,37 @@ msgstr "Statos"
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Sergipe"
-msgstr ""
+msgstr "Sergipe"
 
 #: brazil.kgm:11
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Aracaju"
-msgstr ""
+msgstr "Aracaju"
 
 #: brazil.kgm:19
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Pará"
-msgstr ""
+msgstr "Pará"
 
 #: brazil.kgm:21
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Belém"
-msgstr ""
+msgstr "Belém"
 
 #: brazil.kgm:29
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Minas Gerais"
-msgstr ""
+msgstr "Minas Gerais"
 
 #: brazil.kgm:31
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Belo Horizonte"
-msgstr ""
+msgstr "Belo Horizonte"
 
 #: brazil.kgm:39
 #, kde-format
@@ -6012,7 +6012,7 @@ msgstr "Mato Grosso"
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Cuiabá"
-msgstr ""
+msgstr "Cuiabá"
 
 #: brazil.kgm:79
 #, kde-format
@@ -6024,25 +6024,25 @@ msgstr "Paraná"
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Curitiba"
-msgstr ""
+msgstr "Curitiba"
 
 #: brazil.kgm:90
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Santa Catarina"
-msgstr ""
+msgstr "Santa Catarina"
 
 #: brazil.kgm:92
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Florianópolis"
-msgstr ""
+msgstr "Florianópolis"
 
 #: brazil.kgm:100
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Ceará"
-msgstr ""
+msgstr "Ceará"
 
 #: brazil.kgm:102
 #, kde-format
@@ -6054,13 +6054,13 @@ msgstr "Fortaleza"
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Goiás"
-msgstr ""
+msgstr "Goiás"
 
 #: brazil.kgm:112
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Goiânia"
-msgstr ""
+msgstr "Goiânia"
 
 #: brazil.kgm:120
 #, kde-format
@@ -6072,37 +6072,37 @@ msgstr "Paraíba"
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "João Pessoa"
-msgstr ""
+msgstr "João Pessoa"
 
 #: brazil.kgm:130
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Amapá"
-msgstr ""
+msgstr "Amapá"
 
 #: brazil.kgm:132
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Macapá"
-msgstr ""
+msgstr "Macapá"
 
 #: brazil.kgm:140
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Alagoas"
-msgstr ""
+msgstr "Alagoas"
 
 #: brazil.kgm:142
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Maceió"
-msgstr ""
+msgstr "Maceió"
 
 #: brazil.kgm:150
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Amazonas"
-msgstr ""
+msgstr "Amazonas"
 
 #: brazil.kgm:152
 #, kde-format
@@ -6114,13 +6114,13 @@ msgstr "Manaus"
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Rio Grande do Norte"
-msgstr ""
+msgstr "Rio Grande del Nord"
 
 #: brazil.kgm:162
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Natal"
-msgstr ""
+msgstr "Natal"
 
 #: brazil.kgm:170
 #, kde-format
@@ -6132,25 +6132,25 @@ msgstr "Tocantinas"
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Palmas"
-msgstr ""
+msgstr "Palmas"
 
 #: brazil.kgm:180
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Rio Grande do Sul"
-msgstr ""
+msgstr "Rio Grande del Sud"
 
 #: brazil.kgm:182
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Porto Alegre"
-msgstr ""
+msgstr "Porto Alegre"
 
 #: brazil.kgm:190
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Rondônia"
-msgstr ""
+msgstr "Rondônia"
 
 #: brazil.kgm:192
 #, kde-format
@@ -6186,13 +6186,13 @@ msgstr "Rio Branco"
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Rio de Janeiro State"
-msgstr ""
+msgstr "Rio de Janeiro Stato"
 
 #: brazil.kgm:223
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Rio de Janeiro"
-msgstr ""
+msgstr "Rio de Janeiro"
 
 #: brazil.kgm:231
 #, kde-format
@@ -6210,13 +6210,13 @@ msgstr "Salvador"
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Maranhão"
-msgstr ""
+msgstr "Maranhão"
 
 #: brazil.kgm:243
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "São Luís"
-msgstr ""
+msgstr "São Luís"
 
 #: brazil.kgm:251
 #, kde-format
@@ -6234,25 +6234,25 @@ msgstr "São Paulo (citate)"
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Piauí"
-msgstr ""
+msgstr "Piauí"
 
 #: brazil.kgm:263
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Teresina"
-msgstr ""
+msgstr "Teresina"
 
 #: brazil.kgm:271
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Espírito Santo"
-msgstr ""
+msgstr "Espírito Santo"
 
 #: brazil.kgm:273
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Vitória"
-msgstr ""
+msgstr "Vitória"
 
 #: brazil.kgm:281
 #, kde-format
@@ -6294,181 +6294,181 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Not Bulgaria"
-msgstr ""
+msgstr "Non Bulgaria"
 
 #: bulgaria.kgm:24
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Blagoevgrad"
-msgstr ""
+msgstr "Blagoevgrad"
 
 #: bulgaria.kgm:29
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Burgas"
-msgstr ""
+msgstr "Burgas"
 
 #: bulgaria.kgm:34
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Dobrich"
-msgstr ""
+msgstr "Dobrich"
 
 #: bulgaria.kgm:39
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Gabrovo"
-msgstr ""
+msgstr "Gabrovo"
 
 #: bulgaria.kgm:44
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Haskovo"
-msgstr ""
+msgstr "Haskovo"
 
 #: bulgaria.kgm:49
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Kardzhali"
-msgstr ""
+msgstr "Kardzhali"
 
 #: bulgaria.kgm:54
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Kyustendil"
-msgstr ""
+msgstr "Kyustendil"
 
 #: bulgaria.kgm:59
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Lovech"
-msgstr ""
+msgstr "Lovech"
 
 #: bulgaria.kgm:64
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Montana"
-msgstr ""
+msgstr "Montana"
 
 #: bulgaria.kgm:69
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Pazardzhik"
-msgstr ""
+msgstr "Pazardzhik"
 
 #: bulgaria.kgm:74
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Pernik"
-msgstr ""
+msgstr "Pernik"
 
 #: bulgaria.kgm:79
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Pleven"
-msgstr ""
+msgstr "Pleven"
 
 #: bulgaria.kgm:84
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Plovdiv"
-msgstr ""
+msgstr "Plovdiv"
 
 #: bulgaria.kgm:89
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Razgrad"
-msgstr ""
+msgstr "Razgrad"
 
 #: bulgaria.kgm:94
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Ruse"
-msgstr ""
+msgstr "Ruse"
 
 #: bulgaria.kgm:99
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Shumen"
-msgstr ""
+msgstr "Shumen"
 
 #: bulgaria.kgm:104
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Silistra"
-msgstr ""
+msgstr "Silistra"
 
 #: bulgaria.kgm:109
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Sliven"
-msgstr ""
+msgstr "Sliven"
 
 #: bulgaria.kgm:114
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Smolyan"
-msgstr ""
+msgstr "Smolyan"
 
 #: bulgaria.kgm:119
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Sofia Province"
-msgstr ""
+msgstr "Sofia Provincia"
 
 #: bulgaria.kgm:124
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Sofia City"
-msgstr ""
+msgstr "Sofia Citate"
 
 #: bulgaria.kgm:129
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Stara Zagora"
-msgstr ""
+msgstr "Stara Zagora"
 
 #: bulgaria.kgm:134
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Targovishte"
-msgstr ""
+msgstr "Targovishte"
 
 #: bulgaria.kgm:139
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Veliko Tarnovo"
-msgstr ""
+msgstr "Veliko Tarnovo"
 
 #: bulgaria.kgm:144
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Varna"
-msgstr ""
+msgstr "Varna"
 
 #: bulgaria.kgm:149
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Vidin"
-msgstr ""
+msgstr "Vidin"
 
 #: bulgaria.kgm:154
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Vratsa"
-msgstr ""
+msgstr "Vratsa"
 
 #: bulgaria.kgm:159
 #, kde-format
 msgctxt "bulgaria.kgm"
 msgid "Yambol"
-msgstr ""
+msgstr "Yambol"
 
 #: burkina_provinces.kgm:5
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Burkina Faso (Provinces)"
-msgstr ""
+msgstr "Burkina Faso (Provincias)"
 
 #: burkina_provinces.kgm:6
 #, kde-format
@@ -6492,31 +6492,31 @@ msgstr "Non Burkina Faso"
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Oudalan"
-msgstr ""
+msgstr "Oudalan"
 
 #: burkina_provinces.kgm:20
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Gorom-gorom"
-msgstr ""
+msgstr "Gorom-gorom"
 
 #: burkina_provinces.kgm:24
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Soum"
-msgstr ""
+msgstr "Soum"
 
 #: burkina_provinces.kgm:25
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Djibo"
-msgstr ""
+msgstr " "
 
 #: burkina_provinces.kgm:29
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Séno"
-msgstr ""
+msgstr "Séno"
 
 #: burkina_provinces.kgm:30
 #, kde-format
@@ -6528,31 +6528,31 @@ msgstr "Dori"
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Yagha"
-msgstr ""
+msgstr "Yagha"
 
 #: burkina_provinces.kgm:35
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Sebba"
-msgstr ""
+msgstr "Sebba"
 
 #: burkina_provinces.kgm:39
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Komondjari"
-msgstr ""
+msgstr "Komondjari"
 
 #: burkina_provinces.kgm:40
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Gayéri"
-msgstr ""
+msgstr "Gayéri"
 
 #: burkina_provinces.kgm:44
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Gourma"
-msgstr ""
+msgstr "Gourma"
 
 #: burkina_provinces.kgm:45
 #, kde-format
@@ -6564,43 +6564,43 @@ msgstr "Fada N'Gourma"
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Tapoa"
-msgstr ""
+msgstr "Tapoa"
 
 #: burkina_provinces.kgm:50
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Diapaga"
-msgstr ""
+msgstr "Diapaga"
 
 #: burkina_provinces.kgm:54
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Kompienga"
-msgstr ""
+msgstr "Kompienga"
 
 #: burkina_provinces.kgm:55
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Pama"
-msgstr ""
+msgstr "Pama"
 
 #: burkina_provinces.kgm:59
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Koulpélogo"
-msgstr ""
+msgstr "Koulpélogo"
 
 #: burkina_provinces.kgm:60
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Ouargaye"
-msgstr ""
+msgstr "Ouargaye"
 
 #: burkina_provinces.kgm:64
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Boulgou"
-msgstr ""
+msgstr "Boulgou"
 
 #: burkina_provinces.kgm:65
 #, kde-format
@@ -6612,55 +6612,55 @@ msgstr "Tenkodogo"
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Kouritenga"
-msgstr ""
+msgstr "Kouritenga"
 
 #: burkina_provinces.kgm:70
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Koupéla"
-msgstr ""
+msgstr "Koupéla"
 
 #: burkina_provinces.kgm:74
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Namentenga"
-msgstr ""
+msgstr "Namentenga"
 
 #: burkina_provinces.kgm:75
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Boulsa"
-msgstr ""
+msgstr "Boulsa"
 
 #: burkina_provinces.kgm:79
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Gnagna"
-msgstr ""
+msgstr "Gnagna"
 
 #: burkina_provinces.kgm:80
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Bogandé"
-msgstr ""
+msgstr "Bogandé"
 
 #: burkina_provinces.kgm:84
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Ganzourgou"
-msgstr ""
+msgstr "Ganzourgou"
 
 #: burkina_provinces.kgm:85
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Zorgho"
-msgstr ""
+msgstr "Zorgho"
 
 #: burkina_provinces.kgm:89
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Zoundwéogo"
-msgstr ""
+msgstr "Zoundwéogo"
 
 #: burkina_provinces.kgm:90
 #, kde-format
@@ -6672,49 +6672,49 @@ msgstr "Manga"
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Nahouri"
-msgstr ""
+msgstr "Nahouri"
 
 #: burkina_provinces.kgm:95
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Pô"
-msgstr ""
+msgstr "Pô"
 
 #: burkina_provinces.kgm:99
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Sissili"
-msgstr ""
+msgstr "Sissili"
 
 #: burkina_provinces.kgm:100
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Léo"
-msgstr ""
+msgstr "Léo"
 
 #: burkina_provinces.kgm:104
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Ziro"
-msgstr ""
+msgstr "Ziro"
 
 #: burkina_provinces.kgm:105
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Sapouy"
-msgstr ""
+msgstr "Sapouy"
 
 #: burkina_provinces.kgm:109
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Bazèga"
-msgstr ""
+msgstr "Bazèga"
 
 #: burkina_provinces.kgm:110
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Kombissiri"
-msgstr ""
+msgstr "Kombissiri"
 
 #: burkina_provinces.kgm:114
 #, kde-format
@@ -9817,7 +9817,7 @@ msgstr ""
 #, kde-format
 msgctxt "china.kgm"
 msgid "Beijing"
-msgstr ""
+msgstr "Beijing"
 
 #: china.kgm:225
 #, kde-format
@@ -10177,7 +10177,7 @@ msgstr "Departimentos"
 #, kde-format
 msgctxt "colombia.kgm"
 msgid "Amazonas"
-msgstr ""
+msgstr "Amazonas"
 
 #: colombia.kgm:11
 #, kde-format
@@ -10501,7 +10501,7 @@ msgstr ""
 #, kde-format
 msgctxt "colombia.kgm"
 msgid "Sucre"
-msgstr ""
+msgstr "Sucre"
 
 #: colombia.kgm:291
 #, kde-format
@@ -15225,7 +15225,7 @@ msgstr ""
 #, kde-format
 msgctxt "ghana.kgm"
 msgid "Central"
-msgstr ""
+msgstr "Central"
 
 #: ghana.kgm:132
 #, kde-format
@@ -19185,19 +19185,19 @@ msgstr "Assam"
 #, kde-format
 msgctxt "india.kgm"
 msgid "Dispur"
-msgstr ""
+msgstr "Dispur"
 
 #: india.kgm:39
 #, kde-format
 msgctxt "india.kgm"
 msgid "Bihar"
-msgstr ""
+msgstr "Bihar"
 
 #: india.kgm:40
 #, kde-format
 msgctxt "india.kgm"
 msgid "Patna"
-msgstr ""
+msgstr "Patna"
 
 #: india.kgm:44
 #, kde-format
@@ -20643,7 +20643,7 @@ msgstr ""
 #, kde-format
 msgctxt "israel.kgm"
 msgid "Southern"
-msgstr ""
+msgstr "Meridional"
 
 #: israel.kgm:50
 #, kde-format
@@ -22695,6 +22695,9 @@ msgid ""
 "Maps, flags, translations, etc. are as accurate as their respective authors "
 "could achieve, but KGeography should not be taken as an authoritative source."
 msgstr ""
+"Mappas, bandieras, traductiones, etc. es accurate como lo pote complir lor "
+"respective autores, ma KGeography non pote esser prendite como un fonte "
+"autorisate. "
 
 #: kgeography.cpp:460
 #, kde-format
@@ -23692,7 +23695,7 @@ msgstr ""
 #, kde-format
 msgctxt "luxembourg_cantons.kgm"
 msgid "Cantons"
-msgstr ""
+msgstr "Cantones"
 
 #: luxembourg_cantons.kgm:9
 #, kde-format
@@ -24150,7 +24153,7 @@ msgstr ""
 #: mapchooser.cpp:83
 #, kde-format
 msgid "The map %1 has the same name of map %2"
-msgstr ""
+msgstr "Le mappa %1 ha le mesme nomine de mappa %2"
 
 #: mapchooser.cpp:97
 #, kde-format
@@ -25322,7 +25325,7 @@ msgstr ""
 #, kde-format
 msgctxt "netherlands.kgm"
 msgid "Limburg"
-msgstr ""
+msgstr "Limburg"
 
 #: netherlands.kgm:91
 #, kde-format
@@ -26960,7 +26963,7 @@ msgstr ""
 #, kde-format
 msgctxt "paraguay.kgm"
 msgid "Central"
-msgstr ""
+msgstr "Central"
 
 #: paraguay.kgm:65
 #, kde-format
@@ -27116,7 +27119,7 @@ msgstr "Chile"
 #, kde-format
 msgctxt "peru.kgm"
 msgid "Amazonas"
-msgstr ""
+msgstr "Amazonas"
 
 #: peru.kgm:75
 #, kde-format
@@ -30224,7 +30227,7 @@ msgstr ""
 #, kde-format
 msgctxt "russia_districts.kgm"
 msgid "Central"
-msgstr ""
+msgstr "Central"
 
 #: russia_districts.kgm:25
 #, kde-format
@@ -30272,7 +30275,7 @@ msgstr "Novosibirsk"
 #, kde-format
 msgctxt "russia_districts.kgm"
 msgid "Southern"
-msgstr ""
+msgstr "Meridional"
 
 #: russia_districts.kgm:45
 #, kde-format
@@ -31682,7 +31685,7 @@ msgstr ""
 #, kde-format
 msgctxt "slovenia_traditional.kgm"
 msgid "Styria"
-msgstr ""
+msgstr "Styria"
 
 #: slovenia_traditional.kgm:30
 #, kde-format
@@ -31706,7 +31709,7 @@ msgstr ""
 #, kde-format
 msgctxt "slovenia_traditional.kgm"
 msgid "Carinthia"
-msgstr ""
+msgstr "Carinthia"
 
 #: slovenia_traditional.kgm:40
 #, kde-format
@@ -31880,7 +31883,7 @@ msgstr ""
 #, kde-format
 msgctxt "south_africa.kgm"
 msgid "North West"
-msgstr ""
+msgstr "Nord West"
 
 #: south_africa.kgm:60
 #, kde-format
@@ -32936,7 +32939,7 @@ msgstr ""
 #, kde-format
 msgctxt "sri-lanka.kgm"
 msgid "Central"
-msgstr ""
+msgstr "Central"
 
 #: sri-lanka.kgm:25
 #, kde-format
@@ -32996,7 +32999,7 @@ msgstr ""
 #, kde-format
 msgctxt "sri-lanka.kgm"
 msgid "Southern"
-msgstr ""
+msgstr "Meridional"
 
 #: sri-lanka.kgm:50
 #, kde-format
@@ -33656,7 +33659,7 @@ msgstr "Suissa"
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Cantons"
-msgstr ""
+msgstr "Cantones"
 
 #: switzerland.kgm:9
 #, kde-format
@@ -35882,7 +35885,7 @@ msgstr ""
 #, kde-format
 msgctxt "uruguay.kgm"
 msgid "Trinidad"
-msgstr ""
+msgstr "Trinidad"
 
 #: uruguay.kgm:59 uruguay.kgm:60
 #, kde-format
@@ -36380,7 +36383,7 @@ msgstr ""
 #, kde-format
 msgctxt "usa.kgm"
 msgid "Montana"
-msgstr ""
+msgstr "Montana"
 
 #: usa.kgm:396
 #, kde-format
@@ -36872,7 +36875,7 @@ msgstr ""
 #, kde-format
 msgctxt "venezuela.kgm"
 msgid "Amazonas"
-msgstr ""
+msgstr "Amazonas"
 
 #: venezuela.kgm:30
 #, kde-format
@@ -37064,7 +37067,7 @@ msgstr ""
 #, kde-format
 msgctxt "venezuela.kgm"
 msgid "Sucre"
-msgstr ""
+msgstr "Sucre"
 
 #: venezuela.kgm:115
 #, kde-format
@@ -40244,7 +40247,7 @@ msgstr "Muscat"
 #, kde-format
 msgctxt "world.kgm"
 msgid "West Bank"
-msgstr ""
+msgstr "Banco West"
 
 #: world.kgm:626
 #, kde-format
@@ -41210,7 +41213,7 @@ msgstr "China"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Beijing"
-msgstr ""
+msgstr "Beijing"
 
 #: world.kgm:1446
 #, kde-format
@@ -41222,7 +41225,7 @@ msgstr "India"
 #, kde-format
 msgctxt "world.kgm"
 msgid "New Delhi"
-msgstr ""
+msgstr "Nove Delhi"
 
 #: world.kgm:1456
 #, kde-format
@@ -42782,7 +42785,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Central"
-msgstr ""
+msgstr "Central"
 
 #: zambia_provinces.kgm:25
 #, kde-format
@@ -42860,7 +42863,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Southern"
-msgstr ""
+msgstr "Meridional"
 
 #: zambia_provinces.kgm:60
 #, kde-format
