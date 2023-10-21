@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-16 00:39+0000\n"
-"PO-Revision-Date: 2023-10-19 10:17+0200\n"
+"PO-Revision-Date: 2023-10-20 10:27+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -7914,7 +7914,7 @@ msgstr "Mbouda"
 #, kde-format
 msgctxt "cameroon_departments.kgm"
 msgid "Haut-Nkam"
-msgstr "Nkam alte (Haut-Nkam)"
+msgstr "Alte Nkam (Haut-Nkam)"
 
 #: cameroon_departments.kgm:230
 #, kde-format
@@ -8022,7 +8022,7 @@ msgstr "Ebolowa"
 #, kde-format
 msgctxt "cameroon_departments.kgm"
 msgid "Océan"
-msgstr "Océan"
+msgstr "Ocean"
 
 #: cameroon_departments.kgm:275
 #, kde-format
@@ -8713,7 +8713,7 @@ msgstr "Barbados"
 #, kde-format
 msgctxt "caribbean.kgm"
 msgid "Bridgetown"
-msgstr ""
+msgstr "Bridgetown"
 
 #: caribbean.kgm:138
 #, kde-format
@@ -8785,7 +8785,7 @@ msgstr "Jamaica"
 #, kde-format
 msgctxt "caribbean.kgm"
 msgid "Kingston"
-msgstr ""
+msgstr "Kingston"
 
 #: caribbean.kgm:174
 #, kde-format
@@ -10393,7 +10393,7 @@ msgstr ""
 #, kde-format
 msgctxt "colombia.kgm"
 msgid "Magdalena"
-msgstr ""
+msgstr "Magdalena"
 
 #: colombia.kgm:201
 #, kde-format
@@ -10663,7 +10663,7 @@ msgstr ""
 #, kde-format
 msgctxt "costa_rica.kgm"
 msgid "San José"
-msgstr ""
+msgstr "San José"
 
 #: cuba.kgm:5
 #, kde-format
@@ -11841,7 +11841,7 @@ msgstr ""
 #, kde-format
 msgctxt "ecuador.kgm"
 msgid "Quito"
-msgstr ""
+msgstr "Quito"
 
 #: ecuador.kgm:134
 #, kde-format
@@ -12249,7 +12249,7 @@ msgstr ""
 #, kde-format
 msgctxt "el_salvador.kgm"
 msgid "San Salvador"
-msgstr ""
+msgstr "San Salvador"
 
 #: el_salvador.kgm:84
 #, kde-format
@@ -13017,7 +13017,7 @@ msgstr "Suissa"
 #, kde-format
 msgctxt "europe.kgm"
 msgid "Bern"
-msgstr ""
+msgstr "Bern"
 
 #: europe.kgm:454
 #, kde-format
@@ -14049,7 +14049,7 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Meuse"
-msgstr ""
+msgstr "Meuse"
 
 #: france.kgm:532
 #, kde-format
@@ -15153,7 +15153,7 @@ msgstr ""
 #, kde-format
 msgctxt "ghana.kgm"
 msgid "Northern"
-msgstr ""
+msgstr "Septentrional"
 
 #: ghana.kgm:73
 #, kde-format
@@ -15177,7 +15177,7 @@ msgstr ""
 #, kde-format
 msgctxt "ghana.kgm"
 msgid "Volta"
-msgstr ""
+msgstr "Volta"
 
 #: ghana.kgm:92
 #, kde-format
@@ -15201,7 +15201,7 @@ msgstr ""
 #, kde-format
 msgctxt "ghana.kgm"
 msgid "Eastern"
-msgstr ""
+msgstr "Oriental"
 
 #: ghana.kgm:112
 #, kde-format
@@ -16065,7 +16065,7 @@ msgstr ""
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Kingston"
-msgstr ""
+msgstr "Kingston"
 
 #: great-britain_counties.kgm:304
 #, kde-format
@@ -17763,7 +17763,7 @@ msgstr ""
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "Narmada"
-msgstr ""
+msgstr "Narmada"
 
 #: gujarat.kgm:115
 #, kde-format
@@ -19467,7 +19467,7 @@ msgstr ""
 #, kde-format
 msgctxt "india.kgm"
 msgid "West Bengal"
-msgstr ""
+msgstr "Bengala West"
 
 #: india.kgm:160
 #, kde-format
@@ -20277,7 +20277,7 @@ msgstr ""
 #, kde-format
 msgctxt "iran.kgm"
 msgid "Caspian Sea"
-msgstr ""
+msgstr "Mar Caspie"
 
 #: iran.kgm:333
 #, kde-format
@@ -20607,7 +20607,7 @@ msgstr "Jerusalem"
 #, kde-format
 msgctxt "israel.kgm"
 msgid "Northern"
-msgstr ""
+msgstr "Septentrional"
 
 #: israel.kgm:30
 #, kde-format
@@ -21585,7 +21585,7 @@ msgstr ""
 #, kde-format
 msgctxt "jamaica.kgm"
 msgid "Kingston"
-msgstr ""
+msgstr "Kingston"
 
 #: jamaica.kgm:29
 #, kde-format
@@ -24869,7 +24869,7 @@ msgstr "Canada"
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "Ottawa"
-msgstr ""
+msgstr "Ottawa"
 
 #: ncamerica.kgm:46
 #, kde-format
@@ -24881,25 +24881,25 @@ msgstr "El Salvador"
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "San Salvador"
-msgstr ""
+msgstr "San Salvador"
 
 #: ncamerica.kgm:56
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "The United States of America"
-msgstr ""
+msgstr "Le Statos Unite de America"
 
 #: ncamerica.kgm:57
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "Washington D.C."
-msgstr ""
+msgstr "Washington D.C."
 
 #: ncamerica.kgm:66
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "The Bahamas"
-msgstr ""
+msgstr "Le Bahamas"
 
 #: ncamerica.kgm:67
 #, kde-format
@@ -24911,7 +24911,7 @@ msgstr "Nassau"
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "The Dominican Republic"
-msgstr ""
+msgstr "Le Republica Dominican"
 
 #: ncamerica.kgm:77
 #, kde-format
@@ -24953,7 +24953,7 @@ msgstr "Jamaica"
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "Kingston"
-msgstr ""
+msgstr "Kingston"
 
 #: ncamerica.kgm:116
 #, kde-format
@@ -24989,7 +24989,7 @@ msgstr "Barbados"
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "Bridgetown"
-msgstr ""
+msgstr "Bridgetown"
 
 #: ncamerica.kgm:146
 #, kde-format
@@ -25025,7 +25025,7 @@ msgstr "Guatemala"
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "Guatemala City"
-msgstr ""
+msgstr "Citate de Guatemala"
 
 #: ncamerica.kgm:176
 #, kde-format
@@ -25037,7 +25037,7 @@ msgstr "Belize"
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "Belmopan"
-msgstr ""
+msgstr "Belmopan"
 
 #: ncamerica.kgm:186
 #, kde-format
@@ -25073,7 +25073,7 @@ msgstr "Costa Rica"
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "San José"
-msgstr ""
+msgstr "San José"
 
 #: ncamerica.kgm:216
 #, kde-format
@@ -25085,13 +25085,13 @@ msgstr "Panama"
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "Panama City"
-msgstr ""
+msgstr "Citate de Panama"
 
 #: ncamerica.kgm:226
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "Greenland [Denmark]"
-msgstr ""
+msgstr "Groenlandia [Danmark]"
 
 #: ncamerica.kgm:235
 #, kde-format
@@ -25505,7 +25505,7 @@ msgstr ""
 #, kde-format
 msgctxt "new-zealand.kgm"
 msgid "Wellington"
-msgstr ""
+msgstr "Wellington"
 
 #: new-zealand.kgm:64
 #, kde-format
@@ -26153,7 +26153,7 @@ msgstr ""
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Kingston"
-msgstr ""
+msgstr "Kingston"
 
 #: oceania.kgm:36
 #, kde-format
@@ -26165,7 +26165,7 @@ msgstr "Nove Zelanda"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Wellington"
-msgstr ""
+msgstr "Wellington"
 
 #: oceania.kgm:42
 #, kde-format
@@ -26231,7 +26231,7 @@ msgstr "Fiji"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Suva"
-msgstr ""
+msgstr "Suva"
 
 #: oceania.kgm:78
 #, kde-format
@@ -26399,7 +26399,7 @@ msgstr "Tonga"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Nuku'alofa"
-msgstr ""
+msgstr "Nuku'alofa"
 
 #: oceania.kgm:162
 #, kde-format
@@ -26915,7 +26915,7 @@ msgstr ""
 #, kde-format
 msgctxt "paraguay.kgm"
 msgid "Asunción"
-msgstr ""
+msgstr "Asunción"
 
 #: paraguay.kgm:44
 #, kde-format
@@ -31859,7 +31859,7 @@ msgstr ""
 #, kde-format
 msgctxt "south_africa.kgm"
 msgid "Limpopo"
-msgstr ""
+msgstr "Limpopo"
 
 #: south_africa.kgm:50
 #, kde-format
@@ -31907,7 +31907,7 @@ msgstr ""
 #, kde-format
 msgctxt "southamerica.kgm"
 msgid "South America"
-msgstr ""
+msgstr "Sud America"
 
 #: southamerica.kgm:6
 #, kde-format
@@ -31949,7 +31949,7 @@ msgstr "Colombia"
 #, kde-format
 msgctxt "southamerica.kgm"
 msgid "Bogotá"
-msgstr ""
+msgstr "Bogotá"
 
 #: southamerica.kgm:55
 #, kde-format
@@ -31973,7 +31973,7 @@ msgstr "Guyana"
 #, kde-format
 msgctxt "southamerica.kgm"
 msgid "Georgetown"
-msgstr ""
+msgstr "Georgetown"
 
 #: southamerica.kgm:75
 #, kde-format
@@ -32009,7 +32009,7 @@ msgstr "Ecuador"
 #, kde-format
 msgctxt "southamerica.kgm"
 msgid "Quito"
-msgstr ""
+msgstr "Quito"
 
 #: southamerica.kgm:105
 #, kde-format
@@ -32033,7 +32033,7 @@ msgstr "Brasil"
 #, kde-format
 msgctxt "southamerica.kgm"
 msgid "Brasilia"
-msgstr ""
+msgstr "Brasilia"
 
 #: southamerica.kgm:125
 #, kde-format
@@ -32069,7 +32069,7 @@ msgstr "Paraguay"
 #, kde-format
 msgctxt "southamerica.kgm"
 msgid "Asunción"
-msgstr ""
+msgstr "Asunción"
 
 #: southamerica.kgm:155
 #, kde-format
@@ -32099,7 +32099,7 @@ msgstr "Montevideo"
 #, kde-format
 msgctxt "southkorea.kgm"
 msgid "Republic of Korea"
-msgstr ""
+msgstr "Republica de Corea"
 
 #: southkorea.kgm:6
 #, kde-format
@@ -32975,7 +32975,7 @@ msgstr ""
 #, kde-format
 msgctxt "sri-lanka.kgm"
 msgid "Eastern"
-msgstr ""
+msgstr "Oriental"
 
 #: sri-lanka.kgm:40
 #, kde-format
@@ -32987,7 +32987,7 @@ msgstr ""
 #, kde-format
 msgctxt "sri-lanka.kgm"
 msgid "North Western"
-msgstr ""
+msgstr "Nord Occidental "
 
 #: sri-lanka.kgm:45
 #, kde-format
@@ -33209,7 +33209,7 @@ msgstr ""
 #, kde-format
 msgctxt "sudan.kgm"
 msgid "Northern"
-msgstr ""
+msgstr "Septentrional"
 
 #: sudan.kgm:90
 #, kde-format
@@ -33701,7 +33701,7 @@ msgstr ""
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Bern"
-msgstr ""
+msgstr "Bern"
 
 #: switzerland.kgm:34 switzerland.kgm:35
 #, kde-format
@@ -35957,7 +35957,7 @@ msgstr ""
 #, kde-format
 msgctxt "uruguay.kgm"
 msgid "San José"
-msgstr ""
+msgstr "San José"
 
 #: uruguay.kgm:109
 #, kde-format
@@ -36047,7 +36047,7 @@ msgstr ""
 #, kde-format
 msgctxt "usa.kgm"
 msgid "The Bahamas"
-msgstr ""
+msgstr "Le Bahamas"
 
 #: usa.kgm:90
 #, kde-format
@@ -36137,7 +36137,7 @@ msgstr ""
 #, kde-format
 msgctxt "usa.kgm"
 msgid "Sacramento"
-msgstr ""
+msgstr "Sacramento"
 
 #: usa.kgm:187
 #, kde-format
@@ -36359,7 +36359,7 @@ msgstr ""
 #, kde-format
 msgctxt "usa.kgm"
 msgid "Mississippi"
-msgstr ""
+msgstr "Mississippi"
 
 #: usa.kgm:376
 #, kde-format
@@ -36557,7 +36557,7 @@ msgstr "Carolina del Sud"
 #, kde-format
 msgctxt "usa.kgm"
 msgid "Columbia"
-msgstr ""
+msgstr "Columbia"
 
 #: usa.kgm:553
 #, kde-format
@@ -38579,7 +38579,7 @@ msgstr ""
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Oceans and basins"
-msgstr ""
+msgstr "Ocenos e bassinos"
 
 #: waters_world-class.kgm:9
 #, kde-format
@@ -38603,43 +38603,43 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Arctic ocean"
-msgstr ""
+msgstr "Oceano Arctic"
 
 #: waters_world-class.kgm:29
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Northern Pacific"
-msgstr ""
+msgstr "Pacific Septentrional"
 
 #: waters_world-class.kgm:34
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Northern Atlantic"
-msgstr ""
+msgstr "Atlantic Septentrional"
 
 #: waters_world-class.kgm:39
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Southern Pacific"
-msgstr ""
+msgstr "Pacific Meridional"
 
 #: waters_world-class.kgm:44
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Southern Atlantic"
-msgstr ""
+msgstr "Atlantic Meridional"
 
 #: waters_world-class.kgm:49
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Indian ocean"
-msgstr ""
+msgstr "Oceano Indian"
 
 #: waters_world-class.kgm:54
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Antarctic ocean"
-msgstr ""
+msgstr "Oceano Antarctic"
 
 #: waters_world-class.kgm:59
 #, kde-format
@@ -38651,31 +38651,31 @@ msgstr "Congo"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Lake Chad"
-msgstr ""
+msgstr "Laco Chad"
 
 #: waters_world-class.kgm:69
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Jubba"
-msgstr ""
+msgstr "Jubba"
 
 #: waters_world-class.kgm:74
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Limpopo"
-msgstr ""
+msgstr "Limpopo"
 
 #: waters_world-class.kgm:79
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Mangoky"
-msgstr ""
+msgstr "Mangoky"
 
 #: waters_world-class.kgm:84
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Mania"
-msgstr ""
+msgstr "Mania"
 
 #: waters_world-class.kgm:89
 #, kde-format
@@ -38693,13 +38693,13 @@ msgstr ""
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Ogooue"
-msgstr ""
+msgstr "Ogooue"
 
 #: waters_world-class.kgm:104
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Okavango swamp"
-msgstr ""
+msgstr "Palude del Okavango"
 
 #: waters_world-class.kgm:109
 #, kde-format
@@ -38711,7 +38711,7 @@ msgstr "Orange"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Oued Draa"
-msgstr ""
+msgstr "Oued Draa"
 
 #: waters_world-class.kgm:119
 #, kde-format
@@ -38723,31 +38723,31 @@ msgstr "Senegal"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Shabelle"
-msgstr ""
+msgstr "Shabelle"
 
 #: waters_world-class.kgm:129
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Turkana"
-msgstr ""
+msgstr "Turkana"
 
 #: waters_world-class.kgm:134
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Volta"
-msgstr ""
+msgstr "Volta"
 
 #: waters_world-class.kgm:139
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Zambezi"
-msgstr ""
+msgstr "Zambezi"
 
 #: waters_world-class.kgm:144
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Dalalven"
-msgstr ""
+msgstr "Dalalven"
 
 #: waters_world-class.kgm:149
 #, kde-format
@@ -38759,31 +38759,31 @@ msgstr ""
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Daugava"
-msgstr ""
+msgstr "Daugava"
 
 #: waters_world-class.kgm:159
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Dnieper"
-msgstr ""
+msgstr "Dnieper"
 
 #: waters_world-class.kgm:164
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Dniester"
-msgstr ""
+msgstr "Dniester"
 
 #: waters_world-class.kgm:169
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Don"
-msgstr ""
+msgstr "Don"
 
 #: waters_world-class.kgm:174
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Ebro"
-msgstr ""
+msgstr "Ebro"
 
 #: waters_world-class.kgm:179
 #, kde-format
@@ -38801,25 +38801,25 @@ msgstr ""
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Glama"
-msgstr ""
+msgstr "Glama"
 
 #: waters_world-class.kgm:194
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Guadalquivir"
-msgstr ""
+msgstr "Guadalquivir"
 
 #: waters_world-class.kgm:199
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Kemijoki"
-msgstr ""
+msgstr "Kemijoki"
 
 #: waters_world-class.kgm:204
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Kura (& Araks)"
-msgstr ""
+msgstr "Kura (& Araks)"
 
 #: waters_world-class.kgm:209
 #, kde-format
@@ -38831,25 +38831,25 @@ msgstr ""
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Neva"
-msgstr ""
+msgstr "Neva"
 
 #: waters_world-class.kgm:219
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Dvina"
-msgstr ""
+msgstr "Dvina"
 
 #: waters_world-class.kgm:224
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Oder"
-msgstr ""
+msgstr "Oder"
 
 #: waters_world-class.kgm:229
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Po"
-msgstr ""
+msgstr "Po"
 
 #: waters_world-class.kgm:234
 #, kde-format
@@ -38879,13 +38879,13 @@ msgstr ""
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Tigris (& Euphrates)"
-msgstr ""
+msgstr "Tigris (& Euphrates)"
 
 #: waters_world-class.kgm:259
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Ural"
-msgstr ""
+msgstr "Ural"
 
 #: waters_world-class.kgm:264
 #, kde-format
@@ -38897,49 +38897,49 @@ msgstr ""
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Volga"
-msgstr ""
+msgstr "Volga"
 
 #: waters_world-class.kgm:274
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Weser"
-msgstr ""
+msgstr "Weser"
 
 #: waters_world-class.kgm:279
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Amu Darya"
-msgstr ""
+msgstr "Amu Darya"
 
 #: waters_world-class.kgm:284
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Amur"
-msgstr ""
+msgstr "Amur"
 
 #: waters_world-class.kgm:289
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Lake Balkhash"
-msgstr ""
+msgstr "Laco Balkhash"
 
 #: waters_world-class.kgm:294
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Brahmaputra"
-msgstr ""
+msgstr "Brahmaputra"
 
 #: waters_world-class.kgm:299
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Chao Phrya"
-msgstr ""
+msgstr "Chao Phrya"
 
 #: waters_world-class.kgm:304
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Fly"
-msgstr ""
+msgstr "Fly"
 
 #: waters_world-class.kgm:309
 #, kde-format
@@ -38951,25 +38951,25 @@ msgstr ""
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Godavari"
-msgstr ""
+msgstr "Godavari"
 
 #: waters_world-class.kgm:319
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Hong (Red river)"
-msgstr ""
+msgstr "Hong (Fluvio Rubie)"
 
 #: waters_world-class.kgm:324
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Hwang He"
-msgstr ""
+msgstr "Hwang He"
 
 #: waters_world-class.kgm:329
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Indigirka"
-msgstr ""
+msgstr "Indigirka"
 
 #: waters_world-class.kgm:334
 #, kde-format
@@ -38981,19 +38981,19 @@ msgstr ""
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Irrawaddy"
-msgstr ""
+msgstr "Irrawaddy"
 
 #: waters_world-class.kgm:344
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Kapuas"
-msgstr ""
+msgstr "Kapuas"
 
 #: waters_world-class.kgm:349
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Kolyma"
-msgstr ""
+msgstr "Kolyma"
 
 #: waters_world-class.kgm:354
 #, kde-format
@@ -39005,115 +39005,115 @@ msgstr "Krishna"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Lena"
-msgstr ""
+msgstr "Lena"
 
 #: waters_world-class.kgm:364
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Mahakam"
-msgstr ""
+msgstr "Mahakam"
 
 #: waters_world-class.kgm:369
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Mahanadi"
-msgstr ""
+msgstr "Mahanadi"
 
 #: waters_world-class.kgm:374
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Mekong"
-msgstr ""
+msgstr "Mekong"
 
 #: waters_world-class.kgm:379
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Murray (& Darling)"
-msgstr ""
+msgstr "Murray (& Darling)"
 
 #: waters_world-class.kgm:384
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Narmada"
-msgstr ""
+msgstr "Narmada"
 
 #: waters_world-class.kgm:389
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Ob"
-msgstr ""
+msgstr "Ob"
 
 #: waters_world-class.kgm:394
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Salween"
-msgstr ""
+msgstr "Salween"
 
 #: waters_world-class.kgm:399
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Sepik"
-msgstr ""
+msgstr "Sepik"
 
 #: waters_world-class.kgm:404
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Syr Daria"
-msgstr ""
+msgstr "Syr Daria"
 
 #: waters_world-class.kgm:409
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Tapti"
-msgstr ""
+msgstr "Tapti"
 
 #: waters_world-class.kgm:414
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Tarim"
-msgstr ""
+msgstr "Tarim"
 
 #: waters_world-class.kgm:419
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Xi Jiang"
-msgstr ""
+msgstr "Xi Jiang"
 
 #: waters_world-class.kgm:424
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Yalu Jiang"
-msgstr ""
+msgstr "Yalu Jiang"
 
 #: waters_world-class.kgm:429
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Yangtze"
-msgstr ""
+msgstr "Yangtze"
 
 #: waters_world-class.kgm:434
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Yenisey"
-msgstr ""
+msgstr "Yenisey"
 
 #: waters_world-class.kgm:439
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Alabama (& Tombigbee)"
-msgstr ""
+msgstr "Alabama (& Tombigbee)"
 
 #: waters_world-class.kgm:444
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Balsas"
-msgstr ""
+msgstr "Balsas"
 
 #: waters_world-class.kgm:449
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Brazos"
-msgstr ""
+msgstr "Brazos"
 
 #: waters_world-class.kgm:454
 #, kde-format
@@ -39125,91 +39125,91 @@ msgstr "Colorado"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Columbia"
-msgstr ""
+msgstr "Columbia"
 
 #: waters_world-class.kgm:464
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Fraser"
-msgstr ""
+msgstr "Fraser"
 
 #: waters_world-class.kgm:469
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Hudson"
-msgstr ""
+msgstr "Hudson"
 
 #: waters_world-class.kgm:474
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Mackenzie"
-msgstr ""
+msgstr "Mackenzie"
 
 #: waters_world-class.kgm:479
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Mississippi"
-msgstr ""
+msgstr "Mississippi"
 
 #: waters_world-class.kgm:484
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Nelson"
-msgstr ""
+msgstr "Nelson"
 
 #: waters_world-class.kgm:489
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Rio Grande"
-msgstr ""
+msgstr "Rio Grande"
 
 #: waters_world-class.kgm:494
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Rio Grande de Santiago"
-msgstr ""
+msgstr "Rio Grande de Santiago"
 
 #: waters_world-class.kgm:499
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Sacramento"
-msgstr ""
+msgstr "Sacramento"
 
 #: waters_world-class.kgm:504
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Saint Lawrence"
-msgstr ""
+msgstr "Sancte Lorenzo (Saint Lawrence)"
 
 #: waters_world-class.kgm:509
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Susquehanna"
-msgstr ""
+msgstr "Susquehanna"
 
 #: waters_world-class.kgm:514
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Thelon"
-msgstr ""
+msgstr "Thelon"
 
 #: waters_world-class.kgm:519
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Usumacinta"
-msgstr ""
+msgstr "Usumacinta"
 
 #: waters_world-class.kgm:524
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Yaqui"
-msgstr ""
+msgstr "Yaqui"
 
 #: waters_world-class.kgm:529
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Yukon"
-msgstr ""
+msgstr "Yukon"
 
 #: waters_world-class.kgm:534
 #, kde-format
@@ -39227,43 +39227,43 @@ msgstr "Chubut"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Magdalena"
-msgstr ""
+msgstr "Magdalena"
 
 #: waters_world-class.kgm:549
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Orinoco"
-msgstr ""
+msgstr "Orinoco"
 
 #: waters_world-class.kgm:554
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Parana"
-msgstr ""
+msgstr "Parana"
 
 #: waters_world-class.kgm:559
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Pamaiba"
-msgstr ""
+msgstr "Pamaiba"
 
 #: waters_world-class.kgm:564
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Rio Colorado"
-msgstr ""
+msgstr "Fluvio Colorado"
 
 #: waters_world-class.kgm:569
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Sao Francisco"
-msgstr ""
+msgstr "Sao Francisco"
 
 #: waters_world-class.kgm:574
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Lake Titicaca"
-msgstr ""
+msgstr "Laco Titicaca"
 
 #: waters_world-class.kgm:579
 #, kde-format
@@ -39281,43 +39281,43 @@ msgstr "Uruguay"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Douro"
-msgstr ""
+msgstr "Douro"
 
 #: waters_world-class.kgm:594
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Guadiana"
-msgstr ""
+msgstr "Guadiana"
 
 #: waters_world-class.kgm:599
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Meuse"
-msgstr ""
+msgstr "Meuse"
 
 #: waters_world-class.kgm:604
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Lake Eyre"
-msgstr ""
+msgstr "Laco Eyre"
 
 #: waters_world-class.kgm:609
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Caspian sea"
-msgstr ""
+msgstr "Mar Caspie"
 
 #: waters_world-class.kgm:614
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Tiber"
-msgstr ""
+msgstr "Tiber"
 
 #: westbengal.kgm:5
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "West Bengal"
-msgstr ""
+msgstr "Bengala West"
 
 #: westbengal.kgm:6
 #, kde-format
@@ -39329,7 +39329,7 @@ msgstr "Districto"
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Not West Bengal"
-msgstr ""
+msgstr "Non Bengala West"
 
 #: westbengal.kgm:19
 #, kde-format
@@ -39341,67 +39341,67 @@ msgstr "Bordo"
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Purulia"
-msgstr ""
+msgstr "Purulia"
 
 #: westbengal.kgm:38 westbengal.kgm:39
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Bankura"
-msgstr ""
+msgstr "Bankura"
 
 #: westbengal.kgm:48
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Paschim Medinipur"
-msgstr ""
+msgstr "Paschim Medinipur"
 
 #: westbengal.kgm:49
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Midnapore"
-msgstr ""
+msgstr "Midnapore"
 
 #: westbengal.kgm:58
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Purba Medinipur"
-msgstr ""
+msgstr "Purba Medinipur"
 
 #: westbengal.kgm:59
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Tamluk"
-msgstr ""
+msgstr "Tamluk"
 
 #: westbengal.kgm:68 westbengal.kgm:69
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Howrah"
-msgstr ""
+msgstr "Howrah"
 
 #: westbengal.kgm:78
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "South 24-Parganas "
-msgstr ""
+msgstr "Sud 24-Parganas "
 
 #: westbengal.kgm:79
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Alipur"
-msgstr ""
+msgstr "Alipur"
 
 #: westbengal.kgm:88
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "North 24-Parganas"
-msgstr ""
+msgstr "Nord 24-Parganas"
 
 #: westbengal.kgm:89
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Barasat"
-msgstr ""
+msgstr "Barasat"
 
 #: westbengal.kgm:98 westbengal.kgm:99
 #, kde-format
@@ -39413,109 +39413,109 @@ msgstr "Kolkata"
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Hooghly "
-msgstr ""
+msgstr "Hooghly "
 
 #: westbengal.kgm:109
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Chunchura "
-msgstr ""
+msgstr "Chunchura "
 
 #: westbengal.kgm:118 westbengal.kgm:119
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Burdwan"
-msgstr ""
+msgstr "Burdwan"
 
 #: westbengal.kgm:128
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Nadia"
-msgstr ""
+msgstr "Nadia"
 
 #: westbengal.kgm:129
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Krishnanagar"
-msgstr ""
+msgstr "Krishnanagar"
 
 #: westbengal.kgm:138
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Birbhum"
-msgstr ""
+msgstr "Birbhum"
 
 #: westbengal.kgm:139
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Suri"
-msgstr ""
+msgstr "Suri"
 
 #: westbengal.kgm:148
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Murshidabad"
-msgstr ""
+msgstr "Murshidabad"
 
 #: westbengal.kgm:149
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Baharampur"
-msgstr ""
+msgstr "Baharampur"
 
 #: westbengal.kgm:158
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Malda"
-msgstr ""
+msgstr "Malda"
 
 #: westbengal.kgm:159
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Inreg Bazar"
-msgstr ""
+msgstr "Inreg Bazar"
 
 #: westbengal.kgm:168
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Dakshin Dinajpur"
-msgstr ""
+msgstr "Dakshin Dinajpur"
 
 #: westbengal.kgm:169
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Balurghat"
-msgstr ""
+msgstr "Balurghat"
 
 #: westbengal.kgm:178
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Uttar Dinajpur"
-msgstr ""
+msgstr "Uttar Dinajpur"
 
 #: westbengal.kgm:179
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Raiganj"
-msgstr ""
+msgstr "Raiganj"
 
 #: westbengal.kgm:188 westbengal.kgm:189
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Darjeeling"
-msgstr ""
+msgstr "Darjeeling"
 
 #: westbengal.kgm:198 westbengal.kgm:199
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Jalpaiguri"
-msgstr ""
+msgstr "Jalpaiguri"
 
 #: westbengal.kgm:209 westbengal.kgm:210
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Cooch Behar"
-msgstr ""
+msgstr "Cooch Behar"
 
 #: world.kgm:5
 #, kde-format
@@ -39533,7 +39533,7 @@ msgstr "Paises"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Not a Nation"
-msgstr ""
+msgstr "Non un Nation"
 
 #: world.kgm:18
 #, kde-format
@@ -40109,7 +40109,7 @@ msgstr "Africa del Sud"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Pretoria, Bloemfontein and Cape Town"
-msgstr ""
+msgstr "Pretoria, Bloemfontein e Citate del Capo"
 
 #: world.kgm:507
 #, kde-format
@@ -40175,7 +40175,7 @@ msgstr "Dodoma"
 #, kde-format
 msgctxt "world.kgm"
 msgid "The Gambia"
-msgstr ""
+msgstr "Le Gambia"
 
 #: world.kgm:559
 #, kde-format
@@ -40259,7 +40259,7 @@ msgstr "Sahara Occidental"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Laayoune"
-msgstr ""
+msgstr "Laayoune"
 
 #: world.kgm:636
 #, kde-format
@@ -40727,7 +40727,7 @@ msgstr "Suissa"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Bern"
-msgstr ""
+msgstr "Bern"
 
 #: world.kgm:1036
 #, kde-format
@@ -40775,7 +40775,7 @@ msgstr "Canada"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Ottawa"
-msgstr ""
+msgstr "Ottawa"
 
 #: world.kgm:1076
 #, kde-format
@@ -40787,25 +40787,25 @@ msgstr "El Salvador"
 #, kde-format
 msgctxt "world.kgm"
 msgid "San Salvador"
-msgstr ""
+msgstr "San Salvador"
 
 #: world.kgm:1086
 #, kde-format
 msgctxt "world.kgm"
 msgid "The United States of America"
-msgstr ""
+msgstr "Le Statos Unite de America"
 
 #: world.kgm:1087
 #, kde-format
 msgctxt "world.kgm"
 msgid "Washington D.C."
-msgstr ""
+msgstr "Washington D.C."
 
 #: world.kgm:1096
 #, kde-format
 msgctxt "world.kgm"
 msgid "The Bahamas"
-msgstr ""
+msgstr "Le Bahamas"
 
 #: world.kgm:1097
 #, kde-format
@@ -40817,7 +40817,7 @@ msgstr "Nassau"
 #, kde-format
 msgctxt "world.kgm"
 msgid "The Dominican Republic"
-msgstr ""
+msgstr "Le Republica Dominican"
 
 #: world.kgm:1107
 #, kde-format
@@ -40859,7 +40859,7 @@ msgstr "Jamaica"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Kingston"
-msgstr ""
+msgstr "Kingston"
 
 #: world.kgm:1146
 #, kde-format
@@ -40883,7 +40883,7 @@ msgstr "Barbados"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Bridgetown"
-msgstr ""
+msgstr "Bridgetown"
 
 #: world.kgm:1166
 #, kde-format
@@ -40931,7 +40931,7 @@ msgstr "Guatemala"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Guatemala City"
-msgstr ""
+msgstr "Citate de Guatemala"
 
 #: world.kgm:1206
 #, kde-format
@@ -40943,7 +40943,7 @@ msgstr "Belize"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Belmopan"
-msgstr ""
+msgstr "Belmopan"
 
 #: world.kgm:1216
 #, kde-format
@@ -40979,7 +40979,7 @@ msgstr "Costa Rica"
 #, kde-format
 msgctxt "world.kgm"
 msgid "San José"
-msgstr ""
+msgstr "San José"
 
 #: world.kgm:1246
 #, kde-format
@@ -40991,7 +40991,7 @@ msgstr "Panama"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Panama City"
-msgstr ""
+msgstr "Citate de Panama"
 
 #: world.kgm:1256
 #, kde-format
@@ -41003,7 +41003,7 @@ msgstr "Colombia"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Bogotá"
-msgstr ""
+msgstr "Bogotá"
 
 #: world.kgm:1266
 #, kde-format
@@ -41027,7 +41027,7 @@ msgstr "Guyana"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Georgetown"
-msgstr ""
+msgstr "Georgetown"
 
 #: world.kgm:1286
 #, kde-format
@@ -41063,7 +41063,7 @@ msgstr "Ecuador"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Quito"
-msgstr ""
+msgstr "Quito"
 
 #: world.kgm:1316
 #, kde-format
@@ -41087,7 +41087,7 @@ msgstr "Brasil"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Brasilia"
-msgstr ""
+msgstr "Brasilia"
 
 #: world.kgm:1336
 #, kde-format
@@ -41123,7 +41123,7 @@ msgstr "Paraguay"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Asunción"
-msgstr ""
+msgstr "Asunción"
 
 #: world.kgm:1366
 #, kde-format
@@ -41171,7 +41171,7 @@ msgstr "Nove Zelanda"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Wellington"
-msgstr ""
+msgstr "Wellington"
 
 #: world.kgm:1406 world.kgm:1407
 #, kde-format
@@ -41201,7 +41201,7 @@ msgstr "Monaco"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Monaco-Ville"
-msgstr ""
+msgstr "Monaco-Citate"
 
 #: world.kgm:1436
 #, kde-format
@@ -41567,7 +41567,7 @@ msgstr "Hanoi"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Republic of China (Taiwan)"
-msgstr ""
+msgstr "Republica de China (Taiwan)"
 
 #: world.kgm:1738
 #, kde-format
@@ -41585,7 +41585,7 @@ msgstr "Singapore"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Democratic People's Republic of Korea"
-msgstr ""
+msgstr "Republica Popular Democratic de Corea"
 
 #: world.kgm:1758
 #, kde-format
@@ -41597,7 +41597,7 @@ msgstr "Pyeongyang"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Republic of Korea"
-msgstr ""
+msgstr "Republica de Corea"
 
 #: world.kgm:1768
 #, kde-format
@@ -41615,7 +41615,7 @@ msgstr "Fiji"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Suva"
-msgstr ""
+msgstr "Suva"
 
 #: world.kgm:1786
 #, kde-format
@@ -41627,7 +41627,7 @@ msgstr "Tonga"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Nuku'alofa"
-msgstr ""
+msgstr "Nuku'alofa"
 
 #: world.kgm:1796
 #, kde-format
@@ -41645,7 +41645,7 @@ msgstr "Port Moresby"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Greenland (Denmark)"
-msgstr ""
+msgstr "Groenlandia(Danmark)"
 
 #: world.kgm:1807
 #, kde-format
@@ -41657,37 +41657,37 @@ msgstr "Nuuk"
 #, kde-format
 msgctxt "world_continents.kgm"
 msgid "World continents (from North Pole)"
-msgstr ""
+msgstr "Continentes de Mundo (ab Polo Nord)"
 
 #: world_continents.kgm:6
 #, kde-format
 msgctxt "world_continents.kgm"
 msgid "Continents"
-msgstr ""
+msgstr "Continentes"
 
 #: world_continents.kgm:7
 #, no-c-format, kde-format
 msgctxt "@title:group"
 msgid "What is the highest summit of %1?"
-msgstr ""
+msgstr "Quale es le summitte plus alte de %1?"
 
 #: world_continents.kgm:8
 #, kde-format
 msgctxt "@title"
 msgid "Continents by highest summit"
-msgstr ""
+msgstr "Continentes per summitate plus alte"
 
 #: world_continents.kgm:9
 #, no-c-format, kde-format
 msgctxt "@title:group"
 msgid "Which has %1 as its highest summit?"
-msgstr ""
+msgstr "Qual ha %1 como su plus alte summitate?"
 
 #: world_continents.kgm:10
 #, kde-format
 msgctxt "@title"
 msgid "Highest summit of continents"
-msgstr ""
+msgstr "Le summitate plus alte del continentes"
 
 #: world_continents.kgm:13
 #, kde-format
@@ -41711,25 +41711,25 @@ msgstr "Africa"
 #, kde-format
 msgctxt "world_continents.kgm"
 msgid "Kilimanjaro"
-msgstr ""
+msgstr "Kilimanjaro"
 
 #: world_continents.kgm:28
 #, kde-format
 msgctxt "world_continents.kgm"
 msgid "North America"
-msgstr ""
+msgstr "Nord America"
 
 #: world_continents.kgm:29
 #, kde-format
 msgctxt "world_continents.kgm"
 msgid "Mac Kinley"
-msgstr ""
+msgstr "Mac Kinley"
 
 #: world_continents.kgm:33
 #, kde-format
 msgctxt "world_continents.kgm"
 msgid "South America"
-msgstr ""
+msgstr "Sud America"
 
 #: world_continents.kgm:34
 #, kde-format
@@ -41813,7 +41813,7 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "yemen.kgm"
 msgid "Not Yemen"
-msgstr ""
+msgstr "Non Yemen"
 
 #: yemen.kgm:24
 #, kde-format
@@ -42227,61 +42227,61 @@ msgstr ""
 #, kde-format
 msgctxt "zaire2006.kgm"
 msgid "Mbandaka"
-msgstr ""
+msgstr "Mbandaka"
 
 #: zaire2006.kgm:129
 #, kde-format
 msgctxt "zaire2006.kgm"
 msgid "Tshuapa"
-msgstr ""
+msgstr "Tshuapa"
 
 #: zaire2006.kgm:130
 #, kde-format
 msgctxt "zaire2006.kgm"
 msgid "Boende"
-msgstr ""
+msgstr "Boende"
 
 #: zaire2006.kgm:134
 #, kde-format
 msgctxt "zaire2006.kgm"
 msgid "Tanganyika"
-msgstr ""
+msgstr "Tanganyika"
 
 #: zaire2006.kgm:135
 #, kde-format
 msgctxt "zaire2006.kgm"
 msgid "Kalemie"
-msgstr ""
+msgstr "Kalemie"
 
 #: zaire2006.kgm:139
 #, kde-format
 msgctxt "zaire2006.kgm"
 msgid "Haut-Lomami"
-msgstr ""
+msgstr "Alte Lomami (Haut-Lomami)"
 
 #: zaire2006.kgm:140
 #, kde-format
 msgctxt "zaire2006.kgm"
 msgid "Kamina"
-msgstr ""
+msgstr "Kamina"
 
 #: zaire2006.kgm:144
 #, kde-format
 msgctxt "zaire2006.kgm"
 msgid "Lualaba"
-msgstr ""
+msgstr "Lualaba"
 
 #: zaire2006.kgm:145
 #, kde-format
 msgctxt "zaire2006.kgm"
 msgid "Kolwezi"
-msgstr ""
+msgstr "Kolwezi"
 
 #: zaire2006.kgm:149
 #, kde-format
 msgctxt "zaire2006.kgm"
 msgid "Haut-Katanga"
-msgstr ""
+msgstr "Katanga Alte (Haut-Katanga)"
 
 #: zaire2006.kgm:150
 #, kde-format
@@ -42293,7 +42293,7 @@ msgstr "Lubumbashi"
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Zambia (Districts)"
-msgstr ""
+msgstr "Zambia (Districtos)"
 
 #: zambia_districts.kgm:6
 #, kde-format
@@ -42317,211 +42317,211 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Not Zambia (Districts)"
-msgstr ""
+msgstr "Non Zambia (Districtos)"
 
 #: zambia_districts.kgm:24
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Chibombo"
-msgstr ""
+msgstr "Chibombo"
 
 #: zambia_districts.kgm:29
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kabwe"
-msgstr ""
+msgstr "Kabwe "
 
 #: zambia_districts.kgm:34
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kapiri Mposhi"
-msgstr ""
+msgstr "Kapiri Mposhi"
 
 #: zambia_districts.kgm:39
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mkushi"
-msgstr ""
+msgstr "Mkushi"
 
 #: zambia_districts.kgm:44
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mumbwa"
-msgstr ""
+msgstr "Mumbwa"
 
 #: zambia_districts.kgm:49
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Serenje"
-msgstr ""
+msgstr "Serenje"
 
 #: zambia_districts.kgm:54
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Chililabombwe"
-msgstr ""
+msgstr "Chililabombwe"
 
 #: zambia_districts.kgm:59
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Chingola"
-msgstr ""
+msgstr "Chingola"
 
 #: zambia_districts.kgm:64
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kalulushi"
-msgstr ""
+msgstr "Kalulushi"
 
 #: zambia_districts.kgm:69
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kitwe"
-msgstr ""
+msgstr "Kitwe"
 
 #: zambia_districts.kgm:74
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Luanshya"
-msgstr ""
+msgstr "Luanshya"
 
 #: zambia_districts.kgm:79
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Lufwanyama"
-msgstr ""
+msgstr "Lufwanyama"
 
 #: zambia_districts.kgm:84
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Masaiti"
-msgstr ""
+msgstr "Masaiti"
 
 #: zambia_districts.kgm:89
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mpongwe"
-msgstr ""
+msgstr "Mpongwe"
 
 #: zambia_districts.kgm:94
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mufulira"
-msgstr ""
+msgstr "Mufulira"
 
 #: zambia_districts.kgm:99
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Ndola"
-msgstr ""
+msgstr "Ndola"
 
 #: zambia_districts.kgm:104
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Chadiza"
-msgstr ""
+msgstr "Chadiza"
 
 #: zambia_districts.kgm:109
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Chama"
-msgstr ""
+msgstr "Chama"
 
 #: zambia_districts.kgm:114
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Chipata"
-msgstr ""
+msgstr "Chipata"
 
 #: zambia_districts.kgm:119
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Katete"
-msgstr ""
+msgstr "Katete"
 
 #: zambia_districts.kgm:124
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Lundazi"
-msgstr ""
+msgstr "Lundazi"
 
 #: zambia_districts.kgm:129
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mambwe"
-msgstr ""
+msgstr "Mambwe"
 
 #: zambia_districts.kgm:134
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Nyimba"
-msgstr ""
+msgstr "Nyimba"
 
 #: zambia_districts.kgm:139
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Petauke"
-msgstr ""
+msgstr "Petauke"
 
 #: zambia_districts.kgm:144
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Chiengi"
-msgstr ""
+msgstr "Chiengi"
 
 #: zambia_districts.kgm:149
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kawambwa"
-msgstr ""
+msgstr "Kawambwa"
 
 #: zambia_districts.kgm:154
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mansa"
-msgstr ""
+msgstr "Mansa"
 
 #: zambia_districts.kgm:159
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Milenge"
-msgstr ""
+msgstr "Milenge"
 
 #: zambia_districts.kgm:164
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mwense"
-msgstr ""
+msgstr "Mwense"
 
 #: zambia_districts.kgm:169
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Nchelenge"
-msgstr ""
+msgstr "Nchelenge"
 
 #: zambia_districts.kgm:174
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Samfya"
-msgstr ""
+msgstr "Samfya"
 
 #: zambia_districts.kgm:179
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Chongwe"
-msgstr ""
+msgstr "Chongwe"
 
 #: zambia_districts.kgm:184
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kafue"
-msgstr ""
+msgstr "Kafue"
 
 #: zambia_districts.kgm:189
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Luangwa"
-msgstr ""
+msgstr "Luangwa"
 
 #: zambia_districts.kgm:194
 #, kde-format
@@ -42533,229 +42533,229 @@ msgstr "Lusaka"
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Chavuma"
-msgstr ""
+msgstr "Chavuma"
 
 #: zambia_districts.kgm:204
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kabompo"
-msgstr ""
+msgstr "Kabompo"
 
 #: zambia_districts.kgm:209
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kasempa"
-msgstr ""
+msgstr "Kasempa"
 
 #: zambia_districts.kgm:214
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mufumbwe"
-msgstr ""
+msgstr "Mufumbwe"
 
 #: zambia_districts.kgm:219
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mwinilunga"
-msgstr ""
+msgstr "Mwinilunga"
 
 #: zambia_districts.kgm:224
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Solwezi"
-msgstr ""
+msgstr "Solwezi"
 
 #: zambia_districts.kgm:229
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Zambezi"
-msgstr ""
+msgstr "Zambezi"
 
 #: zambia_districts.kgm:234
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Chilubi"
-msgstr ""
+msgstr "Chilubi"
 
 #: zambia_districts.kgm:239
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Chinsali"
-msgstr ""
+msgstr "Chinsali"
 
 #: zambia_districts.kgm:244
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Isoka"
-msgstr ""
+msgstr "Isoka"
 
 #: zambia_districts.kgm:249
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kaputa"
-msgstr ""
+msgstr "Kaputa"
 
 #: zambia_districts.kgm:254
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kasama"
-msgstr ""
+msgstr "Kasama"
 
 #: zambia_districts.kgm:259
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Luwingu"
-msgstr ""
+msgstr "Luwingu"
 
 #: zambia_districts.kgm:264
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mbala"
-msgstr ""
+msgstr "Mbala"
 
 #: zambia_districts.kgm:269
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mpika"
-msgstr ""
+msgstr "Mpika"
 
 #: zambia_districts.kgm:274
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mporokoso"
-msgstr ""
+msgstr "Mporokoso"
 
 #: zambia_districts.kgm:279
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mpulungu"
-msgstr ""
+msgstr "Mpulungu"
 
 #: zambia_districts.kgm:284
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mungwi"
-msgstr ""
+msgstr "Mungwi"
 
 #: zambia_districts.kgm:289
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Nakonde"
-msgstr ""
+msgstr "Nakonde"
 
 #: zambia_districts.kgm:294
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Choma"
-msgstr ""
+msgstr "Choma"
 
 #: zambia_districts.kgm:299
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Gwembe"
-msgstr ""
+msgstr "Gwembe"
 
 #: zambia_districts.kgm:304
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Itezhi-Tezhi"
-msgstr ""
+msgstr "Itezhi-Tezhi"
 
 #: zambia_districts.kgm:309
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kalomo"
-msgstr ""
+msgstr "Kalomo"
 
 #: zambia_districts.kgm:314
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kazungula"
-msgstr ""
+msgstr "Kazungula"
 
 #: zambia_districts.kgm:319
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Livingstone"
-msgstr ""
+msgstr "Livingstone"
 
 #: zambia_districts.kgm:324
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mazabuka"
-msgstr ""
+msgstr "Mazabuka"
 
 #: zambia_districts.kgm:329
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Monze"
-msgstr ""
+msgstr "Monze"
 
 #: zambia_districts.kgm:334
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Namwala"
-msgstr ""
+msgstr " Namwala"
 
 #: zambia_districts.kgm:339
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Siavonga"
-msgstr ""
+msgstr "Siavonga"
 
 #: zambia_districts.kgm:344
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Sinazongwe"
-msgstr ""
+msgstr "Sinazongwe"
 
 #: zambia_districts.kgm:349
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kalabo"
-msgstr ""
+msgstr "Kalabo"
 
 #: zambia_districts.kgm:354
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kaoma"
-msgstr ""
+msgstr "Kaoma"
 
 #: zambia_districts.kgm:359
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Lukulu"
-msgstr ""
+msgstr "Lukulu"
 
 #: zambia_districts.kgm:364
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mongu"
-msgstr ""
+msgstr "Mongu"
 
 #: zambia_districts.kgm:369
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Senanga"
-msgstr ""
+msgstr "Senanga"
 
 #: zambia_districts.kgm:374
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Sesheke"
-msgstr ""
+msgstr "Sesheke"
 
 #: zambia_districts.kgm:379
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Shangombo"
-msgstr ""
+msgstr "Shangombo"
 
 #: zambia_provinces.kgm:5
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Zambia (Provinces)"
-msgstr ""
+msgstr "Zambia (Provincias)"
 
 #: zambia_provinces.kgm:6
 #, kde-format
@@ -42779,7 +42779,7 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Not Zambia (Provinces)"
-msgstr ""
+msgstr "Non Zambia (Provincias)"
 
 #: zambia_provinces.kgm:24
 #, kde-format
@@ -42791,43 +42791,43 @@ msgstr "Central"
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Kabwe"
-msgstr ""
+msgstr "Kabwe"
 
 #: zambia_provinces.kgm:29
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Copperbelt"
-msgstr ""
+msgstr "Cinctura de cupro (Copperbelt)"
 
 #: zambia_provinces.kgm:30
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Ndola"
-msgstr ""
+msgstr "Ndola"
 
 #: zambia_provinces.kgm:34
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Eastern"
-msgstr ""
+msgstr "Oriental"
 
 #: zambia_provinces.kgm:35
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Chipata"
-msgstr ""
+msgstr "Chipata"
 
 #: zambia_provinces.kgm:39
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Luapula"
-msgstr ""
+msgstr "Luapula"
 
 #: zambia_provinces.kgm:40
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Mansa"
-msgstr ""
+msgstr "Mansa"
 
 #: zambia_provinces.kgm:44 zambia_provinces.kgm:45
 #, kde-format
@@ -42839,25 +42839,25 @@ msgstr "Lusaka"
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Northern"
-msgstr ""
+msgstr "Septentrional"
 
 #: zambia_provinces.kgm:50
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Kasama"
-msgstr ""
+msgstr "Kasama"
 
 #: zambia_provinces.kgm:54
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "North-Western"
-msgstr ""
+msgstr "Nord-Occidental"
 
 #: zambia_provinces.kgm:55
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Solwezi"
-msgstr ""
+msgstr "Solwezi"
 
 #: zambia_provinces.kgm:59
 #, kde-format
@@ -42869,7 +42869,7 @@ msgstr "Meridional"
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Livingstone"
-msgstr ""
+msgstr "Livingstone"
 
 #: zambia_provinces.kgm:64
 #, kde-format
@@ -42881,7 +42881,7 @@ msgstr "Western"
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Mongu"
-msgstr ""
+msgstr "Mongu"
 
 #: zimbabwe.kgm:5
 #, kde-format
@@ -42905,13 +42905,13 @@ msgstr "Frontiera"
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Not Zimbabwe"
-msgstr ""
+msgstr "Non Zimbabwe"
 
 #: zimbabwe.kgm:24
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Bulawayo"
-msgstr ""
+msgstr "Bulawayo "
 
 #: zimbabwe.kgm:29
 #, kde-format
@@ -42923,97 +42923,97 @@ msgstr "Harare"
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Manicaland"
-msgstr ""
+msgstr "Manicaland"
 
 #: zimbabwe.kgm:35
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Mutare"
-msgstr ""
+msgstr "Mutare"
 
 #: zimbabwe.kgm:39
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Mashonaland central"
-msgstr ""
+msgstr "Mashonaland central"
 
 #: zimbabwe.kgm:40
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Bindura"
-msgstr ""
+msgstr "Bindura"
 
 #: zimbabwe.kgm:44
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Mashonaland east"
-msgstr ""
+msgstr "Mashonaland est"
 
 #: zimbabwe.kgm:45
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Marondera"
-msgstr ""
+msgstr "Marondera"
 
 #: zimbabwe.kgm:49
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Mashonaland west"
-msgstr ""
+msgstr "Mashonaland west"
 
 #: zimbabwe.kgm:50
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Chinhoyi"
-msgstr ""
+msgstr "Chinhoyi"
 
 #: zimbabwe.kgm:54 zimbabwe.kgm:55
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Masvingo"
-msgstr ""
+msgstr "Masvingo"
 
 #: zimbabwe.kgm:59
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Matabeleland north"
-msgstr ""
+msgstr "Matabeleland nord"
 
 #: zimbabwe.kgm:60
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Lupane"
-msgstr ""
+msgstr "Lupane"
 
 #: zimbabwe.kgm:64
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Matabeleland south"
-msgstr ""
+msgstr "Matabeleland sud"
 
 #: zimbabwe.kgm:65
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Gwanda"
-msgstr ""
+msgstr "Gwanda"
 
 #: zimbabwe.kgm:69
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Midlands"
-msgstr ""
+msgstr "Midlands (Terras interne)"
 
 #: zimbabwe.kgm:70
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Gweru"
-msgstr ""
+msgstr "Gweru"
 
 #: zimbabwe_districts.kgm:5
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Zimbabwe (Districts)"
-msgstr ""
+msgstr "Zimbabwe (Districtos)"
 
 #: zimbabwe_districts.kgm:6
 #, kde-format
@@ -43037,13 +43037,13 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Not Zimbabwe (Districts)"
-msgstr ""
+msgstr "Non Zimbabwe (Districtos)"
 
 #: zimbabwe_districts.kgm:24
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Bulawayo"
-msgstr ""
+msgstr "Bulawayo "
 
 #: zimbabwe_districts.kgm:29
 #, kde-format
@@ -43055,301 +43055,301 @@ msgstr "Harare"
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Buhera"
-msgstr ""
+msgstr "Buhera"
 
 #: zimbabwe_districts.kgm:39
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Chimanimani"
-msgstr ""
+msgstr "Chimanimani"
 
 #: zimbabwe_districts.kgm:44
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Chipinge"
-msgstr ""
+msgstr "Chipinge"
 
 #: zimbabwe_districts.kgm:49
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Makoni"
-msgstr ""
+msgstr "Makoni"
 
 #: zimbabwe_districts.kgm:54
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Mutare"
-msgstr ""
+msgstr "Mutare"
 
 #: zimbabwe_districts.kgm:59
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Mutasa"
-msgstr ""
+msgstr "Mutasa"
 
 #: zimbabwe_districts.kgm:64
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Nyanga"
-msgstr ""
+msgstr "Nyanga"
 
 #: zimbabwe_districts.kgm:69
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Bindura"
-msgstr ""
+msgstr "Bindura"
 
 #: zimbabwe_districts.kgm:74
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Guruve"
-msgstr ""
+msgstr "Guruve"
 
 #: zimbabwe_districts.kgm:79
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Mazowe"
-msgstr ""
+msgstr "Mazowe"
 
 #: zimbabwe_districts.kgm:84
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Mount Darwin"
-msgstr ""
+msgstr "Monte Darwin"
 
 #: zimbabwe_districts.kgm:89
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Muzarabani"
-msgstr ""
+msgstr "Muzarabani"
 
 #: zimbabwe_districts.kgm:94
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Rushinga"
-msgstr ""
+msgstr "Rushinga"
 
 #: zimbabwe_districts.kgm:99
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Shamva"
-msgstr ""
+msgstr "Shamva"
 
 #: zimbabwe_districts.kgm:104
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Chikomba"
-msgstr ""
+msgstr "Chikomba"
 
 #: zimbabwe_districts.kgm:109
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Goromonzi"
-msgstr ""
+msgstr "Goromonzi"
 
 #: zimbabwe_districts.kgm:114
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Marondera"
-msgstr ""
+msgstr "Marondera"
 
 #: zimbabwe_districts.kgm:119
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Mudzi"
-msgstr ""
+msgstr "Mudzi"
 
 #: zimbabwe_districts.kgm:124
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Murehwa"
-msgstr ""
+msgstr "Murehwa"
 
 #: zimbabwe_districts.kgm:129
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Mutoko"
-msgstr ""
+msgstr "Mutoko"
 
 #: zimbabwe_districts.kgm:134
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Seke"
-msgstr ""
+msgstr "Seke"
 
 #: zimbabwe_districts.kgm:139
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "UMP"
-msgstr ""
+msgstr "UMP"
 
 #: zimbabwe_districts.kgm:144
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Wedza"
-msgstr ""
+msgstr "Wedza"
 
 #: zimbabwe_districts.kgm:149
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Chegutu"
-msgstr ""
+msgstr "Chegutu"
 
 #: zimbabwe_districts.kgm:154
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Hurungwe"
-msgstr ""
+msgstr "Hurungwe"
 
 #: zimbabwe_districts.kgm:159
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Kadoma"
-msgstr ""
+msgstr "Kadoma"
 
 #: zimbabwe_districts.kgm:164
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Kariba"
-msgstr ""
+msgstr "Kariba"
 
 #: zimbabwe_districts.kgm:169
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Makonde"
-msgstr ""
+msgstr "Makonde"
 
 #: zimbabwe_districts.kgm:174
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Zvimba"
-msgstr ""
+msgstr "Zvimba"
 
 #: zimbabwe_districts.kgm:179
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Bikita"
-msgstr ""
+msgstr "Bikita"
 
 #: zimbabwe_districts.kgm:184
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Chiredzi"
-msgstr ""
+msgstr "Chiredzi"
 
 #: zimbabwe_districts.kgm:189
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Chivi"
-msgstr ""
+msgstr "Chivi"
 
 #: zimbabwe_districts.kgm:194
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Gutu"
-msgstr ""
+msgstr "Gutu"
 
 #: zimbabwe_districts.kgm:199
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Masvingo"
-msgstr ""
+msgstr "Masvingo"
 
 #: zimbabwe_districts.kgm:204
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Mwenezi"
-msgstr ""
+msgstr "Mwenezi"
 
 #: zimbabwe_districts.kgm:209
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Zaka"
-msgstr ""
+msgstr "Zaka"
 
 #: zimbabwe_districts.kgm:214
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Binga"
-msgstr ""
+msgstr "Binga"
 
 #: zimbabwe_districts.kgm:219
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Bubi"
-msgstr ""
+msgstr "Bubi"
 
 #: zimbabwe_districts.kgm:224
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Hwange"
-msgstr ""
+msgstr "Hwange"
 
 #: zimbabwe_districts.kgm:229
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Lupane"
-msgstr ""
+msgstr "Lupane"
 
 #: zimbabwe_districts.kgm:234
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Nkayi"
-msgstr ""
+msgstr "Nkayi"
 
 #: zimbabwe_districts.kgm:239
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Tsholotsho"
-msgstr ""
+msgstr "Tsholotsho"
 
 #: zimbabwe_districts.kgm:244
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Umguza"
-msgstr ""
+msgstr "Umguza"
 
 #: zimbabwe_districts.kgm:249
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Beitbridge"
-msgstr ""
+msgstr "Beitbridge"
 
 #: zimbabwe_districts.kgm:254
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Bulilimamangwe"
-msgstr ""
+msgstr "Bulilimamangwe"
 
 #: zimbabwe_districts.kgm:259
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Gwanda"
-msgstr ""
+msgstr "Gwanda"
 
 #: zimbabwe_districts.kgm:264
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Insiza"
-msgstr ""
+msgstr "Insiza"
 
 #: zimbabwe_districts.kgm:269
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Matobo"
-msgstr ""
+msgstr "Matobo"
 
 #: zimbabwe_districts.kgm:274
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Umzingwane"
-msgstr ""
+msgstr "Umzingwane"
 
 #: zimbabwe_districts.kgm:279
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Chirumhanzu"
-msgstr ""
+msgstr "Chirumhanzu"
 
 #: zimbabwe_districts.kgm:284
 #, kde-format
@@ -43367,28 +43367,28 @@ msgstr "Gokwe sud"
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Gweru"
-msgstr ""
+msgstr "Gweru"
 
 #: zimbabwe_districts.kgm:299
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Kwekwe"
-msgstr ""
+msgstr "Kwekwe"
 
 #: zimbabwe_districts.kgm:304
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Mberengwa"
-msgstr ""
+msgstr "Mberengwa"
 
 #: zimbabwe_districts.kgm:309
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Shurugwi"
-msgstr ""
+msgstr "Shurugwi"
 
 #: zimbabwe_districts.kgm:314
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Zvishavane"
-msgstr ""
+msgstr "Zvishavane"

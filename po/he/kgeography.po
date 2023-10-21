@@ -26,15 +26,16 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-16 00:39+0000\n"
-"PO-Revision-Date: 2017-05-16 06:59-0400\n"
+"PO-Revision-Date: 2023-10-20 00:40+0300\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: <he@li.org>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 3.9.6\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -44,7 +45,7 @@ msgstr "tahmar1900,דיאגו יסטרובני"
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "tahmar1900@gmail.com, elcuco@kde.org"
+msgstr "tahmar1900@gmail.com,elcuco@kde.org"
 
 #: afghanistan.kgm:5
 #, fuzzy, kde-format
@@ -2340,7 +2341,7 @@ msgstr "התשובה שלך הייתה"
 #: answersdialog.cpp:54
 #, kde-format
 msgid "You answered correctly %1 out of %2 questions."
-msgstr "ענית נכון על %1 תשובות נכונות מתוך %2 שאלות"
+msgstr "ענית נכון על %1 מתוך %2 שאלות."
 
 #: answersdialog.cpp:61
 #, kde-format
@@ -9788,7 +9789,7 @@ msgstr "בנגלדש"
 #, kde-format
 msgctxt "china.kgm"
 msgid "Myanmar"
-msgstr "בורמה "
+msgstr "מאינמר"
 
 #: china.kgm:162
 #, kde-format
@@ -20656,7 +20657,7 @@ msgstr "קמפלה"
 #, kde-format
 msgctxt "israel.kgm"
 msgid "Tel Aviv"
-msgstr ""
+msgstr "תל אביב"
 
 #: israel.kgm:49
 #, fuzzy, kde-format
@@ -20668,7 +20669,7 @@ msgstr "דרום אמריקה"
 #, kde-format
 msgctxt "israel.kgm"
 msgid "Beersheba"
-msgstr ""
+msgstr "באר שבע"
 
 #: italy.kgm:5
 #, kde-format
@@ -24218,7 +24219,7 @@ msgstr ""
 #: mapparser.cpp:181
 #, kde-format
 msgid "%1 does not exist."
-msgstr "%1 לא קיים"
+msgstr "%1 לא קיים."
 
 #: mapparser.cpp:205 mapparser.cpp:227
 #, fuzzy, kde-format
@@ -24911,7 +24912,7 @@ msgstr "ארצות הברית"
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "Washington D.C."
-msgstr "וושינגטון"
+msgstr "וושינגטון די.סי."
 
 #: ncamerica.kgm:66
 #, kde-format
@@ -31410,7 +31411,7 @@ msgid "Borgo Maggiore"
 msgstr "בוקרשט"
 
 #: saudi_arabia.kgm:5
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "saudi_arabia.kgm"
 msgid "Saudi Arabia"
 msgstr "ערב הסעודית"
@@ -36489,7 +36490,7 @@ msgstr "אולבני"
 #, kde-format
 msgctxt "usa.kgm"
 msgid "North Carolina"
-msgstr "קרולינה הצפונית "
+msgstr "קרוליינה הצפונית"
 
 #: usa.kgm:470
 #, kde-format
@@ -40859,7 +40860,7 @@ msgstr "ארצות הברית"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Washington D.C."
-msgstr "וושינגטון"
+msgstr "וושינגטון די.סי."
 
 #: world.kgm:1096
 #, kde-format
@@ -41645,7 +41646,7 @@ msgstr "סינגפור"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Democratic People's Republic of Korea"
-msgstr "קוריאה הצפונית "
+msgstr "הרפובליקה הדמוקרטית העממית של קוריאה"
 
 #: world.kgm:1758
 #, kde-format
@@ -42944,52 +42945,52 @@ msgid "Mongu"
 msgstr "קאין"
 
 #: zimbabwe.kgm:5
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Zimbabwe"
 msgstr "זימבבואה"
 
 #: zimbabwe.kgm:6
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Provinces"
-msgstr "פרובידנס"
+msgstr "מחוזות"
 
 #: zimbabwe.kgm:9 zimbabwe.kgm:14
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Frontier"
 msgstr "גבול"
 
 #: zimbabwe.kgm:19
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Not Zimbabwe"
-msgstr "זימבבואה"
+msgstr "לא זימבבואה"
 
 #: zimbabwe.kgm:24
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Bulawayo"
-msgstr "ברבדוס"
+msgstr "בולוואיו"
 
 #: zimbabwe.kgm:29
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Harare"
-msgstr "הררה"
+msgstr "הארארה"
 
 #: zimbabwe.kgm:34
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Manicaland"
-msgstr "מנילה"
+msgstr "מניקלנד"
 
 #: zimbabwe.kgm:35
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Mutare"
-msgstr "מיין"
+msgstr "מוטארה"
 
 #: zimbabwe.kgm:39
 #, kde-format
@@ -42998,118 +42999,118 @@ msgid "Mashonaland central"
 msgstr ""
 
 #: zimbabwe.kgm:40
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Bindura"
-msgstr "הונדורס"
+msgstr "בינדורה"
 
 #: zimbabwe.kgm:44
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Mashonaland east"
-msgstr "האיים הקנריים"
+msgstr "משונלנד-מזרח"
 
 #: zimbabwe.kgm:45
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Marondera"
-msgstr "מיין"
+msgstr "מרונדרה"
 
 #: zimbabwe.kgm:49
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Mashonaland west"
-msgstr "האיים הקנריים"
+msgstr "משונלנד-מערב"
 
 #: zimbabwe.kgm:50
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Chinhoyi"
-msgstr "קישינב"
+msgstr "צ׳ינאוי"
 
 #: zimbabwe.kgm:54 zimbabwe.kgm:55
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Masvingo"
-msgstr "מונרוביה"
+msgstr "מסבינגו"
 
 #: zimbabwe.kgm:59
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Matabeleland north"
-msgstr "ולנסיה"
+msgstr "מטבללנד-צפון"
 
 #: zimbabwe.kgm:60
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Lupane"
-msgstr "לואנדה"
+msgstr "לופנה"
 
 #: zimbabwe.kgm:64
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Matabeleland south"
-msgstr "ולנסיה"
+msgstr "מטבללנד-דרום"
 
 #: zimbabwe.kgm:65
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Gwanda"
-msgstr "רונדה"
+msgstr "גוונדה"
 
 #: zimbabwe.kgm:69
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Midlands"
-msgstr "מילנו"
+msgstr "מידלנדס"
 
 #: zimbabwe.kgm:70
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Gweru"
-msgstr "פרו"
+msgstr "גוורו"
 
 #: zimbabwe_districts.kgm:5
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Zimbabwe (Districts)"
-msgstr "דיסטרירו פדרל"
+msgstr "זימבבואה (מחוזות)"
 
 #: zimbabwe_districts.kgm:6
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Districts"
-msgstr "דיסטרירו פדרל"
+msgstr "מחוזות"
 
 #: zimbabwe_districts.kgm:9
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Frontier"
 msgstr "גבול"
 
 #: zimbabwe_districts.kgm:14
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Water"
 msgstr "מים"
 
 #: zimbabwe_districts.kgm:19
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Not Zimbabwe (Districts)"
-msgstr "דיסטרירו פדרל"
+msgstr "לא זיממבואה (מחוזות)"
 
 #: zimbabwe_districts.kgm:24
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Bulawayo"
-msgstr "ברבדוס"
+msgstr "בולוואיו"
 
 #: zimbabwe_districts.kgm:29
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Harare"
-msgstr "הררה"
+msgstr "הארארה"
 
 #: zimbabwe_districts.kgm:34
 #, fuzzy, kde-format
@@ -43160,10 +43161,10 @@ msgid "Bindura"
 msgstr "הונדורס"
 
 #: zimbabwe_districts.kgm:74
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Guruve"
-msgstr "גנואה"
+msgstr ""
 
 #: zimbabwe_districts.kgm:79
 #, fuzzy, kde-format
@@ -43196,22 +43197,22 @@ msgid "Shamva"
 msgstr "זמביה"
 
 #: zimbabwe_districts.kgm:104
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Chikomba"
-msgstr "סין"
+msgstr "צ׳יקומבה"
 
 #: zimbabwe_districts.kgm:109
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Goromonzi"
-msgstr "מונרוביה"
+msgstr "גורומונזי"
 
 #: zimbabwe_districts.kgm:114
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Marondera"
-msgstr "מיין"
+msgstr "מרונדרה"
 
 #: zimbabwe_districts.kgm:119
 #, fuzzy, kde-format
@@ -43226,10 +43227,10 @@ msgid "Murehwa"
 msgstr "מונרוביה"
 
 #: zimbabwe_districts.kgm:129
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Mutoko"
-msgstr "מפוטו"
+msgstr "מוטוקו"
 
 #: zimbabwe_districts.kgm:134
 #, fuzzy, kde-format
@@ -43310,10 +43311,10 @@ msgid "Gutu"
 msgstr ""
 
 #: zimbabwe_districts.kgm:199
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Masvingo"
-msgstr "מונרוביה"
+msgstr "מסבינגו"
 
 #: zimbabwe_districts.kgm:204
 #, fuzzy, kde-format
@@ -43346,10 +43347,10 @@ msgid "Hwange"
 msgstr "בנגי"
 
 #: zimbabwe_districts.kgm:229
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Lupane"
-msgstr "לואנדה"
+msgstr "לופנה"
 
 #: zimbabwe_districts.kgm:234
 #, fuzzy, kde-format
@@ -43382,10 +43383,10 @@ msgid "Bulilimamangwe"
 msgstr ""
 
 #: zimbabwe_districts.kgm:259
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Gwanda"
-msgstr "רונדה"
+msgstr "גוונדה"
 
 #: zimbabwe_districts.kgm:264
 #, fuzzy, kde-format
