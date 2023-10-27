@@ -459,11 +459,9 @@ guide the parent/teacher on how to help the child using it.
 >mapFile</sgmltag
 > i <sgmltag class="endtag"
 >mapFile</sgmltag
->: el nom de fitxer (sense el camí) que conté la imatge del mapa, &pex; <quote
-><literal
+>: el nom de fitxer (sense el camí) que conté la imatge del mapa, &pex; «<literal
 >europe.png</literal
-></quote
->.</para>
+>».</para>
 </listitem>
 <listitem>
   <para
@@ -471,11 +469,9 @@ guide the parent/teacher on how to help the child using it.
 >name</sgmltag
 > i <sgmltag class="endtag"
 >name</sgmltag
->: el nom del mapa, &pex; <quote
-><literal
+>: el nom del mapa, &pex; «<literal
 >Europe</literal
-></quote
->.</para>
+>».</para>
 </listitem>
 <listitem>
   <para
@@ -503,11 +499,9 @@ guide the parent/teacher on how to help the child using it.
 >name</sgmltag
 > i <sgmltag class="endtag"
 >name</sgmltag
->: el nom de la zona, &pex; <quote
-><literal
+>: el nom de la zona, &pex; «<literal
 >Albania</literal
-></quote
->.</para>
+>».</para>
 </listitem>
 <listitem>
   <para
@@ -515,11 +509,9 @@ guide the parent/teacher on how to help the child using it.
 >capital</sgmltag
 > i <sgmltag class="endtag"
 >capital</sgmltag
->: el nom de la capital de la zona, &pex; <quote
-><literal
+>: el nom de la capital de la zona, &pex; «<literal
 >Tirana</literal
-></quote
->.</para>
+>».</para>
 </listitem>
 <listitem>
 	<para
@@ -551,25 +543,17 @@ guide the parent/teacher on how to help the child using it.
 >ignore</sgmltag
 > voldrà dir que s'estableix l'etiqueta <userinput
 >no</userinput
->. Per exemple, <quote
-><literal
->Algeria</literal
-></quote
-> té aquesta etiqueta establerta a <userinput
+>. Per exemple, «<literal
+>Algèria</literal
+>» té aquesta etiqueta establerta a <userinput
 >yes</userinput
-> en el mapa <quote
-><literal
+> en el mapa «<literal
 >Europe</literal
-></quote
->, vol dir que <quote
-><literal
->Algeria</literal
-></quote
-> no formarà part de cap qüestionari en el mapa <quote
-><literal
+>», vol dir que «<literal
+>Algèria</literal
+>» no formarà part de cap qüestionari en el mapa «<literal
 >Europe</literal
-></quote
->.</para>
+>».</para>
 </listitem>
 <listitem>
   <para
@@ -577,11 +561,9 @@ guide the parent/teacher on how to help the child using it.
 >flag</sgmltag
 > i <sgmltag class="endtag"
 >flag</sgmltag
->: el fitxer (sense el camí) conté l'etiqueta de la zona, &pex;, <quote
-><literal
+>: el fitxer (sense el camí) conté l'etiqueta de la zona, &pex;, «<literal
 >albania.png</literal
-></quote
->. Aquesta etiqueta és opcional. No és necessària per a les zones mentre l'etiqueta <sgmltag class="starttag"
+>». Aquesta etiqueta és opcional. No és necessària per a les zones mentre l'etiqueta <sgmltag class="starttag"
 >ignore</sgmltag
 > estigui establerta a <userinput
 >yes</userinput
@@ -593,11 +575,9 @@ guide the parent/teacher on how to help the child using it.
 >blurredflag</sgmltag
 > i <sgmltag class="endtag"
 >blurredflag</sgmltag
->: el fitxer (sense el camí) que conté la bandera borrosa de la divisió, &pex;, <quote
-><literal
+>: el fitxer (sense el camí) que conté la bandera borrosa de la divisió, &pex;, «<literal
 >blurred_albania.png</literal
-></quote
->. Aquesta etiqueta és opcional. S'hauria d'utilitzar en situacions en les quals la bandera tingui el nom escrit de la divisió a la qual pertany. Això pot fer que els jocs d'endevinar la bandera esdevinguin massa fàcil, i com a tal, es fomenta l'enviament de banderes amb el text borrós.</para>
+>». Aquesta etiqueta és opcional. S'hauria d'utilitzar en situacions en les quals la bandera tingui el nom escrit de la divisió a la qual pertany. Això pot fer que els jocs d'endevinar la bandera esdevinguin massa fàcil, i com a tal, es fomenta l'enviament de banderes amb el text borrós.</para>
 </listitem>
 <listitem>
   <para
@@ -649,29 +629,21 @@ guide the parent/teacher on how to help the child using it.
 </para>
 <tip>
  <para
->És útil crear 2 o 3 zones falses amb el <quote
-><literal
+>És útil crear 2 o 3 zones falses amb el «<literal
 >Water</literal
-></quote
-> (mar), <quote
-><literal
+>» (mar), «<literal
 >Frontier</literal
-></quote
-> (frontera) i <quote
-><literal
+>» (frontera) i «<literal
 >Coast</literal
-></quote
-> (costa) establint l'etiqueta <sgmltag class="starttag"
+>» (costa) establint l'etiqueta <sgmltag class="starttag"
 >ignore</sgmltag
 > a <userinput
 >yes</userinput
 >. No oblideu <userinput
 >de no establir</userinput
-> el color per a qualsevol <quote
-><literal
+> el color per a qualsevol «<literal
 >Frontier</literal
-></quote
-> 0,0,0 en RGB. Si us plau, que sigui alguna cosa com 1,1,1 de manera que una vora situï qualsevol divisió en el mapa. </para>
+>» 0,0,0 en RGB. Si us plau, que sigui alguna cosa com 1,1,1 de manera que una vora situï qualsevol divisió en el mapa. </para>
 </tip>
  <important>
    <para
@@ -706,11 +678,9 @@ guide the parent/teacher on how to help the child using it.
 <para
 >Com s'ha assenyalat anteriorment, us animem a proporcionar fitxers de bandera borrosa per a les banderes que tenen la divisió escrita sobre elles. Els mateixos requisits s'apliquen als fitxers de bandera borrosa quant als fitxers de bandera normals. Encara que no hi ha una notació de nomenclatura prescrita per als fitxers borrosos, recomanem desar-los amb el nom de la bandera original prefixada amb <literal
 >blurred_</literal
->, &pex; <quote
-><literal
+>, &pex; «<literal
 >blurred_albania.png</literal
-></quote
-> </para>
+>» </para>
 </sect1>
 <sect1 id="how-to-test">
 <title
