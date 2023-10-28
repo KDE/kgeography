@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-16 00:39+0000\n"
-"PO-Revision-Date: 2023-10-27 00:37+0200\n"
+"PO-Revision-Date: 2023-10-27 22:51+0200\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast_ES\n"
@@ -481,151 +481,151 @@ msgstr "Arxelia"
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Algiers"
-msgstr ""
+msgstr "Arxel"
 
 #: africa.kgm:35
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Angola"
-msgstr ""
+msgstr "Angola"
 
 #: africa.kgm:36
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Luanda"
-msgstr ""
+msgstr "Luanda"
 
 #: africa.kgm:41
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Benin"
-msgstr ""
+msgstr "Benín"
 
 #: africa.kgm:42
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Porto-Novo"
-msgstr ""
+msgstr "Puertu Nuevu"
 
 #: africa.kgm:47
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Botswana"
-msgstr ""
+msgstr "Botsuana"
 
 #: africa.kgm:48
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Gaborone"
-msgstr ""
+msgstr "Gaborone"
 
 #: africa.kgm:53
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Burkina Faso"
-msgstr ""
+msgstr "Burkina Fasu"
 
 #: africa.kgm:54
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Ouagadougou"
-msgstr ""
+msgstr "Uagadugú"
 
 #: africa.kgm:59
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Burundi"
-msgstr ""
+msgstr "Burundi"
 
 #: africa.kgm:60
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Gitega"
-msgstr ""
+msgstr "Xitegá"
 
 #: africa.kgm:65
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Cameroon"
-msgstr ""
+msgstr "Camerún"
 
 #: africa.kgm:66
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Yaoundé"
-msgstr ""
+msgstr "Yaundé"
 
 #: africa.kgm:71
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Cape Verde"
-msgstr ""
+msgstr "Cabu Verde"
 
 #: africa.kgm:72
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Praia"
-msgstr ""
+msgstr "Praia"
 
 #: africa.kgm:77
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Central African Republic"
-msgstr ""
+msgstr "República Centroafricana"
 
 #: africa.kgm:78
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Bangui"
-msgstr ""
+msgstr "Bangui"
 
 #: africa.kgm:83
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Chad"
-msgstr ""
+msgstr "Chad"
 
 #: africa.kgm:84
 #, kde-format
 msgctxt "africa.kgm"
 msgid "N'Djamena"
-msgstr ""
+msgstr "Xamena"
 
 #: africa.kgm:89
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Comoros"
-msgstr ""
+msgstr "Comores"
 
 #: africa.kgm:90
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Moroni"
-msgstr ""
+msgstr "Moroni"
 
 #: africa.kgm:95
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Côte d'Ivoire"
-msgstr ""
+msgstr "Costa de Marfil"
 
 #: africa.kgm:96
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Yamoussoukro"
-msgstr ""
+msgstr "Yamusukru"
 
 #: africa.kgm:101
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Democratic Republic of the Congo"
-msgstr ""
+msgstr "República Democrática d'El Congu"
 
 #: africa.kgm:102
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Kinshasa"
-msgstr ""
+msgstr "Kinxasa"
 
 #: africa.kgm:107 africa.kgm:108
 #, kde-format
@@ -649,13 +649,13 @@ msgstr "El Cairu"
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Equatorial Guinea"
-msgstr ""
+msgstr "Guinea Ecuatorial"
 
 #: africa.kgm:120
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Malabo"
-msgstr ""
+msgstr "Malabu"
 
 #: africa.kgm:125
 #, kde-format
@@ -685,61 +685,61 @@ msgstr "Adís Abeba"
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Gabon"
-msgstr ""
+msgstr "Gabón"
 
 #: africa.kgm:138
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Libreville"
-msgstr ""
+msgstr "Libreville"
 
 #: africa.kgm:143
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Gambia"
-msgstr ""
+msgstr "Gambia"
 
 #: africa.kgm:144
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Banjul"
-msgstr ""
+msgstr "Banxul"
 
 #: africa.kgm:149
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Ghana"
-msgstr ""
+msgstr "Ghana"
 
 #: africa.kgm:150
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Accra"
-msgstr ""
+msgstr "Accra"
 
 #: africa.kgm:155
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Guinea"
-msgstr ""
+msgstr "Guinea"
 
 #: africa.kgm:156
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Conakry"
-msgstr ""
+msgstr "Conacri"
 
 #: africa.kgm:161
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Guinea-Bissau"
-msgstr ""
+msgstr "Guinea-Bisáu"
 
 #: africa.kgm:162
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Bissau"
-msgstr ""
+msgstr "Bisáu"
 
 #: africa.kgm:167
 #, kde-format
@@ -757,37 +757,37 @@ msgstr "Nairobi"
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Lesotho"
-msgstr ""
+msgstr "Lesothu"
 
 #: africa.kgm:174
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Maseru"
-msgstr ""
+msgstr "Maseru"
 
 #: africa.kgm:179
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Liberia"
-msgstr ""
+msgstr "Liberia"
 
 #: africa.kgm:180
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Monrovia"
-msgstr ""
+msgstr "Monrovia"
 
 #: africa.kgm:185
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Libya"
-msgstr ""
+msgstr "Libia"
 
 #: africa.kgm:186
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Tripoli"
-msgstr ""
+msgstr "Trípoli"
 
 #: africa.kgm:191
 #, kde-format
@@ -799,7 +799,7 @@ msgstr "Madagascar"
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Antananarivo"
-msgstr ""
+msgstr "Antanarivu"
 
 #: africa.kgm:197
 #, kde-format
@@ -811,43 +811,43 @@ msgstr "Malaui"
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Lilongwe"
-msgstr ""
+msgstr "Lilongüe"
 
 #: africa.kgm:203
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Mali"
-msgstr ""
+msgstr "Malí"
 
 #: africa.kgm:204
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Bamako"
-msgstr ""
+msgstr "Bamaku"
 
 #: africa.kgm:209
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Mauritania"
-msgstr ""
+msgstr "Mauritania"
 
 #: africa.kgm:210
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Nouakchott"
-msgstr ""
+msgstr "Nuakxot"
 
 #: africa.kgm:215
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Mauritius"
-msgstr ""
+msgstr "Mauriciu"
 
 #: africa.kgm:216
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Port Louis"
-msgstr ""
+msgstr "Puertu Lluis"
 
 #: africa.kgm:221
 #, kde-format
@@ -859,7 +859,7 @@ msgstr "Marruecos"
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Rabat"
-msgstr ""
+msgstr "Rabat"
 
 #: africa.kgm:227
 #, kde-format
@@ -871,259 +871,259 @@ msgstr "Mozambique"
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Maputo"
-msgstr ""
+msgstr "Maputu"
 
 #: africa.kgm:233
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Namibia"
-msgstr ""
+msgstr "Namibia"
 
 #: africa.kgm:234
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Windhoek"
-msgstr ""
+msgstr "Windḥoek"
 
 #: africa.kgm:239
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Niger"
-msgstr ""
+msgstr "Níxer"
 
 #: africa.kgm:240
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Niamey"
-msgstr ""
+msgstr "Niaméi"
 
 #: africa.kgm:245
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Nigeria"
-msgstr ""
+msgstr "Nixeria"
 
 #: africa.kgm:246
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Abuja"
-msgstr ""
+msgstr "Abuya"
 
 #: africa.kgm:251
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Republic of the Congo"
-msgstr ""
+msgstr "El Congu"
 
 #: africa.kgm:252
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Brazzaville"
-msgstr ""
+msgstr "Brazzaville"
 
 #: africa.kgm:257
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Rwanda"
-msgstr ""
+msgstr "Ruanda"
 
 #: africa.kgm:258
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Kigali"
-msgstr ""
+msgstr "Kigali"
 
 #: africa.kgm:263
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Senegal"
-msgstr ""
+msgstr "Senegal"
 
 #: africa.kgm:264
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Dakar"
-msgstr ""
+msgstr "Dakar"
 
 #: africa.kgm:269
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Seychelles"
-msgstr ""
+msgstr "Seixeles"
 
 #: africa.kgm:270
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Victoria"
-msgstr ""
+msgstr "Victoria"
 
 #: africa.kgm:275
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Sierra Leone"
-msgstr ""
+msgstr "Sierra Leona"
 
 #: africa.kgm:276
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Freetown"
-msgstr ""
+msgstr "Ciudá Llibre"
 
 #: africa.kgm:281
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Somalia"
-msgstr ""
+msgstr "Somalia"
 
 #: africa.kgm:282
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Mogadishu"
-msgstr ""
+msgstr "Mogadixu"
 
 #: africa.kgm:287
 #, kde-format
 msgctxt "africa.kgm"
 msgid "South Africa"
-msgstr ""
+msgstr "Sudáfrica"
 
 #: africa.kgm:288
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Pretoria"
-msgstr ""
+msgstr "Pretoria"
 
 #: africa.kgm:293
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Sudan"
-msgstr ""
+msgstr "Sudán"
 
 #: africa.kgm:294
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Khartoum"
-msgstr ""
+msgstr "Ḥartum"
 
 #: africa.kgm:299
 #, kde-format
 msgctxt "africa.kgm"
 msgid "South Sudan"
-msgstr ""
+msgstr "Sudán del Sur"
 
 #: africa.kgm:300
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Juba"
-msgstr ""
+msgstr "Xuba"
 
 #: africa.kgm:305
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Eswatini"
-msgstr ""
+msgstr "Suazilandia"
 
 #: africa.kgm:306
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Mbabane"
-msgstr ""
+msgstr "Mbabane"
 
 #: africa.kgm:311
 #, kde-format
 msgctxt "africa.kgm"
 msgid "São Tomé and Príncipe"
-msgstr ""
+msgstr "Santu Tomé y Príncipe"
 
 #: africa.kgm:312
 #, kde-format
 msgctxt "africa.kgm"
 msgid "São Tomé"
-msgstr ""
+msgstr "Santu Tomé"
 
 #: africa.kgm:317
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Tanzania"
-msgstr ""
+msgstr "Tanzania"
 
 #: africa.kgm:318
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Dodoma"
-msgstr ""
+msgstr "Dodoma"
 
 #: africa.kgm:323
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Togo"
-msgstr ""
+msgstr "Togu"
 
 #: africa.kgm:324
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Lomé"
-msgstr ""
+msgstr "Lomé"
 
 #: africa.kgm:329
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Tunisia"
-msgstr ""
+msgstr "Tunicia"
 
 #: africa.kgm:330
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Tunis"
-msgstr ""
+msgstr "Túnez"
 
 #: africa.kgm:335
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Uganda"
-msgstr ""
+msgstr "Uganda"
 
 #: africa.kgm:336
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Kampala"
-msgstr ""
+msgstr "Kampala"
 
 #: africa.kgm:341
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Western Sahara"
-msgstr ""
+msgstr "El Sáḥara Occidental"
 
 #: africa.kgm:342
 #, kde-format
 msgctxt "africa.kgm"
 msgid "El Aaiún"
-msgstr ""
+msgstr "L'Aaiún"
 
 #: africa.kgm:347
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Zambia"
-msgstr ""
+msgstr "Zambia"
 
 #: africa.kgm:348
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Lusaka"
-msgstr ""
+msgstr "Lusaka"
 
 #: africa.kgm:353
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Zimbabwe"
-msgstr ""
+msgstr "Zimbabue"
 
 #: africa.kgm:354
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Harare"
-msgstr ""
+msgstr "Ḥarare"
 
 #: africa.kgm:359
 #, kde-format
@@ -1141,37 +1141,37 @@ msgstr "Les Palmes de Gran Canaria ya Santa Cruz de Tenerife"
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Madeira (Portugal)"
-msgstr ""
+msgstr "Madeira (Portugal)"
 
 #: africa.kgm:366
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Funchal"
-msgstr ""
+msgstr "Funchal"
 
 #: africa.kgm:371
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Réunion (France)"
-msgstr ""
+msgstr "Reunión (Francia)"
 
 #: africa.kgm:372
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Saint-Denis"
-msgstr ""
+msgstr "Saint-Denís"
 
 #: africa.kgm:377
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Saint Helena (UK)"
-msgstr ""
+msgstr "Santa Lena (R.X.)"
 
 #: africa.kgm:378
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Jamestown"
-msgstr ""
+msgstr "Jamestown"
 
 #: albania_districts.kgm:5
 #, kde-format
@@ -2594,7 +2594,7 @@ msgstr "Armenia"
 #, kde-format
 msgctxt "armenia.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: armenia.kgm:9 armenia.kgm:14
 #, kde-format
@@ -4189,7 +4189,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Not Azerbaijan"
-msgstr ""
+msgstr "Fuera d'Azerbaixán"
 
 #: azerbaijan.kgm:24
 #, kde-format
@@ -4687,7 +4687,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "bangladesh.kgm"
 msgid "Not Bangladesh"
-msgstr ""
+msgstr "Fuera de Bangladex"
 
 #: bangladesh.kgm:24
 #, kde-format
@@ -4993,7 +4993,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "belize.kgm"
 msgid "Not Belize"
-msgstr ""
+msgstr "Fuera de Belize"
 
 #: belize.kgm:29
 #, kde-format
@@ -5089,7 +5089,7 @@ msgstr ""
 #, kde-format
 msgctxt "bhutan.kgm"
 msgid "Not Bhutan"
-msgstr ""
+msgstr "Fuera de Bután"
 
 #: bhutan.kgm:19
 #, kde-format
@@ -5671,7 +5671,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Not Bosnia-Herzegovina"
-msgstr ""
+msgstr "Fuera de Bosnia y Herzegovina"
 
 #: bosnia-herzegovina.kgm:24
 #, kde-format
@@ -5809,7 +5809,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "botswana.kgm"
 msgid "Not Botswana"
-msgstr ""
+msgstr "Fuera de Botsuana"
 
 #: botswana.kgm:24
 #, kde-format
@@ -6486,7 +6486,7 @@ msgstr ""
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Not Burkina Faso"
-msgstr ""
+msgstr "Fuera de Burkina Fasu"
 
 #: burkina_provinces.kgm:19
 #, kde-format
@@ -7038,7 +7038,7 @@ msgstr ""
 #, kde-format
 msgctxt "burkina_regions.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: burkina_regions.kgm:9
 #, kde-format
@@ -7050,7 +7050,7 @@ msgstr ""
 #, kde-format
 msgctxt "burkina_regions.kgm"
 msgid "Not Burkina Faso"
-msgstr ""
+msgstr "Fuera de Burkina Fasu"
 
 #: burkina_regions.kgm:19
 #, kde-format
@@ -7236,7 +7236,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "burma.kgm"
 msgid "Not Myanmar"
-msgstr ""
+msgstr "Fuera de Myanmar"
 
 #: burma.kgm:24
 #, kde-format
@@ -7416,7 +7416,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "cameroon_departments.kgm"
 msgid "Not Cameroon (Departments)"
-msgstr ""
+msgstr "Fuera de Camerún (departamentos)"
 
 #: cameroon_departments.kgm:24
 #, kde-format
@@ -8142,7 +8142,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "cameroon_provinces.kgm"
 msgid "Not Cameroon (Provinces)"
-msgstr ""
+msgstr "Fuera de Camerún (provincies)"
 
 #: cameroon_provinces.kgm:24
 #, kde-format
@@ -9469,7 +9469,7 @@ msgstr ""
 #, kde-format
 msgctxt "chile.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: chile.kgm:9
 #, kde-format
@@ -9487,7 +9487,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "chile.kgm"
 msgid "Not Chile"
-msgstr ""
+msgstr "Fuera de Chile"
 
 #: chile.kgm:24
 #, kde-format
@@ -10609,7 +10609,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "costa_rica.kgm"
 msgid "Not Costa Rica"
-msgstr ""
+msgstr "Fuera de Costa Rica"
 
 #: costa_rica.kgm:29 costa_rica.kgm:30
 #, kde-format
@@ -10687,7 +10687,7 @@ msgstr ""
 #, kde-format
 msgctxt "cuba.kgm"
 msgid "Not Cuba"
-msgstr ""
+msgstr "Fuera de Cuba"
 
 #: cuba.kgm:24
 #, kde-format
@@ -10837,7 +10837,7 @@ msgstr ""
 #, kde-format
 msgctxt "cyprus.kgm"
 msgid "Not Cyprus"
-msgstr ""
+msgstr "Fuera de Xipre"
 
 #: cyprus.kgm:19
 #, kde-format
@@ -10885,7 +10885,7 @@ msgstr ""
 #, kde-format
 msgctxt "czech.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: czech.kgm:9 czech.kgm:14
 #, kde-format
@@ -10897,7 +10897,7 @@ msgstr ""
 #, kde-format
 msgctxt "czech.kgm"
 msgid "Not Czech"
-msgstr ""
+msgstr "Fuera de Chequia"
 
 #: czech.kgm:24 czech.kgm:30
 #, kde-format
@@ -11241,7 +11241,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "dominican_republic.kgm"
 msgid "Not Dominican Republic"
-msgstr ""
+msgstr "Fuera de República Dominicana"
 
 #: dominican_republic.kgm:29
 #, kde-format
@@ -11607,7 +11607,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "ecuador.kgm"
 msgid "Not Ecuador"
-msgstr ""
+msgstr "Fuera d'Ecuador"
 
 #: ecuador.kgm:29
 #, kde-format
@@ -11907,7 +11907,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Not Egypt"
-msgstr ""
+msgstr "Fuera d'Exiptu"
 
 #: egypt.kgm:24 egypt.kgm:25
 #, kde-format
@@ -12165,7 +12165,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "el_salvador.kgm"
 msgid "Not El Salvador"
-msgstr ""
+msgstr "Fuera d'El Salvador"
 
 #: el_salvador.kgm:29 el_salvador.kgm:30
 #, kde-format
@@ -13095,7 +13095,7 @@ msgstr ""
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: finland_regions.kgm:9
 #, kde-format
@@ -13113,7 +13113,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Not Finland (Regions)"
-msgstr ""
+msgstr "Fuera de Finlandia (rexones)"
 
 #: finland_regions.kgm:24
 #, kde-format
@@ -13377,7 +13377,7 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Not France"
-msgstr ""
+msgstr "Fuera de Francia"
 
 #: france.kgm:18 france.kgm:27
 #, kde-format
@@ -14541,7 +14541,7 @@ msgstr ""
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: france_regions.kgm:9
 #, kde-format
@@ -14559,7 +14559,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Not France (Regions)"
-msgstr ""
+msgstr "Fuera de Francia (rexones)"
 
 #: france_regions.kgm:24
 #, kde-format
@@ -14727,7 +14727,7 @@ msgstr ""
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: georgia.kgm:9
 #, kde-format
@@ -14745,7 +14745,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Not Georgia"
-msgstr ""
+msgstr "Fuera de Xeorxa"
 
 #: georgia.kgm:24
 #, kde-format
@@ -15093,7 +15093,7 @@ msgstr ""
 #, kde-format
 msgctxt "ghana.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: ghana.kgm:9
 #, kde-format
@@ -16665,7 +16665,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "greece_peripheries.kgm"
 msgid "Not Greece (Peripheries)"
-msgstr ""
+msgstr "Fuera de Grecia (periferia)"
 
 #: greece_peripheries.kgm:24
 #, kde-format
@@ -16863,7 +16863,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "greece_prefectures.kgm"
 msgid "Not Greece (Prefectures)"
-msgstr ""
+msgstr "Fuera de Grecia (perfeutures)"
 
 #: greece_prefectures.kgm:24 greece_prefectures.kgm:25
 #, kde-format
@@ -17847,7 +17847,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "guyana.kgm"
 msgid "Not Guyana"
-msgstr ""
+msgstr "Fuera de Guyana"
 
 #: guyana.kgm:29
 #, kde-format
@@ -17997,7 +17997,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "haiti.kgm"
 msgid "Not Haiti"
-msgstr ""
+msgstr "Fuera d'Haiti"
 
 #: haiti.kgm:29
 #, kde-format
@@ -18429,7 +18429,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "honduras.kgm"
 msgid "Not Honduras"
-msgstr ""
+msgstr "Fuera d'Hondures"
 
 #: honduras.kgm:29
 #, kde-format
@@ -18873,7 +18873,7 @@ msgstr ""
 #, kde-format
 msgctxt "hungary_regions.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: hungary_regions.kgm:9 hungary_regions.kgm:14
 #, kde-format
@@ -18885,7 +18885,7 @@ msgstr ""
 #, kde-format
 msgctxt "hungary_regions.kgm"
 msgid "Not Hungary (Regions)"
-msgstr ""
+msgstr "Fuera d'Hungría (rexones)"
 
 #: hungary_regions.kgm:24
 #, kde-format
@@ -18981,7 +18981,7 @@ msgstr ""
 #, kde-format
 msgctxt "iceland_regions.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: iceland_regions.kgm:9 iceland_regions.kgm:14
 #, kde-format
@@ -20385,7 +20385,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "iraq.kgm"
 msgid "Not Iraq"
-msgstr ""
+msgstr "Fuera d'Iraq"
 
 #: iraq.kgm:24
 #, kde-format
@@ -20517,7 +20517,7 @@ msgstr ""
 #, kde-format
 msgctxt "ireland_provinces.kgm"
 msgid "Not Ireland (Provinces)"
-msgstr ""
+msgstr "Fuera d'Irlanda (provincies)"
 
 #: ireland_provinces.kgm:19
 #, kde-format
@@ -20661,7 +20661,7 @@ msgstr ""
 #, kde-format
 msgctxt "italy.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: italy.kgm:9
 #, kde-format
@@ -22359,7 +22359,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Not Kazakhstan"
-msgstr ""
+msgstr "Fuera de Kazakstán"
 
 #: kazakhstan.kgm:24
 #, kde-format
@@ -22876,7 +22876,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "kyrgyzstan.kgm"
 msgid "Not Kyrgyzstan"
-msgstr ""
+msgstr "Fuera de Kirguistán"
 
 #: kyrgyzstan.kgm:24
 #, kde-format
@@ -23206,7 +23206,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "liechtenstein.kgm"
 msgid "Not Liechtenstein"
-msgstr ""
+msgstr "Fuera de Liechtenstein"
 
 #: liechtenstein.kgm:24
 #, kde-format
@@ -23704,7 +23704,7 @@ msgstr ""
 #, kde-format
 msgctxt "luxembourg_cantons.kgm"
 msgid "Not Luxembourg (Cantons)"
-msgstr ""
+msgstr "Fuera de Luxemburgu"
 
 #: luxembourg_cantons.kgm:19
 #, kde-format
@@ -23831,7 +23831,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "malaysia.kgm"
 msgid "Not Malaysia"
-msgstr ""
+msgstr "Fuera de Malasia"
 
 #: malaysia.kgm:24
 #, kde-format
@@ -24237,7 +24237,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "mexico_states.kgm"
 msgid "Not Mexico (States)"
-msgstr ""
+msgstr "Fuera de Méxicu (estaos)"
 
 #: mexico_states.kgm:24 mexico_states.kgm:25
 #, kde-format
@@ -24573,7 +24573,7 @@ msgstr "Provincies"
 #, kde-format
 msgctxt "mongolia.kgm"
 msgid "Not Mongolia"
-msgstr ""
+msgstr "Fuera de Mongolia"
 
 #: mongolia.kgm:14
 #, kde-format
@@ -25136,7 +25136,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "nepal_zones.kgm"
 msgid "Not Nepal (Zones)"
-msgstr ""
+msgstr "Fuera de Nepal (zones)"
 
 #: nepal_zones.kgm:24
 #, kde-format
@@ -25244,7 +25244,7 @@ msgstr ""
 #, kde-format
 msgctxt "netherlands.kgm"
 msgid "Not The Netherlands"
-msgstr ""
+msgstr "Fuera de Países Baxos"
 
 #: netherlands.kgm:27
 #, kde-format
@@ -25394,7 +25394,7 @@ msgstr ""
 #, kde-format
 msgctxt "new-zealand.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: new-zealand.kgm:9
 #, kde-format
@@ -25406,7 +25406,7 @@ msgstr ""
 #, kde-format
 msgctxt "new-zealand.kgm"
 msgid "Not New-Zealand"
-msgstr ""
+msgstr "Fuera de Nueva Zelanda"
 
 #: new-zealand.kgm:19
 #, kde-format
@@ -25604,7 +25604,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "nicaragua.kgm"
 msgid "Not Nicaragua"
-msgstr ""
+msgstr "Fuera de Nicaragua"
 
 #: nicaragua.kgm:29
 #, kde-format
@@ -25970,7 +25970,7 @@ msgstr ""
 #, kde-format
 msgctxt "norway.kgm"
 msgid "Not Norway"
-msgstr ""
+msgstr "Fuera de Noruega"
 
 #: norway.kgm:27
 #, kde-format
@@ -26126,7 +26126,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Not Oceania"
-msgstr ""
+msgstr "Fuera d'Oceanía"
 
 #: oceania.kgm:24
 #, kde-format
@@ -26138,31 +26138,31 @@ msgstr "Australia"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Canberra"
-msgstr ""
+msgstr "Canberra"
 
 #: oceania.kgm:30
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Norfolk island (Australia)"
-msgstr ""
+msgstr "Islla Norfolk (Australia)"
 
 #: oceania.kgm:31
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Kingston"
-msgstr ""
+msgstr "Kingston"
 
 #: oceania.kgm:36
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "New Zealand"
-msgstr ""
+msgstr "Nueva Zelanda"
 
 #: oceania.kgm:37
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Wellington"
-msgstr ""
+msgstr "Wellington"
 
 #: oceania.kgm:42
 #, kde-format
@@ -26180,31 +26180,31 @@ msgstr ""
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Niue (New Zealand)"
-msgstr ""
+msgstr "Niue (Nueva Zelanda)"
 
 #: oceania.kgm:49
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Alofi"
-msgstr ""
+msgstr "Alofi"
 
 #: oceania.kgm:54
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Tokelau (New Zealand)"
-msgstr ""
+msgstr "Tokeláu (Nueva Zelanda)"
 
 #: oceania.kgm:60
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "East Timor"
-msgstr ""
+msgstr "Timor Oriental"
 
 #: oceania.kgm:61
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Dili"
-msgstr ""
+msgstr "Dili"
 
 #: oceania.kgm:66
 #, kde-format
@@ -26222,205 +26222,205 @@ msgstr ""
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Fiji"
-msgstr ""
+msgstr "Islles Fixi"
 
 #: oceania.kgm:73
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Suva"
-msgstr ""
+msgstr "Suva"
 
 #: oceania.kgm:78
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Indonesia"
-msgstr ""
+msgstr "Indonesia"
 
 #: oceania.kgm:79
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Jakarta"
-msgstr ""
+msgstr "Xakarta"
 
 #: oceania.kgm:84
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Papua New Guinea"
-msgstr ""
+msgstr "Papúa Nueva Guinea"
 
 #: oceania.kgm:85
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Port Moresby"
-msgstr ""
+msgstr "Puertu Moresbi"
 
 #: oceania.kgm:90
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Solomon Islands"
-msgstr ""
+msgstr "Islles Salomón"
 
 #: oceania.kgm:91
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Honiara"
-msgstr ""
+msgstr "Ḥoniara"
 
 #: oceania.kgm:96
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Vanuatu"
-msgstr ""
+msgstr "Vanuatu"
 
 #: oceania.kgm:97
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Port Vila"
-msgstr ""
+msgstr "Puertu Villa"
 
 #: oceania.kgm:102
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Federated States of Micronesia"
-msgstr ""
+msgstr "Micronesia"
 
 #: oceania.kgm:103
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Palikir"
-msgstr ""
+msgstr "Palikir"
 
 #: oceania.kgm:108
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Kiribati"
-msgstr ""
+msgstr "Kiribati"
 
 #: oceania.kgm:109
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "South Tarawa"
-msgstr ""
+msgstr "Tarawa"
 
 #: oceania.kgm:114
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Marshall Islands"
-msgstr ""
+msgstr "Islles Márxal"
 
 #: oceania.kgm:115
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Majuro"
-msgstr ""
+msgstr "Mayuru"
 
 #: oceania.kgm:120
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Nauru"
-msgstr ""
+msgstr "Nauru"
 
 #: oceania.kgm:121
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Yaren"
-msgstr ""
+msgstr "Yaren"
 
 #: oceania.kgm:126
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Palau"
-msgstr ""
+msgstr "Paláu"
 
 #: oceania.kgm:127
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Melekeok"
-msgstr ""
+msgstr "Melekeok"
 
 #: oceania.kgm:132
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "New Caledonia (France)"
-msgstr ""
+msgstr "Nueva Caledonia"
 
 #: oceania.kgm:133
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Noumea"
-msgstr ""
+msgstr "Numea"
 
 #: oceania.kgm:138
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "French Polynesia (France)"
-msgstr ""
+msgstr "Polinesia Francesa (Francia)"
 
 #: oceania.kgm:139
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Papeete"
-msgstr ""
+msgstr "Papeete"
 
 #: oceania.kgm:144
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Wallis and Futuna (France)"
-msgstr ""
+msgstr "Wallis y Futuna (Francia)"
 
 #: oceania.kgm:145
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Mata Utu"
-msgstr ""
+msgstr "Mata-Utu"
 
 #: oceania.kgm:150
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Samoa"
-msgstr ""
+msgstr "Samoa"
 
 #: oceania.kgm:151
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Apia"
-msgstr ""
+msgstr "Apia"
 
 #: oceania.kgm:156
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Tonga"
-msgstr ""
+msgstr "Tonga"
 
 #: oceania.kgm:157
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Nuku'alofa"
-msgstr ""
+msgstr "Nuku'alofa"
 
 #: oceania.kgm:162
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Tuvalu"
-msgstr ""
+msgstr "Tuvalu"
 
 #: oceania.kgm:163
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Funafuti"
-msgstr ""
+msgstr "Funafuti"
 
 #: oceania.kgm:168
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Pitcairn islands (United Kingdom)"
-msgstr ""
+msgstr "Islles Pitcairn (Reinu Xuníu)"
 
 #: oceania.kgm:169
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Adamstown"
-msgstr ""
+msgstr "Adamstown"
 
 #: oceania.kgm:174
 #, kde-format
@@ -26438,37 +26438,37 @@ msgstr ""
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "American Samoa (USA)"
-msgstr ""
+msgstr "Samoa Americana (EE.XX.)"
 
 #: oceania.kgm:181
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Pago Pago"
-msgstr ""
+msgstr "Pagu Pagu"
 
 #: oceania.kgm:186
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Guam (USA)"
-msgstr ""
+msgstr "Guam (EE.XX.)"
 
 #: oceania.kgm:187
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Hagåtña"
-msgstr ""
+msgstr "Agaña"
 
 #: oceania.kgm:192
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Northern Mariana islands (USA)"
-msgstr ""
+msgstr "Islles Marianes del Norte (EE.XX.)"
 
 #: oceania.kgm:193
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Saipan"
-msgstr ""
+msgstr "Saipán"
 
 #: oceania.kgm:198
 #, kde-format
@@ -26480,13 +26480,13 @@ msgstr ""
 #, kde-format
 msgctxt "oman.kgm"
 msgid "Oman"
-msgstr ""
+msgstr "Omán"
 
 #: oman.kgm:6
 #, kde-format
 msgctxt "oman.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: oman.kgm:9
 #, kde-format
@@ -26504,7 +26504,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "oman.kgm"
 msgid "Not Oman"
-msgstr ""
+msgstr "Fuera d'Omán"
 
 #: oman.kgm:24
 #, kde-format
@@ -26540,7 +26540,7 @@ msgstr ""
 #, kde-format
 msgctxt "oman.kgm"
 msgid "Muscat"
-msgstr ""
+msgstr "Mascate"
 
 #: oman.kgm:54
 #, kde-format
@@ -26564,7 +26564,7 @@ msgstr ""
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Pakistan"
-msgstr ""
+msgstr "Paquistán"
 
 #: pakistan.kgm:6
 #, kde-format
@@ -26588,7 +26588,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Not Pakistan"
-msgstr ""
+msgstr "Fuera de Paquistán"
 
 #: pakistan.kgm:24
 #, kde-format
@@ -26648,7 +26648,7 @@ msgstr ""
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Islamabad"
-msgstr ""
+msgstr "Islamabad"
 
 #: pakistan.kgm:49
 #, kde-format
@@ -26690,13 +26690,13 @@ msgstr ""
 #, kde-format
 msgctxt "panama.kgm"
 msgid "Panama"
-msgstr ""
+msgstr "Panamá"
 
 #: panama.kgm:6
 #, kde-format
 msgctxt "panama.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: panama.kgm:9 panama.kgm:14
 #, kde-format
@@ -26714,7 +26714,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "panama.kgm"
 msgid "Not Panama"
-msgstr ""
+msgstr "Fuera de Panamá"
 
 #: panama.kgm:29 panama.kgm:30
 #, kde-format
@@ -26864,7 +26864,7 @@ msgstr ""
 #, kde-format
 msgctxt "paraguay.kgm"
 msgid "Not Paraguay"
-msgstr ""
+msgstr "Fuera de Paraguái"
 
 #: paraguay.kgm:24
 #, kde-format
@@ -26912,7 +26912,7 @@ msgstr ""
 #, kde-format
 msgctxt "paraguay.kgm"
 msgid "Asunción"
-msgstr ""
+msgstr "Asunción"
 
 #: paraguay.kgm:44
 #, kde-format
@@ -27026,7 +27026,7 @@ msgstr ""
 #, kde-format
 msgctxt "paraguay.kgm"
 msgid "Ñeembucú"
-msgstr "Ñeembucú"
+msgstr ""
 
 #: paraguay.kgm:95
 #, kde-format
@@ -27068,7 +27068,7 @@ msgstr ""
 #, kde-format
 msgctxt "peru.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: peru.kgm:9
 #, kde-format
@@ -27356,7 +27356,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Not Philippines"
-msgstr ""
+msgstr "Fuera de Filipines"
 
 #: philippines.kgm:24
 #, kde-format
@@ -28874,13 +28874,13 @@ msgstr ""
 #, kde-format
 msgctxt "portugal_regions.kgm"
 msgid "Portugal (Regions)"
-msgstr ""
+msgstr "Portugal (rexones)"
 
 #: portugal_regions.kgm:6
 #, kde-format
 msgctxt "portugal_regions.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: portugal_regions.kgm:9
 #, kde-format
@@ -28892,7 +28892,7 @@ msgstr ""
 #, kde-format
 msgctxt "portugal_regions.kgm"
 msgid "Not Portugal (Regions)"
-msgstr ""
+msgstr "Fuera de Portugal (Rexones)"
 
 #: portugal_regions.kgm:19
 #, kde-format
@@ -29510,7 +29510,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "republic_of_ireland.kgm"
 msgid "Not Republic Of Ireland"
-msgstr ""
+msgstr "Fuera d'Irlanda"
 
 #: republic_of_ireland.kgm:24 republic_of_ireland.kgm:25
 #, kde-format
@@ -30218,7 +30218,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "russia_districts.kgm"
 msgid "Not Russia (Districts)"
-msgstr ""
+msgstr "Fuera de Rusia (Distritos)"
 
 #: russia_districts.kgm:24
 #, kde-format
@@ -31328,7 +31328,7 @@ msgstr ""
 #, kde-format
 msgctxt "san-marino.kgm"
 msgid "Not San-Marino"
-msgstr ""
+msgstr "Fuera de San Marín"
 
 #: san-marino.kgm:19
 #, kde-format
@@ -31574,7 +31574,7 @@ msgstr ""
 #, kde-format
 msgctxt "slovakia.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: slovakia.kgm:9 slovakia.kgm:14
 #, kde-format
@@ -31646,7 +31646,7 @@ msgstr ""
 #, kde-format
 msgctxt "slovenia_traditional.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: slovenia_traditional.kgm:9
 #, kde-format
@@ -31784,7 +31784,7 @@ msgstr ""
 #, kde-format
 msgctxt "south_africa.kgm"
 msgid "Not South Africa"
-msgstr ""
+msgstr "Fuera de Sudáfrica"
 
 #: south_africa.kgm:19
 #, kde-format
@@ -32102,7 +32102,7 @@ msgstr ""
 #, kde-format
 msgctxt "southkorea.kgm"
 msgid "Regions"
-msgstr ""
+msgstr "Rexones"
 
 #: southkorea.kgm:9
 #, kde-format
@@ -32930,7 +32930,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "sri-lanka.kgm"
 msgid "Not Sri-Lanka"
-msgstr ""
+msgstr "Fuera de Sri Lanka"
 
 #: sri-lanka.kgm:24
 #, kde-format
@@ -33254,7 +33254,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Not Surinam"
-msgstr ""
+msgstr "Fuera de Surinam"
 
 #: suriname.kgm:29
 #, kde-format
@@ -33392,7 +33392,7 @@ msgstr ""
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Not Sweden"
-msgstr ""
+msgstr "Fuera de Suecia"
 
 #: sweden.kgm:45
 #, kde-format
@@ -33668,7 +33668,7 @@ msgstr ""
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Not Switzerland"
-msgstr ""
+msgstr "Fuera de Suiza"
 
 #: switzerland.kgm:19
 #, kde-format
@@ -33962,7 +33962,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "tajikistan.kgm"
 msgid "Not Tajikistan"
-msgstr ""
+msgstr "Fuera de Taxiquistán"
 
 #: tajikistan.kgm:24
 #, kde-format
@@ -34304,7 +34304,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Not Thailand"
-msgstr ""
+msgstr "Fuera de Tailandia"
 
 #: thailand.kgm:24
 #, kde-format
@@ -35402,7 +35402,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "turkmenistan.kgm"
 msgid "Not Turkmenistan"
-msgstr ""
+msgstr "Fuera de Turkmenistán"
 
 #: turkmenistan.kgm:24
 #, kde-format
@@ -36704,7 +36704,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "uzbekistan.kgm"
 msgid "Not Uzbekistan"
-msgstr ""
+msgstr "Fuera d'Uzbequistán"
 
 #: uzbekistan.kgm:24 uzbekistan.kgm:25
 #, kde-format
@@ -41810,7 +41810,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "yemen.kgm"
 msgid "Not Yemen"
-msgstr ""
+msgstr "Fuera de Yeme"
 
 #: yemen.kgm:24
 #, kde-format
@@ -41978,7 +41978,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "zaire2006.kgm"
 msgid "Not Democratic Republic of the Congo"
-msgstr ""
+msgstr "Fuera de República Democrática d'El Congu"
 
 #: zaire2006.kgm:24 zaire2006.kgm:25
 #, kde-format
@@ -42314,7 +42314,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Not Zambia (Districts)"
-msgstr ""
+msgstr "Fuera de Zambia (distritos)"
 
 #: zambia_districts.kgm:24
 #, kde-format
@@ -42776,7 +42776,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Not Zambia (Provinces)"
-msgstr ""
+msgstr "Fuera de Zambia (provincies)"
 
 #: zambia_provinces.kgm:24
 #, kde-format
@@ -42902,7 +42902,7 @@ msgstr ""
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Not Zimbabwe"
-msgstr ""
+msgstr "Fuera de Zimbabue"
 
 #: zimbabwe.kgm:24
 #, kde-format
@@ -43034,7 +43034,7 @@ msgstr "Agua"
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Not Zimbabwe (Districts)"
-msgstr ""
+msgstr "Fuera de Zimbabue (distritos)"
 
 #: zimbabwe_districts.kgm:24
 #, kde-format

@@ -643,7 +643,7 @@ guide the parent/teacher on how to help the child using it.
 >de no establir</userinput
 > el color per a qualsevol «<literal
 >Frontier</literal
->» 0,0,0 en RGB. Si us plau, que sigui alguna cosa com 1,1,1 de manera que una vora situï qualsevol divisió en el mapa. </para>
+>» 0,0,0 en RGB. Si us plau, que sigui alguna cosa com 1,1,1 de manera que un contorn de frontera situï qualsevol divisió en el mapa. </para>
 </tip>
  <important>
    <para
