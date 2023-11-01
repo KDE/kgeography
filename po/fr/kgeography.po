@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-11 00:43+0000\n"
-"PO-Revision-Date: 2023-10-24 20:50+0200\n"
+"PO-Revision-Date: 2023-10-30 22:17+0100\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard@neuf.fr>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.08.1\n"
+"X-Generator: Lokalize 23.08.2\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -112,13 +112,13 @@ msgstr "Badakhchan"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Fayzabad"
-msgstr "Faïzâbâd"
+msgstr "Faïzabad"
 
 #: afghanistan.kgm:59
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Badghis"
-msgstr "Bâdghîs"
+msgstr "Badghis"
 
 #: afghanistan.kgm:60
 #, kde-format
@@ -130,7 +130,7 @@ msgstr "Qala-i Nao"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Baghlan"
-msgstr "Baghlân"
+msgstr "Baghlan"
 
 #: afghanistan.kgm:65
 #, kde-format
@@ -148,13 +148,13 @@ msgstr "Balkh"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Mazari Sharif"
-msgstr "Mazâr-e Charîf"
+msgstr "Mazar-e Charif"
 
 #: afghanistan.kgm:74 afghanistan.kgm:75
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Bamiyan"
-msgstr "Bâmiyân"
+msgstr "Bamiyan"
 
 #: afghanistan.kgm:79
 #, kde-format
@@ -172,25 +172,25 @@ msgstr "Nili"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Jowzjan"
-msgstr "Djôzdjân"
+msgstr "Djôzdjan"
 
 #: afghanistan.kgm:85
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Sheberghan"
-msgstr "Chéberghân"
+msgstr "Chéberghan"
 
 #: afghanistan.kgm:89 afghanistan.kgm:90
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Farah"
-msgstr "Farâh"
+msgstr "Farah"
 
 #: afghanistan.kgm:94
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Faryab"
-msgstr "Fâryâb"
+msgstr "Faryab"
 
 #: afghanistan.kgm:95
 #, kde-format
@@ -214,7 +214,7 @@ msgstr "Ghôr"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Chaghcharan"
-msgstr "Tchaghtcharân"
+msgstr "Tchaghtcharan"
 
 #: afghanistan.kgm:109
 #, kde-format
@@ -226,13 +226,13 @@ msgstr "Helmand"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Lashkar Gah"
-msgstr "Lachkargâh"
+msgstr "Lachkargah"
 
 #: afghanistan.kgm:114 afghanistan.kgm:115
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Herat"
-msgstr "Hérât"
+msgstr "Hérat"
 
 #: afghanistan.kgm:119 afghanistan.kgm:120
 #, kde-format
@@ -244,19 +244,19 @@ msgstr "Kaboul"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Kandahar"
-msgstr "Kandahâr"
+msgstr "Kandahar"
 
 #: afghanistan.kgm:129
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Kapisa"
-msgstr "Kâpîssâ"
+msgstr "Kapissa"
 
 #: afghanistan.kgm:130
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Mahmud-i-Raqi"
-msgstr "Mahmoud-é-Râqi"
+msgstr "Mahmoud-é-Raqi"
 
 #: afghanistan.kgm:134 afghanistan.kgm:135
 #, kde-format
@@ -274,7 +274,7 @@ msgstr "Kounar"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Asadabad"
-msgstr "Assadâbâd"
+msgstr "Assadabad"
 
 #: afghanistan.kgm:144 afghanistan.kgm:145
 #, kde-format
@@ -286,7 +286,7 @@ msgstr "Kondôz"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Laghman"
-msgstr "Laghmân"
+msgstr "Laghman"
 
 #: afghanistan.kgm:150
 #, kde-format
@@ -310,7 +310,7 @@ msgstr "Pol-é Alam"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Nangarhar"
-msgstr "Nangarhâr"
+msgstr "Nangarhar"
 
 #: afghanistan.kgm:160
 #, kde-format
@@ -334,7 +334,7 @@ msgstr "Zarandj"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Nuristan"
-msgstr "Nouristân"
+msgstr "Nouristan"
 
 #: afghanistan.kgm:170
 #, kde-format
@@ -346,7 +346,7 @@ msgstr "Parun"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Orūzgān"
-msgstr "Orozgân"
+msgstr "Orozgan"
 
 #: afghanistan.kgm:175
 #, kde-format
@@ -358,7 +358,7 @@ msgstr "Tarin Kôt"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Paktia"
-msgstr "Paktiyâ"
+msgstr "Paktiya"
 
 #: afghanistan.kgm:180
 #, kde-format
@@ -370,7 +370,7 @@ msgstr "Gardêz"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Paktika"
-msgstr "Paktîkâ"
+msgstr "Paktika"
 
 #: afghanistan.kgm:185
 #, kde-format
@@ -394,19 +394,19 @@ msgstr "Bazarak"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Parwan"
-msgstr "Parwân"
+msgstr "Parwan"
 
 #: afghanistan.kgm:195
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Charikar"
-msgstr "Tchârikâr"
+msgstr "Tcharikar"
 
 #: afghanistan.kgm:199 afghanistan.kgm:200
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Samangan"
-msgstr "Samangân"
+msgstr "Samangan"
 
 #: afghanistan.kgm:204 afghanistan.kgm:205
 #, kde-format
@@ -418,13 +418,13 @@ msgstr "Sar-é Pol"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Takhar"
-msgstr "Takhâr"
+msgstr "Takhar"
 
 #: afghanistan.kgm:210
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Taloqan"
-msgstr "Tâloqân"
+msgstr "Taloqan"
 
 #: afghanistan.kgm:214
 #, kde-format
@@ -436,19 +436,19 @@ msgstr "Wardak"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Meydan Shahr"
-msgstr "Meydân Chahr"
+msgstr "Meydan Chahr"
 
 #: afghanistan.kgm:219
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Zabul"
-msgstr "Zâbol"
+msgstr "Zabol"
 
 #: afghanistan.kgm:220
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Qalat"
-msgstr "Qalât"
+msgstr "Qalat"
 
 #: africa.kgm:5
 #, kde-format
@@ -1114,7 +1114,7 @@ msgstr "Sahara occidental"
 #, kde-format
 msgctxt "africa.kgm"
 msgid "El Aaiún"
-msgstr "Laâyoune"
+msgstr "Laayoune"
 
 #: africa.kgm:347
 #, kde-format
@@ -1144,7 +1144,7 @@ msgstr "Harare"
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Canary Islands (Spain)"
-msgstr "îles Canaries (Espagne)"
+msgstr "Îles Canaries (Espagne)"
 
 #: africa.kgm:360
 #, kde-format
@@ -1180,7 +1180,7 @@ msgstr "Saint-Denis"
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Saint Helena (UK)"
-msgstr "île Sainte-Hélène (Royaume-Uni)"
+msgstr "Île Sainte-Hélène (Royaume-Uni)"
 
 #: africa.kgm:378
 #, kde-format
@@ -1756,7 +1756,7 @@ msgstr "Mascara"
 #, kde-format
 msgctxt "algeria.kgm"
 msgid "Naâma"
-msgstr "Naâma"
+msgstr "Naama"
 
 #: algeria.kgm:179
 #, kde-format
@@ -1876,7 +1876,7 @@ msgstr "districts"
 #, kde-format
 msgctxt "andhrapradesh.kgm"
 msgid "Not Andhra Pradesh"
-msgstr "Pas l'Andhra Pradesh"
+msgstr "Pas Andhra Pradesh"
 
 #: andhrapradesh.kgm:14
 #, kde-format
@@ -1930,7 +1930,7 @@ msgstr "Rangareddy"
 #, kde-format
 msgctxt "andhrapradesh.kgm"
 msgid "Hyderabad"
-msgstr "Hyderâbâd"
+msgstr "Hyderabad"
 
 #: andhrapradesh.kgm:54 andhrapradesh.kgm:55
 #, kde-format
@@ -2789,7 +2789,7 @@ msgstr "districts"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Not Arunachal Pradesh"
-msgstr "Pas l'Arunachal Pradesh"
+msgstr "Pas Arunachal Pradesh"
 
 #: arunachalpradesh.kgm:14
 #, kde-format
@@ -3431,7 +3431,7 @@ msgstr "Bangladesh"
 #, kde-format
 msgctxt "asia.kgm"
 msgid "Dhaka"
-msgstr "Dhâkâ"
+msgstr "Dhaka"
 
 #: asia.kgm:396
 #, kde-format
@@ -3551,7 +3551,7 @@ msgstr "Pakistan"
 #, kde-format
 msgctxt "asia.kgm"
 msgid "Islamabad"
-msgstr "Islâmâbâd"
+msgstr "Islamabad"
 
 #: asia.kgm:496
 #, kde-format
@@ -3748,7 +3748,7 @@ msgstr "districts"
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Not Assam"
-msgstr "Pas l'Assam"
+msgstr "Pas Assam"
 
 #: assam.kgm:14
 #, kde-format
@@ -4210,43 +4210,43 @@ msgstr "Pas l'Azerbaïdjan"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Absheron"
-msgstr "Abşeron"
+msgstr "Abseron"
 
 #: azerbaijan.kgm:29
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Agjabadi"
-msgstr "Ağcabədi"
+msgstr "Agcabedi"
 
 #: azerbaijan.kgm:34
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Agdam"
-msgstr "Ağdam"
+msgstr "Agdam"
 
 #: azerbaijan.kgm:39
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Agdash"
-msgstr "Ağdaş"
+msgstr "Agdas"
 
 #: azerbaijan.kgm:44
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Agstafa"
-msgstr "Ağstafa"
+msgstr "Agstafa"
 
 #: azerbaijan.kgm:49
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Agsu"
-msgstr "Ağsu"
+msgstr "Agsu"
 
 #: azerbaijan.kgm:54
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shirvan city"
-msgstr "Şirvan"
+msgstr "Sirvan"
 
 #: azerbaijan.kgm:59
 #, kde-format
@@ -4264,49 +4264,49 @@ msgstr "Bakou"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Balakan"
-msgstr "Balakən"
+msgstr "Balaken"
 
 #: azerbaijan.kgm:74
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Barda"
-msgstr "Bərdə"
+msgstr "Berde"
 
 #: azerbaijan.kgm:79
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Beylagan"
-msgstr "Beyləqan"
+msgstr "Beyleqan"
 
 #: azerbaijan.kgm:84
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Bilasuvar"
-msgstr "Biləsuvar"
+msgstr "Bilesuvar"
 
 #: azerbaijan.kgm:89
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Jabrayil"
-msgstr "Cəbrayıl"
+msgstr "Cebrayıl"
 
 #: azerbaijan.kgm:94
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Jalilabad"
-msgstr "Cəlilabad"
+msgstr "Celilabad"
 
 #: azerbaijan.kgm:99
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Dashkasan"
-msgstr "Daşkəsən"
+msgstr "Daskesen"
 
 #: azerbaijan.kgm:104
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shabran"
-msgstr "Şabran"
+msgstr "Sabran"
 
 #: azerbaijan.kgm:109
 #, kde-format
@@ -4318,7 +4318,7 @@ msgstr "Füzuli"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Gadabay"
-msgstr "Gədəbəy"
+msgstr "Gedebey"
 
 #: azerbaijan.kgm:119
 #, kde-format
@@ -4348,7 +4348,7 @@ msgstr "Hacıqabul"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Imishli"
-msgstr "İmişli"
+msgstr "Imisli"
 
 #: azerbaijan.kgm:144
 #, kde-format
@@ -4360,13 +4360,13 @@ msgstr "Ismailli"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Kalbajar"
-msgstr "Kəlbəcər"
+msgstr "Kelbecer"
 
 #: azerbaijan.kgm:154
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Kurdamir"
-msgstr "Kürdəmir"
+msgstr "Kürdemir"
 
 #: azerbaijan.kgm:159
 #, kde-format
@@ -4378,13 +4378,13 @@ msgstr "Laçın"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Lankaran"
-msgstr "Lənkəran"
+msgstr "Lenkeran"
 
 #: azerbaijan.kgm:169
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Lankaran city"
-msgstr "Lənkəran"
+msgstr "Lenkeran"
 
 #: azerbaijan.kgm:174
 #, kde-format
@@ -4420,13 +4420,13 @@ msgstr "Neftçala"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Oghuz"
-msgstr "Oğuz"
+msgstr "Oguz"
 
 #: azerbaijan.kgm:204
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Qabala"
-msgstr "Qəbələ"
+msgstr "Qebele"
 
 #: azerbaijan.kgm:209
 #, kde-format
@@ -4480,13 +4480,13 @@ msgstr "Sabirabad"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shaki"
-msgstr "Şəki"
+msgstr "Seki"
 
 #: azerbaijan.kgm:254
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shaki city"
-msgstr "Şəki"
+msgstr "Seki"
 
 #: azerbaijan.kgm:259
 #, kde-format
@@ -4498,13 +4498,13 @@ msgstr "Salyan"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shamakhi"
-msgstr "Şamaxı"
+msgstr "Samaxı"
 
 #: azerbaijan.kgm:269
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shamkir"
-msgstr "Şəmkir"
+msgstr "Semkir"
 
 #: azerbaijan.kgm:274
 #, kde-format
@@ -4516,7 +4516,7 @@ msgstr "Samux"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Siazan"
-msgstr "Siyəzən"
+msgstr "Siyezen"
 
 #: azerbaijan.kgm:284
 #, kde-format
@@ -4528,19 +4528,19 @@ msgstr "Sumqayit"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shusha"
-msgstr "Şuşa"
+msgstr "Susa"
 
 #: azerbaijan.kgm:294
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shusha city"
-msgstr "Şuşa"
+msgstr "Susa"
 
 #: azerbaijan.kgm:299
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Tartar"
-msgstr "Tərtər"
+msgstr "Terter"
 
 #: azerbaijan.kgm:304
 #, kde-format
@@ -4564,7 +4564,7 @@ msgstr "Xaçmaz"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Khankendi city"
-msgstr "Xankəndi"
+msgstr "Xankendi"
 
 #: azerbaijan.kgm:324
 #, kde-format
@@ -4588,7 +4588,7 @@ msgstr "Xocalı"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Khojavend"
-msgstr "Xocavənd"
+msgstr "Xocavend"
 
 #: azerbaijan.kgm:344
 #, kde-format
@@ -4612,7 +4612,7 @@ msgstr "Ievlakh"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Zangilan"
-msgstr "Zəngilan"
+msgstr "Zengilan"
 
 #: azerbaijan.kgm:364
 #, kde-format
@@ -4624,13 +4624,13 @@ msgstr "Zaqatala"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Zardab"
-msgstr "Zərdab"
+msgstr "Zerdab"
 
 #: azerbaijan.kgm:374
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Babek"
-msgstr "Babək"
+msgstr "Babek"
 
 #: azerbaijan.kgm:379
 #, kde-format
@@ -4642,7 +4642,7 @@ msgstr "Culfa"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Kangarli"
-msgstr "Kəngərli"
+msgstr "Kengerli"
 
 #: azerbaijan.kgm:389
 #, kde-format
@@ -4660,19 +4660,19 @@ msgstr "Ordubad"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Sadarak"
-msgstr "Sədərək"
+msgstr "Sederek"
 
 #: azerbaijan.kgm:404
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Shakhbuz"
-msgstr "Şahbuz"
+msgstr "Sahbuz"
 
 #: azerbaijan.kgm:409
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Sharur"
-msgstr "Şərur"
+msgstr "Serur"
 
 #: bangladesh.kgm:5
 #, kde-format
@@ -4708,7 +4708,7 @@ msgstr "Pas le Bangladesh"
 #, kde-format
 msgctxt "bangladesh.kgm"
 msgid "Barisa"
-msgstr "Barisâl"
+msgstr "Barisal"
 
 #: bangladesh.kgm:29
 #, kde-format
@@ -4720,19 +4720,19 @@ msgstr "Chittagong"
 #, kde-format
 msgctxt "bangladesh.kgm"
 msgid "Dhaka"
-msgstr "Dhâkâ"
+msgstr "Dhaka"
 
 #: bangladesh.kgm:39
 #, kde-format
 msgctxt "bangladesh.kgm"
 msgid "Khulna"
-msgstr "Khulnâ"
+msgstr "Khulna"
 
 #: bangladesh.kgm:44
 #, kde-format
 msgctxt "bangladesh.kgm"
 msgid "Rajshahi"
-msgstr "Râjshâhî"
+msgstr "Rajshahi"
 
 #: bangladesh.kgm:49
 #, kde-format
@@ -5692,7 +5692,7 @@ msgstr "Pas la Bosnie-Herzégovine"
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Brčko"
-msgstr "district de Brčko"
+msgstr "district de Brcko"
 
 #: bosnia-herzegovina.kgm:29
 #, kde-format
@@ -5788,7 +5788,7 @@ msgstr "Sarajevo-Romanija ou Sokolac"
 #, kde-format
 msgctxt "bosnia-herzegovina.kgm"
 msgid "Foča"
-msgstr "Foča"
+msgstr "Foca"
 
 #: bosnia-herzegovina.kgm:109
 #, kde-format
@@ -6075,7 +6075,7 @@ msgstr "Goiás"
 #, kde-format
 msgctxt "brazil.kgm"
 msgid "Goiânia"
-msgstr "Goiânia"
+msgstr "Goiania"
 
 #: brazil.kgm:120
 #, kde-format
@@ -7605,7 +7605,7 @@ msgstr "Akonolinga"
 #, kde-format
 msgctxt "cameroon_departments.kgm"
 msgid "Nyong-et-So'o"
-msgstr "Nyong-et-So'o"
+msgstr "Nyong et So'o"
 
 #: cameroon_departments.kgm:95
 #, kde-format
@@ -8307,7 +8307,7 @@ msgstr "Frontière"
 #, kde-format
 msgctxt "canada.kgm"
 msgid "Prince Edward Island"
-msgstr "île-du-Prince-Édouard"
+msgstr "Île du Prince Édouard"
 
 #: canada.kgm:28
 #, kde-format
@@ -8518,7 +8518,7 @@ msgstr "Nassau"
 #, kde-format
 msgctxt "caribbean.kgm"
 msgid "Turks and Caicos Islands (UK)"
-msgstr "îles Turques-et-Caïques (R-U)"
+msgstr "Îles Turques et Caïques (RU)"
 
 #: caribbean.kgm:31
 #, kde-format
@@ -8578,7 +8578,7 @@ msgstr "San Juan"
 #, kde-format
 msgctxt "caribbean.kgm"
 msgid "U.S Virgin Islands (USA)"
-msgstr "îles Vierges américaines (É-U)"
+msgstr "Îles Vierges américaines (EU)"
 
 #: caribbean.kgm:61
 #, kde-format
@@ -8590,7 +8590,7 @@ msgstr "Charlotte Amalie"
 #, kde-format
 msgctxt "caribbean.kgm"
 msgid "British Virgin Islands (UK)"
-msgstr "îles Vierges britanniques (R-U)"
+msgstr "Îles Vierges britanniques (RU)"
 
 #: caribbean.kgm:67
 #, kde-format
@@ -8806,7 +8806,7 @@ msgstr "Kingston"
 #, kde-format
 msgctxt "caribbean.kgm"
 msgid "Cayman Islands (UK)"
-msgstr "îles Caïmans (R-U)"
+msgstr "Îles Caïmans (R-U)"
 
 #: caribbean.kgm:175
 #, kde-format
@@ -9394,7 +9394,7 @@ msgstr "Bilaspur"
 #, kde-format
 msgctxt "chhattisgarh.kgm"
 msgid "Raigarh"
-msgstr "Raigârh"
+msgstr "Raigarh"
 
 #: chhattisgarh.kgm:49
 #, kde-format
@@ -9628,7 +9628,7 @@ msgstr "Coyhaique"
 #, kde-format
 msgctxt "chile.kgm"
 msgid "Magallanes y la Antártica Chilena"
-msgstr "Magallanes et de l'Antarctique chilien"
+msgstr "Îles Magallanes et de l'Antarctique chilien"
 
 #: chile.kgm:80
 #, kde-format
@@ -10432,7 +10432,7 @@ msgstr "Villavicencio"
 #, kde-format
 msgctxt "colombia.kgm"
 msgid "Narinyo"
-msgstr "Nariño"
+msgstr "Narino"
 
 #: colombia.kgm:221
 #, kde-format
@@ -10570,7 +10570,7 @@ msgstr "Vichada"
 #, kde-format
 msgctxt "colombia.kgm"
 msgid "Puerto Carrenyo"
-msgstr "Puerto Carreño"
+msgstr "Puerto Carreno"
 
 #: colombia.kgm:339
 #, kde-format
@@ -10708,7 +10708,7 @@ msgstr "Pas Cuba"
 #, kde-format
 msgctxt "cuba.kgm"
 msgid "Isla de la Juventud"
-msgstr "île de la Jeunesse"
+msgstr "Île de la Jeunesse"
 
 #: cuba.kgm:25
 #, kde-format
@@ -10780,7 +10780,7 @@ msgstr "Sancti Spíritus"
 #, kde-format
 msgctxt "cuba.kgm"
 msgid "Ciego de Ávila"
-msgstr "Ciego de Ávila"
+msgstr "Ciego de Avila"
 
 #: cuba.kgm:80 cuba.kgm:81
 #, kde-format
@@ -10936,7 +10936,7 @@ msgstr "Bohême-du-Sud"
 #, kde-format
 msgctxt "czech.kgm"
 msgid "České Budějovice"
-msgstr "České Budějovice"
+msgstr "Ceské Budějovice"
 
 #: czech.kgm:39 czech.kgm:40
 #, kde-format
@@ -11014,7 +11014,7 @@ msgstr "Zlín"
 #, kde-format
 msgctxt "czech.kgm"
 msgid "Vysočina"
-msgstr "Vysočina"
+msgstr "Vysocina"
 
 #: czech.kgm:90
 #, kde-format
@@ -11140,7 +11140,7 @@ msgstr "Jutland-du-Sud"
 #, kde-format
 msgctxt "denmark_counties.kgm"
 msgid "Aabenraa"
-msgstr "Åbenrå"
+msgstr "Abenra"
 
 #: denmark_counties.kgm:69 denmark_counties.kgm:70
 #, kde-format
@@ -11188,7 +11188,7 @@ msgstr "Aalborg"
 #, kde-format
 msgctxt "denmark_counties.kgm"
 msgid "Århus"
-msgstr "Århus"
+msgstr "Arhus"
 
 #: denmark_counties.kgm:99
 #, kde-format
@@ -11316,7 +11316,7 @@ msgstr "San Francisco de Macorís"
 #, kde-format
 msgctxt "dominican_republic.kgm"
 msgid "Elías Piña"
-msgstr "Elías Piña"
+msgstr "Elías Pina"
 
 #: dominican_republic.kgm:55
 #, kde-format
@@ -11418,7 +11418,7 @@ msgstr "Nagua"
 #, kde-format
 msgctxt "dominican_republic.kgm"
 msgid "Monseñor Nouel"
-msgstr "Monseñor Nouel"
+msgstr "Monsenor Nouel"
 
 #: dominican_republic.kgm:100
 #, kde-format
@@ -11652,7 +11652,7 @@ msgstr "Guaranda"
 #, kde-format
 msgctxt "ecuador.kgm"
 msgid "Cañar"
-msgstr "Cañar"
+msgstr "Canar"
 
 #: ecuador.kgm:40
 #, kde-format
@@ -12282,7 +12282,7 @@ msgstr "Zacatecoluca"
 #, kde-format
 msgctxt "el_salvador.kgm"
 msgid "Cabañas"
-msgstr "Cabañas"
+msgstr "Cabanas"
 
 #: el_salvador.kgm:90
 #, kde-format
@@ -13134,7 +13134,7 @@ msgstr "Pas la Finlande (régions)"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Åland"
-msgstr "Åland"
+msgstr "Aland"
 
 #: finland_regions.kgm:25
 #, kde-format
@@ -13770,7 +13770,7 @@ msgstr "Gard"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Nîmes"
-msgstr "Nîmes"
+msgstr "Nimes"
 
 #: france.kgm:315
 #, kde-format
@@ -13842,7 +13842,7 @@ msgstr "Indre"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Châteauroux"
-msgstr "Châteauroux"
+msgstr "Chateauroux"
 
 #: france.kgm:369
 #, kde-format
@@ -14022,7 +14022,7 @@ msgstr "Marne"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Châlons-en-Champagne"
-msgstr "Châlons‑en‑Champagne"
+msgstr "Chalons‑en‑Champagne"
 
 #: france.kgm:504
 #, kde-format
@@ -14262,7 +14262,7 @@ msgstr "Saône-et-Loire"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Mâcon"
-msgstr "Mâcon"
+msgstr "Macon"
 
 #: france.kgm:684
 #, kde-format
@@ -14712,7 +14712,7 @@ msgstr "Lyon"
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Île de France"
-msgstr "île de France"
+msgstr "Île de France"
 
 #: france_regions.kgm:80
 #, kde-format
@@ -16560,7 +16560,7 @@ msgstr "Ioannina"
 #, kde-format
 msgctxt "greece.kgm"
 msgid "Ionian Islands"
-msgstr "îles Ioniennes"
+msgstr "Îles Ioniennes"
 
 #: greece.kgm:142
 #, kde-format
@@ -16722,7 +16722,7 @@ msgstr "Kozani"
 #, kde-format
 msgctxt "greece_peripheries.kgm"
 msgid "Ionian Islands"
-msgstr "îles Ioniennes"
+msgstr "Îles Ioniennes"
 
 #: greece_peripheries.kgm:40
 #, kde-format
@@ -17370,7 +17370,7 @@ msgstr "Lassithi"
 #, kde-format
 msgctxt "greece_prefectures.kgm"
 msgid "Nikolaos"
-msgstr "Áyos Nikólaos"
+msgstr "Ayos Nikólaos"
 
 #: greece_prefectures.kgm:289
 #, kde-format
@@ -17892,7 +17892,7 @@ msgstr "Anna Regina"
 #, kde-format
 msgctxt "guyana.kgm"
 msgid "Essequibo Islands-West Demerara"
-msgstr "îles Essequibo-Demerara occidental"
+msgstr "Îles Essequibo-Demerara occidental"
 
 #: guyana.kgm:40
 #, kde-format
@@ -18042,7 +18042,7 @@ msgstr "Hinche"
 #, kde-format
 msgctxt "haiti.kgm"
 msgid "Grand'Anse"
-msgstr "Grand'Anse"
+msgstr "Grand Anse"
 
 #: haiti.kgm:40
 #, kde-format
@@ -18060,7 +18060,7 @@ msgstr "Nippes"
 #, kde-format
 msgctxt "haiti.kgm"
 msgid "Miragoâne"
-msgstr "Miragoâne"
+msgstr "Miragoane"
 
 #: haiti.kgm:49
 #, kde-format
@@ -18210,7 +18210,7 @@ msgstr "Jind"
 #, kde-format
 msgctxt "haryana.kgm"
 msgid "Panipat"
-msgstr "Pânipat"
+msgstr "Panipat"
 
 #: haryana.kgm:64 haryana.kgm:65
 #, kde-format
@@ -18330,7 +18330,7 @@ msgstr "Frontière"
 #, kde-format
 msgctxt "himachal_pradesh.kgm"
 msgid "Chamba"
-msgstr "Chambâ"
+msgstr "Chamba"
 
 #: himachal_pradesh.kgm:24
 #, kde-format
@@ -19494,7 +19494,7 @@ msgstr "Calcutta"
 #, kde-format
 msgctxt "india.kgm"
 msgid "Andaman and Nicobar Islands"
-msgstr "îles Andaman-et-Nicobar"
+msgstr "Îles Andaman et Nicobar"
 
 #: india.kgm:165
 #, kde-format
@@ -19638,7 +19638,7 @@ msgstr "Pekanbaru"
 #, kde-format
 msgctxt "indonesia.kgm"
 msgid "Riau Islands"
-msgstr "îles Riau"
+msgstr "Îles Riau"
 
 #: indonesia.kgm:45
 #, kde-format
@@ -19674,7 +19674,7 @@ msgstr "Palembang"
 #, kde-format
 msgctxt "indonesia.kgm"
 msgid "Bangka-Belitung"
-msgstr "îles Bangka Belitung"
+msgstr "Îles Bangka Belitung"
 
 #: indonesia.kgm:65
 #, kde-format
@@ -19782,7 +19782,7 @@ msgstr "Denpasar"
 #, kde-format
 msgctxt "indonesia.kgm"
 msgid "West Nusa Tenggara"
-msgstr "petites îles de la Sonde occidentale"
+msgstr "Nusa Tenggara occidental"
 
 #: indonesia.kgm:110
 #, kde-format
@@ -19794,7 +19794,7 @@ msgstr "Mataram"
 #, kde-format
 msgctxt "indonesia.kgm"
 msgid "East Nusa Tenggara"
-msgstr "petites îles de la Sonde orientale"
+msgstr "Nusa Tenggara oriental"
 
 #: indonesia.kgm:115
 #, kde-format
@@ -20298,7 +20298,7 @@ msgstr "mer Caspienne"
 #, kde-format
 msgctxt "iran.kgm"
 msgid "Oroomieh Lake"
-msgstr "lac d'Ourmia"
+msgstr "Lac d'Ourmia"
 
 #: iran.kgm:342
 #, kde-format
@@ -20412,19 +20412,19 @@ msgstr "Bagdad"
 #, kde-format
 msgctxt "iraq.kgm"
 msgid "Salah ad Din"
-msgstr "Salâh ad-Dîn"
+msgstr "Salah ad-Din"
 
 #: iraq.kgm:34
 #, kde-format
 msgctxt "iraq.kgm"
 msgid "Diyala"
-msgstr "Diyâlâ"
+msgstr "Diyala"
 
 #: iraq.kgm:39
 #, kde-format
 msgctxt "iraq.kgm"
 msgid "Wasit"
-msgstr "Wâsit"
+msgstr "Wasit"
 
 #: iraq.kgm:44
 #, kde-format
@@ -20466,7 +20466,7 @@ msgstr "Babel"
 #, kde-format
 msgctxt "iraq.kgm"
 msgid "Karbala"
-msgstr "Karbalâ"
+msgstr "Karbala"
 
 #: iraq.kgm:79
 #, kde-format
@@ -20478,7 +20478,7 @@ msgstr "An-Nadjaf"
 #, kde-format
 msgctxt "iraq.kgm"
 msgid "Al Anbar"
-msgstr "Al-Anbâr"
+msgstr "Al-Anbar"
 
 #: iraq.kgm:89
 #, kde-format
@@ -20502,13 +20502,13 @@ msgstr "Arbil"
 #, kde-format
 msgctxt "iraq.kgm"
 msgid "At Ta'mim (Kirkuk)"
-msgstr "At-Tâ'mîm (Kirkûk)"
+msgstr "At-Ta'mim (Kirkûk)"
 
 #: iraq.kgm:109
 #, kde-format
 msgctxt "iraq.kgm"
 msgid "As Sulaymaniyah"
-msgstr "As-Sulaymâniya"
+msgstr "As-Sulaymaniya"
 
 #: ireland_provinces.kgm:5
 #, kde-format
@@ -21972,7 +21972,7 @@ msgstr "Shiga"
 #, kde-format
 msgctxt "japan.kgm"
 msgid "Otsu"
-msgstr "Ōtsu"
+msgstr "Otsu"
 
 #: japan.kgm:247
 #, kde-format
@@ -22014,7 +22014,7 @@ msgstr "Nara"
 #, kde-format
 msgctxt "japan.kgm"
 msgid "Osaka"
-msgstr "Ōsaka"
+msgstr "Osaka"
 
 #: japan.kgm:297 japan.kgm:298
 #, kde-format
@@ -22068,7 +22068,7 @@ msgstr "Fukuoka"
 #, kde-format
 msgctxt "japan.kgm"
 msgid "Oita"
-msgstr "Ōita"
+msgstr "Oita"
 
 #: japan.kgm:374 japan.kgm:375
 #, kde-format
@@ -23343,13 +23343,13 @@ msgstr "Pas la Lituanie (municipalités)"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Akmenė"
-msgstr "Akmenė"
+msgstr "Akmene"
 
 #: lithuania_municipalities.kgm:25
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Naujoji Akmenė"
-msgstr "Naujoji Akmenė"
+msgstr "Naujoji Akmene"
 
 #: lithuania_municipalities.kgm:29
 #, kde-format
@@ -23367,13 +23367,13 @@ msgstr "Alytus"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Anykščiai"
-msgstr "Anykščiai"
+msgstr "Anyksciai"
 
 #: lithuania_municipalities.kgm:44
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Birštonas"
-msgstr "Birštonas"
+msgstr "Birstonas"
 
 #: lithuania_municipalities.kgm:49
 #, kde-format
@@ -23391,7 +23391,7 @@ msgstr "Druskininkai"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Elektrėnai"
-msgstr "Elektrėnai"
+msgstr "Elektrenai"
 
 #: lithuania_municipalities.kgm:64
 #, kde-format
@@ -23409,7 +23409,7 @@ msgstr "Jonava"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Joniškis"
-msgstr "Joniškis"
+msgstr "Joniskis"
 
 #: lithuania_municipalities.kgm:79
 #, kde-format
@@ -23421,7 +23421,7 @@ msgstr "Jurbarkas"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Kaišiadorys"
-msgstr "Kaišiadorys"
+msgstr "Kaisiadorys"
 
 #: lithuania_municipalities.kgm:89
 #, kde-format
@@ -23451,25 +23451,25 @@ msgstr "Kazlų Rūda"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Kėdainiai"
-msgstr "Kėdainiai"
+msgstr "Kedainiai"
 
 #: lithuania_municipalities.kgm:114
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Kelmė"
-msgstr "Kelmė"
+msgstr "Kelme"
 
 #: lithuania_municipalities.kgm:119
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Klaipėda city"
-msgstr "Klaipėda-ville"
+msgstr "Klaipeda-ville"
 
 #: lithuania_municipalities.kgm:124
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Klaipėda"
-msgstr "Klaipėda"
+msgstr "Klaipeda"
 
 #: lithuania_municipalities.kgm:125
 #, kde-format
@@ -23487,7 +23487,7 @@ msgstr "Kretinga"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Kupiškis"
-msgstr "Kupiškis"
+msgstr "Kupiskis"
 
 #: lithuania_municipalities.kgm:139
 #, kde-format
@@ -23499,7 +23499,7 @@ msgstr "Lazdijai"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Marijampolė"
-msgstr "Marijampolė"
+msgstr "Marijampole"
 
 #: lithuania_municipalities.kgm:149
 #, kde-format
@@ -23511,7 +23511,7 @@ msgstr "Mažeikiai"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Molėtai"
-msgstr "Molėtai"
+msgstr "Moletai"
 
 #: lithuania_municipalities.kgm:159
 #, kde-format
@@ -23529,7 +23529,7 @@ msgstr "Nida"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Pagėgiai"
-msgstr "Pagėgiai"
+msgstr "Pagegiai"
 
 #: lithuania_municipalities.kgm:169
 #, kde-format
@@ -23547,13 +23547,13 @@ msgstr "Palanga-ville"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Panevėžys city"
-msgstr "Panevėžys-ville"
+msgstr "Panevežys-ville"
 
 #: lithuania_municipalities.kgm:184
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Panevėžys"
-msgstr "Panevėžys"
+msgstr "Panevežys"
 
 #: lithuania_municipalities.kgm:189
 #, kde-format
@@ -23565,7 +23565,7 @@ msgstr "Pasvalys"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Plungė"
-msgstr "Plungė"
+msgstr "Plunge"
 
 #: lithuania_municipalities.kgm:199
 #, kde-format
@@ -23577,7 +23577,7 @@ msgstr "Prienai"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Radviliškis"
-msgstr "Radviliškis"
+msgstr "Radviliskis"
 
 #: lithuania_municipalities.kgm:209
 #, kde-format
@@ -23595,7 +23595,7 @@ msgstr "Rietavas"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Rokiškis"
-msgstr "Rokiškis"
+msgstr "Rokiskis"
 
 #: lithuania_municipalities.kgm:224
 #, kde-format
@@ -23607,61 +23607,61 @@ msgstr "Skuodas"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Šakiai"
-msgstr "Šakiai"
+msgstr "Sakiai"
 
 #: lithuania_municipalities.kgm:234
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Šalčininkai"
-msgstr "Šalčininkai"
+msgstr "Salcininkai"
 
 #: lithuania_municipalities.kgm:239
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Šiauliai city"
-msgstr "Šiauliai-ville"
+msgstr "Siauliai-ville"
 
 #: lithuania_municipalities.kgm:244
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Šiauliai"
-msgstr "Šiauliai"
+msgstr "Siauliai"
 
 #: lithuania_municipalities.kgm:249
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Šilalė"
-msgstr "Šilalė"
+msgstr "Silale"
 
 #: lithuania_municipalities.kgm:254
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Šilutė"
-msgstr "Šilutė"
+msgstr "Silute"
 
 #: lithuania_municipalities.kgm:259
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Širvintos"
-msgstr "Širvintos"
+msgstr "Sirvintos"
 
 #: lithuania_municipalities.kgm:264
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Švenčionys"
-msgstr "Švenčionys"
+msgstr "Svencionys"
 
 #: lithuania_municipalities.kgm:269
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Tauragė"
-msgstr "Tauragė"
+msgstr "Taurage"
 
 #: lithuania_municipalities.kgm:274
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Telšiai"
-msgstr "Telšiai"
+msgstr "Telsiai"
 
 #: lithuania_municipalities.kgm:279
 #, kde-format
@@ -23673,7 +23673,7 @@ msgstr "Trakai"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Ukmergė"
-msgstr "Ukmergė"
+msgstr "Ukmerge"
 
 #: lithuania_municipalities.kgm:289
 #, kde-format
@@ -23685,13 +23685,13 @@ msgstr "Utena"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Varėna"
-msgstr "Varėna"
+msgstr "Varena"
 
 #: lithuania_municipalities.kgm:299
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Vilkaviškis"
-msgstr "Vilkaviškis"
+msgstr "Vilkaviskis"
 
 #: lithuania_municipalities.kgm:304
 #, kde-format
@@ -24142,9 +24142,8 @@ msgid ""
 "You have found a bug in a map. Please contact the author and tell the %1 map "
 "has nothing associated to color %2,%3,%4."
 msgstr ""
-"Vous avez trouvé un bogue dans une carte. Veuillez, s'il vous plaît, "
-"contacter l'auteur et lui indiquer que la carte %1 n'a rien d'associé aux "
-"couleurs %2, %3, %4."
+"Vous avez trouvé un bogue dans une carte. Veuillez, contacter l'auteur et "
+"lui indiquer que la carte %1 n'a rien d'associé aux couleurs %2, %3, %4."
 
 #: mapasker.cpp:151
 #, kde-format
@@ -25228,7 +25227,7 @@ msgstr "Koshi"
 #, kde-format
 msgctxt "nepal_zones.kgm"
 msgid "Lumbini"
-msgstr "Lumbinî"
+msgstr "Lumbini"
 
 #: nepal_zones.kgm:64
 #, kde-format
@@ -25906,7 +25905,7 @@ msgstr "Pyongan du Nord"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "P'yŏngan-pukto"
-msgstr "P'yŏngan-pukto"
+msgstr "Pyongan-pukto"
 
 #: north_korea.kgm:59
 #, kde-format
@@ -25918,7 +25917,7 @@ msgstr "Pyongan du Sud"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "P'yŏngan-namdo"
-msgstr "P'yŏngan-namdo"
+msgstr "Pyongan-namdo"
 
 #: north_korea.kgm:64
 #, kde-format
@@ -25966,7 +25965,7 @@ msgstr "région administrative spéciale de Sinŭiju"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "Sinŭiju T'ŭkpyŏl Haengjŏnggu"
-msgstr "Sinŭiju T'ŭkpyŏl Haengjŏnggu"
+msgstr "Sinuiju T'ukpyol Haengjonggu"
 
 #: north_korea.kgm:84
 #, kde-format
@@ -26188,7 +26187,7 @@ msgstr "Canberra"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Norfolk island (Australia)"
-msgstr "île Norfolk (Australie)"
+msgstr "Île Norfolk (Australie)"
 
 #: oceania.kgm:31
 #, kde-format
@@ -26212,7 +26211,7 @@ msgstr "Wellington"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Cook islands (New Zealand)"
-msgstr "îles Cook (Nouvelle-Zélande)"
+msgstr "Îles Cook (Nouvelle-Zélande)"
 
 #: oceania.kgm:43
 #, kde-format
@@ -26254,7 +26253,7 @@ msgstr "Dili"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Easter Island"
-msgstr "île de Pâques"
+msgstr "Île de Pâques"
 
 #: oceania.kgm:67
 #, kde-format
@@ -26266,7 +26265,7 @@ msgstr "Hanga Roa"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Fiji"
-msgstr "îles Fidji"
+msgstr "Îles des Fidji"
 
 #: oceania.kgm:73
 #, kde-format
@@ -26302,7 +26301,7 @@ msgstr "Port Moresby"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Solomon Islands"
-msgstr "îles Salomon"
+msgstr "Îles des Salomon"
 
 #: oceania.kgm:91
 #, kde-format
@@ -26350,7 +26349,7 @@ msgstr "Tarawa-Sud"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Marshall Islands"
-msgstr "îles Marshall"
+msgstr "Îles des Marshall"
 
 #: oceania.kgm:115
 #, kde-format
@@ -26458,7 +26457,7 @@ msgstr "Funafuti"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Pitcairn islands (United Kingdom)"
-msgstr "îles Pitcairn (Royaume-Uni)"
+msgstr "Îles Pitcairn (Royaume-Uni)"
 
 #: oceania.kgm:169
 #, kde-format
@@ -26500,13 +26499,13 @@ msgstr "Guam (É-U)"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Hagåtña"
-msgstr "Hagåtña"
+msgstr "Hagatna"
 
 #: oceania.kgm:192
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Northern Mariana islands (USA)"
-msgstr "îles Mariannes du Nord (É-U)"
+msgstr "Îles Mariannes du Nord (É-U)"
 
 #: oceania.kgm:193
 #, kde-format
@@ -26518,7 +26517,7 @@ msgstr "Saipan"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "United States Minor Outlying Islands"
-msgstr "îles mineures éloignées des États-Unis"
+msgstr "Îles mineures éloignées des États-Unis"
 
 #: oman.kgm:5
 #, kde-format
@@ -26698,7 +26697,7 @@ msgstr "Islamabad"
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Federally Administered Tribal Areas"
-msgstr "régions tribales fédéralement administrées"
+msgstr "Régions tribales administrées de façon fédérale"
 
 #: pakistan.kgm:50
 #, kde-format
@@ -27070,7 +27069,7 @@ msgstr "San Juan Bautista"
 #, kde-format
 msgctxt "paraguay.kgm"
 msgid "Ñeembucú"
-msgstr "Ñeembucú"
+msgstr "Neembucú"
 
 #: paraguay.kgm:95
 #, kde-format
@@ -28462,7 +28461,7 @@ msgstr "Cracovie"
 #, kde-format
 msgctxt "poland.kgm"
 msgid "Łódź"
-msgstr "Łódź"
+msgstr "Lodz"
 
 #: poland.kgm:99
 #, kde-format
@@ -29092,7 +29091,7 @@ msgstr "Aibonito"
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Añasco"
-msgstr "Añasco"
+msgstr "Anasco"
 
 #: puertorico.kgm:107
 #, kde-format
@@ -29158,7 +29157,7 @@ msgstr "Carolina"
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Cataño"
-msgstr "Cataño"
+msgstr "Catano"
 
 #: puertorico.kgm:217
 #, kde-format
@@ -29398,7 +29397,7 @@ msgstr "Patillas"
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Peñuelas"
-msgstr "Peñuelas"
+msgstr "Penuelas"
 
 #: puertorico.kgm:617
 #, kde-format
@@ -29848,19 +29847,19 @@ msgstr "Arad"
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Argeş"
-msgstr "Argeş"
+msgstr "Arges"
 
 #: romania.kgm:35
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Piteşti"
-msgstr "Piteşti"
+msgstr "Pitesti"
 
 #: romania.kgm:39 romania.kgm:40
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Bacău"
-msgstr "Bacău"
+msgstr "Bacau"
 
 #: romania.kgm:44
 #, kde-format
@@ -29878,7 +29877,7 @@ msgstr "Oradea"
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Bistriţa-Năsăud"
-msgstr "Bistriţa-Năsăud"
+msgstr "Bistriţa-Nasaud"
 
 #: romania.kgm:50
 #, kde-format
@@ -29890,43 +29889,43 @@ msgstr "Bistriţa"
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Botoşani"
-msgstr "Botoşani"
+msgstr "Botosani"
 
 #: romania.kgm:59 romania.kgm:60
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Braşov"
-msgstr "Braşov"
+msgstr "Brasov"
 
 #: romania.kgm:64 romania.kgm:65
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Brăila"
-msgstr "Brăila"
+msgstr "Braila"
 
 #: romania.kgm:69 romania.kgm:70
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Buzău"
-msgstr "Buzău"
+msgstr "Buzau"
 
 #: romania.kgm:74
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Caraş-Severin"
-msgstr "Caraş-Severin"
+msgstr "Caras-Severin"
 
 #: romania.kgm:75
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Reşiţa"
-msgstr "Reşiţa"
+msgstr "Resiţa"
 
 #: romania.kgm:79 romania.kgm:80
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Călăraşi"
-msgstr "Călăraşi"
+msgstr "Calarasi"
 
 #: romania.kgm:84
 #, kde-format
@@ -29956,19 +29955,19 @@ msgstr "Covasna"
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Sfântu Gheorghe"
-msgstr "Sfântu Gheorghe"
+msgstr "Sfantu Gheorghe"
 
 #: romania.kgm:99
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Dâmboviţa"
-msgstr "Dâmboviţa"
+msgstr "Damboviţa"
 
 #: romania.kgm:100
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Târgovişte"
-msgstr "Târgovişte"
+msgstr "Targoviste"
 
 #: romania.kgm:104
 #, kde-format
@@ -30004,7 +30003,7 @@ msgstr "Gorj"
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Târgu Jiu"
-msgstr "Târgu Jiu"
+msgstr "Targu Jiu"
 
 #: romania.kgm:124
 #, kde-format
@@ -30046,7 +30045,7 @@ msgstr "Slobozia"
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Iaşi"
-msgstr "Iaşi"
+msgstr "Iasi"
 
 #: romania.kgm:144
 #, kde-format
@@ -30064,7 +30063,7 @@ msgstr "Buftea"
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Maramureş"
-msgstr "Maramureş"
+msgstr "Maramures"
 
 #: romania.kgm:150
 #, kde-format
@@ -30088,13 +30087,13 @@ msgstr "Drobeta-Turnu Severin"
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Mureş"
-msgstr "Mureş"
+msgstr "Mures"
 
 #: romania.kgm:160
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Târgu Mureş"
-msgstr "Târgu Mureş"
+msgstr "Targu Mures"
 
 #: romania.kgm:164
 #, kde-format
@@ -30130,7 +30129,7 @@ msgstr "Prahova"
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Ploieşti"
-msgstr "Ploieşti"
+msgstr "Ploiesti"
 
 #: romania.kgm:179 romania.kgm:180
 #, kde-format
@@ -30142,13 +30141,13 @@ msgstr "Satu Mare"
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Sălaj"
-msgstr "Sălaj"
+msgstr "Salaj"
 
 #: romania.kgm:185
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Zalău"
-msgstr "Zalău"
+msgstr "Zalau"
 
 #: romania.kgm:189 romania.kgm:190
 #, kde-format
@@ -30178,13 +30177,13 @@ msgstr "Alexandria"
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Timiş"
-msgstr "Timiş"
+msgstr "Timis"
 
 #: romania.kgm:205
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Timişoara"
-msgstr "Timişoara"
+msgstr "Timisoara"
 
 #: romania.kgm:209 romania.kgm:210
 #, kde-format
@@ -30202,13 +30201,13 @@ msgstr "Vaslui"
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Vâlcea"
-msgstr "Vâlcea"
+msgstr "Valcea"
 
 #: romania.kgm:220
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Râmnicu Vâlcea"
-msgstr "Râmnicu Vâlcea"
+msgstr "Ramnicu Valcea"
 
 #: romania.kgm:224
 #, kde-format
@@ -30220,7 +30219,7 @@ msgstr "Vrancea"
 #, kde-format
 msgctxt "romania.kgm"
 msgid "Focşani"
-msgstr "Focşani"
+msgstr "Focsani"
 
 #: romania.kgm:229
 #, kde-format
@@ -31648,7 +31647,7 @@ msgstr "Trnava"
 #, kde-format
 msgctxt "slovakia.kgm"
 msgid "Trenčín"
-msgstr "Trenčín"
+msgstr "Trencín"
 
 #: slovakia.kgm:42
 #, kde-format
@@ -31660,7 +31659,7 @@ msgstr "Nitra"
 #, kde-format
 msgctxt "slovakia.kgm"
 msgid "Žilina"
-msgstr "Žilina"
+msgstr "Zilina"
 
 #: slovakia.kgm:54
 #, kde-format
@@ -31672,13 +31671,13 @@ msgstr "Banská Bystrica"
 #, kde-format
 msgctxt "slovakia.kgm"
 msgid "Prešov"
-msgstr "Prešov"
+msgstr "Presov"
 
 #: slovakia.kgm:66
 #, kde-format
 msgctxt "slovakia.kgm"
 msgid "Košice"
-msgstr "Košice"
+msgstr "Kosice"
 
 #: slovenia_traditional.kgm:5
 #, kde-format
@@ -31786,7 +31785,7 @@ msgstr "Novo Mesto"
 #, kde-format
 msgctxt "slovenia_traditional.kgm"
 msgid "Goriška"
-msgstr "Goriška"
+msgstr "Goriska"
 
 #: slovenia_traditional.kgm:55
 #, kde-format
@@ -32374,7 +32373,7 @@ msgstr "Oviedo"
 #, kde-format
 msgctxt "spain.kgm"
 msgid "Balearic Islands"
-msgstr "îles Baléares"
+msgstr "Îles Baléares"
 
 #: spain.kgm:68
 #, kde-format
@@ -32398,7 +32397,7 @@ msgstr "Vitoria"
 #, kde-format
 msgctxt "spain.kgm"
 msgid "Canary Islands"
-msgstr "îles Canaries"
+msgstr "Îles Canaries"
 
 #: spain.kgm:88
 #, kde-format
@@ -32488,7 +32487,7 @@ msgstr "La Rioja"
 #, kde-format
 msgctxt "spain.kgm"
 msgid "Logroño"
-msgstr "Logroño"
+msgstr "Logrono"
 
 #: spain.kgm:166 spain.kgm:168
 #, kde-format
@@ -32584,7 +32583,7 @@ msgstr "Eau"
 #, kde-format
 msgctxt "spain_provinces.kgm"
 msgid "Álava"
-msgstr "Álava"
+msgstr "Alava"
 
 #: spain_provinces.kgm:50
 #, kde-format
@@ -32626,7 +32625,7 @@ msgstr "Oviedo"
 #, kde-format
 msgctxt "spain_provinces.kgm"
 msgid "Ávila"
-msgstr "Ávila"
+msgstr "Avila"
 
 #: spain_provinces.kgm:79 spain_provinces.kgm:80
 #, kde-format
@@ -32758,7 +32757,7 @@ msgstr "Huesca"
 #, kde-format
 msgctxt "spain_provinces.kgm"
 msgid "Balearic Islands"
-msgstr "îles Baléares"
+msgstr "Îles Baléares"
 
 #: spain_provinces.kgm:165
 #, kde-format
@@ -32782,7 +32781,7 @@ msgstr "La Rioja"
 #, kde-format
 msgctxt "spain_provinces.kgm"
 msgid "Logroño"
-msgstr "Logroño"
+msgstr "Logrono"
 
 #: spain_provinces.kgm:179 spain_provinces.kgm:180
 #, kde-format
@@ -33460,7 +33459,7 @@ msgstr "comté de Västerbotten"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Umeå"
-msgstr "Umeå"
+msgstr "Umea"
 
 #: sweden.kgm:63
 #, kde-format
@@ -33472,7 +33471,7 @@ msgstr "comté de Norrbotten"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Luleå"
-msgstr "Luleå"
+msgstr "Lulea"
 
 #: sweden.kgm:72
 #, kde-format
@@ -33574,7 +33573,7 @@ msgstr "Karlskrona"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Skåne County"
-msgstr "comté de Skåne"
+msgstr "comté de Skane"
 
 #: sweden.kgm:145
 #, kde-format
@@ -33640,7 +33639,7 @@ msgstr "comté de Västmanland"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Västerås"
-msgstr "Västerås"
+msgstr "Västeras"
 
 #: sweden.kgm:198
 #, kde-format
@@ -33820,19 +33819,19 @@ msgstr "Soleure"
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Basle-City"
-msgstr "Bâle-Ville"
+msgstr "Bale-Ville"
 
 #: switzerland.kgm:80
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Basel"
-msgstr "Bâle"
+msgstr "Bale"
 
 #: switzerland.kgm:84
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Basle-Country"
-msgstr "Bâle-Campagne"
+msgstr "Bale-Campagne"
 
 #: switzerland.kgm:85
 #, kde-format
@@ -33958,7 +33957,7 @@ msgstr "Sion"
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Neuchâtel"
-msgstr "Neuchâtel"
+msgstr "Neuchatel"
 
 #: switzerland.kgm:144 switzerland.kgm:145
 #, kde-format
@@ -34090,7 +34089,7 @@ msgstr "Tiruppur"
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Nilgiris"
-msgstr "Nîlgîri"
+msgstr "Nilgiri"
 
 #: tamilnadu.kgm:24
 #, kde-format
@@ -34306,7 +34305,7 @@ msgstr "Karnataka"
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Karaikal"
-msgstr "Kârikâl"
+msgstr "Karikal"
 
 #: tamilnadu.kgm:170
 #, kde-format
@@ -34936,7 +34935,7 @@ msgstr "Afyon"
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Ağrı"
-msgstr "Ağrı"
+msgstr "Agrı"
 
 #: turkey.kgm:44 turkey.kgm:45
 #, kde-format
@@ -35014,19 +35013,19 @@ msgstr "Bursa"
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Çanakkale"
-msgstr "Çanakkale"
+msgstr "Canakkale"
 
 #: turkey.kgm:109 turkey.kgm:110
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Çankırı"
-msgstr "Çankırı"
+msgstr "Cankırı"
 
 #: turkey.kgm:114 turkey.kgm:115
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Çorum"
-msgstr "Çorum"
+msgstr "Corum"
 
 #: turkey.kgm:119 turkey.kgm:120
 #, kde-format
@@ -35050,7 +35049,7 @@ msgstr "Edirne"
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Elazığ"
-msgstr "Elazığ"
+msgstr "Elazıg"
 
 #: turkey.kgm:139 turkey.kgm:140
 #, kde-format
@@ -35068,7 +35067,7 @@ msgstr "Erzurum"
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Eskişehir"
-msgstr "Eskişehir"
+msgstr "Eskisehir"
 
 #: turkey.kgm:154 turkey.kgm:155
 #, kde-format
@@ -35086,7 +35085,7 @@ msgstr "Giresun"
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Gümüşhane"
-msgstr "Gümüşhane"
+msgstr "Gümüshane"
 
 #: turkey.kgm:169 turkey.kgm:170
 #, kde-format
@@ -35122,13 +35121,13 @@ msgstr "Mersin"
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "İstanbul"
-msgstr "İstanbul"
+msgstr "Istanbul"
 
 #: turkey.kgm:194 turkey.kgm:195
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "İzmir"
-msgstr "İzmir"
+msgstr "Izmir"
 
 #: turkey.kgm:199 turkey.kgm:200
 #, kde-format
@@ -35158,7 +35157,7 @@ msgstr "Kırklareli"
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Kırşehir"
-msgstr "Kırşehir"
+msgstr "Kırsehir"
 
 #: turkey.kgm:224
 #, kde-format
@@ -35170,7 +35169,7 @@ msgstr "Kocaeli"
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "İzmit"
-msgstr "İzmit"
+msgstr "Izmit"
 
 #: turkey.kgm:229 turkey.kgm:230
 #, kde-format
@@ -35200,7 +35199,7 @@ msgstr "Manisa"
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Kahramanmaraş"
-msgstr "Kahramanmaraş"
+msgstr "Kahramanmaras"
 
 #: turkey.kgm:254 turkey.kgm:255
 #, kde-format
@@ -35212,25 +35211,25 @@ msgstr "Mardin"
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Muğla"
-msgstr "Muğla"
+msgstr "Mugla"
 
 #: turkey.kgm:264 turkey.kgm:265
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Muş"
-msgstr "Muş"
+msgstr "Mus"
 
 #: turkey.kgm:269 turkey.kgm:270
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Nevşehir"
-msgstr "Nevşehir"
+msgstr "Nevsehir"
 
 #: turkey.kgm:274 turkey.kgm:275
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Niğde"
-msgstr "Niğde"
+msgstr "Nigde"
 
 #: turkey.kgm:279 turkey.kgm:280
 #, kde-format
@@ -35284,7 +35283,7 @@ msgstr "Sivas"
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Tekirdağ"
-msgstr "Tekirdağ"
+msgstr "Tekirdag"
 
 #: turkey.kgm:319 turkey.kgm:320
 #, kde-format
@@ -35308,13 +35307,13 @@ msgstr "Tunceli"
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Şanlıurfa"
-msgstr "Şanlıurfa"
+msgstr "Sanlıurfa"
 
 #: turkey.kgm:339 turkey.kgm:340
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Uşak"
-msgstr "Uşak"
+msgstr "Usak"
 
 #: turkey.kgm:344 turkey.kgm:345
 #, kde-format
@@ -35368,7 +35367,7 @@ msgstr "Batman"
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Şırnak"
-msgstr "Şırnak"
+msgstr "Sırnak"
 
 #: turkey.kgm:389 turkey.kgm:390
 #, kde-format
@@ -35386,7 +35385,7 @@ msgstr "Ardahan"
 #, kde-format
 msgctxt "turkey.kgm"
 msgid "Iğdır"
-msgstr "Iğdır"
+msgstr "Igdır"
 
 #: turkey.kgm:404 turkey.kgm:405
 #, kde-format
@@ -35458,7 +35457,7 @@ msgstr "Ahal"
 #, kde-format
 msgctxt "turkmenistan.kgm"
 msgid "Anau"
-msgstr "Änew"
+msgstr "Anew"
 
 #: turkmenistan.kgm:29
 #, kde-format
@@ -35476,7 +35475,7 @@ msgstr "Balkanabat"
 #, kde-format
 msgctxt "turkmenistan.kgm"
 msgid "Dashhowuz"
-msgstr "Daşoguz"
+msgstr "Dasoguz"
 
 #: turkmenistan.kgm:39
 #, kde-format
@@ -37240,13 +37239,13 @@ msgstr "Long Xuyên"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Bac Giang"
-msgstr "Bắc Giang"
+msgstr "Bac Giang"
 
 #: vietnam.kgm:34 vietnam.kgm:35
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Bac Kan"
-msgstr "Bắc Kạn"
+msgstr "Bac Kạn"
 
 #: vietnam.kgm:39 vietnam.kgm:40
 #, kde-format
@@ -37258,7 +37257,7 @@ msgstr "Bạc Liêu"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Bac Ninh"
-msgstr "Bắc Ninh"
+msgstr "Bac Ninh"
 
 #: vietnam.kgm:49
 #, kde-format
@@ -37282,7 +37281,7 @@ msgstr "Bến Tre"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Binh Dinh"
-msgstr "Bình Định"
+msgstr "Bình Dịnh"
 
 #: vietnam.kgm:60
 #, kde-format
@@ -37312,7 +37311,7 @@ msgstr "Bình Phước"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dong Xoai"
-msgstr "Đồng Xoài"
+msgstr "Dồng Xoài"
 
 #: vietnam.kgm:74
 #, kde-format
@@ -37348,7 +37347,7 @@ msgstr "Cao Bằng"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dak Lak"
-msgstr "Đắk Lắk"
+msgstr "Dak Lak"
 
 #: vietnam.kgm:95
 #, kde-format
@@ -37360,7 +37359,7 @@ msgstr "Buôn Ma Thuột"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dak Nong"
-msgstr "Đắk Nông"
+msgstr "Dak Nông"
 
 #: vietnam.kgm:100
 #, kde-format
@@ -37372,25 +37371,25 @@ msgstr "Gia Nghĩa"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Da Nang"
-msgstr "Đà Nẵng"
+msgstr "Dà Nẵng"
 
 #: vietnam.kgm:109
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dien Bien"
-msgstr "Ðiện Biên"
+msgstr "Dien Bien"
 
 #: vietnam.kgm:110
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dien Bien Phu"
-msgstr "Ðiện Biên Phủ"
+msgstr "Dien Bien Phu"
 
 #: vietnam.kgm:114
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dong Nai"
-msgstr "Đồng Nai"
+msgstr "Dồng Nai"
 
 #: vietnam.kgm:115
 #, kde-format
@@ -37402,7 +37401,7 @@ msgstr "Biên Hòa"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dong Thap"
-msgstr "Đồng Tháp"
+msgstr "Dồng Tháp"
 
 #: vietnam.kgm:120
 #, kde-format
@@ -37462,13 +37461,13 @@ msgstr "Hanoï"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Ha Tay"
-msgstr "Hà Tây"
+msgstr "Hà Tay"
 
 #: vietnam.kgm:155
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Ha Dong"
-msgstr "Hà Đông"
+msgstr "Hà Dông"
 
 #: vietnam.kgm:159 vietnam.kgm:160
 #, kde-format
@@ -37540,19 +37539,19 @@ msgstr "Kon Tum"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Lai Chau"
-msgstr "Lai Châu"
+msgstr "Lai Chau"
 
 #: vietnam.kgm:204
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Lam Dong"
-msgstr "Lâm Đồng"
+msgstr "Lam Dồng"
 
 #: vietnam.kgm:205
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Da Lat"
-msgstr "Đà Lạt"
+msgstr "Dà Lạt"
 
 #: vietnam.kgm:209 vietnam.kgm:210
 #, kde-format
@@ -37576,13 +37575,13 @@ msgstr "Long An"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Tan An"
-msgstr "Tân An"
+msgstr "Tan An"
 
 #: vietnam.kgm:224 vietnam.kgm:225
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Nam Dinh"
-msgstr "Nam Định"
+msgstr "Nam Dịnh"
 
 #: vietnam.kgm:229
 #, kde-format
@@ -37648,7 +37647,7 @@ msgstr "Quảng Bình"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dong Hoi"
-msgstr "Đồng Hới"
+msgstr "Dồng Hới"
 
 #: vietnam.kgm:259
 #, kde-format
@@ -37690,13 +37689,13 @@ msgstr "Quảng Trị"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dong Ha"
-msgstr "Đông Hà"
+msgstr "Dông Hà"
 
 #: vietnam.kgm:279 vietnam.kgm:280
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Soc Trang"
-msgstr "Sóc Trăng"
+msgstr "Sóc Trang"
 
 #: vietnam.kgm:284 vietnam.kgm:285
 #, kde-format
@@ -37708,7 +37707,7 @@ msgstr "Sơn La"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Tay Ninh"
-msgstr "Tây Ninh"
+msgstr "Tay Ninh"
 
 #: vietnam.kgm:294 vietnam.kgm:295
 #, kde-format
@@ -38752,7 +38751,7 @@ msgstr "Orange"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Oued Draa"
-msgstr "Drâa"
+msgstr "Draa"
 
 #: waters_world-class.kgm:119
 #, kde-format
@@ -38992,7 +38991,7 @@ msgstr "Gange"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Godavari"
-msgstr "Godâvarî"
+msgstr "Godavari"
 
 #: waters_world-class.kgm:319
 #, kde-format
@@ -39040,7 +39039,7 @@ msgstr "Kolyma"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Krishna"
-msgstr "Krishnâ"
+msgstr "Krishna"
 
 #: waters_world-class.kgm:359
 #, kde-format
@@ -39076,7 +39075,7 @@ msgstr "Murray (et le Darling)"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Narmada"
-msgstr "Narmadâ"
+msgstr "Narmada"
 
 #: waters_world-class.kgm:389
 #, kde-format
@@ -40300,7 +40299,7 @@ msgstr "Sahara occidental"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Laayoune"
-msgstr "Laâyoune"
+msgstr "Laayoune"
 
 #: world.kgm:636
 #, kde-format
@@ -41386,7 +41385,7 @@ msgstr "Bangladesh"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Dhaka"
-msgstr "Dhâkâ"
+msgstr "Dhaka"
 
 #: world.kgm:1556
 #, kde-format
@@ -41518,7 +41517,7 @@ msgstr "Pakistan"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Islamabad"
-msgstr "Islâmâbâd"
+msgstr "Islamabad"
 
 #: world.kgm:1666
 #, kde-format
@@ -41650,7 +41649,7 @@ msgstr "Séoul"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Fiji"
-msgstr "îles Fidji"
+msgstr "Îles des Fidji"
 
 #: world.kgm:1778
 #, kde-format
