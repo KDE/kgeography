@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-16 00:39+0000\n"
-"PO-Revision-Date: 2023-10-28 18:49+0200\n"
+"PO-Revision-Date: 2023-10-31 12:22+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -1177,7 +1177,7 @@ msgstr "Jamestown"
 #, kde-format
 msgctxt "albania_districts.kgm"
 msgid "Albania (Districts)"
-msgstr ""
+msgstr "Albania (distritos)"
 
 #: albania_districts.kgm:6
 #, kde-format
@@ -42290,7 +42290,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Zambia (Districts)"
-msgstr ""
+msgstr "Zambia (distritos)"
 
 #: zambia_districts.kgm:6
 #, kde-format
@@ -43010,7 +43010,7 @@ msgstr ""
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Zimbabwe (Districts)"
-msgstr ""
+msgstr "Zimbabue (distritos)"
 
 #: zimbabwe_districts.kgm:6
 #, kde-format

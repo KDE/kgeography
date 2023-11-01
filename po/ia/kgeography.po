@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-16 00:39+0000\n"
-"PO-Revision-Date: 2023-10-27 18:04+0200\n"
+"PO-Revision-Date: 2023-10-31 10:29+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -8582,7 +8582,7 @@ msgstr "Insulas Virgine Britannic (RU)"
 #, kde-format
 msgctxt "caribbean.kgm"
 msgid "Road Town"
-msgstr ""
+msgstr "Citate de Strata"
 
 #: caribbean.kgm:72
 #, kde-format
@@ -8594,7 +8594,7 @@ msgstr "Anguilla (RU)"
 #, kde-format
 msgctxt "caribbean.kgm"
 msgid "The Valley"
-msgstr ""
+msgstr "Le Valle"
 
 #: caribbean.kgm:78
 #, kde-format
@@ -11920,31 +11920,31 @@ msgstr "Alexandria"
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Aswan"
-msgstr ""
+msgstr "Aswan"
 
 #: egypt.kgm:34 egypt.kgm:35
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Asyut"
-msgstr ""
+msgstr "Asyut"
 
 #: egypt.kgm:39
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Beheira"
-msgstr ""
+msgstr "Beheira"
 
 #: egypt.kgm:40
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Damanhur"
-msgstr ""
+msgstr "Damanhur"
 
 #: egypt.kgm:44 egypt.kgm:45
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Beni Suef"
-msgstr ""
+msgstr "Beni Suef"
 
 #: egypt.kgm:49 egypt.kgm:50
 #, kde-format
@@ -11956,175 +11956,175 @@ msgstr "Cairo"
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Dakahlia"
-msgstr ""
+msgstr "Dakahlia"
 
 #: egypt.kgm:55
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Mansura"
-msgstr ""
+msgstr "Mansura"
 
 #: egypt.kgm:59 egypt.kgm:60
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Damietta"
-msgstr ""
+msgstr "Damietta"
 
 #: egypt.kgm:64 egypt.kgm:65
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Faiyum"
-msgstr ""
+msgstr "Faiyum"
 
 #: egypt.kgm:69
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Gharbia"
-msgstr ""
+msgstr "Gharbia"
 
 #: egypt.kgm:70
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Tanta"
-msgstr ""
+msgstr "Tanta"
 
 #: egypt.kgm:74 egypt.kgm:75
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Giza"
-msgstr ""
+msgstr "Giza"
 
 #: egypt.kgm:79 egypt.kgm:80
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Ismailia"
-msgstr ""
+msgstr "Ismailia"
 
 #: egypt.kgm:84 egypt.kgm:85
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Kafr el-Sheikh"
-msgstr ""
+msgstr "Kafr el-Sheikh"
 
 #: egypt.kgm:89
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Matruh"
-msgstr ""
+msgstr "Matruh"
 
 #: egypt.kgm:90
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Mersa Matruh"
-msgstr ""
+msgstr "Mersa Matruh"
 
 #: egypt.kgm:94 egypt.kgm:95
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Minya"
-msgstr ""
+msgstr "Minya"
 
 #: egypt.kgm:99
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Monufia"
-msgstr ""
+msgstr "Monufia"
 
 #: egypt.kgm:100
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Shibin el-Kom"
-msgstr ""
+msgstr "Shibin el-Kom"
 
 #: egypt.kgm:104
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "New Valley"
-msgstr ""
+msgstr "Nove Valle"
 
 #: egypt.kgm:105
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Kharga"
-msgstr ""
+msgstr "Kharga"
 
 #: egypt.kgm:109
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "North Sinai"
-msgstr ""
+msgstr "Sinai del Nord"
 
 #: egypt.kgm:110
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Arish"
-msgstr ""
+msgstr "Arish"
 
 #: egypt.kgm:114 egypt.kgm:115
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Port Said"
-msgstr ""
+msgstr "PortoSaid"
 
 #: egypt.kgm:119
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Qalyubia"
-msgstr ""
+msgstr "Qalyubia"
 
 #: egypt.kgm:120
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Banha"
-msgstr ""
+msgstr "Banha"
 
 #: egypt.kgm:124 egypt.kgm:125
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Qena"
-msgstr ""
+msgstr "Qena"
 
 #: egypt.kgm:129
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Red Sea"
-msgstr ""
+msgstr "Mar Rubie"
 
 #: egypt.kgm:130
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Hurghada"
-msgstr ""
+msgstr "Hurghada"
 
 #: egypt.kgm:134
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Al Sharqia"
-msgstr ""
+msgstr "Al Sharqia"
 
 #: egypt.kgm:135
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Zagazig"
-msgstr ""
+msgstr "Zagazig"
 
 #: egypt.kgm:139 egypt.kgm:140
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Sohag"
-msgstr ""
+msgstr "Sohag"
 
 #: egypt.kgm:144
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "South Sinai"
-msgstr ""
+msgstr "Sinai del Sud"
 
 #: egypt.kgm:145
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "el-Tor"
-msgstr ""
+msgstr "el-Tor"
 
 #: egypt.kgm:149 egypt.kgm:150
 #, kde-format
@@ -13090,7 +13090,7 @@ msgstr "Valletta"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Finland (Regions)"
-msgstr ""
+msgstr "Finlandia (Regiones)"
 
 #: finland_regions.kgm:6
 #, kde-format
@@ -13114,13 +13114,13 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Not Finland (Regions)"
-msgstr ""
+msgstr "Non Finlandia (Regiones)"
 
 #: finland_regions.kgm:24
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Åland"
-msgstr ""
+msgstr "Åland"
 
 #: finland_regions.kgm:25
 #, kde-format
@@ -13132,199 +13132,199 @@ msgstr "Mariehamn"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "North Karelia"
-msgstr ""
+msgstr "Karelia del Nord"
 
 #: finland_regions.kgm:30
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Joensuu"
-msgstr ""
+msgstr "Joensuu"
 
 #: finland_regions.kgm:34
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "South Karelia"
-msgstr ""
+msgstr "Karelia del Sud"
 
 #: finland_regions.kgm:35
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Lappeenranta"
-msgstr ""
+msgstr "Lappeenranta"
 
 #: finland_regions.kgm:39
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Central Finland"
-msgstr ""
+msgstr "Finlandia Central"
 
 #: finland_regions.kgm:40
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Jyväskylä"
-msgstr ""
+msgstr "Jyväskylä"
 
 #: finland_regions.kgm:44
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Finland Proper"
-msgstr ""
+msgstr "Finlandia Proprie"
 
 #: finland_regions.kgm:45
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Turku"
-msgstr ""
+msgstr "Turku"
 
 #: finland_regions.kgm:49
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Kainuu"
-msgstr ""
+msgstr "Kainuu"
 
 #: finland_regions.kgm:50
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Kajaani"
-msgstr ""
+msgstr "Kajaani"
 
 #: finland_regions.kgm:54
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Lapland"
-msgstr ""
+msgstr "Lapponia"
 
 #: finland_regions.kgm:55
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Rovaniemi"
-msgstr ""
+msgstr "Rovaniemi"
 
 #: finland_regions.kgm:59
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Ostrobothnia"
-msgstr ""
+msgstr "Ostrobothnia"
 
 #: finland_regions.kgm:60
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Vaasa"
-msgstr ""
+msgstr "Vaasa"
 
 #: finland_regions.kgm:64
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Central Ostrobothnia"
-msgstr ""
+msgstr "Ostrobothnia Central"
 
 #: finland_regions.kgm:65
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Kokkola"
-msgstr ""
+msgstr "Kokkola"
 
 #: finland_regions.kgm:69
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Northern Ostrobothnia"
-msgstr ""
+msgstr "Ostrobothnia Septentrional"
 
 #: finland_regions.kgm:70
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Oulu"
-msgstr ""
+msgstr "Oulu"
 
 #: finland_regions.kgm:74
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Southern Ostrobothnia"
-msgstr ""
+msgstr "Ostrobothnia Meridional"
 
 #: finland_regions.kgm:75
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Seinäjoki"
-msgstr ""
+msgstr "Seinäjoki"
 
 #: finland_regions.kgm:79
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Päijänne-Tavastia"
-msgstr ""
+msgstr "Päijänne-Tavastia"
 
 #: finland_regions.kgm:80
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Lahti"
-msgstr ""
+msgstr "Lahti"
 
 #: finland_regions.kgm:84
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Tavastia Proper"
-msgstr ""
+msgstr "Tavastia Proprie"
 
 #: finland_regions.kgm:85
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Hämeenlinna"
-msgstr ""
+msgstr "Hämeenlinna"
 
 #: finland_regions.kgm:89
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Pirkanmaa"
-msgstr ""
+msgstr "Pirkanmaa"
 
 #: finland_regions.kgm:90
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Tampere"
-msgstr ""
+msgstr "Tampere"
 
 #: finland_regions.kgm:94
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Satakunta"
-msgstr ""
+msgstr "Satakunta"
 
 #: finland_regions.kgm:95
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Pori"
-msgstr ""
+msgstr "Pori"
 
 #: finland_regions.kgm:99
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Northern Savonia"
-msgstr ""
+msgstr "Savonia Septentrional"
 
 #: finland_regions.kgm:100
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Kuopio"
-msgstr ""
+msgstr "Kuopio"
 
 #: finland_regions.kgm:104
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Southern Savonia"
-msgstr ""
+msgstr "Savonia Meridional"
 
 #: finland_regions.kgm:105
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Mikkeli"
-msgstr ""
+msgstr "Mikkeli"
 
 #: finland_regions.kgm:109
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Uusimaa"
-msgstr ""
+msgstr "Uusimaa"
 
 #: finland_regions.kgm:110
 #, kde-format
@@ -13336,31 +13336,31 @@ msgstr "Helsinki"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Kymenlaakso"
-msgstr ""
+msgstr "Kymenlaakso"
 
 #: finland_regions.kgm:115
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Kouvola"
-msgstr ""
+msgstr "Kouvola"
 
 #: flagdivisionasker.cpp:44
 #, kde-format
 msgctxt "@title:group"
 msgid "This flag belongs to:"
-msgstr ""
+msgstr "Iste bandiera pertine a:"
 
 #: flagdivisionasker.cpp:59 flagdivisionasker.cpp:67
 #, kde-format
 msgctxt "@option:radio This flag belongs to:"
 msgid "%1"
-msgstr ""
+msgstr "%1"
 
 #: flagdivisionasker.cpp:80
 #, kde-format
 msgctxt "@title"
 msgid "%1 by Flag"
-msgstr ""
+msgstr "%1 per Bandiera"
 
 #: france.kgm:5
 #, kde-format
@@ -13378,7 +13378,7 @@ msgstr "Departimentos"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Not France"
-msgstr ""
+msgstr "Non Francia"
 
 #: france.kgm:18 france.kgm:27
 #, kde-format
@@ -13390,7 +13390,7 @@ msgstr "Frontiera"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Ain"
-msgstr ""
+msgstr "Ain"
 
 #: france.kgm:37
 #, kde-format
@@ -13402,19 +13402,19 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Aisne"
-msgstr ""
+msgstr "Aisne"
 
 #: france.kgm:46
 #, kde-format
 msgctxt "france.kgm"
 msgid "Laon"
-msgstr ""
+msgstr "Laon"
 
 #: france.kgm:54
 #, kde-format
 msgctxt "france.kgm"
 msgid "Allier"
-msgstr ""
+msgstr "Allier"
 
 #: france.kgm:55
 #, kde-format
@@ -13462,7 +13462,7 @@ msgstr "Nice"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Ardèche"
-msgstr ""
+msgstr "Ardèche"
 
 #: france.kgm:91
 #, kde-format
@@ -13486,49 +13486,49 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Ariège"
-msgstr ""
+msgstr "Ariège"
 
 #: france.kgm:109
 #, kde-format
 msgctxt "france.kgm"
 msgid "Foix"
-msgstr ""
+msgstr "Foix"
 
 #: france.kgm:117
 #, kde-format
 msgctxt "france.kgm"
 msgid "Aube"
-msgstr ""
+msgstr "Aube"
 
 #: france.kgm:118
 #, kde-format
 msgctxt "france.kgm"
 msgid "Troyes"
-msgstr ""
+msgstr "Troyes"
 
 #: france.kgm:126
 #, kde-format
 msgctxt "france.kgm"
 msgid "Aude"
-msgstr ""
+msgstr "Aude"
 
 #: france.kgm:127
 #, kde-format
 msgctxt "france.kgm"
 msgid "Carcassonne"
-msgstr ""
+msgstr "Carcassonne"
 
 #: france.kgm:135
 #, kde-format
 msgctxt "france.kgm"
 msgid "Aveyron"
-msgstr ""
+msgstr "Aveyron"
 
 #: france.kgm:136
 #, kde-format
 msgctxt "france.kgm"
 msgid "Rodez"
-msgstr ""
+msgstr "Rodez"
 
 #: france.kgm:144
 #, kde-format
@@ -13540,43 +13540,43 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Marseille"
-msgstr ""
+msgstr "Marsilia"
 
 #: france.kgm:153
 #, kde-format
 msgctxt "france.kgm"
 msgid "Calvados"
-msgstr ""
+msgstr "Calvados"
 
 #: france.kgm:154
 #, kde-format
 msgctxt "france.kgm"
 msgid "Caen"
-msgstr ""
+msgstr "Caen"
 
 #: france.kgm:162
 #, kde-format
 msgctxt "france.kgm"
 msgid "Cantal"
-msgstr ""
+msgstr "Cantal"
 
 #: france.kgm:163
 #, kde-format
 msgctxt "france.kgm"
 msgid "Aurillac"
-msgstr ""
+msgstr "Aurillac"
 
 #: france.kgm:171
 #, kde-format
 msgctxt "france.kgm"
 msgid "Charente"
-msgstr ""
+msgstr "Charente"
 
 #: france.kgm:172
 #, kde-format
 msgctxt "france.kgm"
 msgid "Angoulème"
-msgstr ""
+msgstr "Angoulème"
 
 #: france.kgm:180
 #, kde-format
@@ -13624,7 +13624,7 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Ajaccio"
-msgstr ""
+msgstr "Ajaccio"
 
 #: france.kgm:216
 #, kde-format
@@ -13636,7 +13636,7 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Bastia"
-msgstr ""
+msgstr "Bastia"
 
 #: france.kgm:225
 #, kde-format
@@ -13684,25 +13684,25 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Périgueux"
-msgstr ""
+msgstr "Périgueux"
 
 #: france.kgm:261
 #, kde-format
 msgctxt "france.kgm"
 msgid "Doubs"
-msgstr ""
+msgstr "Doubs"
 
 #: france.kgm:262
 #, kde-format
 msgctxt "france.kgm"
 msgid "Besançon"
-msgstr ""
+msgstr "Besançon"
 
 #: france.kgm:270
 #, kde-format
 msgctxt "france.kgm"
 msgid "Drôme"
-msgstr ""
+msgstr "Drôme"
 
 #: france.kgm:271
 #, kde-format
@@ -13732,7 +13732,7 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Chartres"
-msgstr ""
+msgstr "Chartres"
 
 #: france.kgm:297
 #, kde-format
@@ -13750,13 +13750,13 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Gard"
-msgstr ""
+msgstr "Gard"
 
 #: france.kgm:307
 #, kde-format
 msgctxt "france.kgm"
 msgid "Nîmes"
-msgstr ""
+msgstr "Nîmes"
 
 #: france.kgm:315
 #, kde-format
@@ -13768,19 +13768,19 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Toulouse"
-msgstr ""
+msgstr "Toulouse"
 
 #: france.kgm:324
 #, kde-format
 msgctxt "france.kgm"
 msgid "Gers"
-msgstr ""
+msgstr "Gers"
 
 #: france.kgm:325
 #, kde-format
 msgctxt "france.kgm"
 msgid "Auch"
-msgstr ""
+msgstr "Auch"
 
 #: france.kgm:333
 #, kde-format
@@ -13792,7 +13792,7 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Bordeaux"
-msgstr ""
+msgstr "Bordeaux"
 
 #: france.kgm:342
 #, kde-format
@@ -13804,7 +13804,7 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Montpellier"
-msgstr ""
+msgstr "Montpellier"
 
 #: france.kgm:351
 #, kde-format
@@ -13852,13 +13852,13 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Grenoble"
-msgstr ""
+msgstr "Grenoble"
 
 #: france.kgm:387
 #, kde-format
 msgctxt "france.kgm"
 msgid "Jura"
-msgstr ""
+msgstr "Jura"
 
 #: france.kgm:388
 #, kde-format
@@ -13900,7 +13900,7 @@ msgstr "Loira (Loire)"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Saint Etienne"
-msgstr ""
+msgstr "Saint Etienne"
 
 #: france.kgm:423
 #, kde-format
@@ -13924,7 +13924,7 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Nantes"
-msgstr ""
+msgstr "Nantes"
 
 #: france.kgm:441
 #, kde-format
@@ -22678,7 +22678,7 @@ msgstr ""
 #: kgeography.cpp:426
 #, kde-format
 msgid "%1 by Flag"
-msgstr ""
+msgstr "%1 per Bandiera"
 
 #: kgeography.cpp:427
 #, kde-format
@@ -29328,7 +29328,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Moca"
-msgstr ""
+msgstr "Moca"
 
 #: puertorico.kgm:557
 #, kde-format
@@ -32670,7 +32670,7 @@ msgstr ""
 #, kde-format
 msgctxt "spain_provinces.kgm"
 msgid "Cuenca"
-msgstr ""
+msgstr "Cuenca"
 
 #: spain_provinces.kgm:134
 #, kde-format
@@ -32904,7 +32904,7 @@ msgstr ""
 #, kde-format
 msgctxt "spain_provinces.kgm"
 msgid "Zamora"
-msgstr ""
+msgstr "Zamora"
 
 #: spain_provinces.kgm:294 spain_provinces.kgm:295
 #, kde-format
@@ -33174,7 +33174,7 @@ msgstr ""
 #, kde-format
 msgctxt "sudan.kgm"
 msgid "Red Sea"
-msgstr ""
+msgstr "Mar Rubie"
 
 #: sudan.kgm:70
 #, kde-format
