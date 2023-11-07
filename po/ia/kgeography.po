@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-16 00:39+0000\n"
-"PO-Revision-Date: 2023-10-31 10:29+0100\n"
+"PO-Revision-Date: 2023-11-06 17:18+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -33978,19 +33978,19 @@ msgstr ""
 #, kde-format
 msgctxt "tajikistan.kgm"
 msgid "Sughd"
-msgstr ""
+msgstr "Sughd"
 
 #: tajikistan.kgm:25
 #, kde-format
 msgctxt "tajikistan.kgm"
 msgid "Khujand"
-msgstr ""
+msgstr "Khujand"
 
 #: tajikistan.kgm:29
 #, kde-format
 msgctxt "tajikistan.kgm"
 msgid "Districts of Republican Subordination"
-msgstr ""
+msgstr "Districtos de Subordination Republican"
 
 #: tajikistan.kgm:30
 #, kde-format
@@ -34002,31 +34002,31 @@ msgstr "Dushanbe"
 #, kde-format
 msgctxt "tajikistan.kgm"
 msgid "Khatlon"
-msgstr ""
+msgstr "Khatlon"
 
 #: tajikistan.kgm:35
 #, kde-format
 msgctxt "tajikistan.kgm"
 msgid "Bokhtar"
-msgstr ""
+msgstr "Bokhtar"
 
 #: tajikistan.kgm:39
 #, kde-format
 msgctxt "tajikistan.kgm"
 msgid "Kuhistani Badakhshan"
-msgstr ""
+msgstr "Kuhistani Badakhshan"
 
 #: tajikistan.kgm:40
 #, kde-format
 msgctxt "tajikistan.kgm"
 msgid "Khorugh"
-msgstr ""
+msgstr "Khorugh"
 
 #: tamilnadu.kgm:5
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Tamil Nadu"
-msgstr ""
+msgstr "Tamil Nadu"
 
 #: tamilnadu.kgm:6
 #, kde-format
@@ -34044,25 +34044,25 @@ msgstr "Frontiera"
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Coimbatore"
-msgstr ""
+msgstr "Coimbatore"
 
 #: tamilnadu.kgm:19
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Tiruppur"
-msgstr ""
+msgstr "Tiruppur"
 
 #: tamilnadu.kgm:23
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Nilgiris"
-msgstr ""
+msgstr "Nilgiris"
 
 #: tamilnadu.kgm:24
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Udagamandalam"
-msgstr ""
+msgstr "Udagamandalam"
 
 #: tamilnadu.kgm:28
 #, kde-format
@@ -34074,31 +34074,31 @@ msgstr "Erode"
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Dindigul"
-msgstr ""
+msgstr "Dindigul"
 
 #: tamilnadu.kgm:36
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Tiruchirappalli"
-msgstr ""
+msgstr "Tiruchirappalli"
 
 #: tamilnadu.kgm:40
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Karur"
-msgstr ""
+msgstr "Karur"
 
 #: tamilnadu.kgm:44
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Namakkal"
-msgstr ""
+msgstr "Namakkal"
 
 #: tamilnadu.kgm:48
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Pudukkottai"
-msgstr ""
+msgstr "Pudukkottai"
 
 #: tamilnadu.kgm:52
 #, kde-format
@@ -34110,139 +34110,139 @@ msgstr "Salem"
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Dharmapuri"
-msgstr ""
+msgstr "Dharmapuri"
 
 #: tamilnadu.kgm:60
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Vilupuram"
-msgstr ""
+msgstr "Vilupuram"
 
 #: tamilnadu.kgm:64
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Cuddalore"
-msgstr ""
+msgstr "Cuddalore"
 
 #: tamilnadu.kgm:68
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Perambalur"
-msgstr ""
+msgstr "Perambalur"
 
 #: tamilnadu.kgm:72
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Madurai"
-msgstr ""
+msgstr "Madurai"
 
 #: tamilnadu.kgm:76
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Thiruvarur"
-msgstr ""
+msgstr "Thiruvarur"
 
 #: tamilnadu.kgm:80
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Thanjavur"
-msgstr ""
+msgstr "Thanjavur"
 
 #: tamilnadu.kgm:84
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Ariyalur"
-msgstr ""
+msgstr "Ariyalur"
 
 #: tamilnadu.kgm:88
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Chennai"
-msgstr ""
+msgstr "Chennai"
 
 #: tamilnadu.kgm:92
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Nagapattinam"
-msgstr ""
+msgstr "Nagapattinam"
 
 #: tamilnadu.kgm:96
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Kanyakumari"
-msgstr ""
+msgstr "Kanyakumari"
 
 #: tamilnadu.kgm:97
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Nagercoil"
-msgstr ""
+msgstr "Nagercoil"
 
 #: tamilnadu.kgm:101
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Tirunelveli"
-msgstr ""
+msgstr "Tirunelveli"
 
 #: tamilnadu.kgm:105
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Thoothukudi"
-msgstr ""
+msgstr "Thoothukudi"
 
 #: tamilnadu.kgm:109
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Ramanathapuram"
-msgstr ""
+msgstr "Ramanathapuram"
 
 #: tamilnadu.kgm:113
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Virudhunagar"
-msgstr ""
+msgstr "Virudhunagar"
 
 #: tamilnadu.kgm:117
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Theni"
-msgstr ""
+msgstr "Theni"
 
 #: tamilnadu.kgm:121
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Sivagangai"
-msgstr ""
+msgstr "Sivagangai"
 
 #: tamilnadu.kgm:125
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Tiruvannamalai"
-msgstr ""
+msgstr "Tiruvannamalai"
 
 #: tamilnadu.kgm:129
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Vellore"
-msgstr ""
+msgstr "Vellore"
 
 #: tamilnadu.kgm:133
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Thiruvallur"
-msgstr ""
+msgstr "Thiruvallur"
 
 #: tamilnadu.kgm:137
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Krishnagiri"
-msgstr ""
+msgstr "Krishnagiri"
 
 #: tamilnadu.kgm:141
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Kanchipuram"
-msgstr ""
+msgstr "Kanchipuram"
 
 #: tamilnadu.kgm:145
 #, kde-format
@@ -34254,7 +34254,7 @@ msgstr "Sri Lanka"
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Kerala"
-msgstr ""
+msgstr "Kerala"
 
 #: tamilnadu.kgm:155
 #, kde-format
@@ -34266,19 +34266,19 @@ msgstr "Andhra Pradesh"
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Karnataka"
-msgstr ""
+msgstr "Karnataka"
 
 #: tamilnadu.kgm:165
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Karaikal"
-msgstr ""
+msgstr "Karaikal"
 
 #: tamilnadu.kgm:170
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Pondicherry"
-msgstr ""
+msgstr "Pondicherry"
 
 #: tamilnadu.kgm:175
 #, kde-format
@@ -34314,265 +34314,265 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Not Thailand"
-msgstr ""
+msgstr "Non Thailanda"
 
 #: thailand.kgm:24
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Chiang Mai"
-msgstr ""
+msgstr "Chiang Mai"
 
 #: thailand.kgm:29
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Chiang Rai"
-msgstr ""
+msgstr "Chiang Rai"
 
 #: thailand.kgm:34
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Kamphaeng Phet"
-msgstr ""
+msgstr "Kamphaeng Phet"
 
 #: thailand.kgm:39
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Lampang"
-msgstr ""
+msgstr "Lampang"
 
 #: thailand.kgm:44
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Lamphun"
-msgstr ""
+msgstr "Lamphun"
 
 #: thailand.kgm:49
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Mae Hong Son"
-msgstr ""
+msgstr "Mae Hong Son"
 
 #: thailand.kgm:54
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Nakhon Sawan"
-msgstr ""
+msgstr "Nakhon Sawan"
 
 #: thailand.kgm:59
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Nan"
-msgstr ""
+msgstr "Nan"
 
 #: thailand.kgm:64
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Phayao"
-msgstr ""
+msgstr "Phayao"
 
 #: thailand.kgm:69
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Phetchabun"
-msgstr ""
+msgstr "Phetchabun"
 
 #: thailand.kgm:74
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Phichit"
-msgstr ""
+msgstr "Phichit"
 
 #: thailand.kgm:79
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Phitsanulok"
-msgstr ""
+msgstr "Phitsanulok"
 
 #: thailand.kgm:84
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Phrae"
-msgstr ""
+msgstr "Phrae"
 
 #: thailand.kgm:89
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Sukhothai"
-msgstr ""
+msgstr "Sukhothai"
 
 #: thailand.kgm:94
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Tak"
-msgstr ""
+msgstr "Tak"
 
 #: thailand.kgm:99
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Uthai Thani"
-msgstr ""
+msgstr "Uthai Thani"
 
 #: thailand.kgm:104
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Uttaradit"
-msgstr ""
+msgstr "Uttaradit"
 
 #: thailand.kgm:109
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Amnat Charoen"
-msgstr ""
+msgstr "Amnat Charoen"
 
 #: thailand.kgm:114
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Buri Ram"
-msgstr ""
+msgstr "Buri Ram"
 
 #: thailand.kgm:119
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Chaiyaphum"
-msgstr ""
+msgstr "Chaiyaphum"
 
 #: thailand.kgm:124
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Kalasin"
-msgstr ""
+msgstr "Kalasin"
 
 #: thailand.kgm:129
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Khon Kaen"
-msgstr ""
+msgstr "Khon Kaen"
 
 #: thailand.kgm:134
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Loei"
-msgstr ""
+msgstr "Loei"
 
 #: thailand.kgm:139
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Maha Sarakham"
-msgstr ""
+msgstr "Maha Sarakham"
 
 #: thailand.kgm:144
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Mukdahan"
-msgstr ""
+msgstr "Mukdahan"
 
 #: thailand.kgm:149
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Nakhon Phanom"
-msgstr ""
+msgstr "Nakhon Phanom"
 
 #: thailand.kgm:154
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Nakhon Ratchasima"
-msgstr ""
+msgstr "Nakhon Ratchasima"
 
 #: thailand.kgm:159
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Nong Bua Lamphu"
-msgstr ""
+msgstr "Nong Bua Lamphu"
 
 #: thailand.kgm:164
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Nong Khai"
-msgstr ""
+msgstr "Nong Khai"
 
 #: thailand.kgm:169
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Roi Et"
-msgstr ""
+msgstr "Roi Et"
 
 #: thailand.kgm:174
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Sakon Nakhon"
-msgstr ""
+msgstr "Sakon Nakhon"
 
 #: thailand.kgm:179
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Si Sa Ket"
-msgstr ""
+msgstr "Si Sa Ket"
 
 #: thailand.kgm:184
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Surin"
-msgstr ""
+msgstr "Surin"
 
 #: thailand.kgm:189
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Ubon Ratchathani"
-msgstr ""
+msgstr "Ubon Ratchathani"
 
 #: thailand.kgm:194
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Udon Thani"
-msgstr ""
+msgstr "Udon Thani"
 
 #: thailand.kgm:199
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Yasothon"
-msgstr ""
+msgstr "Yasothon"
 
 #: thailand.kgm:204
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Chachoengsao"
-msgstr ""
+msgstr "Chachoengsao"
 
 #: thailand.kgm:209
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Chanthaburi"
-msgstr ""
+msgstr "Chanthaburi"
 
 #: thailand.kgm:214
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Chon Buri"
-msgstr ""
+msgstr "Chon Buri"
 
 #: thailand.kgm:219
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Prachin Buri"
-msgstr ""
+msgstr "Prachin Buri"
 
 #: thailand.kgm:224
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Rayong"
-msgstr ""
+msgstr "Rayong"
 
 #: thailand.kgm:229
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Sa Kaeo"
-msgstr ""
+msgstr "Sa Kaeo"
 
 #: thailand.kgm:234
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Trat"
-msgstr ""
+msgstr "Trat"
 
 #: thailand.kgm:239
 #, kde-format
