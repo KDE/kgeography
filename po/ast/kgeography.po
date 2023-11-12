@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-10-16 00:39+0000\n"
-"PO-Revision-Date: 2023-11-07 21:26+0100\n"
+"PO-Revision-Date: 2023-11-11 21:09+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
 "Language: ast\n"
@@ -22543,7 +22543,7 @@ msgstr ""
 #: kgeography.cpp:62
 #, kde-format
 msgid "&Location of Regions"
-msgstr ""
+msgstr "&Llocalización de rexones"
 
 #: kgeography.cpp:63
 #, kde-format
@@ -22597,7 +22597,7 @@ msgstr ""
 #: kgeography.cpp:72
 #, kde-format
 msgid "&Flags of Regions"
-msgstr "&Banderes pola so rexón"
+msgstr "&Banderes de rexones"
 
 #: kgeography.cpp:73
 #, kde-format
@@ -22657,17 +22657,17 @@ msgstr ""
 #: kgeography.cpp:262
 #, kde-format
 msgid "Number of Questions"
-msgstr ""
+msgstr "Númberu d'entrugues"
 
 #: kgeography.cpp:263
 #, kde-format
 msgid "How many questions do you want? (1 to %1)"
-msgstr ""
+msgstr "¿Cuántes entrugues quies? (de 1 a %1)"
 
 #: kgeography.cpp:422
 #, kde-format
 msgid "&Location of %1"
-msgstr ""
+msgstr "&Llocalización de: %1"
 
 #: kgeography.cpp:423
 #, kde-format
@@ -22682,7 +22682,7 @@ msgstr ""
 #: kgeography.cpp:427
 #, kde-format
 msgid "&Flags of %1"
-msgstr ""
+msgstr "&Banderes de: %1"
 
 #: kgeography.cpp:429
 #, kde-format
