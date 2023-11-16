@@ -19,6 +19,8 @@
 #include <KLocalizedString>
 #include <math.h>
 
+#include <settings.h>
+
 mapWidget::mapWidget(QWidget *parent) : QGraphicsView(parent)
 {
 	p_mode = None;
@@ -82,10 +84,12 @@ void mapWidget::mousePressEvent(QMouseEvent *e)
 		}
 		else
 		{
-			if ( QRectF(p_originalImage.rect()).contains( p_initial ) )
+			QRectF fixed_rect = QRectF(p_originalImage.rect());
+			fixed_rect.adjust(0, 0, -1, -1); // Fixing edge case
+			if ( fixed_rect.contains( p_initial ) )
 			{
 				QRgb rgb = p_originalImage.pixel( int(p_initial.x()), int(p_initial.y()) );
-				Q_EMIT clicked( rgb, e->pos() );
+				Q_EMIT clicked( rgb, e->pos(), false ); // not moving
 			}
 		}
 	}
@@ -126,6 +130,17 @@ void mapWidget::mouseMoveEvent(QMouseEvent *e)
 		verticalScrollBar()->setValue( verticalScrollBar()->value() + diff.y() );
 		
 		p_prev = e->pos();
+	}
+	else if (e -> buttons() == Qt::LeftButton && kgeographySettings::self() -> tooltipFollowsMouse())
+	{
+		p_initial = mapToScene( e->pos() );
+		QRectF fixed_rect = QRectF(p_originalImage.rect());
+		fixed_rect.adjust(0, 0, -1, -1); // Fixing edge case
+		if ( fixed_rect.contains( p_initial ) )
+			{
+			   QRgb rgb = p_originalImage.pixel( int(p_initial.x()), int(p_initial.y()) );
+			   Q_EMIT clicked( rgb, e->pos(), true ); // moving
+			}
 	}
 }
 

@@ -15,6 +15,7 @@
 
 #include <QLabel>
 #include <QLayout>
+#include <QMouseEvent>
 #include <QRandomGenerator>
 #include <QScrollBar>
 #include <QString>
@@ -115,8 +116,13 @@ void mapAsker::setAutomaticZoom(bool automaticZoom)
 	p_popupManager.clear();
 }
 
-void mapAsker::handleMapClick(QRgb c, const QPoint &p)
+void mapAsker::handleMapClick(QRgb c, const QPoint& p, bool isMoving)
 {
+	if ( kgeographySettings::self() -> tooltipFollowsMouse() && p_asker && isMoving)
+	{
+		// Don't do anything if we're click+moving the mouse and are in question mode
+		return;
+	}
 	QRgb colorSeen = c;
 	QString correctDivision;
 	QRgb correctRgb;

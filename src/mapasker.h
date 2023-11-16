@@ -44,7 +44,7 @@ Q_OBJECT
 		void setAutomaticZoom(bool b) override;
 	
 	private Q_SLOTS:
-		void handleMapClick(QRgb c, const QPoint &p);
+		void handleMapClick(QRgb c, const QPoint &p, bool isMoving);
 	
 	private:
 		QLabel *p_next;

@@ -39,7 +39,7 @@ Q_OBJECT
 		void setMoveActionChecked(bool b);
 		void setZoomActionChecked(bool b);
 		void setMoveActionEnabled(bool b);
-		void clicked(QRgb, const QPoint&);
+		void clicked(QRgb, const QPoint&, bool);
 	
 	protected:
 		void mousePressEvent(QMouseEvent *e) override;
