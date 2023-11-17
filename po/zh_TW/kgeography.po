@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-16 00:39+0000\n"
+"POT-Creation-Date: 2023-11-17 01:36+0000\n"
 "PO-Revision-Date: 2019-12-22 21:22+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
@@ -11201,7 +11201,7 @@ msgctxt "denmark_counties.kgm"
 msgid "Rønne"
 msgstr "隆尼 (Rønne)"
 
-#: divisioncapitalasker.cpp:32 divisionflagasker.cpp:35 mapasker.cpp:195
+#: divisioncapitalasker.cpp:32 divisionflagasker.cpp:35 mapasker.cpp:201
 #: placeasker.cpp:192
 #, kde-format
 msgctxt "@item:intable column Question, %1 is region name"
@@ -22767,8 +22767,14 @@ msgid ""
 "Whether press on space while hovering a button should trigger that button"
 msgstr "當滑鼠移到某按鍵上時，按下空白鍵是否表示按下該按鍵"
 
-#. i18n: ectx: label, entry (colorDisguise), group (general)
+#. i18n: ectx: label, entry (tooltipFollowsMouse), group (general)
 #: kgeography.kcfg:35
+#, kde-format
+msgid "Whether the map tooltip follows mouse movement"
+msgstr ""
+
+#. i18n: ectx: label, entry (colorDisguise), group (general)
+#: kgeography.kcfg:39
 #, kde-format
 msgid "What to do to colors of divisions"
 msgstr "行政區的顏色處理方式"
@@ -22859,27 +22865,41 @@ msgstr "當滑鼠移到某按鍵上時，按下空白鍵是否表示按下該按
 msgid "&Focus follows mouse"
 msgstr "焦點隨滑鼠移動(&F)"
 
-#. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_tooltipFollowsMouse)
+#: kgeographyoptions.ui:109
+#, kde-format
+msgid ""
+"Whether the map tooltip will follow mouse when it is pressed and moving "
+"across the map or not"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_tooltipFollowsMouse)
 #: kgeographyoptions.ui:112
+#, kde-format
+msgid "&Move map tooltip on mouse move"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
+#: kgeographyoptions.ui:122
 #, kde-format
 msgid ""
 "Choose if you want to keep current divisions colors or have random colors."
 msgstr "選擇您是要保留目前的區別顏色，還是要使用隨機顏色。"
 
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_colorDisguise)
-#: kgeographyoptions.ui:115
+#: kgeographyoptions.ui:125
 #, kde-format
 msgid "Map divisions colors"
 msgstr "地圖區隔顏色"
 
 #. i18n: ectx: property (text), widget (QRadioButton, noColorDisguiseRadio)
-#: kgeographyoptions.ui:121
+#: kgeographyoptions.ui:131
 #, kde-format
 msgid "Always the same"
 msgstr "總是一樣"
 
 #. i18n: ectx: property (text), widget (QRadioButton, scrambleColorDisguiseRadio)
-#: kgeographyoptions.ui:128
+#: kgeographyoptions.ui:138
 #, kde-format
 msgid "Use random colors"
 msgstr "使用隨機色彩"
@@ -24136,7 +24156,7 @@ msgstr "%1 的首都"
 msgid "Regions"
 msgstr "區域"
 
-#: mapasker.cpp:140 placeasker.cpp:100
+#: mapasker.cpp:146 placeasker.cpp:100
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -24146,25 +24166,25 @@ msgstr ""
 "您在地圖上找到了錯誤。請與作者聯絡，並告訴他地圖 %1 並未與顏色 %2,%3,%4 相"
 "關。"
 
-#: mapasker.cpp:151
+#: mapasker.cpp:157
 #, kde-format
 msgctxt "@item Capital name in map popup"
 msgid "%1"
 msgstr "%1"
 
-#: mapasker.cpp:157
+#: mapasker.cpp:163
 #, kde-format
 msgctxt "@item Region name in map popup"
 msgid "%1"
 msgstr "%1"
 
-#: mapasker.cpp:194
+#: mapasker.cpp:200
 #, kde-format
 msgctxt "@info:status"
 msgid "Please click on:<br/><b>%1</b>"
 msgstr "請點選：<br/><b>%1</b>"
 
-#: mapasker.cpp:204
+#: mapasker.cpp:210
 #, kde-format
 msgctxt "@title"
 msgid "%1 in Map"

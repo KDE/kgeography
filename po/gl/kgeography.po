@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-16 00:39+0000\n"
+"POT-Creation-Date: 2023-11-17 01:36+0000\n"
 "PO-Revision-Date: 2023-10-30 20:02+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -11195,7 +11195,7 @@ msgctxt "denmark_counties.kgm"
 msgid "Rønne"
 msgstr "Rønne"
 
-#: divisioncapitalasker.cpp:32 divisionflagasker.cpp:35 mapasker.cpp:195
+#: divisioncapitalasker.cpp:32 divisionflagasker.cpp:35 mapasker.cpp:201
 #: placeasker.cpp:192
 #, kde-format
 msgctxt "@item:intable column Question, %1 is region name"
@@ -22753,8 +22753,14 @@ msgid ""
 "Whether press on space while hovering a button should trigger that button"
 msgstr "Se premer o espazo mentres se pasa por riba dun botón activa ese botón"
 
-#. i18n: ectx: label, entry (colorDisguise), group (general)
+#. i18n: ectx: label, entry (tooltipFollowsMouse), group (general)
 #: kgeography.kcfg:35
+#, kde-format
+msgid "Whether the map tooltip follows mouse movement"
+msgstr ""
+
+#. i18n: ectx: label, entry (colorDisguise), group (general)
+#: kgeography.kcfg:39
 #, kde-format
 msgid "What to do to colors of divisions"
 msgstr "Que facerlles ás cores das divisións"
@@ -22846,8 +22852,22 @@ msgstr "Se premer o espazo activa o botón que haxa baixo o rato ou non"
 msgid "&Focus follows mouse"
 msgstr "O &foco segue o rato"
 
-#. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_tooltipFollowsMouse)
+#: kgeographyoptions.ui:109
+#, kde-format
+msgid ""
+"Whether the map tooltip will follow mouse when it is pressed and moving "
+"across the map or not"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_tooltipFollowsMouse)
 #: kgeographyoptions.ui:112
+#, kde-format
+msgid "&Move map tooltip on mouse move"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
+#: kgeographyoptions.ui:122
 #, kde-format
 msgid ""
 "Choose if you want to keep current divisions colors or have random colors."
@@ -22855,19 +22875,19 @@ msgstr ""
 "Escolle se queres manter as cores actuais das divisións ou ter cores ao chou."
 
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_colorDisguise)
-#: kgeographyoptions.ui:115
+#: kgeographyoptions.ui:125
 #, kde-format
 msgid "Map divisions colors"
 msgstr "Cores das divisións dos mapas"
 
 #. i18n: ectx: property (text), widget (QRadioButton, noColorDisguiseRadio)
-#: kgeographyoptions.ui:121
+#: kgeographyoptions.ui:131
 #, kde-format
 msgid "Always the same"
 msgstr "Sempre as mesmas"
 
 #. i18n: ectx: property (text), widget (QRadioButton, scrambleColorDisguiseRadio)
-#: kgeographyoptions.ui:128
+#: kgeographyoptions.ui:138
 #, kde-format
 msgid "Use random colors"
 msgstr "Usar cores ao chou"
@@ -24124,7 +24144,7 @@ msgstr "Capitais de %1"
 msgid "Regions"
 msgstr "Rexións"
 
-#: mapasker.cpp:140 placeasker.cpp:100
+#: mapasker.cpp:146 placeasker.cpp:100
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -24134,25 +24154,25 @@ msgstr ""
 "Atopaches un fallo nun mapa. Contacta co autor e dille que o mapa %1 non ten "
 "nada asociado á cor %2,%3,%4."
 
-#: mapasker.cpp:151
+#: mapasker.cpp:157
 #, kde-format
 msgctxt "@item Capital name in map popup"
 msgid "%1"
 msgstr "%1"
 
-#: mapasker.cpp:157
+#: mapasker.cpp:163
 #, kde-format
 msgctxt "@item Region name in map popup"
 msgid "%1"
 msgstr "%1"
 
-#: mapasker.cpp:194
+#: mapasker.cpp:200
 #, kde-format
 msgctxt "@info:status"
 msgid "Please click on:<br/><b>%1</b>"
 msgstr "Preme:<br/><b>%1</b>"
 
-#: mapasker.cpp:204
+#: mapasker.cpp:210
 #, kde-format
 msgctxt "@title"
 msgid "%1 in Map"
