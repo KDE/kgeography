@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2023-10-26 13:28+0200\n"
+"PO-Revision-Date: 2023-11-17 09:58+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -22760,7 +22760,7 @@ msgstr ""
 #: kgeography.kcfg:35
 #, kde-format
 msgid "Whether the map tooltip follows mouse movement"
-msgstr ""
+msgstr "Si el consell d'eina del mapa segueix el moviment del ratolí"
 
 #. i18n: ectx: label, entry (colorDisguise), group (general)
 #: kgeography.kcfg:39
@@ -22863,12 +22863,14 @@ msgid ""
 "Whether the map tooltip will follow mouse when it is pressed and moving "
 "across the map or not"
 msgstr ""
+"Si el consell d'eina del mapa seguirà el ratolí quan es prem i es mou a "
+"través del mapa o no"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_tooltipFollowsMouse)
 #: kgeographyoptions.ui:112
 #, kde-format
 msgid "&Move map tooltip on mouse move"
-msgstr ""
+msgstr "&Mou el consell d'eina del mapa en moure el ratolí"
 
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
 #: kgeographyoptions.ui:122

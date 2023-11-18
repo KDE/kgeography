@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: kdeedu-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2023-03-26 20:12+0300\n"
+"PO-Revision-Date: 2023-11-17 14:11+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.11.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -22754,7 +22754,7 @@ msgstr ""
 #: kgeography.kcfg:35
 #, kde-format
 msgid "Whether the map tooltip follows mouse movement"
-msgstr ""
+msgstr "Harita araç ipucunun fare hareketini izleyip izlemeyeceği"
 
 #. i18n: ectx: label, entry (colorDisguise), group (general)
 #: kgeography.kcfg:39
@@ -22858,12 +22858,14 @@ msgid ""
 "Whether the map tooltip will follow mouse when it is pressed and moving "
 "across the map or not"
 msgstr ""
+"Harita araç ipucunun fareye tıklandığında ve haritanın üzerinde hareket "
+"ettiği/etmediği durumlarda fareyi izleyip izlemeyeceği"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_tooltipFollowsMouse)
 #: kgeographyoptions.ui:112
 #, kde-format
 msgid "&Move map tooltip on mouse move"
-msgstr ""
+msgstr "Fare hareketinde harita araç ipucunu &taşı"
 
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
 #: kgeographyoptions.ui:122
@@ -38636,7 +38638,7 @@ msgstr "Sınır"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Not Waters (World-Class)"
-msgstr "Su Değil (Dünya-Sınıfı)"
+msgstr "Su Değil (Dünya Sınıfı)"
 
 #: waters_world-class.kgm:19
 #, kde-format
@@ -38684,7 +38686,7 @@ msgstr "Hint Okyanusu"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Antarctic ocean"
-msgstr "Güney Kutbu okyanusu"
+msgstr "Güney Kutbu Okyanusu"
 
 #: waters_world-class.kgm:59
 #, kde-format
@@ -38696,13 +38698,13 @@ msgstr "Kongo"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Lake Chad"
-msgstr "Lake Chad"
+msgstr "Çad Gölü"
 
 #: waters_world-class.kgm:69
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Jubba"
-msgstr "Jubba"
+msgstr "Cubba"
 
 #: waters_world-class.kgm:74
 #, kde-format
@@ -38744,7 +38746,7 @@ msgstr "Ogooue"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Okavango swamp"
-msgstr "Okavango swamp"
+msgstr "Okavango Deltası"
 
 #: waters_world-class.kgm:109
 #, kde-format
@@ -38756,7 +38758,7 @@ msgstr "Orange"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Oued Draa"
-msgstr "Oued Draa"
+msgstr "Ud Dra"
 
 #: waters_world-class.kgm:119
 #, kde-format
@@ -38768,7 +38770,7 @@ msgstr "Senegal"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Shabelle"
-msgstr "Shabelle"
+msgstr "Şebelle"
 
 #: waters_world-class.kgm:129
 #, kde-format
@@ -38798,7 +38800,7 @@ msgstr "Dalalven"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Danube"
-msgstr "Tuna Nehri"
+msgstr "Tuna"
 
 #: waters_world-class.kgm:154
 #, kde-format
@@ -38810,13 +38812,13 @@ msgstr "Daugava"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Dnieper"
-msgstr "Dnieper"
+msgstr "Dinyeper"
 
 #: waters_world-class.kgm:164
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Dniester"
-msgstr "Dniester"
+msgstr "Dinyester"
 
 #: waters_world-class.kgm:169
 #, kde-format
@@ -38864,7 +38866,7 @@ msgstr "Kemijoki"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Kura (& Araks)"
-msgstr "Kura (& Araks)"
+msgstr "Kura (ve Araks)"
 
 #: waters_world-class.kgm:209
 #, kde-format
@@ -38900,7 +38902,7 @@ msgstr "Po"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Rhine"
-msgstr "Rhine"
+msgstr "Ren"
 
 #: waters_world-class.kgm:239
 #, kde-format
@@ -38912,7 +38914,7 @@ msgstr "Rhone"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Seine"
-msgstr "Seine"
+msgstr "Sen"
 
 #: waters_world-class.kgm:249
 #, kde-format
@@ -38924,7 +38926,7 @@ msgstr "Tagus"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Tigris (& Euphrates)"
-msgstr "Tigris (& Fırat)"
+msgstr "Dicle (ve Fırat)"
 
 #: waters_world-class.kgm:259
 #, kde-format
@@ -38954,7 +38956,7 @@ msgstr "Weser"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Amu Darya"
-msgstr "Amu Darya"
+msgstr "Ceyhun"
 
 #: waters_world-class.kgm:284
 #, kde-format
@@ -38978,7 +38980,7 @@ msgstr "Brahmaputra"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Chao Phrya"
-msgstr "Chao Phrya"
+msgstr "Çao Phraya"
 
 #: waters_world-class.kgm:304
 #, kde-format
@@ -38990,7 +38992,7 @@ msgstr "Fly"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Ganges"
-msgstr "Ganj Nehri"
+msgstr "Ganj"
 
 #: waters_world-class.kgm:314
 #, kde-format
@@ -39008,25 +39010,25 @@ msgstr "Hong (Kırmızı nehir)"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Hwang He"
-msgstr "Hwang He"
+msgstr "Huang Hı"
 
 #: waters_world-class.kgm:329
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Indigirka"
-msgstr "Indigirka"
+msgstr "İndigirka"
 
 #: waters_world-class.kgm:334
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Indus"
-msgstr "Indus"
+msgstr "İndus"
 
 #: waters_world-class.kgm:339
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Irrawaddy"
-msgstr "Irrawaddy"
+msgstr "İravadi"
 
 #: waters_world-class.kgm:344
 #, kde-format
@@ -39038,13 +39040,13 @@ msgstr "Kapuas"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Kolyma"
-msgstr "Kolyma"
+msgstr "Kolıma"
 
 #: waters_world-class.kgm:354
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Krishna"
-msgstr "Krishna"
+msgstr "Krişna"
 
 #: waters_world-class.kgm:359
 #, kde-format
@@ -39074,7 +39076,7 @@ msgstr "Mekong"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Murray (& Darling)"
-msgstr "Murray (& Sevimli)"
+msgstr "Murray (ve Sevimli)"
 
 #: waters_world-class.kgm:384
 #, kde-format
@@ -39092,7 +39094,7 @@ msgstr "Ob"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Salween"
-msgstr "Salween"
+msgstr "Saluen"
 
 #: waters_world-class.kgm:399
 #, kde-format
@@ -39104,7 +39106,7 @@ msgstr "Sepik"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Syr Daria"
-msgstr "Syr Daria"
+msgstr "Seyhun"
 
 #: waters_world-class.kgm:409
 #, kde-format
@@ -39122,13 +39124,13 @@ msgstr "Tarim"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Xi Jiang"
-msgstr "Xi Jiang"
+msgstr "Şi Cieng"
 
 #: waters_world-class.kgm:424
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Yalu Jiang"
-msgstr "Yalu Jiang"
+msgstr "Yalu Cieng"
 
 #: waters_world-class.kgm:429
 #, kde-format
@@ -39440,7 +39442,7 @@ msgstr "Alipur"
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "North 24-Parganas"
-msgstr "Kuzey 24-Parganas"
+msgstr "Kuzey 24 Parganas"
 
 #: westbengal.kgm:89
 #, kde-format
@@ -39458,37 +39460,37 @@ msgstr "Kolkata"
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Hooghly "
-msgstr "Hooghly "
+msgstr "Hugli"
 
 #: westbengal.kgm:109
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Chunchura "
-msgstr "Chunchura "
+msgstr "Çunçura"
 
 #: westbengal.kgm:118 westbengal.kgm:119
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Burdwan"
-msgstr "Burdwan"
+msgstr "Burdvan"
 
 #: westbengal.kgm:128
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Nadia"
-msgstr "Nadia"
+msgstr "Nadiya"
 
 #: westbengal.kgm:129
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Krishnanagar"
-msgstr "Krishnanagar"
+msgstr "Krişnanagar"
 
 #: westbengal.kgm:138
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Birbhum"
-msgstr "Birbhum"
+msgstr "Birbum"
 
 #: westbengal.kgm:139
 #, kde-format
@@ -39500,7 +39502,7 @@ msgstr "Suri"
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Murshidabad"
-msgstr "Murshidabad"
+msgstr "Mürşidabad"
 
 #: westbengal.kgm:149
 #, kde-format
@@ -39524,13 +39526,13 @@ msgstr "Inreg Bazar"
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Dakshin Dinajpur"
-msgstr "Dakshin Dinajpur"
+msgstr "Dakşin Dinajpur"
 
 #: westbengal.kgm:169
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Balurghat"
-msgstr "Balurghat"
+msgstr "Balurgat"
 
 #: westbengal.kgm:178
 #, kde-format
@@ -39626,13 +39628,13 @@ msgstr "Porto Novo"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Botswana"
-msgstr "Botswana"
+msgstr "Botsvana"
 
 #: world.kgm:59
 #, kde-format
 msgctxt "world.kgm"
 msgid "Gaborone"
-msgstr "Gaborone"
+msgstr "Gaboron"
 
 #: world.kgm:67
 #, kde-format
@@ -39644,7 +39646,7 @@ msgstr "Burkina Faso"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Ouagadougou"
-msgstr "Ouagadougou"
+msgstr "Vagadugu"
 
 #: world.kgm:77
 #, kde-format
@@ -39668,7 +39670,7 @@ msgstr "Kamerun"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Yaoundé"
-msgstr "Yaoundé"
+msgstr "Yaunde"
 
 #: world.kgm:97
 #, kde-format
@@ -39698,13 +39700,13 @@ msgstr "N'Djamena"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Côte d'Ivoire"
-msgstr "Côte d'Ivoire"
+msgstr "Fildişi Kıyısı"
 
 #: world.kgm:119
 #, kde-format
 msgctxt "world.kgm"
 msgid "Yamoussoukro"
-msgstr "Yamoussoukro"
+msgstr "Yamusukro"
 
 #: world.kgm:127
 #, kde-format
@@ -39716,7 +39718,7 @@ msgstr "Kongo Demokratik Cumhuriyeti"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Kinshasa"
-msgstr "Kinshasa"
+msgstr "Kinşasa"
 
 #: world.kgm:137 world.kgm:139
 #, kde-format
@@ -39806,7 +39808,7 @@ msgstr "Gine"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Conakry"
-msgstr "Conakry"
+msgstr "Konakri"
 
 #: world.kgm:217
 #, kde-format
@@ -39890,7 +39892,7 @@ msgstr "Kuveyt"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Kuwait City"
-msgstr "Kuwait City"
+msgstr "Kuveyt"
 
 #: world.kgm:287
 #, kde-format
@@ -39938,13 +39940,13 @@ msgstr "Libya"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Tripoli"
-msgstr "Tripoli"
+msgstr "Trablus"
 
 #: world.kgm:327
 #, kde-format
 msgctxt "world.kgm"
 msgid "Liechtenstein"
-msgstr "Liechtenstein"
+msgstr "Lihtenştayn"
 
 #: world.kgm:329
 #, kde-format
@@ -39968,13 +39970,13 @@ msgstr "Antananarivo"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Malawi"
-msgstr "Malawi"
+msgstr "Malavi"
 
 #: world.kgm:349
 #, kde-format
 msgctxt "world.kgm"
 msgid "Lilongwe"
-msgstr "Lilongwe"
+msgstr "Lilongve"
 
 #: world.kgm:357
 #, kde-format
@@ -39998,7 +40000,7 @@ msgstr "Mauritanya"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Nouakchott"
-msgstr "Nouakchott"
+msgstr "Nuakşot"
 
 #: world.kgm:377
 #, kde-format
@@ -40142,7 +40144,7 @@ msgstr "Somali"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Mogadishu"
-msgstr "Mogadishu"
+msgstr "Mogadişu"
 
 #: world.kgm:497
 #, kde-format
@@ -40166,7 +40168,7 @@ msgstr "Sudan"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Khartoum"
-msgstr "Khartoum"
+msgstr "Hartum"
 
 #: world.kgm:517
 #, kde-format
@@ -40274,7 +40276,7 @@ msgstr "Birleşik Arap Emirlikleri"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Abu Dhabi City"
-msgstr "Abu Dhabi City"
+msgstr "Abu Dabi"
 
 #: world.kgm:607
 #, kde-format
@@ -40298,13 +40300,13 @@ msgstr "Batı Şeria"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Western Sahara"
-msgstr "Batı Sahara"
+msgstr "Batı Sahra"
 
 #: world.kgm:628
 #, kde-format
 msgctxt "world.kgm"
 msgid "Laayoune"
-msgstr "Laayoune"
+msgstr "Layun"
 
 #: world.kgm:636
 #, kde-format
@@ -40316,13 +40318,13 @@ msgstr "Yemen"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Sana'a"
-msgstr "Sana'a"
+msgstr "Sana"
 
 #: world.kgm:646
 #, kde-format
 msgctxt "world.kgm"
 msgid "Zambia"
-msgstr "Zambia"
+msgstr "Zambiya"
 
 #: world.kgm:648
 #, kde-format
@@ -40334,7 +40336,7 @@ msgstr "Lusaka"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Zimbabwe"
-msgstr "Zimbabwe"
+msgstr "Zimbabve"
 
 #: world.kgm:658
 #, kde-format
@@ -40610,7 +40612,7 @@ msgstr "Moldova"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Chisinau"
-msgstr "Chisinau"
+msgstr "Kişinev"
 
 #: world.kgm:896
 #, kde-format

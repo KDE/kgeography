@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2022-09-15 06:40+0200\n"
+"PO-Revision-Date: 2023-11-17 07:39+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Lokalize 22.04.1\n"
+"X-Generator: Poedit 3.4.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -22539,7 +22539,7 @@ msgstr "Taraz"
 #: kgeography.cpp:58
 #, kde-format
 msgid "E&xplore Map"
-msgstr "&Raziskovanje zemljevida"
+msgstr "Raziskovanje zemljevida"
 
 #: kgeography.cpp:59
 #, kde-format
@@ -22572,7 +22572,7 @@ msgstr ""
 #: kgeography.cpp:64
 #, kde-format
 msgid "&Place Regions in the Map"
-msgstr "&Umestitev območja na zemljevid"
+msgstr "Umestitev območja na zemljevid"
 
 #: kgeography.cpp:65
 #, kde-format
@@ -22586,7 +22586,7 @@ msgstr ""
 #: kgeography.cpp:66
 #, kde-format
 msgid "&Regions by Capital"
-msgstr "&Območja po glavnem mestu"
+msgstr "Območja po glavnem mestu"
 
 #: kgeography.cpp:67
 #, kde-format
@@ -22596,7 +22596,7 @@ msgstr "V tem kvizu naj bi ugotavljali ime države glede na podano glavno mesto"
 #: kgeography.cpp:68
 #, kde-format
 msgid "&Capitals of Regions"
-msgstr "&Glavna mesta območij"
+msgstr "Glavna mesta območij"
 
 #: kgeography.cpp:69
 #, kde-format
@@ -22616,7 +22616,7 @@ msgstr "V tem kvizu morate uganiti državo iz podane zastave"
 #: kgeography.cpp:72
 #, kde-format
 msgid "&Flags of Regions"
-msgstr "&Zastave območij"
+msgstr "Zastave območij"
 
 #: kgeography.cpp:73
 #, kde-format
@@ -22626,12 +22626,12 @@ msgstr "V tem kvizu morate uganiti zastavo podane države"
 #: kgeography.cpp:109
 #, kde-format
 msgid "&Open Map..."
-msgstr "Odpri &zemljevid ..."
+msgstr "&Odpri zemljevid ..."
 
 #: kgeography.cpp:114
 #, kde-format
 msgid "&Zoom"
-msgstr "&Približanje"
+msgstr "Približanje"
 
 #: kgeography.cpp:119
 #, kde-format
@@ -22641,12 +22641,12 @@ msgstr "Izv&orna velikost"
 #: kgeography.cpp:124
 #, kde-format
 msgid "&Automatic Zoom"
-msgstr "&Samodejno približanje"
+msgstr "S&amodejno približanje"
 
 #: kgeography.cpp:129
 #, kde-format
 msgid "&Move"
-msgstr "&Premakni"
+msgstr "Premakni"
 
 #: kgeography.cpp:134 kgeography.cpp:453
 #, kde-format
@@ -22688,7 +22688,7 @@ msgstr "Koliko vprašanj želite? (1 do %1)"
 #: kgeography.cpp:422
 #, kde-format
 msgid "&Location of %1"
-msgstr "&Mesto %1"
+msgstr "Mesto %1"
 
 #: kgeography.cpp:423
 #, kde-format
@@ -22703,7 +22703,7 @@ msgstr "%1 po zastavi"
 #: kgeography.cpp:427
 #, kde-format
 msgid "&Flags of %1"
-msgstr "&Zastave %1"
+msgstr "Zastave %1"
 
 #: kgeography.cpp:429
 #, kde-format
@@ -22758,7 +22758,7 @@ msgstr "Pritisk preslednice naj sproži gumb, ki je trenutno prekrit"
 #: kgeography.kcfg:35
 #, kde-format
 msgid "Whether the map tooltip follows mouse movement"
-msgstr ""
+msgstr "Ali orodni namig zemljevida sledi premikanju miške"
 
 #. i18n: ectx: label, entry (colorDisguise), group (general)
 #: kgeography.kcfg:39
@@ -22770,7 +22770,7 @@ msgstr "Kaj napraviti z barvami razdelitev"
 #: kgeographyoptions.ui:17
 #, kde-format
 msgid "&Question Alignment"
-msgstr "&Poravnava vprašanja"
+msgstr "Poravnava vprašanja"
 
 #. i18n: ectx: property (text), widget (QRadioButton, topleftRadio)
 #: kgeographyoptions.ui:23
@@ -22782,13 +22782,13 @@ msgstr "Zgoraj-l&evo"
 #: kgeographyoptions.ui:30
 #, kde-format
 msgid "&Top"
-msgstr "&Zgoraj"
+msgstr "Zgoraj"
 
 #. i18n: ectx: property (text), widget (QRadioButton, toprightRadio)
 #: kgeographyoptions.ui:37
 #, kde-format
 msgid "Top-r&ight"
-msgstr "Zgoraj-d&esno"
+msgstr "Zgoraj-desno"
 
 #. i18n: ectx: property (text), widget (QRadioButton, leftRadio)
 #: kgeographyoptions.ui:44
@@ -22800,13 +22800,13 @@ msgstr "&Levo"
 #: kgeographyoptions.ui:51
 #, kde-format
 msgid "&Center"
-msgstr "&Sredinsko"
+msgstr "Sredinsko"
 
 #. i18n: ectx: property (text), widget (QRadioButton, rightRadio)
 #: kgeographyoptions.ui:58
 #, kde-format
 msgid "&Right"
-msgstr "&Desno"
+msgstr "Desno"
 
 #. i18n: ectx: property (text), widget (QRadioButton, bottomleftRadio)
 #: kgeographyoptions.ui:65
@@ -22818,7 +22818,7 @@ msgstr "Spodaj-le&vo"
 #: kgeographyoptions.ui:72
 #, kde-format
 msgid "&Bottom"
-msgstr "&Spodaj"
+msgstr "Spodaj"
 
 #. i18n: ectx: property (text), widget (QRadioButton, bottomrightRadio)
 #: kgeographyoptions.ui:79
@@ -22839,7 +22839,7 @@ msgstr ""
 #: kgeographyoptions.ui:92
 #, kde-format
 msgid "&Wait for validation"
-msgstr "&Počakajte na potrditev"
+msgstr "Počakajte na potrditev"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_focusFollowsMouse)
 #: kgeographyoptions.ui:99
@@ -22851,7 +22851,7 @@ msgstr "Ali na se ob pritisku preslednice sproži gumb pod miško ali ne"
 #: kgeographyoptions.ui:102
 #, kde-format
 msgid "&Focus follows mouse"
-msgstr "&Žarišče sledi miški"
+msgstr "Žarišče sledi miški"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_tooltipFollowsMouse)
 #: kgeographyoptions.ui:109
@@ -22860,12 +22860,14 @@ msgid ""
 "Whether the map tooltip will follow mouse when it is pressed and moving "
 "across the map or not"
 msgstr ""
+"Ali bo orodni namig zemljevida sledil miški, ko jo pritisnete in se "
+"premikate po zemljevidu ali ne"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_tooltipFollowsMouse)
 #: kgeographyoptions.ui:112
 #, kde-format
 msgid "&Move map tooltip on mouse move"
-msgstr ""
+msgstr "Premakni orodni namig zemljevida ob premikanju miške"
 
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
 #: kgeographyoptions.ui:122

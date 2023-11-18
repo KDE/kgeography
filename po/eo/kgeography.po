@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2023-11-12 16:39+0100\n"
+"PO-Revision-Date: 2023-11-17 21:22+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
 "Language: eo\n"
@@ -22748,7 +22748,7 @@ msgstr "Ĉu premo de spaceto dum ŝvebado sur butono devus ekigi tiun butonon"
 #: kgeography.kcfg:35
 #, kde-format
 msgid "Whether the map tooltip follows mouse movement"
-msgstr ""
+msgstr "Ĉu la mapa konsileto sekvas musmovon"
 
 #. i18n: ectx: label, entry (colorDisguise), group (general)
 #: kgeography.kcfg:39
@@ -22849,12 +22849,14 @@ msgid ""
 "Whether the map tooltip will follow mouse when it is pressed and moving "
 "across the map or not"
 msgstr ""
+"Ĉu la map-konsileto sekvos muson kiam ĝi estas premata kaj moviĝanta trans "
+"la mapo aŭ ne"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_tooltipFollowsMouse)
 #: kgeographyoptions.ui:112
 #, kde-format
 msgid "&Move map tooltip on mouse move"
-msgstr ""
+msgstr "&Movi mapkonsileton je musmoviĝo"
 
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
 #: kgeographyoptions.ui:122

@@ -9,21 +9,21 @@
 # Bram Schoenmakers <bramschoenmakers@kde.nl>, 2005, 2006, 2007.
 # Jaap Woldringh <jjhwoldringh@kde.nl>, 2008, 2009, 2010, 2011.
 # Kristof Bal <kristof.bal@gmail.com>, 2009.
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2009, 2010, 2014, 2015, 2016, 2017, 2019, 2021, 2022.
+# SPDX-FileCopyrightText: 2009, 2010, 2014, 2015, 2016, 2017, 2019, 2021, 2022, 2023 Freek de Kruijf <freekdekruijf@kde.nl>
 # Jaap Woldringh <jjhwoldringh@kde.nl>, 2012, 2013, 2014, 2016, 2017, 2018, 2019, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2022-12-17 11:31+0100\n"
+"PO-Revision-Date: 2023-11-17 10:51+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
-"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language-Team: \n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 23.08.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -22756,7 +22756,7 @@ msgstr ""
 #: kgeography.kcfg:35
 #, kde-format
 msgid "Whether the map tooltip follows mouse movement"
-msgstr ""
+msgstr "Of de tekstballon van de kaart de muisbeweging volgt"
 
 #. i18n: ectx: label, entry (colorDisguise), group (general)
 #: kgeography.kcfg:39
@@ -22860,12 +22860,14 @@ msgid ""
 "Whether the map tooltip will follow mouse when it is pressed and moving "
 "across the map or not"
 msgstr ""
+"Of de tekstballon van de kaart de muis volgt wanneer deze is ingedrukt en al "
+"dan niet over de kaart beweegt"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_tooltipFollowsMouse)
 #: kgeographyoptions.ui:112
 #, kde-format
 msgid "&Move map tooltip on mouse move"
-msgstr ""
+msgstr "Tekstballon van kaart &verplaatsen bij verplaatsen van de muis"
 
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
 #: kgeographyoptions.ui:122
