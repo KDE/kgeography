@@ -2,7 +2,7 @@
 # Translation of kgeography to Spanish
 # Ignacio Bezanilla Diaz <coder@telefonica.net>, 2004.
 # Rafael Beccar <rafael.beccar@kdemail.net>, 2005.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2005, 2007, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
+# SPDX-FileCopyrightText: 2005, 2007, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023 Eloy Cuadra <ecuadra@eloihr.net>
 # Pablo de Vicente <pablo.devicente@gmail.com>, 2005, 2006.
 # santi <santi@kde-es.org>, 2006, 2007.
 # Santiago Fernández Sancho <santi@kde-es.org>, 2007, 2008.
@@ -15,14 +15,14 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2022-09-14 10:29+0200\n"
+"PO-Revision-Date: 2023-11-18 01:47+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.08.1\n"
+"X-Generator: Lokalize 23.08.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -22757,14 +22757,14 @@ msgstr "Solicitar validación antes de la siguiente pregunta"
 msgid ""
 "Whether press on space while hovering a button should trigger that button"
 msgstr ""
-"Si se debe pulsar un botón cuando se pulsa espacio mientras el cursor está "
-"sobre él"
+"Controla si se debe pulsar un botón cuando se pulsa espacio mientras el "
+"cursor está sobre él"
 
 #. i18n: ectx: label, entry (tooltipFollowsMouse), group (general)
 #: kgeography.kcfg:35
 #, kde-format
 msgid "Whether the map tooltip follows mouse movement"
-msgstr ""
+msgstr "Controla si la ayuda emergente del mapa sigue el movimiento del ratón"
 
 #. i18n: ectx: label, entry (colorDisguise), group (general)
 #: kgeography.kcfg:39
@@ -22839,7 +22839,7 @@ msgid ""
 "Whether the user will have to click \"Accept\" after choosing an answer or "
 "not"
 msgstr ""
-"Si el usuario debe o no debe pulsar «Aceptar» tras escoger una respuesta"
+"Controla si el usuario debe pulsar «Aceptar» tras escoger una respuesta"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_waitsForValidation)
 #: kgeographyoptions.ui:92
@@ -22852,8 +22852,7 @@ msgstr "&Esperar validación"
 #, kde-format
 msgid "Whether pressing space will trigger button under mouse or not"
 msgstr ""
-"Si se debe pulsar un botón cuando se pulsa espacio mientras el cursor está "
-"sobre él"
+"Controla si al pulsar espacio se activa el botón que esté debajo del ratón"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_focusFollowsMouse)
 #: kgeographyoptions.ui:102
@@ -22868,12 +22867,14 @@ msgid ""
 "Whether the map tooltip will follow mouse when it is pressed and moving "
 "across the map or not"
 msgstr ""
+"Controla si la ayuda emergente del mapa sigue al ratón cuando se pulsa y se "
+"mueve por el mapa"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_tooltipFollowsMouse)
 #: kgeographyoptions.ui:112
 #, kde-format
 msgid "&Move map tooltip on mouse move"
-msgstr ""
+msgstr "&Mover la ayuda emergente del mapa al mover el ratón"
 
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
 #: kgeographyoptions.ui:122
