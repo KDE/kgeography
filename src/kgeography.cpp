@@ -161,6 +161,7 @@ void kgeography::showPreferencesDialog()
 	// create it : 
 	KConfigDialog* dialog = new KConfigDialog(this, QStringLiteral("settings"),
 											  kgeographySettings::self()); 
+	dialog->setFaceType(KConfigDialog::Plain);
 //	FIXME: Waiting for the answer from Kévin about what to do with it
 //	dialog->setHelp("configuration", "kgeography");
 	QWidget *w = new QWidget();
