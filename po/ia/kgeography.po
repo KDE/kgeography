@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2023-11-06 17:18+0100\n"
+"PO-Revision-Date: 2023-12-06 09:05+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -14572,7 +14572,7 @@ msgstr ""
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Marseille"
-msgstr ""
+msgstr "Marsilia"
 
 #: france_regions.kgm:29
 #, kde-format
@@ -14596,7 +14596,7 @@ msgstr "Corsica"
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Ajaccio"
-msgstr ""
+msgstr "Ajaccio"
 
 #: france_regions.kgm:39
 #, kde-format
@@ -14620,7 +14620,7 @@ msgstr ""
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Toulouse"
-msgstr ""
+msgstr "Toulouse"
 
 #: france_regions.kgm:49
 #, kde-format
@@ -14632,7 +14632,7 @@ msgstr ""
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Bordeaux"
-msgstr ""
+msgstr "Bordeaux"
 
 #: france_regions.kgm:54
 #, kde-format
@@ -14656,7 +14656,7 @@ msgstr ""
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Nantes"
-msgstr ""
+msgstr "Nantes"
 
 #: france_regions.kgm:64
 #, kde-format
@@ -19282,7 +19282,7 @@ msgstr ""
 #, kde-format
 msgctxt "india.kgm"
 msgid "Karnataka"
-msgstr ""
+msgstr "Karnataka"
 
 #: india.kgm:80
 #, kde-format
@@ -19294,7 +19294,7 @@ msgstr ""
 #, kde-format
 msgctxt "india.kgm"
 msgid "Kerala"
-msgstr ""
+msgstr "Kerala"
 
 #: india.kgm:85
 #, kde-format
@@ -19420,13 +19420,13 @@ msgstr ""
 #, kde-format
 msgctxt "india.kgm"
 msgid "Tamil Nadu"
-msgstr ""
+msgstr "Tamil Nadu"
 
 #: india.kgm:140
 #, kde-format
 msgctxt "india.kgm"
 msgid "Chennai"
-msgstr ""
+msgstr "Chennai"
 
 #: india.kgm:144
 #, kde-format
@@ -19534,7 +19534,7 @@ msgstr ""
 #, kde-format
 msgctxt "india.kgm"
 msgid "Pondicherry"
-msgstr ""
+msgstr "Pondicherry"
 
 #: india.kgm:194
 #, kde-format
@@ -33284,37 +33284,37 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Not Surinam"
-msgstr ""
+msgstr "Non Suriname"
 
 #: suriname.kgm:29
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Nickerie"
-msgstr ""
+msgstr "Nickerie"
 
 #: suriname.kgm:30
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Nieuw Nickerie"
-msgstr ""
+msgstr "Nove Nickerie"
 
 #: suriname.kgm:34
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Coronie"
-msgstr ""
+msgstr "Coronie"
 
 #: suriname.kgm:35
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Totness"
-msgstr ""
+msgstr "Totness"
 
 #: suriname.kgm:39
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Saramacca"
-msgstr ""
+msgstr "Saramacca"
 
 #: suriname.kgm:40
 #, kde-format
@@ -33326,49 +33326,49 @@ msgstr "Groningen"
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Wanica"
-msgstr ""
+msgstr "Wanica"
 
 #: suriname.kgm:45
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Lelydorp"
-msgstr ""
+msgstr "Lelydorp"
 
 #: suriname.kgm:49
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Comewijne"
-msgstr ""
+msgstr "Comewijne"
 
 #: suriname.kgm:50
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Nieuw Amsterdam"
-msgstr ""
+msgstr "Nove Amsterdam"
 
 #: suriname.kgm:54
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Marowijne"
-msgstr ""
+msgstr "Marowijne"
 
 #: suriname.kgm:55
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Albina"
-msgstr ""
+msgstr "Albina"
 
 #: suriname.kgm:59
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Para"
-msgstr ""
+msgstr "Para"
 
 #: suriname.kgm:60
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Onverwacht"
-msgstr ""
+msgstr "Onverwacht"
 
 #: suriname.kgm:64 suriname.kgm:65
 #, kde-format
@@ -33380,19 +33380,19 @@ msgstr "Paramaribo"
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Brokopondo"
-msgstr ""
+msgstr "Brokopondo"
 
 #: suriname.kgm:74
 #, kde-format
 msgctxt "suriname.kgm"
 msgid "Sipaliwini"
-msgstr ""
+msgstr "Sipaliwini"
 
 #: sweden.kgm:5
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Sweden by Counties"
-msgstr ""
+msgstr "Svedia per Contatos"
 
 #: sweden.kgm:6
 #, kde-format
@@ -33410,25 +33410,25 @@ msgstr "Frontiera"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "County Border"
-msgstr ""
+msgstr "Bordo de Contato"
 
 #: sweden.kgm:27
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "CoastLine"
-msgstr ""
+msgstr "Litoral"
 
 #: sweden.kgm:36
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Not Sweden"
-msgstr ""
+msgstr "Non Svedia"
 
 #: sweden.kgm:45
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Stockholm County"
-msgstr ""
+msgstr "Contato de Stockholm"
 
 #: sweden.kgm:46
 #, kde-format
@@ -33440,85 +33440,85 @@ msgstr "Stockholm"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Västerbotten County"
-msgstr ""
+msgstr "Contato de Västerbotten"
 
 #: sweden.kgm:55
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Umeå"
-msgstr ""
+msgstr "Umeå"
 
 #: sweden.kgm:63
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Norrbotten County"
-msgstr ""
+msgstr "Contato de Norrbotten"
 
 #: sweden.kgm:64
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Luleå"
-msgstr ""
+msgstr "Luleå"
 
 #: sweden.kgm:72
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Uppsala County"
-msgstr ""
+msgstr "Contato de Uppsala "
 
 #: sweden.kgm:73
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Uppsala"
-msgstr ""
+msgstr "Uppsala"
 
 #: sweden.kgm:81
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Södermanland County"
-msgstr ""
+msgstr "Contato de Södermanland"
 
 #: sweden.kgm:82
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Nyköping"
-msgstr ""
+msgstr "Nyköping"
 
 #: sweden.kgm:90
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Östergötland County"
-msgstr ""
+msgstr "Contato de Östergötland"
 
 #: sweden.kgm:91
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Linköping"
-msgstr ""
+msgstr "Linköping"
 
 #: sweden.kgm:99
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Jönköping County"
-msgstr ""
+msgstr "Contato de Jönköping"
 
 #: sweden.kgm:100
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Jönköping"
-msgstr ""
+msgstr "Jönköping"
 
 #: sweden.kgm:108
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Kronoberg County"
-msgstr ""
+msgstr "Contato de Kronoberg"
 
 #: sweden.kgm:109
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Växjö"
-msgstr ""
+msgstr "Växjö"
 
 #: sweden.kgm:117
 #, kde-format
@@ -33536,7 +33536,7 @@ msgstr "Kalmar"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Gotland County"
-msgstr ""
+msgstr "Contato de Gotland"
 
 #: sweden.kgm:127
 #, kde-format
@@ -33548,7 +33548,7 @@ msgstr "Visby"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Blekinge County"
-msgstr ""
+msgstr "Contato de Blekinge"
 
 #: sweden.kgm:136
 #, kde-format
@@ -33560,7 +33560,7 @@ msgstr "Karlskrona"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Skåne County"
-msgstr ""
+msgstr "Contato de Skåne"
 
 #: sweden.kgm:145
 #, kde-format
@@ -33572,7 +33572,7 @@ msgstr "Malmö"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Halland County"
-msgstr ""
+msgstr "Contato de Halland"
 
 #: sweden.kgm:154
 #, kde-format
@@ -33584,7 +33584,7 @@ msgstr "Halmstad"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Västra Götaland County"
-msgstr ""
+msgstr "Contato de Västra Götaland"
 
 #: sweden.kgm:163
 #, kde-format
@@ -33596,7 +33596,7 @@ msgstr "Göteborg"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Värmland County"
-msgstr ""
+msgstr "Contato de Värmland"
 
 #: sweden.kgm:172
 #, kde-format
@@ -33608,7 +33608,7 @@ msgstr "Karlstad"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Örebro County"
-msgstr ""
+msgstr "Contato de Örebro"
 
 #: sweden.kgm:181
 #, kde-format
@@ -33620,7 +33620,7 @@ msgstr "Örebro"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Västmanland County"
-msgstr ""
+msgstr "Contato de Västmanland"
 
 #: sweden.kgm:190
 #, kde-format
@@ -33872,7 +33872,7 @@ msgstr "St. Gallen"
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Grisons"
-msgstr ""
+msgstr "Grisons"
 
 #: switzerland.kgm:110
 #, kde-format
@@ -33902,7 +33902,7 @@ msgstr "Thurgovia"
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Frauenfeld"
-msgstr ""
+msgstr "Frauenfeld"
 
 #: switzerland.kgm:124
 #, kde-format
@@ -33926,43 +33926,43 @@ msgstr "Vaud"
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Lausanne"
-msgstr ""
+msgstr "Lausanne (Losanna)"
 
 #: switzerland.kgm:134
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Valais"
-msgstr ""
+msgstr "Valais"
 
 #: switzerland.kgm:135
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Sion"
-msgstr ""
+msgstr "Sion"
 
 #: switzerland.kgm:139 switzerland.kgm:140
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Neuchâtel"
-msgstr ""
+msgstr "Neuchâtel"
 
 #: switzerland.kgm:144 switzerland.kgm:145
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Geneva"
-msgstr ""
+msgstr "Geneva"
 
 #: switzerland.kgm:149
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Jura"
-msgstr ""
+msgstr "Jura"
 
 #: switzerland.kgm:150
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Delémont"
-msgstr ""
+msgstr "Delémont"
 
 #: tajikistan.kgm:5
 #, kde-format
@@ -33992,7 +33992,7 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "tajikistan.kgm"
 msgid "Not Tajikistan"
-msgstr ""
+msgstr "Non Tajikistan"
 
 #: tajikistan.kgm:24
 #, kde-format
