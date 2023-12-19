@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2023-12-06 09:05+0100\n"
+"PO-Revision-Date: 2023-12-18 11:32+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -7165,7 +7165,7 @@ msgstr "Koudougou"
 #, kde-format
 msgctxt "burkina_regions.kgm"
 msgid "Boucle du Mouhoun"
-msgstr ""
+msgstr "Anillo (Boucle) del Mouhon"
 
 #: burkina_regions.kgm:65
 #, kde-format
@@ -7177,7 +7177,7 @@ msgstr "Dédougou"
 #, kde-format
 msgctxt "burkina_regions.kgm"
 msgid "Hauts-bassins"
-msgstr ""
+msgstr "Alte-Bassinos"
 
 #: burkina_regions.kgm:70
 #, kde-format
@@ -13396,7 +13396,7 @@ msgstr "Ain"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Bourg en Bresse"
-msgstr ""
+msgstr "Burgo in Bresse"
 
 #: france.kgm:45
 #, kde-format
@@ -13420,25 +13420,25 @@ msgstr "Allier"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Moulins"
-msgstr ""
+msgstr "Molinos"
 
 #: france.kgm:63
 #, kde-format
 msgctxt "france.kgm"
 msgid "Alpes de Haute-Provence"
-msgstr ""
+msgstr "Alpes de Alte-Provence"
 
 #: france.kgm:64
 #, kde-format
 msgctxt "france.kgm"
 msgid "Digne-les-Bains"
-msgstr ""
+msgstr "Digne-les-Bains (Digne Thermas))"
 
 #: france.kgm:72
 #, kde-format
 msgctxt "france.kgm"
 msgid "Hautes-Alpes"
-msgstr ""
+msgstr "Alte-Alpes"
 
 #: france.kgm:73
 #, kde-format
@@ -13450,7 +13450,7 @@ msgstr "Gap"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Alpes Maritimes"
-msgstr ""
+msgstr "Alpes Maritime"
 
 #: france.kgm:82
 #, kde-format
@@ -13468,19 +13468,19 @@ msgstr "Ardèche"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Privas"
-msgstr ""
+msgstr "Privas"
 
 #: france.kgm:99
 #, kde-format
 msgctxt "france.kgm"
 msgid "Ardennes"
-msgstr ""
+msgstr "Ardennas"
 
 #: france.kgm:100
 #, kde-format
 msgctxt "france.kgm"
 msgid "Charleville-Mézières"
-msgstr ""
+msgstr "Charleville-Mézières"
 
 #: france.kgm:108
 #, kde-format
@@ -13534,7 +13534,7 @@ msgstr "Rodez"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Bouches-du-Rhône"
-msgstr ""
+msgstr "Buccas del Rodano (Bouches-du-Rhône)"
 
 #: france.kgm:145
 #, kde-format
@@ -13582,43 +13582,43 @@ msgstr "Angoulème"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Charente-Maritime"
-msgstr ""
+msgstr "Charente-Maritime"
 
 #: france.kgm:181
 #, kde-format
 msgctxt "france.kgm"
 msgid "La Rochelle"
-msgstr ""
+msgstr "La Rochelle"
 
 #: france.kgm:189
 #, kde-format
 msgctxt "france.kgm"
 msgid "Cher"
-msgstr ""
+msgstr "Cher"
 
 #: france.kgm:190
 #, kde-format
 msgctxt "france.kgm"
 msgid "Bourges"
-msgstr ""
+msgstr "Burgos (Bourges)"
 
 #: france.kgm:198
 #, kde-format
 msgctxt "france.kgm"
 msgid "Corrèze"
-msgstr ""
+msgstr "Corrèze"
 
 #: france.kgm:199
 #, kde-format
 msgctxt "france.kgm"
 msgid "Tulle"
-msgstr ""
+msgstr "Tulle"
 
 #: france.kgm:207
 #, kde-format
 msgctxt "france.kgm"
 msgid "Corse du Sud"
-msgstr ""
+msgstr "Corsica del Sud"
 
 #: france.kgm:208
 #, kde-format
@@ -13630,7 +13630,7 @@ msgstr "Ajaccio"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Haute-Corse"
-msgstr ""
+msgstr "Alte-Corsica"
 
 #: france.kgm:217
 #, kde-format
@@ -13642,43 +13642,43 @@ msgstr "Bastia"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Côte d'Or"
-msgstr ""
+msgstr "Costa de auro"
 
 #: france.kgm:226
 #, kde-format
 msgctxt "france.kgm"
 msgid "Dijon"
-msgstr ""
+msgstr "Dijon"
 
 #: france.kgm:234
 #, kde-format
 msgctxt "france.kgm"
 msgid "Côtes d'Armor"
-msgstr ""
+msgstr "Costas de Armor"
 
 #: france.kgm:235
 #, kde-format
 msgctxt "france.kgm"
 msgid "Saint Brieuc"
-msgstr ""
+msgstr "Saint Brieuc"
 
 #: france.kgm:243
 #, kde-format
 msgctxt "france.kgm"
 msgid "Creuse"
-msgstr ""
+msgstr "Creuse"
 
 #: france.kgm:244
 #, kde-format
 msgctxt "france.kgm"
 msgid "Guéret"
-msgstr ""
+msgstr "Guéret"
 
 #: france.kgm:252
 #, kde-format
 msgctxt "france.kgm"
 msgid "Dordogne"
-msgstr ""
+msgstr "Dordogna"
 
 #: france.kgm:253
 #, kde-format
@@ -13708,25 +13708,25 @@ msgstr "Drôme"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Valence"
-msgstr ""
+msgstr "Valence"
 
 #: france.kgm:279
 #, kde-format
 msgctxt "france.kgm"
 msgid "Eure"
-msgstr ""
+msgstr "Eure"
 
 #: france.kgm:280
 #, kde-format
 msgctxt "france.kgm"
 msgid "Evreux"
-msgstr ""
+msgstr "Evreux"
 
 #: france.kgm:288
 #, kde-format
 msgctxt "france.kgm"
 msgid "Eure et Loir"
-msgstr ""
+msgstr "Eure e Loir"
 
 #: france.kgm:289
 #, kde-format
@@ -13738,13 +13738,13 @@ msgstr "Chartres"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Finistère"
-msgstr ""
+msgstr "Finistère"
 
 #: france.kgm:298
 #, kde-format
 msgctxt "france.kgm"
 msgid "Quimper"
-msgstr ""
+msgstr "Quimper"
 
 #: france.kgm:306
 #, kde-format
@@ -13762,7 +13762,7 @@ msgstr "Nîmes"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Haute-Garonne"
-msgstr ""
+msgstr "Alte Garonna"
 
 #: france.kgm:316
 #, kde-format
@@ -13786,7 +13786,7 @@ msgstr "Auch"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Gironde"
-msgstr ""
+msgstr "Gironda (Gironde)"
 
 #: france.kgm:334
 #, kde-format
@@ -13798,7 +13798,7 @@ msgstr "Bordeaux"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Hérault"
-msgstr ""
+msgstr "Hérault"
 
 #: france.kgm:343
 #, kde-format
@@ -13810,43 +13810,43 @@ msgstr "Montpellier"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Ille et Vilaine"
-msgstr ""
+msgstr "Ille e Vilaine"
 
 #: france.kgm:352
 #, kde-format
 msgctxt "france.kgm"
 msgid "Rennes"
-msgstr ""
+msgstr "Rennes"
 
 #: france.kgm:360
 #, kde-format
 msgctxt "france.kgm"
 msgid "Indre"
-msgstr ""
+msgstr "Indre"
 
 #: france.kgm:361
 #, kde-format
 msgctxt "france.kgm"
 msgid "Châteauroux"
-msgstr ""
+msgstr "Châteauroux"
 
 #: france.kgm:369
 #, kde-format
 msgctxt "france.kgm"
 msgid "Indre et Loire"
-msgstr ""
+msgstr "Indre e Loira"
 
 #: france.kgm:370
 #, kde-format
 msgctxt "france.kgm"
 msgid "Tours"
-msgstr ""
+msgstr "Tours"
 
 #: france.kgm:378
 #, kde-format
 msgctxt "france.kgm"
 msgid "Isère"
-msgstr ""
+msgstr "Isère"
 
 #: france.kgm:379
 #, kde-format
@@ -13864,31 +13864,31 @@ msgstr "Jura"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Lons le Saunier"
-msgstr ""
+msgstr "Lons le Saunier"
 
 #: france.kgm:396
 #, kde-format
 msgctxt "france.kgm"
 msgid "Landes"
-msgstr ""
+msgstr "Landes"
 
 #: france.kgm:397
 #, kde-format
 msgctxt "france.kgm"
 msgid "Mont de Marsan"
-msgstr ""
+msgstr "Monte de Marsan"
 
 #: france.kgm:405
 #, kde-format
 msgctxt "france.kgm"
 msgid "Loir et Cher"
-msgstr ""
+msgstr "Loir e Cher"
 
 #: france.kgm:406
 #, kde-format
 msgctxt "france.kgm"
 msgid "Blois"
-msgstr ""
+msgstr "Blois"
 
 #: france.kgm:414
 #, kde-format
@@ -13906,19 +13906,19 @@ msgstr "Saint Etienne"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Haute-Loire"
-msgstr ""
+msgstr "Alte-Loira"
 
 #: france.kgm:424
 #, kde-format
 msgctxt "france.kgm"
 msgid "Le Puy-en-Velay"
-msgstr ""
+msgstr "Le Puy-en-Velay"
 
 #: france.kgm:432
 #, kde-format
 msgctxt "france.kgm"
 msgid "Loire-Atlantique"
-msgstr ""
+msgstr "Loira-Atlantic"
 
 #: france.kgm:433
 #, kde-format
@@ -13930,121 +13930,121 @@ msgstr "Nantes"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Loiret"
-msgstr ""
+msgstr "Loiret"
 
 #: france.kgm:442
 #, kde-format
 msgctxt "france.kgm"
 msgid "Orléans"
-msgstr ""
+msgstr "Orléans"
 
 #: france.kgm:450
 #, kde-format
 msgctxt "france.kgm"
 msgid "Lot"
-msgstr ""
+msgstr "Lot"
 
 #: france.kgm:451
 #, kde-format
 msgctxt "france.kgm"
 msgid "Cahors"
-msgstr ""
+msgstr "Cahors"
 
 #: france.kgm:459
 #, kde-format
 msgctxt "france.kgm"
 msgid "Lot et Garonne"
-msgstr ""
+msgstr "Lot e Garonna"
 
 #: france.kgm:460
 #, kde-format
 msgctxt "france.kgm"
 msgid "Agen"
-msgstr ""
+msgstr "Agen"
 
 #: france.kgm:468
 #, kde-format
 msgctxt "france.kgm"
 msgid "Lozère"
-msgstr ""
+msgstr "Lozère"
 
 #: france.kgm:469
 #, kde-format
 msgctxt "france.kgm"
 msgid "Mende"
-msgstr ""
+msgstr "Mende"
 
 #: france.kgm:477
 #, kde-format
 msgctxt "france.kgm"
 msgid "Maine et Loire"
-msgstr ""
+msgstr "Maine e Loira"
 
 #: france.kgm:478
 #, kde-format
 msgctxt "france.kgm"
 msgid "Angers"
-msgstr ""
+msgstr "Angers"
 
 #: france.kgm:486
 #, kde-format
 msgctxt "france.kgm"
 msgid "Manche"
-msgstr ""
+msgstr "Manche"
 
 #: france.kgm:487
 #, kde-format
 msgctxt "france.kgm"
 msgid "Saint Lô"
-msgstr ""
+msgstr "Saint Lô"
 
 #: france.kgm:495
 #, kde-format
 msgctxt "france.kgm"
 msgid "Marne"
-msgstr ""
+msgstr "Marna (Marne)"
 
 #: france.kgm:496
 #, kde-format
 msgctxt "france.kgm"
 msgid "Châlons-en-Champagne"
-msgstr ""
+msgstr "Châlons-en-Champagne"
 
 #: france.kgm:504
 #, kde-format
 msgctxt "france.kgm"
 msgid "Haute-Marne"
-msgstr ""
+msgstr "Alte-Marna"
 
 #: france.kgm:505
 #, kde-format
 msgctxt "france.kgm"
 msgid "Chaumont"
-msgstr ""
+msgstr "Chaumont"
 
 #: france.kgm:513
 #, kde-format
 msgctxt "france.kgm"
 msgid "Mayenne"
-msgstr ""
+msgstr "Mayenne"
 
 #: france.kgm:514
 #, kde-format
 msgctxt "france.kgm"
 msgid "Laval"
-msgstr ""
+msgstr "Laval"
 
 #: france.kgm:522
 #, kde-format
 msgctxt "france.kgm"
 msgid "Meurthe et Moselle"
-msgstr ""
+msgstr "Meurthe e Mosella (Moselle)"
 
 #: france.kgm:523
 #, kde-format
 msgctxt "france.kgm"
 msgid "Nancy"
-msgstr ""
+msgstr "Nancy"
 
 #: france.kgm:531
 #, kde-format
@@ -14056,43 +14056,43 @@ msgstr "Meuse"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Bar le Duc"
-msgstr ""
+msgstr "Bar le Duc"
 
 #: france.kgm:540
 #, kde-format
 msgctxt "france.kgm"
 msgid "Morbihan"
-msgstr ""
+msgstr "Morbihan"
 
 #: france.kgm:541
 #, kde-format
 msgctxt "france.kgm"
 msgid "Vannes"
-msgstr ""
+msgstr "Vannes"
 
 #: france.kgm:549
 #, kde-format
 msgctxt "france.kgm"
 msgid "Moselle"
-msgstr ""
+msgstr "Mosella (Moselle)"
 
 #: france.kgm:550
 #, kde-format
 msgctxt "france.kgm"
 msgid "Metz"
-msgstr ""
+msgstr "Metz"
 
 #: france.kgm:558
 #, kde-format
 msgctxt "france.kgm"
 msgid "Nièvre"
-msgstr ""
+msgstr "Nièvre"
 
 #: france.kgm:559
 #, kde-format
 msgctxt "france.kgm"
 msgid "Nevers"
-msgstr ""
+msgstr "Nevers"
 
 #: france.kgm:567
 #, kde-format
@@ -14104,61 +14104,61 @@ msgstr "Nord"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Lille"
-msgstr ""
+msgstr "Lilla (Lille)"
 
 #: france.kgm:576
 #, kde-format
 msgctxt "france.kgm"
 msgid "Oise"
-msgstr ""
+msgstr "Oise"
 
 #: france.kgm:577
 #, kde-format
 msgctxt "france.kgm"
 msgid "Beauvais"
-msgstr ""
+msgstr "Beauvais"
 
 #: france.kgm:585
 #, kde-format
 msgctxt "france.kgm"
 msgid "Orne"
-msgstr ""
+msgstr "Orne"
 
 #: france.kgm:586
 #, kde-format
 msgctxt "france.kgm"
 msgid "Alençon"
-msgstr ""
+msgstr "Alençon"
 
 #: france.kgm:594
 #, kde-format
 msgctxt "france.kgm"
 msgid "Pas-de-Calais"
-msgstr ""
+msgstr "Pas-de-Calais"
 
 #: france.kgm:595
 #, kde-format
 msgctxt "france.kgm"
 msgid "Arras"
-msgstr ""
+msgstr "Arras"
 
 #: france.kgm:603
 #, kde-format
 msgctxt "france.kgm"
 msgid "Puy-de-Dôme"
-msgstr ""
+msgstr "Puy-de-Dôme"
 
 #: france.kgm:604
 #, kde-format
 msgctxt "france.kgm"
 msgid "Clermont Ferrand"
-msgstr ""
+msgstr "Clermont Ferrand"
 
 #: france.kgm:612
 #, kde-format
 msgctxt "france.kgm"
 msgid "Pyrénées-Atlantiques"
-msgstr ""
+msgstr "Pyreneos-Atlantic"
 
 #: france.kgm:613
 #, kde-format
@@ -14170,55 +14170,55 @@ msgstr "Pau"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Hautes-Pyrénées"
-msgstr ""
+msgstr "Alte-Pyreneos"
 
 #: france.kgm:622
 #, kde-format
 msgctxt "france.kgm"
 msgid "Tarbes"
-msgstr ""
+msgstr "Tarbes"
 
 #: france.kgm:630
 #, kde-format
 msgctxt "france.kgm"
 msgid "Pyrénées-Orientales"
-msgstr ""
+msgstr "Pyreneos-Oriental"
 
 #: france.kgm:631
 #, kde-format
 msgctxt "france.kgm"
 msgid "Perpignan"
-msgstr ""
+msgstr "Perpignan"
 
 #: france.kgm:639
 #, kde-format
 msgctxt "france.kgm"
 msgid "Bas-Rhin"
-msgstr ""
+msgstr "Basse-Rheno"
 
 #: france.kgm:640
 #, kde-format
 msgctxt "france.kgm"
 msgid "Strasbourg"
-msgstr ""
+msgstr "Strasburg"
 
 #: france.kgm:648
 #, kde-format
 msgctxt "france.kgm"
 msgid "Haut-Rhin"
-msgstr ""
+msgstr "Alte-Rheno"
 
 #: france.kgm:649
 #, kde-format
 msgctxt "france.kgm"
 msgid "Colmar"
-msgstr ""
+msgstr "Colmar"
 
 #: france.kgm:657
 #, kde-format
 msgctxt "france.kgm"
 msgid "Rhône"
-msgstr ""
+msgstr "Rodano (Rhône)"
 
 #: france.kgm:658
 #, kde-format
@@ -14362,7 +14362,7 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Albi"
-msgstr ""
+msgstr "Albi"
 
 #: france.kgm:774
 #, kde-format
@@ -14416,73 +14416,73 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Vienne"
-msgstr ""
+msgstr "Vienne"
 
 #: france.kgm:811
 #, kde-format
 msgctxt "france.kgm"
 msgid "Poitiers"
-msgstr ""
+msgstr "Poitiers"
 
 #: france.kgm:819
 #, kde-format
 msgctxt "france.kgm"
 msgid "Haute-Vienne"
-msgstr ""
+msgstr "Alte-Vienne"
 
 #: france.kgm:820
 #, kde-format
 msgctxt "france.kgm"
 msgid "Limoges"
-msgstr ""
+msgstr "Limoges"
 
 #: france.kgm:828
 #, kde-format
 msgctxt "france.kgm"
 msgid "Vosges"
-msgstr ""
+msgstr "Vosgos"
 
 #: france.kgm:829
 #, kde-format
 msgctxt "france.kgm"
 msgid "Epinal"
-msgstr ""
+msgstr "Epinal"
 
 #: france.kgm:837
 #, kde-format
 msgctxt "france.kgm"
 msgid "Yonne"
-msgstr ""
+msgstr "Yonne"
 
 #: france.kgm:838
 #, kde-format
 msgctxt "france.kgm"
 msgid "Auxerre"
-msgstr ""
+msgstr "Auxerre"
 
 #: france.kgm:846
 #, kde-format
 msgctxt "france.kgm"
 msgid "Territoire de Belfort"
-msgstr ""
+msgstr "Territorio de Belfort"
 
 #: france.kgm:847
 #, kde-format
 msgctxt "france.kgm"
 msgid "Belfort"
-msgstr ""
+msgstr "Belfort"
 
 #: france.kgm:855
 #, kde-format
 msgctxt "france.kgm"
 msgid "Essonne"
-msgstr ""
+msgstr "Essonne"
 
 #: france.kgm:856
 #, kde-format
 msgctxt "france.kgm"
 msgid "Evry"
-msgstr ""
+msgstr "Evry"
 
 #: france.kgm:864
 #, kde-format
@@ -14494,7 +14494,7 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Nanterre"
-msgstr ""
+msgstr "Nanterre"
 
 #: france.kgm:873
 #, kde-format
@@ -14506,7 +14506,7 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Bobigny"
-msgstr ""
+msgstr "Bobigny"
 
 #: france.kgm:882
 #, kde-format
@@ -14536,7 +14536,7 @@ msgstr ""
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "France (Regions)"
-msgstr ""
+msgstr "Francia (Regiones)"
 
 #: france_regions.kgm:6
 #, kde-format
@@ -14560,13 +14560,13 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Not France (Regions)"
-msgstr ""
+msgstr "Non Francia (Regiones)"
 
 #: france_regions.kgm:24
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Provence-Alpes-Côte d'Azur"
-msgstr ""
+msgstr "Provence-Alpes-Costa Azur"
 
 #: france_regions.kgm:25
 #, kde-format
@@ -14578,13 +14578,13 @@ msgstr "Marsilia"
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Normandie"
-msgstr ""
+msgstr "Normandia (Normandie)"
 
 #: france_regions.kgm:30
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Rouen"
-msgstr ""
+msgstr "Rouen"
 
 #: france_regions.kgm:34
 #, kde-format
@@ -14644,7 +14644,7 @@ msgstr ""
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Rennes"
-msgstr ""
+msgstr "Rennes"
 
 #: france_regions.kgm:59
 #, kde-format
@@ -14680,7 +14680,7 @@ msgstr ""
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Strasbourg"
-msgstr ""
+msgstr "Strasburg"
 
 #: france_regions.kgm:74
 #, kde-format
@@ -14746,139 +14746,139 @@ msgstr "Aqua"
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Not Georgia"
-msgstr ""
+msgstr "Non Georgia"
 
 #: georgia.kgm:24
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Abkhazia"
-msgstr ""
+msgstr "Abkhazia"
 
 #: georgia.kgm:25
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Sokhumi"
-msgstr ""
+msgstr "Sokhumi"
 
 #: georgia.kgm:29
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Samegrelo-Zemo Svaneti"
-msgstr ""
+msgstr "Samegrelo-Zemo Svaneti"
 
 #: georgia.kgm:30
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Zugdidi"
-msgstr ""
+msgstr "Zugdidi"
 
 #: georgia.kgm:34
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Guria"
-msgstr ""
+msgstr "Guria"
 
 #: georgia.kgm:35
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Ozurgeti"
-msgstr ""
+msgstr "Ozurgeti"
 
 #: georgia.kgm:39
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Ajaria"
-msgstr ""
+msgstr "Ajaria"
 
 #: georgia.kgm:40
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Batumi"
-msgstr ""
+msgstr "Batumi"
 
 #: georgia.kgm:44
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Racha-Lechkhumi and Kvemo Svaneti"
-msgstr ""
+msgstr "Racha-Lechkhumi and Kvemo Svaneti"
 
 #: georgia.kgm:45
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Ambrolauri"
-msgstr ""
+msgstr "Ambrolauri"
 
 #: georgia.kgm:49
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Imereti"
-msgstr ""
+msgstr "Imereti"
 
 #: georgia.kgm:50
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Kutaisi"
-msgstr ""
+msgstr "Kutaisi"
 
 #: georgia.kgm:54
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Samtskhe-Javakheti"
-msgstr ""
+msgstr "Samtskhe-Javakheti"
 
 #: georgia.kgm:55
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Akhaltsikhe"
-msgstr ""
+msgstr "Akhaltsikhe"
 
 #: georgia.kgm:59
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Shida Kartli"
-msgstr ""
+msgstr "Shida Kartli"
 
 #: georgia.kgm:60
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Gori"
-msgstr ""
+msgstr "Gori"
 
 #: georgia.kgm:64
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Mtskheta-Mtianeti"
-msgstr ""
+msgstr "Mtskheta-Mtianeti"
 
 #: georgia.kgm:65
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Mtskheta"
-msgstr ""
+msgstr "Mtskheta"
 
 #: georgia.kgm:69
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Kvemo Kartli"
-msgstr ""
+msgstr "Kvemo Kartli"
 
 #: georgia.kgm:70
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Rustavi"
-msgstr ""
+msgstr "Rustavi"
 
 #: georgia.kgm:74
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Kakheti"
-msgstr ""
+msgstr "Kakheti"
 
 #: georgia.kgm:75
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Telavi"
-msgstr ""
+msgstr "Telavi"
 
 #: georgia.kgm:79 georgia.kgm:80
 #, kde-format
@@ -14908,13 +14908,13 @@ msgstr "Frontiera"
 #, kde-format
 msgctxt "germany.kgm"
 msgid "Not Germany"
-msgstr ""
+msgstr "Non Germania"
 
 #: germany.kgm:27
 #, kde-format
 msgctxt "germany.kgm"
 msgid "Baden-Württemberg"
-msgstr ""
+msgstr "Baden-Württemberg"
 
 #: germany.kgm:29
 #, kde-format
@@ -14950,7 +14950,7 @@ msgstr ""
 #, kde-format
 msgctxt "germany.kgm"
 msgid "Potsdam"
-msgstr ""
+msgstr "Potsdam"
 
 #: germany.kgm:67 germany.kgm:69
 #, kde-format
@@ -15004,7 +15004,7 @@ msgstr ""
 #, kde-format
 msgctxt "germany.kgm"
 msgid "North Rhine-Westphalia"
-msgstr ""
+msgstr "Nord Rheno-Westphalia"
 
 #: germany.kgm:119
 #, kde-format
