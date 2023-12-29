@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2023-12-18 11:32+0100\n"
+"PO-Revision-Date: 2023-12-28 19:44+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -14302,7 +14302,7 @@ msgstr ""
 #, kde-format
 msgctxt "france.kgm"
 msgid "Rouen"
-msgstr ""
+msgstr "Rouen"
 
 #: france.kgm:729
 #, kde-format
@@ -14608,7 +14608,7 @@ msgstr ""
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Dijon"
-msgstr ""
+msgstr "Dijon"
 
 #: france_regions.kgm:44
 #, kde-format
@@ -14668,7 +14668,7 @@ msgstr ""
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Orléans"
-msgstr ""
+msgstr "Orléans"
 
 #: france_regions.kgm:69
 #, kde-format
@@ -14716,7 +14716,7 @@ msgstr ""
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Lille"
-msgstr ""
+msgstr "Lilla (Lille)"
 
 #: georgia.kgm:5
 #, kde-format
