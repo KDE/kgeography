@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2023-11-17 21:22+0100\n"
+"PO-Revision-Date: 2024-01-04 19:34+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
 "Language: eo\n"
@@ -9466,7 +9466,7 @@ msgstr "Dhamtari"
 #, kde-format
 msgctxt "chile.kgm"
 msgid "Chile"
-msgstr "Ĉilio "
+msgstr "Ĉilio"
 
 #: chile.kgm:6
 #, kde-format
@@ -27149,7 +27149,7 @@ msgstr "Bolivio"
 #, kde-format
 msgctxt "peru.kgm"
 msgid "Chile"
-msgstr "Ĉilio "
+msgstr "Ĉilio"
 
 #: peru.kgm:72
 #, kde-format
@@ -32087,7 +32087,7 @@ msgstr "La-Pazo"
 #, kde-format
 msgctxt "southamerica.kgm"
 msgid "Chile"
-msgstr "Ĉilio "
+msgstr "Ĉilio"
 
 #: southamerica.kgm:137
 #, kde-format
@@ -41141,7 +41141,7 @@ msgstr "La-Pazo"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Chile"
-msgstr "Ĉilio "
+msgstr "Ĉilio"
 
 #: world.kgm:1348
 #, kde-format
