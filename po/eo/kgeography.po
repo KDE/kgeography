@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2024-01-04 19:34+0100\n"
+"PO-Revision-Date: 2024-01-05 19:59+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
 "Language: eo\n"
@@ -16554,7 +16554,7 @@ msgstr "Ionian Islands"
 #, kde-format
 msgctxt "greece.kgm"
 msgid "Corfu"
-msgstr "Corfu"
+msgstr "Korfuo"
 
 #: greece.kgm:151
 #, kde-format
@@ -16716,7 +16716,7 @@ msgstr "Ionian Insulo"
 #, kde-format
 msgctxt "greece_peripheries.kgm"
 msgid "Corfu"
-msgstr "Corfu"
+msgstr "Korfuo"
 
 #: greece_peripheries.kgm:44
 #, kde-format
@@ -17064,7 +17064,7 @@ msgstr "Trikala"
 #, kde-format
 msgctxt "greece_prefectures.kgm"
 msgid "Corfu"
-msgstr "Corfu"
+msgstr "Korfuo"
 
 #: greece_prefectures.kgm:149
 #, kde-format
