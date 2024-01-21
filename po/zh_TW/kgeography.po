@@ -10,19 +10,20 @@
 # Franklin Weng <franklin@goodhorse.idv.tw>, 2010, 2011, 2012, 2013, 2014, 2015, 2017.
 # Jeff Huang <s8321414@gmail.com>, 2016.
 # pan93412 <pan93412@gmail.com>, 2018, 2019.
+# SPDX-FileCopyrightText: 2024 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2019-12-22 21:22+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
-"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"PO-Revision-Date: 2024-01-21 01:51+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 19.12.0\n"
+"X-Generator: Lokalize 23.08.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #, kde-format
@@ -3279,9 +3280,7 @@ msgid "Ukraine"
 msgstr "烏克蘭 (Ukraine)"
 
 #: asia.kgm:268
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "Kyiv"
+#, kde-format
 msgctxt "asia.kgm"
 msgid "Kyiv"
 msgstr "基輔 (Kyiv)"
@@ -13064,9 +13063,7 @@ msgid "Ukraine"
 msgstr "烏克蘭 (Ukraine)"
 
 #: europe.kgm:484
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "Kyiv"
+#, kde-format
 msgctxt "europe.kgm"
 msgid "Kyiv"
 msgstr "基輔 (Kyiv)"
@@ -14590,12 +14587,10 @@ msgid "Marseille"
 msgstr "馬賽 (Marseille)"
 
 #: france_regions.kgm:29
-#, fuzzy, kde-format
-#| msgctxt "france_regions.kgm"
-#| msgid "Basse Normandie"
+#, kde-format
 msgctxt "france_regions.kgm"
 msgid "Normandie"
-msgstr "下諾曼第 (Basse Normandie)"
+msgstr "諾曼第 (Normandie)"
 
 #: france_regions.kgm:30
 #, kde-format
@@ -22771,7 +22766,7 @@ msgstr "當滑鼠移到某按鍵上時，按下空白鍵是否表示按下該按
 #: kgeography.kcfg:35
 #, kde-format
 msgid "Whether the map tooltip follows mouse movement"
-msgstr ""
+msgstr "地圖工作提示是否跟隨滑鼠移動"
 
 #. i18n: ectx: label, entry (colorDisguise), group (general)
 #: kgeography.kcfg:39
@@ -22877,7 +22872,7 @@ msgstr ""
 #: kgeographyoptions.ui:112
 #, kde-format
 msgid "&Move map tooltip on mouse move"
-msgstr ""
+msgstr "移動滑鼠時也移動地圖工作提示(&M)"
 
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
 #: kgeographyoptions.ui:122
@@ -24208,7 +24203,7 @@ msgstr "剖析 %1 時發生錯誤：%2"
 #: mapchooser.cpp:83
 #, kde-format
 msgid "The map %1 has the same name of map %2"
-msgstr ""
+msgstr "地圖 %1 與地圖 %2 名稱相同"
 
 #: mapchooser.cpp:97
 #, kde-format
@@ -37817,7 +37812,7 @@ msgstr "維吉尼亞 (Virginia)"
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "Counties and Independent Cities"
-msgstr ""
+msgstr "國家與獨立城邦"
 
 #: virginia.kgm:8
 #, fuzzy, kde-format
@@ -38602,20 +38597,16 @@ msgid "City of Alexandria"
 msgstr "阿歷山大里亞 (Alexandria)"
 
 #: virginia.kgm:794
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Bristol"
-msgstr "塞瓦斯托波爾市 (City of Sevastopol')"
+msgstr ""
 
 #: virginia.kgm:802
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Buena Vista"
-msgstr "塞瓦斯托波爾市 (City of Sevastopol')"
+msgstr ""
 
 #: virginia.kgm:810
 #, kde-format
@@ -38636,36 +38627,28 @@ msgid "City of Colonial Heights"
 msgstr ""
 
 #: virginia.kgm:834
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Covington"
-msgstr "基輔市 (City of Kyiv)"
+msgstr ""
 
 #: virginia.kgm:842
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Danville"
-msgstr "基輔市 (City of Kyiv)"
+msgstr ""
 
 #: virginia.kgm:850
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Emporia"
-msgstr "基輔市 (City of Kyiv)"
+msgstr ""
 
 #: virginia.kgm:858
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Fairfax"
-msgstr "基輔市 (City of Kyiv)"
+msgstr ""
 
 #: virginia.kgm:866
 #, kde-format
@@ -38674,12 +38657,10 @@ msgid "City of Falls Church"
 msgstr ""
 
 #: virginia.kgm:874
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Franklin"
-msgstr "基輔市 (City of Kyiv)"
+msgstr ""
 
 #: virginia.kgm:882
 #, fuzzy, kde-format
@@ -38690,20 +38671,16 @@ msgid "City of Fredericksburg"
 msgstr "菲德烈古堡 (Frederiksborg)"
 
 #: virginia.kgm:890
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Galax"
-msgstr "基輔市 (City of Kyiv)"
+msgstr ""
 
 #: virginia.kgm:898
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Hampton"
-msgstr "塞瓦斯托波爾市 (City of Sevastopol')"
+msgstr ""
 
 #: virginia.kgm:906
 #, fuzzy, kde-format
@@ -38714,28 +38691,22 @@ msgid "City of Harrisonburg"
 msgstr "哈里斯堡 (Harrisburg)"
 
 #: virginia.kgm:914
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Hopewell"
-msgstr "塞瓦斯托波爾市 (City of Sevastopol')"
+msgstr ""
 
 #: virginia.kgm:922
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Lexington"
-msgstr "基輔市 (City of Kyiv)"
+msgstr ""
 
 #: virginia.kgm:930
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Lynchburg"
-msgstr "基輔市 (City of Kyiv)"
+msgstr ""
 
 #: virginia.kgm:938
 #, kde-format
@@ -38750,12 +38721,10 @@ msgid "City of Manassas Park"
 msgstr ""
 
 #: virginia.kgm:954
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Martinsville"
-msgstr "基輔市 (City of Kyiv)"
+msgstr ""
 
 #: virginia.kgm:962
 #, kde-format
@@ -38764,20 +38733,16 @@ msgid "City of Newport News"
 msgstr ""
 
 #: virginia.kgm:970
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Norfolk"
-msgstr "塞瓦斯托波爾市 (City of Sevastopol')"
+msgstr ""
 
 #: virginia.kgm:978
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Norton"
-msgstr "基輔市 (City of Kyiv)"
+msgstr ""
 
 #: virginia.kgm:986
 #, fuzzy, kde-format
@@ -38820,28 +38785,22 @@ msgid "City of Roanoke"
 msgstr ""
 
 #: virginia.kgm:1034
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Salem"
-msgstr "塞瓦斯托波爾市 (City of Sevastopol')"
+msgstr ""
 
 #: virginia.kgm:1042
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Staunton"
-msgstr "塞瓦斯托波爾市 (City of Sevastopol')"
+msgstr ""
 
 #: virginia.kgm:1050
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Suffolk"
-msgstr "塞瓦斯托波爾市 (City of Sevastopol')"
+msgstr ""
 
 #: virginia.kgm:1058
 #, kde-format
@@ -38850,12 +38809,10 @@ msgid "City of Virginia Beach"
 msgstr ""
 
 #: virginia.kgm:1066
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Waynesboro"
-msgstr "塞瓦斯托波爾市 (City of Sevastopol')"
+msgstr ""
 
 #: virginia.kgm:1074
 #, kde-format
@@ -41050,9 +41007,7 @@ msgid "Ukraine"
 msgstr "烏克蘭 (Ukraine)"
 
 #: world.kgm:1048
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "Kyiv"
+#, kde-format
 msgctxt "world.kgm"
 msgid "Kyiv"
 msgstr "基輔 (Kyiv)"
