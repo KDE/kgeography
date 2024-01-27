@@ -46,6 +46,17 @@ target_link_libraries(kgeography KF${QT_MAJOR_VERSION}::XmlGui
 )
 install(TARGETS kgeography EXPORT KGeography ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} )
 
+if(APPLE)
+    set_target_properties(kgeography PROPERTIES
+        MACOSX_BUNDLE_DISPLAY_NAME "KGeography"
+        MACOSX_BUNDLE_BUNDLE_NAME "KGeography"
+        MACOSX_BUNDLE_LONG_VERSION_STRING "KGeography ${RELEASE_SERVICE_VERSION}"
+        MACOSX_BUNDLE_SHORT_VERSION_STRING "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_VERSION_MINOR}"
+        MACOSX_BUNDLE_BUNDLE_VERSION "${RELEASE_SERVICE_VERSION}"
+        MACOSX_BUNDLE_GUI_IDENTIFIER "org.kde.kgeography"
+        MACOSX_BUNDLE_COPYRIGHT "2004-2024 The KGeography Developers")
+
+endif()
 
 ########### install files ###############
 
