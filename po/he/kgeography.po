@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2023-12-08 16:20+0200\n"
+"PO-Revision-Date: 2024-01-26 10:14+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: <he@li.org>\n"
 "Language: he\n"
@@ -22692,7 +22692,7 @@ msgstr "&דגלים של %1"
 #: kgeography.cpp:429
 #, kde-format
 msgid "<qt>Current map:<br /><b>%1</b></qt>"
-msgstr "<qt>מפה נוכחית:<br><b>%1</b></qt>"
+msgstr "<qt>מפה נוכחית:<br /><b>%1</b></qt>"
 
 #: kgeography.cpp:452
 #, kde-format
