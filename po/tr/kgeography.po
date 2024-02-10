@@ -10,13 +10,13 @@
 # Renan Cakirerk, 2010.
 # obsoleteman <tulliana@gmail.com>, 2008-2009.
 # Volkan Gezer <volkangezer@gmail.com>, 2013, 2015, 2017.
-# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeedu-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2023-11-17 14:11+0300\n"
+"PO-Revision-Date: 2024-02-09 19:31+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.11.70\n"
+"X-Generator: Lokalize 24.01.95\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -598,7 +598,7 @@ msgstr "Çad"
 #, kde-format
 msgctxt "africa.kgm"
 msgid "N'Djamena"
-msgstr "N'Djamena"
+msgstr "N’Djamena"
 
 #: africa.kgm:89
 #, kde-format
@@ -1738,7 +1738,7 @@ msgstr "Mostaganem"
 #, kde-format
 msgctxt "algeria.kgm"
 msgid "M'Sila"
-msgstr "M'Sila"
+msgstr "M’Sila"
 
 #: algeria.kgm:169
 #, kde-format
@@ -2206,7 +2206,7 @@ msgstr "Cuanza Norte"
 #, kde-format
 msgctxt "angola_provinces.kgm"
 msgid "N'dalatando"
-msgstr "N'dalatando"
+msgstr "N’dalatando"
 
 #: angola_provinces.kgm:54
 #, kde-format
@@ -3269,7 +3269,7 @@ msgstr "Yemen"
 #, kde-format
 msgctxt "asia.kgm"
 msgid "Sana'a"
-msgstr "Sana'a"
+msgstr "Sana’a"
 
 #: asia.kgm:266
 #, kde-format
@@ -6567,7 +6567,7 @@ msgstr "Gourma"
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Fada N'Gourma"
-msgstr "Fada N'Gourma"
+msgstr "Fada N’Gourma"
 
 #: burkina_provinces.kgm:49
 #, kde-format
@@ -7071,7 +7071,7 @@ msgstr "Est"
 #, kde-format
 msgctxt "burkina_regions.kgm"
 msgid "Fada N'Gourma"
-msgstr "Fada N'Gourma"
+msgstr "Fada N’Gourma"
 
 #: burkina_regions.kgm:24
 #, kde-format
@@ -7599,7 +7599,7 @@ msgstr "Akonolinga"
 #, kde-format
 msgctxt "cameroon_departments.kgm"
 msgid "Nyong-et-So'o"
-msgstr "Nyong-et-So'o"
+msgstr "Nyong-et-So’o"
 
 #: cameroon_departments.kgm:95
 #, kde-format
@@ -8343,7 +8343,7 @@ msgstr "Newfoundland"
 #, kde-format
 msgctxt "canada.kgm"
 msgid "St John's"
-msgstr "St John's"
+msgstr "St John’s"
 
 #: canada.kgm:67
 #, kde-format
@@ -8638,7 +8638,7 @@ msgstr "Antigua and Barbuda"
 #, kde-format
 msgctxt "caribbean.kgm"
 msgid "Saint John's"
-msgstr "Saint John's"
+msgstr "Saint John’s"
 
 #: caribbean.kgm:96
 #, kde-format
@@ -8746,7 +8746,7 @@ msgstr "Granada"
 #, kde-format
 msgctxt "caribbean.kgm"
 msgid "Saint George's"
-msgstr "Saint George's"
+msgstr "Saint George’s"
 
 #: caribbean.kgm:150
 #, kde-format
@@ -8878,7 +8878,7 @@ msgstr "Alt Urgell"
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "La Seu d'Urgell"
-msgstr "La Seu d'Urgell"
+msgstr "La Seu d’Urgell"
 
 #: catalonia_comarques.kgm:44
 #, kde-format
@@ -8950,7 +8950,7 @@ msgstr "Baix Empordà"
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "La Bisbal d'Empordà"
-msgstr "La Bisbal d'Empordà"
+msgstr "La Bisbal d’Empordà"
 
 #: catalonia_comarques.kgm:74
 #, kde-format
@@ -9148,7 +9148,7 @@ msgstr "Sırala"
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Pla de l'Estany"
-msgstr "Pla de l'Estany"
+msgstr "Pla de l’Estany"
 
 #: catalonia_comarques.kgm:155
 #, kde-format
@@ -9160,7 +9160,7 @@ msgstr "Banyoles"
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Pla d'Urgell"
-msgstr "Pla d'Urgell"
+msgstr "Pla d’Urgell"
 
 #: catalonia_comarques.kgm:160
 #, kde-format
@@ -9184,13 +9184,13 @@ msgstr "Falset"
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Ribera d'Ebre"
-msgstr "Ribera d'Ebre"
+msgstr "Ribera d’Ebre"
 
 #: catalonia_comarques.kgm:170
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Móra d'Ebre"
-msgstr "Móra d'Ebre"
+msgstr "Móra d’Ebre"
 
 #: catalonia_comarques.kgm:174
 #, kde-format
@@ -9292,7 +9292,7 @@ msgstr "Tàrrega"
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Vall d'Aran"
-msgstr "Vall d'Aran"
+msgstr "Vall d’Aran"
 
 #: catalonia_comarques.kgm:215
 #, kde-format
@@ -9550,7 +9550,7 @@ msgstr "Valparaíso"
 #, kde-format
 msgctxt "chile.kgm"
 msgid "Libertador General Bernardo O'Higgins"
-msgstr "Libertador General Bernardo O'Higgins"
+msgstr "Libertador General Bernardo O’Higgins"
 
 #: chile.kgm:50
 #, kde-format
@@ -13650,7 +13650,7 @@ msgstr "Bastia"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Côte d'Or"
-msgstr "Côte d'Or"
+msgstr "Côte d’Or"
 
 #: france.kgm:226
 #, kde-format
@@ -13662,7 +13662,7 @@ msgstr "Dijon"
 #, kde-format
 msgctxt "france.kgm"
 msgid "Côtes d'Armor"
-msgstr "Côtes d'Armor"
+msgstr "Côtes d’Armor"
 
 #: france.kgm:235
 #, kde-format
@@ -14574,7 +14574,7 @@ msgstr "Fransa Değil (Bölgeler)"
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Provence-Alpes-Côte d'Azur"
-msgstr "Provence-Alpes-Côte d'Azur"
+msgstr "Provence-Alpes-Côte d’Azur"
 
 #: france_regions.kgm:25
 #, kde-format
@@ -18036,7 +18036,7 @@ msgstr "Hinche"
 #, kde-format
 msgctxt "haiti.kgm"
 msgid "Grand'Anse"
-msgstr "Grand'Anse"
+msgstr "Grand’Anse"
 
 #: haiti.kgm:40
 #, kde-format
@@ -20718,7 +20718,7 @@ msgstr "Abruzzo"
 #, kde-format
 msgctxt "italy.kgm"
 msgid "L'Aquila"
-msgstr "L'Aquila"
+msgstr "L’Aquila"
 
 #: italy.kgm:66
 #, kde-format
@@ -20844,7 +20844,7 @@ msgstr "Bolonya"
 #, kde-format
 msgctxt "italy.kgm"
 msgid "Val d'Aosta"
-msgstr "Val d'Aosta"
+msgstr "Val d’Aosta"
 
 #: italy.kgm:173
 #, kde-format
@@ -21216,7 +21216,7 @@ msgstr "Ravenna"
 #, kde-format
 msgctxt "italyprovince.kgm"
 msgid "Reggio nell'Emilia"
-msgstr "Reggio nell'Emilia"
+msgstr "Reggio nell’Emilia"
 
 #: italyprovince.kgm:432
 #, kde-format
@@ -21360,7 +21360,7 @@ msgstr "Chieti"
 #, kde-format
 msgctxt "italyprovince.kgm"
 msgid "L'Aquila"
-msgstr "L'Aquila"
+msgstr "L’Aquila"
 
 #: italyprovince.kgm:648
 #, kde-format
@@ -21666,7 +21666,7 @@ msgstr "Saint Ann"
 #, kde-format
 msgctxt "jamaica.kgm"
 msgid "Saint Ann's Bay"
-msgstr "Saint Ann's Bay"
+msgstr "Saint Ann’s Bay"
 
 #: jamaica.kgm:59
 #, kde-format
@@ -22662,7 +22662,7 @@ msgstr "Genel"
 #: kgeography.cpp:203
 #, kde-format
 msgid "Could not open last used map. Error parsing %1: %2"
-msgstr "Son kullanılan harita açılamadı. %1'i ayrıştırmada hata: %2"
+msgstr "Son kullanılan harita açılamadı. %1 ayrıştırılamadı: %2"
 
 #: kgeography.cpp:211
 #, kde-format
@@ -25024,7 +25024,7 @@ msgstr "Antigua ve Barbuda"
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "St. John's"
-msgstr "St. John's"
+msgstr "St. John’s"
 
 #: ncamerica.kgm:136
 #, kde-format
@@ -25516,7 +25516,7 @@ msgstr "Gisborne"
 #, kde-format
 msgctxt "new-zealand.kgm"
 msgid "Hawke's Bay"
-msgstr "Hawke's Bay"
+msgstr "Hawke’s Bay"
 
 #: new-zealand.kgm:45
 #, kde-format
@@ -25906,25 +25906,25 @@ msgstr "Kangvondo"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "North P'yŏngan"
-msgstr "Kuzey P'yongan"
+msgstr "Kuzey P’yongan"
 
 #: north_korea.kgm:55
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "P'yŏngan-pukto"
-msgstr "P'yongan-pukto"
+msgstr "P’yongan-pukto"
 
 #: north_korea.kgm:59
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "South P'yŏngan"
-msgstr "Güney P'yongan"
+msgstr "Güney P’yongan"
 
 #: north_korea.kgm:60
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "P'yŏngan-namdo"
-msgstr "P'yongan-namdo"
+msgstr "P’yongan-namdo"
 
 #: north_korea.kgm:64
 #, kde-format
@@ -25972,19 +25972,19 @@ msgstr "Sinuiju Özel Yönetim Bölgesi"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "Sinŭiju T'ŭkpyŏl Haengjŏnggu"
-msgstr "Sinuiju T'ukpyol Haengjonggu"
+msgstr "Sinuiju T’ukpyol Haengjonggu"
 
 #: north_korea.kgm:84
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "P'yŏngyang"
-msgstr "P'yongyang"
+msgstr "P’yongyang"
 
 #: north_korea.kgm:85
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "P'yŏngyang Chikhalsi"
-msgstr "P'yongyang Çikhalsi"
+msgstr "P’yongyang Çikhalsi"
 
 #: north_korea.kgm:89
 #, kde-format
@@ -26446,7 +26446,7 @@ msgstr "Tonga"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Nuku'alofa"
-msgstr "Nuku'alofa"
+msgstr "Nuku’alofa"
 
 #: oceania.kgm:162
 #, kde-format
@@ -31516,7 +31516,7 @@ msgstr "'Asir"
 #, kde-format
 msgctxt "saudi_arabia.kgm"
 msgid "Ha'il"
-msgstr "Ha'il"
+msgstr "Ha’il"
 
 #: saudi_arabia.kgm:69
 #, kde-format
@@ -36778,13 +36778,13 @@ msgstr "Buxoro (Bukhara)"
 #, kde-format
 msgctxt "uzbekistan.kgm"
 msgid "Farg'ona"
-msgstr "Farg'ona"
+msgstr "Farg’ona"
 
 #: uzbekistan.kgm:35
 #, kde-format
 msgctxt "uzbekistan.kgm"
 msgid "Farg'ona (Fergana)"
-msgstr "Farg'ona (Fergana)"
+msgstr "Farg’ona (Fergana)"
 
 #: uzbekistan.kgm:39 uzbekistan.kgm:40
 #, kde-format
@@ -39694,7 +39694,7 @@ msgstr "Çad"
 #, kde-format
 msgctxt "world.kgm"
 msgid "N'Djamena"
-msgstr "N'Djamena"
+msgstr "N’Djamena"
 
 #: world.kgm:117
 #, kde-format
@@ -40942,7 +40942,7 @@ msgstr "Antigua ve Barbuda"
 #, kde-format
 msgctxt "world.kgm"
 msgid "St. John's"
-msgstr "St. John's"
+msgstr "St. John’s"
 
 #: world.kgm:1176
 #, kde-format
@@ -41674,7 +41674,7 @@ msgstr "Tonga"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Nuku'alofa"
-msgstr "Nuku'alofa"
+msgstr "Nuku’alofa"
 
 #: world.kgm:1796
 #, kde-format
@@ -41968,13 +41968,13 @@ msgstr "Lahij"
 #, kde-format
 msgctxt "yemen.kgm"
 msgid "Ma'rib"
-msgstr "Ma'rib"
+msgstr "Ma’rib"
 
 #: yemen.kgm:99
 #, kde-format
 msgctxt "yemen.kgm"
 msgid "Sa'dah"
-msgstr "Sa'dah"
+msgstr "Sa’dah"
 
 #: yemen.kgm:104
 #, kde-format
@@ -41998,7 +41998,7 @@ msgstr "Ataq"
 #, kde-format
 msgctxt "yemen.kgm"
 msgid "Ta'izz"
-msgstr "Ta'izz"
+msgstr "Ta’izz"
 
 #: zaire2006.kgm:5
 #, kde-format
