@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2024-02-08 09:47+0300\n"
+"PO-Revision-Date: 2024-02-11 11:24+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -22902,13 +22902,13 @@ msgstr "&Фокус следует за мышью"
 msgid ""
 "Whether the map tooltip will follow mouse when it is pressed and moving "
 "across the map or not"
-msgstr ""
+msgstr "Открывать всплывающие подсказки при перемещении указателя мыши"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_tooltipFollowsMouse)
 #: kgeographyoptions.ui:112
 #, kde-format
 msgid "&Move map tooltip on mouse move"
-msgstr ""
+msgstr "Всплывающие подсказки следуют за перемещением курсора по карте"
 
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
 #: kgeographyoptions.ui:122
