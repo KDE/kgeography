@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2024-02-02 10:55+0200\n"
+"PO-Revision-Date: 2024-02-22 10:35+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -28226,7 +28226,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Surigao del Norte"
-msgstr ""
+msgstr "סוריגאו דל נורטה (הצפונית)"
 
 #: philippines.kgm:380
 #, kde-format
@@ -28238,7 +28238,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Surigao del Sur"
-msgstr ""
+msgstr "סוריגאו דל סור (הדרומית)"
 
 #: philippines.kgm:385
 #, kde-format
@@ -43372,13 +43372,13 @@ msgstr ""
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Umzingwane"
-msgstr ""
+msgstr "אומזינגוואנה"
 
 #: zimbabwe_districts.kgm:279
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Chirumhanzu"
-msgstr ""
+msgstr "צ׳ירומנזו"
 
 #: zimbabwe_districts.kgm:284
 #, kde-format
