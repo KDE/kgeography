@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2024-02-22 10:35+0200\n"
+"PO-Revision-Date: 2024-03-03 00:01+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -42778,7 +42778,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Shangombo"
-msgstr ""
+msgstr "שנגומבו"
 
 #: zambia_provinces.kgm:5
 #, kde-format
@@ -43090,7 +43090,7 @@ msgstr ""
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Chimanimani"
-msgstr ""
+msgstr "צ׳ימנימני"
 
 #: zimbabwe_districts.kgm:44
 #, kde-format
