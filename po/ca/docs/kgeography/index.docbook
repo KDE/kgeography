@@ -914,14 +914,14 @@ guide the parent/teacher on how to help the child using it.
 ><guimenu
 >Ajuda</guimenu
 > <guimenuitem
->Renúncia</guimenuitem
+>Exempció de responsabilitat</guimenuitem
 > </menuchoice
 ></term>
 <listitem>
 <para
 ><action
 >Mostra</action
-> una renúncia sobre l'exactitud dels mapes, banderes i traduccions utilitzades pel &kgeography;.</para>
+> una exempció de responsabilitat sobre l'exactitud dels mapes, banderes i traduccions utilitzades pel &kgeography;.</para>
 </listitem>
 </varlistentry>
 
