@@ -76,7 +76,7 @@
   <description>
     <p>KGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).</p>
     <p xml:lang="ar">الجغرافي هي أداة تعلم الجغرافيا ، والتي تتيح لك التعرف على التقسيمات السياسية لبعض البلدان (الأقسام وعواصم تلك الأقسام والأعلام المرتبطة بها إذا كان هناك بعضها).</p>
-    <p xml:lang="ast">KGeography ye una ferramienta pa deprender xeografía que te permite deprender les divisiones polítiques de dalgunos países (divisiones, capitales d'estes divisiones ya les sos banderes asociaes si les hubiere)</p>
+    <p xml:lang="ast">KGeography ye una ferramienta pa deprender xeografía que te permite deprender les divisiones polítiques de dalgunos países (divisiones, capitales d'estes divisiones y les sos banderes asociaes si les hubiere)</p>
     <p xml:lang="ca">El KGeography és una eina per a aprendre geografia, la qual permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'aquestes divisions i les seves banderes associades si n'hi ha alguna).</p>
     <p xml:lang="ca-valencia">KGeography és una eina per a aprendre geografia, la qual permet aprendre les divisions polítiques d'alguns països (divisions, capitals d'estes divisions i les seues banderes associades si n'hi ha alguna).</p>
     <p xml:lang="de">KGeography ist ein Erdkunde-Lernprogramm. Damit können Sie die politischen Daten einiger Länder lernen (Länder, ihre Hauptstädte und ihre Flaggen).</p>
@@ -176,7 +176,7 @@
       <li xml:lang="zh-TW">瀏覽地圖，點擊地圖區域來看它的名稱、首都和旗幟</li>
       <li>The game tells you a map division name and you have to click on it</li>
       <li xml:lang="ar">تخبرك اللعبة باسم قسم الخريطة وعليك النقر فوقه</li>
-      <li xml:lang="ast">El xuegu amuesa'l nome d'una división nel mapa ya tienes de calcar nella</li>
+      <li xml:lang="ast">El xuegu amuesa'l nome d'una división nel mapa y tienes de calcar nella</li>
       <li xml:lang="ca">El joc mostra el nom d'una divisió en el mapa i heu de fer clic sobre el lloc on està</li>
       <li xml:lang="ca-valencia">El joc mostra el nom d'una divisió en el mapa i heu de fer clic damunt del lloc on està</li>
       <li xml:lang="de">Der Name eines Landes wird gefragt und Sie müssen es auf der Karte anklicken.</li>
@@ -208,7 +208,7 @@
       <li xml:lang="zh-TW">這個遊戲會告訴您一個地圖區域的名稱，而您必須找出地圖區域並點擊它</li>
       <li>The game tells you a capital and you have to guess the division it belongs to</li>
       <li xml:lang="ar">تخبرك اللعبة بالعاصمة وعليك تخمين المنطقة التي تنتمي إليه</li>
-      <li xml:lang="ast">El xuegu amuesa una capital ya tienes d'aldovinar la división a la que pertenez</li>
+      <li xml:lang="ast">El xuegu amuesa una capital y tienes d'aldovinar la división a la que pertenez</li>
       <li xml:lang="ca">El joc mostra una capital i heu d'esbrinar la divisió a la qual pertany</li>
       <li xml:lang="ca-valencia">El joc mostra una capital i heu d'esbrinar la divisió a la qual pertany</li>
       <li xml:lang="de">Ein Land anhand des Namens der Hauptstadt raten</li>
@@ -240,7 +240,7 @@
       <li xml:lang="zh-TW">這個遊戲會給您一個首都城市，讓您猜它屬於哪個地圖區域</li>
       <li>The game tells you a division and you have to guess its capital</li>
       <li xml:lang="ar">تخبرك اللعبة بالمنطقة وعليك تخمين عاصمتها</li>
-      <li xml:lang="ast">El xuegu amuesa una división ya tienes d'aldovinar la so capital</li>
+      <li xml:lang="ast">El xuegu amuesa una división y tienes d'aldovinar la so capital</li>
       <li xml:lang="ca">El joc mostra una divisió i heu d'esbrinar la seva capital</li>
       <li xml:lang="ca-valencia">El joc mostra una divisió i heu d'esbrinar la seua capital</li>
       <li xml:lang="de">Die Hauptstadt eines Landes raten</li>
@@ -272,7 +272,7 @@
       <li xml:lang="zh-TW">這個遊戲會給您一個地圖區域，讓您猜它的首都</li>
       <li>The game shows you a map division flag and you have to guess its name</li>
       <li xml:lang="ar">تظهر لك اللعبة علم المنطقة وعليك تخمين اسمه</li>
-      <li xml:lang="ast">El xuegu amuesa la bandera d'una división nel mapa ya tienes d'aldovinar el so nome</li>
+      <li xml:lang="ast">El xuegu amuesa la bandera d'una división nel mapa y tienes d'aldovinar el so nome</li>
       <li xml:lang="ca">El joc mostra la bandera d'una divisió en el mapa i heu d'esbrinar el seu nom</li>
       <li xml:lang="ca-valencia">El joc mostra la bandera d'una divisió en el mapa i heu d'esbrinar el seu nom</li>
       <li xml:lang="de">Ein Land anhand der Flagge erraten</li>
@@ -304,7 +304,7 @@
       <li xml:lang="zh-TW">這個遊戲會告訴您地圖區域的旗幟，讓您猜它的名稱</li>
       <li>The game tells you a map division name and you have to guess its flag</li>
       <li xml:lang="ar">تخبرك اللعبة باسم المنطقة وعليك تخمين علمها</li>
-      <li xml:lang="ast">El xuegu amuesa'l nome d'una división nel mapa ya tienes d'aldovinar la so bandera</li>
+      <li xml:lang="ast">El xuegu amuesa'l nome d'una división nel mapa y tienes d'aldovinar la so bandera</li>
       <li xml:lang="ca">El joc mostra el nom d'una divisió en el mapa i heu d'esbrinar la seva bandera</li>
       <li xml:lang="ca-valencia">El joc mostra el nom d'una divisió en el mapa i heu d'esbrinar la seua bandera</li>
       <li xml:lang="de">Die Flagge eines Landes erraten</li>
@@ -336,7 +336,7 @@
       <li xml:lang="zh-TW">這個遊戲會告訴您地圖區域的名稱，讓您猜它的旗幟</li>
       <li>The game shows an empty map and you have to place divisions on it one by one</li>
       <li xml:lang="ar">تظهر اللعبة خريطة فارغة وعليك وضع التقسيمات عليها واحدة تلو الأخرى</li>
-      <li xml:lang="ast">El xuegu amuesa un mapa baleru ya tienes d'asitiar les divisiones una a una</li>
+      <li xml:lang="ast">El xuegu amuesa un mapa baleru y tienes d'asitiar les divisiones una a una</li>
       <li xml:lang="ca">El joc mostra un mapa buit i heu de situar les divisions una a una</li>
       <li xml:lang="ca-valencia">El joc mostra un mapa buit i heu de situar les divisions una a una</li>
       <li xml:lang="de">Länder auf einer leeren Landkarte platzieren</li>
