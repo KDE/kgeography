@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2024-03-03 00:01+0200\n"
+"PO-Revision-Date: 2024-03-17 08:27+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -1216,7 +1216,7 @@ msgstr "בראט"
 #, kde-format
 msgctxt "albania_districts.kgm"
 msgid "Bulqizë"
-msgstr ""
+msgstr "בולצ׳יזה"
 
 #: albania_districts.kgm:39
 #, kde-format
@@ -1228,7 +1228,7 @@ msgstr "דלווין"
 #, kde-format
 msgctxt "albania_districts.kgm"
 msgid "Devoll"
-msgstr ""
+msgstr "דבול"
 
 #: albania_districts.kgm:49
 #, kde-format
@@ -1276,13 +1276,13 @@ msgstr ""
 #, kde-format
 msgctxt "albania_districts.kgm"
 msgid "Kavajë"
-msgstr ""
+msgstr "קבאיה"
 
 #: albania_districts.kgm:89
 #, kde-format
 msgctxt "albania_districts.kgm"
 msgid "Kolonjë"
-msgstr ""
+msgstr "קולוניה"
 
 #: albania_districts.kgm:94
 #, kde-format
@@ -1312,7 +1312,7 @@ msgstr "קוקס"
 #, kde-format
 msgctxt "albania_districts.kgm"
 msgid "Kurbin"
-msgstr ""
+msgstr "קורבין"
 
 #: albania_districts.kgm:119
 #, kde-format
@@ -1324,7 +1324,7 @@ msgstr "לז׳ה"
 #, kde-format
 msgctxt "albania_districts.kgm"
 msgid "Librazhd"
-msgstr ""
+msgstr "ליברז׳די"
 
 #: albania_districts.kgm:129
 #, kde-format
@@ -1342,7 +1342,7 @@ msgstr ""
 #, kde-format
 msgctxt "albania_districts.kgm"
 msgid "Mallakastër"
-msgstr ""
+msgstr "מלקאסטרה"
 
 #: albania_districts.kgm:144
 #, kde-format
@@ -1396,7 +1396,7 @@ msgstr "שקודרה"
 #, kde-format
 msgctxt "albania_districts.kgm"
 msgid "Skrapar"
-msgstr ""
+msgstr "סקרפאר"
 
 #: albania_districts.kgm:189
 #, kde-format
@@ -31562,7 +31562,7 @@ msgstr ""
 #, kde-format
 msgctxt "sikkim.kgm"
 msgid "West Sikkim"
-msgstr ""
+msgstr "מערב סיקים"
 
 #: sikkim.kgm:39
 #, kde-format
@@ -34832,7 +34832,7 @@ msgstr ""
 #, kde-format
 msgctxt "tripura.kgm"
 msgid "North Tripura"
-msgstr ""
+msgstr "צפון טריפורה"
 
 #: tripura.kgm:39
 #, kde-format
@@ -34844,7 +34844,7 @@ msgstr ""
 #, kde-format
 msgctxt "tripura.kgm"
 msgid "South Tripura"
-msgstr ""
+msgstr "דרום טריפורה"
 
 #: tripura.kgm:49
 #, kde-format
@@ -34856,7 +34856,7 @@ msgstr "אודאיפור"
 #, kde-format
 msgctxt "tripura.kgm"
 msgid "West Tripura"
-msgstr ""
+msgstr "מערב טריפורה"
 
 #: tripura.kgm:59
 #, kde-format
@@ -37334,13 +37334,13 @@ msgstr "קאו באנג"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dak Lak"
-msgstr ""
+msgstr "דאקלאק"
 
 #: vietnam.kgm:95
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Buon Ma Thuot"
-msgstr ""
+msgstr "בון מא טאוט"
 
 #: vietnam.kgm:99
 #, kde-format
