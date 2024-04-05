@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-17 01:36+0000\n"
+"POT-Creation-Date: 2024-04-05 00:35+0000\n"
 "PO-Revision-Date: 2024-03-17 08:27+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -18693,9 +18693,11 @@ msgid "Miskolc"
 msgstr "מישקולץ"
 
 #: hungary.kgm:44
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "hungary.kgm"
+#| msgid "Csongrád"
 msgctxt "hungary.kgm"
-msgid "Csongrád"
+msgid "Csongrád-Csanád"
 msgstr "צ׳ונגראד"
 
 #: hungary.kgm:45
