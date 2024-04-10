@@ -18696,12 +18696,10 @@ msgid "Miskolc"
 msgstr "Miškovec"
 
 #: hungary.kgm:44
-#, fuzzy, kde-format
-#| msgctxt "hungary.kgm"
-#| msgid "Csongrád"
+#, kde-format
 msgctxt "hungary.kgm"
 msgid "Csongrád-Csanád"
-msgstr "Csongrád"
+msgstr ""
 
 #: hungary.kgm:45
 #, kde-format
