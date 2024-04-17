@@ -1,0 +1,1042 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % French "INCLUDE"
+> 
+]>
+
+<book id="kgeography" lang="&language;">
+
+<bookinfo>
+<title
+>Manuel de &kgeography;</title>
+
+<authorgroup>
+<author
+><personname
+> <firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> </personname
+> &Anne-Marie.Mahfouf.mail; </author>
+<author
+><personname
+> <firstname
+>Kushal</firstname
+> <surname
+>Das</surname
+> </personname
+> <email
+>kushaldas@gmail.com</email
+> </author>
+
+&traducteurPierreBuard;&traducteurXavierBesnard; 
+</authorgroup>
+
+<copyright>
+<year
+>2005</year>
+<holder
+>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<copyright>
+<year
+>2008</year>
+<holder
+>Kushal Das</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>22-12-2020</date>
+<releaseinfo
+>Applications 20.12</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&kgeography; est un outil d'apprentissage de la géographie pour &kde;. A ce jour, il est utilisable de sept manières différentes : <itemizedlist>
+<listitem>
+<para
+>parcourir les cartes en cliquant sur une division pour voir son nom, sa capitale et son drapeau, </para>
+</listitem>
+<listitem>
+<para
+>le jeu vous donne le nom d'une division et vous devez cliquer dessus, </para>
+</listitem>
+<listitem>
+<para
+>le jeu vous donne une capitale et vous devez deviner la division à laquelle elle appartient, </para>
+</listitem
+><listitem>
+<para
+>le jeu vous donne une division et vous devez deviner sa capitale, </para>
+</listitem
+><listitem>
+<para
+>le jeu vous montre le drapeau d'une division dont vous devez deviner le nom, </para>
+</listitem
+><listitem>
+<para
+>le jeu vous donne le nom d'une division à laquelle vous devez associer un drapeau, </para>
+</listitem
+><listitem>
+<para
+>le jeu affiche une carte vide sur laquelle vous devez placer les divisions une à une.</para>
+</listitem>
+</itemizedlist>
+</para>
+
+</abstract>
+
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdeedu</keyword>
+<keyword
+>KGeography</keyword>
+<keyword
+>géographie</keyword>
+<keyword
+>cartes</keyword>
+<keyword
+>pays</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Introduction</title>
+
+<para
+>&kgeography; est un outil d'apprentissage de la géographie pour &kde;. Il vous permet d'en apprendre plus sur les divisions politiques de quelques pays, leurs divisions, capitales de ces divisions et drapeaux associés, le cas échéant. </para>
+</chapter>
+
+<chapter id="quick-start">
+<title
+>Premiers pas dans &kgeography;</title>
+<para
+>Lorsque vous exécutez &kgeography; pour la première fois, il vous demandera d'abord de choisir une carte avec laquelle commencer. </para>
+<tip>
+<para
+>Il est possible de filtrer la liste des cartes à l'aide de la zone de texte <guilabel
+>Filtre de cartes</guilabel
+>. Saisissez les premières lettres du nom de la carte afin de réduire la liste à quelques entrées. </para>
+</tip>
+<screenshot>
+<screeninfo
+>Voici une copie d'écran de &kgeography; au premier lancement</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start1.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Voici une copie d'écran de &kgeography; au premier lancement</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Nous choisissons ici le Canada <screenshot>
+<screeninfo
+>Canada est sélectionné</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start2.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Canada est sélectionné</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Et la fenêtre principale de &kgeography; apparaît avec la carte du Canada : <screenshot>
+<screeninfo
+>Fenêtre principale de &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start3.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Fenêtre principale de &kgeography;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Vous pouvez alors choisir quel genre d'apprentissage ou d'évaluation vous souhaitez grâce au menu situé à gauche : <screenshot>
+<screeninfo
+>Menu de &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start4.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Menu de &kgeography;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Parcourir une carte : un clic avec le &BGS; sur une zone de la carte affichera les informations correspondantes, si vous cliquez sur la petite icône &nbsp;<inlinemediaobject
+> <imageobject
+> <imagedata fileref="dialog-information.png" format="PNG"/> </imageobject
+> </inlinemediaobject
+> <guiicon
+>d'informations</guiicon
+>, une page Wikipédia correspondant à la division s'ouvrira dans votre navigateur défini par défaut dans votre système : <screenshot>
+<screeninfo
+>Parcourir la carte</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start5.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Parcourir la carte</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Emplacement des provinces et territoires : il vous est d'abord demandé combien de questions vous souhaitez. <screenshot>
+<screeninfo
+>Nombre de questions</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start6.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Nombre de questions</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Ensuite, il vous sera demandé de cliquer sur la division donnée : <screenshot>
+<screeninfo
+>Cliquez sur une division</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start7.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Cliquez sur une division</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Lorsque vous avez répondu à toutes les questions, le résultat s'affichera avec le nombre de réponses correctes et incorrectes : <screenshot>
+<screeninfo
+>Vos réponses</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start8.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Vos réponses</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Placez les provinces et territoires sur la carte : le curseur prend la forme d'une division que vous devez placer sur la carte : <screenshot>
+<screeninfo
+>Placez une division sur la carte</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start13.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Placez une division sur la carte</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Les provinces et territoires par capitales : il vous est demandé d'associer une capitale à l'une des quatre divisions données : <screenshot>
+<screeninfo
+>Associez une capitale à sa division</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start9.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Associez une capitale à sa division</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Les résultats s'affichent une fois le test fini : <screenshot>
+<screeninfo
+>Vos réponses</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start10.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Vos réponses</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Capitales des provinces et territoires : pour une division donnée, retrouvez sa capitale parmi quatre propositions. Comme précédemment, les résultats seront affichés à la fin. </para>
+<para
+>Les provinces et territoires par drapeaux : un drapeau est affiché et vous devez trouver à quelle province il appartient. <screenshot>
+<screeninfo
+>Une question de drapeau</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start11.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Une question de drapeau</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Drapeaux des provinces et territoires : à partir du nom d'une province, vous devez trouver le bon drapeau parmi les quatre proposés. <screenshot>
+<screeninfo
+>Associez le drapeau à la province</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start12.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Associez le drapeau à la province</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</chapter>
+
+<chapter id="using-kapp">
+<title
+>Utiliser &kgeography;</title>
+
+<para
+>&kgeography; affiche des informations sur les pays et vous teste sur celles-ci. <screenshot>
+<screeninfo
+>Voici une copie d'écran de &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kgeography.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Copie d'écran</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+
+
+<sect1 id="kapp-features">
+<title
+>Fonctionnalités additionnelles de &kgeography;</title>
+
+<para
+>Une autre fonctionnalité de &kgeography; consiste à pouvoir zoomer sur la carte. <screenshot
+> <screeninfo
+>Zoom</screeninfo
+> <mediaobject
+> <imageobject
+> <imagedata fileref="zoom.png" format="PNG"/> </imageobject
+> <textobject
+> <phrase
+>Zoom</phrase
+> </textobject
+> </mediaobject
+> </screenshot
+> Vous pouvez cliquer sur le bouton <guibutton
+>Zoom</guibutton
+> et dessiner un rectangle afin de zoomer sur une partie de la carte. En mode zoom, vous pouvez cliquer avec le &BDS; pour rétablir la taille d'origine de la carte (l'action <guimenuitem
+>Taille originale</guimenuitem
+> produit le même effet). Utilisez les barres de défilement, les touches de direction ou la molette de la souris pour vous déplacer sur la carte zoomée ou utilisez l'action <guimenuitem
+>Déplacer</guimenuitem
+> qui permettra de faire glisser la carte en utilisant le &BGS;. La fonctionnalité <guimenuitem
+>Zoom automatique</guimenuitem
+> agrandira la carte autant que possible. </para>
+
+</sect1>
+</chapter>
+
+<!--<chapter id="teachers-parents">
+<title
+>Teachers/Parents guide to &kgeography; </title>
+ This chapter should emphasize the educational aims of your app and
+guide the parent/teacher on how to help the child using it.
+</chapter
+>-->
+
+<chapter id="how-to-maps">
+<title
+>Comme créer des cartes</title>
+<para
+>Une carte dans &kgeography; est composée de deux fichiers : le premier est une image de la carte et l'autre contient sa description.</para>
+<sect1 id="helper-tool">
+<title
+>Outils d'aide</title>
+<para
+>Vous trouverez <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/gen_map.pl"
+>ici</ulink
+> un outil, créé par Yann Verley, l'ayant aidé pour la carte de France. Pour comprendre son utilisation, veuillez simplement le lancer et lire le message d'aide. Pour simplifier, il crée un fichier <literal role="extension"
+>.kgm</literal
+> à partir d'un fichier de type texte, ainsi qu'un second fichier contenant les couleurs assignées à chaque division, afin que vous puissiez remplir la carte avec elles.</para>
+<para
+>Il existe aussi l'outil <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
+>colorchecker.py</ulink
+> écrit par Albert Astals Cid. Vous aurez besoin de « PyQt4 » pour l'exécuter. Lancez-le simplement avec le nom du fichier <literal role="extension"
+>.kgm</literal
+> comme argument (vous aurez aussi besoin du fichier <literal role="extension"
+>.png</literal
+>de la carte dans le même dossier). Ceci vous dira si un pixel sur la carte a une couleur qui n'est pas définie dans le fichier de description <literal role="extension"
+>.kgm</literal
+>. </para>
+<tip>
+<para
+>Veuillez également consulter le tutoriel <ulink url="https://edu.kde.org/kgeography/tutorials/kgeography-addmaps.pdf"
+> Comment ajouter des cartes</ulink
+> présent sur le site Internet de &kgeography;. </para>
+</tip>
+</sect1>
+<sect1 id="description-file">
+<title
+>Le fichier de description</title>
+<para
+>Le fichier de description est nécessaire et son extension est <literal role="extension"
+>.kgm</literal
+>. Il doit commencer par <sgmltag class="starttag"
+>?xml version= « 1.0 » encoding= « utf-8 »</sgmltag
+>, suivi de <sgmltag class="starttag"
+> !DOCTYPE kgeographyMap</sgmltag
+> puis par <sgmltag class="starttag"
+>map</sgmltag
+> et enfin par <sgmltag class="endtag"
+>map</sgmltag
+>. </para>
+<para
+>Entre ces balises, il doit y avoir : <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>Fichier de carte</sgmltag
+> et <sgmltag class="endtag"
+>Fichier de carte</sgmltag
+> : le nom du fichier (sans aucun emplacement) contenant l'image de la carte, &pex; <quote
+>europe.png</quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>nom</sgmltag
+> et <sgmltag class="endtag"
+>nom</sgmltag
+> : le nom de la carte, &pex; <quote
+><literal
+>Europe</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>Nom du pays</sgmltag
+> et <sgmltag class="endtag"
+>Nom du pays</sgmltag
+> : le nom général du pays sur la carte, comme Provinces, États, Régions, &etc;.</para>
+</listitem>
+<listitem>
+  <para
+>Une entrée <sgmltag class="starttag"
+>division</sgmltag
+> et <sgmltag class="endtag"
+>division</sgmltag
+> pour chaque division de la carte.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>Chaque division a ces balises : <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>nom</sgmltag
+> et <sgmltag class="endtag"
+>nom</sgmltag
+> : le nom du pays, &pex; <quote
+><literal
+>Albanie</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>capitale</sgmltag
+> et <sgmltag class="endtag"
+>capitale</sgmltag
+> : le nom de la capitale pour le pays, &pex; <quote
+><literal
+>Tirana</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+	<para
+><sgmltag class="starttag"
+>ignore</sgmltag
+> et <sgmltag class="endtag"
+>ignore</sgmltag
+> : accepte comme paramètres <userinput
+>yes</userinput
+>, <userinput
+>allowClickMode</userinput
+>, <userinput
+>allowClickFlagMode</userinput
+> et <userinput
+>no</userinput
+>. Si cette balise est positionnée à <userinput
+>yes</userinput
+>, alors la division sera ignorée lors de questions sur les divisions de la carte. Cela fonctionnera comme si cette division n'existait pas dans les modes de tests de &kgeography;. Si cette balise est positionnée à <userinput
+>allowClickMode</userinput
+>, alors &kgeography; fera une demande pour cette division en mode <guibutton
+>Emplacement de...</guibutton
+> mais pas lors des autres tests. Si cette balise est paramétrée avec <userinput
+>allowClickFlagMode</userinput
+>, alors &kgeography; demandera cette division en mode <guibutton
+>Emplacement de...</guibutton
+> mais pas dans les autres modes. Si cette balise est paramétrée avec <userinput
+>no</userinput
+>, alors, la division apparaîtra dans tous les modes (navigation et tests). Cette balise est optionnelle et lorsque la balise <sgmltag class="starttag"
+>ignore</sgmltag
+> est absente, cela fonctionne de la même façon qu'avec la balise <userinput
+>no</userinput
+>. Par exemple, <quote
+>Algérie</quote
+> possède une balise paramétrée avec <userinput
+>yes</userinput
+> sur la carte <quote
+>Europe</quote
+> ce qui signifie que <quote
+>Algérie</quote
+> ne sera présente dans aucun des tests de la carte <quote
+>Europe</quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>flag</sgmltag
+> et <sgmltag class="endtag"
+>flag</sgmltag
+> : le fichier (sans aucun emplacement) contenant le drapeau du pays, &pex; <quote
+><literal
+>albania.png</literal
+></quote
+>. Cette étiquette est optionnelle. Elle n'est pas nécessaire pour les pays ayant une étiquette <sgmltag class="starttag"
+>ignore</sgmltag
+> avec le paramètre <userinput
+>yes</userinput
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blurredflag</sgmltag
+> et <sgmltag class="endtag"
+>blurredflag</sgmltag
+> : le fichier (Sans aucun emplacement) contenant le drapeau flouté de la division, &pex; <quote
+><literal
+>blurred_albania.png</literal
+></quote
+>. Cette étiquette est optionnelle. Elle devrait être utilisée,  dans les situations où le drapeau porte le nom de la division à laquelle il appartient, écrite sur celle-ci. Cela peut rendre les jeux de devinettes de drapeaux trop faciles, et par conséquent, la soumission des drapeaux avec le texte flou est encouragée.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>color</sgmltag
+> et <sgmltag class="endtag"
+>color</sgmltag
+> : la couleur de la division sur la carte.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>falseCapital</sgmltag
+> et <sgmltag class="endtag"
+>falseCapital</sgmltag
+> : il peut y avoir n'importe quel nombre de paires de <userinput
+>falseCapital</userinput
+> (fausse capitale). Elles sont utilisées pour la fourniture d'une liste de mauvaises réponses à la question de la capitale au lieu de les choisir parmi d'autres listes de capitales de pays.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>La couleur est définie en utilisant ces trois balises : <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>red</sgmltag
+> et <sgmltag class="endtag"
+>red</sgmltag
+> : composante de rouge de la couleur. Les valeurs valables sont comprises entre 0 et 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>green</sgmltag
+> et <sgmltag class="endtag"
+>green</sgmltag
+> : composante de vert de la couleur. Les valeurs valables sont comprises entre 0 et 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blue</sgmltag
+> et <sgmltag class="endtag"
+>blue</sgmltag
+> : composante de bleu de la couleur. Les valeurs valables sont comprises entre 0 et 255.</para>
+</listitem>
+</itemizedlist>
+</para>
+<tip>
+ <para
+>Il est pratique de créer 2 ou 3 fausses divisions comme <quote
+>Water</quote
+> (Eau), <quote
+>Frontier</quote
+> (Frontière) et <quote
+>Coast</quote
+> (Côte) ayant la balise <sgmltag class="starttag"
+>ignore</sgmltag
+> paramétrée avec <userinput
+>yes</userinput
+>. Veuillez <userinput
+>ne pas de définir</userinput
+> de couleur 0,0,0 en RGB, pour les <quote
+>Frontier</quote
+> (Frontière). Veuillez la définir en quelque chose comme 1,1,1 afin que la bordure de la frontière apparaisse lors du placement des divisions sur la carte. </para>
+</tip>
+ <important>
+   <para
+>Tous les noms (capitales et divisions) doivent être en anglais.</para>
+</important>
+</sect1>
+<sect1 id="map-file">
+<title
+>Le fichier carte</title>
+<para
+>Le fichier de cartes est assez simple mais laborieux à créer. Il doit être au format <acronym
+>PNG</acronym
+>. Vous pourrez trouver des cartes à transformer à la page <ulink url="https://www.cia.gov/library/publications/the-world-factbook/docs/refmaps.html"
+>Cartes de référence CIA</ulink
+>. Si aucune carte ne correspond à vos besoins, vous pouvez télécharger la <ulink url="https://www.cia.gov/library/publications/resources/the-world-factbook/graphics/ref_maps/political/pdf/world.pdf"
+>carte politique du monde</ulink
+>, réaliser une copie d'écran et travailler à partir de celle-ci. Chaque division sur la carte devra avoir une, et seulement une, couleur. Pour accomplir cela, vous pouvez utiliser des éditeurs d'images comme <application
+>GIMP</application
+> ou <application
+>KolourPaint</application
+>. </para>
+</sect1>
+<sect1 id="flags">
+<title
+>Drapeaux</title>
+<para
+>Si vous avez employé la balise <sgmltag class="starttag"
+>flag</sgmltag
+>, vous devrez fournir des fichiers de drapeaux. Ils devront être au format <acronym
+>PNG</acronym
+> et, encore mieux, faire 300 x 200 pixels, de plus, vous devrez fournir un fichier au format <acronym
+>SVG</acronym
+>. Pour obtenir des drapeaux au format <acronym
+>SVG</acronym
+> de la plupart des pays du monde et de quelques sous-divisions, vous pouvez consulter la <ulink url="https://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770"
+>collection de drapeaux Sodipodi</ulink
+>. </para>
+<para
+>Comme mentionné précédemment, nous vous encourageons à fournir des fichiers de drapeaux flous pour les drapeaux ayant des sous-divisions. Les mêmes exigences s'appliquent aux fichiers de drapeaux flous qu'aux fichiers de drapeaux ordinaires. Bien qu'il n'y ait pas de notation de nom prescrite pour les fichiers flous, nous vous recommandons de les enregistrer avec le nom du drapeau d'origine préfixé avec <literal
+>floutés_</literal
+>, &pex; <quote
+><literal
+>flou_albania.png</literal
+></quote
+> </para>
+</sect1>
+<sect1 id="how-to-test">
+<title
+>Comment tester</title>
+<para
+>Avant d'envoyer votre carte à Albert &Albert.Astals.Cid.mail;, vous devriez la tester pour être sûr qu'elle ne contient aucune erreur. Pour cela, vous effectuerez les tâches suivantes : <itemizedlist
+> <listitem
+> <para
+>Placer la description de la carte ainsi que son image dans <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/</filename
+></para
+> </listitem
+> <listitem
+> <para
+>Placer les fichiers de drapeaux <acronym
+>PNG</acronym
+> (le cas échéant) dans <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/flags/</filename
+></para
+> </listitem
+> </itemizedlist
+> Une fois fait, vous devriez être capable d'ouvrir la carte à partir de &kgeography;. </para>
+ <para
+>Si vous ignorez quelle est votre <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+></filename
+>, saisissez <userinput
+><command
+>qtpaths</command
+> <option
+>--paths Dossier-Utilisateur</option
+></userinput
+> dans un terminal. </para>
+<tip>
+<para
+>Utilisez l'outil « colorchecker.py » à partir des outils d'assistance, pour vérifier s'il reste des couleurs sur la carte, qui sont non définies dans le fichier <literal role="extension"
+>.kgm</literal
+>. </para>
+</tip>
+</sect1>
+<sect1 id="non-political-maps">
+<title
+>Cartes non politiques</title>
+<para
+>Est-il possible de créer des cartes non politiques ? Oui, c'est possible ! <screenshot>
+<screeninfo
+>Exemple montrant comment réaliser une carte non politique</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="river.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Exemple montrant comment réaliser une carte non politique</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Bien sûr, le concept de division peut être étendu aux rivières ou montagnes. Durant la création de la carte, vous devez avoir à l'esprit que, la plupart du temps, la rivière ou la montagne sera trop petite pour avoir sa propre zone de sélection. Dans cet exemple, la rivière aurait eu la zone marron et la couleur &lt;20,76,34&gt; comme identifiant. </para>
+</sect1>
+</chapter>
+
+<chapter id="commands">
+<title
+>Références des commandes</title>
+
+<sect1 id="kapp-mainwindow">
+<title
+>La fenêtre principale de &kgeography;</title>
+
+<sect2>
+<title
+>Le menu Fichier</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Fichier</guimenu
+> <guimenuitem
+>Ouvrir une carte...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Ouvre la boîte de dialogue de sélection de carte. En saisissant rapidement les premières lettres de la carte recherchée, le curseur se positionnera sur la carte correspondante.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Fichier</guimenu
+> <guimenuitem
+>Quitter</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Quitte</action
+> &kgeography;.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>Le menu Affichage</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Affichage</guimenu
+> <guimenuitem
+>Zoom</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Active le mode en zoom et dessine un rectangle pour zoomer sur une zone de la carte.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Affichage</guimenu
+> <guimenuitem
+>Taille originale</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Réinitialise</action
+> la carte à sa taille originale telle que définit par son fichier. Un clic du &BDS; en mode zoom effectue la même action.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Affichage</guimenu
+> <guimenuitem
+>Zoom automatique</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Applique</action
+> un zoom automatique à la carte, en utilisant le plus d'espace possible lors du redimensionnement de la fenêtre de &kgeography;.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Affichage</guimenu
+> <guimenuitem
+>Déplacer</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Déplacer</action
+> la carte actuelle. Cet élément n'est activé que si vous avez zoomé sur la carte.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>Le menu Configuration</title>
+<para
+>De plus, &kgeography; possède des éléments communs de menu &kde; Configuration. Pour plus d'informations, veuillez consulter la section <ulink url="help:/fundamentals/menus.html#menus-settings"
+>Menu de configuration</ulink
+> des fondamentaux de &kde;. </para>
+
+</sect2>
+<sect2>
+<title
+>Le menu Aide</title>
+
+<para
+>&kgeography; fournit le menu <guimenu
+>Aide</guimenu
+> par défaut de &kde;, tel que décrit dans les <ulink url="help:/fundamentals/menus.html#menus-help"
+>Fondamentaux de &kde;</ulink
+>, avec deux entrées supplémentaires :</para>
+	
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Aide</guimenu
+> <guimenuitem
+>Dégagement de responsabilité</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Affiche</action
+> une clause de non-responsabilité concernant la précision des cartes, drapeaux et traductions utilisés par &kgeography;.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Aide</guimenu
+> <guimenuitem
+>Auteur de la carte</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Affiche</action
+> le nom de l'auteur de la carte ouverte.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+</sect1>
+
+</chapter>
+
+<chapter id="configuration">
+<title
+>Configuration</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Alignement des questions</guilabel
+></term>
+<listitem
+><para
+>Détermine la position des questions dans la fenêtre, <guilabel
+>En haut à gauche</guilabel
+> par défaut.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Attendre la validation</guilabel
+></term>
+<listitem
+><para
+>En cochant cette option, l'utilisateur devra cliquer sur <guibutton
+>Valider</guibutton
+> après avoir choisi une réponse.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Le focus suit le curseur</guilabel
+></term>
+<listitem
+><para
+>En cochant cette option, un appui sur la touche &Space; activera le bouton sous le pointeur de la souris.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Couleurs des divisions de la carte</guilabel
+></term>
+<listitem
+><para
+>Choisissez de toujours appliquer les mêmes couleurs (par défaut) ou de les générer aléatoirement : cette dernière option assignera des couleurs aléatoires aux divisions de la carte. Ceci aide l'utilisateur à se concentrer à apprendre les formes des divisions et non plus simplement mémoriser les couleurs. </para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Remerciements et licence</title>
+
+<para
+>&kgeography; </para>
+<para
+>Copyright du programme, 2004-2008 Albert Astals Cid &Albert.Astals.Cid.mail; </para>
+
+
+<para
+>Copyright de la documentation, 2005 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; 2008 Kushal Das <email
+>kushaldas@gmail.com</email
+> </para>
+
+<para
+>Traduction française par &PierreBuard;.</para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab 
+-->
