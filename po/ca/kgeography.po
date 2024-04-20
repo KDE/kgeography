@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-17 01:36+0000\n"
-"PO-Revision-Date: 2024-03-12 16:43+0100\n"
+"PO-Revision-Date: 2024-04-19 22:08+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -4735,7 +4735,7 @@ msgstr "Sylhet"
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Belarus"
-msgstr "Bielorússia"
+msgstr "Belarús"
 
 #: belarus.kgm:6
 #, kde-format
@@ -4753,7 +4753,7 @@ msgstr "Frontera"
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Not Belarus"
-msgstr "Fora de Bielorússia"
+msgstr "Fora de Belarús"
 
 #: belarus.kgm:24 belarus.kgm:59
 #, kde-format
@@ -12601,7 +12601,7 @@ msgstr "Viena"
 #, kde-format
 msgctxt "europe.kgm"
 msgid "Belarus"
-msgstr "Bielorússia"
+msgstr "Belarús"
 
 #: europe.kgm:77
 #, kde-format
@@ -23017,7 +23017,7 @@ msgstr "Lituània"
 #, kde-format
 msgctxt "latvia.kgm"
 msgid "Belarus"
-msgstr "Bielorússia"
+msgstr "Belarús"
 
 #: latvia.kgm:34
 #, kde-format
@@ -40386,7 +40386,7 @@ msgstr "Viena"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Belarus"
-msgstr "Bielorússia"
+msgstr "Belarús"
 
 #: world.kgm:688
 #, kde-format
