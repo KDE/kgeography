@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2024-03-17 08:27+0200\n"
+"PO-Revision-Date: 2024-04-19 13:06+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -2002,7 +2002,7 @@ msgstr "מצ׳יליפטנאם"
 #, kde-format
 msgctxt "andhrapradesh.kgm"
 msgid "West Godavari"
-msgstr ""
+msgstr "מערב גודבארי"
 
 #: andhrapradesh.kgm:110
 #, kde-format
@@ -2014,13 +2014,13 @@ msgstr "אלורו"
 #, kde-format
 msgctxt "andhrapradesh.kgm"
 msgid "East Godavari"
-msgstr ""
+msgstr "מזרח גודבארי"
 
 #: andhrapradesh.kgm:115
 #, kde-format
 msgctxt "andhrapradesh.kgm"
 msgid "Kakinada"
-msgstr ""
+msgstr "קקינאדה"
 
 #: andhrapradesh.kgm:119 andhrapradesh.kgm:120
 #, kde-format
@@ -5392,7 +5392,7 @@ msgstr ""
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Samastipur"
-msgstr ""
+msgstr "סמסטיפור"
 
 #: bihar.kgm:113 bihar.kgm:114
 #, kde-format
@@ -18693,12 +18693,10 @@ msgid "Miskolc"
 msgstr "מישקולץ"
 
 #: hungary.kgm:44
-#, fuzzy, kde-format
-#| msgctxt "hungary.kgm"
-#| msgid "Csongrád"
+#, kde-format
 msgctxt "hungary.kgm"
 msgid "Csongrád-Csanád"
-msgstr "צ׳ונגראד"
+msgstr "צ׳ונגראד-צ׳נאד"
 
 #: hungary.kgm:45
 #, kde-format
@@ -42396,7 +42394,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Chingola"
-msgstr ""
+msgstr "צ׳ינגולה"
 
 #: zambia_districts.kgm:64
 #, kde-format
@@ -42408,7 +42406,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kitwe"
-msgstr ""
+msgstr "קיטווה"
 
 #: zambia_districts.kgm:74
 #, kde-format
@@ -42438,13 +42436,13 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mufulira"
-msgstr ""
+msgstr "מופולירה"
 
 #: zambia_districts.kgm:99
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Ndola"
-msgstr ""
+msgstr "אנדולה"
 
 #: zambia_districts.kgm:104
 #, kde-format
@@ -42834,7 +42832,7 @@ msgstr "קופרבלט"
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Ndola"
-msgstr "נדולה"
+msgstr "אנדולה"
 
 #: zambia_provinces.kgm:34
 #, kde-format
@@ -42948,7 +42946,7 @@ msgstr "בולוואיו"
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Harare"
-msgstr "הארארה"
+msgstr "הררה"
 
 #: zimbabwe.kgm:34
 #, kde-format
@@ -43002,7 +43000,7 @@ msgstr "צ׳ינאוי"
 #, kde-format
 msgctxt "zimbabwe.kgm"
 msgid "Masvingo"
-msgstr "מסבינגו"
+msgstr "מזווינגו"
 
 #: zimbabwe.kgm:59
 #, kde-format
@@ -43080,7 +43078,7 @@ msgstr "בולוואיו"
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Harare"
-msgstr "הארארה"
+msgstr "הררה"
 
 #: zimbabwe_districts.kgm:34
 #, kde-format
@@ -43110,7 +43108,7 @@ msgstr ""
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Mutare"
-msgstr ""
+msgstr "מוטארה"
 
 #: zimbabwe_districts.kgm:59
 #, kde-format
@@ -43284,7 +43282,7 @@ msgstr ""
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Masvingo"
-msgstr "מסבינגו"
+msgstr "מזווינגו"
 
 #: zimbabwe_districts.kgm:204
 #, kde-format
@@ -43368,7 +43366,7 @@ msgstr ""
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Matobo"
-msgstr ""
+msgstr "מטובו"
 
 #: zimbabwe_districts.kgm:274
 #, kde-format
@@ -43398,25 +43396,25 @@ msgstr ""
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Gweru"
-msgstr ""
+msgstr "גוורו"
 
 #: zimbabwe_districts.kgm:299
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Kwekwe"
-msgstr ""
+msgstr "קווה קווה"
 
 #: zimbabwe_districts.kgm:304
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Mberengwa"
-msgstr ""
+msgstr "מברנגווה"
 
 #: zimbabwe_districts.kgm:309
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Shurugwi"
-msgstr ""
+msgstr "שורוגווי"
 
 #: zimbabwe_districts.kgm:314
 #, kde-format
