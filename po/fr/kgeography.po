@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2024-04-06 10:54+0200\n"
+"PO-Revision-Date: 2024-05-07 08:18+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -22765,7 +22765,7 @@ msgstr ""
 #: kgeography.kcfg:35
 #, kde-format
 msgid "Whether the map tooltip follows mouse movement"
-msgstr "Si l’info-bulle de la carte suit le mouvement de la souris"
+msgstr "Si l'info-bulle de la carte suit le mouvement de la souris"
 
 #. i18n: ectx: label, entry (colorDisguise), group (general)
 #: kgeography.kcfg:39
@@ -22870,7 +22870,7 @@ msgid ""
 "Whether the map tooltip will follow mouse when it is pressed and moving "
 "across the map or not"
 msgstr ""
-"Si l’info-bulle de la carte suivra ou non le mouvement de la souris avec le "
+"Si l'info-bulle de la carte suivra ou non le mouvement de la souris avec le "
 "bouton enfoncé et en se déplaçant sur la carte"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_tooltipFollowsMouse)
@@ -22878,7 +22878,7 @@ msgstr ""
 #, kde-format
 msgid "&Move map tooltip on mouse move"
 msgstr ""
-"Dé&placer l’info-bulle de la carte à partir d'un mouvement de la souris"
+"Dé&placer l'info-bulle de la carte à partir d'un mouvement de la souris"
 
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
 #: kgeographyoptions.ui:122
