@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2024-05-21 08:55+0300\n"
+"PO-Revision-Date: 2024-05-25 21:29+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -42412,7 +42412,7 @@ msgstr "קיטווה"
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Luanshya"
-msgstr ""
+msgstr "לואנשיה"
 
 #: zambia_districts.kgm:79
 #, kde-format
@@ -42532,7 +42532,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Samfya"
-msgstr ""
+msgstr "סמפיה"
 
 #: zambia_districts.kgm:179
 #, kde-format
@@ -42682,7 +42682,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Gwembe"
-msgstr ""
+msgstr "זמבזי"
 
 #: zambia_districts.kgm:304
 #, kde-format
@@ -42700,7 +42700,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kazungula"
-msgstr ""
+msgstr "קזונגולה"
 
 #: zambia_districts.kgm:319
 #, kde-format
@@ -42766,7 +42766,7 @@ msgstr "מונגו"
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Senanga"
-msgstr ""
+msgstr "סננגה"
 
 #: zambia_districts.kgm:374
 #, kde-format
@@ -43126,7 +43126,7 @@ msgstr ""
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Bindura"
-msgstr ""
+msgstr "בינדורה"
 
 #: zimbabwe_districts.kgm:74
 #, kde-format
