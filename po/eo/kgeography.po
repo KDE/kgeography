@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2024-04-06 22:35+0100\n"
+"PO-Revision-Date: 2024-05-30 07:49+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
 "Language: eo\n"
@@ -22608,7 +22608,7 @@ msgstr "En tiu demandaro, vi devas trovi la regionon laŭ la proponita flago"
 #: kgeography.cpp:72
 #, kde-format
 msgid "&Flags of Regions"
-msgstr "&Flags de Regionoj"
+msgstr "&Flagoj de Regionoj"
 
 #: kgeography.cpp:73
 #, kde-format
@@ -22618,7 +22618,7 @@ msgstr "En tiu demandaro, vi devas trovi flagon laŭ la proponita regiono"
 #: kgeography.cpp:109
 #, kde-format
 msgid "&Open Map..."
-msgstr "Malfermu "
+msgstr "Malfermi Map&on..."
 
 #: kgeography.cpp:114
 #, kde-format
