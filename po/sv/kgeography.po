@@ -1,20 +1,20 @@
 # translation of kgeography.po to Swedish
 #
-# Stefan Asserhäll <stefan.asserhall@gmail.com>, 2005, 2006, 2007, 2008, 2009, 2010.
+# SPDX-FileCopyrightText: 2005, 2006, 2007, 2008, 2009, 2010, 2024 Stefan Asserhäll <stefan.asserhall@gmail.com>
 # Stefan Asserhall <stefan.asserhall@gmail.com>, 2005, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2022-09-24 16:24+0200\n"
-"Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
+"PO-Revision-Date: 2024-06-18 00:37+0200\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.08.1\n"
+"X-Generator: Lokalize 23.08.5\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -18690,12 +18690,10 @@ msgid "Miskolc"
 msgstr "Miskolc"
 
 #: hungary.kgm:44
-#, fuzzy, kde-format
-#| msgctxt "hungary.kgm"
-#| msgid "Csongrád"
+#, kde-format
 msgctxt "hungary.kgm"
 msgid "Csongrád-Csanád"
-msgstr "Csongrád"
+msgstr "Csongrád-Csanád"
 
 #: hungary.kgm:45
 #, kde-format
@@ -22749,7 +22747,7 @@ msgstr ""
 #: kgeography.kcfg:35
 #, kde-format
 msgid "Whether the map tooltip follows mouse movement"
-msgstr ""
+msgstr "Om kartans verktygstips följer musrörelser"
 
 #. i18n: ectx: label, entry (colorDisguise), group (general)
 #: kgeography.kcfg:39
@@ -22854,12 +22852,14 @@ msgid ""
 "Whether the map tooltip will follow mouse when it is pressed and moving "
 "across the map or not"
 msgstr ""
+"Om kartans verktygstips följer musen när den hålls nere och rörs över kartan "
+"eller inte"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_tooltipFollowsMouse)
 #: kgeographyoptions.ui:112
 #, kde-format
 msgid "&Move map tooltip on mouse move"
-msgstr ""
+msgstr "Flytta kartans verktygstips när &musen flyttas"
 
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
 #: kgeographyoptions.ui:122
