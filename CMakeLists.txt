@@ -26,9 +26,9 @@ include(ECMAddAppIcon)
 include(ECMInstallIcons)
 include(ECMSetupVersion)
 
-find_package (Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} CONFIG REQUIRED Core Widgets)
+find_package (Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED Core Widgets)
 
-find_package (KF${QT_MAJOR_VERSION} ${KF_REQUIRED_VERSION} REQUIRED COMPONENTS
+find_package (KF6 ${KF_REQUIRED_VERSION} REQUIRED COMPONENTS
     XmlGui WidgetsAddons CoreAddons ConfigWidgets I18n ItemViews IconThemes Crash DocTools
 )
 
@@ -41,8 +41,6 @@ add_subdirectory( data )
 add_subdirectory( icons ) 
 
 ki18n_install(po)
-if (KF${QT_MAJOR_VERSION}DocTools_FOUND)
-    kdoctools_install(po)
-endif()
+kdoctools_install(po)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
