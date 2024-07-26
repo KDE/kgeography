@@ -3,27 +3,27 @@
 # This file is distributed under the same license as the kdeedu package.
 #
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
-# Agron Selimaj <as9902613@gmail.com>, 2021.
+# SPDX-FileCopyrightText: 2021, 2024 Agron Selimaj <as9902613@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeedu\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2021-02-26 20:52-0500\n"
+"PO-Revision-Date: 2024-07-25 09:01-0400\n"
 "Last-Translator: Agron Selimaj <as9902613@gmail.com>\n"
-"Language-Team: kdeshqip\n"
+"Language-Team: sq\n"
 "Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2011-04-21 22:44+0000\n"
-"X-Generator: Lokalize 20.12.2\n"
+"X-Generator: Lokalize 24.05.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "KDE Shqip, Launchpad Contributions: Vilson Gjeci"
+msgstr "KDE Shqip, Launchpad Contributions: Vilson Gjeci,Agron Selimaj"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
@@ -1871,12 +1871,10 @@ msgid "Andhra Pradesh"
 msgstr "Andra Pradesh"
 
 #: andhrapradesh.kgm:6
-#, fuzzy, kde-format
-#| msgctxt "manipur.kgm"
-#| msgid "District"
+#, kde-format
 msgctxt "andhrapradesh.kgm"
 msgid "District"
-msgstr "Rrethet"
+msgstr "Rreth"
 
 #: andhrapradesh.kgm:9
 #, fuzzy, kde-format
@@ -1887,9 +1885,7 @@ msgid "Not Andhra Pradesh"
 msgstr "Andra Pradesh"
 
 #: andhrapradesh.kgm:14
-#, fuzzy, kde-format
-#| msgctxt "afghanistan.kgm"
-#| msgid "Frontier"
+#, kde-format
 msgctxt "andhrapradesh.kgm"
 msgid "Frontier"
 msgstr "Kufiri"
@@ -2834,12 +2830,10 @@ msgid "Arunachal Pradesh"
 msgstr "Arunaçal Pradesh"
 
 #: arunachalpradesh.kgm:6
-#, fuzzy, kde-format
-#| msgctxt "manipur.kgm"
-#| msgid "District"
+#, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "District"
-msgstr "Rrethet"
+msgstr "Rreth"
 
 #: arunachalpradesh.kgm:9
 #, fuzzy, kde-format
@@ -2850,9 +2844,7 @@ msgid "Not Arunachal Pradesh"
 msgstr "Arunaçal Pradesh"
 
 #: arunachalpradesh.kgm:14
-#, fuzzy, kde-format
-#| msgctxt "afghanistan.kgm"
-#| msgid "Frontier"
+#, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Frontier"
 msgstr "Kufiri"
@@ -3222,9 +3214,7 @@ msgid "Kenya"
 msgstr "Kenia"
 
 #: asia.kgm:129
-#, fuzzy, kde-format
-#| msgctxt "africa.kgm"
-#| msgid "Nairobi"
+#, kde-format
 msgctxt "asia.kgm"
 msgid "Nairobi"
 msgstr "Nairobi"
@@ -3396,9 +3386,7 @@ msgid "Ukraine"
 msgstr "Ukraina"
 
 #: asia.kgm:268
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "Kyiv"
+#, kde-format
 msgctxt "asia.kgm"
 msgid "Kyiv"
 msgstr "Kiev"
@@ -3855,12 +3843,10 @@ msgid "Assam"
 msgstr "Assam"
 
 #: assam.kgm:6
-#, fuzzy, kde-format
-#| msgctxt "manipur.kgm"
-#| msgid "District"
+#, kde-format
 msgctxt "assam.kgm"
 msgid "District"
-msgstr "Rrethet"
+msgstr "Rreth"
 
 #: assam.kgm:9
 #, fuzzy, kde-format
@@ -3871,9 +3857,7 @@ msgid "Not Assam"
 msgstr "Assam"
 
 #: assam.kgm:14
-#, fuzzy, kde-format
-#| msgctxt "afghanistan.kgm"
-#| msgid "Frontier"
+#, kde-format
 msgctxt "assam.kgm"
 msgid "Frontier"
 msgstr "Kufiri"
@@ -5413,12 +5397,10 @@ msgid "Bihar"
 msgstr "Bihar"
 
 #: bihar.kgm:6
-#, fuzzy, kde-format
-#| msgctxt "manipur.kgm"
-#| msgid "District"
+#, kde-format
 msgctxt "bihar.kgm"
 msgid "District"
-msgstr "Rrethet"
+msgstr "Rreth"
 
 #: bihar.kgm:7
 #, no-c-format, kde-format
@@ -5457,9 +5439,7 @@ msgid "Not Bihar"
 msgstr "Jo Bhutan"
 
 #: bihar.kgm:18
-#, fuzzy, kde-format
-#| msgctxt "afghanistan.kgm"
-#| msgid "Frontier"
+#, kde-format
 msgctxt "bihar.kgm"
 msgid "Frontier"
 msgstr "Kufiri"
@@ -6778,9 +6758,7 @@ msgid "Provinces"
 msgstr "Provincat"
 
 #: burkina_provinces.kgm:9
-#, fuzzy, kde-format
-#| msgctxt "afghanistan.kgm"
-#| msgid "Frontier"
+#, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Frontier"
 msgstr "Kufiri"
@@ -7413,9 +7391,7 @@ msgid "Regions"
 msgstr "Krahinat"
 
 #: burkina_regions.kgm:9
-#, fuzzy, kde-format
-#| msgctxt "afghanistan.kgm"
-#| msgid "Frontier"
+#, kde-format
 msgctxt "burkina_regions.kgm"
 msgid "Frontier"
 msgstr "Kufiri"
@@ -9734,12 +9710,10 @@ msgid "Chhattisgarh"
 msgstr "Katsirag"
 
 #: chhattisgarh.kgm:6
-#, fuzzy, kde-format
-#| msgctxt "manipur.kgm"
-#| msgid "District"
+#, kde-format
 msgctxt "chhattisgarh.kgm"
 msgid "District"
-msgstr "Rrethet"
+msgstr "Rreth"
 
 #: chhattisgarh.kgm:9
 #, fuzzy, kde-format
@@ -9750,9 +9724,7 @@ msgid "Not Chhattisgarh"
 msgstr "Katsirag"
 
 #: chhattisgarh.kgm:14
-#, fuzzy, kde-format
-#| msgctxt "afghanistan.kgm"
-#| msgid "Frontier"
+#, kde-format
 msgctxt "chhattisgarh.kgm"
 msgid "Frontier"
 msgstr "Kufiri"
@@ -13522,9 +13494,7 @@ msgid "Ukraine"
 msgstr "Ukraina"
 
 #: europe.kgm:484
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "Kyiv"
+#, kde-format
 msgctxt "europe.kgm"
 msgid "Kyiv"
 msgstr "Kiev"
@@ -15597,9 +15567,7 @@ msgid "Regions"
 msgstr "Krahinat"
 
 #: ghana.kgm:9
-#, fuzzy, kde-format
-#| msgctxt "afghanistan.kgm"
-#| msgid "Frontier"
+#, kde-format
 msgctxt "ghana.kgm"
 msgid "Frontier"
 msgstr "Kufiri"
@@ -15669,9 +15637,7 @@ msgid "Bolgatanga"
 msgstr "Batangas"
 
 #: ghana.kgm:72
-#, fuzzy, kde-format
-#| msgctxt "israel.kgm"
-#| msgid "Northern"
+#, kde-format
 msgctxt "ghana.kgm"
 msgid "Northern"
 msgstr "Verior"
@@ -15731,9 +15697,7 @@ msgid "Kumasi"
 msgstr ""
 
 #: ghana.kgm:111
-#, fuzzy, kde-format
-#| msgctxt "zambia_provinces.kgm"
-#| msgid "Eastern"
+#, kde-format
 msgctxt "ghana.kgm"
 msgid "Eastern"
 msgstr "Lindore"
@@ -15763,9 +15727,7 @@ msgid "Sekondi"
 msgstr "Mekong"
 
 #: ghana.kgm:131
-#, fuzzy, kde-format
-#| msgctxt "botswana.kgm"
-#| msgid "Central"
+#, kde-format
 msgctxt "ghana.kgm"
 msgid "Central"
 msgstr "Qendrore"
@@ -15803,12 +15765,10 @@ msgid "Goa"
 msgstr "Goa"
 
 #: goa.kgm:6
-#, fuzzy, kde-format
-#| msgctxt "manipur.kgm"
-#| msgid "District"
+#, kde-format
 msgctxt "goa.kgm"
 msgid "District"
-msgstr "Rrethet"
+msgstr "Rreth"
 
 #: goa.kgm:9
 #, fuzzy, kde-format
@@ -15819,9 +15779,7 @@ msgid "Not Goa"
 msgstr "Jo Gjeorgjia"
 
 #: goa.kgm:14
-#, fuzzy, kde-format
-#| msgctxt "afghanistan.kgm"
-#| msgid "Frontier"
+#, kde-format
 msgctxt "goa.kgm"
 msgid "Frontier"
 msgstr "Kufiri"
@@ -17335,9 +17293,7 @@ msgid "Thessaly"
 msgstr "Thesalia"
 
 #: greece_peripheries.kgm:55
-#, fuzzy, kde-format
-#| msgctxt "greece.kgm"
-#| msgid "Larissa"
+#, kde-format
 msgctxt "greece_peripheries.kgm"
 msgid "Larissa"
 msgstr "Larisa"
@@ -17629,9 +17585,7 @@ msgid "Karditsa"
 msgstr "Kardhica"
 
 #: greece_prefectures.kgm:129 greece_prefectures.kgm:130
-#, fuzzy, kde-format
-#| msgctxt "greece.kgm"
-#| msgid "Larissa"
+#, kde-format
 msgctxt "greece_prefectures.kgm"
 msgid "Larissa"
 msgstr "Larisa"
@@ -18207,12 +18161,10 @@ msgid "Gujarat"
 msgstr "Gujarat"
 
 #: gujarat.kgm:6
-#, fuzzy, kde-format
-#| msgctxt "manipur.kgm"
-#| msgid "District"
+#, kde-format
 msgctxt "gujarat.kgm"
 msgid "District"
-msgstr "Rrethet"
+msgstr "Rreth"
 
 #: gujarat.kgm:9
 #, fuzzy, kde-format
@@ -18223,9 +18175,7 @@ msgid "Not Gujarat"
 msgstr "Gujarat"
 
 #: gujarat.kgm:14
-#, fuzzy, kde-format
-#| msgctxt "afghanistan.kgm"
-#| msgid "Frontier"
+#, kde-format
 msgctxt "gujarat.kgm"
 msgid "Frontier"
 msgstr "Kufiri"
@@ -18779,12 +18729,10 @@ msgid "Haryana"
 msgstr "Harjana"
 
 #: haryana.kgm:6
-#, fuzzy, kde-format
-#| msgctxt "manipur.kgm"
-#| msgid "District"
+#, kde-format
 msgctxt "haryana.kgm"
 msgid "District"
-msgstr "Rrethet"
+msgstr "Rreth"
 
 #: haryana.kgm:9
 #, fuzzy, kde-format
@@ -18795,9 +18743,7 @@ msgid "Not Haryana"
 msgstr "Harjana"
 
 #: haryana.kgm:14
-#, fuzzy, kde-format
-#| msgctxt "afghanistan.kgm"
-#| msgid "Frontier"
+#, kde-format
 msgctxt "haryana.kgm"
 msgid "Frontier"
 msgstr "Kufiri"
@@ -18977,9 +18923,7 @@ msgid "Himachal Pradesh"
 msgstr "Himaçal Pradesh"
 
 #: himachal_pradesh.kgm:6
-#, fuzzy, kde-format
-#| msgctxt "manipur.kgm"
-#| msgid "District"
+#, kde-format
 msgctxt "himachal_pradesh.kgm"
 msgid "District"
 msgstr "Rrethet"
@@ -22873,12 +22817,10 @@ msgid "Jharkhand"
 msgstr "Jharkhand"
 
 #: jharkhand.kgm:6
-#, fuzzy, kde-format
-#| msgctxt "manipur.kgm"
-#| msgid "District"
+#, kde-format
 msgctxt "jharkhand.kgm"
 msgid "District"
-msgstr "Rrethet"
+msgstr "Rreth"
 
 #: jharkhand.kgm:9
 #, fuzzy, kde-format
@@ -22889,9 +22831,7 @@ msgid "Not Jharkhand"
 msgstr "Jharkhand"
 
 #: jharkhand.kgm:14
-#, fuzzy, kde-format
-#| msgctxt "afghanistan.kgm"
-#| msgid "Frontier"
+#, kde-format
 msgctxt "jharkhand.kgm"
 msgid "Frontier"
 msgstr "Kufiri"
@@ -23537,7 +23477,7 @@ msgstr ""
 #: kgeographyoptions.ui:44
 #, kde-format
 msgid "&Left"
-msgstr ""
+msgstr "&Majtas"
 
 #. i18n: ectx: property (text), widget (QRadioButton, centerRadio)
 #: kgeographyoptions.ui:51
@@ -23551,7 +23491,7 @@ msgstr "Qendër"
 #: kgeographyoptions.ui:58
 #, kde-format
 msgid "&Right"
-msgstr ""
+msgstr "&Djathtas"
 
 #. i18n: ectx: property (text), widget (QRadioButton, bottomleftRadio)
 #: kgeographyoptions.ui:65
@@ -23563,7 +23503,7 @@ msgstr ""
 #: kgeographyoptions.ui:72
 #, kde-format
 msgid "&Bottom"
-msgstr ""
+msgstr "&Poshtë"
 
 #. i18n: ectx: property (text), widget (QRadioButton, bottomrightRadio)
 #: kgeographyoptions.ui:79
@@ -23729,12 +23669,10 @@ msgid "Latvia Districts (Pre 2009)"
 msgstr "Zambia (Rrethet)"
 
 #: latvia.kgm:6
-#, fuzzy, kde-format
-#| msgctxt "albania_districts.kgm"
-#| msgid "Districts"
+#, kde-format
 msgctxt "latvia.kgm"
 msgid "Districts"
-msgstr "(Rrethet)"
+msgstr "Rrethet"
 
 #: latvia.kgm:9 latvia.kgm:14
 #, kde-format
@@ -33870,9 +33808,7 @@ msgid "Provinces"
 msgstr "Provincat"
 
 #: sri-lanka.kgm:9
-#, fuzzy, kde-format
-#| msgctxt "afghanistan.kgm"
-#| msgid "Frontier"
+#, kde-format
 msgctxt "sri-lanka.kgm"
 msgid "Frontier"
 msgstr "Kufiri"
@@ -33894,9 +33830,7 @@ msgid "Not Sri-Lanka"
 msgstr "Jo Surinami"
 
 #: sri-lanka.kgm:24
-#, fuzzy, kde-format
-#| msgctxt "botswana.kgm"
-#| msgid "Central"
+#, kde-format
 msgctxt "sri-lanka.kgm"
 msgid "Central"
 msgstr "Qendrore"
@@ -33924,9 +33858,7 @@ msgid "Anuradhapura"
 msgstr ""
 
 #: sri-lanka.kgm:34
-#, fuzzy, kde-format
-#| msgctxt "cameroon_provinces.kgm"
-#| msgid "North"
+#, kde-format
 msgctxt "sri-lanka.kgm"
 msgid "North"
 msgstr "Veri"
@@ -33938,9 +33870,7 @@ msgid "Jaffna"
 msgstr ""
 
 #: sri-lanka.kgm:39
-#, fuzzy, kde-format
-#| msgctxt "zambia_provinces.kgm"
-#| msgid "Eastern"
+#, kde-format
 msgctxt "sri-lanka.kgm"
 msgid "Eastern"
 msgstr "Lindore"
@@ -35014,17 +34944,13 @@ msgid "Tamil Nadu"
 msgstr "Tamil Nadu"
 
 #: tamilnadu.kgm:6
-#, fuzzy, kde-format
-#| msgctxt "manipur.kgm"
-#| msgid "District"
+#, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "District"
 msgstr "Rrethet"
 
 #: tamilnadu.kgm:10
-#, fuzzy, kde-format
-#| msgctxt "afghanistan.kgm"
-#| msgid "Frontier"
+#, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Frontier"
 msgstr "Kufiri"
@@ -35084,12 +35010,10 @@ msgid "Karur"
 msgstr "Sharur"
 
 #: tamilnadu.kgm:44
-#, fuzzy, kde-format
-#| msgctxt "turkey.kgm"
-#| msgid "Çanakkale"
+#, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Namakkal"
-msgstr "Çanakkale"
+msgstr ""
 
 #: tamilnadu.kgm:48
 #, kde-format
@@ -39792,12 +39716,10 @@ msgid "City of Radford"
 msgstr ""
 
 #: virginia.kgm:1018
-#, fuzzy, kde-format
-#| msgctxt "usa.kgm"
-#| msgid "Richmond"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Richmond"
-msgstr "Riçmond"
+msgstr "Qyteti i Riçmondit"
 
 #: virginia.kgm:1026
 #, kde-format
@@ -42050,9 +41972,7 @@ msgid "Ukraine"
 msgstr "Ukraina"
 
 #: world.kgm:1048
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "Kyiv"
+#, kde-format
 msgctxt "world.kgm"
 msgid "Kyiv"
 msgstr "Kiev"
