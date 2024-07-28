@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2024-05-08 13:14+0900\n"
+"PO-Revision-Date: 2024-07-27 13:29+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -634,7 +634,7 @@ msgstr "剛果民主共和國 (Democratic Republic of the Congo)"
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Kinshasa"
-msgstr "金夏沙 (Kinshasa)"
+msgstr "金沙薩 (Kinshasa)"
 
 #: africa.kgm:107 africa.kgm:108
 #, kde-format
@@ -4040,7 +4040,7 @@ msgstr "坦斯馬尼亞 (Tasmania)"
 #, kde-format
 msgctxt "australia.kgm"
 msgid "Hobart"
-msgstr "霍巴特 (Hobart)"
+msgstr "荷巴特 (Hobart)"
 
 #: australia.kgm:106
 #, kde-format
@@ -29476,7 +29476,7 @@ msgstr "聖塞巴斯提安 (San Sebastián)"
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Santa Isabel"
-msgstr "聖塔伊沙貝拉 (Santa Isabel)"
+msgstr "聖伊薩貝爾 (Santa Isabel)"
 
 #: puertorico.kgm:727
 #, kde-format
@@ -36300,7 +36300,7 @@ msgstr "印地安那 (Indiana)"
 #, kde-format
 msgctxt "usa.kgm"
 msgid "Indianapolis"
-msgstr "印地安納波里斯 (Indianapolis)"
+msgstr "印第安納波利斯 (Indianapolis)"
 
 #: usa.kgm:280
 #, kde-format
@@ -39932,7 +39932,7 @@ msgstr "剛果民主共和國 (Democratic Republic of the Congo)"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Kinshasa"
-msgstr "金夏沙 (Kinshasa)"
+msgstr "金沙薩 (Kinshasa)"
 
 #: world.kgm:137 world.kgm:139
 #, kde-format
@@ -42250,7 +42250,7 @@ msgstr "不在剛果"
 #, kde-format
 msgctxt "zaire2006.kgm"
 msgid "Kinshasa"
-msgstr "金夏沙 (Kinshasa)"
+msgstr "金沙薩 (Kinshasa)"
 
 #: zaire2006.kgm:29
 #, kde-format
