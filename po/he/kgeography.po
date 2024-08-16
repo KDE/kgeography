@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2024-05-25 21:29+0300\n"
+"PO-Revision-Date: 2024-08-15 09:50+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -37358,7 +37358,7 @@ msgstr ""
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Da Nang"
-msgstr ""
+msgstr "דה נאנג"
 
 #: vietnam.kgm:109
 #, kde-format
@@ -37424,7 +37424,7 @@ msgstr ""
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Hai Phong"
-msgstr ""
+msgstr "האי פונג"
 
 #: vietnam.kgm:144
 #, kde-format
