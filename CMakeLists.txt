@@ -25,6 +25,7 @@ include(FeatureSummary)
 include(ECMAddAppIcon)
 include(ECMInstallIcons)
 include(ECMSetupVersion)
+include(ECMDeprecationSettings)
 
 find_package (Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED Core Widgets)
 
@@ -34,7 +35,7 @@ find_package (KF6 ${KF_REQUIRED_VERSION} REQUIRED COMPONENTS
 
 # global include directories
 include_directories (${CMAKE_CURRENT_BINARY_DIR})
-
+ecm_set_disabled_deprecation_versions(QT 5.15  KF 6.5.0)
 add_subdirectory( doc )
 add_subdirectory( src ) 
 add_subdirectory( data ) 
