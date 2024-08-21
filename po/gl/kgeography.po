@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2024-04-14 15:12+0200\n"
+"PO-Revision-Date: 2024-08-20 16:53+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.02.1\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -339,7 +339,7 @@ msgstr "Parun"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Orūzgān"
-msgstr "Oruzgán"
+msgstr "Orūzgān"
 
 #: afghanistan.kgm:175
 #, kde-format
@@ -1959,7 +1959,7 @@ msgstr "Anantapur"
 #, kde-format
 msgctxt "andhrapradesh.kgm"
 msgid "Chittoor"
-msgstr "Chittur"
+msgstr "Chittoor"
 
 #: andhrapradesh.kgm:84 andhrapradesh.kgm:85
 #, kde-format
@@ -5469,7 +5469,7 @@ msgstr "Bhojpur"
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Ara"
-msgstr "Arrah"
+msgstr "Ara"
 
 #: bihar.kgm:163 bihar.kgm:164
 #, kde-format
@@ -8637,7 +8637,7 @@ msgstr "Antigua e Barbuda"
 #, kde-format
 msgctxt "caribbean.kgm"
 msgid "Saint John's"
-msgstr "Saint John's"
+msgstr "St. Johns"
 
 #: caribbean.kgm:96
 #, kde-format
@@ -15245,7 +15245,7 @@ msgstr "Cape Coast"
 #, kde-format
 msgctxt "ghana.kgm"
 msgid "Greater Accra"
-msgstr "Grande Acra"
+msgstr "Grande Accra"
 
 #: ghana.kgm:142
 #, kde-format
@@ -16901,7 +16901,7 @@ msgstr "Kavala"
 #, kde-format
 msgctxt "greece_prefectures.kgm"
 msgid "Rhodope"
-msgstr "Ródope"
+msgstr "Rhodope"
 
 #: greece_prefectures.kgm:40
 #, kde-format
@@ -26729,7 +26729,7 @@ msgstr "Muzaffarabad"
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Gilgit-Baltistan"
-msgstr "Gilgit-Baltistán"
+msgstr "Gilgit-Baltistan"
 
 #: pakistan.kgm:60
 #, kde-format
