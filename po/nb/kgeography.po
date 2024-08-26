@@ -18694,8 +18694,6 @@ msgstr "Miskolc"
 
 #: hungary.kgm:44
 #, fuzzy, kde-format
-#| msgctxt "hungary.kgm"
-#| msgid "Csongrád"
 msgctxt "hungary.kgm"
 msgid "Csongrád-Csanád"
 msgstr "Csongrád"
