@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2024-06-16 14:10+0200\n"
+"PO-Revision-Date: 2024-09-06 17:00+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -257,7 +257,7 @@ msgstr "Kapissa"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Mahmud-i-Raqi"
-msgstr "Mahmoud-é-Raqi"
+msgstr "Mahmoud-i-Raqi"
 
 #: afghanistan.kgm:134 afghanistan.kgm:135
 #, kde-format
@@ -305,7 +305,7 @@ msgstr "Lôgar"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Pul-i-Alam"
-msgstr "Pol-é Alam"
+msgstr "Pol-i-Alam"
 
 #: afghanistan.kgm:159
 #, kde-format
@@ -413,7 +413,7 @@ msgstr "Samangan"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Sar-e Pol"
-msgstr "Sar-é Pol"
+msgstr "Sar-e Pol"
 
 #: afghanistan.kgm:209
 #, kde-format
@@ -6514,7 +6514,7 @@ msgstr "Oudalan"
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Gorom-gorom"
-msgstr "Gorom-gorom"
+msgstr "Gorom-Gorom"
 
 #: burkina_provinces.kgm:24
 #, kde-format
@@ -8350,7 +8350,7 @@ msgstr "Terre-Neuve"
 #, kde-format
 msgctxt "canada.kgm"
 msgid "St John's"
-msgstr "St John's"
+msgstr "St John"
 
 #: canada.kgm:67
 #, kde-format
@@ -8561,13 +8561,13 @@ msgstr "République dominicaine"
 #, kde-format
 msgctxt "caribbean.kgm"
 msgid "Santo Domingo"
-msgstr "Santo Domingo"
+msgstr "Saint Domingue"
 
 #: caribbean.kgm:54
 #, kde-format
 msgctxt "caribbean.kgm"
 msgid "Puerto Rico (USA)"
-msgstr "Porto Rico (É-U)"
+msgstr "Porto Rico (EU)"
 
 #: caribbean.kgm:55
 #, kde-format
@@ -8645,7 +8645,7 @@ msgstr "Antigua-et-Barbuda"
 #, kde-format
 msgctxt "caribbean.kgm"
 msgid "Saint John's"
-msgstr "Saint John's"
+msgstr "Saint John"
 
 #: caribbean.kgm:96
 #, kde-format
@@ -8957,7 +8957,7 @@ msgstr "Baix Empordà"
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "La Bisbal d'Empordà"
-msgstr "La Bisbal d'Empordà"
+msgstr "La Bisbal de Empordà"
 
 #: catalonia_comarques.kgm:74
 #, kde-format
@@ -9155,7 +9155,7 @@ msgstr "Sort"
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Pla de l'Estany"
-msgstr "Pla de l'Estany"
+msgstr "Pla de Estany"
 
 #: catalonia_comarques.kgm:155
 #, kde-format
@@ -20293,13 +20293,13 @@ msgstr "golfe d'Oman"
 #, kde-format
 msgctxt "iran.kgm"
 msgid "Caspian Sea"
-msgstr "mer Caspienne"
+msgstr "Mer caspienne"
 
 #: iran.kgm:333
 #, kde-format
 msgctxt "iran.kgm"
 msgid "Oroomieh Lake"
-msgstr "Lac d'Ourmia"
+msgstr "Lac de Ourmia"
 
 #: iran.kgm:342
 #, kde-format
@@ -21673,7 +21673,7 @@ msgstr "Saint Ann"
 #, kde-format
 msgctxt "jamaica.kgm"
 msgid "Saint Ann's Bay"
-msgstr "Saint Ann's Bay"
+msgstr "Baie de Saint Anne"
 
 #: jamaica.kgm:59
 #, kde-format
@@ -25515,7 +25515,7 @@ msgstr "Hamilton"
 #, kde-format
 msgctxt "new-zealand.kgm"
 msgid "Bay of Plenty"
-msgstr "Bay of Plenty"
+msgstr "Baie de Plenty"
 
 #: new-zealand.kgm:35
 #, kde-format
@@ -25533,7 +25533,7 @@ msgstr "Gisborne"
 #, kde-format
 msgctxt "new-zealand.kgm"
 msgid "Hawke's Bay"
-msgstr "Hawke's Bay"
+msgstr "Baie de Hawke"
 
 #: new-zealand.kgm:45
 #, kde-format
@@ -26493,7 +26493,7 @@ msgstr "Adamstown"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Hawaii (USA)"
-msgstr "Hawaii (É-U)"
+msgstr "Hawaii (EU)"
 
 #: oceania.kgm:175
 #, kde-format
@@ -26505,7 +26505,7 @@ msgstr "Honolulu"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "American Samoa (USA)"
-msgstr "Samoa américaines (É-U)"
+msgstr "Samoa américaines (EU)"
 
 #: oceania.kgm:181
 #, kde-format
@@ -26517,7 +26517,7 @@ msgstr "Pago Pago"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Guam (USA)"
-msgstr "Guam (É-U)"
+msgstr "Guam (EU)"
 
 #: oceania.kgm:187
 #, kde-format
@@ -26529,7 +26529,7 @@ msgstr "Hagatna"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Northern Mariana islands (USA)"
-msgstr "Îles Mariannes du Nord (É-U)"
+msgstr "Îles Mariannes du Nord (EU)"
 
 #: oceania.kgm:193
 #, kde-format
@@ -30849,7 +30849,7 @@ msgstr "Voronej"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Ivanovo Oblast"
-msgstr "oblast d'Ivanovo"
+msgstr "Oblast de Ivanovo"
 
 #: russia_subjects.kgm:247
 #, kde-format
@@ -31077,7 +31077,7 @@ msgstr "Omsk"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Orenburg Oblast"
-msgstr "oblast d'Orenbourg"
+msgstr "Oblast de Orenbourg"
 
 #: russia_subjects.kgm:361
 #, kde-format
@@ -31089,7 +31089,7 @@ msgstr "Orenbourg"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Oryol Oblast"
-msgstr "oblast d'Orel"
+msgstr "Oblast de Orel"
 
 #: russia_subjects.kgm:367
 #, kde-format
@@ -31491,7 +31491,7 @@ msgstr "Al Bahah"
 #, kde-format
 msgctxt "saudi_arabia.kgm"
 msgid "Al Hudud ash Shamaliyah"
-msgstr "Al-Hudud ach-Chamaliya"
+msgstr "Al-Hudud ash Chamaliya"
 
 #: saudi_arabia.kgm:34
 #, kde-format
@@ -33501,7 +33501,7 @@ msgstr "Lulea"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Uppsala County"
-msgstr "comté d'Uppsala"
+msgstr "Comté de Uppsala"
 
 #: sweden.kgm:73
 #, kde-format
@@ -35607,7 +35607,7 @@ msgstr "Khmelnitski"
 #, kde-format
 msgctxt "ukraine.kgm"
 msgid "Ivano-Frankivs'ka oblast'"
-msgstr "oblast d'Ivano-Frankivsk"
+msgstr "Oblast de Ivano-Frankivsk"
 
 #: ukraine.kgm:47
 #, kde-format
@@ -38445,7 +38445,7 @@ msgstr "Ville de Colonial Heights"
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Covington"
-msgstr "City of Covington"
+msgstr "Ville de Covington"
 
 #: virginia.kgm:842
 #, kde-format
@@ -38763,7 +38763,7 @@ msgstr "Ogooué"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Okavango swamp"
-msgstr "delta de l'Okavango"
+msgstr "Delta du Okavango"
 
 #: waters_world-class.kgm:109
 #, kde-format
@@ -38883,7 +38883,7 @@ msgstr "Kemijoki"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Kura (& Araks)"
-msgstr "Kura (et l'Araks)"
+msgstr "Kura (et Araks)"
 
 #: waters_world-class.kgm:209
 #, kde-format
