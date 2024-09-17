@@ -22630,7 +22630,7 @@ msgstr ""
 #: kgeography.cpp:109
 #, kde-format
 msgid "&Open Map..."
-msgstr "&Άνοιγμα χάρτη..."
+msgstr "Άν&οιγμα χάρτη..."
 
 #: kgeography.cpp:114
 #, kde-format
