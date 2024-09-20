@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2024-08-15 09:50+0300\n"
+"PO-Revision-Date: 2024-09-19 21:49+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -3880,13 +3880,13 @@ msgstr ""
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Lakhimpur"
-msgstr ""
+msgstr "לקהימפור"
 
 #: assam.kgm:110
 #, kde-format
 msgctxt "assam.kgm"
 msgid "North Lakhimpur"
-msgstr ""
+msgstr "צפון לקהימפור"
 
 #: assam.kgm:114 assam.kgm:115
 #, kde-format
@@ -5500,7 +5500,7 @@ msgstr ""
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Aurangabad"
-msgstr ""
+msgstr "אוראנגאבאד"
 
 #: bihar.kgm:183 bihar.kgm:184
 #, kde-format
@@ -39436,7 +39436,7 @@ msgstr ""
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Kolkata"
-msgstr ""
+msgstr "קולקטה"
 
 #: westbengal.kgm:108
 #, kde-format
@@ -42442,7 +42442,7 @@ msgstr "מופולירה"
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Ndola"
-msgstr "אנדולה"
+msgstr "נדולה"
 
 #: zambia_districts.kgm:104
 #, kde-format
@@ -42460,7 +42460,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Chipata"
-msgstr ""
+msgstr "צ׳יפאטה"
 
 #: zambia_districts.kgm:119
 #, kde-format
@@ -42550,7 +42550,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Luangwa"
-msgstr ""
+msgstr "לואנגווה"
 
 #: zambia_districts.kgm:194
 #, kde-format
@@ -42640,7 +42640,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mbala"
-msgstr ""
+msgstr "מבאלה"
 
 #: zambia_districts.kgm:269
 #, kde-format
@@ -42832,7 +42832,7 @@ msgstr "קופרבלט"
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Ndola"
-msgstr "אנדולה"
+msgstr "נדולה"
 
 #: zambia_provinces.kgm:34
 #, kde-format
