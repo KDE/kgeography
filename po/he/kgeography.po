@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2024-09-19 21:49+0300\n"
+"PO-Revision-Date: 2024-09-20 08:32+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -2903,7 +2903,7 @@ msgstr ""
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Bomdila"
-msgstr ""
+msgstr "בומדילה"
 
 #: arunachalpradesh.kgm:74
 #, kde-format
@@ -8932,7 +8932,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Tortosa"
-msgstr ""
+msgstr "טורטוסה"
 
 #: catalonia_comarques.kgm:69
 #, kde-format
@@ -8980,7 +8980,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Barcelona"
-msgstr ""
+msgstr "ברצלונה"
 
 #: catalonia_comarques.kgm:89
 #, kde-format
@@ -9052,7 +9052,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Olot"
-msgstr ""
+msgstr "אולוט"
 
 #: catalonia_comarques.kgm:119
 #, kde-format
@@ -9064,7 +9064,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Girona"
-msgstr ""
+msgstr "ז׳ירונה"
 
 #: catalonia_comarques.kgm:124
 #, kde-format
@@ -9106,7 +9106,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Osona"
-msgstr ""
+msgstr "אוסונה"
 
 #: catalonia_comarques.kgm:140
 #, kde-format
@@ -9220,7 +9220,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Lleida"
-msgstr ""
+msgstr "ליידה"
 
 #: catalonia_comarques.kgm:189
 #, kde-format
@@ -32696,7 +32696,7 @@ msgstr "קואנקה"
 #, kde-format
 msgctxt "spain_provinces.kgm"
 msgid "Girona"
-msgstr "גירונה"
+msgstr "ז׳ירונה"
 
 #: spain_provinces.kgm:135
 #, kde-format
@@ -34202,7 +34202,7 @@ msgstr "נַגֶרְקוֹיל"
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Tirunelveli"
-msgstr ""
+msgstr "טירונלבלי"
 
 #: tamilnadu.kgm:105
 #, kde-format
