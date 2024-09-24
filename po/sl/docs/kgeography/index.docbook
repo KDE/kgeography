@@ -1,0 +1,1062 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Slovenian "INCLUDE"
+> 
+]>
+
+<book id="kgeography" lang="&language;">
+
+<bookinfo>
+<title
+>Priročnik za &kgeography;</title>
+
+<authorgroup>
+<author
+><personname
+> <firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> </personname
+> &Anne-Marie.Mahfouf.mail; </author>
+<author
+><personname
+> <firstname
+>Kushal</firstname
+> <surname
+>Das</surname
+> </personname
+> <email
+>kushaldas@gmail.com</email
+> </author>
+
+<othercredit role="translator"
+><firstname
+>Krištof</firstname
+><surname
+>Trček</surname
+><affiliation
+><address
+><email
+>kt91536@student.uni-lj.si</email
+></address
+></affiliation
+><contrib
+>Prevod</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2005</year>
+<holder
+>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<copyright>
+<year
+>2008</year>
+<holder
+>Kushal Das</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>22.12.2020</date>
+<releaseinfo
+>Applications 20.12</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&kgeography; je &kde;-jevo orodje za učenje geografije. Trenutno ima sedem načinov uporabe: <itemizedlist>
+<listitem>
+<para
+>Brskajte po zemljevidih s klikom v razdelku zemljevida, da si ogledate njegovo ime, glavno mesto in zastavo</para>
+</listitem>
+<listitem>
+<para
+>Igra pove ime dela zemljevida, na katerega morate klikniti</para>
+</listitem>
+<listitem>
+<para
+>Igra vam pove glavno mesto, vi pa morate uganiti del, ki mu pripada</para>
+</listitem
+><listitem>
+<para
+>Igra vam pove del ozemlja, vi pa morate ugibati njeno glavno mesto</para>
+</listitem
+><listitem>
+<para
+>Igra vam prikaže zastavo dela ozemlja, vi pa morate uganiti ime dela</para>
+</listitem
+><listitem>
+<para
+>Igra vam pove ime dela ozemlja, vi pa morate uganiti zastavo tega dela</para>
+</listitem
+><listitem>
+<para
+>Igra prikaže prazen zemljevid, vi pa morate na njem postaviti dele enega po enega</para>
+</listitem>
+</itemizedlist>
+</para>
+
+</abstract>
+
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>kdeedu</keyword>
+<keyword
+>KGeography</keyword>
+<keyword
+>geografija</keyword>
+<keyword
+>zemljevidi</keyword>
+<keyword
+>države</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>Uvod</title>
+
+<para
+>&kgeography; je &kde;-jevo orodje za učenje geografije. Omogoča vam, da se naučite o političnih delitvah nekaterih držav (delitve ozemelj, glavna mesta teh ozemelj in njihove zastave). </para>
+</chapter>
+
+<chapter id="quick-start">
+<title
+>Hiter Začetek za &kgeography;</title>
+<para
+>Ko prvič zaženete &kgeography;, boste morali izbrati zemljevid, s katerim boste začeli. </para>
+<tip>
+<para
+>Seznam zemljevidov lahko prefiltrirate za besedilnim poljem <guilabel
+>Filtriraj zemljevide</guilabel
+>. Vnesite prvih nekaj črk zemljevida, da zožate seznam. </para>
+</tip>
+<screenshot>
+<screeninfo
+>Tu je posnetek zaslona &kgeography;, ko ga prvič zaženemo</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start1.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Tu je posnetek zaslona &kgeography;, ko ga prvič zaženemo</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>Tukaj izberemo Kanado <screenshot>
+<screeninfo
+>Izbrali smo Kanado</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start2.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Izbrali smo Kanado</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>In glavno okno &kgeography; se bo prikazalo z zemljevidom Kanade: <screenshot>
+<screeninfo
+>glavno okno &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start3.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>glavno okno &kgeography;</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Nato lahko izberete, kateri način učenja ali testiranja želite preko menija na levi: <screenshot>
+<screeninfo
+>&kgeography;-jev meni</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start4.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>&kgeography;-jev meni</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Raziskovanje Zemljevida: z levim klikom na območje na zemljevidu boste prikazali informacije o območju; če kliknete na majhno ikono &nbsp;<inlinemediaobject
+> <imageobject
+> <imagedata fileref="dialog-information.png" format="PNG"/> </imageobject
+> </inlinemediaobject
+> <guiicon
+>Info</guiicon
+> na pojavnem zavihku, se bo odprla spletna stran wikipedija o izbranem ozemlju v privzetem brskalniku: <screenshot>
+<screeninfo
+>Brskaj po zemljevidu</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start5.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Brskaj po zemljevidu</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Lokacija Provinc in Ozemelj: najprej boste vprašani, koliko vprašanj želite. <screenshot>
+<screeninfo
+>Koliko vprašanj</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start6.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Koliko vprašanj</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Potem kliknite na določeno ozemlje: <screenshot>
+<screeninfo
+>Klikni na ozemlje</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start7.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Klikni na ozemlje</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Ko končate z vsemi vprašanji, bodo prikazani rezultati, vaši pravilni in nepravilni odgovori: <screenshot>
+<screeninfo
+>Vaši rezultati</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start8.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Vaši rezultati</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Postavi Province ali ozemlja na Zemljevid: kazalec pridobi obliko ozemlja, vi pa ga morate postaviti na pravilno mesto na zemljevidu: <screenshot>
+<screeninfo
+>Postavi ozemlje na zemljevid</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start13.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Postavi ozemlje na zemljevid</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Province in Ozemlja preko Glavnega Mesta: izbrati morate ime province med podanimi štirimi s pomočjo glavnega mesta, ki je podano: <screenshot>
+<screeninfo
+>Ugani, kateremu ozemlju ustreza glavno mesto</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start9.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Ugani, kateremu ozemlju ustreza glavno mesto</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>In rezultati so prikazani, ko je test zaključen: <screenshot>
+<screeninfo
+>Vaši rezultati</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start10.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Vaši rezultati</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Glavna mesta Provinc in Ozemelj: podano je glavno mesto in štiri ozemlja, med katerimi morate izbrati pravilno. Kot prej so rezultati prikazani na koncu. </para>
+<para
+>Province in Ozemlja preko Zastav: prikazana je zastava, vi pa morate najti ozemlje, ki ji pripada. <screenshot>
+<screeninfo
+>vprašanje z zastavami</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start11.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>vprašanje z zastavami</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Zastave Provinc in Ozemelj: podano je ime ozemlja, vi pa morate med štirimi zastavami najti ustrezno. <screenshot>
+<screeninfo
+>najdi pravo zastavo ozemlja</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start12.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>najdi pravo zastavo ozemlja</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</chapter>
+
+<chapter id="using-kapp">
+<title
+>Uporaba &kgeography;</title>
+
+<para
+>&kgeography; prikaže informacije o neki državi in preizkusi vaše znanje s temi informacijami. <screenshot>
+<screeninfo
+>Tu je posnetek zaslona &kgeography;</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kgeography.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Posnetek zaslona</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+
+
+<sect1 id="kapp-features">
+<title
+>Več &kgeography; značilnosti</title>
+
+<para
+>Še ena značilnost &kgeography;-ja je zmožnost približanja zemljevida. <screenshot
+> <screeninfo
+>Zoom</screeninfo
+> <mediaobject
+> <imageobject
+> <imagedata fileref="zoom.png" format="PNG"/> </imageobject
+> <textobject
+> <phrase
+>Zoom</phrase
+> </textobject
+> </mediaobject
+> </screenshot
+>  Lahko kliknete na gumb <guibutton
+>Prbližaj</guibutton
+> in nato narišete pravokotnik, da približate v ta del zemljevida. Ko ste v načinu približanja, lahko uporabite desni klik, da se vam ponovno prikaže zemljevid v izvorni velikosti (dejanje <guimenuitem
+>Izvorna Velikost</guimenuitem
+> ima isti učinek). Uporabite drsne trakove, tipke s puščicami ali kolesce na miški, da se lahko premikate po približanem zemljevidu, lahko pa uporabite tudi dejanje <guimenuitem
+>Premakni</guimenuitem
+>, ki vam omogoča, da premikate zemljevid z levim klikom. Funkcija <guimenuitem
+>Samodejno Približanje</guimenuitem
+> bo približala zemljevid tako, da bo kar se da velik. </para>
+
+</sect1>
+</chapter>
+
+<!--<chapter id="teachers-parents">
+<title
+>Teachers/Parents guide to &kgeography; </title>
+ This chapter should emphasize the educational aims of your app and
+guide the parent/teacher on how to help the child using it.
+</chapter
+>-->
+
+<chapter id="how-to-maps">
+<title
+>Kako ustvariti zemljevid</title>
+<para
+>Zemljevid je v &kgeography; narejen z dvema datotekama, ena je slika zemljevida, druga pa njen opis.</para>
+<sect1 id="helper-tool">
+<title
+>Orodje pomoči</title>
+<para
+>Na <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/gen_map.pl"
+>tem</ulink
+> spletnem mestu lahko najdete orodje (avtor Yann Varley), ki mu je pomagalo z zemljevidom Francije. Da spoznate način njegove uporabe, ga enostavno zaženite in preberite sporočilo pomoči. V bistvu ustvari datoteko <literal role="extension"
+>.kgm</literal
+> iz navadne besedilne datoteke in ustvari datoteko z barvami, ki jih je dodelilo vsakem ozemlju, da lahko z njimi zapolnite zemljevid.</para>
+<para
+>Obstaja še eno orodje <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
+>colorchecker.py</ulink
+>, ki ga je napisal Albert Astals Cid. Za zagon tega programa boste potrebovali PyQt4. Enostavno ga zaženite z imenom datoteke <literal role="extension"
+>.kgm</literal
+> kot vrednostjo parametra (prav tako boste potrebovali zemljevid v datoteki <literal role="extension"
+>.png</literal
+> v isti mapi). To vam bo povedalo, če ima katerikoli piksel na zemljevidu drugačno barvo, ki ni definirana v opisni datoteki <literal role="extension"
+>.kgm</literal
+>. </para>
+<tip>
+<para
+>Prosimo, preberite tudi tutorial <ulink url="https://edu.kde.org/kgeography/tutorials/kgeography-addmaps.pdf"
+>Kako dodati zemljevide</ulink
+> na spletni strani &kgeography;-ja. </para>
+</tip>
+</sect1>
+<sect1 id="description-file">
+<title
+>Opisna datoteka</title>
+<para
+>Opisna datoteka je potrebna, njena končnica pa je <literal role="extension"
+>.kgm</literal
+>. Začeti se mora z <sgmltag class="starttag"
+>?xml version="1.0" encoding="utf-8"</sgmltag
+>, nato <sgmltag class="starttag"
+>!DOCTYPE kgeographyMap</sgmltag
+> in nato <sgmltag class="starttag"
+>map</sgmltag
+>, končati pa z  <sgmltag class="endtag"
+>map</sgmltag
+>. </para>
+<para
+>Te značke morajo vsebovati: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>mapFile</sgmltag
+> in <sgmltag class="endtag"
+>mapFile</sgmltag
+>: ime datoteke (brez dodatne poti), ki vsebuje sliko zemljevida, &eg; <quote
+><literal
+>evropa.png</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>name</sgmltag
+> in <sgmltag class="endtag"
+>name</sgmltag
+>: ime zemljevida,  &eg; <quote
+><literal
+>Evropa</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>divisionsName</sgmltag
+> in <sgmltag class="endtag"
+>divisionsName</sgmltag
+>: splošno ime razdelkov na tem zemljevidu, to je province, zvezne države, države, &etc;</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>division</sgmltag
+> in <sgmltag class="endtag"
+>division</sgmltag
+> za vsak razdelek ozemlja na zemljevidu.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>Vsak razdelek ozemlja ima naslednje značke: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>name</sgmltag
+> in <sgmltag class="endtag"
+>name</sgmltag
+>: ime razdelka ozemlja, &eg; <quote
+><literal
+>Albanija</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>capital</sgmltag
+> in <sgmltag class="endtag"
+>capital</sgmltag
+>: ime glavnega mesta tega ozemlja, &eg; <quote
+><literal
+>Tirana</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+	<para
+><sgmltag class="starttag"
+>ignore</sgmltag
+> in <sgmltag class="endtag"
+>ignore</sgmltag
+>: to se lahko nastavi na vrednosti <userinput
+>yes</userinput
+>, <userinput
+>allowClickMode</userinput
+>, <userinput
+>allowClickFlagMode</userinput
+> in <userinput
+>no</userinput
+>. Če je ta značka nastavljena na <userinput
+>yes</userinput
+>, potem se ozemlje ne bo pojavilo pri spraševanju po razdelkih ozemlja, tako kot da ta razdelek sploh ne bi obstajal &kgeography; načinu kviza. Če je ta značka nastavljena na <userinput
+>allowClickMode</userinput
+>, potem bo &kgeography; lahko vprašal po razdelku v načinu <guibutton
+>Lokacija ...</guibutton
+>, ne pa v drugih kvizih. Če je značka nastavljena na <userinput
+>allowClickFlagMode</userinput
+>, potem bo &kgeography; lahko vprašal po razdelku v načinu <guibutton
+>Lokacija ...</guibutton
+> in njegova zastava se bo pojavila v kvizih z zastavami, ne bo pa je v drugih načinih kviza. Če značko nastavite na <userinput
+>no</userinput
+>, se bo razdelek pojavil v vseh načinih (brskanje in kvizi). Ta značka je neobvezna in ko ni vključena, to pomeni isto, kot če bi bila nastavljena na <userinput
+>no</userinput
+>. Na primer, <quote
+><literal
+>Alžirija</literal
+></quote
+> ima to značko nastavljeno na <userinput
+>yes</userinput
+> v zemljevidu Evrope, kar pomeni, da se <quote
+><literal
+>Alžirija</literal
+></quote
+> ne bo pojavila v kvizu <quote
+><literal
+>Evropa</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>flag</sgmltag
+> in <sgmltag class="endtag"
+>flag</sgmltag
+>: datoteka (brez dodatne poti), ki vsebuje sliko zastave razdelka, &eg; <quote
+><literal
+>albanija.png</literal
+></quote
+>. Ta značka je neobvezna. Ni potrebna za razdelke, ki imajo značko <sgmltag class="starttag"
+>ignore</sgmltag
+> nastavljeno na <userinput
+>yes</userinput
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blurredflag</sgmltag
+> in <sgmltag class="endtag"
+>blurredflag</sgmltag
+>: datoteka (brez dodatne poti), ki vsebuje zamegljeno zastavo razdelka, &eg; <quote
+><literal
+>blurred_albanija.png</literal
+></quote
+>. Tudi ta značka je neobvezna. Uporabljena je v situacijah, ko ima zastava napisano ime ozemlja, kateremu pripada, kar lahko napravi ugibanje zastave preveč preprosto.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>color</sgmltag
+> in <sgmltag class="endtag"
+>color</sgmltag
+>: barva, s katero bo pobarvan ta razdelek zemljevida.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>falseCapital</sgmltag
+> in <sgmltag class="endtag"
+>falseCapital</sgmltag
+>: Tu je lahko poljubno število parov <userinput
+>falseCapital (napačnaGlavnaMesta)</userinput
+>, ki so uporabljena za seznam napačnih odgovorov na vprašanja o glavnem mestu namesto, da izbirate napačen odgovor med glavnimi mesti drugih ozemelj.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>Barva je določena s pomočjo treh značk: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>red</sgmltag
+> in <sgmltag class="endtag"
+>red</sgmltag
+>: rdeča komponenta barve. Veljavne vrednosti so med 0 in 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>green</sgmltag
+> in <sgmltag class="endtag"
+>green</sgmltag
+>: zelena komponenta barve. Veljavne vrednosti so med 0 in 255.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blue</sgmltag
+> in <sgmltag class="endtag"
+>blue</sgmltag
+>: modra komponenta barve. Veljavne vrednosti so med 0 in 255.</para>
+</listitem>
+</itemizedlist>
+</para>
+<tip>
+ <para
+>Priročno je ustvariti še 2 ali 3 napačne razdelke, kot npr. <quote
+><literal
+>Voda</literal
+></quote
+>, <quote
+><literal
+>Meja</literal
+></quote
+> in <quote
+><literal
+>Obala</literal
+></quote
+> in nastaviti njihovo značko <sgmltag class="starttag"
+>ignore</sgmltag
+> na <userinput
+>yes</userinput
+>. Pazite, da barve meje <userinput
+>ne nastavite</userinput
+> na 0,0,0 v RGB. Nastavite jo raje na 1,1,1, da se bo mejna obroba pojavila, ko postavite katerikoli razdelek na zemljevid. </para>
+</tip>
+ <important>
+   <para
+>Vsa imena (glavna mesta in ozemlja) morajo biti v angleščini.</para>
+</important>
+</sect1>
+<sect1 id="map-file">
+<title
+>Datoteka z zamljevidom</title>
+<para
+>Datoteko z zemljevidom je preprosto a zamudno ustvariti.Biti mora v formatu <acronym
+>PNG</acronym
+>. Na povezavi <ulink url="https://www.cia.gov/library/publications/the-world-factbook/docs/refmaps.html"
+>Cia Reference Maps</ulink
+> lahko najdete nekaj zemljevidov za pretvorbo. Če noben zemljevid ne ustreza vašim potrebam, lahko naložite <ulink url="https://www.cia.gov/library/publications/resources/the-world-factbook/graphics/ref_maps/political/pdf/world.pdf"
+>svetovni politični zemljevid</ulink
+>, naredite posnetek zaslona in delate z njim. Vsak razdelek mora biti le ene barve. To dosežete s programi z obdelavo, kot so <application
+>The Gimp</application
+> in &kolourpaint;. </para>
+</sect1>
+<sect1 id="flags">
+<title
+>Zastave</title>
+<para
+>Če ste uporabili značko <sgmltag class="starttag"
+>flag</sgmltag
+>, morate zagotoviti tudi datoteke z zastavami. Tudi te morajo biti v formatu <acronym
+>PNG</acronym
+> in bolje, če so velikosti 300x200 pikslov in priskrbite datoteko &SVG; zanjo. Ta pridobite zastavo &SVG; skoraj vseh držav na svetu in nekaj ostalih ozemelj, se lahko posvetujete s <ulink url="https://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770"
+>Sodipodi zbirka zastav</ulink
+>. </para>
+<para
+>Kot smo že prej povedali, vas spodbujamo, da zagotovite zamegljene datoteke z zastavami za zastave, na katerih je napisano ime delitve. Za zamegljene datoteke zastav veljajo enake zahteve kot za običajne. Čeprav za zamegljene datoteke ni predpisanega poimenovanja, priporočamo, da jih shranite z imenom izvirne zastavice s predpono <literal
+>blurred_</literal
+>, npr. <quote
+><literal
+>blurred_albania.png</literal
+></quote
+> </para>
+</sect1>
+<sect1 id="how-to-test">
+<title
+>Kako testirati</title>
+<para
+>Preden pošljete svoj zemljevid Albertu &Albert.Astals.Cid.mail;, ga morate testirati, da vidite, da nima nobenih napak. Da to storite, morate narediti naslednje: <itemizedlist
+> <listitem
+> <para
+>Opisno datoteko zemljevida in njegovo sliko dajte v <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/</filename
+></para
+> </listitem
+> <listitem
+> <para
+>Datoteke <acronym
+>PNG</acronym
+> z zastavami (če so) dajte v <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/flags/</filename
+></para
+> </listitem
+> </itemizedlist
+> Ko je to narejeno, lahko odprete svoj zemljevid iz programa &kgeography;. </para>
+ <para
+>Če ne veste, kakšna je vaša <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+></filename
+>, vtipkajte <userinput
+><command
+>qtpaths</command
+> <option
+>--paths HomeLocation</option
+></userinput
+> v lupino. </para>
+<tip>
+<para
+>Uporabite orodje colorchecker.py iz orodji za pomoč, da preverite, če je na zemljevidu ostala katera barva, ki ni definirana v datoteki <literal role="extension"
+>.kgm</literal
+>. </para>
+</tip>
+</sect1>
+<sect1 id="non-political-maps">
+<title
+>Nepolitični zemljevidi</title>
+<para
+>Ali je mogoče imeti tudi zemljevide, ki niso politični? Ja, je! <screenshot>
+<screeninfo
+>Primer, kako narediti nepolitični zemljevid</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="river.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>Primer, kako narediti nepolitični zemljevid</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>Koncept razdelitve lahko seveda razširimo na reko ali goro. Med ustvarjanjem takega zemljevida morate vedeti, da bodo največkrat reke in gore premajhne, zato morate zagotoviti dodatno mesto za klikanje. V tem primeru ima reka območje kostanjeve barve in barvo &lt;20,76,34&gt; za svoj identifikator. </para>
+</sect1>
+</chapter>
+
+<chapter id="commands">
+<title
+>Sklic na Ukaz</title>
+
+<sect1 id="kapp-mainwindow">
+<title
+>Glavno okno &kgeography;-ja</title>
+
+<sect2>
+<title
+>Meni Datoteka</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Datoteka</guimenu
+> <guimenuitem
+>Odpri Zemljevid...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Odpre pogovorno okno za izbiro zemljevida. Če vtipkate dovolj hitro, bodo prve črke zemljevida, ki ga iščete, izbrale prvi zemljevid, ki se ujema.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>Datoteka</guimenu
+> <guimenuitem
+>Končaj</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Izhod</action
+> iz &kgeography;.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>Meni Pogled</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Pogled</guimenu
+> <guimenuitem
+>Približanje</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Vstopi v način približanja, nato narišite pravokotnik, da si približate del zemljevida.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Pogled</guimenu
+> <guimenuitem
+>Izvorna Velikost</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Nastavi</action
+> zemljevid nazaj na prvotno velikost, ki je definirana v datoteki z zemljevidom. Desni klik v načinu približanja ima isti učinek.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Pogled</guimenu
+> <guimenuitem
+>Samodejno približanje</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Nastavi</action
+> zemljevid na samodejno približanje tako, da uporabi čim več prostora, ko spreminja velikost okna.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Pogled</guimenu
+> <guimenuitem
+>Premakni</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>Premakne</action
+> trenutni zemljevid. Ta možnost je omogočena le, če ste že približali zemljevid.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>Meni Nastavitve</title>
+<para
+>&kgeography; ima običajen &kde;-jev meni <guimenu
+>Nastavitve</guimenu
+>. Za več informacij preberite razdelek o <ulink url="help:/fundamentals/menus.html#menus-settings"
+>Meniju Nastavitev</ulink
+> od &kde; Fundementals. </para>
+
+</sect2>
+<sect2>
+<title
+>Meni Pomoč</title>
+
+<para
+>&kgeography; ima privzet &kde;-jev meni <guimenu
+>Pomoč</guimenu
+>, kot je opisano v <ulink url="help:/fundamentals/menus.html#menus-help"
+>&kde; Fundamentals</ulink
+> z dvema dodatnima vnosoma:</para>
+	
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Pomoč</guimenu
+> <guimenuitem
+>Zavrnitev odgovornosti</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Prikaže</action
+> zavrnitev odgovornosti o natančnosti zemljevidov, zastav in prevodov, ki so uporabljeni v &kgeography;.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>Pomoč</guimenu
+> <guimenuitem
+>Avtor zemljevida</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>Prikaže</action
+> ime avtorja, ki je ustvaril trenutni zemljevid.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+</sect1>
+
+</chapter>
+
+<chapter id="configuration">
+<title
+>Konfiguracija</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Poravnava Vprašanj</guilabel
+></term>
+<listitem
+><para
+>Določi položaj vprašanj v oknu, privzeto je <guilabel
+>Zgoraj-desno</guilabel
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Počakajte na potrditev</guilabel
+></term>
+<listitem
+><para
+>Če je omogočeno, bo moral uporabnik pritisniti gumb  <guibutton
+>Accept</guibutton
+>, potem ko izbere odgovor.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Žarišče sledi miški</guilabel
+></term>
+<listitem
+><para
+>Če je omogočeno, bo pritisk na &Space; sprožil gumb pod kazalcem miške.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Barve delitev zemljevida</guilabel
+></term>
+<listitem
+><para
+>Izberete lahko, če želite ohraniti vedno iste barve (privzeto) ali če želite uporabiti naključne barve: s to možnostjo bodo naključne barve določene razdelkom zemljevida. S tem se uporabnik nauči prepoznavati oblike razdelkov namesto, da bi se navadil na njihove barve. </para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>Zasluge in Licenca</title>
+
+<para
+>&kgeography; </para>
+<para
+>Avtorske pravice programa 2004-2008 Albert Astals Cid &Albert.Astals.Cid.mail; </para>
+
+
+<para
+>Avtorske pravice Dokumentacije &copy; 2005 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; 2008 Kushal Das <email
+>kushaldas@gmail.com</email
+> </para>
+
+<para
+>Prevod: Krištof Trček<email
+>kt91536@student.uni-lj.si</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab 
+-->
