@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2024-10-25 20:56+0200\n"
+"PO-Revision-Date: 2024-10-26 19:22+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -8323,7 +8323,7 @@ msgstr "Victoria"
 #, kde-format
 msgctxt "canada.kgm"
 msgid "Ontario"
-msgstr "Ontàrio"
+msgstr "Ontario"
 
 #: canada.kgm:48
 #, kde-format
@@ -36101,7 +36101,7 @@ msgstr "Llac Erie"
 #, kde-format
 msgctxt "usa.kgm"
 msgid "Lake Ontario"
-msgstr "Llac Ontàrio"
+msgstr "Llac Ontario"
 
 #: usa.kgm:81
 #, kde-format
