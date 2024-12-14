@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2024-08-20 16:53+0200\n"
+"PO-Revision-Date: 2024-12-13 23:16+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -31903,6 +31903,7 @@ msgctxt "south_africa.kgm"
 msgid "Nelspruit"
 msgstr "Nelspruit"
 
+# skip-rule: trasno-clean_reverse
 #: south_africa.kgm:49
 #, kde-format
 msgctxt "south_africa.kgm"
@@ -38707,6 +38708,7 @@ msgctxt "waters_world-class.kgm"
 msgid "Jubba"
 msgstr "Jubba"
 
+# skip-rule: trasno-clean_reverse
 #: waters_world-class.kgm:74
 #, kde-format
 msgctxt "waters_world-class.kgm"
