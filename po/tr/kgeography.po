@@ -5254,7 +5254,7 @@ msgstr "%1, şu yörenin merkezidir..."
 #, kde-format
 msgctxt "@title"
 msgid "District by Headquarters"
-msgstr "Merkezlere göre Bölge"
+msgstr "Merkezlere Göre Bölge"
 
 #: bihar.kgm:13
 #, kde-format
@@ -20928,7 +20928,7 @@ msgstr "Venedik"
 #, kde-format
 msgctxt "italyprovince.kgm"
 msgid "Italy by Provinces"
-msgstr "Bölgelere göre İtalya"
+msgstr "Bölgelere Göre İtalya"
 
 #: italyprovince.kgm:6
 #, kde-format
@@ -22582,7 +22582,7 @@ msgstr ""
 #: kgeography.cpp:66
 #, kde-format
 msgid "&Regions by Capital"
-msgstr "&Başkentlere göre Bölgeler"
+msgstr "&Başkentlere Göre Bölgeler"
 
 #: kgeography.cpp:67
 #, kde-format
@@ -24134,7 +24134,7 @@ msgstr "%1 başkenti şudur..."
 #: map.cpp:114
 #, kde-format
 msgid "%1 by Capital"
-msgstr "Başkente göre %1"
+msgstr "Başkente Göre %1"
 
 #: map.cpp:120
 #, kde-format
@@ -24184,12 +24184,12 @@ msgstr "Haritada %1"
 #: mapchooser.cpp:38
 #, kde-format
 msgid "Choose Map to Use"
-msgstr "Kullanılacak Haritayı Seçin"
+msgstr "Kullanılacak Haritayı Seç"
 
 #: mapchooser.cpp:47
 #, kde-format
 msgid "Filter Maps"
-msgstr "Haritaları Süz"
+msgstr "Haritaları süz…"
 
 #: mapchooser.cpp:76
 #, kde-format
@@ -33412,7 +33412,7 @@ msgstr "Sipaliwini"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Sweden by Counties"
-msgstr "Ülkelere göre İsveç"
+msgstr "Ülkelere Göre İsveç"
 
 #: sweden.kgm:6
 #, kde-format
