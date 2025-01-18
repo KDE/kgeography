@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2025-01-05 08:24+0200\n"
+"PO-Revision-Date: 2025-01-17 10:56+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -24070,7 +24070,7 @@ msgstr ""
 #, kde-format
 msgctxt "manipur.kgm"
 msgid "Bishnupur"
-msgstr ""
+msgstr "בישנופור"
 
 #: manipur.kgm:78 manipur.kgm:79
 #, kde-format
@@ -25820,7 +25820,7 @@ msgstr "צ׳אגנג"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "Chagang-do"
-msgstr ""
+msgstr "צ׳אגנג"
 
 #: north_korea.kgm:29
 #, kde-format
@@ -25856,7 +25856,7 @@ msgstr "צפון הואנג־הה"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "Hwanghae-pukto"
-msgstr ""
+msgstr "צפון הואנג-הה"
 
 #: north_korea.kgm:44
 #, kde-format
@@ -25976,7 +25976,7 @@ msgstr "ראסון (רג׳ין-סונבונג)"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "Rasŏn (Rajin-Sŏnbong) Chikhalsi"
-msgstr ""
+msgstr "העיר ראסון"
 
 #: norway.kgm:5
 #, kde-format
@@ -27392,7 +27392,7 @@ msgstr "לא הפיליפינים"
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Abra"
-msgstr ""
+msgstr "אברה"
 
 #: philippines.kgm:25
 #, kde-format
@@ -27854,13 +27854,13 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "San Fernando City"
-msgstr ""
+msgstr "סן פרננדו סיטי"
 
 #: philippines.kgm:219
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Laguna"
-msgstr ""
+msgstr "לגונה"
 
 #: philippines.kgm:220
 #, kde-format
@@ -27974,7 +27974,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Bontoc"
-msgstr ""
+msgstr "בונטוק"
 
 #: philippines.kgm:269
 #, kde-format
@@ -27986,7 +27986,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Bacolod City"
-msgstr ""
+msgstr "בקולוד סיטי"
 
 #: philippines.kgm:274
 #, kde-format
@@ -28064,7 +28064,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Palawan"
-msgstr ""
+msgstr "פלאוואן"
 
 #: philippines.kgm:305
 #, kde-format
@@ -28076,7 +28076,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Pampanga"
-msgstr ""
+msgstr "פמפנגה"
 
 #: philippines.kgm:314
 #, kde-format
@@ -28124,13 +28124,13 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Antipolo City"
-msgstr ""
+msgstr "אנטיפולו סיטי"
 
 #: philippines.kgm:334 philippines.kgm:335
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Romblon"
-msgstr ""
+msgstr "רומבלון"
 
 #: philippines.kgm:339
 #, kde-format
@@ -28214,7 +28214,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Sulu"
-msgstr ""
+msgstr "סולו"
 
 #: philippines.kgm:375
 #, kde-format
@@ -28250,7 +28250,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Tarlac"
-msgstr ""
+msgstr "טרלאק"
 
 #: philippines.kgm:390
 #, kde-format
@@ -29084,7 +29084,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Arecibo"
-msgstr ""
+msgstr "ארסיבו"
 
 #: puertorico.kgm:117
 #, kde-format
@@ -29108,19 +29108,19 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Bayamón"
-msgstr ""
+msgstr "באיאמון"
 
 #: puertorico.kgm:157
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Cabo Rojo"
-msgstr ""
+msgstr "קאבו רוחו"
 
 #: puertorico.kgm:167
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Caguas"
-msgstr ""
+msgstr "קגואס"
 
 #: puertorico.kgm:177
 #, kde-format
@@ -29138,7 +29138,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Carolina"
-msgstr ""
+msgstr "קרולינה"
 
 #: puertorico.kgm:207
 #, kde-format
@@ -29210,7 +29210,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Florida"
-msgstr ""
+msgstr "פלורידה"
 
 #: puertorico.kgm:327
 #, kde-format
@@ -29222,7 +29222,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Guayama"
-msgstr ""
+msgstr "גויאמה"
 
 #: puertorico.kgm:347
 #, kde-format
@@ -29342,7 +29342,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Mayagüez"
-msgstr ""
+msgstr "מאיאגואס"
 
 #: puertorico.kgm:547
 #, kde-format
@@ -29372,7 +29372,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Orocovis"
-msgstr ""
+msgstr "אורוקוביס"
 
 #: puertorico.kgm:597
 #, kde-format
@@ -29492,7 +29492,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Vieques"
-msgstr ""
+msgstr "וייקס"
 
 #: puertorico.kgm:797
 #, kde-format
@@ -34070,7 +34070,7 @@ msgstr "קוימבטור"
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Tiruppur"
-msgstr ""
+msgstr "טירופור"
 
 #: tamilnadu.kgm:23
 #, kde-format
@@ -34094,7 +34094,7 @@ msgstr ""
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Dindigul"
-msgstr ""
+msgstr "דינדיגול"
 
 #: tamilnadu.kgm:36
 #, kde-format
@@ -34118,7 +34118,7 @@ msgstr ""
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Pudukkottai"
-msgstr ""
+msgstr "פודוקוטאי"
 
 #: tamilnadu.kgm:52
 #, kde-format
@@ -34136,7 +34136,7 @@ msgstr ""
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Vilupuram"
-msgstr ""
+msgstr "וילופוראם"
 
 #: tamilnadu.kgm:64
 #, kde-format
@@ -34172,7 +34172,7 @@ msgstr ""
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Ariyalur"
-msgstr ""
+msgstr "אריאלור"
 
 #: tamilnadu.kgm:88
 #, kde-format
@@ -34184,7 +34184,7 @@ msgstr "צ׳נאי"
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Nagapattinam"
-msgstr ""
+msgstr "נאגאפאטינאם"
 
 #: tamilnadu.kgm:96
 #, kde-format
@@ -34214,7 +34214,7 @@ msgstr ""
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Ramanathapuram"
-msgstr ""
+msgstr "רמאנטהפוראם"
 
 #: tamilnadu.kgm:113
 #, kde-format
@@ -34256,13 +34256,13 @@ msgstr ""
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Krishnagiri"
-msgstr ""
+msgstr "קרישנגירי"
 
 #: tamilnadu.kgm:141
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Kanchipuram"
-msgstr ""
+msgstr "קנצ׳יפורם"
 
 #: tamilnadu.kgm:145
 #, kde-format
@@ -34292,7 +34292,7 @@ msgstr "קרנאטקה"
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Karaikal"
-msgstr ""
+msgstr "קאראיקל"
 
 #: tamilnadu.kgm:170
 #, kde-format
