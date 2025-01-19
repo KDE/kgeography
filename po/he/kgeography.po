@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2025-01-17 10:56+0200\n"
+"PO-Revision-Date: 2025-01-18 21:05+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -3784,7 +3784,7 @@ msgstr ""
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Dispur"
-msgstr ""
+msgstr "דיספור"
 
 #: assam.kgm:54
 #, kde-format
@@ -3802,7 +3802,7 @@ msgstr "גוואהטי"
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Darrang"
-msgstr ""
+msgstr "דראנג"
 
 #: assam.kgm:64 assam.kgm:65
 #, kde-format
@@ -5494,7 +5494,7 @@ msgstr ""
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Sasaram"
-msgstr ""
+msgstr "סאסאראם"
 
 #: bihar.kgm:178 bihar.kgm:179
 #, kde-format
@@ -6789,7 +6789,7 @@ msgstr ""
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Kongoussi"
-msgstr ""
+msgstr "קונגוסי"
 
 #: burkina_provinces.kgm:144
 #, kde-format
@@ -6885,7 +6885,7 @@ msgstr ""
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Boromo"
-msgstr ""
+msgstr "בורומו"
 
 #: burkina_provinces.kgm:184
 #, kde-format
@@ -6939,7 +6939,7 @@ msgstr ""
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Kénédougou"
-msgstr ""
+msgstr "קנדוגו"
 
 #: burkina_provinces.kgm:205
 #, kde-format
@@ -8848,7 +8848,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Figueres"
-msgstr ""
+msgstr "פיגוארס"
 
 #: catalonia_comarques.kgm:34
 #, kde-format
@@ -8920,7 +8920,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Reus"
-msgstr ""
+msgstr "ראוס"
 
 #: catalonia_comarques.kgm:64
 #, kde-format
@@ -9076,7 +9076,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Mataró"
-msgstr ""
+msgstr "מטארו"
 
 #: catalonia_comarques.kgm:129
 #, kde-format
@@ -9256,7 +9256,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Tarragona"
-msgstr ""
+msgstr "טרגונה"
 
 #: catalonia_comarques.kgm:204
 #, kde-format
@@ -18162,7 +18162,7 @@ msgstr ""
 #, kde-format
 msgctxt "haryana.kgm"
 msgid "Ambala"
-msgstr ""
+msgstr "אמבל"
 
 #: haryana.kgm:34 haryana.kgm:35
 #, kde-format
@@ -42508,7 +42508,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mansa"
-msgstr ""
+msgstr "מנסה"
 
 #: zambia_districts.kgm:159
 #, kde-format
@@ -42658,7 +42658,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mpulungu"
-msgstr ""
+msgstr "מפולונגו"
 
 #: zambia_districts.kgm:284
 #, kde-format
