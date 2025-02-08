@@ -1,13 +1,13 @@
 # translation of kgepgraphy.po to
 # Diego Iastrubni <elcuco@kde.org>, 2005.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
-# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2025-01-18 21:05+0200\n"
+"PO-Revision-Date: 2025-02-07 10:33+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -37232,43 +37232,43 @@ msgstr "באק זאנג"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Bac Kan"
-msgstr ""
+msgstr "באק קאן"
 
 #: vietnam.kgm:39 vietnam.kgm:40
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Bac Lieu"
-msgstr ""
+msgstr "בק ליאו"
 
 #: vietnam.kgm:44 vietnam.kgm:45
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Bac Ninh"
-msgstr ""
+msgstr "באק נינג"
 
 #: vietnam.kgm:49
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Ba Ria-Vung Tau"
-msgstr ""
+msgstr "בה ז׳יה-וונגם טאו"
 
 #: vietnam.kgm:50
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Vung Tau"
-msgstr ""
+msgstr "וונגם טאו"
 
 #: vietnam.kgm:54 vietnam.kgm:55
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Ben Tre"
-msgstr ""
+msgstr "בן צ׳ה"
 
 #: vietnam.kgm:59
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Binh Dinh"
-msgstr ""
+msgstr "בין דין"
 
 #: vietnam.kgm:60
 #, kde-format
@@ -37280,7 +37280,7 @@ msgstr ""
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Binh Duong"
-msgstr ""
+msgstr "בין ייאנג"
 
 #: vietnam.kgm:65
 #, kde-format
@@ -37292,25 +37292,25 @@ msgstr ""
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Binh Phuoc"
-msgstr ""
+msgstr "בין פייק"
 
 #: vietnam.kgm:70
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dong Xoai"
-msgstr ""
+msgstr "דאונגם סואי"
 
 #: vietnam.kgm:74
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Binh Thuan"
-msgstr ""
+msgstr "בין טהואנג"
 
 #: vietnam.kgm:75
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Phan Thiet"
-msgstr ""
+msgstr "טהייט"
 
 #: vietnam.kgm:79 vietnam.kgm:80
 #, kde-format
@@ -37346,13 +37346,13 @@ msgstr "בון מא טאוט"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dak Nong"
-msgstr ""
+msgstr "דאק נאונגם"
 
 #: vietnam.kgm:100
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Gia Nghia"
-msgstr ""
+msgstr "יה נגיה"
 
 #: vietnam.kgm:104
 #, kde-format
@@ -37364,25 +37364,25 @@ msgstr "דה נאנג"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dien Bien"
-msgstr ""
+msgstr "דיין ביין"
 
 #: vietnam.kgm:110
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dien Bien Phu"
-msgstr ""
+msgstr "דיין ביין פו"
 
 #: vietnam.kgm:114
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dong Nai"
-msgstr ""
+msgstr "דג׳ונג נאי"
 
 #: vietnam.kgm:115
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Bien Hoa"
-msgstr ""
+msgstr "הואה בינג"
 
 #: vietnam.kgm:119
 #, kde-format
@@ -37400,25 +37400,25 @@ msgstr "קאו לאן"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Gia Lai"
-msgstr ""
+msgstr "יה לאי"
 
 #: vietnam.kgm:125
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "PleiKu"
-msgstr ""
+msgstr "פלייקו"
 
 #: vietnam.kgm:129 vietnam.kgm:130
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Ha Giang"
-msgstr ""
+msgstr "הא זאנג"
 
 #: vietnam.kgm:134 vietnam.kgm:135
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Hai Duong"
-msgstr ""
+msgstr "האי זיינג"
 
 #: vietnam.kgm:139
 #, kde-format
@@ -37430,13 +37430,13 @@ msgstr "האי פונג"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Ha Nam"
-msgstr ""
+msgstr "הא נאם"
 
 #: vietnam.kgm:145
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Phu Ly"
-msgstr ""
+msgstr "פו לי"
 
 #: vietnam.kgm:149
 #, kde-format
@@ -37478,13 +37478,13 @@ msgstr "הו צ׳י מין"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Hau Giang"
-msgstr ""
+msgstr "האו יאנג"
 
 #: vietnam.kgm:175
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Vi Thanh"
-msgstr ""
+msgstr "וי טהאן"
 
 #: vietnam.kgm:179 vietnam.kgm:180
 #, kde-format
@@ -37526,37 +37526,37 @@ msgstr "קון טום"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Lai Chau"
-msgstr ""
+msgstr "לאי צ׳או"
 
 #: vietnam.kgm:204
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Lam Dong"
-msgstr ""
+msgstr "לם דאונגם"
 
 #: vietnam.kgm:205
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Da Lat"
-msgstr ""
+msgstr "דה לאט"
 
 #: vietnam.kgm:209 vietnam.kgm:210
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Lang Son"
-msgstr ""
+msgstr "לאנג סן"
 
 #: vietnam.kgm:214 vietnam.kgm:215
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Lao Cai"
-msgstr ""
+msgstr "לאו קאי"
 
 #: vietnam.kgm:219
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Long An"
-msgstr ""
+msgstr "לאונגם אנג"
 
 #: vietnam.kgm:220
 #, kde-format
@@ -37568,31 +37568,31 @@ msgstr ""
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Nam Dinh"
-msgstr ""
+msgstr "נאם דינג"
 
 #: vietnam.kgm:229
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Nghe An"
-msgstr ""
+msgstr "נגה אן"
 
 #: vietnam.kgm:230
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Vinh"
-msgstr ""
+msgstr "וין"
 
 #: vietnam.kgm:234 vietnam.kgm:235
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Ninh Binh"
-msgstr ""
+msgstr "נינג בינג"
 
 #: vietnam.kgm:239
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Ninh Thuan"
-msgstr ""
+msgstr "נין טהואנג"
 
 #: vietnam.kgm:240
 #, kde-format
@@ -37604,7 +37604,7 @@ msgstr ""
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Phu Tho"
-msgstr ""
+msgstr "פו טהו"
 
 #: vietnam.kgm:245
 #, kde-format
@@ -37616,61 +37616,61 @@ msgstr ""
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Phu Yen"
-msgstr ""
+msgstr "פו יין"
 
 #: vietnam.kgm:250
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Tuy Hoa"
-msgstr ""
+msgstr "טוי הואה"
 
 #: vietnam.kgm:254
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Quang Binh"
-msgstr ""
+msgstr "קואנג בין"
 
 #: vietnam.kgm:255
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Dong Hoi"
-msgstr ""
+msgstr "דונג הוי"
 
 #: vietnam.kgm:259
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Quang Nam"
-msgstr ""
+msgstr "קואנג נאם"
 
 #: vietnam.kgm:260
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Tam Ky"
-msgstr ""
+msgstr "טאם קי"
 
 #: vietnam.kgm:264 vietnam.kgm:265
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Quang Ngai"
-msgstr ""
+msgstr "קואנג נגאי"
 
 #: vietnam.kgm:269
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Quang Ninh"
-msgstr ""
+msgstr "קואנג נינג"
 
 #: vietnam.kgm:270
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Ha Long"
-msgstr ""
+msgstr "הא לאונגם"
 
 #: vietnam.kgm:274
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Quang Tri"
-msgstr ""
+msgstr "קואנג צ׳י"
 
 #: vietnam.kgm:275
 #, kde-format
@@ -37682,7 +37682,7 @@ msgstr ""
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Soc Trang"
-msgstr ""
+msgstr "שאוקפ צ׳אנג"
 
 #: vietnam.kgm:284 vietnam.kgm:285
 #, kde-format
@@ -37694,85 +37694,85 @@ msgstr ""
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Tay Ninh"
-msgstr ""
+msgstr "טאי נין"
 
 #: vietnam.kgm:294 vietnam.kgm:295
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Thai Binh"
-msgstr ""
+msgstr "טהאי בינג"
 
 #: vietnam.kgm:299 vietnam.kgm:300
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Thai Nguyen"
-msgstr ""
+msgstr "טהאי נווין"
 
 #: vietnam.kgm:304 vietnam.kgm:305
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Thanh Hoa"
-msgstr ""
+msgstr "טהאינג הואה"
 
 #: vietnam.kgm:309
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Thua Thien-Hue"
-msgstr ""
+msgstr "טהיאה טהיין-הואה"
 
 #: vietnam.kgm:310
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Hue"
-msgstr ""
+msgstr "הואה"
 
 #: vietnam.kgm:314
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Tien Giang"
-msgstr ""
+msgstr "טיין יאנג"
 
 #: vietnam.kgm:315
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "My Tho"
-msgstr ""
+msgstr "מי טהו"
 
 #: vietnam.kgm:319 vietnam.kgm:320
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Tra Vinh"
-msgstr ""
+msgstr "צ׳ה וין"
 
 #: vietnam.kgm:324 vietnam.kgm:325
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Tuyen Quang"
-msgstr ""
+msgstr "טווין קואנג"
 
 #: vietnam.kgm:329 vietnam.kgm:330
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Vinh Long"
-msgstr ""
+msgstr "וין לונג"
 
 #: vietnam.kgm:334
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Vinh Phuc"
-msgstr ""
+msgstr "וין פוק"
 
 #: vietnam.kgm:335
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Vinh Yen"
-msgstr ""
+msgstr "וין ין"
 
 #: vietnam.kgm:339 vietnam.kgm:340
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Yen Bai"
-msgstr ""
+msgstr "ין באי"
 
 #: virginia.kgm:4
 #, kde-format
@@ -39370,13 +39370,13 @@ msgstr "גבול"
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Purulia"
-msgstr ""
+msgstr "פורוליה"
 
 #: westbengal.kgm:38 westbengal.kgm:39
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Bankura"
-msgstr ""
+msgstr "באנקורה"
 
 #: westbengal.kgm:48
 #, kde-format
@@ -39388,13 +39388,13 @@ msgstr ""
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Midnapore"
-msgstr ""
+msgstr "מידנפור"
 
 #: westbengal.kgm:58
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Purba Medinipur"
-msgstr ""
+msgstr "פורבה מדיניפור"
 
 #: westbengal.kgm:59
 #, kde-format
