@@ -18693,7 +18693,7 @@ msgstr "米什科尔茨"
 #, kde-format
 msgctxt "hungary.kgm"
 msgid "Csongrád-Csanád"
-msgstr ""
+msgstr "Csongrád-Csanád"
 
 #: hungary.kgm:45
 #, kde-format
@@ -22837,13 +22837,13 @@ msgstr "焦点跟随鼠标移动(&F)"
 msgid ""
 "Whether the map tooltip will follow mouse when it is pressed and moving "
 "across the map or not"
-msgstr "地图工具提示是否在鼠标拖动地图时跟随。"
+msgstr "地图工具提示是否在鼠标拖动地图时跟随"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_tooltipFollowsMouse)
 #: kgeographyoptions.ui:112
 #, kde-format
 msgid "&Move map tooltip on mouse move"
-msgstr "& 鼠标移动时移动地图工具提示"
+msgstr "在地图工具提示上实现鼠标移动跟随效果(M)"
 
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
 #: kgeographyoptions.ui:122
