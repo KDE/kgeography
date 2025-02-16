@@ -10,13 +10,13 @@
 # Renan Cakirerk, 2010.
 # obsoleteman <tulliana@gmail.com>, 2008-2009.
 # Volkan Gezer <volkangezer@gmail.com>, 2013, 2015, 2017.
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeedu-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2024-10-20 12:52+0300\n"
+"PO-Revision-Date: 2025-02-15 21:37+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.11.70\n"
+"X-Generator: Lokalize 25.03.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -250,7 +250,7 @@ msgstr "Kapisa"
 #, kde-format
 msgctxt "afghanistan.kgm"
 msgid "Mahmud-i-Raqi"
-msgstr "Mahmud-i-Raki"
+msgstr "Mahmud-i Raki"
 
 #: afghanistan.kgm:134 afghanistan.kgm:135
 #, kde-format
@@ -5236,7 +5236,7 @@ msgstr "Bölge"
 #, no-c-format, kde-format
 msgctxt "@title:group"
 msgid "The %1 district has its headquarters at..."
-msgstr "%1 yöresinin merkezi şuradadır..."
+msgstr "%1 yöresinin merkezi şuradadır…"
 
 #: bihar.kgm:8
 #, kde-format
@@ -5248,7 +5248,7 @@ msgstr "Bölgelerin Merkezleri"
 #, no-c-format, kde-format
 msgctxt "@title:group"
 msgid "%1 is the district headquarters of..."
-msgstr "%1, şu yörenin merkezidir..."
+msgstr "%1, şu yörenin merkezidir…"
 
 #: bihar.kgm:10
 #, kde-format
@@ -11214,7 +11214,7 @@ msgstr "%1"
 #, kde-format
 msgctxt "@title:group"
 msgid "The flag of %1 is..."
-msgstr "%1 bayrağı şudur..."
+msgstr "%1 bayrağı şudur…"
 
 #: divisionflagasker.cpp:57
 #, kde-format
@@ -12012,7 +12012,7 @@ msgstr "İsmailiye"
 #, kde-format
 msgctxt "egypt.kgm"
 msgid "Kafr el-Sheikh"
-msgstr "Kafrü'ş-Şeyh"
+msgstr "Kafrü’ş Şeyh"
 
 #: egypt.kgm:89
 #, kde-format
@@ -22622,7 +22622,7 @@ msgstr "Bölgenin bayrağını tahmin et"
 #: kgeography.cpp:109
 #, kde-format
 msgid "&Open Map..."
-msgstr "&Harita Aç..."
+msgstr "&Harita Aç…"
 
 #: kgeography.cpp:114
 #, kde-format
@@ -22772,7 +22772,7 @@ msgstr "&Soru Hizalaması"
 #: kgeographyoptions.ui:23
 #, kde-format
 msgid "Top-l&eft"
-msgstr "Üst-s&ol"
+msgstr "Üst s&ol"
 
 #. i18n: ectx: property (text), widget (QRadioButton, topRadio)
 #: kgeographyoptions.ui:30
@@ -22784,7 +22784,7 @@ msgstr "&Üst"
 #: kgeographyoptions.ui:37
 #, kde-format
 msgid "Top-r&ight"
-msgstr "Üst-sa&ğ"
+msgstr "Üst sa&ğ"
 
 #. i18n: ectx: property (text), widget (QRadioButton, leftRadio)
 #: kgeographyoptions.ui:44
@@ -22808,7 +22808,7 @@ msgstr "&Sağ"
 #: kgeographyoptions.ui:65
 #, kde-format
 msgid "Bottom-le&ft"
-msgstr "Alt-&sol"
+msgstr "Alt &sol"
 
 #. i18n: ectx: property (text), widget (QRadioButton, bottomRadio)
 #: kgeographyoptions.ui:72
@@ -22820,7 +22820,7 @@ msgstr "&Alt"
 #: kgeographyoptions.ui:79
 #, kde-format
 msgid "Bottom-ri&ght"
-msgstr "Alt-sa&ğ"
+msgstr "Alt sa&ğ"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_waitsForValidation)
 #: kgeographyoptions.ui:89
@@ -22829,8 +22829,8 @@ msgid ""
 "Whether the user will have to click \"Accept\" after choosing an answer or "
 "not"
 msgstr ""
-"Kullanıcının bir cevap seçtikten sonra \"Kabul Et\" düğmesine tıklamasının "
-"gerekip gerekmediği"
+"Kullanıcının bir yanıt seçtikten sonra “Kabul Et”e tıklamasının gerekip "
+"gerekmediği"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_waitsForValidation)
 #: kgeographyoptions.ui:92
@@ -22946,7 +22946,7 @@ msgstr "Chui"
 #, kde-format
 msgctxt "kyrgyzstan.kgm"
 msgid "Jalal-Abad"
-msgstr "Jalal-Abad"
+msgstr "Celalabad"
 
 #: kyrgyzstan.kgm:44
 #, kde-format
@@ -23837,7 +23837,7 @@ msgstr "Bir coğrafya öğrenme uygulaması"
 #: main.cpp:34
 #, kde-format
 msgid "© 2004-2005 Albert Astals Cid"
-msgstr "© 2004-2005 Albert Astals Cid"
+msgstr "© 2004–2005 Albert Astals Cid"
 
 #: main.cpp:35
 #, kde-format
@@ -24123,13 +24123,13 @@ msgstr "Churachandpur"
 #, kde-format
 msgctxt "@title:group"
 msgid "%1 is the capital of..."
-msgstr "%1 şuranın başkentidir..."
+msgstr "%1 şuranın başkentidir…"
 
 #: map.cpp:23
 #, kde-format
 msgctxt "@title:group"
 msgid "The capital of %1 is..."
-msgstr "%1 başkenti şudur..."
+msgstr "%1 başkenti şudur…"
 
 #: map.cpp:114
 #, kde-format
@@ -25366,7 +25366,7 @@ msgstr "Kuzey Brabant"
 #, kde-format
 msgctxt "netherlands.kgm"
 msgid "'s Hertogenbosch"
-msgstr "'s Hertogenbosch"
+msgstr "’s Hertogenbosch"
 
 #: netherlands.kgm:90
 #, kde-format
@@ -25438,7 +25438,7 @@ msgstr "The Hague"
 #, kde-format
 msgctxt "new-zealand.kgm"
 msgid "New-Zealand"
-msgstr "Yeni-Zelanda"
+msgstr "Yeni Zelanda"
 
 #: new-zealand.kgm:6
 #, kde-format
@@ -25456,7 +25456,7 @@ msgstr "Sınır"
 #, kde-format
 msgctxt "new-zealand.kgm"
 msgid "Not New-Zealand"
-msgstr "Yeni-Zelanda Değil"
+msgstr "Yeni Zelanda Değil"
 
 #: new-zealand.kgm:19
 #, kde-format
@@ -31510,7 +31510,7 @@ msgstr "Şarkiye"
 #, kde-format
 msgctxt "saudi_arabia.kgm"
 msgid "'Asir"
-msgstr "'Asir"
+msgstr "’Asir"
 
 #: saudi_arabia.kgm:64
 #, kde-format
@@ -32956,7 +32956,7 @@ msgstr "Zaragoza"
 #, kde-format
 msgctxt "sri-lanka.kgm"
 msgid "Sri-Lanka"
-msgstr "Sri-Lanka"
+msgstr "Sri Lanka"
 
 #: sri-lanka.kgm:7
 #, kde-format
@@ -32980,7 +32980,7 @@ msgstr "Su"
 #, kde-format
 msgctxt "sri-lanka.kgm"
 msgid "Not Sri-Lanka"
-msgstr "Sri-Lanka Değil"
+msgstr "Sri Lanka Değil"
 
 #: sri-lanka.kgm:24
 #, kde-format
@@ -41878,7 +41878,7 @@ msgstr "Zinjibar"
 #, kde-format
 msgctxt "yemen.kgm"
 msgid "'Adan"
-msgstr "'Adan"
+msgstr "’Adan"
 
 #: yemen.kgm:34
 #, kde-format
@@ -41926,7 +41926,7 @@ msgstr "Gayda"
 #, kde-format
 msgctxt "yemen.kgm"
 msgid "'Amran"
-msgstr "'Amran"
+msgstr "’Amran"
 
 #: yemen.kgm:69
 #, kde-format
