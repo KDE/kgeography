@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2025-02-07 10:33+0200\n"
+"PO-Revision-Date: 2025-03-08 15:44+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Generator: Lokalize 24.12.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -1906,7 +1906,7 @@ msgstr ""
 #, kde-format
 msgctxt "andhrapradesh.kgm"
 msgid "Warangal"
-msgstr ""
+msgstr "ורנגל"
 
 #: andhrapradesh.kgm:44
 #, kde-format
@@ -3874,7 +3874,7 @@ msgstr "נאגאון"
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Sonitpur"
-msgstr ""
+msgstr "סוניטפור"
 
 #: assam.kgm:109
 #, kde-format
@@ -11074,13 +11074,13 @@ msgstr "פרדריקסברג"
 #, kde-format
 msgctxt "denmark_counties.kgm"
 msgid "Hillerød"
-msgstr ""
+msgstr "הילרוד"
 
 #: denmark_counties.kgm:44 denmark_counties.kgm:45
 #, kde-format
 msgctxt "denmark_counties.kgm"
 msgid "Roskilde"
-msgstr ""
+msgstr "רוסקילה"
 
 #: denmark_counties.kgm:49
 #, kde-format
@@ -11092,7 +11092,7 @@ msgstr ""
 #, kde-format
 msgctxt "denmark_counties.kgm"
 msgid "Sorø"
-msgstr ""
+msgstr "סורה"
 
 #: denmark_counties.kgm:54
 #, kde-format
@@ -18174,7 +18174,7 @@ msgstr ""
 #, kde-format
 msgctxt "haryana.kgm"
 msgid "Kurukshetra"
-msgstr ""
+msgstr "קורוקשטרה"
 
 #: haryana.kgm:44 haryana.kgm:45
 #, kde-format
@@ -18204,7 +18204,7 @@ msgstr ""
 #, kde-format
 msgctxt "haryana.kgm"
 msgid "Sonipat"
-msgstr ""
+msgstr "סוניפט"
 
 #: haryana.kgm:69 haryana.kgm:70
 #, kde-format
@@ -18378,7 +18378,7 @@ msgstr ""
 #, kde-format
 msgctxt "himachal_pradesh.kgm"
 msgid "Lahaul and Spiti"
-msgstr ""
+msgstr "להאול וספיטי"
 
 #: himachal_pradesh.kgm:65
 #, kde-format
@@ -18396,13 +18396,13 @@ msgstr ""
 #, kde-format
 msgctxt "himachal_pradesh.kgm"
 msgid "Kinnaur"
-msgstr ""
+msgstr "קינור"
 
 #: himachal_pradesh.kgm:75
 #, kde-format
 msgctxt "himachal_pradesh.kgm"
 msgid "Reckong Peo"
-msgstr ""
+msgstr "רקונג פאו"
 
 #: honduras.kgm:5
 #, kde-format
@@ -27716,7 +27716,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Davao del Norte"
-msgstr ""
+msgstr "דבאו הצפונית"
 
 #: philippines.kgm:160
 #, kde-format
@@ -28286,7 +28286,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Zamboanga del Norte"
-msgstr ""
+msgstr "זמבואנגה הצפונית"
 
 #: philippines.kgm:405
 #, kde-format
@@ -28298,7 +28298,7 @@ msgstr "העיר דיפולוג"
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Zamboanga del Sur"
-msgstr ""
+msgstr "זמבואנגה הדרומית"
 
 #: philippines.kgm:410
 #, kde-format
