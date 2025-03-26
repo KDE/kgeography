@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2025-03-08 15:44+0200\n"
+"PO-Revision-Date: 2025-03-25 08:37+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -42598,7 +42598,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Zambezi"
-msgstr ""
+msgstr "זמבזי"
 
 #: zambia_districts.kgm:234
 #, kde-format
@@ -42754,7 +42754,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Lukulu"
-msgstr ""
+msgstr "לוקולו"
 
 #: zambia_districts.kgm:364
 #, kde-format
@@ -43186,7 +43186,7 @@ msgstr "מרונדרה"
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Mudzi"
-msgstr ""
+msgstr "מודזי"
 
 #: zimbabwe_districts.kgm:124
 #, kde-format
@@ -43222,7 +43222,7 @@ msgstr ""
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Chegutu"
-msgstr ""
+msgstr "צ׳גוטו"
 
 #: zimbabwe_districts.kgm:154
 #, kde-format
@@ -43240,7 +43240,7 @@ msgstr ""
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Kariba"
-msgstr ""
+msgstr "קריבה"
 
 #: zimbabwe_districts.kgm:169
 #, kde-format
@@ -43300,7 +43300,7 @@ msgstr ""
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Binga"
-msgstr ""
+msgstr "בינגה"
 
 #: zimbabwe_districts.kgm:219
 #, kde-format
