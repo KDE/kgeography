@@ -22566,7 +22566,7 @@ msgid ""
 "and you must find it on the map and click on it"
 msgstr ""
 "En esta prova se us proporciona un nom d'una divisió a l'esquerra davall el "
-"menú i heu de trobar-la al mapa i fer-hi clic"
+"menú i heu de trobar-la al mapa i clicar-hi"
 
 #: kgeography.cpp:64
 #, kde-format
@@ -22877,7 +22877,7 @@ msgstr "&Mou el consell d'eina del mapa en moure el ratolí"
 msgid ""
 "Choose if you want to keep current divisions colors or have random colors."
 msgstr ""
-"Escolliu si voleu mantindre els colors actuals de les divisions o bé generar "
+"Trieu si voleu mantindre els colors actuals de les divisions o bé generar "
 "colors aleatoris."
 
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_colorDisguise)
@@ -24187,7 +24187,7 @@ msgstr "%1 al mapa"
 #: mapchooser.cpp:38
 #, kde-format
 msgid "Choose Map to Use"
-msgstr "Escolliu el mapa que s'ha d'utilitzar"
+msgstr "Trieu el mapa que s'ha d'utilitzar"
 
 #: mapchooser.cpp:47
 #, kde-format
