@@ -548,11 +548,11 @@ guide the parent/teacher on how to help the child using it.
 >, la división será ignorada cuando se pregunten divisiones del mapa. Es como si la división no existiera en los modos de preguntas de &kgeography;. Si esta etiqueta vale <userinput
 >allowClickMode</userinput
 >, &kgeography; preguntará por la división en el modo <guibutton
->Ubicación de...</guibutton
+>Ubicación de…</guibutton
 >, pero no en otros modos de preguntas. Si la etiqueta vale <userinput
 >allowClickFlagMode</userinput
 >, &kgeography; preguntará por la división en el modo <guibutton
->Ubicación de...</guibutton
+>Ubicación de…</guibutton
 > y en las preguntas relacionadas con la bandera, pero no en otros modos de preguntas. Si fija el valor de esta etiqueta a <userinput
 >no</userinput
 >, se tendrá en cuenta la división en todos los modos (tanto de exploración como de preguntas). Esta etiqueta es opcional; cuando no existe la etiqueta <sgmltag class="starttag"
@@ -790,7 +790,7 @@ guide the parent/teacher on how to help the child using it.
 > <guimenu
 >Archivo</guimenu
 > <guimenuitem
->Abrir mapa...</guimenuitem
+>Abrir mapa…</guimenuitem
 > </menuchoice
 ></term>
 <listitem
