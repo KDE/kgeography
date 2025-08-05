@@ -23353,7 +23353,7 @@ msgstr "ناوجوجي اكمن"
 #, kde-format
 msgctxt "lithuania_municipalities.kgm"
 msgid "Alytus city"
-msgstr "آليتوس المدينة"
+msgstr "آليّتوس المدينة"
 
 #: lithuania_municipalities.kgm:34
 #, kde-format
