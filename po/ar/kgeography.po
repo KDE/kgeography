@@ -7434,7 +7434,7 @@ msgstr "تيباتي"
 #, kde-format
 msgctxt "cameroon_departments.kgm"
 msgid "Faro-et-Déo"
-msgstr "فارو ، وآخرون ، ديو"
+msgstr "فارو، وآخرون، ديو"
 
 #: cameroon_departments.kgm:30
 #, kde-format
@@ -7446,7 +7446,7 @@ msgstr "تيغنر"
 #, kde-format
 msgctxt "cameroon_departments.kgm"
 msgid "Mayo-Banyo"
-msgstr "مايو ، والحمام"
+msgstr "مايو، والحمام"
 
 #: cameroon_departments.kgm:35
 #, kde-format
@@ -7566,7 +7566,7 @@ msgstr "ياوندي"
 #, kde-format
 msgctxt "cameroon_departments.kgm"
 msgid "Nyong-et-Kellé"
-msgstr "نيونغ ، وآخرون ، كيلي"
+msgstr "نيونغ، وآخرون، كيلي"
 
 #: cameroon_departments.kgm:85
 #, kde-format
@@ -7662,7 +7662,7 @@ msgstr "ماروا"
 #, kde-format
 msgctxt "cameroon_departments.kgm"
 msgid "Logone-et-Chari"
-msgstr "وغون ، وآخرون ، شاري"
+msgstr "وغون، وآخرون، شاري"
 
 #: cameroon_departments.kgm:125
 #, kde-format
@@ -7998,7 +7998,7 @@ msgstr "فومبان"
 #, kde-format
 msgctxt "cameroon_departments.kgm"
 msgid "Dja-et-Lobo"
-msgstr "دجا ، وآخرون ، لوبو"
+msgstr "دجا، وآخرون، لوبو"
 
 #: cameroon_departments.kgm:265
 #, kde-format
@@ -10969,7 +10969,7 @@ msgstr "أولوموك"
 #, kde-format
 msgctxt "czech.kgm"
 msgid "Moravia-Silesia"
-msgstr "مورافيا ، سيليسيا"
+msgstr "مورافيا، سيليسيا"
 
 #: czech.kgm:75
 #, kde-format
@@ -11283,7 +11283,7 @@ msgstr "سانتا كروز دي باراهونا"
 #, kde-format
 msgctxt "dominican_republic.kgm"
 msgid "Dajabón"
-msgstr "داجابون ، حسبما ورد"
+msgstr "داجابون، حسبما ورد"
 
 #: dominican_republic.kgm:49
 #, kde-format
@@ -15453,7 +15453,7 @@ msgstr "دورنوش"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Ross-shire and Cromarty"
-msgstr "روس ، شيري و[كرومرتي]"
+msgstr "روس، شيري و[كرومرتي]"
 
 #: great-britain_counties.kgm:45
 #, kde-format
@@ -28543,7 +28543,7 @@ msgstr "كويافيا-بومرانيا"
 #, kde-format
 msgctxt "poland.kgm"
 msgid "Bydgoszcz, Toruń"
-msgstr "بيدغوز ، تورون"
+msgstr "بيدغوز، تورون"
 
 #: portugal_districts.kgm:5
 #, kde-format
@@ -33811,7 +33811,7 @@ msgstr "سولوتورن"
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Basle-City"
-msgstr "بازل ، المدينة"
+msgstr "بازل، المدينة"
 
 #: switzerland.kgm:80
 #, kde-format
@@ -40141,7 +40141,7 @@ msgstr "جنوب إفريقيا"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Pretoria, Bloemfontein and Cape Town"
-msgstr "بريتوريا ، وكيب تاون وبلومفونتين"
+msgstr "بريتوريا، وكيب تاون وبلومفونتين"
 
 #: world.kgm:507
 #, kde-format
