@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2025-09-03 10:49+0300\n"
+"PO-Revision-Date: 2025-09-03 18:14+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -2939,7 +2939,7 @@ msgstr ""
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Ziro"
-msgstr ""
+msgstr "זירו"
 
 #: arunachalpradesh.kgm:89
 #, kde-format
@@ -3772,7 +3772,7 @@ msgstr ""
 #, kde-format
 msgctxt "assam.kgm"
 msgid "Barpeta"
-msgstr ""
+msgstr "ברפטה"
 
 #: assam.kgm:44 assam.kgm:45
 #, kde-format
@@ -5284,7 +5284,7 @@ msgstr ""
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Motihari"
-msgstr ""
+msgstr "מוטיהרי"
 
 #: bihar.kgm:33 bihar.kgm:34
 #, kde-format
@@ -5326,7 +5326,7 @@ msgstr ""
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Purnia"
-msgstr ""
+msgstr "פורניה"
 
 #: bihar.kgm:68 bihar.kgm:69
 #, kde-format
@@ -6567,13 +6567,13 @@ msgstr "פאדה נגורמה"
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Tapoa"
-msgstr ""
+msgstr "טפואה"
 
 #: burkina_provinces.kgm:50
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Diapaga"
-msgstr ""
+msgstr "דיאפגה"
 
 #: burkina_provinces.kgm:54
 #, kde-format
@@ -6609,7 +6609,7 @@ msgstr "בולגו"
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Tenkodogo"
-msgstr ""
+msgstr "טנקודוגו"
 
 #: burkina_provinces.kgm:69
 #, kde-format
@@ -6753,7 +6753,7 @@ msgstr ""
 #, kde-format
 msgctxt "burkina_provinces.kgm"
 msgid "Ziniaré"
-msgstr ""
+msgstr "זיניארה"
 
 #: burkina_provinces.kgm:129
 #, kde-format
