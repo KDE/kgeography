@@ -10078,7 +10078,7 @@ msgstr "Jinan"
 #, kde-format
 msgctxt "china.kgm"
 msgid "Shanghai"
-msgstr "Şangay"
+msgstr "Şanhay"
 
 #: china.kgm:423
 #, kde-format
