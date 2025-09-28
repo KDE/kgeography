@@ -547,7 +547,7 @@ guide the parent/teacher on how to help the child using it.
 >allowClickFlagMode</userinput
 > gesetzt, wird auch bei den Flaggen-Übungen danach gefragt. Setzen Sie diese Marke auf den Wert <userinput
 >no</userinput
->, um damit das Land in alle Übungen (Erkunden und Abfragen) aufgenommen wird. Diese Marke <sgmltag class=" starttag"
+>, um damit das Land in alle Übungen (Erkunden und Abfragen) aufgenommen wird. Diese Marke <sgmltag class="starttag"
 >ignore</sgmltag
 > darf fehlen, dann wird als Wert <userinput
 >no</userinput
