@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2025-09-03 18:14+0300\n"
+"PO-Revision-Date: 2025-09-28 12:27+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.08.0\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -5446,7 +5446,7 @@ msgstr ""
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Bihar Sharif"
-msgstr ""
+msgstr "ביהאר שָׁרִיף"
 
 #: bihar.kgm:153 bihar.kgm:154
 #, kde-format
@@ -5530,7 +5530,7 @@ msgstr ""
 #, kde-format
 msgctxt "bihar.kgm"
 msgid "Jamui"
-msgstr ""
+msgstr "ג׳מוי"
 
 #: bihar.kgm:208 bihar.kgm:209
 #, kde-format
@@ -8836,7 +8836,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Valls"
-msgstr ""
+msgstr "ואלס"
 
 #: catalonia_comarques.kgm:29
 #, kde-format
@@ -8872,7 +8872,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "La Seu d'Urgell"
-msgstr ""
+msgstr "לה סאו ד׳אורז׳יי"
 
 #: catalonia_comarques.kgm:44
 #, kde-format
@@ -8896,7 +8896,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Igualada"
-msgstr ""
+msgstr "איגאלדה"
 
 #: catalonia_comarques.kgm:54
 #, kde-format
@@ -8908,7 +8908,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Manresa"
-msgstr ""
+msgstr "מנרסה"
 
 #: catalonia_comarques.kgm:59
 #, kde-format
@@ -8968,7 +8968,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "El Vendrell"
-msgstr ""
+msgstr "אל ונדרל"
 
 #: catalonia_comarques.kgm:84
 #, kde-format
@@ -9004,7 +9004,7 @@ msgstr "סרדניה"
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Puigcerdà"
-msgstr ""
+msgstr "פגסרדה"
 
 #: catalonia_comarques.kgm:99
 #, kde-format
@@ -9016,7 +9016,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Montblanc"
-msgstr ""
+msgstr "מונטבלנק"
 
 #: catalonia_comarques.kgm:104
 #, kde-format
@@ -9100,7 +9100,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Balaguer"
-msgstr ""
+msgstr "בלגר"
 
 #: catalonia_comarques.kgm:139
 #, kde-format
@@ -9196,13 +9196,13 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Ripoll"
-msgstr ""
+msgstr "ריפול"
 
 #: catalonia_comarques.kgm:179
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Segarra"
-msgstr ""
+msgstr "סגארה"
 
 #: catalonia_comarques.kgm:180
 #, kde-format
@@ -9232,7 +9232,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Santa Coloma de Farners"
-msgstr ""
+msgstr "סנטה קולומה דה פארנר"
 
 #: catalonia_comarques.kgm:194
 #, kde-format
@@ -9274,19 +9274,19 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Urgell"
-msgstr ""
+msgstr "אורחל"
 
 #: catalonia_comarques.kgm:210
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Tàrrega"
-msgstr ""
+msgstr "טרגה"
 
 #: catalonia_comarques.kgm:214
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Vall d'Aran"
-msgstr ""
+msgstr "עמק ארן"
 
 #: catalonia_comarques.kgm:215
 #, kde-format
@@ -9418,7 +9418,7 @@ msgstr ""
 #, kde-format
 msgctxt "chhattisgarh.kgm"
 msgid "Raipur"
-msgstr ""
+msgstr "ראיפור"
 
 #: chhattisgarh.kgm:69 chhattisgarh.kgm:70
 #, kde-format
@@ -11104,13 +11104,13 @@ msgstr ""
 #, kde-format
 msgctxt "denmark_counties.kgm"
 msgid "Næstved"
-msgstr ""
+msgstr "ניסטבד"
 
 #: denmark_counties.kgm:59
 #, kde-format
 msgctxt "denmark_counties.kgm"
 msgid "Funen"
-msgstr ""
+msgstr "פין"
 
 #: denmark_counties.kgm:60
 #, kde-format
@@ -11134,7 +11134,7 @@ msgstr ""
 #, kde-format
 msgctxt "denmark_counties.kgm"
 msgid "Ribe"
-msgstr ""
+msgstr "ריבֶּה"
 
 #: denmark_counties.kgm:74 denmark_counties.kgm:75
 #, kde-format
@@ -15546,7 +15546,7 @@ msgstr "אנגוס"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Forfar"
-msgstr ""
+msgstr "פורפאר"
 
 #: great-britain_counties.kgm:84
 #, kde-format
@@ -15630,7 +15630,7 @@ msgstr "פייף"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Glenrothes"
-msgstr ""
+msgstr "גלנרות׳ס"
 
 #: great-britain_counties.kgm:119
 #, kde-format
@@ -15654,7 +15654,7 @@ msgstr "מידלות׳יאן"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Dalkeith"
-msgstr ""
+msgstr "דלקית׳"
 
 #: great-britain_counties.kgm:129
 #, kde-format
@@ -15714,7 +15714,7 @@ msgstr ""
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Rothesay"
-msgstr ""
+msgstr "רות׳סיי"
 
 #: great-britain_counties.kgm:154
 #, kde-format
@@ -15792,7 +15792,7 @@ msgstr "רוקסבורג"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Berwickshire"
-msgstr ""
+msgstr "ברוויקשייר"
 
 #: great-britain_counties.kgm:185
 #, kde-format
@@ -15888,7 +15888,7 @@ msgstr "נוטינגהאמשייר"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "West Bridgford"
-msgstr ""
+msgstr "וסט ברידג׳פורד"
 
 #: great-britain_counties.kgm:229
 #, kde-format
@@ -15984,7 +15984,7 @@ msgstr "נורת׳האמפטונשייר"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Huntingdon"
-msgstr ""
+msgstr "הנטינגדון"
 
 #: great-britain_counties.kgm:269
 #, kde-format
@@ -16296,7 +16296,7 @@ msgstr "קרמרת׳נשייר"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Llanelli"
-msgstr ""
+msgstr "לנלי"
 
 #: great-britain_counties.kgm:399
 #, kde-format
@@ -17628,13 +17628,13 @@ msgstr "גבול"
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "Kutch / Kachchh"
-msgstr ""
+msgstr "קוטץ׳"
 
 #: gujarat.kgm:20
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "Bhuj"
-msgstr ""
+msgstr "בהוג׳"
 
 #: gujarat.kgm:24
 #, kde-format
@@ -17742,7 +17742,7 @@ msgstr ""
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "Bhavnagar"
-msgstr ""
+msgstr "בהבנגר"
 
 #: gujarat.kgm:99 gujarat.kgm:100
 #, kde-format
@@ -17754,7 +17754,7 @@ msgstr ""
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "Vadodara"
-msgstr ""
+msgstr "ואדודארה"
 
 #: gujarat.kgm:109 gujarat.kgm:110
 #, kde-format
@@ -18180,7 +18180,7 @@ msgstr "קורוקשטרה"
 #, kde-format
 msgctxt "haryana.kgm"
 msgid "Karnal"
-msgstr ""
+msgstr "קארנל"
 
 #: haryana.kgm:49 haryana.kgm:50
 #, kde-format
@@ -18228,7 +18228,7 @@ msgstr ""
 #, kde-format
 msgctxt "haryana.kgm"
 msgid "Gurgaon"
-msgstr ""
+msgstr "גורגאון"
 
 #: haryana.kgm:84 haryana.kgm:85
 #, kde-format
@@ -18360,7 +18360,7 @@ msgstr ""
 #, kde-format
 msgctxt "himachal_pradesh.kgm"
 msgid "Shimla"
-msgstr ""
+msgstr "שימלה"
 
 #: himachal_pradesh.kgm:54 himachal_pradesh.kgm:55
 #, kde-format
@@ -22242,7 +22242,7 @@ msgstr ""
 #, kde-format
 msgctxt "jharkhand.kgm"
 msgid "Jamshedpur"
-msgstr ""
+msgstr "ג׳אמשדפור"
 
 #: jharkhand.kgm:64 jharkhand.kgm:65
 #, kde-format
@@ -24052,7 +24052,7 @@ msgstr ""
 #, kde-format
 msgctxt "manipur.kgm"
 msgid "Imphal West"
-msgstr ""
+msgstr "אימפאל מערב"
 
 #: manipur.kgm:49
 #, kde-format
@@ -24082,7 +24082,7 @@ msgstr ""
 #, kde-format
 msgctxt "manipur.kgm"
 msgid "Imphal East"
-msgstr ""
+msgstr "אימפאל מזרח"
 
 #: manipur.kgm:89
 #, kde-format
@@ -27434,7 +27434,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Kalibo"
-msgstr ""
+msgstr "קאליבו"
 
 #: philippines.kgm:44
 #, kde-format
@@ -27446,7 +27446,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Legazpi City"
-msgstr ""
+msgstr "לגזפי"
 
 #: philippines.kgm:49
 #, kde-format
@@ -27476,7 +27476,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Aurora"
-msgstr ""
+msgstr "אורורה"
 
 #: philippines.kgm:60
 #, kde-format
@@ -27512,43 +27512,43 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Batanes"
-msgstr ""
+msgstr "בטאנס"
 
 #: philippines.kgm:75
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Basco"
-msgstr ""
+msgstr "בסקו"
 
 #: philippines.kgm:79
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Batangas"
-msgstr ""
+msgstr "באטאנגס"
 
 #: philippines.kgm:80
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Batangas City"
-msgstr ""
+msgstr "באטאנגס סיטי"
 
 #: philippines.kgm:84
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Benguet"
-msgstr ""
+msgstr "בנגוט"
 
 #: philippines.kgm:85
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "La Trinidad"
-msgstr ""
+msgstr "לה טרינידד"
 
 #: philippines.kgm:89
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Biliran"
-msgstr ""
+msgstr "ביליראן"
 
 #: philippines.kgm:90
 #, kde-format
@@ -27566,7 +27566,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Tagbilaran City"
-msgstr ""
+msgstr "טגבילרן"
 
 #: philippines.kgm:99
 #, kde-format
@@ -27620,7 +27620,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Camarines Sur"
-msgstr ""
+msgstr "איי קמרינס"
 
 #: philippines.kgm:120
 #, kde-format
@@ -27632,7 +27632,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Camiguin"
-msgstr ""
+msgstr "קמיגין"
 
 #: philippines.kgm:125
 #, kde-format
@@ -27734,7 +27734,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Digos City"
-msgstr ""
+msgstr "דיגוס"
 
 #: philippines.kgm:169
 #, kde-format
@@ -27764,7 +27764,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Guimaras"
-msgstr ""
+msgstr "גימרס"
 
 #: philippines.kgm:180
 #, kde-format
@@ -27776,7 +27776,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Ifugao"
-msgstr ""
+msgstr "איפוגאו"
 
 #: philippines.kgm:185
 #, kde-format
@@ -27800,25 +27800,25 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Ilocos Sur"
-msgstr ""
+msgstr "אילוקוס סור"
 
 #: philippines.kgm:195
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Vigan City"
-msgstr ""
+msgstr "ויגאן"
 
 #: philippines.kgm:199
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Iloilo"
-msgstr ""
+msgstr "אילוילו"
 
 #: philippines.kgm:200
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Iloilo City"
-msgstr ""
+msgstr "אילוילו סיטי"
 
 #: philippines.kgm:204
 #, kde-format
@@ -27836,7 +27836,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Kalinga"
-msgstr ""
+msgstr "קלינגה"
 
 #: philippines.kgm:210
 #, kde-format
@@ -27872,7 +27872,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Lanao del Norte"
-msgstr ""
+msgstr "לאנאו דל נורטה (הצפונית)"
 
 #: philippines.kgm:225
 #, kde-format
@@ -27884,25 +27884,25 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Lanao del Sur"
-msgstr ""
+msgstr "לאנאו דל סור (הדרומית)"
 
 #: philippines.kgm:230
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Marawi City"
-msgstr ""
+msgstr "מאראווי"
 
 #: philippines.kgm:234
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Leyte"
-msgstr ""
+msgstr "לייטה"
 
 #: philippines.kgm:235
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Tacloban City"
-msgstr ""
+msgstr "טקלובן"
 
 #: philippines.kgm:239
 #, kde-format
@@ -27968,7 +27968,7 @@ msgstr "קגאיאן דה אורו"
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Mountain Province"
-msgstr ""
+msgstr "נפת ההר"
 
 #: philippines.kgm:265
 #, kde-format
@@ -27992,13 +27992,13 @@ msgstr "בקולוד סיטי"
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Negros Oriental"
-msgstr ""
+msgstr "נגרוס אוריינטל"
 
 #: philippines.kgm:275
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Dumaguete City"
-msgstr ""
+msgstr "דומגטה"
 
 #: philippines.kgm:279
 #, kde-format
@@ -28070,7 +28070,7 @@ msgstr "פלאוואן"
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Puerto Princesa City"
-msgstr ""
+msgstr "פוארטו פרינססה"
 
 #: philippines.kgm:309
 #, kde-format
@@ -28082,25 +28082,25 @@ msgstr "פמפנגה"
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Pangasinan"
-msgstr ""
+msgstr "פנגסינאן"
 
 #: philippines.kgm:315
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Lingayen"
-msgstr ""
+msgstr "לינגאיין"
 
 #: philippines.kgm:319
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Quezon"
-msgstr ""
+msgstr "קזון"
 
 #: philippines.kgm:320
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Lucena City"
-msgstr ""
+msgstr "אליסנה"
 
 #: philippines.kgm:324
 #, kde-format
@@ -28142,7 +28142,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Catbalogan"
-msgstr ""
+msgstr "קטבאלוגאן"
 
 #: philippines.kgm:344
 #, kde-format
@@ -28160,7 +28160,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Siquijor"
-msgstr ""
+msgstr "סיקיהור"
 
 #: philippines.kgm:354
 #, kde-format
@@ -28190,13 +28190,13 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Southern Leyte"
-msgstr ""
+msgstr "לייטה הדרומי"
 
 #: philippines.kgm:365
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Maasin City"
-msgstr ""
+msgstr "מאסין"
 
 #: philippines.kgm:369
 #, kde-format
@@ -28220,7 +28220,7 @@ msgstr "סולו"
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Jolo"
-msgstr ""
+msgstr "הולו"
 
 #: philippines.kgm:379
 #, kde-format
@@ -28274,7 +28274,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Zambales"
-msgstr ""
+msgstr "סאמבאלס"
 
 #: philippines.kgm:400
 #, kde-format
@@ -28310,7 +28310,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Zamboanga Sibugay"
-msgstr ""
+msgstr "זמבואנגה סיבוגאי"
 
 #: philippines.kgm:415
 #, kde-format
@@ -29090,7 +29090,7 @@ msgstr "ארסיבו"
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Arroyo"
-msgstr ""
+msgstr "ארויו"
 
 #: puertorico.kgm:127
 #, kde-format
@@ -29150,7 +29150,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Cayey"
-msgstr ""
+msgstr "קאיי"
 
 #: puertorico.kgm:227
 #, kde-format
@@ -29174,7 +29174,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Coamo"
-msgstr ""
+msgstr "קואמו"
 
 #: puertorico.kgm:267
 #, kde-format
@@ -29198,7 +29198,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Dorado"
-msgstr ""
+msgstr "דוראדו"
 
 #: puertorico.kgm:307
 #, kde-format
@@ -29258,7 +29258,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Humacao"
-msgstr ""
+msgstr "חומאקו"
 
 #: puertorico.kgm:407
 #, kde-format
@@ -29270,7 +29270,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Jayuya"
-msgstr ""
+msgstr "חיויה"
 
 #: puertorico.kgm:427
 #, kde-format
@@ -29426,7 +29426,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "San Germán"
-msgstr ""
+msgstr "סאן חרמיאן"
 
 #: puertorico.kgm:687
 #, kde-format
@@ -29474,19 +29474,19 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Utuado"
-msgstr ""
+msgstr "אוטואדו"
 
 #: puertorico.kgm:767
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Vega Alta"
-msgstr ""
+msgstr "ווגה אלטה"
 
 #: puertorico.kgm:777
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Vega Baja"
-msgstr ""
+msgstr "ווגה באחה"
 
 #: puertorico.kgm:787
 #, kde-format
@@ -29504,7 +29504,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Yabucoa"
-msgstr ""
+msgstr "יבוקה"
 
 #: puertorico.kgm:817
 #, kde-format
@@ -37442,7 +37442,7 @@ msgstr "פו לי"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Ha Noi"
-msgstr ""
+msgstr "האנוי"
 
 #: vietnam.kgm:154
 #, kde-format
@@ -37688,7 +37688,7 @@ msgstr "שאוקפ צ׳אנג"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Son La"
-msgstr ""
+msgstr "סן לה"
 
 #: vietnam.kgm:289 vietnam.kgm:290
 #, kde-format
@@ -39442,7 +39442,7 @@ msgstr "קולקטה"
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Hooghly "
-msgstr ""
+msgstr "הוגלי"
 
 #: westbengal.kgm:109
 #, kde-format
@@ -42364,7 +42364,7 @@ msgstr "קבווה"
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Kapiri Mposhi"
-msgstr ""
+msgstr "קפירי מפושי"
 
 #: zambia_districts.kgm:39
 #, kde-format
@@ -42382,13 +42382,13 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Serenje"
-msgstr ""
+msgstr "סרנז׳ה"
 
 #: zambia_districts.kgm:54
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Chililabombwe"
-msgstr ""
+msgstr "צ׳ילילבומבווה"
 
 #: zambia_districts.kgm:59
 #, kde-format
@@ -42592,7 +42592,7 @@ msgstr "מווינילונגה"
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Solwezi"
-msgstr ""
+msgstr "סולווזי"
 
 #: zambia_districts.kgm:229
 #, kde-format
@@ -42610,7 +42610,7 @@ msgstr ""
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Chinsali"
-msgstr ""
+msgstr "צ׳ינסאלי"
 
 #: zambia_districts.kgm:244
 #, kde-format
@@ -42646,7 +42646,7 @@ msgstr "מבאלה"
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mpika"
-msgstr ""
+msgstr "מְפִּיקַה"
 
 #: zambia_districts.kgm:274
 #, kde-format
@@ -42712,7 +42712,7 @@ msgstr "ליווינגסטון"
 #, kde-format
 msgctxt "zambia_districts.kgm"
 msgid "Mazabuka"
-msgstr ""
+msgstr "מזאבוקה"
 
 #: zambia_districts.kgm:329
 #, kde-format
@@ -42886,7 +42886,7 @@ msgstr "צפון־מערב"
 #, kde-format
 msgctxt "zambia_provinces.kgm"
 msgid "Solwezi"
-msgstr "סולבזי"
+msgstr "סולווזי"
 
 #: zambia_provinces.kgm:59
 #, kde-format
