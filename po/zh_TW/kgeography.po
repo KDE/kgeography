@@ -16,14 +16,14 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2025-05-19 22:41+0900\n"
+"PO-Revision-Date: 2025-09-30 22:59+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 25.07.70\n"
+"X-Generator: Lokalize 25.11.70\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #, kde-format
@@ -3489,7 +3489,7 @@ msgstr "喬治亞 (Georgia)"
 #, kde-format
 msgctxt "asia.kgm"
 msgid "Tbilisi"
-msgstr "提比里西 (Tbilisi)"
+msgstr "特比利西 (Tbilisi)"
 
 #: asia.kgm:446
 #, kde-format
@@ -3609,7 +3609,7 @@ msgstr "泰國 (Thailand)"
 #, kde-format
 msgctxt "asia.kgm"
 msgid "Bangkok"
-msgstr "曼古 (Bangkok)"
+msgstr "曼谷 (Bangkok)"
 
 #: asia.kgm:546
 #, kde-format
@@ -14906,7 +14906,7 @@ msgstr "Telavi"
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Tbilisi"
-msgstr "Tbilisi"
+msgstr "特比利西"
 
 #: germany.kgm:5
 #, kde-format
@@ -34638,7 +34638,7 @@ msgstr "Phra Nakhon Si Ayutthaya"
 #, kde-format
 msgctxt "thailand.kgm"
 msgid "Bangkok"
-msgstr "曼古 (Bangkok)"
+msgstr "曼谷 (Bangkok)"
 
 #: thailand.kgm:254
 #, kde-format
@@ -41680,7 +41680,7 @@ msgstr "喬治亞 (Georgia)"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Tbilisi"
-msgstr "提比里西 (Tbilisi)"
+msgstr "特比利西 (Tbilisi)"
 
 #: world.kgm:1616
 #, kde-format
