@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2025-09-28 12:27+0300\n"
+"PO-Revision-Date: 2025-10-05 11:57+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -20892,7 +20892,7 @@ msgstr "סרדיניה"
 #, kde-format
 msgctxt "italy.kgm"
 msgid "Cagliari"
-msgstr "קךיארי"
+msgstr "קגליארי"
 
 #: italy.kgm:221
 #, kde-format
@@ -24920,7 +24920,7 @@ msgstr "ארצות הברית"
 #, kde-format
 msgctxt "ncamerica.kgm"
 msgid "Washington D.C."
-msgstr "וושינגטון די.סי."
+msgstr "וושינגטון די. סי."
 
 #: ncamerica.kgm:66
 #, kde-format
@@ -40828,7 +40828,7 @@ msgstr "ארצות הברית"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Washington D.C."
-msgstr "וושינגטון די.סי."
+msgstr "וושינגטון די. סי."
 
 #: world.kgm:1096
 #, kde-format
