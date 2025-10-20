@@ -1,6 +1,6 @@
 # Traducerea kgeography.po în Română
+# SPDX-FileCopyrightText: 2008, 2009, 2010, 2022, 2025 Sergiu Bivol <sergiu@cip.md>
 # This file is distributed under the same license as the kgeography package.
-# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2022.
 # Florentina Mușat <kuchiki14@yahoo.com>, 2010.
 # Victor Cărbune <victor.carbune@kdemail.net>, 2010.
 #
@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-05 00:35+0000\n"
-"PO-Revision-Date: 2022-02-16 11:27+0000\n"
+"PO-Revision-Date: 2025-10-19 23:05+0100\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
-"Language-Team: Romanian\n"
+"Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.2\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -15357,7 +15357,7 @@ msgstr "Mainz"
 #, kde-format
 msgctxt "germany.kgm"
 msgid "Saarland"
-msgstr "Renania de Nord-WestfaliaSaarland"
+msgstr "Saarland"
 
 #: germany.kgm:139
 #, kde-format
@@ -15414,24 +15414,19 @@ msgid "Erfurt"
 msgstr "Erfurt"
 
 #: ghana.kgm:5
-#, fuzzy, kde-format
-#| msgctxt "africa.kgm"
-#| msgid "Ghana"
+#, kde-format
 msgctxt "ghana.kgm"
 msgid "Ghana"
 msgstr "Ghana"
 
 #: ghana.kgm:7
-#, fuzzy, kde-format
-#| msgid "Regions"
+#, kde-format
 msgctxt "ghana.kgm"
 msgid "Regions"
 msgstr "Regiuni"
 
 #: ghana.kgm:9
-#, fuzzy, kde-format
-#| msgctxt "afghanistan.kgm"
-#| msgid "Frontier"
+#, kde-format
 msgctxt "ghana.kgm"
 msgid "Frontier"
 msgstr "Frontieră"
@@ -15445,25 +15440,19 @@ msgid "Gulf of Guinea"
 msgstr "Golful Oman"
 
 #: ghana.kgm:27
-#, fuzzy, kde-format
-#| msgctxt "australia.kgm"
-#| msgid "Coast"
+#, kde-format
 msgctxt "ghana.kgm"
 msgid "Ivory Coast"
-msgstr "Coastă"
+msgstr "Coasta de Fildeș"
 
 #: ghana.kgm:36
-#, fuzzy, kde-format
-#| msgctxt "africa.kgm"
-#| msgid "Burkina Faso"
+#, kde-format
 msgctxt "ghana.kgm"
 msgid "Burkina Faso"
 msgstr "Burkina Faso"
 
 #: ghana.kgm:45
-#, fuzzy, kde-format
-#| msgctxt "africa.kgm"
-#| msgid "Togo"
+#, kde-format
 msgctxt "ghana.kgm"
 msgid "Togo"
 msgstr "Togo"
