@@ -160,7 +160,7 @@
 </screenshot>
 </para>
 <para
->Et la fenêtre principale de &kgeography; apparaît avec la carte du Canada : <screenshot>
+>Et la fenêtre principale de &kgeography; apparait avec la carte du Canada : <screenshot>
 <screeninfo
 >Fenêtre principale de &kgeography;</screeninfo>
 	<mediaobject>
@@ -533,7 +533,7 @@ guide the parent/teacher on how to help the child using it.
 >Emplacement de...</guibutton
 > mais pas dans les autres modes. Si cette balise est paramétrée avec <userinput
 >no</userinput
->, alors, la division apparaîtra dans tous les modes (navigation et tests). Cette balise est optionnelle et lorsque la balise <sgmltag class="starttag"
+>, alors, la division apparaitra dans tous les modes (navigation et tests). Cette balise est optionnelle et lorsque la balise <sgmltag class="starttag"
 >ignore</sgmltag
 > est absente, cela fonctionne de la même façon qu'avec la balise <userinput
 >no</userinput
@@ -786,7 +786,7 @@ guide the parent/teacher on how to help the child using it.
 <listitem
 ><para
 ><action
->Ouvre la boîte de dialogue de sélection de carte. En saisissant rapidement les premières lettres de la carte recherchée, le curseur se positionnera sur la carte correspondante.</action
+>Ouvre la boite de dialogue de sélection de carte. En saisissant rapidement les premières lettres de la carte recherchée, le curseur se positionnera sur la carte correspondante.</action
 ></para
 ></listitem>
 </varlistentry>
