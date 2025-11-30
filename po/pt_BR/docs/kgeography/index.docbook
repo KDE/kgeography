@@ -80,9 +80,9 @@
 >&FDLNotice;</legalnotice>
 
 <date
->08/05/2016</date>
+>22/12/2020</date>
 <releaseinfo
->0.9 (Applications 16.04)</releaseinfo>
+>Applications 20.12</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -218,7 +218,13 @@
 </screenshot>
 </para>
 <para
->Explorar o Mapa: clicar com o &LMB; numa área do mapa, irá mostrar informações sobre essa área; clicar no pequeno ícone de informação do mapa, irá abrir a página do Wikipédia para essa divisão no navegador padrão do sistema: <screenshot>
+>Explorar o Mapa: clicar com o &LMB; numa área do mapa, irá mostrar informações sobre essa área; clicar no pequeno ícone &nbsp;<inlinemediaobject
+> <imageobject
+> <imagedata fileref="dialog-information.png" format="PNG"/> </imageobject
+> </inlinemediaobject
+> <guiicon
+>Informação</guiicon
+> do mapa, irá abrir a página do Wikipédia para essa divisão no navegador padrão do sistema: <screenshot>
 <screeninfo
 >Navegar no mapa</screeninfo>
 	<mediaobject>
@@ -233,7 +239,7 @@
 </screenshot>
 </para>
 <para
->Localização de Províncias ou Territórios: primeiro é solicitado quantas perguntas você quer <screenshot>
+>Localização de Províncias ou Territórios: primeiro é solicitado quantas perguntas você quer. <screenshot>
 <screeninfo
 >Quantas questões</screeninfo>
 	<mediaobject>
@@ -417,25 +423,31 @@ guide the parent/teacher on how to help the child using it.
 <title
 >Como fazer mapas</title>
 <para
->Um mapa no &kgeography; é feito por dois arquivos, um é a imagem do mapa e o outro é a sua descrição. </para>
+>Um mapa no &kgeography; é feito por dois arquivos, um é a imagem do mapa e o outro é a sua descrição.</para>
 <sect1 id="helper-tool">
 <title
 >Ferramenta de ajuda</title>
 <para
->Você poderá encontrar <ulink url="https://commits.kde.org/kgeography?path=tools/gen_map.pl"
+>Você poderá encontrar <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/gen_map.pl"
 >aqui</ulink
 > uma ferramenta (feita por Yann Verley) que o ajudou com o mapa de França. Para descobrir como funciona, basta executá-la e ler a mensagem de ajuda. Basicamente, ela cria o arquivo <literal role="extension"
 >.kgm</literal
 > a partir de um arquivo de texto simples e cria um arquivo com as cores que atribuiu a cada divisão, para que possa preencher o mapa de acordo com ele.</para>
 <para
->Existe outra ferramenta <ulink url="https://commits.kde.org/kgeography?path=tools/colorchecker.py"
+>Existe outra ferramenta <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
 >colorchecker.py</ulink
->, escrita por Albert Astals Cid. É necessário o PyQt4 para executá-la. Basta rodá-la com o arquivo .kgm como argumento (também precisa do arquivo PNG do mapa na mesma pasta). Isto dirá se algum pixel do mapa tem uma cor diferente que não esteja definida no arquivo .kgm (descrição). </para>
+>, escrita por Albert Astals Cid. É necessário o PyQt4 para executá-la. Basta rodá-la com o arquivo <literal role="extension"
+>.kgm</literal
+> como argumento (também precisa do arquivo <literal role="extension"
+>.png</literal
+> do mapa na mesma pasta). Isto dirá se algum pixel do mapa tem uma cor diferente que não esteja definida no arquivo <literal role="extension"
+>.kgm</literal
+> (descrição). </para>
 <tip>
 <para
 >Leia também o tutorial <ulink url="https://edu.kde.org/kgeography/tutorials/kgeography-addmaps.pdf"
 >Como adicionar mapas</ulink
-> na página Web do &kgeography;. </para>
+> no site do &kgeography;. </para>
 </tip>
 </sect1>
 <sect1 id="description-file">
@@ -445,6 +457,8 @@ guide the parent/teacher on how to help the child using it.
 >O arquivo de descrição é necessário e sua extensão é <literal role="extension"
 >.kgm</literal
 >. Ele deve iniciar com <sgmltag class="starttag"
+>?xml version="1.0" encoding="utf-8"</sgmltag
+>, depois <sgmltag class="starttag"
 >!DOCTYPE kgeographyMap</sgmltag
 >, seguido de <sgmltag class="starttag"
 >map</sgmltag
@@ -460,7 +474,9 @@ guide the parent/teacher on how to help the child using it.
 > e <sgmltag class="endtag"
 >mapFile</sgmltag
 >: o nome do arquivo (sem o local completo) que contém a imagem do mapa, &eg; <quote
->europa.png</quote
+><literal
+>europa.png</literal
+></quote
 >.</para>
 </listitem>
 <listitem>
@@ -470,7 +486,9 @@ guide the parent/teacher on how to help the child using it.
 > e <sgmltag class="endtag"
 >name</sgmltag
 >: o nome do mapa, &eg; <quote
->Europa</quote
+><literal
+>Europa</literal
+></quote
 >.</para>
 </listitem>
 <listitem>
@@ -479,7 +497,7 @@ guide the parent/teacher on how to help the child using it.
 >divisionsName</sgmltag
 > e <sgmltag class="endtag"
 >divisionsName</sgmltag
->: o nome geral das divisões deste mapa, isto é, Províncias, Estados, Países, etc.</para>
+>: o nome geral das divisões deste mapa, isto é, Províncias, Estados, Países, &etc;</para>
 </listitem>
 <listitem>
   <para
@@ -500,7 +518,9 @@ guide the parent/teacher on how to help the child using it.
 > e <sgmltag class="endtag"
 >name</sgmltag
 >: o nome da divisão, &eg; <quote
->Albânia</quote
+><literal
+>Albânia</literal
+></quote
 >.</para>
 </listitem>
 <listitem>
@@ -510,7 +530,9 @@ guide the parent/teacher on how to help the child using it.
 > e <sgmltag class="endtag"
 >capital</sgmltag
 >: o nome da capital da divisão, &eg; <quote
->Tirana</quote
+><literal
+>Tirana</literal
+></quote
 >.</para>
 </listitem>
 <listitem>
@@ -544,15 +566,23 @@ guide the parent/teacher on how to help the child using it.
 >, significa que é igual a <userinput
 >no</userinput
 >. Por exemplo, a <quote
->Argélia</quote
+><literal
+>Argélia</literal
+></quote
 > tem esta marca como <userinput
 >yes</userinput
 > no mapa da <quote
->Europa</quote
+><literal
+>Europa</literal
+></quote
 >, o que significa que a <quote
->Argélia</quote
+><literal
+>Argélia</literal
+></quote
 > não fará parte de qualquer questionário sobre o mapa da <quote
->Europa</quote
+><literal
+>Europa</literal
+></quote
 >.</para>
 </listitem>
 <listitem>
@@ -562,12 +592,26 @@ guide the parent/teacher on how to help the child using it.
 > e <sgmltag class="endtag"
 >flag</sgmltag
 >: o arquivo (sem qualquer informação da sua localização) que contém a bandeira da divisão, &eg; <quote
->albania.png</quote
+><literal
+>albania.png</literal
+></quote
 >. Esta marca é opcional. Não é necessário para as divisões cuja marca <sgmltag class="starttag"
 >ignore</sgmltag
 > seja igual a <userinput
 >yes</userinput
 >.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blurredflag</sgmltag
+> e <sgmltag class="endtag"
+>blurredflag</sgmltag
+>: o arquivo (sem nenhum caminho) contendo a bandeira borrada da divisão, por exemplo, <quote
+><literal
+>blurred_albania.png</literal
+></quote
+>. Esta tag é opcional. Ela deve ser usada em situações onde a bandeira tem o nome da divisão à qual pertence escrito nela. Isso pode tornar os jogos de adivinhação da bandeira muito fáceis e, portanto, o envio das bandeiras com o texto borrado é incentivado.</para>
 </listitem>
 <listitem>
   <para
@@ -583,7 +627,9 @@ guide the parent/teacher on how to help the child using it.
 >falseCapital</sgmltag
 > e <sgmltag class="endtag"
 >falseCapital</sgmltag
->: Poderão existir vários pares de 'falseCapital', sendo usados para conter uma lista de respostas falsas para a questão da capital, em vez de escolher as respostas falsas entre as capitais de outras divisões.</para>
+>: Poderão existir vários pares de <userinput
+>falseCapital</userinput
+>, sendo usados para conter uma lista de respostas falsas para a questão da capital, em vez de escolher as respostas falsas entre as capitais de outras divisões.</para>
 </listitem>
 </itemizedlist>
  </para>
@@ -618,11 +664,17 @@ guide the parent/teacher on how to help the child using it.
 <tip>
  <para
 >É conveniente criar 2 ou 3 divisões falsas, como a <quote
->Água</quote
+><literal
+>Água</literal
+></quote
 >, <quote
->Fronteira</quote
+><literal
+>Fronteira</literal
+></quote
 > e <quote
->Costa</quote
+><literal
+>Costa</literal
+></quote
 > e configurá-las com a marca <sgmltag class="starttag"
 >ignore</sgmltag
 > igual a <userinput
@@ -630,7 +682,9 @@ guide the parent/teacher on how to help the child using it.
 >. Não se esqueça de <userinput
 >não definir</userinput
 > a cor para qualquer <quote
->Fronteira</quote
+><literal
+>Fronteira</literal
+></quote
 > como sendo 0,0,0 em RGB. Torne-a algo do tipo 1,1,1 para que apareça um contorno da fronteira enquanto coloca uma divisão no mapa. </para>
 </tip>
  <important>
@@ -650,9 +704,7 @@ guide the parent/teacher on how to help the child using it.
 >mapa-múndi político</ulink
 >, tirar uma imagem dele e trabalhar a partir daí. Cada divisão do mapa deverá ter apenas uma cor. Para fazer isso, poderá usar programas de processamento de imagem, como o <application
 >Gimp</application
-> e o <application
->Kolourpaint</application
->. </para>
+> e o &kolourpaint;. </para>
 </sect1>
 <sect1 id="flags">
 <title
@@ -662,13 +714,17 @@ guide the parent/teacher on how to help the child using it.
 >bandeira</sgmltag
 >, você deverá indicar os arquivos das bandeiras. Terão que estar no formato <acronym
 >PNG</acronym
-> e o ideal é que tenham 300x200 pixels e exista um arquivo <acronym
->SVG</acronym
-> para ele. Para obter bandeiras em <acronym
->SVG</acronym
-> de quase todos os países do mundo e de algumas divisões, você poderá consultar a <ulink url="http://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770"
+> e o ideal é que tenham 300x200 pixels e exista um arquivo &SVG; para ele. Para obter bandeiras em &SVG; de quase todos os países do mundo e de algumas divisões, você poderá consultar a <ulink url="http://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770"
 >coleção de bandeiras do Sodipodi</ulink
 >. </para>
+<para
+>Como mencionado anteriormente, recomendamos que você forneça arquivos de bandeiras borradas para bandeiras que tenham a divisão escrita nelas. Os mesmos requisitos se aplicam aos arquivos de bandeiras borradas, assim como aos arquivos de bandeiras regulares. Embora não haja uma notação de nomenclatura prescrita para os arquivos borrados, recomendamos salvá-los com o nome da bandeira original prefixado com <literal
+>blurred_</literal
+>, por exemplo: <quote
+><literal
+>blurred_albania.png</literal
+></quote
+> </para>
 </sect1>
 <sect1 id="how-to-test">
 <title
@@ -709,7 +765,9 @@ guide the parent/teacher on how to help the child using it.
 > na linha de comando. </para>
 <tip>
 <para
->Use a ferramenta colorchecker.py das ferramentas de ajuda para verificar se alguma cor extra foi deixada no mapa que não está definida no arquivo .kgm. </para>
+>Use a ferramenta colorchecker.py das ferramentas de ajuda para verificar se alguma cor extra foi deixada no mapa que não está definida no arquivo <literal role="extension"
+>.kgm</literal
+>. </para>
 </tip>
 </sect1>
 <sect1 id="non-political-maps">
@@ -789,7 +847,7 @@ guide the parent/teacher on how to help the child using it.
 ><para
 ><action
 >Sai</action
-> do &kgeography;</para
+> do &kgeography;.</para
 ></listitem>
 </varlistentry>
 </variablelist>
@@ -814,7 +872,7 @@ guide the parent/teacher on how to help the child using it.
 <listitem
 ><para
 ><action
->Vai no modo de zoom, em seguida, desenhe um retângulo para zoom em uma parte do mapa</action
+>Vai no modo de zoom, em seguida, desenhe um retângulo para zoom em uma parte do mapa.</action
 ></para
 ></listitem>
 </varlistentry>
@@ -831,7 +889,7 @@ guide the parent/teacher on how to help the child using it.
 ><para
 ><action
 >Restaura</action
-> o mapa para o seu tamanho original, como definido no arquivo de mapas. Um clique com o &RMB; no modo de ampliação realiza a mesma ação</para
+> o mapa para o seu tamanho original, como definido no arquivo de mapas. Um clique com o &RMB; no modo de ampliação realiza a mesma ação.</para
 ></listitem>
 </varlistentry>
 <varlistentry>
@@ -847,7 +905,7 @@ guide the parent/teacher on how to help the child using it.
 ><para
 ><action
 >Coloca</action
-> o mapa em modo de ampliação automática para ocupar o máximo de espaço possível ao redimensionar a janela do &kgeography;</para
+> o mapa em modo de ampliação automática para ocupar o máximo de espaço possível ao redimensionar a janela do &kgeography;.</para
 ></listitem>
 </varlistentry>
 <varlistentry>
@@ -877,7 +935,7 @@ guide the parent/teacher on how to help the child using it.
 <para
 >O &kgeography; tem os itens do menu <guimenu
 >Configurações</guimenu
-> comuns do &kde;. Para mais informações, leia a seção do <ulink url="help:/fundamentals/ui.html#menus-help"
+> comuns do &kde;. Para mais informações, leia a seção do <ulink url="help:/fundamentals/menus.html#menus-help"
 >Menu Configurações</ulink
 > nos Fundamentos do &kde;. </para>
 
@@ -889,7 +947,7 @@ guide the parent/teacher on how to help the child using it.
 <para
 >O &kgeography; tem um menu de <guimenu
 >Ajuda</guimenu
-> padrão do &kde;, tal como se encontra descrito nos <ulink url="help:/fundamentals/ui.html#menus-help"
+> padrão do &kde;, tal como se encontra descrito nos <ulink url="help:/fundamentals/menus.html#menus-help"
 >Fundamentos do &kde;</ulink
 >, com dois itens adicionais:</para>
 	
@@ -971,7 +1029,7 @@ guide the parent/teacher on how to help the child using it.
 ></term>
 <listitem
 ><para
->Se estiver ativo, ao pressionar Espaço, irá acionar o botão sob o ponteiro do mouse.</para
+>Se estiver ativo, ao pressionar &Space;, irá acionar o botão sob o ponteiro do mouse.</para
 ></listitem>
 </varlistentry>
 <varlistentry>
