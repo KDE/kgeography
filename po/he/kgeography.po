@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 14:38+0000\n"
-"PO-Revision-Date: 2025-11-02 14:06+0200\n"
+"PO-Revision-Date: 2025-12-30 14:58+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.08.2\n"
+"X-Generator: Lokalize 25.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -15456,7 +15456,7 @@ msgstr "דורנוץ׳"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Ross-shire and Cromarty"
-msgstr ""
+msgstr "רוס-שייר וקרומרטי"
 
 #: great-britain_counties.kgm:45
 #, kde-format
@@ -15720,7 +15720,7 @@ msgstr "רות׳סיי"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Wigtownshire"
-msgstr ""
+msgstr "ויגטאונשייר"
 
 #: great-britain_counties.kgm:155
 #, kde-format
@@ -15798,7 +15798,7 @@ msgstr "ברוויקשייר"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Duns"
-msgstr ""
+msgstr "דאנס"
 
 #: great-britain_counties.kgm:189
 #, kde-format
@@ -15840,7 +15840,7 @@ msgstr "וסטמורלנד"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Appleby-in-Westmorland"
-msgstr ""
+msgstr "אפלבי-אין-ווסטמורלנד"
 
 #: great-britain_counties.kgm:209
 #, kde-format
@@ -16344,7 +16344,7 @@ msgstr "ראדנורשייר"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "New Radnor"
-msgstr ""
+msgstr "ניו רדנור"
 
 #: great-britain_counties.kgm:419
 #, kde-format
@@ -17640,13 +17640,13 @@ msgstr "בהוג׳"
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "Banaskantha"
-msgstr ""
+msgstr "באנסקאנתה"
 
 #: gujarat.kgm:25
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "Palanpur"
-msgstr ""
+msgstr "פּאלנפור"
 
 #: gujarat.kgm:29 gujarat.kgm:30
 #, kde-format
@@ -17718,13 +17718,13 @@ msgstr ""
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "Jamnagar"
-msgstr ""
+msgstr "ג׳אמנגאר"
 
 #: gujarat.kgm:79 gujarat.kgm:80
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "Rajkot"
-msgstr ""
+msgstr "רג׳קוט"
 
 #: gujarat.kgm:84 gujarat.kgm:85
 #, kde-format
@@ -17736,7 +17736,7 @@ msgstr ""
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "Amreli"
-msgstr ""
+msgstr "אמרלי"
 
 #: gujarat.kgm:94 gujarat.kgm:95
 #, kde-format
@@ -17748,7 +17748,7 @@ msgstr "בהבנגר"
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "Anand"
-msgstr ""
+msgstr "אנאנד"
 
 #: gujarat.kgm:104 gujarat.kgm:105
 #, kde-format
@@ -17766,19 +17766,19 @@ msgstr ""
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "Narmada"
-msgstr ""
+msgstr "נרמנדה"
 
 #: gujarat.kgm:115
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "Rajpipla"
-msgstr ""
+msgstr "רג׳פיפלה"
 
 #: gujarat.kgm:119 gujarat.kgm:120
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "Surat"
-msgstr ""
+msgstr "סוראט"
 
 #: gujarat.kgm:124
 #, kde-format
@@ -17790,7 +17790,7 @@ msgstr ""
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "Vyara"
-msgstr ""
+msgstr "ויארה"
 
 #: gujarat.kgm:129
 #, kde-format
@@ -18342,7 +18342,7 @@ msgstr ""
 #, kde-format
 msgctxt "himachal_pradesh.kgm"
 msgid "Hamirpur"
-msgstr ""
+msgstr "האמירפור"
 
 #: himachal_pradesh.kgm:39 himachal_pradesh.kgm:40
 #, kde-format
@@ -24100,7 +24100,7 @@ msgstr ""
 #, kde-format
 msgctxt "manipur.kgm"
 msgid "Churachandpur"
-msgstr ""
+msgstr "צ׳וּרַצ׳אנדפּוּר"
 
 #: map.cpp:22
 #, kde-format
@@ -25928,7 +25928,7 @@ msgstr "אזור התעשייה קסונג"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "Kaesŏng Kong-ŏp Chigu"
-msgstr ""
+msgstr "אזור התעשייה קסונג"
 
 #: north_korea.kgm:74
 #, kde-format
@@ -25940,7 +25940,7 @@ msgstr "האזור התיירותי קומגאנגסאן"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "Kŭmgangsan Kwangwang Chigu"
-msgstr ""
+msgstr "האזור התיירותי קומגאנגסאן"
 
 #: north_korea.kgm:79
 #, kde-format
@@ -25952,7 +25952,7 @@ msgstr "האזור המנהלתי המיוחד שינויג׳ו"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "Sinŭiju T'ŭkpyŏl Haengjŏnggu"
-msgstr ""
+msgstr "האזור המנהלתי המיוחד שינויג׳ו"
 
 #: north_korea.kgm:84
 #, kde-format
@@ -27470,7 +27470,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Kabugao"
-msgstr ""
+msgstr "קבוגאו"
 
 #: philippines.kgm:59
 #, kde-format
@@ -28034,7 +28034,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Bayombong"
-msgstr ""
+msgstr "ביומבונג"
 
 #: philippines.kgm:294
 #, kde-format
@@ -29102,7 +29102,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Barranquitas"
-msgstr ""
+msgstr "ברנקיטס"
 
 #: puertorico.kgm:147
 #, kde-format
@@ -29396,7 +29396,7 @@ msgstr "פונסה"
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Quebradillas"
-msgstr ""
+msgstr "קוברדיאס"
 
 #: puertorico.kgm:637
 #, kde-format
@@ -37220,7 +37220,7 @@ msgstr "אנג יאנג"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Long Xuyen"
-msgstr ""
+msgstr "לונג סוין"
 
 #: vietnam.kgm:29 vietnam.kgm:30
 #, kde-format
@@ -37274,7 +37274,7 @@ msgstr "בין דין"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Qui Nhon"
-msgstr ""
+msgstr "קוי ניון"
 
 #: vietnam.kgm:64
 #, kde-format
@@ -37286,7 +37286,7 @@ msgstr "בין ייאנג"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Thu Dau Mot"
-msgstr ""
+msgstr "ת׳ו דאו מוט"
 
 #: vietnam.kgm:69
 #, kde-format
@@ -37598,7 +37598,7 @@ msgstr "נין טהואנג"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Phan Rang-Thap Cham"
-msgstr ""
+msgstr "פַּאן רַנְג-תַּאפ צַ׳אם"
 
 #: vietnam.kgm:244
 #, kde-format
@@ -38750,7 +38750,7 @@ msgstr "סנגל"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Shabelle"
-msgstr ""
+msgstr "שָׁבֵּלֶה"
 
 #: waters_world-class.kgm:129
 #, kde-format
@@ -38776,7 +38776,7 @@ msgstr "זמבזי"
 #, kde-format
 msgctxt "waters_world-class.kgm"
 msgid "Dalalven"
-msgstr ""
+msgstr "דאלבן"
 
 #: waters_world-class.kgm:149
 #, kde-format
