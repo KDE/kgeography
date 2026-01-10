@@ -334,14 +334,14 @@
 <para
 >Banderes de províncies i territoris: mostra un nom de província i heu de cercar la bandera correcta entre quatre opcions. <screenshot>
 <screeninfo
->Emparelleu la bandera amb la província</screeninfo>
+>Aparelleu la bandera amb la província</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="first-start12.png" format="PNG"/>
 	  </imageobject>
 	  <textobject>
 	    <phrase
->Emparelleu la bandera amb la província</phrase>
+>Aparelleu la bandera amb la província</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
