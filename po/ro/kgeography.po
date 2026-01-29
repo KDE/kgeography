@@ -1,5 +1,5 @@
 # Traducerea kgeography.po în Română
-# SPDX-FileCopyrightText: 2008, 2009, 2010, 2022, 2025 Sergiu Bivol <sergiu@cip.md>
+# SPDX-FileCopyrightText: 2008, 2009, 2010, 2022, 2025, 2026 Sergiu Bivol <sergiu@cip.md>
 # This file is distributed under the same license as the kgeography package.
 # Florentina Mușat <kuchiki14@yahoo.com>, 2010.
 # Victor Cărbune <victor.carbune@kdemail.net>, 2010.
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:48+0000\n"
-"PO-Revision-Date: 2025-10-19 23:05+0100\n"
+"PO-Revision-Date: 2026-01-28 22:29+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -31660,7 +31660,7 @@ msgstr "Tomsk"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tula Oblast"
-msgstr "uRegiunea Tula"
+msgstr "Regiunea Tula"
 
 #: russia_subjects.kgm:444
 #, kde-format
@@ -31690,7 +31690,7 @@ msgstr "Regiunea Ulyanovsk"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Ulyanovsk"
-msgstr "Ulyanovsk"
+msgstr "Ulianovsk"
 
 #: russia_subjects.kgm:461
 #, kde-format
@@ -31708,7 +31708,7 @@ msgstr "Chelyabinsk"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Zabaykalsky Krai"
-msgstr "Zabaykalsky Krai"
+msgstr "Zabaikalski Krai"
 
 #: russia_subjects.kgm:468
 #, kde-format
