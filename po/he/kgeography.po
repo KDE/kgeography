@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:48+0000\n"
-"PO-Revision-Date: 2026-02-02 21:36+0200\n"
+"PO-Revision-Date: 2026-03-20 08:13+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.12.1\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -22653,7 +22653,7 @@ msgstr "כללי"
 #: kgeography.cpp:203
 #, kde-format
 msgid "Could not open last used map. Error parsing %1: %2"
-msgstr "לא ניתן לפתוח את המפה האחרונה שהייתה בשימוש. שגיאת פענוח %1: %2"
+msgstr "לא ניתן לפתוח את המפה האחרונה שהייתה בשימוש. שגיאת פיענוח %1: %2"
 
 #: kgeography.cpp:211
 #, kde-format
@@ -24175,7 +24175,7 @@ msgstr "סינון מפות"
 #: mapchooser.cpp:76
 #, kde-format
 msgid "Error parsing %1: %2"
-msgstr "שגיאה בפענוח %1: %2"
+msgstr "שגיאה בפיענוח %1: %2"
 
 #: mapchooser.cpp:83
 #, kde-format
@@ -24185,7 +24185,7 @@ msgstr "למפה %1 יש את אותו השם כמו המפה %2"
 #: mapchooser.cpp:97
 #, kde-format
 msgid "Error parsing"
-msgstr "שגיאה בפענוח"
+msgstr "שגיאה בפיענוח"
 
 #: mapparser.cpp:50
 #, kde-format
