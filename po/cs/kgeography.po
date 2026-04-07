@@ -3,35 +3,37 @@
 # SPDX-FileCopyrightText: 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2024 Vít Pelčák <vit@pelcak.org>
 # Tomáš Chvátal <tomas.chvatal@gmail.com>, 2012, 2013.
 # SPDX-FileCopyrightText: 2021, 2022, 2023, 2024 Vit Pelcak <vit@pelcak.org>
+# SPDX-FileCopyrightText: 2026 Libor Filípek <filipek.libor@protonmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:48+0000\n"
-"PO-Revision-Date: 2024-04-17 09:33+0200\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
-"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2026-04-06 21:10+0200\n"
+"Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
+"Language-Team: \n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 24.02.1\n"
+"X-Generator: Poedit 3.8\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr ""
 "Tomáš Cajthaml,Miroslav Flídr,Jakub Friedl,Michal Švec,Klára Cihlářová,Vít "
-"Pelčák,David Kolibáč"
+"Pelčák,David Kolibáč,Libor Filípek"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 "tomas.cajthaml@seznam.cz,flidr@kky.zcu.cz,jfriedl@suse.cz,rebel@atrey.karlin."
-"mff.cuni.cz,koty@seznam.cz,vit@pelcak.org,david@kolibac.cz"
+"mff.cuni.cz,koty@seznam.cz,vit@pelcak.org,david@kolibac.cz,libor."
+"filipek@gmail.com"
 
 #: afghanistan.kgm:5
 #, kde-format
@@ -475,7 +477,7 @@ msgstr "Nenacházíte se v Africe"
 #, kde-format
 msgctxt "africa.kgm"
 msgid "Not Africa "
-msgstr "Nenacházíte se v Africe"
+msgstr "Nenacházíte se v Africe "
 
 #: africa.kgm:29
 #, kde-format
@@ -2834,7 +2836,7 @@ msgstr "Hawa"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Lower Dibang Valley"
-msgstr ""
+msgstr "Lower Dibang Valley"
 
 #: arunachalpradesh.kgm:40
 #, kde-format
@@ -2846,7 +2848,7 @@ msgstr "Roing"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Dibang Valley"
-msgstr ""
+msgstr "Dibang Valley"
 
 #: arunachalpradesh.kgm:45
 #, kde-format
@@ -2858,7 +2860,7 @@ msgstr "Anini"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Upper Siang"
-msgstr ""
+msgstr "Upper Siang"
 
 #: arunachalpradesh.kgm:50
 #, kde-format
@@ -2870,7 +2872,7 @@ msgstr "Yingkiong"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "East Siang"
-msgstr ""
+msgstr "East Siang"
 
 #: arunachalpradesh.kgm:55
 #, kde-format
@@ -2882,7 +2884,7 @@ msgstr "Pasighat"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "West Siang"
-msgstr ""
+msgstr "West Siang"
 
 #: arunachalpradesh.kgm:60
 #, kde-format
@@ -2900,7 +2902,7 @@ msgstr "Tawang"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "West Kameng"
-msgstr ""
+msgstr "West Kameng"
 
 #: arunachalpradesh.kgm:70
 #, kde-format
@@ -2912,7 +2914,7 @@ msgstr "Bomdila"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "East Kameng"
-msgstr ""
+msgstr "East Kameng"
 
 #: arunachalpradesh.kgm:75
 #, kde-format
@@ -2936,7 +2938,7 @@ msgstr "Yupia"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Lower Subansiri"
-msgstr ""
+msgstr "Lower Subansiri"
 
 #: arunachalpradesh.kgm:85
 #, kde-format
@@ -2960,7 +2962,7 @@ msgstr "Koloriang"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Upper Subansiri"
-msgstr ""
+msgstr "Upper Subansiri"
 
 #: arunachalpradesh.kgm:95
 #, kde-format
@@ -3829,7 +3831,7 @@ msgstr "Diphu"
 #, kde-format
 msgctxt "assam.kgm"
 msgid "North Cachar Hills"
-msgstr ""
+msgstr "North Cachar Hills"
 
 #: assam.kgm:75
 #, kde-format
@@ -3889,7 +3891,7 @@ msgstr "Lakhimpur"
 #, kde-format
 msgctxt "assam.kgm"
 msgid "North Lakhimpur"
-msgstr ""
+msgstr "North Lakhimpur"
 
 #: assam.kgm:114 assam.kgm:115
 #, kde-format
@@ -4765,7 +4767,7 @@ msgstr "Minsk"
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Brest Voblast"
-msgstr ""
+msgstr "Brestská oblast"
 
 #: belarus.kgm:31
 #, kde-format
@@ -4789,25 +4791,25 @@ msgstr "Gomel"
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Hrodna Voblast"
-msgstr ""
+msgstr "Grodenská oblast"
 
 #: belarus.kgm:45
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Hrodna"
-msgstr "Hrodna"
+msgstr "Grodno"
 
 #: belarus.kgm:51
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Mahilyow Voblast"
-msgstr ""
+msgstr "Mogilevská oblast"
 
 #: belarus.kgm:52
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Mahilyow"
-msgstr "Mahilyow"
+msgstr "Mogilev"
 
 #: belarus.kgm:58
 #, kde-format
@@ -5233,25 +5235,25 @@ msgstr "Okres"
 #, no-c-format, kde-format
 msgctxt "@title:group"
 msgid "The %1 district has its headquarters at..."
-msgstr ""
+msgstr "Okres %1 má své sídlo v..."
 
 #: bihar.kgm:8
 #, kde-format
 msgctxt "@title"
 msgid "Headquarters of Districts"
-msgstr ""
+msgstr "Hlavní sídla okresů"
 
 #: bihar.kgm:9
 #, no-c-format, kde-format
 msgctxt "@title:group"
 msgid "%1 is the district headquarters of..."
-msgstr ""
+msgstr "%1 je okresní sídlo..."
 
 #: bihar.kgm:10
 #, kde-format
 msgctxt "@title"
 msgid "District by Headquarters"
-msgstr ""
+msgstr "Okres podle hlavního sídla"
 
 #: bihar.kgm:13
 #, kde-format
@@ -7086,7 +7088,7 @@ msgstr "Dori"
 #, kde-format
 msgctxt "burkina_regions.kgm"
 msgid "Centre-Nord"
-msgstr ""
+msgstr "Centre-Nord"
 
 #: burkina_regions.kgm:30
 #, kde-format
@@ -7098,7 +7100,7 @@ msgstr "Kaya"
 #, kde-format
 msgctxt "burkina_regions.kgm"
 msgid "Nord"
-msgstr ""
+msgstr "Nord"
 
 #: burkina_regions.kgm:35
 #, kde-format
@@ -7110,7 +7112,7 @@ msgstr "Ouahigouya"
 #, kde-format
 msgctxt "burkina_regions.kgm"
 msgid "Plateau central"
-msgstr ""
+msgstr "Plateau central"
 
 #: burkina_regions.kgm:40
 #, kde-format
@@ -7122,7 +7124,7 @@ msgstr "Ziniaré"
 #, kde-format
 msgctxt "burkina_regions.kgm"
 msgid "Centre-Est"
-msgstr ""
+msgstr "Centre-Est"
 
 #: burkina_regions.kgm:45
 #, kde-format
@@ -7134,7 +7136,7 @@ msgstr "Tenkodogo"
 #, kde-format
 msgctxt "burkina_regions.kgm"
 msgid "Centre-Sud"
-msgstr ""
+msgstr "Centre-Sud"
 
 #: burkina_regions.kgm:50
 #, kde-format
@@ -7146,7 +7148,7 @@ msgstr "Manga"
 #, kde-format
 msgctxt "burkina_regions.kgm"
 msgid "Centre"
-msgstr ""
+msgstr "Centre"
 
 #: burkina_regions.kgm:55
 #, kde-format
@@ -7158,7 +7160,7 @@ msgstr "Ouagadougou"
 #, kde-format
 msgctxt "burkina_regions.kgm"
 msgid "Centre-Ouest"
-msgstr ""
+msgstr "Centre-Ouest"
 
 #: burkina_regions.kgm:60
 #, kde-format
@@ -7194,7 +7196,7 @@ msgstr "Bobo Dioulasso"
 #, kde-format
 msgctxt "burkina_regions.kgm"
 msgid "Cascades"
-msgstr ""
+msgstr "Cascades"
 
 #: burkina_regions.kgm:75
 #, kde-format
@@ -7206,7 +7208,7 @@ msgstr "Banfora"
 #, kde-format
 msgctxt "burkina_regions.kgm"
 msgid "Sud-Ouest"
-msgstr ""
+msgstr "Sud-Ouest"
 
 #: burkina_regions.kgm:80
 #, kde-format
@@ -9427,7 +9429,7 @@ msgstr "Raipur"
 #, kde-format
 msgctxt "chhattisgarh.kgm"
 msgid "Rajnandgaon"
-msgstr " Kananga"
+msgstr "Kananga"
 
 #: chhattisgarh.kgm:74 chhattisgarh.kgm:75
 #, kde-format
@@ -9547,7 +9549,7 @@ msgstr "Valparaíso"
 #, kde-format
 msgctxt "chile.kgm"
 msgid "Libertador General Bernardo O'Higgins"
-msgstr ""
+msgstr "Libertador General Bernardo O'Higgins"
 
 #: chile.kgm:50
 #, kde-format
@@ -9655,7 +9657,7 @@ msgstr "Valdivia"
 #, kde-format
 msgctxt "chile.kgm"
 msgid "Arica and Parinacota"
-msgstr ""
+msgstr "Arica a Parinacota"
 
 #: chile.kgm:95
 #, kde-format
@@ -10483,13 +10485,13 @@ msgstr "Pereira"
 #, kde-format
 msgctxt "colombia.kgm"
 msgid "St Andrew and Providence"
-msgstr ""
+msgstr "San Andrés a Providencia"
 
 #: colombia.kgm:271
 #, kde-format
 msgctxt "colombia.kgm"
 msgid "St Andrew"
-msgstr "St Andrew"
+msgstr "San Andrés"
 
 #: colombia.kgm:279
 #, kde-format
@@ -11017,7 +11019,7 @@ msgstr "Jihlava"
 #, kde-format
 msgctxt "denmark_counties.kgm"
 msgid "Denmark (Counties) (1970-2006)"
-msgstr ""
+msgstr "Dánsko (hrabství) (1970–2006)"
 
 #: denmark_counties.kgm:6
 #, kde-format
@@ -11469,7 +11471,7 @@ msgstr "San Felipe de Puerto Plata"
 #, kde-format
 msgctxt "dominican_republic.kgm"
 msgid "Hermanas Mirabal"
-msgstr ""
+msgstr "Hermanas Mirabal"
 
 #: dominican_republic.kgm:130
 #, kde-format
@@ -13173,7 +13175,7 @@ msgstr "Jyväskylä"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Finland Proper"
-msgstr ""
+msgstr "Samotné Finsko"
 
 #: finland_regions.kgm:45
 #, kde-format
@@ -13197,7 +13199,7 @@ msgstr "Kajaani"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Lapland"
-msgstr "Lapland"
+msgstr "Laponsko"
 
 #: finland_regions.kgm:55
 #, kde-format
@@ -13209,7 +13211,7 @@ msgstr "Rovaniemi"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Ostrobothnia"
-msgstr "Ostrobothnia"
+msgstr "Pohjanmaa"
 
 #: finland_regions.kgm:60
 #, kde-format
@@ -13221,7 +13223,7 @@ msgstr "Vaasa"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Central Ostrobothnia"
-msgstr ""
+msgstr "Střední Pohjanmaa"
 
 #: finland_regions.kgm:65
 #, kde-format
@@ -13233,7 +13235,7 @@ msgstr "Kokkola"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Northern Ostrobothnia"
-msgstr ""
+msgstr "Severní Pohjanmaa"
 
 #: finland_regions.kgm:70
 #, kde-format
@@ -13245,7 +13247,7 @@ msgstr "Oulu"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Southern Ostrobothnia"
-msgstr ""
+msgstr "Jižní Pohjanmaa"
 
 #: finland_regions.kgm:75
 #, kde-format
@@ -13257,7 +13259,7 @@ msgstr "Seinäjoki"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Päijänne-Tavastia"
-msgstr "Päijänne-Tavastia"
+msgstr "Päijät-Häme"
 
 #: finland_regions.kgm:80
 #, kde-format
@@ -13269,7 +13271,7 @@ msgstr "Lahti"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Tavastia Proper"
-msgstr "Tavastia Proper"
+msgstr "Kanta-Häme"
 
 #: finland_regions.kgm:85
 #, kde-format
@@ -13305,7 +13307,7 @@ msgstr "Pori"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Northern Savonia"
-msgstr "Northern Savonia"
+msgstr "Severní Savonie"
 
 #: finland_regions.kgm:100
 #, kde-format
@@ -13317,7 +13319,7 @@ msgstr "Kuopio"
 #, kde-format
 msgctxt "finland_regions.kgm"
 msgid "Southern Savonia"
-msgstr ""
+msgstr "Jižní Savonie"
 
 #: finland_regions.kgm:105
 #, kde-format
@@ -14631,7 +14633,7 @@ msgstr "Toulouse"
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Nouvelle-Aquitaine"
-msgstr ""
+msgstr "Nouvelle-Aquitaine"
 
 #: france_regions.kgm:50
 #, kde-format
@@ -15135,19 +15137,19 @@ msgstr "Togo"
 #, kde-format
 msgctxt "ghana.kgm"
 msgid "Upper West"
-msgstr ""
+msgstr "Horní západ"
 
 #: ghana.kgm:55
 #, kde-format
 msgctxt "ghana.kgm"
 msgid "Wa"
-msgstr ""
+msgstr "Wa"
 
 #: ghana.kgm:63
 #, kde-format
 msgctxt "ghana.kgm"
 msgid "Upper East"
-msgstr ""
+msgstr "Horní východ"
 
 #: ghana.kgm:64
 #, kde-format
@@ -15237,13 +15239,13 @@ msgstr "Střed"
 #, kde-format
 msgctxt "ghana.kgm"
 msgid "Cape Coast"
-msgstr ""
+msgstr "Cape Coast"
 
 #: ghana.kgm:141
 #, kde-format
 msgctxt "ghana.kgm"
 msgid "Greater Accra"
-msgstr ""
+msgstr "Greater Accra"
 
 #: ghana.kgm:142
 #, kde-format
@@ -16293,7 +16295,7 @@ msgstr "Cardiff"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Carmarthenshire"
-msgstr ""
+msgstr "Carmarthenshire"
 
 #: great-britain_counties.kgm:395
 #, kde-format
@@ -16563,7 +16565,7 @@ msgstr "Korfu"
 #, kde-format
 msgctxt "greece.kgm"
 msgid "North Aegean"
-msgstr ""
+msgstr "Severní Egeis"
 
 #: greece.kgm:152
 #, kde-format
@@ -16587,7 +16589,7 @@ msgstr "Tripolis"
 #, kde-format
 msgctxt "greece.kgm"
 msgid "South Aegean"
-msgstr ""
+msgstr "Jižní Egeis"
 
 #: greece.kgm:172
 #, kde-format
@@ -16797,7 +16799,7 @@ msgstr "Tripoli"
 #, kde-format
 msgctxt "greece_peripheries.kgm"
 msgid "North Aegean"
-msgstr ""
+msgstr "Severní Egeis"
 
 #: greece_peripheries.kgm:75
 #, kde-format
@@ -16809,7 +16811,7 @@ msgstr "Mytilene"
 #, kde-format
 msgctxt "greece_peripheries.kgm"
 msgid "South Aegean"
-msgstr ""
+msgstr "Jižní Egeis"
 
 #: greece_peripheries.kgm:80
 #, kde-format
@@ -17799,7 +17801,7 @@ msgstr "Vyara"
 #, kde-format
 msgctxt "gujarat.kgm"
 msgid "The Dangs / Dang"
-msgstr ""
+msgstr "The Dangs / Dang"
 
 #: gujarat.kgm:130
 #, kde-format
@@ -17919,7 +17921,7 @@ msgstr "Fort Wellington"
 #, kde-format
 msgctxt "guyana.kgm"
 msgid "Upper Demerara-Berbice"
-msgstr ""
+msgstr "Upper Demerara-Berbice"
 
 #: guyana.kgm:55
 #, kde-format
@@ -17955,7 +17957,7 @@ msgstr "Mahdia"
 #, kde-format
 msgctxt "guyana.kgm"
 msgid "Upper Takutu-Upper Essequibo"
-msgstr ""
+msgstr "Upper Takutu-Upper Essequibo"
 
 #: guyana.kgm:70
 #, kde-format
@@ -17967,7 +17969,7 @@ msgstr "Lethem"
 #, kde-format
 msgctxt "guyana.kgm"
 msgid "East Berbice-Corentyne"
-msgstr ""
+msgstr "East Berbice-Corentyne"
 
 #: guyana.kgm:75
 #, kde-format
@@ -18381,7 +18383,7 @@ msgstr "Kullu"
 #, kde-format
 msgctxt "himachal_pradesh.kgm"
 msgid "Lahaul and Spiti"
-msgstr ""
+msgstr "Lahaul and Spiti"
 
 #: himachal_pradesh.kgm:65
 #, kde-format
@@ -19065,7 +19067,7 @@ msgstr "Selfoss"
 #, kde-format
 msgctxt "iceland_regions.kgm"
 msgid "Southern Peninsula"
-msgstr "Jižní poloostrov  "
+msgstr "Jižní poloostrov"
 
 #: iceland_regions.kgm:50
 #, kde-format
@@ -19089,7 +19091,7 @@ msgstr "Ísafjörður"
 #, kde-format
 msgctxt "iceland_regions.kgm"
 msgid "West Region"
-msgstr ""
+msgstr "Západní region"
 
 #: iceland_regions.kgm:60
 #, kde-format
@@ -20289,7 +20291,7 @@ msgstr "Kaspické moře"
 #, kde-format
 msgctxt "iran.kgm"
 msgid "Oroomieh Lake"
-msgstr ""
+msgstr "Urmijské jezero"
 
 #: iran.kgm:342
 #, kde-format
@@ -21711,7 +21713,7 @@ msgstr "Svatá Alžběta"
 #, kde-format
 msgctxt "jamaica.kgm"
 msgid "Black River"
-msgstr ""
+msgstr "Černá řeka"
 
 #: jamaica.kgm:79
 #, kde-format
@@ -22541,7 +22543,7 @@ msgid ""
 "divisions"
 msgstr ""
 "Pokud si přejete dozvědět se o oblastech země, klikněte levým tlačítkem myši "
-"na mapu."
+"na mapu"
 
 #: kgeography.cpp:60
 #, kde-format
@@ -22731,13 +22733,13 @@ msgstr "Naposledy otevřená mapa"
 #: kgeography.kcfg:12
 #, kde-format
 msgid "Placement alignment of the question"
-msgstr ""
+msgstr "&Uspořádání otázky"
 
 #. i18n: ectx: label, entry (waitsForValidation), group (general)
 #: kgeography.kcfg:27
 #, kde-format
 msgid "Ask for validation before next question"
-msgstr ""
+msgstr "Před další otázkou požádat o potvrzení"
 
 #. i18n: ectx: label, entry (focusFollowsMouse), group (general)
 #: kgeography.kcfg:31
@@ -22745,24 +22747,25 @@ msgstr ""
 msgid ""
 "Whether press on space while hovering a button should trigger that button"
 msgstr ""
+"Zda má stisknutí mezerníku při najetí myší na tlačítko toto tlačítko spustit"
 
 #. i18n: ectx: label, entry (tooltipFollowsMouse), group (general)
 #: kgeography.kcfg:35
 #, kde-format
 msgid "Whether the map tooltip follows mouse movement"
-msgstr ""
+msgstr "Zda se popisek mapy pohybuje podle pohybu myši"
 
 #. i18n: ectx: label, entry (colorDisguise), group (general)
 #: kgeography.kcfg:39
 #, kde-format
 msgid "What to do to colors of divisions"
-msgstr ""
+msgstr "Co udělat s barvami oblastí"
 
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_questionPlacingScheme)
 #: kgeographyoptions.ui:17
 #, kde-format
 msgid "&Question Alignment"
-msgstr ""
+msgstr "Uspořádání otázek"
 
 #. i18n: ectx: property (text), widget (QRadioButton, topleftRadio)
 #: kgeographyoptions.ui:23
@@ -22825,6 +22828,8 @@ msgid ""
 "Whether the user will have to click \"Accept\" after choosing an answer or "
 "not"
 msgstr ""
+"Zda bude uživatel muset po výběru odpovědi kliknout na \"Potvrdit\", či "
+"nikoli"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_waitsForValidation)
 #: kgeographyoptions.ui:92
@@ -22836,7 +22841,7 @@ msgstr "Počkat na ověření"
 #: kgeographyoptions.ui:99
 #, kde-format
 msgid "Whether pressing space will trigger button under mouse or not"
-msgstr ""
+msgstr "Zda stisknutí mezerníku aktivuje tlačítko pod myší, či nikoli"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_focusFollowsMouse)
 #: kgeographyoptions.ui:102
@@ -22851,12 +22856,14 @@ msgid ""
 "Whether the map tooltip will follow mouse when it is pressed and moving "
 "across the map or not"
 msgstr ""
+"Zda se popisek na mapě bude pohybovat za kurzorem myši, když je kurzor "
+"stisknutý a pohybuje se po mapě, či nikoli"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_tooltipFollowsMouse)
 #: kgeographyoptions.ui:112
 #, kde-format
 msgid "&Move map tooltip on mouse move"
-msgstr ""
+msgstr "&Zobrazit popisek mapy při pohybu myší"
 
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
 #: kgeographyoptions.ui:122
@@ -22864,12 +22871,14 @@ msgstr ""
 msgid ""
 "Choose if you want to keep current divisions colors or have random colors."
 msgstr ""
+"Vyberte, zda chcete zachovat stávající barvy oblastí, nebo zda chcete "
+"náhodné barvy."
 
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_colorDisguise)
 #: kgeographyoptions.ui:125
 #, kde-format
 msgid "Map divisions colors"
-msgstr ""
+msgstr "Barvy oblastí na mapě"
 
 #. i18n: ectx: property (text), widget (QRadioButton, noColorDisguiseRadio)
 #: kgeographyoptions.ui:131
@@ -22881,7 +22890,7 @@ msgstr "Pořád stejné"
 #: kgeographyoptions.ui:138
 #, kde-format
 msgid "Use random colors"
-msgstr ""
+msgstr "Použít náhodné barvy"
 
 #: kyrgyzstan.kgm:5
 #, kde-format
@@ -22971,7 +22980,7 @@ msgstr "Město Osh"
 #, kde-format
 msgctxt "latvia.kgm"
 msgid "Latvia Districts (Pre 2009)"
-msgstr ""
+msgstr "Lotyšské okresy (před rokem 2009)"
 
 #: latvia.kgm:6
 #, kde-format
@@ -24207,7 +24216,7 @@ msgstr "Obrázek vlajky pro %1 neexistuje"
 #: mapparser.cpp:124
 #, kde-format
 msgid "The blurred flag image file for %1 does not exist"
-msgstr ""
+msgstr "Soubor s rozmazaným obrázkem vlajky pro %1 neexistuje"
 
 #: mapparser.cpp:138
 #, kde-format
@@ -25449,7 +25458,7 @@ msgstr "Nenacházíte se na Novém Zélandu"
 #, kde-format
 msgctxt "new-zealand.kgm"
 msgid "Northland"
-msgstr ""
+msgstr "Northland"
 
 #: new-zealand.kgm:20
 #, kde-format
@@ -25485,7 +25494,7 @@ msgstr "Hamilton"
 #, kde-format
 msgctxt "new-zealand.kgm"
 msgid "Bay of Plenty"
-msgstr ""
+msgstr "Bay of Plenty"
 
 #: new-zealand.kgm:35
 #, kde-format
@@ -25905,7 +25914,7 @@ msgstr "P'yŏngan-pukto"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "South P'yŏngan"
-msgstr "jižní P'yŏngan"
+msgstr "Jižní P'yŏngan"
 
 #: north_korea.kgm:60
 #, kde-format
@@ -26115,13 +26124,13 @@ msgstr "Viken"
 #, kde-format
 msgctxt "norway.kgm"
 msgid "Oslo/Drammen/Sarpsborg/Moss"
-msgstr ""
+msgstr "Oslo/Drammen/Sarpsborg/Moss"
 
 #: norway.kgm:117
 #, kde-format
 msgctxt "norway.kgm"
 msgid "Vestfold og Telemark"
-msgstr ""
+msgstr "Vestfold og Telemark"
 
 #: norway.kgm:118
 #, kde-format
@@ -27699,7 +27708,7 @@ msgstr "Město Cebu"
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Compostela Valley"
-msgstr ""
+msgstr "Údolí Compostela"
 
 #: philippines.kgm:150
 #, kde-format
@@ -28185,7 +28194,7 @@ msgstr "Město Sorsogon"
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "South Cotabato"
-msgstr "jižní Cotabato"
+msgstr "Jižní Cotabato"
 
 #: philippines.kgm:360
 #, kde-format
@@ -28533,7 +28542,7 @@ msgstr "Lubusz"
 #, kde-format
 msgctxt "poland.kgm"
 msgid "Zielona Góra, Gorzów Wielkopolski"
-msgstr ""
+msgstr "Zielona Góra, Gorzów Wielkopolski"
 
 #: poland.kgm:162
 #, kde-format
@@ -30675,7 +30684,7 @@ msgstr "Vladivostok"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Stavropol Krai"
-msgstr ""
+msgstr "Stavropolský kraj"
 
 #: russia_subjects.kgm:175
 #, kde-format
@@ -31707,7 +31716,7 @@ msgstr "Nenacházíte se ve Slovinsku (tradiční)"
 #, kde-format
 msgctxt "slovenia_traditional.kgm"
 msgid "Upper Carniola"
-msgstr ""
+msgstr "Horní Kraňsko"
 
 #: slovenia_traditional.kgm:25
 #, kde-format
@@ -31755,7 +31764,7 @@ msgstr "Dravograd"
 #, kde-format
 msgctxt "slovenia_traditional.kgm"
 msgid "Inner Carniola"
-msgstr ""
+msgstr "Vnitřní Kraňsko"
 
 #: slovenia_traditional.kgm:45
 #, kde-format
@@ -31767,7 +31776,7 @@ msgstr "Postojna"
 #, kde-format
 msgctxt "slovenia_traditional.kgm"
 msgid "Lower Carniola"
-msgstr ""
+msgstr "Dolní Kraňsko"
 
 #: slovenia_traditional.kgm:50
 #, kde-format
@@ -32985,7 +32994,7 @@ msgstr "Kandy"
 #, kde-format
 msgctxt "sri-lanka.kgm"
 msgid "North Central"
-msgstr ""
+msgstr "Severní střední"
 
 #: sri-lanka.kgm:30
 #, kde-format
@@ -33399,7 +33408,7 @@ msgstr "Sipaliwini"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "Sweden by Counties"
-msgstr ""
+msgstr "Švédsko podle krajů"
 
 #: sweden.kgm:6
 #, kde-format
@@ -33417,7 +33426,7 @@ msgstr "Hranice"
 #, kde-format
 msgctxt "sweden.kgm"
 msgid "County Border"
-msgstr ""
+msgstr "Hranice krajů"
 
 #: sweden.kgm:27
 #, kde-format
@@ -33825,7 +33834,7 @@ msgstr "Basilej"
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Basle-Country"
-msgstr ""
+msgstr "Basilejský kanton"
 
 #: switzerland.kgm:85
 #, kde-format
@@ -33843,7 +33852,7 @@ msgstr "Schaffhausen"
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Appenzell Outer Rhodes"
-msgstr ""
+msgstr "Appenzell Ausserrhoden"
 
 #: switzerland.kgm:95
 #, kde-format
@@ -33855,7 +33864,7 @@ msgstr "Herisau"
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Appenzell Inner Rhodes"
-msgstr ""
+msgstr "Appenzell Innerrhoden"
 
 #: switzerland.kgm:100
 #, kde-format
@@ -34017,7 +34026,7 @@ msgstr "Khujand"
 #, kde-format
 msgctxt "tajikistan.kgm"
 msgid "Districts of Republican Subordination"
-msgstr ""
+msgstr "Okresy podléhající vládě"
 
 #: tajikistan.kgm:30
 #, kde-format
@@ -34041,7 +34050,7 @@ msgstr "Bokhtar"
 #, kde-format
 msgctxt "tajikistan.kgm"
 msgid "Kuhistani Badakhshan"
-msgstr ""
+msgstr "Kuhistani Badakhshan"
 
 #: tajikistan.kgm:40
 #, kde-format
@@ -34191,7 +34200,7 @@ msgstr "Chennai"
 #, kde-format
 msgctxt "tamilnadu.kgm"
 msgid "Nagapattinam"
-msgstr " Vishakhapatnam"
+msgstr "Vishakhapatnam"
 
 #: tamilnadu.kgm:96
 #, kde-format
@@ -35613,7 +35622,7 @@ msgstr "Žitomir"
 #, kde-format
 msgctxt "ukraine.kgm"
 msgid "Vinnyts'ka oblast'"
-msgstr "Vinnická oblast "
+msgstr "Vinnická oblast"
 
 #: ukraine.kgm:65
 #, kde-format
@@ -35655,7 +35664,7 @@ msgstr "Kirovohradská oblast"
 #, kde-format
 msgctxt "ukraine.kgm"
 msgid "Kropyvnytskiy"
-msgstr ""
+msgstr "Kropyvnyckyj"
 
 #: ukraine.kgm:88
 #, kde-format
@@ -37167,7 +37176,7 @@ msgstr "Maracaibo"
 #, kde-format
 msgctxt "venezuela.kgm"
 msgid "Federal Dependencies"
-msgstr ""
+msgstr "Federální závislá území"
 
 #: venezuela.kgm:145
 #, kde-format
@@ -39417,7 +39426,7 @@ msgstr "Howrah"
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "South 24-Parganas "
-msgstr ""
+msgstr "South 24-Parganas "
 
 #: westbengal.kgm:79
 #, kde-format
@@ -39429,7 +39438,7 @@ msgstr "Alipur"
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "North 24-Parganas"
-msgstr ""
+msgstr "North 24-Parganas"
 
 #: westbengal.kgm:89
 #, kde-format
@@ -42087,7 +42096,7 @@ msgstr "Luebo"
 #, kde-format
 msgctxt "zaire2006.kgm"
 msgid "Kasaï central"
-msgstr ""
+msgstr "Kasaï central"
 
 #: zaire2006.kgm:55
 #, kde-format
@@ -42099,7 +42108,7 @@ msgstr "Kananga"
 #, kde-format
 msgctxt "zaire2006.kgm"
 msgid "Kasaï oriental"
-msgstr ""
+msgstr "Kasaï oriental"
 
 #: zaire2006.kgm:60
 #, kde-format
