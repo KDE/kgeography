@@ -18,8 +18,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.08.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 23.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -18696,9 +18696,7 @@ msgid "Miskolc"
 msgstr "Miškovec"
 
 #: hungary.kgm:44
-#, fuzzy, kde-format
-#| msgctxt "hungary.kgm"
-#| msgid "Csongrád"
+#, kde-format
 msgctxt "hungary.kgm"
 msgid "Csongrád-Csanád"
 msgstr "Csongrád"
@@ -22750,7 +22748,7 @@ msgstr "Či stlačenie medzery počas prechodu nad tlačidlom stlačí to tlači
 #: kgeography.kcfg:35
 #, kde-format
 msgid "Whether the map tooltip follows mouse movement"
-msgstr ""
+msgstr "Či bublina mapy sleduje pohyb myši"
 
 #. i18n: ectx: label, entry (colorDisguise), group (general)
 #: kgeography.kcfg:39
@@ -22852,12 +22850,13 @@ msgid ""
 "Whether the map tooltip will follow mouse when it is pressed and moving "
 "across the map or not"
 msgstr ""
+"Či bublina mapy bude sledovať myš, keď je stlačená a pohybuje sa po mape"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_tooltipFollowsMouse)
 #: kgeographyoptions.ui:112
 #, kde-format
 msgid "&Move map tooltip on mouse move"
-msgstr ""
+msgstr "&Presúvať bublinu mapy pri pohybe myši"
 
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_colorDisguise)
 #: kgeographyoptions.ui:122
@@ -24208,8 +24207,7 @@ msgid "The flag image file for %1 does not exist"
 msgstr "Súbor vlajky %1 neexistuje"
 
 #: mapparser.cpp:124
-#, fuzzy, kde-format
-#| msgid "The flag image file for %1 does not exist"
+#, kde-format
 msgid "The blurred flag image file for %1 does not exist"
 msgstr "Súbor vlajky %1 neexistuje"
 
@@ -37786,9 +37784,7 @@ msgid "Yen Bai"
 msgstr "Yen Bai"
 
 #: virginia.kgm:4
-#, fuzzy, kde-format
-#| msgctxt "usa.kgm"
-#| msgid "Virginia"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Virginia (USA)"
 msgstr "Virgínia"
@@ -37797,7 +37793,7 @@ msgstr "Virgínia"
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "Counties and Independent Cities"
-msgstr ""
+msgstr "Okresy a nezávislé mestá"
 
 #: virginia.kgm:8
 #, kde-format
@@ -37806,585 +37802,439 @@ msgid "Borders"
 msgstr "Okraje"
 
 #: virginia.kgm:17
-#, fuzzy, kde-format
-#| msgctxt "usa.kgm"
-#| msgid "West Virginia"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Not Virginia"
 msgstr "Západná Virgínia"
 
 #: virginia.kgm:26
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Stockholm County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Accomack County"
 msgstr "Stockholm"
 
 #: virginia.kgm:34
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Kalmar County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Albemarle County"
 msgstr "Región Kalmar"
 
 #: virginia.kgm:42
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Halland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Alleghany County"
 msgstr "Región Halland"
 
 #: virginia.kgm:50
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Kalmar County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Amelia County"
 msgstr "Región Kalmar"
 
 #: virginia.kgm:58
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Kalmar County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Amherst County"
 msgstr "Región Kalmar"
 
 #: virginia.kgm:66
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Uppsala County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Appomattox County"
 msgstr "Región Uppsala"
 
 #: virginia.kgm:74
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Blekinge County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Arlington County"
 msgstr "Región Blekinge"
 
 #: virginia.kgm:82
-#, fuzzy, kde-format
-#| msgctxt "usa.kgm"
-#| msgid "Augusta"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Augusta County"
 msgstr "Augusta"
 
 #: virginia.kgm:90
-#, fuzzy, kde-format
-#| msgctxt "spain.kgm"
-#| msgid "Basque Country"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Bath County"
 msgstr "Baskicko"
 
 #: virginia.kgm:98
-#, fuzzy, kde-format
-#| msgctxt "great-britain_counties.kgm"
-#| msgid "Bedford"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Bedford County"
 msgstr "Bedford"
 
 #: virginia.kgm:106
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Gotland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Bland County"
 msgstr "Región Gotland"
 
 #: virginia.kgm:114
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Kronoberg County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Botetourt County"
 msgstr "Región Kronoberg"
 
 #: virginia.kgm:122
-#, fuzzy, kde-format
-#| msgctxt "canada.kgm"
-#| msgid "New Brunswick"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Brunswick County"
 msgstr "New Brunswick"
 
 #: virginia.kgm:130
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Halland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Buchanan County"
 msgstr "Región Halland"
 
 #: virginia.kgm:138
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Blekinge County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Buckingham County"
 msgstr "Región Blekinge"
 
 #: virginia.kgm:146
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Halland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Campbell County"
 msgstr "Región Halland"
 
 #: virginia.kgm:154
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Blekinge County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Caroline County"
 msgstr "Región Blekinge"
 
 #: virginia.kgm:162
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Halland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Carroll County"
 msgstr "Región Halland"
 
 #: virginia.kgm:170
-#, fuzzy, kde-format
-#| msgctxt "usa.kgm"
-#| msgid "Charleston"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Charles City County"
 msgstr "Charleston"
 
 #: virginia.kgm:178
-#, fuzzy, kde-format
-#| msgctxt "canada.kgm"
-#| msgid "Charlottetown"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Charlotte County"
 msgstr "Charlottetown"
 
 #: virginia.kgm:186
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Östergötland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Chesterfield County"
 msgstr "Región Östergötland"
 
 #: virginia.kgm:194
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Kalmar County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Clarke County"
 msgstr "Región Kalmar"
 
 #: virginia.kgm:202
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Dalarna County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Craig County"
 msgstr "Región Dalarna"
 
 #: virginia.kgm:210
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Blekinge County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Culpeper County"
 msgstr "Región Blekinge"
 
 #: virginia.kgm:218
-#, fuzzy, kde-format
-#| msgctxt "great-britain_counties.kgm"
-#| msgid "Cumberland"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Cumberland County"
 msgstr "Cumberland"
 
 #: virginia.kgm:226
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Stockholm County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Dickenson County"
 msgstr "Stockholm"
 
 #: virginia.kgm:234
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Blekinge County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Dinwiddie County"
 msgstr "Región Blekinge"
 
 #: virginia.kgm:242
-#, fuzzy, kde-format
-#| msgctxt "spain.kgm"
-#| msgid "Basque Country"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Essex County"
 msgstr "Baskicko"
 
 #: virginia.kgm:250
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Dalarna County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Fairfax County"
 msgstr "Región Dalarna"
 
 #: virginia.kgm:258
-#, fuzzy, kde-format
-#| msgctxt "spain.kgm"
-#| msgid "Basque Country"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Fauquier County"
 msgstr "Baskicko"
 
 #: virginia.kgm:266
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Gotland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Floyd County"
 msgstr "Región Gotland"
 
 #: virginia.kgm:274
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Dalarna County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Fluvanna County"
 msgstr "Región Dalarna"
 
 #: virginia.kgm:282
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Halland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Franklin County"
 msgstr "Región Halland"
 
 #: virginia.kgm:290
-#, fuzzy, kde-format
-#| msgctxt "canada.kgm"
-#| msgid "Fredericton"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Frederick County"
 msgstr "Fredericton"
 
 #: virginia.kgm:298
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Gotland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Giles County"
 msgstr "Región Gotland"
 
 #: virginia.kgm:306
-#, fuzzy, kde-format
-#| msgctxt "great-britain_counties.kgm"
-#| msgid "Gloucester"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Gloucester County"
 msgstr "Gloucester"
 
 #: virginia.kgm:314
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Gotland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Goochland County"
 msgstr "Región Gotland"
 
 #: virginia.kgm:322
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Gotland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Grayson County"
 msgstr "Región Gotland"
 
 #: virginia.kgm:330
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Blekinge County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Greene County"
 msgstr "Región Blekinge"
 
 #: virginia.kgm:338
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Gävleborg County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Greensville County"
 msgstr "Región Gävleborg"
 
 #: virginia.kgm:346
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Halland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Halifax County"
 msgstr "Región Halland"
 
 #: virginia.kgm:354
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Kronoberg County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Hanover County"
 msgstr "Región Kronoberg"
 
 #: virginia.kgm:362
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Örebro County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Henrico County"
 msgstr "Región Örebro"
 
 #: virginia.kgm:370
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Halland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Henry County"
 msgstr "Región Halland"
 
 #: virginia.kgm:378
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Halland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Highland County"
 msgstr "Región Halland"
 
 #: virginia.kgm:386
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Blekinge County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Isle of Wight County"
 msgstr "Región Blekinge"
 
 #: virginia.kgm:394
-#, fuzzy, kde-format
-#| msgctxt "africa.kgm"
-#| msgid "Jamestown"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "James City County"
 msgstr "Jamestown"
 
 #: virginia.kgm:402
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Blekinge County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "King and Queen County"
 msgstr "Región Blekinge"
 
 #: virginia.kgm:410
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Kronoberg County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "King George County"
 msgstr "Región Kronoberg"
 
 #: virginia.kgm:418
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Kalmar County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "King William County"
 msgstr "Región Kalmar"
 
 #: virginia.kgm:426
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Kalmar County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Lancaster County"
 msgstr "Región Kalmar"
 
 #: virginia.kgm:434
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Blekinge County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Lee County"
 msgstr "Región Blekinge"
 
 #: virginia.kgm:442
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Norrbotten County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Loudoun County"
 msgstr "Norrbotten"
 
 #: virginia.kgm:450
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Uppsala County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Louisa County"
 msgstr "Región Uppsala"
 
 #: virginia.kgm:458
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Kronoberg County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Lunenburg County"
 msgstr "Región Kronoberg"
 
 #: virginia.kgm:466
-#, fuzzy, kde-format
-#| msgctxt "usa.kgm"
-#| msgid "Madison"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Madison County"
 msgstr "Madison"
 
 #: virginia.kgm:474
-#, fuzzy, kde-format
-#| msgctxt "spain.kgm"
-#| msgid "Basque Country"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Mathews County"
 msgstr "Baskicko"
 
 #: virginia.kgm:482
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Gävleborg County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Mecklenburg County"
 msgstr "Región Gävleborg"
 
 #: virginia.kgm:490
-#, fuzzy, kde-format
-#| msgctxt "great-britain_counties.kgm"
-#| msgid "Middlesex"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Middlesex County"
 msgstr "Middlesex"
 
 #: virginia.kgm:498
-#, fuzzy, kde-format
-#| msgctxt "great-britain_counties.kgm"
-#| msgid "Montgomery"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Montgomery County"
 msgstr "Montgomery"
 
 #: virginia.kgm:506
-#, fuzzy, kde-format
-#| msgctxt "new-zealand.kgm"
-#| msgid "Nelson City"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Nelson County"
 msgstr "Mesto Nelson"
 
 #: virginia.kgm:514
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Norrbotten County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "New Kent County"
 msgstr "Norrbotten"
 
 #: virginia.kgm:522
-#, fuzzy, kde-format
-#| msgctxt "great-britain_counties.kgm"
-#| msgid "Northampton"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Northampton County"
 msgstr "Northampton"
 
 #: virginia.kgm:530
-#, fuzzy, kde-format
-#| msgctxt "great-britain_counties.kgm"
-#| msgid "Northumberland"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Northumberland County"
 msgstr "Northumberland"
 
 #: virginia.kgm:538
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Gotland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Nottoway County"
 msgstr "Región Gotland"
 
 #: virginia.kgm:546
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Blekinge County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Orange County"
 msgstr "Región Blekinge"
 
 #: virginia.kgm:554
-#, fuzzy, kde-format
-#| msgctxt "spain.kgm"
-#| msgid "Basque Country"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Page County"
 msgstr "Baskicko"
 
 #: virginia.kgm:562
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Stockholm County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Patrick County"
 msgstr "Stockholm"
 
 #: virginia.kgm:570
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Dalarna County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Pittsylvania County"
 msgstr "Región Dalarna"
 
 #: virginia.kgm:578
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Gotland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Powhatan County"
 msgstr "Región Gotland"
 
 #: virginia.kgm:586
-#, fuzzy, kde-format
-#| msgctxt "canada.kgm"
-#| msgid "Prince Edward Island"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Prince Edward County"
 msgstr "Ostrov princa Eduarda"
 
 #: virginia.kgm:594
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Kronoberg County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Prince George County"
 msgstr "Región Kronoberg"
@@ -38393,204 +38243,154 @@ msgstr "Región Kronoberg"
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "Prince William County"
-msgstr ""
+msgstr "Okres Prince William"
 
 #: virginia.kgm:610
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Blekinge County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Pulaski County"
 msgstr "Región Blekinge"
 
 #: virginia.kgm:618
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Uppsala County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Rappahannock County"
 msgstr "Región Uppsala"
 
 #: virginia.kgm:626
-#, fuzzy, kde-format
-#| msgctxt "usa.kgm"
-#| msgid "Richmond"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Richmond County"
 msgstr "Richmond"
 
 #: virginia.kgm:634
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Kronoberg County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Roanoke County"
 msgstr "Región Kronoberg"
 
 #: virginia.kgm:642
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Blekinge County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Rockbridge County"
 msgstr "Región Blekinge"
 
 #: virginia.kgm:650
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Stockholm County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Rockingham County"
 msgstr "Stockholm"
 
 #: virginia.kgm:658
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Uppsala County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Russell County"
 msgstr "Región Uppsala"
 
 #: virginia.kgm:666
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Stockholm County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Scott County"
 msgstr "Stockholm"
 
 #: virginia.kgm:674
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Södermanland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Shenandoah County"
 msgstr "Región Södermanland"
 
 #: virginia.kgm:682
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Stockholm County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Smyth County"
 msgstr "Stockholm"
 
 #: virginia.kgm:690
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Gotland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Southampton County"
 msgstr "Región Gotland"
 
 #: virginia.kgm:698
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Gotland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Spotsylvania County"
 msgstr "Región Gotland"
 
 #: virginia.kgm:706
-#, fuzzy, kde-format
-#| msgctxt "great-britain_counties.kgm"
-#| msgid "Stafford"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Stafford County"
 msgstr "Stafford"
 
 #: virginia.kgm:714
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Örebro County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Surry County"
 msgstr "Región Örebro"
 
 #: virginia.kgm:722
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Skåne County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Sussex County"
 msgstr "Región Skåne"
 
 #: virginia.kgm:730
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Halland County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Tazewell County"
 msgstr "Región Halland"
 
 #: virginia.kgm:738
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Dalarna County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Warren County"
 msgstr "Región Dalarna"
 
 #: virginia.kgm:746
-#, fuzzy, kde-format
-#| msgctxt "usa.kgm"
-#| msgid "Washington DC"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Washington County"
 msgstr "Washington DC"
 
 #: virginia.kgm:754
-#, fuzzy, kde-format
-#| msgctxt "jamaica.kgm"
-#| msgid "Westmoreland"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Westmoreland County"
 msgstr "Westmoreland"
 
 #: virginia.kgm:762
-#, fuzzy, kde-format
-#| msgctxt "spain.kgm"
-#| msgid "Basque Country"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Wise County"
 msgstr "Baskicko"
 
 #: virginia.kgm:770
-#, fuzzy, kde-format
-#| msgctxt "colombia.kgm"
-#| msgid "Other Countries"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "Wythe County"
 msgstr "Iné krajiny"
 
 #: virginia.kgm:778
-#, fuzzy, kde-format
-#| msgctxt "sweden.kgm"
-#| msgid "Stockholm County"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "York County"
 msgstr "Stockholm"
 
 #: virginia.kgm:786
-#, fuzzy, kde-format
-#| msgctxt "egypt.kgm"
-#| msgid "Alexandria"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Alexandria"
 msgstr "Alexandria"
 
 #: virginia.kgm:794
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Bristol"
 msgstr "Mesto Sevastopoľ"
 
 #: virginia.kgm:802
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Buena Vista"
 msgstr "Mesto Sevastopoľ"
@@ -38599,48 +38399,40 @@ msgstr "Mesto Sevastopoľ"
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Charlottesville"
-msgstr ""
+msgstr "Mesto Charlottesville"
 
 #: virginia.kgm:818
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Chesapeake"
-msgstr ""
+msgstr "Mesto Chesapeake"
 
 #: virginia.kgm:826
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Colonial Heights"
-msgstr ""
+msgstr "Mesto Colonial Heights"
 
 #: virginia.kgm:834
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Covington"
 msgstr "Mesto Kyjev"
 
 #: virginia.kgm:842
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Danville"
 msgstr "Mesto Kyjev"
 
 #: virginia.kgm:850
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Emporia"
 msgstr "Mesto Kyjev"
 
 #: virginia.kgm:858
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Fairfax"
 msgstr "Mesto Kyjev"
@@ -38649,68 +38441,52 @@ msgstr "Mesto Kyjev"
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Falls Church"
-msgstr ""
+msgstr "Mesto Falls Church"
 
 #: virginia.kgm:874
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Franklin"
 msgstr "Mesto Kyjev"
 
 #: virginia.kgm:882
-#, fuzzy, kde-format
-#| msgctxt "denmark_counties.kgm"
-#| msgid "Frederiksborg"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Fredericksburg"
 msgstr "Frederiksborg"
 
 #: virginia.kgm:890
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Galax"
 msgstr "Mesto Kyjev"
 
 #: virginia.kgm:898
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Hampton"
 msgstr "Mesto Sevastopoľ"
 
 #: virginia.kgm:906
-#, fuzzy, kde-format
-#| msgctxt "usa.kgm"
-#| msgid "Harrisburg"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Harrisonburg"
 msgstr "Harrisburg"
 
 #: virginia.kgm:914
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Hopewell"
 msgstr "Mesto Sevastopoľ"
 
 #: virginia.kgm:922
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Lexington"
 msgstr "Mesto Kyjev"
 
 #: virginia.kgm:930
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Lynchburg"
 msgstr "Mesto Kyjev"
@@ -38719,18 +38495,16 @@ msgstr "Mesto Kyjev"
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Manassas"
-msgstr ""
+msgstr "Mesto Manassas"
 
 #: virginia.kgm:946
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Manassas Park"
-msgstr ""
+msgstr "Mesto Manassas Park"
 
 #: virginia.kgm:954
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Martinsville"
 msgstr "Mesto Kyjev"
@@ -38739,28 +38513,22 @@ msgstr "Mesto Kyjev"
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Newport News"
-msgstr ""
+msgstr "Mesto Newport News"
 
 #: virginia.kgm:970
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Norfolk"
 msgstr "Mesto Sevastopoľ"
 
 #: virginia.kgm:978
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Kyiv"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Norton"
 msgstr "Mesto Kyjev"
 
 #: virginia.kgm:986
-#, fuzzy, kde-format
-#| msgctxt "russia_districts.kgm"
-#| msgid "St. Petersburg"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Petersburg"
 msgstr "Petrohrad"
@@ -38769,24 +38537,22 @@ msgstr "Petrohrad"
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Poquoson"
-msgstr ""
+msgstr "Mesto Poquoson"
 
 #: virginia.kgm:1002
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Portsmouth"
-msgstr ""
+msgstr "Mesto Portsmouth"
 
 #: virginia.kgm:1010
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Radford"
-msgstr ""
+msgstr "Mesto Radford"
 
 #: virginia.kgm:1018
-#, fuzzy, kde-format
-#| msgctxt "usa.kgm"
-#| msgid "Richmond"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Richmond"
 msgstr "Richmond"
@@ -38795,28 +38561,22 @@ msgstr "Richmond"
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Roanoke"
-msgstr ""
+msgstr "Mesto Roanoke"
 
 #: virginia.kgm:1034
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Salem"
 msgstr "Mesto Sevastopoľ"
 
 #: virginia.kgm:1042
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Staunton"
 msgstr "Mesto Sevastopoľ"
 
 #: virginia.kgm:1050
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Suffolk"
 msgstr "Mesto Sevastopoľ"
@@ -38825,12 +38585,10 @@ msgstr "Mesto Sevastopoľ"
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Virginia Beach"
-msgstr ""
+msgstr "Mesto Virginia Beach"
 
 #: virginia.kgm:1066
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "City of Sevastopol'"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Waynesboro"
 msgstr "Mesto Sevastopoľ"
@@ -38839,12 +38597,10 @@ msgstr "Mesto Sevastopoľ"
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Williamsburg"
-msgstr ""
+msgstr "Mesto Williamsburg"
 
 #: virginia.kgm:1082
-#, fuzzy, kde-format
-#| msgctxt "great-britain_counties.kgm"
-#| msgid "Winchester"
+#, kde-format
 msgctxt "virginia.kgm"
 msgid "City of Winchester"
 msgstr "Winchester"
@@ -41028,9 +40784,7 @@ msgid "Ukraine"
 msgstr "Ukrajina"
 
 #: world.kgm:1048
-#, fuzzy, kde-format
-#| msgctxt "ukraine.kgm"
-#| msgid "Kyiv"
+#, kde-format
 msgctxt "world.kgm"
 msgid "Kyiv"
 msgstr "Kyjev"
