@@ -602,9 +602,9 @@ guide the parent/teacher on how to help the child using it.
 <listitem>
   <para
 ><sgmltag class="starttag"
->red</sgmltag
+>Rouge</sgmltag
 > et <sgmltag class="endtag"
->red</sgmltag
+>Rouge</sgmltag
 > : composante de rouge de la couleur. Les valeurs valables sont comprises entre 0 et 255.</para>
 </listitem>
 <listitem>
@@ -618,9 +618,9 @@ guide the parent/teacher on how to help the child using it.
 <listitem>
   <para
 ><sgmltag class="starttag"
->blue</sgmltag
+>Bleu</sgmltag
 > et <sgmltag class="endtag"
->blue</sgmltag
+>Bleu</sgmltag
 > : composante de bleu de la couleur. Les valeurs valables sont comprises entre 0 et 255.</para>
 </listitem>
 </itemizedlist>
