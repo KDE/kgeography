@@ -133,14 +133,14 @@
 </tip>
 <screenshot>
 <screeninfo
->Voici une copie d'écran de &kgeography; au premier lancement</screeninfo>
+>Voici une capture d'écran de &kgeography; au premier lancement</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="first-start1.png" format="PNG"/>
 	  </imageobject>
 	  <textobject>
 	    <phrase
->Voici une copie d'écran de &kgeography; au premier lancement</phrase>
+>Voici une capture d'écran de &kgeography; au premier lancement</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
@@ -341,14 +341,14 @@
 <para
 >&kgeography; affiche des informations sur les pays et vous teste sur celles-ci. <screenshot>
 <screeninfo
->Voici une copie d'écran de &kgeography;</screeninfo>
+>Voici une capture d'écran de &kgeography;</screeninfo>
 	<mediaobject>
 	  <imageobject>
 	    <imagedata fileref="kgeography.png" format="PNG"/>
 	  </imageobject>
 	  <textobject>
 	    <phrase
->Copie d'écran</phrase>
+>Capture d'écran</phrase>
 	  </textobject>
 	</mediaobject>
 </screenshot>
@@ -658,7 +658,7 @@ guide the parent/teacher on how to help the child using it.
 >Cartes de référence CIA</ulink
 >. Si aucune carte ne correspond à vos besoins, vous pouvez télécharger la <ulink url="https://www.cia.gov/library/publications/resources/the-world-factbook/graphics/ref_maps/political/pdf/world.pdf"
 >carte politique du monde</ulink
->, réaliser une copie d'écran et travailler à partir de celle-ci. Chaque division sur la carte devra avoir une, et seulement une, couleur. Pour accomplir cela, vous pouvez utiliser des éditeurs d'images comme <application
+>, réaliser une capture d'écran et travailler à partir de celle-ci. Chaque division sur la carte devra avoir une, et seulement une, couleur. Pour accomplir cela, vous pouvez utiliser des éditeurs d'images comme <application
 >GIMP</application
 > ou <application
 >KolourPaint</application
