@@ -1,13 +1,13 @@
 # translation of kgepgraphy.po to
 # Diego Iastrubni <elcuco@kde.org>, 2005.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
-# SPDX-FileCopyrightText: 2024, 2025, 2026 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2024-2026 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:48+0000\n"
-"PO-Revision-Date: 2026-02-02 21:36+0200\n"
+"PO-Revision-Date: 2026-05-14 21:57+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.12.1\n"
+"X-Generator: Lokalize 26.04.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -27644,7 +27644,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Capiz"
-msgstr ""
+msgstr "קאפיז"
 
 #: philippines.kgm:130
 #, kde-format
@@ -27656,13 +27656,13 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Catanduanes"
-msgstr ""
+msgstr "קטנדואנס"
 
 #: philippines.kgm:135
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Virac"
-msgstr ""
+msgstr "ויראק"
 
 #: philippines.kgm:139
 #, kde-format
@@ -27680,13 +27680,13 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Cebu"
-msgstr ""
+msgstr "סבו"
 
 #: philippines.kgm:145
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Cebu City"
-msgstr ""
+msgstr "סבו סיטי"
 
 #: philippines.kgm:149
 #, kde-format
@@ -28166,13 +28166,13 @@ msgstr "סיקיהור"
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Sorsogon"
-msgstr ""
+msgstr "סורסוגון"
 
 #: philippines.kgm:355
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Sorsogon City"
-msgstr ""
+msgstr "סורסוגון סיטי"
 
 #: philippines.kgm:359
 #, kde-format
@@ -28184,7 +28184,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "Koronadal City"
-msgstr ""
+msgstr "קורונדל סיטי"
 
 #: philippines.kgm:364
 #, kde-format
@@ -37448,7 +37448,7 @@ msgstr "האנוי"
 #, kde-format
 msgctxt "vietnam.kgm"
 msgid "Ha Tay"
-msgstr ""
+msgstr "הא טאי"
 
 #: vietnam.kgm:155
 #, kde-format
