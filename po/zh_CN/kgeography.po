@@ -2762,7 +2762,7 @@ msgstr "埃里温"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Arunachal Pradesh"
-msgstr "藏南地区 (伪阿鲁纳恰尔邦)"
+msgstr "藏南地区"
 
 #: arunachalpradesh.kgm:6
 #, kde-format
@@ -2774,7 +2774,7 @@ msgstr "区"
 #, kde-format
 msgctxt "arunachalpradesh.kgm"
 msgid "Not Arunachal Pradesh"
-msgstr "不是藏南地区 (伪阿鲁纳恰尔邦)"
+msgstr "不是藏南地区"
 
 #: arunachalpradesh.kgm:14
 #, kde-format
@@ -19167,7 +19167,7 @@ msgstr "海得拉巴 "
 #, kde-format
 msgctxt "india.kgm"
 msgid "Arunachal Pradesh"
-msgstr "藏南地区 (伪阿鲁纳恰尔邦)"
+msgstr "藏南地区"
 
 #: india.kgm:30
 #, kde-format
