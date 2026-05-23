@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:48+0000\n"
-"PO-Revision-Date: 2026-05-14 21:57+0300\n"
+"PO-Revision-Date: 2026-05-22 22:57+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 26.04.1\n"
+"X-Generator: Lokalize 26.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -1211,7 +1211,8 @@ msgid "Berat"
 msgstr "בראט"
 
 # https://en.wikipedia.org/wiki/Bulqiz%C3%AB
-# נהגה בתור בולצ׳יזה (ערבית, תעתיק מדויק: בולתשיזה) או בולקיזה (רוסית, תעתיק מדויק: בוּלְקִיזָה)
+# נהגה בתור בולצ׳יזה (ערבית, תעתיק מדויק: בולתשיזה) או בולקיזה (רוסית, תעתיק
+# מדויק: בוּלְקִיזָה)
 #: albania_districts.kgm:34
 #, kde-format
 msgctxt "albania_districts.kgm"
@@ -9316,7 +9317,7 @@ msgstr ""
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Granollers"
-msgstr ""
+msgstr "גרנולרס"
 
 #: chhattisgarh.kgm:5
 #, kde-format
@@ -27458,7 +27459,7 @@ msgstr ""
 #, kde-format
 msgctxt "philippines.kgm"
 msgid "San Jose"
-msgstr ""
+msgstr "סן חוזה"
 
 #: philippines.kgm:54
 #, kde-format
@@ -29420,7 +29421,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Salinas"
-msgstr ""
+msgstr "סלינאס"
 
 #: puertorico.kgm:677
 #, kde-format
@@ -29444,7 +29445,7 @@ msgstr ""
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "San Sebastián"
-msgstr ""
+msgstr "סן סבסטיאן"
 
 #: puertorico.kgm:717
 #, kde-format
@@ -29510,7 +29511,7 @@ msgstr "יבוקה"
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Yauco"
-msgstr ""
+msgstr "יאוקו"
 
 #: republic_of_ireland.kgm:5
 #, kde-format
@@ -39460,7 +39461,7 @@ msgstr ""
 #, kde-format
 msgctxt "westbengal.kgm"
 msgid "Nadia"
-msgstr ""
+msgstr "נדיה"
 
 #: westbengal.kgm:129
 #, kde-format
@@ -43120,7 +43121,7 @@ msgstr ""
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "Nyanga"
-msgstr ""
+msgstr "ניאנגה"
 
 #: zimbabwe_districts.kgm:69
 #, kde-format
