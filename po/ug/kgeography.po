@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:48+0000\n"
-"PO-Revision-Date: 2026-04-01 08:53-0400\n"
+"PO-Revision-Date: 2026-05-31 18:30-0400\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -12382,7 +12382,7 @@ msgstr "سۇ"
 #, kde-format
 msgctxt "estonia.kgm"
 msgid "Not Estonia"
-msgstr "ئىستونىيە ئەمەس"
+msgstr "رەتىيە ئەمەس"
 
 #: estonia.kgm:29
 #, kde-format
@@ -14632,7 +14632,7 @@ msgstr "يېڭى كىتەين"
 #, kde-format
 msgctxt "france_regions.kgm"
 msgid "Bordeaux"
-msgstr "بوردو"
+msgstr "توق قىزىل"
 
 #: france_regions.kgm:54
 #, kde-format
@@ -15214,7 +15214,7 @@ msgstr "كوفورىدۇئا"
 #, kde-format
 msgctxt "ghana.kgm"
 msgid "Western"
-msgstr "غەرب"
+msgstr "غەربىي"
 
 #: ghana.kgm:122
 #, kde-format
@@ -20626,7 +20626,7 @@ msgstr "خايفا"
 #, kde-format
 msgctxt "israel.kgm"
 msgid "Center"
-msgstr "مەركەز"
+msgstr "ئوتتۇرا"
 
 #: israel.kgm:40
 #, kde-format
@@ -22627,7 +22627,7 @@ msgstr "خەرىتە ئېچىش(&O)…"
 #: kgeography.cpp:114
 #, kde-format
 msgid "&Zoom"
-msgstr "كېڭەيت تارايت(&Z)"
+msgstr "نىسبەت(&Z)"
 
 #: kgeography.cpp:119
 #, kde-format
@@ -33079,7 +33079,7 @@ msgstr "راتناپتۇرا"
 #, kde-format
 msgctxt "sri-lanka.kgm"
 msgid "Western"
-msgstr "غەرب"
+msgstr "غەربىي"
 
 #: sri-lanka.kgm:65
 #, kde-format
@@ -36139,7 +36139,7 @@ msgstr "مونتگومېرى"
 #, kde-format
 msgctxt "usa.kgm"
 msgid "Alaska"
-msgstr "ئالياسكا شتاتى"
+msgstr "ئالياسكا"
 
 #: usa.kgm:146
 #, kde-format
@@ -37807,7 +37807,7 @@ msgstr "دۆلەت ۋە مۇستەقىل شەھەر"
 #, kde-format
 msgctxt "virginia.kgm"
 msgid "Borders"
-msgstr "چېگرا"
+msgstr "يان رامكا"
 
 #: virginia.kgm:17
 #, kde-format
