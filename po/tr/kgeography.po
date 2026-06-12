@@ -10,13 +10,13 @@
 # Renan Cakirerk, 2010.
 # obsoleteman <tulliana@gmail.com>, 2008-2009.
 # Volkan Gezer <volkangezer@gmail.com>, 2013, 2015, 2017.
-# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025, 2026 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022-2026 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeedu-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:48+0000\n"
-"PO-Revision-Date: 2026-05-02 19:42+0300\n"
+"PO-Revision-Date: 2026-06-11 21:05+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -3545,7 +3545,7 @@ msgstr "Pakistan"
 #, kde-format
 msgctxt "asia.kgm"
 msgid "Islamabad"
-msgstr "İslamabad"
+msgstr "İslâmâbâd"
 
 #: asia.kgm:496
 #, kde-format
@@ -26644,61 +26644,61 @@ msgstr "Pakistan Değil"
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Balochistan"
-msgstr "Balochistan"
+msgstr "Belucistan"
 
 #: pakistan.kgm:25
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Quetta"
-msgstr "Quetta"
+msgstr "Ketta"
 
 #: pakistan.kgm:29
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Khyber Pakhtunkhwa"
-msgstr "Khyber Pakhtunkhwa"
+msgstr "Hayber-Pahtunhva"
 
 #: pakistan.kgm:30
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Peshawar"
-msgstr "Peshawar"
+msgstr "Peşâver"
 
 #: pakistan.kgm:34
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Punjab"
-msgstr "Punjab"
+msgstr "Pencap"
 
 #: pakistan.kgm:35
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Lahore"
-msgstr "Lahore"
+msgstr "Lahor"
 
 #: pakistan.kgm:39
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Sindh"
-msgstr "Sindh"
+msgstr "Sind"
 
 #: pakistan.kgm:40
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Karachi"
-msgstr "Karachi"
+msgstr "Karaçi"
 
 #: pakistan.kgm:44
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Islamabad Capital Territory"
-msgstr "İslamabad Başkent Toprakları"
+msgstr "İslâmâbâd Başkent Toprakları"
 
 #: pakistan.kgm:45
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Islamabad"
-msgstr "Islamabad"
+msgstr "İslâmâbâd"
 
 #: pakistan.kgm:49
 #, kde-format
@@ -26710,19 +26710,19 @@ msgstr "Federal olarak Yönetilen Kabile Bölgeleri"
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Peshawar and Islamabad"
-msgstr "Peshawar and Islamabad"
+msgstr "Peşâver ve İslâmâbâd"
 
 #: pakistan.kgm:54
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Azad Kashmir"
-msgstr "Azad Kashmir"
+msgstr "Azad Keşmir"
 
 #: pakistan.kgm:55
 #, kde-format
 msgctxt "pakistan.kgm"
 msgid "Muzaffarabad"
-msgstr "Muzaffarabad"
+msgstr "Muzafferâbâd"
 
 #: pakistan.kgm:59
 #, kde-format
@@ -41524,7 +41524,7 @@ msgstr "Pakistan"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Islamabad"
-msgstr "İslamabad"
+msgstr "İslâmâbâd"
 
 #: world.kgm:1666
 #, kde-format
