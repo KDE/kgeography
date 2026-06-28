@@ -17887,7 +17887,7 @@ msgstr "Anna Regina"
 #, kde-format
 msgctxt "guyana.kgm"
 msgid "Essequibo Islands-West Demerara"
-msgstr "Illes Essequibo - Demerara occidental"
+msgstr "Illes Essequibo – Demerara occidental"
 
 #: guyana.kgm:40
 #, kde-format
@@ -20931,7 +20931,7 @@ msgstr "Venècia"
 #, kde-format
 msgctxt "italyprovince.kgm"
 msgid "Italy by Provinces"
-msgstr "Itàlia - Províncies"
+msgstr "Itàlia – Províncies"
 
 #: italyprovince.kgm:6
 #, kde-format
@@ -30567,7 +30567,7 @@ msgstr "Yakutsk"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "North Ossetia-Alania"
-msgstr "Ossètia del Nord - Alània"
+msgstr "Ossètia del Nord – Alània"
 
 #: russia_subjects.kgm:109
 #, kde-format
