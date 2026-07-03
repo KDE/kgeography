@@ -30361,7 +30361,7 @@ msgstr ""
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Adygeya"
-msgstr ""
+msgstr "阿迪格共和国"
 
 #: russia_subjects.kgm:25
 #, kde-format
@@ -30373,7 +30373,7 @@ msgstr "迈科普 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Bashkortostan"
-msgstr ""
+msgstr "巴什科尔托斯坦共和国"
 
 #: russia_subjects.kgm:31
 #, kde-format
@@ -30385,7 +30385,7 @@ msgstr "乌法"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Buryatia"
-msgstr ""
+msgstr "布里亚特共和国"
 
 #: russia_subjects.kgm:37
 #, kde-format
@@ -30397,7 +30397,7 @@ msgstr "乌兰乌德 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Altai Republic"
-msgstr ""
+msgstr "阿尔泰共和国"
 
 #: russia_subjects.kgm:43
 #, kde-format
@@ -30409,7 +30409,7 @@ msgstr "哥诺阿泰斯克"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Dagestan"
-msgstr ""
+msgstr "达吉斯坦共和国"
 
 #: russia_subjects.kgm:49
 #, kde-format
@@ -30421,7 +30421,7 @@ msgstr "马哈奇卡拉"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Ingushetia"
-msgstr ""
+msgstr "印古什共和国"
 
 #: russia_subjects.kgm:55
 #, kde-format
@@ -30433,7 +30433,7 @@ msgstr ""
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Kabardino-Balkaria"
-msgstr ""
+msgstr "卡巴尔达-巴尔卡尔共和国"
 
 #: russia_subjects.kgm:61
 #, kde-format
@@ -30445,7 +30445,7 @@ msgstr ""
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Kalmykia"
-msgstr ""
+msgstr "卡尔梅克共和国"
 
 #: russia_subjects.kgm:67
 #, kde-format
@@ -30457,7 +30457,7 @@ msgstr ""
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Karachay-Cherkessia"
-msgstr ""
+msgstr "卡拉恰伊-切尔克斯共和国"
 
 #: russia_subjects.kgm:73
 #, kde-format
@@ -30469,7 +30469,7 @@ msgstr "切尔克斯克 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Karelia"
-msgstr ""
+msgstr "卡累利阿共和国"
 
 #: russia_subjects.kgm:79
 #, kde-format
@@ -30481,7 +30481,7 @@ msgstr "彼得罗扎沃茨克 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Komi"
-msgstr "科米"
+msgstr "科米共和国"
 
 #: russia_subjects.kgm:85
 #, kde-format
@@ -30493,7 +30493,7 @@ msgstr "瑟克特夫卡尔 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Mari El"
-msgstr ""
+msgstr "马里埃尔共和国"
 
 #: russia_subjects.kgm:91
 #, kde-format
@@ -30505,7 +30505,7 @@ msgstr "约什卡奥拉"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Mordovia"
-msgstr ""
+msgstr "莫尔多瓦共和国"
 
 #: russia_subjects.kgm:97
 #, kde-format
@@ -30517,7 +30517,7 @@ msgstr "萨兰斯克 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Sakha"
-msgstr ""
+msgstr "萨哈（雅库特）共和国"
 
 #: russia_subjects.kgm:103
 #, kde-format
@@ -30529,7 +30529,7 @@ msgstr "雅库茨克"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "North Ossetia-Alania"
-msgstr ""
+msgstr "北奥塞梯-阿兰共和国"
 
 #: russia_subjects.kgm:109
 #, kde-format
@@ -30541,7 +30541,7 @@ msgstr "弗拉季高加索 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tatarstan"
-msgstr ""
+msgstr "鞑靼斯坦共和国"
 
 #: russia_subjects.kgm:115
 #, kde-format
@@ -30553,7 +30553,7 @@ msgstr "卡赞 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tyva"
-msgstr "图瓦"
+msgstr "图瓦共和国"
 
 #: russia_subjects.kgm:121
 #, kde-format
@@ -30565,7 +30565,7 @@ msgstr "克孜勒 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Udmurtia"
-msgstr ""
+msgstr "乌德穆尔特共和国"
 
 #: russia_subjects.kgm:127
 #, kde-format
@@ -30577,7 +30577,7 @@ msgstr "伊热夫斯克 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Khakassia"
-msgstr ""
+msgstr "哈卡斯共和国"
 
 #: russia_subjects.kgm:133
 #, kde-format
@@ -30589,7 +30589,7 @@ msgstr "亚巴坎"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Chechnya"
-msgstr ""
+msgstr "车臣共和国"
 
 #: russia_subjects.kgm:139
 #, kde-format
@@ -30601,7 +30601,7 @@ msgstr "格罗兹尼 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Chuvashia"
-msgstr ""
+msgstr "楚瓦什共和国"
 
 #: russia_subjects.kgm:145
 #, kde-format
@@ -30613,7 +30613,7 @@ msgstr "切博克萨雷 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Altai Krai"
-msgstr ""
+msgstr "阿尔泰边疆区"
 
 #: russia_subjects.kgm:151
 #, kde-format
@@ -30625,7 +30625,7 @@ msgstr "巴尔瑙尔 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Krasnodar Krai"
-msgstr ""
+msgstr "克拉斯诺达尔边疆区"
 
 #: russia_subjects.kgm:157
 #, kde-format
@@ -30637,7 +30637,7 @@ msgstr "克拉斯诺达尔 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Krasnoyarsk Krai"
-msgstr ""
+msgstr "克拉斯诺亚尔斯克边疆区"
 
 #: russia_subjects.kgm:163
 #, kde-format
@@ -30649,7 +30649,7 @@ msgstr "克拉斯诺亚尔斯克 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Primorsky Krai"
-msgstr ""
+msgstr "滨海边疆区"
 
 #: russia_subjects.kgm:169
 #, kde-format
@@ -30661,7 +30661,7 @@ msgstr "符拉迪沃斯托克"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Stavropol Krai"
-msgstr ""
+msgstr "斯塔夫罗波尔边疆区"
 
 #: russia_subjects.kgm:175
 #, kde-format
@@ -30673,7 +30673,7 @@ msgstr "斯塔夫罗波尔"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Khabarovsk Krai"
-msgstr ""
+msgstr "哈巴罗夫斯克边疆区"
 
 #: russia_subjects.kgm:181
 #, kde-format
@@ -30685,7 +30685,7 @@ msgstr "哈巴罗夫斯克市"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Perm Krai"
-msgstr ""
+msgstr "彼尔姆边疆区"
 
 #: russia_subjects.kgm:187
 #, kde-format
@@ -30697,7 +30697,7 @@ msgstr "彼尔姆"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Amur Oblast"
-msgstr ""
+msgstr "阿穆尔州"
 
 #: russia_subjects.kgm:193
 #, kde-format
@@ -30709,7 +30709,7 @@ msgstr ""
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Arkhangelsk Oblast"
-msgstr ""
+msgstr "阿尔汉格尔斯克州"
 
 #: russia_subjects.kgm:199
 #, kde-format
@@ -30721,7 +30721,7 @@ msgstr "阿尔汉格尔斯克 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Astrakhan Oblast"
-msgstr ""
+msgstr "阿斯特拉罕州"
 
 #: russia_subjects.kgm:205
 #, kde-format
@@ -30733,7 +30733,7 @@ msgstr ""
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Belgorod Oblast"
-msgstr ""
+msgstr "别尔哥罗德州"
 
 #: russia_subjects.kgm:211
 #, kde-format
@@ -30745,7 +30745,7 @@ msgstr "别尔哥罗德 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Bryansk Oblast"
-msgstr ""
+msgstr "布良斯克州"
 
 #: russia_subjects.kgm:217
 #, kde-format
@@ -30757,7 +30757,7 @@ msgstr "布良斯克"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Vladimir Oblast"
-msgstr ""
+msgstr "弗拉基米尔州"
 
 #: russia_subjects.kgm:223
 #, kde-format
@@ -30769,7 +30769,7 @@ msgstr "弗拉基米尔 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Volgograd Oblast"
-msgstr ""
+msgstr "伏尔加格勒州"
 
 #: russia_subjects.kgm:229
 #, kde-format
@@ -30781,7 +30781,7 @@ msgstr "伏尔加格勒 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Vologda Oblast"
-msgstr ""
+msgstr "沃洛格达州"
 
 #: russia_subjects.kgm:235
 #, kde-format
@@ -30793,7 +30793,7 @@ msgstr "沃洛格达 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Voronezh Oblast"
-msgstr ""
+msgstr "沃罗涅日州"
 
 #: russia_subjects.kgm:241
 #, kde-format
@@ -30805,7 +30805,7 @@ msgstr ""
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Ivanovo Oblast"
-msgstr ""
+msgstr "伊万诺沃州"
 
 #: russia_subjects.kgm:247
 #, kde-format
@@ -30817,19 +30817,19 @@ msgstr "伊万诺沃 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Irkutsk Oblast"
-msgstr ""
+msgstr "伊尔库茨克州"
 
 #: russia_subjects.kgm:253
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Irkutsk"
-msgstr "伊尔库次克 "
+msgstr "伊尔库茨克 "
 
 #: russia_subjects.kgm:258
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Kaliningrad Oblast"
-msgstr ""
+msgstr "加里宁格勒州"
 
 #: russia_subjects.kgm:259
 #, kde-format
@@ -30841,7 +30841,7 @@ msgstr "加里宁格勒 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Kaluga Oblast"
-msgstr ""
+msgstr "卡卢加州"
 
 #: russia_subjects.kgm:265
 #, kde-format
@@ -30853,7 +30853,7 @@ msgstr "卡卢加 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Kamchatka Krai"
-msgstr ""
+msgstr "堪察加边疆区"
 
 #: russia_subjects.kgm:271
 #, kde-format
@@ -30865,7 +30865,7 @@ msgstr ""
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Kemerovo Oblast"
-msgstr ""
+msgstr "克麦罗沃州"
 
 #: russia_subjects.kgm:277
 #, kde-format
@@ -30877,7 +30877,7 @@ msgstr "克麦罗沃 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Kirov Oblast"
-msgstr ""
+msgstr "基洛夫州"
 
 #: russia_subjects.kgm:283
 #, kde-format
@@ -30889,7 +30889,7 @@ msgstr ""
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Kostroma Oblast"
-msgstr ""
+msgstr "科斯特罗马州"
 
 #: russia_subjects.kgm:289
 #, kde-format
@@ -30901,7 +30901,7 @@ msgstr "科斯特罗马 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Kurgan Oblast"
-msgstr ""
+msgstr "库尔干州"
 
 #: russia_subjects.kgm:295
 #, kde-format
@@ -30913,7 +30913,7 @@ msgstr "库尔干 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Kursk Oblast"
-msgstr ""
+msgstr "库尔斯克州"
 
 #: russia_subjects.kgm:301
 #, kde-format
@@ -30925,7 +30925,7 @@ msgstr "库尔斯克 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Leningrad Oblast"
-msgstr ""
+msgstr "列宁格勒州"
 
 #: russia_subjects.kgm:307 russia_subjects.kgm:485 russia_subjects.kgm:486
 #, kde-format
@@ -30937,7 +30937,7 @@ msgstr "圣彼得堡"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Lipetsk Oblast"
-msgstr ""
+msgstr "利佩茨克州"
 
 #: russia_subjects.kgm:313
 #, kde-format
@@ -30949,7 +30949,7 @@ msgstr "利佩茨克 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Magadan Oblast"
-msgstr ""
+msgstr "马加丹州"
 
 #: russia_subjects.kgm:319
 #, kde-format
@@ -30961,7 +30961,7 @@ msgstr "马加丹 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Moscow Oblast"
-msgstr ""
+msgstr "莫斯科州"
 
 #: russia_subjects.kgm:325 russia_subjects.kgm:479 russia_subjects.kgm:480
 #, kde-format
@@ -30973,7 +30973,7 @@ msgstr "莫斯科"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Murmansk Oblast"
-msgstr ""
+msgstr "摩尔曼斯克州"
 
 #: russia_subjects.kgm:331
 #, kde-format
@@ -30985,7 +30985,7 @@ msgstr "摩尔曼斯克 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Nizhny Novgorod Oblast"
-msgstr ""
+msgstr "下诺夫哥罗德州"
 
 #: russia_subjects.kgm:337
 #, kde-format
@@ -30997,7 +30997,7 @@ msgstr ""
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Novgorod Oblast"
-msgstr ""
+msgstr "诺夫哥罗德州"
 
 #: russia_subjects.kgm:343
 #, kde-format
@@ -31009,7 +31009,7 @@ msgstr "诺夫哥罗德 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Novosibirsk Oblast"
-msgstr ""
+msgstr "新西伯利亚州"
 
 #: russia_subjects.kgm:349
 #, kde-format
@@ -31021,7 +31021,7 @@ msgstr "新西伯利亚 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Omsk Oblast"
-msgstr ""
+msgstr "鄂木斯克州"
 
 #: russia_subjects.kgm:355
 #, kde-format
@@ -31033,7 +31033,7 @@ msgstr "鄂木斯克 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Orenburg Oblast"
-msgstr ""
+msgstr "奥伦堡州"
 
 #: russia_subjects.kgm:361
 #, kde-format
@@ -31045,7 +31045,7 @@ msgstr "奥伦堡 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Oryol Oblast"
-msgstr ""
+msgstr "奥廖尔州"
 
 #: russia_subjects.kgm:367
 #, kde-format
@@ -31057,7 +31057,7 @@ msgstr ""
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Penza Oblast"
-msgstr ""
+msgstr "奔萨州"
 
 #: russia_subjects.kgm:373
 #, kde-format
@@ -31069,7 +31069,7 @@ msgstr "奔萨 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Pskov Oblast"
-msgstr ""
+msgstr "普斯科夫州"
 
 #: russia_subjects.kgm:379
 #, kde-format
@@ -31081,7 +31081,7 @@ msgstr "普斯科夫 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Rostov Oblast"
-msgstr ""
+msgstr "罗斯托夫州"
 
 #: russia_subjects.kgm:384
 #, kde-format
@@ -31093,7 +31093,7 @@ msgstr "顿河畔罗斯托夫纳 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Ryazan Oblast"
-msgstr ""
+msgstr "梁赞州"
 
 #: russia_subjects.kgm:390
 #, kde-format
@@ -31105,7 +31105,7 @@ msgstr "梁赞 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Samara Oblast"
-msgstr ""
+msgstr "萨马拉州"
 
 #: russia_subjects.kgm:396
 #, kde-format
@@ -31117,7 +31117,7 @@ msgstr "萨马拉"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Saratov Oblast"
-msgstr ""
+msgstr "萨拉托夫州"
 
 #: russia_subjects.kgm:402
 #, kde-format
@@ -31129,7 +31129,7 @@ msgstr "萨拉托夫 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Sakhalin Oblast"
-msgstr ""
+msgstr "萨哈林州"
 
 #: russia_subjects.kgm:408
 #, kde-format
@@ -31141,7 +31141,7 @@ msgstr "南萨哈林斯克 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Sverdlovsk Oblast"
-msgstr ""
+msgstr "斯维尔德洛夫斯克州"
 
 #: russia_subjects.kgm:414
 #, kde-format
@@ -31153,7 +31153,7 @@ msgstr "叶卡捷琳堡"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Smolensk Oblast"
-msgstr ""
+msgstr "斯摩棱斯克州"
 
 #: russia_subjects.kgm:420
 #, kde-format
@@ -31165,7 +31165,7 @@ msgstr "斯摩棱斯克 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tambov Oblast"
-msgstr ""
+msgstr "坦波夫州"
 
 #: russia_subjects.kgm:426
 #, kde-format
@@ -31177,7 +31177,7 @@ msgstr "坦波夫 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tver Oblast"
-msgstr ""
+msgstr "特维尔州"
 
 #: russia_subjects.kgm:432
 #, kde-format
@@ -31189,7 +31189,7 @@ msgstr "特维尔"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tomsk Oblast"
-msgstr ""
+msgstr "托木斯克州"
 
 #: russia_subjects.kgm:438
 #, kde-format
@@ -31201,7 +31201,7 @@ msgstr "托木斯克 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tula Oblast"
-msgstr ""
+msgstr "图拉州"
 
 #: russia_subjects.kgm:444
 #, kde-format
@@ -31213,7 +31213,7 @@ msgstr "图拉 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tyumen Oblast"
-msgstr ""
+msgstr "秋明州"
 
 #: russia_subjects.kgm:450
 #, kde-format
@@ -31225,7 +31225,7 @@ msgstr "秋明"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Ulyanovsk Oblast"
-msgstr ""
+msgstr "乌里扬诺夫斯克州"
 
 #: russia_subjects.kgm:456
 #, kde-format
@@ -31237,19 +31237,19 @@ msgstr ""
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Chelyabinsk Oblast"
-msgstr ""
+msgstr "车里雅宾斯克州"
 
 #: russia_subjects.kgm:462
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Chelyabinsk"
-msgstr "里雅宾斯克"
+msgstr "车里雅宾斯克"
 
 #: russia_subjects.kgm:467
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Zabaykalsky Krai"
-msgstr ""
+msgstr "外贝加尔边疆区"
 
 #: russia_subjects.kgm:468
 #, kde-format
@@ -31261,7 +31261,7 @@ msgstr "赤塔市"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Yaroslavl Oblast"
-msgstr ""
+msgstr "雅罗斯拉夫尔州"
 
 #: russia_subjects.kgm:474
 #, kde-format
@@ -31273,7 +31273,7 @@ msgstr ""
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Jewish Autonomous Oblast"
-msgstr ""
+msgstr "犹太自治州"
 
 #: russia_subjects.kgm:492
 #, kde-format
@@ -31285,7 +31285,7 @@ msgstr "比罗比詹 "
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Nenetsia"
-msgstr ""
+msgstr "涅涅茨自治区"
 
 #: russia_subjects.kgm:498
 #, kde-format
@@ -31297,19 +31297,19 @@ msgstr ""
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Khantia-Mansia"
-msgstr ""
+msgstr "汉特-曼西自治区"
 
 #: russia_subjects.kgm:504
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Khanty-Mansiysk"
-msgstr "汉特曼西斯克"
+msgstr "汉特-曼西斯克"
 
 #: russia_subjects.kgm:509
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Chukotka"
-msgstr ""
+msgstr "楚科奇自治区"
 
 #: russia_subjects.kgm:510
 #, kde-format
@@ -31321,7 +31321,7 @@ msgstr "阿纳德尔"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Yamalia"
-msgstr ""
+msgstr "亚马尔-涅涅茨自治区"
 
 #: russia_subjects.kgm:516
 #, kde-format
