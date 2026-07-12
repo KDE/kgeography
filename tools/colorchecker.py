@@ -17,8 +17,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import sys
-from PyQt5 import QtCore
-from PyQt5 import QtXml
+from PySide6 import QtCore
+from PySide6 import QtXml
 from PIL import Image
 
 app = QtCore.QCoreApplication(sys.argv)
@@ -34,7 +34,7 @@ for path in sys.argv[1:]:
 	if not xmlFile.exists():
 		print("Error: File {} does not exist".format(path))
 	else:
-		if not xmlFile.open(QtCore.QIODevice.ReadOnly):
+		if not xmlFile.open(QtCore.QIODeviceBase.OpenModeFlag.ReadOnly):
 			print("Error: Could not open {} for reading".format(path))
 		else:
 			doc = QtXml.QDomDocument()
