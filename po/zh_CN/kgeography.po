@@ -4759,7 +4759,7 @@ msgstr "明斯克"
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Brest Voblast"
-msgstr ""
+msgstr "布列斯特州"
 
 #: belarus.kgm:31
 #, kde-format
@@ -4771,7 +4771,7 @@ msgstr "布列斯特"
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Homyel Voblast"
-msgstr ""
+msgstr "戈梅利州"
 
 #: belarus.kgm:38
 #, kde-format
@@ -4783,7 +4783,7 @@ msgstr "戈梅利"
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Hrodna Voblast"
-msgstr ""
+msgstr "格罗德诺州"
 
 #: belarus.kgm:45
 #, kde-format
@@ -4795,25 +4795,25 @@ msgstr "格罗德诺"
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Mahilyow Voblast"
-msgstr ""
+msgstr "莫吉廖夫州"
 
 #: belarus.kgm:52
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Mahilyow"
-msgstr ""
+msgstr "莫吉廖夫"
 
 #: belarus.kgm:58
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Minsk Voblast"
-msgstr ""
+msgstr "明斯克州"
 
 #: belarus.kgm:65
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Vitebsk Voblast"
-msgstr ""
+msgstr "维捷布斯克州"
 
 #: belarus.kgm:66
 #, kde-format
@@ -22365,121 +22365,121 @@ msgstr ""
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Astana"
-msgstr ""
+msgstr "阿斯塔纳直辖市"
 
 #: kazakhstan.kgm:29
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Almaty city"
-msgstr ""
+msgstr "阿拉木图直辖市"
 
 #: kazakhstan.kgm:34
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Baikonur"
-msgstr ""
+msgstr "拜科努尔"
 
 #: kazakhstan.kgm:39
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Almaty"
-msgstr "阿拉木图"
+msgstr "阿拉木图州"
 
 #: kazakhstan.kgm:40
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Taldykorgan"
-msgstr ""
+msgstr "塔尔迪库尔干"
 
 #: kazakhstan.kgm:44
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Aqmola"
-msgstr ""
+msgstr "阿克莫拉州"
 
 #: kazakhstan.kgm:45
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Koksetau"
-msgstr ""
+msgstr "科克舍套"
 
 #: kazakhstan.kgm:49 kazakhstan.kgm:50
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Aqtöbe"
-msgstr ""
+msgstr "阿克托别"
 
 #: kazakhstan.kgm:54 kazakhstan.kgm:55
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Atyrau"
-msgstr ""
+msgstr "阿特劳"
 
 #: kazakhstan.kgm:59
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Batys Qazaqstan"
-msgstr ""
+msgstr "西哈萨克斯坦州"
 
 #: kazakhstan.kgm:60
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Oral"
-msgstr "奥伦"
+msgstr "乌拉尔"
 
 #: kazakhstan.kgm:64
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Mangghystau"
-msgstr ""
+msgstr "曼吉斯套州"
 
 #: kazakhstan.kgm:65
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Aqtau"
-msgstr "阿克托"
+msgstr "阿克套"
 
 #: kazakhstan.kgm:69
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Ongtüstik Qazaqstan"
-msgstr ""
+msgstr "南哈萨克斯坦州"
 
 #: kazakhstan.kgm:70
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Shymkent"
-msgstr ""
+msgstr "奇姆肯特"
 
 #: kazakhstan.kgm:74 kazakhstan.kgm:75
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Pavlodar"
-msgstr ""
+msgstr "巴甫洛达尔"
 
 #: kazakhstan.kgm:79
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Qaraghandy"
-msgstr ""
+msgstr "卡拉干达州"
 
 #: kazakhstan.kgm:80
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Karaganda"
-msgstr ""
+msgstr "卡拉干达"
 
 #: kazakhstan.kgm:84
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Qostanay"
-msgstr ""
+msgstr "科斯塔奈州"
 
 #: kazakhstan.kgm:85
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Kostanai"
-msgstr ""
+msgstr "科斯塔奈"
 
 #: kazakhstan.kgm:89 kazakhstan.kgm:90
 #, kde-format
@@ -22491,37 +22491,37 @@ msgstr "克孜勒奥尔达"
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Shyghys Qazaqstan"
-msgstr ""
+msgstr "东哈萨克斯坦州"
 
 #: kazakhstan.kgm:95
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Öskemen"
-msgstr ""
+msgstr "乌斯季卡缅诺戈尔斯克"
 
 #: kazakhstan.kgm:99
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Soltustik Qazaqstan"
-msgstr ""
+msgstr "北哈萨克斯坦州"
 
 #: kazakhstan.kgm:100
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Petropavl"
-msgstr ""
+msgstr "彼得罗巴甫洛夫斯克"
 
 #: kazakhstan.kgm:104
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Zhambyl"
-msgstr ""
+msgstr "江布尔州"
 
 #: kazakhstan.kgm:105
 #, kde-format
 msgctxt "kazakhstan.kgm"
 msgid "Taraz"
-msgstr ""
+msgstr "塔拉兹"
 
 #: kgeography.cpp:58
 #, kde-format
@@ -30673,7 +30673,7 @@ msgstr "斯塔夫罗波尔"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Khabarovsk Krai"
-msgstr "哈巴罗夫斯克 (伯力) 边疆区"
+msgstr "哈巴罗夫斯克边疆区"
 
 #: russia_subjects.kgm:181
 #, kde-format
