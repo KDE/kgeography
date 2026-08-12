@@ -2412,7 +2412,7 @@ msgstr "Catamarca"
 #, kde-format
 msgctxt "argentina.kgm"
 msgid "San Fernando del Valle de Catamarca"
-msgstr "San Fernando del Valle de Catamarca"
+msgstr "San Fernando Del Valle de Catamarca"
 
 #: argentina.kgm:44
 #, kde-format
@@ -2574,7 +2574,7 @@ msgstr "Santa Fe"
 #, kde-format
 msgctxt "argentina.kgm"
 msgid "Santiago del Estero"
-msgstr "Santiago del Estero"
+msgstr "Santiago Del Estero"
 
 #: argentina.kgm:139
 #, kde-format
@@ -4187,7 +4187,7 @@ msgstr "Azerbaïdjan"
 #, kde-format
 msgctxt "azerbaijan.kgm"
 msgid "Rayons"
-msgstr "rayonlar"
+msgstr "Rayons"
 
 #: azerbaijan.kgm:9
 #, kde-format
@@ -4775,7 +4775,7 @@ msgstr "ville de Minsk"
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Brest Voblast"
-msgstr "voblast de Brest"
+msgstr "Voblast de Brest"
 
 #: belarus.kgm:31
 #, kde-format
@@ -4787,7 +4787,7 @@ msgstr "Brest"
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Homyel Voblast"
-msgstr "voblast de Homiel"
+msgstr "Voblast de Homiel"
 
 #: belarus.kgm:38
 #, kde-format
@@ -4799,7 +4799,7 @@ msgstr "Homiel"
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Hrodna Voblast"
-msgstr "voblast de Hrodna"
+msgstr "Voblast de Hrodna"
 
 #: belarus.kgm:45
 #, kde-format
@@ -4811,25 +4811,25 @@ msgstr "Hrodna"
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Mahilyow Voblast"
-msgstr "voblast de Moguilev"
+msgstr "Voblast de Moguilev"
 
 #: belarus.kgm:52
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Mahilyow"
-msgstr "voblast de Mahiliow"
+msgstr "Voblast de Mahiliow"
 
 #: belarus.kgm:58
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Minsk Voblast"
-msgstr "voblast de Minsk"
+msgstr "Voblast de Minsk"
 
 #: belarus.kgm:65
 #, kde-format
 msgctxt "belarus.kgm"
 msgid "Vitebsk Voblast"
-msgstr "voblast de Vitebsk"
+msgstr "Voblast de Vitebsk"
 
 #: belarus.kgm:66
 #, kde-format
@@ -8873,7 +8873,7 @@ msgstr "Alt Penedès"
 #, kde-format
 msgctxt "catalonia_comarques.kgm"
 msgid "Vilafranca del Penedès"
-msgstr "Vilafranca del Penedès"
+msgstr "Vilafranca Del Penedès"
 
 #: catalonia_comarques.kgm:39
 #, kde-format
@@ -10379,7 +10379,7 @@ msgstr "Guaviare"
 #, kde-format
 msgctxt "colombia.kgm"
 msgid "San Jose del Guaviare"
-msgstr "San José del Guaviare"
+msgstr "San José Del Guaviare"
 
 #: colombia.kgm:179
 #, kde-format
@@ -10541,7 +10541,7 @@ msgstr "Ibagué"
 #, kde-format
 msgctxt "colombia.kgm"
 msgid "Valle del Cauca"
-msgstr "Valle del Cauca"
+msgstr "Valle Del Cauca"
 
 #: colombia.kgm:311
 #, kde-format
@@ -10721,7 +10721,7 @@ msgstr "Nueva Gerona"
 #, kde-format
 msgctxt "cuba.kgm"
 msgid "Pinar del Río"
-msgstr "Pinar del Río"
+msgstr "Pinar Del Río"
 
 #: cuba.kgm:35 cuba.kgm:36
 #, kde-format
@@ -11335,7 +11335,7 @@ msgstr "El Seibo"
 #, kde-format
 msgctxt "dominican_republic.kgm"
 msgid "Santa Cruz del Seibo"
-msgstr "Santa Cruz del Seibo"
+msgstr "Santa Cruz Del Seibo"
 
 #: dominican_republic.kgm:64
 #, kde-format
@@ -11359,7 +11359,7 @@ msgstr "Hato Mayor"
 #, kde-format
 msgctxt "dominican_republic.kgm"
 msgid "Hato Mayor del Rey"
-msgstr "Hato Mayor del Rey"
+msgstr "Hato Mayor Del Rey"
 
 #: dominican_republic.kgm:74
 #, kde-format
@@ -11551,7 +11551,7 @@ msgstr "Santiago"
 #, kde-format
 msgctxt "dominican_republic.kgm"
 msgid "Santiago de los Caballeros"
-msgstr "Santiago de los Caballeros"
+msgstr "Santiago de Los Caballeros"
 
 #: dominican_republic.kgm:169
 #, kde-format
@@ -11803,7 +11803,7 @@ msgstr "Santa Elena"
 #, kde-format
 msgctxt "ecuador.kgm"
 msgid "Santo Domingo de los Tsáchilas"
-msgstr "Santo Domingo de los Tsáchilas"
+msgstr "Santo Domingo de Los Tsáchilas"
 
 #: ecuador.kgm:110
 #, kde-format
@@ -15481,7 +15481,7 @@ msgstr "Dingwall"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Inverness-shire"
-msgstr "Inverness-shire"
+msgstr "Inverness-Shire"
 
 #: great-britain_counties.kgm:50
 #, kde-format
@@ -15625,7 +15625,7 @@ msgstr "Alloa"
 #, kde-format
 msgctxt "great-britain_counties.kgm"
 msgid "Kinross-shire"
-msgstr "Kinross-shire"
+msgstr "Kinross-Shire"
 
 #: great-britain_counties.kgm:110
 #, kde-format
@@ -17497,7 +17497,7 @@ msgstr "Quiché"
 #, kde-format
 msgctxt "guatemala.kgm"
 msgid "Santa Cruz del Quiché"
-msgstr "Santa Cruz del Quiché"
+msgstr "Santa Cruz Del Quiché"
 
 #: guatemala.kgm:64 guatemala.kgm:65
 #, kde-format
@@ -18637,13 +18637,13 @@ msgstr "Yoro"
 #, kde-format
 msgctxt "hungary.kgm"
 msgid "Hungary (Counties)"
-msgstr "Hongrie (comitats)"
+msgstr "Hongrie (Districts)"
 
 #: hungary.kgm:6
 #, kde-format
 msgctxt "hungary.kgm"
 msgid "Counties"
-msgstr "comitats"
+msgstr "Districts"
 
 #: hungary.kgm:9 hungary.kgm:14
 #, kde-format
@@ -20137,7 +20137,7 @@ msgstr "Chahar Mahaal et Bakhtiari"
 #, kde-format
 msgctxt "iran.kgm"
 msgid "shahr-e Kord"
-msgstr "Shahre kord"
+msgstr "Shahr-e Kord"
 
 #: iran.kgm:180
 #, kde-format
@@ -20293,7 +20293,7 @@ msgstr "golfe d'Oman"
 #, kde-format
 msgctxt "iran.kgm"
 msgid "Caspian Sea"
-msgstr "Mer caspienne"
+msgstr "Mer Caspienne"
 
 #: iran.kgm:333
 #, kde-format
@@ -25869,7 +25869,7 @@ msgstr "Hamgyong du Nord"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "Hamgyŏng-pukto"
-msgstr "Hamgyŏng-pukto"
+msgstr "Hamgyŏng-Pukto"
 
 #: north_korea.kgm:34
 #, kde-format
@@ -25881,7 +25881,7 @@ msgstr "Hamgyong du Sud"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "Hamgyŏng-namdo"
-msgstr "Hamgyŏng-namdo"
+msgstr "Hamgyŏng-Namdo"
 
 #: north_korea.kgm:39
 #, kde-format
@@ -25893,7 +25893,7 @@ msgstr "Hwanghae du Nord"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "Hwanghae-pukto"
-msgstr "Hwanghae-pukto"
+msgstr "Hwanghae-Pukto"
 
 #: north_korea.kgm:44
 #, kde-format
@@ -25905,7 +25905,7 @@ msgstr "Hwanghae du Sud"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "Hwanghae-namdo"
-msgstr "Hwanghae-namdo"
+msgstr "Hwanghae-Namdo"
 
 #: north_korea.kgm:49
 #, kde-format
@@ -25929,7 +25929,7 @@ msgstr "Pyongan du Nord"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "P'yŏngan-pukto"
-msgstr "Pyongan-pukto"
+msgstr "Pyongan-Pukto"
 
 #: north_korea.kgm:59
 #, kde-format
@@ -25941,7 +25941,7 @@ msgstr "Pyongan du Sud"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "P'yŏngan-namdo"
-msgstr "Pyongan-namdo"
+msgstr "Pyongan-Namdo"
 
 #: north_korea.kgm:64
 #, kde-format
@@ -25989,7 +25989,7 @@ msgstr "région administrative spéciale de Sinŭiju"
 #, kde-format
 msgctxt "north_korea.kgm"
 msgid "Sinŭiju T'ŭkpyŏl Haengjŏnggu"
-msgstr "Sinuiju T'ukpyol Haengjonggu"
+msgstr "Sinuiju T'Ukpyol Haengjonggu"
 
 #: north_korea.kgm:84
 #, kde-format
@@ -26043,7 +26043,7 @@ msgstr "Pas la Norvège"
 #, kde-format
 msgctxt "norway.kgm"
 msgid "Troms og Finnmark"
-msgstr "Troms og Finnmark"
+msgstr "Troms Og Finnmark"
 
 #: norway.kgm:28
 #, kde-format
@@ -26079,7 +26079,7 @@ msgstr "Steinkjer"
 #, kde-format
 msgctxt "norway.kgm"
 msgid "Møre og Romsdal"
-msgstr "Møre og Romsdal"
+msgstr "Møre Og Romsdal"
 
 #: norway.kgm:58
 #, kde-format
@@ -26151,7 +26151,7 @@ msgstr "Oslo/Drammen/Sarpsborg/Moss"
 #, kde-format
 msgctxt "norway.kgm"
 msgid "Vestfold og Telemark"
-msgstr "Vestfold og Telemark"
+msgstr "Vestfold Og Telemark"
 
 #: norway.kgm:118
 #, kde-format
@@ -26463,7 +26463,7 @@ msgstr "Tonga"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Nuku'alofa"
-msgstr "Nuku'alofa"
+msgstr "Nuku'Alofa"
 
 #: oceania.kgm:162
 #, kde-format
@@ -26787,7 +26787,7 @@ msgstr "Pas le Panama"
 #, kde-format
 msgctxt "panama.kgm"
 msgid "Bocas del Toro"
-msgstr "Bocas del Toro"
+msgstr "Bocas Del Toro"
 
 #: panama.kgm:34
 #, kde-format
@@ -26955,7 +26955,7 @@ msgstr "Alto Paraná"
 #, kde-format
 msgctxt "paraguay.kgm"
 msgid "Ciudad del Este"
-msgstr "Ciudad del Este"
+msgstr "Ciudad Del Este"
 
 #: paraguay.kgm:34
 #, kde-format
@@ -27021,7 +27021,7 @@ msgstr "Canindeyú"
 #, kde-format
 msgctxt "paraguay.kgm"
 msgid "Salto del Guairá"
-msgstr "Salto del Guairá"
+msgstr "Salto Del Guairá"
 
 #: paraguay.kgm:64
 #, kde-format
@@ -31491,7 +31491,7 @@ msgstr "Al Bahah"
 #, kde-format
 msgctxt "saudi_arabia.kgm"
 msgid "Al Hudud ash Shamaliyah"
-msgstr "Al-Hudud ash Chamaliya"
+msgstr "Al-Hudud Ash Chamaliya"
 
 #: saudi_arabia.kgm:34
 #, kde-format
@@ -41691,7 +41691,7 @@ msgstr "Tonga"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Nuku'alofa"
-msgstr "Nuku'alofa"
+msgstr "Nuku'Alofa"
 
 #: world.kgm:1796
 #, kde-format

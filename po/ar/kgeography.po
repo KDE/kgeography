@@ -28339,7 +28339,7 @@ msgstr "مانيلا"
 #, kde-format
 msgctxt "@info:status"
 msgid "Please place in the map:<br/><b>%1</b>"
-msgstr "فضلاً ضع على الخريطة:<br/><b>%1</b>"
+msgstr "فضلًا ضع على الخريطة:<br/><b>%1</b>"
 
 #: placeasker.cpp:203
 #, kde-format
