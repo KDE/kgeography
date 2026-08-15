@@ -410,6 +410,9 @@
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=kgeography</url>
   <url type="help">https://docs.kde.org/?application=kgeography</url>
   <url type="donation">https://www.kde.org/community/donations/?app=kgeography&amp;source=appdata</url>
+  <custom>
+    <value key="KDE::mailinglist">kde-edu@kde.org</value>
+  </custom>
   <update_contact>yurchor_at_mageia.org</update_contact>
   <screenshots>
     <screenshot type="default">
