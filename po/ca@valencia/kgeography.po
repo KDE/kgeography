@@ -1,23 +1,23 @@
 # Translation of kgeography.po to Catalan (Valencian)
-# Copyright (C) 2004-2024 This_file_is_part_of_KDE
+# Copyright (C) 2004-2026 This_file_is_part_of_KDE
 #
 # SPDX-FileCopyrightText: 2004-2006 Albert Astals Cid <aacid@kde.org>
 # SPDX-FileCopyrightText: 2006-2014 Orestes Mas Casals <orestes@tsc.upc.edu>
-# SPDX-FileCopyrightText: 2009-2024 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2009-2024, 2026 Josep M. Ferrer <txemaq@gmail.com>
 # SPDX-FileCopyrightText: 2018, 2020-2021 Antoni Bella Pérez <antonibella5@yahoo.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:48+0000\n"
-"PO-Revision-Date: 2024-10-27 17:48+0100\n"
+"PO-Revision-Date: 2026-09-11 13:27+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.08.2\n"
+"X-Generator: Lokalize 25.04.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 
@@ -33741,7 +33741,7 @@ msgstr "Aigua"
 #, kde-format
 msgctxt "switzerland.kgm"
 msgid "Zurich"
-msgstr "Zuric"
+msgstr "Zúric"
 
 #: switzerland.kgm:25
 #, kde-format
