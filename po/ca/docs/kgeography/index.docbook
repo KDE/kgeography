@@ -479,7 +479,7 @@ guide the parent/teacher on how to help the child using it.
 >divisionsName</sgmltag
 > i <sgmltag class="endtag"
 >divisionsName</sgmltag
->: els noms en general de les xones en aquest mapa, que són, províncies, estats, països, &etc;</para>
+>: els noms en general de les zones en aquest mapa, que són, províncies, estats, països, &etc;</para>
 </listitem>
 <listitem>
   <para
@@ -595,7 +595,7 @@ guide the parent/teacher on how to help the child using it.
 >falseCapital</sgmltag
 >: a on podrà ser qualsevol número de <userinput
 >falseCapital</userinput
-> parella, aquestes s'usaran per a proveir una llista de falses respostes al qüestionari de capital en comptes d'escollir-les entres les altres capitals de zona.</para>
+> parella, aquestes s'usaran per a proveir una llista de falses respostes al qüestionari de capital en comptes d'escollir-les entre les altres capitals de zona.</para>
 </listitem>
 </itemizedlist>
  </para>
