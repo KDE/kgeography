@@ -342,7 +342,7 @@ guide the parent/teacher on how to help the child using it.
 <para>
 You can find <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/gen_map.pl">here</ulink> a tool (made by Yann Verley) which helped him with the map of France. To find out its usage, simply execute it and read the help message. It basically creates the <literal role="extension">.kgm</literal> file from a plain text file and creates a file with the colors it has assigned to each division, so you can fill the map according to them.</para>
 <para>
-There is another tool <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py">colorchecker.py</ulink> written by Albert Astals Cid. You need PyQt4 to run this. Just run this with the <literal role="extension">.kgm</literal> filename as argument (you also need the <literal role="extension">.png</literal> file of the map in the same folder). This will tell you if any pixel on the map has a different color which is not defined in the <literal role="extension">.kgm</literal> (description) file.
+There is another tool <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py">colorchecker.py</ulink> written by Albert Astals Cid. You need Python 3 with the <literal>PySide6</literal> and <literal>Pillow</literal> modules to run this. Just run this with the <literal role="extension">.kgm</literal> filename as argument (you also need the <literal role="extension">.png</literal> file of the map in the same folder). This will tell you if any pixel on the map has a different color which is not defined in the <literal role="extension">.kgm</literal> (description) file.
 </para>
 <tip>
 <para>
