@@ -422,7 +422,11 @@ guide the parent/teacher on how to help the child using it.
 <para
 >Hi ha una altra eina <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
 >colorchecker.py</ulink
-> escrita per l'Albert Astals Cid. Necessitareu PyQt4 per a executar-la. Simplement s'executa amb el nom del fitxer <literal role="extension"
+> escrita per l'Albert Astals Cid. Necessitareu Python 3 amb els mòduls <literal
+>PySide6</literal
+> i <literal
+>Pillow</literal
+> per a executar-la. Simplement s'executa amb el nom del fitxer <literal role="extension"
 >.kgm</literal
 > com a argument (també necessitareu el fitxer <literal role="extension"
 >.png</literal

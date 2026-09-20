@@ -424,7 +424,11 @@ guide the parent/teacher on how to help the child using it.
 <para
 >Існує і інший інструмент — <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
 >colorchecker.py</ulink
->, написаний Albert Astals Cid. Щоб працювати з ним, вам потрібен буде пакунок з PyQt4. Просто запустіть цю програму, передавши їй назву файла <literal role="extension"
+>, написаний Albert Astals Cid. Щоб працювати з ним, вам потрібен буде Python 3 з модулями <literal
+>PySide6</literal
+> і <literal
+>Pillow</literal
+>. Просто запустіть цю програму, передавши їй назву файла <literal role="extension"
 >.kgm</literal
 > як параметр (вам також слід буде розмістити файл карти <literal role="extension"
 >.png</literal
