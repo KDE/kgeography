@@ -410,7 +410,11 @@ guide the parent/teacher on how to help the child using it.
 <para
 >Nog een hulpmiddel is <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
 >colorchecker.py</ulink
-> (kleuren kiezen),  gemaakt door Albert Astals Cid. Hiervoor is PyQt4 nodig. Gebruik het maar  met bestandsnaam <literal role="extension"
+> (kleuren kiezen),  gemaakt door Albert Astals Cid. Hiervoor is Python-3 nodig met de modules <literal
+>PySide6</literal
+> en <literal
+>Pillow</literal
+> om dit uit te voeren. Gebruik het maar  met bestandsnaam <literal role="extension"
 >.kgm</literal
 > als argument (het bestand met de extensie  <literal role="extension"
 >.png</literal
