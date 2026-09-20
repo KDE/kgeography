@@ -56,6 +56,7 @@ install(FILES
 	penza_oblast.png
 	perm_krai.png
 	primorsky_krai.png
+	pskov_oblast.png
 	rostov_oblast.png
 	ryazan_oblast.png
 	saint_petersburg.png

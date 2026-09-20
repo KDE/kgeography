@@ -377,6 +377,7 @@
 	<division>
 		<name>Pskov Oblast</name>
 		<capital>Pskov</capital>
+		<flag>russia/pskov_oblast.png</flag>
 		<color><red>77</red><green>229</green><blue>230</blue></color>
 	</division>
 	<division>
