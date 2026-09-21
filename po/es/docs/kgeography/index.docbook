@@ -438,11 +438,15 @@ guide the parent/teacher on how to help the child using it.
 <para
 >Existe otra herramienta, <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
 >colorchecker.py</ulink
->, escrita por Albert Astals Cid. Necesita PyQt4 para ejecutarla. Solo tiene que ejecutarla con el nombre de archivo <literal role="extension"
+>, escrita por Albert Astals Cid. Se necesita Python 3 con los módulos <literal
+>PySide6</literal
+> y <literal
+>Pillow</literal
+> para ejecutarla. Solo hay que ejecutarla con el nombre de archivo <literal role="extension"
 >.kgm</literal
-> como argumento (también necesita que el archivo <literal role="extension"
+> como argumento (también es necesario que el archivo <literal role="extension"
 >.png</literal
-> del mapa esté en la misma carpeta). Esta herramienta le indicará si algún píxel del mapa tiene un color diferente a los definidos en el archivo (de descripción) <literal role="extension"
+> del mapa esté en la misma carpeta). Esta herramienta indicará si algún píxel del mapa tiene un color diferente a los definidos en el archivo (de descripción) <literal role="extension"
 >.kgm</literal
 >. </para>
 <tip>
