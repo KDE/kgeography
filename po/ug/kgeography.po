@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:48+0000\n"
-"PO-Revision-Date: 2026-05-31 18:30-0400\n"
+"PO-Revision-Date: 2026-09-22 18:03+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
-"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -8449,14 +8449,14 @@ msgstr "رېگىنا"
 #, kde-format
 msgctxt "@item:intable column Question, %1 is capital name"
 msgid "%1"
-msgstr "%1"
+msgstr ""
 
 #: capitaldivisionasker.cpp:32 capitaldivisionasker.cpp:35
 #: capitaldivisionasker.cpp:50
 #, kde-format
 msgctxt "@option:radio <City> is the capital of..."
 msgid "%1"
-msgstr "%1"
+msgstr ""
 
 #: caribbean.kgm:5
 #, kde-format
@@ -10406,7 +10406,7 @@ msgstr "سانتا مارتا"
 #, kde-format
 msgctxt "colombia.kgm"
 msgid "Meta"
-msgstr "Meta"
+msgstr ""
 
 #: colombia.kgm:211
 #, kde-format
@@ -11193,14 +11193,14 @@ msgstr "روننې"
 #, kde-format
 msgctxt "@item:intable column Question, %1 is region name"
 msgid "%1"
-msgstr "%1"
+msgstr ""
 
 #: divisioncapitalasker.cpp:34 divisioncapitalasker.cpp:35
 #: divisioncapitalasker.cpp:47 divisioncapitalasker.cpp:65
 #, kde-format
 msgctxt "@option:radio The capital of <Region> is..."
 msgid "%1"
-msgstr "%1"
+msgstr ""
 
 #: divisionflagasker.cpp:33
 #, kde-format
@@ -13354,7 +13354,7 @@ msgstr "بۇ بايراق بۇ دۆلەتنىڭ بايرىقىدۇر:"
 #, kde-format
 msgctxt "@option:radio This flag belongs to:"
 msgid "%1"
-msgstr "%1"
+msgstr ""
 
 #: flagdivisionasker.cpp:80
 #, kde-format
@@ -22662,9 +22662,7 @@ msgstr "ئادەتتىكى"
 #: kgeography.cpp:203
 #, kde-format
 msgid "Could not open last used map. Error parsing %1: %2"
-msgstr ""
-"ئەڭ ئاخىرقى قېتىم ئىشلەتكەن خەرىتىنى ئاچقىلى بولمىدى: %1 نى تەھلىل قىلىشتا "
-"خاتالىق كۆرۈلدى: %2"
+msgstr "Could not open last used map. %1 تەھلىل قىلىش خاتالىقى: %2"
 
 #: kgeography.cpp:211
 #, kde-format
@@ -22679,7 +22677,7 @@ msgstr "سوئال سانى"
 #: kgeography.cpp:263
 #, kde-format
 msgid "How many questions do you want? (1 to %1)"
-msgstr "قانچە سوئالغا جاۋاب بېرىسىز؟ (1 دىن %1 غىچە)"
+msgstr ""
 
 #: kgeography.cpp:422
 #, kde-format
@@ -23824,7 +23822,7 @@ msgstr "مېرش"
 #: main.cpp:34
 #, kde-format
 msgid "KGeography"
-msgstr "KGeography"
+msgstr ""
 
 #: main.cpp:34
 #, kde-format
@@ -23834,12 +23832,12 @@ msgstr "جۇغراپىيە ئۆگىنىش پىروگراممىسى"
 #: main.cpp:34
 #, kde-format
 msgid "© 2004-2005 Albert Astals Cid"
-msgstr "© 2004-2005 Albert Astals Cid"
+msgstr ""
 
 #: main.cpp:35
 #, kde-format
 msgid "Albert Astals Cid"
-msgstr "Albert Astals Cid"
+msgstr ""
 
 #: main.cpp:35
 #, kde-format
@@ -24150,20 +24148,18 @@ msgid ""
 "You have found a bug in a map. Please contact the author and tell the %1 map "
 "has nothing associated to color %2,%3,%4."
 msgstr ""
-"سىز خەرىتىدىكى خاتالىقنى تاپتىڭىز. يازغۇچى بىلەن ئالاقىلىشىڭ، %1 غا خەرىتىدە "
-"%2، %3، %4 نىڭ رەڭگى بىلەن باغلانمىغانلىقىنى ئۇقتۇرۇڭ."
 
 #: mapasker.cpp:157
 #, kde-format
 msgctxt "@item Capital name in map popup"
 msgid "%1"
-msgstr "%1"
+msgstr ""
 
 #: mapasker.cpp:163
 #, kde-format
 msgctxt "@item Region name in map popup"
 msgid "%1"
-msgstr "%1"
+msgstr ""
 
 #: mapasker.cpp:200
 #, kde-format
@@ -43225,7 +43221,7 @@ msgstr "سېكې"
 #, kde-format
 msgctxt "zimbabwe_districts.kgm"
 msgid "UMP"
-msgstr "UMP"
+msgstr ""
 
 #: zimbabwe_districts.kgm:144
 #, kde-format
