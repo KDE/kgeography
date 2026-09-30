@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:48+0000\n"
+"POT-Creation-Date: 2026-09-30 00:41+0000\n"
 "PO-Revision-Date: 2019-12-12 21:39+0000\n"
 "Last-Translator: Vivek KJ Pazhedath <vivekkj2004@gmail.com>\n"
 "Language-Team: SMC <smc.org.in>\n"
@@ -30972,7 +30972,7 @@ msgctxt "russia_subjects.kgm"
 msgid "Leningrad Oblast"
 msgstr "ലെനിന്‍ഗ്രാഡ്"
 
-#: russia_subjects.kgm:307 russia_subjects.kgm:485 russia_subjects.kgm:486
+#: russia_subjects.kgm:307 russia_subjects.kgm:486 russia_subjects.kgm:487
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "St. Petersburg"
@@ -31008,7 +31008,7 @@ msgctxt "russia_subjects.kgm"
 msgid "Moscow Oblast"
 msgstr "മോസ്കോ (MOS)"
 
-#: russia_subjects.kgm:325 russia_subjects.kgm:479 russia_subjects.kgm:480
+#: russia_subjects.kgm:325 russia_subjects.kgm:480 russia_subjects.kgm:481
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Moscow"
@@ -31122,253 +31122,253 @@ msgctxt "russia_subjects.kgm"
 msgid "Pskov"
 msgstr "പ്സ്കോവ്"
 
-#: russia_subjects.kgm:383
+#: russia_subjects.kgm:384
 #, fuzzy, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Rostov Oblast"
 msgstr "റോസ്തോവ്"
 
-#: russia_subjects.kgm:384
+#: russia_subjects.kgm:385
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Rostov-na-Donu"
 msgstr "റൊസ്റ്റൊവ്-ന-ഡൊനു"
 
-#: russia_subjects.kgm:389
+#: russia_subjects.kgm:390
 #, fuzzy, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Ryazan Oblast"
 msgstr "റ്യാസന്‍"
 
-#: russia_subjects.kgm:390
+#: russia_subjects.kgm:391
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Ryazan"
 msgstr "റ്യാസന്‍"
 
-#: russia_subjects.kgm:395
+#: russia_subjects.kgm:396
 #, fuzzy, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Samara Oblast"
 msgstr "സമാറ"
 
-#: russia_subjects.kgm:396
+#: russia_subjects.kgm:397
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Samara"
 msgstr "സമാറ"
 
-#: russia_subjects.kgm:401
+#: russia_subjects.kgm:402
 #, fuzzy, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Saratov Oblast"
 msgstr "സരാട്ടോവ്"
 
-#: russia_subjects.kgm:402
+#: russia_subjects.kgm:403
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Saratov"
 msgstr "സരാട്ടോവ്"
 
-#: russia_subjects.kgm:407
+#: russia_subjects.kgm:408
 #, fuzzy, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Sakhalin Oblast"
 msgstr "സഖലിന്‍"
 
-#: russia_subjects.kgm:408
+#: russia_subjects.kgm:409
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Yuzhno-Sakhalinsk"
 msgstr "യുഷ്നോ-സഖലിന്‍സ്ക്"
 
-#: russia_subjects.kgm:413
+#: russia_subjects.kgm:414
 #, fuzzy, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Sverdlovsk Oblast"
 msgstr "സ്വെര്‍ഡ്ലോവ്സ്ക്"
 
-#: russia_subjects.kgm:414
+#: russia_subjects.kgm:415
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Yekaterinburg"
 msgstr "യെക്കത്തറിന്‍ബര്‍ഗ്"
 
-#: russia_subjects.kgm:419
+#: russia_subjects.kgm:420
 #, fuzzy, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Smolensk Oblast"
 msgstr "സ്മോളെന്‍സ്ക്"
 
-#: russia_subjects.kgm:420
+#: russia_subjects.kgm:421
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Smolensk"
 msgstr "സ്മോളെന്‍സ്ക്"
 
-#: russia_subjects.kgm:425
+#: russia_subjects.kgm:426
 #, fuzzy, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tambov Oblast"
 msgstr "ടാംബോവ്"
 
-#: russia_subjects.kgm:426
+#: russia_subjects.kgm:427
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tambov"
 msgstr "ടാംബോവ്"
 
-#: russia_subjects.kgm:431
+#: russia_subjects.kgm:432
 #, fuzzy, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tver Oblast"
 msgstr "ഒബ്ലാസ്റ്റുകള്‍"
 
-#: russia_subjects.kgm:432
+#: russia_subjects.kgm:433
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tver"
 msgstr "ട്വെര്‍"
 
-#: russia_subjects.kgm:437
+#: russia_subjects.kgm:438
 #, fuzzy, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tomsk Oblast"
 msgstr "മിന്‍സ്ക് (ഒബ്ലാസ്റ്റ്)"
 
-#: russia_subjects.kgm:438
+#: russia_subjects.kgm:439
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tomsk"
 msgstr "ടോംസ്ക്"
 
-#: russia_subjects.kgm:443
+#: russia_subjects.kgm:444
 #, fuzzy, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tula Oblast"
 msgstr "ഒബ്ലാസ്റ്റുകള്‍"
 
-#: russia_subjects.kgm:444
+#: russia_subjects.kgm:445
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tula"
 msgstr "ടുല"
 
-#: russia_subjects.kgm:449
+#: russia_subjects.kgm:450
 #, fuzzy, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tyumen Oblast"
 msgstr "ട്യുമെന്‍"
 
-#: russia_subjects.kgm:450
+#: russia_subjects.kgm:451
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Tyumen"
 msgstr "ട്യുമെന്‍"
 
-#: russia_subjects.kgm:455
+#: russia_subjects.kgm:456
 #, fuzzy, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Ulyanovsk Oblast"
 msgstr "ഉല്യനോവ്സ്ക്"
 
-#: russia_subjects.kgm:456
+#: russia_subjects.kgm:457
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Ulyanovsk"
 msgstr "ഉല്യനോവ്സ്ക്"
 
-#: russia_subjects.kgm:461
+#: russia_subjects.kgm:462
 #, fuzzy, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Chelyabinsk Oblast"
 msgstr "ചെല്യാബിന്‍സ്ക്"
 
-#: russia_subjects.kgm:462
+#: russia_subjects.kgm:463
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Chelyabinsk"
 msgstr "ചെല്യാബിന്‍സ്ക്"
 
-#: russia_subjects.kgm:467
+#: russia_subjects.kgm:468
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Zabaykalsky Krai"
 msgstr "സബായികാല്‍സ്കി ക്രായി"
 
-#: russia_subjects.kgm:468
+#: russia_subjects.kgm:469
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Chita"
 msgstr "ചിറ്റാ"
 
-#: russia_subjects.kgm:473
+#: russia_subjects.kgm:474
 #, fuzzy, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Yaroslavl Oblast"
 msgstr "യാരോസ്ലാവ്"
 
-#: russia_subjects.kgm:474
+#: russia_subjects.kgm:475
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Yaroslavl"
 msgstr "യാരോസ്ലാവ്"
 
-#: russia_subjects.kgm:491
+#: russia_subjects.kgm:492
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Jewish Autonomous Oblast"
 msgstr ""
 
-#: russia_subjects.kgm:492
+#: russia_subjects.kgm:493
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Birobidzhan"
 msgstr "ബിരോബിദ്ഷന്‍"
 
-#: russia_subjects.kgm:497
+#: russia_subjects.kgm:498
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Nenetsia"
 msgstr "നെനേറ്റ്സിയ"
 
-#: russia_subjects.kgm:498
+#: russia_subjects.kgm:499
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Naryan-Mar"
 msgstr "നരിയാന്‍-മാര്‍"
 
-#: russia_subjects.kgm:503
+#: russia_subjects.kgm:504
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Khantia-Mansia"
 msgstr "ഖാന്തിയ-മാന്‍സിയ"
 
-#: russia_subjects.kgm:504
+#: russia_subjects.kgm:505
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Khanty-Mansiysk"
 msgstr "ഖാന്റി-മാന്‍സിസ്ക്"
 
-#: russia_subjects.kgm:509
+#: russia_subjects.kgm:510
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Chukotka"
 msgstr "ചുക്കോദ്ക്ക"
 
-#: russia_subjects.kgm:510
+#: russia_subjects.kgm:511
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Anadyr"
 msgstr "അനാഡിര്‍"
 
-#: russia_subjects.kgm:515
+#: russia_subjects.kgm:516
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Yamalia"
 msgstr "യമാലിയ"
 
-#: russia_subjects.kgm:516
+#: russia_subjects.kgm:517
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Salekhard"
