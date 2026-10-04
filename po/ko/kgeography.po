@@ -1,7 +1,7 @@
 # Translation of kgeography to Korean.
 # Copyright (C) 2008 This_file_is_part_of_KDE
 # This file is distributed under the same license as the kdeedu package.
-# Shinjo Park <kde@peremen.name>, 2008, 2011, 2014, 2015, 2020, 2021, 2022.
+# SPDX-FileCopyrightText: 2008, 2011, 2014, 2015, 2020, 2021, 2022, 2026 Shinjo Park <kde@peremen.name>
 #
 #
 # 주의! Warning! Achtung! Осторожно!
@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:48+0000\n"
-"PO-Revision-Date: 2022-04-16 22:52+0200\n"
+"PO-Revision-Date: 2026-10-03 23:40+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 21.08.1\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -27696,7 +27696,7 @@ msgstr "마주로"
 #, kde-format
 msgctxt "oceania.kgm"
 msgid "Nauru"
-msgstr "나우루"
+msgstr "나오에로"
 
 #: oceania.kgm:121
 #, kde-format
