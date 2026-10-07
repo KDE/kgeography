@@ -81,7 +81,7 @@
 </listitem>
 <listitem>
 <para
->Der Name eines Landes wird gefragt und Sie müssen es auf der Karte anklicken.</para>
+>Der Name eines Landes wird genannt und Sie müssen es auf der Karte anklicken</para>
 </listitem>
 <listitem>
 <para
@@ -143,7 +143,7 @@
 <para
 >Sie können das Textfeld <guilabel
 >Karten filtern</guilabel
-> benutzen, um für die Liste der Karten einen Filter einzugeben. Geben Sie einige Buchstaben der gesuchten Karte ein, dann wird die erste passende Karte ausgewählt. </para>
+> verwenden, um für die Liste der Karten einen Filter einzugeben. Geben Sie einige Buchstaben der gesuchten Karte ein, dann wird die erste passende Karte ausgewählt. </para>
 </tip>
 <screenshot>
 <screeninfo
@@ -390,7 +390,7 @@
 >Größe</guibutton
 > und zeichnen auf der Karte ein Rechteck des Bereiches, der vergrößert werden soll. Im Vergrößerungsmodus können Sie mit Klicken der &RMB; die Karte wieder in der Originalgröße anzeigen, genauso wie mit dem Menüeintrag <guimenuitem
 >Originalgröße</guimenuitem
->. Benutzen Sie die Bildlaufleisten, das Mausrad oder die Pfeiltasten, um den Kartenausschnitt zu verschieben oder wählen Sie im Menü <guimenuitem
+>. Verwenden Sie die Bildlaufleisten, das Mausrad oder die Pfeiltasten, um den Kartenausschnitt zu verschieben oder wählen Sie im Menü <guimenuitem
 >Verschieben</guimenuitem
 >, um den Ausschnitt mit der &LMBn; zu verschieben. Die Funktion <guimenuitem
 >Automatische Größenveränderung</guimenuitem
@@ -422,15 +422,19 @@ guide the parent/teacher on how to help the child using it.
 >.kgm</literal
 >-Datei mit den zugewiesenen Farben für jedes Land aus einer Textdatei zur weiteren Bearbeitung. Dann können Sie in der Kartendatei die Länder mit den angegebenen Farben kolorieren.</para>
 <para
->Albert Astals Cid hat ein weiteres Hilfsprogramm <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
+>Albert Astals Cid hat ein weiteres Hilfsprogramm namens <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
 >colorchecker.py</ulink
-> geschrieben. Dieses Programm läuft nur mit PyQt4. Starten Sie das Programm mit dem Namen der <literal role="extension"
+> geschrieben. Dieses Programm benötigt Python 3 mit den Zusatzmodulen <literal
+>PySide6</literal
+> und <literal
+>Pillow</literal
+>. Starten Sie das Programm mit dem Namen der <literal role="extension"
 >.kgm</literal
->-Datei als Argument, die <literal role="extension"
+>-Datei als Argument (die <literal role="extension"
 >.png</literal
->-Date der Karte muss sich im gleichen Ordner befinden. Das Skript überprüft, ob die Farben aller Pixel der Karte in der Beschreibungsdatei <literal role="extension"
+>-Datei der Karte muss sich im gleichen Ordner befinden). Das Skript überprüft, ob die Farben aller Pixel der Karte in der Beschreibungsdatei <literal role="extension"
 >.kgm</literal
-> definiert sind.  </para>
+> definiert sind. </para>
 <tip>
 <para
 >Bitte lesen Sie ebenfalls die Anleitung <ulink url="https://edu.kde.org/kgeography/tutorials/kgeography-addmaps.pdf"
@@ -454,7 +458,7 @@ guide the parent/teacher on how to help the child using it.
 >map</sgmltag
 > enden. </para>
 <para
->Innerhalb dieser Marken sind folgende Einträge nötig: <itemizedlist>
+>Innerhalb dieser Elemente (genannt Tags) sind folgende Einträge nötig: <itemizedlist>
 <listitem>
   <para
 ><sgmltag class="starttag"
@@ -489,7 +493,7 @@ guide the parent/teacher on how to help the child using it.
 </listitem>
 <listitem>
   <para
->Eine Marke <sgmltag class="starttag"
+>Ein Tag <sgmltag class="starttag"
 >division</sgmltag
 > und <sgmltag class="endtag"
 >division</sgmltag
@@ -498,7 +502,7 @@ guide the parent/teacher on how to help the child using it.
 </itemizedlist>
  </para>
 <para
->Jedes Land muss diese Marken enthalten: <itemizedlist>
+>Jedes Land muss diese Tags enthalten: <itemizedlist>
 <listitem>
   <para
 ><sgmltag class="starttag"
@@ -543,11 +547,11 @@ guide the parent/teacher on how to help the child using it.
 >allowClickMode</userinput
 > fragt &kgeography; nach dem Land nur in der Übung <guibutton
 >Lage von ...</guibutton
->, aber nicht in den anderen Übungen. Ist dieses Tag auf <userinput
+>, aber nicht in den anderen Übungen. Ist dieser Tag auf <userinput
 >allowClickFlagMode</userinput
-> gesetzt, wird auch bei den Flaggen-Übungen danach gefragt. Setzen Sie diese Marke auf den Wert <userinput
+> gesetzt, wird auch bei den Flaggen-Übungen danach gefragt. Setzen Sie diesen Tag auf den Wert <userinput
 >no</userinput
->, um damit das Land in alle Übungen (Erkunden und Abfragen) aufgenommen wird. Diese Marke <sgmltag class="starttag"
+>, um damit das Land in alle Übungen (Erkunden und Abfragen) aufgenommen wird. Dieser Tag <sgmltag class="starttag"
 >ignore</sgmltag
 > darf fehlen, dann wird als Wert <userinput
 >no</userinput
@@ -581,11 +585,23 @@ guide the parent/teacher on how to help the child using it.
 ><literal
 >albania.png</literal
 ></quote
->. Diese Marke darf auch fehlen. Sie ist für Länder mit dem Wert<userinput
+>. Dieser Tag darf auch fehlen. Sie ist für Länder mit dem Wert<userinput
 >yes</userinput
-> für die Marke <sgmltag class="starttag"
+> für die Tags <sgmltag class="starttag"
 >ignore</sgmltag
 > nicht erforderlich.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>blurredflag</sgmltag
+> und <sgmltag class="endtag"
+>blurredflag</sgmltag
+>: Die Datei (ohne Dateipfad) mit der verwischten Flagge des Landes, &eg; <quote
+><literal
+>blurred_albania.png</literal
+></quote
+>. Dieser Tag darf auch fehlen. Er sollte verwendet werden, wenn die Flagge den Namen des zugehörigen Landes enthält. Das kann dazu führen, dass Flaggen-Ratespiele zu einfach werden. Daher empfiehlt sich die Anzeige der Flaggen mit einem verschwommen dargestellten Text.</para>
 </listitem>
 <listitem>
   <para
@@ -608,7 +624,7 @@ guide the parent/teacher on how to help the child using it.
 </itemizedlist>
  </para>
 <para
->Die Farbe wird durch drei Marken festgelegt: <itemizedlist>
+>Die Farbe wird durch drei Tags festgelegt: <itemizedlist>
 <listitem>
   <para
 ><sgmltag class="starttag"
@@ -651,7 +667,7 @@ guide the parent/teacher on how to help the child using it.
 ><literal
 >Küste</literal
 ></quote
-> zu erstellen und ihnen mit der Marke <sgmltag class="starttag"
+> zu erstellen und ihnen mit dem Tag <sgmltag class="starttag"
 >ignore</sgmltag
 > den Wert <userinput
 >yes</userinput
@@ -661,7 +677,7 @@ guide the parent/teacher on how to help the child using it.
 ><literal
 >Grenzen</literal
 ></quote
-> auf einen RGB-Wert von z. B. 1,1,1, nicht auf 0,0,0, damit beim der Darstellung Ränder gezeichnet werden. </para>
+> auf einen RGB-Wert von z. B. 1,1,1, nicht auf 0,0,0, damit beim der Darstellung Ränder gezeichnet werden. </para>
 </tip>
  <important>
    <para
@@ -686,13 +702,21 @@ guide the parent/teacher on how to help the child using it.
 <title
 >Flaggen</title>
 <para
->Wenn Sie die Marke <sgmltag class="starttag"
+>Wenn Sie den Tag <sgmltag class="starttag"
 >flag</sgmltag
-> benutzt haben, sollten Sie auch die erforderlichen Flaggendateien erstellen. Diese Dateien müssen in eine Größe von 300x200 Pixeln im &SVG;-Format haben, oder noch besser als &SVG;-Datei vorliegen. <acronym
+> verwendet haben, sollten Sie auch die erforderlichen Flaggendateien erstellen. Diese Dateien müssen in eine Größe von 300x200 Pixeln im &SVG;-Format haben, oder noch besser als &SVG;-Datei vorliegen. <acronym
 >SVG</acronym
 >-Dateien fast aller Länder der Erde und weiterer Provinzen sollten Sie in der <ulink url="https://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770"
 >Sodipodi Flaggensammlung</ulink
 > suchen. </para>
+<para
+>Wie bereits erwähnt, empfehlen wir Ihnen, Dateien mit unscharf dargestellten Flaggen zu verwenden, wenn Ländernamen in den Flaggen sichtbar sind. Für Dateien mit unscharf dargestellten Flaggen gelten die gleichen Anforderungen wie für Dateien mit regulären Flaggen. Obwohl es keine vorgeschriebene Regel für die Benennung gibt, empfehlen wir Ihnen, dem ursprünglichen Dateinamen ein <literal
+>blurred_</literal
+>, &eg; <quote
+><literal
+>blurred_albania.png</literal
+></quote
+> voranzustellen. </para>
 </sect1>
 <sect1 id="how-to-test">
 <title
@@ -733,7 +757,7 @@ guide the parent/teacher on how to help the child using it.
 > auf der Konsole ein. </para>
 <tip>
 <para
->Benutzen Sie das Programm colorchecker.py, um zu überprüfen, ob alle Farben in der Karte auch in der <literal role="extension"
+>Verwenden Sie das Programm colorchecker.py, um zu überprüfen, ob alle Farben in der Karte auch in der <literal role="extension"
 >.kmg</literal
 >-Datei definiert sind. </para>
 </tip>
@@ -757,7 +781,7 @@ guide the parent/teacher on how to help the child using it.
 </screenshot>
 </para>
 <para
->Sebstverständlich kann das Länderkonzept um geografische Objekte wie Flüsse und Berge erweitert werden. Denken Sie bei der Bearbeitung der Karte daran, dass Flüsse und Berge in der Karte zu klein sind und daher einen zusätzlichen Fläche zum Anklicken brauchen. In diesem Beispiel hat der Fluss eine kastanienbraune Fläche und &lt;20,76,34&gt; als Farbe. </para>
+>Sebstverständlich kann das Länderkonzept um geografische Objekte wie Flüsse und Berge erweitert werden. Denken Sie bei der Bearbeitung der Karte daran, dass Flüsse und Berge in der Karte zu klein sind und daher einen zusätzlichen Fläche zum Anklicken benötigen. In diesem Beispiel hat der Fluss eine kastanienbraune Fläche und &lt;20,76,34&gt; als Farbe. </para>
 </sect1>
 </chapter>
 
@@ -901,7 +925,7 @@ guide the parent/teacher on how to help the child using it.
 <title
 >Das Menü Einstellungen</title>
 <para
->&kgeography; benutzt die bekannten &kde;-Einträge im Menü <guimenu
+>&kgeography; verwendet die bekannten &kde;-Einträge im Menü <guimenu
 >Einstellungen</guimenu
 >, weitere Informationen dazu finden Sie im Abschnitt über das Menü <ulink url="help:/fundamentals/menus.html#menus-settings"
 >Einstellungen</ulink
@@ -917,7 +941,7 @@ guide the parent/teacher on how to help the child using it.
 >Hilfe</guimenu
 >menü, das in den <ulink url="help:/fundamentals/menus.html#menus-help"
 >&kde;-Grundlagen</ulink
->erläutert wird,  zwei zusätzliche Einträge:</para>
+>erläutert wird, zwei zusätzliche Einträge:</para>
 	
 <variablelist>
 <varlistentry>
