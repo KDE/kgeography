@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-30 00:41+0000\n"
-"PO-Revision-Date: 2026-09-11 13:27+0200\n"
+"PO-Revision-Date: 2026-10-15 19:35+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -3512,7 +3512,7 @@ msgstr "Taixkent"
 #, kde-format
 msgctxt "asia.kgm"
 msgid "Kyrgyzstan"
-msgstr "Kirguizistan"
+msgstr "Kirguizstan"
 
 #: asia.kgm:468
 #, kde-format
@@ -9735,7 +9735,7 @@ msgstr "Kazakhstan"
 #, kde-format
 msgctxt "china.kgm"
 msgid "Kyrgyzstan"
-msgstr "Kirguizistan"
+msgstr "Kirguizstan"
 
 #: china.kgm:99
 #, kde-format
@@ -22903,7 +22903,7 @@ msgstr "Usa colors aleatoris"
 #, kde-format
 msgctxt "kyrgyzstan.kgm"
 msgid "Kyrgyzstan"
-msgstr "Kirguizistan"
+msgstr "Kirguizstan"
 
 #: kyrgyzstan.kgm:6
 #, kde-format
@@ -22927,7 +22927,7 @@ msgstr "Aigua"
 #, kde-format
 msgctxt "kyrgyzstan.kgm"
 msgid "Not Kyrgyzstan"
-msgstr "Fora del Kirguizistan"
+msgstr "Fora del Kirguizstan"
 
 #: kyrgyzstan.kgm:24
 #, kde-format
@@ -41508,7 +41508,7 @@ msgstr "Taixkent"
 #, kde-format
 msgctxt "world.kgm"
 msgid "Kyrgyzstan"
-msgstr "Kirguizistan"
+msgstr "Kirguizstan"
 
 #: world.kgm:1638
 #, kde-format
