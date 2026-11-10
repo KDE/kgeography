@@ -408,13 +408,17 @@ guide the parent/teacher on how to help the child using it.
 >.kgm</literal
 > à partir d'un fichier de type texte, ainsi qu'un second fichier contenant les couleurs assignées à chaque division, afin que vous puissiez remplir la carte avec elles.</para>
 <para
->Il existe aussi l'outil <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
+>Il existe aussi un autre outil <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
 >colorchecker.py</ulink
-> écrit par Albert Astals Cid. Vous aurez besoin de « PyQt4 » pour l'exécuter. Lancez-le simplement avec le nom du fichier <literal role="extension"
+> écrit par Albert Astals Cid. Vous aurez besoin de Python 3 avec les modules <literal
+>PySide6</literal
+> et <literal
+>Pillow</literal
+>pour l'exécuter. Lancez-le simplement avec le nom du fichier <literal role="extension"
 >.kgm</literal
-> comme argument (vous aurez aussi besoin du fichier <literal role="extension"
+> en argument (Vous aurez aussi besoin du fichier <literal role="extension"
 >.png</literal
->de la carte dans le même dossier). Ceci vous dira si un pixel sur la carte a une couleur qui n'est pas définie dans le fichier de description <literal role="extension"
+>de la carte dans le même dossier). Ceci vous dira si un pixel sur la carte possède une couleur qui n'est pas définie dans le fichier de description <literal role="extension"
 >.kgm</literal
 >. </para>
 <tip>
