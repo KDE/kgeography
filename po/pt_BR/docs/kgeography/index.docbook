@@ -436,7 +436,11 @@ guide the parent/teacher on how to help the child using it.
 <para
 >Existe outra ferramenta <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
 >colorchecker.py</ulink
->, escrita por Albert Astals Cid. É necessário o PyQt4 para executá-la. Basta rodá-la com o arquivo <literal role="extension"
+>, escrita por Albert Astals Cid. É necessário o Python 3 com os módulos <literal
+>PySide6</literal
+> e <literal
+>Pillow</literal
+> para executá-la. Basta rodá-la com o arquivo <literal role="extension"
 >.kgm</literal
 > como argumento (também precisa do arquivo <literal role="extension"
 >.png</literal
