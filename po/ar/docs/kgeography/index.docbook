@@ -1,0 +1,1076 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Arabic "INCLUDE"
+> 
+]>
+
+<book id="kgeography" lang="&language;">
+
+<bookinfo>
+<title
+>دليل الجغرافي</title>
+
+<authorgroup>
+<author
+><personname
+> <firstname
+>Anne-Marie</firstname
+> <surname
+>Mahfouf</surname
+> </personname
+> &Anne-Marie.Mahfouf.mail; </author>
+<author
+><personname
+> <firstname
+>Kushal</firstname
+> <surname
+>Das</surname
+> </personname
+> <email
+>kushaldas@gmail.com</email
+> </author>
+
+<othercredit role="translator"
+><firstname
+>زايد</firstname
+><surname
+>السعيدي</surname
+><affiliation
+><address
+><email
+>zayed.alsaidi@gmail.com</email
+></address
+></affiliation
+><contrib
+>التّرجمة العربيّة</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2005</year>
+<holder
+>&Anne-Marie.Mahfouf;</holder>
+</copyright>
+
+<copyright>
+<year
+>2008</year>
+<holder
+>كوشال داس</holder>
+</copyright>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2020-12-22</date>
+<releaseinfo
+>تطبيقات 20.12</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>الجغرافي هي أداة تعلم الجغرافيا من كيدي. تملك حاليًا سبعة أنماط استخدام: <itemizedlist>
+<listitem>
+<para
+>تصفح الخرائط بالنقر على المنطقة لمعرفة الاسم والعاصمة والعلم</para>
+</listitem>
+<listitem>
+<para
+>تخبرك اللعبة باسم قسم الخريطة وعليك النقر فوقه</para>
+</listitem>
+<listitem>
+<para
+>تخبرك اللعبة بالعاصمة وعليك تخمين المنطقة التي تنتمي إليه</para>
+</listitem
+><listitem>
+<para
+>تخبرك اللعبة بالمنطقة وعليك تخمين عاصمتها</para>
+</listitem
+><listitem>
+<para
+>تظهر لك اللعبة علم المنطقة وعليك تخمين اسمه</para>
+</listitem
+><listitem>
+<para
+>تخبرك اللعبة باسم المنطقة وعليك تخمين علمها</para>
+</listitem
+><listitem>
+<para
+>تظهر اللعبة خريطة فارغة وعليك وضع التقسيمات عليها واحدة تلو الأخرى</para>
+</listitem>
+</itemizedlist>
+</para>
+
+</abstract>
+
+
+<keywordset>
+<keyword
+>كيدي</keyword>
+<keyword
+>kdeedu</keyword>
+<keyword
+>الجغرافي</keyword>
+<keyword
+>الجغرافيا</keyword>
+<keyword
+>الخرائط</keyword>
+<keyword
+>البلدان</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title
+>مقدمة</title>
+
+<para
+>الجغرافي هي أداة تعلم الجغرافيا من كيدي. تتيح لك التعرف على التقسيمات السياسية لبعض البلدان (التقسيمات، عواصم تلك التقسيمات وأعلامها المرتبطة إن وُجدت). </para>
+</chapter>
+
+<chapter id="quick-start">
+<title
+>بداية سريعة مع الجغرافي</title>
+<para
+>عند تشغيل الجغرافي لأول مرة، يطلب منك أولًا اختيار خريطة للبدء بها. </para>
+<tip>
+<para
+>يمكنك ترشيح قائمة الخرائط باستخدام حقل النص <guilabel
+>ترشيح الخرائط</guilabel
+>. فقط أدخل بضعة أحرف أولى من اسم الخريطة لتضييق القائمة إلى بضع نتائج مطابقة. </para>
+</tip>
+<screenshot>
+<screeninfo
+>هذه لقطة شاشة لـ الجغرافي عند التشغيل الأول</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start1.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>هذه لقطة شاشة لـ الجغرافي عند التشغيل الأول</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+<para
+>هنا نختار كندا <screenshot>
+<screeninfo
+>كندا مُختارة</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start2.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>كندا مُختارة</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>وتظهر النافذة الرئيسة لـ الجغرافي مع خريطة كندا: <screenshot>
+<screeninfo
+>النافذة الرئيسة لـ الجغرافي</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start3.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>النافذة الرئيسة لـ الجغرافي</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>يمكنك بعد ذلك اختيار نوع التعلم أو الاختبار الذي تريد القيام به بالنظر إلى القائمة على اليسار: <screenshot>
+<screeninfo
+>قائمة الجغرافي</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start4.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>قائمة الجغرافي</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>استكشاف الخريطة: نقرة بزر الفأرة الأيسر على منطقة من الخريطة ستعرض معلومات عن تلك المنطقة، إذا نقرت على أيقونة &nbsp;<inlinemediaobject
+> <imageobject
+> <imagedata fileref="dialog-information.png" format="PNG"/> </imageobject
+> </inlinemediaobject
+> <guiicon
+>معلومات</guiicon
+> في النافذة المنبثقة، سيفتح صفحة ويكيبيديا لذلك التقسيم في المتصفح المبدئي للنظام: <screenshot>
+<screeninfo
+>تصفح الخريطة</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start5.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>تصفح الخريطة</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>موقع المقاطعات أو الأقاليم: يُطلب منك أولًا كم سؤالًا تريد. <screenshot>
+<screeninfo
+>كم سؤالًا</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start6.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>كم سؤالًا</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>ثم يُطلب منك النقر على مقاطعة محددة: <screenshot>
+<screeninfo
+>انقر على مقاطعة</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start7.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>انقر على مقاطعة</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>عند إنهاء جميع الأسئلة، يُعرض حوار النتائج مع إجاباتك الصحيحة والخاطئة: <screenshot>
+<screeninfo
+>نتائجك</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start8.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>نتائجك</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>وضع المقاطعات أو الأقاليم في الخريطة: يأخذ المؤشر شكل مقاطعة وعليك وضعها في الخريطة: <screenshot>
+<screeninfo
+>ضع تقسيمًا في الخريطة</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start13.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>ضع تقسيمًا في الخريطة</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>المقاطعات أو الأقاليم حسب العاصمة: يُطلب منك إيجاد اسم مقاطعة من بين 4 خيارات بناءً على عاصمتها: <screenshot>
+<screeninfo
+>خمن التقسيم من عاصمته</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start9.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>خمن التقسيم من عاصمته</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>وتُعرض النتائج عند انتهاء الاختبار: <screenshot>
+<screeninfo
+>نتائجك</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start10.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>نتائجك</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>عواصم المقاطعات والأقاليم: لديك عاصمة وأربعة أسماء مقاطعات وعليك اختيار الصحيح. كما في السابق، يُعرض حوار النتائج في النهاية. </para>
+<para
+>المقاطعات أو الأقاليم حسب العلم: يُعرض علم وعليك إيجاد المقاطعة التي ينتمي إليها. <screenshot>
+<screeninfo
+>سؤال العلم</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start11.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>سؤال العلم</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>أعلام المقاطعات والأقاليم: يُعطى اسم مقاطعة وعليك إيجاد العلم الصحيح من بين أربعة. <screenshot>
+<screeninfo
+>طابق العلم مع المقاطعة</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="first-start12.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>طابق العلم مع المقاطعة</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</chapter>
+
+<chapter id="using-kapp">
+<title
+>استخدام الجغرافي</title>
+
+<para
+>الجغرافي يعرض معلومات عن بعض الدول ويختبرك حول تلك المعلومات. <screenshot>
+<screeninfo
+>هذه لقطة شاشة لـ الجغرافي</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="kgeography.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>لقطة شاشة</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+
+
+<sect1 id="kapp-features">
+<title
+>مزيد من ميزات الجغرافي</title>
+
+<para
+>ميزة أخرى لـ الجغرافي هي إمكانية التكبير على الخريطة. <screenshot
+> <screeninfo
+>تكبير</screeninfo
+> <mediaobject
+> <imageobject
+> <imagedata fileref="zoom.png" format="PNG"/> </imageobject
+> <textobject
+> <phrase
+>تكبير</phrase
+> </textobject
+> </mediaobject
+> </screenshot
+> يمكنك النقر على زر <guibutton
+>تكبير</guibutton
+> ثم رسم مستطيل لتكبير جزء من الخريطة. أثناء وضع التكبير، يمكنك الضغط على &RMB; للعودة إلى الحجم الأصلي للخريطة (إجراء <guimenuitem
+>الحجم الأصلي</guimenuitem
+> له نفس التأثير). استخدم أشرطة التمرير أو مفاتيح الأسهم أو عجلة الفأرة للتحرك حول الخريطة المكبرة أو استخدم إجراء <guimenuitem
+>تحريك</guimenuitem
+> الذي سيسمح لك بسحب الخريطة باستخدام &LMB;. ميزة <guimenuitem
+>التكبير التلقائي</guimenuitem
+> ستجعل الخريطة بأكبر حجم ممكن. </para>
+
+</sect1>
+</chapter>
+
+<!--<chapter id="teachers-parents">
+<title
+>Teachers/Parents guide to &kgeography; </title>
+ This chapter should emphasize the educational aims of your app and
+guide the parent/teacher on how to help the child using it.
+</chapter
+>-->
+
+<chapter id="how-to-maps">
+<title
+>كيفية إنشاء الخرائط</title>
+<para
+>خريطة في الجغرافي تُنشأ من ملفين، أحدهما صورة الخريطة والآخر وصفها.</para>
+<sect1 id="helper-tool">
+<title
+>أداة مساعدة</title>
+<para
+>يمكنك العثور على <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/gen_map.pl"
+>هنا</ulink
+> أداة (من إعداد يان فيرلي) ساعدته في خريطة فرنسا. لمعرفة استخدامها، نفذها ببساطة واقرأ رسالة المساعدة. تنشئ الأداة بشكل أساسي ملف <literal role="extension"
+>.kgm</literal
+> من ملف نصي عادي وتنشئ ملفًا بالألوان التي أسندتها لكل تقسيم، بحيث يمكنك تلوين الخريطة وفقًا لها.</para>
+<para
+>هناك أداة أخرى <ulink url="https://invent.kde.org/education/kgeography/-/blob/master/tools/colorchecker.py"
+>colorchecker.py</ulink
+> كتبها ألبرت أستالس سيد. تحتاج إلى بايثون 3 مع الوحدتين <literal
+>PySide6</literal
+> و<literal
+>Pillow</literal
+> لتشغيلها. شغلها فقط مع اسم ملف <literal role="extension"
+>.kgm</literal
+> كوسيط (تحتاج أيضًا إلى ملف <literal role="extension"
+>.png</literal
+> للخريطة في نفس المجلد). ستخبرك هذه الأداة إذا كان أي بكسل في الخريطة له لون مختلف غير معرف في ملف الوصف <literal role="extension"
+>.kgm</literal
+>. </para>
+<tip>
+<para
+>يرجى أيضًا قراءة البرنامج التعليمي <ulink url="https://edu.kde.org/kgeography/tutorials/kgeography-addmaps.pdf"
+>كيفية إضافة الخرائط</ulink
+> على موقع الجغرافي. </para>
+</tip>
+</sect1>
+<sect1 id="description-file">
+<title
+>ملف الوصف</title>
+<para
+>ملف الوصف مطلوب وامتداده هو <literal role="extension"
+>.kgm</literal
+>. يجب أن يبدأ بـ <sgmltag class="starttag"
+>?xml version="1.0" encoding="utf-8"</sgmltag
+>، ثم <sgmltag class="starttag"
+>!DOCTYPE kgeographyMap</sgmltag
+>، متبوعًا بـ <sgmltag class="starttag"
+>map</sgmltag
+> وينتهي بـ <sgmltag class="endtag"
+>map</sgmltag
+>. </para>
+<para
+>داخل هذه الوسوم يجب أن يكون: <itemizedlist>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>mapFile</sgmltag
+> و <sgmltag class="endtag"
+>mapFile</sgmltag
+>: اسم الملف (بدون أي مسار) الذي يحتوي على صورة الخريطة، &eg; <quote
+><literal
+>europe.png</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>name</sgmltag
+> و <sgmltag class="endtag"
+>name</sgmltag
+>: اسم الخريطة، &eg; <quote
+><literal
+>Europe</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+><sgmltag class="starttag"
+>divisionsName</sgmltag
+> و <sgmltag class="endtag"
+>divisionsName</sgmltag
+>: الاسم العام للتقسيمات في هذه الخريطة، أي المقاطعات أو الولايات أو الدول، &etc;</para>
+</listitem>
+<listitem>
+  <para
+>وسم <sgmltag class="starttag"
+>تقسيم</sgmltag
+> و<sgmltag class="endtag"
+>تقسيم</sgmltag
+> لكل تقسيم في الخريطة.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>كل تقسيم له هذه الوسوم: <itemizedlist>
+<listitem>
+  <para
+>وسم <sgmltag class="starttag"
+>اسم</sgmltag
+> و<sgmltag class="endtag"
+>اسم</sgmltag
+>: اسم التقسيم، مثل <quote
+><literal
+>ألبانيا</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+>وسم <sgmltag class="starttag"
+>عاصمة</sgmltag
+> و<sgmltag class="endtag"
+>عاصمة</sgmltag
+>: اسم عاصمة التقسيم، مثل <quote
+><literal
+>تيرانا</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+	<para
+>وسم <sgmltag class="starttag"
+>تجاهل</sgmltag
+> و<sgmltag class="endtag"
+>تجاهل</sgmltag
+>: يمكن ضبطه على <userinput
+>نعم</userinput
+> أو <userinput
+>allowClickMode</userinput
+> أو <userinput
+>allowClickFlagMode</userinput
+> أو <userinput
+>لا</userinput
+>. إذا ضُبط هذا الوسم على <userinput
+>نعم</userinput
+> فسيُتجاهل التقسيم عند السؤال عن التقسيمات في تلك الخريطة. وكأن هذا التقسيم غير موجود في أنماط اختبار الجغرافي. إذا ضُبط هذا الوسم على <userinput
+>allowClickMode</userinput
+> فسيطلب الجغرافي التقسيم في نمط <guibutton
+>موقع ...</guibutton
+> لكن ليس في أنماط الاختبار الأخرى. إذا ضُبط هذا الوسم على <userinput
+>allowClickFlagMode</userinput
+> فسيطلب الجغرافي التقسيم في نمط <guibutton
+>موقع ...</guibutton
+> وفي الاختبارات المتعلقة بالأعلام لكن ليس في أنماط الاختبار الأخرى. ضبط هذا الوسم على <userinput
+>لا</userinput
+> يعني أن التقسيم سيظهر في جميع الأنماط (التصفح والاختبارات). هذا الوسم اختياري، وعند عدم وجود وسم <sgmltag class="starttag"
+>تجاهل</sgmltag
+> فذلك يعني أنه مضبوط على <userinput
+>لا</userinput
+>. على سبيل المثال، <quote
+><literal
+>الجزائر</literal
+></quote
+> لها هذا الوسم مضبوطًا على <userinput
+>نعم</userinput
+> في خريطة <quote
+><literal
+>أوروبا</literal
+></quote
+> مما يعني أن <quote
+><literal
+>الجزائر</literal
+></quote
+> لن تكون جزءًا من أي اختبار في خريطة <quote
+><literal
+>أوروبا</literal
+></quote
+>.</para>
+</listitem>
+<listitem>
+  <para
+>وسم <sgmltag class="starttag"
+>علم</sgmltag
+> و<sgmltag class="endtag"
+>علم</sgmltag
+>: الملف (بدون أي مسار) الذي يحتوي على علم التقسيم، مثل <quote
+><literal
+>albania.png</literal
+></quote
+>. هذا الوسم اختياري. ليس ضروريًا للتقسيمات التي ضُبط وسم <sgmltag class="starttag"
+>تجاهل</sgmltag
+> فيها على <userinput
+>نعم</userinput
+>.</para>
+</listitem>
+<listitem>
+  <para
+>وسم <sgmltag class="starttag"
+>علمضبابي</sgmltag
+> و<sgmltag class="endtag"
+>علمضبابي</sgmltag
+>: الملف (بدون أي مسار) الذي يحتوي على العلم الضبابي للتقسيم، مثل <quote
+><literal
+>blurred_albania.png</literal
+></quote
+>. هذا الوسم اختياري. يجب استخدامه في الحالات التي يُكتب فيها اسم التقسيم الذي ينتمي إليه العلم على العلم. قد يؤدي ذلك إلى جعل ألعاب تخمين العلم سهلة جدًا، ولذا يُشجع تقديم الأعلام مع النص المُضبب.</para>
+</listitem>
+<listitem>
+  <para
+>وسم <sgmltag class="starttag"
+>لون</sgmltag
+> و<sgmltag class="endtag"
+>لون</sgmltag
+>: اللون الذي يظهر به التقسيم في الخريطة.</para>
+</listitem>
+<listitem>
+  <para
+>وسم <sgmltag class="starttag"
+>عاصمةخاطئة</sgmltag
+> و<sgmltag class="endtag"
+>عاصمةخاطئة</sgmltag
+>: يمكن أن يكون أي عدد من أزواج <userinput
+>عاصمةخاطئة</userinput
+>، وتُستخدم لتوفير قائمة إجابات خاطئة لسؤال العاصمة بدلًا من اختيار الإجابات الخاطئة من عواصم التقسيمات الأخرى.</para>
+</listitem>
+</itemizedlist>
+ </para>
+<para
+>يُعرف اللون باستخدام ثلاثة وسوم: <itemizedlist>
+<listitem>
+  <para
+>وسم <sgmltag class="starttag"
+>أحمر</sgmltag
+> و<sgmltag class="endtag"
+>أحمر</sgmltag
+>: المكون الأحمر للون. القيم الصالحة بين 0 و255.</para>
+</listitem>
+<listitem>
+  <para
+>وسم <sgmltag class="starttag"
+>أخضر</sgmltag
+> و<sgmltag class="endtag"
+>أخضر</sgmltag
+>: المكون الأخضر للون. القيم الصالحة بين 0 و255.</para>
+</listitem>
+<listitem>
+  <para
+>وسم <sgmltag class="starttag"
+>أزرق</sgmltag
+> و<sgmltag class="endtag"
+>أزرق</sgmltag
+>: المكون الأزرق للون. القيم الصالحة بين 0 و255.</para>
+</listitem>
+</itemizedlist>
+</para>
+<tip>
+ <para
+>من المناسب إنشاء 2 أو 3 تقسيمات خاطئة مثل <quote
+><literal
+>ماء</literal
+></quote
+> و<quote
+><literal
+>حدود</literal
+></quote
+> و<quote
+><literal
+>ساحل</literal
+></quote
+> وضبطها مع وسم <sgmltag class="starttag"
+>تجاهل</sgmltag
+> مضبوطًا على <userinput
+>نعم</userinput
+>. لا تنسَ <userinput
+>عدم ضبط</userinput
+> لون لأي <quote
+><literal
+>حدود</literal
+></quote
+> على 0,0,0 في RGB. اجعله شيئًا مثل 1,1,1 ليظهر مخطط حدودي عند وضع أي تقسيم على الخريطة. </para>
+</tip>
+ <important>
+   <para
+>يجب أن تكون جميع الأسماء (العواصم والتقسيمات) بالإنجليزية.</para>
+</important>
+</sect1>
+<sect1 id="map-file">
+<title
+>ملف خريطة</title>
+<para
+>ملف الخريطة بسيط جدًا لكنه شاق في الإنشاء. يجب أن يكون بصيغة <acronym
+>PNG</acronym
+>. يمكنك العثور على بعض الخرائط لتحويلها في <ulink url="https://www.cia.gov/library/publications/the-world-factbook/docs/refmaps.html"
+>خرائط مرجعية لوكالة المخابرات المركزية</ulink
+>. إذا لم تناسب أي خريطة احتياجاتك، يمكنك تنزيل <ulink url="https://www.cia.gov/library/publications/resources/the-world-factbook/graphics/ref_maps/political/pdf/world.pdf"
+>الخريطة السياسية للعالم</ulink
+>، وأخذ لقطة شاشة منها والعمل عليها. يجب أن يكون لكل تقسيم في الخريطة لون واحد فقط. لتحقيق ذلك، يمكنك استخدام برامج معالجة الصور مثل <application
+>ذا غيمب</application
+> و&kolourpaint;. </para>
+</sect1>
+<sect1 id="flags">
+<title
+>الأعلام</title>
+<para
+>إذا استخدمت وسم <sgmltag class="starttag"
+>علم</sgmltag
+> فيجب عليك توفير ملفات العلم. يجب أن تكون بصيغة <acronym
+>PNG</acronym
+> ومن الأفضل أن تكون بحجم 300×200 بكسل وتوفير ملف &SVG; لها. للحصول على أعلام &SVG; لجميع دول العالم تقريبًا وبعض التقسيمات الأخرى، يمكنك الاطلاع على <ulink url="https://sourceforge.net/project/showfiles.php?group_id=4054&amp;package_id=16668&amp;release_id=208770"
+>مجموعة أعلام سوديبودي</ulink
+>. </para>
+<para
+>كما ذُكر سابقًا، نشجعك على توفير ملفات علم ضبابي للأعلام التي يُكتب عليها اسم التقسيم. تنطبق نفس المتطلبات على ملفات العلم الضبابي كما على ملفات العلم العادية. بينما لا توجد تسمية محددة للملفات الضبابية، نوصي بحفظها باسم العلم الأصلي مسبوقًا بـ <literal
+>blurred_</literal
+>، مثل <quote
+><literal
+>blurred_albania.png</literal
+></quote
+> </para>
+</sect1>
+<sect1 id="how-to-test">
+<title
+>كيفية الاختبار</title>
+<para
+>قبل إرسال خريطتك إلى Albert &Albert.Astals.Cid.mail;، يجب اختبارها للتأكد من عدم وجود أخطاء. لتحقيق ذلك، عليك القيام بما يلي: <itemizedlist
+> <listitem
+> <para
+>ضع وصف الخريطة وملف صورة الخريطة في <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/</filename
+></para
+> </listitem
+> <listitem
+> <para
+>ضع ملفات العلم <acronym
+>PNG</acronym
+> (إن وجدت) في <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+>/share/apps/kgeography/flags/</filename
+></para
+> </listitem
+> </itemizedlist
+> بمجرد فعل ذلك، يجب أن تكون قادرًا على فتح خريطتك من داخل الجغرافي. </para>
+ <para
+>إذا كنت لا تعرف ما هو <filename class="directory"
+>$<envar
+>XDG_DATA_HOME</envar
+></filename
+>، اكتب <userinput
+><command
+>qtpaths</command
+> <option
+>--paths HomeLocation</option
+></userinput
+> في صدفة. </para>
+<tip>
+<para
+>استخدم أداة colorchecker.py من الأدوات المساعدة للتحقق من وجود أي لون زائد في الخريطة غير مُعرف في ملف <literal role="extension"
+>.kgm</literal
+>. </para>
+</tip>
+</sect1>
+<sect1 id="non-political-maps">
+<title
+>خرائط غير سياسية</title>
+<para
+>هل من الممكن عمل خرائط غير سياسية؟ نعم، ممكن! <screenshot>
+<screeninfo
+>مثال عن كيفية إنشاء خريطة غير سياسية</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="river.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase
+>مثال عن كيفية إنشاء خريطة غير سياسية</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para
+>بالطبع، يمكن توسيع مفهوم التقسيم ليشمل نهرًا أو جبلًا. أثناء إنشاء الخريطة، يجب أن تضع في اعتبارك أن النهر أو الجبل سيكون صغيرًا جدًا في معظم الأحيان لذا يجب توفير منطقة نقر إضافية. في هذا المثال، سيكون للنهر المنطقة الكستنائية واللون &lt;20,76,34&gt; كمعرفه. </para>
+</sect1>
+</chapter>
+
+<chapter id="commands">
+<title
+>مرجع الأوامر</title>
+
+<sect1 id="kapp-mainwindow">
+<title
+>النافذة الرئيسة لـ الجغرافي</title>
+
+<sect2>
+<title
+>قائمة ملف</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>O</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>ملف</guimenu
+> <guimenuitem
+>افتح خريطة...</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>افتح حوار اختيار الخريطة. إذا كتبت بسرعة كافية الأحرف الأولى من الخريطة التي تبحث عنها، فسيتم تحديد أول خريطة تطابقها.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><shortcut
+> <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+> </shortcut
+> <guimenu
+>ملف</guimenu
+> <guimenuitem
+>أنهِ</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>ينهي</action
+> الجغرافي.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>قائمة عرض</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>عرض</guimenu
+><guimenuitem
+>كبر</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>يدخل في نمط التكبير، ثم ارسم مستطيلًا لتكبير جزء من الخريطة.</action
+></para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>عرض</guimenu
+> <guimenuitem
+>الحجم الأصلي</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>يضبط</action
+> الخريطة إلى حجمها الأصلي كما هو معرّف في ملف الخريطة. يؤدي النقر بزر الفأرة الأيمن في وضع التكبير نفس الإجراء.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>عرض</guimenu
+> <guimenuitem
+>تكبير آلي</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>يضبط</action
+> الخريطة إلى التكبير الآلي باستخدام أكبر مساحة ممكنة عند تغيير حجم نافذة الجغرافي.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>عرض</guimenu
+> <guimenuitem
+>حرك</guimenuitem
+> </menuchoice
+></term>
+<listitem
+><para
+><action
+>ينقل</action
+> الخريطة الحالية. هذا العنصر مفعّل فقط إذا كنت قد كبّرت الخريطة.</para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title
+>قائمة الإعدادات</title>
+<para
+>الجغرافي يحتوي على عناصر قائمة <guimenu
+>الإعدادات</guimenu
+> الشائعة في كيدي، لمزيد من المعلومات اقرأ القسم الخاص بـ <ulink url="help:/fundamentals/menus.html#menus-settings"
+>قائمة الإعدادات</ulink
+> من أساسيات كيدي. </para>
+
+</sect2>
+<sect2>
+<title
+>قائمة مساعدة</title>
+
+<para
+>الجغرافي يحتوي على قائمة <guimenu
+>مساعدة</guimenu
+> مبدئية في كيدي كما هو موصوف في <ulink url="help:/fundamentals/menus.html#menus-help"
+>أساسيات كيدي</ulink
+> مع إدخالين إضافيين:</para>
+	
+<variablelist>
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>مساعدة</guimenu
+> <guimenuitem
+>إخلاء مسؤولية</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>يعرض</action
+> إخلاء مسؤولية حول دقة الخرائط والأعلام والترجمات المستخدمة بواسطة الجغرافي.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><menuchoice
+><guimenu
+>مساعدة</guimenu
+> <guimenuitem
+>مؤلف الخريطة</guimenuitem
+> </menuchoice
+></term>
+<listitem>
+<para
+><action
+>يعرض</action
+> اسم المؤلف الذي أنشأ الخريطة الحالية.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect2>
+
+</sect1>
+
+</chapter>
+
+<chapter id="configuration">
+<title
+>الضّبط</title>
+<para>
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>محاذاة السؤال</guilabel
+></term>
+<listitem
+><para
+>يحدد موضع الأسئلة في النافذة، المبدئي هو <guilabel
+>أعلى-يسار</guilabel
+>.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>انتظر التحقق</guilabel
+></term>
+<listitem
+><para
+>إذا كان مفعّلًا، سيُطلب من المستخدم الضغط على <guibutton
+>قبول</guibutton
+> بعد اختيار إجابة.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>التركيز يتبع الفأرة</guilabel
+></term>
+<listitem
+><para
+>إذا كان مفعّلًا، سيؤدي الضغط على مفتاح المسافة إلى تفعيل الزر الموجود تحت مؤشر الفأرة.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>ألوان أقسام الخريطة</guilabel
+></term>
+<listitem
+><para
+>يمكنك اختيار ما إذا كنت تريد دائمًا الاحتفاظ بنفس الألوان (المبدئي) أو استخدام ألوان عشوائية: مع هذا الخيار، تُعيّن ألوان عشوائية للأقسام في الخريطة. يساعد هذا المستخدم على التركيز وتعلم أشكال الأقسام وليس ألوانها. </para
+></listitem>
+</varlistentry>
+</variablelist>
+</para>
+</chapter>
+
+<chapter id="credits">
+
+<title
+>الحقوق والترخيص</title>
+
+<para
+>الجغرافي </para>
+<para
+>حقوق نشر البرنامج 2004-2008 ألبرت أستالس سيد &Albert.Astals.Cid.mail; </para>
+
+
+<para
+>حقوق نشر التوثيق &copy; 2005 &Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail; 2008 كوشال داس <email
+>kushaldas@gmail.com</email
+> </para>
+
+<para
+>الترجمة: زايد السعيدي <email
+>zayed.alsaidi@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab 
+-->
