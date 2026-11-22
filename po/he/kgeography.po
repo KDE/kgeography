@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: kgeography\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-30 00:41+0000\n"
-"PO-Revision-Date: 2026-08-11 11:23+0300\n"
+"PO-Revision-Date: 2026-11-21 08:46+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: צוות התרגום של KDE ישראל\n"
+"Language-Team: Hebrew <kde-l10n-he@kde.org>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 26.04.3\n"
+"X-Generator: Lokalize 26.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -29049,13 +29049,13 @@ msgstr "מונה"
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Adjuntas"
-msgstr ""
+msgstr "אדחונטס"
 
 #: puertorico.kgm:57
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Aguada"
-msgstr ""
+msgstr "אגואדה"
 
 #: puertorico.kgm:67
 #, kde-format
@@ -29349,25 +29349,25 @@ msgstr "מאיאגואס"
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Moca"
-msgstr ""
+msgstr "מוקה"
 
 #: puertorico.kgm:557
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Morovis"
-msgstr ""
+msgstr "מורוביס"
 
 #: puertorico.kgm:567
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Nagüabo"
-msgstr ""
+msgstr "נגואבו"
 
 #: puertorico.kgm:577
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Naranjito"
-msgstr ""
+msgstr "נרנחיטו"
 
 #: puertorico.kgm:587
 #, kde-format
@@ -29379,13 +29379,13 @@ msgstr "אורוקוביס"
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Patillas"
-msgstr ""
+msgstr "פטיאס"
 
 #: puertorico.kgm:607
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Peñuelas"
-msgstr ""
+msgstr "פניואלס"
 
 #: puertorico.kgm:617
 #, kde-format
@@ -29403,19 +29403,19 @@ msgstr "קוברדיאס"
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Rincón"
-msgstr ""
+msgstr "רינקון"
 
 #: puertorico.kgm:647
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Río Grande"
-msgstr ""
+msgstr "ריו גרנדה"
 
 #: puertorico.kgm:657
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Sabana Grande"
-msgstr ""
+msgstr "סבנה גרנדה"
 
 #: puertorico.kgm:667
 #, kde-format
@@ -29439,7 +29439,7 @@ msgstr "סן חואן"
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "San Lorenzo"
-msgstr ""
+msgstr "סן לורנסו"
 
 #: puertorico.kgm:707
 #, kde-format
@@ -29451,25 +29451,25 @@ msgstr "סן סבסטיאן"
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Santa Isabel"
-msgstr ""
+msgstr "סנטה איסבל"
 
 #: puertorico.kgm:727
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Toa Alta"
-msgstr ""
+msgstr "טואה אלטה"
 
 #: puertorico.kgm:737
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Toa Baja"
-msgstr ""
+msgstr "טואה באחה"
 
 #: puertorico.kgm:747
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Trujillo Alto"
-msgstr ""
+msgstr "טרוחיו אלטו"
 
 #: puertorico.kgm:757
 #, kde-format
@@ -29499,7 +29499,7 @@ msgstr "וייקס"
 #, kde-format
 msgctxt "puertorico.kgm"
 msgid "Villalba"
-msgstr ""
+msgstr "וייאלבה"
 
 #: puertorico.kgm:807
 #, kde-format
