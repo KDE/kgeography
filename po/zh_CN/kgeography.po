@@ -14721,7 +14721,7 @@ msgstr "里尔 "
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Georgia"
-msgstr "乔治亚"
+msgstr "格鲁吉亚"
 
 #: georgia.kgm:6
 #, kde-format
@@ -14751,13 +14751,13 @@ msgstr ""
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Abkhazia"
-msgstr ""
+msgstr "阿布哈兹"
 
 #: georgia.kgm:25
 #, kde-format
 msgctxt "georgia.kgm"
 msgid "Sokhumi"
-msgstr ""
+msgstr "苏呼米"
 
 #: georgia.kgm:29
 #, kde-format
@@ -30217,7 +30217,7 @@ msgstr ""
 #, kde-format
 msgctxt "russia_districts.kgm"
 msgid "Russia (Districts)"
-msgstr ""
+msgstr "俄罗斯 (联邦管区)"
 
 #: russia_districts.kgm:6
 #, kde-format
@@ -30241,7 +30241,7 @@ msgstr "水域"
 #, kde-format
 msgctxt "russia_districts.kgm"
 msgid "Not Russia (Districts)"
-msgstr ""
+msgstr "非俄罗斯 (联邦管区)"
 
 #: russia_districts.kgm:24
 #, kde-format
@@ -30331,7 +30331,7 @@ msgstr ""
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Russia (Subjects)"
-msgstr ""
+msgstr "俄罗斯 (联邦主体)"
 
 #: russia_subjects.kgm:6
 #, kde-format
@@ -30355,7 +30355,7 @@ msgstr "水域"
 #, kde-format
 msgctxt "russia_subjects.kgm"
 msgid "Not Russia (Subjects)"
-msgstr ""
+msgstr "非俄罗斯 (联邦主体)"
 
 #: russia_subjects.kgm:24
 #, kde-format
